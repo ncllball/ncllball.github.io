@@ -71,7 +71,7 @@
     }
     li {
         text-align: left;
-        font-size: 46px;
+        font-size: 26px;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
     ul li {
@@ -180,7 +180,7 @@
         object-fit: cover;
     }
     a.ncll {
-    color: #CD163F!important; /* Normal state */
+    color: purple !important; /* Normal state */
     text-decoration: none; /* Remove underline */
     }
 
