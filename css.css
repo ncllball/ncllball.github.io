@@ -53,9 +53,6 @@
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         text-align: left;
     }
-    #span1 {
-
-    }
     span {
         font-weight: 600;
     }
@@ -187,15 +184,15 @@
     text-decoration: none; /* Remove underline */
     }
 
-    a:visited.ncll {
+    a.ncll:visited {
         color: #CD163F!important; /* Visited state */
     }
 
-    a:hover.ncll {
+    a.ncll:hover {
         color: #CD163F!important; /* Hover state */
     }
 
-    a:active.ncll {
+    a.ncll:active {
         color: #CD163F!important; /* Active state */
     }
     
