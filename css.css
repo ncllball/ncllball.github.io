@@ -162,15 +162,6 @@
         font-size: 12px;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
-    .table_component {
-        border: 1px solid #dededf;
-        background-color: #CD163F;
-        color: whitesmoke;
-        padding: 5px;
-        font-weight: 400;
-        font-size: 12px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
     .table_component td {
         border: 1px solid #dededf;
         background-color: #ffffff;
