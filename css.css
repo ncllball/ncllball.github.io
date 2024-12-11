@@ -162,7 +162,7 @@
         font-size: 12px;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
-    .table_component thead tr th {
+    .table_component tbody {
         border: 1px solid #dededf;
         background-color: #CD163F;
         color: whitesmoke;
