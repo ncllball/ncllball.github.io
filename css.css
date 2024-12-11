@@ -15,7 +15,7 @@
     }
     h1 {
         font-size: 26px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
         text-align: left;
         line-height: 32px;
         width: fit-content;
@@ -23,14 +23,14 @@
     h2 {
         font-size: 20px;
         color: black;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
         text-align: left;
         line-height: 30px;
         margin: 0 0 18px 0;
         padding: 0 0 0 0;
     }
     h3 {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
         text-align: left;
         font-size: 18px;
         line-height: 26px;
@@ -38,19 +38,19 @@
     h4 {
         font-size: 16px;
         color: black;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
         text-align: left;
     }
     h5 {
         font-size: 14px;
         color: red;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
         text-align: left;
     }
     h6 {
         font-size: 20px;
         color: red;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
         text-align: left;
     }
     span {
@@ -62,17 +62,17 @@
     p {
         text-align: left;
         font-size: 16px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     }
     ul {
         text-align: left;
         font-size: 16px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     }
     li {
         text-align: left;
         font-size: 16px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     }
     ul li {
         list-style-type: disc;
@@ -160,7 +160,7 @@
         padding: 5px;
         font-weight: 400;
         font-size: 12px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .table_component td {
@@ -169,7 +169,7 @@
         color: #000000;
         padding: 5px;
         font-size: 13px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     }
     #softball-girls, #baseball-boys-and-girls {
         margin-bottom: 10px;
