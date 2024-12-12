@@ -180,10 +180,9 @@
         object-fit: cover;
     }
     a.ncll {
-    color: #CD163F !important; /* Normal state */
-    text-decoration: none; /* Remove underline */
+    		color: #CD163F !important; /* Normal state */
+    		text-decoration: none; /* Remove underline */
     }
-
     a.ncll:visited {
         color: #CD163F!important; /* Visited state */
     }
@@ -194,5 +193,17 @@
 
     a.ncll:active {
         color: #CD163F!important; /* Active state */
+    }
+    .masked-text {
+        color: transparent;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+    }
+    .blurred-text {
+        color: transparent;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+    		font-family: Arial, sans-serif;
     }
     
