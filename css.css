@@ -137,9 +137,9 @@
     }
 
     .table_component {
-        overflow: ;
+        overflow: auto;
         width: 100%;
-        height: 15%;
+        height: 100%;
         margin-bottom: 10px;
     }
 
