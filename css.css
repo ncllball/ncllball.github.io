@@ -120,6 +120,18 @@
         text-align: left;
         margin-bottom: 20px;
     }
+    h2.woohoo::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 10px; /* Adjust to match your SVG's height */
+        background-image: url("https://res.cloudinary.com/little-league/image/upload/c_limit,dpr_auto,h_14,w_1102,q_auto,c_fill,g_face/v1604087311/red-lines-spacer-5f9c6e0f7865e.svg");
+        background-repeat: repeat;
+        background-size: contain;
+        margin-top: 20px; /* Optional spacing */
+        text-align: left;
+        margin-bottom: 20px;
+    }
 
     h4.left {
         margin: 2px 0 0 0;
