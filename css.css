@@ -219,8 +219,8 @@
     		font-family: Arial, sans-serif;
     }
     sup { 
-        vertical-align: top; 
-        position: relative;
-        top: 1em; 
+        vertical-align: top !important; 
+        position: relative !important;
+        top: 1em !important;
     }
     
