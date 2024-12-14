@@ -120,7 +120,7 @@
         text-align: left;
         margin-bottom: 20px;
     }
-    h2.woohoo::before {
+    h2.woohoo::after {
         content: "";
         display: block;
         width: 100%;
