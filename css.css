@@ -228,6 +228,9 @@
         white-space:nowrap;      
         line-height: normal;
     }
+    .fit td {
+        color: RGB(68, 68, 68) !important;
+    }
     .agechart {
         padding: 8px 8px 8px 8px;
         margin: 0px 0px 10px 0px;
