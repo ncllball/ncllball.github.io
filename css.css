@@ -223,6 +223,8 @@
         vertical-align: top !important; 
         position: relative !important;
         top: 1em !important;
+        font-size: 14px !important;
+        line-height: normal;
     }
     .fit {
         max-width:100%;
