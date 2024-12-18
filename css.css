@@ -1,4 +1,4 @@
-    .note {
+.note {
         font-size: 120%;
         color: red;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -236,43 +236,10 @@
         padding: 8px 8px 8px 8px;
         margin: 0px 0px 10px 0px;
     }
-    .blue {
-        padding: 8px 8px 8px 8px;
-        margin: 0px 0px 10px 0px;
-    }
-    .richblue {
-        padding: 8px 8px 8px 8px;
-        margin: 0px 0px 10px 0px;
-    }
-    .red {
-        padding: 8px 8px 8px 8px;
-        margin: 0px 0px 10px 0px;
-    }
-    .tan {
-        padding: 8px 8px 8px 8px;
-        margin: 0px 0px 10px 0px;
-    }
-    .orange {
-        padding: 8px 8px 8px 8px;
-        margin: 0px 0px 10px 0px;
-    }
-    .blue_reverse {
-        padding: 8px 8px 8px 8px;
-        margin: 0px 0px 10px 0px;
-    }
-    .richblue_reverse {
-        padding: 8px 8px 8px 8px;
-        margin: 0px 0px 10px 0px;
-    }
-    .red_reverse {
-        padding: 8px 8px 8px 8px;
-        margin: 0px 0px 10px 0px;
-    }
-    .tan_reverse {
-        padding: 8px 8px 8px 8px;
-        margin: 0px 0px 10px 0px;
-    }
-    .orange_reverse {
-        padding: 8px 8px 8px 8px;
-        margin: 0px 0px 10px 0px;
+    :root {
+        --color_red: #cd163f;
+        --color_blue: #00013a;
+        --color_tan: #e2ddca;
+        --color_richblue: #019cde;
+        --color_orange: #ff6900;
     }
