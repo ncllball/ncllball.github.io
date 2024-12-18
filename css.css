@@ -222,7 +222,6 @@
     sup { 
         vertical-align: top !important; 
         position: relative !important;
-        top: .1em !important;
         font-size: 8px !important;
         line-height: normal;
     }
