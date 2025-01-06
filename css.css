@@ -247,3 +247,11 @@
         --color_darkgray: RGB(68, 68, 68);
         --color_button: #f0f0f0;
     }
+    updated {
+        color: #CD163F !important; /* Normal state */
+        text-decoration: none; /* Remove underline */
+        font-size: 10px;
+        margin-top: 0px;
+        position: relative;
+        vertical-align: top !important;
+    }
