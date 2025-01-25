@@ -314,3 +314,32 @@ updated {
 .footies a:hover {
     text-decoration: underline;
 }
+.image-caption-container {
+    text-align: center;
+    padding: 25px;
+
+    width: 300px;
+    float: right;
+    display: block;
+}
+
+.image-caption-container figure {
+    display: inline-block;
+    margin: 0;
+}
+
+.image-caption-container img {
+    display: block;
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+}
+
+.image-caption-container figcaption {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+}
