@@ -259,3 +259,24 @@
         position: relative;
         vertical-align: top !important;
     }
+      .footies {
+            font-size: 0.85em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #555;
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        .footies p {
+            margin: 5px 0;
+        }
+
+        .footies a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .footies a:hover {
+            text-decoration: underline;
+        }
