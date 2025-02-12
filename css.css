@@ -4,12 +4,7 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color: #000;
     letter-spacing: 0;
@@ -69,19 +64,7 @@ span3 {
     background-color: rgb(204, 204, 204);
 }
 
-p {
-    text-align: left;
-    font-size: 16px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-}
-
-ul {
-    text-align: left;
-    font-size: 16px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-}
-
-li {
+p, ul, li {
     text-align: left;
     font-size: 16px;
     font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
@@ -99,8 +82,7 @@ ul li {
     font-weight: 400;
 }
 
-html,
-body {
+html, body {
     text-align: left;
 }
 
@@ -112,11 +94,11 @@ body {
 }
 
 h1.left {
+    background-color: gainsboro;
     text-align: left !important;
     float: none;
     margin: 0 0 18px 0;
     padding: 0;
-    background-color: gainsboro;
     width: fit-content;
 }
 
@@ -204,8 +186,7 @@ table caption {
     font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#softball-girls,
-#baseball-boys-and-girls {
+#softball-girls, #baseball-boys-and-girls {
     margin-bottom: 10px;
 }
 
@@ -231,15 +212,6 @@ a.ncll:hover {
 a.ncll:active {
     color: #CD163F !important;
 }
-
-/*
-.masked-text {
-    color: transparent;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-}
-*/
 
 .blurred-text {
     color: transparent;
@@ -316,10 +288,10 @@ updated {
 .footies a:hover {
     text-decoration: underline;
 }
+
 .image-caption-container {
     text-align: center;
     padding: 25px;
-
     width: 300px;
     float: right;
     display: block;
@@ -344,4 +316,22 @@ updated {
     width: 100%;
     text-align: center;
     line-height: normal;
+}
+
+/* Alert Header Styles */
+.alert-header {
+    background-color: #e7dcb0; /* Yellow background */
+    color: #333333; /* Dark text color */
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #e7dcb0; /* Border color */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+}
+
+.alert-header::before {
+    content: "⚠️ "; /* Warning icon before the text */
+    font-size: 24px; /* Icon size */
 }
