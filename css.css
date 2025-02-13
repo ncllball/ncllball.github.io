@@ -333,10 +333,12 @@ updated {
     background-size: 113.14px 113.14px;
 }
 
+/* 
 .alert-header::before {
     content: "⚠️ "; /* Warning icon before the text */
     font-size: 24px; /* Icon size */
-}
+} 
+*/
 
 .alert-header p {
     background-color: #e7dcb0; /* Yellow background */
