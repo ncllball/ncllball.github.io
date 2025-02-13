@@ -321,7 +321,7 @@ updated {
 /* Alert Header Styles */
 .alert-header {
     background-color: #e7dcb0; /* Yellow background */
-    color: #333333; /* Dark text color */
+    color: dimgrey; /* Dark text color */
     padding: 20px;
     text-align: center;
     font-size: 18px;
@@ -336,4 +336,16 @@ updated {
 .alert-header::before {
     content: "⚠️ "; /* Warning icon before the text */
     font-size: 24px; /* Icon size */
+}
+
+.alert-header p {
+    background-color: #e7dcb0; /* Yellow background */
+    color: #333333; /* Dark text color */
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #e7dcb0; /* Border color */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
 }
