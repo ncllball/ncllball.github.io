@@ -318,40 +318,44 @@ updated {
     line-height: normal;
 }
 
-.alert-header p {
-    background-color: whitesmoke; /* Yellow background */
-    color: #333333; /* Dark text color */
-    padding: 10px;
-    text-align: center;
-    font-size: 18px;
-    border: none; /* Border color */
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for effect */
-  }
 .alert-header {
+    text-align: center; /* Center the content within .alert-header */
     padding: 20px;
     border: none; /* Border color */
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
     background-image: linear-gradient(
-      135deg,
-      #f2e427 25%,
-      #000000 25%,
-      #000000 50%,
-      #f2e427 50%,
-      #f2e427 75%,
-      #000000 75%,
-      #000000 100%
+        135deg,
+        #f2e427 25%,
+        #000000 25%,
+        #000000 50%,
+        #f2e427 50%,
+        #f2e427 75%,
+        #000000 75%,
+        #000000 100%
     );
     background-size: 113.14px 113.14px;
-  }
+}
+
+.alert-header p {
+    display: inline-block; /* Make the background only as wide as the text */
+    margin: 0 auto; /* Center the text */
+    background-color: whitesmoke; /* Yellow background */
+    color: #333333; /* Dark text color */
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border: none; /* Border color */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for effect */
+}
 
 .alert-header p::before {
     content: "⚠️ "; /* Warning icon before the text */
     font-size: 18px; /* Icon size */
-  }
+}
 
 .alert-header p::after {
     content: "⚠️ "; /* Warning icon after the text */
     font-size: 18px; /* Icon size */
-  }
+}
