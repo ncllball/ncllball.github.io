@@ -1,3 +1,15 @@
+<style>
+    /* .ad-banner, */
+    /* .ad-sidebar, */
+    /* .ad-footer , */
+    /* .skMobTopbar, */
+    /* .skMobile, */
+    /* div.skArea:nth-child(66), */
+    /* div.skAddBanner:nth-child(2), */
+    .skAddBanner {
+        display: none;
+    }
+</style>
 .note {
     font-size: 120%;
     color: red;
