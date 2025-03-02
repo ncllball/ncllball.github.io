@@ -8,12 +8,14 @@
 .skAddBanner {
     display: none;
 }
+.skAlert {
+    display: none;
+}
 .note {
     font-size: 120%;
     color: red;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color: #000;
