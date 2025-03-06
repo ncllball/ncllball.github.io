@@ -230,14 +230,14 @@ a.ncll:active {
     font-size: 20px;
     font-family: Arial, sans-serif;
 }
-/*
+
 sup {
     vertical-align: top !important;
     position: relative !important;
-    font-size: 8px !important;
+    font-size: 9px !important;
     line-height: normal;
 }
-*/
+
 .fit {
     max-width: 100%;
     white-space: nowrap;
