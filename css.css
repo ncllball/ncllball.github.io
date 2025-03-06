@@ -5,11 +5,22 @@
     /* .skMobile, */
     /* div.skArea:nth-child(66), */
     /* div.skAddBanner:nth-child(2), */
+
 .skAddBanner, .skRightTabs {
     display: none;
 }
+
+.skTabsWrapper {
+    display: table-cell;
+    width: calc(100% - calculateSpacing(32));
+    background: #fff;
+    vertical-align: top;
+    padding: 0 0px 0 0;
+}
+
 .skAlert {
 }
+
 .note {
     font-size: 120%;
     color: red;
