@@ -26,10 +26,11 @@
     border: 1px solid #B0B0B0; /* Border with a solid color */
     padding: 5px 10px; /* Add some padding */
     font-size: 12px; /* Increase the font size */
-    cursor: pointer; /* Add a pointer cursor on hover */
     border-radius: 16px; /* Rounded corners */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    pointer-events: none; /* Prevent clicks (partially) */
+    cursor: not-allowed; /* Change the cursor */
 }
 .gainsboro-button:hover {
     background-color: rgba(169, 169, 169, 0.7); /* Darker Gainsboro on hover with opacity (0.7) */
