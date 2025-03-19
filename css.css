@@ -259,7 +259,9 @@ a.ncll:active {
 }
 
 super {
-vertical-align: super
+    vertical-align: super;
+    line-height: normal;
+    font-size: 12px;
 }
 
 .fit {
