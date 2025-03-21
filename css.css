@@ -215,7 +215,7 @@ h4.left {
 	width: 100%;
 	height: auto;
 	/* Allow the container to adjust to content height */
-	border: 1px solid #ccc;
+	/* border: 1px solid #ccc; */
 	padding: 10px;
 	/* Add padding for better spacing */
 }
@@ -224,7 +224,7 @@ h4.left {
 	float: right;
 	/* Float the image to the right */
 	max-width: 20%;
-	height: auto;
+	max-height: 175px;
 	margin-left: 10px;
 	/* Add some space between the image and text */
 	margin-bottom: 10px;
