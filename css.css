@@ -9,7 +9,7 @@
 .skAddBanner,
 .skRightTabs,
 .skCaption {
-	display: none;
+	display: none !important;
 }
 
 .skTabsWrapper {
