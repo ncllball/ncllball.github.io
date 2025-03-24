@@ -7,11 +7,25 @@
 /* div.skAddBanner:nth-child(2), */
 
 .skAddBanner,
-.skRightTabs,
-.skCaption {
+.skRightTabs {
 	display: none !important;
 }
 
+.skCaption {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 7px;
+	background-image:
+		url(https://res.cloudinary.com/little-league/image/upload/c_limit,dpr_auto,h_14,w_1102,q_auto,c_fill,g_face/v1604087311/red-lines-spacer-5f9c6e0f7865e.svg);
+	background-repeat: repeat;
+	background-size: cover;
+	margin-top: 0px;
+	text-align: left;
+	margin-bottom: 0px;
+	background-image: linear-gradient(135deg, #ffffff 5%, #e60707 5%, #e60707 25%, #ffffff 25%, #ffffff 50%, #ffffff 50%, #ffffff 55%, #e60707 55%, #e60707 75%, #ffffff 75%, #ffffff 100%);
+	background-size: 4px 4px;
+}
 .skTabsWrapper {
 	display: table-cell;
 	width: calc(100% - calculateSpacing(32));
