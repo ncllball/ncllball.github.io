@@ -8,7 +8,8 @@
 
 .skAddBanner,
 .skRightTabs,
-.skTabHeading {
+.skTabHeading,
+.skCaption {
 	display: none !important;
 }
 
