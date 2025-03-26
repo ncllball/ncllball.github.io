@@ -7,99 +7,33 @@
 /* div.skAddBanner:nth-child(2), */
 
 @font-face {
-    font-family: 'Prohibition Lines';
-    src: url('Prohibition-Lines.eot');
-    src: local('Prohibition Lines'), local('Prohibition-Lines'),
-        url('Prohibition-Lines.eot?#iefix') format('embedded-opentype'),
-        url('Prohibition-Lines.woff2') format('woff2'),
-        url('Prohibition-Lines.woff') format('woff'),
-        url('Prohibition-Lines.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Prohibition-Regular';
+  src: url('Prohibition-Regular.woff2') format('woff2'),
+       url('Prohibition-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Prohibition Round';
-    src: url('Prohibition-RoundOblique.eot');
-    src: local('Prohibition Round Oblique'), local('Prohibition-RoundOblique'),
-        url('Prohibition-RoundOblique.eot?#iefix') format('embedded-opentype'),
-        url('Prohibition-RoundOblique.woff2') format('woff2'),
-        url('Prohibition-RoundOblique.woff') format('woff'),
-        url('Prohibition-RoundOblique.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Prohibition-Block';
+  src: url('Prohibition-Block.woff2') format('woff2'),
+       url('Prohibition-Block.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Prohibition Rough';
-    src: url('Prohibition-RoughOblique.eot');
-    src: local('Prohibition Rough Oblique'), local('Prohibition-RoughOblique'),
-        url('Prohibition-RoughOblique.eot?#iefix') format('embedded-opentype'),
-        url('Prohibition-RoughOblique.woff2') format('woff2'),
-        url('Prohibition-RoughOblique.woff') format('woff'),
-        url('Prohibition-RoughOblique.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Prohibition-BlockShadow';
+  src: url('Prohibition-BlockShadow.woff2') format('woff2'),
+       url('Prohibition-BlockShadow.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Prohibition Round';
-    src: url('Prohibition-Round.eot');
-    src: local('Prohibition Round'), local('Prohibition-Round'),
-        url('Prohibition-Round.eot?#iefix') format('embedded-opentype'),
-        url('Prohibition-Round.woff2') format('woff2'),
-        url('Prohibition-Round.woff') format('woff'),
-        url('Prohibition-Round.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Prohibition-Lines';
+  src: url('Prohibition-Lines.woff2') format('woff2'),
+       url('Prohibition-Lines.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Prohibition';
-    src: url('Prohibition-Regular.eot');
-    src: local('Prohibition Regular'), local('Prohibition-Regular'),
-        url('Prohibition-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Prohibition-Regular.woff2') format('woff2'),
-        url('Prohibition-Regular.woff') format('woff'),
-        url('Prohibition-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Prohibition';
-    src: url('Prohibition-Oblique.eot');
-    src: local('Prohibition Oblique'), local('Prohibition-Oblique'),
-        url('Prohibition-Oblique.eot?#iefix') format('embedded-opentype'),
-        url('Prohibition-Oblique.woff2') format('woff2'),
-        url('Prohibition-Oblique.woff') format('woff'),
-        url('Prohibition-Oblique.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Prohibition Rough';
-    src: url('Prohibition-Rough.eot');
-    src: local('Prohibition Rough'), local('Prohibition-Rough'),
-        url('Prohibition-Rough.eot?#iefix') format('embedded-opentype'),
-        url('Prohibition-Rough.woff2') format('woff2'),
-        url('Prohibition-Rough.woff') format('woff'),
-        url('Prohibition-Rough.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Prohibition Lines';
-    src: url('Prohibition-LinesOblique.eot');
-    src: local('Prohibition Lines Oblique'), local('Prohibition-LinesOblique'),
-        url('Prohibition-LinesOblique.eot?#iefix') format('embedded-opentype'),
-        url('Prohibition-LinesOblique.woff2') format('woff2'),
-        url('Prohibition-LinesOblique.woff') format('woff'),
-        url('Prohibition-LinesOblique.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Prohibition-LinesOblique';
+  src: url('Prohibition-LinesOblique.woff2') format('woff2'),
+       url('Prohibition-LinesOblique.woff') format('woff');
 }
 
 .skAddBanner,
