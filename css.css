@@ -8,32 +8,32 @@
 
 @font-face {
   font-family: 'Prohibition-Regular';
-  src: url('Prohibition-Regular.woff2') format('woff2'),
-       url('Prohibition-Regular.woff') format('woff');
+  src: url('/fonts/Prohibition-Regular.woff2') format('woff2'),
+       url('/fonts/Prohibition-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Prohibition-Block';
-  src: url('Prohibition-Block.woff2') format('woff2'),
-       url('Prohibition-Block.woff') format('woff');
+  src: url('/fonts/Prohibition-Block.woff2') format('woff2'),
+       url('/fonts/Prohibition-Block.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Prohibition-BlockShadow';
-  src: url('Prohibition-BlockShadow.woff2') format('woff2'),
-       url('Prohibition-BlockShadow.woff') format('woff');
+  src: url('/fonts/Prohibition-BlockShadow.woff2') format('woff2'),
+       url('/fonts/Prohibition-BlockShadow.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Prohibition-Lines';
-  src: url('Prohibition-Lines.woff2') format('woff2'),
-       url('Prohibition-Lines.woff') format('woff');
+  src: url('/fonts/Prohibition-Lines.woff2') format('woff2'),
+       url('/fonts/Prohibition-Lines.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Prohibition-LinesOblique';
-  src: url('Prohibition-LinesOblique.woff2') format('woff2'),
-       url('Prohibition-LinesOblique.woff') format('woff');
+  src: url('/fonts/Prohibition-LinesOblique.woff2') format('woff2'),
+       url('/fonts/Prohibition-LinesOblique.woff') format('woff');
 }
 
 .skAddBanner,
