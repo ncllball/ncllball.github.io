@@ -503,3 +503,7 @@ updated {
 .button-bottom-margin {
 	margin-bottom: 13px;
 }
+
+.spaced-text {
+    margin-left: 10px;
+}
