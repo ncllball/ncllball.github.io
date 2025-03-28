@@ -507,3 +507,7 @@ updated {
 .spaced-text {
     margin-left: 10px;
 }
+
+.table-header-3 {
+	width: 33%;
+}
