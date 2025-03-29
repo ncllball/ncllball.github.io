@@ -1,0 +1,72 @@
+
+<style>
+  
+  .my-links a {
+  color: blue;
+  text-decoration: none;
+}
+
+.my-links a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+</style>
+
+<script>
+const linkContainers = document.querySelectorAll('.my-links'); // Find all elements with class "my-links"
+
+let allLinks = []; // Array for storing all links
+
+  linkContainers.forEach(container => {
+    // Find all links within a particular container
+    const links = container.querySelectorAll('a');
+
+    // Iterate over each link
+    links.forEach(link => {
+      let hrefValue = link.href;
+      allLinks.push(hrefValue); // Add the link to the allLinks array
+    });
+    // Add the container to the array
+  });
+
+// Now 'allLinks' is an array containing all the URLs
+console.log(allLinks);
+
+// Example: Create a simple list in a paragraph
+const listContainer = document.createElement('p');
+
+allLinks.forEach(url => {
+  const listItem = document.createElement('span');
+  listItem.textContent = url;
+  listContainer.appendChild(listItem);
+  listContainer.appendChild(document.createElement('br'))
+});
+
+document.body.appendChild(listContainer);
+
+</script>
+
+<html>
+<div class="my-links">
+    <a href="https://www.example.com">Example 1</a>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.stackoverflow.com">Stack Overflow</a>
+  </div>
+  
+  <div class="other-links">
+    <a href="https://www.wikipedia.org">Wikipedia</a>
+  </div>
+<!-- Put this div wherever you want the widget to be embedded -->
+<div id="gc-scoreboard-widget-oez8"></div>
+
+<!-- Put this before the closing </body> tag -->
+<script src="https://widgets.gc.com/static/js/sdk.v1.js"></script>
+<script>
+    window.GC.scoreboard.init({
+        target: "#gc-scoreboard-widget-oez8",
+        widgetId: "1007386e-b9a9-4209-b319-4cbf63cf9c4d",
+        maxVerticalGamesVisible: 4,
+    })
+</script>
+  </html>
