@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCLL Season Timeline</title>
+    <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
+    <style>
+        body {
+            color: #768390;
+            background: #FFF;
+            font-family: "Effra", Helvetica, sans-serif;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            text-align: left;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #3D4351;
+            margin-top: 0;
+        }
+
+        .example-header {
+            background: #3D4351;
+            color: #FFF;
+            font-weight: 300;
+            padding: 3em 1em;
+            text-align: left;
+        }
+
+        .example-header h1 {
+            color: #FFF;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .example-header p {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 700;
+        }
+
+        .container-fluid .row {
+            padding: 0 0 4em 0;
+        }
+
+        .container-fluid .row:nth-child(even) {
+            background: #F1F4F5;
+        }
+
+        .example-title {
+            text-align: left;
+            margin-bottom: 0px;
+            padding: 1em 0;
+            border-bottom: 1px solid #c7d4d8;
+        }
+
+        .example-title p {
+            margin: 0 auto;
+            font-size: 16px;
+            max-width: 400px;
+            display: inline;
+        }
+
+        /*================================== TIMELINE ==================================*/
+        /*------------------------------- GENERAL STYLES -------------------------------*/
+
+        .timeline {
+            line-height: 1.4em;
+            list-style: none;
+            margin: 0 auto; /* Center the timeline itself */
+            padding: 0;
+            width: 100%; /* Added to properly center when on larger screens*/
+            max-width: 1000px; /* added a max width to properly maintain proportions, and size of text */
+        }
+
+        .timeline h1,
+        .timeline h2,
+        .timeline h3,
+        .timeline h4,
+        .timeline h5,
+        .timeline h6 {
+            line-height: normal;
+        }
+
+        /*----- TIMELINE ITEM -----*/
+        .timeline-item {
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        /*----- TIMELINE INFO -----*/
+        .timeline-info {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: none;
+            margin: 0 0 0.5em 0;
+            text-transform: none;
+            white-space: nowrap;
+        }
+
+        /*----- TIMELINE MARKER -----*/
+        .timeline-marker {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 15px;
+        }
+
+        .timeline-marker:before {
+            background: #FF6B6B;
+            border: 3px solid transparent;
+            border-radius: 100%;
+            content: "";
+            display: block;
+            height: 15px;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 15px;
+            transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+        }
+
+        .timeline-marker:after {
+            content: "";
+            width: 1px;
+            background: #CCD5DB;
+            display: block;
+            position: absolute;
+            top: 30px;
+            bottom: 0;
+            left: 10px;
+        }
+
+        .timeline-item:last-child .timeline-marker:after {
+            content: none;
+        }
+
+        .timeline-item:not(.period):hover .timeline-marker:before {
+            background: transparent;
+            border: 4px solid #FF6B6B;
+        }
+
+        /*----- TIMELINE CONTENT -----*/
+
+        .timeline-content {
+            padding-bottom: 40px;
+        }
+
+        .timeline-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /*----- TIMELINE PERIOD -----*/
+
+        .period {
+            padding: 0;
+        }
+
+        .period .timeline-info {
+            display: none;
+        }
+
+        .period .timeline-marker:before {
+            background: transparent;
+            content: "";
+            width: 15px;
+            height: auto;
+            border: none;
+            border-radius: 0;
+             top: 0;
+             bottom: 30px;
+            position: absolute;
+        }
+
+        .period .timeline-marker:after {
+            content: "";
+            height: 32px;
+            top: auto;
+        }
+
+        .period .timeline-content {
+            padding: 40px 0 70px;
+        }
+
+        .period .timeline-title {
+            margin: 0;
+
+        }
+
+        /*----------------------------------------------MOD: TIMELINE SPLIT---------------------------------------------*/
+        @media (min-width: 768px) {
+
+            .timeline-split .timeline,
+            .timeline-centered .timeline {
+                display: table;
+            }
+
+            .timeline-split .timeline-item,
+            .timeline-centered .timeline-item {
+                display: table-row;
+                padding: 0;
+            }
+
+            .timeline-split .timeline-info,
+            .timeline-centered .timeline-info,
+            .timeline-split .timeline-marker,
+            .timeline-centered .timeline-marker,
+            .timeline-split .timeline-content,
+            .timeline-centered .timeline-content,
+            .timeline-split .period .timeline-info {
+                display: table-cell;
+                vertical-align: top;
+            }
+
+            .timeline-split .timeline-marker,
+            .timeline-centered .timeline-marker {
+                position: relative;
+            }
+
+            .timeline-split .timeline-content,
+            .timeline-centered .timeline-content {
+                padding-left: 30px;
+            }
+
+            .timeline-split .timeline-info,
+            .timeline-centered .timeline-info {
+                padding-right: 30px;
+            }
+
+          .timeline-split .period .timeline-title,
+           .timeline-centered .period .timeline-title {
+                position: relative;
+                left: -115px;
+            }
+        }
+
+        /*----------------------------------------------MOD: MARKER OUTLINE----------------------------------------------*/
+        .marker-outline .timeline-marker:before {
+            background: transparent;
+            border-color: #FF6B6B;
+        }
+
+        .marker-outline .timeline-item:hover .timeline-marker:before {
+            background: #FF6B6B;
+        }
+        .event-title {
+              text-align: left !important;
+        }
+        .tags_button {
+             background-color: rgba(220, 220, 220, 0.7);
+              /* Gainsboro background with opacity (0.7) */
+            color: #000000; /* Black text color */
+             border: 1px solid #B0B0B0;
+             /* Border with a solid color */
+            padding: 2px 5px;
+              /* Add some padding */
+            margin-left: 5px;
+              font-size: 10px;
+               /* Increase the font size */
+            cursor: pointer;
+               /* Add a pointer cursor on hover */
+            border-radius: 6px;
+               /* Rounded corners */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+               /* Subtle shadow */
+            transition: background-color 0.3s, box-shadow 0.3s;
+               /* Smooth transition for hover effect */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+ .tags_button:hover {
+            background-color: rgba(169, 169, 169, 0.7);
+               /* Darker Gainsboro on hover with opacity (0.7) */
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+               /* Slightly larger shadow on hover */
+        }
+	    h3.timeline-title {
+		      font-weight: 600;
+		      font-size: 18px;
+	    }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="alert-header"><p>This page is currently under construction. Use at your own risk and check back soon for the finished product!</p></div>
+
+        <div class="row example-split">
+            <div class="col-md-12 example-title">
+                <h1 class="left">NCLL Season Timeline</h1>
+                <p>Planning for the 2025 season is underway. Below is a rough sketch
+                    of what our season holds including
+                    registration openings, closings, team selection, start of
+                    practice and games, etc. Unless otherwise
+                    noted, the dates are applicable to both baseball and softball
+                    programs.</p>
+            </div>
+            <div class="col-xs-12">
+                <ul class="timeline timeline-split">
+
+                    <li class="timeline-item period">
+                        <div class="timeline-info"></div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h2 class="event-title timeline-title">December
+                                2024</h2>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>December 1, 2024</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="event-title timeline-title">Registration
+                                Opens</h3>
+                            <p> All Divisions.<button class="tags_button">learn
+                                    more...</button></p>
+                        </div>
+                    </li>
+                    <li class="timeline-item period">
+                        <div class="timeline-info"></div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h2 class="event-title timeline-title">January 2025</h2>
+                        </div>
+                    </li>
+                     <li class="timeline-item">
+                     <div class="timeline-info">
+                        <span>January 11, 2025</span>
+                    </div>
+                     <div class="timeline-marker"></div>
+                         <div class="timeline-content">
+                            <h3 class="event-title timeline-title">Softball Winter
+                                Training starts</h3>
+                            <p> SB: Juniors / Majors / AAA <button
+                                class="tags_button">learn more...</button></p>
+                        </div>
+                   </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>January 25, 2025</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="event-title timeline-title">Assessments -
+                                Baseball</h3>
+                            <p>BB: Majors / AAA, A/AA 1pm - 5pm @Robert Eagle
+                                Staff<button class="tags_button">learn
+                                    more...</button></p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>January 31, 2025</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="event-title timeline-title">Registration
+                                "Closes" (goes to waitlist)</h3>
+                            <p>Teen Baseball, SB: Juniors / Majors / AAA, BB: Majors
+                                / AAA<button class="tags_button">learn
+                                    more...</button></p>
+                         </div>
+                    </li>
+                     <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 class="event-title timeline-title">February
+                                    2025</h2>
+                            </div>
+                         </li>
+                     <li class="timeline-item">
+                         <div class="timeline-info">
+                                <span>February 8, 2025</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                         <h3 class="event-title timeline-title">Assessments -
+                                Softball</h3>
+                            <p>12pm - 5pm @? <button class="tags_button">learn
+                                    more...</button></p>
+                        </div>
+                     </li>
+                     <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>February 13, 2025</span>
+                        </div>
+                         <div class="timeline-marker"></div>
+                         <div class="timeline-content">
+                            <h3 class="event-title timeline-title">Team Formations
+                                Done</h3>
+                                <p>Teen Baseball, SB: Juniors / Majors / AAA, BB: Majors
+                                    / AAA <button class="tags_button">learn
+                                        more...</button></p>
+                            </div>
+                      </li>
+                        <li class="timeline-item">
+                         <div class="timeline-info">
+                                <span>February 14, 2025</span>
+                         </div>
+                          <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="event-title timeline-title">Registration
+                                    "Closes" (goes to waitlist)</h3>
+                                <p> A/AA <button class="tags_button">learn
+                                        more...</button></p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                         <div class="timeline-info">
+                                <span>February 17-21, 2025</span></div>
+                         <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="event-title timeline-title">SPS Mid-winter
+                                    break</h3>
+                                <p>Plan for kids to be gone the weekend before and after.<button
+                                        class="tags_button">learn more...</button></p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                             <div class="timeline-info">
+                         <span>February 23, 2025</span></div>
+                          <div class="timeline-marker"></div>
+                          <div class="timeline-content">
+                                <h3 class="event-title timeline-title">A Fundamentals
+                                    Clinic 1 (Mark Lindon)</h3>
+                                <p> <button class="tags_button">learn
+                                        more...</button></p>
+                            </div>
+                       </li>
+                        <li class="timeline-item">
+                         <div class="timeline-info">
+                                <span>February 27, 2025</span>
+                        </div>
+                          <div class="timeline-marker"></div>
+                          <div class="timeline-content">
+                             <h3 class="event-title timeline-title">Coach Safety and
+                                    Orientation</h3>
+                                <p> Date can change but needs to be completed before
+                                    practices start <button
+                                        class="tags_button">learn more...</button></p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                          <div class="timeline-info">
+                                <span>February 28, 2025</span>
+                        </div>
+                           <div class="timeline-marker"></div>
+                           <div class="timeline-content">
+                                <h3 class="event-title timeline-title">Registration
+                                    "Closes" (goes to waitlist)</h3>
+                                <p> All Divisions<button class="tags_button">learn
+                                        more...</button></p>
+                         </div>
+                        </li>
+                         <li class="timeline-item">
+                         <div class="timeline-info">
+                                 <span>February 28, 2025</span>
+                         </div>
+                          <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="event-title timeline-title">Registration
+                                    "Closes" (goes to waitlist)</h3>
+                                 <p> T-Ball<button class="tags_button">learn
+                                        more...</button></p>
+                             </div>
+                        </li>
+                        <li class="timeline-item period">
+                         <div class="timeline-info"></div>
+                          <div class="timeline-marker"></div>
+                             <div class="timeline-content">
+                                  <h2 class="event-title timeline-title">March 2025</h2>
+                                 </div>
+                         </li>
+                         <li class="timeline-item">
+                         <div class="timeline-info">
+                                <span>March 1, 2025</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                    <h3 class="event-title timeline-title">PRACTICES
+                                        start</h3>
+                                <p> SB: Juniors / Majors / AAA <button
+                                        class="tags_button">learn more...</button></p>
+                              </div>
+                        </li>
+                         <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>March 2, 2025</span>
+                           </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                  <h3 class="event-title timeline-title">AA
+                                        Pitching/Catching Clinic 1 (Focus/Hiv)</h3>
+                                    <p> <button class="tags_button">learn
+                                            more...</button></p>
+                              </div>
+                         </li>
+                        <li class="timeline-item">
+                                <div class="timeline-info">
+                                <span>March 3, 2025</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="event-title timeline-title">Team formations
+                                        done</h3>
+                                    <p>A/AA <button class="tags_button">learn
+                                            more...</button></p>
+                                </div>
+                            </li>
+                              <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>March 3, 2025</span>
+                              </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="event-title timeline-title">A Fundamentals
+                                        Clinic 2 (Mark Lindon)</h3>
+                                    <p> <button class="tags_button">learn
+                                            more...</button></p>
+                                </div>
+                           </li>
+                            <li class="timeline-item">
+                             <div class="timeline-info">
+                                 <span>March 4, 2025</span>
+                              </div>
+                               <div class="timeline-marker"></div>
+                               <div class="timeline-content">
+                                    <h3 class="event-title timeline-title">Mark Linden
+                                        trainings</h3>
+                                      <p>BB: Majors / AAA Tuesday sessions @6pm-8:30pm, Sunday
+                                         session @9:45am-11: <button
+                                                class="tags_button">learn more...</button></p>
+                                  </div>
+                           </li>
+                           <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>March 10, 2025</span>
+                           </div>
+                             <div class="timeline-marker"></div>
+                          <div class="timeline-content">
+                                    <h3 class="event-title timeline-title">Team formations
+                                        done</h3>
+                                    <p> T-Ball <button class="tags_button">learn
+                                          more...</button></p>
+                            </div>
+                         </li>
+                         <li class="timeline-item">
+                             <div class="timeline-info">
+                                  <span>March 10, 2025</span>
+                           </div>
+                                 <div class="timeline-marker"></div>
+                                 <div class="timeline-content">
+                                       <h3 class="event-title timeline-title">AA
+                                        Pitching/Catching Clinic 1 (Focus/Hiv)</h3>
+                                    <p><button class="tags_button">learn
+                                            more...</button></p>
+                               </div>
+                         </li>
+                              <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>March 10, 2025</span>
+                           </div>
+                             <div class="timeline-marker"></div>
+                               <div class="timeline-content">
+                                <h3 class="event-title timeline-title"> Umpire
+                                        Orientation 1</h3>
+                                    <p> <button class="tags_button">learn more...</button>
+                                  </p>
+                               </div>
+                         </li>
+                         <li class="timeline-item">
+                                  <div class="timeline-info">
+                                   <span>March 15, 2025</span>
+                             </div>
+                                 <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                   <h3 class="event-title timeline-title">PRACTICES
+                                        start</h3>
+                                   <p> A/AA <button class="tags_button">learn
+                                            more...</button></p>
+                               </div>
+                          </li>
+                          <li class="timeline-item">
+                         <div class="timeline-info">
+                              <span>March 15, 2025</span>
+                         </div>
+                              <div class="timeline-marker"></div>
+                              <div class="timeline-content">
+                                   <h3 class="event-title timeline-title">Umpire Mechanics
+                                        Clinic 1</h3>
+                                    <p> <button class="tags_button">learn
+                                            more...</button></p>
+                             </div>
+                          </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info">
+                             <span>March 18, 2025</span>
+                          </div>
+                             <div class="timeline-marker"></div>
+                              <div class="timeline-content">
+                                 <h3 class="event-title timeline-title">Umpire
+                                        Orientation 2</h3>
+                                 <p> <button class="tags_button">learn more...</button>
+                                     </p>
+                             </div>
+                        </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                <span>March 18, 2025</span>
+                            </div>
+                                <div class="timeline-marker"></div>
+                             <div class="timeline-content">
+                                 <h3 class="event-title timeline-title">Mark Linden
+                                       trainings</h3>
+                                    <p> A/AA Tuesday sessions @6pm-8:30pm, Sunday session
+                                        @9:45am-11: <button
+                                            class="tags_button">learn more...</button> </p>
+                                </div>
+                             </li>
+                           <li class="timeline-item">
+                          <div class="timeline-info">
+                                <span>March 22, 2025</span>
+                            </div>
+                             <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                  <h3 class="event-title timeline-title">GAMES start</h3>
+                              <p>BB: Majors / AAA<button class="tags_button">learn
+                                 more...</button> </p>
+                          </div>
+                       </li>
+                         <li class="timeline-item">
+                            <div class="timeline-info">
+                                  <span>March 23, 2025</span>
+                             </div>
+                             <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="event-title timeline-title">Umpire Mechanics
+                                     Clinic 2</h3>
+                                    <p><button class="tags_button">learn more...</button>
+                                   </p>
+                                </div>
+                         </li>
+                            <li class="timeline-item">
+                            <div class="timeline-info">
+                                   <span>March 23, 2025</span>
+                             </div>
+                              <div class="timeline-marker"></div>
+                             <div class="timeline-content">
+                                <h3 class="event-title timeline-title">Mark Linden
+                                        trainings</h3>
+                                    <p> T-Ball Tuesday sessions @6pm-8:30pm, Sunday session
+                                        @9:45am-11: <button
+                                       class="tags_button">learn more...</button> </p>
+                           </div>
+                         </li>
+                            <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>March 29, 2025</span>
+                           </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                    <h3 class="event-title timeline-title">PRACTICES
+                                        start</h3>
+                                 <p> T-Ball <button class="tags_button">learn
+                                              more...</button> </p>
+                                </div>
+                             </li>
+                           <li class="timeline-item">
+                           <div class="timeline-info">
+                                <span>March 29, 2025</span>
+                           </div>
+                           <div class="timeline-marker"></div>
+                             <div class="timeline-content">
+                                  <h3 class="event-title timeline-title">GAMES start</h3>
+                                <p> A/AA <button class="tags_button">learn
+                                                more...</button> </p>
+                              </div>
+                             </li>
+                                <li class="timeline-item period">
+                                 <div class="timeline-info"></div>
+                                 <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h2 class="event-title timeline-title">April 2025</h2>
+                                </div>
+                            </li>
+                                <li class="timeline-item">
+                           <div class="timeline-info">
+                                 <span>April 5, 2025</span>
+                           </div>
+                           <div class="timeline-marker"></div>
+                             <div class="timeline-content">
+                                 <h3 class="event-title timeline-title">GAMES start</h3>
+                                <p>T-Ball<button class="tags_button">learn
+                                               more...</button> </p>
+                              </div>
+                            </li>
+                            <li class="timeline-item">
+                             <div class="timeline-info">
+                                 <span>April 14-18, 2025</span>
+                          </div>
+                             <div class="timeline-marker"></div>
+                             <div class="timeline-content">
+                                 <h3 class="event-title timeline-title">SPS Spring
+                                        break</h3>
+                                    <p>Plan for kids to be gone the weekend before and
+                                        after<button class="tags_button">learn
+                                            more...</button></p>
+                            </div>
+                          </li>
+                             <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>April 27, 2025</span>
+                         </div>
+                                 <div class="timeline-marker"></div>
+                           <div class="timeline-content">
+                                <h3 class="event-title timeline-title">Mariners Little
+                                        League Day 1</h3>
+                                  <p>official parade day<button class="tags_button">learn
+                                        more...</button></p>
+                          </div>
+                         </li>
+                           <li class="timeline-item period">
+                             <div class="timeline-info"></div>
+                             <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                  <h2 class="event-title timeline-title">May 2025</h2>
+                                </div>
+                            </li>
+                             <li class="timeline-item">
+                             <div class="timeline-info">
+                                 <span>May 9, 2025</span>
+                             </div>
+                              <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="event-title timeline-title">All Stars
+                                        applications due</h3>
+                                   <p>SB: Juniors / Majors / AAA, BB: Majors / AAA <button
+                                       class="tags_button">learn
+                                              more...</button> </p>
+                               </div>
+                          </li>
+                         <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>May 15, 2025</span>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                    <h3 class="event-title timeline-title">All Stars
+                                        tryouts</h3>
+                                  <p> Teen Baseball, BB: Majors / AAA May 15th- can start
+                                    tryouts, naming head coach is only thing
+                                    that needs to be locked into these dates <button
+                                                class="tags_button">learn more...</button>
+                                 </p>
+                             </div>
+                         </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                     <span>May 20, 2025</span>
+                              </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                   <h3 class="event-title timeline-title">Regular season
+                                        ends</h3>
+                                  <p>SB: Juniors / Majors / AAA, BB: Majors / AAA <button
+                                                class="tags_button">learn
+                                                more...</button> </p>
+                              </div>
+                          </li>
+                           <li class="timeline-item">
+                          <div class="timeline-info">
+                                 <span>May 21, 2025</span>
+                           </div>
+                             <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                    <h3 class="event-title timeline-title">Post season
+                                        tournament</h3>
+                                   <p> SB: Juniors / Majors / AAA, BB: Majors / AAA<button
+                                        class="tags_button">learn
+                                                more...</button> </p>
+                              </div>
+                            </li>
+                              <li class="timeline-item">
+                            <div class="timeline-info">
+                               <span>May 26, 2025</span>
+                            </div>
+                                <div class="timeline-marker"></div>
+                                 <div class="timeline-content">
+                                    <h3 class="event-title timeline-title">Memorial Day</h3>
+                                    <p> <button class="tags_button">learn more...</button>
+                                 </p>
+                              </div>
+                          </li>
+                         <li class="timeline-item">
+                            <div class="timeline-info">
+                                <span>May 28, 2025</span>
+                            </div>
+                             <div class="timeline-marker"></div>
+                              <div class="timeline-content">
+                                <h3 class="event-title timeline-title">NCLL home run
+                                     derby</h3>
+                                   <p> BB: Majors / AAA, A/AA <button
+                                              class="tags_button">learn more...</button></p>
+                              </div>
+                         </li>
+                            <li class="timeline-item period">
+                           <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                           <div class="timeline-content">
+                                 <h2 class="event-title timeline-title">June 2025</h2>
+                              </div>
+                           </li>
+                         <li class="timeline-item">
+                            <div class="timeline-info">
+                                 <span>June 1, 2025</span>
+                            </div>
+                             <div class="timeline-marker"></div>
+                               <div class="timeline-content">
+                                 <h3 class="event-title timeline-title">Mariners Little
+                                        League Day 2</h3>
+                                   <p> additional fundraising day <button
+                                     class="tags_button">learn more...</button></p>
+                                 </div>
+                              </li>
+                              <li class="timeline-item">
+                           <div class="timeline-info">
+                                    <span>June 7, 2025</span>
+                            </div>
+                              <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="event-title timeline-title">Regular season
+                                        ends</h3>
+                                    <p>A/AA, T-Ball<button class="tags_button">learn
+                                                more...</button></p>
+                             </div>
+                          </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

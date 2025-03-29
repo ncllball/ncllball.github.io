@@ -1,0 +1,291 @@
+<style>
+    .note {
+        font-size: 120%;
+        color: red;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 600;
+        color: #000;
+        letter-spacing: 0;
+    }
+    h1 {
+        font-size: 26px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: left;
+        line-height: 32px;
+        width: fit-content;
+    }
+    h2 {
+        font-size: 20px;
+        color: black;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: left;
+        line-height: 30px;
+        margin: 0 0 18px 0;
+        padding: 0 0 0 0;
+    }
+    h3 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: left;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    h4 {
+        font-size: 16px;
+        color: black;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: left;
+    }
+    h5 {
+        font-size: 14px;
+        color: red;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: left;
+    }
+    h6 {
+        font-size: 20px;
+        color: red;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: left;
+    }
+    #span1 {
+
+    }
+    span {
+        font-weight: 600;
+    }
+    span3 {
+        background-color: rgb(204, 204, 204);
+    }
+    p {
+        text-align: left;
+        font-size: 16px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    ul {
+        text-align: left;
+        font-size: 16px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    li {
+        text-align: left;
+        font-size: 16px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    ul li {
+        list-style-type: disc;
+    }
+    .BoldText {
+        font-weight: bold;
+    }
+    .lightbold {
+        font-weight: 400;
+    }
+    html,
+    body {
+        text-align: left;
+    }
+    .left {
+        text-align: left !important;
+        float: none;
+        margin: 0 0 18px 0;
+        padding: 0 0 0 0;
+    }
+    h1.left {
+        text-align: left !important;
+        float: none;
+        margin: 0 0 18px 0;
+        padding: 0 0 0 0;
+        background-color: gainsboro;
+        width: fit-content;
+    }
+    h2.left {
+        text-align: left !important;
+        margin: 0px 0 18px 0;
+        padding: 1px 10px 1px 0px;
+        /* background-color: rgb(0, 0, 0); */
+        color: RGB(0, 1, 58) !important;
+    }
+    h2.left::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 10px; /* Adjust to match your SVG's height */
+        background-image: url("https://res.cloudinary.com/little-league/image/upload/c_limit,dpr_auto,h_14,w_1102,q_auto,c_fill,g_face/v1604087311/red-lines-spacer-5f9c6e0f7865e.svg");
+        background-repeat: repeat;
+        background-size: contain;
+        margin-top: 20px; /* Optional spacing */
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    h4.left {
+        margin: 2px 0 0 0;
+    }
+    .images {
+        right: 0;
+        float: right;
+        padding-top: 55px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    table caption {
+        padding: 0.5em 0;
+    }
+
+    .table_component {
+        overflow: auto;
+        width: 100%;
+        height: 15%;
+        margin-bottom: 10px;
+    }
+
+    .table_component table {
+        border: 1px solid #dededf;
+        height: 90%;
+        width: 100%;
+        table-layout:auto;
+        border-collapse: collapse;
+        border-spacing: 1px;
+        text-align: left;
+    }
+
+    .table_component th {
+        border: 1px solid #dededf;
+        background-color: #CD163F;
+        color: whitesmoke;
+        padding: 5px;
+        font-weight: 400;
+        font-size: 12px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .table_component td {
+        border: 1px solid #dededf;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 5px;
+        font-size: 13px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #softball-girls, #baseball-boys-and-girls {
+        margin-bottom: 10px;
+    }
+    .thumbnail {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+    a.ncll {
+    color: #CD163F!important; /* Normal state */
+    text-decoration: none; /* Remove underline */
+    }
+
+    a:visited.ncll {
+        color: #CD163F!important; /* Visited state */
+    }
+
+    a:hover.ncll {
+        color: #CD163F!important; /* Hover state */
+    }
+
+    a:active.ncll {
+        color: #CD163F!important; /* Active state */
+    }
+
+</style>
+
+<h1 id="registration-instructions" class="left">Registration Instructions (Scroll down to register and visit the FAQ)</h1>
+<h2 id="step-1-determine-eligibility-for-ncll" class="left">Step 1: Determine Eligibility for NCLL</h2>
+<ul>
+<li>North Central Little League (NCLL) is in Washington’s <a class="ncll divlinks" href="https://www.llwadistrict8.org/">District 8</a> and covers areas including Wallingford, Greenlake, Fremont, Phinney Ridge, Greenwood, and Ballard.</li>
+<li>To play for NCLL, your player must either live within NCLL boundaries or attend a school within those boundaries.</li>
+<li>Check the <a class="ncll divlinks" href="/Default.aspx?tabid=2114768">League Boundaries</a> page for details and a list of <a class="ncll divlinks" href="/Default.aspx?tabid=2114768">eligible schools</a>.</li>
+<li>While proof of residency or school attendance is not required during registration, players outside our boundary will need a waiver to play for NCLL. Note that such players won’t be eligible for post-season tournaments.</li>
+<li>For waiver information, please contact our <a class="ncll divlinks" href="mailto:registrar@ncllball.com">Registrar</a>. ⚾🌟</li>
+</ul>
+
+
+
+<!-- directives:[] -->
+<h2 id="step-2-determine-the-appropriate-division-for-your-player" class="left">Step 2: Determine the Appropriate Division for Your Player</h2>
+<p>During the registration process, you'll need to indicate the division for which you're registering. To make this decision, first determine your player's "league age":</p>
+<ul>
+<li><span>League Age: </span>In Little League, “league age” refers to the age a player will be on August 31 (Baseball) and December 31 (Softball) of the current year. It is used to determine a player’s eligibility for a particular division. Here’s how it works:
+
+</li>
+<li><span>Baseball Example:</span> If a player will be 9 years old on August 31, 2025, they are considered “league age 9” for the 2025 season.</li>
+<li><span>Softball Example:</span> If a player will be 9 years old on December 31, 2025, they are considered “league age 9” for the 2025 season. (Softball uses different dates). League age is not the same as chronological age (the age they are on their birthday).</li></ul>
+
+
+<p>Use the&nbsp;<span><a class="ncll divlinks" href="/Default.aspx?tabid=2114734">league age/division eligibility</a></span>&nbsp;to determine which division(s) your player is eligible for based on their league age.</p>
+<h4 id="assessments" class="left">Assessments</h4>
+<ul>
+<li>All players wishing to participate in AAA, Majors, or Junior divisions must attend <a class="ncll divlinks" href="/Default.aspx?tabid=2112173">assessments</a>, regardless of their previous division.</li>
+<li>The purpose of these assessments is to evaluate players' abilities and ensure competitive balance.</li>
+<li>Players will be notified of assessment dates, times, and locations via email.</li>
+<li>The Player Agent will conduct the assessments and make recommendations based on the players' skills and abilities.</li>
+</ul>
+<h4 id="team-assignments" class="left">Team Assignments</h4>
+<ul>
+<li>After registration, division placement, and assessments, your player will be assigned to a team.</li>
+<li>All players will be placed on a team.</li>
+<li>Team <a class="ncll divlinks" href="/Default.aspx?tabid=2112136">assignments</a> are typically finalized by late February, with adjustments made as necessary to maintain balance and accommodate late registrations.</li>
+</ul>
+<h4 id="special-cases" class="left">Special Cases</h4>
+<ul>
+<li><span>Requesting Higher Division:</span>&nbsp;You may request for your player to participate in a division higher than their eligibility. This request will be reviewed and approved only if appropriate. Factors considered include safety, previous coach feedback, team composition, and division balance.</li>
+</ul>
+<p><span>Note:</span>&nbsp;It is important to note that assessments are not tryouts. All players will be placed on a team, regardless of their assessment results. The assessments are used to ensure that players are placed in divisions where they can develop their skills and have a positive playing experience.</p>
+
+<h2 class="left" id="step-3-register-online">Step 3: Register Online</h2>
+<h4 class="left" id="request-program-division-and-team">Request Program, Division, and Team</h4>
+<ul>
+<li>During registration, specify your preferred program, division, and team for your player.</li>
+</ul>
+<h4 class="left" id="payment">Payment</h4>
+<ul>
+<li>Pay the registration fee at checkout using a credit card (Visa or MasterCard).</li>
+</ul>
+<h4 class="left" id="fees-and-financial-aid">Fees and Financial Aid</h4>
+<ul>
+<li>Visit the <a class="ncll divlinks" href="/Default.aspx?tabid=2114737">fees and financial aid</a> page for fees and information about assistance.</li>
+<li>NCLL believes that all children should have the opportunity to play, regardless of their family's financial situation.</li>
+<li>If you need a scholarship for your child, complete the Financial Aid form before registration.</li>
+<li>If approved, you will receive instructions on how to complete the registration process.</li>
+</ul>
+<h4 class="left" id="late-registration-and-waitlist">Late Registration and Waitlist</h4>
+<ul>
+<li>After the official registration period ends, registration will be accommodated based on available space.</li>
+<li>If your player's age group is closed, you should PLEASE add them to the waitlist.</li>
+<li>Your credit card will not be charged unless a spot becomes available for the player.</li>
+</ul>
+
+<h2 id="step-4-please-volunteer" class="left">Step 4: Please Volunteer</h2>
+<p>North Central Little League relies on the dedication of volunteers to thrive. Here’s how you can get involved:</p>
+<h4 id="club-level-or-team-level-positions" class="left">Club-Level or Team-Level Positions</h4>
+<ul>
+<li>Consider volunteering for roles within the league or specific teams.</li>
+<li>Your contribution makes a significant impact on the players’ experience.</li>
+</ul>
+<h4 id="volunteer-opportunities" class="left">Volunteer Opportunities</h4>
+<ul>
+<li>Visit our <a class="ncll" href="/Default.aspx?tabid=1932700">Volunteer Opportunities</a> page to see where we need help the most.</li>
+</ul>
+<h4 id="registration-for-volunteers" class="left">Registration for Volunteers</h4>
+<ul>
+<li>All volunteers must register online.</li>
+<li>If you have regular contact with players during games or practices, complete the online volunteer registration and submit to a routine background check.</li>
+<li>Within 48 hours of registering, you’ll receive an email from JDP (our background check vendor) with instructions. Please complete the questionnaire promptly.</li>
+</ul>
+<h4 id="questions-or-policies" class="left">Questions or Policies</h4>
+<ul>
+<li>For any other questions or to review our registration policies, contact the <a class="ncll" href="mailto:registrar@ncllball.com">Registrar</a>.</li>
+</ul>
