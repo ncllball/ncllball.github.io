@@ -511,3 +511,34 @@ updated {
 .table-header-3 {
 	width: 33%;
 }
+
+/* updates */
+
+.strike {
+  border-top: 4px solid #4CAF50; /* Green top border */
+  background-color: #f8f9fa; /* Very light grey background */
+  padding: 25px 20px 15px; /* More top padding */
+  margin: 30px 0;
+  position: relative; /* Needed for the label */
+}
+
+.strike::before {
+  content: "UPDATE";
+  position: absolute;
+  top: -13px; /* Position it overlapping the border */
+  left: 15px;
+  background-color: #f8f9fa; /* Same as box background to mask the border */
+  padding: 0 8px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #4CAF50; /* Match border color */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.strike p {
+  margin: 0;
+  color: #333;
+}
+/* Optional: Hide the strong tag if the ::before label is enough */
+/* .update-top-bar strong { display: none; } */
