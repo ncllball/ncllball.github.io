@@ -527,11 +527,11 @@ updated {
   position: absolute;
   top: -13px; /* Position it overlapping the border */
   left: 15px;
-  background-color: #f8f9fa; /* Same as box background to mask the border */
+  background-color: #019cde; /* Same as box background to mask the border */
   padding: 0 8px;
   font-size: 0.8em;
   font-weight: bold;
-  color: #4CAF50; /* Match border color */
+  color: #019cde; /* Match border color */
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
