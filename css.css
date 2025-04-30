@@ -300,6 +300,10 @@ table caption {
 	font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.table_component td:nth-child(3) {
+    text-align: left;
+}
+
 #softball-girls,
 #baseball-boys-and-girls {
 	margin-bottom: 10px;
