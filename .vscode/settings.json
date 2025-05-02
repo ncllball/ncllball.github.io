@@ -1,3 +1,4 @@
 {
-    "fiveServer.browser": []
+    "fiveServer.browser": [],
+    "editor.occurrencesHighlight": "off",
 }
