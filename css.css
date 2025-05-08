@@ -12,16 +12,19 @@
 .skCaption {
 	display: none !important;
 }
-.dfContainer h2.head, .dfContainer h2.head .title {
-    font-weight: 600;
-    font-size: 24px;
-    /* text-transform: Uppercase; */
-    padding: 10px 7px;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-family: "config-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wdth" 50, "wght" 600;
+
+.dfContainer h2.head,
+.dfContainer h2.head .title {
+	font-weight: 600;
+	font-size: 24px;
+	/* text-transform: Uppercase; */
+	padding: 10px 7px;
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-family: "config-variable", sans-serif;
+	font-variation-settings: "slnt" 0, "wdth" 50, "wght" 600;
 }
+
 /*.skCaption {
 content: "";
 display: block;
@@ -301,7 +304,7 @@ table caption {
 }
 
 .table_component td:nth-child(3) {
-    text-align: left;
+	text-align: left;
 }
 
 #softball-girls,
@@ -514,7 +517,7 @@ updated {
 }
 
 .spaced-text {
-    margin-left: 10px;
+	margin-left: 10px;
 }
 
 .table-header-3 {
@@ -524,30 +527,68 @@ updated {
 /* updates */
 
 .strike {
-  border-top: 4px solid #019cde; /* Green top border */
-  background-color: #f8f9fa; /* Very light grey background */
-  padding: 25px 20px 15px; /* More top padding */
-  margin: 30px 0;
-  position: relative; /* Needed for the label */
+	border-top: 4px solid #019cde;
+	/* Green top border */
+	background-color: #f8f9fa;
+	/* Very light grey background */
+	padding: 25px 20px 15px;
+	/* More top padding */
+	margin: 30px 0;
+	position: relative;
+	/* Needed for the label */
 }
 
 .strike::before {
-  content: "UPDATE";
-  position: absolute;
-  top: -13px; /* Position it overlapping the border */
-  left: 15px;
-  background-color: #f8f9fa; /* Same as box background to mask the border */
-  padding: 0 8px;
-  font-size: 0.8em;
-  font-weight: bold;
-  color: #019cde; /* Match border color */
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+	content: "UPDATE";
+	position: absolute;
+	top: -13px;
+	/* Position it overlapping the border */
+	left: 15px;
+	background-color: #f8f9fa;
+	/* Same as box background to mask the border */
+	padding: 0 8px;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #019cde;
+	/* Match border color */
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
 }
 
 .strike p {
-  margin: 0;
-  color: #333;
+	margin: 0;
+	color: #333;
 }
+
 /* Optional: Hide the strong tag if the ::before label is enough */
 /* .update-top-bar strong { display: none; } */
+
+.highlight {
+	background-color: gainsboro;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+.button {
+	display: inline-block;
+	background-color: #019cde;
+	/* Example button color */
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.button:hover {
+	background-color: #0056b3;
+}
+
+.contact-info {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	line-height: normal;
+	font-size: 16px;
+	font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+}
