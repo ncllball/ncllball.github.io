@@ -399,12 +399,12 @@ updated {
 }
 
 .footies p {
-	font-size: 12px;
+    font-size: 11px !important;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: #555;
 	line-height: normal;
 	margin: 0px;
-	padding: 0px;
+    padding: 3px 10px 3px 5px ! Important;
 }
 
 .footies a {
