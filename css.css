@@ -592,6 +592,13 @@ updated {
 	font-size: 16px;
 	font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
+.agechart {
+    margin-right: 5px;
+}
+
+.aoverb_button {
+    background-color: white;
+}
 
 .table_component table,
 .softball-table {
@@ -620,17 +627,41 @@ updated {
     float: left;
 }
 
-/* Button Styles */
-.agechart {
-    margin-right: 5px;
+.table_component .fit,
+.softball-table .fit {
+    vertical-align: middle;
 }
 
-.aoverb_button {
+.table_component .white-background,
+.white-background {
     background-color: white;
 }
 
-/* Typography and Spacing */
+.table_component td[colspan="9"],
+.softball-table td[colspan="9"] {
+    padding: 5px 5px;
+    background-color: white;
+    color: rgb(68, 68, 68);
+    line-height: normal;
+    border: none;
+}
+
+.table_component p,
+.softball-table p {
+    padding: 5px 0px 5px 0px;
+    font-size: 13px;
+}
+
+/* Removed .table_component p[style*="font-size: 12px"] */
+/* (This comment indicates a previous rule, you don't need to add this comment if it wasn't already in your new styles) */
+
+/* Added new classes */
 .division-title {
     line-height: 35px;
     font-size: 19px;
 }
+
+.footies_p {
+    font-size: 12px;
+}
+
