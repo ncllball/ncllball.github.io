@@ -613,10 +613,7 @@ updated {
     text-align: left;
 }
 
-.table_component th,
-.softball-table th {
-    /* background-color: #f5f5f5; */
-}
+/* Removed empty ruleset for .table_component th, .softball-table th */
 
 .table_component img,
 .softball-table img {
