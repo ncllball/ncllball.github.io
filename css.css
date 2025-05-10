@@ -594,9 +594,7 @@ updated {
 }
 
 
-.aoverb_button {
-    background-color: white;
-}
+
 
 .table_component table,
 .softball-table {
@@ -666,4 +664,7 @@ updated {
     padding: 0;
     position: absolute;
     right: 10px;
+}
+.aoverb_button {
+    background-color: white;
 }
