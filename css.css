@@ -649,10 +649,12 @@ updated {
 /* (This comment indicates a previous rule, you don't need to add this comment if it wasn't already in your new styles) */
 
 /* Added new classes */
+
 .division-title {
     line-height: 35px;
     font-size: 19px;
-	float: left;
+    float: left;
+    font-weight: 600;
 }
 
 .footies_p {
