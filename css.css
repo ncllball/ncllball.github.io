@@ -654,6 +654,7 @@ updated {
 .division-title {
     line-height: 35px;
     font-size: 19px;
+	float: left;
 }
 
 .footies_p {
