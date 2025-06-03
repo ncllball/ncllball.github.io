@@ -1,328 +1,4 @@
-.skAddBanner,
-.skRightTabs,
-.skTabHeading,
-.skCaption {
-    display: none !important;
-}
-
-.dfContainer h2.head,
-.dfContainer h2.head .title {
-    font-weight: 600;
-    font-size: 24px;
-    padding: 10px 7px;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-family: "config-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wdth" 50, "wght" 600;
-}
-
-.skTabsWrapper {
-    display: table-cell;
-    width: calc(100% - calculateSpacing(32));
-    background: #fff;
-    vertical-align: top;
-    padding: 0 0px 0 0;
-}
-
-.gainsboro-button {
-    background-color: rgba(220, 220, 220, 0.7);
-    color: #000000;
-    border: 1px solid #B0B0B0;
-    padding: 5px 10px;
-    font-size: 12px;
-    border-radius: 16px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, box-shadow 0.3s;
-    pointer-events: none;
-    cursor: not-allowed;
-}
-
-.gainsboro-button:hover {
-    background-color: rgba(169, 169, 169, 0.7);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.note {
-    font-size: 120%;
-    color: red;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 600;
-    color: #000;
-    letter-spacing: 0;
-}
-
-h1 {
-    font-size: 26px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-    line-height: 32px;
-    width: fit-content;
-}
-
-h2 {
-    font-size: 20px;
-    color: black;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-    line-height: 30px;
-    margin: 0 0 18px 0;
-    padding: 0;
-    color: RGB(0, 1, 58) !important;
-}
-
-h3 {
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-    font-size: 18px;
-    line-height: 26px;
-}
-
-h4 {
-    font-size: 16px;
-    color: black;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-}
-
-h5 {
-    font-size: 14px;
-    color: red;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-}
-
-h6 {
-    font-size: 20px;
-    color: red;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-}
-
-span {
-    font-weight: 600;
-}
-
-span3 {
-    background-color: rgb(204, 204, 204);
-}
-
-p,
-ul,
-li {
-    text-align: left;
-    font-size: 16px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-}
-
-ul li {
-    list-style-type: disc;
-}
-
-.BoldText {
-    font-weight: bold;
-}
-
-.lightbold {
-    font-weight: 400;
-}
-
-html,
-body {
-    text-align: left;
-}
-
-.left {
-    text-align: left !important;
-    float: none;
-    margin: 0 0 18px 0;
-    padding: 0;
-}
-
-h1.left {
-    background-color: gainsboro;
-    text-align: left !important;
-    float: none;
-    margin: 0 0 18px 0;
-    padding: 0;
-    width: fit-content;
-}
-
-h2.left {
-    text-align: left !important;
-    margin: 0 0 18px 0;
-    padding: 1px 0;
-    color: RGB(0, 1, 58) !important;
-}
-
-h2.left::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 7px;
-    background-repeat: repeat;
-    background-size: cover;
-    margin-top: 20px;
-    text-align: left;
-    margin-bottom: 20px;
-    background-image: linear-gradient(135deg, #ffffff 5%, #e60707 5%, #e60707 25%, #ffffff 25%, #ffffff 50%, #ffffff 50%,
-            #ffffff 55%, #e60707 55%, #e60707 75%, #ffffff 75%, #ffffff 100%);
-    background-size: 4px 4px;
-}
-
-h2.woohoo::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 7px;
-    background-repeat: repeat;
-    background-size: cover;
-    margin-top: 20px;
-    text-align: left;
-    margin-bottom: 20px;
-    background-image: linear-gradient(135deg, #ffffff 5%, #e60707 5%, #e60707 25%, #ffffff 25%, #ffffff 50%, #ffffff 50%,
-            #ffffff 55%, #e60707 55%, #e60707 75%, #ffffff 75%, #ffffff 100%);
-    background-size: 4px 4px;
-}
-
-h4.left {
-    margin: 2px 0 0 0;
-}
-
-.images {
-    right: 0;
-    float: right;
-    padding: 55px 0 20px 20px;
-}
-
-.container_right {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-}
-
-.top-right-image {
-    float: right;
-    max-width: 20%;
-    max-height: 175px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-
-table caption {
-    padding: 0.5em 0;
-}
-
-.table_component {
-    overflow: auto;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-}
-
-.table_component table {
-    border: 1px solid #dededf;
-    height: 90%;
-    width: 100%;
-    table-layout: auto;
-    border-collapse: collapse;
-    border-spacing: 1px;
-    text-align: left;
-}
-
-.table_component th {
-    border: 1px solid #dededf;
-    background-color: #CD163F;
-    color: whitesmoke;
-    padding: 5px;
-    font-weight: 400;
-    font-size: 12px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.table_component td {
-    border: 1px solid #dededf;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 5px;
-    font-size: 13px;
-    text-align: center;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.table_component td:nth-child(3) {
-    text-align: left;
-}
-
-#softball-girls,
-#baseball-boys-and-girls {
-    margin-bottom: 10px;
-}
-
-.thumbnail {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
-
-a.ncll {
-    color: #CD163F !important;
-    text-decoration: none;
-}
-
-a.ncll:visited {
-    color: #CD163F !important;
-}
-
-a.ncll:hover {
-    color: #CD163F !important;
-}
-
-a.ncll:active {
-    color: #CD163F !important;
-}
-
-.blurred-text {
-    color: transparent;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-}
-
-super {
-    vertical-align: super;
-    line-height: normal;
-    font-size: 9px;
-}
-
-.fit {
-    max-width: 100%;
-    white-space: nowrap;
-    line-height: normal;
-}
-
-.fitplus {
-    font-weight: 600;
-    text-align: right !important;
-}
-
-.fit td {
-    color: RGB(68, 68, 68) !important;
-}
-
-.agechart {
-    padding: 8px;
-    margin: 0 0 10px 0;
-}
-
+/* Core styles */
 :root {
     --color_red: #cd163f;
     --color_blue: #00013a;
@@ -334,400 +10,58 @@ super {
     --color_button: #f0f0f0;
 }
 
-updated {
-    color: #CD163F !important;
-    text-decoration: none;
-    font-size: 10px;
-    margin-top: 0;
-    position: relative;
-    vertical-align: top !important;
-}
-
-.footies {
-    font-size: 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #555;
-    margin-top: 10px;
-    border-top: 1px solid #ddd;
-    padding: 5px 0px 5px 0px;
-    line-height: normal;
-}
-
-.footies p {
-    font-size: 11px !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #555;
-    line-height: normal;
-    margin: 0px;
-    padding: 3px 10px 3px 5px ! Important;
-}
-
-.footies a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.footies a:hover {
-    text-decoration: underline;
-}
-
-.image-caption-container {
-    text-align: center;
-    padding: 25px;
-    width: 300px;
-    float: right;
-    display: block;
-}
-
-.image-caption-container figure {
-    display: inline-block;
-    margin: 0;
-}
-
-.image-caption-container img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.image-caption-container figcaption {
-    font-size: 12px;
-    color: #555;
-    margin-top: 10px;
-    width: 100%;
-    text-align: center;
-    line-height: normal;
-}
-
-.alert-header {
-    text-align: center;
-    padding: 20px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(135deg, #f2e427 25%, #ffffff 25%, #ffffff 50%, #f2e427 50%, #f2e427 75%, #ffffff 75%,
-            #ffffff 100%);
-    background-size: 6.00px 6.00px;
-}
-
-.alert-header p {
-    display: inline-block;
-    margin: 0 auto;
-    background-color: whitesmoke;
-    color: #333333;
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.alert-header p::before {
-    content: "⚠️ ";
-    font-size: 18px;
-}
-
-.alert-header p::after {
-    content: "⚠️ ";
-    font-size: 18px;
-}
-
-.quote {
-    font-weight: 600;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.author {
-    font-size: 14px;
-    color: #888;
-    text-align: right;
-    margin-right: 210px;
-    margin-bottom: 50px;
-}
-
-.button-bottom-margin {
-    margin-bottom: 13px;
-}
-
-.spaced-text {
-    margin-left: 10px;
-}
-
-.table-header-3 {
-    width: 33%;
-}
-
-.strike {
-    border-top: 4px solid #019cde;
-    background-color: #f8f9fa;
-    padding: 25px 20px 15px;
-    margin: 30px 0;
-    position: relative;
-}
-
-.strike::before {
-    content: "UPDATE";
-    position: absolute;
-    top: -13px;
-    left: 15px;
-    background-color: #f8f9fa;
-    padding: 0 8px;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: #019cde;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.strike p {
-    margin: 0;
-    color: #333;
-}
-
-.highlight {
-    background-color: gainsboro;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-.button {
-    display: inline-block;
-    background-color: #019cde;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-.contact-info {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    line-height: normal;
-    font-size: 16px;
+/* Base typography */
+html, body {
+    text-align: left;
     font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.table_component table,
-.softball-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.table_component th,
-.table_component td,
-.softball-table th,
-.softball-table td {
-    padding: 8px;
-    border: 1px solid #ccc;
-    text-align: left;
-}
-
-.table_component img,
-.softball-table img {
-    width: 50px;
-    height: 50px;
-    float: left;
-}
-
-.table_component .fit,
-.softball-table .fit {
-    vertical-align: middle;
-}
-
-.table_component .white-background,
-.white-background {
-    background-color: white;
-}
-
-.table_component td[colspan="9"],
-.softball-table td[colspan="9"] {
-    padding: 5px 5px;
-    background-color: white;
-    color: rgb(68, 68, 68);
-    line-height: normal;
-    border: none;
-}
-
-.table_component p,
-.softball-table p {
-    padding: 5px 0px 5px 0px;
-    font-size: 13px;
-}
-
-.division-title {
-    line-height: 35px;
-    font-size: 19px;
-    float: left;
-    font-weight: 600;
-}
-
-.footies_p {
-    font-size: 12px;
-}
-
-.ageCalcs {
-    position: absolute;
-    right: 25px;
-}
-
-.aoverb_button {
-    background-color: white;
-    margin: 0 0 0 10px;
-}
-
-.skAddBanner,
-.skRightTabs,
-.skTabHeading,
-.skCaption {
-    display: none !important;
-}
-
-.dfContainer h2.head,
-.dfContainer h2.head .title {
-    font-weight: 600;
-    font-size: 24px;
-    padding: 10px 7px;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-family: "config-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wdth" 50, "wght" 600;
-}
-
-.skTabsWrapper {
-    display: table-cell;
-    width: calc(100% - calculateSpacing(32));
-    background: #fff;
-    vertical-align: top;
-    padding: 0 0px 0 0;
-}
-
-.gainsboro-button {
-    background-color: rgba(220, 220, 220, 0.7);
-    color: #000000;
-    border: 1px solid #B0B0B0;
-    padding: 5px 10px;
-    font-size: 12px;
-    border-radius: 16px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, box-shadow 0.3s;
-    pointer-events: none;
-    cursor: not-allowed;
-}
-
-.gainsboro-button:hover {
-    background-color: rgba(169, 169, 169, 0.7);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.note {
-    font-size: 120%;
-    color: red;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color: #000;
     letter-spacing: 0;
+    text-align: left;
+    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
     font-size: 26px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
     line-height: 32px;
     width: fit-content;
 }
 
 h2 {
     font-size: 20px;
-    color: black;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
     line-height: 30px;
     margin: 0 0 18px 0;
     padding: 0;
 }
 
 h3 {
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
     font-size: 18px;
     line-height: 26px;
 }
 
 h4 {
     font-size: 16px;
-    color: black;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
 }
 
 h5 {
     font-size: 14px;
     color: red;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
 }
 
 h6 {
     font-size: 20px;
     color: red;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
 }
 
-span {
-    font-weight: 600;
-}
-
-span3 {
-    background-color: rgb(204, 204, 204);
-}
-
-p,
-ul,
-li {
+p, ul, li {
     text-align: left;
     font-size: 16px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
 
-ul li {
-    list-style-type: disc;
-}
-
-.BoldText {
-    font-weight: bold;
-}
-
-.lightbold {
-    font-weight: 400;
-}
-
-html,
-body {
-    text-align: left;
-}
-
+/* Layout classes */
 .left {
     text-align: left !important;
     float: none;
@@ -737,17 +71,10 @@ body {
 
 h1.left {
     background-color: gainsboro;
-    text-align: left !important;
-    float: none;
-    margin: 0 0 18px 0;
-    padding: 0;
     width: fit-content;
 }
 
 h2.left {
-    text-align: left !important;
-    margin: 0 0 18px 0;
-    padding: 1px 0;
     color: RGB(0, 1, 58) !important;
 }
 
@@ -757,13 +84,15 @@ h2.left::before {
     width: 100%;
     height: 7px;
     background-repeat: repeat;
-    background-size: cover;
-    margin-top: 20px;
-    text-align: left;
-    margin-bottom: 20px;
-    background-image: linear-gradient(135deg, #ffffff 5%, #e60707 5%, #e60707 25%, #ffffff 25%, #ffffff 50%, #ffffff 50%,
-            #ffffff 55%, #e60707 55%, #e60707 75%, #ffffff 75%, #ffffff 100%);
     background-size: 4px 4px;
+    margin: 20px 0;
+    background-image: linear-gradient(135deg, 
+        #ffffff 5%, #e60707 5%, 
+        #e60707 25%, #ffffff 25%, 
+        #ffffff 50%, #ffffff 50%,
+        #ffffff 55%, #e60707 55%, 
+        #e60707 75%, #ffffff 75%, 
+        #ffffff 100%);
 }
 
 h2.woohoo::after {
@@ -771,44 +100,77 @@ h2.woohoo::after {
     display: block;
     width: 100%;
     height: 10px;
-    background-image:
-        url("https://res.cloudinary.com/little-league/image/upload/c_limit,dpr_auto,h_14,w_1102,q_auto,c_fill,g_face/v1604087311/red-lines-spacer-5f9c6e0f7865e.svg");
+    margin: 20px 0;
+    background-image: url("https://res.cloudinary.com/little-league/image/upload/c_limit,dpr_auto,h_14,w_1102,q_auto,c_fill,g_face/v1604087311/red-lines-spacer-5f9c6e0f7865e.svg");
     background-repeat: repeat;
     background-size: contain;
-    margin-top: 20px;
-    text-align: left;
-    margin-bottom: 20px;
 }
 
-h4.left {
-    margin: 2px 0 0 0;
+/* Sports Connect overrides */
+.skAddBanner,
+.skRightTabs,
+.skTabHeading,
+.skCaption {
+    display: none !important;
 }
 
-.images {
-    right: 0;
-    float: right;
-    padding: 55px 0 20px 20px;
+.dfContainer h2.head,
+.dfContainer h2.head .title {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 10px 7px;
+    color: #ffffff;
+    font-family: "config-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 50, "wght" 600;
 }
 
-.container_right {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 10px;
+.skTabsWrapper {
+    display: table-cell;
+    width: calc(100% - calculateSpacing(32));
+    background: #fff;
+    vertical-align: top;
+    padding: 0;
 }
 
-.top-right-image {
-    float: right;
-    max-width: 20%;
-    max-height: 175px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+/* Components */
+.gainsboro-button {
+    background-color: rgba(220, 220, 220, 0.7);
+    color: #000000;
+    border: 1px solid #B0B0B0;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    pointer-events: none;
+    cursor: not-allowed;
 }
 
-table caption {
-    padding: 0.5em 0;
+.gainsboro-button:hover {
+    background-color: rgba(169, 169, 169, 0.7);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.button {
+    display: inline-block;
+    background-color: #019cde;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button-bottom-margin {
+    margin-bottom: 13px;
+}
+
+/* Table styles */
 .table_component {
     overflow: auto;
     width: 100%;
@@ -816,79 +178,74 @@ table caption {
     margin-bottom: 10px;
 }
 
-.table_component table {
-    border: 1px solid #dededf;
-    height: 90%;
+.table_component table,
+.softball-table {
     width: 100%;
-    table-layout: auto;
     border-collapse: collapse;
-    border-spacing: 1px;
-    text-align: left;
+    border: 1px solid #dededf;
 }
 
-.table_component th {
-    border: 1px solid #dededf;
+.table_component th,
+.softball-table th {
     background-color: #CD163F;
     color: whitesmoke;
-    padding: 5px;
+    padding: 8px;
     font-weight: 400;
     font-size: 12px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.table_component td {
-    border: 1px solid #dededf;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 5px;
-    font-size: 13px;
-    text-align: center;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.table_component td:nth-child(3) {
+    border: 1px solid #ccc;
     text-align: left;
 }
 
-#softball-girls,
-#baseball-boys-and-girls {
-    margin-bottom: 10px;
+.table_component td,
+.softball-table td {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    text-align: left;
 }
 
-.thumbnail {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
+.table_component img,
+.softball-table img {
+    width: 50px;
+    height: 50px;
+    float: left;
 }
 
-a.ncll {
-    color: #CD163F !important;
-    text-decoration: none;
-}
-
-a.ncll:visited {
-    color: #CD163F !important;
-}
-
-a.ncll:hover {
-    color: #CD163F !important;
-}
-
-a.ncll:active {
-    color: #CD163F !important;
-}
-
-.blurred-text {
-    color: transparent;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-}
-
-super {
-    vertical-align: super;
+.table_component td[colspan="9"],
+.softball-table td[colspan="9"] {
+    padding: 5px;
+    background-color: white;
+    color: rgb(68, 68, 68);
     line-height: normal;
-    font-size: 9px;
+    border: none;
+}
+
+.table_component p,
+.softball-table p {
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+/* Helper classes */
+.note {
+    font-size: 120%;
+    color: red;
+}
+
+.highlight {
+    background-color: gainsboro;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.BoldText {
+    font-weight: bold;
+}
+
+.lightbold {
+    font-weight: 400;
 }
 
 .fit {
@@ -902,52 +259,24 @@ super {
     text-align: right !important;
 }
 
-.fit td {
-    color: RGB(68, 68, 68) !important;
+.spaced-text {
+    margin-left: 10px;
 }
 
-.agechart {
-    padding: 8px;
-    margin: 0 0 10px 0;
-}
-
-:root {
-    --color_red: #cd163f;
-    --color_blue: #00013a;
-    --color_tan: #e2ddca;
-    --color_richblue: #019cde;
-    --color_orange: #ff6900;
-    --color_lightgray: gainsboro;
-    --color_darkgray: RGB(68, 68, 68);
-    --color_button: #f0f0f0;
-}
-
-updated {
-    color: #CD163F !important;
-    text-decoration: none;
-    font-size: 10px;
-    margin-top: 0;
-    position: relative;
-    vertical-align: top !important;
-}
-
+/* Footies */
 .footies {
     font-size: 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #555;
     margin-top: 10px;
     border-top: 1px solid #ddd;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 0;
     line-height: normal;
 }
 
 .footies p {
     font-size: 11px !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #555;
-    line-height: normal;
-    margin: 0px;
-    padding: 3px 10px 3px 5px ! Important;
+    margin: 0;
+    padding: 3px 10px 3px 5px !important;
 }
 
 .footies a {
@@ -959,44 +288,30 @@ updated {
     text-decoration: underline;
 }
 
-.image-caption-container {
-    text-align: center;
-    padding: 25px;
-    width: 300px;
-    float: right;
-    display: block;
+/* Links */
+a.ncll {
+    color: #CD163F !important;
+    text-decoration: none;
 }
 
-.image-caption-container figure {
-    display: inline-block;
-    margin: 0;
+a.ncll:visited,
+a.ncll:hover,
+a.ncll:active {
+    color: #CD163F !important;
 }
 
-.image-caption-container img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.image-caption-container figcaption {
-    font-size: 12px;
-    color: #555;
-    margin-top: 10px;
-    width: 100%;
-    text-align: center;
-    line-height: normal;
-}
-
+/* Special elements */
 .alert-header {
     text-align: center;
     padding: 20px;
-    border: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(135deg, #f2e427 25%, #ffffff 25%, #ffffff 50%, #f2e427 50%, #f2e427 75%, #ffffff 75%,
-            #ffffff 100%);
-    background-size: 6.00px 6.00px;
+    background-image: linear-gradient(135deg, 
+        #f2e427 25%, #ffffff 25%, 
+        #ffffff 50%, #f2e427 50%, 
+        #f2e427 75%, #ffffff 75%,
+        #ffffff 100%);
+    background-size: 6px 6px;
 }
 
 .alert-header p {
@@ -1007,49 +322,14 @@ updated {
     padding: 10px;
     text-align: center;
     font-size: 14px;
-    border: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.alert-header p::before {
-    content: "⚠️ ";
-    font-size: 18px;
-}
-
+.alert-header p::before,
 .alert-header p::after {
     content: "⚠️ ";
     font-size: 18px;
-}
-
-.quote {
-    font-weight: 600;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.author {
-    font-size: 14px;
-    color: #888;
-    text-align: right;
-    margin-right: 210px;
-    margin-bottom: 50px;
-}
-
-.button-bottom-margin {
-    margin-bottom: 13px;
-}
-
-.spaced-text {
-    margin-left: 10px;
-}
-
-.table-header-3 {
-    width: 33%;
 }
 
 .strike {
@@ -1079,101 +359,24 @@ updated {
     color: #333;
 }
 
-.highlight {
-    background-color: gainsboro;
-    padding: 15px;
-    margin-bottom: 20px;
+/* Images */
+.images {
+    float: right;
+    padding: 55px 0 20px 20px;
 }
 
-.button {
-    display: inline-block;
-    background-color: #019cde;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin: 10px 0;
+.top-right-image {
+    float: right;
+    max-width: 20%;
+    max-height: 175px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
-.button:hover {
-    background-color: #0056b3;
-}
-
-.contact-info {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    line-height: normal;
-    font-size: 16px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.table_component table,
-.softball-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.table_component th,
-.table_component td,
-.softball-table th,
-.softball-table td {
-    padding: 8px;
-    border: 1px solid #ccc;
-    text-align: left;
-}
-
-.table_component img,
-.softball-table img {
-    width: 50px;
-    height: 50px;
-    float: left;
-}
-
-.table_component .fit,
-.softball-table .fit {
-    vertical-align: middle;
-}
-
-.table_component .white-background,
-.white-background {
-    background-color: white;
-}
-
-.table_component td[colspan="9"],
-.softball-table td[colspan="9"] {
-    padding: 5px 5px;
-    background-color: white;
-    color: rgb(68, 68, 68);
-    line-height: normal;
-    border: none;
-}
-
-.table_component p,
-.softball-table p {
-    padding: 5px 0px 5px 0px;
-    font-size: 13px;
-}
-
-.division-title {
-    line-height: 35px;
-    font-size: 19px;
-    float: left;
-    font-weight: 600;
-}
-
-.footies_p {
-    font-size: 12px;
-}
-
-.ageCalcs {
-    position: absolute;
-    right: 25px;
-}
-
-.aoverb_button {
-    background-color: white;
-    margin: 0 0 0 10px;
+.thumbnail {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .team-photo {
@@ -1193,8 +396,77 @@ updated {
     margin-top: 15px;
 }
 
+.image-caption-container {
+    text-align: center;
+    padding: 25px;
+    width: 300px;
+    float: right;
+}
+
+.image-caption-container figure {
+    display: inline-block;
+    margin: 0;
+}
+
+.image-caption-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.image-caption-container figcaption {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+}
+
+/* Misc */
+.division-title {
+    line-height: 35px;
+    font-size: 19px;
+    float: left;
+    font-weight: 600;
+}
+
+.quote {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 200px;
+}
+
+.author {
+    font-size: 14px;
+    color: #888;
+    text-align: right;
+    margin-right: 210px;
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    margin: 5px 0 20px;
+    line-height: normal;
+    font-size: 16px;
+}
+
+.blurred-text {
+    color: transparent;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
+super {
+    vertical-align: super;
+    line-height: normal;
+    font-size: 9px;
+}
+
 .sponsor-links p {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-size: 14px;
 }
