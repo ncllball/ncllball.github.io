@@ -110,6 +110,7 @@ span {
 
 span3 {
     background-color: rgb(204, 204, 204);
+
 }
 
 p,
@@ -606,4 +607,16 @@ updated {
     margin: 0px;
     padding: 0px;
     font-size: 14px;
+}
+:root {
+  --sup-font-size: 0.75em;
+  --sup-top-offset: -0.4em;
+}
+
+sup {
+  position: relative;
+  top: var(--sup-top-offset);
+  font-size: var(--sup-font-size);
+  line-height: 0;
+  vertical-align: baseline;
 }
