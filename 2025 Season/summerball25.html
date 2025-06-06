@@ -1,11 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8" />
-    <title>NCLL Summerball 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Instructions</title>
     <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
+    <style>
+        /* Make tables responsive with horizontal scrolling */
+        .table_component {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            max-width: 100%;
+            margin-bottom: 1em;
+            display: block;
+        }
+
+        /* Ensure the table takes full width of its container */
+        .table_component table {
+            width: 100%;
+            min-width: 600px;
+            border-collapse: collapse;
+        }
+
+        /* Add data labels for mobile display */
+        @media screen and (max-width: 600px) {
+            .fit td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: block;
+                margin-bottom: 0.25rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <picture>
+        <img class="SUMMERBALL25"
+            src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/Summerball25.svg"
+            alt="Summerball25" />
+    </picture>
     <section>
         <h2 class="highlighted-header">Why <em>Summerball25</em>?</h2>
         <ul>
@@ -77,7 +113,7 @@
             </li>
             <li><span>AA/AAA Softball</span> is for developing players and AA graduates</li>
             <li><span>AAA/Majors Softball</span> is for experienced players moving to Majors</li>
-            <li><span>Locations:</span> TBD<span></li>
+            <li><span>Locations:</span> TBD</li>
             <li><span>Game times:</span> TBD</li>
             <li><span>Typical game days:</span> TBD</li>
             <li>Potential interleague play opportunities with neighboring leagues</li>
@@ -98,8 +134,8 @@
         </p>
         <p>
             <sup>2</sup>
-            Game day estimates are based on previous years — they are <em>not</em> <span>GUARANTEED;</span> <a
-                class="ncll" href="mailto:registrar@ncllball.com">refunds are available prior to season start.</a>
+            Game day estimates are based on previous years — they are <em>not GUARANTEED;</em> <a class="ncll"
+                href="mailto:registrar@ncllball.com">refunds are available prior to season start.</a>
         </p>
     </section>
 
@@ -118,7 +154,8 @@
             <li><span>Majors Baseball</span> <em>typically</em> has games on Tuesday/Thursday</li>
             <li><span>Teen/Juniors Baseball</span> <em>typically</em> has games on Monday/Thursday</li>
             <li>Games at various local fields within a 30-minute drive; <a class="ncll"
-                    href="https://www.ncllball.com/Default.aspx?tabid=2115055">current field locations</a></li>
+                    href="https://www.ncllball.com/Default.aspx?tabid=2115055">current field locations (addresses and
+                    maps)</a></li>
             <li>Volunteer coaches needed — all are welcome to help! (See Side Bar)</li>
         </ul>
         <p>
@@ -146,47 +183,48 @@
 
     <section>
         <h2 class="left">AA/AAA/MAJORS/JUNIORS Baseball <em>Summerball25</em> Division Matrix</h2>
+        <p>The matrix below provides guidance on selecting the appropriate Summerball25 division based on your player's
+            league age and their most recent spring division.</p>
         <p>Ask yourself this question — where will my player play next year? If you need additional help, refer to
             '<a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a): Detailed Division
                 Information</a>' on the main registration page.</p>
+    </section>
+
+    <section>
         <div class="table_component">
-            <table class="softball-table">
+            <table>
                 <tbody>
-                    <caption
-                        style="text-align: left; font-size: 12px; font-family: Segoe UI, Helvetica, Tahoma, Geneva, Verdana, sans-serif;">
-                        <span><em>Summerball25</em> Division Matrix:</span> Recommended divisions based on league age
-                        and spring division.
-                    </caption>
                     <tr class="fit">
-                        <th id="league_age"><span>League Age</span></th>
-                        <th id="spring_division_just_finished"><span>Spring Division<br />Just Finished</span></th>
-                        <th id="recommended_summer_division"><span>Recommended Summer<br />Division</span></th>
-                        <th id="notes"><span>Notes</span></th>
+                        <th><span>League Age</span></th>
+                        <th><span>Spring Division<br />Just Finished</span></th>
+                        <th><span>Recommended Summer<br />Division</span></th>
+                        <th><span>Notes</span></th>
                     </tr>
                     <tr class="fit">
-                        <td data-label="League Age">8–9</td>
-                        <td data-label="Spring Division">AA</td>
-                        <td data-label="Recommended Summer Division">AA</td>
-                        <td data-label="Notes">Strong 9s may try AAA</td>
+                        <td>8–9</td>
+                        <td>AA</td>
+                        <td>AA</td>
+                        <td>Strong 9s may try AAA</td>
                     </tr>
                     <tr class="fit">
-                        <td data-label="League Age">9–11</td>
-                        <td data-label="Spring Division">AAA</td>
-                        <td data-label="Recommended Summer Division">AAA</td>
-                        <td data-label="Notes">Strong 10s may play Majors</td>
+                        <td>9–11</td>
+                        <td>AAA</td>
+                        <td>AAA</td>
+                        <td>Strong 10s may play Majors</td>
                     </tr>
                     <tr class="fit">
-                        <td data-label="League Age">11-12</td>
-                        <td data-label="Spring Division">AAA/Majors</td>
-                        <td data-label="Recommended Summer Division">Majors</td>
-                        <td data-label="Notes">Developing 11s may stay in AAA</td>
+                        <td>11-12</td>
+                        <td>AAA/Majors</td>
+                        <td>Majors</td>
+                        <td>Developing 11s may stay in AAA</td>
                     </tr>
                     <tr class="fit">
-                        <td data-label="League Age">12–15</td>
-                        <td data-label="Spring Division">Majors+</td>
-                        <td data-label="Recommended Summer Division">Juniors/Seniors</td>
-                        <td data-label="Notes">Developing 12s may stay in Majors</td>
+                        <td>12–15</td>
+                        <td>Majors+</td>
+                        <td>Juniors/Seniors</td>
+                        <td>Developing 12s may stay in Majors</td>
                     </tr>
+
                 </tbody>
             </table>
         </div>
@@ -194,8 +232,14 @@
     <section class="footies">
         <p>
             <sup>1</sup>
-            Participation in Summerball25 does not determine the division your player will be assigned to for Spring
-            '26; division placement will be based on league age and skill level at that time.
+            Participation in Summerball25 is independent of Spring '26 division placement. Divisions
+            for Spring '26
+            will
+            be assigned based on your player's league age and skill level assessed at that time.
         </p>
+
     </section>
+
 </body>
+
+</html>
