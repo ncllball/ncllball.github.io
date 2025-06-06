@@ -8,20 +8,65 @@
     <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
     <style>
+        /* Responsive base styles */
+        body {
+            margin: 0 auto;
+            padding: 0 15px;
+        }
 
+        img.SUMMERBALL25 {
+            display: block;
+        }
+
+        /* Table responsiveness */
+        .table_component {
+            overflow-x: auto;
+            margin-bottom: 1em;
+        }
+
+        /* Mobile optimization */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.5em;
+            }
+
+            section {
+                margin-bottom: 1.5em;
+            }
+
+            ul li {
+                margin-bottom: 0.5em;
+            }
+
+            .footies {
+                font-size: 0.9em;
+            }
+        }
+
+        /* Small screen optimization */
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.3em;
+            }
+
+            ul {
+                padding-left: 1.2em;
+            }
+
+            /* Improve table readability on very small screens */
+            .table_component table {
+                font-size: 0.9em;
+            }
+
+            .table_component th,
+            .table_component td {
+                padding: 4px;
+            }
+        }
     </style>
 </head>
 
 <body>
-
-    <section>
-        <h1 class="left" style="font-variant: small-caps;">Registration opens June 5<sup>th</sup>!!!</h1>
-
-        <p class="">
-            We'll be sending an email to our community when registration is ready. If you have an account, you
-            should be alerted. We also have an 'interest list' at the top of our home page!
-        </p>
-    </section>
 
     <section>
         <img class="SUMMERBALL25"
