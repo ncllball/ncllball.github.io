@@ -522,6 +522,7 @@ updated {
 .softball-table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .table_component th,
