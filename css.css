@@ -619,6 +619,8 @@ sup {
 }
 
 .registration section {
-    letter-spacing: normal;
-    font-size: 12px;
+    letter-spacing: normal !important;
+    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
 }
