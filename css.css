@@ -617,3 +617,7 @@ sup {
   line-height: 0;
   vertical-align: baseline;
 }
+.section .registration {
+    letter-spacing: normal;
+    font-size: 12px;
+}
