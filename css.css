@@ -624,3 +624,9 @@ sup {
     font-weight: 600 !important;
     font-size: 12px !important;
 }
+.registration-listing {
+    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: 600 !important;
+    letter-spacing: normal !important;
+    font-size: 9px !important;
+}
