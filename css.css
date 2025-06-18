@@ -605,17 +605,18 @@ updated {
     padding: 0px;
     font-size: 14px;
 }
+
 :root {
-  --sup-font-size: 0.75em;
-  --sup-top-offset: -0.4em;
+    --sup-font-size: 0.75em;
+    --sup-top-offset: -0.4em;
 }
 
 sup {
-  position: relative;
-  top: var(--sup-top-offset);
-  font-size: var(--sup-font-size);
-  line-height: 0;
-  vertical-align: baseline;
+    position: relative;
+    top: var(--sup-top-offset);
+    font-size: var(--sup-font-size);
+    line-height: 0;
+    vertical-align: baseline;
 }
 
 .registration section {
@@ -624,9 +625,69 @@ sup {
     font-weight: 600 !important;
     font-size: 12px !important;
 }
+
 .registration-listing {
     font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif !important;
     font-weight: 600 !important;
     letter-spacing: normal !important;
     font-size: 9px !important;
+}
+
+/* Enhanced responsive table styling */
+.table_component {
+    overflow: auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 90%;
+    width: 100%;
+    min-width: 320px;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+/* Mobile-specific table adjustments */
+@media screen and (max-width: 600px) {
+    .table_component table {
+        min-width: 100%;
+    }
+
+    /* Add data labels for mobile display */
+    .fit td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* Special styling for checkmarks and TBD content */
+.checkmarks {
+    text-align: center !important;
+    color: #2ecc40;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.highlighted-header {
+    text-align: left !important;
+    margin: 0 0 18px 0;
+    padding: 1px 0;
+    color: RGB(0, 1, 58) !important;
+}
+
+.tbd-placeholder {
+    color: #e67e22;
+    font-style: italic;
+    font-weight: bold;
 }
