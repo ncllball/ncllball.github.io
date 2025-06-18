@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
     <style>
-        /* Make tables responsive with horizontal scrolling */
+        /* Responsive table styling for mobile devices */
         .table_component {
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
@@ -17,15 +17,19 @@
             display: block;
         }
 
-        /* Ensure the table takes full width of its container */
         .table_component table {
             width: 100%;
-            min-width: 600px;
+            min-width: 320px;
             border-collapse: collapse;
         }
 
-        /* Add data labels for mobile display */
+        /* Mobile-specific table adjustments */
         @media screen and (max-width: 600px) {
+            .table_component table {
+                min-width: 100%;
+            }
+
+            /* Add data labels for mobile display */
             .fit td::before {
                 content: attr(data-label);
                 font-weight: bold;
@@ -33,16 +37,35 @@
                 margin-bottom: 0.25rem;
             }
         }
+
+        /* Special styling for checkmarks and TBD content */
+        .checkmarks {
+            text-align: center !important;
+            color: #2ecc40;
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+
+        .tbd-placeholder {
+            color: #e67e22;
+            font-style: italic;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
-    <picture>
-        <img class="SUMMERBALL25"
-            src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/Summerball25.svg"
-            alt="Summerball25" />
-    </picture>
-    <section>
+    <!-- Header Image Section -->
+    <section class="header-image">
+        <picture>
+            <img class="SUMMERBALL25"
+                src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/Summerball25.svg"
+                alt="Summerball25" />
+        </picture>
+    </section>
+
+    <!-- Program Overview Section -->
+    <section class="program-overview">
         <h2 class="highlighted-header">Why <em>Summerball25</em>?</h2>
         <ul>
             <li>Flexible schedule = no guilt! (This goes for coaches too!)</li>
@@ -53,7 +76,9 @@
             <li>Great & AFFORDABLE way to keep your player engaged in the game!</li>
         </ul>
     </section>
-    <section>
+
+    <!-- General Program Information Section -->
+    <section class="general-info">
         <h2 class="left">All Divisions</h2>
         <ul>
             <li><span>Registration Window:</span> June 5<sup>th</sup> - June 30<sup>th</sup></li>
@@ -66,80 +91,67 @@
             <li><span>Optional Equipment:</span> Personal bat and helmet (shared equipment available)</li>
         </ul>
     </section>
-    <section>
+
+    <!-- Single-A Baseball Section -->
+    <section class="single-a-baseball">
         <h2 class="left">Single-A Baseball <em>Summerball25</em> (Sandlot)</h2>
-        <p>We are excited to offer families the chance to play Single-A baseball this summer! Here are the details:
-        </p>
+        <p>We are excited to offer families the chance to play Single-A baseball this summer! Here are the details:</p>
         <ul>
             <li>Games will be <em>sandlot</em><sup>1</sup> format, giving maximum flexibility to players and coaches
-                over the summer
-            </li>
+                over the summer</li>
             <li>For players with experience in Coach Pitch or Single-A <em><span>only</span></em> (not directly from
-                T-ball)
-            </li>
-            <li>Games at <span>Ross Field</span> and <span>Lower Woodland Cloverleaf</span></li>
-            <li>Game times generally start at 5:00 or 5:30 PM</li>
-            <li>Typical game days are Monday through Thursday (NO GUARANTEES!)<sup>2</sup></li>
+                T-ball)</li>
             <li>Parent volunteers needed — all experience levels welcome! (See Side Bar)</li>
+            <li><em>See Matrix Below for more details on day, time, and locations</em></li>
         </ul>
         <p>
             Please reach out with questions:
             <a class="ncll" href="mailto:registrar@ncllball.com">registrar@ncllball.com</a>
         </p>
-
     </section>
-    <section class="footies">
+
+    <!-- Single-A Baseball Footnotes -->
+    <section class="single-a-footnotes footies">
         <p>
             <sup>1</sup>
             <em>Sandlot</em> format means kids show up and teams are picked based on who is there and ready to play
             ball. This creates a flexible drop-in format with no commitment to one team, allowing families to come
             and go as their schedule allows.
         </p>
-        <p>
-            <sup>2</sup>
-            Based on the 2024 schedule: Single-A scheduled games were Mondays (2), Tuesdays (3), Wednesdays (1), and
-            Thursdays (4), totaling 10 games.
-
-        </p>
     </section>
 
-    <section class="registration">
+    <!-- Softball Section -->
+    <section class="softball registration">
         <h2 class="left">Softball <em>Summerball25</em> (Sandlot)</h2>
         <p>We are excited to offer our softball families the chance to play ball this summer! For 2025, Softball
             will have a two-tiered program accommodating different skill and age levels. Here are the details:</p>
         <ul>
             <li>Games will be <em>sandlot</em><sup>1</sup> format, bringing maximum flexibility to players and
-                coaches over the summer
-            </li>
-            <li><span>AA/AAA Softball</span> is for developing players and AA graduates</li>
-            <li><span>AAA/Majors Softball</span> is for experienced players moving to Majors</li>
-            <li><span>Locations:</span> TBD</li>
-            <li><span>Game times:</span> TBD</li>
-            <li><span>Typical game days:</span> TBD</li>
+                coaches over the summer</li>
+            <li><span>AA/AAA Softball</span> is for developing AAA players and AA graduates</li>
+            <li><span>AAA/Majors Softball</span> is for experienced AAA players and returning Majors players</li>
             <li>Potential interleague play opportunities with neighboring leagues</li>
             <li>Volunteer coaches needed — all are welcome to help! (See Side Bar)</li>
+            <li><em>See Matrix Below for more details on day, time, and locations</em></li>
         </ul>
         <p>
             Please reach out with questions, including which division is right for your player:
             <a class="ncll" href="mailto:softball@ncllball.com">softball@ncllball.com</a>
         </p>
-
     </section>
-    <section class="footies">
+
+    <!-- Softball Footnotes -->
+    <section class="softball-footnotes footies">
         <p>
             <sup>1</sup>
             <em>Sandlot</em> format means kids show up and teams are picked based on who is there and ready to play
             ball. This creates a flexible drop-in format with no commitment to one team, allowing families to come
             and go as their schedule allows.
         </p>
-        <p>
-            <sup>2</sup>
-            Game day estimates are based on previous years — they are <em>not GUARANTEED;</em> <a class="ncll"
-                href="mailto:registrar@ncllball.com">refunds are available prior to season start.</a>
-        </p>
     </section>
 
-    <section>
+    <!-- Interleague Baseball Section -->
+    <section class="interleague-baseball">
         <h2 class="left">AA/AAA/MAJORS/JUNIORS Baseball <em>Summerball25</em> (Interleague)</h2>
         <p>We are excited to offer our families in AA/AAA/Majors/Juniors a great chance to get some baseball in at
             Summerball25! Here are the details:</p>
@@ -148,49 +160,39 @@
             <li>Games will be <em>interleague</em><sup>2</sup> play, meaning competitively based against neighboring
                 little leagues</li>
             <li>Players are encouraged to play up to the level they'll play next year<sup>3</sup></li>
-            <li><span>AA Baseball</span> <em>may</em> have a hybrid mix of sandlot and interleague; games on
-                Monday/Thursday — TBD</li>
-            <li><span>AAA Baseball</span> <em>typically</em> has games on Monday/Thursday</li>
-            <li><span>Majors Baseball</span> <em>typically</em> has games on Tuesday/Thursday</li>
-            <li><span>Teen/Juniors Baseball</span> <em>typically</em> has games on Monday/Thursday</li>
-            <li>Games at various local fields within a 30-minute drive; <a class="ncll"
-                    href="https://www.ncllball.com/Default.aspx?tabid=2115055">current field locations (addresses and
-                    maps)</a></li>
+            <li><span>AA Baseball</span> <em>may</em> have a hybrid mix of sandlot and interleague</li>
             <li>Volunteer coaches needed — all are welcome to help! (See Side Bar)</li>
+                        <li><em>See Matrix Below for more details on day, time, and locations</em></li>
+
         </ul>
         <p>
             Please reach out with questions:
             <a class="ncll" href="mailto:paulfox11@gmail.com">paulfox11@gmail.com</a>
         </p>
-
     </section>
-    <section class="footies">
-        <p>
-            <sup>1</sup>
-            Game day estimates are based on previous years — they are <em>not</em> <span>GUARANTEED;</span> <a
-                class="ncll" href="mailto:registrar@ncllball.com">refunds are available prior to season start.</a>
-        </p>
+
+    <!-- Interleague Baseball Footnotes -->
+    <section class="interleague-footnotes footies">
+
         <p>
             <sup>2</sup>
             Interleague refers to games played against teams from neighboring little leagues such as Ballard,
             Magnolia, North Central, Northeast, Northwest, Queen Anne, RUG, Shoreline, and North-End (NBLL).
         </p>
-        <p>
-            <sup>3</sup>
-            See Matrix below.
-        </p>
     </section>
 
-    <section>
-        <h2 class="left">AA/AAA/MAJORS/JUNIORS Baseball <em>Summerball25</em> Division Matrix</h2>
-        <p>The matrix below provides guidance on selecting the appropriate Summerball25 division based on your player's
-            league age and their most recent spring division.</p>
-        <p>Ask yourself this question — where will my player play next year? If you need additional help, refer to
-            '<a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a): Detailed Division
-                Information</a>' on the main registration page.</p>
+    <!-- Division Selection Matrix Section -->
+    <section class="division-matrix-intro">
+    <h2 class="left">AA/AAA/MAJORS/JUNIORS Baseball <em>Summerball25</em> Division Matrix</h2>
+    <p>The matrix below provides guidance on selecting the appropriate Summerball25 division based on your player's
+        league age and their most recent spring division.</p>
+    <p>Ask yourself this question — where will my player play next year? If you need additional help, refer to
+        '<a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a): Detailed Division
+            Information</a>' on the main registration page.</p>
     </section>
 
-    <section>
+    <!-- Division Selection Matrix Table -->
+    <section class="division-matrix-table">
         <div class="table_component">
             <table>
                 <tbody>
@@ -213,7 +215,7 @@
                         <td>Strong 10s may play Majors</td>
                     </tr>
                     <tr class="fit">
-                        <td>11-12</td>
+                        <td>11–12</td>
                         <td>AAA/Majors</td>
                         <td>Majors</td>
                         <td>Developing 11s may stay in AAA</td>
@@ -224,20 +226,147 @@
                         <td>Juniors/Seniors</td>
                         <td>Developing 12s may stay in Majors</td>
                     </tr>
-
                 </tbody>
             </table>
         </div>
     </section>
-    <section class="footies">
+
+    <!-- Division Matrix Footnotes -->
+    <section class="division-matrix-footnotes footies">
         <p>
             <sup>1</sup>
             Participation in Summerball25 is independent of Spring '26 division placement. Divisions
-            for Spring '26
-            will
-            be assigned based on your player's league age and skill level assessed at that time.
+            for Spring '26 will be assigned based on your player's league age and skill level assessed at that time.
         </p>
+    </section>
 
+    <!-- Schedule Matrix Section -->
+    <section class="schedule-matrix-intro">
+        <h2 class="left">Day/Divisions Matrix for <em>Summerball25</em> (NO GUARANTEES)</h2>
+        <We>The matrix below provides guidance on the days, times, and locations players <em>may</em> play. We are at the mercy of the central scheduler
+            within District 8 for Summerball25, so the best we can offer is the histroical days/times. THese may change so please check back often!</p>
+    </section>
+
+    <!-- Schedule Matrix Table -->
+    <section class="schedule-matrix-table">
+        <div class="table_component">
+            <table>
+                <tbody>
+                    <tr class="fit">
+                        <th><span>Program</span></th>
+                        <th><span>Division</span></th>
+                        <th><span>Fields</span></th>
+                        <th><span>Start Times</span></th>
+                        <th><span>Monday</span></th>
+                        <th><span>Tuesday</span></th>
+                        <th><span>Wednesday</span></th>
+                        <th><span>Thursday</span></th>
+                    </tr>
+                    <!-- Softball rows -->
+                    <tr class="fit">
+                        <td>Softball</td>
+                        <td>AA/AAA</td>
+                        <td class="checkmarks">TBD</td>
+                        <td class="checkmarks">TBD</td>
+                        <td class="checkmarks">TBD</td>
+                        <td class="checkmarks">TBD</td>
+                        <td class="checkmarks">TBD</td>
+                        <td class="checkmarks">TBD</td>
+                    </tr>
+                    <tr class="fit">
+                        <td>Softball</td>
+                        <td>AAA/Majors</td>
+                        <td class="checkmarks">TBD</td>
+                        <td class="checkmarks">TBD</td>
+                        <td class="checkmarks">TBD</td>
+                        <td class="checkmarks">TBD</td>
+                        <td class="checkmarks">TBD</td>
+                        <td class="checkmarks">TBD</td>
+                    </tr>
+                    <!-- Baseball rows -->
+                    <tr class="fit">
+                        <td>Baseball</td>
+                        <td>A</td>
+                        <td class="checkmarks">Ross/LW Cloverleaf</td>
+                        <td class="checkmarks">5:00-5:30PM</td>
+                        <td class="checkmarks">&#10003;</td>
+                        <td class="checkmarks">&#10003;</td>
+                        <td class="checkmarks">&#10003;</td>
+                        <td class="checkmarks">&#10003;</td>
+                    </tr>
+                    <tr class="fit">
+                        <td>Baseball</td>
+                        <td>AA</td>
+                        <td class="checkmarks">LW Cloverleaf<sup>4</sup></td>
+                        <td class="checkmarks">5:00-6:30PM</td>
+                        <td class="checkmarks">&#10003;</td>
+                        <td class="checkmarks"></td>
+                        <td class="checkmarks"></td>
+                        <td class="checkmarks">&#10003;</td>
+                    </tr>
+                    <tr class="fit">
+                        <td>Baseball</td>
+                        <td>AAA</td>
+                        <td class="checkmarks">LW Cloverleaf<sup>4</sup></td>
+                        <td class="checkmarks">5:00-6:30PM</td>
+                        <td class="checkmarks">&#10003;</td>
+                        <td class="checkmarks"></td>
+                        <td class="checkmarks"></td>
+                        <td class="checkmarks">&#10003;</td>
+                    </tr>
+                    <tr class="fit">
+                        <td>Baseball</td>
+                        <td>Majors</td>
+                        <td class="checkmarks">LW Cloverleaf<sup>4</sup></td>
+                        <td class="checkmarks">5:00-6:30PM</td>
+                        <td class="checkmarks"></td>
+                        <td class="checkmarks">&#10003;</td>
+                        <td class="checkmarks"></td>
+                        <td class="checkmarks">&#10003;</td>
+                    </tr>
+                    <tr class="fit">
+                        <td>Baseball</td>
+                        <td>Teen/Juniors</td>
+                        <td class="checkmarks">LW Cloverleaf<sup>4</sup></td>
+                        <td class="checkmarks">5:00-6:30PM</td>
+                        <td class="checkmarks">&#10003;</td>
+                        <td class="checkmarks"></td>
+                        <td class="checkmarks"></td>
+                        <td class="checkmarks">&#10003;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Schedule Matrix Footnotes -->
+    <section class="schedule-matrix-footnotes footies">
+        <p>
+            <sup>2</sup>
+            Based on the 2024 schedule: Single-A scheduled games were Mondays (2), Tuesdays (3), Wednesdays (1), and
+            Thursdays (4), totaling 10 games.
+        </p>
+        <p>
+            <sup>3</sup>
+            Game day estimates are based on previous years — they are <em>not GUARANTEED;</em> <a class="ncll"
+                href="mailto:registrar@ncllball.com">refunds are available prior to season start.</a>
+        </p>
+        <p>
+            <sup>4</sup>
+            LW Cloverleaf refers to Lake Washington Cloverleaf fields. See field location links above for specific
+            addresses.
+        </p>
+        <p>
+            <sup>5</sup>
+            Games at various local fields within a 30-minute drive; <a class="ncll"
+                href="https://www.ncllball.com/Default.aspx?tabid=2115055">current field locations (addresses and
+                maps)</a>
+        </p>
+                <p>
+            <sup>6</sup>
+            Game day estimates are based on previous years — they are <em>not</em> <span>GUARANTEED;</span> <a
+                class="ncll" href="mailto:registrar@ncllball.com">refunds are available prior to season start.</a>
+        </p>
     </section>
 
 </body>
