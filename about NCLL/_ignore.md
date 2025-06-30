@@ -2,9 +2,10 @@
 
 ## Division Analysis and Team Recommendations
 
-### Player Count by Division:
+### Player Count by Division
+
 - **BASEBALL - Double-AA (Interleague)**: 47 players → **3 teams** (15-16 players each)
-- **BASEBALL - Majors (Interleague)**: 24 players → **2 teams** (12 players each) 
+- **BASEBALL - Majors (Interleague)**: 24 players → **2 teams** (12 players each)
 - **BASEBALL - Single-A (Sandlot)**: 14 players → **1 sandlot team** (all participants)
 - **BASEBALL - TEEN/JUNIOR (Interleague)**: 12 players → **1 team** (12 players)
 - **BASEBALL - Triple-AAA (Interleague)**: 55 players → **4 teams** (13-14 players each)
@@ -16,6 +17,7 @@
 ## BASEBALL - DOUBLE-AA (INTERLEAGUE) TEAMS
 
 ### Team AA1 - "Olin's Eagles" (16 players)
+
 **Coach**: Olin Wick
 
 | Player Name | Age | Spring Division | Teammate Request | Coach Request |
@@ -40,6 +42,7 @@
 **Team Balance Summary**: Strong Olin Wick coaching cluster with multiple mutual teammate requests fulfilled. Age range 6-9 with mix of experience levels.
 
 ### Team AA2 - "St. Benedict's Bears" (16 players)
+
 **Coach**: St. Benedict coaching staff
 
 | Player Name | Age | Spring Division | Teammate Request | Coach Request |
@@ -64,6 +67,7 @@
 **Team Balance Summary**: St. Benedict school cluster fulfilled with multiple mutual requests. Strong Cutter & Buck teammate group maintained. Age range 7-9.
 
 ### Team AA3 - "Clinch Crew" (15 players)
+
 **Coach**: Andy Clinch
 
 | Player Name | Age | Spring Division | Teammate Request | Coach Request |
@@ -91,6 +95,7 @@
 ## BASEBALL - MAJORS (INTERLEAGUE) TEAMS
 
 ### Team M1 - "Hamilton Hawks" (12 players)
+
 **Coach**: John Shikella
 
 | Player Name | Age | Spring Division | Teammate Request | Coach Request |
@@ -111,6 +116,7 @@
 **Team Balance Summary**: Strong Hamilton Middle School representation with coach request fulfilled. Age range 11-12 with experienced players.
 
 ### Team M2 - "West Woodland Warriors" (12 players)
+
 **Coach**: Jon Anderson
 
 | Player Name | Age | Spring Division | Teammate Request | Coach Request |
@@ -134,6 +140,7 @@
 ## BASEBALL - SINGLE-A (SANDLOT) TEAM
 
 ### Team A1 - "Sandlot Stars" (14 players)
+
 **Sandlot Format**: Single inclusive team for all Single-A participants
 **Coach**: Richard Shordt / Carlos Salmeron
 
@@ -161,6 +168,7 @@
 ## BASEBALL - TEEN/JUNIOR (INTERLEAGUE) TEAM
 
 ### Team TJ1 - "Garfin Giants" (12 players)
+
 **Coach**: Phillip Garfin
 
 | Player Name | Age | Spring Division | Teammate Request | Coach Request |
@@ -185,6 +193,7 @@
 ## BASEBALL - TRIPLE-AAA (INTERLEAGUE) TEAMS
 
 ### Team AAA1 - "Adam Bennett's Battalion" (14 players)
+
 **Coach**: Adam Bennett
 
 | Player Name | Age | Spring Division | Teammate Request | Coach Request |
@@ -207,6 +216,7 @@
 **Team Balance Summary**: Excellent Adam Bennett coaching cluster with multiple interconnected teammate requests fulfilled.
 
 ### Team AAA2 - "Lee's Legends" (14 players)
+
 **Coach**: Danny Lee
 
 | Player Name | Age | Spring Division | Teammate Request | Coach Request |
@@ -229,6 +239,7 @@
 **Team Balance Summary**: Strong Danny Lee coaching group with excellent Avery Lee teammate connections fulfilled.
 
 ### Team AAA3 - "Paul Fox's Force" (14 players)
+
 **Coach**: Paul Fox
 
 | Player Name | Age | Spring Division | Teammate Request | Coach Request |
@@ -251,6 +262,7 @@
 **Team Balance Summary**: Strong Paul Fox coaching cluster with St. John's school connections and multiple teammate requests fulfilled.
 
 ### Team AAA4 - "West Woodland Wolves" (13 players)
+
 **Coach**: Ian Hernandez
 
 | Player Name | Age | Spring Division | Teammate Request | Coach Request |
@@ -274,6 +286,7 @@
 ## SOFTBALL - AA/AAA (SANDLOT) TEAM
 
 ### Team SAA1 - "Greenwood Gems" (4 players)
+
 **Sandlot Format**: Single inclusive team for all AA/AAA softball participants
 **Coach**: DeNike or Baxter
 
@@ -291,6 +304,7 @@
 ## SOFTBALL - AAA/MAJORS (SANDLOT) TEAM
 
 ### Team SM1 - "Clinch Champions" (2 players)
+
 **Sandlot Format**: Single inclusive team for all AAA/Majors softball participants
 **Coach**: Andy Clinch
 
@@ -305,13 +319,15 @@
 
 ## OVERALL SUMMARY
 
-### Request Fulfillment Analysis:
+### Request Fulfillment Analysis
+
 - **Teammate Requests**: ~85% fulfillment rate with strong clustering maintained
 - **Coach Requests**: ~90% fulfillment rate across all divisions
 - **Volunteer-Child Pairing**: **100% success rate** - all volunteers assigned to their children's teams
 - **School Distribution**: Well balanced with natural school clusters preserved
 
-### Key Successful Groupings:
+### Key Successful Groupings
+
 1. **Olin Wick's extensive coaching network** (Double-AA Team 1) + 6 parent volunteers
 2. **St. Benedict school cluster** with mutual requests (Double-AA Team 2) + Cutter & Buck parent volunteers
 3. **Cutter & Buck teammate group** maintained together with their parent coaches
@@ -319,14 +335,16 @@
 5. **Adam Bennett's John Stanford cluster** (Triple-AAA Team 1) + supporting parent volunteers
 6. **Multiple sibling pairs** kept together (Yokel, Baltazar, Garfin, Harrold) with parent volunteers
 
-### Volunteer Integration Success:
+### Volunteer Integration Success
+
 - **45 total volunteers** distributed across all teams
 - **Parent-child connections**: 100% maintained with strategic team assignments
 - **Multi-child families**: Successfully accommodated (Danny Lee/Cynthia Wong, Evan Klarich, etc.)
 - **Volunteer role balance**: Even distribution of head coaches, assistant coaches, and team managers
 - **Coaching continuity**: Existing coach requests honored while adding parent volunteer support
 
-### Balancing Challenges Addressed:
+### Balancing Challenges Addressed
+
 - Large Triple-AAA division split into 4 balanced teams with adequate volunteer coverage
 - Coach request conflicts resolved by prioritizing explicit requests while integrating volunteers
 - Age distribution maintained within each team alongside parent volunteer assignments
@@ -342,40 +360,43 @@ This assignment maximizes teammate and coach request fulfillment while maintaini
 ### BASEBALL - DOUBLE-AA VOLUNTEER ASSIGNMENTS
 
 #### Team AA1 - "Olin's Eagles" Volunteers
+
 **Head Coach**: Olin Wick (parent of Louis Wick)
 
 | Volunteer Name | Role | Child on Team | Contact |
 |----------------|------|---------------|---------|
-| **derek baltazar** | Game Day Helper (Assistant Coach) | Maddox Baltazar, Mason Baltazar | dbaltazar@gmail.com, 415-812-1605 |
-| **Bill Appleyard** | Game Day Helper (Assistant Coach) | William Appleyard | wfappleyard@yahoo.com, 917-576-8009 |
-| **Lucas DeHerrera** | Game Day Helper (Assistant Coach) | Cruz DeHerrera | lucas.deherrera@gmail.com, 206-229-9958 |
-| **Gary Gautreau** | Game Day Helper (Assistant Coach) | Grayson Gautreau | goat101a@hotmail.com, 206-714-4594 |
-| **Rory Douglas** | Game Day Helper (Assistant Coach) | Augustin Douglas | roryjdouglas@gmail.com, 360-259-9476 |
-| **Jonathan Wingard-Phillips** | Game Day Helper (Assistant Coach) | Rumi Zubair | jonathanlwp@gmail.com, 757-572-7776 |
+| **derek baltazar** | Game Day Helper (Assistant Coach) | Maddox Baltazar, Mason Baltazar | <dbaltazar@gmail.com>, 415-812-1605 |
+| **Bill Appleyard** | Game Day Helper (Assistant Coach) | William Appleyard | <wfappleyard@yahoo.com>, 917-576-8009 |
+| **Lucas DeHerrera** | Game Day Helper (Assistant Coach) | Cruz DeHerrera | <lucas.deherrera@gmail.com>, 206-229-9958 |
+| **Gary Gautreau** | Game Day Helper (Assistant Coach) | Grayson Gautreau | <goat101a@hotmail.com>, 206-714-4594 |
+| **Rory Douglas** | Game Day Helper (Assistant Coach) | Augustin Douglas | <roryjdouglas@gmail.com>, 360-259-9476 |
+| **Jonathan Wingard-Phillips** | Game Day Helper (Assistant Coach) | Rumi Zubair | <jonathanlwp@gmail.com>, 757-572-7776 |
 
 **Volunteer Balance**: 6 assistant coaches including head coach's family. Strong parent involvement with direct child connections.
 
 #### Team AA2 - "St. Benedict's Bears" Volunteers
+
 **Head Coach**: St. Benedict coaching staff
 
 | Volunteer Name | Role | Child on Team | Contact |
 |----------------|------|---------------|---------|
-| **Adam Ginsburgh** | Game Day Helper (Assistant Coach) | Cameron Ginsburgh | adam.ginsburgh@gmail.com, 773-495-4467 |
-| **Bruce Kaufman** | Game Day Helper (Assistant Coach) | Jordan Kaufman | bruce.kaufman@gmail.com, 415-828-8341 |
-| **Ryan Yokel** | Lead Game Volunteer (Head Coach) | Luke Yokel, Max Yokel | ryanyokel@gmail.com, 610-570-5080 |
-| **Edward Kasner** | Game Day Helper (Assistant Coach) | John Teddy Kasner | ejkasner@gmail.com, 612-388-7918 |
-| **Benjamin Holman** | Game Day Helper (Assistant Coach) | Francis Holman | benjaminholman@gmail.com, 206-369-1429 |
+| **Adam Ginsburgh** | Game Day Helper (Assistant Coach) | Cameron Ginsburgh | <adam.ginsburgh@gmail.com>, 773-495-4467 |
+| **Bruce Kaufman** | Game Day Helper (Assistant Coach) | Jordan Kaufman | <bruce.kaufman@gmail.com>, 415-828-8341 |
+| **Ryan Yokel** | Lead Game Volunteer (Head Coach) | Luke Yokel, Max Yokel | <ryanyokel@gmail.com>, 610-570-5080 |
+| **Edward Kasner** | Game Day Helper (Assistant Coach) | John Teddy Kasner | <ejkasner@gmail.com>, 612-388-7918 |
+| **Benjamin Holman** | Game Day Helper (Assistant Coach) | Francis Holman | <benjaminholman@gmail.com>, 206-369-1429 |
 
 **Volunteer Balance**: 5 volunteers including designated head coach. Strong Cutter & Buck parent group maintained.
 
 #### Team AA3 - "Clinch Crew" Volunteers
+
 **Head Coach**: Andy Clinch (parent of Myles Clinch)
 
 | Volunteer Name | Role | Child on Team | Contact |
 |----------------|------|---------------|---------|
-| **Danny Lee** | Game Day Helper (Assistant Coach) | Bennett Lee | dannycllee@gmail.com, 253-486-9152 |
-| **Cynthia Wong** | Team Manager (Off-Field Support & Logistics) | Bennett Lee (via Danny Lee) | clwong1985@gmail.com, 206-484-5957 |
-| **Evan Klarich** | Game Day Helper (Assistant Coach) | Theo Klarich | eklarich@gmail.com, 949-294-5045 |
+| **Danny Lee** | Game Day Helper (Assistant Coach) | Bennett Lee | <dannycllee@gmail.com>, 253-486-9152 |
+| **Cynthia Wong** | Team Manager (Off-Field Support & Logistics) | Bennett Lee (via Danny Lee) | <clwong1985@gmail.com>, 206-484-5957 |
+| **Evan Klarich** | Game Day Helper (Assistant Coach) | Theo Klarich | <eklarich@gmail.com>, 949-294-5045 |
 
 **Volunteer Balance**: 4 volunteers including head coach. Good mix of coaching and logistics support.
 
@@ -384,24 +405,26 @@ This assignment maximizes teammate and coach request fulfillment while maintaini
 ### BASEBALL - MAJORS VOLUNTEER ASSIGNMENTS
 
 #### Team M1 - "Hamilton Hawks" Volunteers
+
 **Head Coach**: John Shikella
 
 | Volunteer Name | Role | Child on Team | Contact |
 |----------------|------|---------------|---------|
-| **Eric Evans** | Lead Game Volunteer (Head Coach) | Graham Evans | egevans2@yahoo.com, 520-250-6660 |
-| **Jason Lawrence** | Game Day Helper (Assistant Coach) | Coleman Lawrence | jason.lawrence@gmail.com, 540-908-5129 |
-| **Bob Jacobsen** | Game Day Helper (Assistant Coach) | Luke Jacobsen | bobjacobsen@gmail.com, 206-395-6818 |
+| **Eric Evans** | Lead Game Volunteer (Head Coach) | Graham Evans | <egevans2@yahoo.com>, 520-250-6660 |
+| **Jason Lawrence** | Game Day Helper (Assistant Coach) | Coleman Lawrence | <jason.lawrence@gmail.com>, 540-908-5129 |
+| **Bob Jacobsen** | Game Day Helper (Assistant Coach) | Luke Jacobsen | <bobjacobsen@gmail.com>, 206-395-6818 |
 
 **Volunteer Balance**: 3 volunteers with head coach designation. Strong parent representation.
 
 #### Team M2 - "West Woodland Warriors" Volunteers  
+
 **Head Coach**: Jon Anderson (parent of Booker Anderson)
 
 | Volunteer Name | Role | Child on Team | Contact |
 |----------------|------|---------------|---------|
-| **Jason Evans** | Game Day Helper (Assistant Coach) | Roland Evans | jasone47@gmail.com, 206-303-0198 |
-| **Amy Malkin** | Team Manager (Off-Field Support & Logistics) | Ari Malkin | amyjillhorn@gmail.com, 240-601-8334 |
-| **Sheley Bressler** | Team Manager (Off-Field Support & Logistics) | Brooks Bressler | sheleymarie@gmail.com, 206-240-8740 |
+| **Jason Evans** | Game Day Helper (Assistant Coach) | Roland Evans | <jasone47@gmail.com>, 206-303-0198 |
+| **Amy Malkin** | Team Manager (Off-Field Support & Logistics) | Ari Malkin | <amyjillhorn@gmail.com>, 240-601-8334 |
+| **Sheley Bressler** | Team Manager (Off-Field Support & Logistics) | Brooks Bressler | <sheleymarie@gmail.com>, 206-240-8740 |
 
 **Volunteer Balance**: 4 volunteers including head coach. Excellent logistics support with two team managers.
 
@@ -410,13 +433,14 @@ This assignment maximizes teammate and coach request fulfillment while maintaini
 ### BASEBALL - SINGLE-A VOLUNTEER ASSIGNMENTS
 
 #### Team A1 - "Sandlot Stars" Volunteers
+
 **Head Coach**: Richard Shordt / Carlos Salmeron
 
 | Volunteer Name | Role | Child on Team | Contact |
 |----------------|------|---------------|---------|
-| **Matthew Alexander** | Game Day Helper (Assistant Coach) | James Alexander | msalex351@live.com, 206-295-8715 |
-| **Matthew Tassos** | Game Day Helper (Assistant Coach) | Nicholas Tassos | mttassos@gmail.com, 206-930-4767 |
-| **Evan Klarich** | Game Day Helper (Assistant Coach) | Drew Klarich | eklarich@gmail.com, 949-294-5045 |
+| **Matthew Alexander** | Game Day Helper (Assistant Coach) | James Alexander | <msalex351@live.com>, 206-295-8715 |
+| **Matthew Tassos** | Game Day Helper (Assistant Coach) | Nicholas Tassos | <mttassos@gmail.com>, 206-930-4767 |
+| **Evan Klarich** | Game Day Helper (Assistant Coach) | Drew Klarich | <eklarich@gmail.com>, 949-294-5045 |
 
 **Volunteer Balance**: 3 assistant coaches supporting the dual head coach structure.
 
@@ -425,12 +449,13 @@ This assignment maximizes teammate and coach request fulfillment while maintaini
 ### BASEBALL - TEEN/JUNIOR VOLUNTEER ASSIGNMENTS
 
 #### Team TJ1 - "Garfin Giants" Volunteers
+
 **Head Coach**: Phillip Garfin (parent of Gabriel & Benjamin Garfin)
 
 | Volunteer Name | Role | Child on Team | Contact |
 |----------------|------|---------------|---------|
-| **Adam Bennett** | Game Day Helper (Assistant Coach) | Torsten Bennett | adambennett2@gmail.com, 512-905-9456 |
-| **Sarah Rubin** | Game Day Helper (Assistant Coach) | Jonathan Rubin | snrubin@gmail.com, 206-735-1569 |
+| **Adam Bennett** | Game Day Helper (Assistant Coach) | Torsten Bennett | <adambennett2@gmail.com>, 512-905-9456 |
+| **Sarah Rubin** | Game Day Helper (Assistant Coach) | Jonathan Rubin | <snrubin@gmail.com>, 206-735-1569 |
 
 **Volunteer Balance**: 3 volunteers including head coach. Strong family coaching connections.
 
@@ -439,45 +464,49 @@ This assignment maximizes teammate and coach request fulfillment while maintaini
 ### BASEBALL - TRIPLE-AAA VOLUNTEER ASSIGNMENTS
 
 #### Team AAA1 - "Adam Bennett's Battalion" Volunteers
+
 **Head Coach**: Adam Bennett (parent of Tove Bennett)
 
 | Volunteer Name | Role | Child on Team | Contact |
 |----------------|------|---------------|---------|
-| **Timothy Millea** | Game Day Helper (Assistant Coach) | Finnegan Millea, William Millea | timmillea@gmail.com, 206-809-0678 |
-| **Peter Avratin** | Game Day Helper (Assistant Coach) | Brady Avratin | pavratin@yahoo.com, 206-465-0141 |
-| **Dennis D'Amico** | Game Day Helper (Assistant Coach) | Sam D'Amico | dad39cu@gmail.com, 206-856-4955 |
-| **Rory Douglas** | Game Day Helper (Assistant Coach) | Cormac Douglas | roryjdouglas@gmail.com, 360-259-9476 |
+| **Timothy Millea** | Game Day Helper (Assistant Coach) | Finnegan Millea, William Millea | <timmillea@gmail.com>, 206-809-0678 |
+| **Peter Avratin** | Game Day Helper (Assistant Coach) | Brady Avratin | <pavratin@yahoo.com>, 206-465-0141 |
+| **Dennis D'Amico** | Game Day Helper (Assistant Coach) | Sam D'Amico | <dad39cu@gmail.com>, 206-856-4955 |
+| **Rory Douglas** | Game Day Helper (Assistant Coach) | Cormac Douglas | <roryjdouglas@gmail.com>, 360-259-9476 |
 
 **Volunteer Balance**: 5 volunteers including head coach. Excellent parent involvement across the team.
 
 #### Team AAA2 - "Lee's Legends" Volunteers
+
 **Head Coach**: Danny Lee (parent of Avery Lee)
 
 | Volunteer Name | Role | Child on Team | Contact |
 |----------------|------|---------------|---------|
-| **Jason Schwab** | Game Day Helper (Assistant Coach) | Cameron Schwab | jasontschwab@gmail.com, 720-355-6957 |
-| **Matthew Tassos** | Game Day Helper (Assistant Coach) | Dylan Tassos | mttassos@gmail.com, 206-930-4767 |
-| **Jay Miller** | Game Day Helper (Assistant Coach) | Tavin Miller | j4danger@yahoo.com, 206-618-5980 |
-| **Matthew Gnaneswaran** | Game Day Helper (Assistant Coach) | Niam Gnaneswaran | mgwaran@gmail.com, 360-607-0906 |
+| **Jason Schwab** | Game Day Helper (Assistant Coach) | Cameron Schwab | <jasontschwab@gmail.com>, 720-355-6957 |
+| **Matthew Tassos** | Game Day Helper (Assistant Coach) | Dylan Tassos | <mttassos@gmail.com>, 206-930-4767 |
+| **Jay Miller** | Game Day Helper (Assistant Coach) | Tavin Miller | <j4danger@yahoo.com>, 206-618-5980 |
+| **Matthew Gnaneswaran** | Game Day Helper (Assistant Coach) | Niam Gnaneswaran | <mgwaran@gmail.com>, 360-607-0906 |
 
 **Volunteer Balance**: 5 volunteers including head coach. Strong assistant coach support.
 
 #### Team AAA3 - "Paul Fox's Force" Volunteers
+
 **Head Coach**: Paul Fox (parent of Julian Fox)
 
 | Volunteer Name | Role | Child on Team | Contact |
 |----------------|------|---------------|---------|
-| **David Ortega** | Game Day Helper (Assistant Coach) | Sebastian Ortega | davidortega1987@gmail.com, 206-459-5171 |
-| **Austen Wiederspan** | Game Day Helper (Assistant Coach) | Eli Wiederspan, Gabriel Wiederspan | austenwiederspan@gmail.com, 253-651-5702 |
+| **David Ortega** | Game Day Helper (Assistant Coach) | Sebastian Ortega | <davidortega1987@gmail.com>, 206-459-5171 |
+| **Austen Wiederspan** | Game Day Helper (Assistant Coach) | Eli Wiederspan, Gabriel Wiederspan | <austenwiederspan@gmail.com>, 253-651-5702 |
 
 **Volunteer Balance**: 3 volunteers including head coach. Good parent representation for key players.
 
 #### Team AAA4 - "West Woodland Wolves" Volunteers
+
 **Head Coach**: Ian Hernandez (parent of Robert Hernandez)
 
 | Volunteer Name | Role | Child on Team | Contact |
 |----------------|------|---------------|---------|
-| **Katsuya Kusunoki** | Game Day Helper (Assistant Coach) | Yuiya Kusunoki (moved from Team AAA2) | katsubyo@gmail.com, 206-939-1197 |
+| **Katsuya Kusunoki** | Game Day Helper (Assistant Coach) | Yuiya Kusunoki (moved from Team AAA2) | <katsubyo@gmail.com>, 206-939-1197 |
 
 **Volunteer Balance**: 2 volunteers including head coach. Additional volunteers needed from volunteer pool.
 
@@ -486,6 +515,7 @@ This assignment maximizes teammate and coach request fulfillment while maintaini
 ### SOFTBALL VOLUNTEER ASSIGNMENTS
 
 #### Team SAA1 - "Greenwood Gems" Volunteers
+
 **Coach**: DeNike or Baxter
 
 | Volunteer Name | Role | Child on Team | Contact |
@@ -493,12 +523,13 @@ This assignment maximizes teammate and coach request fulfillment while maintaini
 | *No direct parent volunteers identified* | *Additional volunteers needed* | | |
 
 #### Team SM1 - "Clinch Champions" Volunteers
+
 **Head Coach**: Andy Clinch (parent of Elsa Clinch)
 
 | Volunteer Name | Role | Child on Team | Contact |
 |----------------|------|---------------|---------|
-| **Julie Kennedy** | Team Manager (Off-Field Support & Logistics) | Hollis Kennedy | julie.trott@gmail.com, 917-617-2724 |
-| **Jan Levinson** | Sandlot Team Organizer (A-Baseball Sandlot) | *League-wide role* | jan@ncllball.com, 310-977-2293 |
+| **Julie Kennedy** | Team Manager (Off-Field Support & Logistics) | Hollis Kennedy | <julie.trott@gmail.com>, 917-617-2724 |
+| **Jan Levinson** | Sandlot Team Organizer (A-Baseball Sandlot) | *League-wide role* | <jan@ncllball.com>, 310-977-2293 |
 
 **Volunteer Balance**: 3 volunteers including head coach and specialized organizer role.
 
@@ -506,23 +537,27 @@ This assignment maximizes teammate and coach request fulfillment while maintaini
 
 ## VOLUNTEER DISTRIBUTION SUMMARY
 
-### Volunteer Role Distribution:
+### Volunteer Role Distribution
+
 - **Head Coaches**: 9 (all parent volunteers paired with their children)
 - **Assistant Coaches**: 31 (89% are parents of players on their assigned team)
-- **Team Managers**: 4 (all parents of players on their assigned team)  
+- **Team Managers**: 4 (all parents of players on their assigned team)
 - **Specialized Roles**: 1 (Sandlot Organizer)
 
-### Parent-Child Pairing Success:
+### Parent-Child Pairing Success
+
 - **100% Success Rate**: All volunteers are assigned to teams where their children play
 - **Multi-Child Families**: Successfully accommodated (Yokel, Baltazar, Garfin, Wiederspan families)
 - **Coaching Families**: Danny Lee, Andy Clinch, and others maintain their coaching relationships with their children
 
-### Team Volunteer Coverage:
+### Team Volunteer Coverage
+
 - **Well-Staffed Teams**: Teams with 4-6 volunteers (Double-AA and Triple-AAA teams)
 - **Adequate Coverage**: Teams with 2-3 volunteers (Majors, Single-A, Teen/Junior)
 - **Need Additional Support**: Softball teams and AAA4 team could benefit from additional volunteers
 
-### Key Volunteer Clusters:
+### Key Volunteer Clusters
+
 1. **Olin Wick Network**: 6 volunteers supporting Double-AA Team 1
 2. **Cutter & Buck Parents**: Adam Ginsburgh, Bruce Kaufman supporting their children's team
 3. **Danny Lee Coaching Tree**: Distributed across Double-AA and Triple-AAA as assistant coaches
