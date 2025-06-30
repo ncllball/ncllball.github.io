@@ -1,15 +1,15 @@
 # SUMMERBALL25 TEAM ASSIGNMENTS
 
 **Generated:** June 29, 2025  
-**Total Players:** 181
+**Total Players:** 180
 
 ## Division Summary
 
 - **BASEBALL - Triple-AAA (Interleague):** 60 players → 4 teams
-- **BASEBALL - Double-AA (Interleague):** 55 players → 4 teams
+- **BASEBALL - Double-AA (Interleague):** 54 players → 4 teams
 - **BASEBALL - Majors (Interleague):** 26 players → 2 teams
 - **BASEBALL - TEEN/JUNIOR (Interleague):** 13 players → 1 team
-- **BASEBALL - Single-A (Sandlot):** 18 players → Sandlot format
+- **BASEBALL - Single-A (Sandlot):** 17 players → Sandlot format
 - **SOFTBALL - AA/AAA (Sandlot):** 5 players → Sandlot format
 - **SOFTBALL - AAA/Majors (Sandlot):** 4 players → Sandlot format
 
@@ -18,6 +18,7 @@
 ## BASEBALL - Triple-AAA (Interleague) - 60 players
 
 ### Team AAA-1: "Sockeye" (Pre-formed team - 11 players)
+
 **Coach:** Adam Bennett (Head Coach)
 
 | Player Name | School | Age | LL Age | Teammate Request | Coach Request |
@@ -35,6 +36,7 @@
 | Quincy Quarders | John Stanford Elementary | 9 | 9 | Finn Millea; Tove Bennett | - |
 
 ### Team AAA-2: "Orcas" (16 players)
+
 **Coach:** Paul Fox (Head Coach), Matthew Tassos (Asst.)
 
 | Player Name | School | Age | LL Age | Teammate Request | Coach Request |
@@ -57,6 +59,7 @@
 | Maxwell Robertazzi | St. John School | 8 | 8 | Julian Fox | - |
 
 ### Team AAA-3: "Sea Lions" (17 players)
+
 **Coach:** Danny Lee (Head Coach), Mike Fishback (Asst.), Matt Collins (Asst.)
 
 | Player Name | School | Age | LL Age | Teammate Request | Coach Request |
@@ -80,6 +83,7 @@
 | Sebastian Eliason | Hamilton Middle (HIMS) | 11 | 11 | Jonathan Newstead; Theo Vasilopoulos | Evan Cabodi |
 
 ### Team AAA-4: "Salmon" (16 players)
+
 **Coach:** Ian Hernandez (Head Coach), Peter Avratin (Asst.), Katsuya Kusunoki (Asst.)
 
 | Player Name | School | Age | LL Age | Teammate Request | Coach Request |
@@ -104,9 +108,10 @@
 
 ---
 
-## BASEBALL - Double-AA (Interleague) - 55 players
+## BASEBALL - Double-AA (Interleague) - 54 players
 
 ### Team AA-1: "Harbor Seals" (14 players)
+
 **Coach:** Olin Wick (Head Coach), Bill Appleyard (Asst.)
 
 | Player Name | School | Age | LL Age | Teammate Request | Coach Request |
@@ -124,9 +129,9 @@
 | John Teddy Kasner | Other | 7 | 8 | Owen Tomascheski | - |
 | Carter Siller | West Woodland Elementary | 7 | 8 | Teddy Kasner | - |
 | Joel Merkel | Other | 7 | 8 | John Teddy Kasner | - |
-| Ezra Naar | Daniel Bagley Elementary | 6 | 7 | - | Olin Wick |
 
-### Team AA-2: "Sea Otters" (14 players)
+### Team AA-2: "Sea Otters" (13 players)
+
 **Coach:** Andy Clinch (Head Coach), Rory Douglas (Asst.)
 
 | Player Name | School | Age | LL Age | Teammate Request | Coach Request |
@@ -144,9 +149,9 @@
 | Folsom Aahl | BF Day Elementary | 7 | 7 | Maliki Montgomery | - |
 | Alexander Zimcosky | St. Benedict School | 6 | 7 | Nolan Kelch | Rory Douglas |
 | Ziggy Engelberg | Other | 7 | 8 | Gus Douglas; Benny Wong | - |
-| Augustin Douglas | Greenwood Elementary | - | - | - | - |
 
 ### Team AA-3: "Chinook" (14 players)
+
 **Coach:** Adam Ginsburgh (Head Coach), Ryan Yokel (Asst.)
 
 | Player Name | School | Age | LL Age | Teammate Request | Coach Request |
@@ -167,12 +172,13 @@
 | Owen Traube | Meridian School | 7 | 7 | Ethan Traube | Josh Traube |
 
 ### Team AA-4: "Eagles" (13 players)
+
 **Coach:** St. Benedict Volunteer (TBD)
 
 | Player Name | School | Age | LL Age | Teammate Request | Coach Request |
 |-------------|---------|-----|--------|------------------|---------------|
 | Dylan Wu | St. Benedict School | 9 | 10 | Oliver Kalapov; Jude Kelch | - |
-| Oliver Kalapov | St. Benedict School | 9 | 10 | Dylan Wu; Jude Kelch | - |
+| Oliver Kalapov | St. Benedict School | 9 | 10 | Dylan Wu; Jude Kalch | - |
 | Jude Kelch | St. Benedict School | 9 | 10 | Oliver Kalapov; Chase Johnson; Dylan Wu | St Benedict |
 | Chase Johnson | St. Benedict School | 9 | 10 | Jude Kelch | - |
 | Nolan Kelch | St. Benedict School | 7 | 8 | Oliver Kalapov; Dylan Wu; Chase Johnson | St Benedict |
@@ -184,13 +190,13 @@
 | Kalen Hatch | Greenwood Elementary | 8 | 8 | Roasted Sigmas Aa | - |
 | Miles Thompson | Greenwood Elementary | 8 | 8 | Kalen Hatch | - |
 | Sullivan Danielson | Greenwood Elementary | 8 | 8 | Miles Thompson | - |
-| Lincoln Thullbery | Greenwood Elementary | 8 | 9 | Kalen Hatch | Roasted Sigmas Aa |
 
 ---
 
 ## BASEBALL - Majors (Interleague) - 26 players
 
 ### Team M-1: "Killer Whales" (13 players)
+
 **Coach:** Jon Anderson (Head Coach), Eric Evans (Asst.)
 
 | Player Name | School | Age | LL Age | Teammate Request | Coach Request |
@@ -210,6 +216,7 @@
 | Crosby Aahl | BF Day Elementary | 10 | 11 | Holden Zeller; Holden Rohr | - |
 
 ### Team M-2: "Sea Wolves" (13 players)
+
 **Coach:** John Shikella (volunteer preference), Jason Wickland (Asst.), Jay Tufte (Asst.)
 
 | Player Name | School | Age | LL Age | Teammate Request | Coach Request |
@@ -233,6 +240,7 @@
 ## BASEBALL - TEEN/JUNIOR (Interleague) - 13 players
 
 ### Team TJ-1: "Great White Sharks" (13 players)
+
 **Coach:** Phillip Garfin (Head Coach), Sarah Rubin (Asst.)
 
 | Player Name | School | Age | LL Age | Teammate Request | Coach Request |
@@ -253,7 +261,7 @@
 
 ---
 
-## BASEBALL - Single-A (Sandlot) - 18 players
+## BASEBALL - Single-A (Sandlot) - 17 players
 
 **No fixed teams - Sandlot format**
 
@@ -271,7 +279,6 @@
 | Levi Law | Daniel Bagley Elementary | 6 | 7 |
 | Julian Westberg | St. John School | 6 | 6 |
 | Shai Spector | Other | 6 | 7 |
-| Ezra Naar | Daniel Bagley Elementary | 6 | 7 |
 | Zamir Devnani | John Stanford Elementary | 6 | 6 |
 | James Bozsa | St. John School | 5 | 6 |
 | Duncan Leon | Daniel Bagley Elementary | 5 | 6 |
@@ -310,15 +317,17 @@
 ## Summary Statistics
 
 ### Team Size Distribution
+
 - **Triple-AAA:** 4 teams (11, 16, 17, 16 players)
-- **Double-AA:** 4 teams (14, 14, 14, 13 players)
+- **Double-AA:** 4 teams (14, 13, 14, 13 players)
 - **Majors:** 2 teams (13, 13 players)
 - **Teen/Junior:** 1 team (13 players - undersized)
-- **Single-A:** Sandlot format (18 players)
+- **Single-A:** Sandlot format (17 players)
 - **Softball AA/AAA:** Sandlot format (5 players)
 - **Softball AAA/Majors:** Sandlot format (4 players)
 
 ### Key Notes
+
 - Most teammate requests honored (approximately 85%)
 - Most coach requests honored (approximately 90%)
 - Priority given to volunteer-child pairings
