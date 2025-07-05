@@ -91,7 +91,6 @@ Welcome to the 2025 Youth Baseball Season! Below you will find important informa
 - Do you want the output as Markdown tables (as in your previous docs), or as CSV, or both? Whatever is best for the readability but I do like the markdown format and csv tables.
 - For team names please use sea animals found in the Pacific Northwest.
 - You have access to the entire folder named 2025 Team Formation, including the players_2025.csv, players_2024.csv file, and the volunteers_2025.csv file. Use these files to create the team assignments based on the criteria provided. You also have access to the Summerball25 prompt file, which contains the specific divisions and team requirements. Also, read summerball25.html file and understand league age vs chronological age. 
-
 ## Output Requirements
 
 For each division, provide a separate list of proposed teams. For each team, list the players assigned to it, along with their:
@@ -105,6 +104,24 @@ For each division, provide a separate list of proposed teams. For each team, lis
 - Teammate Request
 - Coach Request
 
-**Format your output clearly, using headings for each division and subheadings for each team. Include a brief summary of how well the balancing criteria were met for each division's team set.**
+**Format your output clearly, using headings for each division and subheadings for each team. Include a brief summary of how well the balancing criteria were met for each division's team set. Also, can you denote the amount of kids on each team next to the header for that information?**
 
-Begin generating the team assignments. Take your time and let me know any questions you may need.
+## FIRST Team Assignment
+### Adam Bennett's Team
+
+**Players:**
+- Mina Bennett
+- Tove Bennett
+- Niam Gnaneswaran
+- Elliott Gouwens
+- Mateo Kawano
+- Riku Kojima
+- Yuiya Kusunoki
+- Finn Millea
+- Kai Nair
+- Apollo Morales-Perea
+- Quincy Quarders
+
+**Please add other kids that fit the criteria and priorities.**
+
+**Verification:** Please ensure that all player names listed above match with the entries in `players_2025.csv`, `players_2024.csv`, and `volunteers_2025.csv`. Any discrepancies should be corrected to ensure data consistency across all files. Ask if there is confusion.
