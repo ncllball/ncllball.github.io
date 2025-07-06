@@ -9,13 +9,13 @@ You are an expert Little League commissioner tasked with creating balanced teams
 
 Here are the specific divisions. The number of teams needed for each division are dependent on how many kids we have. We try to keep it to around 13-16 players per team. Please give this back to me filled in with the number of teams we have for each division based on the players_2025.csv file. The divisions are as follows:
 
-- **BASEBALL - Summerball25 - Double-AA (Interleague):** [X] teams (e.g., 4 teams)
-- **BASEBALL - Summerball25 - Majors (Interleague):** [Y] teams (e.g., 3 teams)
-- **BASEBALL - Summerball25 - Single-A (Sandlot):** [Z] teams (e.g., 2 teams)
-- **BASEBALL - Summerball25 - TEEN/JUNIOR (Interleague):** [A] teams (e.g., 2 teams)
-- **BASEBALL - Summerball25 - Triple-AAA (Interleague):** [B] teams (e.g., 5 teams)
-- **SOFTBALL - Summerball25 - AA/AAA (Sandlot):** [C] teams (e.g., 2 teams)
-- **SOFTBALL - Summerball25 - AAA/Majors (Sandlot):** [D] teams (e.g., 1 team)
+- **BASEBALL - Summerball25 - Single-A:** [Z] teams (e.g., 2 teams)
+- **BASEBALL - Summerball25 - Double-AA:** [X] teams (e.g., 4 teams)
+- **BASEBALL - Summerball25 - Triple-AAA:** [B] teams (e.g., 5 teams)
+- **BASEBALL - Summerball25 - Majors:** [Y] teams (e.g., 3 teams)
+- **BASEBALL - Summerball25 - TEEN/JUNIOR:** [A] teams (e.g., 2 teams)
+- **SOFTBALL - Summerball25 - AA/AAA:** [C] teams (e.g., 2 teams)
+- **SOFTBALL - Summerball25 - AAA/Majors:** [D] teams (e.g., 1 team)
 
 *Note: [X], [Y], [Z], [A], [B], [C], [D] represent the number of teams we have for each division and should total to about 201 players total. We try to keep it to around 13-16 players per team. Exception: Juniors need about 20 per team.*
 
@@ -23,59 +23,7 @@ Here are the specific divisions. The number of teams needed for each division ar
 
 Welcome to the 2025 Summerball25 season! Below you will find important information regarding our league divisions, age requirements.
 
-### League Divisions & Key Details
-
-| Division | League Age |
-| :------------------------------ | :--------- |
-| **T-Ball** | 5-6 |
-| **KCP (Kindergarten Coach Pitch)** | 6-7 |
-| **A Baseball (Kid-Pitch/Coach-Pitch Blend)** | 7-8 |
-| **AA Baseball** | 8-9 |
-| **AAA Baseball** | 10-11 |
-| **Majors Baseball** | 11-12 |
-| **Juniors Baseball** | 13-14 |
-| **Seniors Baseball** | 15-16 |
-
-### Division Specifics and Recommendations
-
-**T-Ball (League Age 5-6)**
-* Primarily for 5 and 6-year-olds.
-* Less skilled or less interested 7-year-olds may also consider T-Ball.
-* 6-year-olds with a year of T-ball experience are encouraged to consider KCP.
-
-**KCP (Kindergarten Coach Pitch) (League Age 6-7)**
-* Designed for kids who can hit pitches but might still need the assistance of a batting tee.
-* Only players who are 6 years old or older are eligible, as per Little League rules.
-* Games are played on the T-ball field.
-
-**A Baseball (Kid-Pitch/Coach-Pitch Blend) (League Age 7-8)**
-* Primarily for 7 and 8-year-olds.
-* 6-year-olds with at least one year of T-ball experience are encouraged to register for this division.
-
-**AA Baseball (League Age 8-9)**
-* Mainly for 8 and 9-year-olds.
-* Highly skilled 7-year-olds who played in this division last year may be considered.
-
-**AAA Baseball (League Age 10-11)**
-* Generally for 9 to 11-year-olds.
-* Highly skilled 8-year-olds are rarely placed in this division.
-* Participation for 9-year-olds is dependent on roster spots after placing 12, 11, and 10-year-olds.
-* 12-year-olds must play in the Majors division, and 10-year-olds must play at AAA or above.
-* 11-year-olds will be split between Majors and AAA.
-* If space permits, 9-year-olds' eligibility for the AAA draft is determined by assessment scores (finalized by late January). Refer to the "Assessments" section for more details.
-* 12-year-olds may play down with a completed safety waiver.
-
-**Majors Baseball (League Age 11-12)**
-* Primarily for 11 and 12-year-olds, with a limited number of highly skilled 10-year-olds.
-* 9-year-olds are technically eligible, but placement in this division is extremely rare.
-
-**Juniors Baseball (League Age 13-14)**
-* For 13 and 14-year-olds.
-* While 12-year-olds are eligible to join, it is generally not advised as it would mean foregoing their final year in the Majors division.
-
-**Seniors Baseball (League Age 15-16)**
-* Primarily for 15 and 16-year-olds.
-* Players as young as 13 are eligible for this division.
+For each division, include a summary of coaches, assistants, and volunteers as well. Who is listed as volunteers **and** have a child registered in that division i.e., **BASEBALL - Summerball25 - Single-A**
 
 ## Team Balancing Criteria (prioritized)
 
@@ -106,6 +54,19 @@ For each division, provide a separate list of proposed teams. For each team, lis
 
 **Format your output clearly, using headings for each division and subheadings for each team. Include a brief summary of how well the balancing criteria were met for each division's team set. Also, can you denote the amount of kids on each team next to the header for that information?**
 
+### Division Output Order
+
+| # | Division Name |
+|---|--------------|
+| 1 | SOFTBALL - Summerball25 - AA/AAA |
+| 2 | SOFTBALL - Summerball25 - AAA/Majors |
+| 3 | BASEBALL - Summerball25 - Single-A |
+| 4 | BASEBALL - Summerball25 - Double-AA |
+| 5 | BASEBALL - Summerball25 - Triple-AAA |
+| 6 | BASEBALL - Summerball25 - Majors |
+| 7 | BASEBALL - Summerball25 - TEEN/JUNIOR |
+
+
 ## FIRST Team Assignment
 ### Adam Bennett's Team
 
@@ -122,6 +83,9 @@ For each division, provide a separate list of proposed teams. For each team, lis
 - Apollo Morales-Perea
 - Quincy Quarders
 
-**Please add other kids that fit the criteria and priorities.**
+**Please add other kids that fit the criteria and priorities to this team. Also, do not include Adam Bennett's daughters on every team he coaches, just the one. **
 
-**Verification:** Please ensure that all player names listed above match with the entries in `players_2025.csv`, `players_2024.csv`, and `volunteers_2025.csv`. Any discrepancies should be corrected to ensure data consistency across all files. Ask if there is confusion.
+
+- Remove John Shikella as head coach
+- highlight the kids who are like nolan davidson — their 'Age' is 12 and their 'LL Age '25' is also 12.
+- **I would like the full player lists for sandlot divisions and I am liking the markdown**
