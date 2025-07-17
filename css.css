@@ -697,3 +697,8 @@ sup {
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
+
+td.softball-header,
+td.baseball-header {
+    background-color: gainsboro;
+}
