@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shoreline/North Central/Queen Anne Softball Juniors team advances to West Region tournament in Tucson, AZ after winning Washington State tournament">
-    <meta name="keywords" content="softball, juniors, little league, washington state tournament, shoreline, north central, queen anne">
+    <meta name="description"
+        content="Shoreline/North Central/Queen Anne Softball Juniors team advances to West Region tournament in Tucson, AZ after winning Washington State tournament">
+    <meta name="keywords"
+        content="softball, juniors, little league, washington state tournament, shoreline, north central, queen anne">
     <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
     <title>Shoreline/North Central/Queen Anne Softball Juniors - State Champions</title>
@@ -16,9 +19,11 @@
             max-width: 450px;
             margin: 0 auto;
         }
+
         .carousel input[type="radio"] {
             display: none;
         }
+
         .carousel-images {
             position: relative;
             width: 100%;
@@ -26,53 +31,63 @@
             overflow: hidden;
             border-radius: 12px;
         }
+
         .carousel-image {
             position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             opacity: 0;
             transition: opacity 0.5s ease;
         }
-        #carousel-1:checked ~ .carousel-images .img1,
-        #carousel-2:checked ~ .carousel-images .img2,
-        #carousel-3:checked ~ .carousel-images .img3,
-        #carousel-4:checked ~ .carousel-images .img4 {
+
+        #carousel-1:checked~.carousel-images .img1,
+        #carousel-2:checked~.carousel-images .img2,
+        #carousel-3:checked~.carousel-images .img3,
+        #carousel-4:checked~.carousel-images .img4 {
             opacity: 1;
             z-index: 1;
         }
+
         .carousel-image label {
             display: block;
             cursor: pointer;
         }
+
         .carousel-image img {
             pointer-events: none;
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
         }
+
         .carousel-caption-container {
             margin-top: 12px;
             padding: 12px 15px;
             background: linear-gradient(to right, #f8f9fa, #e9ecef);
             border-left: 3px solid #e21b3c;
             border-radius: 6px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
             max-width: 450px;
             margin-left: auto;
             margin-right: auto;
         }
+
         .carousel-caption {
             color: #333;
             font-size: 14px;
             line-height: 1.5;
             text-align: left;
         }
+
         .carousel-controls {
             text-align: center;
             margin-top: 15px;
         }
+
         .carousel-controls label {
             display: inline-block;
             width: 14px;
@@ -83,34 +98,42 @@
             cursor: pointer;
             transition: background 0.3s;
         }
-        #carousel-1:checked ~ .carousel-controls label[for="carousel-1"],
-        #carousel-2:checked ~ .carousel-controls label[for="carousel-2"],
-        #carousel-3:checked ~ .carousel-controls label[for="carousel-3"],
-        #carousel-4:checked ~ .carousel-controls label[for="carousel-4"] {
+
+        #carousel-1:checked~.carousel-controls label[for="carousel-1"],
+        #carousel-2:checked~.carousel-controls label[for="carousel-2"],
+        #carousel-3:checked~.carousel-controls label[for="carousel-3"],
+        #carousel-4:checked~.carousel-controls label[for="carousel-4"] {
             background: #333;
         }
+
         .enlarge-checkbox {
             display: none;
         }
+
         .enlarge-overlay {
             position: fixed;
-            top: 0; left: 0;
-            width: 100vw; height: 100vh;
-            background: rgba(0,0,0,0.7);
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
             display: none;
             align-items: center;
             justify-content: center;
             z-index: 9999;
         }
-        .enlarge-checkbox:checked + .enlarge-overlay {
+
+        .enlarge-checkbox:checked+.enlarge-overlay {
             display: flex;
         }
+
         .enlarge-overlay img {
             max-width: 90vw;
             max-height: 90vh;
             border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
         }
+
         .enlarge-overlay .close-btn {
             position: absolute;
             top: 32px;
@@ -122,15 +145,17 @@
             cursor: pointer;
             z-index: 10001;
         }
+
         .gofundme-section {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             border-radius: 16px;
             margin: 24px 0;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
             text-align: center;
             position: relative;
             overflow: hidden;
         }
+
         .gofundme-section::before {
             content: '';
             position: absolute;
@@ -138,33 +163,48 @@
             right: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(2,173,78,0.05) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(2, 173, 78, 0.05) 0%, transparent 70%);
             animation: pulse 4s ease-in-out infinite;
         }
+
         @keyframes pulse {
-            0%, 100% { transform: scale(0.8); opacity: 0.5; }
-            50% { transform: scale(1.2); opacity: 0.8; }
+
+            0%,
+            100% {
+                transform: scale(0.8);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
         }
+
         .gofundme-content {
             position: relative;
             z-index: 1;
         }
+
         .gofundme-logo {
             width: 200px;
             height: 200px;
             margin: 0 auto 24px;
             border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .gofundme-logo:hover {
             transform: translateY(-8px) scale(1.05);
-            box-shadow: 0 12px 32px rgba(2,173,78,0.25);
+            box-shadow: 0 12px 32px rgba(2, 173, 78, 0.25);
         }
+
         @media (max-width: 768px) {
             .gofundme-section {
                 padding: 20px;
             }
+
             .gofundme-logo {
                 width: 150px;
                 height: 150px;
@@ -172,10 +212,12 @@
         }
     </style>
 </head>
+
 <body>
     <main>
         <header>
-            <img class="top-right-image" src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/site_navigation/megaphone.png" alt="Announcement Megaphone">
+            <img class="top-right-image" src="https://ncllball.github.io/images/site_navigation/megaphone.png"
+                alt="Announcement Megaphone">
             <h2 class="left">Shoreline / North Central / Queen Anne Softball Juniors</h2>
         </header>
         <section class="achievement">
@@ -185,22 +227,26 @@
                 <input type="checkbox" id="enlarge-1" class="enlarge-checkbox">
                 <div class="enlarge-overlay">
                     <label for="enlarge-1" class="close-btn" title="Close">&times;</label>
-                    <img src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/extra_innings/2025_softball_juniors/0.jpeg" alt="Enlarged Team Photo 1">
+                    <img src="https://ncllball.github.io/images/extra_innings/2025_softball_juniors/1.jpg"
+                        alt="Enlarged Team Photo 1">
                 </div>
                 <input type="checkbox" id="enlarge-2" class="enlarge-checkbox">
                 <div class="enlarge-overlay">
                     <label for="enlarge-2" class="close-btn" title="Close">&times;</label>
-                    <img src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/extra_innings/2025_softball_juniors/1.jpg" alt="Enlarged Team Photo 2">
+                    <img src="https://ncllball.github.io/images/extra_innings/2025_softball_juniors/2.jpg"
+                        alt="Enlarged Team Photo 2">
                 </div>
                 <input type="checkbox" id="enlarge-3" class="enlarge-checkbox">
                 <div class="enlarge-overlay">
                     <label for="enlarge-3" class="close-btn" title="Close">&times;</label>
-                    <img src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/extra_innings/2025_softball_juniors/2.jpg" alt="Enlarged Team Photo 3">
+                    <img src="https://ncllball.github.io/images/extra_innings/2025_softball_juniors/3.jpg"
+                        alt="Enlarged Team Photo 3">
                 </div>
                 <input type="checkbox" id="enlarge-4" class="enlarge-checkbox">
                 <div class="enlarge-overlay">
                     <label for="enlarge-4" class="close-btn" title="Close">&times;</label>
-                    <img src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/extra_innings/2025_softball_juniors/3.jpg" alt="Enlarged Team Photo 4">
+                    <img src="https://ncllball.github.io/images/extra_innings/2025_softball_juniors/4.jpg"
+                        alt="Enlarged Team Photo 4">
                 </div>
                 <div class="carousel">
                     <input type="radio" name="carousel" id="carousel-1" checked>
@@ -210,29 +256,34 @@
                     <div class="carousel-images">
                         <div class="carousel-image img1">
                             <label for="enlarge-1">
-                                <img src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/extra_innings/2025_softball_juniors/0.jpeg" alt="Team Photo 1">
+                                <img src="https://ncllball.github.io/images/extra_innings/2025_softball_juniors/1.jpg"
+                                    alt="Team Photo 1">
                             </label>
                         </div>
                         <div class="carousel-image img2">
                             <label for="enlarge-2">
-                                <img src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/extra_innings/2025_softball_juniors/1.jpg" alt="Team Photo 2">
+                                <img src="https://ncllball.github.io/images/extra_innings/2025_softball_juniors/2.jpg"
+                                    alt="Team Photo 2">
                             </label>
                         </div>
                         <div class="carousel-image img3">
                             <label for="enlarge-3">
-                                <img src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/extra_innings/2025_softball_juniors/2.jpg" alt="Team Photo 3">
+                                <img src="https://ncllball.github.io/images/extra_innings/2025_softball_juniors/3.jpg"
+                                    alt="Team Photo 3">
                             </label>
                         </div>
                         <div class="carousel-image img4">
                             <label for="enlarge-4">
-                                <img src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/extra_innings/2025_softball_juniors/3.jpg" alt="Team Photo 4">
+                                <img src="https://ncllball.github.io/images/extra_innings/2025_softball_juniors/4.jpg"
+                                    alt="Team Photo 4">
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-caption-container">
                     <div class="carousel-caption">
-                        Eloise Slominski, Isla Weber, Harper Greenwood, Malia Punsalan, Lily Ledoux (not pictured, Maggie Parks), Head Coach Duff Weber
+                        Eloise Slominski, Isla Weber, Harper Greenwood, Malia Punsalan, Lily Ledoux (not pictured,
+                        Maggie Parks), Head Coach Duff Weber
                     </div>
                 </div>
                 <nav class="carousel-controls">
@@ -244,21 +295,34 @@
             </div>
             <div>
                 <h4 class="left"><span>The ladies now advance to the West Region tournament in Tucson, AZ!</span></h4>
-                <p>The team's opportunity to compete for the chance to advance to the Junior Softball Little League World Series starts in Tucson, AZ with games running from Friday July 18th through Wednesday, July 23th (see link below for specific game data). This team, the "Queens", consists of players from Shoreline, Queen Anne, and North Central Little League and came out of the loser-bracket to win both Championship and "if necessary" games to win the state title.</p>
-                <p>Visit the <a href="https://tshq.bluesombrero.com/Default.aspx?tabid=1298050" target="_blank" rel="noopener noreferrer" class="tournament-link ncll">Tournament Website</a> for schedule details, rules, venue information, and everything else you need to know about the West Region tournament. This official site provides all essential information for players and families.</p>
+                <p>The team's opportunity to compete for the chance to advance to the Junior Softball Little League
+                    World Series starts in Tucson, AZ with games running from Friday July 18th through Wednesday, July
+                    23th (see link below for specific game data). This team, the "Queens", consists of players from
+                    Shoreline, Queen Anne, and North Central Little League and came out of the loser-bracket to win both
+                    Championship and "if necessary" games to win the state title.</p>
+                <p>Visit the <a href="https://tshq.bluesombrero.com/Default.aspx?tabid=1298050" target="_blank"
+                        rel="noopener noreferrer" class="tournament-link ncll">Tournament Website</a> for schedule
+                    details, rules, venue information, and everything else you need to know about the West Region
+                    tournament. This official site provides all essential information for players and families.</p>
             </div>
         </section>
         <section class="support-info">
             <div class="gofundme-section">
                 <div class="gofundme-content">
                     <h4 class="left">Support Us on GoFundMe!</h4>
-                    <p>Shoreline LL, North Central LL, and Queen Anne LL are 100% volunteer run non-profit organizations that rely on generous donations from the community to support budgets for travel to state, regional, and national tournament venues. Every donation, big or small, goes directly toward travel, lodging, and meal costs for our players and their families.</p>
-                    <a href="https://www.gofundme.com/f/help-shoreline-ncll-qa-junior-all-stars-go-to-regionals" target="_blank" rel="noopener noreferrer" title="Go to GoFundMe page" class="ncll">
-                        <img src="https://raw.githubusercontent.com/ncllball/ncllball.github.io/main/images/qr_codes/qr-code-2025_sb_juniors_allstars.png" alt="GoFundMe QR Code" class="gofundme-logo">
+                    <p>Shoreline LL, North Central LL, and Queen Anne LL are 100% volunteer run non-profit organizations
+                        that rely on generous donations from the community to support budgets for travel to state,
+                        regional, and national tournament venues. Every donation, big or small, goes directly toward
+                        travel, lodging, and meal costs for our players and their families.</p>
+                    <a href="https://www.gofundme.com/f/help-shoreline-ncll-qa-junior-all-stars-go-to-regionals"
+                        target="_blank" rel="noopener noreferrer" title="Go to GoFundMe page" class="ncll">
+                        <img src="https://ncllball.github.io/images/qr_codes/qr-code-2025_sb_juniors_allstars.png"
+                            alt="GoFundMe QR Code" class="gofundme-logo">
                     </a>
                 </div>
             </div>
         </section>
     </main>
 </body>
+
 </html>
