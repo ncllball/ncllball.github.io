@@ -493,6 +493,7 @@ updated {
     background-color: gainsboro;
     padding: 15px;
     margin-bottom: 20px;
+    display: none;
 }
 
 .button {
