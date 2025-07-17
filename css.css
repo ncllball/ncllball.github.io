@@ -43,9 +43,7 @@
 }
 
 .note {
-    font-size: 120%;
-    color: red;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: underline;
 }
 
 h1,
