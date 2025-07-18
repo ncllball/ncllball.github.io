@@ -1,0 +1,74 @@
+/* All-Stars Page Specific Styles */
+
+/* Contact Information */
+.contact-info {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info span {
+    font-weight: bold;
+}
+
+/* Table Headers */
+.softball-header,
+.baseball-header {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: center;
+}
+
+.softball-header span {
+    color: #d32f2f;
+}
+
+.baseball-header span {
+    color: #1976d2;
+}
+
+/* Notes and Warnings */
+.warning-note {
+    display: inline;
+    color: #d32f2f;
+}
+
+.warning-note span:first-child {
+    font-weight: bold;
+}
+
+/* Footer Notes */
+.footies {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ccc;
+}
+
+.footies p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* Emphasized Text */
+.deadline {
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 2rem;
+}
+
+/* List Improvements */
+ul li span:first-child {
+    font-weight: bold;
+}
+
+/* Table Improvements */
+.table_component table {
+    margin-bottom: 1rem;
+}
+
+.table_component + p {
+    margin-top: 0.5rem;
+}
