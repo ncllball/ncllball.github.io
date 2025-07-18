@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shoreline/North Central/Queen Anne Softball Juniors team advances to West Region tournament in Tucson, AZ after winning Washington State tournament">
+    <meta name="keywords"
+        content="softball, juniors, little league, washington state tournament, shoreline, north central, queen anne">
+    <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
+    <title>Shoreline/North Central/Queen Anne Softball Juniors - State Champions</title>
+    <style>
+        /* Carousel Styles */
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .carousel input[type="radio"] {
+            display: none;
+        }
+
+        .carousel-images {
+            position: relative;
+            width: 100%;
+            padding-top: 70%;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .carousel-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        #carousel-1:checked~.carousel-images .img1,
+        #carousel-2:checked~.carousel-images .img2,
+        #carousel-3:checked~.carousel-images .img3,
+        #carousel-4:checked~.carousel-images .img4 {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .carousel-image label {
+            display: block;
+            cursor: pointer;
+        }
+
+        .carousel-image img {
+            pointer-events: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .carousel-caption-container {
+            margin-top: 12px;
+            padding: 12px 15px;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            border-left: 3px solid #e21b3c;
+            border-radius: 6px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .carousel-caption {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        .carousel-controls {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .carousel-controls label {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin: 0 4px;
+            background: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        #carousel-1:checked~.carousel-controls label[for="carousel-1"],
+        #carousel-2:checked~.carousel-controls label[for="carousel-2"],
+        #carousel-3:checked~.carousel-controls label[for="carousel-3"],
+        #carousel-4:checked~.carousel-controls label[for="carousel-4"] {
+            background: #333;
+        }
+
+        .enlarge-checkbox {
+            display: none;
+        }
+
+        .enlarge-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .enlarge-checkbox:checked+.enlarge-overlay {
+            display: flex;
+        }
+
+        .enlarge-overlay img {
+            max-width: 90vw;
+            max-height: 90vh;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .enlarge-overlay .close-btn {
+            position: absolute;
+            top: 32px;
+            right: 48px;
+            font-size: 2rem;
+            color: #fff;
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 10001;
+        }
+
+        .gofundme-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 16px;
+            margin: 24px 0;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gofundme-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(2, 173, 78, 0.05) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(0.8);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+        }
+
+        .gofundme-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .gofundme-logo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 24px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gofundme-logo:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 12px 32px rgba(2, 173, 78, 0.25);
+        }
+
+        @media (max-width: 768px) {
+            .gofundme-section {
+                padding: 20px;
+            }
+
+            .gofundme-logo {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <img class="top-right-image" src="https://ncllball.github.io/images/site_navigation/megaphone.png"
+                alt="Announcement Megaphone">
+            <h2 class="left">RUG / North Central</h2>
+        </header>
+        <section class="achievement">
+            <h4 class="left">Congratulations to the Seniors Baseball team for winning the Washington State tournament!</h4>
+            <div class="team-photos" style="margin-bottom: 25px; margin-top: 25px;">
+                <!-- Enlarged overlays for each image -->
+                <input type="checkbox" id="enlarge-1" class="enlarge-checkbox">
+                <div class="enlarge-overlay">
+                    <label for="enlarge-1" class="close-btn" title="Close">&times;</label>
+                    <img src="https://ncllball.github.io/images/extra_innings/2025_baseball_seniors/1.jpg"
+                        alt="Enlarged Team Photo 1">
+                </div>
+
+                <div class="carousel">
+                    <input type="radio" name="carousel" id="carousel-1" checked>
+                    <div class="carousel-images">
+                        <div class="carousel-image img1">
+                            <label for="enlarge-1">
+                                <img src="https://ncllball.github.io/images/extra_innings/2025_baseball_seniors/1.jpg"
+                                    alt="Team Photo 1">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-caption-container">
+                    <div class="carousel-caption">
+                        [Placeholder for caption text and names]
+                    </div>
+                </div>
+                <nav class="carousel-controls">
+                </nav>
+            </div>
+            <div>
+                <h4 class="left"><span>The men now advance to the West Region tournament in Oakland, CA!</span></h4>
+                <p>We are thrilled to announce that Seniors Baseball has won the 2025 Washington State Championship! These dedicated young athletes from RUG and North Central Little Leagues have earned the incredible opportunity to represent our state in the Regional Tournament in Oakland, California—but they need your help to get there.</p>
+                <p>Every donation, big or small, goes directly toward travel, lodging, and meal costs for our players and their families. Your generosity will help ensure that finances don’t stand in the way of these boys chasing their dreams on the field.
+</p>
+            </div>
+        </section>
+        <section class="support-info">
+            <div class="gofundme-section">
+                <div class="gofundme-content">
+                    <h4 class="left">Support Us on GoFundMe!</h4>
+                    <p>Let’s rally together and show these champions that their hard work, heart, and hustle matter—on and off the diamond.</p>
+                    <a href="https://www.gofundme.com/f/support-seniors-baseballs-journey-to-oakland"
+                        target="_blank" rel="noopener noreferrer" title="Go to GoFundMe page" class="ncll">
+                        <img src="https://ncllball.github.io/images/qr_codes/qr_code_2025_bb_seniors_allstars.png"
+                            alt="GoFundMe QR Code" class="gofundme-logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
