@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NCLL Season Timeline</title>
     <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
+
     <style>
+        /*====================== BASIC/GENERAL STYLES ======================*/
         body {
             color: #768390;
             background: #FFF;
@@ -15,16 +18,12 @@
             text-align: left;
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        h1, h2, h3, h4, h5, h6 {
             color: #3D4351;
             margin-top: 0;
         }
-
+        
+        /*====================== HEADER STYLES ======================*/
         .example-header {
             background: #3D4351;
             color: #FFF;
@@ -46,6 +45,7 @@
             font-weight: 700;
         }
 
+        /*====================== CONTAINER/LAYOUT STYLES ======================*/
         .container-fluid .row {
             padding: 0 0 4em 0;
         }
@@ -68,16 +68,14 @@
             display: inline;
         }
 
-        /*================================== TIMELINE ==================================*/
-        /*------------------------------- GENERAL STYLES -------------------------------*/
-
+        /*====================== TIMELINE - GENERAL STYLES ======================*/
         .timeline {
             line-height: 1.4em;
             list-style: none;
-            margin: 0 auto; /* Center the timeline itself */
+            margin: 0 auto;
             padding: 0;
-            width: 100%; /* Added to properly center when on larger screens*/
-            max-width: 1000px; /* added a max width to properly maintain proportions, and size of text */
+            width: 100%;
+            max-width: 1000px;
         }
 
         .timeline h1,
@@ -89,7 +87,7 @@
             line-height: normal;
         }
 
-        /*----- TIMELINE ITEM -----*/
+        /*====================== TIMELINE - ITEM STYLES ======================*/
         .timeline-item {
             padding-left: 40px;
             position: relative;
@@ -99,7 +97,7 @@
             padding-bottom: 0;
         }
 
-        /*----- TIMELINE INFO -----*/
+        /*====================== TIMELINE - INFO STYLES ======================*/
         .timeline-info {
             font-size: 12px;
             font-weight: 700;
@@ -109,7 +107,7 @@
             white-space: nowrap;
         }
 
-        /*----- TIMELINE MARKER -----*/
+        /*====================== TIMELINE - MARKER STYLES ======================*/
         .timeline-marker {
             position: absolute;
             top: 0;
@@ -152,8 +150,7 @@
             border: 4px solid #FF6B6B;
         }
 
-        /*----- TIMELINE CONTENT -----*/
-
+        /*====================== TIMELINE - CONTENT STYLES ======================*/
         .timeline-content {
             padding-bottom: 40px;
         }
@@ -162,8 +159,7 @@
             margin-bottom: 0;
         }
 
-        /*----- TIMELINE PERIOD -----*/
-
+        /*====================== TIMELINE - PERIOD STYLES ======================*/
         .period {
             padding: 0;
         }
@@ -179,8 +175,8 @@
             height: auto;
             border: none;
             border-radius: 0;
-             top: 0;
-             bottom: 30px;
+            top: 0;
+            bottom: 30px;
             position: absolute;
         }
 
@@ -196,12 +192,10 @@
 
         .period .timeline-title {
             margin: 0;
-
         }
 
-        /*----------------------------------------------MOD: TIMELINE SPLIT---------------------------------------------*/
+        /*====================== RESPONSIVE STYLES - TIMELINE SPLIT ======================*/
         @media (min-width: 768px) {
-
             .timeline-split .timeline,
             .timeline-centered .timeline {
                 display: table;
@@ -239,14 +233,14 @@
                 padding-right: 30px;
             }
 
-          .timeline-split .period .timeline-title,
-           .timeline-centered .period .timeline-title {
+            .timeline-split .period .timeline-title,
+            .timeline-centered .period .timeline-title {
                 position: relative;
                 left: -115px;
             }
         }
 
-        /*----------------------------------------------MOD: MARKER OUTLINE----------------------------------------------*/
+        /*====================== MARKER OUTLINE MODIFICATION ======================*/
         .marker-outline .timeline-marker:before {
             background: transparent;
             border-color: #FF6B6B;
@@ -255,50 +249,45 @@
         .marker-outline .timeline-item:hover .timeline-marker:before {
             background: #FF6B6B;
         }
+        
+        /*====================== CUSTOM STYLES ======================*/
         .event-title {
-              text-align: left !important;
+            text-align: left !important;
         }
+        
+        h3.timeline-title {
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        /*====================== BUTTON STYLES ======================*/
         .tags_button {
-             background-color: rgba(220, 220, 220, 0.7);
-              /* Gainsboro background with opacity (0.7) */
-            color: #000000; /* Black text color */
-             border: 1px solid #B0B0B0;
-             /* Border with a solid color */
+            background-color: rgba(220, 220, 220, 0.7);
+            color: #000000;
+            border: 1px solid #B0B0B0;
             padding: 2px 5px;
-              /* Add some padding */
             margin-left: 5px;
-              font-size: 10px;
-               /* Increase the font size */
+            font-size: 10px;
             cursor: pointer;
-               /* Add a pointer cursor on hover */
             border-radius: 6px;
-               /* Rounded corners */
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-               /* Subtle shadow */
             transition: background-color 0.3s, box-shadow 0.3s;
-               /* Smooth transition for hover effect */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
- .tags_button:hover {
+        
+        .tags_button:hover {
             background-color: rgba(169, 169, 169, 0.7);
-               /* Darker Gainsboro on hover with opacity (0.7) */
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-               /* Slightly larger shadow on hover */
         }
-	    h3.timeline-title {
-		      font-weight: 600;
-		      font-size: 18px;
-	    }
-
     </style>
 </head>
 <body>
+    <!-- ====================== HEADER SECTION ====================== -->
     <div class="container-fluid">
-        <div class="alert-header"><p>This page is currently under construction. Use at your own risk and check back soon for the finished product!</p></div>
 
+        <!-- ====================== INTRODUCTION SECTION ====================== -->
         <div class="row example-split">
             <div class="col-md-12 example-title">
-                <h1 class="left">NCLL Season Timeline</h1>
                 <p>Planning for the 2025 season is underway. Below is a rough sketch
                     of what our season holds including
                     registration openings, closings, team selection, start of
@@ -306,15 +295,74 @@
                     noted, the dates are applicable to both baseball and softball
                     programs.</p>
             </div>
+            
+            <!-- ====================== TIMELINE CONTAINER ====================== -->
             <div class="col-xs-12">
                 <ul class="timeline timeline-split">
-
+                
+                    <!-- ====================== SEPTEMBER 2024 ====================== -->
                     <li class="timeline-item period">
                         <div class="timeline-info"></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h2 class="event-title timeline-title">December
-                                2024</h2>
+                            <h2 class="event-title timeline-title">September 2024</h2>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>September 15, 2024</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="event-title timeline-title">Planning Meeting</h3>
+                            <p>2025 Season planning begins<button class="tags_button">learn more...</button></p>
+                        </div>
+                    </li>
+
+                    <!-- ====================== OCTOBER 2024 ====================== -->
+                    <li class="timeline-item period">
+                        <div class="timeline-info"></div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h2 class="event-title timeline-title">October 2024</h2>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>October 20, 2024</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="event-title timeline-title">Board Meeting</h3>
+                            <p>Season schedule finalized<button class="tags_button">learn more...</button></p>
+                        </div>
+                    </li>
+
+                    <!-- ====================== NOVEMBER 2024 ====================== -->
+                    <li class="timeline-item period">
+                        <div class="timeline-info"></div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h2 class="event-title timeline-title">November 2024</h2>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>November 15, 2024</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="event-title timeline-title">Coach Recruitment</h3>
+                            <p>Recruitment for coaches begins<button class="tags_button">learn more...</button></p>
+                        </div>
+                    </li>
+                    
+                    <!-- ====================== DECEMBER 2024 ====================== -->
+                    <li class="timeline-item period">
+                        <div class="timeline-info"></div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h2 class="event-title timeline-title">December 2024</h2>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -323,12 +371,12 @@
                         </div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="event-title timeline-title">Registration
-                                Opens</h3>
-                            <p> All Divisions.<button class="tags_button">learn
-                                    more...</button></p>
+                            <h3 class="event-title timeline-title">Registration Opens</h3>
+                            <p>All Divisions.<button class="tags_button">learn more...</button></p>
                         </div>
                     </li>
+                    
+                    <!-- ====================== JANUARY 2025 ====================== -->
                     <li class="timeline-item period">
                         <div class="timeline-info"></div>
                         <div class="timeline-marker"></div>
@@ -374,6 +422,7 @@
                                     more...</button></p>
                          </div>
                     </li>
+                     <!-- ====================== FEBRUARY 2025 ====================== -->
                      <li class="timeline-item period">
                             <div class="timeline-info"></div>
                             <div class="timeline-marker"></div>
@@ -478,7 +527,8 @@
                                         more...</button></p>
                              </div>
                         </li>
-                        <li class="timeline-item period">
+                        <!-- ====================== MARCH 2025 ====================== -->
+                         <li class="timeline-item period">
                          <div class="timeline-info"></div>
                           <div class="timeline-marker"></div>
                              <div class="timeline-content">
