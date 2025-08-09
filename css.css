@@ -768,6 +768,7 @@ td.baseball-header {
     border-radius: 4px;
     outline: none;
     list-style: none; /* helps hide marker in Firefox */
+    text-decoration: none;
 }
 
 /* Hide default marker in WebKit */
@@ -787,9 +788,11 @@ td.baseball-header {
 }
 
 /* Hover/Focus affordances */
-.table_component summary:hover {
+.table_component summary:hover,
+.table_component summary:active,
+.table_component summary:focus {
     background: #f3f3f3; /* subtle gainsboro-like hover */
-    text-decoration: underline;
+    text-decoration: none; /* no underline on hover/click */
 }
 
 .table_component summary:focus-visible {
@@ -872,6 +875,12 @@ td.baseball-header {
     font-size: 11px;
 }
 
+/* Consistent alignment: left-align headers and cells in scrollable tables */
+.table_component.scroll th,
+.table_component.scroll td {
+    text-align: left;
+}
+
 /* Smaller caption spacing for scroll tables */
 .table_component.scroll caption {
     padding: 4px 0;   /* reduce vertical space */
@@ -884,6 +893,11 @@ td.baseball-header {
 .table_component.scroll td span {
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/* Do not bold spans inside table cells (e.g., division names in Summerball matrix) */
+.table_component td span {
+    font-weight: 400 !important;
 }
 
 /* Ensure details/summary blocks don’t expand row height too much */
@@ -973,5 +987,6 @@ td.baseball-header {
 .table_component caption,
 .table_component summary,
 .table_component details > small {
-    font-family: inherit !important;
+    /* Match All-Star / SportsConnect font */
+    font-family: 'proxima-nova', Arial, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
