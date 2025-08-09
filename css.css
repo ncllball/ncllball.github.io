@@ -1007,3 +1007,42 @@ td.baseball-header {
     /* Match All-Star / SportsConnect font */
     font-family: 'proxima-nova', Arial, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
+
+/* ==============================================
+   All-Stars introductions page styles
+   Moved from inline <style> in All-Stars/allstar introductions.html
+   on 2025-08-08 for centralization in css.css
+   ============================================== */
+.allstar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.allstars {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+picture {
+    width: 100%;
+    display: block;
+}
+
+/* Subtle hover effect for clickable images */
+picture a:hover img {
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+/* Visual separation between age groups */
+.allstar-container > section:nth-child(3),
+.allstar-container > section:nth-child(5),
+.allstar-container > section:nth-child(7),
+.allstar-container > section:nth-child(9),
+.allstar-container > section:nth-child(11) {
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1.5rem;
+}
