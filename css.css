@@ -883,7 +883,8 @@ td.baseball-header {
 
 /* Smaller caption spacing for scroll tables */
 .table_component.scroll caption {
-    padding: 4px 0;   /* reduce vertical space */
+    padding: 2px 0;   /* tighter vertical space */
+    margin: 0 0 2px 0; /* bring caption closer to table */
     font-size: 11px;  /* keep caption compact */
 }
 
