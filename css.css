@@ -18,7 +18,7 @@
 
 .skTabsWrapper {
     display: table-cell;
-    width: calc(100% - calculateSpacing(32));
+    width: calc(100% - 32px);
     background: #fff;
     vertical-align: top;
     padding: 0 0px 0 0;
@@ -144,7 +144,7 @@ body {
 }
 
 h1.left {
-    background-color: gainsboro;
+    background-color: var(--color_lightgray);
     text-align: left !important;
     float: none;
     margin: 0 0 18px 0;
@@ -156,7 +156,7 @@ h2.left {
     text-align: left !important;
     margin: 0 0 18px 0;
     padding: 1px 0;
-    color: RGB(0, 1, 58) !important;
+    color: var(--color_blue) !important;
 }
 
 h2.left::before {
@@ -236,7 +236,7 @@ table caption {
 
 .table_component th {
     border: 1px solid #dededf;
-    background-color: #CD163F;
+    background-color: var(--color_red);
     color: whitesmoke;
     padding: 5px;
     font-weight: 400;
@@ -270,20 +270,20 @@ table caption {
 }
 
 a.ncll {
-    color: #CD163F !important;
+    color: var(--color_red) !important;
     text-decoration: none;
 }
 
 a.ncll:visited {
-    color: #CD163F !important;
+    color: var(--color_red) !important;
 }
 
 a.ncll:hover {
-    color: #CD163F !important;
+    color: var(--color_red) !important;
 }
 
 a.ncll:active {
-    color: #CD163F !important;
+    color: var(--color_red) !important;
 }
 
 .blurred-text {
@@ -331,7 +331,7 @@ super {
 }
 
 updated {
-    color: #CD163F !important;
+    color: var(--color_red) !important;
     text-decoration: none;
     font-size: 10px;
     margin-top: 0;
@@ -355,7 +355,7 @@ updated {
     color: #555;
     line-height: normal;
     margin: 0px;
-    padding: 3px 10px 3px 5px ! Important;
+    padding: 3px 10px 3px 5px !important;
 }
 
 .footies a {
@@ -548,7 +548,7 @@ section.strike {
 }
 
 .highlight {
-    background-color: gainsboro;
+    background-color: var(--color_lightgray);
     padding: 15px;
     margin-bottom: 20px;
     display: none;
@@ -556,7 +556,7 @@ section.strike {
 
 .button {
     display: inline-block;
-    background-color: #00013a;
+    background-color: var(--color_blue);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -741,7 +741,7 @@ sup {
     text-align: left !important;
     margin: 0 0 18px 0;
     padding: 1px 0;
-    color: RGB(0, 1, 58) !important;
+    color: var(--color_blue) !important;
 }
 
 .tbd-placeholder {
@@ -779,7 +779,7 @@ td.baseball-header {
     gap: 6px;
     cursor: pointer;
     font-weight: 600;
-    color: #00013a; /* NCLL dark blue */
+    color: var(--color_blue); /* NCLL dark blue */
     padding: 3px 6px;
     border-radius: 4px;
     outline: none;
@@ -794,7 +794,7 @@ td.baseball-header {
 /* Chevron indicator */
 .table_component summary::before {
     content: "▸";
-    color: #00013a;
+    color: var(--color_blue);
     transition: transform .2s ease;
 }
 
@@ -819,7 +819,7 @@ td.baseball-header {
     margin-top: 6px;
     padding: 8px 10px;
     background: #f0f0f0; /* gainsboro-ish */
-    border-left: 3px solid #00013a;
+    border-left: 3px solid var(--color_blue);
     border-radius: 4px;
     line-height: 1.35;
     color: #222;
@@ -868,12 +868,18 @@ td.baseball-header {
 /* Compact layout for horizontally scrollable tables */
 .table_component.scroll table {
     white-space: nowrap; /* keep content to one line per cell */
-    font-size: 13px;     /* slightly smaller for density */
+    font-size: 12px;     /* smaller for higher density */
 }
 
 .table_component.scroll th,
 .table_component.scroll td {
-    padding: 6px 8px; /* tighter padding to reduce height */
+    padding: 4px 6px; /* even tighter padding to reduce height */
+}
+
+/* Smaller caption spacing for scroll tables */
+.table_component.scroll caption {
+    padding: 4px 0;   /* reduce vertical space */
+    font-size: 12px;  /* keep caption compact */
 }
 
 /* Allow long words to truncate with ellipsis to keep rows single-line */
@@ -887,4 +893,60 @@ td.baseball-header {
 /* Ensure details/summary blocks don’t expand row height too much */
 .table_component.scroll details > small {
     white-space: normal; /* wrap inside the expanded panel only */
+}
+
+/* Sticky column headers within scrollable tables */
+.table_component.scroll thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2; /* above cell content */
+    background-color: var(--color_red); /* reaffirm header background while sticky */
+    box-shadow: 0 1px 0 rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Sticky first column for easier row tracking */
+.table_component.scroll th:first-child,
+.table_component.scroll td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: #fff; /* maintain cell background */
+    box-shadow: 2px 0 0 rgba(0,0,0,0.06); /* subtle divider on the right */
+    min-width: 160px; /* steady width for sticky first column */
+}
+
+/* Corner header cell needs to sit above both header row and first column */
+.table_component.scroll thead th:first-child {
+    z-index: 3;
+    background-color: var(--color_red); /* keep header color */
+    color: whitesmoke;
+}
+
+/* Group header rows to band Baseball and Softball sections */
+.table_component .group-header {
+    background: var(--color_lightgray); /* match All-Star table neutral band */
+    color: var(--color_blue); /* NCLL dark blue */
+    font-weight: 700;
+    text-align: left !important;
+}
+
+/* Sport-specific variants inherit neutral background for consistency with All-Star table */
+.table_component .group-header.softball,
+.table_component .group-header.baseball {
+    background: var(--color_lightgray);
+}
+
+.table_component .group-header td {
+    padding: 6px 8px;
+    background: var(--color_lightgray); /* ensure cells themselves are banded */
+    border-left: 1px solid #dededf;
+    border-right: 1px solid #dededf;
+}
+
+/* Ensure group header rows aren't affected by the sticky first-column white background */
+.table_component.scroll tr.group-header td:first-child {
+    position: static !important;
+    left: auto !important;
+    background: var(--color_lightgray) !important;
+    box-shadow: none !important; /* remove sticky divider */
 }
