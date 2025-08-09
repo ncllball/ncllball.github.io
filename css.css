@@ -864,3 +864,27 @@ td.baseball-header {
 @media (min-width: 900px) {
     .scroll-hint { display: none; }
 }
+
+/* Compact layout for horizontally scrollable tables */
+.table_component.scroll table {
+    white-space: nowrap; /* keep content to one line per cell */
+    font-size: 13px;     /* slightly smaller for density */
+}
+
+.table_component.scroll th,
+.table_component.scroll td {
+    padding: 6px 8px; /* tighter padding to reduce height */
+}
+
+/* Allow long words to truncate with ellipsis to keep rows single-line */
+.table_component.scroll td,
+.table_component.scroll th span,
+.table_component.scroll td span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Ensure details/summary blocks don’t expand row height too much */
+.table_component.scroll details > small {
+    white-space: normal; /* wrap inside the expanded panel only */
+}
