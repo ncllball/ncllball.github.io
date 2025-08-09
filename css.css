@@ -831,3 +831,36 @@ td.baseball-header {
         transition: none;
     }
 }
+
+/* ==============================================
+   Scrollable tables (opt-in modifier)
+   Added 2025-08-08 for Summerball25 horizontal scroll behavior
+   Usage: <div class="table_component scroll"><table>…</table></div>
+   ============================================== */
+.table_component.scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
+/* Make table expand to its content so a narrow viewport causes horizontal scroll */
+.table_component.scroll table {
+    width: max-content;
+    min-width: 760px; /* ensures multi-column tables overflow on small screens */
+}
+
+/* Keyboard focus ring when users tab into the scroll region */
+.table_component.scroll:focus {
+    outline: 2px solid #cc0000; /* NCLL red */
+    outline-offset: 2px;
+}
+
+/* Subtle hint shown on small screens only */
+.scroll-hint {
+    margin: 0 0 8px;
+    font-size: 12px;
+    color: #666;
+}
+
+@media (min-width: 900px) {
+    .scroll-hint { display: none; }
+}
