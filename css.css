@@ -858,18 +858,24 @@ td.baseball-header {
 /* Compact layout for horizontally scrollable tables */
 .table_component.scroll table {
     white-space: nowrap; /* keep content to one line per cell */
-    font-size: 12px;     /* smaller for higher density */
+    font-size: 12px;     /* base; cells/headers further reduced below */
 }
 
 .table_component.scroll th,
 .table_component.scroll td {
-    padding: 4px 6px; /* even tighter padding to reduce height */
+    padding: 3px 5px; /* even tighter padding to reduce height */
+}
+
+/* Tone down header/cell font size within scroll tables */
+.table_component.scroll th,
+.table_component.scroll td {
+    font-size: 11px;
 }
 
 /* Smaller caption spacing for scroll tables */
 .table_component.scroll caption {
     padding: 4px 0;   /* reduce vertical space */
-    font-size: 12px;  /* keep caption compact */
+    font-size: 11px;  /* keep caption compact */
 }
 
 /* Allow long words to truncate with ellipsis to keep rows single-line */
@@ -916,7 +922,7 @@ td.baseball-header {
 .table_component .group-header {
     background: var(--color_lightgray); /* match All-Star table neutral band */
     color: var(--color_blue); /* NCLL dark blue */
-    font-weight: 700;
+    font-weight: 600;
     text-align: left !important;
 }
 
