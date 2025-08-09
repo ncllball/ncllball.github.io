@@ -958,3 +958,14 @@ td.baseball-header {
 .table_component.scroll tr.group-header.baseball td:first-child {
     background: var(--tint_baseball) !important;
 }
+
+/* Use global site font for charts/tables by inheriting from the page */
+.table_component,
+.table_component table,
+.table_component th,
+.table_component td,
+.table_component caption,
+.table_component summary,
+.table_component details > small {
+    font-family: inherit !important;
+}
