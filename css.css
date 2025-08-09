@@ -328,6 +328,9 @@ super {
     --color_lightgray: gainsboro;
     --color_darkgray: RGB(68, 68, 68);
     --color_button: #f0f0f0;
+    /* subtle sport-specific band tints */
+    --tint_softball: #f7f3ff; /* very light lavender */
+    --tint_baseball: #f2f8ff; /* very light blue */
 }
 
 updated {
@@ -691,32 +694,13 @@ sup {
     font-size: 9px !important;
 }
 
-/* Enhanced responsive table styling */
-.table_component {
-    overflow: auto;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    margin-bottom: 1em;
-    display: block;
-}
-
-.table_component table {
-    border: 1px solid #dededf;
-    height: 90%;
-    width: 100%;
-    min-width: 320px;
-    table-layout: auto;
-    border-collapse: collapse;
-    border-spacing: 1px;
-    text-align: left;
-}
+/* Enhanced responsive table styling
+    Consolidated: base styles defined earlier; scroll-specific live under .table_component.scroll */
 
 /* Mobile-specific table adjustments */
 @media screen and (max-width: 600px) {
-    .table_component table {
+    /* Non-scroll tables expand to container width on small screens */
+    .table_component:not(.scroll) table {
         min-width: 100%;
     }
 
@@ -943,10 +927,28 @@ td.baseball-header {
     border-right: 1px solid #dededf;
 }
 
+/* Sport-specific variants: lightly tinted bands, still readable */
+.table_component .group-header.softball td {
+    background: var(--tint_softball);
+}
+
+.table_component .group-header.baseball td {
+    background: var(--tint_baseball);
+}
+
 /* Ensure group header rows aren't affected by the sticky first-column white background */
 .table_component.scroll tr.group-header td:first-child {
     position: static !important;
     left: auto !important;
     background: var(--color_lightgray) !important;
     box-shadow: none !important; /* remove sticky divider */
+}
+
+/* Ensure sticky override respects sport-specific tint on first cell */
+.table_component.scroll tr.group-header.softball td:first-child {
+    background: var(--tint_softball) !important;
+}
+
+.table_component.scroll tr.group-header.baseball td:first-child {
+    background: var(--tint_baseball) !important;
 }
