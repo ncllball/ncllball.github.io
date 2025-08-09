@@ -762,3 +762,72 @@ td.softball-header,
 td.baseball-header {
     background-color: gainsboro;
 }
+
+/* ==============================================
+   Summerball25 page CSS
+   Moved from inline <style> in "2025 Season/summerball25.html"
+   on 2025-08-08 for centralization in css.css
+   Scope: table details/summary UI used on Summerball25 schedule tables
+   ============================================== */
+.table_component details {
+    margin: 0;
+}
+
+.table_component summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #00013a; /* NCLL dark blue */
+    padding: 3px 6px;
+    border-radius: 4px;
+    outline: none;
+    list-style: none; /* helps hide marker in Firefox */
+}
+
+/* Hide default marker in WebKit */
+.table_component summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Chevron indicator */
+.table_component summary::before {
+    content: "▸";
+    color: #00013a;
+    transition: transform .2s ease;
+}
+
+.table_component details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+/* Hover/Focus affordances */
+.table_component summary:hover {
+    background: #f3f3f3; /* subtle gainsboro-like hover */
+    text-decoration: underline;
+}
+
+.table_component summary:focus-visible {
+    outline: 2px solid #cc0000; /* NCLL red */
+    outline-offset: 2px;
+}
+
+/* Panel content */
+.table_component details > small {
+    display: block;
+    margin-top: 6px;
+    padding: 8px 10px;
+    background: #f0f0f0; /* gainsboro-ish */
+    border-left: 3px solid #00013a;
+    border-radius: 4px;
+    line-height: 1.35;
+    color: #222;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .table_component summary::before {
+        transition: none;
+    }
+}
