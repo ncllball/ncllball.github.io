@@ -888,8 +888,8 @@ td.baseball-header {
 /* Tone down header/cell font size within scroll tables */
 .table_component.scroll th,
 .table_component.scroll td {
-    font-size: 12px;
-    line-height: 1.4;
+    font-size: 14px;
+    line-height: 1.5;
     letter-spacing: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -905,7 +905,7 @@ td.baseball-header {
 .table_component.scroll caption {
     padding: 2px 0;   /* tighter vertical space */
     margin: 0 0 2px 0; /* bring caption closer to table */
-    font-size: 12px;  /* align with chart text */
+    font-size: 14px;  /* align with chart text */
 }
 
 /* Allow long words to truncate with ellipsis to keep rows single-line */
@@ -933,12 +933,13 @@ td.baseball-header {
     z-index: 2; /* above cell content */
     background-color: var(--color_red); /* reaffirm header background while sticky */
     box-shadow: 0 1px 0 rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.06);
-    font-weight: 600; /* match SportsConnect header weight */
+    font-weight: 700; /* match SportsConnect header weight */
 }
 
 /* Ensure body cells are regular weight for readability */
 .table_component.scroll td {
     font-weight: 400;
+    color: #444; /* SportsConnect-like body text color */
 }
 
 /* Sticky first column for easier row tracking */
