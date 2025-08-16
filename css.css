@@ -578,7 +578,7 @@ section.strike {
 
 /* Subtle callout block used for helper/eligibility content */
 .helper {
-    margin: 20px 0 0 0;
+    margin-top: 20px;
 }
 
 .button {
