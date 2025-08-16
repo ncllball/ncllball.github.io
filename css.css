@@ -231,6 +231,8 @@ h4.left {
 
 table caption {
     padding: 0.5em 0;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .table_component {
