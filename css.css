@@ -1123,15 +1123,15 @@ picture a:hover img {
 }
 
 /* Assessments: visually de-emphasize past dates (remove/update next season) */
-.past-date {
+.fuzzy {
 	opacity: 0.3; /* was 0.55 */
 	filter: blur(1px) grayscale(0.7) saturate(0.4); /* stronger de-emphasis */
 	color: #6b6b6b; /* lower contrast text color */
 	transition: opacity 0.2s ease, filter 0.2s ease, color 0.2s ease;
 }
-.past-date:hover,
-.past-date:focus,
-.past-date:focus-visible {
+.fuzzy:hover,
+.fuzzy:focus,
+.fuzzy:focus-visible {
 	opacity: 1;
 	filter: none;
 	color: inherit;
