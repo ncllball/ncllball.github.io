@@ -2,7 +2,7 @@
 .skRightTabs,
 .skTabHeading,
 .skCaption {
-    display: none !important;
+    display: block;
 }
 
 .dfContainer h2.head,
@@ -574,6 +574,11 @@ section.strike {
     padding: 15px;
     margin-bottom: 20px;
     display: none;
+}
+
+/* Subtle callout block used for helper/eligibility content */
+.helper {
+    margin: 16px 0 20px 0;
 }
 
 .button {
