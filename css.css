@@ -1023,7 +1023,10 @@ td.baseball-header {
 .table_component summary,
 .table_component details > small {
     /* Match All-Star / SportsConnect font */
-    font-family: 'proxima-nova', Arial, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400; /* regular weight for body text */
+    line-height: normal;
+    
 }
 
 /* ==============================================
