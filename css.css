@@ -482,28 +482,6 @@ updated {
     width: 33%;
 }
 
-/* .strike {
-    border-top: 4px solid #019cde;
-    background-color: #f8f9fa;
-    padding: 25px 20px 15px;
-    margin: 30px 0;
-    position: relative;
-}
-
-.strike::before {
-    content: "UPDATE";
-    position: absolute;
-    top: -13px;
-    left: 15px;
-    background-color: #f8f9fa;
-    padding: 0 8px;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: #019cde;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-} */
-
 .strike {
     background-color: #f8d7da;
     border: 1px solid #f5c6cb;
@@ -604,40 +582,33 @@ section.strike {
     font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.table_component table,
-.softball-table {
+.table_component table {
     width: 100%;
     border-collapse: collapse;
 }
 
 .table_component th,
-.table_component td,
-.softball-table th,
-.softball-table td {
+.table_component td {
     padding: 8px;
     border: 1px solid #ccc;
     text-align: left;
 }
 
-.table_component img,
-.softball-table img {
+.table_component img {
     width: 50px;
     height: 50px;
     float: left;
 }
 
-.table_component .fit,
-.softball-table .fit {
+.table_component .fit {
     vertical-align: middle;
 }
 
-.table_component .white-background,
-.white-background {
+.table_component {
     background-color: white;
 }
 
-.table_component td[colspan="9"],
-.softball-table td[colspan="9"] {
+.table_component td[colspan="9"] {
     padding: 5px 5px;
     background-color: white;
     color: rgb(68, 68, 68);
@@ -645,8 +616,7 @@ section.strike {
     border: none;
 }
 
-.table_component p,
-.softball-table p {
+.table_component p {
     padding: 5px 0px 5px 0px;
     font-size: 13px;
 }
@@ -718,25 +688,6 @@ sup {
     font-size: 9px !important;
 }
 
-/* Enhanced responsive table styling
-    Consolidated: base styles defined earlier; scroll-specific live under .table_component.scroll */
-
-/* Mobile-specific table adjustments */
-@media screen and (max-width: 600px) {
-    /* Non-scroll tables expand to container width on small screens */
-    .table_component:not(.scroll) table {
-        min-width: 100%;
-    }
-
-    /* Add data labels for mobile display */
-    .fit td::before {
-        content: attr(data-label);
-        font-weight: bold;
-        display: block;
-        margin-bottom: 0.25rem;
-    }
-}
-
 /* Special styling for checkmarks and TBD content */
 .checkmarks {
     text-align: center !important;
@@ -766,350 +717,9 @@ sup {
     margin-bottom: 20px;
 }
 
-td.softball-header,
-td.baseball-header {
+td.division-header {
     background-color: gainsboro;
 }
-
-/* ==============================================
-   Summerball25 page CSS
-   Moved from inline <style> in "2025 Season/summerball25.html"
-   on 2025-08-08 for centralization in css.css
-   Scope: table details/summary UI used on Summerball25 schedule tables
-   ============================================== */
-.table_component details {
-    margin: 0;
-}
-
-.table_component summary {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    cursor: pointer;
-    font-weight: 600;
-    color: var(--color_blue); /* NCLL dark blue */
-    padding: 3px 6px;
-    border-radius: 4px;
-    outline: none;
-    list-style: none; /* helps hide marker in Firefox */
-    text-decoration: none;
-}
-
-/* Hide default marker in WebKit */
-.table_component summary::-webkit-details-marker {
-    display: none;
-}
-
-/* Chevron indicator */
-.table_component summary::before {
-    content: "▸";
-    color: var(--color_blue);
-    transition: transform .2s ease;
-}
-
-.table_component details[open] summary::before {
-    transform: rotate(90deg);
-}
-
-/* Hover/Focus affordances */
-.table_component summary:hover,
-.table_component summary:active,
-.table_component summary:focus {
-    background: #f3f3f3; /* subtle gainsboro-like hover */
-    text-decoration: none; /* no underline on hover/click */
-}
-
-.table_component summary:focus-visible {
-    /* Subtle, accessible focus without red border */
-    outline: 2px solid var(--color_lightgray);
-    outline-offset: 2px;
-}
-
-/* Panel content */
-.table_component details > small {
-    display: block;
-    margin-top: 6px;
-    padding: 8px 10px;
-    background: #f0f0f0; /* gainsboro-ish */
-    border-left: 3px solid var(--color_blue);
-    border-radius: 4px;
-    line-height: 1.35;
-    color: #222;
-}
-
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-    .table_component summary::before {
-        transition: none;
-    }
-}
-
-/* ==============================================
-   Scrollable tables (opt-in modifier)
-   Added 2025-08-08 for Summerball25 horizontal scroll behavior
-   Usage: <div class="table_component scroll"><table>…</table></div>
-   ============================================== */
-.table_component.scroll {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
-}
-
-/* Make table expand to its content so a narrow viewport causes horizontal scroll */
-.table_component.scroll table {
-    width: max-content;
-    min-width: 760px; /* ensures multi-column tables overflow on small screens */
-}
-
-/* Keyboard focus ring when users tab into the scroll region */
-.table_component.scroll:focus {
-    /* Remove red border on mouse click focus */
-    outline: none;
-}
-.table_component.scroll:focus-visible {
-    /* Keep an accessible, subtle focus style for keyboard users */
-    outline: 2px solid var(--color_lightgray);
-    outline-offset: 2px;
-}
-
-/* Subtle hint shown on small screens only */
-.scroll-hint {
-    margin: 0 0 8px;
-    font-size: 12px;
-    color: #666;
-}
-
-@media (min-width: 900px) {
-    .scroll-hint { display: none; }
-}
-
-/* Compact layout for horizontally scrollable tables */
-.table_component.scroll table {
-    white-space: nowrap; /* keep content to one line per cell */
-    font-size: 12px;     /* base; cells/headers further reduced below */
-}
-
-.table_component.scroll th,
-.table_component.scroll td {
-    padding: 3px 5px; /* even tighter padding to reduce height */
-}
-
-/* Tone down header/cell font size within scroll tables */
-.table_component.scroll th,
-.table_component.scroll td {
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-/* Consistent alignment: left-align headers and cells in scrollable tables */
-.table_component.scroll th,
-.table_component.scroll td {
-    text-align: left;
-}
-
-/* Smaller caption spacing for scroll tables */
-.table_component.scroll caption {
-    padding: 2px 0;   /* tighter vertical space */
-    margin: 0 0 2px 0; /* bring caption closer to table */
-    font-size: 14px;  /* align with chart text */
-}
-
-/* Allow long words to truncate with ellipsis to keep rows single-line */
-.table_component.scroll td,
-.table_component.scroll th span,
-.table_component.scroll td span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* Do not bold spans inside table cells (e.g., division names in Summerball matrix) */
-.table_component td span {
-    font-weight: 400 !important;
-}
-
-/* Ensure details/summary blocks don’t expand row height too much */
-.table_component.scroll details > small {
-    white-space: normal; /* wrap inside the expanded panel only */
-}
-
-/* Sticky column headers within scrollable tables */
-.table_component.scroll thead th {
-    position: sticky;
-    top: 0;
-    z-index: 2; /* above cell content */
-    background-color: var(--color_red); /* reaffirm header background while sticky */
-    box-shadow: 0 1px 0 rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.06);
-}
-
-/* Ensure body cells are regular weight for readability */
-.table_component.scroll td {
-    font-weight: 400;
-    color: #444; /* SportsConnect-like body text color */
-}
-
-/* Sticky first column for easier row tracking */
-.table_component.scroll th:first-child,
-.table_component.scroll td:first-child {
-    position: sticky;
-    left: 0;
-    z-index: 1;
-    background-color: #fff; /* maintain cell background */
-    box-shadow: 2px 0 0 rgba(0,0,0,0.06); /* subtle divider on the right */
-    min-width: 160px; /* steady width for sticky first column */
-}
-
-/* Corner header cell needs to sit above both header row and first column */
-.table_component.scroll thead th:first-child {
-    z-index: 3;
-    background-color: var(--color_red); /* keep header color */
-    color: whitesmoke;
-}
-
-/* Group header rows to band Baseball and Softball sections */
-.table_component .group-header {
-    background: var(--color_lightgray); /* match All-Star table neutral band */
-    color: var(--color_blue); /* NCLL dark blue */
-    font-weight: 600;
-    text-align: left !important;
-}
-
-/* Sport-specific variants inherit neutral background for consistency with All-Star table */
-.table_component .group-header.softball,
-.table_component .group-header.baseball {
-    background: var(--color_lightgray);
-}
-
-.table_component .group-header td {
-    padding: 6px 8px;
-    background: var(--color_lightgray); /* ensure cells themselves are banded */
-    border-left: 1px solid #dededf;
-    border-right: 1px solid #dededf;
-}
-
-/* Sport-specific variants: lightly tinted bands, still readable */
-.table_component .group-header.softball td {
-    background: var(--tint_softball);
-}
-
-.table_component .group-header.baseball td {
-    background: var(--tint_baseball);
-}
-
-/* Ensure group header rows aren't affected by the sticky first-column white background */
-.table_component.scroll tr.group-header td:first-child {
-    position: static !important;
-    left: auto !important;
-    background: var(--color_lightgray) !important;
-    box-shadow: none !important; /* remove sticky divider */
-}
-
-/* Ensure sticky override respects sport-specific tint on first cell */
-.table_component.scroll tr.group-header.softball td:first-child {
-    background: var(--tint_softball) !important;
-}
-
-.table_component.scroll tr.group-header.baseball td:first-child {
-    background: var(--tint_baseball) !important;
-}
-/* ==============================================
-   All-Stars page styles
-   Moved from inline <style> in All-Stars/allstars.html
-   on 2025-08-08 for centralization in css.css
-   ============================================== */
-
-.allstar-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.allstars {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    display: block;
-}
-
-picture {
-    width: 100%;
-    display: block;
-}
-
-/* Subtle hover effect for clickable images */
-picture a:hover img {
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
-}
-
-/* Visual separation between age groups */
-.allstar-container > section:nth-child(3),
-.allstar-container > section:nth-child(5),
-.allstar-container > section:nth-child(7),
-.allstar-container > section:nth-child(9),
-.allstar-container > section:nth-child(11) {
-    margin-top: 2rem;
-    border-top: 1px solid #ddd;
-    padding-top: 1.5rem;
-}
-
-/* ==============================================
-   Modern Minimal Table (inspired by Colorlib css-table-11)
-   Usage: wrap in .table_component and add .modern
-   ============================================== */
-.table_component.modern table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-}
-
-.table_component.modern thead th {
-    background: #f7f9fc;
-    color: var(--color_blue);
-    text-align: left;
-    padding: 14px 16px;
-    font-weight: 700;
-    border-bottom: 1px solid #e9edf3;
-}
-
-.table_component.modern tbody td {
-    padding: 14px 16px;
-    color: #444;
-    border-bottom: 1px solid #f0f2f5;
-}
-
-.table_component.modern tbody tr:last-child td {
-    border-bottom: none;
-}
-
-.table_component.modern tbody tr:hover td {
-    background: #fafbfe;
-}
-
-/* Compact typography, align with site tables */
-.table_component.modern th,
-.table_component.modern td {
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-/* Mobile: soft card look */
-@media (max-width: 768px) {
-    .table_component.modern table {
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        border-radius: 10px;
-    }
-    .table_component.modern thead th,
-    .table_component.modern tbody td {
-        padding: 12px 14px;
-        font-size: 13px;
-    }
-}
-
 /* Assessments: visually de-emphasize past dates (remove/update next season) */
 .fuzzy {
 	opacity: 0.3; /* was 0.55 */
