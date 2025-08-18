@@ -1013,27 +1013,12 @@ td.baseball-header {
 .table_component.scroll tr.group-header.baseball td:first-child {
     background: var(--tint_baseball) !important;
 }
-
-/* Use global site font for charts/tables by inheriting from the page */
-.table_component,
-.table_component table,
-.table_component th,
-.table_component td,
-.table_component caption,
-.table_component summary,
-.table_component details > small {
-    /* Match All-Star / SportsConnect font */
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400; /* regular weight for body text */
-    line-height: normal;
-    
-}
-
 /* ==============================================
-   All-Stars introductions page styles
-   Moved from inline <style> in All-Stars/allstar introductions.html
+   All-Stars page styles
+   Moved from inline <style> in All-Stars/allstars.html
    on 2025-08-08 for centralization in css.css
    ============================================== */
+
 .allstar-container {
     display: flex;
     flex-direction: column;
