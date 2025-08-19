@@ -123,30 +123,6 @@ ul li {
     list-style-type: disc;
 }
 
-/* Utility: flatter, more spacious lists (useful in narrow CMS columns) */
-.list-flat {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-.list-flat > li {
-    margin: 10px 0;
-}
-
-.list-spacious > li {
-    margin: 12px 0;
-    line-height: 1.45;
-}
-
-.BoldText {
-    font-weight: bold;
-}
-
-.lightbold {
-    font-weight: 400;
-}
-
 html,
 body {
     text-align: left;
@@ -733,4 +709,27 @@ td.division-header {
 	opacity: 1;
 	filter: none;
 	color: inherit;
+}
+/* Utility: flatter, more spacious lists (useful in narrow CMS columns) */
+.list-flat {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.list-flat > li {
+    margin: 10px 0;
+}
+
+.list-spacious > li {
+    margin: 12px 0;
+    line-height: 1.45;
+}
+
+.BoldText {
+    font-weight: bold;
+}
+
+.lightbold {
+    font-weight: 400;
 }
