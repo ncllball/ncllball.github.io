@@ -352,7 +352,7 @@ super {
     --tint_baseball: #f2f8ff; /* very light blue */
 }
 
-updated {
+.updated {
     color: var(--color_red) !important;
     text-decoration: none;
     font-size: 10px;
