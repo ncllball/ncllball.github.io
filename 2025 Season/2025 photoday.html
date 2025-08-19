@@ -3,6 +3,45 @@
 <title>2025 NCLL Photo Day</title>
 <style>
 .hidden { display: none !important; }
+
+/* Collapsible UPDATE blocks (applies to any element using details.strike) */
+details.strike {
+    margin: 1rem 0;
+    border: 1px solid gainsboro;
+    border-radius: 6px;
+    background: #fff;
+}
+details.strike > summary {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    padding: .75rem 1rem;
+    font-weight: 600;
+    color: #00013a;
+    user-select: none;
+    list-style: none;
+}
+details.strike > summary::-webkit-details-marker {
+    display: none;
+}
+details.strike > summary::before {
+    content: "+";
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.15rem;
+    text-align: center;
+    border: 2px solid #00013a;
+    border-radius: 3px;
+    font-weight: 700;
+}
+details.strike[open] > summary::before {
+    content: "−";
+}
+details.strike > *:not(summary) {
+    padding: 0 1rem 1rem 1rem;
+}
 </style>
 
 <!-- Introduction Section -->
@@ -12,24 +51,23 @@
             Baseball,
             Juniors Baseball, and AAA Softball</span>. Below is the schedule for each team.</p>
 
-    <div class="strike">
-        <p><span>Update [04/29/2025]:</span> Updates for March 29<super>th</super> 2025 Photoday. (Again, this is only for players
+    <!-- REPLACED: div.strike -> details.strike with summary -->
+    <details class="strike">
+        <summary>UPDATE [04/29/2025]</summary>
+        <p>Updates for March 29<super>th</super> 2025 Photoday. (Again, this is only for players
             who had their picture taken on March 29<super>th</super>.)</p>
         <p>Photos are in and in process of being distributed to the coaches. If you didn't order photos you still have
             time. See instructions below.</p>
         <p>Ordering online&nbsp;AFTER&nbsp;picture day:</p>
-
         <ol>
-            <li>Go to&nbsp;<a href="https://www.4nsp.com/PhotosSchoolandYouth.aspx">https://www.4nsp.com/PhotosSchoolandYouth.aspx</a>
-            </li>
-            <li>Please note it takes approx. 10-14 days AFTER picture day for images to be
-                available.&nbsp;&nbsp;</li>
+            <li>Go to&nbsp;<a href="https://www.4nsp.com/PhotosSchoolandYouth.aspx">https://www.4nsp.com/PhotosSchoolandYouth.aspx</a></li>
+            <li>Please note it takes approx. 10-14 days AFTER picture day for images to be available.&nbsp;&nbsp;</li>
             <li>Search by the child's first and last name to locate their image.</li>
             <li>After entering the name, below you will see a Workorder number and next to it a link "Select"
                 which you will need to press to bring up the child's image.</li>
             <li>For assistance, please call 1-800-446-5758 x 250 or contact by email to&nbsp;<a href="mailto:CustomerService@4nsp.com">CustomerService@4nsp.com</a></li>
         </ol>
-    </div>
+    </details>
 </section>
 
 <!-- Schedule Section -->
@@ -199,9 +237,13 @@
             Baseball, AA
             Softball, Juniors Softball, Kindy Coach, Majors Softball, and Tee-Ball</span>. The schedule will be posted
         below in the coming weeks along with an email.</p>
-    <aside class="strike">
-        <p><span>Update [04/29/2025]:</span> Please see the <span>May 10<super>th</super></span> schedule below.</p>  
-    </aside>
+
+    <!-- REPLACED: aside.strike -> details.strike with summary -->
+    <details class="strike">
+        <summary>UPDATE [04/29/2025]</summary>
+        <p>Please see the <span>May 10<super>th</super></span> schedule below.</p>
+    </details>
+
     <!-- directives:[] -->
     <div class="table_component">
         <table>
@@ -523,8 +565,8 @@
         will need to let us know on Photo Day which logo you would like to purchase. We'd love to see that new logo
         at every intersection in town so buy generously!</p>
     <div>
-        <a href="https://dt5602vnjxv0c.cloudfront.net/portals/83437/docs/north central little league decals 2.pdf" class="ncll">
-            <img src="https://dt5602vnjxv0c.cloudfront.net/portals/83437/images/explorer_sq8o8vce1y.png" alt="Image 2" style="width: 200px;">
+        <a href="https://dt5602vnjxv0c.cloudfront.net/portals/83437/docs/north%20central%20little%20league%20decals%202.pdf" class="ncll">
+            <img src="https://ncllball.github.io/images/photoday/1.png" alt="NCLL window decals preview" style="width: 200px;">
         </a>
     </div>
 </section>
@@ -542,7 +584,7 @@
         <li>Coach's Name</li>
         <li>Email Address</li>
     </ol>
-    <img src="https://dt5602vnjxv0c.cloudfront.net/portals/83437/images/photoday-help.png" style="width: 45%;" alt="Image 3">
+    <img src="https://REPLACE_WITH_PREPAY_SCREENSHOT_URL" style="width: 45%;" alt="NSP prepay form example">
 </section>
 
 <!-- Contact Section -->
