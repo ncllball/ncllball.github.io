@@ -693,7 +693,7 @@ sup {
     margin-bottom: 20px;
 }
 
-td.division-header {
+.division-header {
     background-color: gainsboro;
 }
 /* Assessments: visually de-emphasize past dates (remove/update next season) */
