@@ -2,46 +2,64 @@
 <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
 <title>2025 NCLL Photo Day</title>
 <style>
-.hidden { display: none !important; }
+    .hidden {
+        display: none !important;
+    }
 
-/* Collapsible UPDATE blocks (applies to any element using details.strike) */
-details.strike {
-    margin: 1rem 0;
-    border: 1px solid gainsboro;
-    border-radius: 6px;
-    background: #fff;
-}
-details.strike > summary {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    cursor: pointer;
-    padding: .75rem 1rem;
-    font-weight: 600;
-    color: #00013a;
-    user-select: none;
-    list-style: none;
-}
-details.strike > summary::-webkit-details-marker {
-    display: none;
-}
-details.strike > summary::before {
-    content: "+";
-    display: inline-block;
-    width: 1.25rem;
-    height: 1.25rem;
-    line-height: 1.15rem;
-    text-align: center;
-    border: 2px solid #00013a;
-    border-radius: 3px;
-    font-weight: 700;
-}
-details.strike[open] > summary::before {
-    content: "−";
-}
-details.strike > *:not(summary) {
-    padding: 0 1rem 1rem 1rem;
-}
+    /* Collapsible UPDATE blocks (applies to any element using details.strike) */
+    details.strike {
+        margin: 1rem 0;
+        border: 1px solid gainsboro;
+        border-radius: 6px;
+        background: #fff;
+    }
+
+    details.strike>summary {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        cursor: pointer;
+        padding: .75rem 1rem;
+        font-weight: 600;
+        color: #00013a;
+        user-select: none;
+        list-style: none;
+    }
+
+    details.strike>summary::-webkit-details-marker {
+        display: none;
+    }
+
+    details.strike>summary::before {
+        content: "+";
+        display: inline-block;
+        width: 1.25rem;
+        height: 1.25rem;
+        line-height: 1.15rem;
+        text-align: center;
+        border: 2px solid #00013a;
+        border-radius: 3px;
+        font-weight: 700;
+    }
+
+    details.strike[open]>summary::before {
+        content: "−";
+    }
+
+    details.strike>*:not(summary) {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    /* Fix: ensure division header color applies (override table/global styles) */
+    .table_component table.fit td.division-header {
+        color: #00013a;
+        /* league dark blue */
+    }
+
+    .table_component table.fit td.division-header strong {
+        color: inherit;
+        /* inherit from the cell */
+    }
 </style>
 
 <!-- Introduction Section -->
@@ -60,175 +78,164 @@ details.strike > *:not(summary) {
             time. See instructions below.</p>
         <p>Ordering online&nbsp;AFTER&nbsp;picture day:</p>
         <ol>
-            <li>Go to&nbsp;<a href="https://www.4nsp.com/PhotosSchoolandYouth.aspx">https://www.4nsp.com/PhotosSchoolandYouth.aspx</a></li>
+            <li>Go to&nbsp;<a
+                    href="https://www.4nsp.com/PhotosSchoolandYouth.aspx">https://www.4nsp.com/PhotosSchoolandYouth.aspx</a>
+            </li>
             <li>Please note it takes approx. 10-14 days AFTER picture day for images to be available.&nbsp;&nbsp;</li>
             <li>Search by the child's first and last name to locate their image.</li>
             <li>After entering the name, below you will see a Workorder number and next to it a link "Select"
                 which you will need to press to bring up the child's image.</li>
-            <li>For assistance, please call 1-800-446-5758 x 250 or contact by email to&nbsp;<a href="mailto:CustomerService@4nsp.com">CustomerService@4nsp.com</a></li>
+            <li>For assistance, please call 1-800-446-5758 x 250 or contact by email to&nbsp;<a
+                    href="mailto:CustomerService@4nsp.com">CustomerService@4nsp.com</a></li>
         </ol>
-    </details>
-</section>
+
 
 <!-- Schedule Section -->
 <section class="" id="schedule">
-    <div class="table_component">
-        <table>
-            <tbody>
-                <tr>
-                    <td><span>Start</span></td>
-                    <td><span>End</span></td>
-                    <td><span>Team</span></td>
-                    <td><span>Division</span></td>
-                    <td><span>Coach</span></td>
-                </tr>
-                <tr>
-                    <td>10:30</td>
-                    <td>10:45</td>
-                    <td>Bear Mountain Capital</td>
-                    <td>BB AAA</td>
-                    <td>Joseph Klarman</td>
-                </tr>
-                <tr>
-                    <td>10:45</td>
-                    <td>11:00</td>
-                    <td>CubeSmart</td>
-                    <td>BB AAA</td>
-                    <td>Kyle Zeller</td>
-                </tr>
-                <tr>
-                    <td>11:00</td>
-                    <td>11:15</td>
-                    <td>Fuller Living Construction</td>
-                    <td>BB Juniors</td>
-                    <td>Mark Branum</td>
-                </tr>
-                <tr>
-                    <td>11:15</td>
-                    <td>11:30</td>
-                    <td>Break</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>11:30</td>
-                    <td>11:45</td>
-                    <td>Industrious U-District</td>
-                    <td>BB AAA</td>
-                    <td>Jon Anderson</td>
-                </tr>
-                <tr>
-                    <td>11:45</td>
-                    <td>12:00</td>
-                    <td>Harjo Construction</td>
-                    <td>BB AAA</td>
-                    <td>Christopher Crall
-                        <br>Ian Hernandez
-                    </td>
-                </tr>
-                <tr>
-                    <td>12:00</td>
-                    <td>12:15</td>
-                    <td>Zahra Lechak Windermere</td>
-                    <td>BB Majors</td>
-                    <td>Phillip Garfin</td>
-                </tr>
-                <tr>
-                    <td>12:15</td>
-                    <td>1:00</td>
-                    <td>Break</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>12:45</td>
-                    <td>1:00</td>
-                    <td>Cedarhouse Flowers</td>
-                    <td>BB Majors</td>
-                    <td>Brian Harvey</td>
-                </tr>
-                <tr>
-                    <td>1:00</td>
-                    <td>1:15</td>
-                    <td>El Camion</td>
-                    <td>BB Majors</td>
-                    <td>Tyler
-                        Christofferson</td>
-                </tr>
-                <tr>
-                    <td>1:15</td>
-                    <td>1:30</td>
-                    <td>Kitch Switch</td>
-                    <td>BB AAA</td>
-                    <td>Michael Fishback</td>
-                </tr>
-                <tr>
-                    <td>1:30</td>
-                    <td>2:00</td>
-                    <td>Break</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2:00</td>
-                    <td>2:15</td>
-                    <td>Vertical Construction Group</td>
-                    <td>BB AAA</td>
-                    <td>Evan Cabodi</td>
-                </tr>
-                <tr>
-                    <td>2:15</td>
-                    <td>2:30</td>
-                    <td>Focus Baseball</td>
-                    <td>BB AAA</td>
-                    <td>David Donovan</td>
-                </tr>
-                <tr>
-                    <td>2:30</td>
-                    <td>2:45</td>
-                    <td>Valley Events</td>
-                    <td>SB AAA</td>
-                    <td>Chris Cunningham</td>
-                </tr>
-                <tr>
-                    <td>2:45</td>
-                    <td>3:00</td>
-                    <td>Break</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3:00</td>
-                    <td>3:15</td>
-                    <td>Orca Analytics</td>
-                    <td>SB AAA</td>
-                    <td>Alexander
-                        Stevenson</td>
-                </tr>
-                <tr>
-                    <td>3:15</td>
-                    <td>3:30</td>
-                    <td>CubeSmart</td>
-                    <td>SB AAA</td>
-                    <td>Andy Clinch</td>
-                </tr>
-                <tr>
-                    <td>3:30</td>
-                    <td>3:45</td>
-                    <td>Project 9</td>
-                    <td>BB Majors</td>
-                    <td>John Shikella</td>
-                </tr>
-                <tr>
-                    <td>3:45</td>
-                    <td>4:00</td>
-                    <td>Lincoln Baseball</td>
-                    <td>BB Majors</td>
-                    <td>Jay Tufte</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+	<div class="table_component">
+		<table class="fit">
+			<thead>
+				<tr>
+					<th id="photo_start">Start</th>
+					<th id="photo_end">End</th>
+					<th id="team">Team</th>
+					<th id="division">Division</th>
+					<th id="coach">Coach</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="group">
+					<td class="division-header" colspan="5"><strong>Baseball AAA</strong></td>
+				</tr>
+				<tr>
+					<td>10:30</td>
+					<td>10:45</td>
+					<td>Bear Mountain Capital</td>
+					<td>Baseball AAA</td>
+					<td>Joseph Klarman</td>
+				</tr>
+				<tr>
+					<td>10:45</td>
+					<td>11:00</td>
+					<td>CubeSmart</td>
+					<td>Baseball AAA</td>
+					<td>Kyle Zeller</td>
+				</tr>
+				<tr>
+					<td>11:30</td>
+					<td>11:45</td>
+					<td>Industrious U-District</td>
+					<td>Baseball AAA</td>
+					<td>Jon Anderson</td>
+				</tr>
+				<tr>
+					<td>11:45</td>
+					<td>12:00</td>
+					<td>Harjo Construction</td>
+					<td>Baseball AAA</td>
+					<td>Christopher Crall<br>Ian Hernandez</td>
+				</tr>
+				<tr>
+					<td>1:15</td>
+					<td>1:30</td>
+					<td>Kitch Switch</td>
+					<td>Baseball AAA</td>
+					<td>Michael Fishback</td>
+				</tr>
+				<tr>
+					<td>2:00</td>
+					<td>2:15</td>
+					<td>Vertical Construction Group</td>
+					<td>Baseball AAA</td>
+					<td>Evan Cabodi</td>
+				</tr>
+				<tr>
+					<td>2:15</td>
+					<td>2:30</td>
+					<td>Focus Baseball</td>
+					<td>Baseball AAA</td>
+					<td>David Donovan</td>
+				</tr>
+
+				<tr class="group">
+					<td class="division-header" colspan="5"><strong>Baseball Juniors</strong></td>
+				</tr>
+				<tr>
+					<td>11:00</td>
+					<td>11:15</td>
+					<td>Fuller Living Construction</td>
+					<td>Baseball Juniors</td>
+					<td>Mark Branum</td>
+				</tr>
+
+				<tr class="group">
+					<td class="division-header" colspan="5"><strong>Baseball Majors</strong></td>
+				</tr>
+				<tr>
+					<td>12:00</td>
+					<td>12:15</td>
+					<td>Zahra Lechak Windermere</td>
+					<td>Baseball Majors</td>
+					<td>Phillip Garfin</td>
+				</tr>
+				<tr>
+					<td>12:45</td>
+					<td>1:00</td>
+					<td>Cedarhouse Flowers</td>
+					<td>Baseball Majors</td>
+					<td>Brian Harvey</td>
+				</tr>
+				<tr>
+					<td>1:00</td>
+					<td>1:15</td>
+					<td>El Camion</td>
+					<td>Baseball Majors</td>
+					<td>Tyler Christofferson</td>
+				</tr>
+				<tr>
+					<td>3:30</td>
+					<td>3:45</td>
+					<td>Project 9</td>
+					<td>Baseball Majors</td>
+					<td>John Shikella</td>
+				</tr>
+				<tr>
+					<td>3:45</td>
+					<td>4:00</td>
+					<td>Lincoln Baseball</td>
+					<td>Baseball Majors</td>
+					<td>Jay Tufte</td>
+				</tr>
+
+				<tr class="group">
+					<td class="division-header" colspan="5"><strong>Softball AAA</strong></td>
+				</tr>
+				<tr>
+					<td>2:30</td>
+					<td>2:45</td>
+					<td>Valley Events</td>
+					<td>Softball AAA</td>
+					<td>Chris Cunningham</td>
+				</tr>
+				<tr>
+					<td>3:00</td>
+					<td>3:15</td>
+					<td>Orca Analytics</td>
+					<td>Softball AAA</td>
+					<td>Alexander Stevenson</td>
+				</tr>
+				<tr>
+					<td>3:15</td>
+					<td>3:30</td>
+					<td>CubeSmart</td>
+					<td>Softball AAA</td>
+					<td>Andy Clinch</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+    </details>
 </section>
 
 <section id="introduction-may10">
@@ -242,77 +249,322 @@ details.strike > *:not(summary) {
     <details class="strike">
         <summary>UPDATE [04/29/2025]</summary>
         <p>Please see the <span>May 10<super>th</super></span> schedule below.</p>
-    </details>
+
 
     <!-- directives:[] -->
     <div class="table_component">
-	<table class="fit">
-		<thead>
-			<tr>
-				<th id="photo_start">Start</th>
-				<th id="photo_end">End</th>
-				<th id="team">Team</th>
-				<th id="division">Division</th>
-				<th id="coach">Coach</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class="group"><td class="division-header" colspan="5"><strong>Baseball A</strong></td></tr>
-			<tr><td>9:45</td><td>10:00</td><td>Wessco Blinds</td><td>Baseball A</td><td>Kyle Hatridge</td></tr>
-			<tr><td>9:45</td><td>10:00</td><td>Dantini Pizza</td><td>Baseball A</td><td>Ryan Yokel</td></tr>
-			<tr><td>11:45</td><td>12:00</td><td>Ben's Bread Co</td><td>Baseball A</td><td>Carlos Salmeron</td></tr>
-			<tr><td>11:45</td><td>12:00</td><td>Puffin Pediatrics</td><td>Baseball A</td><td>Olin Wick</td></tr>
-			<tr><td>1:45</td><td>2:00</td><td>Greenwood Heating &amp; Home Services</td><td>Baseball A</td><td>Ashley Bach</td></tr>
-			<tr><td>1:45</td><td>2:00</td><td>Crystal Panes</td><td>Baseball A</td><td>Andy Clinch</td></tr>
-			<tr><td>3:45</td><td>4:00</td><td>Murphy's Pub</td><td>Baseball A</td><td>Rory Douglas</td></tr>
-			<tr><td>3:45</td><td>4:00</td><td>Lighthouse Roasters</td><td>Baseball A</td><td>Joshua Traube</td></tr>
+        <table class="fit">
+            <thead>
+                <tr>
+                    <th id="photo_start">Start</th>
+                    <th id="photo_end">End</th>
+                    <th id="team">Team</th>
+                    <th id="division">Division</th>
+                    <th id="coach">Coach</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="division-">
+                    <td class="division-header" colspan="5"><strong>Baseball A</strong></td>
+                </tr>
+                <tr>
+                    <td>9:45</td>
+                    <td>10:00</td>
+                    <td>Wessco Blinds</td>
+                    <td>Baseball A</td>
+                    <td>Kyle Hatridge</td>
+                </tr>
+                <tr>
+                    <td>9:45</td>
+                    <td>10:00</td>
+                    <td>Dantini Pizza</td>
+                    <td>Baseball A</td>
+                    <td>Ryan Yokel</td>
+                </tr>
+                <tr>
+                    <td>11:45</td>
+                    <td>12:00</td>
+                    <td>Ben's Bread Co</td>
+                    <td>Baseball A</td>
+                    <td>Carlos Salmeron</td>
+                </tr>
+                <tr>
+                    <td>11:45</td>
+                    <td>12:00</td>
+                    <td>Puffin Pediatrics</td>
+                    <td>Baseball A</td>
+                    <td>Olin Wick</td>
+                </tr>
+                <tr>
+                    <td>1:45</td>
+                    <td>2:00</td>
+                    <td>Greenwood Heating &amp; Home Services</td>
+                    <td>Baseball A</td>
+                    <td>Ashley Bach</td>
+                </tr>
+                <tr>
+                    <td>1:45</td>
+                    <td>2:00</td>
+                    <td>Crystal Panes</td>
+                    <td>Baseball A</td>
+                    <td>Andy Clinch</td>
+                </tr>
+                <tr>
+                    <td>3:45</td>
+                    <td>4:00</td>
+                    <td>Murphy's Pub</td>
+                    <td>Baseball A</td>
+                    <td>Rory Douglas</td>
+                </tr>
+                <tr>
+                    <td>3:45</td>
+                    <td>4:00</td>
+                    <td>Lighthouse Roasters</td>
+                    <td>Baseball A</td>
+                    <td>Joshua Traube</td>
+                </tr>
 
-			<tr class="group"><td class="division-header" colspan="5"><strong>Baseball AA</strong></td></tr>
-			<tr><td>9:00</td><td>9:15</td><td>Zoka Coffee</td><td>Baseball AA</td><td>Jordan Crump</td></tr>
-			<tr><td>9:00</td><td>9:15</td><td>Tutta Bella</td><td>Baseball AA</td><td>Scott Walsworth</td></tr>
-			<tr><td>9:30</td><td>9:45</td><td>Ridge Pizza</td><td>Baseball AA</td><td>Austen Wiederspan</td></tr>
-			<tr><td>9:30</td><td>9:45</td><td>Focus Baseball</td><td>Baseball AA</td><td>Sean McKenna</td></tr>
-			<tr><td>10:30</td><td>10:45</td><td>Seattle Police</td><td>Baseball AA</td><td>Jay Miller</td></tr>
-			<tr><td>10:30</td><td>10:45</td><td>Cutter &amp; Buck</td><td>Baseball AA</td><td>Adam Ginsburgh</td></tr>
-			<tr><td>12:00</td><td>12:15</td><td>Ken's Market</td><td>Baseball AA</td><td>Jake Gustafson</td></tr>
-			<tr><td>12:00</td><td>12:15</td><td>Reuben's Brews</td><td>Baseball AA</td><td>Paul Fox</td></tr>
+                <tr class="group">
+                    <td class="division-header" colspan="5"><strong>Baseball AA</strong></td>
+                </tr>
+                <tr>
+                    <td>9:00</td>
+                    <td>9:15</td>
+                    <td>Zoka Coffee</td>
+                    <td>Baseball AA</td>
+                    <td>Jordan Crump</td>
+                </tr>
+                <tr>
+                    <td>9:00</td>
+                    <td>9:15</td>
+                    <td>Tutta Bella</td>
+                    <td>Baseball AA</td>
+                    <td>Scott Walsworth</td>
+                </tr>
+                <tr>
+                    <td>9:30</td>
+                    <td>9:45</td>
+                    <td>Ridge Pizza</td>
+                    <td>Baseball AA</td>
+                    <td>Austen Wiederspan</td>
+                </tr>
+                <tr>
+                    <td>9:30</td>
+                    <td>9:45</td>
+                    <td>Focus Baseball</td>
+                    <td>Baseball AA</td>
+                    <td>Sean McKenna</td>
+                </tr>
+                <tr>
+                    <td>10:30</td>
+                    <td>10:45</td>
+                    <td>Seattle Police</td>
+                    <td>Baseball AA</td>
+                    <td>Jay Miller</td>
+                </tr>
+                <tr>
+                    <td>10:30</td>
+                    <td>10:45</td>
+                    <td>Cutter &amp; Buck</td>
+                    <td>Baseball AA</td>
+                    <td>Adam Ginsburgh</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td>12:15</td>
+                    <td>Ken's Market</td>
+                    <td>Baseball AA</td>
+                    <td>Jake Gustafson</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td>12:15</td>
+                    <td>Reuben's Brews</td>
+                    <td>Baseball AA</td>
+                    <td>Paul Fox</td>
+                </tr>
 
-			<tr class="group"><td class="division-header" colspan="5"><strong>Kindy</strong></td></tr>
-			<tr><td>9:15</td><td>9:30</td><td>Dick's Drive-In (The Epic FireSnakes) (Kindy 8)</td><td>Kindy</td><td>Kate Dike</td></tr>
-			<tr><td>9:15</td><td>9:30</td><td>Dick's Drive-In (Kindy 5)</td><td>Kindy</td><td>Tyler Pasch</td></tr>
-			<tr><td>10:15</td><td>10:30</td><td>Dick's Drive-In (Kindy 7)</td><td>Kindy</td><td>Jonathon Randall</td></tr>
-			<tr><td>10:15</td><td>10:30</td><td>Dick's Drive-In (Fireball Chickens) (Kindy 1)</td><td>Kindy</td><td>Matthew Tassos</td></tr>
-			<tr><td>10:45</td><td>11:00</td><td>Dick's Drive-In (Kindy 6)</td><td>Kindy</td><td>Sara Mitchell</td></tr>
-			<tr><td>10:45</td><td>11:00</td><td>Dick's Drive-In (Kindy 4)</td><td>Kindy</td><td>Rich Shordt</td></tr>
-			<tr><td>3:15</td><td>3:30</td><td>Dick's Drive-In (Kindy 3)</td><td>Kindy</td><td>James Bozsa</td></tr>
-			<tr><td>3:15</td><td>3:30</td><td>Dick's Drive-In (Asteroids) (Kindy 2)</td><td>Kindy</td><td>Sarah Rich</td></tr>
+                <tr class="group">
+                    <td class="division-header" colspan="5"><strong>Kindy</strong></td>
+                </tr>
+                <tr>
+                    <td>9:15</td>
+                    <td>9:30</td>
+                    <td>Dick's Drive-In (The Epic FireSnakes) (Kindy 8)</td>
+                    <td>Kindy</td>
+                    <td>Kate Dike</td>
+                </tr>
+                <tr>
+                    <td>9:15</td>
+                    <td>9:30</td>
+                    <td>Dick's Drive-In (Kindy 5)</td>
+                    <td>Kindy</td>
+                    <td>Tyler Pasch</td>
+                </tr>
+                <tr>
+                    <td>10:15</td>
+                    <td>10:30</td>
+                    <td>Dick's Drive-In (Kindy 7)</td>
+                    <td>Kindy</td>
+                    <td>Jonathon Randall</td>
+                </tr>
+                <tr>
+                    <td>10:15</td>
+                    <td>10:30</td>
+                    <td>Dick's Drive-In (Fireball Chickens) (Kindy 1)</td>
+                    <td>Kindy</td>
+                    <td>Matthew Tassos</td>
+                </tr>
+                <tr>
+                    <td>10:45</td>
+                    <td>11:00</td>
+                    <td>Dick's Drive-In (Kindy 6)</td>
+                    <td>Kindy</td>
+                    <td>Sara Mitchell</td>
+                </tr>
+                <tr>
+                    <td>10:45</td>
+                    <td>11:00</td>
+                    <td>Dick's Drive-In (Kindy 4)</td>
+                    <td>Kindy</td>
+                    <td>Rich Shordt</td>
+                </tr>
+                <tr>
+                    <td>3:15</td>
+                    <td>3:30</td>
+                    <td>Dick's Drive-In (Kindy 3)</td>
+                    <td>Kindy</td>
+                    <td>James Bozsa</td>
+                </tr>
+                <tr>
+                    <td>3:15</td>
+                    <td>3:30</td>
+                    <td>Dick's Drive-In (Asteroids) (Kindy 2)</td>
+                    <td>Kindy</td>
+                    <td>Sarah Rich</td>
+                </tr>
 
-			<tr class="group"><td class="division-header" colspan="5"><strong>Softball A</strong></td></tr>
-			<tr><td>11:30</td><td>11:45</td><td>Greenwood Heating &amp; Home Services</td><td>Softball A</td><td>Christian Geismann</td></tr>
-			<tr><td>2:30</td><td>2:45</td><td>TriWest</td><td>Softball A</td><td>Katie Naeve</td></tr>
+                <tr class="group">
+                    <td class="division-header" colspan="5"><strong>Softball A</strong></td>
+                </tr>
+                <tr>
+                    <td>11:30</td>
+                    <td>11:45</td>
+                    <td>Greenwood Heating &amp; Home Services</td>
+                    <td>Softball A</td>
+                    <td>Christian Geismann</td>
+                </tr>
+                <tr>
+                    <td>2:30</td>
+                    <td>2:45</td>
+                    <td>TriWest</td>
+                    <td>Softball A</td>
+                    <td>Katie Naeve</td>
+                </tr>
 
-			<tr class="group"><td class="division-header" colspan="5"><strong>Softball AA</strong></td></tr>
-			<tr><td>11:00</td><td>11:15</td><td>Bear Mountain Capital</td><td>Softball AA</td><td>Sara Mitchell</td></tr>
-			<tr><td>12:15</td><td>12:30</td><td>Puffin Pediatrics</td><td>Softball AA</td><td>Kok Hang Leon</td></tr>
-			<tr><td>12:15</td><td>12:30</td><td>Green Lake Orthodontics</td><td>Softball AA</td><td>Elena Busto</td></tr>
-			<tr><td>2:15</td><td>2:30</td><td>Phinney Books</td><td>Softball AA</td><td>Tiffany Barnes</td></tr>
-			<tr><td>2:15</td><td>2:30</td><td>Marketime Foods</td><td>Softball AA</td><td>Stephen Baxter/Jesse DeNike</td></tr>
+                <tr class="group">
+                    <td class="division-header" colspan="5"><strong>Softball AA</strong></td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>11:15</td>
+                    <td>Bear Mountain Capital</td>
+                    <td>Softball AA</td>
+                    <td>Sara Mitchell</td>
+                </tr>
+                <tr>
+                    <td>12:15</td>
+                    <td>12:30</td>
+                    <td>Puffin Pediatrics</td>
+                    <td>Softball AA</td>
+                    <td>Kok Hang Leon</td>
+                </tr>
+                <tr>
+                    <td>12:15</td>
+                    <td>12:30</td>
+                    <td>Green Lake Orthodontics</td>
+                    <td>Softball AA</td>
+                    <td>Elena Busto</td>
+                </tr>
+                <tr>
+                    <td>2:15</td>
+                    <td>2:30</td>
+                    <td>Phinney Books</td>
+                    <td>Softball AA</td>
+                    <td>Tiffany Barnes</td>
+                </tr>
+                <tr>
+                    <td>2:15</td>
+                    <td>2:30</td>
+                    <td>Marketime Foods</td>
+                    <td>Softball AA</td>
+                    <td>Stephen Baxter/Jesse DeNike</td>
+                </tr>
 
-			<tr class="group"><td class="division-header" colspan="5"><strong>Softball Juniors</strong></td></tr>
-			<tr><td>11:00</td><td>11:15</td><td>Compass Construction</td><td>Softball Juniors</td><td>Brian Parks</td></tr>
+                <tr class="group">
+                    <td class="division-header" colspan="5"><strong>Softball Juniors</strong></td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>11:15</td>
+                    <td>Compass Construction</td>
+                    <td>Softball Juniors</td>
+                    <td>Brian Parks</td>
+                </tr>
 
-			<tr class="group"><td class="division-header" colspan="5"><strong>Softball Majors</strong></td></tr>
-			<tr><td>3:30</td><td>3:45</td><td>56th St Market</td><td>Softball Majors</td><td>Brad Dodgion</td></tr>
-			<tr><td>3:30</td><td>3:45</td><td>Cutter &amp; Buck</td><td>Softball Majors</td><td>Stephanie McKinnie</td></tr>
+                <tr class="group">
+                    <td class="division-header" colspan="5"><strong>Softball Majors</strong></td>
+                </tr>
+                <tr>
+                    <td>3:30</td>
+                    <td>3:45</td>
+                    <td>56th St Market</td>
+                    <td>Softball Majors</td>
+                    <td>Brad Dodgion</td>
+                </tr>
+                <tr>
+                    <td>3:30</td>
+                    <td>3:45</td>
+                    <td>Cutter &amp; Buck</td>
+                    <td>Softball Majors</td>
+                    <td>Stephanie McKinnie</td>
+                </tr>
 
-			<tr class="group division"><td class="division-header" colspan="5"><strong>Tee Ball</strong></td></tr>
-			<tr><td>12:45</td><td>1:00</td><td>Dukes Seafood</td><td>Tee Ball</td><td>Michael Carlson</td></tr>
-			<tr><td>12:45</td><td>1:00</td><td>Fuel Sports Grill (Team Bacon)</td><td>Tee Ball</td><td>Michael Jordan</td></tr>
-			<tr><td>2:00</td><td>2:15</td><td>Gourmondo Catering</td><td>Tee Ball</td><td>Ryan Suarez</td></tr>
-			<tr><td>2:00</td><td>2:15</td><td>Beth's Café</td><td>Tee Ball</td><td>Matt Goehring</td></tr>
-		</tbody>
-	</table>
-</div>
+                <tr class="group">
+                    <td class="division-header" colspan="5"><strong>Tee Ball</strong></td>
+                </tr>
+                <tr>
+                    <td>12:45</td>
+                    <td>1:00</td>
+                    <td>Dukes Seafood</td>
+                    <td>Tee Ball</td>
+                    <td>Michael Carlson</td>
+                </tr>
+                <tr>
+                    <td>12:45</td>
+                    <td>1:00</td>
+                    <td>Fuel Sports Grill (Team Bacon)</td>
+                    <td>Tee Ball</td>
+                    <td>Michael Jordan</td>
+                </tr>
+                <tr>
+                    <td>2:00</td>
+                    <td>2:15</td>
+                    <td>Gourmondo Catering</td>
+                    <td>Tee Ball</td>
+                    <td>Ryan Suarez</td>
+                </tr>
+                <tr>
+                    <td>2:00</td>
+                    <td>2:15</td>
+                    <td>Beth's Café</td>
+                    <td>Tee Ball</td>
+                    <td>Matt Goehring</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        </details>
 </section>
 
 <!-- Pre-pay Information Section -->
@@ -342,7 +594,8 @@ details.strike > *:not(summary) {
         at every intersection in town so buy generously!</p>
     <div>
         <a href="https://ncllball.github.io/images/docs/decals.pdf" class="ncll">
-            <img src="https://ncllball.github.io/images/photoday/1.png" alt="NCLL window decals preview" style="width: 200px;">
+            <img src="https://ncllball.github.io/images/photoday/1.png" alt="NCLL window decals preview"
+                style="width: 200px;">
         </a>
     </div>
 </section>
