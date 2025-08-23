@@ -734,5 +734,5 @@ td.division-header {
     font-weight: 400;
 }
 .center {
-    text-align: center;
+    text-align: center !important;
 }
