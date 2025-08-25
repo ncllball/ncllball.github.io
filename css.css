@@ -11,7 +11,6 @@ font-weight: 600;
 font-size: 24px;
 padding: 10px 7px;
 color: #ffffff;
-font-family: 'Poppins', sans-serif;
 font-family: "config-variable", sans-serif;
 font-variation-settings: "slnt" 0, "wdth" 50, "wght" 600;
 text-transform: none;
@@ -27,73 +26,73 @@ padding: 0 0px 0 0;
 
 /* Modern Tag Styling for Info Buttons */
 .gainsboro-button {
-    display: inline-block;
-    padding: 0.5rem 1.2rem;
-    margin: 0.4rem;
-    background: linear-gradient(135deg, #00013a 0%, #1a4d8f 100%);
-    color: white;
-    border: none;
-    border-radius: 2rem;
-    font-size: 0.95rem;
-    font-weight: 500;
-    font-family: "proxima-nova", sans-serif;
-    transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(0, 1, 58, 0.25);
-    cursor: default;
-    position: relative;
-    overflow: hidden;
+display: inline-block;
+padding: 0.5rem 1.2rem;
+margin: 0.4rem;
+background: linear-gradient(135deg, #00013a 0%, #1a4d8f 100%);
+color: white;
+border: none;
+border-radius: 2rem;
+font-size: 0.95rem;
+font-weight: 500;
+font-family: "proxima-nova", sans-serif;
+transition: all 0.3s ease;
+box-shadow: 0 3px 10px rgba(0, 1, 58, 0.25);
+cursor: default;
+position: relative;
+overflow: hidden;
 }
 
 .gainsboro-button span {
-    font-weight: 700;
-    color: #ffd700;
-    margin-right: 0.3rem;
+font-weight: 700;
+color: #ffd700;
+margin-right: 0.3rem;
 }
 
 .gainsboro-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
-    transition: left 0.6s ease;
+content: '';
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+transition: left 0.6s ease;
 }
 
 .gainsboro-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 1, 58, 0.35);
-    background: linear-gradient(135deg, #1a4d8f 0%, #00013a 100%);
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(0, 1, 58, 0.35);
+background: linear-gradient(135deg, #1a4d8f 0%, #00013a 100%);
 }
 
 .gainsboro-button:hover::before {
-    left: 100%;
+left: 100%;
 }
 
 /* Alternate color schemes for variety */
 .gainsboro-button:nth-child(2) {
-    background: linear-gradient(135deg, #cc0000 0%, #ff4444 100%);
-    box-shadow: 0 3px 10px rgba(204, 0, 0, 0.25);
+background: linear-gradient(135deg, #cc0000 0%, #ff4444 100%);
+box-shadow: 0 3px 10px rgba(204, 0, 0, 0.25);
 }
 
 .gainsboro-button:nth-child(2):hover {
-    background: linear-gradient(135deg, #ff4444 0%, #cc0000 100%);
-    box-shadow: 0 5px 15px rgba(204, 0, 0, 0.35);
+background: linear-gradient(135deg, #ff4444 0%, #cc0000 100%);
+box-shadow: 0 5px 15px rgba(204, 0, 0, 0.35);
 }
 
 .gainsboro-button:nth-child(3) {
-    background: linear-gradient(135deg, #2c5f2d 0%, #4a8f4e 100%);
-    box-shadow: 0 3px 10px rgba(44, 95, 45, 0.25);
+background: linear-gradient(135deg, #2c5f2d 0%, #4a8f4e 100%);
+box-shadow: 0 3px 10px rgba(44, 95, 45, 0.25);
 }
 
 .gainsboro-button:nth-child(3):hover {
-    background: linear-gradient(135deg, #4a8f4e 0%, #2c5f2d 100%);
-    box-shadow: 0 5px 15px rgba(44, 95, 45, 0.35);
+background: linear-gradient(135deg, #4a8f4e 0%, #2c5f2d 100%);
+box-shadow: 0 5px 15px rgba(44, 95, 45, 0.35);
 }
 
 .button-bottom-margin {
-    margin-bottom: 0.8rem;
+margin-bottom: 13px;
 }
 
 .note {
@@ -215,8 +214,8 @@ background-size: cover;
 margin-top: 20px;
 text-align: left;
 margin-bottom: 20px;
-background-image: linear-gradient(135deg, #ffffff 5%, #e60707 5%, #e60707 25%, #ffffff 25%, #ffffff 50%, #ffffff 50%,
-#ffffff 55%, #e60707 55%, #e60707 75%, #ffffff 75%, #ffffff 100%);
+/* Use CSS variable for decorative stripe gradient */
+background-image: var(--stripe-gradient);
 background-size: 4px 4px;
 }
 
@@ -380,8 +379,22 @@ margin: 0 0 10px 0;
 /* subtle sport-specific band tints */
 --tint_softball: #f7f3ff; /* very light lavender */
 --tint_baseball: #f2f8ff; /* very light blue */
+/* Decorative stripe gradient for h2.left::before */
+--stripe-gradient: linear-gradient(
+135deg,
+#ffffff 5%,
+#e60707 5%,
+#e60707 25%,
+#ffffff 25%,
+#ffffff 50%,
+#ffffff 50%,
+#ffffff 55%,
+#e60707 55%,
+#e60707 75%,
+#ffffff 75%,
+#ffffff 100%
+);
 }
-
 .updated {
 color: var(--color_red) !important;
 text-decoration: none;
@@ -498,10 +511,6 @@ color: #888;
 text-align: right;
 margin-right: 210px;
 margin-bottom: 50px;
-}
-
-.button-bottom-margin {
-margin-bottom: 13px;
 }
 
 .spaced-text {
@@ -1010,74 +1019,48 @@ padding: 20px;
 width: 150px;
 height: 150px;
 }
-}
 
-// VARIABLES
-
-@tag-constant: 25px;
-@fill-colour: #FAFAFA;
-@border-colour: #CCC;
-
-// GLOBAL STUFF
-
-*, *:before, *:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-.clearfix {
-	&:before, &:after {
-		content: "";
-		display: table;
-	}
-	&:after {
-		clear: both;
-	}
-}
-
-// TAG SPECIFIC STUFF
-
-.tag, .tag-item {
-	margin-bottom: 10px;
-}
-.tag-item, .tag-item::before {
-	background: @fill-colour;
-}
 .tag-item {
-	float: left;
-	position: relative;
-	white-space: nowrap;
-	line-height: @tag-constant;
-	height: @tag-constant;
-	margin-left: (@tag-constant / 2);
-	margin-right: 10px;
-	padding-left: (@tag-constant / 2);
-	padding-right: (@tag-constant / 3);
-	border-top-right-radius: .25rem;
-	border-bottom-right-radius: .25rem;
-	box-shadow: inset 0 0 1px 0 darken(@border-colour, 50%);
-	&::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		width: (@tag-constant / 100 * 70.71067811865472);
-		height: (@tag-constant / 100 * 70.71067811865472);
-		transform: rotate(45deg) ;
-		transform-origin: top left;
-		border: 1px solid @border-colour;
-		border-top: none;
-		border-right: none;
-	}
-	&::after {
-		content: "";
-		position: absolute;
-		left: 0;
-		top: 50%;
-		margin-top: -2.5px;
-		width: 5px;
-		height: 5px;
-		background: #FFF;
-		border: 1px solid @border-colour;
-		border-radius: 50%;
-	}
+float: left;
+position: relative;
+white-space: nowrap;
+}
+
+.tag-item::before {
+content: "";
+position: absolute;
+left: 0;
+width: 17.68px;
+height: 17.68px;
+transform: rotate(45deg);
+transform-origin: top left;
+border: 1px solid #CCC;
+border-top: none;
+border-right: none;
+}
+
+.tag-item::after {
+content: "";
+position: absolute;
+left: 0;
+top: 50%;
+margin-top: -2.5px;
+}
+}
+
+/* clearfix utility (moved to top level, not nested) */
+.clearfix::before,
+.clearfix::after {
+content: "";
+display: table;
+}
+
+.clearfix::after {
+clear: both;
+}
+
+/* Apply box-sizing to all elements for consistency */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
