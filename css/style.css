@@ -25,11 +25,13 @@
     /* box-shadow: 0 0 50px #ddd; */
 }
 
-.tag,
-.tag-item {
-    margin-bottom: 10px;
+.tag {
+    margin-bottom: 00px;
 }
 
+.tag-item {
+    margin-bottom: 00px;
+}
 
 .tag-item,
 .tag-item::before {
