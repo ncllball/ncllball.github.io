@@ -1020,3 +1020,10 @@ width: 150px;
 height: 150px;
 }
 }
+
+/* Camp image styling */
+.camp-image {
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
