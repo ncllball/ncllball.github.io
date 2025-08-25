@@ -16,6 +16,11 @@
     text-transform: none;
 }
 
+.skHeader .skBanner {
+    display: none !important;
+    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
 .skTabsWrapper {
     display: table-cell;
     width: calc(100% - 32px);
