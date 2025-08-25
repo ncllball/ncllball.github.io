@@ -77,7 +77,7 @@
     border: 1px solid #ccc;
     border-radius: 50%;
 }
-.tags ul {
-    font-weight: bold;
-    margin-right: 53px;
+ul.tag.clearfix {
+    margin: 0;
+    padding: 0;
 }
