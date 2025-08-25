@@ -13,20 +13,6 @@
 .clearfix:after {
   clear: both;
 }
-body {
-  font-family: sans-serif;
-  font-size: 10px;
-  text-transform: uppercase;
-  padding: 50px;
-  background: #eee;
-  margin-top: 15%;
-}
-h1 {
-  font-size: 22px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-}
 .wrapper {
   max-width: 800px;
   margin-left: auto;
