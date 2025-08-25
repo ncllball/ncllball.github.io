@@ -51,7 +51,7 @@
     padding-right: 8.33333333px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    /* box-shadow: inset 0 0 1px 0 #4d4d4d; */
+    box-shadow: inset 0 0 1px 0 #4d4d4d;
     list-style-type: none;
     font-size: 12px;
 }
