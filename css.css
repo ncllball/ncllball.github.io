@@ -1045,7 +1045,7 @@ Responsive Styles
 .camp-image {
     max-width: 600px;
     display: block;
-    margin: -15px auto 0px auto;
+    margin: -20px auto 0px auto;
 }
 
 /* tags */
@@ -1077,7 +1077,7 @@ Responsive Styles
 }
 
 .tag {
-    margin: -20px 0px -30px 0px;
+    margin: -15px 0px -30px 0px;
 }
 
 .tag-item,
