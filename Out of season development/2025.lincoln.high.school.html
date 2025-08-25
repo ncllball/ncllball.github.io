@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
 
     <section class="wrapper">
         <ul class="tag clearfix">
-            <li class="tag-item"><span>Dates:</span> <span>{{ page.campDate }}</span></li>
+            <li class="tag-item"><span>Dates:</span> <span>{{ page.campDate | default: "TBD" }}</span></li>
             <li class="tag-item"><span>Location:</span> Lower Woodland Field #1</li>
             <li class="tag-item"><span>Time:</span> 12:00 PM – 3:00 PM</li>
             <li class="tag-item"><span>Cost:</span> $60 per player</li>
@@ -20,18 +21,19 @@
             <li class="tag-item"><span>Division(s):</span> Baseball (AA - Senior)</li>
             <li class="tag-item"><span>Run by:</span> Friends of NCLL: Lincoln HS</li>
         </ul>
+    </section>
+    <section class="wrapper">
         <h2 class="left"></h2>
     </section>
-
     <section>
-    <img src="https://ncllball.github.io/images/emails/email_1.png"
-         alt="Lincoln High School coaches leading youth baseball skill stations"
-         class="camp-image">
+        <img src="https://ncllball.github.io/images/emails/email_1.png"
+            alt="Lincoln High School coaches leading youth baseball skill stations" class="camp-image">
     </section>
 
     <section>
         <h2 class="left">What</h2>
-        <p>An afternoon skills camp led by Lincoln High School coaches (with player mentors) focused on core development. Campers rotate through stations for:</p>
+        <p>An afternoon skills camp led by Lincoln High School coaches (with player mentors) focused on core
+            development. Campers rotate through stations for:</p>
         <ul>
             <li>Infield fielding</li>
             <li>Outfield fundamentals</li>
@@ -52,7 +54,7 @@
     <section>
         <h2 class="left">When</h2>
         <ul>
-            <li>Sunday, <span>{{ page.campDate }}</span></li>
+            <li>Sunday, <span>{{ page.campDate | default: "TBD" }}</span></li>
             <li>12:00 PM – 3:00 PM (check‑in opens 11:40 AM)</li>
         </ul>
     </section>
@@ -77,7 +79,8 @@
         <ul>
             <li>Waiver emailed after registration—print, sign, and bring (extras on-site)</li>
             <li>Bring glove, bat, helmet, water; catcher’s gear if applicable</li>
-            <li>Register now: <a href="https://my.cheddarup.com/c/lhs-ptsa-baseball" target="_blank" class="ncll">Lincoln HS Camp Registration</a></li>
+            <li>Register now: <a href="https://my.cheddarup.com/c/lhs-ptsa-baseball" target="_blank"
+                    class="ncll">Lincoln HS Camp Registration</a></li>
         </ul>
     </section>
 
@@ -85,10 +88,12 @@
         <h2 class="left">Questions</h2>
         <ul>
             <li>Contact: Annie Tegen</li>
-            <li>Email: <a href="mailto:tegenannie&#64;hotmail&#46;com" class="ncll">tegenannie&#64;hotmail&#46;com</a></li>
+            <li>Email: <a href="mailto:tegenannie@hotmail.com" class="ncll" rel="noopener noreferrer">tegenannie@hotmail.com</a>
+            </li>
             <li>Phone: (206) 235-3665</li>
         </ul>
     </section>
 
 </body>
+
 </html>
