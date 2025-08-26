@@ -100,7 +100,7 @@
 }
 
 .note {
-    text-transform: underline;
+    text-transform: underline !important;
 }
 
 h1,

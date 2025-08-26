@@ -1,38 +1,195 @@
-<link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
-<link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
-<title>2025 Fees and Financial Aid</title>
+<!DOCTYPE html>
+<html lang="en">
 
-<p>Thank you for your interest in Little League baseball! When you pay your fees, you’re supporting various essential
-    aspects of our program. Here’s what those fees cover (consider this list representative, not exhaustive):</p>
-<h4 id="equipment-and-uniforms" class="left">Equipment and Uniforms</h4>
-<ul>
-    <li>Little League provides baseballs, bats, helmets, catcher’s gear, and other necessary equipment.</li>
-    <li>Uniforms, including jerseys, hats, and socks, are provided for players.</li>
-    <li>Divisions AAA and above will also receive HOODIES as part of their uniform kit.</li>
-</ul>
-<h4 id="umpires-and-officials" class="left">Umpires and Officials</h4>
-<ul>
-    <li>Umpires play a crucial role in officiating games and ensuring fair play.</li>
-    <li>While umpires are volunteers, fees help cover umpire costs and training.</li>
-</ul>
-<h4 id="league-operations-and-administration" class="left">League Operations and Administration</h4>
-<ul>
-    <li>Administrative expenses, such as registration processing, insurance, and communication tools, are funded by
-        these fees.</li>
-    <li>Coordinators, coaches, and volunteers work behind the scenes to organize practices, games, and events.</li>
-</ul>
-<h4 id="player-development-programs" class="left">Player Development Programs</h4>
-<ul>
-    <li>Funds support player clinics, coaching workshops, and skill development programs.</li>
-    <li>These initiatives help players improve their baseball skills and enhance their overall experience.</li>
-</ul>
-<h4 id="community-building-and-events" class="left">Community Building and Events</h4>
-<ul>
-    <li>Little League fosters a sense of community by organizing events, opening ceremonies, and social activities.</li>
-    <li>Fees contribute to creating a positive environment for players, families, and supporters.</li>
-</ul>
-<h4 id="field-fees" class="left">Field Fees</h4>
-<ul>
-    <li>A large part of the fees goes toward field rental and usage fees. These fees allow us to secure playing fields
-        and maintain them for practices and games. </li>
-</ul>
+<head>
+    <!-- Audit: All section IDs are referenced in the navigation; no removals necessary -->
+    <meta charset="utf-8">
+    <title>2025 Registration Fees: What They Cover | North Central Little League</title>
+    <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
+    <!-- Added local styles for illustrative pie chart -->
+    <style>
+        .cost-chart-wrapper {
+            max-width: 420px;
+            margin: 1.5rem auto;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .cost-pie {
+            width: 280px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background: conic-gradient(
+                #cc0000 0deg 51.428deg,
+                #1d3d7a 51.428deg 102.856deg,
+                #e23d3d 102.856deg 154.284deg,
+                #444 154.284deg 205.712deg,
+                #777 205.712deg 257.140deg,
+                #990000 257.140deg 308.568deg,
+                gainsboro 308.568deg 360deg);
+            outline: 1px solid #00013a;
+            
+            
+        }
+
+        .cost-chart-legend {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: .35rem .75rem;
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 320px;
+            
+        }
+
+        .cost-chart-legend li {
+            display: flex;
+            align-items: left;
+            gap: .4rem;
+            line-height: 1.2;
+            font-size: 11px;
+
+        }
+
+        .cost-chart-legend span.swatch {
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            border: 1px solid #00013a;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        Navigation header is commented out for potential future use.
+        Uncomment and update as needed to enable page navigation.
+        <header>
+            <nav class="page-toc">
+                <ul>
+                    <li><a class="ncll" href="#intro">Overview</a></li>
+                    <li><a class="ncll" href="#costs">Core Operating Costs</a></li>
+                    <li><a class="ncll" href="#equipment">Equipment & Uniforms</a></li>
+                    <li><a class="ncll" href="#umpires">Umpires & Officials</a></li>
+                    <li><a class="ncll" href="#operations">League Operations</a></li>
+                    <li><a class="ncll" href="#development">Player Development</a></li>
+                    <li><a class="ncll" href="#community">Community & Events</a></li>
+                    <li><a class="ncll" href="#fields">Field Fees</a></li>
+                    <li><a class="ncll" href="#aid">Financial Assistance</a></li>
+                </ul>
+            </nav>
+        </header>
+    -->
+    <main>
+        <section id="intro">
+            <p>Thank you for your interest in Little League baseball! When you pay your fees, you’re supporting various
+                essential aspects of our program. Here’s what those fees cover (consider this list representative, not
+                exhaustive):</p>
+        </section>
+
+        <!-- New illustrative distribution section -->
+        <section id="distribution">
+            <h2 class="left">How Fees Are Distributed (Illustrative)</h2>
+            <div class="cost-chart-wrapper">
+                <div class="cost-pie" role="img"
+                     aria-label="Seven equal slices representing: Equipment and Uniforms; Umpires and Officials; League Operations and Administration; Player Development Programs; Community Building and Events; Field Fees; Financial Assistance and Scholarships.">
+                </div>
+                <ul class="cost-chart-legend">
+                    <li><span class="swatch" style="background:#cc0000"></span>Equipment&nbsp;&amp;&nbsp;Uniforms</li>
+                    <li><span class="swatch" style="background:#1d3d7a"></span>Umpires</li>
+                    <li><span class="swatch" style="background:#e23d3d"></span>League&nbsp;Operations</li>
+                    <li><span class="swatch" style="background:#444"></span>Player&nbsp;Development</li>
+                    <li><span class="swatch" style="background:#777"></span>Community&nbsp;&amp;&nbsp;Events</li>
+                    <li><span class="swatch" style="background:#990000"></span>Field&nbsp;Fees</li>
+                    <li><span class="swatch" style="background:gainsboro"></span>Financial&nbsp;Assistance</li>
+                </ul>
+                <p style="font-size:12px;margin-top:.75rem;">Illustrative only: equal slices show every area matters (not an exact budget).</p>
+            </div>
+        </section>
+
+        <section id="costs">
+            <h2 class="left">Core Operating Costs: Overview</h2>
+            <ul>
+                <li>Little League International charter, insurance, and safety compliance.</li>
+                <li>Field use, permits, and maintenance materials (chalk, bases, mound clay) in addition to rental fees.
+                </li>
+                <li>League-supplied uniforms (jerseys, hats/caps, socks; AAA and above also receive hoodies).</li>
+                <li>Shared equipment: catcher’s gear, helmets, bats, tees, practice balls, first aid kits.</li>
+                <li>Umpire training and per-game fees (where applicable).</li>
+                <li>Background checks and required safety training for volunteers.</li>
+                <li>Player development: clinics, assessment logistics, scheduling tools.</li>
+                <li>Scholarship support so ability to pay is never a barrier.</li>
+            </ul>
+        </section>
+            <h2 class="left"></h2>
+
+        <section id="equipment">
+            <h4 class="left">Equipment and Uniforms</h4>
+            <ul>
+                <li>Little League provides baseballs, bats, helmets, catcher’s gear, and other necessary equipment.</li>
+                <li>Uniforms, including jerseys, hats, and socks, are provided for players.</li>
+                <li>Divisions AAA and above will also receive HOODIES as part of their uniform kit.</li>
+            </ul>
+        </section>
+
+        <section id="umpires">
+            <h4 class="left">Umpires and Officials</h4>
+            <ul>
+                <li>Umpires play a crucial role in officiating games and ensuring fair play.</li>
+                <li>While umpires are volunteers, fees help cover umpire costs and training.</li>
+            </ul>
+        </section>
+
+        <section id="operations">
+            <h4 class="left">League Operations and Administration</h4>
+            <ul>
+                <li>Administrative expenses, such as registration processing, insurance, and communication tools, are
+                    funded by these fees.</li>
+                <li>Coordinators, coaches, and volunteers work behind the scenes to organize practices, games, and
+                    events.</li>
+            </ul>
+        </section>
+
+        <section id="development">
+            <h4 class="left">Player Development Programs</h4>
+            <ul>
+                <li>Funds support player clinics, coaching workshops, and skill development programs.</li>
+                <li>These initiatives help players improve their baseball skills and enhance their overall experience.
+                </li>
+            </ul>
+        </section>
+
+        <section id="community">
+            <h4 class="left">Community Building and Events</h4>
+            <ul>
+                <li>Little League fosters a sense of community by organizing events, opening ceremonies, and social
+                    activities.</li>
+                <li>Fees contribute to creating a positive environment for players, families, and supporters.</li>
+            </ul>
+        </section>
+
+        <section id="fields">
+            <h4 class="left">Field Fees</h4>
+            <ul>
+                <li>A large part of the fees goes toward field rental and usage fees. These fees allow us to secure
+                    playing fields and maintain them for practices and games.</li>
+            </ul>
+        </section>
+
+        <section id="aid">
+            <h4 class="left">Financial Assistance &amp; Scholarships</h4>
+            <ul>
+            <!-- The email address below is HTML entity encoded for spam prevention: registrar@ncllball.org -->
+            <li>Need-based fee assistance (full or partial) is available for each season and most NCLL programs. It's a cost I know our NCLL families are glad to support!</li>
+            <li>See the aside on the right and if you have questions please email: <a class="ncll"
+                    href="mailto:&#114;&#101;&#103;&#105;&#115;&#116;&#114;&#97;&#114;&#64;&#110;&#99;&#108;&#108;&#98;&#97;&#108;&#108;&#46;&#111;&#114;&#103;">&#114;&#101;&#103;&#105;&#115;&#116;&#114;&#97;&#114;&#64;&#110;&#99;&#108;&#108;&#98;&#97;&#108;&#108;&#46;&#111;&#114;&#103;</a>
+            </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
