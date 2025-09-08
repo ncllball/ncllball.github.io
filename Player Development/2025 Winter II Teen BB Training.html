@@ -1,0 +1,99 @@
+<link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
+
+<h1 class="left" id="welcome-to-nclls-winter-training-ii-for-teen-baseball">Welcome to NCLL's Winter Training II for
+    Teen
+    Baseball!</h1>
+    <button style="margin-bottom: 13px;" class="gainsboro-button">January 4<sup>th</sup> to February 22<sup>nd</sup></button>
+    <style>
+        .gainsboro-button {
+            border: none;
+            color: #333;
+            padding: 5px 10px;
+            background-color: var(206-258-1696);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 12px;
+            transition: background-color 0.3s ease;
+        }
+
+        .gainsboro-button:hover {
+            background-color: #ddd;
+        }
+    </style>
+
+<body>
+<p>This is a fantastic opportunity to gear up for the upcoming Little League and High School seasons. It's
+    especially recommended for teen players entering or preparing for high school—come get those 'reps' in!</p>
+<p>This registration session will guide you through completing contact information, signing up for participation,
+    and submitting payment for the 2025 Winter Training II for Teen Baseball.</p>
+
+<h2 class="left" id="about-the-program">About the Program</h2>
+<p>The TEEN off-season development program is an opportunity for teenage players (league age 13-16) to receive
+    additional training and reps during the off-season. This hitting training will be led by legendary coach Ray
+    Atkinson at <span>Focus Baseball Facility</span> (7806 Aurora Ave N, Seattle, Washington 98103).</p>
+<p><span>NOTE:</span> There will be two Winter Training for Teen Baseball programs in 2025:</p>
+<ul>
+    <li>Winter Training I will run from November 9<sup>th</sup> to December 18<sup>th</sup>.</li>
+    <li>Winter Training II will run from January 4<sup>th</sup> to February 22<sup>nd</sup>.</li>
+</ul>
+<h2 class="left" id="winter-training-ii-for-teen-baseball-session-dates">Winter Training II for Teen Baseball Session
+    Dates</h2>
+<h4 class="left" id="frogs">FROGS</h4>
+<ul>
+    <li><span>Day/Time:</span> Tuesdays, 5:00 PM – 6:30 PM</li>
+    <li><span>Location:</span> <a class="ncll" href="https://maps.app.goo.gl/aRZChQwUjsrrPbSBA">Focus Indoor Facility</a></li>
+    <li><span>Dates:</span> 1/7, 1/14, 1/21, 1/28, 2/4, 2/11, 2/18</li>
+</ul>
+<h4 class="left" id="toads">TOADS</h4>
+<ul>
+    <li><span>Day/Time:</span> Tuesdays, 5:00 PM – 6:30 PM</li>
+    <li><span>Location:</span> <a class="ncll" href="https://maps.app.goo.gl/aRZChQwUjsrrPbSBA">Focus Indoor Facility</a></li>
+    <li><span>Dates:</span> 1/4, 1/11, 1/18, 1/25, 2/8, 2/15, 2/22</li>
+</ul>
+<p><span>Note:</span> If the program is full, please register for the <span>WAITLIST</span>, as this may
+    allow us to accommodate additional participants.</p>
+<p>Don't miss this chance to sharpen your skills and prepare for the season ahead!</p>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+// Check if elements with the class "ncll" are found
+const links = document.querySelectorAll('.ncll');
+console.log('Found links:', links); // Should log the links or an empty NodeList
+
+links.forEach(link => {
+    console.log(`${link.textContent}: ${link.href}`);
+});
+});
+
+
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Check if elements with the class "ncll" are found
+        const links = document.querySelectorAll('.ncll');
+
+        // Get the container to append the list of links
+        const linkContainer = document.getElementById('link-container');
+
+        if (links.length > 0) {
+            const ul = document.createElement('ul');
+            links.forEach(link => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.textContent = link.textContent;
+                a.href = link.href;
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+            linkContainer.appendChild(ul);
+        } else {
+            linkContainer.textContent = 'No links found.';
+        }
+    });
+</script>
+
+<div id="link-container"></div>
+
+
+</body>
+
+
