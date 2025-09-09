@@ -1324,5 +1324,5 @@ Scoped to .timeline/.timeline-split and timeline-specific classes
 h3.timeline-title {
     font-weight: 600;
     font-size: 18px;
-    text-align: left;
+    text-align: left !important;
 }
