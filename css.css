@@ -1133,41 +1133,194 @@ Responsive Styles
 Timeline Component Styles
 Scoped to .timeline/.timeline-split and timeline-specific classes
 =========================== */
-.example-title { text-align:left; margin-bottom:0; padding:1em 0; border-bottom:1px solid #c7d4d8; }
-.example-title p { margin:0 auto; font-size:16px; max-width:800px; display:block; }
+.example-title {
+    text-align: left;
+    margin-bottom: 0;
+    padding: 1em 0;
+    border-bottom: 1px solid #c7d4d8;
+}
 
-.timeline { line-height:1.4em; list-style:none; margin:0 auto; padding:0; width:100%; max-width:1000px; }
-.timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 { line-height:normal; }
-.timeline-item { padding-left:40px; position:relative; }
-.timeline-item:last-child { padding-bottom:0; }
-.timeline-info { font-size:12px; font-weight:700; margin:0 0 0.5em 0; white-space:nowrap; }
-.timeline-marker { position:absolute; top:0; bottom:0; left:0; width:15px; }
-.timeline-marker:before { background:#FF6B6B; border:3px solid transparent; border-radius:100%; content:""; display:block; height:15px; position:absolute; top:4px; left:0; width:15px; transition:background .3s ease-in-out, border .3s ease-in-out; }
-.timeline-marker:after { content:""; width:1px; background:#CCD5DB; display:block; position:absolute; top:30px; bottom:0; left:10px; }
-.timeline-item:last-child .timeline-marker:after { content:none; }
-.timeline-item:not(.period):hover .timeline-marker:before { background:transparent; border:4px solid #FF6B6B; }
-.timeline-content { padding-bottom:40px; }
-.timeline-content p:last-child { margin-bottom:0; }
-.period { padding:0; }
-.period .timeline-info { display:none; }
-.period .timeline-marker:before { background:transparent; content:""; width:15px; height:auto; border:none; border-radius:0; top:0; bottom:30px; position:absolute; }
-.period .timeline-marker:after { content:""; height:32px; top:auto; }
-.period .timeline-content { padding:40px 0 70px; }
-.period .timeline-title { margin:0; }
+.example-title p {
+    margin: 0 auto;
+    font-size: 16px;
+    max-width: 800px;
+    display: block;
+}
+
+.timeline {
+    line-height: 1.4em;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.timeline h1,
+.timeline h2,
+.timeline h3,
+.timeline h4,
+.timeline h5,
+.timeline h6 {
+    line-height: normal;
+}
+
+.timeline-item {
+    padding-left: 40px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-info {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 0 0.5em 0;
+    white-space: nowrap;
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+}
+
+.timeline-marker:before {
+    background: #FF6B6B;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 15px;
+    transition: background .3s ease-in-out, border .3s ease-in-out;
+}
+
+.timeline-marker:after {
+    content: "";
+    width: 1px;
+    background: #CCD5DB;
+    display: block;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 10px;
+}
+
+.timeline-item:last-child .timeline-marker:after {
+    content: none;
+}
+
+.timeline-item:not(.period):hover .timeline-marker:before {
+    background: transparent;
+    border: 4px solid #FF6B6B;
+}
+
+.timeline-content {
+    padding-bottom: 40px;
+}
+
+.timeline-content p:last-child {
+    margin-bottom: 0;
+}
+
+.period {
+    padding: 0;
+}
+
+.period .timeline-info {
+    display: none;
+}
+
+.period .timeline-marker:before {
+    background: transparent;
+    content: "";
+    width: 15px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    top: 0;
+    bottom: 30px;
+    position: absolute;
+}
+
+.period .timeline-marker:after {
+    content: "";
+    height: 32px;
+    top: auto;
+}
+
+.period .timeline-content {
+    padding: 40px 0 70px;
+}
+
+.period .timeline-title {
+    margin: 0;
+}
 
 @media (min-width: 768px) {
-    .timeline-split .timeline { display:table; }
-    .timeline-split .timeline-item { display:table-row; padding:0; }
+    .timeline-split .timeline {
+        display: table;
+    }
+
+    .timeline-split .timeline-item {
+        display: table-row;
+        padding: 0;
+    }
+
     .timeline-split .timeline-info,
     .timeline-split .timeline-marker,
     .timeline-split .timeline-content,
-    .timeline-split .period .timeline-info { display:table-cell; vertical-align:top; }
-    .timeline-split .timeline-marker { position:relative; }
-    .timeline-split .timeline-content { padding-left:30px; }
-    .timeline-split .timeline-info { padding-right:30px; }
-    .timeline-split .period .timeline-title { position:relative; left:-115px; }
+    .timeline-split .period .timeline-info {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .timeline-split .timeline-marker {
+        position: relative;
+    }
+
+    .timeline-split .timeline-content {
+        padding-left: 30px;
+    }
+
+    .timeline-split .timeline-info {
+        padding-right: 30px;
+    }
+
+    .timeline-split .period .timeline-title {
+        position: relative;
+        left: -115px;
+    }
 }
 
-.tags_button { background-color:rgba(220,220,220,.7); color:#000; border:1px solid #B0B0B0; padding:2px 5px; margin-left:5px; font-size:10px; cursor:pointer; border-radius:6px; box-shadow:2px 2px 5px rgba(0,0,0,.2); transition:background-color .3s, box-shadow .3s; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-.tags_button:hover { background-color:rgba(169,169,169,.7); box-shadow:4px 4px 10px rgba(0,0,0,.2); }
-h3.timeline-title { font-weight:600; font-size:18px; }
+.tags_button {
+    background-color: rgba(220, 220, 220, .7);
+    color: #000;
+    border: 1px solid #B0B0B0;
+    padding: 2px 5px;
+    margin-left: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    transition: background-color .3s, box-shadow .3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tags_button:hover {
+    background-color: rgba(169, 169, 169, .7);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .2);
+}
+
+h3.timeline-title {
+    font-weight: 600;
+    font-size: 18px;
+}
