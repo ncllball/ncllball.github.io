@@ -1323,3 +1323,12 @@ h3.timeline-title {
     font-size: 18px;
     text-align: left !important;
 }
+
+.waitlist-note {
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 16px 0;
+    font-size: 12px;
+}
