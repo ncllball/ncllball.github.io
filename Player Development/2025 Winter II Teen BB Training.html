@@ -53,47 +53,6 @@
     allow us to accommodate additional participants.</p>
 <p>Don't miss this chance to sharpen your skills and prepare for the season ahead!</p>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-// Check if elements with the class "ncll" are found
-const links = document.querySelectorAll('.ncll');
-console.log('Found links:', links); // Should log the links or an empty NodeList
-
-links.forEach(link => {
-    console.log(`${link.textContent}: ${link.href}`);
-});
-});
-
-
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Check if elements with the class "ncll" are found
-        const links = document.querySelectorAll('.ncll');
-
-        // Get the container to append the list of links
-        const linkContainer = document.getElementById('link-container');
-
-        if (links.length > 0) {
-            const ul = document.createElement('ul');
-            links.forEach(link => {
-                const li = document.createElement('li');
-                const a = document.createElement('a');
-                a.textContent = link.textContent;
-                a.href = link.href;
-                li.appendChild(a);
-                ul.appendChild(li);
-            });
-            linkContainer.appendChild(ul);
-        } else {
-            linkContainer.textContent = 'No links found.';
-        }
-    });
-</script>
-
-<div id="link-container"></div>
-
-
 </body>
 
 
