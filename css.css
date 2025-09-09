@@ -1179,6 +1179,7 @@ Scoped to .timeline/.timeline-split and timeline-specific classes
     font-weight: 700;
     margin: 0 0 0.5em 0;
     white-space: nowrap;
+    text-align: right;
 }
 
 .timeline-marker {
@@ -1323,4 +1324,5 @@ Scoped to .timeline/.timeline-split and timeline-specific classes
 h3.timeline-title {
     font-weight: 600;
     font-size: 18px;
+    text-align: left;
 }
