@@ -679,7 +679,7 @@ section.strike {
     line-height: 1;
 }
 
-.bi.bi-info-circle {
+.bi.bi-info-circle-fill {
     color: var(--color_red);
 }
 
