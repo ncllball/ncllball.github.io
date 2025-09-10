@@ -1,66 +1,32 @@
 
+<link rel="stylesheet" href="https://ncllball.github.io/css.css" />
 <style>
-.tag-icon-blue {
-    background-color: #0078D7; /* Blue */
-    color: white;
-    padding: 5px 12px 5px 8px; /* Adjust padding for icon */
+.tag-icon {
+    display: inline-block;
+    color: var(--color_white);
+    padding: 5px 12px 5px 8px;
     border: none;
     border-radius: 15px;
-    font-size: 14px;
+    font-size: 0.875rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 2px;
 }
-
-.tag-icon-blue:hover {
-    background-color: #005bb5; /* Darker blue */
-}
-
-.tag-icon-green {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    padding: 5px 12px 5px 8px; /* Adjust padding for icon */
-    border: none;
-    border-radius: 15px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 2px;
-}
-
-.tag-icon-green:hover {
-    background-color: #388E3C; /* Darker green */
-}
-
-.tag-icon-orange {
-    background-color: #FF9800; /* Orange */
-    color: white;
-    padding: 5px 12px 5px 8px; /* Adjust padding for icon */
-    border: none;
-    border-radius: 15px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 2px;
-}
-
-.tag-icon-orange:hover {
-    background-color: #F57C00; /* Darker orange */
-}
-
-.tag-icon-blue i,
-.tag-icon-green i,
-.tag-icon-orange i {
-    margin-right: 5px;
-}
+.tag-icon i { margin-right: 5px; }
+.tag-icon-blue { background-color: var(--color_richblue); }
+.tag-icon-blue:hover { background-color: var(--color_blue_hover); }
+.tag-icon-green { background-color: var(--color_green); }
+.tag-icon-green:hover { background-color: var(--color_green_hover); }
+.tag-icon-orange { background-color: var(--color_orange); }
+.tag-icon-orange:hover { background-color: var(--color_orange_hover); }
 </style>
 
-<button class="tag-icon-blue">
+<button class="tag-icon tag-icon-blue">
     <i class="fas fa-baseball-ball"></i> Baseball
 </button>
-<button class="tag-icon-green">
+<button class="tag-icon tag-icon-green">
     <i class="fas fa-users"></i> Youth
 </button>
-<button class="tag-icon-orange">
+<button class="tag-icon tag-icon-orange">
     <i class="fas fa-tools"></i> Equipment
 </button>
