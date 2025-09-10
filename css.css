@@ -1414,7 +1414,7 @@ h3.timeline-title {
     display: inline-block;
     vertical-align: middle;
     margin-right: 8px;
-    color: #00013a;
+    color: var(--color_red);
     flex-shrink: 0;
 }
 
