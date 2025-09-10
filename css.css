@@ -24,10 +24,14 @@
     --color_orange: #ff6900;
     --color_orange_hover: #F57C00;
     /* greens */
-    --color_green: #4caf50; /* material green base */
-    --color_green_hover: #388e3c; /* material green hover */
-    --color_green_alt_dark: #2c5f2d; /* forest green dark */
-    --color_green_alt_light: #4a8f4e; /* forest green light */
+    --color_green: #4caf50;
+    /* material green base */
+    --color_green_hover: #388e3c;
+    /* material green hover */
+    --color_green_alt_dark: #2c5f2d;
+    /* forest green dark */
+    --color_green_alt_light: #4a8f4e;
+    /* forest green light */
     --color_lightgray: gainsboro;
     --color_darkgray: RGB(68, 68, 68);
     --color_button: #f0f0f0;
@@ -63,8 +67,10 @@
     --sup-font-size: 0.75em;
     --sup-top-offset: -0.4em;
     /* subtle sport-specific band tints */
-    --tint_softball: #f7f3ff; /* very light lavender */
-    --tint_baseball: #f2f8ff; /* very light blue */
+    --tint_softball: #f7f3ff;
+    /* very light lavender */
+    --tint_baseball: #f2f8ff;
+    /* very light blue */
     /* Decorative stripe gradient for h2.left::before */
     --stripe-gradient: linear-gradient(135deg,
             #ffffff 5%,
@@ -83,6 +89,7 @@
     --font_sans: "proxima-nova", var(--font_ui);
     --font_heading: var(--font_sans);
 }
+
 /* 1) CMS overrides (SportsConnect embeds) */
 
 .skAddBanner,
@@ -666,7 +673,8 @@ section.strike {
 /* Bootstrap Icons helpers */
 .bi {
     display: inline-block;
-    vertical-align: middle; /* similar to Bootstrap */
+    vertical-align: middle;
+    /* similar to Bootstrap */
     font-size: 1em;
     line-height: 1;
 }
@@ -1104,6 +1112,7 @@ Image Enlargement Styles
     margin-right: auto;
     margin-bottom: 20px;
 }
+
 /* end: 12) Responsive & reduced motion */
 
 /* tags */
@@ -1355,8 +1364,8 @@ Scoped to .timeline/.timeline-split and timeline-specific classes */
 }
 
 .tags_button {
-/* end: 11) Timeline */
-/* 8) Tags (tag pills/buttons) */
+    /* end: 11) Timeline */
+    /* 8) Tags (tag pills/buttons) */
     background-color: rgba(220, 220, 220, .7);
     color: var(--color_black);
     border: 1px solid var(--color_gray_b0);
@@ -1414,7 +1423,6 @@ h3.timeline-title {
     display: inline-block;
     vertical-align: middle;
     margin-right: 8px;
-    color: var(--color_red);
     flex-shrink: 0;
 }
 
@@ -1422,4 +1430,5 @@ h3.timeline-title {
     width: 20px;
     height: 20px;
     fill: currentColor;
+    color: var(--color_red);
 }
