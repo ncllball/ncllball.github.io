@@ -1,3 +1,90 @@
+/* NCLL Global Stylesheet
+    Organization (current order):
+    0) Design tokens
+    1) CMS overrides (SportsConnect embeds)
+    2) Buttons & helpers
+    3) Typography & base
+    4) Layout utilities
+    5) Tables
+    6) Links & focus
+    7) Components (alerts, quotes, strike, helper, registration)
+    8) Tags (tag pills/buttons)
+    9) Carousel & image enlargement
+    10) Program sections (GoFundMe, team photos, camp image)
+    11) Timeline
+    12) Responsive & reduced motion
+*/
+
+/* 0) Design tokens */
+:root {
+    --color_red: #cd163f;
+    --color_blue: #00013a;
+    --color_tan: #e2ddca;
+    --color_richblue: #019cde;
+    --color_orange: #ff6900;
+    --color_orange_hover: #F57C00;
+    /* greens */
+    --color_green: #4caf50; /* material green base */
+    --color_green_hover: #388e3c; /* material green hover */
+    --color_green_alt_dark: #2c5f2d; /* forest green dark */
+    --color_green_alt_light: #4a8f4e; /* forest green light */
+    --color_lightgray: gainsboro;
+    --color_darkgray: RGB(68, 68, 68);
+    --color_button: #f0f0f0;
+    /* standardized text/link/info tokens */
+    --color_text: #333333;
+    --color_muted: #555555;
+    --color_link: #0066cc;
+    --color_info: #1976d2;
+    --color_timeline_line: #ccd5db;
+    --color_warning: #f2e427;
+    --color_border: #cccccc;
+    --color_border_light: #dddddd;
+    --color_subtle: #888888;
+    --color_control: #bbbbbb;
+    --color_border_table: #dededf;
+    --color_white: #ffffff;
+    --color_black: #000000;
+    /* semantic surfaces & state tokens */
+    --color_surface_light: #f8f9fa;
+    --color_surface_lighter: #e9ecef;
+    --color_blue_hover: #0056b3;
+    --color_info_tint_bg: #e3f2fd;
+    --color_warning_bg: #fff3cd;
+    --color_warning_border: #ffeeba;
+    --color_danger_bg: #f8d7da;
+    --color_danger_border: #f5c6cb;
+    --color_gray_b0: #B0B0B0;
+    --color_gray_aaaa: #aaaaaa;
+    /* shadow tokens */
+    --shadow_green_alt_25: rgba(44, 95, 45, 0.25);
+    --shadow_green_alt_35: rgba(44, 95, 45, 0.35);
+    /* sup positioning tokens */
+    --sup-font-size: 0.75em;
+    --sup-top-offset: -0.4em;
+    /* subtle sport-specific band tints */
+    --tint_softball: #f7f3ff; /* very light lavender */
+    --tint_baseball: #f2f8ff; /* very light blue */
+    /* Decorative stripe gradient for h2.left::before */
+    --stripe-gradient: linear-gradient(135deg,
+            #ffffff 5%,
+            var(--color_red) 5%,
+            var(--color_red) 25%,
+            #ffffff 25%,
+            #ffffff 50%,
+            #ffffff 50%,
+            #ffffff 55%,
+            var(--color_red) 55%,
+            var(--color_red) 75%,
+            #ffffff 75%,
+            #ffffff 100%);
+    /* font stacks */
+    --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    --font_sans: "proxima-nova", var(--font_ui);
+    --font_heading: var(--font_sans);
+}
+/* 1) CMS overrides (SportsConnect embeds) */
+
 .skAddBanner,
 .skRightTabs,
 .skTabHeading,
@@ -8,7 +95,7 @@
 .dfContainer h2.head,
 .dfContainer h2.head .title {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 10px 7px;
     color: #ffffff;
     font-family: "config-variable", sans-serif;
@@ -17,18 +104,20 @@
 }
 
 .skHeader .skBanner {
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: var(--font_ui) !important;
 }
 
 .skTabsWrapper {
     display: table-cell;
     width: calc(100% - 32px);
-    background: #fff;
+    background: var(--color_white);
     vertical-align: top;
     padding: 0 0px 0 0;
 }
 
-/* Modern Tag Styling for Info Buttons */
+/* end: 1) CMS overrides */
+
+/* 2) Buttons & helpers */
 .gainsboro-button {
     display: inline-block;
     padding: 0.5rem 1.2rem;
@@ -39,7 +128,7 @@
     border-radius: 2rem;
     font-size: 0.95rem;
     font-weight: 500;
-    font-family: "proxima-nova", sans-serif;
+    font-family: var(--font_sans);
     transition: all 0.3s ease;
     box-shadow: 0 3px 10px rgba(0, 1, 58, 0.25);
     cursor: default;
@@ -75,30 +164,44 @@
 }
 
 /* Alternate color schemes for variety */
-.gainsboro-button:nth-child(2) {
+/* removed nth-child variants; use explicit modifier classes below */
+
+/* Preferred: explicit modifier classes (migrate markup to use these) */
+.gainsboro-button--blue {
+    background: linear-gradient(135deg, #00013a 0%, #1a4d8f 100%);
+    box-shadow: 0 3px 10px rgba(0, 1, 58, 0.25);
+}
+
+.gainsboro-button--blue:hover {
+    background: linear-gradient(135deg, #1a4d8f 0%, #00013a 100%);
+    box-shadow: 0 5px 15px rgba(0, 1, 58, 0.35);
+}
+
+.gainsboro-button--red {
     background: linear-gradient(135deg, #cc0000 0%, #ff4444 100%);
     box-shadow: 0 3px 10px rgba(204, 0, 0, 0.25);
 }
 
-.gainsboro-button:nth-child(2):hover {
+.gainsboro-button--red:hover {
     background: linear-gradient(135deg, #ff4444 0%, #cc0000 100%);
     box-shadow: 0 5px 15px rgba(204, 0, 0, 0.35);
 }
 
-.gainsboro-button:nth-child(3) {
-    background: linear-gradient(135deg, #2c5f2d 0%, #4a8f4e 100%);
-    box-shadow: 0 3px 10px rgba(44, 95, 45, 0.25);
+.gainsboro-button--green {
+    background: linear-gradient(135deg, var(--color_green_alt_dark) 0%, var(--color_green_alt_light) 100%);
+    box-shadow: 0 3px 10px var(--shadow_green_alt_25);
 }
 
-.gainsboro-button:nth-child(3):hover {
-    background: linear-gradient(135deg, #4a8f4e 0%, #2c5f2d 100%);
-    box-shadow: 0 5px 15px rgba(44, 95, 45, 0.35);
+.gainsboro-button--green:hover {
+    background: linear-gradient(135deg, var(--color_green_alt_light) 0%, var(--color_green_alt_dark) 100%);
+    box-shadow: 0 5px 15px var(--shadow_green_alt_35);
 }
 
 .button-bottom-margin {
     margin-bottom: 13px;
 }
 
+/* 3) Typography & base */
 .note {
     text-transform: underline !important;
 }
@@ -110,21 +213,20 @@ h4,
 h5,
 h6 {
     font-weight: 600;
-    color: #000;
+    color: var(--color_black);
     letter-spacing: 0;
+    font-family: var(--font_heading);
 }
 
 h1 {
-    font-size: 26px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.625rem;
     text-align: left;
     line-height: 32px;
     width: fit-content;
 }
 
 h2 {
-    font-size: 20px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
     text-align: left !important;
     line-height: 30px;
     margin: 0 0 18px 0;
@@ -132,30 +234,26 @@ h2 {
 }
 
 h3 {
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 26px;
 }
 
 h4 {
-    font-size: 16px;
-    color: black;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: var(--color_black);
     text-align: left;
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: red;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
 }
 
 h6 {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: red;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
 }
 
@@ -172,8 +270,8 @@ p,
 ul,
 li {
     text-align: left;
-    font-size: 16px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-family: var(--font_ui);
 }
 
 ul li {
@@ -183,6 +281,8 @@ ul li {
 html,
 body {
     text-align: left;
+    font-family: var(--font_sans);
+    color: var(--color_text);
 }
 
 .left {
@@ -218,7 +318,7 @@ h2.left::before {
     margin-top: 20px;
     text-align: left;
     margin-bottom: 20px;
-    /* Use CSS variable for decorative stripe gradient */
+    /* Decorative stripe uses --stripe-gradient */
     background-image: var(--stripe-gradient);
     background-size: 4px 4px;
 }
@@ -262,54 +362,11 @@ h4.left {
     margin-bottom: 10px;
 }
 
-table caption {
-    padding: 0.5em 0;
-    font-weight: 600;
-    font-size: 12px;
-    margin-bottom: 0 !important;
-}
+/* end: 3) Typography & base */
 
-.table_component {
-    overflow: auto;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-}
+/* 4) Layout utilities */
 
-.table_component table {
-    border: 1px solid #dededf;
-    height: 90%;
-    width: 100%;
-    table-layout: auto;
-    border-collapse: collapse;
-    border-spacing: 1px;
-    text-align: left;
-}
-
-.table_component th {
-    border: 1px solid #dededf;
-    background-color: var(--color_red);
-    color: whitesmoke;
-    padding: 5px;
-    font-weight: 400;
-    font-size: 12px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.table_component td {
-    border: 1px solid #dededf;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 5px;
-    font-size: 13px;
-    text-align: center;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.table_component td:nth-child(3) {
-    text-align: left;
-}
-
+/* Tables: moved near .table_component for cohesion */
 #softball-girls,
 #baseball-boys-and-girls {
     margin-bottom: 10px;
@@ -321,6 +378,7 @@ table caption {
     object-fit: cover;
 }
 
+/* 6) Links */
 a.ncll {
     color: var(--color_red) !important;
     text-decoration: none;
@@ -338,18 +396,24 @@ a.ncll:active {
     color: var(--color_red) !important;
 }
 
+/* 6.1) Focus states */
+a.ncll:focus-visible,
+.button:focus-visible,
+.gainsboro-button:focus-visible {
+    outline: 2px solid var(--color_blue);
+    outline-offset: 2px;
+}
+
 .blurred-text {
     color: transparent;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: Arial, sans-serif;
 }
 
-super {
-    vertical-align: super;
-    line-height: normal;
-    font-size: 9px;
-}
+/* end: 6) Links & focus */
+
+/* removed invalid <super> element styling; sup handled below */
 
 .fit {
     max-width: 100%;
@@ -363,7 +427,7 @@ super {
 }
 
 .fit td {
-    color: RGB(68, 68, 68) !important;
+    color: var(--color_darkgray) !important;
 }
 
 .agechart {
@@ -371,65 +435,37 @@ super {
     margin: 0 0 10px 0;
 }
 
-:root {
-    --color_red: #cd163f;
-    --color_blue: #00013a;
-    --color_tan: #e2ddca;
-    --color_richblue: #019cde;
-    --color_orange: #ff6900;
-    --color_lightgray: gainsboro;
-    --color_darkgray: RGB(68, 68, 68);
-    --color_button: #f0f0f0;
-    /* subtle sport-specific band tints */
-    --tint_softball: #f7f3ff;
-    /* very light lavender */
-    --tint_baseball: #f2f8ff;
-    /* very light blue */
-    /* Decorative stripe gradient for h2.left::before */
-    --stripe-gradient: linear-gradient(135deg,
-            #ffffff 5%,
-            #e60707 5%,
-            #e60707 25%,
-            #ffffff 25%,
-            #ffffff 50%,
-            #ffffff 50%,
-            #ffffff 55%,
-            #e60707 55%,
-            #e60707 75%,
-            #ffffff 75%,
-            #ffffff 100%);
-}
+/* Tokens are defined at the top of this file */
 
 .updated {
     color: var(--color_red) !important;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 0.625rem;
     margin-top: 0;
-    position: relative;
     vertical-align: top !important;
 }
 
 .footies {
-    font-size: 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #555;
+    font-size: 0.8125rem;
+    font-family: var(--font_ui);
+    color: var(--color_muted);
     margin-top: 10px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--color_border_light);
     padding: 5px 0px 5px 0px;
     line-height: normal;
 }
 
 .footies p {
-    font-size: 11px !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #555;
+    font-size: 0.75rem !important;
+    font-family: var(--font_ui);
+    color: var(--color_muted);
     line-height: normal;
     margin: 0px;
     padding: 3px 10px 3px 5px !important;
 }
 
 .footies a {
-    color: #0066cc;
+    color: var(--color_link);
     text-decoration: none;
 }
 
@@ -458,8 +494,8 @@ super {
 }
 
 .image-caption-container figcaption {
-    font-size: 12px;
-    color: #555;
+    font-size: 0.75rem;
+    color: var(--color_muted);
     margin-top: 10px;
     width: 100%;
     text-align: center;
@@ -472,7 +508,7 @@ super {
     border: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(135deg, #f2e427 25%, #ffffff 25%, #ffffff 50%, #f2e427 50%, #f2e427 75%, #ffffff 75%,
+    background-image: linear-gradient(135deg, var(--color_warning) 25%, #ffffff 25%, #ffffff 50%, var(--color_warning) 50%, var(--color_warning) 75%, #ffffff 75%,
             #ffffff 100%);
     background-size: 6.00px 6.00px;
 }
@@ -480,11 +516,11 @@ super {
 .alert-header p {
     display: inline-block;
     margin: 0 auto;
-    background-color: whitesmoke;
-    color: #333333;
+    background-color: var(--color_white);
+    color: var(--color_text);
     padding: 10px;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     border: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -492,17 +528,17 @@ super {
 
 .alert-header p::before {
     content: "⚠️ ";
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .alert-header p::after {
     content: "⚠️ ";
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .quote {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -511,8 +547,8 @@ super {
 }
 
 .author {
-    font-size: 14px;
-    color: #888;
+    font-size: 0.875rem;
+    color: var(--color_subtle);
     text-align: right;
     margin-right: 210px;
     margin-bottom: 50px;
@@ -527,12 +563,12 @@ super {
 }
 
 .strike {
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
+    background-color: var(--color_danger_bg);
+    border: 1px solid var(--color_danger_border);
     padding: 16px 20px;
     margin: 32px 0;
     border-radius: 8px;
-    font-family: 'proxima-nova', Arial, sans-serif;
+    font-family: var(--font_sans);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
@@ -560,29 +596,29 @@ super {
 
 .strike p {
     margin: 0;
-    color: #333;
+    color: var(--color_text);
 }
 
 section.strike {
-    background: #fff;
+    background: var(--color_white);
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     margin: 32px auto;
     max-width: 600px;
     padding: 24px 32px 16px 32px;
-    border-left: 6px solid #1976d2;
+    border-left: 6px solid var(--color_info);
 }
 
 .strike-header .material-icons {
     font-size: 2em;
-    color: #1976d2;
-    background: #e3f2fd;
+    color: var(--color_info);
+    background: var(--color_info_tint_bg);
     border-radius: 50%;
     padding: 6px;
 }
 
 .strike-header span:last-child {
-    color: #333;
+    color: var(--color_text);
     font-weight: 400;
     margin-left: 6px;
 }
@@ -615,26 +651,37 @@ section.strike {
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: var(--color_blue_hover);
 }
 
 .contact-info {
     margin-top: 5px;
     margin-bottom: 20px;
     line-height: normal;
-    font-size: 16px;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-family: var(--font_ui);
 }
 
+/* 5) Tables */
 .table_component table {
     width: 100%;
     border-collapse: collapse;
 }
 
+/* Tables */
+table caption {
+    padding: 0.5em 0;
+    font-weight: 600;
+    font-size: 0.75rem;
+    margin-bottom: 0 !important;
+}
+
+/* end: 5) Tables */
+
 .table_component th,
 .table_component td {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color_border_table);
     text-align: left;
 }
 
@@ -649,25 +696,25 @@ section.strike {
 }
 
 .table_component {
-    background-color: white;
+    background-color: var(--color_white);
 }
 
 .table_component td[colspan="9"] {
     padding: 5px 5px;
-    background-color: white;
-    color: rgb(68, 68, 68);
+    background-color: var(--color_white);
+    color: var(--color_darkgray);
     line-height: normal;
     border: none;
 }
 
 .table_component p {
     padding: 5px 0px 5px 0px;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 .division-title {
     line-height: 35px;
-    font-size: 19px;
+    font-size: 1.1875rem;
     float: left;
     font-weight: 600;
 }
@@ -678,7 +725,7 @@ section.strike {
 }
 
 .aoverb_button {
-    background-color: white;
+    background-color: var(--color_white);
     margin: 0 0 0 10px;
 }
 
@@ -694,7 +741,7 @@ section.strike {
 
 .team-photo figcaption {
     font-size: 0.9em;
-    color: #555;
+    color: var(--color_muted);
     text-align: left;
     margin-top: 15px;
 }
@@ -702,14 +749,10 @@ section.strike {
 .sponsor-links p {
     margin: 0px;
     padding: 0px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
-:root {
-    --sup-font-size: 0.75em;
-    --sup-top-offset: -0.4em;
-}
-
+/* sup formatting uses tokens from :root */
 sup {
     position: relative;
     top: var(--sup-top-offset);
@@ -720,16 +763,16 @@ sup {
 
 .registration section {
     letter-spacing: normal !important;
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: var(--font_ui) !important;
     font-weight: 600 !important;
-    font-size: 12px !important;
+    font-size: 0.75rem !important;
 }
 
 .registration-listing {
-    font-family: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family: var(--font_ui) !important;
     font-weight: 600 !important;
     letter-spacing: normal !important;
-    font-size: 9px !important;
+    font-size: 0.75rem !important;
 }
 
 /* Special styling for checkmarks and TBD content */
@@ -878,8 +921,8 @@ Carousel Styles
 .carousel-caption-container {
     margin-top: 12px;
     padding: 12px 15px;
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);
-    border-left: 3px solid #e21b3c;
+    background: linear-gradient(to right, var(--color_surface_light), var(--color_surface_lighter));
+    border-left: 3px solid var(--color_red);
     border-radius: 6px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     max-width: 450px;
@@ -888,8 +931,8 @@ Carousel Styles
 }
 
 .carousel-caption {
-    color: #333;
-    font-size: 14px;
+    color: var(--color_text);
+    font-size: 0.875rem;
     line-height: 1.5;
     text-align: left;
 }
@@ -905,7 +948,7 @@ Carousel Styles
     width: 14px;
     height: 14px;
     margin: 0 4px;
-    background: #bbb;
+    background: var(--color_control);
     border-radius: 50%;
     cursor: pointer;
     transition: background 0.3s;
@@ -916,7 +959,7 @@ Carousel Styles
 #carousel-2:checked~.carousel-controls label[for="carousel-2"],
 #carousel-3:checked~.carousel-controls label[for="carousel-3"],
 #carousel-4:checked~.carousel-controls label[for="carousel-4"] {
-    background: #333;
+    background: var(--color_text);
 }
 
 /* ===========================
@@ -955,7 +998,7 @@ Image Enlargement Styles
     top: 32px;
     right: 48px;
     font-size: 2rem;
-    color: #fff;
+    color: var(--color_white);
     background: none;
     border: none;
     cursor: pointer;
@@ -966,7 +1009,7 @@ Image Enlargement Styles
 GoFundMe Section Styles
 =========================== */
 .gofundme-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, var(--color_surface_light) 0%, var(--color_surface_lighter) 100%);
     border-radius: 16px;
     margin: 24px 0;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -1070,17 +1113,15 @@ Responsive Styles
 }
 
 .wrapper {
-    /* max-width: 800px; */
     margin: 0px;
     padding: 0px 0px 0px 0px;
-    /* background: #fff;
-    border: 1px solid #ccc; */
-    /* box-shadow: 0 0 50px #ddd; */
 }
+
+/* end: 4) Layout utilities */
 
 .tag {
     margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0p2;
+    padding: 0px 0px 0px 0px;
 }
 
 .tag-item,
@@ -1102,8 +1143,8 @@ Responsive Styles
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     list-style-type: none;
-    font-size: 12px;
-    box-shadow: 1px 1px 8px #aaaaaa;
+    font-size: 0.75rem;
+    box-shadow: 1px 1px 8px var(--color_gray_aaaa);
 }
 
 .tag-item::before {
@@ -1114,7 +1155,7 @@ Responsive Styles
     height: 17.67766953px;
     transform: rotate(45deg);
     transform-origin: top left;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color_border);
     border-top: none;
     border-right: none;
 }
@@ -1127,8 +1168,8 @@ Responsive Styles
     margin-top: -2.5px;
     width: 5px;
     height: 5px;
-    background: #fff;
-    border: 1px solid #ccc;
+    background: var(--color_white);
+    border: 1px solid var(--color_border);
     border-radius: 50%;
 }
 
@@ -1140,7 +1181,7 @@ Scoped to .timeline/.timeline-split and timeline-specific classes
     text-align: left;
     margin-bottom: 0;
     padding: 1em 0;
-    border-bottom: 1px solid #c7d4d8;
+    border-bottom: 1px solid var(--color_timeline_line);
 }
 
 .example-title p {
@@ -1175,7 +1216,7 @@ Scoped to .timeline/.timeline-split and timeline-specific classes
 }
 
 .timeline-info {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
     margin: 0 0 0.5em 0;
     white-space: nowrap;
@@ -1191,7 +1232,7 @@ Scoped to .timeline/.timeline-split and timeline-specific classes
 }
 
 .timeline-marker:before {
-    background: #FF6B6B;
+    background: var(--color_red);
     border: 3px solid transparent;
     border-radius: 100%;
     content: "";
@@ -1207,7 +1248,7 @@ Scoped to .timeline/.timeline-split and timeline-specific classes
 .timeline-marker:after {
     content: "";
     width: 1px;
-    background: #CCD5DB;
+    background: var(--color_timeline_line);
     display: block;
     position: absolute;
     top: 30px;
@@ -1221,7 +1262,7 @@ Scoped to .timeline/.timeline-split and timeline-specific classes
 
 .timeline-item:not(.period):hover .timeline-marker:before {
     background: transparent;
-    border: 4px solid #FF6B6B;
+    border: 4px solid var(--color_red);
 }
 
 .timeline-content {
@@ -1304,16 +1345,16 @@ Scoped to .timeline/.timeline-split and timeline-specific classes
 
 .tags_button {
     background-color: rgba(220, 220, 220, .7);
-    color: #000;
-    border: 1px solid #B0B0B0;
+    color: var(--color_black);
+    border: 1px solid var(--color_gray_b0);
     padding: 2px 5px;
     margin-left: 5px;
-    font-size: 10px;
+    font-size: 0.625rem;
     cursor: pointer;
     border-radius: 6px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     transition: background-color .3s, box-shadow .3s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font_ui);
 }
 
 .tags_button:hover {
@@ -1323,15 +1364,36 @@ Scoped to .timeline/.timeline-split and timeline-specific classes
 
 h3.timeline-title {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: left !important;
 }
 
 .waitlist-note {
-    background: #fff3cd;
-    border: 1px solid #ffeeba;
+    background: var(--color_warning_bg);
+    border: 1px solid var(--color_warning_border);
     padding: 12px;
     border-radius: 6px;
     margin: 16px 0;
-    font-size: 12px;
+    font-size: 0.75rem;
+    vertical-align: middle;
 }
+
+/* Waitlist note styling */
+.waitlist-text {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* end: 0) Design tokens */
