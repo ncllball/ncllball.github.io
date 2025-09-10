@@ -1080,7 +1080,7 @@ Responsive Styles
 
 .tag {
     margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0p2;
 }
 
 .tag-item,
@@ -1093,7 +1093,7 @@ Responsive Styles
     position: relative;
     white-space: nowrap;
     margin-bottom: 10px;
-    line-height: 25px;
+    line-height: normal;
     height: 25px;
     margin-left: 12.5px;
     margin-right: 10px;
@@ -1101,9 +1101,9 @@ Responsive Styles
     padding-right: 8.33333333px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    box-shadow: inset 0 0 1px 0 #4d4d4d;
     list-style-type: none;
-    font-size: 11px;
+    font-size: 12px;
+    box-shadow: 1px 1px 8px #aaaaaa;
 }
 
 .tag-item::before {
