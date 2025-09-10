@@ -502,6 +502,7 @@ a.ncll:focus-visible,
     line-height: normal;
 }
 
+/* 7) Components (alerts, quotes, strike, helper, registration) */
 .alert-header {
     text-align: center;
     padding: 20px;
@@ -662,6 +663,19 @@ section.strike {
     font-family: var(--font_ui);
 }
 
+/* Bootstrap Icons helpers */
+.bi {
+    display: inline-block;
+    vertical-align: middle; /* similar to Bootstrap */
+    font-size: 1em;
+    line-height: 1;
+}
+
+.bi.bi-info-circle {
+    color: var(--color_blue);
+}
+
+/* end: 7) Components */
 /* 5) Tables */
 .table_component table {
     width: 100%;
@@ -862,9 +876,8 @@ td.division-header {
     margin-bottom: 1em;
 }
 
-/* ===========================
-Carousel Styles
-=========================== */
+/* 9) Carousel & image enlargement */
+/* Carousel Styles */
 .carousel {
     position: relative;
     width: 100%;
@@ -1005,9 +1018,10 @@ Image Enlargement Styles
     z-index: 10001;
 }
 
-/* ===========================
-GoFundMe Section Styles
-=========================== */
+/* end: 9) Carousel & image enlargement */
+
+/* 10) Program sections (GoFundMe, team photos, camp image) */
+/* GoFundMe Section Styles */
 .gofundme-section {
     background: linear-gradient(135deg, var(--color_surface_light) 0%, var(--color_surface_lighter) 100%);
     border-radius: 16px;
@@ -1062,17 +1076,15 @@ GoFundMe Section Styles
     box-shadow: 0 12px 32px rgba(2, 173, 78, 0.25);
 }
 
-/* ===========================
-Team Photos Section
-=========================== */
+/* Team Photos Section */
 .team-photos {
     margin-bottom: 25px;
     margin-top: 25px;
 }
 
-/* ===========================
-Responsive Styles
-=========================== */
+/* end: 10) Program sections */
+/* 12) Responsive & reduced motion */
+/* Responsive Styles */
 @media (max-width: 768px) {
     .gofundme-section {
         padding: 20px;
@@ -1092,6 +1104,7 @@ Responsive Styles
     margin-right: auto;
     margin-bottom: 20px;
 }
+/* end: 12) Responsive & reduced motion */
 
 /* tags */
 *,
@@ -1117,7 +1130,6 @@ Responsive Styles
     padding: 0px 0px 0px 0px;
 }
 
-/* end: 4) Layout utilities */
 
 .tag {
     margin: 0px 0px 0px 0px;
@@ -1173,10 +1185,9 @@ Responsive Styles
     border-radius: 50%;
 }
 
-/* ===========================
-Timeline Component Styles
-Scoped to .timeline/.timeline-split and timeline-specific classes
-=========================== */
+/* 11) Timeline */
+/* Timeline Component Styles
+Scoped to .timeline/.timeline-split and timeline-specific classes */
 .example-title {
     text-align: left;
     margin-bottom: 0;
@@ -1344,6 +1355,8 @@ Scoped to .timeline/.timeline-split and timeline-specific classes
 }
 
 .tags_button {
+/* end: 11) Timeline */
+/* 8) Tags (tag pills/buttons) */
     background-color: rgba(220, 220, 220, .7);
     color: var(--color_black);
     border: 1px solid var(--color_gray_b0);
@@ -1368,6 +1381,8 @@ h3.timeline-title {
     text-align: left !important;
 }
 
+/* end: 8) Tags */
+
 .waitlist-note {
     background: var(--color_warning_bg);
     border: 1px solid var(--color_warning_border);
@@ -1375,7 +1390,6 @@ h3.timeline-title {
     border-radius: 6px;
     margin: 16px 0;
     font-size: 0.75rem;
-    vertical-align: middle;
 }
 
 /* Waitlist note styling */
@@ -1396,4 +1410,16 @@ h3.timeline-title {
     }
 }
 
-/* end: 0) Design tokens */
+.info-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    color: #00013a;
+    flex-shrink: 0;
+}
+
+.info-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
