@@ -680,7 +680,7 @@ section.strike {
 }
 
 .bi.bi-info-circle {
-    color: var(--color_blue);
+    color: var(--color_red);
 }
 
 /* end: 7) Components */
@@ -1430,5 +1430,4 @@ h3.timeline-title {
     width: 20px;
     height: 20px;
     fill: currentColor;
-    color: var(--color_red);
 }
