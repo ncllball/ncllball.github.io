@@ -1412,7 +1412,7 @@ h3.timeline-title {
 .info-icon svg {
     width: 100%;
     height: 100%;
-    fill: currentColor;
+    fill: var(--color_red);
 }
 
 /* Respect reduced motion preferences */
