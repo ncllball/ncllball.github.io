@@ -362,11 +362,13 @@ h4.left {
 }
 
 .calltoaction {
-    float: right;
+float: right;
     max-width: 20%;
     max-height: 175px;
     margin-left: 10px;
     margin-bottom: 10px;
+    padding-top: 60px;
+    padding-right: 20px;
 }
 
 /* end: 3) Typography & base */
