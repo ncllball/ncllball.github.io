@@ -1418,11 +1418,11 @@ h3.timeline-title {
     /* Use the font-family name from your Adobe Fonts kit */
     font-family: "wingdings-2", sans-serif;
 }
-
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 1,
   'wght' 200,
   'GRAD' 200,
-  'opsz' 20
+  'opsz' 20;
+  color: #CD163F; /* This line sets the color */
 }
