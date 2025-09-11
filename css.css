@@ -1420,10 +1420,10 @@ h3.timeline-title {
     justify-content: center;
     width: 18px;
     height: 18px;
-    border: 1px solid #cc0000;
+    border: 1px solid var(--color_red);
     border-radius: 50%;
     background-color: white;
-    color: #cc0000;
+    color: var(--color_red);
     font-size: 12px;
     font-weight: bold;
     margin-right: 6px;
