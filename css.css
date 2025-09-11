@@ -1394,7 +1394,6 @@ h3.timeline-title {
 
 .waitlist-note {
     background: var(--color_lightgray);
-    color: var(--color_red);
     border: 1px solid var(--color_lightgray);
     padding: 12px;
     border-radius: 6px;
