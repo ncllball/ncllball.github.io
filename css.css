@@ -1420,9 +1420,10 @@ h3.timeline-title {
 }
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 1,
-  'wght' 200,
-  'GRAD' 200,
-  'opsz' 20;
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
   color: #CD163F; /* This line sets the color */
 }
+
