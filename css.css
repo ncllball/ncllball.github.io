@@ -694,13 +694,7 @@ section.strike {
   /* Use the font-family name from your Adobe Fonts kit */
   font-family: "wingdings", sans-serif; 
 }
-.pointing-hand::before {
-    content: "\270B"; /* Unicode for pointing hand */
-    margin-right: 5px;
-    color: var(--color_red);
-    font-size: 1.2em;
-    vertical-align: middle;
-}
+
 /* end: 7) Components */
 /* 5) Tables */
 .table_component table {
