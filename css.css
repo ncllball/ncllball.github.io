@@ -685,10 +685,6 @@ section.strike {
 
 /* Icon font helper (Adobe Fonts Wingdings)
    Make sure your Adobe kit includes Wingdings; adjust the family name if the kit maps differently. */
-.icon-text {
-    font-family: "wingdings", var(--font_ui);
-    line-height: 1;
-}
 
 .pointing-hand {
   /* Use the font-family name from your Adobe Fonts kit */
