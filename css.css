@@ -1415,8 +1415,15 @@ h3.timeline-title {
 }
 
 .pointing-hand {
-    /* Use the font-family name from your Adobe Fonts kit */
-    font-family: "tk-wingdings-2", sans-serif;
+    /* Wingdings 2 glyph (the helper class .tk-wingdings-2 sets font-family: 'wingdings-2';
+       earlier we accidentally overrode it with an invalid family name. Use the actual
+       font family plus sensible fallbacks. The letter you place in the HTML (e.g. B) maps
+       to a symbol in Wingdings 2. If it still shows a normal B, the font didn't load yet. */
+    font-family: "wingdings-2", "wingdings", "Segoe UI Symbol", sans-serif;
+    display: inline-block;
+    font-size: 1.05em;
+    line-height: 1;
+    margin-right: .4em;
 }
 
 .material-symbols-outlined {
