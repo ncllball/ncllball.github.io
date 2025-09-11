@@ -1422,12 +1422,12 @@ h3.timeline-title {
 .info-icon {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 8px;
+    margin-right: 4px;
     flex-shrink: 0;
 }
 
 .info-icon svg {
-    width: 1em;
-    height: 1em;
+    width: 1.5em;
+    height: 1.5em;
     fill: var(--color_red);
 }
