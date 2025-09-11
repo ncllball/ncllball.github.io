@@ -670,27 +670,6 @@ section.strike {
     font-family: var(--font_ui);
 }
 
-/* Bootstrap Icons helpers */
-.bi {
-    display: inline-block;
-    vertical-align: middle;
-    /* similar to Bootstrap */
-    font-size: 1em;
-    line-height: 1;
-}
-
-.bi.bi-info-circle-fill {
-    color: var(--color_red);
-}
-
-/* Icon font helper (Adobe Fonts Wingdings)
-   Make sure your Adobe kit includes Wingdings; adjust the family name if the kit maps differently. */
-
-.pointing-hand {
-  /* Use the font-family name from your Adobe Fonts kit */
-  font-family: "wingdings", sans-serif; 
-}
-
 /* end: 7) Components */
 /* 5) Tables */
 .table_component table {
@@ -1433,4 +1412,9 @@ h3.timeline-title {
         transition: none !important;
         scroll-behavior: auto !important;
     }
+}
+
+.pointing-hand {
+    /* Use the font-family name from your Adobe Fonts kit */
+    font-family: "wingdings", sans-serif;
 }
