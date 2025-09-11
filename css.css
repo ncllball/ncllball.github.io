@@ -1427,7 +1427,7 @@ h3.timeline-title {
 }
 
 .info-icon svg {
-    width: 20px;
-    height: 20px;
+    width: 1em;
+    height: 1em;
     fill: var(--color_red);
 }
