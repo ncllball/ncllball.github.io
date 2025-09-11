@@ -1393,7 +1393,7 @@ h3.timeline-title {
 /* end: 8) Tags */
 
 .waitlist-note {
-    background: var(--color_warning_bg);
+    background: var(--color_richblue);
     border: 1px solid var(--color_warning_border);
     padding: 12px;
     border-radius: 6px;
