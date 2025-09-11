@@ -1429,5 +1429,5 @@ h3.timeline-title {
 .info-icon svg {
     width: 20px;
     height: 20px;
-    fill: currentColor;
+    fill: var(--color_red);
 }
