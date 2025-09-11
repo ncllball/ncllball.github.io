@@ -683,6 +683,24 @@ section.strike {
     color: var(--color_red);
 }
 
+/* Icon font helper (Adobe Fonts Wingdings)
+   Make sure your Adobe kit includes Wingdings; adjust the family name if the kit maps differently. */
+.icon-text {
+    font-family: "wingdings", var(--font_ui);
+    line-height: 1;
+}
+
+.pointing-hand {
+  /* Use the font-family name from your Adobe Fonts kit */
+  font-family: "wingdings", sans-serif; 
+}
+.pointing-hand::before {
+    content: "\270B"; /* Unicode for pointing hand */
+    margin-right: 5px;
+    color: var(--color_red);
+    font-size: 1.2em;
+    vertical-align: middle;
+}
 /* end: 7) Components */
 /* 5) Tables */
 .table_component table {
