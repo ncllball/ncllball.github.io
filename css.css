@@ -1531,6 +1531,7 @@ h3.timeline-title {
     font-weight: 600;
     font-size: 0.85em;
     color: var(--color_subtle);
+    text-transform: uppercase;
     letter-spacing: 0.5px;
     position: relative;
     top: -0.5px;
