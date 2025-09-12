@@ -1,67 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8"> <!-- It's good to include charset and viewport for completeness -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NCLL off-season development programs for baseball and softball: clinics, training, and camps for all divisions.">
-    <title>NCLL Off-Season Programs 2025 — NCLL</title>
+    <meta name="description" content="Central hub for NCLL player development: winter training, clinics, pitching, batting, free sessions, and camps (2025).">
+    <title>Player Development Programs 2025 — NCLL</title>
     <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
+    <style>
+        .program-grid {display:grid;gap:18px;margin:10px 0 40px;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));}
+        .program-card {background:var(--color_surface_light);border:1px solid var(--color_border_light);padding:14px 16px;border-radius:6px;box-shadow:0 2px 4px rgba(0,0,0,.06);display:flex;flex-direction:column;justify-content:space-between;}
+        .program-card h3 {margin:0 0 6px;font-size:1.05rem;line-height:1.3;color:var(--color_blue);}      
+        .program-meta {list-style:none;padding:0;margin:0 0 10px;font-size:.85rem;}
+        .program-meta li {list-style:none;margin:2px 0;color:var(--color_muted);}
+        .status-badge {display:inline-block;font-size:.7rem;letter-spacing:.5px;text-transform:uppercase;font-weight:600;padding:3px 6px;border-radius:4px;background:var(--color_blue);color:#fff;margin-left:6px;}
+        .status-soon {background:var(--color_orange);} .status-free {background:var(--color_green);} .status-closed {background:var(--color_gray_aaaa);} 
+        .quick-nav {display:flex;flex-wrap:wrap;gap:10px;margin:0 0 24px;padding:0;}
+        .quick-nav a {background:var(--color_lightgray);padding:6px 12px;border-radius:20px;font-size:.8rem;text-decoration:none;font-weight:600;color:var(--color_blue);} 
+        .quick-nav a:hover {background:var(--color_blue);color:#fff;}
+        .at-a-glance {border:1px solid var(--color_border_light);border-radius:6px;padding:14px;background:var(--color_surface_lighter);margin-bottom:32px;}
+        .at-a-glance table {width:100%;border-collapse:collapse;font-size:.85rem;}
+        .at-a-glance th {text-align:left;padding:6px 6px;color:var(--color_blue);} 
+        .at-a-glance td {padding:4px 6px;border-top:1px solid var(--color_border_light);vertical-align:top;}
+        .pill-inline {display:inline-block;background:var(--color_lightgray);padding:2px 6px;font-size:.65rem;font-weight:600;letter-spacing:.5px;border-radius:4px;margin-right:4px;}
+        @media (prefers-reduced-motion: reduce){.program-card{transition:none}}
+    </style>
 </head>
-
 <body>
-    <main id="content" role="main">
+<main id="content" role="main">
+
+
     <section id="quote-area">
-        <div class="quote">"When you are not practicing, remember, someone somewhere is practicing, and when you meet
-            him he will win."</div>
+        <div class="quote">"When you are not practicing, remember, someone somewhere is practicing, and when you meet him he will win."</div>
         <div class="author">- Ed Macauley</div>
     </section>
 
     <section id="introduction">
-        <p>We've all come to NCLL for different reasons. Some want to have fun with their friends, some love the game,
-            and
-            some have much greater aspirations. No matter what you're here for, we can't escape the reality—it takes
-            time
-            and reps, and not just during the season. We provide many off-season training opportunities at all levels,
-            it's
-            the players choice to take them. In 2025 we offered the following: (Please click 'More info' to learn more.)
-        </p>
+        <p>We've all come to NCLL for different reasons. Some want to have fun with their friends, some love the game, and some have much greater aspirations.</p>
+        <p>No matter what you're here for, we can't escape the reality—it takes time and reps, and not just during the season. We provide many off-season training opportunities at all levels; it's the player's choice to take them. In 2025 we offered the following (browse the cards below for details).</p>
     </section>
 
-    <section id="baseball-programs">
-        <h2 class="left">Baseball Programs</h2>
-        <p><span>'25 Winter A BB</span>: Designed for players in the Single-A division, this program focuses on
-            fundamental baseball skills to prepare young athletes for the upcoming season. (<a class="ncll"
-                href="/Default.aspx?tabid=2117255">More info</a>)</p>
-        <p><span>'25 Winter AA BB</span>: Tailored for Double-A division players, this training emphasizes skill
-            development and game understanding to advance players' abilities. (<a class="ncll"
-                href="/Default.aspx?tabid=2117406">More info</a>)</p>
-        <p><span>'25 Winter AAA/MAJ BB</span>: Aimed at Triple-A and Majors division players, this program offers
-            advanced training to refine techniques and enhance competitive performance. (<a class="ncll"
-                href="/Default.aspx?tabid=2112053">More info</a>)</p>
-        <p><span>'25 Winter I Teen BB</span>: This off-season development program provides teenage players (league age
-            13-16) with additional training and repetitions. The hitting training is led by coach Ray Atkinson at
-            Focus Baseball Facility in Seattle. (<a class="ncll" href="/Default.aspx?tabid=2117407">More info</a>)</p>
-        <p><span>'25 Winter II Teen BB</span>: Similar to Winter I, this program offers another session for teenage
-            players to continue their development under the guidance of experienced coaches. (<a class="ncll"
-                href="/Default.aspx?tabid=2117408">More info</a>)</p>
+    <nav aria-label="Quick navigation">
+        <ul class="quick-nav">
+            <li><a href="#winter-baseball">Winter Baseball</a></li>
+            <li><a href="#winter-softball">Winter Softball</a></li>
+            <li><a href="#pitching">Pitching Clinics</a></li>
+            <li><a href="#free">Free Sessions</a></li>
+            <li><a href="#camps">Camps & Spring</a></li>
+        </ul>
+    </nav>
+
+    <section class="at-a-glance" aria-labelledby="glance-heading">
+        <h2 class="left" id="glance-heading">At a Glance</h2>
+        <table>
+            <thead>
+                <tr><th>Program</th><th>Division / Ages</th><th>Dates</th><th>Primary Focus</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Single-A Winter</td><td>Single-A (7-8)</td><td>Mar 1 & 8</td><td>Foundations / Throw-Catch / Field</td><td>Closed</td></tr>
+                <tr><td>AA Pitching (3 wk)</td><td>AA</td><td>Feb 22 - Mar 8</td><td>Intro Mechanics / Grip / Arm Care</td><td>Closed</td></tr>
+                <tr><td>AAA+Majors Winter</td><td>League age 9-12</td><td>Nov - Jan</td><td>Movement / Hitting / Conditioning</td><td>Closed</td></tr>
+                <tr><td>Teen Training I & II</td><td>13-16</td><td>Nov - Feb</td><td>Hitting Pattern / Arm Care / Movement</td><td>Coming Soon</td></tr>
+                <tr><td>AAA+Majors Softball</td><td>AAA & Majors SB</td><td>Jan (4 dates)</td><td>Hitting / Field / Pitch Track</td><td>Closed</td></tr>
+                <tr><td>RHS Batting Clinic</td><td>Grades 3-12</td><td>Jan - Feb</td><td>Hitting Sequencing / Reps</td><td>Closed</td></tr>
+                <tr><td>Free February</td><td>AAA & Majors BB (10-12)</td><td>Feb 1, 8, 22</td><td>Arm Build / Reps / Rhythm</td><td>FREE</td></tr>
+                <tr><td>In-Season SB Pitching</td><td>AA & Up SB</td><td>Mar - May (6 Sun)</td><td>Progressive Pitch Dev</td><td>Active</td></tr>
+                <tr><td>Lincoln HS Camp</td><td>Ages 8-14</td><td>May 18</td><td>Multi-Station Skill Camp</td><td>Open</td></tr>
+            </tbody>
+        </table>
+        <p style="font-size:.7rem;margin-top:8px;color:var(--color_muted);">Status values are illustrative; check each listing for current registration or waitlist state.</p>
     </section>
 
-    <section id="softball-programs">
-        <h2 class="left">Softball Programs</h2>
-        <p><span>'25 Winter AAA/MAJ SB</span>: Focused on softball, this program caters to players in the Triple-A
-            and Majors divisions, aiming to improve their skills and game strategies. (<a class="ncll"
-                href="/Default.aspx?tabid=2117410">More info</a>)</p>
-        <p><span>'25 RHS SB Batting</span>: A specialized batting program for softball players, designed to enhance
-            hitting techniques and overall offensive performance. (<a class="ncll"
-                href="/Default.aspx?tabid=2117411">More
-                info</a>)</p>
-        <p><span>'25 FREE FEBRUARY BB</span>: A complimentary baseball training session offered in February,
-            providing players with an opportunity to get back into form before the season starts. (<a class="ncll"
-                href="/Default.aspx?tabid=2117412">More info</a>)</p>
+    <section id="winter-baseball" aria-labelledby="winter-baseball-h2">
+        <h2 class="left" id="winter-baseball-h2">Winter Baseball Programs</h2>
+        <div class="program-grid">
+            <article class="program-card" aria-labelledby="single-a-winter">
+                <h3 id="single-a-winter">Single-A Winter Training <span class="status-badge status-closed">Closed</span></h3>
+                <ul class="program-meta">
+                    <li><strong>Dates:</strong> Mar 1 & 8, 2025</li>
+                    <li><strong>Time:</strong> Afternoon blocks</li>
+                    <li><strong>Division:</strong> Single-A Baseball</li>
+                    <li><strong>Cost:</strong> $20 / session</li>
+                </ul>
+                <p>Fundamental throwing, catching, and fielding foundations with high coach engagement.</p>
+                <p><a class="ncll" href="2025%20Winter%20Single-A%20BB%20Training.html">Program page</a></p>
+            </article>
+            <article class="program-card" aria-labelledby="aa-pitching">
+                <h3 id="aa-pitching">Double-AA Pitching (3-Week) <span class="status-badge status-closed">Closed</span></h3>
+                <ul class="program-meta">
+                    <li><strong>Dates:</strong> Feb 22 - Mar 8</li>
+                    <li><strong>Options:</strong> 12:00 PM or 1:15 PM</li>
+                    <li><strong>Division:</strong> AA Baseball</li>
+                    <li><strong>Cost:</strong> $60 / player</li>
+                </ul>
+                <p>Mechanics, grip feel, and early arm care progression with NW Sting staff.</p>
+                <p><a class="ncll" href="2025%20Winter%20Double-AA%20BB%20Pitching.html">Program page</a></p>
+            </article>
+            <article class="program-card" aria-labelledby="aaa-maj-winter">
+                <h3 id="aaa-maj-winter">AAA + Majors Winter Training <span class="status-badge status-closed">Closed</span></h3>
+                <ul class="program-meta">
+                    <li><strong>Span:</strong> Nov - Jan</li>
+                    <li><strong>Focus:</strong> Hitting / Movement / Conditioning</li>
+                    <li><strong>Age:</strong> League age 9-12</li>
+                    <li><strong>Cost:</strong> $250 / child</li>
+                </ul>
+                <p>Extended off-season reps preparing players for AAA or Majors season readiness.</p>
+                <p><a class="ncll" href="2025%20Winter%20AAA+MAJ%20BB%20Training.html">Program page</a></p>
+            </article>
+            <article class="program-card" aria-labelledby="teen-training">
+                <h3 id="teen-training">Teen Baseball Training (Sessions I & II) <span class="status-badge status-soon">Coming Soon</span></h3>
+                <ul class="program-meta">
+                    <li><strong>Sessions:</strong> Nov - Feb</li>
+                    <li><strong>Group Night:</strong> Tuesdays</li>
+                    <li><strong>Age:</strong> League age 13-16</li>
+                    <li><strong>Cost:</strong> TBD</li>
+                </ul>
+                <p>Small-group hitting pattern work, movement, and arm health progression.</p>
+                <p><a class="ncll" href="2025%20Winter%20Teen%20BB%20Training.html">Program page</a></p>
+            </article>
+        </div>
     </section>
-    </main>
+
+    <section id="winter-softball" aria-labelledby="winter-softball-h2">
+        <h2 class="left" id="winter-softball-h2">Winter Softball Programs</h2>
+        <div class="program-grid">
+            <article class="program-card" aria-labelledby="aaa-maj-sb">
+                <h3 id="aaa-maj-sb">AAA + Majors Softball Training <span class="status-badge status-closed">Closed</span></h3>
+                <ul class="program-meta">
+                    <li><strong>Dates:</strong> Jan (4 Saturdays)</li>
+                    <li><strong>Block:</strong> 4:00 - 6:00 PM</li>
+                    <li><strong>Division:</strong> AAA & Majors Softball</li>
+                    <li><strong>Cost:</strong> FREE (sponsored)</li>
+                </ul>
+                <p>Two-hour integrated hitting, fielding, and pitcher/catcher development track.</p>
+                <p><a class="ncll" href="2025%20Winter%20AAA+MAJ%20SB%20Training.html">Program page</a></p>
+            </article>
+            <article class="program-card" aria-labelledby="rhs-batting">
+                <h3 id="rhs-batting">RHS Fastpitch Batting Clinic <span class="status-badge status-closed">Closed</span></h3>
+                <ul class="program-meta">
+                    <li><strong>Dates:</strong> Jan 22 - Feb 12 (4 Wednesdays)</li>
+                    <li><strong>Slots:</strong> 4:00 / 5:00 / 6:00 PM</li>
+                    <li><strong>Ages:</strong> Grades 3-12</li>
+                    <li><strong>Cost:</strong> $50 / session</li>
+                </ul>
+                <p>Progressive tee / front toss / machine sequencing guided by HS staff & players.</p>
+                <p><a class="ncll" href="2025%20RHS%20Fastpitch%20Winter%20Batting%20Clinic.html">Program page</a></p>
+            </article>
+        </div>
+    </section>
+
+    <section id="pitching" aria-labelledby="pitching-h2">
+        <h2 class="left" id="pitching-h2">Pitching Development</h2>
+        <div class="program-grid">
+            <article class="program-card" aria-labelledby="inseason-sb-pitching">
+                <h3 id="inseason-sb-pitching">In-Season Softball Pitching <span class="status-badge">Active</span></h3>
+                <ul class="program-meta">
+                    <li><strong>Sundays:</strong> Mar 23 → May 11</li>
+                    <li><strong>Sessions:</strong> 4:00 - 5:00 & 5:00 - 6:00 PM</li>
+                    <li><strong>Division:</strong> AA & Above Softball</li>
+                    <li><strong>Cost:</strong> FREE</li>
+                </ul>
+                <p>Progressive in-season bullpen & mechanics refinement led by Coach Mullally.</p>
+                <p><a class="ncll" href="2025%20In-Season%20Double-AA%20(and%20up)%20SB%20Pitching.html">Program page</a></p>
+            </article>
+            <article class="program-card" aria-labelledby="aa-pitching-alt">
+                <h3 id="aa-pitching-alt">AA Winter Pitching Series <span class="status-badge status-closed">Closed</span></h3>
+                <p style="font-size:.8rem;">See Double-AA Pitching (3-week) in Winter Baseball above.</p>
+                <p><a class="ncll" href="#aa-pitching">Jump ↑</a></p>
+            </article>
+        </div>
+    </section>
+
+    <section id="free" aria-labelledby="free-h2">
+        <h2 class="left" id="free-h2">Free & Sponsored Sessions</h2>
+        <div class="program-grid">
+            <article class="program-card" aria-labelledby="free-february-card">
+                <h3 id="free-february-card">Free February (Outdoor) <span class="status-badge status-free">Free</span></h3>
+                <ul class="program-meta">
+                    <li><strong>Dates:</strong> Feb 1, 8, 22</li>
+                    <li><strong>Sessions:</strong> 2 per date</li>
+                    <li><strong>Division:</strong> Baseball (AAA & Majors)</li>
+                    <li><strong>Cost:</strong> FREE</li>
+                </ul>
+                <p>Outdoor ramp-up reps: throwing progression, defensive sequences, hitting rhythm, movement.</p>
+                <p><a class="ncll" href="2025%20Free%20February.html">Program page</a></p>
+            </article>
+            <article class="program-card" aria-labelledby="aaa-maj-sb-free-ref">
+                <h3 id="aaa-maj-sb-free-ref">AAA+Majors Softball (Sponsored) <span class="status-badge status-closed">Closed</span></h3>
+                <p style="font-size:.8rem;">Included above under Winter Softball. Listed here for FREE filter completeness.</p>
+                <p><a class="ncll" href="#aaa-maj-sb">Jump ↑</a></p>
+            </article>
+        </div>
+    </section>
+
+    <section id="camps" aria-labelledby="camps-h2">
+        <h2 class="left" id="camps-h2">Spring & Camps</h2>
+        <div class="program-grid">
+            <article class="program-card" aria-labelledby="lhs-camp">
+                <h3 id="lhs-camp">Lincoln HS Skills Camp <span class="status-badge">Open</span></h3>
+                <ul class="program-meta">
+                    <li><strong>Date:</strong> May 18, 2025</li>
+                    <li><strong>Block:</strong> 12:00 - 3:00 PM</li>
+                    <li><strong>Ages:</strong> 8-14 (AA - Seniors)</li>
+                    <li><strong>Cost:</strong> $60 / player</li>
+                </ul>
+                <p>One-day multi-station camp (infield, outfield, hitting, pitching, baserunning) with HS coaching staff.</p>
+                <p><a class="ncll" href="2025%20LHS%20Winter%20Training.html">Program page</a></p>
+            </article>
+        </div>
+    </section>
+
+    <section class="footies" aria-labelledby="foot-disclaimer">
+        <p id="foot-disclaimer"><span class="info-icon" aria-hidden="true">i</span> Scholarships are available for most paid offerings—contact the registrar if cost is a barrier. Program sequencing subject to facility availability & weather (winter / outdoor listings).</p>
+    </section>
+
+</main>
 </body>
-
 </html>
