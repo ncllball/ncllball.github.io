@@ -15,20 +15,13 @@
 
     <main id="content" role="main">
         <section>
-            <ul class="tag clearfix" aria-describedby="program-details">
-                <li class="tag-item"><strong>Dates:</strong>
-                    <time datetime="2025-03-23">March 23<sup>rd</sup></time>,
-                    <time datetime="2025-04-06">April 6<sup>th</sup></time>,
-                    <time datetime="2025-04-13">13<sup>th</sup></time>,
-                    <time datetime="2025-04-27">27<sup>th</sup></time>,
-                    <time datetime="2025-05-04">May 4<sup>th</sup></time>,
-                    <time datetime="2025-05-11">11<sup>th</sup></time>
-                </li>
-                <li class="tag-item"><strong>Location:</strong> LW, behind Field 5 near batting cages</li>
-                <li class="tag-item"><strong>Time:</strong> 4:00 - 5:00 PM; 5:00 - 6:00 PM (two sessions each Sunday)</li>
-                <li class="tag-item"><strong>Cost:</strong> FREE</li>
-                <li class="tag-item"><strong>Division(s):</strong> SOFTBALL - AA and above</li>
-                <li class="tag-item"><strong>Run by:</strong> Hunter Mullally (Bishop Blanchet HS & Seattle Fastpitch)</li>
+            <ul class="tag clearfix" aria-describedby="program-details" data-dates="2025-03-23;2025-04-06;2025-04-13;2025-04-27;2025-05-04;2025-05-11">
+                <li class="tag-item" data-tag="dates" data-dates="2025-03-23;2025-04-06;2025-04-13;2025-04-27;2025-05-04;2025-05-11"><strong>Dates:</strong> Mar 23; Apr 6, 13, 27; May 4, 11, 2025</li>
+                <li class="tag-item" data-tag="location" data-location="Lower Woodland (near Field 5 cages)"><strong>Location:</strong> LW (behind Field 5 near batting cages)</li>
+                <li class="tag-item" data-tag="time" data-session1-start="16:00" data-session1-end="17:00" data-session2-start="17:00" data-session2-end="18:00"><strong>Time:</strong> 4:00 - 5:00 PM & 5:00 - 6:00 PM (two sessions each Sunday)</li>
+                <li class="tag-item" data-tag="cost" data-cost-amount="0" data-cost-type="free"><strong>Cost:</strong> FREE</li>
+                <li class="tag-item" data-tag="divisions" data-sport="softball" data-division-levels="aa;aaa;majors" data-division-scope="softball-aa-above"><strong>Division(s):</strong> Softball (AA & Up)</li>
+                <li class="tag-item" data-tag="led-by" data-coach="Hunter Mullally" data-affiliation="Bishop Blanchet HS; Seattle Fastpitch"><strong>Led by:</strong> Hunter Mullally (Bishop Blanchet HS & Seattle Fastpitch)</li>
             </ul>
         </section>
 
@@ -60,7 +53,7 @@
 
 
         <section>
-            <h2 class="left" id="eligibility">Eligibility &amp; Requirements</h2>
+            <h2 class="left" id="eligibility">Eligibility</h2>
             <ul>
                 <li>Must be an NCLL softball player at the AA level and above.</li>
                 <li>Must be registered for the 2025 Regular Season Softball Registration.</li>
@@ -70,13 +63,13 @@
         <section>
             <h2 class="left" id="dates-times">Dates &amp; Times</h2>
             <p>We will offer six Sundays throughout the season, with two 1-hour sessions each date (choose one session per Sunday):</p>
-            <ul>
-                <li>Sunday, <time datetime="2025-03-23">March 23<sup>rd</sup></time> @ <time datetime="2025-03-23T16:00">4:00 - 5:00 PM</time>; @ <time datetime="2025-03-23T17:00">5:00 - 6:00 PM</time></li>
-                <li>Sunday, <time datetime="2025-04-06">April 6<sup>th</sup></time> @ <time datetime="2025-04-06T16:00">4:00 - 5:00 PM</time>; @ <time datetime="2025-04-06T17:00">5:00 - 6:00 PM</time></li>
-                <li>Sunday, <time datetime="2025-04-13">April 13<sup>th</sup></time> @ <time datetime="2025-04-13T16:00">4:00 - 5:00 PM</time>; @ <time datetime="2025-04-13T17:00">5:00 - 6:00 PM</time></li>
-                <li>Sunday, <time datetime="2025-04-27">April 27<sup>th</sup></time> @ <time datetime="2025-04-27T16:00">4:00 - 5:00 PM</time>; @ <time datetime="2025-04-27T17:00">5:00 - 6:00 PM</time></li>
-                <li>Sunday, <time datetime="2025-05-04">May 4<sup>th</sup></time> @ <time datetime="2025-05-04T16:00">4:00 - 5:00 PM</time>; @ <time datetime="2025-05-04T17:00">5:00 - 6:00 PM</time></li>
-                <li>Sunday, <time datetime="2025-05-11">May 11<sup>th</sup></time> @ <time datetime="2025-05-11T16:00">4:00 - 5:00 PM</time>; @ <time datetime="2025-05-11T17:00">5:00 - 6:00 PM</time></li>
+            <ul class="schedule grouped">
+                <li><strong>Sun Mar 23</strong>, <time datetime="2025-03-23T16:00" data-date="2025-03-23" data-start="16:00" data-end="17:00">4:00 - 5:00 PM</time>; <time datetime="2025-03-23T17:00" data-date="2025-03-23" data-start="17:00" data-end="18:00">5:00 - 6:00 PM</time></li>
+                <li><strong>Sun Apr 6</strong>, <time datetime="2025-04-06T16:00" data-date="2025-04-06" data-start="16:00" data-end="17:00">4:00 - 5:00 PM</time>; <time datetime="2025-04-06T17:00" data-date="2025-04-06" data-start="17:00" data-end="18:00">5:00 - 6:00 PM</time></li>
+                <li><strong>Sun Apr 13</strong>, <time datetime="2025-04-13T16:00" data-date="2025-04-13" data-start="16:00" data-end="17:00">4:00 - 5:00 PM</time>; <time datetime="2025-04-13T17:00" data-date="2025-04-13" data-start="17:00" data-end="18:00">5:00 - 6:00 PM</time></li>
+                <li><strong>Sun Apr 27</strong>, <time datetime="2025-04-27T16:00" data-date="2025-04-27" data-start="16:00" data-end="17:00">4:00 - 5:00 PM</time>; <time datetime="2025-04-27T17:00" data-date="2025-04-27" data-start="17:00" data-end="18:00">5:00 - 6:00 PM</time></li>
+                <li><strong>Sun May 4</strong>, <time datetime="2025-05-04T16:00" data-date="2025-05-04" data-start="16:00" data-end="17:00">4:00 - 5:00 PM</time>; <time datetime="2025-05-04T17:00" data-date="2025-05-04" data-start="17:00" data-end="18:00">5:00 - 6:00 PM</time></li>
+                <li><strong>Sun May 11</strong>, <time datetime="2025-05-11T16:00" data-date="2025-05-11" data-start="16:00" data-end="17:00">4:00 - 5:00 PM</time>; <time datetime="2025-05-11T17:00" data-date="2025-05-11" data-start="17:00" data-end="18:00">5:00 - 6:00 PM</time></li>
             </ul>
         </section>
 
@@ -97,7 +90,7 @@
         </section>
 
         <section>
-            <h2 class="left" id="registration">Registration Information</h2>
+            <h2 class="left" id="registration">Registration</h2>
             <ul>
                 <li><strong>Pitchers must provide their own catcher.</strong></li>
                 <li>To register, please hit the link below to reserve your spot.</li>
