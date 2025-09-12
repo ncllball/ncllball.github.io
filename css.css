@@ -1435,7 +1435,8 @@ h3.timeline-title {
     align-items: center;
     gap: 14px;
     isolation: isolate;
-    height: 75
+    min-height: 75px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom));
 }
 
 .sticky-register__inner {
