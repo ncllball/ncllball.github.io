@@ -1527,7 +1527,7 @@ h3.timeline-title {
 }
 .at {
     display: inline-block;
-    padding: 0 4px 0 2px;
+    padding: 0 2px 2px 2px;
     font-weight: 600;
     font-size: 0.85em;
     color: var(--color_subtle);

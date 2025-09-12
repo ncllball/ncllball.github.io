@@ -14,7 +14,7 @@
 <body>
     <main id="content" role="main">
         <section>
-            <ul class="tag clearfix" data-dates="2025-03-01;2025-03-08">
+            <ul class="tag clearfix" id="program-meta" aria-label="Program metadata" data-program-type="clinic" data-dates="2025-03-01;2025-03-08">
                 <li class="tag-item" data-tag="dates" data-dates="2025-03-01;2025-03-08">
                     <strong>Dates:</strong> Mar 1 & 8, 2025
                 </li>
@@ -24,12 +24,12 @@
                 <li class="tag-item" data-tag="time" data-slot-count="2" data-slot1-start="14:00" data-slot1-end="15:00" data-slot2-start="15:00" data-slot2-end="16:00">
                     <strong>Time:</strong> 2:00 - 3:00 PM & 3:00 - 4:00 PM
                 </li>
-                <li class="tag-item" data-tag="cost" data-cost-amount="20" data-cost-unit="session" data-currency="USD">
+                <li class="tag-item" data-tag="cost" data-cost-amount="20" data-cost-unit="session" data-currency="USD" data-cost-status="active">
                     <strong>Cost:</strong> $20 / session
                 </li>
-                <li class="tag-item" data-tag="age-group" data-division="single-a">
+                <li class="tag-item" data-tag="age-group" data-division="single-a" data-age-level="single-a" data-age-min="7" data-age-max="8">
                     <strong>Age Group:</strong> Single-A Baseball
-                </li>
+                </li><!-- If local Single-A spans different League Ages adjust data-age-min/max accordingly -->
                 <li class="tag-item" data-tag="divisions" data-sport="baseball" data-division-levels="single-a" data-division-scope="baseball-single-a">
                     <strong>Division(s):</strong> Baseball (Single-A)
                 </li>
@@ -43,7 +43,8 @@
             <h2 class="left" id="overview">
                 Program Overview 
                 <img src="https://ncllball.github.io/images/clubs/mark_linden.jpg"
-                     alt="Mark Linden, a coach with Baseball Positive, demonstrating a baseball drill"
+                     loading="lazy"
+                     alt="Coach Mark Linden demonstrating a drill"
                      class="calltoaction">
             </h2>
             <p>
@@ -52,32 +53,29 @@
                 catching, and fielding.
             </p>
             <p>
-                Experience the difference with Mark Linden of Baseball Positive. Combining 15 years of Little League
-                coaching with his professional playing career, Mark delivers a clinic filled with infectious energy and
-                positive instruction. We strongly encourage you to attend.
+                Experience the difference with Mark Linden of Baseball Positive. Drawing on 15 years of Little League
+                coaching plus a professional playing career, he brings infectious energy, clear progressions, and
+                relentlessly positive instruction. We strongly encourage you to attend.
             </p>
         </section>
 
         <section>
             <h2 class="left" id="skills-focus">Skills &amp; Focus</h2>
             <ul>
-                <li>The clinic will focus on throwing, catching, and fielding skills.</li>
-                <li>
-                    Coach Linden will take the players through drills and activities that train the fundamentals of
-                    throwing, catching, and fielding.
-                </li>
-                <li>The activities are simple and elementary.</li>
+                <li>Foundational throwing, catching, and fielding mechanics.</li>
+                <li>Progressive, high-repetition small-area drills that reinforce proper footwork and glove work.</li>
+                <li>Simple, scalable activities coaches can re-use during the season.</li>
             </ul>
         </section>
 
         <section>
             <h2 class="left" id="eligibility">Eligibility</h2>
             <ul>
+                <li>Open to all existing and incoming Single-A baseball players.</li>
                 <li>
                     Must be registered for the 2025 Regular Season as the medical, code of conduct, and concussion
                     agreements from that registration will apply.
                 </li>
-                <li>Open to all existing and incoming Single-A baseball players.</li>
             </ul>
         </section>
 
@@ -87,16 +85,16 @@
                 The clinic will be held on two Saturdays with each having two one-hour time slots from which to choose:
             </p>
             <ul>
-                <li data-date="2025-03-01" data-start="14:00" data-end="15:00">
+                <li data-date="2025-03-01" data-start="14:00" data-end="15:00" data-slot-index="1">
                     <time datetime="2025-03-01">Mar 1</time><span class="at"> @</span> 2:00 - 3:00 PM
                 </li>
-                <li data-date="2025-03-01" data-start="15:00" data-end="16:00">
+                <li data-date="2025-03-01" data-start="15:00" data-end="16:00" data-slot-index="2">
                     <time datetime="2025-03-01">Mar 1</time><span class="at"> @</span> 3:00 - 4:00 PM
                 </li>
-                <li data-date="2025-03-08" data-start="14:00" data-end="15:00">
+                <li data-date="2025-03-08" data-start="14:00" data-end="15:00" data-slot-index="3">
                     <time datetime="2025-03-08">Mar 8</time><span class="at"> @</span> 2:00 - 3:00 PM
                 </li>
-                <li data-date="2025-03-08" data-start="15:00" data-end="16:00">
+                <li data-date="2025-03-08" data-start="15:00" data-end="16:00" data-slot-index="4">
                     <time datetime="2025-03-08">Mar 8</time><span class="at"> @</span> 3:00 - 4:00 PM
                 </li>
             </ul>
@@ -104,11 +102,12 @@
 
         <section>
             <h2 class="left" id="location">Location</h2>
-            <p>
-                This clinic will be held at the
-                <a class="ncll" href="https://maps.app.goo.gl/G7nHtH5J7yvGxYMi6">Wallingford Boys and Girls Club</a>
-                and welcomes all incoming and returning Single-A players and families.
-            </p>
+            <ul>
+                <li>
+                    <a class="ncll" href="https://maps.app.goo.gl/G7nHtH5J7yvGxYMi6" target="_blank" rel="noopener noreferrer">Wallingford Boys &amp; Girls Club</a> — 1310 N 45th St, Seattle, WA 98103
+                </li>
+                <li>Indoor gym space; please bring clean, dry athletic shoes (no cleats).</li>
+            </ul>
         </section>
 
         <section>
@@ -116,9 +115,8 @@
             <ul>
                 <li>$20 / session.</li>
                 <li>
-                    <a class="ncll"
-                       href="https://docs.google.com/forms/d/e/1FAIpQLSd5JIcH7zLuLGVLSBSXHIOhbOtgYmP8rkW5w86_wB36zEbuoQ/viewform">Scholarships</a>
-                    are available upon request.
+                    Scholarships are available upon <a class="ncll"
+                       href="https://docs.google.com/forms/d/e/1FAIpQLSd5JIcH7zLuLGVLSBSXHIOhbOtgYmP8rkW5w86_wB36zEbuoQ/viewform">request</a>.
                 </li>
             </ul>
         </section>
@@ -154,7 +152,7 @@
 
         <section>
             <h2 class="left" id="contact">Contact</h2>
-            <p><a class="ncll" href="mailto:contact@ncllball.org">Contact Us</a></p>
+            <p><a class="ncll" href="mailto:contact&#64;ncllball.org">Contact Us</a></p>
         </section>
     </main>
 </body>
