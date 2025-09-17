@@ -434,10 +434,11 @@ a.ncll:focus-visible,
 .table-scroll table {
     width: max-content; /* allow horizontal growth */
     border-collapse: collapse;
+    white-space: nowrap; /* ensure no wrapping at the table level */
 }
 
 .table-scroll thead th {
-    background: var(--color_red);
+    background: var(--color_red) !important;
     color: #fff;
 }
 
@@ -764,7 +765,9 @@ sup {
 .margin-top-0 {
     margin-top: 0px;
 }
-
+.margin-top-30 {
+    margin-top: 30px;
+}
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
