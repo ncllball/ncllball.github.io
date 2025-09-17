@@ -1548,7 +1548,7 @@ h3.timeline-title {
 
 /* Sticky registration heading override (ensures white text if theme changes) */
 #sticky-reg-heading {
-    color: var(--color_white);
+    color: var(--color_white)!important;
     text-align: center;
 }
 
