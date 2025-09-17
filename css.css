@@ -1479,7 +1479,7 @@ h3.timeline-title {
 
 .sticky-register__cta {
     background: var(--color_red);
-    color: var(--color_white);
+    color: var(--color_white) !important;
     text-decoration: none;
     font-weight: 600;
     padding: 8px 18px;
