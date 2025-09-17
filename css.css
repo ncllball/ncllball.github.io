@@ -447,6 +447,13 @@ a.ncll:focus-visible,
     padding: 3px 6px; /* light, compact padding */
 }
 
+/* Right-align the last column (fees) */
+.table-scroll thead th:last-child,
+.table-scroll tbody td:last-child {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
 .fit {
     max-width: 100%;
     white-space: nowrap;
