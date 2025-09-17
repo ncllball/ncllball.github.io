@@ -726,12 +726,14 @@ table caption {
 
 /* Compact table variant for tight sidebars/boxes */
 .table_component.table-compact table {
-    font-size: 0.8rem; /* noticeably smaller */
+    font-size: 0.75rem; /* tighter compact size */
 }
 
 .table_component.table-compact th,
 .table_component.table-compact td {
-    padding: 4px 6px; /* tighter cell padding */
+    padding: 3px 6px; /* tighter cell padding */
+    border: none; /* borderless grid look */
+    border-bottom: 1px solid var(--color_border_light); /* subtle row separator */
 }
 
 /* Allow wrapping within compact tables, even if cells carry .fit */
@@ -768,6 +770,11 @@ table caption {
     background: var(--color_surface_lighter);
 }
 
+/* Remove last row bottom border for a clean edge inside rounded container */
+.table_component.table-compact tbody tr:last-child td {
+    border-bottom: none;
+}
+
 /* Right-align numeric fee column (last column) */
 .table_component.table-compact thead th:last-child,
 .table_component.table-compact tbody td:last-child {
@@ -776,6 +783,26 @@ table caption {
 
 .table_component.table-compact tbody td:last-child {
     font-variant-numeric: tabular-nums;
+}
+
+/* Borderless variant: rely on header line + striping */
+.table_component.table-compact.borderless {
+    border: none;
+}
+
+.table_component.table-compact.borderless thead th {
+    border-bottom: 1px solid var(--color_border_light);
+}
+
+/* Ultra-compact on very narrow screens */
+@media (max-width: 480px) {
+    .table_component.table-compact table {
+        font-size: 0.7rem;
+    }
+    .table_component.table-compact th,
+    .table_component.table-compact td {
+        padding: 2px 6px;
+    }
 }
 
 .division-title {
