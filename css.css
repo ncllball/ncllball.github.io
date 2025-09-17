@@ -599,7 +599,10 @@ a.ncll:focus-visible,
     margin-left: 10px;
 }
 
-/* removed: .table-header-3 (table column width helper) */
+/* Table column width helper (restored) */
+.table-header-3 {
+    width: 33%;
+}
 
 .strike {
     background-color: var(--color_danger_bg);
@@ -820,7 +823,11 @@ sup {
     margin-bottom: 20px;
 }
 
-/* removed: td.division-header styling */
+/* Division header cell style (restored) */
+td.division-header {
+    background-color: gainsboro !important;
+    color: var(--color_blue);
+}
 
 /* Assessments: visually de-emphasize past dates (remove/update next season) */
 .fuzzy {
@@ -1750,7 +1757,23 @@ h3.timeline-title {
     margin-bottom: 32px;
 }
 
-/* removed PD landing at-a-glance table rules */
+.pd-landing .at-a-glance table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .85rem;
+}
+
+.pd-landing .at-a-glance th {
+    text-align: left;
+    padding: 6px 6px;
+    color: var(--color_blue);
+}
+
+.pd-landing .at-a-glance td {
+    padding: 4px 6px;
+    border-top: 1px solid var(--color_border_light);
+    vertical-align: top;
+}
 
 .pd-landing .pill-inline {
     display: inline-block;
