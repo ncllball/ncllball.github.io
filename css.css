@@ -745,6 +745,39 @@ table caption {
     line-height: 1.25;
 }
 
+/* Visual refinements using existing color tokens */
+.table_component.table-compact {
+    border: 1px solid var(--color_border_light);
+    border-radius: 6px;
+    overflow: hidden; /* round the table edges */
+}
+
+.table_component.table-compact thead th {
+    background: var(--color_lightgray); /* gainsboro */
+    color: var(--color_blue);
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-bottom: 1px solid var(--color_border);
+}
+
+.table_component.table-compact tbody tr:nth-child(odd) {
+    background: var(--color_surface_light);
+}
+
+.table_component.table-compact tbody tr:hover {
+    background: var(--color_surface_lighter);
+}
+
+/* Right-align numeric fee column (last column) */
+.table_component.table-compact thead th:last-child,
+.table_component.table-compact tbody td:last-child {
+    text-align: right;
+}
+
+.table_component.table-compact tbody td:last-child {
+    font-variant-numeric: tabular-nums;
+}
+
 .division-title {
     line-height: 35px;
     font-size: 1.1875rem;
