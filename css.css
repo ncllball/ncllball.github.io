@@ -569,9 +569,7 @@ a.ncll:focus-visible,
     margin-left: 10px;
 }
 
-.table-header-3 {
-    width: 33%;
-}
+/* removed: .table-header-3 (table column width helper) */
 
 .strike {
     background-color: var(--color_danger_bg);
@@ -674,177 +672,8 @@ section.strike {
 }
 
 /* end: 7) Components */
-/* 5) Tables */
-.table_component table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-/* Tables */
-table caption {
-    padding: 0.5em 0;
-    font-weight: 600;
-    font-size: 0.75rem;
-    margin-bottom: 0 !important;
-}
-
+/* 5) Tables (removed) */
 /* end: 5) Tables */
-
-.table_component th,
-.table_component td {
-    padding: 8px;
-    border: 1px solid var(--color_border_table);
-    text-align: left;
-}
-
-.table_component img {
-    width: 50px;
-    height: 50px;
-    float: left;
-}
-
-.table_component .fit {
-    vertical-align: middle;
-}
-
-.table_component {
-    background-color: var(--color_white);
-}
-
-.table_component td[colspan="9"] {
-    padding: 5px 5px;
-    background-color: var(--color_white);
-    color: var(--color_darkgray);
-    line-height: normal;
-    border: none;
-}
-
-.table_component p {
-    padding: 5px 0px 5px 0px;
-    font-size: 0.8125rem;
-}
-
-/* Compact table variant for tight sidebars/boxes */
-.table_component.table-compact table {
-    font-size: 0.75rem; /* tighter compact size */
-}
-
-.table_component.table-compact th,
-.table_component.table-compact td {
-    padding: 3px 6px; /* tighter cell padding */
-    border: none; /* borderless grid look */
-    border-bottom: 1px solid var(--color_border_light); /* subtle row separator */
-}
-
-/* Allow wrapping within compact tables, even if cells carry .fit */
-.table_component.table-compact .fit,
-.table_component.table-compact td,
-.table_component.table-compact th {
-    white-space: normal;
-}
-
-.table_component.table-compact td {
-    line-height: 1.25;
-}
-
-/* Visual refinements using existing color tokens */
-.table_component.table-compact {
-    border: 1px solid var(--color_border_light);
-    border-radius: 6px;
-    overflow: hidden; /* round the table edges */
-}
-
-.table_component.table-compact thead th {
-    background: var(--color_lightgray); /* gainsboro */
-    color: var(--color_blue);
-    font-weight: 700;
-    font-size: 0.85rem;
-    border-bottom: 1px solid var(--color_border);
-}
-
-.table_component.table-compact tbody tr:nth-child(odd) {
-    background: var(--color_surface_light);
-}
-
-.table_component.table-compact tbody tr:hover {
-    background: var(--color_surface_lighter);
-}
-
-/* Remove last row bottom border for a clean edge inside rounded container */
-.table_component.table-compact tbody tr:last-child td {
-    border-bottom: none;
-}
-
-/* Right-align numeric fee column (last column) */
-.table_component.table-compact thead th:last-child,
-.table_component.table-compact tbody td:last-child {
-    text-align: right;
-}
-
-.table_component.table-compact tbody td:last-child {
-    font-variant-numeric: tabular-nums;
-}
-
-/* Borderless variant: rely on header line + striping */
-.table_component.table-compact.borderless {
-    border: none;
-}
-
-.table_component.table-compact.borderless thead th {
-    border-bottom: 1px solid var(--color_border_light);
-}
-
-/* Minimal-lines variant: no striping/hover, uppercase headers, simple separators */
-.table_component.table-compact.minimal-lines tbody tr:nth-child(odd) {
-    background: transparent;
-}
-
-.table_component.table-compact.minimal-lines tbody tr:hover {
-    background: transparent;
-}
-
-.table_component.table-compact.minimal-lines thead th {
-    text-transform: uppercase;
-    letter-spacing: .5px;
-}
-
-/* Ultra-compact on very narrow screens */
-@media (max-width: 480px) {
-    .table_component.table-compact table {
-        font-size: 0.7rem;
-    }
-    .table_component.table-compact th,
-    .table_component.table-compact td {
-        padding: 2px 6px;
-    }
-}
-
-.division-title {
-    line-height: 35px;
-    font-size: 1.1875rem;
-    float: left;
-    font-weight: 600;
-}
-
-.ageCalcs {
-    position: absolute;
-    right: 25px;
-}
-
-.aoverb_button {
-    background-color: var(--color_white);
-    margin: 0 0 0 10px;
-}
-
-.team-photo {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.team-photo img {
-    max-width: 100%;
-    height: auto;
-}
 
 .team-photo figcaption {
     font-size: 0.9em;
@@ -911,10 +740,7 @@ sup {
     margin-bottom: 20px;
 }
 
-td.division-header {
-    background-color: gainsboro !important;
-    color: var(--color_blue);
-}
+/* removed: td.division-header styling */
 
 /* Assessments: visually de-emphasize past dates (remove/update next season) */
 .fuzzy {
@@ -1844,23 +1670,7 @@ h3.timeline-title {
     margin-bottom: 32px;
 }
 
-.pd-landing .at-a-glance table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: .85rem;
-}
-
-.pd-landing .at-a-glance th {
-    text-align: left;
-    padding: 6px 6px;
-    color: var(--color_blue);
-}
-
-.pd-landing .at-a-glance td {
-    padding: 4px 6px;
-    border-top: 1px solid var(--color_border_light);
-    vertical-align: top;
-}
+/* removed PD landing at-a-glance table rules */
 
 .pd-landing .pill-inline {
     display: inline-block;
