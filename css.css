@@ -794,6 +794,20 @@ table caption {
     border-bottom: 1px solid var(--color_border_light);
 }
 
+/* Minimal-lines variant: no striping/hover, uppercase headers, simple separators */
+.table_component.table-compact.minimal-lines tbody tr:nth-child(odd) {
+    background: transparent;
+}
+
+.table_component.table-compact.minimal-lines tbody tr:hover {
+    background: transparent;
+}
+
+.table_component.table-compact.minimal-lines thead th {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
 /* Ultra-compact on very narrow screens */
 @media (max-width: 480px) {
     .table_component.table-compact table {
