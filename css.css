@@ -724,6 +724,27 @@ table caption {
     font-size: 0.8125rem;
 }
 
+/* Compact table variant for tight sidebars/boxes */
+.table_component.table-compact table {
+    font-size: 0.8rem; /* noticeably smaller */
+}
+
+.table_component.table-compact th,
+.table_component.table-compact td {
+    padding: 4px 6px; /* tighter cell padding */
+}
+
+/* Allow wrapping within compact tables, even if cells carry .fit */
+.table_component.table-compact .fit,
+.table_component.table-compact td,
+.table_component.table-compact th {
+    white-space: normal;
+}
+
+.table_component.table-compact td {
+    line-height: 1.25;
+}
+
 .division-title {
     line-height: 35px;
     font-size: 1.1875rem;
