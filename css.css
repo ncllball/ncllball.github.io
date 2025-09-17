@@ -702,8 +702,56 @@ section.strike {
 }
 
 /* end: 7) Components */
-/* 5) Tables (removed) */
+/* 5) Tables */
+.table_component table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Tables */
+table caption {
+    padding: 0.5em 0;
+    font-weight: 600;
+    font-size: 0.75rem;
+    margin-bottom: 0 !important;
+}
+
 /* end: 5) Tables */
+
+/* Base table component styles (restored) */
+.table_component th,
+.table_component td {
+    padding: 8px;
+    border: 1px solid var(--color_border_table);
+    text-align: left;
+}
+
+.table_component img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.table_component .fit {
+    vertical-align: middle;
+}
+
+.table_component {
+    background-color: var(--color_white);
+}
+
+.table_component td[colspan="9"] {
+    padding: 5px 5px;
+    background-color: var(--color_white);
+    color: var(--color_darkgray);
+    line-height: normal;
+    border: none;
+}
+
+.table_component p {
+    padding: 5px 0px 5px 0px;
+    font-size: 0.8125rem;
+}
 
 .team-photo figcaption {
     font-size: 0.9em;
