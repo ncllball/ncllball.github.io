@@ -1775,6 +1775,40 @@ h3.timeline-title {
     vertical-align: top;
 }
 
+/* Reusable: table styled like PD at-a-glance */
+.table-at-a-glance {
+    border: 1px solid var(--color_border_light);
+    border-radius: 6px;
+    padding: 14px;
+    background: var(--color_surface_lighter);
+    margin-bottom: 32px;
+}
+
+.table-at-a-glance table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .85rem;
+}
+
+.table-at-a-glance th {
+    text-align: left;
+    padding: 6px 6px;
+    color: var(--color_blue);
+}
+
+.table-at-a-glance td {
+    padding: 4px 6px;
+    border-top: 1px solid var(--color_border_light);
+    vertical-align: top;
+}
+
+/* Right-align numeric fee column */
+.table-at-a-glance thead th:last-child,
+.table-at-a-glance tbody td:last-child {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
 .pd-landing .pill-inline {
     display: inline-block;
     background: var(--color_lightgray);
