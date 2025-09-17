@@ -808,6 +808,26 @@ table caption {
     letter-spacing: .5px;
 }
 
+/* Blue header band variant (Option 5): strong blue header with white text */
+.table_component.table-compact.header-band-blue {
+    border: 1px solid var(--color_border_light);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.table_component.table-compact.header-band-blue thead th {
+    background: var(--color_blue);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.table_component.table-compact.header-band-blue thead th a,
+.table_component.table-compact.header-band-blue thead th a:visited {
+    color: #ffffff;
+}
+
 /* Ultra-compact on very narrow screens */
 @media (max-width: 480px) {
     .table_component.table-compact table {
