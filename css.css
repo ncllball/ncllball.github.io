@@ -425,6 +425,28 @@ a.ncll:focus-visible,
 
 /* removed invalid <super> element styling; sup handled below */
 
+/* Table scroll utility (scoped, minimal) */
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-scroll table {
+    width: max-content; /* allow horizontal growth */
+    border-collapse: collapse;
+}
+
+.table-scroll thead th {
+    background: var(--color_red);
+    color: #fff;
+}
+
+.table-scroll th,
+.table-scroll td {
+    white-space: nowrap; /* keep everything on one line */
+    padding: 3px 6px; /* light, compact padding */
+}
+
 .fit {
     max-width: 100%;
     white-space: nowrap;
