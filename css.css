@@ -95,3 +95,89 @@
 }
 
 /* end: (1) CMS overrides */
+
+/* start: global clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* end: global clearfix*/
+
+/* start: global typography */
+p,
+ul,
+li {
+    text-align: left;
+    font-size: 1.15rem;
+    font-family: var(--font_ui);
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+html,
+body {
+    text-align: left;
+    font-family: var(--font_sans);
+    color: var(--color_text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: var(--color_black);
+    letter-spacing: normal;
+    font-family: var(--font_heading);
+}
+
+h1 {
+    font-size: 1.625rem;
+    text-align: left;
+    line-height: 32px;
+    width: fit-content;
+}
+
+h2 {
+    font-size: 1.25rem;
+    text-align: left !important;
+    line-height: 30px;
+    margin: 0 0 18px 0;
+    padding: 0;
+}
+
+h3 {
+    text-align: left;
+    font-size: 1.125rem;
+    line-height: 26px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: var(--color_black);
+    text-align: left;
+}
+
+h5 {
+    font-size: 0.875rem;
+    color: red;
+    text-align: left;
+}
+
+h6 {
+    font-size: 1.25rem;
+    color: red;
+    text-align: left;
+}
+
+/* end: global typography */
