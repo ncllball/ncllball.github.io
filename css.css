@@ -42,7 +42,7 @@
 /* font stacks */
     --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     --font_sans: "proxima-nova", var(--font_ui);
-    --font_heading: "proxima_nova_rgbold", var(--font_ui);}
+    --font_heading: var(--font_ui);
 
 /* (1) CMS overrides (SportsConnect embeds) */
 .skAddBanner,
