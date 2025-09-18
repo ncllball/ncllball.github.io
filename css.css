@@ -146,7 +146,7 @@ h2.left::before {
     margin-bottom: 20px;
     /* Decorative stripe uses --stripe-gradient */
     background-image: var(--stripe-gradient);
-    background-size: 4px 4px;
+    background-size: 3px 3px;
 }
 
 .skSponsor h2 {
