@@ -27,18 +27,7 @@
     --sup-font-size: 0.75em;
     --sup-top-offset: -0.4em;
 /* Decorative stripe gradient for h2.left::before */
-    --stripe-gradient: linear-gradient(135deg,
-            #ffffff 5%,
-            var(--color_red) 5%,
-            var(--color_red) 25%,
-            #ffffff 25%,
-            #ffffff 50%,
-            #ffffff 50%,
-            #ffffff 55%,
-            var(--color_red) 55%,
-                 --color_darkgray: rgb(68, 68, 68);
-            #ffffff 75%,
-            #ffffff 100%);
+    --stripe-gradient: linear-gradient(135deg, #ffffff 5%, var(--color_red) 5% 25%, #ffffff 25% 55%, var(--color_red) 55% 75%, #ffffff 75%);
 /* font stacks */
     --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     --font_sans: "proxima-nova", var(--font_ui);
@@ -164,5 +153,4 @@ h6 {
     color: red;
     text-align: left;
 }
-
 /* end: global typography */
