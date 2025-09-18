@@ -1,0 +1,125 @@
+/* NCLL Global Stylesheet
+    Organization (current order):
+    0) Design tokens
+    1) CMS overrides (SportsConnect embeds)
+    2) Buttons & helpers
+    3) Typography & base
+    4) Layout utilities
+    5) Tables
+    6) Links & focus
+    7) Components (alerts, quotes, strike, helper, registration)
+    8) Tags (tag pills/buttons)
+    9) Carousel & image enlargement
+    10) Program sections (GoFundMe, team photos, camp image)
+    11) Timeline
+    12) Responsive & reduced motion
+*/
+
+/* 0) Design tokens */
+:root {
+    --color_red: #cd163f;
+    --color_blue: #00013a;
+    --color_tan: #e2ddca;
+    --color_richblue: #019cde;
+    --color_orange: #ff6900;
+    --color_orange_hover: #F57C00;
+    /* greens */
+    --color_green: #4caf50;
+    /* material green base */
+    --color_green_hover: #388e3c;
+    /* material green hover */
+    --color_green_alt_dark: #2c5f2d;
+    /* forest green dark */
+    --color_green_alt_light: #4a8f4e;
+    /* forest green light */
+    --color_lightgray: gainsboro;
+    --color_darkgray: RGB(68, 68, 68);
+    --color_button: #f0f0f0;
+    /* standardized text/link/info tokens */
+    --color_text: #333333;
+    --color_muted: #555555;
+    --color_link: #0066cc;
+    --color_info: #1976d2;
+    --color_timeline_line: #ccd5db;
+    --color_warning: #f2e427;
+    --color_border: #cccccc;
+    --color_border_light: #dddddd;
+    --color_subtle: #888888;
+    --color_control: #bbbbbb;
+    --color_border_table: #dededf;
+    --color_white: #ffffff;
+    --color_black: #000000;
+    /* semantic surfaces & state tokens */
+    --color_surface_light: #f8f9fa;
+    --color_surface_lighter: #e9ecef;
+    --color_blue_hover: #0056b3;
+    --color_info_tint_bg: #e3f2fd;
+    --color_warning_bg: #fff3cd;
+    --color_warning_border: #ffeeba;
+    --color_danger_bg: #f8d7da;
+    --color_danger_border: #f5c6cb;
+    --color_gray_b0: #B0B0B0;
+    --color_gray_aaaa: #aaaaaa;
+    /* shadow tokens */
+    --shadow_green_alt_25: rgba(44, 95, 45, 0.25);
+    --shadow_green_alt_35: rgba(44, 95, 45, 0.35);
+    /* sup positioning tokens */
+    --sup-font-size: 0.75em;
+    --sup-top-offset: -0.4em;
+    /* subtle sport-specific band tints */
+    --tint_softball: #f7f3ff;
+    /* very light lavender */
+    --tint_baseball: #f2f8ff;
+    /* very light blue */
+    /* Decorative stripe gradient for h2.left::before */
+    --stripe-gradient: linear-gradient(135deg,
+            #ffffff 5%,
+            var(--color_red) 5%,
+            var(--color_red) 25%,
+            #ffffff 25%,
+            #ffffff 50%,
+            #ffffff 50%,
+            #ffffff 55%,
+            var(--color_red) 55%,
+            var(--color_red) 75%,
+            #ffffff 75%,
+            #ffffff 100%);
+    /* font stacks */
+    --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    --font_sans: "proxima-nova", var(--font_ui);
+    --font_heading: var(--font_sans);
+}
+
+/* 1) CMS overrides (SportsConnect embeds) */
+
+.skAddBanner,
+.skRightTabs,
+.skTabHeading,
+.skCaption {
+    display: none !important;
+}
+
+.dfContainer h2.head,
+.dfContainer h2.head .title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 10px 7px;
+    color: #ffffff;
+    font-family: "config-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 50, "wght" 600;
+    text-transform: none;
+}
+
+.skHeader .skBanner {
+    font-family: var(--font_ui) !important;
+}
+
+.skTabsWrapper {
+    display: table-cell;
+    width: calc(100% - 32px);
+    background: var(--color_white);
+    vertical-align: top;
+    padding: 0 0px 0 0;
+}
+
+/* end: 1) CMS overrides */
