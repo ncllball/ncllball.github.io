@@ -63,7 +63,9 @@
 }
 
 /* (1) CMS overrides (SportsConnect embeds) */
-
+.skSponsor h2 {
+    text-align: center !important;
+}
 .skAddBanner,
 .skRightTabs,
 .skTabHeading,
@@ -184,6 +186,3 @@ h6 {
 }
 
 /* end: global typography */
-.skSponsor h2 {
-    text-align: center !important;
-}
