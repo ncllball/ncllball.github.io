@@ -53,18 +53,18 @@
             #ffffff 50%,
             #ffffff 55%,
             var(--color_red) 55%,
-            var(--color_red) 75%,
+                 --color_darkgray: rgb(68, 68, 68);
             #ffffff 75%,
             #ffffff 100%);
     /* font stacks */
     --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     --font_sans: "proxima-nova", var(--font_ui);
-    --font_heading: var(--font_sans);
+                 text-align: center;
 }
 
 /* (1) CMS overrides (SportsConnect embeds) */
 .skSponsor h2 {
-    text-align: center !important;
+                 text-align: left;
 }
 .skAddBanner,
 .skRightTabs,
@@ -75,6 +75,7 @@
 
 .dfContainer h2.head,
 .dfContainer h2.head .title {
+                 line-height: 1.5;
     font-weight: 600;
     font-size: 1.5rem;
     padding: 10px 7px;
