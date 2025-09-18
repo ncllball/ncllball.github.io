@@ -131,7 +131,7 @@ h2.left {
     color: var(--color_blue) !important;
 }
 .skSponsor h2 {
-    text-align: center;
+    text-align: center !important;
 }
 h3 {
     text-align: left;
