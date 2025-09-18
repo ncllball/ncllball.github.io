@@ -93,6 +93,9 @@
     vertical-align: top;
     padding: 0 0px 0 0;
 }
+.skSponsorHeader {
+    text-align: center;
+}
 
 /* end: (1) CMS overrides */
 
