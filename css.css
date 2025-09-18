@@ -130,7 +130,7 @@ h2.left {
     padding: 0;
     color: var(--color_blue) !important;
 }
-h2.skSponsorHeader {
+.skSponsorHeader h2 {
     text-align: center;
 }
 h3 {
