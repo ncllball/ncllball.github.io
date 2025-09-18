@@ -489,19 +489,27 @@ a.ncll:focus-visible,
     font-size: 0.8125rem;
     font-family: var(--font_ui);
     color: var(--color_muted);
-    margin-top: 10px;
-    border-top: 1px solid var(--color_border_light);
-    padding: 5px 0px 5px 0px;
-    line-height: normal;
+    margin-top: 16px;
+    background: var(--color_surface_lighter);
+    border: 1px solid var(--color_border_light);
+    border-radius: 6px;
+    padding: 12px;
+    line-height: 1.4;
 }
 
 .footies p {
-    font-size: 0.75rem !important;
+    font-size: 0.8rem;
     font-family: var(--font_ui);
     color: var(--color_muted);
-    line-height: normal;
-    margin: 0px;
-    padding: 3px 10px 3px 5px !important;
+    line-height: 1.4;
+    margin: 6px 0;
+    padding: 0 !important;
+}
+
+.footies p + p {
+    border-top: 1px solid var(--color_border_light);
+    padding-top: 6px !important;
+    margin-top: 6px;
 }
 
 .footies a {
