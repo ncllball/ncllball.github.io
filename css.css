@@ -130,7 +130,9 @@ h2.left {
     padding: 0;
     color: var(--color_blue) !important;
 }
-
+h2.skSponsor {
+    text-align: center;
+}
 h3 {
     text-align: left;
     font-size: 1.125rem;
