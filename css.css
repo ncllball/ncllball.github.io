@@ -15,7 +15,7 @@
     12) Responsive & reduced motion
 */
 
-/* 0) Design tokens */
+/* (0) Design tokens */
 :root {
     --color_red: #cd163f;
     --color_blue: #00013a;
@@ -40,24 +40,9 @@
     --color_border_table: #dededf;
     --color_white: #ffffff;
     --color_black: #000000;
-    /* semantic surfaces & state tokens */
-    --color_surface_light: #f8f9fa;
-    --color_surface_lighter: #e9ecef;
-    --color_blue_hover: #0056b3;
-    --color_info_tint_bg: #e3f2fd;
-    --color_warning_bg: #fff3cd;
-    --color_warning_border: #ffeeba;
-    --color_danger_bg: #f8d7da;
-    --color_danger_border: #f5c6cb;
-    --color_gray_b0: #B0B0B0;
-    --color_gray_aaaa: #aaaaaa;
-    /* shadow tokens */
-    --shadow_green_alt_25: rgba(44, 95, 45, 0.25);
-    --shadow_green_alt_35: rgba(44, 95, 45, 0.35);
     /* sup positioning tokens */
     --sup-font-size: 0.75em;
     --sup-top-offset: -0.4em;
-
     /* Decorative stripe gradient for h2.left::before */
     --stripe-gradient: linear-gradient(135deg,
             #ffffff 5%,
@@ -71,14 +56,13 @@
             var(--color_red) 75%,
             #ffffff 75%,
             #ffffff 100%);
-    
-            /* font stacks */
+    /* font stacks */
     --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     --font_sans: "proxima-nova", var(--font_ui);
     --font_heading: var(--font_sans);
 }
 
-/* 1) CMS overrides (SportsConnect embeds) */
+/* (1) CMS overrides (SportsConnect embeds) */
 
 .skAddBanner,
 .skRightTabs,
@@ -110,4 +94,4 @@
     padding: 0 0px 0 0;
 }
 
-/* end: 1) CMS overrides */
+/* end: (1) CMS overrides */
