@@ -73,17 +73,7 @@
     display: none !important;
 }
 
-.dfContainer h2.head,
-.dfContainer h2.head .title {
-                 line-height: 1.5;
-    font-weight: 600;
-    font-size: 1.5rem;
-    padding: 10px 7px;
-    color: #ffffff;
-    font-family: "config-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wdth" 50, "wght" 600;
-    text-transform: none;
-}
+
 
 .skHeader .skBanner {
     font-family: var(--font_ui) !important;
