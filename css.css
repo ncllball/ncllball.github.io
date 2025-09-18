@@ -9,7 +9,7 @@
     --color_lightgray: gainsboro;
     --color_darkgray: RGB(68, 68, 68);
     --color_button: #f0f0f0;
-/* standardized text/link/info tokens */
+    /* standardized text/link/info tokens */
     --color_text: #333333;
     --color_muted: #555555;
     --color_link: #0066cc;
@@ -23,33 +23,23 @@
     --color_border_table: #dededf;
     --color_white: #ffffff;
     --color_black: #000000;
-/* sup positioning tokens */
+    /* sup positioning tokens */
     --sup-font-size: 0.75em;
     --sup-top-offset: -0.4em;
-/* Decorative stripe gradient for h2.left::before */
+    /* Decorative stripe gradient for h2.left::before */
     --stripe-gradient: linear-gradient(135deg, #ffffff 5%, var(--color_red) 5% 25%, #ffffff 25% 55%, var(--color_red) 55% 75%, #ffffff 75%);
-/* font stacks */
+    /* font stacks */
     --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     --font_sans: "proxima-nova", var(--font_ui);
-    --font_heading: var(--font_ui);}
+    --font_heading: var(--font_ui);
+}
 
-/* (1) CMS overrides (SportsConnect embeds) */
+/* start CMS overrides (SportsConnect embeds) */
 .skAddBanner,
 .skRightTabs,
 .skTabHeading,
 .skCaption {
     display: none !important;
-}
-
-.dfContainer h2.head,
-.dfContainer h2.head .title {
-    line-height: 1.5;
-    font-size: 1.5rem;
-    padding: 10px 7px;
-    color: #ffffff;
-    font-family: "config-variable", sans-serif;
-    font-variation-settings: "slnt" 0, "wdth" 50, "wght" 600;
-    text-transform: none;
 }
 
 .skHeader .skBanner {
@@ -64,9 +54,20 @@
     padding: 0 0px 0 0;
 }
 
-/* end: (1) CMS overrides */
+/* this is the header bar above the tabs (h1 to some of us)*/
+.dfContainer h2.head,
+.dfContainer h2.head .title {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    padding: 10px 7px;
+    color: #ffffff;
+    font-family: "config-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 50, "wght" 600;
+    text-transform: none;
+}
+/* end CMS overrides */
 
-/* start: global clearfix */
+/* start global clearfix */
 .clearfix:before,
 .clearfix:after {
     content: "";
@@ -77,9 +78,9 @@
     clear: both;
 }
 
-/* end: global clearfix*/
+/* end global clearfix */
 
-/* start: global typography */
+/* start global typography */
 p,
 ul,
 li {
@@ -125,14 +126,19 @@ h2 {
 
 }
 
-h2.left {
+.left {
+    text-align: left !important;
+    float: none;
     margin: 0 0 18px 0;
     padding: 0;
     color: var(--color_blue) !important;
+
 }
+
 .skSponsor h2 {
     text-align: center !important;
 }
+
 h3 {
     text-align: left;
     font-size: 1.125rem;
@@ -159,4 +165,5 @@ h6 {
     color: red;
     text-align: left;
 }
+
 /* end: global typography */
