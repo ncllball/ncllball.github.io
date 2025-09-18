@@ -122,8 +122,12 @@ h2 {
     font-size: 1.25rem;
     text-align: left !important;
     line-height: 30px;
+
+}
+
+h2.left {
     margin: 0 0 18px 0;
-    padding: 1px 0;
+    padding: 0;
     color: var(--color_blue) !important;
 }
 
