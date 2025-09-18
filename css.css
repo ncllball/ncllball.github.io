@@ -1,20 +1,3 @@
-/* NCLL Global Stylesheet
-    Organization (current order):
-    0) Design tokens
-    1) CMS overrides (SportsConnect embeds)
-    2) Buttons & helpers
-    3) Typography & base
-    4) Layout utilities
-    5) Tables
-    6) Links & focus
-    7) Components (alerts, quotes, strike, helper, registration)
-    8) Tags (tag pills/buttons)
-    9) Carousel & image enlargement
-    10) Program sections (GoFundMe, team photos, camp image)
-    11) Timeline
-    12) Responsive & reduced motion
-*/
-
 /* (0) Design tokens */
 :root {
     --color_red: #cd163f;
@@ -26,7 +9,7 @@
     --color_lightgray: gainsboro;
     --color_darkgray: RGB(68, 68, 68);
     --color_button: #f0f0f0;
-    /* standardized text/link/info tokens */
+/* standardized text/link/info tokens */
     --color_text: #333333;
     --color_muted: #555555;
     --color_link: #0066cc;
@@ -40,10 +23,10 @@
     --color_border_table: #dededf;
     --color_white: #ffffff;
     --color_black: #000000;
-    /* sup positioning tokens */
+/* sup positioning tokens */
     --sup-font-size: 0.75em;
     --sup-top-offset: -0.4em;
-    /* Decorative stripe gradient for h2.left::before */
+/* Decorative stripe gradient for h2.left::before */
     --stripe-gradient: linear-gradient(135deg,
             #ffffff 5%,
             var(--color_red) 5%,
@@ -56,14 +39,12 @@
                  --color_darkgray: rgb(68, 68, 68);
             #ffffff 75%,
             #ffffff 100%);
-    /* font stacks */
+/* font stacks */
     --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     --font_sans: "proxima-nova", var(--font_ui);
-                 text-align: center;
-}
+    --font_heading: "proxima_nova_rgbold", var(--font_ui);}
 
 /* (1) CMS overrides (SportsConnect embeds) */
-
 .skAddBanner,
 .skRightTabs,
 .skTabHeading,
@@ -153,7 +134,8 @@ h2 {
     text-align: left !important;
     line-height: 30px;
     margin: 0 0 18px 0;
-    padding: 0;
+    padding: 1px 0;
+    color: var(--color_blue) !important;
 }
 
 h3 {
