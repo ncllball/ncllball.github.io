@@ -182,4 +182,73 @@ h6 {
     text-align: left;
 }
 
-/* end: global typography */
+/* end global typography */
+
+/* start global blah blah */
+
+.at {
+    display: inline-block;
+    padding: 0 2px 2px 2px;
+    font-weight: 600;
+    font-size: 0.85em;
+    color: var(--color_subtle);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    top: -0.5px;
+}
+
+.info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--color_red);
+    border-radius: 50%;
+    background-color: white;
+    color: var(--color_red);
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+/* end global blah blah */
+
+
+/* start links/buttons */
+
+a.ncll {
+    color: var(--color_red) !important;
+    text-decoration: none;
+}
+
+a.ncll:visited {
+    color: var(--color_red) !important;
+}
+
+a.ncll:hover {
+    color: var(--color_red) !important;
+}
+
+a.ncll:active {
+    color: var(--color_red) !important;
+}
+
+/* 6.1) Focus states */
+a.ncll:focus-visible,
+.button:focus-visible,
+.gainsboro-button:focus-visible {
+    outline: 2px solid var(--color_blue);
+    outline-offset: 2px;
+}
+
+.blurred-text {
+    color: transparent;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.25rem;
+    font-family: Arial, sans-serif;
+}
+
+/* end: 6) Links & focus */
