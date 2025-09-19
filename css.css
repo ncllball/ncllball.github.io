@@ -518,7 +518,7 @@ a.ncll:focus-visible,
     height: 1.4em;
     border: none; /* borderless */
     border-radius: 50%;
-    background-color: var(--color_button);
+    background-color: transparent; /* show only the SVG, transparent background */
     background-image: url(images/icons/calendar/event.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -574,19 +574,6 @@ a.ncll:focus-visible,
     gap: 10px;
     padding: 8px 10px;
     text-decoration: none;
-    .cal-dropdown > summary.icon-only {
-        padding: 0;
-        width: 1.4em; /* slightly larger icon */
-        height: 1.4em;
-        border: none; /* borderless */
-        border-radius: 50%;
-        background-color: var(--color_button);
-        background-image: url(images/icons/calendar/event.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 80% 80%;
-        color: transparent; /* hide text */
-    }
     color: var(--color_text);
     border-radius: 6px;
     font-size: 0.95em;
