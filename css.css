@@ -181,6 +181,10 @@ h6 {
     color: red;
     text-align: left;
 }
+sup {
+    vertical-align: super;
+    font-size: .6rem;
+}
 
 /* end global typography */
 
