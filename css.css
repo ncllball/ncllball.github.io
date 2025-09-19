@@ -388,7 +388,7 @@ a.ncll:focus-visible,
     transform: translateY(-2px);
 }
 
-.sticky-register-title p {
+.sticky-register-inner p {
     padding: 0;
 }
 
