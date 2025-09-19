@@ -468,7 +468,7 @@ a.ncll:focus-visible,
     display: inline-block;
     width: 1.4em;
     height: 1.4em;
-    background: transparent url(images/icons/calendar/event.svg) no-repeat center / 100% 100%;
+    background: transparent url(images/icons/calendar/event.svg) no-repeat center / 80% 80%;
     text-indent: -9999px;
     overflow: hidden;
     vertical-align: -0.5em;
