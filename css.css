@@ -449,7 +449,7 @@ a.ncll:focus-visible,
     border-bottom-right-radius: 0;
     list-style-type: none;
     font-size: 0.85rem;
-    box-shadow: 1px 1px 8px var(--color_gray_aaaa);
+    box-shadow: 1px 1px 8px var(--color_gray);
 }
 
 .tag-item::before {
