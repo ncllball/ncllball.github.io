@@ -1,37 +1,6 @@
-<svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_1_166)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M140.526 30H279.474C340.516 30 390 79.4842 390 140.526V279.474C390 340.516 340.516 390 279.474 390H140.526C79.4842 390 30 340.516 30 279.474V140.526C30 79.4842 79.4842 30 140.526 30Z" fill="black" fill-opacity="0.01"/>
-</g>
-<mask id="mask0_1_166" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="30" y="30" width="360" height="360">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M140.526 30H279.474C340.516 30 390 79.4842 390 140.526V279.474C390 340.516 340.516 390 279.474 390H140.526C79.4842 390 30 340.516 30 279.474V140.526C30 79.4842 79.4842 30 140.526 30Z" fill="white"/>
-</mask>
-<g mask="url(#mask0_1_166)">
-<rect x="30.2451" y="30" width="360" height="360" fill="white"/>
-<path d="M308.035 208.76L272.225 187.9V245.87H310V212.18C310 210.775 309.25 209.47 308.035 208.76Z" fill="#1A237E"/>
-<path d="M259.595 134.2H304.825V128.66C304.825 123.875 300.95 120 296.17 120H178.335C173.555 120 169.675 123.875 169.675 128.66V134.2H214.7H259.595Z" fill="#0C4999"/>
-<path d="M259.595 257.61H296.165C300.945 257.61 304.825 253.735 304.825 248.95V214.815H259.595V257.61Z" fill="#0F73D9"/>
-<path d="M169.68 214.82V248.955C169.68 253.735 173.555 257.615 178.34 257.615H214.705V214.825H169.68V214.82Z" fill="#0F439D"/>
-<path d="M259.595 134.2H304.825V174.335H259.595V134.2Z" fill="#2ECDFD"/>
-<path d="M169.68 134.2H214.705V174.335H169.68V134.2Z" fill="#1C5FB0"/>
-<path d="M214.7 214.82H259.595V257.61H214.7V214.82Z" fill="#1467C7"/>
-<path d="M214.7 134.2H259.595V174.335H214.7V134.2Z" fill="#1690D5"/>
-<path d="M259.595 173.312H304.825V214.815H259.595V173.312Z" fill="#1BB4FF"/>
-<path d="M169.68 174.335H214.705V214.815H169.68V174.335Z" fill="#074DAF"/>
-<path d="M214.7 174.335H259.595V214.815H214.7V174.335Z" fill="#2076D4"/>
-<path d="M167.205 300C169.52 300 301.555 300 301.555 300C306.22 300 310 296.22 310 291.555V212.19C310 212.19 309.85 215.48 301.245 220.275C294.745 223.895 163.72 297.83 163.72 297.83C163.72 297.83 164.89 300 167.205 300Z" fill="#2ED0FF"/>
-<path d="M301.395 299.985C300.59 299.985 168.445 300 168.445 300C163.78 300 160 296.22 160 291.555V215.335L306.815 298.145C305.59 299.125 304.035 299.985 301.395 299.985Z" fill="#139FE2"/>
-<path d="M201.595 260H118.405C113.765 260 110 256.235 110 251.595V168.405C110 163.765 113.765 160 118.405 160H201.595C206.235 160 210 163.765 210 168.405V251.595C210 256.235 206.235 260 201.595 260Z" fill="#00488D"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M134.485 210.385C134.485 195.63 143.915 183.67 159.57 183.67C175.225 183.67 184.655 195.63 184.655 210.385C184.655 225.135 175.265 237.095 159.57 237.095C143.88 237.095 134.485 225.14 134.485 210.385ZM145.38 210.385C145.38 220.16 150.69 228.08 159.57 228.08C168.445 228.08 173.765 220.155 173.765 210.385C173.765 200.615 168.425 192.69 159.57 192.69C150.715 192.69 145.38 200.61 145.38 210.385Z" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_d_1_166" x="0" y="0" width="420" height="420" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset/>
-<feGaussianBlur stdDeviation="15"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0720881 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_166"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_166" result="shape"/>
-</filter>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+	<!-- Simplified Outlook-style tile with white O mark -->
+	<rect x="3" y="3" width="18" height="18" rx="3" fill="#0F73D9"/>
+	<rect x="12.5" y="3" width="8.5" height="18" fill="#139FE2"/>
+	<circle cx="9.5" cy="12" r="4" fill="none" stroke="#ffffff" stroke-width="2"/>
 </svg>
