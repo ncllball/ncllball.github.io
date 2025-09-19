@@ -480,10 +480,10 @@ a.ncll:focus-visible,
 }
 .cal-inline a:hover { opacity: 0.9; }
 
-.cal-inline a[data-cal="google"] { background-image: url('/images/icons/calendar/google.svg'); }
-.cal-inline a[data-cal="outlook"] { background-image: url('/images/icons/calendar/outlook.svg'); }
-.cal-inline a[data-cal="apple"] { background-image: url('/images/icons/calendar/apple.svg'); }
-.cal-inline a[data-cal="ics"] { background-image: url('/images/icons/calendar/ics.svg'); }
+.cal-inline a[data-cal="google"] { background-image: url('/images/icons/calendar/icon-google-t5.svg'); }
+.cal-inline a[data-cal="outlook"] { background-image: url('/images/icons/calendar/icon-outlook-t5.svg'); }
+.cal-inline a[data-cal="apple"] { background-image: url('/images/icons/calendar/icon-apple-t5.svg'); }
+.cal-inline a[data-cal="ics"] { background-image: url('/images/icons/calendar/icon-ics-t5.svg'); }
 
 /* Calendar dropdown (CSS-only, compact) */
 .cal-dropdown {
