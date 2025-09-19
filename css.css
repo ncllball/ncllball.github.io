@@ -520,3 +520,68 @@ a.ncll:focus-visible,
 .cal-link[data-cal="apple"] .cal-ico::before {
     background: #b00020; /* deeper red header strip */
 }
+
+/* CSS-only Add to Calendar dropdown (details/summary) */
+.cal-dropdown {
+    display: inline-block;
+    position: relative;
+    margin-left: 6px;
+}
+.cal-dropdown > summary {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 1px solid var(--color_border_light);
+    border-radius: 999px; /* pill */
+    background: linear-gradient(#fff, #f6f6f6);
+    color: var(--color_text);
+    font-size: 0.9em;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    transition: box-shadow .2s ease, transform .1s ease, border-color .2s ease;
+}
+.cal-dropdown > summary::-webkit-details-marker { display: none; }
+.cal-dropdown > summary:focus-visible { outline: 2px solid var(--color_blue); outline-offset: 3px; }
+.cal-dropdown > summary:hover { box-shadow: 0 2px 6px rgba(0,0,0,.12); }
+.cal-dropdown[open] > summary { box-shadow: 0 8px 18px rgba(0,0,0,.16); border-color: #e3e3e3; }
+.cal-dropdown > summary .caret { width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid var(--color_subtle); }
+.cal-dropdown[open] > summary .caret { transform: rotate(180deg); border-top-color: var(--color_red); }
+
+.cal-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    min-width: 220px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    box-shadow: 0 12px 28px rgba(0,0,0,.16);
+    z-index: 9999;
+}
+.cal-menu a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 8px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.cal-menu a:hover { background: #f5f5f5; }
+.cal-menu hr { border: 0; border-top: 1px solid var(--color_border_light); margin: 6px 0; }
+
+@media (max-width: 480px) {
+    .cal-menu { min-width: 160px; }
+}
+
+/* Icon sizing tweaks inside menu */
+.cal-menu .cal-ico { width: 16px; height: 16px; }
+
+/* Google brand cue */
+.cal-link[data-cal="google"] .cal-ico {
+    border-color: #1a73e8;
+}
+.cal-link[data-cal="google"]:hover .cal-ico { border-color: #1558b0; }
