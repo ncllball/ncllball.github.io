@@ -480,9 +480,9 @@ a.ncll:focus-visible,
 }
 .cal-inline a:hover { opacity: 0.9; }
 
-.cal-inline a[data-cal="google"] { background-image: url(images/icons/calendar/icon-google-t5.svg); }
-.cal-inline a[data-cal="outlook"] { background-image: url(images/icons/calendar/icon-outlook-t5.svg); }
-.cal-inline a[data-cal="apple"] { background-image: url(images/icons/calendar/icon-apple-t5.svg); }
+.cal-inline a[data-cal="google"] { background-image: url(images/icons/calendar/google.svg); }
+.cal-inline a[data-cal="outlook"] { background-image: url(images/icons/calendar/outlook.svg); }
+.cal-inline a[data-cal="apple"] { background-image: url(images/icons/calendar/apple.svg); }
 .cal-inline a[data-cal="ics"] { background-image: url(images/icons/calendar/ics.svg); }
 
 /* Calendar dropdown (CSS-only, compact) */
@@ -568,10 +568,10 @@ a.ncll:focus-visible,
     background-position: center;
     background-size: contain;
 }
-.cal-menu a[data-cal="google"]::before { background-image: url(images/icons/calendar/icon-google-t5.svg); }
-.cal-menu a[data-cal="outlook"]::before { background-image: url(images/icons/calendar/icon-outlook-t5.svg); }
-.cal-menu a[data-cal="apple"]::before { background-image: url(images/icons/calendar/icon-apple-t5.svg); }
-.cal-menu a[data-cal="yahoo"]::before { background-image: url(images/icons/calendar/icon-yahoo-t5.svg); }
-.cal-menu a[data-cal="m365"]::before { background-image: url(images/icons/calendar/icon-office365-t5.svg); }
-.cal-menu a[data-cal="teams"]::before { background-image: url(images/icons/calendar/icon-office365-t5.svg); }
+.cal-menu a[data-cal="google"]::before { background-image: url(images/icons/calendar/google.svg); }
+.cal-menu a[data-cal="outlook"]::before { background-image: url(images/icons/calendar/outlook.svg); }
+.cal-menu a[data-cal="apple"]::before { background-image: url(images/icons/calendar/apple.svg); }
+.cal-menu a[data-cal="yahoo"]::before { background-image: url(images/icons/calendar/yahoo.svg); }
+.cal-menu a[data-cal="m365"]::before { background-image: url(images/icons/calendar/ms365.svg); }
+.cal-menu a[data-cal="teams"]::before { background-image: url(images/icons/calendar/ms365.svg); }
 .cal-menu a[data-cal="ics"]::before { background-image: url(images/icons/calendar/ics.svg); }
