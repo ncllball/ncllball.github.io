@@ -449,7 +449,7 @@ a.ncll:focus-visible,
     border-bottom-right-radius: 0;
     list-style-type: none;
     font-size: 0.85rem;
-    box-shadow: 1px 1px 8px var(--color_gray_aaaa);
+    box-shadow: 1px 1px 8px var(--color_red);
 }
 
 .tag-item::before {
@@ -460,7 +460,7 @@ a.ncll:focus-visible,
     height: 17.67766953px;
     transform: rotate(45deg);
     transform-origin: top left;
-    border: 1px solid var(--color_border);
+    border: 1px solid var(--color_red);
     border-top: none;
     border-right: none;
 }
@@ -473,28 +473,9 @@ a.ncll:focus-visible,
     margin-top: -2.5px;
     width: 5px;
     height: 5px;
-    background: var(--color_white);
-    border: 1px solid var(--color_border);
+    background: var(--color_red);
+    border: 1px solid var(--color_red);
     border-radius: 50%;
 }
-.tags_button {
-    /* end: 11) Timeline */
-    /* 8) Tags (tag pills/buttons) */
-    background-color: rgba(220, 220, 220, .7);
-    color: var(--color_black);
-    border: 1px solid var(--color_gray_b0);
-    padding: 2px 5px;
-    margin-left: 5px;
-    font-size: 0.625rem;
-    cursor: pointer;
-    border-radius: 6px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
-    transition: background-color .3s, box-shadow .3s;
-    font-family: var(--font_ui);
-}
 
-.tags_button:hover {
-    background-color: rgba(169, 169, 169, .7);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, .2);
-}
 /* end tags */
