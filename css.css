@@ -228,6 +228,7 @@ a.ncll:active {
 
 
 
+
 /* Start Focus states */
 a.ncll:focus-visible,
 .button:focus-visible,
@@ -452,12 +453,12 @@ a.ncll:focus-visible,
 }
 /* end tags */
 
-/* start small inline calendar link treatment */
+/* Inline calendar links (icon + spacing) */
 .cal-links {
     display: inline-flex;
     gap: 8px;
     align-items: center;
-    margin-left: 8px;
+    margin-left: 6px;
 }
 .cal-link {
     display: inline-flex;
@@ -466,7 +467,7 @@ a.ncll:focus-visible,
     font-size: 0.9em;
     text-decoration: none;
 }
-.cal-link .cal-ico {
+.cal-ico {
     display: inline-block;
     width: 14px;
     height: 14px;
@@ -475,7 +476,7 @@ a.ncll:focus-visible,
     position: relative;
     box-sizing: border-box;
 }
-.cal-link .cal-ico::before {
+.cal-ico::before {
     content: "";
     position: absolute;
     left: -2px;
@@ -486,7 +487,7 @@ a.ncll:focus-visible,
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
 }
-.cal-link .cal-ico::after {
+.cal-ico::after {
     content: "";
     position: absolute;
     width: 2px;
@@ -499,4 +500,3 @@ a.ncll:focus-visible,
 .cal-link:hover .cal-ico {
     border-color: var(--color_red);
 }
-/* end small inline calendar link treatment */
