@@ -20,6 +20,7 @@
     --color_border_light: #dddddd;
     --color_subtle: #888888;
     --color_control: #bbbbbb;
+    --color_tag: #bbbbbb;
     --color_border_table: #dededf;
     --color_white: #ffffff;
     --color_black: #000000;
@@ -431,7 +432,7 @@ a.ncll:focus-visible,
 
 .tag-item,
 .tag-item::before {
-    background: var(--color_border);
+    background: var(--color_tag);
 }
 
 .tag-item {
@@ -449,7 +450,7 @@ a.ncll:focus-visible,
     border-bottom-right-radius: 0;
     list-style-type: none;
     font-size: 0.85rem;
-    box-shadow: 1px 1px 8px var(--color_border);
+    box-shadow: 1px 1px 8px var(--color_tag);
 }
 
 .tag-item::before {
@@ -473,7 +474,7 @@ a.ncll:focus-visible,
     width: 5px;
     height: 5px;
     background: var(--color_white);
-    border: 1px solid var(--color_border);
+    border: 1px solid var(--color_tag);
     border-radius: 50%;
 }
 
