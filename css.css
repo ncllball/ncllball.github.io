@@ -322,7 +322,6 @@ a.ncll:focus-visible,
     isolation: isolate;
     min-height: 75px;
     padding-bottom: calc(10px + env(safe-area-inset-bottom));
-    overflow-x: hidden; /* guard against tiny overflows */
 }
 
 .sticky-register-inner {
@@ -332,19 +331,6 @@ a.ncll:focus-visible,
     flex-wrap: wrap;
     gap: 14px;
     justify-content: space-between;
-    min-width: 0; /* allow children to shrink */
-}
-
-/* Let heading and subtext wrap; keep CTA sized-to-content */
-.sticky-register-inner > h4,
-.sticky-register-inner > p {
-    flex: 1 1 280px;
-    min-width: 0;
-}
-
-.sticky-register-cta {
-    flex: 0 0 auto;
-    white-space: nowrap; /* keep button on one line */
 }
 
 .sticky-dismiss-toggle {
@@ -413,8 +399,7 @@ a.ncll:focus-visible,
     background: rgba(255, 255, 255, 0.15);
 }
 
-/* Ease to stacked layout a bit earlier to prevent mid-width overflow */
-@media (max-width:900px) {
+@media (max-width:640px) {
     .sticky-register-inner {
         flex-direction: column;
         align-items: stretch;
@@ -426,6 +411,7 @@ a.ncll:focus-visible,
         text-align: center;
     }
 }
+
 /* end bottom sticky registration */
 
 /* start buttons */
