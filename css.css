@@ -492,7 +492,8 @@ a.ncll:focus-visible,
     margin-left: 8px;
     vertical-align: -0.15em; /* keep line height tight */
 }
-.cal-dropdown > summary {
+.cal-dropdown > summary,
+.cal-dropdown > .cal-trigger {
     list-style: none;
     display: inline-flex;
     align-items: center;
@@ -508,12 +509,14 @@ a.ncll:focus-visible,
     user-select: none;
 }
 .cal-dropdown > summary::-webkit-details-marker { display: none; }
-.cal-dropdown > summary:focus-visible {
+.cal-dropdown > summary:focus-visible,
+.cal-dropdown > .cal-trigger:focus-visible {
     outline: 2px solid var(--color_blue);
     outline-offset: 2px;
     border-radius: 9999px;
 }
-.cal-dropdown[open] > summary {
+.cal-dropdown:focus-within > summary,
+.cal-dropdown:focus-within > .cal-trigger {
     border-color: var(--color_blue);
     box-shadow: 0 0 0 2px rgba(0, 1, 58, 0.05);
 }
@@ -526,7 +529,8 @@ a.ncll:focus-visible,
     margin-left: 2px;
     transition: transform 0.15s ease;
 }
-.cal-dropdown[open] > summary .caret { transform: rotate(180deg); }
+.cal-dropdown:focus-within > summary .caret,
+.cal-dropdown:focus-within > .cal-trigger .caret { transform: rotate(180deg); }
 
 .cal-menu {
     position: absolute;
@@ -539,7 +543,9 @@ a.ncll:focus-visible,
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     padding: 6px;
     z-index: 20;
+    display: none; /* hidden by default for non-details pattern */
 }
+.cal-dropdown:focus-within > .cal-menu { display: block; }
 .cal-menu a {
     display: flex;
     align-items: center;
