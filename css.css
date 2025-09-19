@@ -510,6 +510,36 @@ a.ncll:focus-visible,
     cursor: pointer;
     user-select: none;
 }
+/* Icon-only summary trigger variant (uses event.svg) */
+.cal-dropdown > summary.icon-only {
+    padding: 0;
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 50%;
+    background-color: var(--color_button);
+    background-image: url(images/icons/calendar/event.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% 70%;
+    color: transparent; /* hide text */
+}
+.cal-dropdown > summary.icon-only .caret { display: none; }
+/* Icon-only trigger variant (uses event.svg) */
+.cal-dropdown > .cal-trigger.icon-only {
+    padding: 0; /* remove text padding */
+    width: 1.25em; /* compact, avoid line-height growth */
+    height: 1.25em;
+    border-radius: 50%;
+    background-color: var(--color_button);
+    background-image: url(images/icons/calendar/event.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% 70%;
+    text-indent: -9999px; /* hide text if any */
+    overflow: hidden;
+    vertical-align: -0.15em; /* align with text baseline */
+}
+.cal-dropdown > .cal-trigger.icon-only .caret { display: none; }
 .cal-dropdown > summary::-webkit-details-marker { display: none; }
 .cal-dropdown > summary:focus-visible,
 .cal-dropdown > .cal-trigger:focus-visible {
