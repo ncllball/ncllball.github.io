@@ -297,15 +297,6 @@ a.ncll:focus-visible,
 
 /* start bottom sticky registration */
 
-/* Page-level utility: reserve space when sticky registration bar present */
-.with-sticky-register {
-}
-
-@media (max-width:640px) {
-    .with-sticky-register {
-    }
-}
-
 /* Sticky registration heading override (ensures white text if theme changes) */
 #sticky-register-heading {
     color: var(--color_white) !important;
