@@ -25,8 +25,7 @@
     --color_white: #ffffff;
     --color_black: #000000;
     /* sup positioning tokens */
-    --sup-font-size: 0.75em;
-    --sup-top-offset: -0.4em;
+
     /* Decorative stripe gradient for h2.left::before */
     --stripe-gradient: linear-gradient(135deg, #ffffff 5%, var(--color_red) 5% 25%, #ffffff 25% 55%, var(--color_red) 55% 75%, #ffffff 75%);
     /* font stacks */
