@@ -423,19 +423,6 @@ a.ncll:focus-visible,
 /* start tags */
 
 /* tags */
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.wrapper {
-    margin: 0px;
-    padding: 0px 0px 0px 0px;
-}
-
 
 .tag {
     margin: 0px 0px 0px 0px;
@@ -490,5 +477,24 @@ a.ncll:focus-visible,
     border: 1px solid var(--color_border);
     border-radius: 50%;
 }
+.tags_button {
+    /* end: 11) Timeline */
+    /* 8) Tags (tag pills/buttons) */
+    background-color: rgba(220, 220, 220, .7);
+    color: var(--color_black);
+    border: 1px solid var(--color_gray_b0);
+    padding: 2px 5px;
+    margin-left: 5px;
+    font-size: 0.625rem;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    transition: background-color .3s, box-shadow .3s;
+    font-family: var(--font_ui);
+}
 
+.tags_button:hover {
+    background-color: rgba(169, 169, 169, .7);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .2);
+}
 /* end tags */
