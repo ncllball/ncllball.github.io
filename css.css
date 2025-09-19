@@ -198,21 +198,7 @@ h6 {
     top: -0.5px;
 }
 
-.info-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 12px;
-    height: 12px;
-    border: 1px solid var(--color_red);
-    border-radius: 50%;
-    background-color: white;
-    color: var(--color_red);
-    font-size: 8px;
-    font-weight: bold;
-    margin-right: 4px;
-    vertical-align: middle;
-}
+
 
 /* end global blah blah */
 
@@ -265,7 +251,7 @@ a.ncll:focus-visible,
 }
 
 .footies p {
-    font-size: 0.75rem !important;
+    font-size: 0.78rem !important;
     font-family: var(--font_ui);
     color: var(--color_muted);
     line-height: normal;
@@ -280,6 +266,22 @@ a.ncll:focus-visible,
 
 .footies a:hover {
     text-decoration: underline;
+}
+
+.info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--color_red);
+    border-radius: 50%;
+    background-color: white;
+    color: var(--color_red);
+    font-size: 8px;
+    font-weight: bold;
+    margin-right: 4px;
+    vertical-align: middle;
 }
 
 /* end footies */
