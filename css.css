@@ -226,53 +226,7 @@ a.ncll:active {
     color: var(--color_red) !important;
 }
 
-/* small inline calendar link treatment */
-.cal-links {
-    display: inline-flex;
-    gap: 8px;
-    align-items: center;
-    margin-left: 8px;
-}
-.cal-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 0.9em;
-    text-decoration: none;
-}
-.cal-link .cal-ico {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    border: 2px solid var(--color_blue);
-    border-radius: 2px;
-    position: relative;
-    box-sizing: border-box;
-}
-.cal-link .cal-ico::before {
-    content: "";
-    position: absolute;
-    left: -2px;
-    right: -2px;
-    top: -2px;
-    height: 4px;
-    background: var(--color_red);
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-}
-.cal-link .cal-ico::after {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: var(--color_white);
-    top: -3px;
-    left: 2px;
-    box-shadow: 8px 0 0 var(--color_white);
-}
-.cal-link:hover .cal-ico {
-    border-color: var(--color_red);
-}
+
 
 /* Start Focus states */
 a.ncll:focus-visible,
@@ -496,5 +450,53 @@ a.ncll:focus-visible,
     border: 1px solid var(--color_tag);
     border-radius: 50%;
 }
-
 /* end tags */
+
+/* start small inline calendar link treatment */
+.cal-links {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: 8px;
+}
+.cal-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+.cal-link .cal-ico {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--color_blue);
+    border-radius: 2px;
+    position: relative;
+    box-sizing: border-box;
+}
+.cal-link .cal-ico::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    top: -2px;
+    height: 4px;
+    background: var(--color_red);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.cal-link .cal-ico::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: var(--color_white);
+    top: -3px;
+    left: 2px;
+    box-shadow: 8px 0 0 var(--color_white);
+}
+.cal-link:hover .cal-ico {
+    border-color: var(--color_red);
+}
+/* end small inline calendar link treatment */
