@@ -490,7 +490,6 @@ a.ncll:focus-visible,
     display: inline-block;
     position: relative;
     margin-left: 8px;
-    vertical-align: -0.15em; /* keep line height tight */
 }
 .cal-dropdown > summary,
 .cal-dropdown > .cal-trigger {
@@ -498,7 +497,7 @@ a.ncll:focus-visible,
     display: inline-flex;
     align-items: center;
     gap: 0.4em;
-    font-size: 0.9em;
+    font-size: 0.85em;
     line-height: 1;
     padding: 2px 10px;
     border: 1px solid var(--color_border);
@@ -534,7 +533,6 @@ a.ncll:focus-visible,
 
 .cal-menu {
     position: absolute;
-    right: 0;
     top: calc(100% + 6px);
     min-width: 220px;
     background: var(--color_white);
