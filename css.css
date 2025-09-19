@@ -449,7 +449,7 @@ a.ncll:focus-visible,
     border-bottom-right-radius: 0;
     list-style-type: none;
     font-size: 0.85rem;
-    box-shadow: 1px 1px 8px var(--color_red);
+    box-shadow: 1px 1px 8px var(--color_gray_aaaa);
 }
 
 .tag-item::before {
@@ -460,7 +460,7 @@ a.ncll:focus-visible,
     height: 17.67766953px;
     transform: rotate(45deg);
     transform-origin: top left;
-    border: 1px solid var(--color_red);
+    border: 1px solid var(--color_border);
     border-top: none;
     border-right: none;
 }
@@ -474,7 +474,7 @@ a.ncll:focus-visible,
     width: 5px;
     height: 5px;
     background: var(--color_red);
-    border: 1px solid var(--color_red);
+    border: 1px solid var(--color_border);
     border-radius: 50%;
 }
 
