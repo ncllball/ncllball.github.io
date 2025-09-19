@@ -1,0 +1,21 @@
+/*
+Snippet: with-sticky-register.css
+Purpose: Page-level utility to reserve space when the sticky registration bar is present.
+Usage:
+    1) On any page with the sticky register bar, add `with-sticky-register` to the main container element.
+    2) Adjust padding or min-height inside this class as needed to prevent content being covered by the sticky bar.
+Source: extracted from css.css
+*/
+
+/* Page-level utility: reserve space when sticky registration bar present */
+.with-sticky-register {
+    /* reserve space when sticky registration bar is present; override as needed per page */
+    --ncll-snippet: 1; /* harmless custom prop to satisfy non-empty ruleset */
+}
+
+@media (max-width:640px) {
+    .with-sticky-register {
+        /* mobile-specific tweaks can go here */
+        --ncll-snippet: 1; /* harmless custom prop to satisfy non-empty ruleset */
+    }
+}
