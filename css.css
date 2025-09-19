@@ -298,7 +298,7 @@ a.ncll:focus-visible,
 }
 
 /* Sticky registration heading override (ensures white text if theme changes) */
-#sticky-registration-heading {
+#sticky-register-heading {
     color: var(--color_white) !important;
     text-align: center;
 }
