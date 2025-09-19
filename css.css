@@ -580,8 +580,22 @@ a.ncll:focus-visible,
 /* Icon sizing tweaks inside menu */
 .cal-menu .cal-ico { width: 16px; height: 16px; }
 
-/* Google brand cue */
+/* Google logo */
 .cal-link[data-cal="google"] .cal-ico {
-    border-color: #1a73e8;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: center / contain no-repeat url('/images/icons/calendar/google.svg');
 }
-.cal-link[data-cal="google"]:hover .cal-ico { border-color: #1558b0; }
+.cal-link[data-cal="google"] .cal-ico::before,
+.cal-link[data-cal="google"] .cal-ico::after { content: none; }
+
+/* Apple logo */
+.cal-link[data-cal="apple"] .cal-ico {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: center / contain no-repeat url('/images/icons/calendar/apple.svg');
+}
+.cal-link[data-cal="apple"] .cal-ico::before,
+.cal-link[data-cal="apple"] .cal-ico::after { content: none; }
