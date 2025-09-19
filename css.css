@@ -34,6 +34,8 @@
     --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     --font_sans: "proxima-nova", var(--font_ui);
     --font_heading: var(--font_ui);
+    /* tag font */
+    --font_tag: var(--font_ui), "proxima-nova";
 }
 
 /* start CMS overrides (SportsConnect embeds) */
@@ -419,6 +421,7 @@ a.ncll:focus-visible,
     border-bottom-right-radius: 0;
     list-style-type: none;
     font-size: 0.85rem;
+    font-family: var(--font_tag);
     box-shadow: 1px 1px 8px var(--color_tag);
     background: var(--color_tag);
 
