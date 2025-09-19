@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NCLL//Free February 2025//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:free-feb-2025-5@ncllball.github.io
+DTSTAMP:20250919T120000Z
+DTSTART;TZID=America/Los_Angeles:20250222T180000
+DTEND;TZID=America/Los_Angeles:20250222T190000
+SUMMARY:NCLL Free February – Baseball Session
+LOCATION:Robert Eagle Staff Middle School (turf), Seattle, WA
+DESCRIPTION:League age 10–12 (AAA & Majors). Register: https://www.signupgenius.com/go/70A054FAAAF22A3F85-54499131-2025#/
+END:VEVENT
+END:VCALENDAR
