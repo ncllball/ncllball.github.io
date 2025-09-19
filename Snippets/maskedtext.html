@@ -25,3 +25,60 @@
     <p class="blurred-text">This text is masked using a stronger blur effect.</p>
 </body>
 </html>
+
+
+/* Inline Add-to-Calendar icons (no line-height change) */
+.cal-inline { 
+    display: inline; 
+    margin-left: 8px; 
+    white-space: nowrap;
+}
+.cal-inline a {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-indent: -9999px; /* hide text if present */
+    overflow: hidden;
+    vertical-align: -0.15em; /* nudge to align optically with text */
+    margin-left: 6px;
+}
+.cal-inline a:focus-visible {
+    outline: 2px solid var(--color_blue);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+.cal-inline a:hover { opacity: 0.9; }
+
+.cal-inline a[data-cal="google"] { background-image: url(images/icons/calendar/google.svg); }
+.cal-inline a[data-cal="outlook"] { background-image: url(images/icons/calendar/outlook.svg); }
+.cal-inline a[data-cal="apple"] { background-image: url(images/icons/calendar/apple.svg); }
+.cal-inline a[data-cal="yahoo"] { background-image: url(images/icons/calendar/yahoo.svg); }
+.cal-inline a[data-cal="m365"] { background-image: url(images/icons/calendar/ms365.svg); }
+.cal-inline a[data-cal="teams"] { background-image: url(images/icons/calendar/teams.svg); }
+.cal-inline a[data-cal="ics"] { background-image: url(images/icons/calendar/ics.svg); }
+
+/* Calendar dropdown (CSS-only, compact) */
+.cal-dropdown {
+    display: inline-block;
+    position: relative;
+    margin-left: 8px;
+}
+.cal-dropdown > summary,
+.cal-dropdown > .cal-trigger {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 0.85em;
+    line-height: 1;
+    padding: 2px 10px;
+    border: 1px solid var(--color_border);
+    border-radius: 9999px;
+    background: var(--color_button);
+    color: var(--color_text);
+    cursor: pointer;
+    user-select: none;
+}
