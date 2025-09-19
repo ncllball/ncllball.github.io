@@ -533,3 +533,4 @@ a.ncll:focus-visible,
 .cal-menu a[data-cal="m365"]::before { background-image: url(images/icons/calendar/ms365.svg); }
 .cal-menu a[data-cal="teams"]::before { background-image: url(images/icons/calendar/teams.svg); }
 .cal-menu a[data-cal="ics"]::before { background-image: url(images/icons/calendar/ics.svg); }
+
