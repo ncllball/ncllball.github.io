@@ -299,12 +299,10 @@ a.ncll:focus-visible,
 
 /* Page-level utility: reserve space when sticky registration bar present */
 .with-sticky-register {
-    padding-bottom: 100px;
 }
 
 @media (max-width:640px) {
     .with-sticky-register {
-        padding-bottom: 140px;
     }
 }
 
@@ -312,6 +310,7 @@ a.ncll:focus-visible,
 #sticky-register-heading {
     color: var(--color_white) !important;
     text-align: center;
+    margin-right: 43px;
 }
 
 /* Sticky registration bar (CSS-only dismiss variant) */
@@ -345,7 +344,7 @@ a.ncll:focus-visible,
 }
 
 .sticky-register-title {
-    font-size: 1rem;
+    font-size: rem;
     font-weight: 600;
     margin: 0;
     line-height: 1.3;
