@@ -252,3 +252,34 @@ a.ncll:focus-visible,
 }
 
 /* end: 6) Links & focus */
+
+/* start footies */
+.footies {
+    font-size: 0.8125rem;
+    font-family: var(--font_ui);
+    color: var(--color_muted);
+    margin-top: 10px;
+    border-top: 1px solid var(--color_border_light);
+    padding: 5px 0px 5px 0px;
+    line-height: normal;
+}
+
+.footies p {
+    font-size: 0.75rem !important;
+    font-family: var(--font_ui);
+    color: var(--color_muted);
+    line-height: normal;
+    margin: 0px;
+    padding: 3px 10px 3px 5px !important;
+}
+
+.footies a {
+    color: var(--color_link);
+    text-decoration: none;
+}
+
+.footies a:hover {
+    text-decoration: underline;
+}
+
+/* end footies */
