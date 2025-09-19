@@ -24,6 +24,11 @@
             padding: 8px 10px;
             border-bottom: 1px solid var(--color_border_light);
             vertical-align: top;
+            font-size: 1em;
+            line-height: 1.4;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
         }
 
         .ncll-table__row--head .ncll-table__cell--head {
@@ -50,6 +55,19 @@
         .ncll-table--compact .ncll-table__cell {
             padding: 6px 8px;
             font-size: 0.95em;
+        }
+
+        /* Extra compact variant for mobile or dense layouts */
+        .ncll-table--extra-compact .ncll-table__cell {
+            padding: 4px 6px;
+            font-size: 0.9em;
+            line-height: 1.3;
+        }
+
+        /* Compact header styling */
+        .ncll-table--compact .ncll-table__row--head .ncll-table__cell--head {
+            padding: 5px 8px;
+            font-size: 0.9em;
         }
 
         /* Responsive stacked variant */
@@ -118,7 +136,7 @@
 <main id="content" role="main">
 
 <section>
-    <h4>Baseball (Boys and Girls)</h4>
+    <h4 class="left">Baseball (Boys and Girls)</h4>
     <div class="ncll-table ncll-table--baseball ncll-table--compact ncll-table--stack">
         <table class="ncll-table__table">
             <thead>
@@ -154,7 +172,7 @@
     </section>
 
 <section class="margin-top-30">
-    <h4>Softball (Girls)</h4>
+    <h4 class="left">Softball (Girls)</h4>
     <div class="ncll-table ncll-table--softball ncll-table--compact ncll-table--stack">
         <table class="ncll-table__table">
             <thead>
