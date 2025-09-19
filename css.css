@@ -336,21 +336,6 @@ a.ncll:focus-visible,
     justify-content: space-between;
 }
 
-.sticky-dismiss-toggle {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    border: 0;
-}
-
-.sticky-dismiss-toggle:checked+.sticky-register__inner {
-    display: block;
-}
-
 .sticky-register-title {
     font-size: 1rem;
     font-weight: 600;
@@ -391,20 +376,6 @@ a.ncll:focus-visible,
 
 .sticky-register-inner p {
     padding: 0;
-}
-
-.sticky-register-dismiss {
-    cursor: pointer;
-    font-size: 1.1rem;
-    line-height: 1;
-    padding: 6px 10px;
-    color: var(--color_white);
-    border-radius: 4px;
-}
-
-.sticky-register-dismiss:hover,
-.sticky-register-dismiss:focus-visible {
-    background: rgba(255, 255, 255, 0.15);
 }
 
 @media (max-width:640px) {
