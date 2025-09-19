@@ -7,40 +7,146 @@
     <meta name="description" content="2025 NCLL (North Central Little League, Seattle) baseball and softball registration fees, what they include, sibling discounts, and financial assistance." />
     <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
+    <style>
+        /* Tables (BEM): ncll-table — local to this page while iterating */
+        .ncll-table {
+            margin: 6px 0 22px;
+        }
+
+        .ncll-table__table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            font-family: var(--font_ui);
+        }
+
+        .ncll-table__cell {
+            padding: 8px 10px;
+            border-bottom: 1px solid var(--color_border_light);
+            vertical-align: top;
+        }
+
+        .ncll-table__row--head .ncll-table__cell--head {
+            text-align: left;
+            font-weight: 600;
+            color: var(--color_black);
+            border-bottom: 2px solid var(--color_red);
+        }
+
+        /* Right-align the fee column */
+        .ncll-table__row > .ncll-table__cell:nth-child(2),
+        .ncll-table__row--head > .ncll-table__cell--head:nth-child(2) {
+            text-align: right;
+            white-space: nowrap;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* Subtle zebra striping for readability */
+        .ncll-table__body .ncll-table__row:nth-child(odd) .ncll-table__cell {
+            background-color: #fafafa;
+        }
+
+        /* Compact variant */
+        .ncll-table--compact .ncll-table__cell {
+            padding: 6px 8px;
+            font-size: 0.95em;
+        }
+
+        /* Responsive stacked variant */
+        @media (max-width: 600px) {
+            /* Hide header but keep accessible */
+            .ncll-table--stack thead {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                margin: -1px;
+                border: 0;
+                padding: 0;
+                white-space: nowrap;
+                clip-path: inset(50%);
+                clip: rect(0 0 0 0);
+                overflow: hidden;
+            }
+
+            .ncll-table--stack .ncll-table__row {
+                display: block;
+                border: 1px solid var(--color_border_light);
+                border-radius: 8px;
+                margin-bottom: 10px;
+                overflow: hidden;
+            }
+
+            .ncll-table--stack .ncll-table__cell {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                gap: 12px;
+                padding: 10px 12px;
+                border-bottom: 1px solid var(--color_border_light);
+                background: none; /* remove zebra in stacked mode */
+            }
+
+            .ncll-table--stack .ncll-table__cell:last-child {
+                border-bottom: 0;
+            }
+
+            .ncll-table--stack .ncll-table__cell::before {
+                content: attr(data-label);
+                font-weight: 600;
+                color: var(--color_black);
+                opacity: 0.8;
+                margin-right: 10px;
+            }
+
+            /* Keep numbers tidy on fee column */
+            .ncll-table--stack .ncll-table__row > .ncll-table__cell:nth-child(2) {
+                font-variant-numeric: tabular-nums;
+            }
+
+            /* Remove table borders/gaps specific to wide layout */
+            .ncll-table--stack .ncll-table__table {
+                border-collapse: separate;
+                border-spacing: 0;
+            }
+            .ncll-table--stack .ncll-table__body .ncll-table__row:nth-child(odd) .ncll-table__cell {
+                background: none;
+            }
+        }
+    </style>
 </head>
 <body>
 <main id="content" role="main">
 
 <section>
-    <h4 class="left">Baseball (Boys and Girls)</h4>
-    <div class="table-at-a-glance" role="region" tabindex="0">
-        <table>
+    <h4>Baseball (Boys and Girls)</h4>
+    <div class="ncll-table ncll-table--baseball ncll-table--compact ncll-table--stack">
+        <table class="ncll-table__table">
             <thead>
-                <tr>
-                    <th>Division</th>
-                    <th>2025 Fee</th>
+                <tr class="ncll-table__row ncll-table__row--head">
+                    <th class="ncll-table__cell ncll-table__cell--head">Division</th>
+                    <th class="ncll-table__cell ncll-table__cell--head">2025 Fee</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Tee-ball (5-6)</td>
-                    <td>$129</td>
+            <tbody class="ncll-table__body">
+                <tr class="ncll-table__row">
+                    <td class="ncll-table__cell" data-label="Division">Tee-ball (5-6)</td>
+                    <td class="ncll-table__cell" data-label="2025 Fee">$129</td>
                 </tr>
-                <tr>
-                    <td>Kindy Coach Pitch (6-7)</td>
-                    <td>$139</td>
+                <tr class="ncll-table__row">
+                    <td class="ncll-table__cell" data-label="Division">Kindy Coach Pitch (6-7)</td>
+                    <td class="ncll-table__cell" data-label="2025 Fee">$139</td>
                 </tr>
-                <tr>
-                    <td>A/AA (7-9)</td>
-                    <td>$173</td>
+                <tr class="ncll-table__row">
+                    <td class="ncll-table__cell" data-label="Division">A/AA (7-9)</td>
+                    <td class="ncll-table__cell" data-label="2025 Fee">$173</td>
                 </tr>
-                <tr>
-                    <td>AAA/Major (10-12)</td>
-                    <td>$236</td>
+                <tr class="ncll-table__row">
+                    <td class="ncll-table__cell" data-label="Division">AAA/Major (10-12)</td>
+                    <td class="ncll-table__cell" data-label="2025 Fee">$236</td>
                 </tr>
-                <tr>
-                    <td>Junior/Senior (13-16)</td>
-                    <td>$259</td>
+                <tr class="ncll-table__row">
+                    <td class="ncll-table__cell" data-label="Division">Junior/Senior (13-16)</td>
+                    <td class="ncll-table__cell" data-label="2025 Fee">$259</td>
                 </tr>
             </tbody>
         </table>
@@ -48,27 +154,27 @@
     </section>
 
 <section class="margin-top-30">
-    <h4 class="left">Softball (Girls)</h4>
-    <div class="table-at-a-glance" role="region" tabindex="0">
-        <table>
+    <h4>Softball (Girls)</h4>
+    <div class="ncll-table ncll-table--softball ncll-table--compact ncll-table--stack">
+        <table class="ncll-table__table">
             <thead>
-                <tr>
-                    <th>Division</th>
-                    <th>2025 Fee</th>
+                <tr class="ncll-table__row ncll-table__row--head">
+                    <th class="ncll-table__cell ncll-table__cell--head">Division</th>
+                    <th class="ncll-table__cell ncll-table__cell--head">2025 Fee</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>A/AA (6-9)</td>
-                    <td>$173</td>
+            <tbody class="ncll-table__body">
+                <tr class="ncll-table__row">
+                    <td class="ncll-table__cell" data-label="Division">A/AA (6-9)</td>
+                    <td class="ncll-table__cell" data-label="2025 Fee">$173</td>
                 </tr>
-                <tr>
-                    <td>AAA/Major (9-12)</td>
-                    <td>$236</td>
+                <tr class="ncll-table__row">
+                    <td class="ncll-table__cell" data-label="Division">AAA/Major (9-12)</td>
+                    <td class="ncll-table__cell" data-label="2025 Fee">$236</td>
                 </tr>
-                <tr>
-                    <td>Juniors/Seniors (12-16)</td>
-                    <td>$263</td>
+                <tr class="ncll-table__row">
+                    <td class="ncll-table__cell" data-label="Division">Juniors/Seniors (12-16)</td>
+                    <td class="ncll-table__cell" data-label="2025 Fee">$263</td>
                 </tr>
             </tbody>
         </table>
