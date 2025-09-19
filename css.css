@@ -142,7 +142,6 @@ h2.left::before {
     width: 100%;
     height: 7px;
     background-repeat: repeat;
-    background-size: cover;
     margin-top: 15px;
     text-align: left;
     margin-bottom: 20px;
