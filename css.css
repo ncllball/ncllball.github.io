@@ -500,3 +500,23 @@ a.ncll:focus-visible,
 .cal-link:hover .cal-ico {
     border-color: var(--color_red);
 }
+
+/* Outlook-specific icon (scoped via data attribute) */
+.cal-link[data-cal="outlook"] .cal-ico {
+    width: 14px;
+    height: 14px;
+    border: none; /* remove generic calendar border */
+    background: center / contain no-repeat url('/images/icons/calendar/outlook.svg');
+}
+.cal-link[data-cal="outlook"] .cal-ico::before,
+.cal-link[data-cal="outlook"] .cal-ico::after {
+    content: none; /* hide decorative strips/dots from base calendar icon */
+}
+
+/* Apple-specific variant: keep generic calendar shape but tint red header darker */
+.cal-link[data-cal="apple"] .cal-ico {
+    border-color: var(--color_darkgray);
+}
+.cal-link[data-cal="apple"] .cal-ico::before {
+    background: #b00020; /* deeper red header strip */
+}
