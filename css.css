@@ -484,3 +484,86 @@ a.ncll:focus-visible,
 .cal-inline a[data-cal="outlook"] { background-image: url('/images/icons/calendar/outlook.svg'); }
 .cal-inline a[data-cal="apple"] { background-image: url('/images/icons/calendar/apple.svg'); }
 .cal-inline a[data-cal="ics"] { background-image: url('/images/icons/calendar/ics.svg'); }
+
+/* Calendar dropdown (CSS-only, compact) */
+.cal-dropdown {
+    display: inline-block;
+    position: relative;
+    margin-left: 8px;
+    vertical-align: -0.15em; /* keep line height tight */
+}
+.cal-dropdown > summary {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 0.9em;
+    line-height: 1;
+    padding: 2px 10px;
+    border: 1px solid var(--color_border);
+    border-radius: 9999px;
+    background: var(--color_button);
+    color: var(--color_text);
+    cursor: pointer;
+    user-select: none;
+}
+.cal-dropdown > summary::-webkit-details-marker { display: none; }
+.cal-dropdown > summary:focus-visible {
+    outline: 2px solid var(--color_blue);
+    outline-offset: 2px;
+    border-radius: 9999px;
+}
+.cal-dropdown[open] > summary {
+    border-color: var(--color_blue);
+    box-shadow: 0 0 0 2px rgba(0, 1, 58, 0.05);
+}
+.cal-dropdown > summary .caret {
+    width: 0; height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid var(--color_text);
+    display: inline-block;
+    margin-left: 2px;
+    transition: transform 0.15s ease;
+}
+.cal-dropdown[open] > summary .caret { transform: rotate(180deg); }
+
+.cal-menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    min-width: 220px;
+    background: var(--color_white);
+    border: 1px solid var(--color_border_light);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    padding: 6px;
+    z-index: 20;
+}
+.cal-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: var(--color_text);
+    border-radius: 6px;
+    font-size: 0.95em;
+}
+.cal-menu a:hover { background: #f7f7f7; }
+.cal-menu a:focus-visible {
+    outline: 2px solid var(--color_blue);
+    outline-offset: 2px;
+}
+.cal-menu a::before {
+    content: "";
+    flex: 0 0 18px;
+    width: 18px; height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.cal-menu a[data-cal="google"]::before { background-image: url('/images/icons/calendar/google.svg'); }
+.cal-menu a[data-cal="outlook"]::before { background-image: url('/images/icons/calendar/outlook.svg'); }
+.cal-menu a[data-cal="apple"]::before { background-image: url('/images/icons/calendar/apple.svg'); }
+.cal-menu a[data-cal="ics"]::before { background-image: url('/images/icons/calendar/ics.svg'); }
