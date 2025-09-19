@@ -423,8 +423,6 @@ a.ncll:focus-visible,
 
 /* start tags */
 
-/* tags */
-
 .tag {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -451,6 +449,8 @@ a.ncll:focus-visible,
     list-style-type: none;
     font-size: 0.85rem;
     box-shadow: 1px 1px 8px var(--color_tag);
+    background: var(--color_tag);
+
 }
 
 .tag-item::before {
@@ -463,6 +463,8 @@ a.ncll:focus-visible,
     transform-origin: top left;
     border-top: none;
     border-right: none;
+    background: var(--color_tag);
+
 }
 
 .tag-item::after {
