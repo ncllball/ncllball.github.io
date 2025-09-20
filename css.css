@@ -27,6 +27,8 @@
     /* sup positioning tokens */
     /* calendar icon sizing */
     --cal-icon-size: 1.3em;
+    /* info icon sizing */
+    --info-icon-size: 12px;
 
     /* Decorative stripe gradient for h2.left::before */
     --stripe-gradient: linear-gradient(135deg, #ffffff 5%, var(--color_red) 5% 25%, #ffffff 25% 55%, var(--color_red) 55% 75%, #ffffff 75%);
@@ -285,8 +287,8 @@ a.ncll:focus-visible,
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 12px;
-    height: 12px;
+    width: var(--info-icon-size);
+    height: var(--info-icon-size);
     border: 1px solid var(--color_red);
     border-radius: 50%;
     background-color: white;
@@ -295,6 +297,19 @@ a.ncll:focus-visible,
     font-weight: bold;
     margin-right: 2px;
     vertical-align: middle;
+    overflow: hidden;
+}
+
+.info-icon--plain {
+    border: 0;
+    background: transparent;
+}
+
+/* Ensure inline SVG icons scale to the badge size */
+.info-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 /* end footies */
