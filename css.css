@@ -292,8 +292,6 @@ a.ncll:focus-visible,
     color: var(--color_red);
     font-size: 8px;
     font-weight: bold;
-    margin-right: 4px;
-    vertical-align: middle;
     overflow: hidden;
 }
 
