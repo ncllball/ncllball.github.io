@@ -293,6 +293,7 @@ a.ncll:focus-visible,
     font-size: 8px;
     font-weight: bold;
     overflow: hidden;
+    margin-right: 2px;
 }
 
 .info-icon--framed {
