@@ -547,3 +547,56 @@ a.ncll:focus-visible,
 .cal-menu a[data-cal="ics"]::before { background-image: url(images/icons/calendar/ics.svg); }
 
 /* end calendar dropdown */
+
+/* Block: Base table component */
+.ncll-table {
+margin: 6px 0 22px;
+}
+
+.ncll-table__table {
+width: 100%;
+border-collapse: collapse;
+border-spacing: 0;
+font-family: var(--font_ui);
+}
+
+/* Elements: Parts of the table */
+.ncll-table__cell {
+padding: 8px 10px;
+border-bottom: 1px solid var(--color_border_light);
+}
+
+.ncll-table__cell--head {
+text-align: left;
+font-weight: 600;
+color: var(--color_black);
+border-bottom: 2px solid var(--color_red);
+}
+
+.ncll-table__row {
+padding: inherit;
+}
+
+.ncll-table__body {
+padding: inherit;
+}
+
+/* Modifiers: Variations of components */
+.ncll-table--baseball {
+padding: inherit;
+}
+
+.ncll-table--softball {
+padding: inherit;
+}
+
+/* Utility: Specific layout needs */
+.ncll-table__cell:nth-child(2) {
+text-align: center;
+white-space: nowrap;
+font-variant-numeric: tabular-nums;
+}
+
+.ncll-table__body .ncll-table__row:nth-child(odd) .ncll-table__cell {
+background-color: #fafafa;
+}
