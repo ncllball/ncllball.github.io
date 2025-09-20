@@ -289,20 +289,18 @@ a.ncll:focus-visible,
     justify-content: center;
     width: var(--info-icon-size);
     height: var(--info-icon-size);
-    border: 1px solid var(--color_red);
-    border-radius: 50%;
-    background-color: white;
     color: var(--color_red);
     font-size: 8px;
     font-weight: bold;
-    margin-right: 22px;
+    margin-right: 4px;
     vertical-align: middle;
     overflow: hidden;
 }
 
-.info-icon--plain {
-    border: 0;
-    background: transparent;
+.info-icon--framed {
+    border: 1px solid var(--color_red);
+    border-radius: 50%;
+    background-color: white;
 }
 
 /* Ensure inline SVG icons scale to the badge size */
