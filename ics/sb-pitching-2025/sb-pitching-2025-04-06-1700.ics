@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NCLL//SB Pitching 2025//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sb-pitching-2025-20250406-1700@ncllball.github.io
+DTSTAMP:20250101T000000Z
+DTSTART;TZID=America/Los_Angeles:20250406T170000
+DTEND;TZID=America/Los_Angeles:20250406T180000
+SUMMARY:NCLL In-Season Softball Pitching – Session
+LOCATION:Lower Woodland Park (near Field 5 cages), Seattle, WA
+DESCRIPTION:AA and up. Register: https://registration.bluesombrero.com/83437/select-registration-type
+END:VEVENT
+END:VCALENDAR
