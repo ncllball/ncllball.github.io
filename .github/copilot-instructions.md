@@ -35,6 +35,17 @@ This is the North Central Little League (Seattle, WA) website - a comprehensive 
 - **Superscript dates**: Use `<super>` tags for ordinal dates (1st, 2nd, etc.)
 - **Section organization**: Each major content area has clear h2.left headings
 - **Email obfuscation**: Contact emails are entity-encoded for spam protection
+- **Punctuation normalization (site-wide)**: For short, single-line items, omit trailing periods:
+	- List items (`<li>…</li>`) should not end with a period unless the item is a full sentence or contains other sentence-ending punctuation.
+	- Footnotes (`<section class="footies">` paragraphs) should not end with a period if they are short, one-sentence notes; keep periods if multiple sentences are present.
+	- Never change ellipses (`…` or `...`) or sentences containing URLs, `?`, or `!`.
+
+	To enforce consistently across the site, use the helper script:
+
+	- Dry run: `node scripts/enforce-punctuation.js`
+	- Apply changes: `node scripts/enforce-punctuation.js --write`
+	- Limit to a path: `node scripts/enforce-punctuation.js --path="2025 Season"`
+	- Verbose logging: add `--verbose`
 
 ### File Naming
 - **Lowercase with hyphens**: `home-run-derby.html`, `background-check.html`
