@@ -600,3 +600,26 @@ font-variant-numeric: tabular-nums;
 .ncll-table__body .ncll-table__row:nth-child(odd) .ncll-table__cell {
 background-color: #fafafa;
 }
+
+/* ================= Right-pane (CMS) helpers ================= */
+/* These styles are intentionally light-touch and only apply when a page
+   opts in via <body class="cms-right"> */
+
+/* Constrain common content widths inside right pane */
+body.cms-right img,
+body.cms-right table,
+body.cms-right .ncll-table__table,
+body.cms-right .button,
+body.cms-right .gainsboro-button {
+    max-width: 100%;
+}
+
+/* Slightly tighter vertical rhythm for headings inside narrow column */
+body.cms-right h2.left { margin-bottom: 12px; }
+body.cms-right h3 { margin: 10px 0; }
+body.cms-right h4 { margin: 8px 0; }
+
+/* Utilities to control visibility specifically in right pane context */
+.hide-on-right { display: none !important; }
+body:not(.cms-right) .only-on-right { display: none !important; }
+/* =============== End Right-pane (CMS) helpers =============== */
