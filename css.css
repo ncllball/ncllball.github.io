@@ -549,40 +549,4 @@ a.ncll:focus-visible,
 .cal-menu a[data-cal="teams"]::before { background-image: url(images/icons/calendar/teams.svg); }
 .cal-menu a[data-cal="ics"]::before { background-image: url(images/icons/calendar/ics.svg); }
 
-/* Tables (BEM): ncll-table */
-.ncll-table {
-    margin: 6px 0 22px;
-}
-
-.ncll-table__table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    font-family: var(--font_ui);
-}
-
-.ncll-table__cell {
-    padding: 8px 10px;
-    border-bottom: 1px solid var(--color_border_light);
-    vertical-align: top;
-}
-
-.ncll-table__row--head .ncll-table__cell--head {
-    text-align: left;
-    font-weight: 600;
-    color: var(--color_black);
-    border-bottom: 2px solid var(--color_border);
-}
-
-/* Right-align the fee column */
-.ncll-table__row > .ncll-table__cell:nth-child(2),
-.ncll-table__row--head > .ncll-table__cell--head:nth-child(2) {
-    text-align: right;
-    white-space: nowrap;
-    font-variant-numeric: tabular-nums;
-}
-
-/* Subtle zebra striping for readability */
-.ncll-table__body .ncll-table__row:nth-child(odd) .ncll-table__cell {
-    background-color: #fafafa;
-}
+/* end calendar dropdown */
