@@ -71,27 +71,33 @@
 
           <section>
                 <h2 class="left" id="dates-times">Dates &amp; Times</h2>
-                <p>
-                     <time datetime="2025-05-18">Sunday, May 18, 2025</time><span class="at">@</span><time datetime="2025-05-18T12:00-07:00">12:00 PM</time>
-                     - <time datetime="2025-05-18T15:00-07:00">3:00 PM</time>
-                </p>
-                <div class="cal-dropdown">
-                     <div class="cal-trigger icon-only" aria-haspopup="menu" aria-expanded="false" aria-label="Add to calendar">Add to calendar</div>
-                     <div class="cal-menu" role="menu" aria-label="Add to Calendar">
-                          <a role="menuitem" data-cal="google" target="_blank" rel="noopener"
-                              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Lincoln%20HS%20Little%20League%20Baseball%20Camp&dates=20250518T120000/20250518T150000&ctz=America/Los_Angeles&details=Station-based%20skills%20with%20LHS%20coaches.%20Ages%208%E2%80%9314.%20Register%3A%20https%3A%2F%2Fmy.cheddarup.com%2Fc%2Flhs-ptsa-baseball&location=Lower%20Woodland%20Field%20%231%2C%205201%20Green%20Lake%20Way%20N%2C%20Seattle%2C%20WA%2098103">Google Calendar</a>
-                          <a role="menuitem" data-cal="outlook" target="_blank" rel="noopener"
-                              href="https://outlook.live.com/calendar/0/deeplink/compose?allday=false&subject=Lincoln%20HS%20Little%20League%20Baseball%20Camp&startdt=2025-05-18T12:00:00&enddt=2025-05-18T15:00:00&body=Station-based%20skills%20with%20LHS%20coaches.%20Ages%208%E2%80%9314.%20Register%3A%20https%3A%2F%2Fmy.cheddarup.com%2Fc%2Flhs-ptsa-baseball&location=Lower%20Woodland%20Field%20%231%2C%205201%20Green%20Lake%20Way%20N%2C%20Seattle%2C%20WA%2098103&path=/calendar/action/compose">Outlook.com</a>
-                          <a role="menuitem" data-cal="m365" target="_blank" rel="noopener"
-                              href="https://outlook.office.com/calendar/0/deeplink/compose?allday=false&subject=Lincoln%20HS%20Little%20League%20Baseball%20Camp&startdt=2025-05-18T12:00:00&enddt=2025-05-18T15:00:00&body=Station-based%20skills%20with%20LHS%20coaches.%20Ages%208%E2%80%9314.%20Register%3A%20https%3A%2F%2Fmy.cheddarup.com%2Fc%2Flhs-ptsa-baseball&location=Lower%20Woodland%20Field%20%231%2C%205201%20Green%20Lake%20Way%20N%2C%20Seattle%2C%20WA%2098103&path=/calendar/action/compose">Microsoft 365</a>
-                          <a role="menuitem" data-cal="teams" target="_blank" rel="noopener"
-                              href="https://outlook.office.com/calendar/0/deeplink/compose?allday=false&subject=Lincoln%20HS%20Little%20League%20Baseball%20Camp&startdt=2025-05-18T12:00:00&enddt=2025-05-18T15:00:00&body=Station-based%20skills%20with%20LHS%20coaches.%20Ages%208%E2%80%9314.&location=Lower%20Woodland%20Field%20%231%2C%205201%20Green%20Lake%20Way%20N%2C%20Seattle%2C%20WA%2098103&path=/calendar/action/compose">Teams</a>
-                          <a role="menuitem" data-cal="yahoo" target="_blank" rel="noopener"
-                              href="https://calendar.yahoo.com/?v=60&view=d&type=20&title=Lincoln%20HS%20Little%20League%20Baseball%20Camp&st=20250518T190000Z&et=20250518T220000Z&desc=Station-based%20skills%20with%20LHS%20coaches.%20Ages%208%E2%80%9314.%20Register%3A%20https%3A%2F%2Fmy.cheddarup.com%2Fc%2Flhs-ptsa-baseball&in_loc=Lower%20Woodland%20Field%20%231%2C%205201%20Green%20Lake%20Way%20N%2C%20Seattle%2C%20WA%2098103">Yahoo</a>
-                          <a role="menuitem" data-cal="apple" href="/ics/lhs-camp-2025-05-18-1200.ics">Apple Calendar</a>
-                          <a role="menuitem" data-cal="ics" href="/ics/lhs-camp-2025-05-18-1200.ics">Download .ics</a>
-                     </div>
-                </div>
+                <ul class="schedule" data-timezone="America/Los_Angeles" data-session-duration-min="180" data-session-count="1">
+                    <li data-date="2025-05-18">
+                        <time datetime="2025-05-18">Sunday, May 18, 2025</time>
+                        <span class="at" aria-hidden="true">@</span>
+                        <time datetime="2025-05-18T12:00-07:00" data-date="2025-05-18" data-start="12:00" data-end="15:00" data-session-index="1">12:00 PM</time>
+                        &ndash; <time datetime="2025-05-18T15:00-07:00">3:00 PM</time>
+
+                        <div class="cal-dropdown">
+                            <div class="cal-trigger icon-only" tabindex="0" role="button" aria-haspopup="menu" aria-label="Add this session to your calendar"></div>
+
+                            <div class="cal-menu" role="menu" aria-label="Calendar services">
+                                <a class="ncll" role="menuitem" data-cal="google" target="_blank" rel="noopener noreferrer"
+                                    href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Lincoln%20HS%20Little%20League%20Baseball%20Camp&dates=20250518T120000/20250518T150000&ctz=America/Los_Angeles&details=Station-based%20skills%20with%20LHS%20coaches.%20Ages%208%E2%80%9314.%20Register%3A%20https%3A%2F%2Fmy.cheddarup.com%2Fc%2Flhs-ptsa-baseball&location=Lower%20Woodland%20Field%20%231%2C%205201%20Green%20Lake%20Way%20N%2C%20Seattle%2C%20WA%2098103">Google Calendar</a>
+                                <a class="ncll" role="menuitem" data-cal="outlook" target="_blank" rel="noopener noreferrer"
+                                    href="https://outlook.live.com/calendar/0/deeplink/compose?allday=false&subject=Lincoln%20HS%20Little%20League%20Baseball%20Camp&startdt=2025-05-18T12:00:00&enddt=2025-05-18T15:00:00&body=Station-based%20skills%20with%20LHS%20coaches.%20Ages%208%E2%80%9314.%20Register%3A%20https%3A%2F%2Fmy.cheddarup.com%2Fc%2Flhs-ptsa-baseball&location=Lower%20Woodland%20Field%20%231%2C%205201%20Green%20Lake%20Way%20N%2C%20Seattle%2C%20WA%2098103&path=/calendar/action/compose">Outlook.com</a>
+                                <a class="ncll" role="menuitem" data-cal="m365" target="_blank" rel="noopener noreferrer"
+                                    href="https://outlook.office.com/calendar/0/deeplink/compose?allday=false&subject=Lincoln%20HS%20Little%20League%20Baseball%20Camp&startdt=2025-05-18T12:00:00&enddt=2025-05-18T15:00:00&body=Station-based%20skills%20with%20LHS%20coaches.%20Ages%208%E2%80%9314.%20Register%3A%20https%3A%2F%2Fmy.cheddarup.com%2Fc%2Flhs-ptsa-baseball&location=Lower%20Woodland%20Field%20%231%2C%205201%20Green%20Lake%20Way%20N%2C%20Seattle%2C%20WA%2098103&path=/calendar/action/compose">Microsoft 365</a>
+                                <a class="ncll" role="menuitem" data-cal="teams" target="_blank" rel="noopener noreferrer"
+                                    href="https://outlook.office.com/calendar/0/deeplink/compose?allday=false&subject=Lincoln%20HS%20Little%20League%20Baseball%20Camp&startdt=2025-05-18T12:00:00&enddt=2025-05-18T15:00:00&body=Station-based%20skills%20with%20LHS%20coaches.%20Ages%208%E2%80%9314.&location=Lower%20Woodland%20Field%20%231%2C%205201%20Green%20Lake%20Way%20N%2C%20Seattle%2C%20WA%2098103&path=/calendar/action/compose">Teams</a>
+                                <a class="ncll" role="menuitem" data-cal="yahoo" target="_blank" rel="noopener noreferrer"
+                                    href="https://calendar.yahoo.com/?v=60&view=d&type=20&title=Lincoln%20HS%20Little%20League%20Baseball%20Camp&st=20250518T190000Z&et=20250518T220000Z&desc=Station-based%20skills%20with%20LHS%20coaches.%20Ages%208%E2%80%9314.%20Register%3A%20https%3A%2F%2Fmy.cheddarup.com%2Fc%2Flhs-ptsa-baseball&in_loc=Lower%20Woodland%20Field%20%231%2C%205201%20Green%20Lake%20Way%20N%2C%20Seattle%2C%20WA%2098103">Yahoo</a>
+                                <a class="ncll" role="menuitem" data-cal="apple" target="_blank" rel="noopener noreferrer" href="/ics/lhs-camp-2025-05-18-1200.ics">Apple Calendar</a>
+                                <a class="ncll" role="menuitem" data-cal="ics" target="_blank" rel="noopener noreferrer" href="/ics/lhs-camp-2025-05-18-1200.ics">Download .ics</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
           </section>
         <section class="footies">
             <p><span class="info-icon" aria-hidden="true"><svg viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8,5.19a1,1,0,0,0,1-1,.94.94,0,0,0-.23-.68,1,1,0,0,0-1.39-.06,7.75,7.75,0,0,1-1.18.86,4.52,4.52,0,0,1-.8.38,4.71,4.71,0,0,1,.11-.84,7.83,7.83,0,0,1,.42-1.43,1,1,0,0,0-1.29-1.3,1,1,0,0,0-.51,1.3,6.54,6.54,0,0,1,.43,1.43,5.16,5.16,0,0,1,.11.88,5,5,0,0,1-.81-.38,7.83,7.83,0,0,1-1.18-.9,1,1,0,0,0-.75-.26,1,1,0,0,0,.17,2,7,7,0,0,1,1.45,0,5,5,0,0,1,.87.19A4,4,0,0,1,3.79,6a6.28,6.28,0,0,1-1.19.85,1,1,0,0,0-.49.62,1,1,0,0,0,.51,1.32,1,1,0,0,0,1.32-.51A.89.89,0,0,0,4,8a6.58,6.58,0,0,1,.52-1.36A4.79,4.79,0,0,1,5,5.89a3.59,3.59,0,0,1,.49.79A6.22,6.22,0,0,1,6,8a1,1,0,0,0,.49.62,1,1,0,0,0,.94-1.73,7.53,7.53,0,0,1-1.19-.84,7.36,7.36,0,0,1-.63-.62,5.42,5.42,0,0,1,.87-.19A7,7,0,0,1,8,5.19Z"></path></svg></span>Check-in opens at 11:40 AM. Please arrive a few minutes early to get situated</p>
