@@ -311,6 +311,12 @@ a.ncll:focus-visible,
 
 /* end footies */
 
+/* Inline date/time + calendar row (matches list item sizing) */
+.cal-inline {
+    font-size: 1.15rem; /* align with p, ul, li */
+    font-family: var(--font_ui);
+}
+
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition: none !important; }
