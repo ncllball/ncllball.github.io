@@ -75,8 +75,11 @@ function main(){
     }
   }
 
-  // Normalize cost lines for free programs: remove any parenthetical mentioning FREE
-  html = html.replace(/(<li><strong>Cost:<\/strong>\s*\$0[^<]*?)(\s*\([^<]*free[^<]*\))/gi, '$1');
+  // Enforce cost line standard for free programs: "$0 / player (FREE)"
+  // Case 1: Cost shows as FREE only
+  html = html.replace(/(<li><strong>Cost:<\/strong>\s*)(?:<[^>]+>\s*)*FREE\b/gi, '$1$$0 / player (FREE)');
+  // Case 2: Any $0 variant (e.g., $0, $0 / session, $0 (free)) -> normalize to $0 / player (FREE)
+  html = html.replace(/(<li><strong>Cost:<\/strong>\s*)\$0(?:\s*\/\s*\w+)?(?:\s*\(\s*free\s*\))?/gi, '$1$$0 / player (FREE)');
 
   fs.writeFileSync(LANDING, html);
   console.log('Updated program card badges to reflect manifest status.');
