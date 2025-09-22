@@ -32,7 +32,7 @@ This is the North Central Little League (Seattle, WA) website - a comprehensive 
 
 ### Content Conventions
 - **Link styling**: External links use `.ncll` class for consistent branding
-- **Superscript dates**: Use `<super>` tags for ordinal dates (1st, 2nd, etc.)
+- **Superscript dates**: Use standard `<sup>` for ordinals (1<sup>st</sup>, 2<sup>nd</sup>, etc.). Legacy pages may still contain `<super>`; when touching a file, replace `<super>…</super>` with `<sup>…</sup>`.
 - **Section organization**: Each major content area has clear h2.left headings
 - **Email obfuscation**: Contact emails are entity-encoded for spam protection
 - **Punctuation normalization (site-wide)**: For short, single-line items, omit trailing periods:
@@ -65,6 +65,11 @@ This is the North Central Little League (Seattle, WA) website - a comprehensive 
 - Run `node move-unused-images.js` to clean up unused assets
 - Use CDN URLs (`dt5602vnjxv0c.cloudfront.net`) for uploaded images from their CMS
 
+### Superscript migration note
+- CSS already styles the `<sup>` element for small ordinals. No styling for `<super>` remains in `css.css`.
+- When updating pages, convert: `March 1<super>st</super>` → `March 1<sup>st</sup>`.
+- Do not add new `<super>` usages.
+
 ### Registration/Forms Integration
 - Pages reference external form systems (SportsConnect, Little League registration)
 - Email templates in `Emails/` directory use inline CSS for email client compatibility
@@ -81,3 +86,12 @@ This is the North Central Little League (Seattle, WA) website - a comprehensive 
 - **Mobile responsive**: Test table layouts, button interactions on mobile
 - **Email templates**: Preview in `Emails/` directory before sending
 - **Link validation**: Verify external sponsor and Little League links remain active
+
+## Maintenance Scripts
+- All project maintenance utilities now live under `scripts/`.
+- Player Development tools are under `scripts/pd/`.
+- Run from repo root (Windows PowerShell):
+	- Update PD landing: `node scripts/pd/update-at-a-glance.js`
+	- Rebuild PD manifest: `node scripts/pd/build-pd-manifest.js`
+	- Lint PD Dates tags (dry run): `node scripts/pd/update-pd-dates-format.js`
+	- Enforce punctuation (dry run): `node scripts/enforce-punctuation.js`
