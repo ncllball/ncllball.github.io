@@ -30,6 +30,14 @@ Utilities
   - What: Reserved for future export tooling to push/pull snippets with the external CMS.
   - Status: Not implemented yet; file kept as a marker.
 
+- normalize-free-cost.js
+  - What: Normalizes any free cost lines to "$0 / player (FREE)" across pages.
+  - Also standardizes data attributes when present on tag strips: amount=0, type=free, unit=player.
+  - Use:
+    - Dry run: node scripts/normalize-free-cost.js
+    - Apply:   node scripts/normalize-free-cost.js --write
+    - Path:    node scripts/normalize-free-cost.js --path="Player Development"
+
 Player Development (PD) tools
 
 These help generate and maintain the Player Development landing page and metadata. All operate relative to the repo root and read/write files under Player Development/.

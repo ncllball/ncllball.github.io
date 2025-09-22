@@ -63,6 +63,11 @@ Canonical rules for the `Dates:` line in Player Development (PD) tag strips. Thi
 - Do not repeat the year per date when same year.
 - Do not append status (Free, Closed) in the Dates tag—belongs elsewhere.
 
+## Cost Line Standard for Free Programs
+
+- Standard wording: `$0 / player (FREE)`
+- Data attributes on Cost tag item should include `data-cost-amount="0"`, `data-cost-type="free"`, and `data-cost-unit="player"`.
+
 ## Examples in Production (2025)
 
 - `Nov 9 - Feb 22, 2025` (Teen Training span)
@@ -97,6 +102,7 @@ Add machine-readable attributes if needed later:
 | Softball (All) | softball | multi | Wide range (e.g., grades 3-12) when not division‑specific. |
 
 ### Age Group Canonical Text Patterns
+
 | Scenario | Pattern | Example |
 |----------|---------|---------|
 | League Age range | League Age N-M | League Age 9-12 |
