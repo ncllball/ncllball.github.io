@@ -68,6 +68,18 @@ Canonical rules for the `Dates:` line in Player Development (PD) tag strips. Thi
 - Standard wording: `$0 / player (FREE)`
 - Data attributes on Cost tag item should include `data-cost-amount="0"`, `data-cost-type="free"`, and `data-cost-unit="player"`.
 
+## Cost line standard (general)
+
+- Format: `$<amount> / <unit>` with single spaces around the slash
+  - Examples: `$60 / player`, `$100 / session`, `$250 / team`, `$125.00 / team (scholarships available)`
+- Preserve any trailing parentheticals (e.g., `(scholarships available)`)
+- Do not apply this rule to FREE items (use the FREE standard above)
+
+Automation helpers:
+
+- Free cost normalizer: `node scripts/normalize-free-cost.js [--write] [--path="Player Development"]`
+- General cost spacing normalizer: `node scripts/normalize-cost-format.js [--write] [--path="Player Development"]`
+
 ## Examples in Production (2025)
 
 - `Nov 9 - Feb 22, 2025` (Teen Training span)

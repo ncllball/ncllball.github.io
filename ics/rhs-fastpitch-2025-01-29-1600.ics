@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NCLL//ncllball.github.io//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:rhs-fastpitch-20250129-1600@ncllball.github.io
+DTSTAMP:20250101T000000Z
+SUMMARY:RHS Fastpitch Winter Batting Clinic
+DESCRIPTION:Small-group hitting sessions led by RHS coaches and players. Grades 3–12. Register: https://docs.google.com/forms/d/e/1FAIpQLScDfJcxqH_JNVsJcyzWW6GRNIcYUmbW4i9RC_Ze3EU8drIpIw/viewform
+LOCATION:Sound Baseball Batting Cages, 2929 NE Blakely St, Seattle, WA 98105
+DTSTART:20250130T000000Z
+DTEND:20250130T010000Z
+END:VEVENT
+END:VCALENDAR

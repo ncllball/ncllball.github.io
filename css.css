@@ -507,7 +507,11 @@ a.ncll:focus-visible,
     border-radius: 8px;
     padding: 4px;
     z-index: 20;
-    min-width: 180px;
+    /* Widen menu to accommodate full service labels (e.g., "Microsoft 365 — 6:00 PM") */
+    min-width: 280px;
+    /* Size to content but keep within viewport on mobile */
+    width: max-content;
+    max-width: 92vw;
     display: none;
 }
 
