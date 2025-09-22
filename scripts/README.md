@@ -38,6 +38,28 @@ Utilities
     - Apply:   node scripts/normalize-free-cost.js --write
     - Path:    node scripts/normalize-free-cost.js --path="Player Development"
 
+- normalize-cost-format.js
+  - What: Enforces general cost spacing: `$<amount> / <unit>` (single spaces around the slash). Preserves trailing parentheticals. Skips FREE cases.
+  - Use:
+    - Dry run: node scripts/normalize-cost-format.js
+    - Apply:   node scripts/normalize-cost-format.js --write
+    - Path:    node scripts/normalize-cost-format.js --path="Player Development"
+
+- normalize-scholarship-footies.js
+  - What: Ensures a standard scholarship footnote, with info icon and encoded mailto links, appears directly after the Cost section. Replaces any existing footnote under Cost with the site-standard snippet.
+  - Use:
+    - Dry run: node scripts/normalize-scholarship-footies.js
+    - Apply:   node scripts/normalize-scholarship-footies.js --write
+    - Path:    node scripts/normalize-scholarship-footies.js --path="Player Development"
+
+- tools/run-normalizers.ps1
+  - What: Windows-friendly helper that auto-detects the repo root and runs the normalizers with optional path filtering.
+  - Use from anywhere (PowerShell):
+    - Dry run (PD only): pwsh -File scripts/tools/run-normalizers.ps1 -Path "Player Development"
+    - Apply (PD only):   pwsh -File scripts/tools/run-normalizers.ps1 -Path "Player Development" -Apply
+    - Choose tasks:      pwsh -File scripts/tools/run-normalizers.ps1 -Tasks cost,footies
+    - All tasks:         pwsh -File scripts/tools/run-normalizers.ps1 -Tasks all -Path "Player Development" -Apply
+
 Player Development (PD) tools
 
 These help generate and maintain the Player Development landing page and metadata. All operate relative to the repo root and read/write files under Player Development/.
