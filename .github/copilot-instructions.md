@@ -47,6 +47,32 @@ This is the North Central Little League (Seattle, WA) website - a comprehensive 
 	- Limit to a path: `node scripts/enforce-punctuation.js --path="2025 Season"`
 	- Verbose logging: add `--verbose`
 
+### Scholarship footnote (Cost section)
+- Standard text (as a footnote under the Cost section):
+	- "NCLL believes that no one should be denied the ability to play ball due to economic circumstances. Each year, we grant scholarships to families who may need assistance. If you are interested, please fill out the Scholarship Request form or contact our registrar"
+- Requirements:
+	- Prepend an `<span class="info-icon" aria-hidden="true">i</span>` inside the paragraph
+	- Link "Scholarship Request" (mailto subject “Scholarship Request”) and "registrar" (mailto) using entity-encoded addresses
+	- Use the snippet at `Snippets/footies.scholarships.html` for source of truth
+
+To enforce across the site:
+- Dry run: `node scripts/normalize-scholarship-footies.js`
+- Apply changes: `node scripts/normalize-scholarship-footies.js --write`
+- Limit to a path: `node scripts/normalize-scholarship-footies.js --path="Player Development"`
+- Verbose logging: add `--verbose`
+
+### Cost formatting
+- General standard: `$<amount> / <unit>` with single spaces around the slash. Examples: `$60 / player`, `$100 / session`, `$250 / team`
+- Free programs: `$0 / player (FREE)` (keep `(FREE)` uppercase)
+- Acceptable decimals: `$125.00 / team`
+- Preserve trailing parentheticals such as `(scholarships available)`
+
+To enforce across the site:
+- Dry run: `node scripts/normalize-cost-format.js`
+- Apply changes: `node scripts/normalize-cost-format.js --write`
+- Limit to a path: `node scripts/normalize-cost-format.js --path="Player Development"`
+- Verbose logging: add `--verbose`
+
 ### File Naming
 - **Lowercase with hyphens**: `home-run-derby.html`, `background-check.html`
 - **Year prefixed**: `2025-allstars.css`, `2025 home run derby.html` for seasonal content
