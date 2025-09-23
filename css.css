@@ -832,23 +832,12 @@ body:not(.cms-right) .only-on-right { display: none !important; }
 /* Brand image: floats right on larger screens, scales on mobile */
 .float-right-brand {
     float: right;
-    height: auto;
-    max-width: 100%;
+    max-width: 20%;
+    max-height: 175px;
     margin-left: 10px;
     margin-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-right: 20px;
-}
-
-@media (max-width: 700px) {
-    .float-right-brand {
-        float: right;
-        display: block;
-        width: min(100%, 360px);
-        height: auto;
-        margin: 0 auto 16px;
-        padding: 0;
-    }
 }
 
 /* end image styling for all images */
