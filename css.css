@@ -836,8 +836,8 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     max-height: 175px;
     margin-left: 10px;
     margin-bottom: 10px;
-    padding-top: 60px;
-    padding-right: 20px;
+    padding-top: 20px;
+    padding-right: 10px;
 }
 
 /* end image styling for all images */
