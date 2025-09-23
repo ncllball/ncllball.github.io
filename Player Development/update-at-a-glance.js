@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-// Back-compat shim: call the centralized script location
-const path = require('path');
-const { execFileSync } = require('child_process');
-execFileSync(process.execPath, [path.join(__dirname, '..', 'scripts', 'pd', 'update-at-a-glance.js')], { stdio: 'inherit' });
+/** DEPRECATED SHIM: Player Development/update-at-a-glance.js
+ * Use: node scripts/pd/update-all.js  (preferred)  OR
+ *      node scripts/pd/landing/update-at-a-glance.js
+ */
+console.error('[DEPRECATED] Use: node scripts/pd/update-all.js');
+process.exit(2);
 

@@ -1,28 +1,14 @@
 #!/usr/bin/env node
 /**
- * Player Development utility: Build static "At a Glance" table rows in the PD landing page
+ * DEPRECATED STUB (legacy path): scripts/pd/build-pd-ataglance.js
  *
- * What it does
- * - Ensures a PD manifest exists (pd-programs.json)
- * - Generates <tr> rows for each program and replaces the tbody#pd-ataglance-body in playerdev.landing.html
- * - Removes any inline <script> at the end of the landing page (no inline scripts allowed)
- *
- * Inputs
- * - Reads Player Development/pd-programs.json (builds it if missing)
- * - Reads Player Development/playerdev.landing.html
- *
- * Outputs
- * - Writes updated Player Development/playerdev.landing.html with fresh rows
- *
- * Usage (from repo root)
- *   node scripts/pd/build-pd-ataglance.js
+ * The canonical script now lives at: scripts/pd/landing/build-pd-ataglance.js
+ * This stub is retained temporarily to prevent silent divergence if someone
+ * invokes the old path. It will exit with a non-zero code to encourage updating
+ * any automation or documentation.
  */
-const fs = require('fs');
-const path = require('path');
-
-const REPO_ROOT = path.resolve(__dirname, '..', '..');
-const PD_DIR = path.join(REPO_ROOT, 'Player Development');
-const MANIFEST = path.join(PD_DIR, 'pd-programs.json');
+console.error('[DEPRECATED] Use: node scripts/pd/landing/build-pd-ataglance.js --write (or --dry)');
+process.exit(2);
 // Primary landing file (renamed to index.html for clean directory URL)
 const LANDING_PRIMARY = path.join(PD_DIR, 'index.html');
 // Legacy filename kept temporarily for backward compatibility / external bookmarks

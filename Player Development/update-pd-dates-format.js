@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// Back-compat shim: call the centralized script location
-const path = require('path');
-const { execFileSync } = require('child_process');
-execFileSync(process.execPath, [path.join(__dirname, '..', 'scripts', 'pd', 'update-pd-dates-format.js')], { stdio: 'inherit' });
+/** DEPRECATED SHIM: Player Development/update-pd-dates-format.js
+ * Use: node scripts/pd/lint/update-pd-dates-format.js --write (or dry run without)
+ */
+console.error('[DEPRECATED] Use: node scripts/pd/lint/update-pd-dates-format.js');
+process.exit(2);
