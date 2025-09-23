@@ -44,7 +44,7 @@ function walk(dir) {
   for (const name of fs.readdirSync(dir)) {
     const full = path.join(dir, name);
     let st;
-    try { st = fs.statSync(full); } catch { continue; }
+    try { st = fs.statSync(full); } catch (e) { continue; }
     if (st.isDirectory()) {
       if (IGNORE_DIRS.has(name)) continue;
       out.push(...walk(full));

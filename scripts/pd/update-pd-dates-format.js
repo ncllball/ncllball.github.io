@@ -33,7 +33,7 @@ function listProgramFiles(){
 }
 
 function extractDatesLine(html){
-  const ulMatch = html.match(/<ul class="tag[\s\s]*?<\/ul>/i);
+  const ulMatch = html.match(/<ul class="tag[\s\S]*?<\/ul>/i);
   if (!ulMatch) return null;
   const block = ulMatch[0];
   const liMatch = block.match(/<li class="tag-item"[^>]*data-tag="dates"[^>]*>([\s\S]*?)<\/li>/i);
@@ -50,7 +50,8 @@ function normalize(dateHtml){
   out = out.replace(/\s{2,}/g, ' ');
   out = out.replace(/\s+<\/strong>/, '</strong>');
   // Keep hyphen spacing for ranges " A - B " (date line uses normal hyphen per pd-date-format.md)
-  out = out.replace(/\s*-\s*/g, ' - ');
+  // Only replace hyphens that are outside of HTML tags (not in attributes)
+  out = out.replace(/>([^<]*?)\s*-\s*([^<]*?)</g, '>$1 - $2<');
   // One space before year comma
   out = out.replace(/\s*,\s*(20\d{2})/, ', $1');
   // Trim extra spaces inside the <li>
