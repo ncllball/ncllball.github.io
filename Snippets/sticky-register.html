@@ -1,0 +1,22 @@
+<!-- Sticky Registration Bar Snippet
+     Replace:
+       - {{PROGRAM_ID}} with a unique slug (e.g., free-february-2025)
+       - {{REG_URL}} with the external registration URL
+       - {{TITLE}} with the short program title shown in the bar
+-->
+<div class="sticky-register"
+     role="complementary"
+     aria-labelledby="sticky-register-heading"
+     data-sticky="always"
+     data-program-id="{{PROGRAM_ID}}"
+     data-registration-url="{{REG_URL}}">
+    <div class="sticky-register-inner">
+        <p class="sticky-register-title" id="sticky-register-heading">{{TITLE}}</p>
+        <a class="sticky-register-cta"
+           href="{{REG_URL}}"
+           target="_blank"
+           rel="noopener noreferrer">
+            Register Now
+        </a>
+    </div>
+</div>
