@@ -62,28 +62,29 @@ Utilities
 
 Player Development (PD) tools
 
-These help generate and maintain the Player Development landing page and metadata. All operate relative to the repo root and read/write files under Player Development/.
+These help generate and maintain the Player Development landing page and metadata. Manifest JSON now resides at Player Development/manifest/pd-programs.json; PD documentation lives under scripts/pd/docs/.
 
 Restructured PD tooling (grouped by function):
 
 - pd/manifest/build-pd-manifest.js
-  - What: Scans Player Development/*.html (prefixed by "2025 ") for the standardized tag strip, and emits pd-programs.json.
+  - What: Scans Player Development/*.html (prefixed by "2025 ") for the standardized tag strip, and emits manifest/pd-programs.json.
+  - Output: Player Development/manifest/pd-programs.json
   - Use:  node scripts/pd/manifest/build-pd-manifest.js
 
 - pd/landing/build-pd-ataglance.js
-  - What: Builds the static rows for the At a Glance table in the PD landing (index.html) using pd-programs.json.
+  - What: Builds the static rows for the At a Glance table in the PD landing (index.html) using manifest/pd-programs.json.
   - Use:  node scripts/pd/landing/build-pd-ataglance.js
 
 - pd/landing/update-card-status.js
-  - What: Syncs the program card status badges on the landing page based on date ranges/cost in pd-programs.json.
+  - What: Syncs the program card status badges on the landing page based on date ranges/cost in manifest/pd-programs.json.
   - Use:  node scripts/pd/landing/update-card-status.js
 
 - pd/landing/update-at-a-glance.js
-  - What: Convenience wrapper that runs the two steps above in sequence.
+  - What: Convenience wrapper that runs the table build + badge sync.
   - Use:  node scripts/pd/landing/update-at-a-glance.js
 
 - pd/lint/update-pd-dates-format.js
-  - What: Lints and (optionally) normalizes the Dates line in each PD page's tag strip per Player Development/pd-date-format.md.
+  - What: Lints and (optionally) normalizes the Dates line in each PD page's tag strip per scripts/pd/docs/pd-date-format.md.
   - Use:
     - Dry run: node scripts/pd/lint/update-pd-dates-format.js
     - Apply:   node scripts/pd/lint/update-pd-dates-format.js --write

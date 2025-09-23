@@ -4,7 +4,7 @@
  *
  * Purpose
  * - Scan Player Development program pages for the tag strip `Dates:` item
- * - Validate against `Player Development/pd-date-format.md`
+ * - Validate against `scripts/pd/docs/pd-date-format.md`
  * - Optionally rewrite minor issues (spacing, ampersands, single-year placement)
  *
  * Usage
