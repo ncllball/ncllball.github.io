@@ -23,7 +23,10 @@ const path = require('path');
 const REPO_ROOT = path.resolve(__dirname, '..', '..');
 const PD_DIR = path.join(REPO_ROOT, 'Player Development');
 const MANIFEST = path.join(PD_DIR, 'pd-programs.json');
-const LANDING = path.join(PD_DIR, 'playerdev.landing.html');
+// Primary landing file (renamed to index.html for clean directory URL)
+const LANDING_PRIMARY = path.join(PD_DIR, 'index.html');
+// Legacy filename kept temporarily for backward compatibility / external bookmarks
+const LANDING_LEGACY = path.join(PD_DIR, 'playerdev.landing.html');
 
 function ensureManifest(){
   if (fs.existsSync(MANIFEST)) return;
@@ -97,14 +100,24 @@ function main(){
     return first(a).localeCompare(first(b));
   });
   const rows = buildRows(programs);
-  let html = fs.readFileSync(LANDING,'utf8');
+  const targetPath = fs.existsSync(LANDING_PRIMARY) ? LANDING_PRIMARY : LANDING_LEGACY;
+  let html = fs.readFileSync(targetPath,'utf8');
   // Replace tbody content
   html = html.replace(/<tbody id="pd-ataglance-body">[\s\S]*?<\/tbody>/,
     '<tbody id="pd-ataglance-body">\n' + rows + '\n</tbody>');
   // Remove inline script after </main> (no scripts allowed)
   html = html.replace(/<script>[\s\S]*?<\/script>\s*<\/body>/, '</body>');
-  fs.writeFileSync(LANDING, html);
-  console.log('Updated At a Glance table with', programs.length, 'programs.');
+  fs.writeFileSync(targetPath, html);
+  // If both exist, keep legacy file as redirect stub (only replace if it still contains full content and not a redirect yet)
+  if (targetPath === LANDING_PRIMARY && fs.existsSync(LANDING_LEGACY)){
+    const legacy = fs.readFileSync(LANDING_LEGACY,'utf8');
+    if (!/http-equiv="refresh"/i.test(legacy)){
+      const redirectHtml = `<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8" />\n<meta http-equiv="refresh" content="0; url=./" />\n<title>Player Development Moved</title>\n<meta name="robots" content="noindex" />\n<link rel="canonical" href="https://ncllball.github.io/Player%20Development/" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"https://ncllball.github.io/css.css\" />\n<link rel=\"stylesheet\" href=\"https://use.typekit.net/ldx2icb.css\" />\n<style>body{font:16px/1.4 proxima-nova,Helvetica,Arial,sans-serif;padding:2rem;}a{color:#cc0000}</style>\n</head>\n<body>\n<h1>Page Moved</h1>\n<p>This page is now <a href=\"./\">Player Development Programs</a>.</p>\n<p>If you are not redirected automatically, please use the link above.</p>\n</body>\n</html>`;
+      fs.writeFileSync(LANDING_LEGACY, redirectHtml);
+      console.log('Converted legacy playerdev.landing.html into redirect stub.');
+    }
+  }
+  console.log('Updated At a Glance table in', path.basename(targetPath), 'with', programs.length, 'programs.');
 }
 
 main();
