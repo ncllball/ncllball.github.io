@@ -834,8 +834,8 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     float: right;
     /* Scales smoothly with viewport: min 140px, ideal 20vw, max 260px */
     width: clamp(140px, 20vw, 260px);
-    max-height: 175px;
     height: auto;
+    max-width: 100%;
     margin-left: 10px;
     margin-bottom: 10px;
     padding-top: 20px;
