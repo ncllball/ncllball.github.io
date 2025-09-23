@@ -20,7 +20,9 @@ const path = require('path');
 
 const REPO_ROOT = path.resolve(__dirname, '..', '..', '..');
 const PD_DIR = path.join(REPO_ROOT, 'Player Development');
-const OUT_FILE = path.join(PD_DIR, 'pd-programs.json');
+const MANIFEST_DIR = path.join(PD_DIR, 'manifest');
+if (!fs.existsSync(MANIFEST_DIR)) fs.mkdirSync(MANIFEST_DIR, { recursive: true });
+const OUT_FILE = path.join(MANIFEST_DIR, 'pd-programs.json');
 
 // Heuristic: include HTML files that start with 2025 and are not the landing page
 const files = fs.readdirSync(PD_DIR)
@@ -125,4 +127,9 @@ const manifest = files.map(f => {
 });
 
 fs.writeFileSync(OUT_FILE, JSON.stringify({ generated: new Date().toISOString(), programs: manifest }, null, 2));
+// Clean up legacy location if present
+const legacy = path.join(PD_DIR, 'pd-programs.json');
+if (fs.existsSync(legacy)) {
+  try { fs.unlinkSync(legacy); } catch (e) { /* ignore */ }
+}
 console.log(`Wrote ${OUT_FILE} with ${manifest.length} programs.`);

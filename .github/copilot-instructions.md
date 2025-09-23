@@ -114,10 +114,23 @@ To enforce across the site:
 - **Link validation**: Verify external sponsor and Little League links remain active
 
 ## Maintenance Scripts
-- All project maintenance utilities now live under `scripts/`.
-- Player Development tools are under `scripts/pd/`.
-- Run from repo root (Windows PowerShell):
-	- Update PD landing: `node scripts/pd/update-at-a-glance.js`
-	- Rebuild PD manifest: `node scripts/pd/build-pd-manifest.js`
-	- Lint PD Dates tags (dry run): `node scripts/pd/update-pd-dates-format.js`
-	- Enforce punctuation (dry run): `node scripts/enforce-punctuation.js`
+- All project maintenance utilities live under `scripts/`.
+- Player Development tools canonical locations:
+	- Manifest builder: `scripts/pd/manifest/build-pd-manifest.js`
+	- At a Glance table builder: `scripts/pd/landing/build-pd-ataglance.js`
+	- Card status & cost normalizer: `scripts/pd/landing/update-card-status.js`
+	- Dates linter: `scripts/pd/lint/update-pd-dates-format.js`
+- Orchestrator (runs manifest + table + badges):
+	- Dry run (default): `node scripts/pd/update-all.js`
+	- Apply changes: `node scripts/pd/update-all.js --write`
+- Individual examples (Windows PowerShell):
+	- Rebuild manifest: `node scripts/pd/manifest/build-pd-manifest.js`
+	- At a Glance (dry): `node scripts/pd/landing/build-pd-ataglance.js`
+	- At a Glance (write): `node scripts/pd/landing/build-pd-ataglance.js --write`
+	- Update badges (dry): `node scripts/pd/landing/update-card-status.js --dry`
+	- Update badges (write): `node scripts/pd/landing/update-card-status.js`
+	- Lint PD Dates (dry): `node scripts/pd/lint/update-pd-dates-format.js`
+	- Lint PD Dates (write): `node scripts/pd/lint/update-pd-dates-format.js --write`
+	- Enforce punctuation (dry): `node scripts/enforce-punctuation.js`
+
+Legacy duplicate root scripts and Player Development shim scripts have been removed; always use the paths above.

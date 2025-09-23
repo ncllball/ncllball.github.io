@@ -1,6 +1,9 @@
+<!-- MOVED: This file relocated to scripts/pd/docs/pd-date-format.md on 2025-09-23. Kept as pointer to avoid broken references. -->
 # Player Development Date Formatting Standard (Tag Strip)
 
-Canonical rules for the `Dates:` line in Player Development (PD) tag strips. This ensures consistency, readability, and future automation.
+This document has moved to: `scripts/pd/docs/pd-date-format.md`
+
+Please update any bookmarks or references. The content below is intentionally omitted to prevent divergence. View the canonical version in the scripts directory.
 
 ## Objectives
 
@@ -155,4 +158,4 @@ Run this manually (or future script) whenever adding a new PD page:
 If any rule diverges intentionally, add a brief HTML comment explaining why.
 
 ---
-Questions or refinements? Update this file and the reference list together.
+Questions or refinements? Edit the canonical file at `scripts/pd/docs/pd-date-format.md`.
