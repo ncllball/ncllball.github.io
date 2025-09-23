@@ -78,6 +78,10 @@ function summarizeProgram(filename, parsed, html) {
   const ledBy = item('led-by').text || '';
   const titleMatch = html.match(/<title>([^<]+)<\/title>/i);
   const title = titleMatch ? titleMatch[1].replace(/\s*\u2014\s*NCLL\s*$/i,'').trim() : filename.replace(/\.html$/,'');
+  const sessions = item('sessions');
+  const sessionsPerDate = sessions['data-sessions-per-date'] || parsed.ul['data-sessions-per-date'] || null;
+  const sessionDurationMin = sessions['data-duration-min'] || parsed.ul['data-session-duration-min'] || null;
+  const sessionCount = (item('dates')['data-session-count'] || parsed.ul['data-session-count'] || null);
   return {
     id: name,
     file: filename,
@@ -101,7 +105,10 @@ function summarizeProgram(filename, parsed, html) {
       divisionLevels: item('divisions')['data-division-levels'] || null,
       sport: item('divisions')['data-sport'] || null,
       programName: parsed.ul['data-program-name'] || null,
-      focus: parsed.ul['data-focus'] || null
+      focus: parsed.ul['data-focus'] || null,
+      sessionsPerDate: sessionsPerDate,
+      sessionDurationMin: sessionDurationMin,
+      sessionCount: sessionCount
     }
   };
 }

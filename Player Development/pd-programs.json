@@ -1,5 +1,5 @@
 {
-  "generated": "2025-09-23T19:40:45.543Z",
+  "generated": "2025-09-23T20:19:06.131Z",
   "programs": [
     {
       "id": "2025 Free February",
@@ -16,15 +16,18 @@
       "title": "2025 Free February",
       "meta": {
         "dateList": "2025-02-01;2025-02-08;2025-02-22",
-        "rangeStart": null,
-        "rangeEnd": null,
+        "rangeStart": "2025-02-01",
+        "rangeEnd": "2025-02-22",
         "costAmount": "0",
         "costUnit": "player",
         "costStatus": "free",
         "divisionLevels": "aaa;majors",
         "sport": "baseball",
         "programName": "Free February",
-        "focus": "Arm Build / Reps / Rhythm"
+        "focus": "Arm Build / Reps / Rhythm",
+        "sessionsPerDate": "2",
+        "sessionDurationMin": "60",
+        "sessionCount": "6"
       }
     },
     {
@@ -50,7 +53,10 @@
         "divisionLevels": "aa;aaa;majors",
         "sport": "softball",
         "programName": "In-Season Softball Pitching (AA+)",
-        "focus": "Progressive Pitch Dev"
+        "focus": "Progressive Pitch Dev",
+        "sessionsPerDate": null,
+        "sessionDurationMin": null,
+        "sessionCount": null
       }
     },
     {
@@ -76,7 +82,10 @@
         "divisionLevels": "aa;aaa;majors;juniors;seniors",
         "sport": "baseball",
         "programName": "Lincoln HS Camp",
-        "focus": "Multi-Station Skill Camp"
+        "focus": "Multi-Station Skill Camp",
+        "sessionsPerDate": null,
+        "sessionDurationMin": null,
+        "sessionCount": null
       }
     },
     {
@@ -102,7 +111,10 @@
         "divisionLevels": "multi",
         "sport": "softball",
         "programName": "RHS Batting Clinic",
-        "focus": "Hitting Sequencing / Reps"
+        "focus": "Hitting Sequencing / Reps",
+        "sessionsPerDate": null,
+        "sessionDurationMin": null,
+        "sessionCount": null
       }
     },
     {
@@ -128,7 +140,10 @@
         "divisionLevels": "aaa;majors",
         "sport": "baseball",
         "programName": "AAA+Majors Baseball (Winter)",
-        "focus": "Movement / Hitting / Conditioning"
+        "focus": "Movement / Hitting / Conditioning",
+        "sessionsPerDate": null,
+        "sessionDurationMin": null,
+        "sessionCount": null
       }
     },
     {
@@ -154,7 +169,10 @@
         "divisionLevels": "aaa;majors",
         "sport": "softball",
         "programName": "AAA+Majors Softball (Jan)",
-        "focus": "Hitting / Field / Pitch Track"
+        "focus": "Hitting / Field / Pitch Track",
+        "sessionsPerDate": null,
+        "sessionDurationMin": null,
+        "sessionCount": null
       }
     },
     {
@@ -165,22 +183,25 @@
       "location": "The Hive",
       "day": null,
       "time": "12:00 PM or 1:15 PM",
-      "cost": "$0 / player (FREE)",
+      "cost": "$60 / player",
       "divisions": "Baseball (AA)",
       "ledBy": "Friends of NCLL — Northwest Sting Baseball",
       "focus": "Intro Mechanics / Grip / Arm Care",
       "title": "2025 Winter Double-AA Baseball Pitching",
       "meta": {
         "dateList": "2025-02-22;2025-03-01;2025-03-08",
-        "rangeStart": null,
-        "rangeEnd": null,
-        "costAmount": "0",
+        "rangeStart": "2025-02-22",
+        "rangeEnd": "2025-03-08",
+        "costAmount": "60",
         "costUnit": "player",
-        "costStatus": "free",
+        "costStatus": "paid",
         "divisionLevels": "aa",
         "sport": "baseball",
         "programName": "AA Pitching (Winter)",
-        "focus": "Intro Mechanics / Grip / Arm Care"
+        "focus": "Intro Mechanics / Grip / Arm Care",
+        "sessionsPerDate": "2",
+        "sessionDurationMin": "60",
+        "sessionCount": "6"
       }
     },
     {
@@ -206,7 +227,10 @@
         "divisionLevels": "single-a",
         "sport": "baseball",
         "programName": "Single-A Winter",
-        "focus": "Foundations / Throw / Catch / Field"
+        "focus": "Foundations / Throw / Catch / Field",
+        "sessionsPerDate": null,
+        "sessionDurationMin": null,
+        "sessionCount": null
       }
     },
     {
@@ -232,7 +256,10 @@
         "divisionLevels": "teen",
         "sport": "baseball",
         "programName": "Teen Baseball (Winter)",
-        "focus": "Hitting Pattern / Arm Care / Movement"
+        "focus": "Hitting Pattern / Arm Care / Movement",
+        "sessionsPerDate": null,
+        "sessionDurationMin": null,
+        "sessionCount": null
       }
     }
   ]
