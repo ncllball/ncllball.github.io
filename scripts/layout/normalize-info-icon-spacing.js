@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+// MOVED (2025-09-23) from scripts/normalize-info-icon-spacing.js
+var fs=require('fs'),path=require('path');
+var args=process.argv.slice(2);var WRITE=args.indexOf('--write')!==-1;var VERBOSE=args.indexOf('--verbose')!==-1;function getArgValue(flag){for(var i=0;i<args.length;i++){if(args[i].indexOf(flag+'=')===0)return args[i].slice((flag+'=').length);}return null;}
+var START=path.resolve(process.cwd(),getArgValue('--path')||'.');var IGNORE={'.git':1,'fonts':1,'images':1,'ics':1,'docs':1,'node_modules':1,'images_unused':1};
+function walk(d){var out=[];var names=fs.readdirSync(d);for(var i=0;i<names.length;i++){var n=names[i];var f=path.join(d,n);var st;try{st=fs.statSync(f);}catch(e){continue;} if(st.isDirectory()){if(IGNORE[n])continue;Array.prototype.push.apply(out,walk(f));} else if(st.isFile() && /\.html?$/i.test(f)){out.push(f);} } return out; }
+var RE=/(<span\s+class=\"info-icon\"[\s\S]*?<\/span>)\s+/ig;
+function processFile(f){var src=fs.readFileSync(f,'utf8');var changed=false;var updated=src.replace(RE,function(_,g1){changed=true;return g1;}); if(changed && WRITE) fs.writeFileSync(f,updated,'utf8'); if(changed && VERBOSE) console.log('* '+path.relative(process.cwd(),f)+' fixed info-icon spacing'); return changed; }
+(function main(){if(!WRITE) console.log('Dry run: no files will be modified'); var files=walk(START); var count=0; for(var i=0;i<files.length;i++){ if(processFile(files[i])) count++; } console.log((WRITE?'Applied':'Would apply')+' info-icon spacing normalization in '+count+' file(s)'); if(!WRITE) console.log('Run with --write to apply changes.');})();
