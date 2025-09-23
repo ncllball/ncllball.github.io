@@ -832,7 +832,8 @@ body:not(.cms-right) .only-on-right { display: none !important; }
 /* Brand image: floats right on larger screens, scales on mobile */
 .float-right-brand {
     float: right;
-    max-width: 20%;
+    /* Scales smoothly with viewport: min 140px, ideal 20vw, max 260px */
+    width: clamp(140px, 20vw, 260px);
     max-height: 175px;
     height: auto;
     margin-left: 10px;
@@ -845,8 +846,7 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     .float-right-brand {
         float: none;
         display: block;
-        width: 100%;
-        max-width: 360px;
+        width: min(100%, 360px);
         height: auto;
         margin: 0 auto 16px;
         padding: 0;
