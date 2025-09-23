@@ -218,6 +218,7 @@ sup {
 
 
 
+
 /* end global blah blah */
 
 
@@ -422,6 +423,14 @@ a.ncll:focus-visible,
 }
 
 /* end bottom sticky registration */
+
+/* Reserve space on pages that include a sticky registration bar */
+.with-sticky-register {
+    padding-bottom: 100px;
+}
+@media (max-width:640px) {
+    .with-sticky-register { padding-bottom: 140px; }
+}
 
 /* start tags */
 
@@ -806,3 +815,18 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     .pd-landing .program-card { transition: none; }
 }
 /* ================= End Player Development landing ================ */
+
+
+/* start image styling for all images */
+/* Camp image styling */
+.camp-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/* end image styling for all images */
