@@ -81,8 +81,8 @@ Canonical rules for the `Dates:` line in Player Development (PD) tag strips. Thi
 
 Automation helpers:
 
-- Free cost normalizer: `node scripts/normalize-free-cost.js [--write] [--path="Player Development"]`
-- General cost spacing normalizer: `node scripts/normalize-cost-format.js [--write] [--path="Player Development"]`
+- Free cost normalizer: `node scripts/costs/normalize-free-cost.js [--write] [--path="Player Development"]`
+- General cost spacing normalizer: `node scripts/costs/normalize-cost-format.js [--write] [--path="Player Development"]`
 
 ## Examples in Production (2025)
 
@@ -122,7 +122,7 @@ Add machine-readable attributes if needed later:
 | Scenario | Pattern | Example |
 |----------|---------|---------|
 | League Age range | League Age N-M | League Age 9-12 |
-| Single division named | <Division Name> Baseball/Softball | Single-A Baseball |
+| Single division named | `<Division Name>` Baseball/Softball | Baseball (Single-A) |
 | Grade range | Grades G1-G2 | Grades 3-12 |
 | Plain ages span | Ages N-M | Ages 8-14 |
 | Division + qualifier | AA & Up Softball | AA & Up Softball |
