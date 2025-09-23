@@ -5,9 +5,9 @@
 .DESCRIPTION
     This PowerShell helper locates the repository root based on this script's location (…/scripts/tools/),
     changes to that directory, and runs one or more normalizer scripts:
-      - scripts/normalize-cost-format.js
-      - scripts/normalize-scholarship-footies.js
-      - scripts/normalize-free-cost.js (optional)
+    - scripts/costs/normalize-cost-format.js
+    - scripts/footnotes/normalize-scholarship-footies.js
+    - scripts/costs/normalize-free-cost.js (optional)
 
     Use -Path to limit changes to a subdirectory (e.g., "Player Development").
     Use -Apply to add --write (otherwise runs dry-run).
@@ -60,9 +60,9 @@ function Invoke-Normalizer {
     )
 
     $scriptMap = @{
-        'cost'      = 'scripts/normalize-cost-format.js'
-        'footies'   = 'scripts/normalize-scholarship-footies.js'
-        'free-cost' = 'scripts/normalize-free-cost.js'
+        'cost'      = 'scripts/costs/normalize-cost-format.js'
+        'footies'   = 'scripts/footnotes/normalize-scholarship-footies.js'
+        'free-cost' = 'scripts/costs/normalize-free-cost.js'
     }
 
     if ($Name -eq 'all') {

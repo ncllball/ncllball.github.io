@@ -1,95 +1,99 @@
 # Scripts directory
 
-This folder contains small maintenance utilities that help keep the site consistent and tidy. Run them from the repository root in PowerShell (Windows) or any shell.
+Standardized functional grouping applied (2025-09-23). Run everything from repo root.
 
-Notes
+## Structure
 
-- All scripts are safe to run in dry-run mode by default. Append --write to apply changes.
-- Paths below assume you are in the repo root. On Windows PowerShell, prefix with node where shown.
+scripts/
+  costs/                Cost normalization utilities
+  content/              General content & punctuation / markup cleanup
+  footnotes/            Scholarship and footnote management
+  layout/               Minor layout/spacing normalization helpers
+  pd/                   Player Development (automation + docs)
+  tools/                PowerShell helpers / meta runners
+  (verify-script-structure.js guard lives under tools/)
 
-Utilities
+## Conventions
 
-- convert-single-li-to-p.js
-  - What: Converts single-item lists (&lt;ul&gt;/&lt;ol&gt; with exactly one &lt;li&gt;) into a standalone &lt;p&gt; tag when safe.
-  - Why: Avoids unnecessary list markup and improves semantics.
-  - Use:
-    - Dry run: node scripts/convert-single-li-to-p.js
-    - Apply:   node scripts/convert-single-li-to-p.js --write
-    - Path:    node scripts/convert-single-li-to-p.js --path="2025 Season"
+- Default mode is dry-run unless noted; add `--write` to apply.
+- Use `--path="Some Folder"` to limit scope for most normalizers.
+- Keep logic idempotent; re-running a script on a clean tree should yield no changes.
 
-- enforce-punctuation.js
-  - What: Enforces punctuation conventions site-wide:
-  - Removes trailing periods from short single-line &lt;li&gt; items
-  - Removes trailing periods from short footnote paragraphs inside &lt;section class="footies"&gt;
-  - Use:
-    - Dry run: node scripts/enforce-punctuation.js
-    - Apply:   node scripts/enforce-punctuation.js --write
-    - Path:    node scripts/enforce-punctuation.js --path="2025 Season"
-
-- export-cms-snippets.js (placeholder)
-  - What: Reserved for future export tooling to push/pull snippets with the external CMS.
-  - Status: Not implemented yet; file kept as a marker.
-
-- normalize-free-cost.js
-  - What: Normalizes any free cost lines to "$0 / player (FREE)" across pages.
-  - Also standardizes data attributes when present on tag strips: amount=0, type=free, unit=player.
-  - Use:
-    - Dry run: node scripts/normalize-free-cost.js
-    - Apply:   node scripts/normalize-free-cost.js --write
-    - Path:    node scripts/normalize-free-cost.js --path="Player Development"
+## Costs (scripts/costs)
 
 - normalize-cost-format.js
-  - What: Enforces general cost spacing: `$<amount> / <unit>` (single spaces around the slash). Preserves trailing parentheticals. Skips FREE cases.
-  - Use:
-    - Dry run: node scripts/normalize-cost-format.js
-    - Apply:   node scripts/normalize-cost-format.js --write
-    - Path:    node scripts/normalize-cost-format.js --path="Player Development"
+  - Enforces `$<amount> / <unit>` spacing (skips FREE)
+  - Dry: node scripts/costs/normalize-cost-format.js
+  - Write: node scripts/costs/normalize-cost-format.js --write
+- normalize-free-cost.js
+  - Standardizes FREE lines to `$0 / player (FREE)` + data-cost-* attributes
+  - Dry: node scripts/costs/normalize-free-cost.js
+  - Write: node scripts/costs/normalize-free-cost.js --write
+
+## Footnotes (scripts/footnotes)
 
 - normalize-scholarship-footies.js
-  - What: Ensures a standard scholarship footnote, with info icon and encoded mailto links, appears directly after the Cost section. Replaces any existing footnote under Cost with the site-standard snippet.
-  - Use:
-    - Dry run: node scripts/normalize-scholarship-footies.js
-    - Apply:   node scripts/normalize-scholarship-footies.js --write
-    - Path:    node scripts/normalize-scholarship-footies.js --path="Player Development"
+  - Inserts/replaces standard scholarship footnote after Cost
+  - Dry: node scripts/footnotes/normalize-scholarship-footies.js
+  - Write: node scripts/footnotes/normalize-scholarship-footies.js --write
+- dedup-scholarship-footies.js
+  - Removes duplicate scholarship footnotes, keeping the first
+  - Dry: node scripts/footnotes/dedup-scholarship-footies.js
+  - Write: node scripts/footnotes/dedup-scholarship-footies.js --write
 
-- tools/run-normalizers.ps1
-  - What: Windows-friendly helper that auto-detects the repo root and runs the normalizers with optional path filtering.
-  - Use from anywhere (PowerShell):
-    - Dry run (PD only): pwsh -File scripts/tools/run-normalizers.ps1 -Path "Player Development"
-    - Apply (PD only):   pwsh -File scripts/tools/run-normalizers.ps1 -Path "Player Development" -Apply
-    - Choose tasks:      pwsh -File scripts/tools/run-normalizers.ps1 -Tasks cost,footies
-    - All tasks:         pwsh -File scripts/tools/run-normalizers.ps1 -Tasks all -Path "Player Development" -Apply
+## Content (scripts/content)
 
-Player Development (PD) tools
+- enforce-punctuation.js
+  - Removes trailing periods from short list items & short footnote paragraphs
+  - Dry: node scripts/content/enforce-punctuation.js
+  - Write: node scripts/content/enforce-punctuation.js --write
+- convert-single-li-to-p.js
+  - Collapses single-item `ul`/`ol` into `p` safely
+  - Dry: node scripts/content/convert-single-li-to-p.js
+  - Write: node scripts/content/convert-single-li-to-p.js --write
 
-These help generate and maintain the Player Development landing page and metadata. Manifest JSON now resides at Player Development/manifest/pd-programs.json; PD documentation lives under scripts/pd/docs/.
+## Layout (scripts/layout)
 
-Restructured PD tooling (grouped by function):
+- normalize-info-icon-spacing.js
+  - Removes stray whitespace after the info icon span (`<span class="info-icon">i</span>`)
+  - Dry: node scripts/layout/normalize-info-icon-spacing.js
+  - Write: node scripts/layout/normalize-info-icon-spacing.js --write
 
-- pd/manifest/build-pd-manifest.js
-  - What: Scans Player Development/*.html (prefixed by "2025 ") for the standardized tag strip, and emits manifest/pd-programs.json.
-  - Output: Player Development/manifest/pd-programs.json
-  - Use:  node scripts/pd/manifest/build-pd-manifest.js
+## Player Development (scripts/pd)
 
-- pd/landing/build-pd-ataglance.js
-  - What: Builds the static rows for the At a Glance table in the PD landing (index.html) using manifest/pd-programs.json.
-  - Use:  node scripts/pd/landing/build-pd-ataglance.js
+- manifest/build-pd-manifest.js
+- landing/build-pd-ataglance.js
+- landing/update-card-status.js
+- landing/update-at-a-glance.js
+- lint/update-pd-dates-format.js
+- update-all.js (orchestrator: manifest → table → badges; dry by default)
+- docs/ (pd-date-format.md, tag-items-reference.md)
 
-- pd/landing/update-card-status.js
-  - What: Syncs the program card status badges on the landing page based on date ranges/cost in manifest/pd-programs.json.
-  - Use:  node scripts/pd/landing/update-card-status.js
+Typical PD workflow:
+  node scripts/pd/update-all.js         # dry
+  node scripts/pd/update-all.js --write # apply
 
-- pd/landing/update-at-a-glance.js
-  - What: Convenience wrapper that runs the table build + badge sync.
-  - Use:  node scripts/pd/landing/update-at-a-glance.js
+## Tools (scripts/tools)
 
-- pd/lint/update-pd-dates-format.js
-  - What: Lints and (optionally) normalizes the Dates line in each PD page's tag strip per scripts/pd/docs/pd-date-format.md.
-  - Use:
-    - Dry run: node scripts/pd/lint/update-pd-dates-format.js
-    - Apply:   node scripts/pd/lint/update-pd-dates-format.js --write
+- run-normalizers.ps1
+  - PowerShell helper for batching cost/footnote normalizers
+  - Example: pwsh -File scripts/tools/run-normalizers.ps1 -Tasks all -Path "Player Development" -Apply
+- verify-script-structure.js
+  - Guard: ensures deprecated root script filenames remain stubs only
+  - Run: node scripts/tools/verify-script-structure.js
 
-Conventions
+## Placeholder / Future
 
-- Do not commit inline &lt;script&gt; tags in HTML content pages; any maintenance logic belongs here under scripts/.
-- Prefer descriptive console output. Keep scripts idempotent.
+- export-cms-snippets.js (reserved; will move under a future `cms/` folder if expanded)
+
+## Housekeeping
+
+- Legacy root files replaced by moved copies retain only stub comments (or were replaced). Avoid adding new top-level JS scripts—place them in the appropriate functional subfolder.
+- Prefer small, single-purpose scripts; compose via PowerShell or a future JS orchestrator if needed.
+- Run the guard (node scripts/tools/verify-script-structure.js) before committing when touching scripts/.
+- Deprecation stubs exit(2) and contain the marker: DEPRECATED_MOVED_SCRIPT
+
+## Style
+
+- Console output should clearly indicate DRY vs WRITE.
+- Exit code 0 on success (even if changes proposed in dry mode); non-zero only on fatal errors.
