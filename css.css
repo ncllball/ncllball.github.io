@@ -837,7 +837,7 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     height: auto;
     margin-left: 10px;
     margin-bottom: 10px;
-    padding-top: 60px;
+    padding-top: 20px;
     padding-right: 20px;
 }
 
