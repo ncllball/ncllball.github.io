@@ -88,10 +88,10 @@ Typical PD workflow:
 
 ## Housekeeping
 
-- Legacy root files replaced by moved copies retain only stub comments (or were replaced). Avoid adding new top-level JS scripts—place them in the appropriate functional subfolder.
+- Legacy root script filenames have now been removed (previously stubs). Do NOT recreate them; add new scripts only inside the appropriate functional subfolder.
 - Prefer small, single-purpose scripts; compose via PowerShell or a future JS orchestrator if needed.
 - Run the guard (node scripts/tools/verify-script-structure.js) before committing when touching scripts/.
-- Deprecation stubs exit(2) and contain the marker: DEPRECATED_MOVED_SCRIPT
+- Guard permits absence of legacy filenames or (during migration windows) a short deprecation stub containing DEPRECATED_MOVED_SCRIPT.
 
 ## Style
 
