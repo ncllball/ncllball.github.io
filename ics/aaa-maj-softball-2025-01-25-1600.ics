@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NCLL//ncllball.github.io//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aaa-maj-softball-2025-01-25-1600@ncllball.github.io
+DTSTAMP:20250922T120000Z
+DTSTART:20250126T000000Z
+DTEND:20250126T020000Z
+SUMMARY:AAA+Majors Softball (Jan) — Training
+DESCRIPTION:NCLL Winter AAA & Majors Softball Training — Hitting / Field / Pitch Track
+LOCATION:Wallingford Boys & Girls Club, 1310 N 45th St, Seattle, WA 98103
+END:VEVENT
+END:VCALENDAR
