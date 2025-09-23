@@ -1,11 +1,10 @@
-<!-- MOVED: This file relocated to scripts/pd/docs/tag-items-reference.md on 2025-09-23. Kept as pointer. -->
 # Player Development Tag Strip Reference (2025)
 
-This reference has moved to: `scripts/pd/docs/tag-items-reference.md`
+(Relocated from `Player Development/tag-items-reference.md` on 2025-09-23.)
 
-The detailed content has been removed here to avoid duplication. See the canonical scripts copy for updates.
+This document captures the standardized tag strip items (the top metadata list) for each 2025 Player Development (PD) program page. Order is preserved exactly as it appears in each file. This serves as a quick audit / source-of-truth for consistency and future automation (e.g., generating summaries or status badges).
 
----
+<!-- Content mirrored verbatim from original file -->
 
 ## 2025 Winter Teen BB Training
 
@@ -141,9 +140,9 @@ Capitalization normalization applied:
 
 Recommended future enforcement: a linter should flag missing Age Group unless:
 
-1) Division(s) spans 3+ adjacent levels (e.g., AA - Seniors or AA & Up), OR
-2) Body copy introduces explicit League Age / Grades span within first two sections, OR
-3) Program intentionally broad (e.g., pitching clinics) — documented with an inline HTML comment near the tag strip.
+1. Division(s) spans 3+ adjacent levels (e.g., AA - Seniors or AA & Up), OR
+2. Body copy introduces explicit League Age / Grades span within first two sections, OR
+3. Program intentionally broad (e.g., pitching clinics) — documented with an inline HTML comment near the tag strip.
 
 ### Machine-Readable Attributes Coverage Snapshot
 
@@ -174,4 +173,4 @@ Gaps / Enhancements:
 - Convert TBD pricing once confirmed.
 - Add normalization rule: all free items use `$0 / <unit> (FREE[; sponsor])`; TBD keeps unit in data-cost-unit for future substitution.
 
-Need other export formats (JSON / CSV)? Extend tooling in `scripts/pd/manifest/`.
+Let me know if you’d like JSON, CSV, or an automated extractor next.

@@ -1,39 +1,26 @@
 #!/usr/bin/env node
 /**
- * Player Development utility: Build static "At a Glance" table rows in the PD landing page
- *
- * What it does
- * - Ensures a PD manifest exists (pd-programs.json)
- * - Generates <tr> rows for each program and replaces the tbody#pd-ataglance-body in landing page
- * - Removes any inline <script> at the end of the landing page (no inline scripts allowed)
- *
- * Inputs
- * - Reads Player Development/pd-programs.json (builds it if missing)
- * - Reads Player Development/index.html (or legacy playerdev.landing.html)
- *
- * Outputs
- * - Writes updated Player Development/index.html with fresh rows
- * - Converts legacy file into a redirect stub if both exist
- *
- * Usage (from repo root)
- *   node scripts/pd/landing/build-pd-ataglance.js
+ * Player Development utility: Build static "At a Glance" table rows in the PD landing page.
+ * (Consolidated clean implementation with --dry / --write.)
  */
 const fs = require('fs');
 const path = require('path');
-
+const argv = process.argv.slice(2);
+const isWrite = argv.includes('--write');
+const isDry = !isWrite;
 const REPO_ROOT = path.resolve(__dirname, '..', '..', '..');
 const PD_DIR = path.join(REPO_ROOT, 'Player Development');
-const MANIFEST = path.join(PD_DIR, 'pd-programs.json');
+const MANIFEST_NEW = path.join(PD_DIR, 'manifest', 'pd-programs.json');
+const MANIFEST_OLD = path.join(PD_DIR, 'pd-programs.json');
+const MANIFEST = fs.existsSync(MANIFEST_NEW) ? MANIFEST_NEW : MANIFEST_OLD;
 const LANDING_PRIMARY = path.join(PD_DIR, 'index.html');
 const LANDING_LEGACY = path.join(PD_DIR, 'playerdev.landing.html');
-
 function ensureManifest(){
-  if (fs.existsSync(MANIFEST)) return;
-  // Try to build manifest if missing
+  if (fs.existsSync(MANIFEST_NEW)) return;
+  if (fs.existsSync(MANIFEST_OLD)) return;
   const { execFileSync } = require('child_process');
   execFileSync(process.execPath, [path.join(__dirname,'..','manifest','build-pd-manifest.js')], { stdio: 'inherit' });
 }
-
 function statusPill(p){
   const today = new Date();
   function parseDate(s){ if(!s) return null; const d=new Date(s); return isNaN(d)?null:d; }
@@ -46,20 +33,10 @@ function statusPill(p){
   if (/\$0/.test(cost)) return 'Free';
   return 'Open';
 }
-
 function shortName(id){
-  return id.replace(/^2025 /,'')
-           .replace('Winter ','')
-           .replace('BB ','')
-           .replace('SB ','')
-           .replace('Fastpitch ','')
-           .replace(' (Sessions I & II)','');
+  return id.replace(/^2025 /,'').replace('Winter ','').replace('BB ','').replace('SB ','').replace('Fastpitch ','').replace(' (Sessions I & II)','');
 }
-
-function trimYear(d){
-  return d.replace(/,?\s*2025$/,'').replace(/Nov 9 - Feb 22/,'Nov 2024 - Feb 2025');
-}
-
+function trimYear(d){ return d.replace(/,?\s*2025$/,'').replace(/Nov 9 - Feb 22/,'Nov 2024 - Feb 2025'); }
 const curatedName = {
   '2025 Winter Single-A BB Training': 'Single-A Winter Training',
   '2025 Winter Double-AA BB Pitching': 'AA Pitching (3-Week)',
@@ -71,7 +48,6 @@ const curatedName = {
   '2025 In-Season Double-AA (and up) SB Pitching': 'In-Season Softball Pitching',
   '2025 LHS Winter Training': 'Lincoln HS Skills Camp'
 };
-
 function buildRows(programs){
   return programs.map(p => {
     const div = (p.divisions || '').replace(/&amp;/g,'&');
@@ -79,7 +55,7 @@ function buildRows(programs){
     const focus = (p.focus || p.meta.focus || '') || '';
     const display = (curatedName[p.id] || p.programName || p.meta.programName || p.title || shortName(p.id));
     let pillText = statusPill(p);
-    if (pillText === 'Free') pillText = ''; // hide Free status
+    if (pillText === 'Free') pillText = '';
     return '<tr>'
       + '<td>' + display + '</td>'
       + '<td>' + div + '</td>'
@@ -89,19 +65,29 @@ function buildRows(programs){
       + '</tr>';
   }).join('\n');
 }
-
 function main(){
   ensureManifest();
   const data = JSON.parse(fs.readFileSync(MANIFEST,'utf8'));
   const programs = data.programs.slice().sort((a,b)=>{
-    function first(p){return p.meta.rangeStart || (p.meta.dateList?p.meta.dateList.split(';')[0]:'9999-12-31');}
+    function first(p){return p.meta.rangeStart || (p.meta.dateList ? p.meta.dateList.split(';')[0] : '9999-12-31');}
     return first(a).localeCompare(first(b));
   });
   const rows = buildRows(programs);
   const targetPath = fs.existsSync(LANDING_PRIMARY) ? LANDING_PRIMARY : LANDING_LEGACY;
   let html = fs.readFileSync(targetPath,'utf8');
-  html = html.replace(/<tbody id="pd-ataglance-body">[\s\S]*?<\/tbody>/,
-    '<tbody id="pd-ataglance-body">\n' + rows + '\n</tbody>');
+  const newTbody = '<tbody id="pd-ataglance-body">\n' + rows + '\n</tbody>';
+  const currentMatch = html.match(/<tbody id="pd-ataglance-body">[\s\S]*?<\/tbody>/);
+  const currentTbody = currentMatch ? currentMatch[0] : '';
+  const willChange = currentTbody.trim() !== newTbody.trim();
+  if (isDry){
+    if (willChange){
+      console.log(`[DRY] Would update At a Glance table in ${path.basename(targetPath)} with ${programs.length} programs (changes detected).`);
+    } else {
+      console.log('[DRY] At a Glance table already up to date (no changes).');
+    }
+    return;
+  }
+  html = html.replace(/<tbody id="pd-ataglance-body">[\s\S]*?<\/tbody>/, newTbody);
   html = html.replace(/<script>[\s\S]*?<\/script>\s*<\/body>/, '</body>');
   fs.writeFileSync(targetPath, html);
   if (targetPath === LANDING_PRIMARY && fs.existsSync(LANDING_LEGACY)){
@@ -114,5 +100,4 @@ function main(){
   }
   console.log('Updated At a Glance table in', path.basename(targetPath), 'with', programs.length, 'programs.');
 }
-
 main();

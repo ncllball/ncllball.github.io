@@ -10,12 +10,15 @@ const path = require('path');
 
 const REPO_ROOT = path.resolve(__dirname, '..', '..', '..');
 const PD_DIR = path.join(REPO_ROOT, 'Player Development');
-const MANIFEST = path.join(PD_DIR, 'pd-programs.json');
+const MANIFEST_NEW = path.join(PD_DIR, 'manifest', 'pd-programs.json');
+const MANIFEST_OLD = path.join(PD_DIR, 'pd-programs.json');
+const MANIFEST = fs.existsSync(MANIFEST_NEW) ? MANIFEST_NEW : MANIFEST_OLD;
 const LANDING_PRIMARY = path.join(PD_DIR, 'index.html');
 const LANDING_LEGACY = path.join(PD_DIR, 'playerdev.landing.html');
 
 function ensureManifest(){
-  if (fs.existsSync(MANIFEST)) return;
+  if (fs.existsSync(MANIFEST_NEW)) return;
+  if (fs.existsSync(MANIFEST_OLD)) return;
   const { execFileSync } = require('child_process');
   execFileSync(process.execPath, [path.join(__dirname,'..','manifest','build-pd-manifest.js')], { stdio: 'inherit' });
 }
@@ -54,7 +57,8 @@ function badgeHtml(status){
   return `<span class="status-badge${cls}">${status === 'Coming Soon' ? 'Soon' : status}</span>`;
 }
 
-function main(){
+ function main(){
+  const DRY = process.argv.includes('--dry');
   ensureManifest();
   const data = JSON.parse(fs.readFileSync(MANIFEST,'utf8'));
   const byDisplay = new Map();
@@ -66,6 +70,7 @@ function main(){
 
   const targetPath = fs.existsSync(LANDING_PRIMARY) ? LANDING_PRIMARY : LANDING_LEGACY;
   let html = fs.readFileSync(targetPath,'utf8');
+  const originalHtml = html;
   for (const [display, status] of byDisplay.entries()){
     const safeDisplay = display.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const re = new RegExp(`(<h3[^>]*?>\\s*${safeDisplay}\\s*<span class=\\"status-badge[^<]*<\\/span>\\s*<\\/h3>)`);
@@ -81,7 +86,26 @@ function main(){
   // Case 2: Any variant of $0 cost that might be missing the standard formatting or (FREE) note
   html = html.replace(/(<li><strong>Cost:<\/strong>\s*)\$0(?:\s*\/\s*\w+)?(?:\s*\(\s*free\s*\))?/gi, (m, prefix) => prefix + '$0 / player (FREE)');
 
-  fs.writeFileSync(targetPath, html);
+  if (DRY){
+    if (html === originalHtml){
+      console.log('[dry-run] No changes needed in', path.basename(targetPath));
+    } else {
+      // Provide lightweight summary of changes
+      const addedBadges = (html.match(/status-badge/g) || []).length - (originalHtml.match(/status-badge/g) || []).length;
+      const costStandardizationsBefore = (originalHtml.match(/\$0 \/ player \(FREE\)/g) || []).length;
+      const costStandardizationsAfter = (html.match(/\$0 \/ player \(FREE\)/g) || []).length;
+      console.log('[dry-run] Would update', path.basename(targetPath));
+      if (addedBadges !== 0) console.log(`  * Badge span count delta: ${addedBadges}`);
+      if (costStandardizationsAfter !== costStandardizationsBefore){
+        console.log(`  * Standardized cost lines: ${costStandardizationsAfter - costStandardizationsBefore} newly normalized`);
+      }
+      // Show a compact diff snippet count (chars changed)
+      const deltaChars = Math.abs(html.length - originalHtml.length);
+      console.log(`  * Approx char delta: ${deltaChars}`);
+    }
+  } else {
+    fs.writeFileSync(targetPath, html);
+  }
   if (targetPath === LANDING_PRIMARY && fs.existsSync(LANDING_LEGACY)){
     const legacy = fs.readFileSync(LANDING_LEGACY,'utf8');
     if (!/http-equiv="refresh"/i.test(legacy)){
@@ -90,7 +114,9 @@ function main(){
       console.log('Converted legacy playerdev.landing.html into redirect stub.');
     }
   }
-  console.log('Updated program card badges in', path.basename(targetPath), 'to reflect manifest status.');
+  if (!DRY) {
+    console.log('Updated program card badges in', path.basename(targetPath), 'to reflect manifest status.');
+  }
 }
 
 main();
