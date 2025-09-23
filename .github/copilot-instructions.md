@@ -42,9 +42,9 @@ This is the North Central Little League (Seattle, WA) website - a comprehensive 
 
 	To enforce consistently across the site, use the helper script:
 
-	- Dry run: `node scripts/enforce-punctuation.js`
-	- Apply changes: `node scripts/enforce-punctuation.js --write`
-	- Limit to a path: `node scripts/enforce-punctuation.js --path="2025 Season"`
+	- Dry run: `node scripts/content/enforce-punctuation.js`
+	- Apply changes: `node scripts/content/enforce-punctuation.js --write`
+	- Limit to a path: `node scripts/content/enforce-punctuation.js --path="2025 Season"`
 	- Verbose logging: add `--verbose`
 
 ### Scholarship footnote (Cost section)
@@ -56,9 +56,9 @@ This is the North Central Little League (Seattle, WA) website - a comprehensive 
 	- Use the snippet at `Snippets/footies.scholarships.html` for source of truth
 
 To enforce across the site:
-- Dry run: `node scripts/normalize-scholarship-footies.js`
-- Apply changes: `node scripts/normalize-scholarship-footies.js --write`
-- Limit to a path: `node scripts/normalize-scholarship-footies.js --path="Player Development"`
+- Dry run: `node scripts/footnotes/normalize-scholarship-footies.js`
+- Apply changes: `node scripts/footnotes/normalize-scholarship-footies.js --write`
+- Limit to a path: `node scripts/footnotes/normalize-scholarship-footies.js --path="Player Development"`
 - Verbose logging: add `--verbose`
 
 ### Cost formatting
@@ -68,9 +68,9 @@ To enforce across the site:
 - Preserve trailing parentheticals such as `(scholarships available)`
 
 To enforce across the site:
-- Dry run: `node scripts/normalize-cost-format.js`
-- Apply changes: `node scripts/normalize-cost-format.js --write`
-- Limit to a path: `node scripts/normalize-cost-format.js --path="Player Development"`
+- Dry run: `node scripts/costs/normalize-cost-format.js`
+- Apply changes: `node scripts/costs/normalize-cost-format.js --write`
+- Limit to a path: `node scripts/costs/normalize-cost-format.js --path="Player Development"`
 - Verbose logging: add `--verbose`
 
 ### File Naming
@@ -131,6 +131,6 @@ To enforce across the site:
 	- Update badges (write): `node scripts/pd/landing/update-card-status.js`
 	- Lint PD Dates (dry): `node scripts/pd/lint/update-pd-dates-format.js`
 	- Lint PD Dates (write): `node scripts/pd/lint/update-pd-dates-format.js --write`
-	- Enforce punctuation (dry): `node scripts/enforce-punctuation.js`
+	- Enforce punctuation (dry): `node scripts/content/enforce-punctuation.js`
 
 Legacy duplicate root scripts and Player Development shim scripts have been removed; always use the paths above.
