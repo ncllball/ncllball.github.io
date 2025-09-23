@@ -64,27 +64,29 @@ Player Development (PD) tools
 
 These help generate and maintain the Player Development landing page and metadata. All operate relative to the repo root and read/write files under Player Development/.
 
-- pd/build-pd-manifest.js
+Restructured PD tooling (grouped by function):
+
+- pd/manifest/build-pd-manifest.js
   - What: Scans Player Development/*.html (prefixed by "2025 ") for the standardized tag strip, and emits pd-programs.json.
-  - Use:  node scripts/pd/build-pd-manifest.js
+  - Use:  node scripts/pd/manifest/build-pd-manifest.js
 
-- pd/build-pd-ataglance.js
-  - What: Builds the static rows for the At a Glance table in playerdev.landing.html using pd-programs.json.
-  - Use:  node scripts/pd/build-pd-ataglance.js
+- pd/landing/build-pd-ataglance.js
+  - What: Builds the static rows for the At a Glance table in the PD landing (index.html) using pd-programs.json.
+  - Use:  node scripts/pd/landing/build-pd-ataglance.js
 
-- pd/update-card-status.js
+- pd/landing/update-card-status.js
   - What: Syncs the program card status badges on the landing page based on date ranges/cost in pd-programs.json.
-  - Use:  node scripts/pd/update-card-status.js
+  - Use:  node scripts/pd/landing/update-card-status.js
 
-- pd/update-at-a-glance.js
+- pd/landing/update-at-a-glance.js
   - What: Convenience wrapper that runs the two steps above in sequence.
-  - Use:  node scripts/pd/update-at-a-glance.js
+  - Use:  node scripts/pd/landing/update-at-a-glance.js
 
-- pd/update-pd-dates-format.js
+- pd/lint/update-pd-dates-format.js
   - What: Lints and (optionally) normalizes the Dates line in each PD page's tag strip per Player Development/pd-date-format.md.
   - Use:
-    - Dry run: node scripts/pd/update-pd-dates-format.js
-    - Apply:   node scripts/pd/update-pd-dates-format.js --write
+    - Dry run: node scripts/pd/lint/update-pd-dates-format.js
+    - Apply:   node scripts/pd/lint/update-pd-dates-format.js --write
 
 Conventions
 
