@@ -1,31 +1,31 @@
 {
-  "generated": "2025-09-12T21:25:28.614Z",
+  "generated": "2025-09-23T19:06:32.525Z",
   "programs": [
     {
       "id": "2025 Free February",
       "file": "2025 Free February.html",
       "programName": "Free February",
-      "dates": "Feb 1, 8 & 22, 2025",
+      "dates": "Feb 1, 8 & amp; 22, 2025",
       "location": "Robert Eagle Staff MS (turf)",
       "day": null,
-      "time": "Two 1-hour sessions each date",
-      "cost": "$0 / session (FREE)",
-      "divisions": "Baseball (AAA & Majors)",
+      "time": "",
+      "cost": "$0 / player (FREE)",
+      "divisions": "Baseball (AAA &amp; Majors)",
       "ledBy": "NCLL Coaches",
       "focus": "Arm Build / Reps / Rhythm",
+      "title": "2025 Free February",
       "meta": {
         "dateList": "2025-02-01;2025-02-08;2025-02-22",
         "rangeStart": null,
         "rangeEnd": null,
         "costAmount": "0",
-        "costUnit": "session",
+        "costUnit": "player",
         "costStatus": "free",
         "divisionLevels": "aaa;majors",
         "sport": "baseball",
         "programName": "Free February",
         "focus": "Arm Build / Reps / Rhythm"
-      },
-      "title": "2025 Free February"
+      }
     },
     {
       "id": "2025 In-Season Double-AA (and up) SB Pitching",
@@ -37,8 +37,9 @@
       "time": "4:00 - 5:00 PM & 5:00 - 6:00 PM (two sessions)",
       "cost": "$0 / player (FREE)",
       "divisions": "Softball (AA & Up)",
-      "ledBy": "Hunter Mullally (Bishop Blanchet HS & Seattle Fastpitch)",
+      "ledBy": "Friends of NCLL — Coach Hunter Mullally (Bishop Blanchet HS & Seattle Fastpitch)",
       "focus": "Progressive Pitch Dev",
+      "title": "2025 In-Season Double-AA (and up) Softball Pitching",
       "meta": {
         "dateList": "2025-03-23;2025-04-06;2025-04-13;2025-04-27;2025-05-04;2025-05-11",
         "rangeStart": null,
@@ -50,8 +51,7 @@
         "sport": "softball",
         "programName": "In-Season Softball Pitching (AA+)",
         "focus": "Progressive Pitch Dev"
-      },
-      "title": "2025 In-Season Double-AA (and up) Softball Pitching"
+      }
     },
     {
       "id": "2025 LHS Winter Training",
@@ -60,11 +60,12 @@
       "dates": "May 18, 2025",
       "location": "Lower Woodland Field #1",
       "day": null,
-      "time": "12:00 - 3:00 PM",
+      "time": "12:00 PM &ndash; 3:00 PM",
       "cost": "$60 / player",
       "divisions": "Baseball (AA & Up)",
       "ledBy": "Friends of NCLL — Lincoln High School",
       "focus": "Multi-Station Skill Camp",
+      "title": "2025 Lincoln High School Little League Baseball Camp",
       "meta": {
         "dateList": "2025-05-18",
         "rangeStart": null,
@@ -76,8 +77,7 @@
         "sport": "baseball",
         "programName": "Lincoln HS Camp",
         "focus": "Multi-Station Skill Camp"
-      },
-      "title": "2025 Lincoln High School Little League Baseball Camp"
+      }
     },
     {
       "id": "2025 RHS Fastpitch Winter Batting Clinic",
@@ -91,6 +91,7 @@
       "divisions": "Softball (Grades 3-12)",
       "ledBy": "Roosevelt High School Fastpitch",
       "focus": "Hitting Sequencing / Reps",
+      "title": "2025 RHS Fastpitch Winter Batting Clinic",
       "meta": {
         "dateList": "2025-01-22;2025-01-29;2025-02-05;2025-02-12",
         "rangeStart": null,
@@ -102,8 +103,7 @@
         "sport": "softball",
         "programName": "RHS Batting Clinic",
         "focus": "Hitting Sequencing / Reps"
-      },
-      "title": "2025 RHS Fastpitch Winter Batting Clinic"
+      }
     },
     {
       "id": "2025 Winter AAA+MAJ BB Training",
@@ -117,6 +117,7 @@
       "divisions": "Baseball (AAA &amp; Majors)",
       "ledBy": "NCLL Volunteer Majors &amp; AAA Coaches",
       "focus": "Movement / Hitting / Conditioning",
+      "title": "2025 Winter AAA+MAJ BB Training",
       "meta": {
         "dateList": null,
         "rangeStart": "2024-11-04",
@@ -128,8 +129,7 @@
         "sport": "baseball",
         "programName": "AAA+Majors Baseball (Winter)",
         "focus": "Movement / Hitting / Conditioning"
-      },
-      "title": "2025 Winter AAA+MAJ BB Training"
+      }
     },
     {
       "id": "2025 Winter AAA+MAJ SB Training",
@@ -138,11 +138,12 @@
       "dates": "Jan 11, 18, 25 & Feb 1, 2025",
       "location": "Wallingford Boys & Girls Club",
       "day": null,
-      "time": "4:00 - 6:00 PM (single 2-hour block)",
-      "cost": "$0 / player (FREE; NCLL sponsored)",
+      "time": "4:00 &ndash; 6:00 PM (single 2-hour block)",
+      "cost": "$0 / player (FREE)",
       "divisions": "Softball (AAA & Majors)",
-      "ledBy": "Coach Hunter Mullally",
+      "ledBy": "Friends of NCLL — Coach Hunter Mullally (Bishop Blanchet HS & Seattle Fastpitch)",
       "focus": "Hitting / Field / Pitch Track",
+      "title": "2025 Winter AAA &amp; Majors Softball Training",
       "meta": {
         "dateList": "2025-01-11;2025-01-18;2025-01-25;2025-02-01",
         "rangeStart": null,
@@ -154,8 +155,7 @@
         "sport": "softball",
         "programName": "AAA+Majors Softball (Jan)",
         "focus": "Hitting / Field / Pitch Track"
-      },
-      "title": "2025 Winter AAA &amp; Majors Softball Training"
+      }
     },
     {
       "id": "2025 Winter Double-AA BB Pitching",
@@ -167,8 +167,9 @@
       "time": "12:00 PM or 1:15 PM",
       "cost": "$60 / player",
       "divisions": "Baseball (AA)",
-      "ledBy": "NW Sting Baseball",
+      "ledBy": "Friends of NCLL — Northwest Sting Baseball",
       "focus": "Intro Mechanics / Grip / Arm Care",
+      "title": "2025 Winter Double-AA Baseball Pitching",
       "meta": {
         "dateList": "2025-02-22;2025-03-01;2025-03-08",
         "rangeStart": null,
@@ -180,8 +181,7 @@
         "sport": "baseball",
         "programName": "AA Pitching (Winter)",
         "focus": "Intro Mechanics / Grip / Arm Care"
-      },
-      "title": "2025 Winter Double-AA Baseball Pitching"
+      }
     },
     {
       "id": "2025 Winter Single-A BB Training",
@@ -190,11 +190,12 @@
       "dates": "Mar 1 & 8, 2025",
       "location": "Wallingford Boys & Girls Club",
       "day": null,
-      "time": "2:00 - 3:00 PM & 3:00 - 4:00 PM",
+      "time": "2:00 &ndash; 3:00 PM &amp; 3:00 &ndash; 4:00 PM",
       "cost": "$20 / session",
       "divisions": "Baseball (Single-A)",
-      "ledBy": "Coach Mark Linden (Baseball Positive)",
+      "ledBy": "Friends of NCLL — Coach Mark Linden (Baseball Positive)",
       "focus": "Foundations / Throw / Catch / Field",
+      "title": "2025 Winter Single-A Baseball Training",
       "meta": {
         "dateList": "2025-03-01;2025-03-08",
         "rangeStart": null,
@@ -206,8 +207,7 @@
         "sport": "baseball",
         "programName": "Single-A Winter",
         "focus": "Foundations / Throw / Catch / Field"
-      },
-      "title": "2025 Winter Single-A Baseball Training"
+      }
     },
     {
       "id": "2025 Winter Teen BB Training",
@@ -216,11 +216,12 @@
       "dates": "Nov 9 - Feb 22, 2025",
       "location": "Focus Baseball Indoor Facility",
       "day": "Tuesdays",
-      "time": "5:00 - 6:30 PM",
+      "time": "5:00 &ndash; 6:30 PM",
       "cost": "TBD",
       "divisions": "Baseball (Teen)",
-      "ledBy": "Coach Ray Atkinson",
+      "ledBy": "Friends of NCLL — Coach Ray Atkinson",
       "focus": "Hitting Pattern / Arm Care / Movement",
+      "title": "2025 Winter Teen Baseball Training (Sessions I &amp; II)",
       "meta": {
         "dateList": null,
         "rangeStart": "2024-11-09",
@@ -232,8 +233,7 @@
         "sport": "baseball",
         "programName": "Teen Baseball (Winter)",
         "focus": "Hitting Pattern / Arm Care / Movement"
-      },
-      "title": "2025 Winter Teen Baseball Training (Sessions I &amp; II)"
+      }
     }
   ]
 }

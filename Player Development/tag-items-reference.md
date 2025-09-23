@@ -9,10 +9,10 @@ This document captures the standardized tag strip items (the top metadata list) 
 - Dates: Nov 9, 2024 - Feb 22, 2025
 - Location: Focus Baseball Indoor Facility
 - Day: Tuesdays
-- Time: 5:00 - 6:30 PM
+- Time: 5:00 – 6:30 PM
 - Cost: TBD
 - Division(s): Baseball (Teen)
-- Led by: Coach Ray Atkinson
+- Led by: Friends of NCLL — Coach Ray Atkinson
 
 Note: Age Group tag intentionally omitted (scope clear via Division + Eligibility). Cross-year span intentionally uses 2024 start → 2025 end. Datetime attributes now correct.
 
@@ -20,10 +20,10 @@ Note: Age Group tag intentionally omitted (scope clear via Division + Eligibilit
 
 - Dates: Mar 1 & 8, 2025
 - Location: Wallingford Boys & Girls Club
-- Time: 2:00 - 3:00 PM & 3:00 - 4:00 PM
+- Time: 2:00 – 3:00 PM & 3:00 – 4:00 PM
 - Cost: $20 / session
 - Division(s): Baseball (Single-A)
-- Led by: Coach Mark Linden (Baseball Positive)
+- Led by: Friends of NCLL — Coach Mark Linden (Baseball Positive)
 
 Note: Division label normalized to "Baseball (Single-A)" (previously "Baseball (A)").
 
@@ -34,7 +34,7 @@ Note: Division label normalized to "Baseball (Single-A)" (previously "Baseball (
 - Time: 12:00 PM or 1:15 PM
 - Cost: $60 / player
 - Division(s): Baseball (AA)
-- Led by: NW Sting Baseball
+- Led by: Friends of NCLL — Northwest Sting Baseball
 
 Note: Tag strip presently omits an Age Group line (consistent with current page). If we want parity, add: `Age Group: AA Baseball (Pitchers)`.
 
@@ -87,7 +87,7 @@ Note: Display text uses "AA & Up" (page HTML). Prior reference showed "AA - Seni
 - Dates: Mar 23; Apr 6, 13, 27; May 4, 11, 2025
 - Location: LW (behind Field 5 near batting cages)
 - Day: Sundays
-- Time: 4:00 - 5:00 PM & 5:00 - 6:00 PM (two sessions)
+- Time: 4:00 – 5:00 PM & 5:00 – 6:00 PM (two sessions)
 - Cost: $0 / player (FREE)
 - Division(s): Softball (AA & Up)
 - Led by: Hunter Mullally (Bishop Blanchet HS & Seattle Fastpitch)
@@ -98,7 +98,7 @@ Note: Tag strip intentionally omits a separate Age Group line; Division(s) conve
 
 - Dates: Feb 1, 8 & 22, 2025 (6 sessions)
 - Location: Robert Eagle Staff MS (turf)
-- Time: Two 1-hour sessions each date
+- Sessions: 4:30, 5:30, 6:00 & 7:00 PM (each 1 hr)
 - Cost: $0 / session (FREE)
 - Division(s): Baseball (AAA & Majors)
 - Led by: NCLL Coaches
@@ -115,6 +115,7 @@ Canonical set (target order):
 - Location
 - Day (optional; used when a recurring weekday is a core attribute)
 - Time
+- Sessions (alternate to Time for multi-slot programs where session times are the key attribute)
 - Cost
 - Age Group (optional when Division(s) already encodes scope or broad span)
 - Division(s)
