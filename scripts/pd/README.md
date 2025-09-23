@@ -1,6 +1,6 @@
 # Player Development Script Suite
 
-Canonical locations (legacy root duplicates & Player Development/ shims removed):
+Canonical locations (legacy root duplicates & Player Development/ shims now removed):
 
 ## Orchestrator
 
