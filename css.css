@@ -844,7 +844,7 @@ body:not(.cms-right) .only-on-right { display: none !important; }
 
 @media (max-width: 700px) {
     .float-right-brand {
-        float: none;
+        float: right;
         display: block;
         width: min(100%, 360px);
         height: auto;
