@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// MOVED (2025-09-23) from scripts/dedup-scholarship-footies.js
 var fs=require('fs');var path=require('path');
 var args=process.argv.slice(2);var WRITE=args.indexOf('--write')!==-1;var VERBOSE=args.indexOf('--verbose')!==-1;var PATH_ARG=(function(){for(var i=0;i<args.length;i++){if(args[i].indexOf('--path=')===0){return args[i].slice(7);}}return'';})();
 var ROOT=path.resolve(process.cwd(),PATH_ARG||'.');
