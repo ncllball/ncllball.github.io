@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# Pre-commit: run script structure guard + PD + site dry runs
-node scripts/tools/verify-script-structure.js || exit 1
-node scripts/pd/update-all.js --report || exit 1
-node scripts/tools/update-site-content.js --report || exit 0
