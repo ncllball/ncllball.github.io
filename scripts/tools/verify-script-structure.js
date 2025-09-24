@@ -17,9 +17,9 @@ const LEGACY = new Set([
   'normalize-scholarship-footies.js',
   'dedup-scholarship-footies.js',
   'normalize-info-icon-spacing.js',
-  // Newly forbidden aliases / resurrected names:
-  'update-at-a-glance.js', // replaced by pd/update-all or landing/build-pd-ataglance.js
-  'build-pd-ataglance.js'  // must live only at landing/build-pd-ataglance.js, not root
+  // Deprecated PD aliases / duplicates
+  'build-pd-ataglance.js',           // root-level duplicate (should live in pd/landing)
+  'update-at-a-glance.js'            // removed alias wrapper
 ]);
 
 const present = [];
@@ -27,21 +27,22 @@ for (const name of LEGACY) {
   if (fs.existsSync(path.join(SCRIPTS_DIR, name))) present.push(name);
 }
 
-// Also check disallowed direct children under scripts/pd (legacy duplicates)
-const pdDir = path.join(SCRIPTS_DIR, 'pd');
-if (fs.existsSync(pdDir)) {
-  const pdChildren = fs.readdirSync(pdDir);
-  for (const child of pdChildren) {
-    if (child === 'build-pd-ataglance.js') {
-      present.push('pd/' + child);
-    }
-  }
-}
-
 if (present.length) {
   console.error('FAIL: Deprecated script filename(s) reintroduced at root:\n  - ' + present.join('\n  - '));
-  console.error('Move your script into the appropriate subfolder (content, costs, footnotes, layout, pd, tools).');
+  console.error('Move your script into the appropriate subfolder (content, costs, footnotes, layout, pd, tools). Use canonical PD paths (pd/landing/build-pd-ataglance.js) only.');
   process.exit(2);
+}
+
+// Additional PD landing duplication guard: ensure only canonical script exists in landing.
+const pdLanding = path.join(SCRIPTS_DIR, 'pd', 'landing');
+if (fs.existsSync(pdLanding)) {
+  const landingFiles = fs.readdirSync(pdLanding).filter(f => f.includes('at-a-glance'));
+  const alias = landingFiles.filter(f => f !== 'build-pd-ataglance.js');
+  if (alias.length) {
+    console.error('FAIL: Non-canonical At a Glance PD script(s) present in pd/landing:\n  - ' + alias.join('\n  - '));
+    console.error('Keep only build-pd-ataglance.js. Remove wrapper/alias scripts.');
+    process.exit(2);
+  }
 }
 
 console.log('Script structure guard passed (no legacy root scripts present).');
