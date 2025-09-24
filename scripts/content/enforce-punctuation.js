@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// MOVED (2025-09-23) from scripts/enforce-punctuation.js
 const fs=require('fs');const path=require('path');
 const args=process.argv.slice(2);const WRITE=args.includes('--write');const VERBOSE=args.includes('--verbose');const PATH_ARG=(()=>{const p=args.find(a=>a.startsWith('--path'));if(!p)return null;const[,v]=p.split('=');return v||null;})();
 const ROOT=process.cwd();const START_DIR=PATH_ARG?path.resolve(ROOT,PATH_ARG):ROOT;const IGNORE=new Set(['node_modules','.git','.github','images','images_unused','fonts','docs','ics']);

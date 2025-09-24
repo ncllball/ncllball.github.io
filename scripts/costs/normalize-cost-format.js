@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// MOVED (2025-09-23): formerly scripts/normalize-cost-format.js
 // See scripts/README.md for usage.
 
 /**
