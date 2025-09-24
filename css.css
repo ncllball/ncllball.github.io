@@ -844,3 +844,8 @@ body:not(.cms-right) .only-on-right { display: none !important; }
 .ul-space-bottom {
     margin-bottom: 1rem;
 }
+
+.training-steps {
+    margin-bottom: 9px !important;
+}
+
