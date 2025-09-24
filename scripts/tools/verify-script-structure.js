@@ -16,12 +16,26 @@ const LEGACY = new Set([
   'normalize-free-cost.js',
   'normalize-scholarship-footies.js',
   'dedup-scholarship-footies.js',
-  'normalize-info-icon-spacing.js'
+  'normalize-info-icon-spacing.js',
+  // Newly forbidden aliases / resurrected names:
+  'update-at-a-glance.js', // replaced by pd/update-all or landing/build-pd-ataglance.js
+  'build-pd-ataglance.js'  // must live only at landing/build-pd-ataglance.js, not root
 ]);
 
 const present = [];
 for (const name of LEGACY) {
   if (fs.existsSync(path.join(SCRIPTS_DIR, name))) present.push(name);
+}
+
+// Also check disallowed direct children under scripts/pd (legacy duplicates)
+const pdDir = path.join(SCRIPTS_DIR, 'pd');
+if (fs.existsSync(pdDir)) {
+  const pdChildren = fs.readdirSync(pdDir);
+  for (const child of pdChildren) {
+    if (child === 'build-pd-ataglance.js') {
+      present.push('pd/' + child);
+    }
+  }
 }
 
 if (present.length) {

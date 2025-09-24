@@ -1,5 +1,5 @@
 {
-  "generated": "2025-09-23T22:29:52.286Z",
+  "generated": "2025-09-24T00:21:08.156Z",
   "programs": [
     {
       "id": "2025 Free February",
@@ -228,35 +228,6 @@
         "sport": "baseball",
         "programName": "Single-A Winter",
         "focus": "Foundations / Throw / Catch / Field",
-        "sessionsPerDate": null,
-        "sessionDurationMin": null,
-        "sessionCount": null
-      }
-    },
-    {
-      "id": "2025 Winter Teen BB Training",
-      "file": "2025 Winter Teen BB Training.html",
-      "programName": "Teen Baseball (Winter)",
-      "dates": "Nov 9 - Feb 22, 2025",
-      "location": "Focus Baseball Indoor Facility",
-      "day": "Tuesdays",
-      "time": "5:00 &ndash; 6:30 PM",
-      "cost": "$0 / player (FREE)",
-      "divisions": "Baseball (Teen)",
-      "ledBy": "Friends of NCLL — Coach Ray Atkinson",
-      "focus": "Hitting Pattern / Arm Care / Movement",
-      "title": "2025 Winter Teen Baseball Training (Sessions I &amp; II)",
-      "meta": {
-        "dateList": null,
-        "rangeStart": "2024-11-09",
-        "rangeEnd": "2025-02-22",
-        "costAmount": "0",
-        "costUnit": "player",
-        "costStatus": "tbd",
-        "divisionLevels": "teen",
-        "sport": "baseball",
-        "programName": "Teen Baseball (Winter)",
-        "focus": "Hitting Pattern / Arm Care / Movement",
         "sessionsPerDate": null,
         "sessionDurationMin": null,
         "sessionCount": null

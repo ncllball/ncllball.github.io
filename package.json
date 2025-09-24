@@ -1,0 +1,14 @@
+{
+  "name": "ncll-site-scripts",
+  "private": true,
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "pd:update": "node scripts/pd/update-all.js",
+    "pd:update:write": "node scripts/pd/update-all.js --write",
+    "site:normalize": "node scripts/tools/update-site-content.js",
+    "site:normalize:write": "node scripts/tools/update-site-content.js --write",
+    "guard:scripts": "node scripts/tools/verify-script-structure.js",
+    "check": "npm run guard:scripts && npm run pd:update -- --report && npm run site:normalize -- --report || exit 1"
+  }
+}
