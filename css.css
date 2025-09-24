@@ -192,6 +192,7 @@ h6 {
     color: var(--color_red);
     text-align: left;
 }
+
 sup {
     vertical-align: super;
     font-size: .6rem;
@@ -330,13 +331,20 @@ a.ncll:focus-visible,
 
 /* Inline date/time + calendar row (matches list item sizing) */
 .cal-inline {
-    font-size: 1.15rem; /* align with p, ul, li */
+    font-size: 1.15rem;
+    /* align with p, ul, li */
     font-family: var(--font_ui);
 }
 
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { animation: none !important; transition: none !important; }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
 }
 
 /* start bottom sticky registration */
@@ -438,8 +446,11 @@ a.ncll:focus-visible,
 .with-sticky-register {
     padding-bottom: 100px;
 }
+
 @media (max-width:640px) {
-    .with-sticky-register { padding-bottom: 140px; }
+    .with-sticky-register {
+        padding-bottom: 140px;
+    }
 }
 
 /* start tags */
@@ -496,6 +507,7 @@ a.ncll:focus-visible,
     border: 1px solid var(--color_tag);
     border-radius: 50%;
 }
+
 /* end tags */
 
 /* Inline icon-only calendar trigger retained; legacy .cal-inline removed */
@@ -578,67 +590,88 @@ a.ncll:focus-visible,
     background-position: center;
     background-size: contain;
 }
-.cal-menu a[data-cal="google"]::before { background-image: url(images/icons/calendar/google.svg); }
-.cal-menu a[data-cal="outlook"]::before { background-image: url(images/icons/calendar/outlook.svg); }
-.cal-menu a[data-cal="apple"]::before { background-image: url(images/icons/calendar/apple.svg); }
-.cal-menu a[data-cal="yahoo"]::before { background-image: url(images/icons/calendar/yahoo.svg); }
-.cal-menu a[data-cal="m365"]::before { background-image: url(images/icons/calendar/ms365.svg); }
-.cal-menu a[data-cal="teams"]::before { background-image: url(images/icons/calendar/teams.svg); }
-.cal-menu a[data-cal="ics"]::before { background-image: url(images/icons/calendar/ics.svg); }
+
+.cal-menu a[data-cal="google"]::before {
+    background-image: url(images/icons/calendar/google.svg);
+}
+
+.cal-menu a[data-cal="outlook"]::before {
+    background-image: url(images/icons/calendar/outlook.svg);
+}
+
+.cal-menu a[data-cal="apple"]::before {
+    background-image: url(images/icons/calendar/apple.svg);
+}
+
+.cal-menu a[data-cal="yahoo"]::before {
+    background-image: url(images/icons/calendar/yahoo.svg);
+}
+
+.cal-menu a[data-cal="m365"]::before {
+    background-image: url(images/icons/calendar/ms365.svg);
+}
+
+.cal-menu a[data-cal="teams"]::before {
+    background-image: url(images/icons/calendar/teams.svg);
+}
+
+.cal-menu a[data-cal="ics"]::before {
+    background-image: url(images/icons/calendar/ics.svg);
+}
 
 /* end calendar dropdown */
 
 /* Block: Base table component */
 .ncll-table {
-margin: 6px 0 22px;
+    margin: 6px 0 22px;
 }
 
 .ncll-table__table {
-width: 100%;
-border-collapse: collapse;
-border-spacing: 0;
-font-family: var(--font_ui);
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: var(--font_ui);
 }
 
 /* Elements: Parts of the table */
 .ncll-table__cell {
-padding: 8px 10px;
-border-bottom: 1px solid var(--color_border_light);
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--color_border_light);
 }
 
 .ncll-table__cell--head {
-text-align: left;
-font-weight: 600;
-color: var(--color_black);
-border-bottom: 2px solid var(--color_red);
+    text-align: left;
+    font-weight: 600;
+    color: var(--color_black);
+    border-bottom: 2px solid var(--color_red);
 }
 
 .ncll-table__row {
-padding: inherit;
+    padding: inherit;
 }
 
 .ncll-table__body {
-padding: inherit;
+    padding: inherit;
 }
 
 /* Modifiers: Variations of components */
 .ncll-table--baseball {
-padding: inherit;
+    padding: inherit;
 }
 
 .ncll-table--softball {
-padding: inherit;
+    padding: inherit;
 }
 
 /* Utility: Specific layout needs */
 .ncll-table__cell:nth-child(2) {
-text-align: center;
-white-space: nowrap;
-font-variant-numeric: tabular-nums;
+    text-align: center;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
 }
 
 .ncll-table__body .ncll-table__row:nth-child(odd) .ncll-table__cell {
-background-color: #fafafa;
+    background-color: #fafafa;
 }
 
 /* ================= Right-pane (CMS) helpers ================= */
@@ -655,13 +688,27 @@ body.cms-right .gainsboro-button {
 }
 
 /* Slightly tighter vertical rhythm for headings inside narrow column */
-body.cms-right h2.left { margin-bottom: 12px; }
-body.cms-right h3 { margin: 10px 0; }
-body.cms-right h4 { margin: 8px 0; }
+body.cms-right h2.left {
+    margin-bottom: 12px;
+}
+
+body.cms-right h3 {
+    margin: 10px 0;
+}
+
+body.cms-right h4 {
+    margin: 8px 0;
+}
 
 /* Utilities to control visibility specifically in right pane context */
-.hide-on-right { display: none !important; }
-body:not(.cms-right) .only-on-right { display: none !important; }
+.hide-on-right {
+    display: none !important;
+}
+
+body:not(.cms-right) .only-on-right {
+    display: none !important;
+}
+
 /* =============== End Right-pane (CMS) helpers =============== */
 
 /* ================= Player Development landing (scoped) ================ */
@@ -718,9 +765,17 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     margin-left: 6px;
 }
 
-.pd-landing .status-soon { background: var(--color_orange); }
-.pd-landing .status-free { background: var(--color_green); }
-.pd-landing .status-closed { background: var(--color_gray_aaaa); }
+.pd-landing .status-soon {
+    background: var(--color_orange);
+}
+
+.pd-landing .status-free {
+    background: var(--color_green);
+}
+
+.pd-landing .status-closed {
+    background: var(--color_gray_aaaa);
+}
 
 .pd-landing .quick-nav {
     display: flex;
@@ -731,7 +786,9 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     list-style: none;
 }
 
-.pd-landing .quick-nav li { list-style: none; }
+.pd-landing .quick-nav li {
+    list-style: none;
+}
 
 .pd-landing .quick-nav a {
     background: var(--color_lightgray);
@@ -744,7 +801,11 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease, color .12s ease, border-color .12s ease;
 }
 
-.pd-landing .quick-nav a:hover { background: var(--color_blue); color: #fff; }
+.pd-landing .quick-nav a:hover {
+    background: var(--color_blue);
+    color: #fff;
+}
+
 .pd-landing .quick-nav a:focus-visible {
     outline: none;
     box-shadow: 0 0 0 3px rgba(0, 1, 58, .18), 0 6px 14px rgba(0, 0, 0, .10);
@@ -802,11 +863,29 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     margin-bottom: 32px;
 }
 
-.table-at-a-glance table { width: 100%; border-collapse: collapse; font-size: .85rem; }
-.table-at-a-glance th { text-align: left; padding: 6px 6px; color: var(--color_blue); }
-.table-at-a-glance td { padding: 4px 6px; border-top: 1px solid var(--color_border_light); vertical-align: top; }
+.table-at-a-glance table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .85rem;
+}
+
+.table-at-a-glance th {
+    text-align: left;
+    padding: 6px 6px;
+    color: var(--color_blue);
+}
+
+.table-at-a-glance td {
+    padding: 4px 6px;
+    border-top: 1px solid var(--color_border_light);
+    vertical-align: top;
+}
+
 .table-at-a-glance thead th:last-child,
-.table-at-a-glance tbody td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+.table-at-a-glance tbody td:last-child {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
 
 .pd-landing .pill-inline {
     display: inline-block;
@@ -819,11 +898,18 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     margin-right: 4px;
 }
 
-.pd-landing .pd-muted-note { font-size: .7rem; margin-top: 8px; color: var(--color_muted); }
+.pd-landing .pd-muted-note {
+    font-size: .7rem;
+    margin-top: 8px;
+    color: var(--color_muted);
+}
 
 @media (prefers-reduced-motion: reduce) {
-    .pd-landing .program-card { transition: none; }
+    .pd-landing .program-card {
+        transition: none;
+    }
 }
+
 /* ================= End Player Development landing ================ */
 
 
@@ -849,10 +935,12 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     padding-top: 20px;
     padding-right: 10px;
 }
+
 .float-right-brand img {
     max-width: 100%;
     height: auto;
 }
+
 .images {
     right: 0;
     float: right;
@@ -864,6 +952,7 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     height: 250px;
     object-fit: cover;
 }
+
 .container_right {
     position: relative;
     width: 100%;
@@ -880,6 +969,7 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     padding-top: 60px;
     padding-right: 20px;
 }
+
 /* end image styling for all images */
 
 .ul-space-bottom {
@@ -888,4 +978,90 @@ body:not(.cms-right) .only-on-right { display: none !important; }
 
 .training-steps {
     margin-bottom: 9px !important;
+}
+
+/* start css styling for lightbox */
+/* CSS-only lightbox using :target */
+.lb-link {
+    cursor: zoom-in;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+.lb-backdrop {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.lb-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(92vw, 1100px);
+    max-height: 92vh;
+}
+
+.lb-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, .5);
+}
+
+.lb-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: var(--color_red);
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.lb-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--color_blue);
+    border: 1px solid var(--color_border_light);
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.lb-prev {
+    left: -48px;
+}
+
+.lb-next {
+    right: -48px;
+}
+
+@media (max-width: 640px) {
+    .lb-prev {
+        left: 8px;
+    }
+
+    .lb-next {
+        right: 8px;
+    }
 }
