@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// MOVED (2025-09-23) from scripts/normalize-info-icon-spacing.js
 var fs=require('fs'),path=require('path');
 var args=process.argv.slice(2);var WRITE=args.indexOf('--write')!==-1;var VERBOSE=args.indexOf('--verbose')!==-1;function getArgValue(flag){for(var i=0;i<args.length;i++){if(args[i].indexOf(flag+'=')===0)return args[i].slice((flag+'=').length);}return null;}
 var START=path.resolve(process.cwd(),getArgValue('--path')||'.');var IGNORE={'.git':1,'fonts':1,'images':1,'ics':1,'docs':1,'node_modules':1,'images_unused':1};

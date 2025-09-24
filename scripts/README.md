@@ -143,7 +143,7 @@ Typical PD workflow:
 - Prefer small, single-purpose scripts; compose via PowerShell or a future JS orchestrator if needed.
 - Run the guard (node scripts/tools/verify-script-structure.js) before committing when touching scripts/.
 - Guard permits absence of legacy filenames or (during migration windows) a short deprecation stub containing DEPRECATED_MOVED_SCRIPT.
-- MOVED comments inside current scripts are historical breadcrumbs; safe to remove after Q1 2026 once all docs have long referenced subfolder paths.
+- Historical MOVED comments have now been removed for a clean steady-state.
 
 ## Style
 

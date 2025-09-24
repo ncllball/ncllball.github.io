@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// MOVED (2025-09-23) from scripts/normalize-scholarship-footies.js
 const fs = require("fs");
 const path = require("path");
 const args = process.argv.slice(2);
