@@ -183,14 +183,12 @@ h4 {
 }
 
 h5 {
-    font-size: 0.875rem;
-    color: red;
     text-align: left;
 }
 
 h6 {
     font-size: 1.25rem;
-    color: red;
+    color: var(--color_red);
     text-align: left;
 }
 sup {
