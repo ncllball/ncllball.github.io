@@ -899,6 +899,8 @@ body:not(.cms-right) .only-on-right {
     margin-right: 4px;
 }
 
+
+
 .pd-landing .pd-muted-note {
     font-size: .7rem;
     margin-top: 8px;
@@ -1064,5 +1066,40 @@ body:not(.cms-right) .only-on-right {
 
     .lb-next {
         right: 8px;
+    }
+}
+
+/* Generic At‑a‑Glance (definition list) */
+dl.at-a-glance {
+    background: var(--color_surface_light);
+    border: 1px solid var(--color_border_light);
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.5rem 1.5rem;
+}
+dl.at-a-glance dt {
+    font-weight: 600;
+    color: var(--color_blue);
+    font-size: 1rem;
+    margin: 0;
+}
+dl.at-a-glance dd {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--color_text);
+}
+@media (max-width: 640px) {
+    dl.at-a-glance {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+    dl.at-a-glance dt {
+        margin-top: 1rem;
+    }
+    dl.at-a-glance dt:first-child {
+        margin-top: 0;
     }
 }
