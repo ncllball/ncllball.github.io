@@ -841,3 +841,7 @@ body:not(.cms-right) .only-on-right { display: none !important; }
 }
 
 /* end image styling for all images */
+
+.ul-space-bottom {
+    margin-bottom: 1rem;
+}
