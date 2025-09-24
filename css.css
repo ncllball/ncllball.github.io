@@ -139,6 +139,42 @@ h2 {
 
 }
 
+/* vertical timeline (lightweight utility) */
+.timeline-vertical {
+    position: relative;
+    margin: 15px 0 25px 0;
+    padding-left: 18px;
+    list-style: none;
+    border-left: 2px solid var(--color_timeline_line);
+}
+.timeline-vertical li {
+    margin: 0 0 10px 0;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+.timeline-vertical li::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    background: var(--color_white);
+    border: 2px solid var(--color_red);
+    border-radius: 50%;
+}
+.timeline-vertical li span.year {
+    font-weight: 600;
+    color: var(--color_blue);
+    margin-right: 4px;
+}
+.timeline-vertical a {
+    text-decoration: none;
+}
+.timeline-vertical a:hover {
+    text-decoration: underline;
+}
+
 .left {
     text-align: left !important;
     float: none;
