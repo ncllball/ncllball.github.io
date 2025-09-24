@@ -25,7 +25,12 @@ if (isWrite && isReport){
 const ROOT = path.resolve(__dirname, '..', '..');
 const PD_SCRIPTS = path.join(ROOT, 'scripts', 'pd');
 
-// Legacy stub check removed (stub fully deleted). If it reappears, structure guard will fail.
+// Detect lingering legacy stub (should be removed or empty)
+const legacyStubPath = path.join(PD_SCRIPTS, 'build-pd-ataglance.js');
+if (fs.existsSync(legacyStubPath)){
+  const sz = fs.statSync(legacyStubPath).size;
+  console.warn(`[legacy-warning] Found legacy stub file at scripts/pd/build-pd-ataglance.js (${sz} bytes). Consider deleting it.`);
+}
 
 function runStep(label, rel, mode){
   const full = path.join(PD_SCRIPTS, rel);
