@@ -260,6 +260,17 @@ a.ncll:focus-visible,
 
 /* end focus states and links */
 
+/* call-to-action floated image (migrated from backup) */
+.calltoaction {
+    float: right;
+    max-width: 20%;
+    max-height: 175px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+    padding-right: 20px;
+}
+
 /* start footies */
 .footies {
     font-size: 0.8125rem;
