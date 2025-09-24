@@ -1,17 +1,21 @@
 # Player Development Script Suite
 
-Canonical locations (legacy root duplicates & Player Development/ shims now removed):
+Canonical locations only (all legacy root duplicates & Player Development/ shims removed). A structure guard prevents re‑introducing deprecated names or alias wrappers.
 
 ## Orchestrator
 
-- `scripts/pd/update-all.js` (default DRY). Use `--write` to apply.
+| Script | Modes | Purpose |
+|--------|-------|---------|
+| `scripts/pd/update-all.js` | default: DRY, `--write`, `--report` | Runs manifest build, At a Glance regeneration, status badge + cost normalization. `--report` gives a quiet summary (no writes). |
 
 ## Individual Tools
 
-- Manifest: `scripts/pd/manifest/build-pd-manifest.js`
-- At a Glance table: `scripts/pd/landing/build-pd-ataglance.js` (DRY by default; `--write` to save)
-- Status badges & cost normalization: `scripts/pd/landing/update-card-status.js` (`--dry` optional; write otherwise)
-- Dates linter: `scripts/pd/lint/update-pd-dates-format.js` (`--write` to apply fixes)
+| Function | Script | Mode Behavior |
+|----------|--------|---------------|
+| Manifest builder | `scripts/pd/manifest/build-pd-manifest.js` | Always writes (idempotent), invoked automatically if manifest missing. |
+| At a Glance table | `scripts/pd/landing/build-pd-ataglance.js` | DRY unless `--write` supplied. Auto-builds manifest if absent. |
+| Status badges + FREE cost coercion | `scripts/pd/landing/update-card-status.js` | Writes unless `--dry` passed. |
+| Dates linter | `scripts/pd/lint/update-pd-dates-format.js` | DRY unless `--write` supplied. |
 
 ## Docs
 
@@ -22,13 +26,14 @@ Located in `scripts/pd/docs/`:
 
 ## Typical Workflow (Dry → Write)
 
-1. `node scripts/pd/update-all.js` (preview changes)
-2. `node scripts/pd/update-all.js --write`
-3. (Optional) `node scripts/pd/lint/update-pd-dates-format.js --write`
+1. Preview summary: `node scripts/pd/update-all.js --report`
+2. Inspect detail (still dry): `node scripts/pd/update-all.js`
+3. Apply: `node scripts/pd/update-all.js --write`
+4. (Optional) Dates normalization: `node scripts/pd/lint/update-pd-dates-format.js --write`
 
-## Rationale
+## Rationale / Canonical Enforcement
 
-Legacy duplicates created confusion and risked divergence. This consolidation enforces a single source of truth and predictable automation behavior.
+Removed alias wrapper `update-at-a-glance.js` and any root-level `build-pd-ataglance.js` duplicate. Guard script (`scripts/tools/verify-script-structure.js`) fails CI if non‑canonical names reappear. This ensures a single entrypoint for At a Glance generation and consistent automation.
 
 ## Notes
 
@@ -37,5 +42,6 @@ Legacy duplicates created confusion and risked divergence. This consolidation en
 
 ## Future Ideas
 
-- Add aggregated report mode (`--report`) to `update-all.js` summarizing table/badge deltas without file writes.
-- Introduce JSON schema validation for manifest before consuming.
+- JSON schema validation for manifest before consumption
+- HTML diff summary output file in `--report` mode
+- Program tagging consistency auditor
