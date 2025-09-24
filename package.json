@@ -1,0 +1,15 @@
+{
+	"name": "ncllball-website",
+	"private": true,
+	"version": "0.0.1",
+	"description": "North Central Little League static site maintenance scripts and helpers",
+	"license": "UNLICENSED",
+	"scripts": {
+		"verify:scripts": "node scripts/tools/verify-script-structure.js",
+		"pd:update": "node scripts/pd/update-all.js",
+		"pd:write": "node scripts/pd/update-all.js --write",
+		"pd:report": "node scripts/pd/update-all.js --report",
+		"site:content": "node scripts/tools/update-site-content.js",
+		"site:content:write": "node scripts/tools/update-site-content.js --write"
+	}
+}
