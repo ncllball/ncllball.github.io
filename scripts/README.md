@@ -19,6 +19,51 @@ scripts/
 - Use `--path="Some Folder"` to limit scope for most normalizers.
 - Keep logic idempotent; re-running a script on a clean tree should yield no changes.
 
+## Suggested workflow (site-wide content maintenance)
+
+### Step 1 – Content punctuation & list cleanup (light, safe)
+
+- node scripts/content/enforce-punctuation.js
+- node scripts/content/convert-single-li-to-p.js
+
+### Step 2 – Cost formatting (seasonal / registration pages)
+
+- node scripts/costs/normalize-cost-format.js
+- node scripts/costs/normalize-free-cost.js
+
+### Step 3 – Scholarship footnote (after Cost sections stable)
+
+- node scripts/footnotes/normalize-scholarship-footies.js
+- node scripts/footnotes/dedup-scholarship-footies.js
+
+### Step 4 – Minor layout normalization
+
+- node scripts/layout/normalize-info-icon-spacing.js
+
+### Step 5 – Player Development automation (as needed)
+
+- node scripts/pd/update-all.js
+
+### Step 6 – Legacy tag cleanup
+
+- node scripts/content/find-legacy-super.js (replace `&lt;super&gt;` → `&lt;sup&gt;`)
+
+Run with `--write` only after reviewing dry-run output. Limit scope with `--path="2025 Season"` (etc.) when working incrementally.
+
+## Task quick reference
+
+| Task | Script | Dry run command | Apply command |
+| ---- | ------ | --------------- | ------------- |
+| Enforce punctuation | content/enforce-punctuation.js | node scripts/content/enforce-punctuation.js | node scripts/content/enforce-punctuation.js --write |
+| Collapse single-item lists | content/convert-single-li-to-p.js | node scripts/content/convert-single-li-to-p.js | node scripts/content/convert-single-li-to-p.js --write |
+| Normalize cost spacing | costs/normalize-cost-format.js | node scripts/costs/normalize-cost-format.js | node scripts/costs/normalize-cost-format.js --write |
+| Normalize FREE cost lines | costs/normalize-free-cost.js | node scripts/costs/normalize-free-cost.js | node scripts/costs/normalize-free-cost.js --write |
+| Insert/replace scholarship footnote | footnotes/normalize-scholarship-footies.js | node scripts/footnotes/normalize-scholarship-footies.js | node scripts/footnotes/normalize-scholarship-footies.js --write |
+| De-duplicate scholarship footnotes | footnotes/dedup-scholarship-footies.js | node scripts/footnotes/dedup-scholarship-footies.js | node scripts/footnotes/dedup-scholarship-footies.js --write |
+| Info icon spacing | layout/normalize-info-icon-spacing.js | node scripts/layout/normalize-info-icon-spacing.js | node scripts/layout/normalize-info-icon-spacing.js --write |
+| Replace legacy &lt;super&gt; tags | content/find-legacy-super.js | node scripts/content/find-legacy-super.js | node scripts/content/find-legacy-super.js --write |
+| PD manifest + table + badges | pd/update-all.js | node scripts/pd/update-all.js | node scripts/pd/update-all.js --write |
+
 ## Costs (scripts/costs)
 
 - normalize-cost-format.js
@@ -81,6 +126,12 @@ Typical PD workflow:
 - verify-script-structure.js
   - Guard: ensures deprecated root script filenames remain stubs only
   - Run: node scripts/tools/verify-script-structure.js
+- update-site-content.js
+  - JS orchestrator: runs common content normalization steps (punctuation → single-li → costs → free-cost → scholarship normalize → scholarship de-dup → layout → legacy super)
+  - Dry (all): node scripts/tools/update-site-content.js
+  - Scope: node scripts/tools/update-site-content.js --path="2025 Season"
+  - Apply: node scripts/tools/update-site-content.js --write
+  - Subset: node scripts/tools/update-site-content.js --tasks=punctuation,costs,scholarship --write
 
 ## Placeholder / Future
 
@@ -92,6 +143,7 @@ Typical PD workflow:
 - Prefer small, single-purpose scripts; compose via PowerShell or a future JS orchestrator if needed.
 - Run the guard (node scripts/tools/verify-script-structure.js) before committing when touching scripts/.
 - Guard permits absence of legacy filenames or (during migration windows) a short deprecation stub containing DEPRECATED_MOVED_SCRIPT.
+- MOVED comments inside current scripts are historical breadcrumbs; safe to remove after Q1 2026 once all docs have long referenced subfolder paths.
 
 ## Style
 
