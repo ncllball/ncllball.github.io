@@ -139,42 +139,6 @@ h2 {
 
 }
 
-/* vertical timeline (lightweight utility) */
-.timeline-vertical {
-    position: relative;
-    margin: 15px 0 25px 0;
-    padding-left: 18px;
-    list-style: none;
-    border-left: 2px solid var(--color_timeline_line);
-}
-.timeline-vertical li {
-    margin: 0 0 10px 0;
-    padding: 0 0 0 10px;
-    position: relative;
-}
-.timeline-vertical li::before {
-    content: "";
-    position: absolute;
-    left: -10px;
-    top: 6px;
-    width: 10px;
-    height: 10px;
-    background: var(--color_white);
-    border: 2px solid var(--color_red);
-    border-radius: 50%;
-}
-.timeline-vertical li span.year {
-    font-weight: 600;
-    color: var(--color_blue);
-    margin-right: 4px;
-}
-.timeline-vertical a {
-    text-decoration: none;
-}
-.timeline-vertical a:hover {
-    text-decoration: underline;
-}
-
 .left {
     text-align: left !important;
     float: none;
@@ -885,7 +849,32 @@ body:not(.cms-right) .only-on-right { display: none !important; }
     padding-top: 20px;
     padding-right: 10px;
 }
+.float-right-brand img {
+    max-width: 100%;
+    height: auto;
+}
+.images {
+    right: 0;
+    float: right;
+    padding: 55px 0 20px 20px;
+}
 
+.container_right {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.calltoaction {
+    float: right;
+    max-width: 20%;
+    max-height: 175px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+    padding-right: 20px;
+}
 /* end image styling for all images */
 
 .ul-space-bottom {
@@ -895,4 +884,3 @@ body:not(.cms-right) .only-on-right { display: none !important; }
 .training-steps {
     margin-bottom: 9px !important;
 }
-
