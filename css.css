@@ -334,7 +334,6 @@ a.ncll:focus-visible,
     width: 1em;
     height: 1em;
     margin-right: 0.25em;
-    vertical-align: middle;
 }
 
 .info-icon::before {
