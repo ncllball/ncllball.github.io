@@ -301,17 +301,15 @@ a.ncll:focus-visible,
 .footies a:hover {
     text-decoration: underline;
 }
+/* Info icon for footnotes */
 
 .info-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     width: var(--info-icon-size);
     height: var(--info-icon-size);
-    font-size: 8px;
-    font-weight: bold;
     overflow: hidden;
-    margin-right: 2px;
+    display: inline-block;
+    margin-right: 0.25em;
+    color: var(--color_red);
 }
 
 .info-icon--framed {
@@ -326,15 +324,6 @@ a.ncll:focus-visible,
     height: 100%;
     display: block;
 
-}
-
-/* Info icon for footnotes */
-.info-icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    margin-right: 0.25em;
-    color: inherit;
 }
 
 .info-icon::before {
