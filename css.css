@@ -194,6 +194,38 @@ h6 {
     text-align: left;
 }
 
+/* ================= Pitching Reference (global reuse) ================= */
+.pitching-ref nav.page-nav {background:#f8f9fb;border:1px solid var(--color_lightgray);padding:12px 16px;border-radius:6px;max-width:480px;}
+.pitching-ref nav.page-nav ul {list-style:none;margin:0;padding:0;}
+.pitching-ref nav.page-nav li {margin:.3rem 0;}
+.pitching-ref table.fit {border-collapse:collapse;width:100%;margin:0 0 1rem 0;}
+.pitching-ref table.fit caption {text-align:left;font-weight:600;background:var(--color_blue);color:#fff;padding:4px 8px;border-radius:4px 4px 0 0;}
+.pitching-ref table.fit th, .pitching-ref table.fit td {padding:6px 8px;border:1px solid var(--color_border_table);vertical-align:top;font-size:.92rem;}
+.pitching-ref table.fit thead th {background:#e6e9f2;}
+.pitching-ref table.fit tbody tr:nth-child(even) {background:#f3f6fa;}
+.pitching-ref .note {font-size:12px;color:var(--color_muted);margin-top:-4px;margin-bottom:1rem;}
+.battery-box {border:1px solid var(--color_red);background:#fff7f7;padding:12px 16px;border-left:6px solid var(--color_red);margin:1rem 0;border-radius:4px;}
+.battery-box h3 {margin-top:0;}
+.print-link {margin:.5rem 0 1rem;}
+.print-btn-float {position:fixed;bottom:18px;right:18px;background:var(--color_red);color:#fff !important;padding:10px 16px;border-radius:30px;font-size:.85rem;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,.25);text-decoration:none;z-index:9999;}
+.print-btn-float:hover, .print-btn-float:focus-visible {background:#e00000;}
+@media print { .print-btn-float {display:none !important;} }
+@media print {
+    table.fit {page-break-inside:avoid;break-inside:avoid;}
+    .battery-box {page-break-inside:avoid;break-inside:avoid;}
+    h2, h3, h4 {page-break-after:avoid;break-after:avoid;}
+}
+
+/* Early season ramp visibility control (CSS-only) */
+.early-season-visible {display:block;}
+.early-season-hidden {display:none;}
+/* To hide automatically post-June 1 without JS we rely on manual class swap on June 1 content update or a server build hook (static site cannot detect date). */
+/* Toggle control & archived note styling */
+.early-ramp-toggle {background:var(--color_blue);color:#fff;border:0;border-radius:4px;padding:6px 10px;font-size:.7rem;letter-spacing:.5px;font-weight:600;cursor:pointer;margin:0 0 6px;box-shadow:0 1px 3px rgba(0,0,0,.25);} 
+.early-ramp-toggle:hover,.early-ramp-toggle:focus-visible {background:#18225c;}
+.archived-ramp-note {font-size:.7rem;font-style:italic;color:var(--color_muted);margin:-2px 0 8px;}
+/* ===================================================================== */
+
 sup {
     vertical-align: super;
     font-size: .6rem;
