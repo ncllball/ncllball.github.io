@@ -1,0 +1,89 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
+    <title>NCLL Pitching Hub: Baseball Pitch Counts & Softball Innings</title>
+</head>
+<body>
+    <nav class="page-nav" aria-label="Page navigation">
+        <h2 class="left">On This Page</h2>
+        <ul>
+            <li><a class="ncll" href="#overview">Overview</a></li>
+            <li><a class="ncll" href="#baseball">Baseball Pitch Count Reference</a></li>
+            <li><a class="ncll" href="#softball">Softball Innings Reference</a></li>
+            <li><a class="ncll" href="#printables">Printable Quick Sheets</a></li>
+            <li><a class="ncll" href="#key-anchors">Key Anchors</a></li>
+            <li><a class="ncll" href="#season-toggle">Maintainer: Early Season Toggle</a></li>
+        </ul>
+    </nav>
+
+    <section id="overview">
+        <h1 class="left">NCLL Pitching Hub</h1>
+        <p>This hub links to consolidated pitching governance for <strong>Baseball (pitch counts & rest)</strong> and <strong>Softball (innings & workload)</strong>. Use it to quickly jump to daily max pitch counts, early season ramp guidelines, battery eligibility (Baseball), innings per appearance (Softball), rotation principles, fatigue / removal signs, and printable bench quick sheets.</p>
+        <p><strong>Last Updated:</strong> September 25, 2025</p>
+    </section>
+
+    <section id="baseball">
+        <h2 class="left">Baseball Pitch Count Reference</h2>
+        <ul>
+            <li><a class="ncll" href="/Baseball/pitching-reference.html">Full Baseball Pitching Reference</a></li>
+            <li><a class="ncll" href="/Baseball/pitching-reference.html#daily-max">Daily Pitch Count Maximums</a></li>
+            <li><a class="ncll" href="/Baseball/pitching-reference.html#early-season">Early Season Ramp (Pre–June&nbsp;1)</a></li>
+            <li><a class="ncll" href="/Baseball/pitching-reference.html#rest-thresholds">Mandatory Rest Thresholds</a></li>
+            <li><a class="ncll" href="/Baseball/pitching-reference.html#battery-eligibility">Catcher / Pitcher (Battery) Eligibility</a></li>
+            <li><a class="ncll" href="/Baseball/pitching-reference.html#division-mapping">Division → Age Mapping</a></li>
+            <li><a class="ncll" href="/Baseball/pitching-reference.html#safety-best-practices">Safety & Best Practices</a></li>
+        </ul>
+    </section>
+
+    <section id="softball">
+        <h2 class="left">Softball Innings Reference</h2>
+        <ul>
+            <li><a class="ncll" href="/Softball/pitching-reference-softball.html">Full Softball Pitching / Innings Reference</a></li>
+            <li><a class="ncll" href="/Softball/pitching-reference-softball.html#innings-baseline">Innings Per Appearance (Guideline)</a></li>
+            <li><a class="ncll" href="/Softball/pitching-reference-softball.html#early-ramp">Early Season Ramp (Pre–June&nbsp;1)</a></li>
+            <li><a class="ncll" href="/Softball/pitching-reference-softball.html#rotation">Rotation & Usage Principles</a></li>
+            <li><a class="ncll" href="/Softball/pitching-reference-softball.html#signs">Fatigue / Removal Signs</a></li>
+            <li><a class="ncll" href="/Softball/pitching-reference-softball.html#crossplay">Dual-Sport / External Load</a></li>
+            <li><a class="ncll" href="/Softball/pitching-reference-softball.html#safety">Safety & Best Practices</a></li>
+        </ul>
+    </section>
+
+    <section id="printables">
+        <h2 class="left">Printable Quick Sheets</h2>
+        <ul>
+            <li><a class="ncll" href="/Baseball/pitching-reference.print.html" target="_blank" rel="noopener noreferrer">Baseball Pitching Quick Sheet (Print)</a></li>
+            <li><a class="ncll" href="/Softball/pitching-reference-softball.print.html" target="_blank" rel="noopener noreferrer">Softball Pitching Quick Sheet (Print)</a></li>
+        </ul>
+    </section>
+
+    <section id="key-anchors">
+        <h2 class="left">Key Anchors (Direct Links)</h2>
+        <ul>
+            <li><a class="ncll" href="/Baseball/pitching-reference.html#daily-max">Baseball: Daily Max Pitch Counts</a></li>
+            <li><a class="ncll" href="/Baseball/pitching-reference.html#early-season">Baseball: Early Season Ramp</a></li>
+            <li><a class="ncll" href="/Baseball/pitching-reference.html#rest-thresholds">Baseball: Rest Thresholds</a></li>
+            <li><a class="ncll" href="/Baseball/pitching-reference.html#battery-eligibility">Baseball: Battery Eligibility</a></li>
+            <li><a class="ncll" href="/Softball/pitching-reference-softball.html#innings-baseline">Softball: Innings Baseline</a></li>
+            <li><a class="ncll" href="/Softball/pitching-reference-softball.html#early-ramp">Softball: Early Season Ramp</a></li>
+            <li><a class="ncll" href="/Softball/pitching-reference-softball.html#rotation">Softball: Rotation</a></li>
+        </ul>
+    </section>
+
+    <section id="season-toggle">
+        <h2 class="left">Maintainer: Early Season Ramp Visibility</h2>
+        <p><strong>Goal:</strong> After June&nbsp;1 each year, hide early-season ramp highlight blocks (still leave data available for context). Current approach uses CSS class <code>early-season-visible</code> on April/May ramps. To hide:</p>
+        <ul>
+            <li>Open <a class="ncll" href="/Baseball/pitching-reference.html#early-season">Baseball Early Season Section</a> & Softball counterpart (<a class="ncll" href="/Softball/pitching-reference-softball.html#early-ramp">Softball Early Ramp</a>)</li>
+            <li>Change section class from <code>early-season-visible</code> to <code>early-season-hidden</code></li>
+            <li>Leave anchor id intact so legacy links still resolve</li>
+            <li>Optionally add a short note inside section noting it is now off-season (do not delete historical table)</li>
+        </ul>
+        <p><em>Future Enhancement:</em> Could automate with a tiny JS date check; intentionally avoided for static simplicity.</p>
+    </section>
+
+    <section class="footies">
+        <!-- Scholarship footnote (standard snippet copy) -->
+        <p><span class="info-icon" aria-hidden="true"></span>NCLL believes that no one should be denied the ability to play ball due to economic circumstances. Each year, we grant scholarships to families who may need assistance. If you are interested, please fill out the <a class="ncll" href="mailto:registrar&#64;ncllball.com?subject=Scholarship%20Request">Scholarship Request</a> form or contact our <a class="ncll" href="mailto:registrar&#64;ncllball.com">registrar</a></p>
+    </section>
+    <script src="/scripts/season-toggle.js" defer></script>
+</body>
