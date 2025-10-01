@@ -1596,3 +1596,19 @@ body.timeline-page a:focus-visible {
     background: var(--timeline_primary);
 }
 
+.tags_button {
+    background: var(--color_lightgray);
+    border: none;
+    border-radius: 4px;
+    color: var(--color_text);
+    cursor: pointer;
+    display: inline-block;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: background .3s ease, color .3s ease, transform .2s ease, box-shadow .2s ease;
+    white-space: nowrap;
+}
