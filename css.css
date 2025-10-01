@@ -1368,6 +1368,7 @@ body.timeline-page a:focus-visible {
     text-transform: none;
     white-space: nowrap;
     color: var(--timeline_heading);
+    text-align: right;
 }
 
 .timeline-info span {
@@ -1428,6 +1429,7 @@ body.timeline-page a:focus-visible {
     color: var(--timeline_heading);
     font-weight: 600;
     margin-top: 0;
+    text-align: left !important;
 }
 
 .timeline-content p {
