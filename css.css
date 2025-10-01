@@ -30,6 +30,10 @@
     --color_border_table: #dededf;
     --color_white: #ffffff;
     --color_black: #000000;
+    --timeline_primary: #ff6b6b;
+    --timeline_primary_hover: #ff9a9a;
+    --timeline_heading: #3d4351;
+    --timeline_body: #768390;
     /* sup positioning tokens */
     /* calendar icon sizing */
     --cal-icon-size: 1.3em;
@@ -1220,40 +1224,158 @@ dl.at-a-glance dd {
 
 /* Timeline Component Styles */
 
-.ncll-season-schedule {
+body.timeline-page {
+    color: var(--timeline_body);
+    background: #ffffff;
+    font-family: "Effra", "proxima-nova", var(--font_ui);
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+body.timeline-page h1,
+body.timeline-page h2,
+body.timeline-page h3,
+body.timeline-page h4,
+body.timeline-page h5,
+body.timeline-page h6 {
+    color: var(--timeline_heading);
+    margin-top: 0;
+}
+
+body.timeline-page a {
+    color: var(--timeline_primary);
+}
+
+body.timeline-page a:hover,
+body.timeline-page a:focus-visible {
+    color: var(--timeline_primary_hover);
+    text-decoration: none;
+}
+
+.timeline-page .container-fluid {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    max-width: 1100px;
+}
+
+.timeline-page .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding: 0 0 4em 0;
+}
+
+.timeline-page .row:nth-child(even) {
+    background: #f1f4f5;
+}
+
+.timeline-page .row > [class*="col-"] {
+    box-sizing: border-box;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 100%;
+}
+
+.timeline-page .col-md-12,
+.timeline-page .col-xs-12 {
+    width: 100%;
+}
+
+.timeline-page .col-xs-10 {
+    width: 83.3333%;
+}
+
+.timeline-page .col-xs-offset-1 {
+    margin-left: 8.3333%;
+}
+
+.timeline-page .example-title {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 3em 0;
+    border-bottom: 1px solid #e4eaec;
+}
+
+.timeline-page .example-title p {
+    margin: 0 auto;
+    font-size: 16px;
+    max-width: 400px;
+}
+
+@media (max-width: 767.98px) {
+    .timeline-page .row {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .timeline-page .row > [class*="col-"] {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .timeline-page .col-xs-10,
+    .timeline-page .col-xs-offset-1 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .timeline-page .col-sm-8 {
+        width: 66.6667%;
+    }
+
+    .timeline-page .col-sm-offset-2 {
+        margin-left: 16.6667%;
+    }
+
+    .timeline-page .col-xs-offset-1 {
+        margin-left: 0;
+    }
+}
+
+.timeline {
     line-height: 1.4em;
     list-style: none;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     width: 100%;
-    max-width: 1000px;
 }
 
-.ncll-season-schedule h1,
-.ncll-season-schedule h2,
-.ncll-season-schedule h3,
-.ncll-season-schedule h4,
-.ncll-season-schedule h5,
-.ncll-season-schedule h6 {
-    line-height: normal;
+.timeline h1,
+.timeline h2,
+.timeline h3,
+.timeline h4,
+.timeline h5,
+.timeline h6 {
+    line-height: inherit;
 }
 
-.schedule-entry {
+.timeline-item {
     padding-left: 40px;
     position: relative;
 }
 
-.schedule-entry:last-child {
+.timeline-item:last-child {
     padding-bottom: 0;
 }
-.entry-date {
-    font-size: 0.75rem;
+
+.timeline-info {
+    font-size: 12px;
     font-weight: 700;
+    letter-spacing: 3px;
     margin: 0 0 0.5em 0;
+    text-transform: uppercase;
     white-space: nowrap;
-    text-align: right;
+    color: var(--timeline_heading);
 }
-.entry-indicator {
+
+.timeline-info span {
+    display: inline-block;
+}
+
+.timeline-marker {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1261,8 +1383,8 @@ dl.at-a-glance dd {
     width: 15px;
 }
 
-.entry-indicator:before {
-    background: var(--color_red);
+.timeline-marker::before {
+    background: var(--timeline_primary);
     border: 3px solid transparent;
     border-radius: 100%;
     content: "";
@@ -1272,178 +1394,201 @@ dl.at-a-glance dd {
     top: 4px;
     left: 0;
     width: 15px;
-    transition: background .3s ease-in-out, border .3s ease-in-out;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
-.entry-indicator:after {
+.timeline-marker::after {
     content: "";
-    width: 1px;
-    background: var(--color_timeline_line);
+    width: 3px;
+    background: #ccd5db;
     display: block;
     position: absolute;
-    top: 30px;
+    top: 24px;
     bottom: 0;
-    left: 10px;
+    left: 6px;
 }
-.entry-details {
+
+.timeline-item:last-child .timeline-marker::after {
+    content: none;
+}
+
+.timeline-item:not(.period):hover .timeline-marker::before {
+    background: transparent;
+    border: 3px solid var(--timeline_primary);
+}
+
+.timeline-content {
     padding-bottom: 40px;
 }
 
-.entry-details p:last-child {
+.timeline-content p:last-child {
     margin-bottom: 0;
 }
-.month-heading {
+
+.timeline-title {
+    color: var(--timeline_heading);
     font-weight: 600;
-    font-size: 1.125rem;
-    text-align: left !important;
+    margin-top: 0;
 }
 
-/* Timeline/Schedule Styles */
-.ncll-season-schedule {
-    list-style: none;
+.timeline-content p {
+    color: var(--timeline_body);
+}
+
+.timeline-item.period {
     padding: 0;
-    margin: 2rem 0;
-    position: relative;
 }
 
-.ncll-season-schedule.schedule-vertical {
-    padding-left: 2rem;
+.timeline-item.period .timeline-info {
+    display: none;
 }
 
-.ncll-season-schedule.schedule-vertical:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background: #e0e0e0;
-}
-
-.schedule-entry {
-    position: relative;
-    padding: 1rem 0 2rem 3rem;
-    list-style: none;
-}
-
-.schedule-entry.month-marker {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-}
-
-.entry-date {
-    position: absolute;
-    left: -8rem;
-    top: 1rem;
-    width: 7rem;
-    text-align: right;
-    font-size: 14px;
-    color: #666;
-}
-
-.entry-date span {
-    display: inline-block;
-}
-
-.entry-indicator {
-    position: absolute;
-    left: -7px;
-    top: 1.2rem;
-    width: 14px;
-    height: 14px;
-    background: #fff;
-    border: 2px solid #00013a;
-    border-radius: 50%;
-}
-
-.month-marker .entry-indicator {
-    width: 18px;
-    height: 18px;
-    left: -9px;
-    background: #00013a;
-}
-
-.entry-details {
-    margin: 0;
-}
-
-.month-heading {
-    font-size: 26px;
-    color: #00013a;
-    margin: 0 0 0.5rem 0;
-    font-weight: 700;
-}
-
-.event-name {
-    font-size: 18px;
-    color: #00013a;
-    margin: 0 0 0.5rem 0;
-    font-weight: 600;
-}
-
-.entry-details p {
-    margin: 0.5rem 0 0 0;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #333;
-}
-
-.tags_button {
-    background: none;
+.timeline-item.period .timeline-marker::before {
+    background: transparent;
+    content: "";
+    width: 15px;
+    height: auto;
     border: none;
-    color: #cc0000;
-    font-size: 12px;
-    padding: 0 0 0 0.5rem;
-    cursor: pointer;
-    text-decoration: underline;
-    font-style: italic;
+    border-radius: 0;
+    top: 0;
+    bottom: 30px;
+    position: absolute;
+    border-top: 3px solid #ccd5db;
+    border-bottom: 3px solid #ccd5db;
 }
 
-.tags_button:hover {
-    color: #00013a;
+.timeline-item.period .timeline-marker::after {
+    content: "";
+    height: 32px;
+    top: auto;
 }
 
-/* Responsive adjustments for timeline */
-@media (max-width: 768px) {
-    .ncll-season-schedule.schedule-vertical {
-        padding-left: 1rem;
-    }
-    
-    .schedule-entry {
-        padding-left: 2rem;
-    }
-    
-    .entry-date {
-        position: static;
-        width: auto;
-        text-align: left;
-        margin-bottom: 0.5rem;
-        font-weight: 600;
-    }
-    
-    .month-heading {
-        font-size: 22px;
-    }
-    
-    .event-name {
-        font-size: 16px;
-    }
+.timeline-item.period .timeline-content {
+    padding: 40px 0 70px;
 }
 
-/* Container and row adjustments for timeline page */
-.example-split {
-    margin: 2rem 0;
-}
-
-.example-title {
-    padding: 1rem 2rem;
-    background: #f8f8f8;
-    border-left: 4px solid #00013a;
-    margin-bottom: 2rem;
-}
-
-.example-title p {
+.timeline-item.period .timeline-title {
     margin: 0;
-    font-size: 16px;
-    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
+
+@media (min-width: 768px) {
+    .timeline-split {
+        display: table;
+        width: 100%;
+    }
+
+    .timeline-split .timeline-item {
+        display: table-row;
+        padding: 0;
+    }
+
+    .timeline-split .timeline-info,
+    .timeline-split .timeline-marker,
+    .timeline-split .timeline-content,
+    .timeline-split .timeline-item.period .timeline-info {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .timeline-split .timeline-marker {
+        position: relative;
+    }
+
+    .timeline-split .timeline-content {
+        padding-left: 30px;
+    }
+
+    .timeline-split .timeline-info {
+        padding-right: 30px;
+    }
+
+    .timeline-split .timeline-item.period .timeline-title {
+        position: relative;
+        left: -45px;
+    }
+}
+
+@media (min-width: 992px) {
+    .timeline-centered,
+    .timeline-centered .timeline-item,
+    .timeline-centered .timeline-info,
+    .timeline-centered .timeline-marker,
+    .timeline-centered .timeline-content {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .timeline-centered .timeline-item {
+        padding-bottom: 40px;
+        overflow: hidden;
+    }
+
+    .timeline-centered .timeline-marker {
+        position: absolute;
+        left: 50%;
+        margin-left: -7.5px;
+    }
+
+    .timeline-centered .timeline-info,
+    .timeline-centered .timeline-content {
+        width: 50%;
+    }
+
+    .timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
+        float: left;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .timeline-centered > .timeline-item:nth-child(odd) .timeline-content {
+        float: right;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .timeline-centered > .timeline-item:nth-child(even) .timeline-info {
+        float: right;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .timeline-centered > .timeline-item:nth-child(even) .timeline-content {
+        float: left;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    .timeline-centered > .timeline-item.period .timeline-content {
+        float: none;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .timeline-centered .timeline-item.period {
+        padding: 50px 0 90px;
+    }
+
+    .timeline-centered .timeline-item.period .timeline-marker::after {
+        height: 30px;
+        bottom: 0;
+        top: auto;
+    }
+
+    .timeline-centered .timeline-item.period .timeline-title {
+        left: auto;
+    }
+}
+
+.marker-outline .timeline-marker::before {
+    background: transparent;
+    border-color: var(--timeline_primary);
+}
+
+.marker-outline .timeline-item:hover .timeline-marker::before {
+    background: var(--timeline_primary);
+}
+
