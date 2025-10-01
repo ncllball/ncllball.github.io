@@ -1363,8 +1363,7 @@ body.timeline-page a:focus-visible {
 
 .timeline-info {
     font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 3px;
+    font-weight: 200;
     margin: 0 0 0.5em 0;
     text-transform: none;
     white-space: nowrap;
