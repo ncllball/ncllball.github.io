@@ -1363,7 +1363,7 @@ body.timeline-page a:focus-visible {
 
 .timeline-info {
     font-size: 12px;
-    font-weight: 200;
+    font-weight: 400;
     margin: 0 0 0.5em 0;
     text-transform: none;
     white-space: nowrap;
@@ -1398,13 +1398,13 @@ body.timeline-page a:focus-visible {
 
 .timeline-marker::after {
     content: "";
-    width: 3px;
+    width: 1px;
     background: #ccd5db;
     display: block;
     position: absolute;
-    top: 24px;
+    top: 30px;
     bottom: 0;
-    left: 6px;
+    left: 11px;
 }
 
 .timeline-item:last-child .timeline-marker::after {
