@@ -1605,10 +1605,10 @@ body.timeline-page a:focus-visible {
     display: inline-block;
     font-size: .75rem;
     font-weight: 600;
-    letter-spacing: .5px;
     padding: 4px 8px;
     text-align: center;
     text-decoration: none;
     transition: background .3s ease, color .3s ease, transform .2s ease, box-shadow .2s ease;
     white-space: nowrap;
+    margin-left: 5px;
 }
