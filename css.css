@@ -1217,3 +1217,83 @@ dl.at-a-glance dd {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* Timeline Component Styles */
+
+.ncll-season-schedule {
+    line-height: 1.4em;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.ncll-season-schedule h1,
+.ncll-season-schedule h2,
+.ncll-season-schedule h3,
+.ncll-season-schedule h4,
+.ncll-season-schedule h5,
+.ncll-season-schedule h6 {
+    line-height: normal;
+}
+
+.schedule-entry {
+    padding-left: 40px;
+    position: relative;
+}
+
+.schedule-entry:last-child {
+    padding-bottom: 0;
+}
+.entry-date {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 0 0 0.5em 0;
+    white-space: nowrap;
+    text-align: right;
+}
+.entry-indicator {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+}
+
+.entry-indicator:before {
+    background: var(--color_red);
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 15px;
+    transition: background .3s ease-in-out, border .3s ease-in-out;
+}
+
+.entry-indicator:after {
+    content: "";
+    width: 1px;
+    background: var(--color_timeline_line);
+    display: block;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 10px;
+}
+.entry-details {
+    padding-bottom: 40px;
+}
+
+.entry-details p:last-child {
+    margin-bottom: 0;
+}
+.month-heading {
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-align: left !important;
+}
