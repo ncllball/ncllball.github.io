@@ -1470,8 +1470,8 @@ body.timeline-page a:focus-visible {
 
 .timeline-item.period .timeline-title {
     margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    text-transform: none;
+    letter-spacing: normal;
 }
 
 @media (min-width: 768px) {
