@@ -1366,7 +1366,7 @@ body.timeline-page a:focus-visible {
     font-weight: 700;
     letter-spacing: 3px;
     margin: 0 0 0.5em 0;
-    text-transform: uppercase;
+    text-transform: none;
     white-space: nowrap;
     color: var(--timeline_heading);
 }
