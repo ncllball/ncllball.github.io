@@ -1454,8 +1454,8 @@ body.timeline-page a:focus-visible {
     top: 0;
     bottom: 30px;
     position: absolute;
-    border-top: 3px solid #ccd5db;
-    border-bottom: 3px solid #ccd5db;
+    /* border-top: 3px solid #ccd5db;
+    border-bottom: 3px solid #ccd5db; */
 }
 
 .timeline-item.period .timeline-marker::after {
