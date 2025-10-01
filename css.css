@@ -1434,6 +1434,7 @@ body.timeline-page a:focus-visible {
 
 .timeline-content p {
     color: var(--timeline_body);
+    font-size: 14px;
 }
 
 .timeline-item.period {
