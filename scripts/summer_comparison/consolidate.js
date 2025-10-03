@@ -243,8 +243,8 @@ function transform2025Row(row, year) {
     sport: sport,
     age_group: ageGroup,
     previous_division: '',
-    team_name: row['Team Name'] || '',
-    team_request: row['Teammate Request'] || '',
+    team_name: (row['Team Name'] || '').trim(),
+    team_request: (row['Teammate Request'] || '').trim(),
     guardian1_first_name: (row['Account First Name'] || '').trim(),
     guardian1_last_name: (row['Account Last Name'] || '').trim(),
     guardian1_email: row['User Email'] || '',
@@ -311,8 +311,8 @@ function transform2024Row(row, year) {
     sport: sport,
     age_group: ageGroup,
     previous_division: row['previous_division'] || '',
-    team_name: row['Rostered Team'] || '',
-    team_request: row['Team Request'] || '',
+    team_name: (row['Rostered Team'] || '').trim(),
+    team_request: (row['Team Request'] || '').trim(),
     guardian1_first_name: (row['guardian_1_first_name'] || '').trim(),
     guardian1_last_name: (row['guardian_1_last_name'] || '').trim(),
     guardian1_email: row['Guardian_1_Email'] || '',
@@ -489,10 +489,29 @@ function processSourceFile(sourceInfo) {
 }
 
 /**
+ * Trim all string values in a row and normalize whitespace
+ */
+function trimRow(row) {
+  const trimmed = {};
+  for (const [key, value] of Object.entries(row)) {
+    if (typeof value === 'string') {
+      // Trim and normalize multiple spaces/newlines to single space
+      trimmed[key] = value.trim().replace(/\s+/g, ' ');
+    } else {
+      trimmed[key] = value;
+    }
+  }
+  return trimmed;
+}
+
+/**
  * Write master CSV file
  */
 function writeMasterFile(allRows) {
-  const csv = stringify(allRows, {
+  // Trim all string values to remove trailing spaces
+  const trimmedRows = allRows.map(trimRow);
+  
+  const csv = stringify(trimmedRows, {
     header: true,
     columns: MASTER_COLUMNS,
     quoted: false, // Only quote when necessary
