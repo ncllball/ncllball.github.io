@@ -181,6 +181,7 @@ The consolidated master file uses these standardized columns:
 **Index**: Generate as `summerball23`
 
 Key differences:
+
 - Verify column names match exactly (may have slight variations)
 - Test with sample data before full conversion
 
@@ -191,6 +192,7 @@ Key differences:
 **Index**: Generate as `summerball22`
 
 Key differences:
+
 - Some additional columns: `Higher Division Request`, `Waitlist - Softball Division`
 - Column name variations (spaces vs underscores)
 - Test with sample data before full conversion
@@ -202,13 +204,14 @@ Key differences:
 ### Index Column Generation
 
 The `index` column provides a unique identifier for each year's dataset:
+
 - **Format**: `summerballXX` where XX is the 2-digit year
-- **Examples**: 
+- **Examples**:
   - 2022 → `summerball22`
   - 2023 → `summerball23`
   - 2024 → `summerball24`
   - 2025 → `summerball25`
-- **Purpose**: 
+- **Purpose**:
   - Quick year identification
   - Consistent naming across all records
   - Useful for grouping/filtering in analysis
@@ -218,6 +221,7 @@ The `index` column provides a unique identifier for each year's dataset:
 ### Division Selection Logic (2022-2024)
 
 SportsEngine has separate columns for baseball and softball divisions:
+
 - Check `Baseball Division` first
 - If empty, check `Softball Division`
 - One will be populated, the other empty
@@ -230,6 +234,7 @@ Sports Connect has a single `Division Name` column that contains the full progra
 ### Email Priority (2025)
 
 Multiple email fields exist:
+
 1. `User Email` (primary account email)
 2. `Additional Email` (secondary contact)
 3. `Secondary Email` (alternate field)
@@ -239,6 +244,7 @@ Use `User Email` for `guardian1_email`, fall back to others for `guardian2_email
 ### Phone Number Normalization
 
 Apply these transformations to ALL phone fields:
+
 - Remove `+1` prefix
 - Format as `###-###-####`
 - Remove any parentheses, spaces, or dots
@@ -247,6 +253,7 @@ Apply these transformations to ALL phone fields:
 ### State Normalization
 
 Convert all state values to 2-letter uppercase abbreviations:
+
 - `Washington` → `WA`
 - `washington` → `WA`
 - `WA` → `WA` (already correct)
@@ -254,6 +261,7 @@ Convert all state values to 2-letter uppercase abbreviations:
 ### ZIP Code Normalization
 
 Strip extended ZIP+4 format:
+
 - `98103-1234` → `98103`
 - `98103` → `98103` (already correct)
 
@@ -262,6 +270,7 @@ Strip extended ZIP+4 format:
 ## Validation Checklist
 
 After mapping each year:
+
 - [ ] Index column generated correctly (format: `summerballXX`)
 - [ ] All required fields are populated (no empty values)
 - [ ] School names normalized to canonical format
@@ -281,6 +290,7 @@ After mapping each year:
 ### Philosophy
 
 The master schema is designed to be **extensible**. If you need additional information later:
+
 1. Original source CSV files are preserved and unchanged
 2. Full column inventory available in `source-columns-inventory.md`
 3. Can always go back and re-extract additional fields
@@ -306,6 +316,7 @@ The master schema is designed to be **extensible**. If you need additional infor
 ### Complete Field Reference
 
 See `source-columns-inventory.md` for:
+
 - Complete list of ALL columns in each source file (~170 in 2025, ~115 in 2024)
 - Organized by category (Player, Medical, Financial, etc.)
 - Quick reference for finding available fields
