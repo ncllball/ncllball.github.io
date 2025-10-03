@@ -9,31 +9,50 @@ const divisionNormalization = {
   // ========================================
   // BASEBALL DIVISIONS
   // ========================================
-  
+
   // Majors (10-11 year olds)
   'Baseball-Major Division (Age 10-11)': 'BASEBALL - Summerball - Majors (Interleague)',
   'Baseball Majors': 'BASEBALL - Summerball - Majors (Interleague)',
-  
+
   // AAA (9-10 year olds)
   'Baseball-AAA Division (Age 9-10)': 'BASEBALL - Summerball - Triple-AAA (Interleague)',
   'Baseball AAA': 'BASEBALL - Summerball - Triple-AAA (Interleague)',
-  
+  'Waitlist - Baseball-AAA (Age 9-10)': 'BASEBALL - Summerball - Triple-AAA (Interleague)',
+
   // AA (8-9 year olds, Player Pitch)
   'Baseball AA Division (Age 8-9 Player Pitch)': 'BASEBALL - Summerball - Double-AA (Interleague)',
-  
+  'Baseball AA': 'BASEBALL - Summerball - Double-AA (Interleague)',
+  "Baseball-AA Division (Age 8-9 Player Pitch)": 'BASEBALL - Summerball - Double-AA (Interleague)',
+
   // Single-A (Sandlot)
   'Baseball A': 'BASEBALL - Summerball - Single-A (Sandlot)',
-  
+  'Baseball A Division (Age 6-7)': 'BASEBALL - Summerball - Single-A (Sandlot)',
+  'Pre-approved younger players': 'BASEBALL - Summerball - Single-A (Sandlot)',
+
   // Teen/Junior (12-15 year olds, 90' basepaths)
   'Baseball-Teen Division (Age 12-15; 90\' basepaths)': 'BASEBALL - Summerball - TEEN/JUNIOR (Interleague)',
   'Baseball JR/SR': 'BASEBALL - Summerball - TEEN/JUNIOR (Interleague)',
-  
+  'Waitlist - Baseball-Teen Division (Age 12-15; 90\' basepaths)': 'BASEBALL - Summerball - TEEN/JUNIOR (Interleague)',
+
+  // 2025 format variations (Summerball25)
+  'BASEBALL - Summerball25 - Single-A (Sandlot)': 'BASEBALL - Summerball - Single-A (Sandlot)',
+  'BASEBALL - Summerball25 - Double-AA (Interleague)': 'BASEBALL - Summerball - Double-AA (Interleague)',
+  'BASEBALL - Summerball25 - Triple-AAA (Interleague)': 'BASEBALL - Summerball - Triple-AAA (Interleague)',
+  'BASEBALL - Summerball25 - Majors (Interleague)': 'BASEBALL - Summerball - Majors (Interleague)',
+  'BASEBALL - Summerball25 - TEEN/JUNIOR (Interleague)': 'BASEBALL - Summerball - TEEN/JUNIOR (Interleague)',
+
   // ========================================
   // SOFTBALL DIVISIONS
   // ========================================
-  
+
   'SOFTBALL - Summerball25 - AAA/Majors (Sandlot)': 'SOFTBALL - Summerball - AAA/Majors (Sandlot)',
   'SOFTBALL - Summerball25 - AA/AAA (Sandlot)': 'SOFTBALL - Summerball - AA/AAA (Sandlot)',
+  'SOFTBALL - Summerball25 - AAA/Majors (Sandlot)': 'SOFTBALL - Summerball - AAA/Majors (Sandlot)',
+  'SOFTBALL - Summerball25 - AA/AAA (Sandlot)': 'SOFTBALL - Summerball - AA/AAA (Sandlot)',
+
+  // Combined Division (2022-2024)
+  'Softball-Combined Division': 'SOFTBALL - Summerball - Combined Division',
+  'Waitlist - Softball-Combined Division': 'SOFTBALL - Summerball - Combined Division',
 };
 
 /**
@@ -46,22 +65,22 @@ function normalizeDivisionName(divisionName, year) {
   if (!divisionName || typeof divisionName !== 'string') {
     return 'UNKNOWN';
   }
-  
+
   const trimmed = divisionName.trim();
-  
+
   // Remove year-specific suffixes (Summerball25 -> Summerball)
   const yearAgnostic = trimmed.replace(/Summerball\d{2}/, 'Summerball');
-  
+
   // Try direct mapping first
   if (divisionNormalization[trimmed]) {
     return divisionNormalization[trimmed];
   }
-  
+
   // Try year-agnostic mapping
   if (divisionNormalization[yearAgnostic]) {
     return divisionNormalization[yearAgnostic];
   }
-  
+
   // Return original if no mapping found (will need manual review)
   console.warn(`No division mapping found for: "${trimmed}" (year: ${year})`);
   return trimmed;
