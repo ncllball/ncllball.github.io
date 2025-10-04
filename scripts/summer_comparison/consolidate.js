@@ -52,20 +52,14 @@ const MASTER_COLUMNS = [
   'registration_date',
   'order_number',
   'player_first_name',
-  'player_middle_name',
   'player_last_name',
   'player_gender',
   'player_dob',
   'player_age',
-  'player_email',
   'school_name',
   'grade',
   'division_name',
   'sport',
-  'age_group',
-  'previous_division',
-  'team_name',
-  'team_request',
   'guardian1_first_name',
   'guardian1_last_name',
   'guardian1_email',
@@ -231,20 +225,14 @@ function transform2025Row(row, year) {
     registration_date: row['Order Date'] || '',
     order_number: row['Order No'] || '',
     player_first_name: (row['Player First Name'] || '').trim(),
-    player_middle_name: (row['Player Middle Initial'] || '').trim(),
     player_last_name: (row['Player Last Name'] || '').trim(),
     player_gender: row['Player Gender'] || '',
     player_dob: row['Player Birth Date'] || '',
     player_age: row['Player Age'] || calculateAge(row['Player Birth Date']),
-    player_email: row['Player Email'] || '',
     school_name: normalizedSchool,
     grade: row['Current Grade'] || '',
     division_name: normalizedDivision,
     sport: sport,
-    age_group: ageGroup,
-    previous_division: '',
-    team_name: (row['Team Name'] || '').trim(),
-    team_request: (row['Teammate Request'] || '').trim(),
     guardian1_first_name: (row['Account First Name'] || '').trim(),
     guardian1_last_name: (row['Account Last Name'] || '').trim(),
     guardian1_email: row['User Email'] || '',
@@ -285,7 +273,29 @@ function transform2024Row(row, year) {
   
   // Get division (check both Baseball and Softball columns)
   // 2022 uses "Baseball Divisions for league age", 2023-2024 use "Baseball Division"
-  const rawDivision = row['Baseball Division'] || row['Baseball Divisions for league age'] || row['Softball Division'] || '';
+  let rawDivision = row['Baseball Division'] || row['Baseball Divisions for league age'] || row['Softball Division'] || '';
+  
+  // Fallback: If division is empty but previous_division exists, use that
+  // This handles cases where registration didn't capture current division
+  if (!rawDivision || rawDivision.trim() === '') {
+    const prevDiv = row['previous_division'] || '';
+    if (prevDiv && prevDiv.trim() !== '') {
+      rawDivision = prevDiv;
+      console.log(`ℹ️  Using previous_division for ${row['athlete_1_first_name']} ${row['athlete_1_last_name']}: ${prevDiv}`);
+    } else {
+      // Final fallback: If still no division and gender is Female, assume Softball Combined
+      // If gender is Male, assume Baseball AA (most common entry level)
+      const gender = row['athlete_1_gender'] || '';
+      if (gender.toUpperCase() === 'FEMALE' || gender.toUpperCase() === 'F') {
+        rawDivision = 'Softball-Combined Division';
+        console.log(`ℹ️  Using gender-based fallback for ${row['athlete_1_first_name']} ${row['athlete_1_last_name']}: Softball Combined (Female)`);
+      } else if (gender.toUpperCase() === 'MALE' || gender.toUpperCase() === 'M') {
+        rawDivision = 'Baseball AA';
+        console.log(`ℹ️  Using gender-based fallback for ${row['athlete_1_first_name']} ${row['athlete_1_last_name']}: Baseball AA (Male)`);
+      }
+    }
+  }
+  
   const normalizedDivision = normalizeDivisionName(rawDivision, year);
   const sport = extractSport(normalizedDivision);
   const ageGroup = extractAgeGroup(normalizedDivision);
@@ -299,20 +309,14 @@ function transform2024Row(row, year) {
     registration_date: row['Registration Date'] || '',
     order_number: row['Order Number'] || '',
     player_first_name: (row['athlete_1_first_name'] || '').trim(),
-    player_middle_name: (row['athlete_1_middle_name'] || '').trim(),
     player_last_name: (row['athlete_1_last_name'] || '').trim(),
     player_gender: row['athlete_1_gender'] || '',
     player_dob: row['athlete_1_dob'] || '',
     player_age: calculateAge(row['athlete_1_dob']),
-    player_email: '',
     school_name: normalizedSchool,
     grade: row['Grade'] || '',
     division_name: normalizedDivision,
     sport: sport,
-    age_group: ageGroup,
-    previous_division: row['previous_division'] || '',
-    team_name: (row['Rostered Team'] || '').trim(),
-    team_request: (row['Team Request'] || '').trim(),
     guardian1_first_name: (row['guardian_1_first_name'] || '').trim(),
     guardian1_last_name: (row['guardian_1_last_name'] || '').trim(),
     guardian1_email: row['Guardian_1_Email'] || '',
@@ -489,6 +493,44 @@ function processSourceFile(sourceInfo) {
 }
 
 /**
+ * Normalize city name (title case, remove state/zip suffix)
+ */
+function normalizeCity(city) {
+  if (!city || typeof city !== 'string') {
+    return '';
+  }
+  
+  // Remove state/zip suffix like "Seattle WA 98103" -> "Seattle"
+  let cleaned = city.split(/\s+[A-Z]{2}\s+\d{5}/)[0].trim();
+  
+  // Title case (first letter uppercase, rest lowercase)
+  return cleaned
+    .toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
+/**
+ * Clean team name by removing season suffix
+ */
+function cleanTeamName(teamName) {
+  if (!teamName || typeof teamName !== 'string') {
+    return '';
+  }
+  
+  // Remove patterns like:
+  // " - summer 2022 Regular Season"
+  // " - 2023 Regular Season"
+  // " Regular Season"
+  return teamName
+    .replace(/\s*-\s*summer\s+\d{4}\s+Regular\s+Season$/i, '')
+    .replace(/\s*-\s*\d{4}\s+Regular\s+Season$/i, '')
+    .replace(/\s+Regular\s+Season$/i, '')
+    .trim();
+}
+
+/**
  * Trim all string values in a row and normalize whitespace
  */
 function trimRow(row) {
@@ -496,7 +538,14 @@ function trimRow(row) {
   for (const [key, value] of Object.entries(row)) {
     if (typeof value === 'string') {
       // Trim and normalize multiple spaces/newlines to single space
-      trimmed[key] = value.trim().replace(/\s+/g, ' ');
+      let cleaned = value.trim().replace(/\s+/g, ' ');
+      
+      // Special handling for address_city
+      if (key === 'address_city') {
+        cleaned = normalizeCity(cleaned);
+      }
+      
+      trimmed[key] = cleaned;
     } else {
       trimmed[key] = value;
     }
