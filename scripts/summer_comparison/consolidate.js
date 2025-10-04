@@ -216,8 +216,12 @@ function transform2025Row(row, year) {
   const sport = extractSport(normalizedDivision);
   const ageGroup = extractAgeGroup(normalizedDivision);
   
-  // Normalize school
-  const normalizedSchool = normalizeSchoolName(row['School Name'] || '');
+  // Normalize school - check for 'Other' and use fallback
+  let schoolValue = row['School Name'] || '';
+  if (schoolValue === 'Other' && row['Little League School Name']) {
+    schoolValue = row['Little League School Name'];
+  }
+  const normalizedSchool = normalizeSchoolName(schoolValue);
   
   return {
     index: `summerball${yearSuffix}`,
@@ -300,8 +304,12 @@ function transform2024Row(row, year) {
   const sport = extractSport(normalizedDivision);
   const ageGroup = extractAgeGroup(normalizedDivision);
   
-  // Normalize school
-  const normalizedSchool = normalizeSchoolName(row['School'] || '');
+  // Normalize school - check for 'Other' and use 'School if Other' column
+  let schoolValue = row['School'] || '';
+  if (schoolValue === 'Other' && row['School if Other']) {
+    schoolValue = row['School if Other'];
+  }
+  const normalizedSchool = normalizeSchoolName(schoolValue);
   
   return {
     index: `summerball${yearSuffix}`,
@@ -562,10 +570,7 @@ function writeMasterFile(allRows) {
   
   const csv = stringify(trimmedRows, {
     header: true,
-    columns: MASTER_COLUMNS,
-    quoted: false, // Only quote when necessary
-    quoted_empty: false,
-    quoted_string: false
+    columns: MASTER_COLUMNS
   });
   
   fs.writeFileSync(OUTPUT_FILE, csv, 'utf-8');

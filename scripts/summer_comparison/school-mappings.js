@@ -89,6 +89,39 @@ const schoolNormalization = {
   'University Child Development School': 'UCDS',
   
   'Paragon Prep in Austin TX': 'Paragon Prep',
+  'Paragon Prep in Austin, TX': 'Paragon Prep',
+  
+  // Additional variations found in data
+  'OTHER': 'Other',
+  'Eagle Staff': 'Robert Eagle Staff Middle School',
+  'Robert Eaglestaff': 'Robert Eagle Staff Middle School',
+  'Robert Eagle Staff': 'Robert Eagle Staff Middle School',
+  'Robert Eagle Staff MS': 'Robert Eagle Staff Middle School',
+  'RESMS': 'Robert Eagle Staff Middle School',
+  'Robert Eagle Staff Middle (Greenwood ES prior)': 'Robert Eagle Staff Middle School',
+  'Eagle Staff (used to attend Greenwood Elem)': 'Robert Eagle Staff Middle School',
+  
+  'Cascadia (zoned school is B F Day)': 'Cascadia Elementary',
+  
+  'University child development school': 'UCDS',
+  'University Child Development School': 'UCDS',
+  
+  'KapKa': 'Kap\'ka Cooperative',
+  
+  'Ballard HS': 'Ballard High School',
+  'Ballard H S': 'Ballard High School',
+  
+  'Greenlake Elementary': 'Green Lake Elementary',
+  
+  'McClure Middle School': 'McClure Middle School',
+  'Eckstein Middle School': 'Eckstein Middle School',
+  'JAMS (played NCLL for 4 years straight)': 'Jane Addams Middle School',
+  
+  'University Prep': 'University Prep',
+  'The Evergreen School': 'The Evergreen School',
+  'Seattle Waldorf School': 'Seattle Waldorf School',
+  'Spruce Street School': 'Spruce Street School',
+  'Morningside Academy': 'Morningside Academy',
   
   // Generic
   'Other': 'Other'
