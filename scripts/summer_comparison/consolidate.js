@@ -226,7 +226,7 @@ function transform2025Row(row, year) {
   return {
     index: `summerball${yearSuffix}`,
     registration_year: year.toString(),
-    registration_date: row['Order Date'] || '',
+    registration_date: normalizeDate(row['Order Date'] || ''),
     order_number: row['Order No'] || '',
     player_first_name: (row['Player First Name'] || '').trim(),
     player_last_name: (row['Player Last Name'] || '').trim(),
@@ -234,7 +234,7 @@ function transform2025Row(row, year) {
     player_dob: row['Player Birth Date'] || '',
     player_age: row['Player Age'] || calculateAge(row['Player Birth Date']),
     school_name: normalizedSchool,
-    grade: row['Current Grade'] || '',
+    grade: normalizeGrade(row['Current Grade'] || ''),
     division_name: normalizedDivision,
     sport: sport,
     guardian1_first_name: (row['Account First Name'] || '').trim(),
@@ -314,7 +314,7 @@ function transform2024Row(row, year) {
   return {
     index: `summerball${yearSuffix}`,
     registration_year: year.toString(),
-    registration_date: row['Registration Date'] || '',
+    registration_date: normalizeDate(row['Registration Date'] || ''),
     order_number: row['Order Number'] || '',
     player_first_name: (row['athlete_1_first_name'] || '').trim(),
     player_last_name: (row['athlete_1_last_name'] || '').trim(),
@@ -322,7 +322,7 @@ function transform2024Row(row, year) {
     player_dob: row['athlete_1_dob'] || '',
     player_age: calculateAge(row['athlete_1_dob']),
     school_name: normalizedSchool,
-    grade: row['Grade'] || '',
+    grade: normalizeGrade(row['Grade'] || ''),
     division_name: normalizedDivision,
     sport: sport,
     guardian1_first_name: (row['guardian_1_first_name'] || '').trim(),
@@ -498,6 +498,71 @@ function processSourceFile(sourceInfo) {
   
   log(`Transformed ${transformedRows.length} valid rows from ${sourceInfo.file}`);
   return transformedRows;
+}
+
+/**
+ * Normalize registration date to sortable format: YYYY-MM-DD HH:MM:SS
+ */
+function normalizeDate(dateStr) {
+  if (!dateStr || typeof dateStr !== 'string') {
+    return '';
+  }
+  
+  try {
+    // Handle SportsEngine format: "06/16/2022, 04:18pm PDT"
+    const seMatch = dateStr.match(/^(\d{2})\/(\d{2})\/(\d{4}),\s+(\d{2}):(\d{2})(am|pm)\s+[A-Z]{3}$/);
+    if (seMatch) {
+      const [, month, day, year, hour, minute, meridiem] = seMatch;
+      let hour24 = parseInt(hour, 10);
+      
+      if (meridiem === 'pm' && hour24 !== 12) {
+        hour24 += 12;
+      } else if (meridiem === 'am' && hour24 === 12) {
+        hour24 = 0;
+      }
+      
+      return `${year}-${month}-${day} ${hour24.toString().padStart(2, '0')}:${minute}:00`;
+    }
+    
+    // Handle Sports Connect format: "06/24/2025 05:37:53 PM"
+    const scMatch = dateStr.match(/^(\d{2})\/(\d{2})\/(\d{4})\s+(\d{2}):(\d{2}):(\d{2})\s+(AM|PM)$/);
+    if (scMatch) {
+      const [, month, day, year, hour, minute, second, meridiem] = scMatch;
+      let hour24 = parseInt(hour, 10);
+      
+      if (meridiem === 'PM' && hour24 !== 12) {
+        hour24 += 12;
+      } else if (meridiem === 'AM' && hour24 === 12) {
+        hour24 = 0;
+      }
+      
+      return `${year}-${month}-${day} ${hour24.toString().padStart(2, '0')}:${minute}:${second}`;
+    }
+    
+    // If no match, return original
+    return dateStr;
+  } catch (error) {
+    return dateStr;
+  }
+}
+
+/**
+ * Normalize grade values (standardize Kindergarten to K)
+ */
+function normalizeGrade(grade) {
+  if (!grade || typeof grade !== 'string') {
+    return '';
+  }
+  
+  const trimmed = grade.trim();
+  
+  // Normalize Kindergarten variations to "K"
+  if (trimmed.toLowerCase() === 'kindergarten') {
+    return 'K';
+  }
+  
+  // Already "K", "Pre-K", or standard format (1st, 2nd, etc.)
+  return trimmed;
 }
 
 /**
