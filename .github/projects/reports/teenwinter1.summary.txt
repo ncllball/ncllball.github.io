@@ -1,0 +1,37 @@
+═══════════════════════════════════════════════════════════
+2025 Winter TEEN Baseball Training I - Summary Report
+═══════════════════════════════════════════════════════════
+
+PROGRAM OVERVIEW
+Program Name: 2025 Winter TEEN Baseball Training I
+Division: TEEN
+Total Registrations: 27
+
+REGISTRATION STATUS
+  ✓ Completed: 19 (70.4%)
+  ⏳ Pending: 8 (29.6%)
+  ✗ Cancelled: 0 (0.0%)
+
+⚠️  DUPLICATE DETECTION
+  Total records: 27
+  Unique players: 13
+  Players with duplicates: 3
+
+  • Ezra Toone: 4 entries
+  • Henry Lesh: 4 entries
+  • Isaac Mackey: 9 entries
+
+SCHOOLS DISTRIBUTION
+  11 - Lincoln High
+   9 - Other
+   5 - Hamilton Int'l Middle
+   1 - Daniel Bagley Elementary
+   1 - Bishop Blanchet High
+
+GRADES DISTRIBUTION
+  14 - 7th
+   6 - 10th
+   6 - 9th
+   1 - 8th
+
+═══════════════════════════════════════════════════════════

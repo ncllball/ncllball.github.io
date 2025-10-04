@@ -47,7 +47,6 @@ const SOURCE_FILES = [
 
 // Master schema column order
 const MASTER_COLUMNS = [
-  'index',
   'registration_year',
   'registration_date',
   'order_number',
