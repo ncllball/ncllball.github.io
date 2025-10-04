@@ -53,6 +53,15 @@ const divisionNormalization = {
   // Combined Division (2022-2024)
   'Softball-Combined Division': 'SOFTBALL - Summerball - Combined Division',
   'Waitlist - Softball-Combined Division': 'SOFTBALL - Summerball - Combined Division',
+  
+  // Short form (from previous_division field)
+  'Softball AA': 'SOFTBALL - Summerball - AA/AAA (Sandlot)',
+  'Softball AAA': 'SOFTBALL - Summerball - AAA/Majors (Sandlot)',
+  'Softball Majors': 'SOFTBALL - Summerball - AAA/Majors (Sandlot)',
+  'Baseball AA': 'BASEBALL - Summerball - Double-AA (Interleague)',
+  'Baseball AAA': 'BASEBALL - Summerball - Triple-AAA (Interleague)',
+  'Baseball Majors': 'BASEBALL - Summerball - Majors (Interleague)',
+  'Baseball JR/SR': 'BASEBALL - Summerball - TEEN/JUNIOR (Interleague)',
 };
 
 /**
