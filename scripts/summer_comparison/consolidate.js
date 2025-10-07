@@ -32,6 +32,7 @@ try {
 
 const { normalizeSchoolName } = require('./school-mappings');
 const { normalizeDivisionName, extractSport, extractAgeGroup } = require('./division-mappings');
+const { parse: parseCsv } = require('csv-parse/sync');
 
 // Configuration
 const REPO_ROOT = path.resolve(__dirname, '../..');
@@ -420,13 +421,79 @@ function processSourceFile(sourceInfo) {
   
   // Read and parse CSV
   const content = fs.readFileSync(filePath, 'utf-8');
-  const records = parse(content, {
-    columns: true,
-    skip_empty_lines: true,
-    trim: true,
-    relax_quotes: true,
-    relax_column_count: true
-  });
+
+  // For 2025 (Sports Connect), apply robust alignment like our winter extractor:
+  // - Parse as arrays
+  // - Merge split tokens in Division Gender (e.g., '"F' + 'M"')
+  // - Drop problematic columns by index: Division Gender, Associated Team Staff, Portal Name
+  // - Convert rows to objects keyed by trimmed header
+  let records;
+  if (sourceInfo.year === 2025) {
+    const rows = parseCsv(content, {
+      columns: false,
+      relax_quotes: true,
+      relax_column_count: true,
+      skip_empty_lines: true
+    });
+    if (!rows.length) return [];
+    const header = rows[0];
+    const headerTrimmed = header.map(h => (h || '').toString().trim());
+    const nameToIndex = new Map();
+    headerTrimmed.forEach((name, idx) => nameToIndex.set(name, idx));
+
+    // Merge split Division Gender tokens per row
+    const genderIdx = nameToIndex.get('Division Gender');
+    const mergedRows = rows.map(r => {
+      if (typeof genderIdx === 'number' && genderIdx >= 0 && r.length > genderIdx + 1) {
+        const left = (r[genderIdx] ?? '').toString();
+        const right = (r[genderIdx + 1] ?? '').toString();
+        const l = left.trim();
+        const rr = right.trim();
+        const startsQuoteNoEnd = l.startsWith('"') && !l.endsWith('"');
+        const rightEndsQuote = rr.endsWith('"');
+        if (startsQuoteNoEnd && rightEndsQuote) {
+          const merged = (l + ',' + rr).replace(/^[\s\"]+|[\s\"]+$/g, '');
+          const copy = r.slice();
+          copy[genderIdx] = merged;
+          copy.splice(genderIdx + 1, 1);
+          return copy;
+        }
+      }
+      return r;
+    });
+
+    // Drop problematic columns
+    const dropNames = ['Division Gender', 'Associated Team Staff', 'Portal Name'];
+    const dropIndices = dropNames
+      .map(n => headerTrimmed.indexOf(n))
+      .filter(i => i >= 0)
+      .sort((a, b) => b - a);
+
+    const cleanedRows = mergedRows.map(r => {
+      const copy = r.slice();
+      dropIndices.forEach(idx => { if (idx < copy.length) copy.splice(idx, 1); });
+      return copy;
+    });
+
+    const finalHeader = cleanedRows[0].map(h => (h || '').toString().trim());
+    // Convert to objects with trimmed values
+    records = cleanedRows.slice(1).map(arr => {
+      const o = {};
+      for (let i = 0; i < finalHeader.length; i++) {
+        o[finalHeader[i]] = (arr[i] ?? '').toString().trim();
+      }
+      return o;
+    });
+  } else {
+    // SportsEngine or earlier: normal parse
+    records = parse(content, {
+      columns: true,
+      skip_empty_lines: true,
+      trim: true,
+      relax_quotes: true,
+      relax_column_count: true
+    });
+  }
   
   log(`Read ${records.length} rows from ${sourceInfo.file}`);
   stats.totalRows += records.length;
