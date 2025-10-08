@@ -1619,3 +1619,65 @@ body.timeline-page a:focus-visible {
     white-space: nowrap;
     margin-left: 5px;
 }
+
+.agechart {
+    padding: 8px;
+    margin: 0 0 10px 0;
+}
+
+.agechart table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .85rem;
+}
+
+/* Division section title (used for Baseball/Softball headers) */
+.division-title {
+  display: inline-block;
+  margin: 0.5rem 0 0.75rem 0;
+  padding-bottom: 4px;
+  font-weight: 700;
+  color: var(--brand-blue, #00013a);
+  border-bottom: 2px solid var(--brand-red, #cc0000);
+}
+
+/* Anchor wrapper for button-like links (e.g., Age Chart, Calculator) */
+.aoverb_button {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.aoverb_button:focus,
+.aoverb_button:focus-visible {
+  outline: 2px solid var(--brand-red, #cc0000);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Optional: make wrapped buttons consistent */
+.aoverb_button .agechart {
+  cursor: pointer;
+  border: 1px solid var(--brand-blue, #00013a);
+  background: transparent;
+  color: var(--brand-blue, #00013a);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.aoverb_button .agechart:hover {
+  background: var(--brand-blue, #00013a);
+  color: #fff;
+  border-color: var(--brand-blue, #00013a);
+}
+
+@media (max-width: 640px) {
+  .aoverb_button {
+    display: block;
+    margin-right: 0;
+  }
+  .aoverb_button .agechart {
+    width: 100%;
+  }
+}
