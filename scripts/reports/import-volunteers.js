@@ -48,10 +48,18 @@ function normalizeDivisionName(raw) {
 }
 
 const TARGET_HEADER = [
+  'Index',
   'Program Name','Division Name','Team Name','Volunteer Role','Volunteer First Name','Volunteer Last Name',
   'Volunteer Email','Volunteer Telephone','Volunteer Cellphone','Volunteer Street Address','Volunteer City','Volunteer State','Volunteer Postal Code',
   'Little League Volunteer ID','Sports Connect Account Email','Linked Player First Name','Linked Player Last Name','Notes'
 ];
+
+function computeIndexFromProgram(programName) {
+  const m = String(programName || '').match(/\b(20\d{2})\b/);
+  const year = m ? m[1] : '';
+  const yy = year ? year.slice(-2) : '';
+  return yy ? `Volunteers${yy}` : 'Volunteers';
+}
 
 function mapRow(src) {
   const street = String(src['Volunteer Street Address'] || '').trim();
@@ -60,6 +68,7 @@ function mapRow(src) {
   const otherPhone = String(src['Volunteer Other Phone'] || '').trim();
   const scEmail = String(src['Volunteer Email Address'] || '').trim();
   return {
+    'Index': computeIndexFromProgram(src['Program Name']),
     'Program Name': String(src['Program Name'] || '').trim(),
     'Division Name': normalizeDivisionName(src['Division Name']),
     'Team Name': String(src['Team Name'] || '').trim(),
