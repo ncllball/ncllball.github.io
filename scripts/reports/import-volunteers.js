@@ -50,7 +50,6 @@ function normalizeDivisionName(raw) {
 const TARGET_HEADER = [
   'Program Name','Division Name','Team Name','Volunteer Role','Volunteer First Name','Volunteer Last Name',
   'Volunteer Email','Volunteer Telephone','Volunteer Cellphone','Volunteer Street Address','Volunteer City','Volunteer State','Volunteer Postal Code',
-  'Background Check Status','Background Check Submitted Date','Background Check Cleared Date','SafeSport Status','SafeSport Completed Date','Abuse Awareness Date','Concussion Training Date',
   'Little League Volunteer ID','Sports Connect Account Email','Linked Player First Name','Linked Player Last Name','Notes'
 ];
 
@@ -74,13 +73,6 @@ function mapRow(src) {
     'Volunteer City': String(src['Volunteer City'] || '').trim(),
     'Volunteer State': String(src['Volunteer State'] || '').trim(),
     'Volunteer Postal Code': String(src['Volunteer Postal Code'] || '').trim(),
-    'Background Check Status': '',
-    'Background Check Submitted Date': '',
-    'Background Check Cleared Date': '',
-    'SafeSport Status': '',
-    'SafeSport Completed Date': '',
-    'Abuse Awareness Date': '',
-    'Concussion Training Date': '',
     'Little League Volunteer ID': '',
     'Sports Connect Account Email': scEmail,
     'Linked Player First Name': '',
