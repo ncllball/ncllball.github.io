@@ -1641,6 +1641,37 @@ body.timeline-page a:focus-visible {
   border-bottom: 2px solid var(--brand-red, #cc0000);
 }
 
+/* Header row for division title + action buttons */
+.division-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 8px 0;
+}
+
+.division-header .division-title {
+  margin: 0;
+}
+
+.division-header .ageCalcs {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .division-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .division-header .ageCalcs {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}
+
 /* Anchor wrapper for button-like links (e.g., Age Chart, Calculator) */
 .aoverb_button {
   display: inline-block;
