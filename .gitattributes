@@ -1,0 +1,15 @@
+# Default automatic text normalization
+* text=auto
+
+# Ensure consistent LF endings for data files
+*.csv text eol=lf
+
+# Treat common binary assets as binary (no line-ending changes)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
