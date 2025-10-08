@@ -1660,6 +1660,12 @@ body.timeline-page a:focus-visible {
   margin: 0;
 }
 
+.agecalcs {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+}
+
 @media (max-width: 640px) {
   .division-header {
     flex-direction: column;
