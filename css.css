@@ -1787,9 +1787,6 @@ details.footies[open] summary::before { content: "−"; }
 }
 
 /* Footnotes: indent inner content and allow optional left offset */
-details.footies > *:not(summary) {
-  margin-left: 1.5rem;
-}
 .table_section .table_age details.footies {
   margin-left: var(--age-matrix-first-col);
   padding-left: 0;
