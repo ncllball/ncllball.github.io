@@ -38,7 +38,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 12px;
         margin: 0 0 8px 0;
       }
 
@@ -118,13 +117,25 @@
         flex-wrap: wrap;
         margin: 0.75rem 0 1rem;
         padding-bottom: 4px;
-        border-bottom: 2px solid var(--brand-red, #cc0000);
+        position: relative; /* can remain if you later add badges */
+        border-bottom: 2px solid var(--brand-red, #cc0000); /* new */
+      }
+      /* Removed full-viewport line */
+      .division-bar::after {
+        /* deleted (was creating 100vw underline) */
       }
       .division-bar .actions {
         display: flex;
         gap: 0.5rem;
         flex-wrap: wrap;
+        margin: 0;
       }
+      .table_component th {
+    padding: 8px;
+    border-top: 1px solid var(--color_red);
+    border-bottom: 2px solid var(--color_border_table);
+    text-align: left;
+}
     </style>
   </head>
   <body>
@@ -246,7 +257,7 @@
     <section>
       <h4 class="left">Special Cases</h4>
       <ul>
-        <li>
+j        <li>
           <span>Requesting Higher Division:</span>
           You may request for your player to participate in a division higher
           than their eligibility. This request will be reviewed and approved
@@ -440,7 +451,7 @@
                 <p>
                   <sup>5</sup>Baseball AAA (9-11) is for 9's to 11's and rarely,
                   highly-skilled 8's. Participation for 9's depends on roster
-                  spots after placing 12's, 11's, and 10's. 12's must play
+                                spots after placing 12's, 11's, and 10's. 12's must play
                   Majors, 10's AAA or above, and 11's are split between Majors
                   and AAA. If space allows, assessment scores determine 9's
                   eligibility for the AAA draft, finalized by late January (see
@@ -469,9 +480,9 @@
     </section>
 
     <section>
-      <p class="left division-title">Softball</p>
-      <div class="agecalcs">
-        <p class="left division-title">
+      <div class="division-bar">
+        <h4 class="division-title">Softball</h4>
+        <div class="actions">
           <a
             class="aoverb_button"
             href="https://www.littleleague.org/downloads/2025-softball-age-chart/"
@@ -481,18 +492,16 @@
               2025 SOFTBALL PDF AGE CHART
             </button>
           </a>
-        </p>
-        <p class="left division-title">
           <a
             class="aoverb_button"
             href="https://apps.littleleague.org/dc/v2/LeagueAgeCalculator"
             target="_blank"
           >
             <button type="button" class="agechart">
-              'League Age' Calculator
+              League Age Calculator
             </button>
           </a>
-        </p>
+        </div>
       </div>
     </section>
 
