@@ -1620,3 +1620,138 @@ body.timeline-page a:focus-visible {
     margin-left: 5px;
 }
 
+/* ======================================================================
+   BEGIN Registration/mainreg (2026) — Age Matrix + Footnotes
+   Scope: Registration/mainreg.html
+   Why:
+     - Normalize division headers
+     - Style age-matrix tables (header rules, last-row rule, spacing)
+     - Collapsible footnotes (+/−) and alignment
+     - Apply global fonts for table TH/TD via root variables
+   Notes:
+     - Only includes selectors used on this page
+     - Relies on existing design tokens: --brand-blue, --brand-red, --color_darkgray
+   ====================================================================== */
+
+/* Global font variables for age-matrix tables */
+:root {
+  --age-matrix-th-font: "proxima-nova", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --age-matrix-td-font: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Division section title + bar */
+.division-title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--brand-blue, #00013a);
+}
+.division-bar {
+  display: flex;
+  align-items: center;        /* middle alignment for title and actions */
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 4px 0;
+  position: relative;
+  margin: 0;
+}
+.division-bar .actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Age matrix tables */
+.age-matrix {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 760px;
+}
+
+/* Header red rules */
+.age-matrix thead th {
+  border-top: 1pt solid var(--brand-red, #cc0000);
+  border-bottom: 1pt solid var(--brand-red, #cc0000);
+}
+
+/* Bottom red rule under Seniors (applies to both Baseball and Softball) */
+.age-matrix tbody tr:last-of-type td {
+  border-bottom: 1pt solid var(--brand-red, #cc0000);
+}
+
+/* 6px gap between thead and first tbody row */
+.age-matrix tbody tr:first-child td {
+  padding-top: 6px;
+}
+
+/* Fit row text styling */
+.fit th {
+  color: var(--color_darkgray) !important;
+  font-size: 0.8rem !important;
+  font-family: var(--age-matrix-th-font);
+}
+.fit td {
+  color: var(--color_darkgray) !important;
+  font-size: 0.8rem !important;
+  font-family: var(--age-matrix-td-font);
+}
+
+/* Footnotes (+/−) */
+details.footies {
+  margin: 0.75rem 0 1rem;
+  padding-top: 0.5rem;
+}
+details.footies summary {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--brand-blue, #00013a);
+  user-select: none;
+  padding-bottom: 8px;
+}
+details.footies summary::-webkit-details-marker { display: none; }
+details.footies summary::before {
+  content: "+";
+  display: inline-grid;
+  place-items: center;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+  background: var(--brand-red, #cc0000);
+  border-radius: 2px;
+}
+details.footies[open] summary::before { content: "−"; }
+
+/* Align footnotes with table left edge, enable horizontal scroll */
+.table_section .table_age details.footies {
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
+}
+.table_section .table_age details.footies summary {
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+}
+.table_section .table_age {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Optional red rule above a footnotes block (used on Baseball notes) */
+.footies_red {
+  border-top: 1pt solid var(--brand-red, #cc0000);
+}
+
+/* ======================================================================
+   END Registration/mainreg (2026)
+   ====================================================================== */
+
