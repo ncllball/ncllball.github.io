@@ -43,10 +43,12 @@
 | Rasa Pachl         | St. Benedict School      | 3rd           | 9          | 10            | 11            | SOFTBALL-AA/AAA      | Rozlynn Gilliam; Maggie Mccool | Anika DeNike; Baxter |
 | Rozlynn Gilliam    | Other                    | 1st           | 8          | 9             | 10            | SOFTBALL-AA/AAA      | N/A                            | N/A                  |
 
-#### Coach Assignments:
+#### Coach Assignments
+
 No volunteers registered for this sandlot division. Will need parent volunteers on game days.
 
-#### Player Assignments:
+#### Player Assignments
+
 All 9 softball AA/AAA players assigned to sandlot team. Teammate requests honored where possible (Anna-Anika, Luna-Honor-Lana group).
 
 ---
@@ -77,10 +79,12 @@ All 9 softball AA/AAA players assigned to sandlot team. Teammate requests honore
 | Hollis Kennedy  | Greenwood Elementary     | 5th   | 11  | 12            | 13            | SOFTBALL-AAA/Majors | N/A                 | Chris Cunningham; Andy Clinch |
 | Madeleine Davis | Hamilton Middle (HIMS)   | 7th   | 13  | 13            | 14            | SOFTBALL-AAA/Majors | Hattie Duncan       | N/A                           |
 
-#### Coach Assignments:
+#### Coach Assignments
+
 Andy Clinch coaches his daughter Elsa. Julie Kennedy manages with daughter Hollis on team.
 
-#### Player Assignments:
+#### Player Assignments
+
 All 5 players assigned. Teammate requests honored (Hattie-Madeleine). Coach requests fulfilled.
 
 ---
@@ -130,10 +134,12 @@ All 5 players assigned. Teammate requests honored (Hattie-Madeleine). Coach requ
 | Kathleen Appleyard | St. Benedict School               | 1st          | 7   | 8             | 9             | BASEBALL-Double-AA | William Appleyard              | Bill Appleyard  |
 | Kinley Gautreau    | John Stanford Elementary          | 2nd          | 7   | 8             | 9             | BASEBALL-Double-AA | Grayson Gautreau               | Gary Gautreau   |
 
-#### Coach Assignments:  
+#### Coach Assignments  
+
 All volunteers with children in division assigned. Parent-child pairs maintained.
 
-#### Player Assignments:  
+#### Player Assignments  
+
 Sandlot format with 22 players. Teammate requests noted for flexible game-day groupings.
 
 ---
@@ -172,7 +178,6 @@ Sandlot format with 22 players. Teammate requests noted for flexible game-day gr
 | Gary Gautreau  | Game Day Helper (Assistant) | Grayson Gautreau; Kinley Gautreau |
 | Bill Appleyard | Game Day Helper (Assistant) | Kathleen Appleyard; William Appleyard |
 
-
 | Full Name         | School Name                       | Current Grade | Player Age | LL Age (2025) | LL Age (2026) | Spring 2025 Division | Teammate Request                         | Coach Request          |
 | :---------------- | :-------------------------------- | :------------ | :--------- | :------------ | :------------ | :------------------- | :--------------------------------------- | :--------------------- |
 | Louis Wick        | McDonald International Elementary | 1st           | 7          | 8             | 9             | BASEBALL-Double-AA   | Cruz DeHerrera; Weston Pawlak; Luca Neff | Olin Wick              |
@@ -199,7 +204,6 @@ Sandlot format with 22 players. Teammate requests noted for flexible game-day gr
 | Matt Collins   | Game Day Helper (Assistant) | Leo Collins; Ryan Collins     |
 | Danny Lee      | Game Day Helper (Assistant) | Avery Lee; Bennett Lee        |
 | Cynthia Wong   | Team Manager (Off-Field Support & Logistics) | Avery Lee; Bennett Lee |
-
 
 | Full Name            | School Name              | Current Grade | Player Age | LL Age (2025) | LL Age (2026) | Spring 2025 Division | Teammate Request             | Coach Request         |
 | :------------------- | :----------------------- | :------------ | :--------- | :------------ | :------------ | :------------------- | :--------------------------- | :-------------------- |
@@ -231,7 +235,6 @@ Sandlot format with 22 players. Teammate requests noted for flexible game-day gr
 | Edward Kasner  | Game Day Helper (Assistant) | John Teddy Kasner             |
 | Evan Klarich   | Game Day Helper (Assistant) | Drew Klarich; Kai Klarich; Theo Klarich |
 | Rory Douglas   | Game Day Helper (Assistant) | Augustin Douglas; Cormac Douglas |
-
 
 | Full Name         | School Name                       | Current Grade | Player Age | LL Age (2025) | LL Age (2026) | Spring 2025 Division | Teammate Request                  | Coach Request      |
 | ----------------- | --------------------------------- | ------------- | ---------- | ------------- | ------------- | -------------------- | --------------------------------- | ------------------ |
@@ -276,10 +279,12 @@ Sandlot format with 22 players. Teammate requests noted for flexible game-day gr
 | Nora Saunders      | John Stanford Elementary          | 2nd           | 8          | 9             | 10            | BASEBALL-Double-AA   | Luna Mitchell                                | Sara Mitchell |
 | Diego DeHerrera    | McDonald International Elementary | 3rd           | 9          | 10            | 11            | BASEBALL-Triple-AAA  | Apollo Morales-Perea                         | Adam Bennett  |
 
-#### Coach Assignments:  
+#### Coach Assignments  
+
 Four head coaches assigned, each with their children on their teams. Assistant coaches distributed based on child placement. All parent-child relationships maintained.
 
-#### Player Assignments:  
+#### Player Assignments  
+
 45 players distributed across 3 teams (15 each). Strong teammate request groups kept together: Cameron Ginsburgh's group, Myles Clinch's group, Louis Wick's group, and St. Benedict group. Some players may need to be shifted to Triple-AAA based on age/skill.
 
 ---
@@ -304,14 +309,12 @@ Four head coaches assigned, each with their children on their teams. Assistant c
 | Paul Fox                  | Game Day Helper (Assistant) | Julian Fox                                  |
 | Peter Avratin             | Game Day Helper (Assistant) | Brady Avratin; Emma Avratin                 |
 
-
 #### Team 1: Triple-AAA Team 1 - Giant Pacific Octopus
 
 | Volunteer Name | Role                        | Associated Participants         |
 | -------------- | --------------------------- | ------------------------------- |
 | Adam Bennett   | Lead Game Volunteer (Head)  | Mina Bennett; Torsten Bennett; Tove Bennett |
 | Katsuya Kusunoki | Game Day Helper (Assistant) | Yuiya Kusunoki                |
-
 
 | Full Name            | School Name                       | Current Grade | Player Age | LL Age (2025) | LL Age (2026) | Spring 2025 Division | Teammate Request                                        | Coach Request |
 | -------------------- | --------------------------------- | ------------- | ---------- | ------------- | ------------- | -------------------- | ------------------------------------------------------- | ------------- |
@@ -340,7 +343,6 @@ Four head coaches assigned, each with their children on their teams. Assistant c
 | Matthew Tassos | Game Day Helper (Assistant) | Dylan Tassos; Nicholas Tassos   |
 | Matthew Gnaneswaran | Game Day Helper (Assistant) | Niam Gnaneswaran           |
 
-
 | Full Name         | School Name                       | Current Grade | Player Age | LL Age (2025) | LL Age (2026) | Spring 2025 Division | Teammate Request                        | Coach Request            |
 | ----------------- | --------------------------------- | ------------- | ---------- | ------------- | ------------- | -------------------- | --------------------------------------- | ------------------------ |
 | Avery Lee         | Greenwood Elementary              | 3rd           | 9          | 10            | 11            | BASEBALL-Triple-AAA  | Otis Fishback; Julian Fox; Dylan Tassos | Paul Fox; Danny Lee      |
@@ -366,7 +368,6 @@ Four head coaches assigned, each with their children on their teams. Assistant c
 | Paul Fox       | Game Day Helper (Assistant) | Julian Fox                      |
 | Austen Wiederspan | Game Day Helper (Assistant) | Eli Wiederspan; Gabriel Wiederspan |
 | David Ortega   | Game Day Helper (Assistant) | Sebastian Ortega                |
-
 
 | Full Name          | School Name         | Current Grade | Player Age | LL Age (2025) | LL Age (2026) | Spring 2025 Division | Teammate Request             | Coach Request     |
 | ------------------ | ------------------- | ------------- | ---------- | ------------- | ------------- | -------------------- | ---------------------------- | ----------------- |
@@ -396,7 +397,6 @@ Four head coaches assigned, each with their children on their teams. Assistant c
 | Peter Avratin  | Game Day Helper (Assistant) | Brady Avratin; Emma Avratin     |
 | Jason Schwab   | Game Day Helper (Assistant) | Cameron Schwab                  |
 
-
 | Full Name          | School Name                       | Current Grade | Player Age | LL Age (2025) | LL Age (2026) | Spring 2025 Division | Teammate Request                           | Coach Request  |
 | ------------------ | --------------------------------- | ------------- | ---------- | ------------- | ------------- | -------------------- | ------------------------------------------ | -------------- |
 | Robert Hernandez   | West Woodland Elementary          | 4th           | 10         | 10            | 11            | BASEBALL-Triple-AAA  | N/A                                        | Ian Hernandez  |
@@ -416,11 +416,11 @@ Four head coaches assigned, each with their children on their teams. Assistant c
 | Tomoki Yan         | McDonald International Elementary | 4th           | 10         | 10            | 11            | BASEBALL-Triple-AAA  | Oliver Parsons                             | N/A            |
 | Grayson Evanger    | Other                             | 4th           | 10         | 10            | 11            | BASEBALL-Triple-AAA  | Max Luste; Emmitt Greenwood                | N/A            |
 
-#### Coach Assignments:
+#### Coach Assignments
 
 Two head coaches (Bennett and Hernandez) with strong assistant coach support. All parent-child relationships maintained. Coaches distributed based on school affiliations and player requests.
 
-#### Player Assignments:
+#### Player Assignments
 
 59 players distributed across 4 teams. Strong teammate clusters maintained: Bennett/Millea group, Avery Lee/Greenwood group, St. John group, and West Woodland/BF Day group.
 
@@ -447,7 +447,6 @@ Two head coaches (Bennett and Hernandez) with strong assistant coach support. Al
 | Jason Evans    | Game Day Helper            | Roland Evans |
 | Bob Jacobsen   | Game Day Helper            | Luke Jacobsen |
 | Sheley Bressler| Team Manager (Off-Field Support & Logistics) | Brooks Bressler |
-
 
 | Full Name         | School Name                      | Current Grade | Player Age | LL Age (2025) | LL Age (2026) | Spring 2025 Division | Teammate Request            | Coach Request |
 | ----------------- | -------------------------------- | ------------- | ---------- | ------------- | ------------- | -------------------- | --------------------------- | ------------- |
@@ -476,7 +475,6 @@ Two head coaches (Bennett and Hernandez) with strong assistant coach support. Al
 | Jason Lawrence | Game Day Helper              | Coleman Lawrence |
 | Amy Malkin     | Team Manager (Off-Field Support & Logistics) | Archer Malkin; Ari Malkin |
 
-
 | Full Name          | School Name                       | Current Grade | Player Age | LL Age (2025) | LL Age (2026) | Spring 2025 Division | Teammate Request                                                                   | Coach Request                                        |
 | ------------------ | --------------------------------- | ------------- | ---------- | ------------- | ------------- | -------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------- |
 | Booker Anderson    | McDonald International Elementary | 5th           | 11         | 11            | 12            | BASEBALL-Majors      | Augustin Douglas; Elliot York-Jones; Jonathan Newstead; Reid Holman; Heyward Payne | N/A                                                  |
@@ -495,10 +493,12 @@ Two head coaches (Bennett and Hernandez) with strong assistant coach support. Al
 | James Himmelman    | Hamilton Middle (HIMS)            | 6th           | 11         | 11            | 12            | BASEBALL-Majors      | Heyward Payne                                                                      | N/A                                                  |
 | Nikolas Town       | Hamilton Middle (HIMS)            | 7th           | 12         | 12            | 13            | BASEBALL-Majors      | Benjamin Garfin                                                                    | N/A                                                  |
 
-#### Coach Assignments:
+#### Coach Assignments
+
 Eric Evans as head coach with strong assistant support. Jon Anderson heavily requested by players. All parent volunteers have children on appropriate teams.
 
-#### Player Assignments:
+#### Player Assignments
+
 32 players evenly split into 2 teams. Strong teammate request groups maintained: Booker Anderson's friend group, Holden duo, and school affiliations balanced.
 
 ---
@@ -560,10 +560,12 @@ Eric Evans as head coach with strong assistant support. Jon Anderson heavily req
 | Michael Jr Scott | John Stanford Elementary | 4th | 10 | 11 | 12 | SOFTBALL-AAA/Majors | Astrid Levinson; Hamilton Roman; Tana Ray | Jan Levinson |
 | Tana Ray | John Stanford Elementary | 4th | 10 | 11 | 12 | SOFTBALL-AAA/Majors | Astrid Levinson; Hamilton Roman; Michael Jr Scott | Jan Levinson |
 
-#### Summary of Coach Assignments for Division:
+#### Summary of Coach Assignments for Division
+
 Phillip Garfin heads team 1 with both sons on roster. Adam Bennett assists with Torsten on team. Sarah Rubin assists team 2 with son Jonathan.
 
-#### Summary of Player Assignments for Division:
+#### Summary of Player Assignments for Division
+
 28 players split evenly between 2 teams. Note: Several players listed as TEEN/JUNIOR appear to be in wrong divisions based on age/grade (Emma Avratin, Olivia D'Amico, Kai Klarich, etc.). These discrepancies should be reviewed with the registrar. Coach requests honored where possible, particularly the Garfin family connections and Bennett request.
 28 players split evenly between 2 teams. Note: Several players listed as TEEN/JUNIOR appear to be in wrong divisions based on age/grade (Emma Avratin, Olivia D'Amico, Kai Klarich, etc.). These discrepancies should be reviewed with the registrar. Coach requests honored where possible, particularly the Garfin family connections and Bennett request.
 28 players split evenly between 2 teams. Note: Several players listed as TEEN/JUNIOR appear to be in wrong divisions based on age/grade (Emma Avratin, Olivia D'Amico, Kai Klarich, etc.). These discrepancies should be reviewed with the registrar. Coach requests honored where possible, particularly the Garfin family connections and Bennett request.
