@@ -1677,10 +1677,6 @@ body.timeline-page a:focus-visible {
   border-bottom: 1pt solid var(--brand-red, #cc0000);
 }
 
-/* Bottom red rule under Seniors (applies to both Baseball and Softball) */
-.age-matrix tbody tr:last-of-type td {
-  border-bottom: 1pt solid var(--brand-red, #cc0000);
-}
 
 /* 6px gap between thead and first tbody row */
 .age-matrix tbody tr:first-child td {
@@ -1753,5 +1749,54 @@ details.footies[open] summary::before { content: "−"; }
 
 /* ======================================================================
    END Registration/mainreg (2026)
+   ====================================================================== */
+
+/* ======================================================================
+   BEGIN Registration/mainreg (2026) — Restored helpers and completeness
+   Notes:
+   - Restores helper classes and footnote indent we previously removed
+   - Adds .division-header parity with .division-bar
+   - Adds optional left offset var for footnotes alignment
+   ====================================================================== */
+
+/* Optional alignment var (0 keeps footnotes flush with table edge) */
+:root {
+  --age-matrix-first-col: 0px; /* set to 66px if you want footnotes to start after the logo column */
+}
+
+/* Division header parity (in case pages use .division-header) */
+.division-header {
+  display: flex;
+  align-items: center;      /* middle alignment for children */
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 4px 0;
+  position: relative;
+  margin: 0;
+}
+.division-header .actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Base .fit helper (pairs with .fit th / .fit td already defined) */
+.fit {
+  font-size: 0.8rem;
+  color: var(--color_darkgray);
+}
+
+/* Footnotes: indent inner content and allow optional left offset */
+details.footies > *:not(summary) {
+  margin-left: 1.5rem;
+}
+.table_section .table_age details.footies {
+  margin-left: var(--age-matrix-first-col);
+  padding-left: 0;
+  width: 100%;
+}
+
+/* ======================================================================
+   END Registration/mainreg (2026) — Restored helpers and completeness
    ====================================================================== */
 
