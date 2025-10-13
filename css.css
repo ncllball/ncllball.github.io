@@ -1669,6 +1669,7 @@ body.timeline-page a:focus-visible {
   border-collapse: collapse;
   width: 100%;
   min-width: 760px;
+  line-height: 1.4;
 }
 
 /* Header red rules */
