@@ -326,7 +326,7 @@ a.ncll:focus-visible,
     color: var(--color_muted);
     line-height: normal;
     margin: 0px;
-    padding: 3px 10px 3px 5px !important;
+    padding: 3px 10px 3px 0px !important;
 }
 
 .footies a {
