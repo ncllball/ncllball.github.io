@@ -1834,6 +1834,16 @@ body.timeline-page a:focus-visible {
     font-family: var(--age-matrix-td-font);
 }
 
+/* Registration: center all age-matrix columns except the first */
+.age-matrix th,
+.age-matrix td {
+  text-align: center;
+}
+.age-matrix th:first-child,
+.age-matrix td:first-child {
+  text-align: left;
+}
+
 /* Footnotes (+/−) */
 details.footies {
     margin: 0.75rem 0 1rem;
