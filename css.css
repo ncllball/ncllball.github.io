@@ -1799,8 +1799,10 @@ body.timeline-page a:focus-visible {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 10px 0px 7px 0px;
+}
 
+.division-bar .division-title {
+    padding: 10px 0px 7px 0px;
 }
 
 /* Age matrix tables */
