@@ -1965,7 +1965,7 @@ details.footies[open] summary::before {
   white-space: nowrap;
 }
 .age-matrix th br {
-  display: none;
+  display: inline;
 }
 
 /* Ensure horizontal scroll if table exceeds viewport */
