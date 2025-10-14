@@ -1805,7 +1805,6 @@ body.timeline-page a:focus-visible {
 .age-matrix {
     border-collapse: collapse;
     width: 100%;
-    min-width: 760px;
     line-height: 1.4;
 }
 
