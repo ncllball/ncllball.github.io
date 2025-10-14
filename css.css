@@ -1805,9 +1805,7 @@ body.timeline-page a:focus-visible {
 .age-matrix {
     border-collapse: collapse;
     width: 100%;
-    line-height: 1.4;
-    margin: 0 0 1rem  0;
-}
+    line-height: 1.4;}
 
 /* Header red rules */
 .age-matrix thead th {
@@ -1830,8 +1828,9 @@ body.timeline-page a:focus-visible {
 
 .fit td {
     color: var(--color_darkgray) !important;
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
     font-family: var(--age-matrix-td-font);
+    line-height: 1.7rem;
 }
 
 /* Registration: center all age-matrix columns except the first */
