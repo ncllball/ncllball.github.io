@@ -1939,6 +1939,7 @@ details.footies[open] summary::before {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    padding: 10px 0px 7px 0px;
 }
 
 /* Base .fit helper (pairs with .fit th / .fit td already defined) */
