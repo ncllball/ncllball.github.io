@@ -1806,6 +1806,7 @@ body.timeline-page a:focus-visible {
     border-collapse: collapse;
     width: 100%;
     line-height: 1.4;
+    margin: 1rem 0 0 0;
 }
 
 /* Header red rules */
