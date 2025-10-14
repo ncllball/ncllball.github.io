@@ -1954,3 +1954,23 @@ details.footies[open] summary::before {
     padding-left: 0;
     width: 100%;
 }
+
+/* Registration: keep age-matrix cells on one line */
+.age-matrix td {
+  white-space: nowrap;
+}
+
+/* Optional: make headers single-line too */
+.age-matrix th {
+  white-space: nowrap;
+}
+.age-matrix th br {
+  display: none;
+}
+
+/* Ensure horizontal scroll if table exceeds viewport */
+.table_section .table_age {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
