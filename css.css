@@ -2094,11 +2094,11 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   position: absolute;
   inset: 0;
   background: transparent;
-  cursor: zoom-out;            /* visual hint */
+  cursor: auto;
 }
 .enlarge-overlay .enlarge-content {
   position: relative;
-  z-index: 1;                  /* above backdrop */
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2135,6 +2135,7 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 .carousel > input[type="radio"]:nth-of-type(1):checked ~ .carousel-controls label:nth-of-type(1),
 .carousel > input[type="radio"]:nth-of-type(2):checked ~ .carousel-controls label:nth-of-type(2),
 .carousel > input[type="radio"]:nth-of-type(3):checked ~ .carousel-controls label:nth-of-type(3),
+
 .carousel > input[type="radio"]:nth-of-type(4):checked ~ .carousel-controls label:nth-of-type(4) { background: var(--color_red, #cc0000); }
 
 /* Carousel Caption */
@@ -2161,4 +2162,73 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 .carousel-images,
 .carousel-image img {
   border-radius: 10px;
+}
+
+/* 10) Program sections (GoFundMe, team photos, camp image) */
+/* GoFundMe Section Styles */
+.gofundme-section {
+    background: linear-gradient(135deg, var(--color_surface_light) 0%, var(--color_surface_lighter) 100%);
+    border-radius: 16px;
+    margin: 24px 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.gofundme-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(2, 173, 78, 0.05) 0%, transparent 70%);
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+.gofundme-content {
+    position: relative;
+    z-index: 1;
+}
+
+.gofundme-logo {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gofundme-logo:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 32px rgba(2, 173, 78, 0.25);
+}
+
+/* 12) Responsive & reduced motion */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .gofundme-section {
+        padding: 20px;
+    }
+
+    .gofundme-logo {
+        width: 150px;
+        height: 150px;
+    }
 }
