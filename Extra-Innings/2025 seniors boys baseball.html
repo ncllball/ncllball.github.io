@@ -5,50 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Shoreline/North Central/Queen Anne Softball Juniors team advances to West Region tournament in Tucson, AZ after winning Washington State tournament">
+        content="RUG/North Central Seniors Baseball team advances to West Region tournament in Oakland, CA after winning Washington State tournament">
     <meta name="keywords"
-        content="softball, juniors, little league, washington state tournament, shoreline, north central, queen anne">
+        content="baseball, seniors, little league, washington state tournament, RUG, north central">
     <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
-    <title>Shoreline/North Central/Queen Anne Softball Juniors - State Champions</title>
+    <title>RUG / North Central Seniors Baseball - State Champions</title>
 </head>
 
 <body>
     <main>
-        <header>
-            <img class="calltoaction" src="https://ncllball.github.io/images/site_navigation/megaphone.png"
-                alt="Announcement Megaphone">
-            <h2 class="left">RUG / North Central</h2>
-        </header>
+
+        <h2 class="left">RUG / North Central</h2>
         <section class="achievement">
-            <h4 class="left">Congratulations to the Seniors Baseball team for winning the Washington State tournament!</h4>
-            <div class="team-photos" style="margin-bottom: 25px; margin-top: 25px;">
-                <!-- Enlarged overlays for each image -->
-                <input type="checkbox" id="enlarge-1" class="enlarge-checkbox">
+            <p class="left">Congratulations to the Seniors Baseball team for winning the Washington State tournament!</p>
+            <div class="team-photos">
+                <!-- Close target (none selected) -->
+                <input type="radio" name="bbsr-enlarge" id="bbsr-enlarge-none" class="enlarge-toggle" checked>
+
+                <!-- Enlarged overlays (radio-based; click image or backdrop to close) -->
+                <input type="radio" name="bbsr-enlarge" id="bbsr-enlarge-1" class="enlarge-toggle">
                 <div class="enlarge-overlay">
-                    <label for="enlarge-1" class="close-btn" title="Close">&times;</label>
-                    <img src="https://ncllball.github.io/images/extra_innings/2025_baseball_seniors/1.jpg"
-                        alt="Enlarged Team Photo 1">
+                    <label for="bbsr-enlarge-none" class="enlarge-backdrop" aria-label="Close"></label>
+                    <div class="enlarge-content" role="dialog" aria-modal="true">
+                        <label for="bbsr-enlarge-none" class="close-btn" title="Close">&times;</label>
+                        <label for="bbsr-enlarge-none" class="enlarge-image">
+                            <img src="https://ncllball.github.io/images/extra_innings/2025_baseball_seniors/1.jpg"
+                                alt="Enlarged Team Photo 1">
+                        </label>
+                    </div>
                 </div>
 
+                <!-- Carousel -->
                 <div class="carousel">
-                    <input type="radio" name="carousel" id="carousel-1" checked>
+                    <input type="radio" name="bbsr-carousel" id="bbsr-carousel-1" checked>
+
                     <div class="carousel-images">
                         <div class="carousel-image img1">
-                            <label for="enlarge-1">
+                            <label for="bbsr-enlarge-1">
                                 <img src="https://ncllball.github.io/images/extra_innings/2025_baseball_seniors/1.jpg"
                                     alt="Team Photo 1">
                             </label>
                         </div>
                     </div>
+
+                    <nav class="carousel-controls">
+                        <label for="bbsr-carousel-1" title="Slide 1"></label>
+                    </nav>
                 </div>
+
                 <div class="carousel-caption-container">
                     <div class="carousel-caption">
                         [Placeholder for incoming caption text and names when I receive them]
                     </div>
                 </div>
-                <nav class="carousel-controls">
-                </nav>
             </div>
             <div>
                 <h4 class="left"><span>The men now advance to the West Region tournament in Oakland, CA!</span></h4>
