@@ -2052,7 +2052,6 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 /* Team Photos Section */
 .team-photos {
     margin-bottom: 25px;
-    margin-top: 25px;
 }
 .team-photo figcaption {
     font-size: 0.9em;
