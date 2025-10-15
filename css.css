@@ -2221,15 +2221,96 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     box-shadow: 0 12px 32px rgba(2, 173, 78, 0.25);
 }
 
-/* 12) Responsive & reduced motion */
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .gofundme-section {
-        padding: 20px;
-    }
+/* Venmo donation (GoFundMe-styled wrap) */
+.venmo-wrap {
+  max-width: 420px;
+  margin-left: auto;
+}
 
-    .gofundme-logo {
-        width: 150px;
-        height: 150px;
-    }
+.venmo-section {
+  background: linear-gradient(135deg, var(--color_surface_light) 0%, var(--color_surface_lighter) 100%);
+  border-radius: 16px;
+  margin: 24px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft blue pulse overlay */
+.venmo-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(25, 118, 210, 0.06) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.venmo-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.venmo-title {
+  margin: 0 0 8px 0;
+}
+
+.venmo-intro {
+  margin: 0 0 12px 0;
+  color: var(--color_text, #222);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.venmo-qr-link {
+  display: block;
+  margin: 8px auto 24px;
+  width: 200px;
+}
+
+.venmo-qr {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 0;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.venmo-qr:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 32px rgba(25, 118, 210, 0.25);
+}
+
+.venmo-uses {
+  margin: 8px 0 10px 18px;
+  padding: 0;
+  list-style: disc;
+  text-align: left;
+}
+
+.venmo-uses li {
+  margin: 4px 0;
+  font-size: 14px;
+  color: var(--color_text_muted, #333);
+}
+
+.venmo-note {
+  font-size: 13px;
+  color: var(--color_text_muted, #333);
+  margin: 0;
+  opacity: .9;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .venmo-wrap { max-width: 520px; margin: 0; }
+  .venmo-section { border-radius: 10px; }
 }
