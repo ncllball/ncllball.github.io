@@ -2028,7 +2028,7 @@ details.footies[open] summary::before {
 :root {
   --table-row-alt: gainsboro;
 }
-table:not(.no-stripe) > tbody > tr:nth-child(odd) {
+table:not(.no-stripe) > tbody > tr:nth-child(even) {
   background: var(--table-row-alt);
 }
 .margin-top-0 {
