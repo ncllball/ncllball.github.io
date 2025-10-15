@@ -2313,9 +2313,48 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   .venmo-wrap { max-width: 520px; margin: 0; }
   .venmo-section { border-radius: 10px; }
 }
-.venmo-uses-text {
-  margin: 8px 0 10px;
+/* ===========================================================
+   Registration › Coverage cost chart (conic pie + legend)
+   =========================================================== */
+.cost-chart-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.cost-pie {
+  width: clamp(200px, 38vw, 260px);
+  height: clamp(200px, 38vw, 260px);
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+.cost-chart-legend {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(240px, 1fr);
+  gap: 8px 16px;
+}
+.cost-chart-legend li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 14px;
-  color: var(--color_text_muted, #333);
-  text-align: left;
+  line-height: 1.35;
+  color: var(--color_text, #222);
+}
+.cost-chart-legend .swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  .cost-chart-legend {
+    grid-template-columns: 1fr;
+  }
 }
