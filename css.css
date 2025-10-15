@@ -2317,42 +2317,42 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
    Baseball › Pitching Reference (Print Sheet)
    - Scoped with body.print-sheet to avoid site-wide impact
    =========================================================== */
-body.print-sheet {
+.print-sheet {
   font-family: Arial, Helvetica, sans-serif;
   margin: 24px;
   font-size: 13px;
 }
-body.print-sheet h1 { font-size: 20px; margin: 0 0 8px; }
-body.print-sheet h2 { font-size: 15px; margin: 18px 0 6px; }
+.print-sheet h1 { font-size: 20px; margin: 0 0 8px; }
+.print-sheet h2 { font-size: 15px; margin: 18px 0 6px; }
 
-body.print-sheet table {
+.print-sheet table {
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 12px;
 }
-body.print-sheet caption {
+.print-sheet caption {
   text-align: left;
   font-weight: 600;
   margin: 0 0 4px;
 }
-body.print-sheet th,
-body.print-sheet td {
+.print-sheet th,
+.print-sheet td {
   border: 1px solid #444;
   padding: 4px 6px;
   vertical-align: top;
 }
-body.print-sheet thead th { background: #eee; }
+.print-sheet thead th { background: #eee; }
 
-body.print-sheet .note { font-size: 11px; margin: 4px 0 12px; }
+.print-sheet .note { font-size: 11px; margin: 4px 0 12px; }
 
-body.print-sheet ul { margin: 4px 0 10px 18px; padding: 0; }
-body.print-sheet li { margin: 2px 0; }
+.print-sheet ul { margin: 4px 0 10px 18px; padding: 0; }
+.print-sheet li { margin: 2px 0; }
 
-body.print-sheet .cols { display: flex; gap: 24px; flex-wrap: wrap; }
-body.print-sheet .col { flex: 1 1 320px; }
+.print-sheet .cols { display: flex; gap: 24px; flex-wrap: wrap; }
+.print-sheet .col { flex: 1 1 320px; }
 
 /* Print & screen niceties */
 @page { margin: 18mm; }
 @media screen {
-  body.print-sheet { background: #fffbe8; }
+  .print-sheet { background: #fffbe8; }
 }
