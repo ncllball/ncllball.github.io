@@ -1162,16 +1162,6 @@ body:not(.cms-right) .only-on-right {
     padding: 10px;
 }
 
-.calltoaction {
-    float: right;
-    max-width: 20%;
-    max-height: 175px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding-top: 60px;
-    padding-right: 20px;
-}
-
 /* end image styling for all images */
 
 .ul-space-bottom {
@@ -2059,14 +2049,4 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 }
 .stickout_1 {
     font-weight: 600;
-}
-
-.calltoaction {
-    float: right;
-    max-width: 20%;
-    max-height: 175px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding-top: 60px;
-    padding-right: 20px;
 }
