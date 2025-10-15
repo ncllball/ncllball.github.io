@@ -2124,7 +2124,7 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 .carousel > input[type="radio"]:nth-of-type(3):checked ~ .carousel-controls label:nth-of-type(3),
 .carousel > input[type="radio"]:nth-of-type(4):checked ~ .carousel-controls label:nth-of-type(4) { background: var(--color_red, #cc0000); }
 
-/* Caption (restore styling) */
+/* Carousel Caption */
 .carousel-caption-container {
     margin-top: 12px;
     padding: 12px 15px;
@@ -2136,14 +2136,10 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     margin-left: auto;
     margin-right: auto;
 }
+
 .carousel-caption {
-  display: inline-block;
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.4;
-  color: var(--color_text, #222);
-  background: rgba(255,255,255,.9);
-  padding: 6px 10px;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    color: var(--color_text);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: left;
 }
