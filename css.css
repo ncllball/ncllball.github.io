@@ -2033,7 +2033,7 @@ details.footies[open] summary::before {
 
 /* Table striping: odd rows gainsboro site-wide (opt-out with .no-stripe) */
 :root {
-  --table-row-alt: gainsboro;
+    --table-row-alt: whitesmoke;
 }
 table:not(.no-stripe) > tbody > tr:nth-child(even) {
   background: var(--table-row-alt);
