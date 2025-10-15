@@ -2143,3 +2143,10 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     line-height: 1.5;
     text-align: left;
 }
+
+/* Carousel rounded corners */
+.carousel-images,
+.carousel-image img {
+  border-radius: 10px;
+}
+/* .carousel-images already has overflow: hidden, so corners will clip */
