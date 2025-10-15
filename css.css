@@ -1888,6 +1888,7 @@ body.timeline-page a:focus-visible {
 .age-matrix th,
 .age-matrix td {
   text-align: center;
+  padding: 6px 10px 6px 10px;
 }
 .age-matrix th:first-child,
 .age-matrix td:first-child {
