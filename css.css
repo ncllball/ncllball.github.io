@@ -845,7 +845,7 @@ a.ncll:focus-visible,
 }
 
 .ncll-table__body .ncll-table__row:nth-child(odd) .ncll-table__cell {
-    background-color: #fafafa;
+    background-color: #661313;
 }
 
 /* ================= Right-pane (CMS) helpers ================= */
