@@ -2116,48 +2116,12 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 .enlarge-checkbox { display: none; }
 .enlarge-checkbox:checked + .enlarge-overlay { display: flex; }
 
-/* Carousel Caption */
-.carousel-caption-container {
-    margin-top: 12px;
-    padding: 12px 15px;
-    background: linear-gradient(to right, var(--color_surface_light), var(--color_surface_lighter));
-    border-left: 3px solid var(--color_red);
-    border-radius: 6px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.carousel-caption {
-    color: var(--color_text);
-    font-size: 0.875rem;
-    line-height: 1.5;
-    text-align: left;
-}
-
-/* Carousel Controls */
-.carousel-controls {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.carousel-controls label {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin: 0 4px;
-    background: var(--color_control);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-/* Image enlarge: only open the overlay immediately after the checked input */
+/* Image enlarge (radio-based; only one open at a time) */
+.team-photos > input.enlarge-toggle { display: none; }
 .team-photos > .enlarge-overlay { display: none !important; }
-.team-photos > input.enlarge-checkbox:checked + .enlarge-overlay { display: flex !important; }
+.team-photos > input.enlarge-toggle:checked + .enlarge-overlay { display: flex !important; }
 
-/* Overlay styling (keep or adjust as needed) */
+/* Overlay visuals */
 .enlarge-overlay {
   position: fixed; inset: 0; background: rgba(0,0,0,.8);
   z-index: 9990; align-items: center; justify-content: center; padding: 1rem;
