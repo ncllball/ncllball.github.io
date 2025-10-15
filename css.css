@@ -1891,7 +1891,7 @@ body.timeline-page a:focus-visible {
 }
 .age-matrix th:first-child,
 .age-matrix td:first-child {
-  text-align: center;
+  text-align: left;
 }
 
 /* Footnotes (+/−) */
