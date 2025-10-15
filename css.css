@@ -1888,11 +1888,15 @@ body.timeline-page a:focus-visible {
 }
 
 /* Registration: center all age-matrix columns except the first */
-.age-matrix th,
-.age-matrix td {
+.age-matrix th {
   text-align: center;
   padding: 6px 10px 6px 10px;
 }
+
+.age-matrix td {
+  text-align: center;
+}
+
 .age-matrix th:first-child,
 .age-matrix td:first-child {
   text-align: left;
