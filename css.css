@@ -2064,7 +2064,6 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 /* Carousel Styles */
 
 .carousel-image label {
-    display: block;
     cursor: pointer;
 }
 
@@ -2101,7 +2100,7 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 .close-btn { position: absolute; top: 12px; right: 16px; font-size: 32px; line-height: 1; cursor: pointer; color: #fff; }
 
 /* Carousel (ID-agnostic; matches your sbjrs-carousel-1..4 inputs) */
-.carousel { position: relative; max-width: 980px; margin: 0 auto; }
+.carousel { position: relative; max-width: 450px; margin: 0 auto; }
 .carousel > input[type="radio"] { position: absolute; opacity: 0; pointer-events: none; }
 
 .carousel-images { position: relative; height: clamp(220px, 56vw, 520px); overflow: hidden; }
