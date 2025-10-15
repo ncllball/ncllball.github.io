@@ -2051,3 +2051,11 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
+/* span classes */
+
+.footies_note {
+    text-decoration: underline;
+}
+.stickout_1 {
+    font-weight: 600;
+}
