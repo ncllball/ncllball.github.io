@@ -487,7 +487,9 @@ a.ncll:focus-visible,
 .footies a:hover {
     text-decoration: underline;
 }
-
+.footies_note {
+    text-decoration: underline;
+}
 /* Info icon for footnotes */
 
 .info-icon {
