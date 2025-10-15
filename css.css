@@ -1621,7 +1621,7 @@ body.timeline-page a:focus-visible {
 
 .timeline-item.period .timeline-marker::after {
     content: "";
-    height: 32px;
+    height: 25px;
     top: auto;
 }
 
