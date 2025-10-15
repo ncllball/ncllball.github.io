@@ -1905,6 +1905,7 @@ details.footies summary {
     color: var(--brand-blue, #00013a);
     user-select: none;
     padding-bottom: 8px;
+    font-size: 0.85rem;
 }
 
 details.footies summary::-webkit-details-marker {
