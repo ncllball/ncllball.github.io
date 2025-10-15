@@ -50,6 +50,30 @@
     --font_tag: var(--font_ui), "proxima-nova";
 }
 
+/* Easing + durations */
+:root {
+  --ease-std: cubic-bezier(.2,0,.2,1);
+  --ease-out: cubic-bezier(0,0,.2,1);
+  --trans-fast: 120ms;
+  --trans-med: 200ms;
+  --trans-slow: 320ms;
+
+  /* Site-wide transition bundle */
+  --transition-base:
+    background var(--trans-med) var(--ease-std),
+    color var(--trans-med) var(--ease-std),
+    transform var(--trans-fast) var(--ease-out),
+    box-shadow var(--trans-fast) var(--ease-out);
+}
+a.ncll,
+.button,
+.gainsboro-button,
+.tags_button,
+.aoverb_button,
+.pd-landing .quick-nav a,
+.sticky-register-cta {
+  transition: var(--transition-base);
+}
 /* start CMS overrides (SportsConnect embeds) */
 .skAddBanner,
 .skRightTabs,
@@ -1801,14 +1825,14 @@ body.timeline-page a:focus-visible {
     color: var(--color_text);
     cursor: pointer;
     display: inline-block;
-    font-size: .75rem;
+    font-size: .9rem;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
     transition: background .3s ease, color .3s ease, transform .2s ease, box-shadow .2s ease;
     white-space: nowrap;
-    margin-left: 5px;
-    padding: 2px 16px 2px 16px;
+    gap: 5px;
+    padding: 6px 26px 6px 26px;
 }
 
 .division-bar .actions {
