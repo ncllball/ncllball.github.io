@@ -1803,6 +1803,7 @@ body.timeline-page a:focus-visible {
 
 .division-bar .division-title {
     padding: 10px 0px 7px 0px;
+    color: var(--color_blue);
 }
 
 /* Age matrix tables */
