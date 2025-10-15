@@ -1554,6 +1554,8 @@ body.timeline-page a:focus-visible {
     left: 0;
     width: 15px;
     transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+    background-image: var(--stripe-gradient);
+    background-size: 3px 3px;
 }
 
 .timeline-marker::after {
