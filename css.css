@@ -2030,3 +2030,12 @@ details.footies[open] summary::before {
 table:not(.no-stripe) > tbody > tr:nth-child(odd) {
   background: var(--table-row-alt);
 }
+.margin-top-0 {
+    margin-top: 0px;
+}
+.margin-top-30 {
+    margin-top: 30px;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
