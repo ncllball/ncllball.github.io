@@ -2061,3 +2061,12 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     font-weight: 600;
 }
 
+.calltoaction {
+    float: right;
+    max-width: 20%;
+    max-height: 175px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+    padding-right: 20px;
+}
