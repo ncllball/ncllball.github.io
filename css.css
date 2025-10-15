@@ -1960,6 +1960,7 @@ details.footies[open] summary::before {
 /* ======================================================================
    BEGIN Registration/mainreg (2026) — Restored helpers and completeness
    Notes:
+
    - Restores helper classes and footnote indent we previously removed
    - Adds .division-header parity with .division-bar
    - Adds optional left offset var for footnotes alignment
@@ -2020,4 +2021,12 @@ details.footies[open] summary::before {
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
+}
+
+/* Table striping: odd rows gainsboro site-wide (opt-out with .no-stripe) */
+:root {
+  --table-row-alt: gainsboro;
+}
+table:not(.no-stripe) > tbody > tr:nth-child(odd) {
+  background: var(--table-row-alt);
 }
