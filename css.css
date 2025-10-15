@@ -2068,3 +2068,48 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     text-align: left;
     margin-top: 15px;
 }
+
+/* ===========================
+Image Enlargement Styles
+=========================== */
+.enlarge-checkbox {
+    display: none;
+}
+
+.enlarge-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.enlarge-checkbox:checked+.enlarge-overlay {
+    display: flex;
+}
+
+.enlarge-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+.enlarge-overlay .close-btn {
+    position: absolute;
+    top: 32px;
+    right: 48px;
+    font-size: 2rem;
+    color: var(--color_white);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10001;
+}
+
+/* end: 9) Carousel & image enlargement */
