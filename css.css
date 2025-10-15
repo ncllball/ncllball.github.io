@@ -1858,7 +1858,7 @@ body.timeline-page a:focus-visible {
 .age-matrix thead th {
     border-top: 1pt solid var(--brand-red, #cc0000);
     border-bottom: 1pt solid var(--brand-red, #cc0000);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
