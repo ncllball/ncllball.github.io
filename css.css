@@ -2072,7 +2072,16 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     overflow: hidden;
     border-radius: 12px;
 }
-.carousel-image { position: absolute; inset: 0; opacity: 0; pointer-events: none; transition: opacity .3s ease; }
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
 .carousel-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* Map selected radio to slide (1..4) */
