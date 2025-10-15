@@ -471,12 +471,12 @@ a.ncll:focus-visible,
 }
 
 .footies p {
-    font-size: 0.78rem !important;
     font-family: var(--font_ui);
     color: var(--color_muted);
     line-height: normal;
     margin: 0px;
     padding: 3px 10px 3px 0px !important;
+    font-size: 0.85rem !important;
 }
 
 .footies a {
