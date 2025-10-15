@@ -1863,7 +1863,7 @@ body.timeline-page a:focus-visible {
 
 /* 6px gap between thead and first tbody row */
 .age-matrix tbody tr:first-child td {
-    padding-top: 6px;
+    padding-top: 0px;
 }
 
 /* Fit row text styling */
