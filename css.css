@@ -2114,10 +2114,7 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 
 /* Image enlarge (class-based, no ID selectors) */
 .enlarge-checkbox { display: none; }
-.enlarge-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.8); z-index: 9990; align-items: center; justify-content: center; padding: 1rem; }
 .enlarge-checkbox:checked + .enlarge-overlay { display: flex; }
-.enlarge-overlay img { max-width: 92vw; max-height: 92vh; box-shadow: 0 8px 24px rgba(0,0,0,.4); border-radius: 6px; }
-.close-btn { position: absolute; top: 12px; right: 16px; font-size: 32px; line-height: 1; cursor: pointer; color: #fff; }
 
 /* Carousel Caption */
 .carousel-caption-container {
@@ -2155,3 +2152,15 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     cursor: pointer;
     transition: background 0.3s;
 }
+
+/* Image enlarge: only open the overlay immediately after the checked input */
+.team-photos > .enlarge-overlay { display: none !important; }
+.team-photos > input.enlarge-checkbox:checked + .enlarge-overlay { display: flex !important; }
+
+/* Overlay styling (keep or adjust as needed) */
+.enlarge-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,.8);
+  z-index: 9990; align-items: center; justify-content: center; padding: 1rem;
+}
+.enlarge-overlay img { max-width: 92vw; max-height: 92vh; box-shadow: 0 8px 24px rgba(0,0,0,.4); border-radius: 6px; }
+.close-btn { position: absolute; top: 12px; right: 16px; font-size: 32px; line-height: 1; cursor: pointer; color: #fff; }
