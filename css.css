@@ -2090,13 +2090,27 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   justify-content: center;
   padding: 1rem;
 }
-.enlarge-overlay img {
+.enlarge-overlay .enlarge-backdrop {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  cursor: zoom-out;            /* visual hint */
+}
+.enlarge-overlay .enlarge-content {
+  position: relative;
+  z-index: 1;                  /* above backdrop */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enlarge-overlay img,
+.enlarge-content img {
   max-width: 92vw;
   max-height: 92vh;
   box-shadow: 0 8px 24px rgba(0,0,0,.4);
   border-radius: 6px;
 }
-.close-btn { position: absolute; top: 12px; right: 16px; font-size: 32px; line-height: 1; cursor: pointer; color: #fff; }
+.close-btn { position: absolute; top: 12px; right: 16px; font-size: 32px; line-height: 1; cursor: pointer; color: #fff; z-index: 2; }
 
 /* Carousel (ID-agnostic; matches your sbjrs-carousel-1..4 inputs) */
 .carousel { position: relative; max-width: 100%; margin: 0 auto; }
@@ -2148,4 +2162,3 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 .carousel-image img {
   border-radius: 10px;
 }
-/* .carousel-images already has overflow: hidden, so corners will clip */
