@@ -2100,7 +2100,7 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 .close-btn { position: absolute; top: 12px; right: 16px; font-size: 32px; line-height: 1; cursor: pointer; color: #fff; }
 
 /* Carousel (ID-agnostic; matches your sbjrs-carousel-1..4 inputs) */
-.carousel { position: relative; max-width: 450px; margin: 0 auto; }
+.carousel { position: relative; max-width: 100%; margin: 0 auto; }
 .carousel > input[type="radio"] { position: absolute; opacity: 0; pointer-events: none; }
 
 .carousel-images { position: relative; height: clamp(220px, 56vw, 520px); overflow: hidden; }
@@ -2125,7 +2125,17 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 .carousel > input[type="radio"]:nth-of-type(4):checked ~ .carousel-controls label:nth-of-type(4) { background: var(--color_red, #cc0000); }
 
 /* Caption (restore styling) */
-.carousel-caption-container { margin-top: 8px; display: flex; justify-content: center; }
+.carousel-caption-container {
+    margin-top: 12px;
+    padding: 12px 15px;
+    background: linear-gradient(to right, var(--color_surface_light), var(--color_surface_lighter));
+    border-left: 3px solid var(--color_red);
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .carousel-caption {
   display: inline-block;
   text-align: center;
