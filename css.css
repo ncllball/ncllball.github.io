@@ -2054,13 +2054,6 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     margin-bottom: 25px;
     margin-top: 25px;
 }
-.team-photos img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-    height: auto;
-}
 .team-photo figcaption {
     font-size: 0.9em;
     color: var(--color_muted);
