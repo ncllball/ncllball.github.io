@@ -2366,7 +2366,6 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   margin: 0 0 0 12px;
   padding: 0;
   list-style: none;
-  display: flex;
   flex-direction: column;
   gap: 6px;
 }
