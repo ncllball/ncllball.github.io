@@ -2394,3 +2394,86 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 @media (max-width: 720px) {
   .cost-chart-legend.fx-legend li { white-space: normal; }
 }
+
+/* Registration › Coverage pie with callout legend */
+.cost-chart {
+  position: relative;
+  --pie-size: clamp(220px, 40vw, 320px);
+  width: var(--pie-size);
+  height: var(--pie-size);
+}
+.cost-chart .cost-pie {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+.cost-chart .callouts { position: absolute; inset: 0; }
+
+/* Each callout uses --from and --to (degrees); angle is their midpoint */
+.cost-chart .callout {
+  --angle: calc((var(--from) + var(--to)) / 2);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0; height: 0;
+  color: var(--color_text);
+}
+
+/* Connector line (from center, rotated to slice angle) */
+.cost-chart .callout::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0;
+  width: calc(var(--pie-size) / 2 + 16px);
+  height: 2px;
+  background: currentColor;
+  transform-origin: 0 0;
+  transform: rotate(var(--angle));
+  opacity: .85;
+}
+
+/* Label at end of connector; auto-orients upright */
+.cost-chart .callout .label {
+  position: absolute;
+  left: 0; top: 0;
+  transform:
+    rotate(var(--angle))
+    translateX(calc(var(--pie-size) / 2 + 16px))
+    rotate(calc(-1 * var(--angle)));
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 4px;
+  padding: 4px 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+  white-space: nowrap;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Left-side slices: pull label to the left of the connector end */
+.cost-chart .callout.left .label {
+  transform:
+    rotate(var(--angle))
+    translateX(calc(var(--pie-size) / 2 + 16px))
+    rotate(calc(-1 * var(--angle)))
+    translateX(-100%);
+  text-align: right;
+}
+
+.cost-chart .callout .swatch {
+  width: 12px; height: 12px;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,.15);
+  display: inline-block;
+}
+
+/* Wrapper alignment */
+.cost-chart-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
