@@ -40,8 +40,8 @@
         <section id="distribution">
           <h2 class="left">How Fees Are Distributed</h2>
           <div class="cost-chart-wrapper">
-            <div class="cost-chart">
-              <!-- Pie (unchanged conic) -->
+            <div class="cost-chart" style="--pie-size: 280px; --chart-rotate: 0deg;">
+              <!-- Pie: add 'from var(--chart-rotate)' so pie and callouts stay aligned -->
               <div
                 class="cost-pie"
                 role="img"
@@ -49,6 +49,7 @@
                 style="
                   background:
                     conic-gradient(
+                      from var(--chart-rotate),
                       #1d3d7a 0% 24.92%,
                       #cc0000 24.92% 53.51%,
                       #777777 53.51% 62.49%,
@@ -64,39 +65,39 @@
 
               <!-- Callout legend (angles in degrees; from=segment start, to=segment end) -->
               <div class="callouts">
-                <!-- Fields: 0° → 89.712° (mid ~44.856°) -->
+                <!-- Fields: 0° → 89.712° -->
                 <div class="callout" style="--from: 0deg; --to: 89.712deg; color:#1d3d7a;">
                   <div class="label"><span class="swatch" style="background:#1d3d7a"></span>Fields — $46,884 (24.92%)</div>
                 </div>
-                <!-- Unis: 89.712° → 192.636° (mid ~141.174°) -->
+                <!-- Unis: 89.712° → 192.636° -->
                 <div class="callout left" style="--from: 89.712deg; --to: 192.636deg; color:#cc0000;">
                   <div class="label"><span class="swatch" style="background:#cc0000"></span>Unis — $53,818 (28.59%)</div>
                 </div>
-                <!-- Equipment: 192.636° → 224.964° (mid ~208.800°) -->
+                <!-- Equipment: 192.636° → 224.964° -->
                 <div class="callout left" style="--from: 192.636deg; --to: 224.964deg; color:#777777;">
                   <div class="label"><span class="swatch" style="background:#777777"></span>Equipment — $16,907 (8.98%)</div>
                 </div>
-                <!-- Umpire: 224.964° → 234.396° (mid ~229.680°) -->
+                <!-- Umpire: 224.964° → 234.396° -->
                 <div class="callout left" style="--from: 224.964deg; --to: 234.396deg; color:#e23d3d;">
                   <div class="label"><span class="swatch" style="background:#e23d3d"></span>Umpire — $4,939 (2.62%)</div>
                 </div>
-                <!-- Fall/Winter Dev: 234.396° → 242.784° (mid ~238.590°) -->
+                <!-- Fall/Winter Dev: 234.396° → 242.784° -->
                 <div class="callout left" style="--from: 234.396deg; --to: 242.784deg; color:#0e7c86;">
                   <div class="label"><span class="swatch" style="background:#0e7c86"></span>Fall/Winter Dev — $4,384 (2.33%)</div>
                 </div>
-                <!-- Coach/Player Dev: 242.784° → 258.192° (mid ~250.488°) -->
+                <!-- Coach/Player Dev: 242.784° → 258.192° -->
                 <div class="callout left" style="--from: 242.784deg; --to: 258.192deg; color:#990000;">
                   <div class="label"><span class="swatch" style="background:#990000"></span>Coach/Player Dev — $8,055 (4.28%)</div>
                 </div>
-                <!-- Unis (All‑Stars): 258.192° → 300.024° (mid ~279.108°) -->
+                <!-- Unis (All‑Stars): 258.192° → 300.024° -->
                 <div class="callout" style="--from: 258.192deg; --to: 300.024deg; color:#f4a261;">
                   <div class="label"><span class="swatch" style="background:#f4a261"></span>Unis (All‑Stars) — $21,866 (11.62%)</div>
                 </div>
-                <!-- Summerball: 300.024° → 306.612° (mid ~303.318°) -->
+                <!-- Summerball: 300.024° → 306.612° -->
                 <div class="callout" style="--from: 300.024deg; --to: 306.612deg; color:#444444;">
                   <div class="label"><span class="swatch" style="background:#444444"></span>Summerball — $3,449 (1.83%)</div>
                 </div>
-                <!-- Overhead: 306.612° → 360° (mid ~333.306°) -->
+                <!-- Overhead: 306.612° → 360° -->
                 <div class="callout" style="--from: 306.612deg; --to: 360deg; color:gainsboro;">
                   <div class="label"><span class="swatch" style="background:gainsboro"></span>Overhead — $27,925 (14.84%)</div>
                 </div>
