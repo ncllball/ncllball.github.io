@@ -2422,24 +2422,26 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 
 /* Connector line (from center, rotated to slice angle) */
 .cost-chart .callout::before {
-  content: "";
-  position: absolute;
-  left: 0; top: 0;
-  width: calc(var(--pie-size) / 2 + 16px);
+  /* from: a long line starting at center */
+  /* width: calc(var(--pie-size) / 2 + 16px); */
+  /* transform: rotate(var(--angle)); */
+
+  /* to: a short leader that begins at the slice edge */
+  width: var(--connector-len, 28px);
   height: 2px;
   background: currentColor;
   transform-origin: 0 0;
-  transform: rotate(var(--angle));
+  transform:
+    rotate(var(--angle))
+    translateX(calc(var(--pie-size) / 2 + var(--callout-gap, 8px)));
   opacity: .85;
 }
 
-/* Label at end of connector; auto-orients upright */
+/* Move labels to the end of the connector that starts at the arc */
 .cost-chart .callout .label {
-  position: absolute;
-  left: 0; top: 0;
   transform:
     rotate(var(--angle))
-    translateX(calc(var(--pie-size) / 2 + 16px))
+    translateX(calc(var(--pie-size) / 2 + var(--callout-gap, 8px) + var(--connector-len, 28px)))
     rotate(calc(-1 * var(--angle)));
   background: #fff;
   border: 1px solid rgba(0,0,0,.12);
@@ -2453,27 +2455,12 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   gap: 6px;
 }
 
-/* Left-side slices: pull label to the left of the connector end */
+/* Left-side slices: keep the same left pull, now relative to new connector start */
 .cost-chart .callout.left .label {
   transform:
     rotate(var(--angle))
-    translateX(calc(var(--pie-size) / 2 + 16px))
+    translateX(calc(var(--pie-size) / 2 + var(--callout-gap, 8px) + var(--connector-len, 28px)))
     rotate(calc(-1 * var(--angle)))
     translateX(-100%);
   text-align: right;
-}
-
-.cost-chart .callout .swatch {
-  width: 12px; height: 12px;
-  border-radius: 2px;
-  border: 1px solid rgba(0,0,0,.15);
-  display: inline-block;
-}
-
-/* Wrapper alignment */
-.cost-chart-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  flex-wrap: wrap;
 }
