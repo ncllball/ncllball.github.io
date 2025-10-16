@@ -2460,3 +2460,102 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   border: 1px solid rgba(0,0,0,.15);
   display: inline-block;
 }
+
+/* Registration › Coverage pie with callout legend (aligned + centered) */
+.cost-chart-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;          /* center the whole chart block */
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.cost-chart {
+  position: relative;
+  /* You can override these per-chart inline: style="--pie-size: 280px; --chart-rotate: 0deg" */
+  --pie-size: clamp(220px, 56vw, 300px);
+  --chart-rotate: 0deg;             /* rotates BOTH pie and callouts to keep in sync */
+  --callout-gap: 10px;              /* radial gap from arc to connector start */
+  --connector-len: 28px;            /* length of the straight connector */
+  width: var(--pie-size);
+  height: var(--pie-size);
+}
+
+.cost-chart .cost-pie {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+
+/* Callouts layer */
+.cost-chart .callouts { position: absolute; inset: 0; pointer-events: none; }
+.cost-chart .callout {
+  /* Compute the midpoint angle of the slice, then add chart rotation */
+  --theta: calc(((var(--from) + var(--to)) / 2) + var(--chart-rotate));
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0; height: 0;
+  color: var(--color_text, #222);
+}
+
+/* Connector: begins at the arc (fat edge), runs outward a bit */
+.cost-chart .callout::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0;
+  height: 2px;
+  width: var(--connector-len);
+  background: currentColor;
+  transform-origin: 0 0;
+  transform:
+    rotate(var(--theta))
+    translateX(calc(var(--pie-size) / 2 + var(--callout-gap)));
+  opacity: .9;
+}
+
+/* Small dot right on the arc to reinforce association */
+.cost-chart .callout::after {
+  content: "";
+  position: absolute;
+  left: 0; top: 0;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0 2px #fff; /* halo for contrast on dark slices */
+  transform:
+    rotate(var(--theta))
+    translateX(calc(var(--pie-size) / 2));
+  transform-origin: 0 0;
+}
+
+/* Label at the end of the connector */
+.cost-chart .callout .label {
+  position: absolute;
+  left: 0; top: 0;
+  transform:
+    rotate(var(--theta))
+    translateX(calc(var(--pie-size) / 2 + var(--callout-gap) + var(--connector-len)))
+    rotate(calc(-1 * var(--theta)));
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.12);
+  border-radius: 4px;
+  padding: 4px 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+  white-space: nowrap;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Left-side slices: pull label to the left of connector end */
+.cost-chart .callout.left .label {
+  transform:
+    rotate(var(--theta))
+    translateX(calc(var(--pie-size) / 2 + var(--callout-gap) + var(--connector-len)))
+    rotate(calc(-1 * var(--theta)))
+    translateX(-100%);
+  text-align: right;
+}
