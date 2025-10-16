@@ -1618,7 +1618,7 @@ body.timeline-page a:focus-visible {
 }
 
 .timeline-item.period .timeline-content {
-    padding: 40px 0 60px;
+    padding: 20px 0 40px;
     text-align: center;
 }
 
