@@ -2315,20 +2315,39 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   .venmo-section { border-radius: 10px; }
 }
 /* ===========================================================
-   Registration › Coverage cost chart (conic pie + legend)
+   Registration › Coverage cost chart (consolidated, single source)
    =========================================================== */
+
+/* Center the chart block within page content */
 .cost-chart-wrapper {
   display: flex;
-  align-items: center;
-  gap: 18px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
   flex-wrap: wrap;
 }
+
+/* Chart sizing + rotation vars (override per chart via inline style) */
+.cost-chart {
+  position: relative;
+  --pie-size: clamp(200px, 56vw, 260px);
+  --chart-rotate: 0deg;     /* rotates BOTH pie and callouts to keep in sync */
+  --callout-gap: 10px;      /* radial gap from arc to connector start */
+  --connector-len: 28px;    /* length of the straight connector */
+  width: var(--pie-size);
+  height: var(--pie-size);
+}
+
+/* Style pie whether used standalone or inside .cost-chart */
+.cost-chart .cost-pie,
 .cost-pie {
-  width: clamp(200px, 38vw, 260px);
-  height: clamp(200px, 38vw, 260px);
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   box-shadow: 0 8px 24px rgba(0,0,0,.08);
 }
+
+/* Legend (grid) + JavaFX vertical variant */
 .cost-chart-legend {
   margin: 0;
   padding: 0;
@@ -2352,146 +2371,27 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   display: inline-block;
   border: 1px solid rgba(0,0,0,.1);
 }
-
-/* Mobile */
-@media (max-width: 720px) {
-  .cost-chart-legend {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Registration › Coverage cost chart (JavaFX-like legend) */
-.cost-chart-wrapper { align-items: flex-start; }
-
 .cost-chart-legend.fx-legend {
   margin: 0 0 0 12px;
-  padding: 0;
-  list-style: none;
+  display: flex;
   flex-direction: column;
   gap: 6px;
 }
-
-.cost-chart-legend.fx-legend li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  line-height: 1.3;
-  color: var(--color_text, #222);
-  white-space: nowrap;
-}
-
 .cost-chart-legend.fx-legend .swatch {
   width: 16px;
   height: 12px;
   border-radius: 2px;
   border: 1px solid rgba(0,0,0,.2);
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.4);
-  display: inline-block;
-  flex: 0 0 auto;
 }
-
-/* Mobile: allow wrapping of labels if needed */
 @media (max-width: 720px) {
+  .cost-chart-legend { grid-template-columns: 1fr; }
   .cost-chart-legend.fx-legend li { white-space: normal; }
 }
 
-/* Registration › Coverage pie with callout legend
-   Make connectors start at the arc (fat part), not the center */
-.cost-chart { position: relative; --pie-size: clamp(220px, 40vw, 320px); width: var(--pie-size); height: var(--pie-size); }
-.cost-chart .cost-pie { width: 100%; height: 100%; border-radius: 50%; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
-.cost-chart .callouts { position: absolute; inset: 0; pointer-events: none; }
-
-.cost-chart .callout {
-  --angle: calc((var(--from) + var(--to)) / 2);
-  position: absolute;
-  left: 50%; top: 50%;
-  width: 0; height: 0;
-  color: var(--color_text, #222);
-}
-
-/* Connector: start at slice edge, run outward a bit */
-.cost-chart .callout::before {
-  content: "";
-  position: absolute;
-  left: 0; top: 0;
-  height: 2px;
-  width: var(--connector-len, 28px) !important;
-  background: currentColor;
-  transform-origin: 0 0;
-  /* translate to the arc, then draw outward along the slice angle */
-  transform: rotate(var(--angle)) translateX(calc(var(--pie-size) / 2 + var(--callout-gap, 10px))) !important;
-  opacity: .9;
-}
-
-/* Label anchored at end of connector */
-.cost-chart .callout .label {
-  position: absolute;
-  left: 0; top: 0;
-  transform:
-    rotate(var(--angle))
-    translateX(calc(var(--pie-size) / 2 + var(--callout-gap, 10px) + var(--connector-len, 28px)))
-    rotate(calc(-1 * var(--angle)));
-  background: #fff;
-  border: 1px solid rgba(0,0,0,.12);
-  border-radius: 4px;
-  padding: 4px 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,.08);
-  white-space: nowrap;
-  font-size: 13px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-
-/* Left-side slices: flip label to left of the connector end */
-.cost-chart .callout.left .label {
-  transform:
-    rotate(var(--angle))
-    translateX(calc(var(--pie-size) / 2 + var(--callout-gap, 10px) + var(--connector-len, 28px)))
-    rotate(calc(-1 * var(--angle)))
-    translateX(-100%);
-  text-align: right;
-}
-
-.cost-chart .callout .swatch {
-  width: 12px; height: 12px;
-  border-radius: 2px;
-  border: 1px solid rgba(0,0,0,.15);
-  display: inline-block;
-}
-
-/* Registration › Coverage pie with callout legend (aligned + centered) */
-.cost-chart-wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;          /* center the whole chart block */
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.cost-chart {
-  position: relative;
-  /* You can override these per-chart inline: style="--pie-size: 280px; --chart-rotate: 0deg" */
-  --pie-size: clamp(220px, 56vw, 300px);
-  --chart-rotate: 0deg;             /* rotates BOTH pie and callouts to keep in sync */
-  --callout-gap: 10px;              /* radial gap from arc to connector start */
-  --connector-len: 28px;            /* length of the straight connector */
-  width: var(--pie-size);
-  height: var(--pie-size);
-}
-
-.cost-chart .cost-pie {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  box-shadow: 0 8px 24px rgba(0,0,0,.08);
-}
-
-/* Callouts layer */
+/* Callouts (labels with lines anchored to the arc) */
 .cost-chart .callouts { position: absolute; inset: 0; pointer-events: none; }
 .cost-chart .callout {
-  /* Compute the midpoint angle of the slice, then add chart rotation */
   --theta: calc(((var(--from) + var(--to)) / 2) + var(--chart-rotate));
   position: absolute;
   left: 50%;
@@ -2499,8 +2399,7 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   width: 0; height: 0;
   color: var(--color_text, #222);
 }
-
-/* Connector: begins at the arc (fat edge), runs outward a bit */
+/* Connector: begins at the arc, runs outward */
 .cost-chart .callout::before {
   content: "";
   position: absolute;
@@ -2514,7 +2413,6 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     translateX(calc(var(--pie-size) / 2 + var(--callout-gap)));
   opacity: .9;
 }
-
 /* Small dot right on the arc to reinforce association */
 .cost-chart .callout::after {
   content: "";
@@ -2523,13 +2421,12 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   width: 6px; height: 6px;
   border-radius: 50%;
   background: currentColor;
-  box-shadow: 0 0 0 2px #fff; /* halo for contrast on dark slices */
+  box-shadow: 0 0 0 2px #fff;
+  transform-origin: 0 0;
   transform:
     rotate(var(--theta))
     translateX(calc(var(--pie-size) / 2));
-  transform-origin: 0 0;
 }
-
 /* Label at the end of the connector */
 .cost-chart .callout .label {
   position: absolute;
@@ -2549,8 +2446,6 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   align-items: center;
   gap: 6px;
 }
-
-/* Left-side slices: pull label to the left of connector end */
 .cost-chart .callout.left .label {
   transform:
     rotate(var(--theta))
@@ -2558,4 +2453,10 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     rotate(calc(-1 * var(--theta)))
     translateX(-100%);
   text-align: right;
+}
+.cost-chart .callout .swatch {
+  width: 12px; height: 12px;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,.15);
+  display: inline-block;
 }
