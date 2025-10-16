@@ -1,0 +1,45 @@
+canonical,example_raw,variant_count,sources
+B.F. Day,B.F. Day,1,C:\Tools\ncllball.github.io\master.summerball.csv
+Bagley Elementary,Bagley,4,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\.github\projects\reports\teenwinter.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
+Ballard High School,Ballard H S,3,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+BF Day Elementary,B. F. Day Elementary,5,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
+"BF Day Elementary, 3921 Linden Ave N, Seattle, WA","BF Day Elementary, 3921 Linden Ave N, Seattle, WA",1,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv
+Bishop Blanchet High,Bishop Blanchet High,1,C:\Tools\ncllball.github.io\.github\projects\reports\teenwinter.csv
+Cascadia Elementary,Cascadia,3,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+Eckstein Middle School,Eckstein Middle School,1,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+Green Lake Elementary,Green Lake Elementary,2,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+Greenwood Elementary,Greenwood Elementary,3,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
+hamilton,hamilton,1,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv
+Hamilton International Middle School,Hamilton Int'l Middle,3,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\.github\projects\reports\teenwinter.csv; C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
+JAMS,JAMS,1,C:\Tools\ncllball.github.io\master.summerball.csv
+Jane Addams Middle School,JAMS (played NCLL for 4 years straight),1,scripts/summer_comparison/school-mappings.js
+John Stanford Elementary,John Stanford Elementary,5,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
+Kap'ka Cooperative,KapKa,1,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+KapKa Cooperative,KapKa Cooperative,1,C:\Tools\ncllball.github.io\master.summerball.csv
+Lincoln High School,Lincoln High,3,C:\Tools\ncllball.github.io\.github\projects\reports\teenwinter.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
+McClure Middle School,McClure Middle School,1,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+McDonald Elementary,McDonald Elementary,4,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
+McDonald International,McDonald International,1,C:\Tools\ncllball.github.io\master.summerball.csv
+Meridian Park Elementary,Meridian Park Elementary,1,C:\Tools\ncllball.github.io\master.summerball.csv
+Morningside Academy,Morningside Academy,1,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+Other,Other,2,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\.github\projects\reports\teenwinter.csv; C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+Pacific Crest School,Pacific Crest School,1,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+"Pacific Crest School, 600 NW Bright St, Seattle, WA 98107","Pacific Crest School, 600 NW Bright St, Seattle, WA 98107",1,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv
+Paragon Prep,Paragon Prep in Austin TX,2,scripts/summer_comparison/school-mappings.js
+Robert Eagle Staff Middle School,Eagle Staff,10,C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
+Salmon Bay K-8,Salmon bay,3,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+Seattle Academy,Seattle Academy,3,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+Seattle Academy of Arts and Sciences,Seattle Academy of Arts and Sciences,1,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv
+Seattle Waldorf School,Seattle Waldorf School,1,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+Spruce Street School,Spruce Street School,1,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+St Benedict School,St Benedict School,3,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
+St John School,St John School,5,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
+"St. Benedict School ,4811 Wallingford Ave N, Seatt","St. Benedict School ,4811 Wallingford Ave N, Seatt",1,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv
+The Evergreen School,The Evergreen School,1,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+The Meridian School,Meridian School,3,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
+The Northwest School,The Northwest School,2,C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
+TOPS,TOPS,1,C:\Tools\ncllball.github.io\master.summerball.csv
+TOPS K-8,TOPS K-8,1,scripts/summer_comparison/school-mappings.js
+UCDS,UCDS,4,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js
+University Prep,University Prep,1,scripts/summer_comparison/school-mappings.js
+West Woodland Elementary,West Woodland Elementary,3,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js
