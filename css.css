@@ -2461,3 +2461,9 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   border: 1px solid rgba(0,0,0,.15);
   display: inline-block;
 }
+
+
+.dfContainer h2.head .title	{
+	display: inline;
+	zoom: 1;
+}
