@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "extract-schools",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"scripts/data/extract-school-addresses.js"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
