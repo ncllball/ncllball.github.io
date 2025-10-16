@@ -2358,3 +2358,40 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     grid-template-columns: 1fr;
   }
 }
+
+/* Registration › Coverage cost chart (JavaFX-like legend) */
+.cost-chart-wrapper { align-items: flex-start; }
+
+.cost-chart-legend.fx-legend {
+  margin: 0 0 0 12px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cost-chart-legend.fx-legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--color_text, #222);
+  white-space: nowrap;
+}
+
+.cost-chart-legend.fx-legend .swatch {
+  width: 16px;
+  height: 12px;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4);
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+/* Mobile: allow wrapping of labels if needed */
+@media (max-width: 720px) {
+  .cost-chart-legend.fx-legend li { white-space: normal; }
+}
