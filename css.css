@@ -1517,6 +1517,7 @@ body.timeline-page a:focus-visible {
     white-space: nowrap;
     color: var(--timeline_heading);
     text-align: right;
+    display: flex;
 }
 
 .timeline-info span {
