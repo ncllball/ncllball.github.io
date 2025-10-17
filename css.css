@@ -2383,3 +2383,9 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
         font-size: 0.8rem;
     }
 }
+
+/* Category label styling for Registration/coverage overview */
+.cost-cat {
+    font-weight: 600;
+    color: var(--color_blue);
+}
