@@ -2315,155 +2315,75 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
   .venmo-wrap { max-width: 520px; margin: 0; }
   .venmo-section { border-radius: 10px; }
 }
-/* ===========================================================
-   Registration › Coverage cost chart (consolidated, single source)
-   =========================================================== */
-
-/* Center the chart block within page content */
-.cost-chart-wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-/* Chart sizing + rotation vars (override per chart via inline style) */
-.cost-chart {
-  position: relative;
-  --pie-size: clamp(200px, 56vw, 260px);
-  --chart-rotate: 0deg;     /* rotates BOTH pie and callouts to keep in sync */
-  --callout-gap: 10px;      /* radial gap from arc to connector start */
-  --connector-len: 28px;    /* length of the straight connector */
-  width: var(--pie-size);
-  height: var(--pie-size);
-}
-
-/* Style pie whether used standalone or inside .cost-chart */
-.cost-chart .cost-pie,
-.cost-pie {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  box-shadow: 0 8px 24px rgba(0,0,0,.08);
-}
-
-/* Legend (grid) + JavaFX vertical variant */
-.cost-chart-legend {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: minmax(240px, 1fr) minmax(240px, 1fr);
-  gap: 8px 16px;
-}
-.cost-chart-legend li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
-  line-height: 1.35;
-  color: var(--color_text, #222);
-}
-.cost-chart-legend .swatch {
-  width: 12px;
-  height: 12px;
-  border-radius: 3px;
-  display: inline-block;
-  border: 1px solid rgba(0,0,0,.1);
-}
-.cost-chart-legend.fx-legend {
-  margin: 0 0 0 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.cost-chart-legend.fx-legend .swatch {
-  width: 16px;
-  height: 12px;
-  border-radius: 2px;
-  border: 1px solid rgba(0,0,0,.2);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4);
-}
-@media (max-width: 720px) {
-  .cost-chart-legend { grid-template-columns: 1fr; }
-  .cost-chart-legend.fx-legend li { white-space: normal; }
-}
-
-/* Callouts (labels with lines anchored to the arc) */
-.cost-chart .callouts { position: absolute; inset: 0; pointer-events: none; }
-.cost-chart .callout {
-  --theta: calc(((var(--from) + var(--to)) / 2) + var(--chart-rotate));
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 0; height: 0;
-  color: var(--color_text, #222);
-}
-/* Connector: begins at the arc, runs outward */
-.cost-chart .callout::before {
-  content: "";
-  position: absolute;
-  left: 0; top: 0;
-  height: 2px;
-  width: var(--connector-len);
-  background: currentColor;
-  transform-origin: 0 0;
-  transform:
-    rotate(var(--theta))
-    translateX(calc(var(--pie-size) / 2 + var(--callout-gap)));
-  opacity: .9;
-}
-/* Small dot right on the arc to reinforce association */
-.cost-chart .callout::after {
-  content: "";
-  position: absolute;
-  left: 0; top: 0;
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: currentColor;
-  box-shadow: 0 0 0 2px #fff;
-  transform-origin: 0 0;
-  transform:
-    rotate(var(--theta))
-    translateX(calc(var(--pie-size) / 2));
-}
-/* Label at the end of the connector */
-.cost-chart .callout .label {
-  position: absolute;
-  left: 0; top: 0;
-  transform:
-    rotate(var(--theta))
-    translateX(calc(var(--pie-size) / 2 + var(--callout-gap) + var(--connector-len)))
-    rotate(calc(-1 * var(--theta)));
-  background: #fff;
-  border: 1px solid rgba(0,0,0,.12);
-  border-radius: 4px;
-  padding: 4px 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,.08);
-  white-space: nowrap;
-  font-size: 13px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.cost-chart .callout.left .label {
-  transform:
-    rotate(var(--theta))
-    translateX(calc(var(--pie-size) / 2 + var(--callout-gap) + var(--connector-len)))
-    rotate(calc(-1 * var(--theta)))
-    translateX(-100%);
-  text-align: right;
-}
-.cost-chart .callout .swatch {
-  width: 12px; height: 12px;
-  border-radius: 2px;
-  border: 1px solid rgba(0,0,0,.15);
-  display: inline-block;
-}
 
 
 .dfContainer h2.head .title	{
 	display: inline;
 	zoom: 1;
+}
+
+/* =====================================================================
+     Registration › Coverage cost chart (page-scoped selectors)
+     Note: These classes are used by Registration/coverage.html
+     ===================================================================== */
+
+.cost-chart-wrapper {
+    display: grid;
+    gap: 16px;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+}
+
+.cost-chart {
+    position: relative;
+    /* default pie size; can be overridden via inline style if needed */
+    --pie-size: clamp(200px, 40vw, 360px);
+}
+
+.cost-pie {
+    width: var(--pie-size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+/* Hide radial callouts to avoid clutter (legend is primary) */
+.cost-chart .callouts {
+    display: none !important;
+}
+
+/* Legend */
+.cost-legend {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px 16px;
+    font-size: 0.875rem; /* slightly smaller legend text */
+    line-height: 1.3;
+}
+
+.cost-legend li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cost-legend .swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+@media (max-width: 960px) {
+    .cost-chart-wrapper { grid-template-columns: 1fr; }
+    .cost-legend { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Tighter legend on small phones */
+@media (max-width: 480px) {
+    .cost-legend {
+        font-size: 0.8rem;
+    }
 }
