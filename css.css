@@ -2346,11 +2346,6 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     border-radius: 50%;
 }
 
-/* Hide radial callouts to avoid clutter (legend is primary) */
-.cost-chart .callouts {
-    display: none !important;
-}
-
 /* Legend */
 .cost-legend {
     margin: 0;
