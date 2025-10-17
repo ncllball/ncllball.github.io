@@ -2231,7 +2231,7 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
 .venmo-section {
   background: linear-gradient(135deg, var(--color_surface_light) 0%, var(--color_surface_lighter) 100%);
   border-radius: 16px;
-  margin: 24px 0;
+  margin: 0 0;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
   position: relative;
