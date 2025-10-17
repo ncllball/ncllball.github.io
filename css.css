@@ -2362,6 +2362,7 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 0.875rem;
 }
 
 .cost-legend .swatch {
