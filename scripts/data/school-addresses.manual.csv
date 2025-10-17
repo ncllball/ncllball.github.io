@@ -1,8 +1,7 @@
 school,street,city,state,zip,source
-Bagley Elementary,7821 Stone Ave N,Seattle,WA,98103,authoritative
 Ballard High School,1418 NW 65th St,Seattle,WA,98117,authoritative
 BF Day Elementary,3921 Linden Ave N,Seattle,WA,98103,authoritative
-Bishop Blanchet High School,8200 Wallingford Ave N,Seattle,WA,98103,authoritative
+Bagley Elementary,7821 Stone Ave N,Seattle,WA,98103,authoritative
 Cascadia Elementary,1700 N 90th St,Seattle,WA,98103,authoritative
 Eckstein Middle School,3003 NE 75th St,Seattle,WA,98115,authoritative
 Green Lake Elementary,2400 N 65th St,Seattle,WA,98103,authoritative
@@ -14,8 +13,6 @@ Kap'ka Cooperative,510 N 49th St,Seattle,WA,98103,authoritative
 Lincoln High School,4400 Interlake Ave N,Seattle,WA,98103,authoritative
 McClure Middle School,1915 1st Ave W,Seattle,WA,98119,authoritative
 McDonald Elementary,144 NE 54th St,Seattle,WA,98105,authoritative
-Meridian Park Elementary,17077 Meridian Ave N,Shoreline,WA,98133,authoritative
-Pacific Crest School,600 NW Bright St,Seattle,WA,98107,authoritative
 Robert Eagle Staff Middle School,1330 N 90th St,Seattle,WA,98103,authoritative
 Salmon Bay K-8,1810 NW 65th St,Seattle,WA,98117,authoritative
 Seattle Academy Arts & Science,1201 E Union St,Seattle,WA,98122,authoritative
@@ -29,4 +26,7 @@ The Northwest School,1415 Summit Ave,Seattle,WA,98122,authoritative
 TOPS K-8,2500 Franklin Ave E,Seattle,WA,98102,authoritative
 UCDS,4517 11th Ave NE,Seattle,WA,98105,authoritative
 University Prep,8000 25th Ave NE,Seattle,WA,98115,authoritative
+Meridian Park Elementary,17077 Meridian Ave N,Shoreline,WA,98133,authoritative
+Bishop Blanchet High School,8200 Wallingford Ave N,Seattle,WA,98103,authoritative
+Pacific Crest School,600 NW Bright St,Seattle,WA,98107,authoritative
 West Woodland Elementary,5601 4th Ave NW,Seattle,WA,98107,authoritative
