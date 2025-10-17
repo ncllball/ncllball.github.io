@@ -9,9 +9,11 @@ const schoolNormalization = {
   // Elementary Schools
   'B.F. Day Elementary': 'BF Day Elementary',
   'B. F. Day Elementary': 'BF Day Elementary',
+  'B.F. Day': 'BF Day Elementary',
   'BF Day Elementary': 'BF Day Elementary',
   'BF Day': 'BF Day Elementary',
   'BF Day Elementary, 3921 Linden Ave N, Seattle, WA 98103': 'BF Day Elementary',
+  'BF Day Elementary, 3921 Linden Ave N, Seattle, WA': 'BF Day Elementary',
   
   'Daniel Bagley Elementary': 'Bagley Elementary',
   'Bagley': 'Bagley Elementary',
@@ -34,6 +36,7 @@ const schoolNormalization = {
   'McDonald International Elementary': 'McDonald Elementary',
   'McDonald Elementary': 'McDonald Elementary',
   'McDonald International Elementary, 144 NE 54th St, Seattle, WA 98105': 'McDonald Elementary',
+  'McDonald International': 'McDonald Elementary',
   
   'West Woodland Elementary': 'West Woodland Elementary',
   'West Woodland ES': 'West Woodland Elementary',
@@ -43,6 +46,7 @@ const schoolNormalization = {
   'Hamilton Int\'l Middle': 'Hamilton International Middle School',
   'Hamilton International Middle School': 'Hamilton International Middle School',
   'Hamilton International Middle School, 1610 N 41st St, Seattle, WA 98103': 'Hamilton International Middle School',
+  'hamilton': 'Hamilton International Middle School',
   
   'Robert Eagle Staff Middle School': 'Robert Eagle Staff Middle School',
   'Robert eagle staff': 'Robert Eagle Staff Middle School',
@@ -63,6 +67,7 @@ const schoolNormalization = {
   'St. Benedict School': 'St Benedict School',
   'St Benedict School': 'St Benedict School',
   'St. Benedict School ,4811 Wallingford Ave N, Seattle, WA 98103': 'St Benedict School',
+  'St. Benedict School ,4811 Wallingford Ave N, Seatt': 'St Benedict School',
   
   'TOPS K-8': 'TOPS K-8',
   
@@ -78,11 +83,16 @@ const schoolNormalization = {
   'The Northwest School': 'The Northwest School',
   'The Northwest School, 1415 Summit Ave, Seattle, WA 98122': 'The Northwest School',
   
-  'Seattle Academy (SAAS)': 'Seattle Academy',
-  'Seattle Academy': 'Seattle Academy',
-  'Seattle Academy (SAAS), 1201 E Union St, Seattle, WA 98122': 'Seattle Academy',
+  // Seattle Academy canonical (SAAS)
+  'Seattle Academy Arts & Science': 'Seattle Academy Arts & Science',
+  'Seattle Academy (SAAS)': 'Seattle Academy Arts & Science',
+  'Seattle Academy': 'Seattle Academy Arts & Science',
+  'Seattle Academy (SAAS), 1201 E Union St, Seattle, WA 98122': 'Seattle Academy Arts & Science',
+  'Seattle Academy of Arts and Sciences': 'Seattle Academy Arts & Science',
+  'Seattle Academy of Arts and Science': 'Seattle Academy Arts & Science',
   
   'Pacific Crest School': 'Pacific Crest School',
+  'Pacific Crest School, 600 NW Bright St, Seattle, WA 98107': 'Pacific Crest School',
   
   'UCDS': 'UCDS',
   'UCDS- University Child Development School': 'UCDS',
@@ -107,6 +117,10 @@ const schoolNormalization = {
   'University Child Development School': 'UCDS',
   
   'KapKa': 'Kap\'ka Cooperative',
+  "KapKa Cooperative": "Kap'ka Cooperative",
+  'Kapka': "Kap'ka Cooperative",
+  'Kap’ka': "Kap'ka Cooperative",
+  'Kap’ka Cooperative': "Kap'ka Cooperative",
   
   'Ballard HS': 'Ballard High School',
   'Ballard H S': 'Ballard High School',
@@ -116,12 +130,18 @@ const schoolNormalization = {
   'McClure Middle School': 'McClure Middle School',
   'Eckstein Middle School': 'Eckstein Middle School',
   'JAMS (played NCLL for 4 years straight)': 'Jane Addams Middle School',
+  'JAMS': 'Jane Addams Middle School',
+  'Jane Addams Middle School': 'Jane Addams Middle School',
   
   'University Prep': 'University Prep',
   'The Evergreen School': 'The Evergreen School',
   'Seattle Waldorf School': 'Seattle Waldorf School',
   'Spruce Street School': 'Spruce Street School',
   'Morningside Academy': 'Morningside Academy',
+  'Bishop Blanchet High': 'Bishop Blanchet High School',
+  'Bishop Blanchet High School': 'Bishop Blanchet High School',
+  'TOP': 'TOPS K-8',
+  'TOPS': 'TOPS K-8',
   
   // Generic
   'Other': 'Other'

@@ -1,56 +1,62 @@
 canonical,raw,sources,columns
-B.F. Day,B.F. Day,C:\Tools\ncllball.github.io\master.summerball.csv,School
 Bagley Elementary,Bagley,scripts/summer_comparison/school-mappings.js,mapping
 Bagley Elementary,Bagley Elementary,C:\Tools\ncllball.github.io\.github\projects\reports\teenwinter.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School Name; mapping; school
 Bagley Elementary,Daniel Bagley Elementary,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
 Bagley Elementary,"Daniel Bagley Elementary, 7821 Stone Ave N, Seattle, WA 98103",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping
 Ballard High School,Ballard H S,scripts/summer_comparison/school-mappings.js,mapping
-Ballard High School,Ballard High School,C:\Tools\ncllball.github.io\master.summerball.csv,School if Other
+Ballard High School,Ballard High School,C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv,School if Other; school
 Ballard High School,Ballard HS,scripts/summer_comparison/school-mappings.js,mapping
 BF Day Elementary,B. F. Day Elementary,scripts/summer_comparison/school-mappings.js,mapping
+BF Day Elementary,B.F. Day,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
 BF Day Elementary,B.F. Day Elementary,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
 BF Day Elementary,BF Day,scripts/summer_comparison/school-mappings.js,mapping
 BF Day Elementary,BF Day Elementary,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School Name; mapping; school
+BF Day Elementary,"BF Day Elementary, 3921 Linden Ave N, Seattle, WA",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; scripts/summer_comparison/school-mappings.js,School Name; mapping
 BF Day Elementary,"BF Day Elementary, 3921 Linden Ave N, Seattle, WA 98103",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; scripts/summer_comparison/school-mappings.js,School Name; mapping
-"BF Day Elementary, 3921 Linden Ave N, Seattle, WA","BF Day Elementary, 3921 Linden Ave N, Seattle, WA",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv,School Name
-Bishop Blanchet High,Bishop Blanchet High,C:\Tools\ncllball.github.io\.github\projects\reports\teenwinter.csv,School Name
+Bishop Blanchet High School,Bishop Blanchet High,C:\Tools\ncllball.github.io\.github\projects\reports\teenwinter.csv; scripts/summer_comparison/school-mappings.js,School Name; mapping
+Bishop Blanchet High School,Bishop Blanchet High School,C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,mapping; school
 Cascadia Elementary,Cascadia,scripts/summer_comparison/school-mappings.js,mapping
 Cascadia Elementary,Cascadia (zoned school is B F Day),scripts/summer_comparison/school-mappings.js,mapping
-Cascadia Elementary,Cascadia Elementary,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School Name; School if Other; mapping
-Eckstein Middle School,Eckstein Middle School,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping
-Green Lake Elementary,Green Lake Elementary,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv,School Name
+Cascadia Elementary,Cascadia Elementary,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School Name; School if Other; mapping; school
+Eckstein Middle School,Eckstein Middle School,C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping; school
+Green Lake Elementary,Green Lake Elementary,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv,School Name; school
 Green Lake Elementary,Greenlake Elementary,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping
 Greenwood Elementary,Greenwood Elementary,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping; school
 Greenwood Elementary,"Greenwood Elementary, 144 NW 80th St, Seattle, WA 98117",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping
 Greenwood Elementary,Greenwood ES,scripts/summer_comparison/school-mappings.js,mapping
-hamilton,hamilton,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv,School Name
+Hamilton International Middle School,hamilton,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; scripts/summer_comparison/school-mappings.js,School Name; mapping
 Hamilton International Middle School,Hamilton Int'l Middle,scripts/summer_comparison/school-mappings.js,mapping
 Hamilton International Middle School,Hamilton International Middle School,C:\Tools\ncllball.github.io\.github\projects\reports\teenwinter.csv; C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping; school
 Hamilton International Middle School,"Hamilton International Middle School, 1610 N 41st St, Seattle, WA 98103",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping
-JAMS,JAMS,C:\Tools\ncllball.github.io\master.summerball.csv,School if Other
+Jane Addams Middle School,JAMS,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping
 Jane Addams Middle School,JAMS (played NCLL for 4 years straight),scripts/summer_comparison/school-mappings.js,mapping
+Jane Addams Middle School,Jane Addams Middle School,C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,mapping; school
 John Stanford Elementary,John Stanford Elementary,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv,School Name; school
 John Stanford Elementary,"John Stanford Elementary, 4057 5th Ave NE, Seattle, WA 98105",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping
 John Stanford Elementary,John Stanford Int'l Elementary,scripts/summer_comparison/school-mappings.js,mapping
 John Stanford Elementary,John Stanford International Elementary,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
 John Stanford Elementary,JSIS,scripts/summer_comparison/school-mappings.js,mapping
+Kap'ka Cooperative,Kap’ka,scripts/summer_comparison/school-mappings.js,mapping
+Kap'ka Cooperative,Kap'ka Cooperative,C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv,school
+Kap'ka Cooperative,Kap’ka Cooperative,scripts/summer_comparison/school-mappings.js,mapping
+Kap'ka Cooperative,Kapka,scripts/summer_comparison/school-mappings.js,mapping
 Kap'ka Cooperative,KapKa,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping
-KapKa Cooperative,KapKa Cooperative,C:\Tools\ncllball.github.io\master.summerball.csv,School if Other
+Kap'ka Cooperative,KapKa Cooperative,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping
 Lincoln High School,Lincoln High,scripts/summer_comparison/school-mappings.js,mapping
 Lincoln High School,Lincoln High School,C:\Tools\ncllball.github.io\.github\projects\reports\teenwinter.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping; school
 Lincoln High School,"Lincoln High School, 4400 Interlake Ave N, Seattle, WA 98103",C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
-McClure Middle School,McClure Middle School,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping
+McClure Middle School,McClure Middle School,C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping; school
 McDonald Elementary,McDonald Elementary,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School Name; mapping; school
 McDonald Elementary,McDonald Int'l Elementary,scripts/summer_comparison/school-mappings.js,mapping
+McDonald Elementary,McDonald International,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
 McDonald Elementary,McDonald International Elementary,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
 McDonald Elementary,"McDonald International Elementary, 144 NE 54th St, Seattle, WA 98105",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; scripts/summer_comparison/school-mappings.js,School Name; mapping
-McDonald International,McDonald International,C:\Tools\ncllball.github.io\master.summerball.csv,School
-Meridian Park Elementary,Meridian Park Elementary,C:\Tools\ncllball.github.io\master.summerball.csv,School
+Meridian Park Elementary,Meridian Park Elementary,C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv,School; school
 Morningside Academy,Morningside Academy,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping
 Other,Other,C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\.github\projects\reports\teenwinter.csv; C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping
 Other,OTHER,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
-Pacific Crest School,Pacific Crest School,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
-"Pacific Crest School, 600 NW Bright St, Seattle, WA 98107","Pacific Crest School, 600 NW Bright St, Seattle, WA 98107",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv,School Name
+Pacific Crest School,Pacific Crest School,C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School; mapping; school
+Pacific Crest School,"Pacific Crest School, 600 NW Bright St, Seattle, WA 98107",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; scripts/summer_comparison/school-mappings.js,School Name; mapping
 Paragon Prep,Paragon Prep in Austin TX,scripts/summer_comparison/school-mappings.js,mapping
 Paragon Prep,"Paragon Prep in Austin, TX",scripts/summer_comparison/school-mappings.js,mapping
 Robert Eagle Staff Middle School,Eagle Staff,scripts/summer_comparison/school-mappings.js,mapping
@@ -65,35 +71,38 @@ Robert Eagle Staff Middle School,Robert Eagle Staff MS,scripts/summer_comparison
 Robert Eagle Staff Middle School,Robert Eaglestaff,scripts/summer_comparison/school-mappings.js,mapping
 Salmon Bay K-8,Salmon bay,scripts/summer_comparison/school-mappings.js,mapping
 Salmon Bay K-8,Salmon Bay,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping
-Salmon Bay K-8,Salmon Bay K-8,scripts/summer_comparison/school-mappings.js,mapping
-Seattle Academy,Seattle Academy,scripts/summer_comparison/school-mappings.js,mapping
-Seattle Academy,Seattle Academy (SAAS),scripts/summer_comparison/school-mappings.js,mapping
-Seattle Academy,"Seattle Academy (SAAS), 1201 E Union St, Seattle, WA 98122",C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
-Seattle Academy of Arts and Sciences,Seattle Academy of Arts and Sciences,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv,School Name
-Seattle Waldorf School,Seattle Waldorf School,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping
-Spruce Street School,Spruce Street School,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping
+Salmon Bay K-8,Salmon Bay K-8,C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,mapping; school
+Seattle Academy Arts & Science,Seattle Academy,scripts/summer_comparison/school-mappings.js,mapping
+Seattle Academy Arts & Science,Seattle Academy (SAAS),scripts/summer_comparison/school-mappings.js,mapping
+Seattle Academy Arts & Science,"Seattle Academy (SAAS), 1201 E Union St, Seattle, WA 98122",C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
+Seattle Academy Arts & Science,Seattle Academy Arts & Science,C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,mapping; school
+Seattle Academy Arts & Science,Seattle Academy of Arts and Science,scripts/summer_comparison/school-mappings.js,mapping
+Seattle Academy Arts & Science,Seattle Academy of Arts and Sciences,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; scripts/summer_comparison/school-mappings.js,School Name; mapping
+Seattle Waldorf School,Seattle Waldorf School,C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping; school
+Spruce Street School,Spruce Street School,C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping; school
 St Benedict School,St Benedict School,C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,mapping; school
 St Benedict School,St. Benedict School,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
+St Benedict School,"St. Benedict School ,4811 Wallingford Ave N, Seatt",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; scripts/summer_comparison/school-mappings.js,School Name; mapping
 St Benedict School,"St. Benedict School ,4811 Wallingford Ave N, Seattle, WA 98103",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping
 St John School,St John School,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School Name; mapping; school
 St John School,St John's School,scripts/summer_comparison/school-mappings.js,mapping
 St John School,St. John School,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
 St John School,"St. John School, 120 N 79th St, Seattle, WA 98103",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping
 St John School,St. John's,scripts/summer_comparison/school-mappings.js,mapping
-"St. Benedict School ,4811 Wallingford Ave N, Seatt","St. Benedict School ,4811 Wallingford Ave N, Seatt",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv,School Name
-The Evergreen School,The Evergreen School,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping
+The Evergreen School,The Evergreen School,C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping; school
 The Meridian School,Meridian School,scripts/summer_comparison/school-mappings.js,mapping
 The Meridian School,"Meridian School, 4649 Sunnyside Ave N #242, Seattle, WA 98103",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping
 The Meridian School,The Meridian School,C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School; School if Other; mapping; school
 The Northwest School,The Northwest School,C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,mapping; school
 The Northwest School,"The Northwest School, 1415 Summit Ave, Seattle, WA 98122",C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; mapping
-TOPS,TOPS,C:\Tools\ncllball.github.io\master.summerball.csv,School if Other
-TOPS K-8,TOPS K-8,scripts/summer_comparison/school-mappings.js,mapping
-UCDS,UCDS,scripts/summer_comparison/school-mappings.js,mapping
+TOPS K-8,TOP,scripts/summer_comparison/school-mappings.js,mapping
+TOPS K-8,TOPS,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School if Other; mapping
+TOPS K-8,TOPS K-8,C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,mapping; school
+UCDS,UCDS,C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,mapping; school
 UCDS,UCDS- University Child Development School,scripts/summer_comparison/school-mappings.js,mapping
 UCDS,University child development school,scripts/summer_comparison/school-mappings.js,mapping
 UCDS,University Child Development School,C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; School if Other; mapping
-University Prep,University Prep,scripts/summer_comparison/school-mappings.js,mapping
+University Prep,University Prep,C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,mapping; school
 West Woodland Elementary,West Woodland Elementary,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping; school
 West Woodland Elementary,"West Woodland Elementary, 5601 4th Ave NW, Seattle, WA 98107",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping
 West Woodland Elementary,West Woodland ES,scripts/summer_comparison/school-mappings.js,mapping

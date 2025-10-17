@@ -23,14 +23,16 @@ const INPUT_FILES = [
 ];
 
 const OUTPUT_FILE = path.join(__dirname, 'school-addresses.csv');
+const MANUAL_FILE = path.join(__dirname, 'school-addresses.manual.csv');
 
 // Heuristic to detect a field that looks like "<School>, <street>, <City>, WA <zip>"
 const looksLikeSchoolWithAddress = (val) => {
   if (typeof val !== 'string') return false;
   const s = val.trim();
   if (!s) return false;
-  // Must look like a school and have a WA ZIP pattern with commas separating parts
-  if (!/(Elementary|School|Middle|High|K-?8)/i.test(s)) return false;
+  // Must look like an educational institution and have a WA ZIP pattern with commas separating parts
+  // Expanded keywords to catch independent schools like "Seattle Academy"
+  if (!/(Elementary|School|Middle|High|K-?8|Academy|Cooperative|Prep)/i.test(s)) return false;
   if (!/,\s*[^,]+,\s*WA\s*\d{5}/i.test(s)) return false;
   return true;
 };
@@ -75,7 +77,7 @@ function collectFromCSV(filePath, acc) {
       if (looksLikeSchoolWithAddress(field)) {
         const parsed = parseSchoolAddressField(field);
         if (parsed && parsed.school) {
-          upsertSchool(acc, parsed);
+          upsertSchool(acc, { ...parsed, source: 'csv' });
         }
       }
     }
@@ -89,7 +91,7 @@ function collectFromMappings(acc) {
     if (looksLikeSchoolWithAddress(key)) {
       const parsed = parseSchoolAddressField(key);
       if (parsed && parsed.school) {
-        upsertSchool(acc, parsed);
+        upsertSchool(acc, { ...parsed, source: 'mappings' });
       }
     }
   }
@@ -99,6 +101,14 @@ function chooseBetter(existing, incoming) {
   // Prefer Seattle addresses if conflict, else keep existing
   const isSeattle = (x) => (x.city || '').toLowerCase().includes('seattle');
   if (!existing) return incoming;
+  // If existing is manual/authoritative, keep it unless it's missing basic fields and incoming fills them
+  const existingManual = /manual|authoritative/i.test(existing.source || '');
+  const incomingManual = /manual|authoritative/i.test(incoming.source || '');
+  if (existingManual && !incomingManual) {
+    // Only upgrade if existing is missing street/city/state/zip and incoming has them
+    const missing = !existing.street || !existing.city || !existing.state || !existing.zip;
+    if (!missing) return existing;
+  }
   if (!existing.street && incoming.street) return incoming;
   if (!isSeattle(existing) && isSeattle(incoming)) return incoming;
   // If zips differ and one exists, prefer the one with a zip
@@ -116,6 +126,24 @@ function upsertSchool(acc, entry) {
 
 function main() {
   const acc = new Map();
+  // First: seed with manual authoritative addresses if present
+  if (fs.existsSync(MANUAL_FILE)) {
+    const manualCsv = fs.readFileSync(MANUAL_FILE, 'utf-8');
+    const rows = csv.parse(manualCsv, { columns: true, skip_empty_lines: true });
+    for (const r of rows) {
+      const school = normalizeSchoolName(r.school);
+      if (!school) continue;
+      const entry = {
+        school,
+        street: (r.street || '').trim(),
+        city: (r.city || '').trim(),
+        state: (r.state || '').trim(),
+        zip: (r.zip || '').trim(),
+        source: (r.source || 'manual').trim() || 'manual',
+      };
+      acc.set(school, entry);
+    }
+  }
   // Collect from mappings first (good canonical set)
   collectFromMappings(acc);
   // Then from CSVs
@@ -128,8 +156,8 @@ function main() {
     .sort((a, b) => a.school.localeCompare(b.school));
 
   const csvOut = stringify([
-    ['school', 'street', 'city', 'state', 'zip'],
-    ...rows.map((r) => [r.school, r.street || '', r.city || '', r.state || '', r.zip || '']),
+    ['school', 'street', 'city', 'state', 'zip', 'source'],
+    ...rows.map((r) => [r.school, r.street || '', r.city || '', r.state || '', r.zip || '', r.source || 'auto']),
   ], {
     header: false,
   });
