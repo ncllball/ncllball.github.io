@@ -68,13 +68,14 @@ function buildRows(programs){
     const focus = (p.focus || p.meta.focus || '') || '';
     const display = (curatedName[p.id] || p.programName || p.meta.programName || p.title || shortName(p.id));
   let pillText = forcedStatus[p.id] || statusPill(p);
-    if (pillText === 'Free') pillText = '';
-  const pillClass = pillText === 'Open' ? ' pill-open'
-          : pillText === 'Closed' ? ' pill-closed'
-          : pillText === 'Coming Soon' ? ' pill-soon'
+  // Map to card-style status badge classes for consistency with program cards
+  const badgeClass = pillText === 'Open' ? ' status-open'
+          : pillText === 'Closed' ? ' status-closed'
+          : pillText === 'Coming Soon' ? ' status-soon'
+          : pillText === 'Free' ? ' status-free'
           : '';
     return '<tr class="fit">'
-      + '<td>' + (pillText ? '<span class="pill-inline'+pillClass+'">'+pillText+'</span>' : '') + '</td>'
+      + '<td>' + (pillText ? '<span class="status-badge'+badgeClass+'">'+pillText+'</span>' : '') + '</td>'
       + '<td>' + display + '</td>'
       + '<td>' + div + '</td>'
       + '<td>' + dates + '</td>'
