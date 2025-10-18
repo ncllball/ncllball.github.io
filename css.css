@@ -1830,7 +1830,7 @@ body.timeline-page a:focus-visible {
     transition: background .3s ease, color .3s ease, transform .2s ease, box-shadow .2s ease;
     white-space: nowrap;
     gap: 5px;
-    padding: 6px 26px 6px 26px;
+    padding: 6px 6px 6px 6px;
 }
 
 .division-bar .actions {
