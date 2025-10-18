@@ -1,26 +1,29 @@
 #!/usr/bin/env node
 /**
- * Player Development utility: Build static "At a Glance" table rows in the PD landing page.
- * (Consolidated clean implementation with --dry / --write.)
+ * Player Development utility (PD-local): Build static "At a Glance" table rows in the PD landing page.
  */
 const fs = require('fs');
 const path = require('path');
 const argv = process.argv.slice(2);
 const isWrite = argv.includes('--write');
 const isDry = !isWrite;
-const REPO_ROOT = path.resolve(__dirname, '..', '..', '..');
-const PD_DIR = path.join(REPO_ROOT, 'Player Development');
+
+// This script lives under Player Development/scripts/landing
+const PD_SCRIPTS = __dirname;
+const PD_DIR = path.resolve(PD_SCRIPTS, '..', '..');
 const MANIFEST_NEW = path.join(PD_DIR, 'manifest', 'pd-programs.json');
 const MANIFEST_OLD = path.join(PD_DIR, 'pd-programs.json');
 const MANIFEST = fs.existsSync(MANIFEST_NEW) ? MANIFEST_NEW : MANIFEST_OLD;
 const LANDING_PRIMARY = path.join(PD_DIR, 'index.html');
 const LANDING_LEGACY = path.join(PD_DIR, 'playerdev.landing.html');
+
 function ensureManifest(){
   if (fs.existsSync(MANIFEST_NEW)) return;
   if (fs.existsSync(MANIFEST_OLD)) return;
   const { execFileSync } = require('child_process');
-  execFileSync(process.execPath, [path.join(__dirname,'..','manifest','build-pd-manifest.js')], { stdio: 'inherit' });
+  execFileSync(process.execPath, [path.join(PD_DIR,'scripts','manifest','build-pd-manifest.js')], { stdio: 'inherit' });
 }
+
 function statusPill(p){
   const today = new Date();
   function parseDate(s){ if(!s) return null; const d=new Date(s); return isNaN(d)?null:d; }
@@ -33,6 +36,7 @@ function statusPill(p){
   if (/\$0/.test(cost)) return 'Free';
   return 'Open';
 }
+
 function shortName(id){
   return id.replace(/^2025 /,'').replace('Winter ','').replace('BB ','').replace('SB ','').replace('Fastpitch ','').replace(' (Sessions I & II)','');
 }
@@ -40,11 +44,10 @@ function trimYear(d){ return d.replace(/,?\s*2025$/,'').replace(/Nov 9 - Feb 22/
 const curatedName = {
   '2025 Winter Single-A BB Training': 'Single-A Winter Training',
   '2025 Winter Double-AA BB Pitching': 'AA Pitching (3-Week)',
+  'winterball26-aaa-majors-baseball-training': 'Winterball26 AAA/Majors Baseball Training',
   'winterball25-aa-baseball-training': 'Winterball25 AA Baseball Training',
   'winterball25-aa-baseball-pitching-training': 'Winterball25 AA Baseball Pitching Training',
-  'winterball26-aaa-majors-baseball-training': 'Winterball26 AAA/Majors Baseball Training',
   'winterball25-aaa-majors-softball-training': 'Winterball25 AAA/Majors Softball Training',
-  'winterball26-aaa-majors-baseball-training': 'Winterball26 AAA/Majors Baseball Training',
   '2025 Winter Teen BB Training': 'Teen Baseball Training (Sessions I & II)',
   '2025 Winter AAA+MAJ SB Training': 'AAA + Majors Softball Training',
   '2025 RHS Fastpitch Winter Batting Clinic': 'RHS Fastpitch Batting Clinic',
@@ -52,6 +55,7 @@ const curatedName = {
   '2025 In-Season Double-AA (and up) SB Pitching': 'In-Season Softball Pitching',
   '2025 LHS Winter Training': 'Lincoln HS Skills Camp'
 };
+
 function buildRows(programs){
   return programs.map(p => {
     const div = (p.divisions || '').replace(/&amp;/g,'&');
@@ -74,28 +78,25 @@ function buildRows(programs){
       + '</tr>';
   }).join('\n');
 }
+
 function main(){
   ensureManifest();
   const data = JSON.parse(fs.readFileSync(MANIFEST,'utf8'));
   const programs = data.programs.slice().sort((a,b)=>{
     const statusWeight = (p)=>{
-      const today = new Date();
-      function parseDate(s){ if(!s) return null; const d=new Date(s); return isNaN(d)?null:d; }
-      const start = parseDate(p.meta.rangeStart || (p.meta.dateList ? p.meta.dateList.split(';')[0] : null));
-      const end = parseDate(p.meta.rangeEnd || (p.meta.dateList ? p.meta.dateList.split(';').slice(-1)[0] : null));
-      let s = 'Open';
-      if (end && end < today) s = 'Closed';
-      else if (start && end && start <= today && end >= today) s = 'Active';
-      else if (/TBD/i.test(p.cost || '')) s = 'Coming Soon';
-      // treat Free as Open in weight
-      if (/(\$0|FREE)/i.test(p.cost || '')) s = 'Open';
-      return s === 'Open' ? 0 : s === 'Active' ? 1 : s === 'Coming Soon' ? 2 : s === 'Closed' ? 3 : 4;
+      const s = statusPill(p);
+      const normalized = (s === 'Free') ? 'Open' : s;
+      return normalized === 'Open' ? 0
+           : normalized === 'Active' ? 1
+           : normalized === 'Coming Soon' ? 2
+           : normalized === 'Closed' ? 3
+           : 4;
     };
     const aW = statusWeight(a);
     const bW = statusWeight(b);
     if (aW !== bW) return aW - bW;
-    function first(p){return p.meta.rangeStart || (p.meta.dateList ? p.meta.dateList.split(';')[0] : '9999-12-31');}
-    return first(a).localeCompare(first(b));
+    const firstDate = (p)=> p.meta.rangeStart || (p.meta.dateList ? p.meta.dateList.split(';')[0] : '9999-12-31');
+    return firstDate(a).localeCompare(firstDate(b));
   });
   const rows = buildRows(programs);
   const targetPath = fs.existsSync(LANDING_PRIMARY) ? LANDING_PRIMARY : LANDING_LEGACY;
@@ -125,4 +126,5 @@ function main(){
   }
   console.log('Updated At a Glance table in', path.basename(targetPath), 'with', programs.length, 'programs.');
 }
+
 main();
