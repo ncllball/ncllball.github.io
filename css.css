@@ -152,6 +152,7 @@ h6 {
     letter-spacing: normal;
 
 /* Inline emphasis utility */
+
 .emphasis {
     font-weight: 600;
 }
