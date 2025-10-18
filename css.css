@@ -1091,6 +1091,8 @@ body:not(.cms-right) .only-on-right {
     }
 }
 
+    
+
 /* Center the Status column in PD At-a-Glance table */
 .pd-landing .at-a-glance thead th:last-child,
 .pd-landing .at-a-glance tbody td:last-child {
@@ -2089,6 +2091,12 @@ details.footies[open] summary::before {
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
+}
+
+/* PD landing: left-align all At-a-Glance (age-matrix) columns */
+.pd-landing .table_section .age-matrix th,
+.pd-landing .table_section .age-matrix td {
+    text-align: left;
 }
 
 /* Table striping: odd rows gainsboro site-wide (opt-out with .no-stripe) */
