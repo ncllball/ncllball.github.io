@@ -56,12 +56,17 @@ function buildRows(programs){
     const display = (curatedName[p.id] || p.programName || p.meta.programName || p.title || shortName(p.id));
     let pillText = statusPill(p);
     if (pillText === 'Free') pillText = '';
+    const pillClass = pillText === 'Open' ? ' pill-open'
+                    : pillText === 'Closed' ? ' pill-closed'
+                    : pillText === 'Coming Soon' ? ' pill-soon'
+                    : pillText === 'Active' ? ' pill-active'
+                    : '';
     return '<tr>'
       + '<td>' + display + '</td>'
       + '<td>' + div + '</td>'
       + '<td>' + dates + '</td>'
       + '<td>' + focus + '</td>'
-      + '<td>' + (pillText ? '<span class="pill-inline">'+pillText+'</span>' : '') + '</td>'
+      + '<td>' + (pillText ? '<span class="pill-inline'+pillClass+'">'+pillText+'</span>' : '') + '</td>'
       + '</tr>';
   }).join('\n');
 }

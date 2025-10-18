@@ -1104,6 +1104,28 @@ body:not(.cms-right) .only-on-right {
     margin-right: 4px;
 }
 
+/* Status-specific variants for At-a-Glance pills */
+.pd-landing .pill-inline.pill-open {
+    background: rgba(46, 204, 64, 0.18); /* backlit green */
+    color: #146c2e; /* dark green text for contrast */
+    border: 1px solid rgba(46, 204, 64, 0.35);
+}
+.pd-landing .pill-inline.pill-closed {
+    background: rgba(170, 170, 170, 0.18);
+    color: #555;
+    border: 1px solid rgba(170, 170, 170, 0.35);
+}
+.pd-landing .pill-inline.pill-soon {
+    background: rgba(241, 196, 15, 0.18);
+    color: #8a6d00;
+    border: 1px solid rgba(241, 196, 15, 0.35);
+}
+.pd-landing .pill-inline.pill-active {
+    background: rgba(0, 1, 58, 0.10);
+    color: var(--color_blue);
+    border: 1px solid rgba(0, 1, 58, 0.20);
+}
+
 
 
 .pd-landing .pd-muted-note {
