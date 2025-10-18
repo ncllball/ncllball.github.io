@@ -971,6 +971,14 @@ body:not(.cms-right) .only-on-right {
     margin-left: 6px;
 }
 
+.pd-landing .status-open {
+    background: #2ecc40;
+}
+
+.pd-landing .status-active {
+    background: var(--color_blue);
+}
+
 .pd-landing .status-soon {
     background: var(--color_orange);
 }
@@ -1058,6 +1066,12 @@ body:not(.cms-right) .only-on-right {
     padding: 4px 6px;
     border-top: 1px solid var(--color_border_light);
     vertical-align: top;
+}
+
+/* Center the Status column in PD At-a-Glance table */
+.pd-landing .at-a-glance thead th:last-child,
+.pd-landing .at-a-glance tbody td:last-child {
+    text-align: center;
 }
 
 /* Reusable variant table styled like PD at-a-glance */
