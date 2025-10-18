@@ -73,12 +73,12 @@ function buildRows(programs){
           : pillText === 'Closed' ? ' pill-closed'
           : pillText === 'Coming Soon' ? ' pill-soon'
           : '';
-    return '<tr>'
+    return '<tr class="fit">'
+      + '<td>' + (pillText ? '<span class="pill-inline'+pillClass+'">'+pillText+'</span>' : '') + '</td>'
       + '<td>' + display + '</td>'
       + '<td>' + div + '</td>'
       + '<td>' + dates + '</td>'
       + '<td>' + focus + '</td>'
-      + '<td>' + (pillText ? '<span class="pill-inline'+pillClass+'">'+pillText+'</span>' : '') + '</td>'
       + '</tr>';
   }).join('\n');
 }
