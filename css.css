@@ -961,7 +961,6 @@ body:not(.cms-right) .only-on-right {
 .pd-landing .status-badge {
     font-size: .7rem;
     text-transform: uppercase;
-    display: block;
     font-weight: 600;
     padding: 3px 6px;
     border-radius: 4px;
