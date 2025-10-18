@@ -40,7 +40,7 @@ function trimYear(d){ return d.replace(/,?\s*2025$/,'').replace(/Nov 9 - Feb 22/
 const curatedName = {
   '2025 Winter Single-A BB Training': 'Single-A Winter Training',
   '2025 Winter Double-AA BB Pitching': 'AA Pitching (3-Week)',
-  '2025 Winter AAA+MAJ BB Training': 'AAA + Majors Winter Training',
+  'winterball26-aaa-majors-baseball-training': 'Winterball26 AAA/Majors Baseball Training',
   '2025 Winter Teen BB Training': 'Teen Baseball Training (Sessions I & II)',
   '2025 Winter AAA+MAJ SB Training': 'AAA + Majors Softball Training',
   '2025 RHS Fastpitch Winter Batting Clinic': 'RHS Fastpitch Batting Clinic',
