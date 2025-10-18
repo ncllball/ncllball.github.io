@@ -2105,6 +2105,15 @@ details.footies[open] summary::before {
     justify-content: center;
 }
 
+/* PD At-a-Glance container outline (age-chart structure but keep the box look) */
+.pd-landing .table_section {
+    border: 1px solid var(--color_border_light);
+    border-radius: 6px;
+    background: var(--color_surface_lighter);
+    padding: 14px;
+    margin-bottom: 32px;
+}
+
 /* Table striping: odd rows gainsboro site-wide (opt-out with .no-stripe) */
 :root {
     --table-row-alt: whitesmoke;
