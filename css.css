@@ -961,8 +961,8 @@ body:not(.cms-right) .only-on-right {
 .pd-landing .status-badge {
     display: inline-block;
     font-size: .7rem;
-    letter-spacing: .5px;
     text-transform: uppercase;
+    display: block;
     font-weight: 600;
     padding: 3px 6px;
     border-radius: 4px;
@@ -2104,10 +2104,13 @@ details.footies[open] summary::before {
     text-align: center;          /* center pill horizontally */
     vertical-align: middle;      /* keep pill vertically centered in taller rows */
 }
-/* Ensure pill remains a compact inline element */
-.pd-landing .table_section .age-matrix tbody td:first-child .pill-inline {
-    display: inline-block;
+/* Ensure status indicator remains a compact inline element and remove card-left margin */
+.pd-landing .table_section .age-matrix tbody td:first-child .pill-inline,
+.pd-landing .table_section .age-matrix tbody td:first-child .status-badge {
+        display: inline-block;
+        margin-left: 0;
 }
+
 
 /* PD At-a-Glance container outline (age-chart structure but keep the box look) */
 .pd-landing .table_section {
