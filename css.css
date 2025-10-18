@@ -2099,6 +2099,12 @@ details.footies[open] summary::before {
     text-align: left;
 }
 
+/* PD At-a-Glance: center the Status pill in the first column only */
+.pd-landing .table_section .age-matrix tbody td:first-child {
+    display: flex;
+    justify-content: center;
+}
+
 /* Table striping: odd rows gainsboro site-wide (opt-out with .no-stripe) */
 :root {
     --table-row-alt: whitesmoke;
