@@ -959,8 +959,8 @@ body:not(.cms-right) .only-on-right {
 }
 
 .pd-landing .status-badge {
-    font-size: .7rem;
-    text-transform: uppercase;
+    font-size: .6rem;
+    text-transform: normal;
     font-weight: 600;
     padding: 3px 6px;
     border-radius: 4px;
@@ -970,7 +970,7 @@ body:not(.cms-right) .only-on-right {
 }
 
 .pd-landing .status-open {
-    background: #2ecc40;
+    background: #00013a;
 }
 
 .pd-landing .status-active {
@@ -978,7 +978,7 @@ body:not(.cms-right) .only-on-right {
 }
 
 .pd-landing .status-soon {
-    background: var(--color_orange);
+    background: #cd163f;
 }
 
 .pd-landing .status-free {
