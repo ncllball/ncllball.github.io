@@ -63,20 +63,29 @@ function badgeHtml(status){
   const data = JSON.parse(fs.readFileSync(MANIFEST,'utf8'));
   const byDisplay = new Map();
   for (const p of data.programs){
-    const display = curatedName[p.id] || p.programName || p.meta.programName || p.title;
+    const display = curatedName[p.id] || p.programName || p.meta.programName || p.title || p.id;
     if (!display) continue;
-    byDisplay.set(display, statusFromProgram(p));
+    byDisplay.set(display, { status: statusFromProgram(p), file: p.file });
   }
 
   const targetPath = fs.existsSync(LANDING_PRIMARY) ? LANDING_PRIMARY : LANDING_LEGACY;
   let html = fs.readFileSync(targetPath,'utf8');
   const originalHtml = html;
-  for (const [display, status] of byDisplay.entries()){
+  for (const [display, info] of byDisplay.entries()){
+    const status = info.status;
     const safeDisplay = display.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const re = new RegExp(`(<h3[^>]*?>\\s*${safeDisplay}\\s*<span class=\\"status-badge[^<]*<\\/span>\\s*<\\/h3>)`);
     if (re.test(html)){
       html = html.replace(new RegExp(`(<h3[^>]*?>\\s*${safeDisplay}\\s*)<span class=\\"status-badge[^<]*<\\/span>(\\s*<\\/h3>)`),
         `$1${badgeHtml(status)}$2`);
+    }
+    // Also update the Program page link href to match manifest file if present
+    if (info.file){
+      const linkRe = new RegExp(`(<a[^>]+class=\\"ncll\\"[^>]*>\\s*Program page\\s*<\\/a>)`);
+      // Only within the same card section: use a conservative replace by scoping via the h3 id anchor
+      // Fallback: global replace of nearest Program page link after the heading
+      const sectionRe = new RegExp(`(<h3[^>]*?>\\s*${safeDisplay}[\\s\\S]*?<a class=\\"ncll\\"[^>]*href=\\")[^"]+(\\"[^>]*>\\s*Program page\\s*<\\/a>)`);
+      html = html.replace(sectionRe, `$1${info.file}$2`);
     }
   }
 
