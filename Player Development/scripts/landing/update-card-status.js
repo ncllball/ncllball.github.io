@@ -13,6 +13,34 @@ const MANIFEST = fs.existsSync(MANIFEST_NEW) ? MANIFEST_NEW : MANIFEST_OLD;
 const LANDING_PRIMARY = path.join(PD_DIR, 'index.html');
 const LANDING_LEGACY = path.join(PD_DIR, 'playerdev.landing.html');
 
+// Optional: explicit external URL mapping by program id. If present, this URL will replace the card's
+// "Program page" link instead of the local file path from the manifest.
+const externalUrlById = {
+  // Known from email and listings
+  'winterball26-aaa-majors-baseball-training': 'https://www.ncllball.com/Default.aspx?tabid=2112053',
+  'winterball25-aa-baseball-training': 'https://www.ncllball.com/Default.aspx?tabid=2117255',
+  '2025 LHS Winter Training': 'https://www.ncllball.com/Default.aspx?tabid=2184695',
+  'winterball25-aa-baseball-pitching-training': 'https://www.ncllball.com/Default.aspx?tabid=2117406',
+  'winterball26-teen-baseball-training': 'https://www.ncllball.com/Default.aspx?tabid=2117407',
+  '2025 RHS Fastpitch Winter Batting Clinic': 'https://www.ncllball.com/Default.aspx?tabid=2117626',
+  '2025 Free February': 'https://www.ncllball.com/Default.aspx?tabid=2117698',
+  '2025 In-Season Double-AA (and up) SB Pitching': 'https://www.ncllball.com/Default.aspx?tabid=2161277',
+  'winterball25-aaa-majors-softball-training': 'https://www.ncllball.com/Default.aspx?tabid=2112053',
+  // TODO: Fill these as confirmed
+  // 'winterball25-aa-baseball-pitching-training': 'https://www.ncllball.com/Default.aspx?tabid=XXXXX',
+  // 'winterball25-aaa-majors-softball-training': 'https://www.ncllball.com/Default.aspx?tabid=XXXXX',
+  // '2025 RHS Fastpitch Winter Batting Clinic': 'https://www.ncllball.com/Default.aspx?tabid=XXXXX',
+  // '2025 In-Season Double-AA (and up) SB Pitching': 'https://www.ncllball.com/Default.aspx?tabid=XXXXX',
+  // '2025 LHS Winter Training': 'https://www.ncllball.com/Default.aspx?tabid=XXXXX',
+  // 'winterball26-teen-baseball-training': 'https://www.ncllball.com/Default.aspx?tabid=XXXXX',
+};
+
+// Optional: SignUpGenius (or similar) registration links by program id. If present, a
+// "Register" link will be added to the card after the Program page link (if not already present).
+const registerUrlById = {
+  '2025 Free February': 'https://www.signupgenius.com/go/70A054FAAAF22A3F85-54499131-2025#'
+};
+
 function ensureManifest(){
   if (fs.existsSync(MANIFEST_NEW)) return;
   if (fs.existsSync(MANIFEST_OLD)) return;
@@ -112,6 +140,39 @@ function setHeadingForFile(html, file, display){
   return html.slice(0, textStart) + display + html.slice(badgeIdx);
 }
 
+function ensureRegisterLink(html, display, registerUrl){
+  if (!registerUrl) return html;
+  const safeDisplay = display.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // Locate the section starting at this display's <h3> and ending at the next </article>
+  const h3Re = new RegExp(`(<h3[^>]*>\s*)${safeDisplay}(\s*<span class=\"status-badge)`, 'i');
+  const m = h3Re.exec(html);
+  if (!m) return html;
+  const h3Idx = m.index;
+  const sectionEnd = html.indexOf('</article>', h3Idx);
+  if (sectionEnd === -1) return html;
+  const section = html.slice(h3Idx, sectionEnd);
+  // If a Register link already exists in this section, skip
+  if (/\>\s*Register\s*<\/a>/.test(section)) return html;
+  // Find the Program page anchor closing </p> to insert after
+  const progLinkMatch = /<p><a class=\"ncll\"[^>]*>\s*Program page\s*<\/a><\/p>/i.exec(section);
+  if (!progLinkMatch) return html;
+  const insertOffset = h3Idx + progLinkMatch.index + progLinkMatch[0].length;
+  const insertHtml = `\n<p><a class=\"ncll\" href=\"${registerUrl}\" target=\"_blank\" rel=\"noopener noreferrer\">Register</a></p>`;
+  return html.slice(0, insertOffset) + insertHtml + html.slice(insertOffset);
+}
+
+// Ensure Program page and Register anchors open in a new tab with safe rel
+function ensureNewTabAnchors(html){
+  function addAttrsIfMissing(anchorHtml){
+    if (/target\s*=/.test(anchorHtml)) return anchorHtml; // already has target
+    return anchorHtml.replace(/<a\b([^>]*?)>/i, (m, attrs) => `<a${attrs} target=\"_blank\" rel=\"noopener noreferrer\">`);
+  }
+  // Only touch PD card anchors labeled Program page or Register
+  html = html.replace(/<a class=\"ncll\"[^>]*>\s*Program page\s*<\/a>/gi, addAttrsIfMissing);
+  html = html.replace(/<a class=\"ncll\"[^>]*>\s*Register\s*<\/a>/gi, addAttrsIfMissing);
+  return html;
+}
+
 function main(){
   const DRY = process.argv.includes('--dry');
   ensureManifest();
@@ -119,11 +180,13 @@ function main(){
   const linkChanges = [];
   const byDisplay = new Map();
   for (const p of data.programs){
-    const display = p.programName || p.meta.programName || curatedName[p.id] || p.title || p.id;
+    // Prefer curated name for display so it matches card headings (e.g., "Lincoln HS Skills Camp")
+    const display = curatedName[p.id] || p.programName || p.meta.programName || p.title || p.id;
     if (!display) continue;
     const computed = statusFromProgram(p);
     const finalStatus = forcedStatus[p.id] || computed;
-    byDisplay.set(display, { status: finalStatus, file: p.file, id: p.id });
+    const externalUrl = externalUrlById[p.id] || null;
+    byDisplay.set(display, { status: finalStatus, file: p.file, id: p.id, externalUrl });
   }
 
   const targetPath = fs.existsSync(LANDING_PRIMARY) ? LANDING_PRIMARY : LANDING_LEGACY;
@@ -145,13 +208,14 @@ function main(){
     }
     // Ensure badge for the canonical display heading as well
     html = updateBadgeForDisplay(html, display, status);
-    if (info.file){
+  if (info.file){
       // First try with the desired display
       let replaced = false;
+      const targetHref = info.externalUrl || info.file;
       let sectionRe = new RegExp(`(<h3[^>]*?>\\s*${safeDisplay}[\\s\\S]*?<a class=\\"ncll\\"[^>]*href=\\")(.[^"]*)(\\"[^>]*>\\s*Program page\\s*<\\/a>)`, 'g');
       const newHtml = html.replace(sectionRe, (m, pre, oldHref, post) => {
-        if (DRY) linkChanges.push({ id: info.id, display, from: oldHref, to: info.file });
-        return `${pre}${info.file}${post}`;
+        if (DRY) linkChanges.push({ id: info.id, display, from: oldHref, to: targetHref });
+        return `${pre}${targetHref}${post}`;
       });
       if (newHtml !== html){
         html = newHtml;
@@ -163,8 +227,8 @@ function main(){
           const aliasSafe = alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
           sectionRe = new RegExp(`(<h3[^>]*?>\\s*${aliasSafe}[\\s\\S]*?<a class=\\"ncll\\"[^>]*href=\\")(.[^"]*)(\\"[^>]*>\\s*Program page\\s*<\\/a>)`, 'g');
           const newHtml2 = html.replace(sectionRe, (m, pre, oldHref, post) => {
-            if (DRY) linkChanges.push({ id: info.id, display: alias, from: oldHref, to: info.file });
-            return `${pre}${info.file}${post}`;
+            if (DRY) linkChanges.push({ id: info.id, display: alias, from: oldHref, to: targetHref });
+            return `${pre}${targetHref}${post}`;
           });
           if (newHtml2 !== html){
             html = newHtml2;
@@ -198,12 +262,20 @@ function main(){
           }
         }
       }
+      // If there is a known register URL for this program, ensure a Register link exists in the card
+      const regUrl = registerUrlById[info.id];
+      if (regUrl){
+        html = ensureRegisterLink(html, display, regUrl);
+      }
     }
   }
 
   // Normalize FREE costs
   html = html.replace(/(<li><strong>Cost:<\/strong>\s*)(?:<[^>]+>\s*)*FREE\b/gi, (m, prefix) => prefix + '$0 / player (FREE)');
   html = html.replace(/(<li><strong>Cost:<\/strong>\s*)\$0(?:\s*\/\s*\w+)?(?:\s*\(\s*free\s*\))?/gi, (m, prefix) => prefix + '$0 / player (FREE)');
+
+  // Ensure new-tab behavior on Program page and Register links
+  html = ensureNewTabAnchors(html);
 
   if (DRY){
     if (html === originalHtml){
