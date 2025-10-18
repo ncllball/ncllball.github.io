@@ -2103,6 +2103,7 @@ details.footies[open] summary::before {
 .pd-landing .table_section .age-matrix tbody td:first-child {
     display: flex;
     justify-content: center;
+    align-items: center; /* keep pill intrinsic height, avoid stretching */
 }
 
 /* PD At-a-Glance container outline (age-chart structure but keep the box look) */
