@@ -26,7 +26,7 @@ function statusFromProgram(p){
   const start = parseDate(p.meta.rangeStart || (p.meta.dateList ? p.meta.dateList.split(';')[0] : null));
   const end = parseDate(p.meta.rangeEnd || (p.meta.dateList ? p.meta.dateList.split(';').slice(-1)[0] : null));
   if (end && end < today) return 'Closed';
-  if (start && end && start <= today && end >= today) return 'Active';
+  if (start && end && start <= today && end >= today) return 'Open';
   const cost = p.cost || '';
   if (/TBD/i.test(cost)) return 'Coming Soon';
   if (/\$0/.test(cost)) return 'Free';
@@ -45,24 +45,85 @@ const curatedName = {
   '2025 LHS Winter Training': 'Lincoln HS Skills Camp'
 };
 
+// Manual status overrides by program id
+const forcedStatus = {
+  'winterball26-teen-baseball-training': 'Coming Soon'
+};
+
+// Legacy headings seen on cards that should map to the following program IDs
+const headingAliasesById = {
+  'winterball25-aa-baseball-pitching-training': [
+    'AA Pitching (3-Week)',
+    'AA Winter Pitching Series'
+  ],
+  'winterball26-aaa-majors-baseball-training': [
+    'AAA + Majors Winter Training'
+  ],
+  'winterball25-aaa-majors-softball-training': [
+    'AAA + Majors Softball Training'
+  ],
+  'winterball25-aa-baseball-training': [
+    'Single-A Winter Training',
+    'Single-A Winter'
+  ],
+  'winterball26-teen-baseball-training': [
+    'Teen Baseball Training (Sessions I & II)',
+    'Teen Baseball Training'
+  ]
+};
+
 function badgeHtml(status){
-  if (status === 'Free') status = 'Open';
-  const cls = status === 'Closed' ? ' status-closed'
-            : status === 'Coming Soon' || status === 'Soon' ? ' status-soon'
-            : status === 'Active' ? ''
+  // Map Free/Active to Open label; keep Coming Soon distinct
+  if (status === 'Free' || status === 'Active') status = 'Open';
+  const cls = status === 'Open' ? ' status-open'
+            : status === 'Coming Soon' ? ' status-soon'
+            : status === 'Closed' ? ' status-closed'
             : '';
-  return `<span class="status-badge${cls}">${status === 'Coming Soon' ? 'Soon' : status}</span>`;
+  return `<span class="status-badge${cls}">${status}</span>`;
+}
+
+function renameHeadingByAlias(html, aliasText, newText){
+  const aliasSafe = aliasText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = new RegExp(`(<h3[^>]*?>\\s*)${aliasSafe}(\\s*<span class=\\"status-badge)`, 'g');
+  return html.replace(re, `$1${newText}$2`);
+}
+
+function updateBadgeForDisplay(html, display, status){
+  const safeDisplay = display.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = new RegExp(`(<h3[^>]*?>\\s*${safeDisplay}\\s*)<span class=\\"status-badge[^<]*<\\/span>(\\s*<\\/h3>)`, 'g');
+  return html.replace(re, `$1${badgeHtml(status)}$2`);
+}
+
+function setHeadingForFile(html, file, display){
+  // Find the Program page link for this file, then adjust the nearest preceding h3 text
+  const esc = (s)=> s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const linkRe = new RegExp(`<a class=\"ncll\"[^>]*href=\"${esc(file)}\"[^>]*>\\s*Program page\\s*<\\/a>`);
+  const m = linkRe.exec(html);
+  if (!m) return html;
+  const linkIdx = m.index;
+  const h3OpenIdx = html.lastIndexOf('<h3', linkIdx);
+  if (h3OpenIdx === -1) return html;
+  const startTextIdx = html.indexOf('>', h3OpenIdx);
+  if (startTextIdx === -1) return html;
+  const textStart = startTextIdx + 1;
+  const badgeIdx = html.indexOf('<span class="status-badge', textStart);
+  const h3CloseIdx = html.indexOf('</h3>', textStart);
+  if (badgeIdx === -1 || h3CloseIdx === -1 || badgeIdx > h3CloseIdx) return html;
+  return html.slice(0, textStart) + display + html.slice(badgeIdx);
 }
 
 function main(){
   const DRY = process.argv.includes('--dry');
   ensureManifest();
   const data = JSON.parse(fs.readFileSync(MANIFEST,'utf8'));
+  const linkChanges = [];
   const byDisplay = new Map();
   for (const p of data.programs){
-    const display = curatedName[p.id] || p.programName || p.meta.programName || p.title || p.id;
+    const display = p.programName || p.meta.programName || curatedName[p.id] || p.title || p.id;
     if (!display) continue;
-    byDisplay.set(display, { status: statusFromProgram(p), file: p.file });
+    const computed = statusFromProgram(p);
+    const finalStatus = forcedStatus[p.id] || computed;
+    byDisplay.set(display, { status: finalStatus, file: p.file, id: p.id });
   }
 
   const targetPath = fs.existsSync(LANDING_PRIMARY) ? LANDING_PRIMARY : LANDING_LEGACY;
@@ -71,13 +132,72 @@ function main(){
   for (const [display, info] of byDisplay.entries()){
     const status = info.status;
     const safeDisplay = display.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    if (new RegExp(`(<h3[^>]*?>\\s*${safeDisplay}\\s*<span class=\\"status-badge[^<]*<\\/span>\\s*<\\/h3>)`).test(html)){
-      html = html.replace(new RegExp(`(<h3[^>]*?>\\s*${safeDisplay}\\s*)<span class=\\"status-badge[^<]*<\\/span>(\\s*<\\/h3>)`),
-        `$1${badgeHtml(status)}$2`);
+    // First, if this program has legacy heading aliases, rename them to the desired display
+    const aliases = headingAliasesById[info.id] || [];
+    for (const alias of aliases){
+      const before = html;
+      html = renameHeadingByAlias(html, alias, display);
+      if (html !== before){
+        // After renaming the heading to the desired display, update the badge for this display
+        html = updateBadgeForDisplay(html, display, status);
+        break;
+      }
     }
+    // Ensure badge for the canonical display heading as well
+    html = updateBadgeForDisplay(html, display, status);
     if (info.file){
-      const sectionRe = new RegExp(`(<h3[^>]*?>\\s*${safeDisplay}[\\s\\S]*?<a class=\\"ncll\\"[^>]*href=\\")[^"]+(\\"[^>]*>\\s*Program page\\s*<\\/a>)`);
-      html = html.replace(sectionRe, `$1${info.file}$2`);
+      // First try with the desired display
+      let replaced = false;
+      let sectionRe = new RegExp(`(<h3[^>]*?>\\s*${safeDisplay}[\\s\\S]*?<a class=\\"ncll\\"[^>]*href=\\")(.[^"]*)(\\"[^>]*>\\s*Program page\\s*<\\/a>)`, 'g');
+      const newHtml = html.replace(sectionRe, (m, pre, oldHref, post) => {
+        if (DRY) linkChanges.push({ id: info.id, display, from: oldHref, to: info.file });
+        return `${pre}${info.file}${post}`;
+      });
+      if (newHtml !== html){
+        html = newHtml;
+        replaced = true;
+      }
+      // If not found, try legacy aliases mapped for this program id
+      if (!replaced){
+        for (const alias of aliases){
+          const aliasSafe = alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          sectionRe = new RegExp(`(<h3[^>]*?>\\s*${aliasSafe}[\\s\\S]*?<a class=\\"ncll\\"[^>]*href=\\")(.[^"]*)(\\"[^>]*>\\s*Program page\\s*<\\/a>)`, 'g');
+          const newHtml2 = html.replace(sectionRe, (m, pre, oldHref, post) => {
+            if (DRY) linkChanges.push({ id: info.id, display: alias, from: oldHref, to: info.file });
+            return `${pre}${info.file}${post}`;
+          });
+          if (newHtml2 !== html){
+            html = newHtml2;
+            replaced = true;
+            break;
+          }
+        }
+      }
+      // After link is set (either path), also ensure heading text matches desired display
+      if (replaced){
+        html = setHeadingForFile(html, info.file, display);
+      } else {
+        // If link wasn't replaced, still try to set heading for any existing link to this card via alias heading
+        for (const alias of aliases){
+          const before2 = html;
+          html = renameHeadingByAlias(html, alias, display);
+          if (html !== before2){
+            // Now try display-scoped link replacement again
+            const safeDisplay2 = display.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const sectionRe2 = new RegExp(`(<h3[^>]*?>\\s*${safeDisplay2}[\\s\\S]*?<a class=\\"ncll\\"[^>]*href=\\")(.[^"]*)(\\"[^>]*>\\s*Program page\\s*<\\/a>)`, 'g');
+            const newHtml3 = html.replace(sectionRe2, (m, pre, oldHref, post) => {
+              if (DRY) linkChanges.push({ id: info.id, display, from: oldHref, to: info.file });
+              return `${pre}${info.file}${post}`;
+            });
+            if (newHtml3 !== html){
+              html = newHtml3;
+              // And update badge post-rename to ensure status label/class
+              html = updateBadgeForDisplay(html, display, status);
+            }
+            break;
+          }
+        }
+      }
     }
   }
 
@@ -96,6 +216,12 @@ function main(){
       if (addedBadges !== 0) console.log(`  * Badge span count delta: ${addedBadges}`);
       if (costStandardizationsAfter !== costStandardizationsBefore){
         console.log(`  * Standardized cost lines: ${costStandardizationsAfter - costStandardizationsBefore} newly normalized`);
+      }
+      if (linkChanges.length){
+        console.log('  * Link updates:');
+        for (const c of linkChanges){
+          console.log(`    - [${c.id}] ${c.display}: ${c.from} -> ${c.to}`);
+        }
       }
       const deltaChars = Math.abs(html.length - originalHtml.length);
       console.log(`  * Approx char delta: ${deltaChars}`);

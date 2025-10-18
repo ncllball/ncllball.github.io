@@ -11,6 +11,94 @@
 			"isBackground": false,
 			"problemMatcher": [],
 			"group": "build"
+		},
+		{
+			"label": "pd:update:write",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"Player Development/scripts/update-all.js",
+				"--write"
+			],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "pd:update:write",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"Player Development/scripts/update-all.js",
+				"--write"
+			],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "pd:update:write",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"Player Development/scripts/update-all.js",
+				"--write"
+			],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "pd:update:write",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"Player Development/scripts/update-all.js",
+				"--write"
+			],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "pd:update:write",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"Player Development/scripts/update-all.js",
+				"--write"
+			],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "pd:update:write",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"Player Development/scripts/update-all.js",
+				"--write"
+			],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "pd:update:write",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"Player Development/scripts/update-all.js",
+				"--write"
+			],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "pd:update:write",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"Player Development/scripts/update-all.js",
+				"--write"
+			],
+			"isBackground": false,
+			"group": "build"
 		}
 	]
 }
