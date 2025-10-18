@@ -2105,7 +2105,6 @@ details.footies[open] summary::before {
 /* Ensure status indicator remains a compact inline element and remove card-left margin */
 .pd-landing .table_section .age-matrix tbody td:first-child .pill-inline,
 .pd-landing .table_section .age-matrix tbody td:first-child .status-badge {
-        display: inline-block;
         margin-left: 0;
 }
 
