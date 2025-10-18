@@ -959,7 +959,6 @@ body:not(.cms-right) .only-on-right {
 }
 
 .pd-landing .status-badge {
-    display: inline-block;
     font-size: .7rem;
     text-transform: uppercase;
     display: block;
