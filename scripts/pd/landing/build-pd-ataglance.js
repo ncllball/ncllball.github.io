@@ -40,6 +40,10 @@ function trimYear(d){ return d.replace(/,?\s*2025$/,'').replace(/Nov 9 - Feb 22/
 const curatedName = {
   '2025 Winter Single-A BB Training': 'Single-A Winter Training',
   '2025 Winter Double-AA BB Pitching': 'AA Pitching (3-Week)',
+  'winterball25-aa-baseball-training': 'Winterball25 AA Baseball Training',
+  'winterball25-aa-baseball-pitching-training': 'Winterball25 AA Baseball Pitching Training',
+  'winterball26-aaa-majors-baseball-training': 'Winterball26 AAA/Majors Baseball Training',
+  'winterball25-aaa-majors-softball-training': 'Winterball25 AAA/Majors Softball Training',
   'winterball26-aaa-majors-baseball-training': 'Winterball26 AAA/Majors Baseball Training',
   '2025 Winter Teen BB Training': 'Teen Baseball Training (Sessions I & II)',
   '2025 Winter AAA+MAJ SB Training': 'AAA + Majors Softball Training',
@@ -74,6 +78,22 @@ function main(){
   ensureManifest();
   const data = JSON.parse(fs.readFileSync(MANIFEST,'utf8'));
   const programs = data.programs.slice().sort((a,b)=>{
+    const statusWeight = (p)=>{
+      const today = new Date();
+      function parseDate(s){ if(!s) return null; const d=new Date(s); return isNaN(d)?null:d; }
+      const start = parseDate(p.meta.rangeStart || (p.meta.dateList ? p.meta.dateList.split(';')[0] : null));
+      const end = parseDate(p.meta.rangeEnd || (p.meta.dateList ? p.meta.dateList.split(';').slice(-1)[0] : null));
+      let s = 'Open';
+      if (end && end < today) s = 'Closed';
+      else if (start && end && start <= today && end >= today) s = 'Active';
+      else if (/TBD/i.test(p.cost || '')) s = 'Coming Soon';
+      // treat Free as Open in weight
+      if (/(\$0|FREE)/i.test(p.cost || '')) s = 'Open';
+      return s === 'Open' ? 0 : s === 'Active' ? 1 : s === 'Coming Soon' ? 2 : s === 'Closed' ? 3 : 4;
+    };
+    const aW = statusWeight(a);
+    const bW = statusWeight(b);
+    if (aW !== bW) return aW - bW;
     function first(p){return p.meta.rangeStart || (p.meta.dateList ? p.meta.dateList.split(';')[0] : '9999-12-31');}
     return first(a).localeCompare(first(b));
   });
