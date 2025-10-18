@@ -29,7 +29,7 @@ function statusFromProgram(p){
   const start = parseDate(p.meta.rangeStart || (p.meta.dateList ? p.meta.dateList.split(';')[0] : null));
   const end = parseDate(p.meta.rangeEnd || (p.meta.dateList ? p.meta.dateList.split(';').slice(-1)[0] : null));
   if (end && end < today) return 'Closed';
-  if (start && end && start <= today && end >= today) return 'Active';
+  if (start && end && start <= today && end >= today) return 'Open';
   const cost = p.cost || '';
   if (/TBD/i.test(cost)) return 'Coming Soon';
   if (/\$0/.test(cost)) return 'Free';
@@ -48,24 +48,30 @@ const curatedName = {
   '2025 LHS Winter Training': 'Lincoln HS Skills Camp'
 };
 
+// Manual status overrides by program id
+const forcedStatus = {
+  'winterball26-teen-baseball-training': 'Coming Soon'
+};
+
 function badgeHtml(status){
-  if (status === 'Free') status = 'Open';
-  const cls = status === 'Closed' ? ' status-closed'
-            : status === 'Coming Soon' || status === 'Soon' ? ' status-soon'
-            : status === 'Active' ? ''
-            : '';
-  return `<span class="status-badge${cls}">${status === 'Coming Soon' ? 'Soon' : status}</span>`;
+  // Normalize Active/Free/Soon to Open visual treatment
+  if (status === 'Free' || status === 'Active' || status === 'Coming Soon' || status === 'Soon') status = 'Open';
+  const cls = status === 'Closed' ? ' status-closed' : '';
+  return `<span class="status-badge${cls}">${status}</span>`;
 }
 
  function main(){
   const DRY = process.argv.includes('--dry');
   ensureManifest();
   const data = JSON.parse(fs.readFileSync(MANIFEST,'utf8'));
+   const linkChanges = [];
   const byDisplay = new Map();
   for (const p of data.programs){
-    const display = curatedName[p.id] || p.programName || p.meta.programName || p.title || p.id;
+    const display = p.programName || p.meta.programName || curatedName[p.id] || p.title || p.id;
     if (!display) continue;
-    byDisplay.set(display, { status: statusFromProgram(p), file: p.file });
+    const computed = statusFromProgram(p);
+    const finalStatus = forcedStatus[p.id] || computed;
+    byDisplay.set(display, { status: finalStatus, file: p.file });
   }
 
   const targetPath = fs.existsSync(LANDING_PRIMARY) ? LANDING_PRIMARY : LANDING_LEGACY;
@@ -81,11 +87,12 @@ function badgeHtml(status){
     }
     // Also update the Program page link href to match manifest file if present
     if (info.file){
-      const linkRe = new RegExp(`(<a[^>]+class=\\"ncll\\"[^>]*>\\s*Program page\\s*<\\/a>)`);
-      // Only within the same card section: use a conservative replace by scoping via the h3 id anchor
-      // Fallback: global replace of nearest Program page link after the heading
-      const sectionRe = new RegExp(`(<h3[^>]*?>\\s*${safeDisplay}[\\s\\S]*?<a class=\\"ncll\\"[^>]*href=\\")[^"]+(\\"[^>]*>\\s*Program page\\s*<\\/a>)`);
-      html = html.replace(sectionRe, `$1${info.file}$2`);
+      // Replace and record per-card link changes in dry mode
+      const sectionRe = new RegExp(`(<h3[^>]*?>\\s*${safeDisplay}[\\s\\S]*?<a class=\\"ncll\\"[^>]*href=\\")(.[^"]*)(\\"[^>]*>\\s*Program page\\s*<\\/a>)`, 'g');
+      html = html.replace(sectionRe, (m, pre, oldHref, post) => {
+        if (DRY) linkChanges.push({ display, from: oldHref, to: info.file });
+        return `${pre}${info.file}${post}`;
+      });
     }
   }
 
@@ -107,6 +114,12 @@ function badgeHtml(status){
       if (addedBadges !== 0) console.log(`  * Badge span count delta: ${addedBadges}`);
       if (costStandardizationsAfter !== costStandardizationsBefore){
         console.log(`  * Standardized cost lines: ${costStandardizationsAfter - costStandardizationsBefore} newly normalized`);
+      }
+      if (linkChanges.length){
+        console.log('  * Link updates:');
+        for (const c of linkChanges){
+          console.log(`    - ${c.display}: ${c.from} -> ${c.to}`);
+        }
       }
       // Show a compact diff snippet count (chars changed)
       const deltaChars = Math.abs(html.length - originalHtml.length);

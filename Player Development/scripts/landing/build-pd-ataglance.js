@@ -30,7 +30,7 @@ function statusPill(p){
   const start = parseDate(p.meta.rangeStart || (p.meta.dateList ? p.meta.dateList.split(';')[0] : null));
   const end = parseDate(p.meta.rangeEnd || (p.meta.dateList ? p.meta.dateList.split(';').slice(-1)[0] : null));
   if (end && end < today) return 'Closed';
-  if (start && end && start <= today && end >= today) return 'Active';
+  if (start && end && start <= today && end >= today) return 'Open';
   const cost = p.cost || '';
   if (/TBD/i.test(cost)) return 'Coming Soon';
   if (/\$0/.test(cost)) return 'Free';
@@ -56,19 +56,23 @@ const curatedName = {
   '2025 LHS Winter Training': 'Lincoln HS Skills Camp'
 };
 
+// Optional manual status overrides by program id
+const forcedStatus = {
+  'winterball26-teen-baseball-training': 'Coming Soon'
+};
+
 function buildRows(programs){
   return programs.map(p => {
     const div = (p.divisions || '').replace(/&amp;/g,'&');
     const dates = trimYear(p.dates || '');
     const focus = (p.focus || p.meta.focus || '') || '';
     const display = (curatedName[p.id] || p.programName || p.meta.programName || p.title || shortName(p.id));
-    let pillText = statusPill(p);
+  let pillText = forcedStatus[p.id] || statusPill(p);
     if (pillText === 'Free') pillText = '';
-    const pillClass = pillText === 'Open' ? ' pill-open'
-                    : pillText === 'Closed' ? ' pill-closed'
-                    : pillText === 'Coming Soon' ? ' pill-soon'
-                    : pillText === 'Active' ? ' pill-active'
-                    : '';
+  const pillClass = pillText === 'Open' ? ' pill-open'
+          : pillText === 'Closed' ? ' pill-closed'
+          : pillText === 'Coming Soon' ? ' pill-soon'
+          : '';
     return '<tr>'
       + '<td>' + display + '</td>'
       + '<td>' + div + '</td>'
@@ -82,10 +86,18 @@ function buildRows(programs){
 function main(){
   ensureManifest();
   const data = JSON.parse(fs.readFileSync(MANIFEST,'utf8'));
+  const lastGeneratedISO = data.generated;
+  function fmtShort(d){
+    const dt = new Date(d);
+    if (isNaN(dt)) return '';
+    const mons = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return `${mons[dt.getUTCMonth()]} ${dt.getUTCDate()}, ${dt.getUTCFullYear()}`;
+  }
+  const lastUpdatedText = lastGeneratedISO ? `Last updated: ${fmtShort(lastGeneratedISO)}` : '';
   const programs = data.programs.slice().sort((a,b)=>{
     const statusWeight = (p)=>{
       const s = statusPill(p);
-      const normalized = (s === 'Free') ? 'Open' : s;
+      const normalized = (s === 'Free' || s === 'Active') ? 'Open' : s;
       return normalized === 'Open' ? 0
            : normalized === 'Active' ? 1
            : normalized === 'Coming Soon' ? 2
@@ -115,6 +127,18 @@ function main(){
   }
   html = html.replace(/<tbody id="pd-ataglance-body">[\s\S]*?<\/tbody>/, newTbody);
   html = html.replace(/<script>[\s\S]*?<\/script>\s*<\/body>/, '</body>');
+  if (lastUpdatedText){
+    const reUpd = /<p id="foot-last-updated">[\s\S]*?<\/p>/;
+    if (reUpd.test(html)){
+      html = html.replace(reUpd, `<p id="foot-last-updated">${lastUpdatedText}</p>`);
+    } else {
+      // Try to insert after the disclaimer footie if present
+      const insAnchor = /(<section class="footies" aria-labelledby="foot-disclaimer">[\s\S]*?<\/p>)/;
+      if (insAnchor.test(html)){
+        html = html.replace(insAnchor, `$1\n        <p id="foot-last-updated">${lastUpdatedText}<\/p>`);
+      }
+    }
+  }
   fs.writeFileSync(targetPath, html);
   if (targetPath === LANDING_PRIMARY && fs.existsSync(LANDING_LEGACY)){
     const legacy = fs.readFileSync(LANDING_LEGACY,'utf8');
