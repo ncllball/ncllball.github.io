@@ -2481,3 +2481,38 @@ table:not(.no-stripe) > tbody > tr:nth-child(even) {
     font-weight: 600;
     color: var(--color_blue);
 }
+.diamond::before {
+  content: "◆"; /* The diamond character */
+  margin-right: 5px; /* Add some space between the icon and the text */
+  color: #000000; /* Set the color you want */
+  font-size: 1em; /* Adjust size as needed */
+}
+.diamond-red::before {
+    font-family: core-icons !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    z-index: auto;
+    content: "\e903";
+    color: #cd163f;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    font-size: 22px;
+    line-height: 0;
+    left: calc(100% - 40px);
+    transition: -webkit-transform .2s 
+ease;
+    transition: transform .2s 
+ease;
+    transition: transform .2s 
+ease, -webkit-transform .2s 
+ease;
+}
