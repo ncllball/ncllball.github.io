@@ -24,9 +24,9 @@ const MANIFEST_DIR = path.join(PD_DIR, 'manifest');
 if (!fs.existsSync(MANIFEST_DIR)) fs.mkdirSync(MANIFEST_DIR, { recursive: true });
 const OUT_FILE = path.join(MANIFEST_DIR, 'pd-programs.json');
 
-// Heuristic: include HTML files that start with 2025 and are not the landing page
-const files = fs.readdirSync(PD_DIR)
-  .filter(f => f.endsWith('.html') && /^2025 /.test(f) && !/landing/i.test(f));
+// Include any program HTML that contains the standardized tag strip, skipping landing stubs
+const ALL_HTML = fs.readdirSync(PD_DIR)
+  .filter(f => f.endsWith('.html') && !/^index\.html$/i.test(f) && !/^playerdev\.landing\.html$/i.test(f));
 
 function parseTagStrip(html) {
   // Grab first <ul class="tag...
@@ -115,16 +115,12 @@ function summarizeProgram(filename, parsed, html) {
   };
 }
 
-const manifest = files.map(f => {
+const manifest = ALL_HTML.map(f => {
   const html = fs.readFileSync(path.join(PD_DIR, f), 'utf8');
   const parsed = parseTagStrip(html);
-  if (!parsed) {
-    const titleMatch = html.match(/<title>([^<]+)<\/title>/i);
-    const title = titleMatch ? titleMatch[1].replace(/\s*\u2014\s*NCLL\s*$/i,'').trim() : f.replace(/\.html$/,'');
-    return { id: f.replace(/\.html$/,''), file: f, title: title, error: 'No tag strip found' };
-  }
+  if (!parsed) return null; // skip non-program pages
   return summarizeProgram(f, parsed, html);
-});
+}).filter(Boolean);
 
 fs.writeFileSync(OUT_FILE, JSON.stringify({ generated: new Date().toISOString(), programs: manifest }, null, 2));
 // Clean up legacy location if present
