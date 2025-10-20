@@ -1040,6 +1040,17 @@ body:not(.cms-right) .only-on-right {
     box-shadow: 0 6px 16px rgba(0, 0, 0, .22);
 }
 
+/* Baseball landing tweaks for slimmer division cards */
+.baseball-landing .program-grid {
+    grid-template-columns: repeat(auto-fit, minmax(255px, 320px));
+    justify-content: center;
+}
+
+.baseball-landing .division-card {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
 .pd-landing .at-a-glance {
     border: 1px solid var(--color_border_light);
     border-radius: 6px;
