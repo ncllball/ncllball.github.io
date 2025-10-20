@@ -1049,6 +1049,175 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-card {
     max-width: 320px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.baseball-landing .division-card--overlay {
+    position: relative;
+    overflow: hidden;
+    color: var(--color_white);
+}
+
+.baseball-landing .division-card--overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 1, 58, 0.7);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.baseball-landing .division-card--overlay > * {
+    position: relative;
+    z-index: 1;
+}
+
+.baseball-landing .division-card--overlay .division-card__title {
+    color: var(--color_white);
+}
+
+.baseball-landing .division-card--overlay .division-blurb {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.baseball-landing .division-card--overlay .division-meta {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.baseball-landing .division-card--overlay .division-meta strong {
+    color: var(--color_white);
+}
+
+.baseball-landing .division-card--overlay .card-actions .button {
+    border-color: rgba(255, 255, 255, 0.85);
+    color: var(--color_white);
+    background: transparent;
+}
+
+.baseball-landing .division-card--overlay .card-actions .button.button--primary {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.baseball-landing .division-card--overlay .card-actions .button:hover,
+.baseball-landing .division-card--overlay .card-actions .button:focus-visible {
+    background: rgba(255, 255, 255, 0.26);
+    color: var(--color_white);
+}
+
+.baseball-landing .division-card__title {
+    margin: 0;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color_blue);
+}
+
+.baseball-landing .division-blurb {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color_muted);
+}
+
+.baseball-landing .division-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.baseball-landing .division-meta li {
+    margin: 4px 0;
+    color: var(--color_muted);
+}
+
+.baseball-landing .division-meta strong {
+    color: var(--color_blue);
+    font-weight: 600;
+}
+
+.baseball-landing .card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.baseball-landing .card-actions .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid var(--color_blue);
+    color: var(--color_blue);
+    background: var(--color_white);
+}
+
+.baseball-landing .card-actions .button:hover,
+.baseball-landing .card-actions .button:focus-visible {
+    background: rgba(0, 1, 58, 0.08);
+    color: var(--color_blue);
+}
+
+.baseball-landing .card-actions .button.button--primary {
+    background: var(--color_blue);
+    color: var(--color_white);
+}
+
+.baseball-landing .card-actions .button.button--primary:hover,
+.baseball-landing .card-actions .button.button--primary:focus-visible {
+    background: #18225c;
+    color: var(--color_white);
+}
+
+.baseball-landing .card-actions .button.button--ghost {
+    background: transparent;
+}
+
+.baseball-landing .division-detail {
+    background: var(--color_surface_lighter);
+    border: 1px solid var(--color_border_light);
+    border-radius: 6px;
+    padding: 18px 20px;
+    margin: 22px 0 42px;
+}
+
+.baseball-landing .division-detail__summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color_blue);
+    outline: none;
+    list-style: none;
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 10px;
+}
+
+.baseball-landing .division-detail__summary::-webkit-details-marker {
+    display: none;
+}
+
+.baseball-landing .division-detail__summary::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid var(--color_blue);
+    border-bottom: 2px solid var(--color_blue);
+    transform-origin: center;
+    transition: transform var(--trans-fast) var(--ease-out);
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.baseball-landing details[open] > .division-detail__summary::before {
+    transform: translateY(-50%) rotate(135deg);
 }
 
 .pd-landing .at-a-glance {
