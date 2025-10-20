@@ -1063,15 +1063,20 @@ body:not(.cms-right) .only-on-right {
     content: "";
     position: absolute;
     inset: 5px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.9);
     pointer-events: none;
-    z-index: 0;
+    z-index: 2;
     border-radius: 4px;
 }
 
 .baseball-landing .division-card--overlay > * {
     position: relative;
     z-index: 1;
+    opacity: 0;
+}
+
+.baseball-landing .division-card--overlay .card-actions {
+    display: none;
 }
 
 .baseball-landing .division-card__title {
