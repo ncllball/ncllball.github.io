@@ -2516,3 +2516,7 @@ ease;
 ease, -webkit-transform .2s 
 ease;
 }
+.no-break {
+    white-space: nowrap;
+    display: inline-block;
+}

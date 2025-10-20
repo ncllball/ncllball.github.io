@@ -1,0 +1,29 @@
+{
+  "folders": [
+    { "name": "Register", "path": "Registration" },
+    { "name": "Baseball", "path": "Baseball" },
+    { "name": "Softball", "path": "Softball" },
+    { "name": "Programs", "path": "Player Development" },
+    { "name": "Resources", "path": "Parents" },
+  { "name": "Get Involved", "path": "Volunteer" },
+  { "name": "Support", "path": "Support" },
+    { "name": "About", "path": "About us" },
+    { "name": "2026 Season (temp)", "path": "2026 Season" }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/node_modules": true,
+      "**/.DS_Store": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/.git": true
+    },
+    "files.associations": {
+      "*.html": "html"
+    }
+  }
+}
