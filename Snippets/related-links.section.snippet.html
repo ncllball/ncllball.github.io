@@ -1,0 +1,37 @@
+<!-- Reusable Related Links section (embed into existing pages) -->
+<section id="related-links" class="related-links">
+  <ul>
+    <!--
+      Build the list below. Conventions:
+      - Use class="ncll" for external links; omit for internal links
+      - External links: add target="_blank" rel="noopener noreferrer"
+      - List items: no trailing periods for single-line items
+    -->
+    <li><a class="ncll" href="https://example.com" target="_blank" rel="noopener noreferrer">External example</a></li>
+    <li><a href="/Parents/index.html">Internal example</a></li>
+  </ul>
+</section>
+
+<style>
+  /* Custom SVG bullet: hide native bullets and show provided icon (brand navy) */
+  .related-links ul { list-style: none; padding-left: 0; margin-left: 0; }
+  .related-links li {
+    list-style: none;
+    position: relative;
+    padding-left: 26px; /* icon width (16) + 10px gap */
+    margin: 8px 0;
+    min-height: 16px; /* ensure room for the icon */
+  }
+  .related-links li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path opacity="0.1" d="M3 12C3 4.5885 4.5885 3 12 3C19.4115 3 21 4.5885 21 12C21 19.4115 19.4115 21 12 21C4.5885 21 3 19.4115 3 12Z" fill="%2300013a"/><path d="M3 12C3 4.5885 4.5885 3 12 3C19.4115 3 21 4.5885 21 12C21 19.4115 19.4115 21 12 21C4.5885 21 3 19.4115 3 12Z" stroke="%2300013a" stroke-width="2"/><path d="M16 12L8 12" stroke="%2300013a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 15L15.913 12.087V12.087C15.961 12.039 15.961 11.961 15.913 11.913V11.913L13 9" stroke="%2300013a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  }
+</style>
