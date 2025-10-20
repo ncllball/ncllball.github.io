@@ -1057,53 +1057,21 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-card--overlay {
     position: relative;
     overflow: hidden;
-    color: var(--color_white);
 }
 
 .baseball-landing .division-card--overlay::before {
     content: "";
     position: absolute;
-    inset: 0;
-    background: rgba(0, 1, 58, 0.7);
+    inset: 5px;
+    background: rgba(255, 255, 255, 0.7);
     pointer-events: none;
     z-index: 0;
+    border-radius: 4px;
 }
 
 .baseball-landing .division-card--overlay > * {
     position: relative;
     z-index: 1;
-}
-
-.baseball-landing .division-card--overlay .division-card__title {
-    color: var(--color_white);
-}
-
-.baseball-landing .division-card--overlay .division-blurb {
-    color: rgba(255, 255, 255, 0.85);
-}
-
-.baseball-landing .division-card--overlay .division-meta {
-    color: rgba(255, 255, 255, 0.85);
-}
-
-.baseball-landing .division-card--overlay .division-meta strong {
-    color: var(--color_white);
-}
-
-.baseball-landing .division-card--overlay .card-actions .button {
-    border-color: rgba(255, 255, 255, 0.85);
-    color: var(--color_white);
-    background: transparent;
-}
-
-.baseball-landing .division-card--overlay .card-actions .button.button--primary {
-    background: rgba(255, 255, 255, 0.18);
-}
-
-.baseball-landing .division-card--overlay .card-actions .button:hover,
-.baseball-landing .division-card--overlay .card-actions .button:focus-visible {
-    background: rgba(255, 255, 255, 0.26);
-    color: var(--color_white);
 }
 
 .baseball-landing .division-card__title {
