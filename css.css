@@ -1100,7 +1100,7 @@ body:not(.cms-right) .only-on-right {
 }
 
 .baseball-landing .division-card--overlay .division-card__graphic {
-    max-width: 120px;
+    max-width: 140px;  /* Increased from 120px since margins are trimmed */
     height: auto;
     margin: 10px auto 15px;
 }
