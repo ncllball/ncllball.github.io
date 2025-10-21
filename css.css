@@ -1057,414 +1057,104 @@ body:not(.cms-right) .only-on-right {
 
 .baseball-landing .division-card--overlay {
     position: relative;
+    min-height: 400px;
+    padding: 0;
     overflow: hidden;
-    /* Reserve space for header text at top and summary at bottom */
-    padding: 14px 12px 104px;
-    min-height: 280px;
 }
 
-.baseball-landing .division-card--overlay::before {
-    content: "";
+/* Top layer: contains title, blurb, image, meta */
+.baseball-landing .division-card--overlay .division-card__top-layer {
     position: absolute;
-    inset: 5px;
-    background: var(--color_white);
-    opacity: 0.6;
-    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 2;
-    border-radius: 0;
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: opacity var(--trans-fast) var(--ease-out);
+}
+
+/* Fade top layer on hover/focus */
+.baseball-landing .division-card--overlay:hover .division-card__top-layer,
+.baseball-landing .division-card--overlay:focus-within .division-card__top-layer {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Top layer content styling */
+.baseball-landing .division-card--overlay .division-hero__title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.baseball-landing .division-card--overlay .division-blurb {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+}
+
+.baseball-landing .division-card--overlay .division-card__graphic {
+    max-width: 120px;
+    height: auto;
+    margin: 0 auto 15px;
+}
+
+.baseball-landing .division-card--overlay .division-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.baseball-landing .division-card--overlay .division-meta li {
+    margin: 4px 0;
+}
+
+/* Bottom layer: scrollable details */
+.baseball-landing .division-card--overlay .division-card__bottom-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    overflow-y: auto;
+    background: white;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content {
+    margin-bottom: 20px;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content h4 {
+    font-size: 16px;
+    margin: 15px 0 8px 0;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content h4:first-child {
+    margin-top: 0;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content ul {
+    font-size: 14px;
+    margin: 8px 0;
 }
 
 .baseball-landing .division-card--overlay .card-actions {
     display: flex;
-}
-
-.baseball-landing .division-card--overlay .division-meta {
-    list-style: none;
-    padding-left: 0;
-}
-
-.baseball-landing .division-card--overlay .division-meta li {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-.baseball-landing .division-card--overlay .division-card__graphic {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 75%;
-    height: auto;
-    z-index: 3; /* keep image behind text to avoid visual collisions */
-    pointer-events: none;
-    opacity: 0.18; /* keep silhouette subtle so text reads well */
-    transition: opacity var(--trans-fast) var(--ease-out);
-}
-
-/* Enlarge Kindy Coach Pitch graphic only */
-.baseball-landing #kindy-coach-pitch .division-card--overlay .division-card__graphic {
-    /* Smaller and lower so it doesn't fight the title/blurb */
-    max-width: 84%;
-    top: 62%;
-}
-
-.baseball-landing .division-card--overlay .division-card__title,
-.baseball-landing .division-card--overlay .division-blurb,
-.baseball-landing .division-card--overlay .division-meta {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-}
-
-.baseball-landing .division-card--overlay .division-hero {
-    position: absolute;
-    top: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    display: flex;
+    gap: 10px;
     justify-content: center;
-    pointer-events: none;
-    z-index: 2;
-    transition: opacity var(--trans-fast) var(--ease-out);
-}
-
-.baseball-landing .division-card--overlay .division-hero__title {
-    margin: 0;
-    color: var(--color_blue);
-}
-
-/* Ensure content title and blurb render above the translucent overlay */
-.baseball-landing .division-card--overlay > .division-hero__title,
-.baseball-landing .division-card--overlay > .division-blurb {
-    position: relative;
-    z-index: 5; /* above graphic */
-    transition: opacity var(--trans-fast) var(--ease-out);
-}
-.baseball-landing .division-card--overlay > .division-hero__title { margin-bottom: 6px; }
-.baseball-landing .division-card--overlay > .division-blurb { margin: 0 6px 4px; }
-
-/* Kindy: place meta on same layer as PNG, below it, and fade on reveal */
-.baseball-landing #kindy-coach-pitch .division-card--overlay > .division-meta {
-    position: absolute;
-    bottom: 14px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 24px);
-    text-align: center;
-    z-index: 5; /* above image */
-    font-size: 0.8rem; /* slightly smaller to reduce clutter */
-    transition: opacity var(--trans-fast) var(--ease-out);
-}
-
-.baseball-landing #kindy-coach-pitch .division-card--overlay > .division-meta li {
-    margin: 2px 0;
-}
-
-.baseball-landing .division-card--overlay::before {
-    transition: opacity var(--trans-fast) var(--ease-out);
-}
-
-.baseball-landing .division-card--overlay:hover::before,
-.baseball-landing .division-card--overlay:focus-within::before {
-    opacity: 0;
-}
-
-.baseball-landing .division-card--overlay:hover .division-card__graphic,
-.baseball-landing .division-card--overlay:focus-within .division-card__graphic,
-.baseball-landing .division-card--overlay:hover .division-hero,
-.baseball-landing .division-card--overlay:focus-within .division-hero,
-.baseball-landing .division-card--overlay:hover .overlay-summary,
-.baseball-landing .division-card--overlay:focus-within .overlay-summary,
-.baseball-landing .division-card--overlay:hover > .division-hero__title,
-.baseball-landing .division-card--overlay:focus-within > .division-hero__title,
-.baseball-landing .division-card--overlay:hover > .division-blurb,
-.baseball-landing .division-card--overlay:focus-within > .division-blurb,
-.baseball-landing #kindy-coach-pitch .division-card--overlay:hover > .division-meta,
-.baseball-landing #kindy-coach-pitch .division-card--overlay:focus-within > .division-meta {
-    opacity: 0;
-}
-
-/* Ensure CTAs become clickable when overlay fades */
-.baseball-landing #kindy-coach-pitch .division-card--overlay:hover > .division-meta,
-.baseball-landing #kindy-coach-pitch .division-card--overlay:focus-within > .division-meta {
-    pointer-events: none;
-}
-
-.baseball-landing .division-card__title {
-    margin: 0;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--color_blue);
-}
-
-/* Overlay summary: places Kindy bullet list on top of the translucent sheet */
-.baseball-landing .division-card--overlay .overlay-summary {
-    position: absolute;
-    bottom: 14px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 24px);
-    z-index: 3; /* above ::before (2) and below graphic (4) */
-    pointer-events: none; /* keep overlay interactions clean */
-    text-align: center;
-    transition: opacity var(--trans-fast) var(--ease-out);
-}
-
-.baseball-landing .division-card--overlay .overlay-summary .division-meta {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.baseball-landing .division-card--overlay .overlay-summary .division-meta li {
-    margin: 3px 0;
-    color: var(--color_muted);
-}
-
-.baseball-landing .division-blurb {
-    margin: 0;
-    font-size: 0.9rem;
-    color: var(--color_muted);
-}
-
-.baseball-landing .division-meta {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 0.85rem;
-}
-
-.baseball-landing .division-meta li {
-    margin: 4px 0;
-    color: var(--color_muted);
-}
-
-.baseball-landing .division-meta strong {
-    color: var(--color_blue);
-    font-weight: 600;
-}
-
-.baseball-landing .card-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 4px;
-}
-
-.baseball-landing .card-actions .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px 14px;
-    border-radius: 999px;
-    font-size: 0.82rem;
-    font-weight: 600;
-    text-decoration: none;
-    border: 1px solid var(--color_blue);
-    color: var(--color_blue);
-    background: var(--color_white);
-}
-
-.baseball-landing .card-actions .button:hover,
-.baseball-landing .card-actions .button:focus-visible {
-    background: rgba(0, 1, 58, 0.08);
-    color: var(--color_blue);
-}
-
-.baseball-landing .card-actions .button.button--primary {
-    background: var(--color_blue);
-    color: var(--color_white);
-}
-
-.baseball-landing .card-actions .button.button--primary:hover,
-.baseball-landing .card-actions .button.button--primary:focus-visible {
-    background: #18225c;
-    color: var(--color_white);
-}
-
-.baseball-landing .card-actions .button.button--ghost {
-    background: transparent;
-}
-
-.baseball-landing .division-detail {
-    background: var(--color_surface_lighter);
-    border: 1px solid var(--color_border_light);
-    border-radius: 6px;
-    padding: 18px 20px;
-    margin: 22px 0 42px;
-}
-
-.baseball-landing .division-detail__summary {
-    cursor: pointer;
-    font-weight: 600;
-    color: var(--color_blue);
-    outline: none;
-    list-style: none;
-    position: relative;
-    padding-left: 18px;
-    margin-bottom: 10px;
-}
-
-.baseball-landing .division-detail__summary::-webkit-details-marker {
-    display: none;
-}
-
-.baseball-landing .division-detail__summary::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 10px;
-    height: 10px;
-    border-left: 2px solid var(--color_blue);
-    border-bottom: 2px solid var(--color_blue);
-    transform-origin: center;
-    transition: transform var(--trans-fast) var(--ease-out);
-    transform: translateY(-50%) rotate(-45deg);
-}
-
-.baseball-landing details[open] > .division-detail__summary::before {
-    transform: translateY(-50%) rotate(135deg);
-}
-
-.pd-landing .at-a-glance {
-    border: 1px solid var(--color_border_light);
-    border-radius: 6px;
-    padding: 14px;
-    background: var(--color_surface_lighter);
-    margin-bottom: 32px;
-    /* Mobile-friendly: allow horizontal scroll when needed */
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-.pd-landing .at-a-glance table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: .85rem;
-}
-
-.pd-landing .at-a-glance th {
-    text-align: left;
-    padding: 6px 6px;
-    color: var(--color_blue);
-}
-
-.pd-landing .at-a-glance td {
-    padding: 4px 6px;
-    border-top: 1px solid var(--color_border_light);
-    vertical-align: top;
-}
-
-/* Ensure table doesn't compress too much on small screens */
-@media (max-width: 640px) {
-    .pd-landing .at-a-glance table {
-        font-size: 0.8rem;
-        min-width: 560px; /* triggers horizontal scroll for readability */
-    }
-    .pd-landing .at-a-glance th,
-    .pd-landing .at-a-glance td {
-        padding: 4px 4px;
-    }
-}
-
-/* Slightly tighten status pill on very small screens */
-@media (max-width: 480px) {
-    .pd-landing .pill-inline {
-        font-size: .6rem;
-        padding: 2px 5px;
-    }
-}
-
-    
-
-/* Center the Status column in PD At-a-Glance table */
-.pd-landing .at-a-glance thead th:last-child,
-.pd-landing .at-a-glance tbody td:last-child {
-    text-align: center;
-}
-
-/* Reusable variant table styled like PD at-a-glance */
-.table-at-a-glance {
-    border: 1px solid var(--color_border_light);
-    border-radius: 6px;
-    padding: 14px;
-    background: var(--color_surface_lighter);
-    margin-bottom: 32px;
-}
-
-.table-at-a-glance table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: .85rem;
-}
-
-.table-at-a-glance th {
-    text-align: left;
-    padding: 6px 6px;
-    color: var(--color_blue);
-}
-
-.table-at-a-glance td {
-    padding: 4px 6px;
-    border-top: 1px solid var(--color_border_light);
-    vertical-align: top;
-}
-
-.table-at-a-glance thead th:last-child,
-.table-at-a-glance tbody td:last-child {
-    text-align: right;
-    font-variant-numeric: tabular-nums;
-}
-
-.pd-landing .pill-inline {
-    display: inline-block;
-    background: var(--color_lightgray);
-    padding: 2px 6px;
-    font-size: .65rem;
-    font-weight: 600;
-    letter-spacing: .5px;
-    border-radius: 4px;
-    margin-right: 4px;
-}
-
-/* Status-specific variants for At-a-Glance pills */
-.pd-landing .pill-inline.pill-open {
-    background: rgba(46, 204, 64, 0.18); /* backlit green */
-    color: #146c2e; /* dark green text for contrast */
-    border: 1px solid rgba(46, 204, 64, 0.35);
-}
-.pd-landing .pill-inline.pill-closed {
-    background: rgba(170, 170, 170, 0.18);
-    color: #555;
-    border: 1px solid rgba(170, 170, 170, 0.35);
-}
-.pd-landing .pill-inline.pill-soon {
-    background: rgba(241, 196, 15, 0.18);
-    color: #8a6d00;
-    border: 1px solid rgba(241, 196, 15, 0.35);
-}
-.pd-landing .pill-inline.pill-active {
-    background: rgba(0, 1, 58, 0.10);
-    color: var(--color_blue);
-    border: 1px solid rgba(0, 1, 58, 0.20);
-}
-
-
-
-.pd-landing .pd-muted-note {
-    font-size: .7rem;
-    margin-top: 8px;
-    color: var(--color_muted);
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .pd-landing .program-card {
-        transition: none;
-    }
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
 }
 
 /* ================= End Player Development landing ================ */
