@@ -1041,51 +1041,205 @@ body:not(.cms-right) .only-on-right {
     box-shadow: 0 6px 16px rgba(0, 0, 0, .22);
 }
 
-/* Baseball/Softball landing page grid layout */
+/* Baseball/Softball landing page grid layout - SIMPLIFIED */
 .baseball-landing .program-grid,
 .softball-landing .program-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));  /* Slightly wider minimum to match Kindy size */
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 20px;
-    margin: 20px 0;
-    max-width: 1200px;  /* Optional: limit total grid width */
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
+    max-width: 1100px;
 }
 
-/* Ensure all overlay cards have consistent sizing */
+/* Baseball/Softball division cards - REMOVE CONFLICTS */
+.baseball-landing .division-card,
+.softball-landing .division-card {
+    /* Remove ALL old constraints */
+    width: 100%;
+    margin: 0;
+    display: block;
+    position: relative;
+}
+
+/* Simplified two-layer overlay card */
 .baseball-landing .division-card--overlay,
 .softball-landing .division-card--overlay {
     position: relative;
     min-height: 400px;
-    max-width: 380px;  /* Match Kindy's comfortable size */
-    width: 100%;
     padding: 0;
     overflow: hidden;
     background: white;
     border: 1px solid var(--color_border_light);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-    transition: box-shadow var(--trans-fast) var(--ease-out);
-    margin: 0 auto;  /* Center cards within their grid cells */
 }
 
-/* Hover effect for cards */
-.baseball-landing .division-card--overlay:hover,
-.softball-landing .division-card--overlay:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+/* Top layer: contains title, blurb, image, meta */
+.baseball-landing .division-card--overlay .division-card__top-layer {
+    position: relative;
+    z-index: 2;
+    background: var(--color_surface_light);  /* Light gray background */
+    padding: 20px 20px 70px; /* Bottom padding for sticky buttons */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: opacity var(--trans-fast) var(--ease-out);
+    min-height: 400px;
 }
 
-/* Responsive: adjust grid for smaller screens */
+/* Fade top layer on hover/focus */
+.baseball-landing .division-card--overlay:hover .division-card__top-layer,
+.baseball-landing .division-card--overlay:focus-within .division-card__top-layer {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Top layer content styling */
+.baseball-landing .division-card--overlay .division-hero__title {
+    font-size: 1.375rem;
+    margin: 0 0 12px 0;
+    color: var(--color_blue);
+    font-weight: 600;
+}
+
+.baseball-landing .division-card--overlay .division-blurb {
+    font-size: 1rem;
+    margin: 0 0 18px 0;
+    line-height: 1.5;
+    color: var(--color_text);
+}
+
+.baseball-landing .division-card--overlay .division-card__graphic {
+    max-width: 140px;
+    height: auto;
+    margin: 10px auto 20px;
+}
+
+.baseball-landing .division-card--overlay .division-meta {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 0.9rem !important;
+    width: 100%;
+}
+
+.baseball-landing .division-card--overlay .division-meta li {
+    margin: 5px 0;
+    line-height: 1.5;
+    list-style: none;
+    list-style-type: none;
+    font-size: 0.9rem !important;
+    color: var(--color_muted);
+}
+
+.baseball-landing .division-card--overlay .division-meta li strong {
+    color: var(--color_text);
+    font-weight: 600;
+}
+
+/* Bottom layer: scrollable details */
+.baseball-landing .division-card--overlay .division-card__bottom-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 20px 70px;
+    overflow-y: auto;
+    background: white;
+    z-index: 1;
+}
+
+/* Bottom layer content */
+.baseball-landing .division-card--overlay .division-detail-content {
+    margin-bottom: 20px;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content h4 {
+    font-size: 1.125rem;
+    margin: 20px 0 10px 0;
+    color: var(--color_blue);
+    font-weight: 600;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content h4:first-child {
+    margin-top: 0;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 12px 0;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content ul {
+    font-size: 0.95rem;
+    margin: 8px 0 16px 20px;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content li {
+    margin: 4px 0;
+    line-height: 1.5;
+}
+
+/* Sticky card actions for both layers */
+.baseball-landing .division-card--overlay .card-actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 20px;
+    border-top: 1px solid var(--color_border_light);
+    z-index: 3;
+}
+
+/* Button styling for overlay cards */
+.baseball-landing .division-card--overlay .card-actions .button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid var(--color_border);
+    background: var(--color_button);
+    color: var(--color_text);
+    font-family: var(--font_ui);
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.baseball-landing .division-card--overlay .card-actions .button--primary {
+    background: var(--color_blue);
+    color: white;
+    border-color: var(--color_blue);
+}
+
+.baseball-landing .division-card--overlay .card-actions .button--primary:hover {
+    background: #1a2b5c;
+    border-color: #1a2b5c;
+}
+
+.baseball-landing .division-card--overlay .card-actions .button--ghost {
+    background: transparent;
+    color: var(--color_blue);
+    border-color: var(--color_blue);
+}
+
+.baseball-landing .division-card--overlay .card-actions .button--ghost:hover {
+    background: var(--color_blue);
+    color: white;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .baseball-landing .program-grid,
     .softball-landing .program-grid {
         grid-template-columns: 1fr;
         gap: 16px;
-    }
-    
-    .baseball-landing .division-card--overlay,
-    .softball-landing .division-card--overlay {
-        max-width: 100%;  /* Full width on mobile */
     }
 }
