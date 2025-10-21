@@ -1098,6 +1098,11 @@ body:not(.cms-right) .only-on-right {
     transition: opacity var(--trans-fast) var(--ease-out);
 }
 
+/* Enlarge Kindy Coach Pitch graphic only */
+.baseball-landing #kindy-coach-pitch .division-card--overlay .division-card__graphic {
+    max-width: 100%;
+}
+
 .baseball-landing .division-card--overlay .division-card__title,
 .baseball-landing .division-card--overlay .division-blurb,
 .baseball-landing .division-card--overlay .division-meta {
@@ -1136,7 +1141,9 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-card--overlay:hover .division-card__graphic,
 .baseball-landing .division-card--overlay:focus-within .division-card__graphic,
 .baseball-landing .division-card--overlay:hover .division-hero,
-.baseball-landing .division-card--overlay:focus-within .division-hero {
+.baseball-landing .division-card--overlay:focus-within .division-hero,
+.baseball-landing .division-card--overlay:hover .overlay-summary,
+.baseball-landing .division-card--overlay:focus-within .overlay-summary {
     opacity: 0;
 }
 
@@ -1146,6 +1153,30 @@ body:not(.cms-right) .only-on-right {
     text-transform: uppercase;
     letter-spacing: 0.04em;
     color: var(--color_blue);
+}
+
+/* Overlay summary: places Kindy bullet list on top of the translucent sheet */
+.baseball-landing .division-card--overlay .overlay-summary {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 24px);
+    z-index: 3; /* above ::before (2) and below graphic (4) */
+    pointer-events: none; /* keep overlay interactions clean */
+    text-align: center;
+    transition: opacity var(--trans-fast) var(--ease-out);
+}
+
+.baseball-landing .division-card--overlay .overlay-summary .division-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.baseball-landing .division-card--overlay .overlay-summary .division-meta li {
+    margin: 3px 0;
+    color: var(--color_muted);
 }
 
 .baseball-landing .division-blurb {
