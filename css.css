@@ -1129,6 +1129,13 @@ body:not(.cms-right) .only-on-right {
     color: var(--color_blue);
 }
 
+/* Ensure content title and blurb render above the translucent overlay */
+.baseball-landing .division-card--overlay > .division-hero__title,
+.baseball-landing .division-card--overlay > .division-blurb {
+    position: relative;
+    z-index: 3;
+}
+
 .baseball-landing .division-card--overlay::before {
     transition: opacity var(--trans-fast) var(--ease-out);
 }
