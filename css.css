@@ -1110,7 +1110,7 @@ body:not(.cms-right) .only-on-right {
     list-style-type: none;
     padding: 0;
     margin: auto 0 0 0;
-    font-size: 12px;  /* Smaller font size as requested */
+    font-size: 12px !important;  /* Added !important to override any conflicts */
     width: 100%;
 }
 
@@ -1119,6 +1119,7 @@ body:not(.cms-right) .only-on-right {
     line-height: 1.4;
     list-style: none;
     list-style-type: none;
+    font-size: 12px !important;  /* Also set on li elements to ensure it applies */
 }
 
 /* Bottom layer: scrollable details */
