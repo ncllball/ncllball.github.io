@@ -1137,6 +1137,23 @@ body:not(.cms-right) .only-on-right {
     transition: opacity var(--trans-fast) var(--ease-out);
 }
 
+/* Kindy: place meta on same layer as PNG, below it, and fade on reveal */
+.baseball-landing #kindy-coach-pitch .division-card--overlay > .division-meta {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 24px);
+    text-align: center;
+    z-index: 4; /* same as image/title/blurb */
+    font-size: 0.8rem; /* slightly smaller to reduce clutter */
+    transition: opacity var(--trans-fast) var(--ease-out);
+}
+
+.baseball-landing #kindy-coach-pitch .division-card--overlay > .division-meta li {
+    margin: 2px 0;
+}
+
 .baseball-landing .division-card--overlay::before {
     transition: opacity var(--trans-fast) var(--ease-out);
 }
@@ -1155,8 +1172,16 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-card--overlay:hover > .division-hero__title,
 .baseball-landing .division-card--overlay:focus-within > .division-hero__title,
 .baseball-landing .division-card--overlay:hover > .division-blurb,
-.baseball-landing .division-card--overlay:focus-within > .division-blurb {
+.baseball-landing .division-card--overlay:focus-within > .division-blurb,
+.baseball-landing #kindy-coach-pitch .division-card--overlay:hover > .division-meta,
+.baseball-landing #kindy-coach-pitch .division-card--overlay:focus-within > .division-meta {
     opacity: 0;
+}
+
+/* Ensure CTAs become clickable when overlay fades */
+.baseball-landing #kindy-coach-pitch .division-card--overlay:hover > .division-meta,
+.baseball-landing #kindy-coach-pitch .division-card--overlay:focus-within > .division-meta {
+    pointer-events: none;
 }
 
 .baseball-landing .division-card__title {
