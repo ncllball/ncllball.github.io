@@ -1089,38 +1089,79 @@ body:not(.cms-right) .only-on-right {
 
 /* Top layer content styling */
 .baseball-landing .division-card--overlay .division-hero__title {
-    font-size: 20px;
-    margin: 0 0 10px 0;
+    font-size: 1.375rem;  /* Increased from 20px (1.25rem) - making it prominent */
+    margin: 0 0 12px 0;
     color: var(--color_blue);
+    font-weight: 600;
 }
 
 .baseball-landing .division-card--overlay .division-blurb {
-    font-size: 14px;
-    margin: 0 0 15px 0;
-    line-height: 1.4;
+    font-size: 1rem;  /* Increased from 14px (0.875rem) - more readable */
+    margin: 0 0 18px 0;
+    line-height: 1.5;
+    color: var(--color_text);
 }
 
 .baseball-landing .division-card--overlay .division-card__graphic {
-    max-width: 140px;  /* Increased from 120px since margins are trimmed */
+    max-width: 140px;
     height: auto;
-    margin: 10px auto 15px;
+    margin: 10px auto 20px;
 }
 
 .baseball-landing .division-card--overlay .division-meta {
     list-style: none;
     list-style-type: none;
     padding: 0;
-    margin: 10px 0;  /* Changed from auto 0 0 0 to give it normal spacing */
-    font-size: 12px !important;  /* Added !important to override any conflicts */
+    margin: 10px 0;
+    font-size: 0.9rem !important;  /* Increased from 12px (0.75rem) - more readable */
     width: 100%;
 }
 
 .baseball-landing .division-card--overlay .division-meta li {
-    margin: 4px 0;
-    line-height: 1.4;
+    margin: 5px 0;  /* Slightly more spacing */
+    line-height: 1.5;
     list-style: none;
     list-style-type: none;
-    font-size: 12px !important;  /* Also set on li elements to ensure it applies */
+    font-size: 0.9rem !important;  /* Match the ul size */
+    color: var(--color_muted);
+}
+
+/* Make the strong tags in meta list stand out */
+.baseball-landing .division-card--overlay .division-meta li strong {
+    color: var(--color_text);
+    font-weight: 600;
+}
+
+/* Bottom layer content also needs better sizing */
+.baseball-landing .division-card--overlay .division-detail-content {
+    margin-bottom: 20px;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content h4 {
+    font-size: 1.125rem;  /* 18px - clear section headers */
+    margin: 20px 0 10px 0;
+    color: var(--color_blue);
+    font-weight: 600;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content h4:first-child {
+    margin-top: 0;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content p {
+    font-size: 1rem;  /* Standard paragraph size */
+    line-height: 1.6;
+    margin: 0 0 12px 0;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content ul {
+    font-size: 0.95rem;  /* Slightly smaller than body */
+    margin: 8px 0 16px 20px;
+}
+
+.baseball-landing .division-card--overlay .division-detail-content li {
+    margin: 4px 0;
+    line-height: 1.5;
 }
 
 /* Card actions in top layer - push to bottom */
@@ -1130,6 +1171,7 @@ body:not(.cms-right) .only-on-right {
     gap: 10px;
     justify-content: center;
     padding-top: 10px;
+    border-top: 1px solid var(--color_border_light);
 }
 
 /* Bottom layer: scrollable details */
