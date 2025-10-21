@@ -1058,6 +1058,9 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-card--overlay {
     position: relative;
     overflow: hidden;
+    /* Reserve space for header text at top and summary at bottom */
+    padding: 14px 12px 84px;
+    min-height: 260px;
 }
 
 .baseball-landing .division-card--overlay::before {
@@ -1100,7 +1103,9 @@ body:not(.cms-right) .only-on-right {
 
 /* Enlarge Kindy Coach Pitch graphic only */
 .baseball-landing #kindy-coach-pitch .division-card--overlay .division-card__graphic {
-    max-width: 100%;
+    /* Slightly smaller and a touch lower to avoid overlapping header */
+    max-width: 88%;
+    top: 56%;
 }
 
 .baseball-landing .division-card--overlay .division-card__title,
@@ -1136,6 +1141,8 @@ body:not(.cms-right) .only-on-right {
     z-index: 4; /* same layer as graphic */
     transition: opacity var(--trans-fast) var(--ease-out);
 }
+.baseball-landing .division-card--overlay > .division-hero__title { margin-bottom: 6px; }
+.baseball-landing .division-card--overlay > .division-blurb { margin: 0 6px 4px; }
 
 /* Kindy: place meta on same layer as PNG, below it, and fade on reveal */
 .baseball-landing #kindy-coach-pitch .division-card--overlay > .division-meta {
