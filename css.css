@@ -1110,7 +1110,7 @@ body:not(.cms-right) .only-on-right {
     list-style: none;
     list-style-type: none;
     padding: 0;
-    margin: auto 0 0 0;
+    margin: 10px 0;  /* Changed from auto 0 0 0 to give it normal spacing */
     font-size: 12px !important;  /* Added !important to override any conflicts */
     width: 100%;
 }
@@ -1121,6 +1121,15 @@ body:not(.cms-right) .only-on-right {
     list-style: none;
     list-style-type: none;
     font-size: 12px !important;  /* Also set on li elements to ensure it applies */
+}
+
+/* Card actions in top layer - push to bottom */
+.baseball-landing .division-card--overlay .division-card__top-layer .card-actions {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 /* Bottom layer: scrollable details */
