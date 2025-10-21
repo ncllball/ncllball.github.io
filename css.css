@@ -1100,6 +1100,7 @@ body:not(.cms-right) .only-on-right {
     height: auto;
     z-index: 4;
     pointer-events: none;
+    transition: opacity var(--trans-fast) var(--ease-out);
 }
 
 .baseball-landing .division-card--overlay .division-card__title,
@@ -1115,6 +1116,7 @@ body:not(.cms-right) .only-on-right {
     margin-bottom: -36px;
     z-index: 5;
     pointer-events: none;
+    transition: opacity var(--trans-fast) var(--ease-out);
 }
 
 .baseball-landing .division-hero__title {
@@ -1124,6 +1126,22 @@ body:not(.cms-right) .only-on-right {
     transform: translateX(-50%);
     margin: 0;
     color: var(--color_blue);
+}
+
+.baseball-landing .division-card--overlay::before {
+    transition: opacity var(--trans-fast) var(--ease-out);
+}
+
+.baseball-landing .division-card--overlay:hover::before,
+.baseball-landing .division-card--overlay:focus-within::before {
+    opacity: 0;
+}
+
+.baseball-landing .division-card--overlay:hover .division-card__graphic,
+.baseball-landing .division-card--overlay:focus-within .division-card__graphic,
+.baseball-landing .division-card--overlay:hover ~ .division-hero,
+.baseball-landing .division-card--overlay:focus-within ~ .division-hero {
+    opacity: 0;
 }
 
 .baseball-landing .division-card__title {
