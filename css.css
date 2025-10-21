@@ -1096,7 +1096,7 @@ body:not(.cms-right) .only-on-right {
     transform: translate(-50%, -50%);
     max-width: 75%;
     height: auto;
-    z-index: 4;
+    z-index: 3; /* keep image behind text to avoid visual collisions */
     pointer-events: none;
     transition: opacity var(--trans-fast) var(--ease-out);
 }
@@ -1138,7 +1138,7 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-card--overlay > .division-hero__title,
 .baseball-landing .division-card--overlay > .division-blurb {
     position: relative;
-    z-index: 4; /* same layer as graphic */
+    z-index: 5; /* above graphic */
     transition: opacity var(--trans-fast) var(--ease-out);
 }
 .baseball-landing .division-card--overlay > .division-hero__title { margin-bottom: 6px; }
@@ -1152,7 +1152,7 @@ body:not(.cms-right) .only-on-right {
     transform: translateX(-50%);
     width: calc(100% - 24px);
     text-align: center;
-    z-index: 4; /* same as image/title/blurb */
+    z-index: 5; /* above image */
     font-size: 0.8rem; /* slightly smaller to reduce clutter */
     transition: opacity var(--trans-fast) var(--ease-out);
 }
