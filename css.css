@@ -1133,7 +1133,8 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-card--overlay > .division-hero__title,
 .baseball-landing .division-card--overlay > .division-blurb {
     position: relative;
-    z-index: 3;
+    z-index: 4; /* same layer as graphic */
+    transition: opacity var(--trans-fast) var(--ease-out);
 }
 
 .baseball-landing .division-card--overlay::before {
@@ -1150,7 +1151,11 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-card--overlay:hover .division-hero,
 .baseball-landing .division-card--overlay:focus-within .division-hero,
 .baseball-landing .division-card--overlay:hover .overlay-summary,
-.baseball-landing .division-card--overlay:focus-within .overlay-summary {
+.baseball-landing .division-card--overlay:focus-within .overlay-summary,
+.baseball-landing .division-card--overlay:hover > .division-hero__title,
+.baseball-landing .division-card--overlay:focus-within > .division-hero__title,
+.baseball-landing .division-card--overlay:hover > .division-blurb,
+.baseball-landing .division-card--overlay:focus-within > .division-blurb {
     opacity: 0;
 }
 
