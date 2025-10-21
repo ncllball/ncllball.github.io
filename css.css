@@ -1108,6 +1108,24 @@ body:not(.cms-right) .only-on-right {
     text-align: center;
 }
 
+.baseball-landing .division-hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -36px;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.baseball-landing .division-hero__title {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    color: var(--color_blue);
+}
+
 .baseball-landing .division-card__title {
     margin: 0;
     font-size: 0.95rem;
