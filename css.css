@@ -1063,7 +1063,7 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-card--overlay,
 .softball-landing .division-card--overlay {
     position: relative;
-    min-height: 520px;
+    min-height: 460px;  /* Increased to show all content */
     border: 1px solid var(--color_border_light);
     border-radius: 6px;
     background: white;
@@ -1076,16 +1076,15 @@ body:not(.cms-right) .only-on-right {
 .softball-landing .division-card--overlay .division-card__top-layer {
     position: absolute;
     inset: 0;
-    min-height: 520px;
     background: var(--color_surface_light);
-    padding: 20px;
-    padding-bottom: 70px;
+    padding: 24px 20px 70px;  /* Added more top padding */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     transition: opacity 0.3s ease;
     z-index: 2;
+    min-height: 460px;  /* Match card height */
 }
 
 /* Fade top layer on hover */
@@ -1128,34 +1127,29 @@ body:not(.cms-right) .only-on-right {
 /* Division graphic */
 .baseball-landing .division-card__graphic,
 .softball-landing .division-card__graphic {
-    width: 120px;
+    width: 110px;  /* Reduced from 120px */
     height: auto;
     margin: 10px auto 16px;
 }
 
-/* Division meta list */
+/* Division meta list - ensure it fits */
 .baseball-landing .division-meta,
 .softball-landing .division-meta {
     list-style: none;
     padding: 0;
-    margin: auto 0 0 0;
-    font-size: 0.85rem;
+    margin: auto 0 0 0;  /* Push to bottom of available space */
+    font-size: 0.85rem;  /* Slightly smaller for better fit */
     width: 100%;
     text-align: left;
 }
 
 .baseball-landing .division-meta li,
 .softball-landing .division-meta li {
-    margin: 6px 0;
-    line-height: 1.4;
+    margin: 5px 0;
+    line-height: 1.4;  /* Tighter line height */
     list-style: none;
     color: var(--color_muted);
-}
-
-.baseball-landing .division-meta li strong,
-.softball-landing .division-meta li strong {
-    color: var(--color_text);
-    font-weight: 600;
+    font-size: 0.85rem;
 }
 
 /* Detail content styling */
