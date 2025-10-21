@@ -1247,3 +1247,82 @@ body:not(.cms-right) .only-on-right {
         grid-template-columns: 1fr;
     }
 }
+
+/* Mobile touch improvements for division cards */
+@media (hover: hover) and (pointer: fine) {
+    /* Only apply hover effects on devices with precise pointing (mouse/trackpad) */
+    .baseball-landing .division-card--overlay:hover .division-card__top-layer,
+    .softball-landing .division-card--overlay:hover .division-card__top-layer {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@media (hover: none), (pointer: coarse) {
+    /* Touch devices - use tap interaction instead */
+    .baseball-landing .division-card--overlay,
+    .softball-landing .division-card--overlay {
+        cursor: pointer;
+    }
+    
+    /* Add visual hint that cards are interactive */
+    .baseball-landing .division-card--overlay .division-card__top-layer::after,
+    .softball-landing .division-card--overlay .division-card__top-layer::after {
+        content: "Tap for details";
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.75rem;
+        color: var(--color_muted);
+        font-style: italic;
+    }
+    
+    /* Use :focus-within for touch activation */
+    .baseball-landing .division-card--overlay:focus-within .division-card__top-layer,
+    .softball-landing .division-card--overlay:focus-within .division-card__top-layer {
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    /* Add a close button for mobile */
+    .baseball-landing .division-card--overlay .division-card__bottom-layer::before,
+    .softball-landing .division-card--overlay .division-card__bottom-layer::before {
+        content: "× Back";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 4px 8px;
+        background: var(--color_surface_light);
+        border: 1px solid var(--color_border_light);
+        border-radius: 4px;
+        font-size: 0.8rem;
+        color: var(--color_blue);
+        cursor: pointer;
+        z-index: 10;
+    }
+}
+
+/* Alternative: Add explicit toggle button (more accessible) */
+.division-card__toggle {
+    position: absolute;
+    bottom: 75px;
+    right: 20px;
+    background: var(--color_blue);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 4;
+    display: none;
+}
+
+@media (hover: none), (pointer: coarse) {
+    .division-card__toggle {
+        display: block;
+    }
+}
