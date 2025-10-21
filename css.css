@@ -1141,7 +1141,6 @@ body:not(.cms-right) .only-on-right {
     font-size: 0.8rem;
     width: 100%;
     text-align: left;
-    margin-top: auto;  /* This pushes it to the bottom while preserving the 10px gap */
 }
 
 .baseball-landing .division-meta li,
