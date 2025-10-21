@@ -1109,8 +1109,8 @@ body:not(.cms-right) .only-on-right {
 /* Division hero title */
 .baseball-landing .division-hero__title,
 .softball-landing .division-hero__title {
-    font-size: 1.375rem;
-    margin: 0 0 12px 0;
+    font-size: 1.25rem;  /* Reduced from 1.375rem - matches h2 size */
+    margin: 0 0 10px 0;  /* Tighter margin */
     color: var(--color_blue);
     font-weight: 600;
 }
@@ -1118,8 +1118,8 @@ body:not(.cms-right) .only-on-right {
 /* Division blurb */
 .baseball-landing .division-blurb,
 .softball-landing .division-blurb {
-    font-size: 0.95rem;
-    margin: 0 0 16px 0;
+    font-size: 0.9rem;  /* Reduced from 0.95rem */
+    margin: 0 0 14px 0;  /* Slightly less margin */
     line-height: 1.4;
     color: var(--color_text);
 }
@@ -1127,9 +1127,9 @@ body:not(.cms-right) .only-on-right {
 /* Division graphic */
 .baseball-landing .division-card__graphic,
 .softball-landing .division-card__graphic {
-    width: 110px;  /* Reduced from 120px */
+    width: 100px;  /* Reduced from 110px */
     height: auto;
-    margin: 10px auto 16px;
+    margin: 8px auto 14px;  /* Tighter margins */
 }
 
 /* Division meta list - ensure it fits */
@@ -1138,25 +1138,31 @@ body:not(.cms-right) .only-on-right {
     list-style: none;
     padding: 0;
     margin: auto 0 0 0;  /* Push to bottom of available space */
-    font-size: 0.85rem;  /* Slightly smaller for better fit */
+    font-size: 0.8rem;  /* Reduced from 0.85rem */
     width: 100%;
     text-align: left;
 }
 
 .baseball-landing .division-meta li,
 .softball-landing .division-meta li {
-    margin: 5px 0;
-    line-height: 1.4;  /* Tighter line height */
+    margin: 4px 0;  /* Reduced from 5px */
+    line-height: 1.35;  /* Slightly tighter */
     list-style: none;
     color: var(--color_muted);
-    font-size: 0.85rem;
+    font-size: 0.8rem;  /* Match parent */
+}
+
+.baseball-landing .division-meta li strong,
+.softball-landing .division-meta li strong {
+    color: var(--color_text);
+    font-weight: 600;
 }
 
 /* Detail content styling */
 .baseball-landing .division-detail-content h4,
 .softball-landing .division-detail-content h4 {
-    font-size: 1.125rem;
-    margin: 20px 0 10px 0;
+    font-size: 1.05rem;  /* Reduced from 1.125rem */
+    margin: 18px 0 8px 0;  /* Tighter spacing */
     color: var(--color_blue);
     font-weight: 600;
 }
@@ -1168,21 +1174,21 @@ body:not(.cms-right) .only-on-right {
 
 .baseball-landing .division-detail-content p,
 .softball-landing .division-detail-content p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin: 0 0 12px 0;
+    font-size: 0.9rem;  /* Reduced from 0.95rem */
+    line-height: 1.45;  /* Slightly tighter */
+    margin: 0 0 10px 0;  /* Less bottom margin */
 }
 
 .baseball-landing .division-detail-content ul,
 .softball-landing .division-detail-content ul {
-    font-size: 0.9rem;
-    margin: 8px 0 16px 20px;
+    font-size: 0.85rem;  /* Reduced from 0.9rem */
+    margin: 6px 0 14px 18px;  /* Tighter margins */
 }
 
 .baseball-landing .division-detail-content li,
 .softball-landing .division-detail-content li {
-    margin: 4px 0;
-    line-height: 1.4;
+    margin: 3px 0;  /* Reduced from 4px */
+    line-height: 1.35;  /* Tighter line height */
 }
 
 /* Sticky card actions for both layers */
@@ -1206,8 +1212,8 @@ body:not(.cms-right) .only-on-right {
 /* Button styling */
 .baseball-landing .division-card--overlay .card-actions .button,
 .softball-landing .division-card--overlay .card-actions .button {
-    padding: 8px 16px;
-    font-size: 0.875rem;
+    padding: 6px 14px;  /* Reduced from 8px 16px */
+    font-size: 0.8rem;  /* Reduced from 0.875rem */
     font-weight: 600;
     text-decoration: none;
     border-radius: 4px;
