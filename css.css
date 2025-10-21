@@ -1085,6 +1085,12 @@ body:not(.cms-right) .only-on-right {
     padding-left: 0;
 }
 
+.baseball-landing .division-card--overlay .division-meta li {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
 .baseball-landing .division-card__title {
     margin: 0;
     font-size: 0.95rem;
