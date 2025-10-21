@@ -1192,15 +1192,45 @@ body:not(.cms-right) .only-on-right {
     z-index: 3; /* Above both layers */
 }
 
-/* Remove the old top layer specific button styling */
-/* DELETE THIS RULE */
-/* .baseball-landing .division-card--overlay .division-card__top-layer .card-actions {
-    margin-top: auto;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    padding-top: 10px;
-    border-top: 1px solid var(--color_border_light);
-} */
+/* Button styling for overlay cards */
+.baseball-landing .division-card--overlay .card-actions .button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid var(--color_border);
+    background: var(--color_button);
+    color: var(--color_text);
+    font-family: var(--font_ui);
+    cursor: pointer;
+    transition: var(--transition-base);
+}
 
-/* ...existing code... */
+.baseball-landing .division-card--overlay .card-actions .button--primary {
+    background: var(--color_blue);
+    color: white;
+    border-color: var(--color_blue);
+}
+
+.baseball-landing .division-card--overlay .card-actions .button--primary:hover {
+    background: #1a2b5c;
+    border-color: #1a2b5c;
+}
+
+.baseball-landing .division-card--overlay .card-actions .button--ghost {
+    background: transparent;
+    color: var(--color_blue);
+    border-color: var(--color_blue);
+}
+
+.baseball-landing .division-card--overlay .card-actions .button--ghost:hover {
+    background: var(--color_blue);
+    color: white;
+}
+
+.baseball-landing .division-card--overlay .card-actions .button:focus-visible {
+    outline: 2px solid var(--color_blue);
+    outline-offset: 2px;
+}
