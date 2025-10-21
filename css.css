@@ -1041,212 +1041,239 @@ body:not(.cms-right) .only-on-right {
     box-shadow: 0 6px 16px rgba(0, 0, 0, .22);
 }
 
-/* Baseball/Softball landing pages - proper grid setup */
-.baseball-landing,
-.softball-landing {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+/* ================= Baseball/Softball Division Cards ================= */
 
-.baseball-landing h1,
-.softball-landing h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: var(--color_blue, #00013a);
-}
-
-/* Grid that actually works */
+/* Grid container for baseball/softball landing pages */
 .baseball-landing .program-grid,
 .softball-landing .program-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Individual division cards */
+.baseball-landing .division-card,
+.softball-landing .division-card {
+    max-width: 320px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-/* Reset division card completely */
-.division-card {
-    all: unset;
-    display: block;
-}
-
-/* Overlay card structure - clean and simple */
-.division-card--overlay {
+/* Two-layer overlay card structure */
+.baseball-landing .division-card--overlay,
+.softball-landing .division-card--overlay {
     position: relative;
-    height: 420px;
+    width: 320px;
+    min-height: 400px;
+    border: 1px solid var(--color_border_light);
+    border-radius: 4px;
     background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
-.division-card--overlay:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* Top layer - what you see first */
-.division-card__top-layer {
-    position: absolute;
-    inset: 0;
-    background: #f5f5f5;
-    padding: 20px;
+/* Top layer: visible by default, fades on hover */
+.baseball-landing .division-card--overlay .division-card__top-layer,
+.softball-landing .division-card--overlay .division-card__top-layer {
+    position: relative;
+    z-index: 2;
+    background: var(--color_surface_light);
+    padding: 20px 20px 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    z-index: 2;
-    transition: opacity 0.3s ease;
+    transition: opacity var(--trans-fast) var(--ease-out);
+    min-height: 400px;
 }
 
-.division-card--overlay:hover .division-card__top-layer {
+/* Fade top layer on hover */
+.baseball-landing .division-card--overlay:hover .division-card__top-layer,
+.softball-landing .division-card--overlay:hover .division-card__top-layer,
+.baseball-landing .division-card--overlay:focus-within .division-card__top-layer,
+.softball-landing .division-card--overlay:focus-within .division-card__top-layer {
     opacity: 0;
     pointer-events: none;
 }
 
-/* Top layer content */
-.division-hero__title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color_blue, #00013a);
-    margin: 0 0 10px 0;
-    font-family: 'proxima-nova', 'Segoe UI', sans-serif;
-}
-
-.division-blurb {
-    font-size: 0.95rem;
-    line-height: 1.4;
-    color: #333;
-    margin: 0 0 15px 0;
-}
-
-.division-card__graphic {
-    width: 100px;
-    height: auto;
-    margin: 10px 0;
-}
-
-.division-meta {
-    list-style: none;
-    padding: 0;
-    margin: auto 0 0 0;
-    width: 100%;
-    text-align: left;
-}
-
-.division-meta li {
-    font-size: 0.85rem;
-    margin: 6px 0;
-    padding-left: 0;
-    color: #555;
-}
-
-.division-meta li:before {
-    content: none;
-}
-
-.division-meta strong {
-    color: #222;
-    font-weight: 600;
-}
-
-/* Bottom layer - revealed on hover */
-.division-card__bottom-layer {
+/* Bottom layer: always there, revealed on hover */
+.baseball-landing .division-card--overlay .division-card__bottom-layer,
+.softball-landing .division-card--overlay .division-card__bottom-layer {
     position: absolute;
-    inset: 0;
-    background: white;
-    padding: 20px;
-    padding-bottom: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 20px 70px;
     overflow-y: auto;
+    background: white;
     z-index: 1;
 }
 
-.division-detail-content h4 {
-    font-size: 1.1rem;
-    color: var(--color_blue, #00013a);
-    margin: 16px 0 8px 0;
+/* Division hero title */
+.baseball-landing .division-hero__title,
+.softball-landing .division-hero__title {
+    font-size: 1.375rem;
+    margin: 0 0 12px 0;
+    color: var(--color_blue);
     font-weight: 600;
 }
 
-.division-detail-content h4:first-child {
+/* Division blurb */
+.baseball-landing .division-blurb,
+.softball-landing .division-blurb {
+    font-size: 1rem;
+    margin: 0 0 18px 0;
+    line-height: 1.5;
+    color: var(--color_text);
+}
+
+/* Division graphic */
+.baseball-landing .division-card__graphic,
+.softball-landing .division-card__graphic {
+    max-width: 140px;
+    height: auto;
+    margin: 10px auto 20px;
+}
+
+/* Division meta list */
+.baseball-landing .division-meta,
+.softball-landing .division-meta {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 0.9rem !important;
+    width: 100%;
+}
+
+.baseball-landing .division-meta li,
+.softball-landing .division-meta li {
+    margin: 5px 0;
+    line-height: 1.5;
+    list-style-type: none;
+    font-size: 0.9rem !important;
+    color: var(--color_muted);
+}
+
+.baseball-landing .division-meta li strong,
+.softball-landing .division-meta li strong {
+    color: var(--color_text);
+    font-weight: 600;
+}
+
+/* Detail content styling */
+.baseball-landing .division-detail-content,
+.softball-landing .division-detail-content {
+    margin-bottom: 20px;
+}
+
+.baseball-landing .division-detail-content h4,
+.softball-landing .division-detail-content h4 {
+    font-size: 1.125rem;
+    margin: 20px 0 10px 0;
+    color: var(--color_blue);
+    font-weight: 600;
+}
+
+.baseball-landing .division-detail-content h4:first-child,
+.softball-landing .division-detail-content h4:first-child {
     margin-top: 0;
 }
 
-.division-detail-content p {
-    font-size: 0.9rem;
-    line-height: 1.5;
+.baseball-landing .division-detail-content p,
+.softball-landing .division-detail-content p {
+    font-size: 1rem;
+    line-height: 1.6;
     margin: 0 0 12px 0;
 }
 
-.division-detail-content ul {
-    margin: 0 0 12px 0;
-    padding-left: 20px;
+.baseball-landing .division-detail-content ul,
+.softball-landing .division-detail-content ul {
+    font-size: 0.95rem;
+    margin: 8px 0 16px 20px;
 }
 
-.division-detail-content li {
-    font-size: 0.9rem;
-    line-height: 1.4;
+.baseball-landing .division-detail-content li,
+.softball-landing .division-detail-content li {
     margin: 4px 0;
+    line-height: 1.5;
 }
 
-/* Sticky buttons */
-.division-card--overlay .card-actions {
+/* Sticky card actions for both layers */
+.baseball-landing .division-card--overlay .card-actions,
+.softball-landing .division-card--overlay .card-actions {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background: white;
-    border-top: 1px solid #ddd;
-    padding: 12px;
     display: flex;
+    gap: 10px;
     justify-content: center;
-    gap: 12px;
+    padding: 10px 20px;
+    border-top: 1px solid var(--color_border_light);
     z-index: 3;
 }
 
-.division-card--overlay .button {
+/* Button styling */
+.baseball-landing .division-card--overlay .card-actions .button,
+.softball-landing .division-card--overlay .card-actions .button {
+    display: inline-block;
     padding: 8px 16px;
     font-size: 0.875rem;
     font-weight: 600;
     text-decoration: none;
     border-radius: 4px;
-    transition: all 0.2s ease;
+    border: 1px solid var(--color_border);
+    background: var(--color_button);
+    color: var(--color_text);
+    font-family: var(--font_ui);
+    cursor: pointer;
+    transition: var(--transition-base);
 }
 
-.division-card--overlay .button--primary {
-    background: var(--color_blue, #00013a);
+.baseball-landing .division-card--overlay .card-actions .button--primary,
+.softball-landing .division-card--overlay .card-actions .button--primary {
+    background: var(--color_blue);
     color: white;
-    border: 1px solid var(--color_blue, #00013a);
+    border-color: var(--color_blue);
 }
 
-.division-card--overlay .button--primary:hover {
+.baseball-landing .division-card--overlay .card-actions .button--primary:hover,
+.softball-landing .division-card--overlay .card-actions .button--primary:hover {
     background: #1a2b5c;
+    border-color: #1a2b5c;
 }
 
-.division-card--overlay .button--ghost {
-    background: white;
-    color: var(--color_blue, #00013a);
-    border: 1px solid var(--color_blue, #00013a);
+.baseball-landing .division-card--overlay .card-actions .button--ghost,
+.softball-landing .division-card--overlay .card-actions .button--ghost {
+    background: transparent;
+    color: var(--color_blue);
+    border-color: var(--color_blue);
 }
 
-.division-card--overlay .button--ghost:hover {
-    background: var(--color_blue, #00013a);
+.baseball-landing .division-card--overlay .card-actions .button--ghost:hover,
+.softball-landing .division-card--overlay .card-actions .button--ghost:hover {
+    background: var(--color_blue);
     color: white;
 }
 
-/* Mobile responsive */
-@media (max-width: 768px) {
+/* Responsive adjustments */
+@media (min-width: 768px) {
     .baseball-landing .program-grid,
     .softball-landing .program-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        justify-content: flex-start;
     }
-    
-    .baseball-landing,
-    .softball-landing {
-        padding: 16px;
+}
+
+@media (max-width: 640px) {
+    .baseball-landing .division-card--overlay,
+    .softball-landing .division-card--overlay {
+        width: 100%;
+        max-width: 320px;
     }
 }
