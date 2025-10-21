@@ -1091,6 +1091,23 @@ body:not(.cms-right) .only-on-right {
     margin-left: 0;
 }
 
+.baseball-landing .division-card--overlay .division-card__graphic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 75%;
+    height: auto;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.baseball-landing .division-card--overlay .division-card__title,
+.baseball-landing .division-card--overlay .division-blurb,
+.baseball-landing .division-card--overlay .division-meta {
+    text-align: center;
+}
+
 .baseball-landing .division-card__title {
     margin: 0;
     font-size: 0.95rem;
