@@ -1059,8 +1059,8 @@ body:not(.cms-right) .only-on-right {
     position: relative;
     overflow: hidden;
     /* Reserve space for header text at top and summary at bottom */
-    padding: 14px 12px 84px;
-    min-height: 260px;
+    padding: 14px 12px 104px;
+    min-height: 280px;
 }
 
 .baseball-landing .division-card--overlay::before {
@@ -1098,14 +1098,15 @@ body:not(.cms-right) .only-on-right {
     height: auto;
     z-index: 3; /* keep image behind text to avoid visual collisions */
     pointer-events: none;
+    opacity: 0.18; /* keep silhouette subtle so text reads well */
     transition: opacity var(--trans-fast) var(--ease-out);
 }
 
 /* Enlarge Kindy Coach Pitch graphic only */
 .baseball-landing #kindy-coach-pitch .division-card--overlay .division-card__graphic {
-    /* Slightly smaller and a touch lower to avoid overlapping header */
-    max-width: 88%;
-    top: 56%;
+    /* Smaller and lower so it doesn't fight the title/blurb */
+    max-width: 84%;
+    top: 62%;
 }
 
 .baseball-landing .division-card--overlay .division-card__title,
