@@ -1137,10 +1137,11 @@ body:not(.cms-right) .only-on-right {
 .softball-landing .division-meta {
     list-style: none;
     padding: 0;
-    margin: auto 0 0 0;  /* Push to bottom of available space */
-    font-size: 0.8rem;  /* Reduced from 0.85rem */
+    margin: 10px 0 0 0;  /* Changed from auto 0 0 0 - adds 10px top margin */
+    font-size: 0.8rem;
     width: 100%;
     text-align: left;
+    margin-top: auto;  /* This pushes it to the bottom while preserving the 10px gap */
 }
 
 .baseball-landing .division-meta li,
@@ -1183,12 +1184,6 @@ body:not(.cms-right) .only-on-right {
 .softball-landing .division-detail-content ul {
     font-size: 0.85rem;  /* Reduced from 0.9rem */
     margin: 6px 0 14px 18px;  /* Tighter margins */
-}
-
-.baseball-landing .division-detail-content li,
-.softball-landing .division-detail-content li {
-    margin: 3px 0;  /* Reduced from 4px */
-    line-height: 1.35;  /* Tighter line height */
 }
 
 /* Sticky card actions for both layers */
