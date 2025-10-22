@@ -1083,7 +1083,7 @@ body:not(.cms-right) .only-on-right {
     align-items: center;
     text-align: center;
     transition: opacity 0.3s ease;
-    z-index: 2; /* Top layer is above bottom layer by default */
+    z-index: 2;
     min-height: 460px;
 }
 
@@ -1096,54 +1096,280 @@ body:not(.cms-right) .only-on-right {
     padding-bottom: 70px;
     overflow-y: auto;
     background: white;
-    z-index: 3; /* Bottom layer is above top layer when active */
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-
-/* Show bottom layer when card is focused/hovered */
-.baseball-landing .division-card--overlay:focus-within .division-card__bottom-layer,
-.softball-landing .division-card--overlay:focus-within .division-card__bottom-layer,
-.baseball-landing .division-card--overlay:hover .division-card__bottom-layer,
-.softball-landing .division-card--overlay:hover .division-card__bottom-layer {
-    opacity: 1;
-    pointer-events: auto;
-    z-index: 4; /* Ensure it's above everything else */
-}
-
-/* Hide top layer when card is focused/hovered */
-.baseball-landing .division-card--overlay:focus-within .division-card__top-layer,
-.softball-landing .division-card--overlay:focus-within .division-card__top-layer,
-.baseball-landing .division-card--overlay:hover .division-card__top-layer,
-.softball-landing .division-card--overlay:hover .division-card__top-layer {
-    opacity: 0;
-    pointer-events: none;
     z-index: 1;
 }
 
-/* Mobile close button: always on top of bottom layer */
-.baseball-landing .division-card--overlay .division-card__bottom-layer::before,
-.softball-landing .division-card--overlay .division-card__bottom-layer::before {
-    content: "× Back";
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 4px 8px;
-    background: var(--color_surface_light);
-    border: 1px solid var(--color_border_light);
-    border-radius: 4px;
-    font-size: 0.8rem;
-    color: var(--color_blue);
-    cursor: pointer;
-    z-index: 10; /* Highest z-index for close button */
+/* Hover/focus effect: only on devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+    .baseball-landing .division-card--overlay:hover .division-card__top-layer,
+    .softball-landing .division-card--overlay:hover .division-card__top-layer {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
+/* Touch devices: tap/focus-within to reveal details, add hint and close button */
+@media (hover: none), (pointer: coarse) {
+    .baseball-landing .division-card--overlay,
+    .softball-landing .division-card--overlay {
+        cursor: pointer;
+    }
+    .baseball-landing .division-card--overlay .division-card__top-layer::after,
+    .softball-landing .division-card--overlay .division-card__top-layer::after {
+        content: "Tap for details";
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.75rem;
+        color: var(--color_muted);
+        font-style: italic;
+    }
+    .baseball-landing .division-card--overlay:focus-within .division-card__top-layer,
+    .softball-landing .division-card--overlay:focus-within .division-card__top-layer {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .baseball-landing .division-card--overlay .division-card__bottom-layer::before,
+    .softball-landing .division-card--overlay .division-card__bottom-layer::before {
+        content: "× Back";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 4px 8px;
+        background: var(--color_surface_light);
+        border: 1px solid var(--color_border_light);
+        border-radius: 4px;
+        font-size: 0.8rem;
+        color: var(--color_blue);
+        cursor: pointer;
+        z-index: 10;
+    }
+}
+
+/* Division hero title */
+.baseball-landing .division-hero__title,
+.softball-landing .division-hero__title {
+    font-size: 1.25rem;
+    margin: 0 0 10px 0;
+    color: var(--color_blue);
+    font-weight: 600;
+}
+
+/* Division blurb */
+.baseball-landing .division-blurb,
+.softball-landing .division-blurb {
+    font-size: 0.9rem;
+    margin: 0 0 14px 0;
+    line-height: 1.4;
+    color: var(--color_text);
+}
+
+/* Division graphic */
 .baseball-landing .division-card__graphic,
 .softball-landing .division-card__graphic {
-    width: 68px;
+    width: 100px;
     height: auto;
     margin: 8px auto 8px;
-    max-height: 68px;
-    object-fit: contain;
+}
+
+/* Division meta list */
+.baseball-landing .division-meta,
+.softball-landing .division-meta {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: left;
+}
+
+.baseball-landing .division-meta li,
+.softball-landing .division-meta li {
+    margin: 4px 0;
+    line-height: 1.35;
+    list-style: none;
+    color: var(--color_muted);
+    font-size: 0.8rem;
+}
+
+.baseball-landing .division-meta li strong,
+.softball-landing .division-meta li strong {
+    color: var(--color_text);
+    font-weight: 600;
+}
+
+/* Detail content styling */
+.baseball-landing .division-detail-content h4,
+.softball-landing .division-detail-content h4 {
+    font-size: 1.05rem;
+    margin: 18px 0 8px 0;
+    color: var(--color_blue);
+    font-weight: 600;
+}
+
+.baseball-landing .division-detail-content h4:first-child,
+.softball-landing .division-detail-content h4:first-child {
+    margin-top: 0;
+}
+
+.baseball-landing .division-detail-content p,
+.softball-landing .division-detail-content p {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0 0 10px 0;
+}
+
+.baseball-landing .division-detail-content ul,
+.softball-landing .division-detail-content ul {
+    font-size: 0.85rem;
+    margin: 6px 0 14px 18px;
+}
+
+.baseball-landing .division-detail-content li,
+.softball-landing .division-detail-content li {
+    margin: 3px 0;
+    line-height: 1.35;
+}
+
+/* Sticky card actions for both layers */
+.baseball-landing .division-card--overlay .card-actions,
+.softball-landing .division-card--overlay .card-actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    border-top: 1px solid var(--color_border_light);
+    z-index: 3;
+}
+
+/* Button styling */
+.baseball-landing .division-card--overlay .card-actions .button,
+.softball-landing .division-card--overlay .card-actions .button {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.baseball-landing .division-card--overlay .card-actions .button--primary,
+.softball-landing .division-card--overlay .card-actions .button--primary {
+    background: var(--color_blue);
+    color: white;
+    border: 1px solid var(--color_blue);
+}
+
+.baseball-landing .division-card--overlay .card-actions .button--primary:hover,
+.softball-landing .division-card--overlay .card-actions .button--primary:hover {
+    background: #1a2b5c;
+    border-color: #1a2b5c;
+}
+
+.baseball-landing .division-card--overlay .card-actions .button--ghost,
+.softball-landing .division-card--overlay .card-actions .button--ghost {
+    background: white;
+    color: var(--color_blue);
+    border: 1px solid var(--color_blue);
+}
+
+.baseball-landing .division-card--overlay .card-actions .button--ghost:hover,
+.softball-landing .division-card--overlay .card-actions .button--ghost:hover {
+    background: var(--color_blue);
+    color: white;
+}
+
+/* Responsive - single column on mobile */
+@media (max-width: 768px) {
+    .baseball-landing .program-grid,
+    .softball-landing .program-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile touch improvements for division cards */
+@media (hover: hover) and (pointer: fine) {
+    /* Only apply hover effects on devices with precise pointing (mouse/trackpad) */
+    .baseball-landing .division-card--overlay:hover .division-card__top-layer,
+    .softball-landing .division-card--overlay:hover .division-card__top-layer {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@media (hover: none), (pointer: coarse) {
+    /* Touch devices - use tap interaction instead */
+    .baseball-landing .division-card--overlay,
+    .softball-landing .division-card--overlay {
+        cursor: pointer;
+    }
+    
+    /* Add visual hint that cards are interactive */
+    .baseball-landing .division-card--overlay .division-card__top-layer::after,
+    .softball-landing .division-card--overlay .division-card__top-layer::after {
+        content: "Tap for details";
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.75rem;
+        color: var(--color_muted);
+        font-style: italic;
+    }
+    
+    /* Use :focus-within for touch activation */
+    .baseball-landing .division-card--overlay:focus-within .division-card__top-layer,
+    .softball-landing .division-card--overlay:focus-within .division-card__top-layer {
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    /* Add a close button for mobile */
+    .baseball-landing .division-card--overlay .division-card__bottom-layer::before,
+    .softball-landing .division-card--overlay .division-card__bottom-layer::before {
+        content: "× Back";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 4px 8px;
+        background: var(--color_surface_light);
+        border: 1px solid var(--color_border_light);
+        border-radius: 4px;
+        font-size: 0.8rem;
+        color: var(--color_blue);
+        cursor: pointer;
+        z-index: 10;
+    }
+}
+
+/* Alternative: Add explicit toggle button (more accessible) */
+.division-card__toggle {
+    position: absolute;
+    bottom: 75px;
+    right: 20px;
+    background: var(--color_blue);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 4;
+    display: none;
+}
+
+@media (hover: none), (pointer: coarse) {
+    .division-card__toggle {
+        display: block;
+    }
 }
