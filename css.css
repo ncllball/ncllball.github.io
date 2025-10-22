@@ -1130,21 +1130,6 @@ body:not(.cms-right) .only-on-right {
         opacity: 0;
         pointer-events: none;
     }
-    .baseball-landing .division-card--overlay .division-card__bottom-layer::before,
-    .softball-landing .division-card--overlay .division-card__bottom-layer::before {
-        content: "× Back";
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        padding: 4px 8px;
-        background: var(--color_surface_light);
-        border: 1px solid var(--color_border_light);
-        border-radius: 4px;
-        font-size: 0.8rem;
-        color: var(--color_blue);
-        cursor: pointer;
-        z-index: 10;
-    }
 }
 
 /* Division hero title */
@@ -1330,23 +1315,6 @@ body:not(.cms-right) .only-on-right {
     .softball-landing .division-card--overlay:focus-within .division-card__top-layer {
         opacity: 0;
         pointer-events: none;
-    }
-    
-    /* Add a close button for mobile */
-    .baseball-landing .division-card--overlay .division-card__bottom-layer::before,
-    .softball-landing .division-card--overlay .division-card__bottom-layer::before {
-        content: "× Back";
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        padding: 4px 8px;
-        background: var(--color_surface_light);
-        border: 1px solid var(--color_border_light);
-        border-radius: 4px;
-        font-size: 0.8rem;
-        color: var(--color_blue);
-        cursor: pointer;
-        z-index: 10;
     }
 }
 
