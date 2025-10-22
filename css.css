@@ -1139,4 +1139,11 @@ body:not(.cms-right) .only-on-right {
     z-index: 10; /* Highest z-index for close button */
 }
 
-/* ...existing code... */
+.baseball-landing .division-card__graphic,
+.softball-landing .division-card__graphic {
+    width: 68px;
+    height: auto;
+    margin: 8px auto 8px;
+    max-height: 68px;
+    object-fit: contain;
+}
