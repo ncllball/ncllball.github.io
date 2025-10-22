@@ -1703,3 +1703,122 @@ body:not(.cms-right) .only-on-right {
 }
 
 /* ====== END Timeline Page Styles (Timeline/timeline.html only) ====== */
+
+/* ====== BEGIN Registration/table Page-Specific Styles ====== */
+/*
+.division-bar, .division-title, .division-bar .actions, .aoverb_button
+    - Styles for the division header bar and action buttons (Baseball/Softball sections).
+.age-matrix, .age-matrix thead th, .age-matrix th:first-child, .age-matrix td, .age-matrix tbody tr:first-child td, .age-matrix th br
+    - Styles for the age matrix tables (baseball/softball division tables).
+.table_section .table_age
+    - Makes the table horizontally scrollable on small screens.
+table:not(.no-stripe) > tbody > tr:nth-child(even)
+    - Adds alternating row background for tables.
+details.footies, details.footies summary, details.footies summary::-webkit-details-marker, details.footies summary::before, details.footies[open] summary::before, .footies_red
+    - Styles for collapsible footnotes/notes sections under each table.
+.margin-top-0, .margin-top-30, .margin-bottom-20
+    - Utility classes for spacing adjustments.
+*/
+
+.division-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 4px 0;
+    position: relative;
+    margin: 0;
+}
+.division-title { display: flex; align-items: center; margin: 0; padding: 0; line-height: 1.2; font-weight: 600; color: var(--color_blue) !important; }
+.division-bar .actions { display: flex; align-items: center; gap: 0.5rem; }
+.aoverb_button {
+    background: var(--color_lightgray);
+    border: none;
+    border-radius: 4px;
+    color: var(--color_text);
+    cursor: pointer;
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: background .3s, color .3s, transform .2s, box-shadow .2s;
+    white-space: nowrap;
+    gap: 5px;
+    padding: 6px 6px 6px 6px;
+}
+
+/* Age matrix table */
+.age-matrix {
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 1.4;
+}
+.age-matrix thead th {
+    border-top: 1pt solid var(--color_red);
+    border-bottom: 1pt solid var(--color_red);
+    font-weight: 700;
+    font-size: 0.9rem !important;
+    text-align: center;
+    padding: 6px 10px 6px 10px;
+    white-space: nowrap;
+    font-family: var(--age-matrix-th-font);
+}
+.age-matrix th:first-child, .age-matrix td:first-child { text-align: left; }
+.age-matrix td {
+    color: var(--color_darkgray) !important;
+    font-size: 0.87rem !important;
+    font-family: var(--age-matrix-td-font);
+    line-height: 1.7rem;
+    padding: 2px 10px 2px 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+.age-matrix tbody tr:first-child td { padding-top: 0px; }
+.age-matrix th br { display: inline; }
+
+/* Responsive table scroll */
+.table_section .table_age { overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
+
+/* Table striping: even rows */
+table:not(.no-stripe) > tbody > tr:nth-child(even) { background: var(--table-row-alt); }
+
+/* Footnotes (collapsible) */
+details.footies { margin: 0.75rem 0 1rem; padding-top: 0.5rem; }
+details.footies summary {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: var(--color_blue);
+    user-select: none;
+    padding-bottom: 8px;
+    font-size: 0.85rem;
+}
+details.footies summary::-webkit-details-marker { display: none; }
+details.footies summary::before {
+    content: "+";
+    display: inline-grid;
+    place-items: center;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #fff;
+    background: var(--color_red);
+    border-radius: 2px;
+}
+details.footies[open] summary::before { content: "−"; }
+.footies_red { border-top: 1pt solid var(--color_red); }
+
+/* ====== END Registration/test.html Page-Specific Styles ====== */
+
+
+
+
+/* ====== BEGIN Additional Utility Styles ====== */
+/* Utility classes */
+.margin-top-0 { margin-top: 0px; }
+.margin-top-30 { margin-top: 30px; }
+.margin-bottom-20 { margin-bottom: 20px; }
