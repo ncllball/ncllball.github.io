@@ -1348,58 +1348,69 @@ body:not(.cms-right) .only-on-right {
 .table_component td {
     white-space: nowrap;
 }
+/* ====== BEGIN Timeline Page Styles (Timeline/timeline.html only) ====== */
+/* 
+.timeline-page .container-fluid
+    - Centers and constrains the main content container for the timeline page.
+.timeline-page .row
+    - Sets up a flexbox row for layout, with negative margins for grid alignment.
+.timeline-page .row>[class*="col-"]
+    - Ensures columns inside the row have correct box sizing and padding.
+.timeline-page .example-title
+    - Styles the main example title section (centered, with spacing and border).
+.timeline-page .example-title p
+    - Styles the paragraph inside the example title for max width and font size.
+@media (max-width: 767.98px)
+    - Adjusts row margins and column paddings for mobile screens.
+.timeline
+    - Base timeline container: removes list styles, sets width and line height.
+.timeline h1, ... h6
+    - Ensures timeline headings inherit line height.
+.timeline-item
+    - Each timeline event: indents and positions relative for marker.
+.timeline-item:last-child
+    - Removes bottom padding from last event.
+.timeline-info
+    - Styles the info/date section for each event (small, right-aligned).
+.timeline-marker
+    - Vertical line and dot marker for each event.
+.timeline-marker::before
+    - The colored dot at each event (with gradient and animation).
+.timeline-marker::after
+    - The vertical line connecting events.
+.timeline-item:last-child .timeline-marker::after
+    - Hides the line after the last event.
+.timeline-item:not(.period):hover .timeline-marker::before
+    - On hover, outlines the marker dot.
+.timeline-content p:last-child
+    - Removes bottom margin from last paragraph in event.
+.timeline-title
+    - Styles the event title (color, weight, spacing).
+.timeline-content p
+    - Styles event body text.
+.timeline-item.period
+    - Special styling for "period" (section break) events.
+.timeline-item.period .timeline-info
+    - Hides info for period events.
+.timeline-item.period .timeline-marker::before
+    - Custom marker for period events (no dot).
+.timeline-item.period .timeline-marker::after
+    - Shorter line for period events.
+.timeline-item.period .timeline-content
+    - Centered, padded content for period events.
+.timeline-item.period .timeline-title
+    - Special background and style for period event titles.
+@media (min-width: 768px)
+    - "Split" timeline: table layout for larger screens.
+@media (min-width: 992px)
+    - "Centered" timeline: alternate left/right layout for extra-large screens.
+.marker-outline .timeline-marker::before
+    - Variant: marker dot is outlined, not filled.
+.marker-outline .timeline-item:hover .timeline-marker::before
+    - On hover, fills the outlined marker.
+*/
+
 /* ======= Timeline Page Minimal CSS ======= */
-
-/* Design tokens */
-:root {
-    --color_red: #cd163f;
-    --color_blue: #00013a;
-    --color_tan: #e2ddca;
-    --color_richblue: #019cde;
-    --color_lightgray: gainsboro;
-    --color_white: #ffffff;
-    --color_black: #000000;
-    --color_timeline_line: #ccd5db;
-    --timeline_primary: #cd163f;
-    --timeline_primary_hover: #019cde;
-    --timeline_heading: #3d4351;
-    --timeline_body: #768390;
-    --stripe-gradient: linear-gradient(135deg, #ffffff 5%, var(--color_red) 5% 25%, #ffffff 25% 55%, var(--color_red) 55% 75%, #ffffff 75%);
-    --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    --font_sans: "proxima-nova", var(--font_ui);
-    --font_heading: var(--font_ui);
-}
-
-/* Typography and base layout for timeline page */
-body.timeline-page {
-    color: var(--timeline_body);
-    background: #fff;
-    font-family: var(--font_sans);
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-}
-
-body.timeline-page h1,
-body.timeline-page h2,
-body.timeline-page h3,
-body.timeline-page h4,
-body.timeline-page h5,
-body.timeline-page h6 {
-    color: var(--timeline_heading);
-    margin-top: 0;
-    font-family: var(--font_heading);
-}
-
-body.timeline-page a {
-    color: var(--timeline_primary);
-    text-decoration: underline;
-}
-
-body.timeline-page a:hover,
-body.timeline-page a:focus-visible {
-    color: var(--timeline_primary_hover);
-    text-decoration: none;
-}
 
 .timeline-page .container-fluid {
     margin: 0 auto;
@@ -1690,3 +1701,5 @@ body.timeline-page a:focus-visible {
 .marker-outline .timeline-item:hover .timeline-marker::before {
     background: var(--timeline_primary);
 }
+
+/* ====== END Timeline Page Styles (Timeline/timeline.html only) ====== */
