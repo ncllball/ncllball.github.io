@@ -1099,6 +1099,60 @@ body:not(.cms-right) .only-on-right {
     z-index: 1;
 }
 
+/* Hide bottom layer by default, show when card is focused (via button) */
+.division-card--overlay .division-card__bottom-layer {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.division-card--overlay:focus-within .division-card__bottom-layer {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 3;
+}
+
+.division-card--overlay .division-card__top-layer {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s ease;
+}
+
+.division-card--overlay:focus-within .division-card__top-layer {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Show Details and Back buttons */
+.division-card__toggle,
+.division-card__back {
+    display: inline-block;
+    margin: 16px auto 0 auto;
+    padding: 8px 18px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 24px;
+    background: var(--color_blue);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.division-card__toggle:focus,
+.division-card__back:focus {
+    outline: 2px solid var(--color_red);
+    outline-offset: 2px;
+}
+
+/* Position Back button at top right of bottom layer for mobile UX */
+.division-card__back {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+}
+
 /* Hover/focus effect: only on devices that support hover */
 @media (hover: hover) and (pointer: fine) {
     .baseball-landing .division-card--overlay:hover .division-card__top-layer,
