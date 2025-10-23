@@ -2057,10 +2057,6 @@ details.footies[open] summary::before {
 .venmo-wrap {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 2rem;
-  background-color: gainsboro;
 }
 
 .venmo-section {
