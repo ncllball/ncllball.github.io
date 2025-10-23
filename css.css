@@ -2122,47 +2122,49 @@ details.footies[open] summary::before {
 
 .sizing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
-  align-items: start;
   margin: 1.25rem 0;
-  padding: 0;
+  align-items: start;
 }
 
-/* Card visual */
 .sizing-card {
-  background: var(--color_white);
-  border: 1px solid var(--color_border_light);
-  border-radius: 8px;
+  background: var(--color_white, #fff);
+  border: 1px solid var(--color_border_light, #e6e6e6);
+  border-radius: 10px;
   padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-/* Keep h2 sizing inside card smaller to avoid overwhelming layout */
-.sizing-card > h2.left { font-size: 1.05rem; margin: 0; color: var(--color_blue); }
+.card-title { margin: 0; color: var(--color_blue, #00013a); font-size: 1.05rem; }
 
-/* Make tables full width of the card and preserve desktop table layout */
-.sizing-card .sizing-table { width: 100%; margin: 0; }
-.sizing-card .sizing-table th, .sizing-card .sizing-table td { padding: 8px; }
-
-/* Ensure caption sits above the table but visually lighter */
-.sizing-table caption { text-align: left; font-weight: 700; color: var(--color_blue); margin-bottom: 0.5rem; }
-
-/* horizontal table tweaks for Parents/uniforms.html */
+/* Table wrapper for horizontal overflow on small screens */
 .table_component { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
-.sizing-table.horizontal { min-width: 720px; width: auto; border-collapse: collapse; }
-.sizing-table.horizontal thead th { position: sticky; top: 0; background: var(--color_white); z-index: 2; }
-.sizing-table.horizontal th, .sizing-table.horizontal td { padding: 8px 12px; border: 1px solid var(--color_border_light); white-space: nowrap; text-align: center; }
-.sizing-table.horizontal td:first-child, .sizing-table.horizontal th:first-child { text-align: left; background: transparent; font-weight: 600; color: var(--color_blue); }
+/* Compact table inside cards */
+.sizing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+.sizing-table th, .sizing-table td {
+  padding: 8px 10px;
+  border: 1px solid var(--color_border_light, #e6e6e6);
+  text-align: left;
+}
+.sizing-table thead th { background: transparent; color: var(--color_blue, #00013a); font-weight: 700; }
 
-@media (max-width: 720px) {
-  /* allow horizontal table to scroll; keep cards stacked */
-  .sizing-table.horizontal { min-width: 640px; }
+/* Muted helper text */
+.sizing-card .muted { color: var(--color_muted, #666); font-size: 0.9rem; margin: 0; }
+
+/* Small screens: cards stack (grid becomes single column due to auto-fit) */
+@media (max-width: 520px) {
   .sizing-card { padding: 0.75rem; }
+  .card-title { font-size: 1rem; }
 }
 
 /* ====== END Vendor Uniform Sizing Grid ====== */
