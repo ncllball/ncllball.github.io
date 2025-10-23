@@ -52,19 +52,20 @@
 
 /* Easing + durations */
 :root {
-  --ease-std: cubic-bezier(.2,0,.2,1);
-  --ease-out: cubic-bezier(0,0,.2,1);
-  --trans-fast: 120ms;
-  --trans-med: 200ms;
-  --trans-slow: 320ms;
+    --ease-std: cubic-bezier(.2, 0, .2, 1);
+    --ease-out: cubic-bezier(0, 0, .2, 1);
+    --trans-fast: 120ms;
+    --trans-med: 200ms;
+    --trans-slow: 320ms;
 
-  /* Site-wide transition bundle */
-  --transition-base:
-    background var(--trans-med) var(--ease-std),
-    color var(--trans-med) var(--ease-std),
-    transform var(--trans-fast) var(--ease-out),
-    box-shadow var(--trans-fast) var(--ease-out);
+    /* Site-wide transition bundle */
+    --transition-base:
+        background var(--trans-med) var(--ease-std),
+        color var(--trans-med) var(--ease-std),
+        transform var(--trans-fast) var(--ease-out),
+        box-shadow var(--trans-fast) var(--ease-out);
 }
+
 a.ncll,
 .button,
 .gainsboro-button,
@@ -72,8 +73,9 @@ a.ncll,
 .aoverb_button,
 .pd-landing .quick-nav a,
 .sticky-register-cta {
-  transition: var(--transition-base);
+    transition: var(--transition-base);
 }
+
 /* start CMS overrides (SportsConnect embeds) */
 .skAddBanner,
 .skRightTabs,
@@ -151,11 +153,12 @@ h6 {
     color: var(--color_black);
     letter-spacing: normal;
 
-/* Inline emphasis utility */
+    /* Inline emphasis utility */
 
-.emphasis {
-    font-weight: 600;
-}
+    .emphasis {
+        font-weight: 600;
+    }
+
     font-family: var(--font_heading);
 }
 
@@ -493,9 +496,11 @@ a.ncll:focus-visible,
 .footies a:hover {
     text-decoration: underline;
 }
+
 .footies_note {
     text-decoration: underline;
 }
+
 /* Info icon for footnotes */
 
 .info-icon {
@@ -1101,6 +1106,7 @@ body:not(.cms-right) .only-on-right {
 
 /* Hover/focus effect: only on devices that support hover */
 @media (hover: hover) and (pointer: fine) {
+
     .baseball-landing .division-card--overlay:hover .division-card__top-layer,
     .softball-landing .division-card--overlay:hover .division-card__top-layer {
         opacity: 0;
@@ -1110,10 +1116,12 @@ body:not(.cms-right) .only-on-right {
 
 /* Touch devices: tap/focus-within to reveal details, add hint and close button */
 @media (hover: none), (pointer: coarse) {
+
     .baseball-landing .division-card--overlay,
     .softball-landing .division-card--overlay {
         cursor: pointer;
     }
+
     .baseball-landing .division-card--overlay .division-card__top-layer::after,
     .softball-landing .division-card--overlay .division-card__top-layer::after {
         content: "Tap for details";
@@ -1125,6 +1133,7 @@ body:not(.cms-right) .only-on-right {
         color: var(--color_muted);
         font-style: italic;
     }
+
     .baseball-landing .division-card--overlay:focus-within .division-card__top-layer,
     .softball-landing .division-card--overlay:focus-within .division-card__top-layer {
         opacity: 0;
@@ -1274,6 +1283,7 @@ body:not(.cms-right) .only-on-right {
 
 /* Responsive - single column on mobile */
 @media (max-width: 768px) {
+
     .baseball-landing .program-grid,
     .softball-landing .program-grid {
         grid-template-columns: 1fr;
@@ -1282,6 +1292,7 @@ body:not(.cms-right) .only-on-right {
 
 /* Mobile touch improvements for division cards */
 @media (hover: hover) and (pointer: fine) {
+
     /* Only apply hover effects on devices with precise pointing (mouse/trackpad) */
     .baseball-landing .division-card--overlay:hover .division-card__top-layer,
     .softball-landing .division-card--overlay:hover .division-card__top-layer {
@@ -1291,12 +1302,13 @@ body:not(.cms-right) .only-on-right {
 }
 
 @media (hover: none), (pointer: coarse) {
+
     /* Touch devices - use tap interaction instead */
     .baseball-landing .division-card--overlay,
     .softball-landing .division-card--overlay {
         cursor: pointer;
     }
-    
+
     /* Add visual hint that cards are interactive */
     .baseball-landing .division-card--overlay .division-card__top-layer::after,
     .softball-landing .division-card--overlay .division-card__top-layer::after {
@@ -1309,7 +1321,7 @@ body:not(.cms-right) .only-on-right {
         color: var(--color_muted);
         font-style: italic;
     }
-    
+
     /* Use :focus-within for touch activation */
     .baseball-landing .division-card--overlay:focus-within .division-card__top-layer,
     .softball-landing .division-card--overlay:focus-within .division-card__top-layer {
@@ -1348,6 +1360,7 @@ body:not(.cms-right) .only-on-right {
 .table_component td {
     white-space: nowrap;
 }
+
 /* ====== BEGIN Timeline Page Styles (Timeline/timeline.html only) ====== */
 /* 
 .timeline-page .container-fluid
@@ -1452,6 +1465,7 @@ body:not(.cms-right) .only-on-right {
         margin-left: -1rem;
         margin-right: -1rem;
     }
+
     .timeline-page .row>[class*="col-"] {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -1604,10 +1618,12 @@ body:not(.cms-right) .only-on-right {
         display: table;
         width: 100%;
     }
+
     .timeline-split .timeline-item {
         display: table-row;
         padding: 0;
     }
+
     .timeline-split .timeline-info,
     .timeline-split .timeline-marker,
     .timeline-split .timeline-content,
@@ -1615,15 +1631,19 @@ body:not(.cms-right) .only-on-right {
         display: table-cell;
         vertical-align: top;
     }
+
     .timeline-split .timeline-marker {
         position: relative;
     }
+
     .timeline-split .timeline-content {
         padding-left: 30px;
     }
+
     .timeline-split .timeline-info {
         padding-right: 30px;
     }
+
     .timeline-split .timeline-item.period .timeline-title {
         left: 0;
         transform: none;
@@ -1632,6 +1652,7 @@ body:not(.cms-right) .only-on-right {
 
 /* Centered timeline for extra-large screens */
 @media (min-width: 992px) {
+
     .timeline-centered,
     .timeline-centered .timeline-item,
     .timeline-centered .timeline-info,
@@ -1641,53 +1662,64 @@ body:not(.cms-right) .only-on-right {
         margin: 0;
         padding: 0;
     }
+
     .timeline-centered .timeline-item {
         padding-bottom: 40px;
         overflow: hidden;
     }
+
     .timeline-centered .timeline-marker {
         position: absolute;
         left: 50%;
         margin-left: -7.5px;
     }
+
     .timeline-centered .timeline-info,
     .timeline-centered .timeline-content {
         width: 50%;
     }
+
     .timeline-centered>.timeline-item:nth-child(odd) .timeline-info {
         float: left;
         text-align: right;
         padding-right: 30px;
     }
+
     .timeline-centered>.timeline-item:nth-child(odd) .timeline-content {
         float: right;
         text-align: left;
         padding-left: 30px;
     }
+
     .timeline-centered>.timeline-item:nth-child(even) .timeline-info {
         float: right;
         text-align: left;
         padding-left: 30px;
     }
+
     .timeline-centered>.timeline-item:nth-child(even) .timeline-content {
         float: left;
         text-align: right;
         padding-right: 30px;
     }
+
     .timeline-centered>.timeline-item.period .timeline-content {
         float: none;
         padding: 0;
         width: 100%;
         text-align: center;
     }
+
     .timeline-centered .timeline-item.period {
         padding: 50px 0 90px;
     }
+
     .timeline-centered .timeline-item.period .timeline-marker::after {
         height: 30px;
         bottom: 0;
         top: auto;
     }
+
     .timeline-centered .timeline-item.period .timeline-title {
         left: auto;
     }
@@ -1698,6 +1730,7 @@ body:not(.cms-right) .only-on-right {
     background: transparent;
     border-color: var(--timeline_primary);
 }
+
 .marker-outline .timeline-item:hover .timeline-marker::before {
     background: var(--timeline_primary);
 }
@@ -1729,8 +1762,23 @@ details.footies, details.footies summary, details.footies summary::-webkit-detai
     position: relative;
     margin: 0;
 }
-.division-title { display: flex; align-items: center; margin: 0; padding: 0; line-height: 1.2; font-weight: 600; color: var(--color_blue) !important; }
-.division-bar .actions { display: flex; align-items: center; gap: 0.5rem; }
+
+.division-title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--color_blue) !important;
+}
+
+.division-bar .actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .aoverb_button {
     background: var(--color_lightgray);
     border: none;
@@ -1754,6 +1802,7 @@ details.footies, details.footies summary, details.footies summary::-webkit-detai
     width: 100%;
     line-height: 1.4;
 }
+
 .age-matrix thead th {
     border-top: 1pt solid var(--color_red);
     border-bottom: 1pt solid var(--color_red);
@@ -1764,7 +1813,11 @@ details.footies, details.footies summary, details.footies summary::-webkit-detai
     white-space: nowrap;
     font-family: var(--age-matrix-th-font);
 }
-.age-matrix th:first-child, .age-matrix td:first-child { text-align: left; }
+
+.age-matrix th:first-child, .age-matrix td:first-child {
+    text-align: left;
+}
+
 .age-matrix td {
     color: var(--color_darkgray) !important;
     font-size: 0.87rem !important;
@@ -1774,17 +1827,33 @@ details.footies, details.footies summary, details.footies summary::-webkit-detai
     text-align: center;
     white-space: nowrap;
 }
-.age-matrix tbody tr:first-child td { padding-top: 0px; }
-.age-matrix th br { display: inline; }
+
+.age-matrix tbody tr:first-child td {
+    padding-top: 0px;
+}
+
+.age-matrix th br {
+    display: inline;
+}
 
 /* Responsive table scroll */
-.table_section .table_age { overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
+.table_section .table_age {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
 
 /* Table striping: even rows */
-table:not(.no-stripe) > tbody > tr:nth-child(even) { background: var(--table-row-alt); }
+table:not(.no-stripe)>tbody>tr:nth-child(even) {
+    background: var(--table-row-alt);
+}
 
 /* Footnotes (collapsible) */
-details.footies { margin: 0.75rem 0 1rem; padding-top: 0.5rem; }
+details.footies {
+    margin: 0.75rem 0 1rem;
+    padding-top: 0.5rem;
+}
+
 details.footies summary {
     cursor: pointer;
     display: inline-flex;
@@ -1796,7 +1865,11 @@ details.footies summary {
     padding-bottom: 8px;
     font-size: 0.85rem;
 }
-details.footies summary::-webkit-details-marker { display: none; }
+
+details.footies summary::-webkit-details-marker {
+    display: none;
+}
+
 details.footies summary::before {
     content: "+";
     display: inline-grid;
@@ -1809,8 +1882,14 @@ details.footies summary::before {
     background: var(--color_red);
     border-radius: 2px;
 }
-details.footies[open] summary::before { content: "−"; }
-.footies_red { border-top: 1pt solid var(--color_red); }
+
+details.footies[open] summary::before {
+    content: "−";
+}
+
+.footies_red {
+    border-top: 1pt solid var(--color_red);
+}
 
 /* ====== END Registration/test.html Page-Specific Styles ====== */
 
@@ -1819,13 +1898,34 @@ details.footies[open] summary::before { content: "−"; }
 
 /* ====== BEGIN Additional Utility Styles ====== */
 /* Utility classes */
-.margin-top-0 { margin-top: 0px; }
-.margin-top-30 { margin-top: 30px; }
-.margin-bottom-20 { margin-bottom: 20px; }
-.margin-top-10 { margin-top: 10px; }
-.margin-bottom-10 { margin-bottom: 10px; }
-.padding-10 { padding: 10px; }
-.text-center { text-align: center; }
+.margin-top-0 {
+    margin-top: 0px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
 /* End of utility styles section */
 
 
@@ -1834,75 +1934,107 @@ details.footies[open] summary::before { content: "−"; }
    "What Fees Cover" page. They were moved from the page's local <style>
    block to the global stylesheet for better maintainability and reuse. */
 
-/* Fee Distribution Pie Chart */
-/* Wrapper to center the chart */
 .cost-chart-wrapper {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    gap: 16px;
     align-items: center;
-    margin: 2rem 0;
+    grid-template-columns: auto 1fr;
 }
 
-/* Main chart container, sized by --pie-size variable */
 .cost-chart {
     position: relative;
+    --pie-size: clamp(200px, 40vw, 360px);
+}
+
+.cost-pie {
     width: var(--pie-size);
-    height: var(--pie-size);
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-/* Inner div that holds the conic-gradient background */
-.cost-chart>div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    aspect-ratio: 1;
     border-radius: 50%;
 }
 
-/* Chart Legend Styles */
-/* Container for the legend items */
-.cost-chart-legend {
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    font-size: 0.9rem;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+.cost-legend {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px 8px;
+    font-size: 0.875rem;
+    line-height: 1.3;
 }
 
-/* A single legend item (color swatch + label) */
-.legend-item {
+.cost-legend li {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 8px;
+    font-size: 0.875rem;
 }
 
-/* The colored square for a legend item */
-.legend-color {
-    width: 16px;
-    height: 16px;
-    border-radius: 3px;
-    flex-shrink: 0;
+.cost-legend .swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    display: inline-block;
 }
 
-/* Wrapper for the label and percentage */
-.legend-label {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+@media (max-width: 960px) {
+    .cost-chart-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .cost-legend {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
-/* The percentage value in the legend */
-.legend-percent {
+@media (max-width: 480px) {
+    .cost-legend {
+        font-size: 0.8rem;
+    }
+}
+
+.cost-cat {
     font-weight: 600;
-    white-space: nowrap;
-    padding-left: 1rem;
+    color: var(--color_blue);
 }
+
+.diamond::before {
+    content: "◆";
+    margin-right: 5px;
+    color: #000000;
+    font-size: 1em;
+}
+
+.diamond-red::before {
+    font-family: core-icons !important;
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    z-index: auto;
+    content: "\e903";
+    color: #cd163f;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    font-size: 22px;
+    line-height: 0;
+    left: calc(100% - 40px);
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease, -webkit-transform .2s ease;
+}
+
+.no-break {
+    white-space: nowrap;
+    display: inline-block;
+}
+
 /* ====== END Fee Coverage Page Styles ====== */
 
 
