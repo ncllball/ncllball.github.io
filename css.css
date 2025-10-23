@@ -2114,3 +2114,50 @@ details.footies[open] summary::before {
   color: var(--color_darkgray);
 }
 /* ====== END Venmo Donation Page Styles ====== */
+
+/* ====== BEGIN Vendor Uniform Sizing Grid (Parents/uniforms.html) ======
+   Purpose: present all vendor sizing tables horizontally as responsive cards
+   - .sizing-grid: grid container for horizontal layout
+   - .sizing-card: individual card with table
+   - tables remain accessible; mobile stacks automatically
+====================================================================== */
+
+.sizing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: start;
+  margin: 1.25rem 0;
+  padding: 0;
+}
+
+/* Card visual */
+.sizing-card {
+  background: var(--color_white);
+  border: 1px solid var(--color_border_light);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Keep h2 sizing inside card smaller to avoid overwhelming layout */
+.sizing-card > h2.left { font-size: 1.05rem; margin: 0; color: var(--color_blue); }
+
+/* Make tables full width of the card and preserve desktop table layout */
+.sizing-card .sizing-table { width: 100%; margin: 0; }
+.sizing-card .sizing-table th, .sizing-card .sizing-table td { padding: 8px; }
+
+/* Ensure caption sits above the table but visually lighter */
+.sizing-table caption { text-align: left; font-weight: 700; color: var(--color_blue); margin-bottom: 0.5rem; }
+
+/* For small viewports, grid will collapse to single column automatically.
+   Keep earlier mobile stacking for table cells (data-label) intact. */
+@media (max-width: 520px) {
+  .sizing-card { padding: 0.75rem; }
+  .sizing-card > h2.left { font-size: 1rem; margin-bottom: 0.25rem; }
+}
+
+/* ====== END Vendor Uniform Sizing Grid ====== */
