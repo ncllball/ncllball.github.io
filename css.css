@@ -1934,24 +1934,38 @@ details.footies[open] summary::before {
    "What Fees Cover" page. They were moved from the page's local <style>
    block to the global stylesheet for better maintainability and reuse. */
 
+/* Fee Distribution Pie Chart */
+/* Wrapper to center the chart and handle responsive layout */
 .cost-chart-wrapper {
-    display: grid;
-    gap: 16px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: auto 1fr;
+    margin: 2rem 0;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line on narrow screens */
+    gap: 2rem; /* Add space between the chart and the legend */
 }
 
+/* Main chart container, sized by --pie-size variable */
 .cost-chart {
     position: relative;
-    --pie-size: clamp(200px, 40vw, 360px);
-}
-
-.cost-pie {
     width: var(--pie-size);
-    aspect-ratio: 1;
+    height: var(--pie-size);
     border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0; /* Prevent the chart from shrinking and warping */
 }
 
+/* Inner div that holds the conic-gradient background */
+.cost-pie {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Legend styles */
 .cost-legend {
     margin: 0;
     padding: 0;
@@ -2036,7 +2050,5 @@ details.footies[open] summary::before {
 }
 
 /* ====== END Fee Coverage Page Styles ====== */
-
-
 
 /* End of global CSS file */
