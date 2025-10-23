@@ -1893,9 +1893,6 @@ details.footies[open] summary::before {
 
 /* ====== END Registration/test.html Page-Specific Styles ====== */
 
-
-
-
 /* ====== BEGIN Additional Utility Styles ====== */
 /* Utility classes */
 .margin-top-0 {
@@ -2052,3 +2049,72 @@ details.footies[open] summary::before {
 /* ====== END Fee Coverage Page Styles ====== */
 
 /* End of global CSS file */
+
+/* ====== BEGIN Venmo Donation Page Styles ====== */
+/* Styles for the Extra-Innings/venmo.html page, providing a clean,
+   centered, card-style layout for the donation call-to-action. */
+
+.venmo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: gainsboro;
+}
+
+.venmo-section {
+  background: var(--color_white);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.venmo-content .venmo-title {
+  color: var(--color_blue);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.venmo-content .venmo-intro {
+  font-size: 1rem;
+  color: var(--color_muted);
+  margin-bottom: 1.5rem;
+}
+
+.venmo-qr-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--color_border_light);
+  padding: 8px;
+  border-radius: 4px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.venmo-qr-link:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.venmo-qr {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.venmo-uses-text {
+  font-size: 0.9rem;
+  color: var(--color_text);
+  margin-bottom: 1.5rem;
+}
+
+.venmo-note {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color_darkgray);
+}
+/* ====== END Venmo Donation Page Styles ====== */
