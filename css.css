@@ -76,7 +76,12 @@ a.ncll,
     transition: var(--transition-base);
 }
 
-/* start CMS overrides (SportsConnect embeds) */
+/* =========================
+   BEGIN CMS OVERRIDES (SportsConnect embeds)
+   These rules hide or adjust elements injected by the SportsConnect CMS
+   to ensure visual consistency with the NCLL site. 
+   Only applies to embedded registration and CMS content.
+   ========================= 
 .skAddBanner,
 .skRightTabs,
 .skTabHeading,
@@ -96,6 +101,13 @@ a.ncll,
     padding: 0 0px 0 0;
 }
 
+.skSponsor h2 {
+    text-align: center !important;
+}
+ =========================
+   END CMS OVERRIDES (SportsConnect embeds)
+   ========================= */
+
 /* this is the header bar above the tabs (h1 to some of us)*/
 .dfContainer h2.head,
 .dfContainer h2.head .title {
@@ -107,8 +119,6 @@ a.ncll,
     font-variation-settings: "slnt"0, "wdth"50, "wght"600;
     text-transform: none;
 }
-
-/* end CMS overrides */
 
 /* start global clearfix */
 .clearfix:before,
@@ -200,9 +210,7 @@ h2.left::before {
     background-size: 3px 3px;
 }
 
-.skSponsor h2 {
-    text-align: center !important;
-}
+
 
 h3 {
     text-align: left;
