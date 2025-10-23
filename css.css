@@ -2048,8 +2048,6 @@ details.footies[open] summary::before {
 
 /* ====== END Fee Coverage Page Styles ====== */
 
-/* End of global CSS file */
-
 /* ====== BEGIN Venmo Donation Page Styles ====== */
 /* Styles for the Extra-Innings/venmo.html page, providing a clean,
    centered, card-style layout for the donation call-to-action. */
@@ -2153,11 +2151,18 @@ details.footies[open] summary::before {
 /* Ensure caption sits above the table but visually lighter */
 .sizing-table caption { text-align: left; font-weight: 700; color: var(--color_blue); margin-bottom: 0.5rem; }
 
-/* For small viewports, grid will collapse to single column automatically.
-   Keep earlier mobile stacking for table cells (data-label) intact. */
-@media (max-width: 520px) {
+/* horizontal table tweaks for Parents/uniforms.html */
+.table_component { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+.sizing-table.horizontal { min-width: 720px; width: auto; border-collapse: collapse; }
+.sizing-table.horizontal thead th { position: sticky; top: 0; background: var(--color_white); z-index: 2; }
+.sizing-table.horizontal th, .sizing-table.horizontal td { padding: 8px 12px; border: 1px solid var(--color_border_light); white-space: nowrap; text-align: center; }
+.sizing-table.horizontal td:first-child, .sizing-table.horizontal th:first-child { text-align: left; background: transparent; font-weight: 600; color: var(--color_blue); }
+
+@media (max-width: 720px) {
+  /* allow horizontal table to scroll; keep cards stacked */
+  .sizing-table.horizontal { min-width: 640px; }
   .sizing-card { padding: 0.75rem; }
-  .sizing-card > h2.left { font-size: 1rem; margin-bottom: 0.25rem; }
 }
 
 /* ====== END Vendor Uniform Sizing Grid ====== */
