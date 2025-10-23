@@ -1,224 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-    <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
-    <title>Uniform Sizing</title>
-
+  <meta charset="utf-8" />
+  <title>Uniform Sizing — NCLL</title>
+  <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
 </head>
-<div class="alert-header"><p>This page is currently under construction. Use at your own risk and check back soon for the finished product!</p></div>
-
 <body>
+  <div class="alert-header"><p>This page is currently under construction. Use at your own risk and check back soon for the finished product!</p></div>
+
   <main>
-    <div class="sizing-grid">
+    <section id="sizing-charts">
+      <h2 class="left">NCLL Uniform Sizing Charts</h2>
+      <p class="muted">Vendor codes: PC90H = Hoodies, 4408 = Softball jerseys, ST350 = Coaches shirts, remaining = Baseball jerseys</p>
 
-      <section class="sizing-card" id="softball-shirt-sizing">
-        <h3 class="left">Softball Jerseys — 4408 (who: A and above)</h3>
-        <div class="table_component">
-          <table class="sizing-table horizontal" aria-describedby="softball-note">
-            <caption>4408 — Softball jerseys</caption>
+      <div class="sizing-grid">
+        <article class="sizing-card" id="softball-4408">
+          <h3 class="card-title">Softball Jerseys — 4408 (A and above)</h3>
+          <table class="sizing-table" aria-describedby="softball-note">
+            <caption class="sr-only">4408 — Softball jerseys</caption>
             <thead>
-              <tr>
-                <th>Measurement</th>
-                <th>GS</th>
-                <th>GM</th>
-                <th>GL</th>
-                <th>WS</th>
-                <th>WM</th>
-                <th>WL</th>
-                <th>WXL</th>
-                <th>WXXL</th>
-              </tr>
+              <tr><th>Size</th><th>1/2 Chest (in)</th><th>Body Length (in)</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1/2 Chest (in)</td>
-                <td>13 1/2</td>
-                <td>15 1/2</td>
-                <td>17 1/2</td>
-                <td>19</td>
-                <td>20 1/2</td>
-                <td>22</td>
-                <td>23 1/2</td>
-                <td>25</td>
-              </tr>
-              <tr>
-                <td>Body Length (in)</td>
-                <td>20</td>
-                <td>22</td>
-                <td>24</td>
-                <td>26 1/2</td>
-                <td>27 1/2</td>
-                <td>28 1/2</td>
-                <td>29 1/2</td>
-                <td>30 3/4</td>
-              </tr>
+              <tr><td>GS</td><td>13 1/2</td><td>20</td></tr>
+              <tr><td>GM</td><td>15 1/2</td><td>22</td></tr>
+              <tr><td>GL</td><td>17 1/2</td><td>24</td></tr>
+              <tr><td>WS</td><td>19</td><td>26 1/2</td></tr>
+              <tr><td>WM</td><td>20 1/2</td><td>27 1/2</td></tr>
+              <tr><td>WL</td><td>22</td><td>28 1/2</td></tr>
+              <tr><td>WXL</td><td>23 1/2</td><td>29 1/2</td></tr>
+              <tr><td>WXXL</td><td>25</td><td>30 3/4</td></tr>
             </tbody>
           </table>
-        </div>
-        <p id="softball-note" class="muted">Vendor file: Parents/sizing (4408)</p>
-      </section>
+          <p id="softball-note" class="muted">Source: vendor spec 4408</p>
+        </article>
 
-      <section class="sizing-card" id="baseball-jersey-sizing">
-        <h3 class="left">Baseball Jerseys (youth → adult)</h3>
-        <div class="table_component">
-          <table class="sizing-table horizontal" aria-describedby="baseball-note">
-            <caption>Baseball jerseys</caption>
+        <article class="sizing-card" id="baseball">
+          <h3 class="card-title">Baseball Jerseys (T‑Ball → Seniors)</h3>
+          <table class="sizing-table" aria-describedby="baseball-note">
+            <caption class="sr-only">Baseball jerseys</caption>
+            <thead><tr><th>Size</th><th>1/2 Chest (in)</th><th>Body Length (in)</th></tr></thead>
+            <tbody>
+              <tr><td>YXS</td><td>14</td><td>20</td></tr>
+              <tr><td>YS</td><td>15 1/2</td><td>21 1/2</td></tr>
+              <tr><td>YM</td><td>17</td><td>23</td></tr>
+              <tr><td>YL</td><td>18 1/2</td><td>25 1/2</td></tr>
+              <tr><td>AS</td><td>20 1/2</td><td>28 3/4</td></tr>
+              <tr><td>AM</td><td>22 1/2</td><td>30</td></tr>
+              <tr><td>AL</td><td>24 1/2</td><td>31</td></tr>
+              <tr><td>AXL</td><td>26 1/2</td><td>31 3/4</td></tr>
+              <tr><td>AXXL</td><td>28 1/2</td><td>32 1/4</td></tr>
+            </tbody>
+          </table>
+          <p id="baseball-note" class="muted">Source: vendor baseball specs</p>
+        </article>
+
+        <article class="sizing-card" id="hoodies-pc90h">
+          <h3 class="card-title">Hoodies — PC90H</h3>
+          <table class="sizing-table" aria-describedby="hoodie-note">
+            <caption class="sr-only">PC90H Hoodies</caption>
             <thead>
-              <tr>
-                <th>Measurement</th>
-                <th>YXS</th>
-                <th>YS</th>
-                <th>YM</th>
-                <th>YL</th>
-                <th>AS</th>
-                <th>AM</th>
-                <th>AL</th>
-                <th>AXL</th>
-                <th>AXXL</th>
-              </tr>
+              <tr><th>Size</th><th>Chest (in)</th><th>Body Length (in)</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1/2 Chest (in)</td>
-                <td>14</td>
-                <td>15 1/2</td>
-                <td>17</td>
-                <td>18 1/2</td>
-                <td>20 1/2</td>
-                <td>22 1/2</td>
-                <td>24 1/2</td>
-                <td>26 1/2</td>
-                <td>28 1/2</td>
-              </tr>
-              <tr>
-                <td>Body Length (in)</td>
-                <td>20</td>
-                <td>21 1/2</td>
-                <td>23</td>
-                <td>25 1/2</td>
-                <td>28 3/4</td>
-                <td>30</td>
-                <td>31</td>
-                <td>31 3/4</td>
-                <td>32 1/4</td>
-              </tr>
+              <tr><td>AS</td><td>20</td><td>28</td></tr>
+              <tr><td>AM</td><td>22</td><td>29</td></tr>
+              <tr><td>AL</td><td>24</td><td>30</td></tr>
+              <tr><td>AXL</td><td>26</td><td>31</td></tr>
+              <tr><td>AXXL</td><td>28</td><td>32</td></tr>
+              <tr><td>AXXXL</td><td>30</td><td>33</td></tr>
+              <tr><td>AXXXXL</td><td>32</td><td>34</td></tr>
             </tbody>
           </table>
-        </div>
-        <p id="baseball-note" class="muted">Vendor file: Parents/sizing (baseball)</p>
-      </section>
+          <p id="hoodie-note" class="muted">Source: vendor PC90H</p>
+        </article>
 
-      <section class="sizing-card" id="hoodie-sizing">
-        <h3 class="left">Hoodies — PC90H</h3>
-        <div class="table_component">
-          <table class="sizing-table horizontal" aria-describedby="hoodie-note">
-            <caption>PC90H — Hoodies</caption>
-            <thead>
-              <tr>
-                <th>Measurement</th>
-                <th>AS</th>
-                <th>AM</th>
-                <th>AL</th>
-                <th>AXL</th>
-                <th>AXXL</th>
-                <th>AXXXL</th>
-                <th>AXXXXL</th>
-              </tr>
-            </thead>
+        <article class="sizing-card" id="coaches-st350">
+          <h3 class="card-title">Coaches' Shirts — ST350</h3>
+          <table class="sizing-table" aria-describedby="coaches-note">
+            <caption class="sr-only">ST350 Coaches' shirts</caption>
+            <thead><tr><th>Size</th><th>Chest (in)</th><th>Body Length at Back (in)</th></tr></thead>
             <tbody>
-              <tr>
-                <td>Chest (in)</td>
-                <td>20</td>
-                <td>22</td>
-                <td>24</td>
-                <td>26</td>
-                <td>28</td>
-                <td>30</td>
-                <td>32</td>
-              </tr>
-              <tr>
-                <td>Body Length (in)</td>
-                <td>28</td>
-                <td>29</td>
-                <td>30</td>
-                <td>31</td>
-                <td>32</td>
-                <td>33</td>
-                <td>34</td>
-              </tr>
+              <tr><td>AXS</td><td>18 1/2</td><td>27</td></tr>
+              <tr><td>AS</td><td>20</td><td>28</td></tr>
+              <tr><td>AM</td><td>21 1/2</td><td>29</td></tr>
+              <tr><td>AL</td><td>23</td><td>30</td></tr>
+              <tr><td>AXL</td><td>24 1/2</td><td>31</td></tr>
+              <tr><td>AXXL</td><td>26</td><td>32</td></tr>
+              <tr><td>AXXXL</td><td>28</td><td>32 1/2</td></tr>
+              <tr><td>AXXXXL</td><td>30</td><td>33</td></tr>
             </tbody>
           </table>
-        </div>
-        <p id="hoodie-note" class="muted">Vendor file: Parents/sizing (PC90H)</p>
-      </section>
+          <p id="coaches-note" class="muted">Source: vendor ST350</p>
+        </article>
 
-      <section class="sizing-card" id="coaches-shirts">
-        <h3 class="left">Coaches' Shirts — ST350</h3>
-        <div class="table_component">
-          <table class="sizing-table horizontal" aria-describedby="coaches-note">
-            <caption>ST350 — Coaches' shirts</caption>
-            <thead>
-              <tr>
-                <th>Measurement</th>
-                <th>AXS</th>
-                <th>AS</th>
-                <th>AM</th>
-                <th>AL</th>
-                <th>AXL</th>
-                <th>AXXL</th>
-                <th>AXXXL</th>
-                <th>AXXXXL</th>
-              </tr>
-            </thead>
+        <article class="sizing-card" id="hats">
+          <h3 class="card-title">Hats</h3>
+          <table class="sizing-table" aria-describedby="hats-note">
+            <caption class="sr-only">Hats</caption>
+            <thead><tr><th>Type</th><th>Fit</th><th>Notes</th></tr></thead>
             <tbody>
-              <tr>
-                <td>1/2 Chest (in)</td>
-                <td>18 1/2</td>
-                <td>20</td>
-                <td>21 1/2</td>
-                <td>23</td>
-                <td>24 1/2</td>
-                <td>26</td>
-                <td>28</td>
-                <td>30</td>
-              </tr>
-              <tr>
-                <td>Body Length at Back (in)</td>
-                <td>27</td>
-                <td>28</td>
-                <td>29</td>
-                <td>30</td>
-                <td>31</td>
-                <td>32</td>
-                <td>32 1/2</td>
-                <td>33</td>
-              </tr>
+              <tr><td>Adjustable</td><td>One size</td><td>Standard adjustable strap</td></tr>
+              <tr><td>Fitted (if provided)</td><td>—</td><td>See vendor spec</td></tr>
             </tbody>
           </table>
-        </div>
-        <p id="coaches-note" class="muted">Vendor file: Parents/sizing (ST350)</p>
-      </section>
-
-      <section class="sizing-card" id="hat-sizing">
-        <h3 class="left">Hats</h3>
-        <div class="table_component">
-          <table class="sizing-table horizontal" aria-describedby="hats-note">
-            <caption>Hats — fit information</caption>
-            <thead>
-              <tr><th>Type</th><th>Adjustable</th><th>Fitted (if provided)</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Measurement / Fit</td><td>One size</td><td>See vendor spec</td></tr>
-              <tr><td>Notes</td><td>Standard adjustable strap</td><td>Provide fitted sizes if available</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p id="hats-note" class="muted">Vendor files: Parents/sizing</p>
-      </section>
-
-    </div>
+          <p id="hats-note" class="muted">Source: vendor hat specs</p>
+        </article>
+      </div>
+    </section>
   </main>
 </body>
+</html>
 
 
 
