@@ -156,7 +156,7 @@ Recommended future enforcement: a linter should flag missing Age Group unless:
 | RHS Batting | list | pipe-separated discrete times | amount/unit | grade span (text only) | sport+levels+scope | org name |
 | LHS Camp | single date | start/end + duration | amount/unit | ages span (text only) | multi-level span | org + affiliation |
 | In-Season SB Pitching | list | two sessions (session1/2) | free | (omitted) | sport+levels+scope | coach + affiliations |
-| Free February | list | sessions-per-date + duration | free | league age range | sport+levels+scope | org + staffing |
+| Winterball25 Free February | list | sessions-per-date + duration | free | league age range | sport+levels+scope | org + staffing |
 
 Gaps / Enhancements:
 
