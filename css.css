@@ -135,6 +135,8 @@ a.ncll,
 
 /* end global clearfix */
 
+/* Compact uniforms/table tweaks moved to the end of this file */
+
 /* start global typography */
 p,
 ul,
@@ -2178,3 +2180,48 @@ details.footies[open] summary::before {
 }
 
 /* ====== END Vendor Uniform Sizing Grid ====== */
+
+/* ================= Compact uniforms/table tweaks BEGIN ================= */
+.sizing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+.sizing-card {
+    padding: 10px 8px;
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+.sizing-table {
+    font-size: 0.95rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+.sizing-table th,
+.sizing-table td {
+    padding: 6px 8px;
+    vertical-align: middle;
+}
+.sizing-table thead th {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: none;
+}
+.sizing-table caption {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+}
+.sizing-table td:first-child,
+.sizing-table th:first-child {
+    width: 1px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+    .sizing-table { font-size: 0.9rem; }
+    .sizing-grid { gap: 8px; }
+    .sizing-card { padding: 8px 6px; }
+}
+
+/* ================= Compact uniforms/table tweaks END ================= */
