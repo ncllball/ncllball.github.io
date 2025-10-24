@@ -8,26 +8,30 @@
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
 </head>
 <body>
+    <!-- Main content container with baseball landing page classes -->
     <main id="content" role="main" class="pd-landing baseball-landing">
-        
-        <!-- Intro section -->
+
+        <!-- Introduction section explaining how to choose divisions -->
         <section class="intro-section">
             <h2 class="left">Find the right division for your player</h2>
             <p>North Central Little League offers baseball divisions for players ages 5-16, from first-time players learning the basics to competitive teams preparing for high school ball. Each division is designed to match players' developmental stages with appropriate skill challenges and game formats.</p>
-            
+
             <p><strong>How to choose:</strong> Divisions are primarily based on your child's league age (their age on August 31<sup>st</sup>). Hover over any division card below to see full details about practice schedules, field locations, and what makes each division unique. If you're unsure which division is right, contact our registrar for guidance.</p>
-            
+
             <p>Registration for all divisions opens in early January. Assessments for AAA and Majors divisions typically occur in late February.</p>
-            
+
             <p><strong>Note for coaches:</strong> If you need more detailed information than what's provided here — such as specific rules, draft procedures, or coaching resources — you're probably a coach! Head over to our <a href="../Coaching/index.html" class="ncll">Coaching section</a> for comprehensive guides, training materials, and division-specific coaching information.</p>
         </section>
+
+        <!-- Main heading for the baseball divisions section -->
         <h2 class="left">Baseball Divisions</h2>
 
-        <!-- ALL cards in single grid container -->
+        <!-- Grid container holding all division cards in a responsive layout -->
         <div class="program-grid">
-            
-            <!-- Tee Ball Card -->
+
+            <!-- Tee Ball Division Card - Entry level for ages 5-6 -->
             <article class="program-card division-card division-card--overlay" aria-labelledby="tee-ball-h2">
+                <!-- Top layer: visible by default, shows summary info -->
                 <div class="division-card__top-layer">
                     <h3 class="division-hero__title" id="tee-ball-h2">Tee Ball</h3>
                     <p class="division-blurb">Start here for first swings and throws in a fun, confidence-building setup focused on movement and smiles.</p>
@@ -39,6 +43,7 @@
                         <li><strong>Fields:</strong> Upper Ross Park</li>
                     </ul>
                 </div>
+                <!-- Bottom layer: revealed on hover/tap, contains detailed information -->
                 <div class="division-card__bottom-layer">
                     <div class="division-detail-content">
                         <h4>Full Tee Ball details</h4>
@@ -67,13 +72,14 @@
                         </ul>
                     </div>
                 </div>
+                <!-- Action buttons: registration and coaching links -->
                 <div class="card-actions" aria-label="Tee Ball quick links">
                     <a class="button button--primary" href="../Registration/mainreg.html">Register</a>
                     <a class="button button--ghost" href="../Coaching/index.html#coach-trainings">Coaching info</a>
                 </div>
             </article>
 
-            <!-- Kindy Coach Pitch Card -->
+            <!-- Kindy Coach Pitch Division Card - Bridge between Tee Ball and player pitch for age 6 -->
             <article class="program-card division-card division-card--overlay" aria-labelledby="kindy-coach-pitch-h2">
                 <div class="division-card__top-layer">
                     <h3 class="division-hero__title" id="kindy-coach-pitch-h2">Kindy Coach Pitch</h3>
@@ -120,7 +126,7 @@
                 </div>
             </article>
 
-            <!-- A Division Card -->
+            <!-- A Division Card - Coach pitch with hardball for ages 7-8 -->
             <article class="program-card division-card division-card--overlay" aria-labelledby="a-division-h2">
                 <div class="division-card__top-layer">
                     <h3 class="division-hero__title" id="a-division-h2">A - Coach Pitch</h3>
@@ -167,7 +173,7 @@
                 </div>
             </article>
 
-            <!-- AA Division Card -->
+            <!-- AA Division Card - Mixed coach/player pitch for ages 8-9 -->
             <article class="program-card division-card division-card--overlay" aria-labelledby="aa-division-h2">
                 <div class="division-card__top-layer">
                     <h3 class="division-hero__title" id="aa-division-h2">AA - Coach/Player Pitch</h3>
@@ -219,7 +225,7 @@
                 </div>
             </article>
 
-            <!-- AAA Division Card -->
+            <!-- AAA Division Card - Player pitch with assessments for ages 10-11 -->
             <article class="program-card division-card division-card--overlay" aria-labelledby="aaa-division-h2">
                 <div class="division-card__top-layer">
                     <h3 class="division-hero__title" id="aaa-division-h2">AAA</h3>
@@ -232,7 +238,7 @@
                         <li><strong>Fields:</strong> BF Day or Lower Woodland</li>
                     </ul>
                 </div>
-                <div class="division-card__borelattom-layer">
+                <div class="division-card__bottom-layer">
                     <div class="division-detail-content">
                         <h4>Full AAA Division details</h4>
                         <p>The AAA Division primarily consists of 10 and 11-year-olds (league age) and serves as the next step for players graduating from AA baseball.</p>
@@ -270,7 +276,7 @@
                 </div>
             </article>
 
-            <!-- Majors Division Card -->
+            <!-- Majors Division Card - Competitive player pitch for ages 11-12 -->
             <article class="program-card division-card division-card--overlay" aria-labelledby="majors-division-h2">
                 <div class="division-card__top-layer">
                     <h3 class="division-hero__title" id="majors-division-h2">Majors</h3>
@@ -326,7 +332,7 @@
                 </div>
             </article>
 
-            <!-- Juniors Division Card -->
+            <!-- Juniors Division Card - Full-size field district play for ages 13-14 -->
             <article class="program-card division-card division-card--overlay" aria-labelledby="juniors-division-h2">
                 <div class="division-card__top-layer">
                     <h3 class="division-hero__title" id="juniors-division-h2">Junior Division</h3>
@@ -374,7 +380,7 @@
                 </div>
             </article>
 
-            <!-- Seniors Division Card -->
+            <!-- Seniors Division Card - High school transition for ages 15-16 -->
             <article class="program-card division-card division-card--overlay" aria-labelledby="seniors-division-h2">
                 <div class="division-card__top-layer">
                     <h3 class="division-hero__title" id="seniors-division-h2">Senior Division</h3>
@@ -428,7 +434,7 @@
             </article>
 
         </div><!-- End single program-grid -->
-        
+
     </main>
 </body>
 </html>
