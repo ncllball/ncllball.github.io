@@ -48,6 +48,7 @@
     --font_heading: var(--font_ui);
     /* tag font */
     --font_tag: var(--font_ui), "proxima-nova";
+    --age-matrix-td-font: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Easing + durations */
@@ -1840,7 +1841,7 @@ details.footies, details.footies summary, details.footies summary::-webkit-detai
 }
 
 .age-matrix tbody tr:first-child td {
-    padding-top: 0px;
+    padding-top: 12px;
 }
 
 .age-matrix th br {
