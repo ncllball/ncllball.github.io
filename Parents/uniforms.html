@@ -5,6 +5,15 @@
   <title>Uniform Sizing — NCLL</title>
   <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
   <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
+  <style>
+    /* Align first column (Size/Type) to the right for all sizing tables */
+    .sizing-table th:first-child,
+    .sizing-table td:first-child {
+      text-align: right;
+      padding-right: 12px;
+      white-space: nowrap;
+    }
+  </style>
 </head>
 <body>
   <div class="alert-header"><p>This page is currently under construction. Use at your own risk and check back soon for the finished product!</p></div>
@@ -12,7 +21,8 @@
   <main>
     <section id="sizing-charts">
       <h2 class="left">NCLL Uniform Sizing Charts</h2>
-      <p class="muted">Vendor codes: PC90H = Hoodies, 4408 = Softball jerseys, ST350 = Coaches shirts, remaining = Baseball jerseys</p>
+  <p class="muted">Vendor codes: PC90H = Hoodies, 4408 = Softball jerseys, ST350 = Coaches shirts, remaining = Baseball jerseys</p>
+  <p class="muted"><span class="info-icon" aria-hidden="true">i</span> Chest measurements are measured pit-to-pit across the garment.</p>
 
       <div class="sizing-grid">
         <article class="sizing-card" id="softball-4408">
@@ -23,14 +33,14 @@
               <tr><th>Size</th><th>Chest (in)</th><th>Body Length (in)</th></tr>
             </thead>
             <tbody>
-              <tr><td>GS</td><td>13 1/2</td><td>20</td></tr>
-              <tr><td>GM</td><td>15 1/2</td><td>22</td></tr>
-              <tr><td>GL</td><td>17 1/2</td><td>24</td></tr>
-              <tr><td>WS</td><td>19</td><td>26 1/2</td></tr>
-              <tr><td>WM</td><td>20 1/2</td><td>27 1/2</td></tr>
-              <tr><td>WL</td><td>22</td><td>28 1/2</td></tr>
-              <tr><td>WXL</td><td>23 1/2</td><td>29 1/2</td></tr>
-              <tr><td>WXXL</td><td>25</td><td>30 3/4</td></tr>
+              <tr><td>GS</td><td>13.5</td><td>20</td></tr>
+              <tr><td>GM</td><td>15.5</td><td>22</td></tr>
+              <tr><td>GL</td><td>17.5</td><td>24</td></tr>
+              <tr><td>WS</td><td>19</td><td>26.5</td></tr>
+              <tr><td>WM</td><td>20.5</td><td>27.5</td></tr>
+              <tr><td>WL</td><td>22</td><td>28.5</td></tr>
+              <tr><td>WXL</td><td>23.5</td><td>29.5</td></tr>
+              <tr><td>WXXL</td><td>25</td><td>30.75</td></tr>
             </tbody>
           </table>
           <p id="softball-note" class="muted">Source: vendor spec 4408</p>
@@ -40,17 +50,17 @@
           <h3 class="card-title">Baseball Jerseys (T‑Ball → Seniors)</h3>
           <table class="sizing-table" aria-describedby="baseball-note">
             <caption class="sr-only">Baseball jerseys</caption>
-            <thead><tr><th>Size</th><th>1/2 Chest (in)</th><th>Body Length (in)</th></tr></thead>
+            <thead><tr><th>Size</th><th>Chest (in)</th><th>Body Length (in)</th></tr></thead>
             <tbody>
               <tr><td>YXS</td><td>14</td><td>20</td></tr>
-              <tr><td>YS</td><td>15 1/2</td><td>21 1/2</td></tr>
+              <tr><td>YS</td><td>15.5</td><td>21.5</td></tr>
               <tr><td>YM</td><td>17</td><td>23</td></tr>
-              <tr><td>YL</td><td>18 1/2</td><td>25 1/2</td></tr>
-              <tr><td>AS</td><td>20 1/2</td><td>28 3/4</td></tr>
-              <tr><td>AM</td><td>22 1/2</td><td>30</td></tr>
-              <tr><td>AL</td><td>24 1/2</td><td>31</td></tr>
-              <tr><td>AXL</td><td>26 1/2</td><td>31 3/4</td></tr>
-              <tr><td>AXXL</td><td>28 1/2</td><td>32 1/4</td></tr>
+              <tr><td>YL</td><td>18.5</td><td>25.5</td></tr>
+              <tr><td>AS</td><td>20.5</td><td>28.75</td></tr>
+              <tr><td>AM</td><td>22.5</td><td>30</td></tr>
+              <tr><td>AL</td><td>24.5</td><td>31</td></tr>
+              <tr><td>AXL</td><td>26.5</td><td>31.75</td></tr>
+              <tr><td>AXXL</td><td>28.5</td><td>32.25</td></tr>
             </tbody>
           </table>
           <p id="baseball-note" class="muted">Source: vendor baseball specs</p>
@@ -82,13 +92,13 @@
             <caption class="sr-only">ST350 Coaches' shirts</caption>
             <thead><tr><th>Size</th><th>Chest (in)</th><th>Body Length at Back (in)</th></tr></thead>
             <tbody>
-              <tr><td>AXS</td><td>18 1/2</td><td>27</td></tr>
+              <tr><td>AXS</td><td>18.5</td><td>27</td></tr>
               <tr><td>AS</td><td>20</td><td>28</td></tr>
-              <tr><td>AM</td><td>21 1/2</td><td>29</td></tr>
+              <tr><td>AM</td><td>21.5</td><td>29</td></tr>
               <tr><td>AL</td><td>23</td><td>30</td></tr>
-              <tr><td>AXL</td><td>24 1/2</td><td>31</td></tr>
+              <tr><td>AXL</td><td>24.5</td><td>31</td></tr>
               <tr><td>AXXL</td><td>26</td><td>32</td></tr>
-              <tr><td>AXXXL</td><td>28</td><td>32 1/2</td></tr>
+              <tr><td>AXXXL</td><td>28</td><td>32.5</td></tr>
               <tr><td>AXXXXL</td><td>30</td><td>33</td></tr>
             </tbody>
           </table>
