@@ -525,6 +525,7 @@ a.ncll:focus-visible,
     display: inline-block;
     margin-right: 0.25em;
     color: var(--color_red);
+    vertical-align: top;
 }
 
 .info-icon--framed {
