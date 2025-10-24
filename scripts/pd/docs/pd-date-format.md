@@ -89,7 +89,7 @@ Automation helpers:
 - `Nov 9 - Feb 22, 2025` (Teen Training span)
 - `Feb 22, Mar 1 & 8, 2025` (AA Pitching discrete set spanning two months)
 - `Mar 23; Apr 6, 13, 27; May 4, 11, 2025` (clustered multi-month list)
-- `Feb 1, 8 & 22, 2025 (6 sessions)` (Free February with session count)
+- `Feb 1, 8 & 22, 2025 (6 sessions)` (Winterball25 Free February with session count)
 
 ## Future Automation Hooks (Optional)
 

@@ -1209,7 +1209,7 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-detail-content h4,
 .softball-landing .division-detail-content h4 {
     font-size: 1.05rem;
-    margin: 18px 0 8px 0;
+    margin: 0px 0 4px 0;
     color: var(--color_blue);
     font-weight: 600;
 }
