@@ -1826,6 +1826,7 @@ details.footies, details.footies summary, details.footies summary::-webkit-detai
 
 .age-matrix th:first-child, .age-matrix td:first-child {
     text-align: center;
+    width: fit-content;
 }
 
 .age-matrix td {
