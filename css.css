@@ -24,6 +24,8 @@
     /* surfaces used by PD landing */
     --color_surface_light: #fafafa;
     --color_surface_lighter: #fdfdfd;
+    /* table striping */
+    --table-row-alt: #f9f9f9;
     /* utility colors used by PD landing badges */
     --color_green: #2ecc40;
     --color_gray_aaaa: #aaaaaa;
