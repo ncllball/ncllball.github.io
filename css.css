@@ -1835,7 +1835,7 @@ details.footies, details.footies summary, details.footies summary::-webkit-detai
 
 .age-matrix td {
     color: var(--color_darkgray) !important;
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important;
     font-family: var(--age-matrix-td-font);
     line-height: 1.35rem;
     padding: 2px 10px 2px 10px;
