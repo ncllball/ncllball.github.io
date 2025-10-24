@@ -81,7 +81,8 @@ a.ncll,
    These rules hide or adjust elements injected by the SportsConnect CMS
    to ensure visual consistency with the NCLL site. 
    Only applies to embedded registration and CMS content.
-   ========================= 
+   ========================= */
+
 .skAddBanner,
 .skRightTabs,
 .skTabHeading,
@@ -104,7 +105,8 @@ a.ncll,
 .skSponsor h2 {
     text-align: center !important;
 }
- =========================
+
+/* =========================
    END CMS OVERRIDES (SportsConnect embeds)
    ========================= */
 
