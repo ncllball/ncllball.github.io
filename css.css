@@ -1832,11 +1832,11 @@ details.footies, details.footies summary, details.footies summary::-webkit-detai
 
 .age-matrix td {
     color: var(--color_darkgray) !important;
-    font-size: 0.87rem !important;
+    font-size: 0.8rem !important;
     font-family: var(--age-matrix-td-font);
-    line-height: 1.7rem;
+    line-height: 1.35rem;
     padding: 2px 10px 2px 10px;
-    text-align: center;
+    text-align: left;
     white-space: nowrap;
 }
 
