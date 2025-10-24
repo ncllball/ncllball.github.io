@@ -1080,7 +1080,7 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-card--overlay,
 .softball-landing .division-card--overlay {
     position: relative;
-    min-height: 650px;
+    min-height: 500px;
     border: 1px solid var(--color_border_light);
     border-radius: 6px;
     background: white;
@@ -1101,7 +1101,7 @@ body:not(.cms-right) .only-on-right {
     text-align: center;
     transition: opacity 0.3s ease;
     z-index: 2;
-    min-height: 650px;
+    min-height: 500px;
 }
 
 /* Bottom layer: always there, revealed on hover/focus */
