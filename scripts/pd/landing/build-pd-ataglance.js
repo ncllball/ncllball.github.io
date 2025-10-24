@@ -48,7 +48,7 @@ const curatedName = {
   '2025 Winter Teen BB Training': 'Teen Baseball Training (Sessions I & II)',
   '2025 Winter AAA+MAJ SB Training': 'AAA + Majors Softball Training',
   '2025 RHS Fastpitch Winter Batting Clinic': 'RHS Fastpitch Batting Clinic',
-  '2025 Free February': 'Free February (Outdoor)',
+  '2025 Free February': 'Winterball25 Free February (Outdoor)',
   '2025 In-Season Double-AA (and up) SB Pitching': 'In-Season Softball Pitching',
   '2025 LHS Winter Training': 'Lincoln HS Skills Camp'
 };
