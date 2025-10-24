@@ -1194,7 +1194,7 @@ body:not(.cms-right) .only-on-right {
     line-height: 1.35;
     list-style: none;
     color: var(--color_muted);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .baseball-landing .division-meta li strong,
@@ -1221,12 +1221,11 @@ body:not(.cms-right) .only-on-right {
 .softball-landing .division-detail-content p {
     font-size: 0.9rem;
     line-height: 1.45;
-    margin: 0 0 10px 0;
 }
 
 .baseball-landing .division-detail-content ul,
 .softball-landing .division-detail-content ul {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     margin: 6px 0 14px 18px;
 }
 
