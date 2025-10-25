@@ -1248,8 +1248,7 @@ body:not(.cms-right) .only-on-right {
 
 /* Sticky card actions for both layers */
 .baseball-landing .division-card--overlay .card-actions,
-.softball-landing .division-card--overlay .card-actions,
-.pd-landing .division-card--overlay .card-actions {
+.softball-landing .division-card--overlay .card-actions {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1263,6 +1262,15 @@ body:not(.cms-right) .only-on-right {
     padding: 0 20px;
     border-top: 1px solid var(--color_border_light);
     z-index: 3;
+}
+
+/* PD card-actions use flexbox positioning */
+.pd-landing .division-card--overlay .card-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0 0;
 }
 
 /* Button styling */
@@ -1305,14 +1313,6 @@ body:not(.cms-right) .only-on-right {
 .pd-landing .division-card--overlay .card-actions .button--ghost:hover {
     background: var(--color_blue);
     color: white;
-}
-
-.pd-landing .division-card--overlay .card-actions {
-    position: static;
-    height: auto;
-    padding: 20px 0 0;
-    border-top: none;
-    z-index: auto;
 }
 
 /* Responsive - single column on mobile */
@@ -2289,15 +2289,8 @@ details.footies[open] summary::before {
     margin: 0 0 10px 0;
 }
 
-/* PD card-actions now properly override general rules */
-.pd-landing .division-card--overlay .card-actions {
-    position: static;  /* Changed from absolute */
-    height: auto;      /* Changed from 60px */
-    padding: 20px 0 0; /* Top padding for flexbox spacing */
-    border-top: none;  /* No border in flexbox layout */
-}
-
 /* PD bottom layer now allows scrolling */
-.pd-landing .division-card--overlay .division-card__bottom-layer {
-    overflow-y: auto;  /* Changed from visible */
+.pd-landing .division-card--overlay .division-detail-content {
+    overflow-y: auto;
+    max-height: 300px; /* Limit height to ensure scrolling when needed */
 }
