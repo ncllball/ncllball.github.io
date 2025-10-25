@@ -17,6 +17,7 @@
 	},
 	"dependencies": {
 		"csv-parse": "^5.5.0",
-		"csv-stringify": "^6.4.0"
+		"csv-stringify": "^6.4.0",
+		"puppeteer": "^24.26.1"
 	}
 }
