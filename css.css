@@ -1033,7 +1033,13 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-card--overlay,
 .softball-landing .division-card--overlay,
 .pd-landing .division-card--overlay {
-    height: 700px; /* Taller cards for PD to show more content */
+    position: relative;
+    height: 500px;
+    border: 1px solid var(--color_border_light);
+    border-radius: 6px;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 /* Top layer: visible by default, fades on hover/focus */
@@ -1242,7 +1248,8 @@ body:not(.cms-right) .only-on-right {
 
 /* Sticky card actions for both layers */
 .baseball-landing .division-card--overlay .card-actions,
-.softball-landing .division-card--overlay .card-actions {
+.softball-landing .division-card--overlay .card-actions,
+.pd-landing .division-card--overlay .card-actions {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1256,15 +1263,6 @@ body:not(.cms-right) .only-on-right {
     padding: 0 20px;
     border-top: 1px solid var(--color_border_light);
     z-index: 3;
-}
-
-/* PD card-actions use flexbox positioning */
-.pd-landing .division-card--overlay .card-actions {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px 0 0;
 }
 
 /* Button styling */
@@ -1307,6 +1305,19 @@ body:not(.cms-right) .only-on-right {
 .pd-landing .division-card--overlay .card-actions .button--ghost:hover {
     background: var(--color_blue);
     color: white;
+}
+
+.pd-landing .division-card--overlay .card-actions {
+    position: static;
+    height: auto;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0 0;
+    border-top: none;
+    z-index: auto;
 }
 
 /* Responsive - single column on mobile */
@@ -2281,16 +2292,4 @@ details.footies[open] summary::before {
     color: var(--color_blue);
     text-align: left;
     margin: 0 0 10px 0;
-}
-
-/* PD cards with proper scrollbar for overflow content */
-.pd-landing .division-card--overlay {
-    height: 600px; /* Taller cards */
-    position: relative;
-}
-
-/* Content scrolls when it exceeds available space */
-.pd-landing .division-card--overlay .division-detail-content {
-    max-height: 350px;
-    overflow-y: auto; /* Show scrollbar when needed */
 }
