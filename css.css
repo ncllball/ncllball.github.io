@@ -1263,6 +1263,47 @@ body:not(.cms-right) .only-on-right {
     z-index: 3;
 }
 
+/* Visual top-layer for existing PD markup (no HTML changes required) */
+.pd-landing .division-card--overlay {
+    padding-top: 20px; /* space for the visual top area */
+}
+
+.pd-landing .division-card--overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 220px; /* visual height of the "top layer" */
+    background: var(--color_surface_light);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.pd-landing .division-card--overlay > h3,
+.pd-landing .division-card--overlay > p,
+.pd-landing .division-card--overlay > ul {
+    position: relative;
+    z-index: 2; /* sit above the pseudo-background */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pd-landing .division-card--overlay > h3 {
+    margin-top: 6px;
+}
+
+.pd-landing .division-card--overlay > ul {
+    max-width: 92%;
+}
+
+.pd-landing .division-card--overlay > .division-detail-content {
+    margin-top: 8px; /* ensure details sit below the visual top area */
+    position: relative;
+    z-index: 1;
+}
+
+
 /* Button styling */
 .baseball-landing .division-card--overlay .card-actions .button,
 .softball-landing .division-card--overlay .card-actions .button,
