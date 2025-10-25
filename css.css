@@ -1034,19 +1034,12 @@ body:not(.cms-right) .only-on-right {
 .softball-landing .division-card--overlay,
 .pd-landing .division-card--overlay {
     position: relative;
-    min-height: 500px;
+    height: 500px;
     border: 1px solid var(--color_border_light);
     border-radius: 6px;
     background: white;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
-}
-
-.pd-landing .division-card--overlay {
-    padding: 24px 20px 70px;
-    display: flex;
-    flex-direction: column;
-    min-height: auto;
 }
 
 /* Top layer: visible by default, fades on hover/focus */
@@ -1077,6 +1070,17 @@ body:not(.cms-right) .only-on-right {
     overflow-y: auto;
     background: white;
     z-index: 1;
+    min-height: 500px;
+}
+
+.pd-landing .division-card--overlay .division-card__bottom-layer {
+    position: static;
+    padding: 0;
+    padding-bottom: 0;
+    overflow-y: visible;
+    background: transparent;
+    z-index: auto;
+    min-height: auto;
 }
 
 /* Hover/focus effect: only on devices that support hover */
@@ -2275,4 +2279,17 @@ details.footies[open] summary::before {
     color: var(--color_blue);
     text-align: left;
     margin: 0 0 10px 0;
+}
+
+.pd-landing .division-card--overlay .card-actions {
+    position: static;
+    height: auto;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0 0;
+    border-top: none;
+    z-index: auto;
 }
