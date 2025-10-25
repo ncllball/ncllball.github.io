@@ -1074,13 +1074,12 @@ body:not(.cms-right) .only-on-right {
 }
 
 .pd-landing .division-card--overlay .division-card__bottom-layer {
-    position: static;
     padding: 20px;
     padding-bottom: 0;
     overflow-y: auto;
     background: transparent;
     z-index: auto;
-    min-height: auto;
+    min-height: 500px;
 }
 
 /* Hover/focus effect: only on devices that support hover */
