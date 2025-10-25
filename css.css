@@ -1033,13 +1033,7 @@ body:not(.cms-right) .only-on-right {
 .baseball-landing .division-card--overlay,
 .softball-landing .division-card--overlay,
 .pd-landing .division-card--overlay {
-    position: relative;
-    height: 500px;
-    border: 1px solid var(--color_border_light);
-    border-radius: 6px;
-    background: white;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    height: 700px; /* Taller cards for PD to show more content */
 }
 
 /* Top layer: visible by default, fades on hover/focus */
@@ -2289,8 +2283,14 @@ details.footies[open] summary::before {
     margin: 0 0 10px 0;
 }
 
-/* PD bottom layer now allows scrolling */
+/* PD cards with proper scrollbar for overflow content */
+.pd-landing .division-card--overlay {
+    height: 600px; /* Taller cards */
+    position: relative;
+}
+
+/* Content scrolls when it exceeds available space */
 .pd-landing .division-card--overlay .division-detail-content {
-    overflow-y: auto;
-    max-height: 300px; /* Limit height to ensure scrolling when needed */
+    max-height: 350px;
+    overflow-y: auto; /* Show scrollbar when needed */
 }
