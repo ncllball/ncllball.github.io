@@ -1077,7 +1077,7 @@ body:not(.cms-right) .only-on-right {
     position: static;
     padding: 20px;
     padding-bottom: 0;
-    overflow-y: visible;
+    overflow-y: auto;
     background: transparent;
     z-index: auto;
     min-height: auto;
@@ -1305,6 +1305,19 @@ body:not(.cms-right) .only-on-right {
 .pd-landing .division-card--overlay .card-actions .button--ghost:hover {
     background: var(--color_blue);
     color: white;
+}
+
+.pd-landing .division-card--overlay .card-actions {
+    position: static;
+    height: auto;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0 0;
+    border-top: none;
+    z-index: auto;
 }
 
 /* Responsive - single column on mobile */
@@ -2279,17 +2292,4 @@ details.footies[open] summary::before {
     color: var(--color_blue);
     text-align: left;
     margin: 0 0 10px 0;
-}
-
-.pd-landing .division-card--overlay .card-actions {
-    position: static;
-    height: auto;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px 0 0;
-    border-top: none;
-    z-index: auto;
 }
