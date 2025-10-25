@@ -1075,7 +1075,7 @@ body:not(.cms-right) .only-on-right {
 
 .pd-landing .division-card--overlay .division-card__bottom-layer {
     position: static;
-    padding: 0;
+    padding: 20px;
     padding-bottom: 0;
     overflow-y: visible;
     background: transparent;
