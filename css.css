@@ -1,3 +1,16 @@
+/* Volunteer Lite image formatting */
+.volunteer-lite-img-wrap {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.volunteer-lite-img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
 /* (0) Design tokens */
 :root {
     --color_red: #cd163f;
