@@ -1,3 +1,31 @@
+/* Volunteer Lite cards styling */
+.volunteer-lite-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.5em 0 1em 0;
+    padding: 0;
+    list-style: none;
+}
+.volunteer-lite-card {
+    background: var(--color_white);
+    border: 1px solid var(--color_border_table);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 1em 1.2em;
+    min-width: 180px;
+    max-width: 260px;
+    flex: 1 1 180px;
+    font-size: 1rem;
+    color: var(--color_text);
+    text-align: left;
+    transition: box-shadow var(--trans-fast) var(--ease-out);
+}
+.volunteer-lite-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border-color: var(--color_red);
+}
 /* Volunteer Lite image formatting */
 .volunteer-lite-img-wrap {
     text-align: center;
