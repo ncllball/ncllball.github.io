@@ -1,3 +1,21 @@
+/* Global card grid and card styles for universal use */
+.program-grid {
+    display: grid;
+    gap: 20px;
+    margin: 20px 0 40px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.program-card {
+    background: var(--color_surface_light, #fafafa);
+    border: 1px solid var(--color_border_light, #dddddd);
+    padding: 14px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 /* Volunteer Lite cards styling */
 .volunteer-lite-list {
     display: flex;
