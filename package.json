@@ -6,6 +6,7 @@
 	"license": "UNLICENSED",
 	"scripts": {
 		"verify:scripts": "node scripts/tools/verify-script-structure.js",
+		"check:legacy": "node scripts/check-legacy.js",
 		"pd:update": "node scripts/pd/update-all.js",
 		"pd:write": "node scripts/pd/update-all.js --write",
 		"pd:report": "node scripts/pd/update-all.js --report",
