@@ -265,13 +265,12 @@ Global card grid and card styles for universal use
    a small, conservative rule-set so existing markup keeps its intended
    left-oriented styling and decorative stripe. */
 .left {
-    /* explicit left alignment utility (keeps floats/text anchored left) */
-    float: left;
-}
+    text-align: left !important;
+    float: none;
+    margin: 0 0 18px 0;
+    padding: 0;
+    color: var(--color_blue) !important;
 
-h2.left, h3.left, h4.left {
-    position: relative;
-    padding-left: 18px; /* space for decorative stripe */
 }
 
 h2.left::before {
