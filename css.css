@@ -91,6 +91,55 @@ h4 .clipboard-img {
     display: table;
     clear: both;
 }
+
+/* Namespaced card component (PoC): ncll-card
+   These rules intentionally coexist with .program-card for an incremental migration.
+*/
+.ncll-card {
+    background: var(--color_surface_light, #fafafa);
+    border: 1px solid var(--color_border_light, #dddddd);
+    padding: 14px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.ncll-card--volunteer {
+    /* placeholder for volunteer-specific tweaks (no visual change) */
+    --ncll-card-variant: 1;
+}
+.ncll-card__title {
+    margin: 0 0 8px 0;
+}
+.ncll-card__meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ncll-card__meta::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.ncll-card__clipboard {
+    display: inline-block;
+    vertical-align: top;
+}
+.ncll-card__clipboard--float {
+    float: right;
+    margin-left: 12px;
+    width: 56px;
+}
+.ncll-card__clipboard--pinned {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+}
+
+/* small utility helpers */
+.u-clearfix::after { content: ""; display: table; clear: both; }
+.u-float-right { float: right; }
 /* Volunteer Lite cards styling */
 .volunteer-lite-list {
     display: flex;
