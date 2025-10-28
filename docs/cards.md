@@ -13,7 +13,7 @@ This document describes the new namespaced card component used for program/featu
 - Component root: `ncll-card` — base card styling
 - Modifiers (examples):
   - `ncll-card--volunteer` — volunteer-specific tweaks
-  - `ncll-card--pd` — player development tweaks (example)
+  - `ncll-card--pd-landing` — player development tweaks (example)
   - `ncll-card--compact` — tighter padding/spacing for compact layout
 - Elements:
   - `ncll-card__title` — heading/title
@@ -71,7 +71,7 @@ Notes:
 2. Add namespaced classes to any new pages. The repo's existing landing pages were migrated to `ncll-` classes during the last cleanup; you no longer need to keep `.program-card` in migrated files.
 3. Add element classes where relevant (`ncll-card__meta`, `ncll-card__clipboard--float`).
 4. Verify on desktop/tablet/mobile. Adjust `ncll-card__clipboard-img` width (56px default) and `margin-left` if needed.
-5. If the page needs a visual variant, add a modifier (e.g., `ncll-card--compact` or `ncll-card--pd`) and define the tweaks in CSS.
+5. If the page needs a visual variant, add a modifier (e.g., `ncll-card--compact` or `ncll-card--pd-landing`) and define the tweaks in CSS.
 6. Repeat per page. As pages are migrated and tested, remove legacy selectors from `css.css` in a single cleanup commit (backup before removal). Removed legacy blocks are written to `css.legacy.extracted.css` and the original `css.css` is backed up as `css.css.pre-legacy-removed.bak` for review.
 
 ## QA checklist (per page)
