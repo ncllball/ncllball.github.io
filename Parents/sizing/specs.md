@@ -1,6 +1,6 @@
-# HATS & SHIRTS MODEL CHART
+# PLAYERS HATS & SHIRTS MODEL CHART
 
-| Division/Program   | Hat Model #      | Shirt Model # | Hoodie Model # |
+| Program/Division   | Hat Model #      | Shirt Model # | Hoodie Model # |
 | ------------------ | ---------------- | ------------- | -------------- |
 | Baseball - T-Ball  | 4301             | ST350         | none           |
 | Baseball - Kindy   | 4301             | ST350         | none           |
@@ -10,7 +10,6 @@
 | Baseball - Majors  | Richardson PTS30 | 4003          | PC90H          |
 | Baseball - Juniors | Richardson PTS30 | 4003          | PC90H          |
 | Baseball - Seniors | Richardson PTS30 | 4003          | PC90H          |
-
 | Softball - A       | 4302             | 4408          | none           |
 | Softball - AA      | 4302             | 4408          | none           |
 | Softball - AAA     | 4302             | 4408          | PC90H          |
@@ -20,7 +19,7 @@
 
 # COACHES HATS & SHIRTS MODEL CHART
 
-| Division / Coaches         | Hat Model #      | Shirt Model # | Hoodie Model # |
+| Program/Division         | Hat Model #      | Shirt Model # | Hoodie Model # |
 | -------------------------- | ---------------- | ------------- | -------------- |
 | Baseball - T-Ball Coaches  | 4301             | ST350         | none           |
 | Baseball - Kindy Coaches   | 4301             | ST350         | none           |
@@ -30,7 +29,6 @@
 | Baseball - Majors Coaches  | Richardson PTS30 | ST350/ST550   | PC90H          |
 | Baseball - Juniors Coaches | Richardson PTS30 | ST350/ST550   | PC90H          |
 | Baseball - Seniors Coaches | Richardson PTS30 | ST350/ST550   | PC90H          |
-
 | Softball - A Coaches       | Champro HC10     | 4408          | none           |
 | Softball - AA Coaches      | Champro HC10     | 4408          | none           |
 | Softball - AAA Coaches     | Champro HC10     | ST350/ST550   | PC90H          |
