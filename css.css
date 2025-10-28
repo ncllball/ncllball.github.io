@@ -104,6 +104,7 @@ h4 .clipboard-img {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative; /* allow pinned clipboard positioning */
 }
 .ncll-card--volunteer {
     /* placeholder for volunteer-specific tweaks (no visual change) */
@@ -135,6 +136,17 @@ h4 .clipboard-img {
     position: absolute;
     top: 8px;
     right: 12px;
+}
+
+/* Image rules scoped to the namespaced card to avoid conflicts with global clipboard-img settings */
+.ncll-card__clipboard-img {
+    width: 56px;
+    height: auto;
+    display: block;
+    float: right;
+    margin-left: 12px;
+    margin-bottom: 8px;
+    shape-outside: inset(0);
 }
 
 /* small utility helpers */
