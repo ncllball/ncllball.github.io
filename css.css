@@ -63,25 +63,27 @@ h4 .clipboard-img {
     justify-content: flex-start;
 }
 
-/* Place clipboard image in the top-right corner of each card */
+/* When the clipboard link is placed inside the list, float it so text flows around it */
 .program-card .clipboard-link {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    display: block;
-    z-index: 3;
+    position: static;
+    float: right;
+    margin-left: 12px;
+    margin-top: 4px;
 }
 .program-card .clipboard-img {
-    width: 44px;
+    width: 56px;
     height: auto;
     display: block;
-    float: none !important;
+    float: right;
+    margin-left: 12px;
+    margin-bottom: 8px;
+    shape-outside: inset(0);
 }
 
-/* Ensure the heading doesn't collide with the absolute image */
 .program-card h4 {
-    padding-right: 56px;
-    margin-bottom: 8px; /* tighten spacing under headings for consistent layout */
+    /* headings take normal flow now; no extra right padding needed when icon floats inside the list */
+    padding-right: 0;
+    margin-bottom: 8px;
 }
 /* Volunteer Lite cards styling */
 .volunteer-lite-list {
