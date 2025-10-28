@@ -1493,13 +1493,17 @@ body:not(.cms-right) .only-on-right {
     margin: 0 0 24px 0;
 }
 
-.pd-landing .division-card--overlay > .division__detail-content {
+    .pd-landing .division-card--overlay > .ncll-card__details,
+    .pd-landing .division-card--overlay > .division__detail-content {
     margin: 0 0 24px 0;
 }
 
 /* Detail content styling */
+.baseball-landing .ncll-card__details h4,
 .baseball-landing .division__detail-content h4,
+.softball-landing .ncll-card__details h4,
 .softball-landing .division__detail-content h4,
+.pd-landing .ncll-card__details h4,
 .pd-landing .division__detail-content h4 {
     font-size: 1.05rem;
     margin: 0px 0 4px 0;
@@ -1507,28 +1511,40 @@ body:not(.cms-right) .only-on-right {
     font-weight: 600;
 }
 
+.baseball-landing .ncll-card__details h4:first-child,
 .baseball-landing .division__detail-content h4:first-child,
+.softball-landing .ncll-card__details h4:first-child,
 .softball-landing .division__detail-content h4:first-child,
+.pd-landing .ncll-card__details h4:first-child,
 .pd-landing .division__detail-content h4:first-child {
     margin-top: 0;
 }
 
+.baseball-landing .ncll-card__details p,
 .baseball-landing .division__detail-content p,
+.softball-landing .ncll-card__details p,
 .softball-landing .division__detail-content p,
+.pd-landing .ncll-card__details p,
 .pd-landing .division__detail-content p {
     font-size: 0.9rem;
     line-height: 1.45;
 }
 
+.baseball-landing .ncll-card__details ul,
 .baseball-landing .division__detail-content ul,
+.softball-landing .ncll-card__details ul,
 .softball-landing .division__detail-content ul,
+.pd-landing .ncll-card__details ul,
 .pd-landing .division__detail-content ul {
     font-size: 0.9rem;
     margin: 6px 0 4px 8px;
 }
 
+.baseball-landing .ncll-card__details li,
 .baseball-landing .division__detail-content li,
+.softball-landing .ncll-card__details li,
 .softball-landing .division__detail-content li,
+.pd-landing .ncll-card__details li,
 .pd-landing .division__detail-content li {
     margin: 3px 0;
     line-height: 1.35;
