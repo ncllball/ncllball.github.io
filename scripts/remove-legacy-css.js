@@ -6,7 +6,20 @@ const CSS_IN = path.join(ROOT, 'css.css');
 const BACKUP = path.join(ROOT, `css.css.pre-legacy-removed.bak`);
 const OUT_EXTRACT = path.join(ROOT, 'css.legacy.extracted.css');
 
-const LEGACY_KEYS = ['division-card', 'program-card', 'division-meta', 'division-blurb', 'division-hero__title', 'division-card__graphic', 'division__detail-content'];
+// Narrow legacy keys to element-level classes we want to remove from selector lists.
+// Avoid removing modifier classes like `division-card--overlay` which may still be
+// used as layout hooks until all pages are migrated.
+const LEGACY_KEYS = [
+  'division__detail-content',
+  'division-hero__title',
+  'division-blurb',
+  'division-meta',
+  'division-card__graphic',
+  'division-card__top-layer',
+  'division-card__bottom-layer',
+  'division-card__toggle',
+  'card-actions'
+];
 
 if (!fs.existsSync(CSS_IN)) {
   console.error('css.css not found in repo root');
