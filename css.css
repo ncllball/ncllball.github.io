@@ -1,3 +1,17 @@
+/* Clipboard image for opt-in cards */
+.clipboard-link {
+    position: relative;
+    display: block;
+    min-height: 60px;
+}
+.clipboard-img {
+    float: right;
+    width: 60px;
+    height: 82px;
+    margin-left: 12px;
+    margin-bottom: 6px;
+    shape-outside: inset(0);
+}
 /* Global card grid and card styles for universal use */
 .program-grid {
     display: grid;
