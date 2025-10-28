@@ -13,7 +13,10 @@
     margin: 0 6px 0 0;
     float: none;
 }
-/* Clipboard image for opt-in cards */
+/* LEGACY: Global clipboard rules (DEPRECATED)
+   These were used before the namespaced `ncll-card` component existed.
+   They are preserved here as a commented reference for rollback only.
+
 .clipboard-link {
     position: relative;
     display: block;
@@ -27,8 +30,9 @@
     margin-bottom: 6px;
     shape-outside: inset(0);
 }
+*/
 
-/* If the clipboard link is placed inside an h4 heading, make it inline with the text */
+/* LEGACY: h4-specific clipboard inline behavior (commented)
 h4 .clipboard-link {
     display: inline-block;
     vertical-align: middle;
@@ -41,6 +45,7 @@ h4 .clipboard-img {
     margin-bottom: 0;
     float: none;
 }
+*/
 /* Global card grid and card styles for universal use */
 .program-grid {
     display: grid;
@@ -63,7 +68,7 @@ h4 .clipboard-img {
     justify-content: flex-start;
 }
 
-/* When the clipboard link is placed inside the list, float it so text flows around it */
+/* LEGACY: program-card clipboard float rules (commented)
 .program-card .clipboard-link {
     position: static;
     float: right;
@@ -79,6 +84,7 @@ h4 .clipboard-img {
     margin-bottom: 8px;
     shape-outside: inset(0);
 }
+*/
 
 .program-card h4 {
     /* headings take normal flow now; no extra right padding needed when icon floats inside the list */
@@ -130,7 +136,7 @@ h4 .clipboard-img {
 .ncll-card__clipboard--float {
     float: right;
     margin-left: 10px;
-    width: 48px;
+    width: 44px;
 }
 .ncll-card__clipboard--pinned {
     position: absolute;
@@ -140,7 +146,7 @@ h4 .clipboard-img {
 
 /* Image rules scoped to the namespaced card to avoid conflicts with global clipboard-img settings */
 .ncll-card__clipboard-img {
-    width: 48px;
+    width: 44px;
     height: auto;
     display: block;
     float: right;
@@ -153,9 +159,17 @@ h4 .clipboard-img {
 @media (max-width: 480px) {
     .ncll-card__clipboard--float,
     .ncll-card__clipboard-img {
-        width: 40px;
+        width: 36px;
         margin-left: 8px;
     }
+}
+
+/* Keyboard focus styling for clipboard links (accessibility) */
+.ncll-card__clipboard:focus-visible,
+.clipboard-link:focus-visible {
+    outline: 3px solid var(--color_richblue);
+    outline-offset: 2px;
+    border-radius: 4px;
 }
 
 /* small utility helpers */
