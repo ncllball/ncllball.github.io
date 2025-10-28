@@ -6,9 +6,12 @@ const CSS_IN = path.join(ROOT, 'css.css');
 const BACKUP = path.join(ROOT, `css.css.pre-legacy-removed.bak`);
 const OUT_EXTRACT = path.join(ROOT, 'css.legacy.extracted.css');
 
-// Narrow legacy keys to element-level classes we want to remove from selector lists.
-// Avoid removing modifier classes like `division-card--overlay` which may still be
-// used as layout hooks until all pages are migrated.
+// Legacy keys to remove from selector lists. This script was originally conservative
+// and skipped modifier-level classes (for example `division-card--overlay`) while
+// HTML migration was in progress. The site HTML has since been migrated to `ncll-`
+// classes; you can safely include modifier keys below to remove legacy modifier
+// selectors from `css.css`. Edit this list to control which legacy selectors are
+// extracted.
 const LEGACY_KEYS = [
   'division__detail-content',
   'division-hero__title',
@@ -18,7 +21,11 @@ const LEGACY_KEYS = [
   'division-card__top-layer',
   'division-card__bottom-layer',
   'division-card__toggle',
-  'card-actions'
+  'card-actions',
+  // Modifier-level legacy keys (optional): uncomment to remove these selectors too
+  'division-card--overlay',
+  'division-card',
+  'program-card'
 ];
 
 if (!fs.existsSync(CSS_IN)) {
