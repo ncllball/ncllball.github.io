@@ -19,20 +19,34 @@ const parts = text.split('}');
 const kept = [];
 const removed = [];
 
+// Improved handling: for selector lists with multiple comma-separated selectors,
+// remove only the selectors that contain legacy keys and keep the rest. If none
+// remain, treat the whole block as removed.
 parts.forEach(part => {
-  const selectorLine = (part.split('{')[0] || '').trim();
-  if (!selectorLine) return; // skip empty
-  let isLegacy = false;
-  for (const key of LEGACY_KEYS) {
-    if (selectorLine.includes(key)) {
-      isLegacy = true;
-      break;
+  const split = part.split('{');
+  const selectorLine = (split[0] || '').trim();
+  const body = split.slice(1).join('{');
+  if (!selectorLine) return; // skip empty or closing fragments
+
+  // Split selectors by comma, preserve original formatting around commas where possible.
+  const selectors = selectorLine.split(',').map(s => s.trim()).filter(s => s.length > 0);
+  if (selectors.length === 0) return;
+
+  // Determine which selectors are legacy
+  const remaining = selectors.filter(sel => {
+    for (const key of LEGACY_KEYS) {
+      if (sel.includes(key)) return false; // drop this selector
     }
-  }
-  if (isLegacy) {
-    removed.push(part.trim() + '\n}');
+    return true; // keep
+  });
+
+  if (remaining.length === 0) {
+    // whole block removed
+    removed.push((selectorLine + ' {' + (body || '')).trim() + '\n}');
   } else {
-    kept.push(part.trim() + '\n}');
+    // keep block with remaining selectors joined by comma + space
+    const keptSelectorLine = remaining.join(', ');
+    kept.push((keptSelectorLine + ' {' + (body || '')).trim() + '\n}');
   }
 });
 
