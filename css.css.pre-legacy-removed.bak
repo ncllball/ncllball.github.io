@@ -3,16 +3,19 @@
     align-items: center;
     gap: 10px;
 }
+
 .purpose-row .clipboard-link {
     display: flex;
     align-items: center;
 }
+
 .purpose-row .clipboard-img {
     width: 48px;
     height: auto;
     margin: 0 6px 0 0;
     float: none;
 }
+
 /* LEGACY: Global clipboard rules (DEPRECATED)
    These were used before the namespaced `ncll-card` component existed.
    They are preserved here as a commented reference for rollback only.
@@ -22,6 +25,7 @@
     display: block;
     min-height: 60px;
 }
+
 .clipboard-img {
     float: right;
     width: 60px;
@@ -30,6 +34,7 @@
     margin-bottom: 6px;
     shape-outside: inset(0);
 }
+
 */
 
 /* LEGACY: h4-specific clipboard inline behavior (commented)
@@ -38,6 +43,7 @@ h4 .clipboard-link {
     vertical-align: middle;
     min-height: 0;
 }
+
 h4 .clipboard-img {
     width: 40px;
     height: auto;
@@ -45,6 +51,7 @@ h4 .clipboard-img {
     margin-bottom: 0;
     float: none;
 }
+
 */
 /* Global card grid and card styles for universal use */
 .program-grid {
@@ -54,43 +61,6 @@ h4 .clipboard-img {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.program-card {
-    position: relative;
-    background: var(--color_surface_light, #fafafa);
-    border: 1px solid var(--color_border_light, #dddddd);
-    padding: 14px 16px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
-    display: flex;
-    flex-direction: column;
-    /* Use flex-start so content flows naturally from the top and we don't get large gaps
-       created by space-between when cards have different content heights. */
-    justify-content: flex-start;
-}
-
-/* LEGACY: program-card clipboard float rules (commented)
-.program-card .clipboard-link {
-    position: static;
-    float: right;
-    margin-left: 12px;
-    margin-top: 4px;
-}
-.program-card .clipboard-img {
-    width: 56px;
-    height: auto;
-    display: block;
-    float: right;
-    margin-left: 12px;
-    margin-bottom: 8px;
-    shape-outside: inset(0);
-}
-*/
-
-.program-card h4 {
-    /* headings take normal flow now; no extra right padding needed when icon floats inside the list */
-    padding-right: 0;
-    margin-bottom: 8px;
-}
 /* Ensure floated clipboard icon inside the list doesn't collapse following content */
 .program-meta::after {
     content: "";
@@ -98,46 +68,38 @@ h4 .clipboard-img {
     clear: both;
 }
 
-/* Namespaced card component (PoC): ncll-card
-   These rules intentionally coexist with .program-card for an incremental migration.
-*/
-.ncll-card {
-    background: var(--color_surface_light, #fafafa);
-    border: 1px solid var(--color_border_light, #dddddd);
-    padding: 14px 16px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0,0,0,.06);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: relative; /* allow pinned clipboard positioning */
-}
 .ncll-card--volunteer {
     /* placeholder for volunteer-specific tweaks (no visual change) */
     --ncll-card-variant: 1;
 }
+
 .ncll-card__title {
     margin: 0 0 8px 0;
 }
+
 .ncll-card__meta {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .ncll-card__meta::after {
     content: "";
     display: table;
     clear: both;
 }
+
 .ncll-card__clipboard {
     display: inline-block;
     vertical-align: top;
 }
+
 .ncll-card__clipboard--float {
     float: right;
     margin-left: 10px;
     width: 44px;
 }
+
 .ncll-card__clipboard--pinned {
     position: absolute;
     top: 8px;
@@ -161,7 +123,6 @@ h4 .clipboard-img {
     .ncll-card__clipboard-img {
         width: 36px;
         margin-left: 8px;
-    }
 }
 
 /* Card graphics: ensure consistent crop and sizing across division cards
@@ -180,13 +141,11 @@ h4 .clipboard-img {
 @media (max-width: 720px) {
     .ncll-card__graphic {
         height: 140px;
-    }
 }
 
 @media (max-width: 480px) {
     .ncll-card__graphic {
         height: 110px;
-    }
 }
 
 /* Keyboard focus styling for clipboard links (accessibility) */
@@ -198,8 +157,12 @@ h4 .clipboard-img {
 }
 
 /* small utility helpers */
-.u-clearfix::after { content: ""; display: table; clear: both; }
-.u-float-right { float: right; }
+.u-clearfix::after { content: ""; display: table; clear: both;
+}
+
+.u-float-right { float: right;
+}
+
 /* Volunteer Lite cards styling */
 .volunteer-lite-list {
     display: flex;
@@ -210,6 +173,7 @@ h4 .clipboard-img {
     padding: 0;
     list-style: none;
 }
+
 .volunteer-lite-card {
     background: var(--color_white);
     border: 1px solid var(--color_border_table);
@@ -224,15 +188,18 @@ h4 .clipboard-img {
     text-align: left;
     transition: box-shadow var(--trans-fast) var(--ease-out);
 }
+
 .volunteer-lite-card:hover {
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
     border-color: var(--color_red);
 }
+
 /* Volunteer Lite image formatting */
 .volunteer-lite-img-wrap {
     text-align: center;
     margin-bottom: 1em;
 }
+
 .volunteer-lite-img {
     max-width: 100%;
     width: 100%;
@@ -241,6 +208,7 @@ h4 .clipboard-img {
     box-sizing: border-box;
     margin: 0 auto;
 }
+
 /* Callout box for important notices (e.g. build our bench) */
 .callout {
     background: var(--color_surface_lighter);
@@ -249,12 +217,15 @@ h4 .clipboard-img {
     margin: 1em 0;
     border-radius: 6px;
 }
+
 .callout.callout-info {
     border-left-color: var(--color_richblue);
 }
+
 .callout p {
     margin: 0;
 }
+
 .callout .info-icon {
     display: inline-flex;
     width: 20px;
@@ -268,6 +239,7 @@ h4 .clipboard-img {
     margin-right: 8px;
     vertical-align: middle;
 }
+
 /* (0) Design tokens */
 :root {
     --color_red: #cd163f;
@@ -443,9 +415,9 @@ h6 {
 
     .emphasis {
         font-weight: 600;
-    }
+}
 
-    font-family: var(--font_heading);
+font-family: var(--font_heading);
 }
 
 h1 {
@@ -459,7 +431,6 @@ h2 {
     font-size: 1.25rem;
     text-align: left !important;
     line-height: 30px;
-
 }
 
 .left {
@@ -468,7 +439,6 @@ h2 {
     margin: 0 0 18px 0;
     padding: 0;
     color: var(--color_blue) !important;
-
 }
 
 h2.left::before {
@@ -485,7 +455,6 @@ h2.left::before {
     background-image: var(--stripe-gradient);
     background-size: 3px 3px;
 }
-
 
 h3 {
     text-align: left;
@@ -611,26 +580,24 @@ h6 {
 @media print {
     .print-btn-float {
         display: none !important;
-    }
 }
 
 @media print {
     table.fit {
         page-break-inside: avoid;
         break-inside: avoid;
-    }
+}
 
-    .battery-box {
+.battery-box {
         page-break-inside: avoid;
         break-inside: avoid;
-    }
+}
 
-    h2,
+h2,
     h3,
     h4 {
         page-break-after: avoid;
         break-after: avoid;
-    }
 }
 
 /* Early season ramp visibility control (CSS-only) */
@@ -695,9 +662,6 @@ sup {
     top: -0.5px;
 }
 
-
-
-
 /* end global blah blah */
 
 
@@ -719,9 +683,6 @@ a.ncll:hover {
 a.ncll:active {
     color: var(--color_red) !important;
 }
-
-
-
 
 /* Start Focus states */
 a.ncll:focus-visible,
@@ -807,7 +768,6 @@ a.ncll:focus-visible,
     width: 100%;
     height: 100%;
     display: block;
-
 }
 
 .info-icon::before {
@@ -839,7 +799,6 @@ a.ncll:focus-visible,
     *::after {
         animation: none !important;
         transition: none !important;
-    }
 }
 
 /* start bottom sticky registration */
@@ -928,11 +887,10 @@ a.ncll:focus-visible,
         flex-direction: column;
         align-items: stretch;
         text-align: left;
-    }
+}
 
-    .sticky-register-cta {
+.sticky-register-cta {
         text-align: center;
-    }
 }
 
 /* end bottom sticky registration */
@@ -945,7 +903,6 @@ a.ncll:focus-visible,
 @media (max-width:640px) {
     .with-sticky-register {
         padding-bottom: 140px;
-    }
 }
 
 /* start tags */
@@ -973,7 +930,6 @@ a.ncll:focus-visible,
     font-family: var(--font_tag);
     box-shadow: 1px 1px 8px var(--color_tag);
     background: var(--color_tag);
-
 }
 
 .tag-item::before {
@@ -987,7 +943,6 @@ a.ncll:focus-visible,
     border-top: none;
     border-right: none;
     background: var(--color_tag);
-
 }
 
 .tag-item::after {
@@ -1214,26 +1169,6 @@ body:not(.cms-right) .only-on-right {
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
 }
 
-.pd-landing .program-card {
-    background: var(--color_surface_light);
-    border: 1px solid var(--color_border_light);
-    padding: 14px 16px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.pd-landing article.program-card h3 {
-    font-size: 1.05rem;
-    line-height: 1.3;
-    color: var(--color_blue);
-    text-align: left;
-    display: block;
-
-}
-
 .pd-landing .program-meta {
     list-style: none;
     padding: 0;
@@ -1290,73 +1225,6 @@ body:not(.cms-right) .only-on-right {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-/* Reset any conflicting styles */
-.baseball-landing .division-card,
-.softball-landing .division-card,
-.pd-landing .division-card {
-    all: unset;
-    display: block;
-}
-
-/* Two-layer overlay card structure */
-.baseball-landing .division-card--overlay,
-.softball-landing .division-card--overlay,
-.pd-landing .division-card--overlay {
-    position: relative;
-    height: 500px;
-    border: 1px solid var(--color_border_light);
-    border-radius: 6px;
-    background: white;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
-}
-
-/* Top layer: visible by default, fades on hover/focus */
-.baseball-landing .division-card--overlay .division-card__top-layer,
-.baseball-landing .division-card--overlay .ncll-card__top-layer,
-.softball-landing .division-card--overlay .division-card__top-layer,
-.softball-landing .division-card--overlay .ncll-card__top-layer,
-.pd-landing .division-card--overlay .division-card__top-layer,
-.pd-landing .division-card--overlay .ncll-card__top-layer {
-    position: absolute;
-    inset: 0;
-    background: var(--color_surface_light);
-    padding: 24px 20px 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: opacity 0.3s ease;
-    z-index: 2;
-    min-height: 500px;
-}
-
-/* Bottom layer: always there, revealed on hover/focus */
-.baseball-landing .division-card--overlay .division-card__bottom-layer,
-.baseball-landing .division-card--overlay .ncll-card__body,
-.softball-landing .division-card--overlay .division-card__bottom-layer,
-.softball-landing .division-card--overlay .ncll-card__body,
-.pd-landing .division-card--overlay .division-card__bottom-layer,
-.pd-landing .division-card--overlay .ncll-card__body {
-    position: absolute;
-    inset: 0;
-    padding: 20px;
-    padding-bottom: 70px;
-    overflow-y: auto;
-    background: white;
-    z-index: 1;
-    min-height: 500px;
-}
-
-.pd-landing .division-card--overlay .division-card__bottom-layer {
-    padding: 20px;
-    padding-bottom: 0;
-    overflow-y: auto;
-    background: transparent;
-    z-index: auto;
-    min-height: 500px;
-}
-
 /* Hover/focus effect: only on devices that support hover */
 @media (hover: hover) and (pointer: fine) {
 
@@ -1368,7 +1236,6 @@ body:not(.cms-right) .only-on-right {
     .pd-landing .division-card--overlay:hover .ncll-card__top-layer {
         opacity: 0;
         pointer-events: none;
-    }
 }
 
 /* Touch devices: tap/focus-within to reveal details, add hint and close button */
@@ -1378,250 +1245,6 @@ body:not(.cms-right) .only-on-right {
     .softball-landing .division-card--overlay,
     .pd-landing .division-card--overlay {
         cursor: pointer;
-    }
-
-    .baseball-landing .division-card--overlay .division-card__top-layer::after,
-    .baseball-landing .division-card--overlay .ncll-card__top-layer::after,
-    .softball-landing .division-card--overlay .division-card__top-layer::after,
-    .softball-landing .division-card--overlay .ncll-card__top-layer::after,
-    .pd-landing .division-card--overlay .division-card__top-layer::after,
-    .pd-landing .division-card--overlay .ncll-card__top-layer::after {
-        content: "Tap for details";
-        position: absolute;
-        bottom: 75px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.75rem;
-        color: var(--color_muted);
-        font-style: italic;
-    }
-
-    .baseball-landing .division-card--overlay:focus-within .division-card__top-layer,
-    .baseball-landing .division-card--overlay:focus-within .ncll-card__top-layer,
-    .softball-landing .division-card--overlay:focus-within .division-card__top-layer,
-    .softball-landing .division-card--overlay:focus-within .ncll-card__top-layer,
-    .pd-landing .division-card--overlay:focus-within .division-card__top-layer,
-    .pd-landing .division-card--overlay:focus-within .ncll-card__top-layer {
-        opacity: 0;
-        pointer-events: none;
-    }
-}
-
-/* Division hero title */
-.baseball-landing .division-hero__title,
-.softball-landing .division-hero__title,
-.pd-landing .division-hero__title {
-    font-size: 1.25rem;
-    margin: 0 0 10px 0;
-    color: var(--color_blue);
-    font-weight: 600;
-}
-
-.pd-landing .division-hero__title {
-    margin: 0 0 20px 0;
-}
-
-/* Division blurb */
-.baseball-landing .division-blurb,
-.baseball-landing .ncll-card__blurb,
-.softball-landing .division-blurb,
-.softball-landing .ncll-card__blurb,
-.pd-landing .division-blurb,
-.pd-landing .ncll-card__blurb {
-    font-size: 0.9rem;
-    line-height: 1.3;
-    color: var(--color_text);
-}
-
-.pd-landing .division-blurb {
-    margin: 0 0 24px 0;
-}
-
-/* Division graphic */
-.baseball-landing .division-card__graphic,
-.baseball-landing .ncll-card__graphic,
-.softball-landing .division-card__graphic,
-.softball-landing .ncll-card__graphic,
-.pd-landing .division-card__graphic,
-.pd-landing .ncll-card__graphic {
-    width: 100px;
-    height: auto;
-    margin: 8px auto 8px;
-}
-
-/* Division meta list */
-.baseball-landing .division-meta,
-.softball-landing .division-meta,
-.pd-landing .division-meta {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    font-size: 0.8rem;
-    width: 100%;
-    text-align: left;
-}
-
-.baseball-landing .division-meta li,
-.softball-landing .division-meta li,
-.pd-landing .division-meta li {
-    margin: 4px 0;
-    line-height: 1.35;
-    list-style: none;
-    color: var(--color_muted);
-    font-size: 0.9rem;
-}
-
-.baseball-landing .division-meta li strong,
-.softball-landing .division-meta li strong,
-.pd-landing .division-meta li strong {
-    color: var(--color_text);
-    font-weight: 600;
-}
-
-/* PD landing card content margins */
-.pd-landing .division-card--overlay > h3 {
-    margin: 0 0 20px 0;
-    text-align: center;
-}
-
-.pd-landing .division-card--overlay > p {
-    margin: 0 0 24px 0;
-    text-align: center;
-}
-
-.pd-landing .division-card--overlay > ul {
-    margin: 0 0 24px 0;
-}
-
-    .pd-landing .division-card--overlay > .ncll-card__details,
-    .pd-landing .division-card--overlay > .division__detail-content {
-    margin: 0 0 24px 0;
-}
-
-/* Detail content styling */
-.baseball-landing .ncll-card__details h4,
-.baseball-landing .division__detail-content h4,
-.softball-landing .ncll-card__details h4,
-.softball-landing .division__detail-content h4,
-.pd-landing .ncll-card__details h4,
-.pd-landing .division__detail-content h4 {
-    font-size: 1.05rem;
-    margin: 0px 0 4px 0;
-    color: var(--color_blue);
-    font-weight: 600;
-}
-
-.baseball-landing .ncll-card__details h4:first-child,
-.baseball-landing .division__detail-content h4:first-child,
-.softball-landing .ncll-card__details h4:first-child,
-.softball-landing .division__detail-content h4:first-child,
-.pd-landing .ncll-card__details h4:first-child,
-.pd-landing .division__detail-content h4:first-child {
-    margin-top: 0;
-}
-
-.baseball-landing .ncll-card__details p,
-.baseball-landing .division__detail-content p,
-.softball-landing .ncll-card__details p,
-.softball-landing .division__detail-content p,
-.pd-landing .ncll-card__details p,
-.pd-landing .division__detail-content p {
-    font-size: 0.9rem;
-    line-height: 1.45;
-}
-
-.baseball-landing .ncll-card__details ul,
-.baseball-landing .division__detail-content ul,
-.softball-landing .ncll-card__details ul,
-.softball-landing .division__detail-content ul,
-.pd-landing .ncll-card__details ul,
-.pd-landing .division__detail-content ul {
-    font-size: 0.9rem;
-    margin: 6px 0 4px 8px;
-}
-
-.baseball-landing .ncll-card__details li,
-.baseball-landing .division__detail-content li,
-.softball-landing .ncll-card__details li,
-.softball-landing .division__detail-content li,
-.pd-landing .ncll-card__details li,
-.pd-landing .division__detail-content li {
-    margin: 3px 0;
-    line-height: 1.35;
-    font-size: .9rem;
-}
-
-/* Sticky card actions for both layers */
-.baseball-landing .division-card--overlay .card-actions,
-.baseball-landing .division-card--overlay .ncll-card__actions,
-.softball-landing .division-card--overlay .card-actions,
-.softball-landing .division-card--overlay .ncll-card__actions,
-.pd-landing .division-card--overlay .card-actions,
-.pd-landing .division-card--overlay .ncll-card__actions {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 0 20px;
-    border-top: 1px solid var(--color_border_light);
-    z-index: 3;
-}
-
-/* Button styling */
-.baseball-landing .division-card--overlay .card-actions .button,
-.baseball-landing .division-card--overlay .ncll-card__actions .button,
-.softball-landing .division-card--overlay .card-actions .button,
-.softball-landing .division-card--overlay .ncll-card__actions .button,
-.pd-landing .division-card--overlay .card-actions .button,
-.pd-landing .division-card--overlay .ncll-card__actions .button {
-    padding: 6px 14px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.2s ease;
-}
-
-.baseball-landing .division-card--overlay .card-actions .button--primary,
-.baseball-landing .division-card--overlay .ncll-card__actions .button--primary,
-.softball-landing .division-card--overlay .card-actions .button--primary,
-.softball-landing .division-card--overlay .ncll-card__actions .button--primary,
-.pd-landing .division-card--overlay .card-actions .button--primary,
-.pd-landing .division-card--overlay .ncll-card__actions .button--primary {
-    background: var(--color_blue);
-    color: white;
-    border: 1px solid var(--color_blue);
-}
-
-.baseball-landing .division-card--overlay .card-actions .button--primary:hover,
-.baseball-landing .division-card--overlay .ncll-card__actions .button--primary:hover,
-.softball-landing .division-card--overlay .card-actions .button--primary:hover,
-.softball-landing .division-card--overlay .ncll-card__actions .button--primary:hover,
-.pd-landing .division-card--overlay .card-actions .button--primary:hover,
-.pd-landing .division-card--overlay .ncll-card__actions .button--primary:hover {
-    background: #1a2b5c;
-    border-color: #1a2b5c;
-}
-
-.baseball-landing .division-card--overlay .card-actions .button--ghost,
-.softball-landing .division-card--overlay .card-actions .button--ghost,
-.pd-landing .division-card--overlay .card-actions .button--ghost {
-    background: white;
-    color: var(--color_blue);
-    border: 1px solid var(--color_blue);
-}
-
-.baseball-landing .division-card--overlay .card-actions .button--ghost:hover,
-.softball-landing .division-card--overlay .card-actions .button--ghost:hover,
-.pd-landing .division-card--overlay .card-actions .button--ghost:hover {
-    background: var(--color_blue);
-    color: white;
 }
 
 /* Responsive - single column on mobile */
@@ -1631,7 +1254,6 @@ body:not(.cms-right) .only-on-right {
     .softball-landing .program-grid,
     .pd-landing .program-grid {
         grid-template-columns: 1fr;
-    }
 }
 
 /* Mobile touch improvements for division cards */
@@ -1643,7 +1265,6 @@ body:not(.cms-right) .only-on-right {
     .pd-landing .division-card--overlay:hover .division-card__top-layer {
         opacity: 0;
         pointer-events: none;
-    }
 }
 
 @media (hover: none), (pointer: coarse) {
@@ -1653,53 +1274,11 @@ body:not(.cms-right) .only-on-right {
     .softball-landing .division-card--overlay,
     .pd-landing .division-card--overlay {
         cursor: pointer;
-    }
-
-    /* Add visual hint that cards are interactive */
-    .baseball-landing .division-card--overlay .division-card__top-layer::after,
-    .softball-landing .division-card--overlay .division-card__top-layer::after,
-    .pd-landing .division-card--overlay .division-card__top-layer::after {
-        content: "Tap for details";
-        position: absolute;
-        bottom: 75px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.75rem;
-        color: var(--color_muted);
-        font-style: italic;
-    }
-
-    /* Use :focus-within for touch activation */
-    .baseball-landing .division-card--overlay:focus-within .division-card__top-layer,
-    .softball-landing .division-card--overlay:focus-within .division-card__top-layer,
-    .pd-landing .division-card--overlay:focus-within .division-card__top-layer {
-        opacity: 0;
-        pointer-events: none;
-    }
-}
-
-/* Alternative: Add explicit toggle button (more accessible) */
-.division-card__toggle {
-    position: absolute;
-    bottom: 75px;
-    right: 20px;
-    background: var(--color_blue);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    font-size: 1.2rem;
-    line-height: 1;
-    cursor: pointer;
-    z-index: 4;
-    display: none;
 }
 
 @media (hover: none), (pointer: coarse) {
     .division-card__toggle {
         display: block;
-    }
 }
 
 /* Table component - ensure no wrapping in cells */
@@ -1812,12 +1391,11 @@ body:not(.cms-right) .only-on-right {
     .timeline-page .row {
         margin-left: -1rem;
         margin-right: -1rem;
-    }
+}
 
-    .timeline-page .row>[class*="col-"] {
+.timeline-page .row>[class*="col-"] {
         padding-left: 1rem;
         padding-right: 1rem;
-    }
 }
 
 /* ======= Timeline Component ======= */
@@ -1965,37 +1543,36 @@ body:not(.cms-right) .only-on-right {
     .timeline-split {
         display: table;
         width: 100%;
-    }
+}
 
-    .timeline-split .timeline-item {
+.timeline-split .timeline-item {
         display: table-row;
         padding: 0;
-    }
+}
 
-    .timeline-split .timeline-info,
+.timeline-split .timeline-info,
     .timeline-split .timeline-marker,
     .timeline-split .timeline-content,
     .timeline-split .timeline-item.period .timeline-info {
         display: table-cell;
         vertical-align: top;
-    }
+}
 
-    .timeline-split .timeline-marker {
+.timeline-split .timeline-marker {
         position: relative;
-    }
+}
 
-    .timeline-split .timeline-content {
+.timeline-split .timeline-content {
         padding-left: 30px;
-    }
+}
 
-    .timeline-split .timeline-info {
+.timeline-split .timeline-info {
         padding-right: 30px;
-    }
+}
 
-    .timeline-split .timeline-item.period .timeline-title {
+.timeline-split .timeline-item.period .timeline-title {
         left: 0;
         transform: none;
-    }
 }
 
 /* Centered timeline for extra-large screens */
@@ -2009,68 +1586,67 @@ body:not(.cms-right) .only-on-right {
         display: block;
         margin: 0;
         padding: 0;
-    }
+}
 
-    .timeline-centered .timeline-item {
+.timeline-centered .timeline-item {
         padding-bottom: 40px;
         overflow: hidden;
-    }
+}
 
-    .timeline-centered .timeline-marker {
+.timeline-centered .timeline-marker {
         position: absolute;
         left: 50%;
         margin-left: -7.5px;
-    }
+}
 
-    .timeline-centered .timeline-info,
+.timeline-centered .timeline-info,
     .timeline-centered .timeline-content {
         width: 50%;
-    }
+}
 
-    .timeline-centered>.timeline-item:nth-child(odd) .timeline-info {
+.timeline-centered>.timeline-item:nth-child(odd) .timeline-info {
         float: left;
         text-align: right;
         padding-right: 30px;
-    }
+}
 
-    .timeline-centered>.timeline-item:nth-child(odd) .timeline-content {
+.timeline-centered>.timeline-item:nth-child(odd) .timeline-content {
         float: right;
         text-align: left;
         padding-left: 30px;
-    }
+}
 
-    .timeline-centered>.timeline-item:nth-child(even) .timeline-info {
+.timeline-centered>.timeline-item:nth-child(even) .timeline-info {
         float: right;
         text-align: left;
         padding-left: 30px;
-    }
+}
 
-    .timeline-centered>.timeline-item:nth-child(even) .timeline-content {
+.timeline-centered>.timeline-item:nth-child(even) .timeline-content {
         float: left;
         text-align: right;
         padding-right: 30px;
-    }
+}
 
-    .timeline-centered>.timeline-item.period .timeline-content {
+.timeline-centered>.timeline-item.period .timeline-content {
         float: none;
         padding: 0;
         width: 100%;
         text-align: center;
-    }
+}
 
-    .timeline-centered .timeline-item.period {
+.timeline-centered .timeline-item.period {
         padding: 50px 0 90px;
-    }
+}
 
-    .timeline-centered .timeline-item.period .timeline-marker::after {
+.timeline-centered .timeline-item.period .timeline-marker::after {
         height: 30px;
         bottom: 0;
         top: auto;
-    }
+}
 
-    .timeline-centered .timeline-item.period .timeline-title {
+.timeline-centered .timeline-item.period .timeline-title {
         left: auto;
-    }
 }
 
 /* Marker outline variant */
@@ -2340,17 +1916,15 @@ details.footies[open] summary::before {
 @media (max-width: 960px) {
     .cost-chart-wrapper {
         grid-template-columns: 1fr;
-    }
+}
 
-    .cost-legend {
+.cost-legend {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
 }
 
 @media (max-width: 480px) {
     .cost-legend {
         font-size: 0.8rem;
-    }
 }
 
 .cost-cat {
@@ -2460,6 +2034,7 @@ details.footies[open] summary::before {
   font-weight: 600;
   color: var(--color_darkgray);
 }
+
 /* ====== END Venmo Donation Page Styles ====== */
 
 /* ====== BEGIN Vendor Uniform Sizing Grid (Parents/uniforms.html) ======
@@ -2488,10 +2063,12 @@ details.footies[open] summary::before {
   gap: 0.5rem;
 }
 
-.card-title { margin: 0; color: var(--color_blue, #00013a); font-size: 1.05rem; }
+.card-title { margin: 0; color: var(--color_blue, #00013a); font-size: 1.05rem;
+}
 
 /* Table wrapper for horizontal overflow on small screens */
-.table_component { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table_component { overflow-x: auto; -webkit-overflow-scrolling: touch;
+}
 
 /* Compact table inside cards */
 .sizing-table {
@@ -2500,20 +2077,26 @@ details.footies[open] summary::before {
   font-size: 0.95rem;
   margin-top: 0.5rem;
 }
+
 .sizing-table th, .sizing-table td {
   padding: 8px 10px;
   border: 1px solid var(--color_border_light, #e6e6e6);
   text-align: left;
 }
-.sizing-table thead th { background: transparent; color: var(--color_blue, #00013a); font-weight: 700; }
+
+.sizing-table thead th { background: transparent; color: var(--color_blue, #00013a); font-weight: 700;
+}
 
 /* Muted helper text */
-.sizing-card .muted { color: var(--color_muted, #666); font-size: 0.9rem; margin: 0; }
+.sizing-card .muted { color: var(--color_muted, #666); font-size: 0.9rem; margin: 0;
+}
 
 /* Small screens: cards stack (grid becomes single column due to auto-fit) */
 @media (max-width: 520px) {
-  .sizing-card { padding: 0.75rem; }
-  .card-title { font-size: 1rem; }
+  .sizing-card { padding: 0.75rem;
+}
+
+.card-title { font-size: 1rem;
 }
 
 /* ====== END Vendor Uniform Sizing Grid ====== */
@@ -2524,6 +2107,7 @@ details.footies[open] summary::before {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 12px;
 }
+
 .sizing-card {
     background: var(--color_surface_light);
     border: 1px solid var(--color_border_light);
@@ -2534,12 +2118,14 @@ details.footies[open] summary::before {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .sizing-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
     font-size: .9rem;
 }
+
 .sizing-table th,
 .sizing-table td {
     padding: 6px 8px;
@@ -2547,19 +2133,23 @@ details.footies[open] summary::before {
     vertical-align: top;
     white-space: nowrap;
 }
+
 .sizing-table thead th {
     background: #e6e9f2;
     font-weight: 600;
     color: var(--color_black);
     text-align: left;
 }
+
 .sizing-table tbody tr:nth-child(even) {
     background: #f3f6fa;
 }
+
 .sizing-table caption {
     font-size: 0.85rem;
     margin-bottom: 6px;
 }
+
 .sizing-table td:first-child,
 .sizing-table th:first-child {
     width: 1px;
@@ -2574,9 +2164,13 @@ details.footies[open] summary::before {
 }
 
 @media screen and (max-width: 768px) {
-    .sizing-table { font-size: 0.9rem; }
-    .sizing-grid { gap: 8px; }
-    .sizing-card { padding: 8px 6px; }
+    .sizing-table { font-size: 0.9rem;
+}
+
+.sizing-grid { gap: 8px;
+}
+
+.sizing-card { padding: 8px 6px;
 }
 
 /* ================= Compact uniforms/table tweaks END ================= */
@@ -2598,37 +2192,6 @@ details.footies[open] summary::before {
     margin: 0 0 10px 0;
 }
 
-.pd-landing .division__detail-content h4 {
-    font-size: 1.25rem;
-    margin: 0 0 10px 0;
-    color: var(--color_blue);
-    font-weight: 600;
-}
-
-.pd-landing .division__detail-content p {
-    font-size: 0.9rem;
-    line-height: 1.3;
-    color: var(--color_text);
-}
-
-.pd-landing .division__detail-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    font-size: 0.8rem;
-    width: 100%;
-    text-align: left;
-}
-
-.pd-landing .division__detail-content li {
-    margin: 4px 0;
-    line-height: 1.35;
-    list-style: none;
-    color: var(--color_muted);
-    font-size: 0.9rem;
-}
-
-
 .h1-seo {
     display: none;
-}
+} 
