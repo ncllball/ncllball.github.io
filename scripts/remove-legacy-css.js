@@ -14,41 +14,76 @@ if (!fs.existsSync(CSS_IN)) {
 }
 
 const text = fs.readFileSync(CSS_IN, 'utf8');
-const parts = text.split('}');
-
+const lines = text.split(/\r?\n/);
 const kept = [];
 const removed = [];
 
-// Improved handling: for selector lists with multiple comma-separated selectors,
-// remove only the selectors that contain legacy keys and keep the rest. If none
-// remain, treat the whole block as removed.
-parts.forEach(part => {
-  const split = part.split('{');
-  const selectorLine = (split[0] || '').trim();
-  const body = split.slice(1).join('{');
-  if (!selectorLine) return; // skip empty or closing fragments
+let i = 0;
+while (i < lines.length) {
+  // Accumulate selector lines until we hit a line that contains '{'
+  const selLines = [];
+  while (i < lines.length && lines[i].indexOf('{') === -1) {
+    selLines.push(lines[i]);
+    i++;
+  }
 
-  // Split selectors by comma, preserve original formatting around commas where possible.
-  const selectors = selectorLine.split(',').map(s => s.trim()).filter(s => s.length > 0);
-  if (selectors.length === 0) return;
+  if (i >= lines.length) break;
 
-  // Determine which selectors are legacy
+  // Now lines[i] contains the '{' and possibly the last selector before it
+  const lineWithBrace = lines[i];
+  const bracePos = lineWithBrace.indexOf('{');
+  const lastSelPart = lineWithBrace.slice(0, bracePos).trim();
+  const afterBrace = lineWithBrace.slice(bracePos + 1);
+
+  if (lastSelPart.length > 0) {
+    selLines.push(lastSelPart);
+  }
+
+  // Build full selector list string and split by commas
+  const selectorText = selLines.join(' ').trim();
+  const selectors = selectorText.split(',').map(s => s.trim()).filter(Boolean);
+
+  // Filter out selectors that include any legacy key
   const remaining = selectors.filter(sel => {
     for (const key of LEGACY_KEYS) {
-      if (sel.includes(key)) return false; // drop this selector
+      if (sel.includes(key)) return false;
     }
-    return true; // keep
+    return true;
   });
 
   if (remaining.length === 0) {
-    // whole block removed
-    removed.push((selectorLine + ' {' + (body || '')).trim() + '\n}');
+    // Skip the rule body until the matching closing '}'
+    // Move i forward until we find a line with '}'
+    i++; // move past the brace line
+    const bodyLines = [];
+    while (i < lines.length && lines[i].indexOf('}') === -1) {
+      bodyLines.push(lines[i]);
+      i++;
+    }
+    if (i < lines.length && lines[i].indexOf('}') !== -1) {
+      // include the closing brace line
+      // (we'll omit the entire block and write it to removed)
+      removed.push((selectorText + ' {' + '\n' + bodyLines.join('\n') + '\n}').trim());
+      i++; // move past closing brace
+    }
   } else {
-    // keep block with remaining selectors joined by comma + space
-    const keptSelectorLine = remaining.join(', ');
-    kept.push((keptSelectorLine + ' {' + (body || '')).trim() + '\n}');
+    // Keep block with remaining selectors
+    const keptSelectorBlock = remaining.join(', ');
+    // Write the kept selector line with brace
+    kept.push(keptSelectorBlock + ' {' + afterBrace);
+    i++; // move to next line (start of body or next content)
+
+    // Now append body lines until closing brace
+    while (i < lines.length && lines[i].indexOf('}') === -1) {
+      kept.push(lines[i]);
+      i++;
+    }
+    if (i < lines.length && lines[i].indexOf('}') !== -1) {
+      kept.push(lines[i]);
+      i++;
+    }
   }
-});
+}
 
 if (removed.length === 0) {
   console.log('No legacy CSS blocks found in css.css — nothing to remove.');
