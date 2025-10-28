@@ -9,6 +9,7 @@ This document describes the new namespaced card component used for program/featu
 - Success criteria: migrated pages render identically (or improved) on desktop/tablet/mobile and do not introduce layout regressions on other pages.
 
 ## Key classes
+
 - Component root: `ncll-card` — base card styling
 - Modifiers (examples):
   - `ncll-card--volunteer` — volunteer-specific tweaks
