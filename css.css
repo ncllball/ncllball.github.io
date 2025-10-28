@@ -2442,3 +2442,8 @@ details.footies[open] summary::before {
     color: var(--color_muted);
     font-size: 0.9rem;
 }
+
+
+.h1-seo {
+    display: none;
+}
