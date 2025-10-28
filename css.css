@@ -1357,6 +1357,22 @@ body:not(.cms-right) .only-on-right {
     min-height: 500px;
 }
 
+/* Restore explicit scrolling behavior for the namespaced card body
+   - ensure touch-smooth scrolling on mobile
+   - make it explicit for the ncll-card body when used inside the overlay variant
+   This preserves the previous 'scrolling bottom layer' UX where the top layer
+   remains visually over the card while the bottom layer scrolls independently. */
+.baseball-landing .division-card--overlay .ncll-card__body,
+.softball-landing .division-card--overlay .ncll-card__body,
+.pd-landing .division-card--overlay .ncll-card__body {
+    /* enforce vertical scrolling inside the card */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+    will-change: scroll;
+    /* ensure the scroller respects the overlay bounds */
+    box-sizing: border-box;
+}
+
 /* Hover/focus effect: only on devices that support hover */
 @media (hover: hover) and (pointer: fine) {
 
