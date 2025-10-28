@@ -285,6 +285,17 @@ h2.left::before {
     border-radius: 2px;
 }
 
+/* Ensure the heading itself is the positioning context and the stripe sits behind text */
+h2.left, h3.left, h4.left {
+    position: relative;
+    padding-left: 18px; /* leave room for the stripe */
+    z-index: 1; /* ensure the heading text is above the ::before stripe */
+}
+
+h2.left::before {
+    z-index: 0;
+}
+
 :root {
     --ease-std: cubic-bezier(.2, 0, .2, 1);
     --ease-out: cubic-bezier(0, 0, .2, 1);
