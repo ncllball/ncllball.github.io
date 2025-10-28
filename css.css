@@ -64,19 +64,22 @@ h4 .clipboard-img {
 /* Place clipboard image in the top-right corner of each card */
 .program-card .clipboard-link {
     position: absolute;
-    top: 12px;
+    top: 8px;
     right: 12px;
     display: block;
+    z-index: 3;
 }
 .program-card .clipboard-img {
     width: 44px;
     height: auto;
     display: block;
+    float: none !important;
 }
 
 /* Ensure the heading doesn't collide with the absolute image */
 .program-card h4 {
-    padding-right: 64px;
+    padding-right: 56px;
+    margin-bottom: 8px; /* tighten spacing under headings for consistent layout */
 }
 /* Volunteer Lite cards styling */
 .volunteer-lite-list {
