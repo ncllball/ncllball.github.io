@@ -50,6 +50,7 @@ h4 .clipboard-img {
 }
 
 .program-card {
+    position: relative;
     background: var(--color_surface_light, #fafafa);
     border: 1px solid var(--color_border_light, #dddddd);
     padding: 14px 16px;
@@ -58,6 +59,24 @@ h4 .clipboard-img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+/* Place clipboard image in the top-right corner of each card */
+.program-card .clipboard-link {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: block;
+}
+.program-card .clipboard-img {
+    width: 44px;
+    height: auto;
+    display: block;
+}
+
+/* Ensure the heading doesn't collide with the absolute image */
+.program-card h4 {
+    padding-right: 64px;
 }
 /* Volunteer Lite cards styling */
 .volunteer-lite-list {
