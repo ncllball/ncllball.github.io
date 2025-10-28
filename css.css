@@ -53,20 +53,9 @@ h4 .clipboard-img {
     margin: 20px 0 40px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
-
-.program-card {
-    position: relative;
-    background: var(--color_surface_light, #fafafa);
-    border: 1px solid var(--color_border_light, #dddddd);
-    padding: 14px 16px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
-    display: flex;
-    flex-direction: column;
-    /* Use flex-start so content flows naturally from the top and we don't get large gaps
-       created by space-between when cards have different content heights. */
-    justify-content: flex-start;
-}
+/* Legacy `.program-card` rules were extracted to `css.legacy.extracted.css` during
+   the `ncll-card` migration. The namespaced `.ncll-card` rules below are used
+   going forward. See css.legacy.extracted.css for the original legacy block. */
 
 /* LEGACY: program-card clipboard float rules (commented)
 .program-card .clipboard-link {
@@ -86,17 +75,9 @@ h4 .clipboard-img {
 }
 */
 
-.program-card h4 {
-    /* headings take normal flow now; no extra right padding needed when icon floats inside the list */
-    padding-right: 0;
-    margin-bottom: 8px;
-}
-/* Ensure floated clipboard icon inside the list doesn't collapse following content */
-.program-meta::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+/* Legacy `.program-card h4` and `.program-meta` utilities were removed and
+   moved to css.legacy.extracted.css. Use `.ncll-card__title` and
+   `.ncll-card__meta` for the namespaced implementation. */
 
 /* Namespaced card component (PoC): ncll-card
    These rules intentionally coexist with .program-card for an incremental migration.
@@ -1214,7 +1195,7 @@ body:not(.cms-right) .only-on-right {
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
 }
 
-.pd-landing .program-card {
+.pd-landing .ncll-card {
     background: var(--color_surface_light);
     border: 1px solid var(--color_border_light);
     padding: 14px 16px;
@@ -1225,7 +1206,7 @@ body:not(.cms-right) .only-on-right {
     justify-content: space-between;
 }
 
-.pd-landing article.program-card h3 {
+.pd-landing article.ncll-card h3 {
     font-size: 1.05rem;
     line-height: 1.3;
     color: var(--color_blue);
@@ -1234,14 +1215,14 @@ body:not(.cms-right) .only-on-right {
 
 }
 
-.pd-landing .program-meta {
+.pd-landing .ncll-card__meta {
     list-style: none;
     padding: 0;
     margin: 0 0 10px;
     font-size: .85rem;
 }
 
-.pd-landing .program-meta li {
+.pd-landing .ncll-card__meta li {
     list-style: none;
     margin: 2px 0;
     color: var(--color_muted);
@@ -1311,12 +1292,9 @@ body:not(.cms-right) .only-on-right {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
-/* Top layer: visible by default, fades on hover/focus */
-.baseball-landing .division-card--overlay .division-card__top-layer,
+/* Top layer: visible by default, fades on hover/focus (ncll-only selectors) */
 .baseball-landing .division-card--overlay .ncll-card__top-layer,
-.softball-landing .division-card--overlay .division-card__top-layer,
 .softball-landing .division-card--overlay .ncll-card__top-layer,
-.pd-landing .division-card--overlay .division-card__top-layer,
 .pd-landing .division-card--overlay .ncll-card__top-layer {
     position: absolute;
     inset: 0;
@@ -1332,11 +1310,8 @@ body:not(.cms-right) .only-on-right {
 }
 
 /* Bottom layer: always there, revealed on hover/focus */
-.baseball-landing .division-card--overlay .division-card__bottom-layer,
 .baseball-landing .division-card--overlay .ncll-card__body,
-.softball-landing .division-card--overlay .division-card__bottom-layer,
 .softball-landing .division-card--overlay .ncll-card__body,
-.pd-landing .division-card--overlay .division-card__bottom-layer,
 .pd-landing .division-card--overlay .ncll-card__body {
     position: absolute;
     inset: 0;
@@ -1348,7 +1323,7 @@ body:not(.cms-right) .only-on-right {
     min-height: 500px;
 }
 
-.pd-landing .division-card--overlay .division-card__bottom-layer {
+.pd-landing .division-card--overlay .ncll-card__body {
     padding: 20px;
     padding-bottom: 0;
     overflow-y: auto;
@@ -1359,11 +1334,8 @@ body:not(.cms-right) .only-on-right {
 /* Hover/focus effect: only on devices that support hover */
 @media (hover: hover) and (pointer: fine) {
 
-    .baseball-landing .division-card--overlay:hover .division-card__top-layer,
     .baseball-landing .division-card--overlay:hover .ncll-card__top-layer,
-    .softball-landing .division-card--overlay:hover .division-card__top-layer,
     .softball-landing .division-card--overlay:hover .ncll-card__top-layer,
-    .pd-landing .division-card--overlay:hover .division-card__top-layer,
     .pd-landing .division-card--overlay:hover .ncll-card__top-layer {
         opacity: 0;
         pointer-events: none;
@@ -1379,11 +1351,8 @@ body:not(.cms-right) .only-on-right {
         cursor: pointer;
     }
 
-    .baseball-landing .division-card--overlay .division-card__top-layer::after,
     .baseball-landing .division-card--overlay .ncll-card__top-layer::after,
-    .softball-landing .division-card--overlay .division-card__top-layer::after,
     .softball-landing .division-card--overlay .ncll-card__top-layer::after,
-    .pd-landing .division-card--overlay .division-card__top-layer::after,
     .pd-landing .division-card--overlay .ncll-card__top-layer::after {
         content: "Tap for details";
         position: absolute;
@@ -1395,11 +1364,8 @@ body:not(.cms-right) .only-on-right {
         font-style: italic;
     }
 
-    .baseball-landing .division-card--overlay:focus-within .division-card__top-layer,
     .baseball-landing .division-card--overlay:focus-within .ncll-card__top-layer,
-    .softball-landing .division-card--overlay:focus-within .division-card__top-layer,
     .softball-landing .division-card--overlay:focus-within .ncll-card__top-layer,
-    .pd-landing .division-card--overlay:focus-within .division-card__top-layer,
     .pd-landing .division-card--overlay:focus-within .ncll-card__top-layer {
         opacity: 0;
         pointer-events: none;
@@ -1436,22 +1402,19 @@ body:not(.cms-right) .only-on-right {
     margin: 0 0 24px 0;
 }
 
-/* Division graphic */
-.baseball-landing .division-card__graphic,
+/* Division graphic (ncll-only) */
 .baseball-landing .ncll-card__graphic,
-.softball-landing .division-card__graphic,
 .softball-landing .ncll-card__graphic,
-.pd-landing .division-card__graphic,
 .pd-landing .ncll-card__graphic {
     width: 100px;
     height: auto;
     margin: 8px auto 8px;
 }
 
-/* Division meta list */
-.baseball-landing .division-meta,
-.softball-landing .division-meta,
-.pd-landing .division-meta {
+/* Division meta list (ncll-only) */
+.baseball-landing .ncll-card__meta,
+.softball-landing .ncll-card__meta,
+.pd-landing .ncll-card__meta {
     list-style: none;
     padding: 0;
     margin: 10px 0 0 0;
@@ -1460,9 +1423,9 @@ body:not(.cms-right) .only-on-right {
     text-align: left;
 }
 
-.baseball-landing .division-meta li,
-.softball-landing .division-meta li,
-.pd-landing .division-meta li {
+.baseball-landing .ncll-card__meta li,
+.softball-landing .ncll-card__meta li,
+.pd-landing .ncll-card__meta li {
     margin: 4px 0;
     line-height: 1.35;
     list-style: none;
@@ -1470,9 +1433,9 @@ body:not(.cms-right) .only-on-right {
     font-size: 0.9rem;
 }
 
-.baseball-landing .division-meta li strong,
-.softball-landing .division-meta li strong,
-.pd-landing .division-meta li strong {
+.baseball-landing .ncll-card__meta li strong,
+.softball-landing .ncll-card__meta li strong,
+.pd-landing .ncll-card__meta li strong {
     color: var(--color_text);
     font-weight: 600;
 }
@@ -1492,18 +1455,14 @@ body:not(.cms-right) .only-on-right {
     margin: 0 0 24px 0;
 }
 
-    .pd-landing .division-card--overlay > .ncll-card__details,
-    .pd-landing .division-card--overlay > .division__detail-content {
+    .pd-landing .division-card--overlay > .ncll-card__details {
     margin: 0 0 24px 0;
 }
 
 /* Detail content styling */
 .baseball-landing .ncll-card__details h4,
-.baseball-landing .division__detail-content h4,
 .softball-landing .ncll-card__details h4,
-.softball-landing .division__detail-content h4,
-.pd-landing .ncll-card__details h4,
-.pd-landing .division__detail-content h4 {
+.pd-landing .ncll-card__details h4 {
     font-size: 1.05rem;
     margin: 0px 0 4px 0;
     color: var(--color_blue);
@@ -1511,40 +1470,28 @@ body:not(.cms-right) .only-on-right {
 }
 
 .baseball-landing .ncll-card__details h4:first-child,
-.baseball-landing .division__detail-content h4:first-child,
 .softball-landing .ncll-card__details h4:first-child,
-.softball-landing .division__detail-content h4:first-child,
-.pd-landing .ncll-card__details h4:first-child,
-.pd-landing .division__detail-content h4:first-child {
+.pd-landing .ncll-card__details h4:first-child {
     margin-top: 0;
 }
 
 .baseball-landing .ncll-card__details p,
-.baseball-landing .division__detail-content p,
 .softball-landing .ncll-card__details p,
-.softball-landing .division__detail-content p,
-.pd-landing .ncll-card__details p,
-.pd-landing .division__detail-content p {
+.pd-landing .ncll-card__details p {
     font-size: 0.9rem;
     line-height: 1.45;
 }
 
 .baseball-landing .ncll-card__details ul,
-.baseball-landing .division__detail-content ul,
 .softball-landing .ncll-card__details ul,
-.softball-landing .division__detail-content ul,
-.pd-landing .ncll-card__details ul,
-.pd-landing .division__detail-content ul {
+.pd-landing .ncll-card__details ul {
     font-size: 0.9rem;
     margin: 6px 0 4px 8px;
 }
 
 .baseball-landing .ncll-card__details li,
-.baseball-landing .division__detail-content li,
 .softball-landing .ncll-card__details li,
-.softball-landing .division__detail-content li,
-.pd-landing .ncll-card__details li,
-.pd-landing .division__detail-content li {
+.pd-landing .ncll-card__details li {
     margin: 3px 0;
     line-height: 1.35;
     font-size: .9rem;
@@ -1637,9 +1584,9 @@ body:not(.cms-right) .only-on-right {
 @media (hover: hover) and (pointer: fine) {
 
     /* Only apply hover effects on devices with precise pointing (mouse/trackpad) */
-    .baseball-landing .division-card--overlay:hover .division-card__top-layer,
-    .softball-landing .division-card--overlay:hover .division-card__top-layer,
-    .pd-landing .division-card--overlay:hover .division-card__top-layer {
+    .baseball-landing .division-card--overlay:hover .ncll-card__top-layer,
+    .softball-landing .division-card--overlay:hover .ncll-card__top-layer,
+    .pd-landing .division-card--overlay:hover .ncll-card__top-layer {
         opacity: 0;
         pointer-events: none;
     }
@@ -1655,9 +1602,9 @@ body:not(.cms-right) .only-on-right {
     }
 
     /* Add visual hint that cards are interactive */
-    .baseball-landing .division-card--overlay .division-card__top-layer::after,
-    .softball-landing .division-card--overlay .division-card__top-layer::after,
-    .pd-landing .division-card--overlay .division-card__top-layer::after {
+    .baseball-landing .division-card--overlay .ncll-card__top-layer::after,
+    .softball-landing .division-card--overlay .ncll-card__top-layer::after,
+    .pd-landing .division-card--overlay .ncll-card__top-layer::after {
         content: "Tap for details";
         position: absolute;
         bottom: 75px;
@@ -1669,37 +1616,14 @@ body:not(.cms-right) .only-on-right {
     }
 
     /* Use :focus-within for touch activation */
-    .baseball-landing .division-card--overlay:focus-within .division-card__top-layer,
-    .softball-landing .division-card--overlay:focus-within .division-card__top-layer,
-    .pd-landing .division-card--overlay:focus-within .division-card__top-layer {
+    .baseball-landing .division-card--overlay:focus-within .ncll-card__top-layer,
+    .softball-landing .division-card--overlay:focus-within .ncll-card__top-layer,
+    .pd-landing .division-card--overlay:focus-within .ncll-card__top-layer {
         opacity: 0;
         pointer-events: none;
     }
 }
-
-/* Alternative: Add explicit toggle button (more accessible) */
-.division-card__toggle {
-    position: absolute;
-    bottom: 75px;
-    right: 20px;
-    background: var(--color_blue);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    font-size: 1.2rem;
-    line-height: 1;
-    cursor: pointer;
-    z-index: 4;
-    display: none;
-}
-
-@media (hover: none), (pointer: coarse) {
-    .division-card__toggle {
-        display: block;
-    }
-}
+/* (legacy toggle moved to css.legacy.extracted.css) */
 
 /* Table component - ensure no wrapping in cells */
 .table_component table,
@@ -2597,20 +2521,20 @@ details.footies[open] summary::before {
     margin: 0 0 10px 0;
 }
 
-.pd-landing .division__detail-content h4 {
+.pd-landing .ncll-card__details h4 {
     font-size: 1.25rem;
     margin: 0 0 10px 0;
     color: var(--color_blue);
     font-weight: 600;
 }
 
-.pd-landing .division__detail-content p {
+.pd-landing .ncll-card__details p {
     font-size: 0.9rem;
     line-height: 1.3;
     color: var(--color_text);
 }
 
-.pd-landing .division__detail-content ul {
+.pd-landing .ncll-card__details ul {
     list-style: none;
     padding: 0;
     margin: 10px 0 0 0;
@@ -2619,7 +2543,7 @@ details.footies[open] summary::before {
     text-align: left;
 }
 
-.pd-landing .division__detail-content li {
+.pd-landing .ncll-card__details li {
     margin: 4px 0;
     line-height: 1.35;
     list-style: none;

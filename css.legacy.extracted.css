@@ -1,2 +1,249 @@
+/*
+  css.legacy.extracted.css
+
+  Extracted legacy CSS removed from css.css during migration to the
+  namespaced `ncll-card` component. Keep this file as a backup and
+  reference when reviewing or rolling back legacy styles.
+
+  DO NOT DELETE — this file is an archive of the original legacy
+  selectors and rules that were removed from the primary stylesheet.
+*/
+
+/* ===== LEGACY: global clipboard rules (extracted) ===== */
+.clipboard-link {
+    position: relative;
+    display: block;
+    min-height: 60px;
+}
+.clipboard-img {
+    float: right;
+    width: 60px;
+    height: 82px;
+    margin-left: 12px;
+    margin-bottom: 6px;
+    shape-outside: inset(0);
+}
+
+/* ===== LEGACY: program-card (extracted) ===== */
+.program-card {
+    position: relative;
+    background: var(--color_surface_light, #fafafa);
+    border: 1px solid var(--color_border_light, #dddddd);
+    padding: 14px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* program-card h4 clipboard float rules (extracted) */
+.program-card .clipboard-link {
+    position: static;
+    float: right;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+.program-card .clipboard-img {
+    width: 56px;
+    height: auto;
+    display: block;
+    float: right;
+    margin-left: 12px;
+    margin-bottom: 8px;
+    shape-outside: inset(0);
+}
+
+/* ===== LEGACY: PD landing program-card (extracted) ===== */
+.pd-landing .program-card {
+    background: var(--color_surface_light);
+    border: 1px solid var(--color_border_light);
+    padding: 14px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ===== LEGACY: Division card / overlay rules (extracted) ===== */
+.baseball-landing .division-card--overlay,
+.softball-landing .division-card--overlay,
+.pd-landing .division-card--overlay {
+    position: relative;
+    height: 500px;
+    border: 1px solid var(--color_border_light);
+    border-radius: 6px;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.baseball-landing .division-card--overlay .division-card__top-layer,
+.softball-landing .division-card--overlay .division-card__top-layer,
+.pd-landing .division-card--overlay .division-card__top-layer {
+    position: absolute;
+    inset: 0;
+    background: var(--color_surface_light);
+    padding: 24px 20px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    min-height: 500px;
+}
+
+.baseball-landing .division-card--overlay .division-card__bottom-layer,
+.softball-landing .division-card--overlay .division-card__bottom-layer,
+.pd-landing .division-card--overlay .division-card__bottom-layer {
+    position: absolute;
+    inset: 0;
+    padding: 20px;
+    padding-bottom: 70px;
+    overflow-y: auto;
+    background: white;
+    z-index: 1;
+    min-height: 500px;
+}
+
+/* ===== LEGACY: Division detail content (extracted) ===== */
+.pd-landing .division-card--overlay > .division__detail-content {
+    margin: 0 0 24px 0;
+}
+
+.baseball-landing .division__detail-content h4,
+.softball-landing .division__detail-content h4,
+.pd-landing .division__detail-content h4 {
+    font-size: 1.05rem;
+    margin: 0px 0 4px 0;
+    color: var(--color_blue);
+    font-weight: 600;
+}
+
+.baseball-landing .division__detail-content p,
+.softball-landing .division__detail-content p,
+.pd-landing .division__detail-content p {
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.baseball-landing .division__detail-content ul,
+.softball-landing .division__detail-content ul,
+.pd-landing .division__detail-content ul {
+    font-size: 0.9rem;
+    margin: 6px 0 4px 8px;
+}
+
+.baseball-landing .division__detail-content li,
+.softball-landing .division__detail-content li,
+.pd-landing .division__detail-content li {
+    margin: 3px 0;
+    line-height: 1.35;
+    font-size: .9rem;
+}
+
+/* ===== LEGACY: Division graphic & meta (extracted) ===== */
+.baseball-landing .division-card__graphic,
+.softball-landing .division-card__graphic,
+.pd-landing .division-card__graphic {
+    width: 100px;
+    height: auto;
+    margin: 8px auto 8px;
+}
+
+.baseball-landing .division-meta,
+.softball-landing .division-meta,
+.pd-landing .division-meta {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: left;
+}
+
+.baseball-landing .division-meta li,
+.softball-landing .division-meta li,
+.pd-landing .division-meta li {
+    margin: 4px 0;
+    line-height: 1.35;
+    list-style: none;
+    color: var(--color_muted);
+    font-size: 0.9rem;
+}
+
+.baseball-landing .division-meta li strong,
+.softball-landing .division-meta li strong,
+.pd-landing .division-meta li strong {
+    color: var(--color_text);
+    font-weight: 600;
+}
+
+/* ===== LEGACY: division-bar / title / buttons (extracted) ===== */
+.division-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 4px 0;
+    position: relative;
+    margin: 0;
+}
+
+.division-title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-weight: 600;
+    color: var(--color_blue) !important;
+}
+
+.aoverb_button {
+    background: var(--color_lightgray);
+    border: none;
+    border-radius: 4px;
+    color: var(--color_text);
+    cursor: pointer;
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: background .3s, color .3s, transform .2s, box-shadow .2s;
+    white-space: nowrap;
+    gap: 5px;
+    padding: 6px 6px 6px 6px;
+}
+
+/* End of extracted legacy CSS */
+
+/* ===== LEGACY: division-card toggle (extracted) ===== */
+.division-card__toggle {
+    position: absolute;
+    bottom: 75px;
+    right: 20px;
+    background: var(--color_blue);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 4;
+    display: none;
+}
+
+@media (hover: none), (pointer: coarse) {
+    .division-card__toggle {
+        display: block;
+    }
+}
+
 /* Extracted legacy selector blocks - removed from css.css. Review and consolidate in css.legacy.extracted.css */
 
