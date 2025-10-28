@@ -98,8 +98,11 @@ while (i < lines.length) {
   }
 }
 
-if (removed.length === 0) {
-  console.log('No legacy CSS blocks found in css.css — nothing to remove.');
+// Build the new CSS from kept blocks
+const newCss = kept.join('\n\n');
+
+if (newCss.trim() === text.trim()) {
+  console.log('No legacy selector changes detected in css.css — nothing to write.');
   process.exit(0);
 }
 
@@ -108,11 +111,10 @@ fs.writeFileSync(BACKUP, text, 'utf8');
 console.log('Backed up original css to', BACKUP);
 
 // Write new css with kept blocks
-const newCss = kept.join('\n\n');
 fs.writeFileSync(CSS_IN, newCss, 'utf8');
-console.log('Wrote cleaned css to', CSS_IN, '(legacy blocks removed)');
+console.log('Wrote cleaned css to', CSS_IN, '(legacy selectors removed from selector lists where present)');
 
-// Write/overwrite extracted file with removed blocks for review
+// Write/overwrite extracted file with removed blocks for review (may be empty)
 const header = '/* Extracted legacy selector blocks - removed from css.css. Review and consolidate in css.legacy.extracted.css */\n\n';
 fs.writeFileSync(OUT_EXTRACT, header + removed.join('\n\n'), 'utf8');
 console.log('Wrote', OUT_EXTRACT, 'with', removed.length, 'removed blocks.');
