@@ -1092,14 +1092,10 @@ body:not(.cms-right) .only-on-right {
 
 /* =============== End Right-pane (CMS) helpers =============== */
 /* ================= Player Development landing (scoped) ================ */
-.pd-landing .program-grid {
-    display: grid;
-    gap: 18px;
-    margin: 10px 0 40px;
-    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr))
-}
+/* Player Development specific grid/card rules removed in favor of global rules.
+   Use the global `.program-grid` and `.ncll-card` styles defined above. */
 
-.pd-landing .ncll-card {
+.ncll-card {
     background: var(--color_surface_light);
     border: 1px solid var(--color_border_light);
     padding: 14px 16px;
@@ -1110,7 +1106,7 @@ body:not(.cms-right) .only-on-right {
     justify-content: space-between
 }
 
-.pd-landing article.ncll-card h3 {
+.ncll-card__title {
     font-size: 1.05rem;
     line-height: 1.3;
     color: var(--color_blue);
@@ -1146,13 +1142,13 @@ body:not(.cms-right) .only-on-right {
     font-weight: 600
 }
 
-.pd-landing .ncll-card__meta li {
+.ncll-card__meta li {
     list-style: none;
     margin: 2px 0;
     color: var(--color_muted)
 }
 
-.pd-landing .status-badge {
+.status-badge {
     font-size: .7rem;
     text-transform: normal;
     font-weight: 600;
@@ -1163,37 +1159,36 @@ body:not(.cms-right) .only-on-right {
     margin-left: 6px
 }
 
-.pd-landing .status-open {
+.status-open {
     background: #00013a
 }
 
-.pd-landing .status-active {
+.status-active {
     background: var(--color_blue)
 }
 
-.pd-landing .status-soon {
+.status-soon {
     background: #cd163f
 }
 
-.pd-landing .status-free {
+.status-free {
     background: var(--color_green)
 }
 
-.pd-landing .status-closed {
+.status-closed {
     background: var(--color_gray_aaaa)
 }
 
 /* ================= Baseball/Softball Division Cards ================= */
-/* Grid container - exactly like PD but slightly wider cards */
-.baseball-landing .program-grid, .softball-landing .program-grid, .pd-landing .program-grid {
+/* Grid container and overlay card structure: promote page-scoped selectors to global */
+.program-grid {
     display: grid;
     gap: 20px;
     margin: 20px 0 40px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
 }
 
-/* Two-layer overlay card structure */
-.baseball-landing .ncll-card--overlay, .softball-landing .ncll-card--overlay, .pd-landing .ncll-card--overlay {
+.ncll-card--overlay {
     position: relative;
     height: 500px;
     border: 1px solid var(--color_border_light);
@@ -1204,7 +1199,7 @@ body:not(.cms-right) .only-on-right {
 }
 
 /* Top layer: visible by default, fades on hover/focus (ncll-only selectors) */
-.baseball-landing .ncll-card--overlay .ncll-card__top-layer, .softball-landing .ncll-card--overlay .ncll-card__top-layer, .pd-landing .ncll-card--overlay .ncll-card__top-layer {
+.ncll-card--overlay .ncll-card__top-layer {
     position: absolute;
     inset: 0;
     background: var(--color_surface_light);
@@ -1219,7 +1214,7 @@ body:not(.cms-right) .only-on-right {
 }
 
 /* Bottom layer: always there, revealed on hover/focus */
-.baseball-landing .ncll-card--overlay .ncll-card__body, .softball-landing .ncll-card--overlay .ncll-card__body, .pd-landing .ncll-card--overlay .ncll-card__body {
+.ncll-card--overlay .ncll-card__body {
     position: absolute;
     inset: 0;
     padding: 20px;
@@ -1230,7 +1225,8 @@ body:not(.cms-right) .only-on-right {
     min-height: 500px
 }
 
-.pd-landing .ncll-card--overlay .ncll-card__body {
+.ncll-card--overlay .ncll-card__body.pd-override {
+    /* PD-specific override preserved as class-based fallback (no page prefix) */
     padding: 20px;
     padding-bottom: 0;
     overflow-y: auto;
@@ -1241,7 +1237,7 @@ body:not(.cms-right) .only-on-right {
 
 /* Hover/focus effect: only on devices that support hover */
 @media(hover:hover) and (pointer:fine) {
-    .baseball-landing .ncll-card--overlay:hover .ncll-card__top-layer, .softball-landing .ncll-card--overlay:hover .ncll-card__top-layer, .pd-landing .ncll-card--overlay:hover .ncll-card__top-layer {
+    .ncll-card--overlay:hover .ncll-card__top-layer {
         opacity: 0;
         pointer-events: none
     }
@@ -1249,12 +1245,12 @@ body:not(.cms-right) .only-on-right {
 
 /* Touch devices: tap/focus-within to reveal details, add hint and close button */
 @media(hover:none), (pointer:coarse) {
-    .baseball-landing .ncll-card--overlay, .softball-landing .ncll-card--overlay, .pd-landing .ncll-card--overlay {
+    .ncll-card--overlay {
         cursor: pointer
     }
 }
 
-    .baseball-landing .ncll-card--overlay .ncll-card__top-layer::after, .softball-landing .ncll-card--overlay .ncll-card__top-layer::after, .pd-landing .ncll-card--overlay .ncll-card__top-layer::after {
+    .ncll-card--overlay .ncll-card__top-layer::after {
         content: "Tap for details";
         position: absolute;
         bottom: 75px;
@@ -1265,12 +1261,12 @@ body:not(.cms-right) .only-on-right {
         font-style: italic
     }
 
-    .baseball-landing .ncll-card--overlay:focus-within .ncll-card__top-layer, .softball-landing .ncll-card--overlay:focus-within .ncll-card__top-layer, .pd-landing .ncll-card--overlay:focus-within .ncll-card__top-layer {
+    .ncll-card--overlay:focus-within .ncll-card__top-layer {
         opacity: 0;
         pointer-events: none
     }
 
-    .baseball-landing .ncll-card__meta, .softball-landing .ncll-card__meta, .pd-landing .ncll-card__meta {
+    .ncll-card__meta {
         list-style: none;
         padding: 0;
         margin: 10px 0 0 0;
@@ -1279,7 +1275,7 @@ body:not(.cms-right) .only-on-right {
         text-align: left
     }
 
-    .baseball-landing .ncll-card__meta li, .softball-landing .ncll-card__meta li, .pd-landing .ncll-card__meta li {
+    .ncll-card__meta li {
         margin: 4px 0;
         line-height: 1.35;
         list-style: none;
@@ -1287,50 +1283,50 @@ body:not(.cms-right) .only-on-right {
         font-size: 0.9rem
     }
 
-    .baseball-landing .ncll-card__meta li strong, .softball-landing .ncll-card__meta li strong, .pd-landing .ncll-card__meta li strong {
+    .ncll-card__meta li strong {
         color: var(--color_text);
         font-weight: 600
     }
 
-    .pd-landing .ncll-card--overlay>h3 {
+    .ncll-card--overlay>h3 {
         margin: 0 0 20px 0;
         text-align: center
     }
 
-    .pd-landing .ncll-card--overlay>p {
+    .ncll-card--overlay>p {
         margin: 0 0 24px 0;
         text-align: center
     }
 
-    .pd-landing .ncll-card--overlay>ul {
+    .ncll-card--overlay>ul {
         margin: 0 0 24px 0
     }
 
-    .pd-landing .ncll-card--overlay>.ncll-card__details {
+    .ncll-card--overlay>.ncll-card__details {
         margin: 0 0 24px 0
     }
 
-    .baseball-landing .ncll-card__details h4:first-child, .softball-landing .ncll-card__details h4:first-child, .pd-landing .ncll-card__details h4:first-child {
+    .ncll-card__details h4:first-child {
         margin-top: 0
     }
 
-    .baseball-landing .ncll-card__details p, .softball-landing .ncll-card__details p, .pd-landing .ncll-card__details p {
+    .ncll-card__details p {
         font-size: 0.9rem;
         line-height: 1.45
     }
 
-    .baseball-landing .ncll-card__details ul, .softball-landing .ncll-card__details ul, .pd-landing .ncll-card__details ul {
+    .ncll-card__details ul {
         font-size: 0.9rem;
         margin: 6px 0 4px 8px
     }
 
-    .baseball-landing .ncll-card__details li, .softball-landing .ncll-card__details li, .pd-landing .ncll-card__details li {
+    .ncll-card__details li {
         margin: 3px 0;
         line-height: 1.35;
         font-size: .9rem
     }
 
-    .baseball-landing .ncll-card--overlay .ncll-card__actions, .softball-landing .ncll-card--overlay .ncll-card__actions, .pd-landing .ncll-card--overlay .ncll-card__actions {
+    .ncll-card--overlay .ncll-card__actions {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -1369,7 +1365,7 @@ body:not(.cms-right) .only-on-right {
 
     /* Responsive - single column on mobile */
     @media(max-width:768px) {
-        .baseball-landing .program-grid, .softball-landing .program-grid, .pd-landing .program-grid {
+        .program-grid {
             grid-template-columns: 1fr
         }
     }
@@ -1378,7 +1374,7 @@ body:not(.cms-right) .only-on-right {
     @media(hover:hover) and (pointer:fine) {
 
         /* Only apply hover effects on devices with precise pointing (mouse/trackpad) */
-        .baseball-landing .ncll-card--overlay:hover .ncll-card__top-layer, .softball-landing .ncll-card--overlay:hover .ncll-card__top-layer, .pd-landing .ncll-card--overlay:hover .ncll-card__top-layer {
+        .ncll-card--overlay:hover .ncll-card__top-layer {
             opacity: 0;
             pointer-events: none
         }
@@ -1387,12 +1383,12 @@ body:not(.cms-right) .only-on-right {
     @media(hover:none), (pointer:coarse) {
 
         /* Touch devices - use tap interaction instead */
-        .baseball-landing .ncll-card--overlay, .softball-landing .ncll-card--overlay, .pd-landing .ncll-card--overlay {
+        .ncll-card--overlay {
             cursor: pointer
         }
 
         /* Add visual hint that cards are interactive */
-        .baseball-landing .ncll-card--overlay .ncll-card__top-layer::after, .softball-landing .ncll-card--overlay .ncll-card__top-layer::after, .pd-landing .ncll-card--overlay .ncll-card__top-layer::after {
+        .ncll-card--overlay .ncll-card__top-layer::after {
             content: "Tap for details";
             position: absolute;
             bottom: 75px;
@@ -1404,7 +1400,7 @@ body:not(.cms-right) .only-on-right {
         }
 
         /* Use :focus-within for touch activation */
-        .baseball-landing .ncll-card--overlay:focus-within .ncll-card__top-layer, .softball-landing .ncll-card--overlay:focus-within .ncll-card__top-layer, .pd-landing .ncll-card--overlay:focus-within .ncll-card__top-layer {
+        .ncll-card--overlay:focus-within .ncll-card__top-layer {
             opacity: 0;
             pointer-events: none
         }
@@ -2232,20 +2228,20 @@ body:not(.cms-right) .only-on-right {
         margin: 0 0 10px 0
     }
 
-    .pd-landing .ncll-card__details h4 {
+    .ncll-card__details h4 {
         font-size: 1.25rem;
         margin: 0 0 10px 0;
         color: var(--color_blue);
         font-weight: 600
     }
 
-    .pd-landing .ncll-card__details p {
+    .ncll-card__details p {
         font-size: 0.9rem;
         line-height: 1.3;
         color: var(--color_text)
     }
 
-    .pd-landing .ncll-card__details ul {
+    .ncll-card__details ul {
         list-style: none;
         padding: 0;
         margin: 10px 0 0 0;
@@ -2254,7 +2250,7 @@ body:not(.cms-right) .only-on-right {
         text-align: left
     }
 
-    .pd-landing .ncll-card__details li {
+    .ncll-card__details li {
         margin: 4px 0;
         line-height: 1.35;
         list-style: none;
