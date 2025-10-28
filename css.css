@@ -20,14 +20,46 @@
 /*
 LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{display:inline-block;vertical-align:middle;min-height:0}h4 .clipboard-img{width:40px;height:auto;margin-left:8px;margin-bottom:0;float:none}
 */
-/*
-Global card grid and card styles for universal use
-*/
+/* =====================
+   Program grid (cards)
+
+   This is the global, responsive grid used to layout program/feature
+   cards across multiple landing pages (Baseball, Softball, Player Dev).
+   We prefer CSS Grid with a sensible min column width and a generous
+   gap. Individual card articles are formatted as vertical flex containers
+   so their internal elements (title, meta, details, actions) stack
+   with consistent spacing.
+   ===================== */
 .program-grid {
     display: grid;
-    gap: 20px;
+    /* separate row/column gaps for clearer control */
+    grid-row-gap: 24px;
+    grid-column-gap: 20px;
     margin: 20px 0 40px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: start; /* keep cards top-aligned */
+}
+
+/* Ensure each article/card composes its internal layout vertically
+   and provide a small internal gap so elements don't touch. */
+.program-grid > article,
+.program-grid .ncll-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* let cards expand to fill the grid cell */
+    width: 100%;
+    box-sizing: border-box;
+    /* visual breathing room between stacked cards on older browsers */
+    margin-bottom: 8px;
+}
+
+/* Small helper: tighten the layout on narrow screens */
+@media (max-width: 420px) {
+    .program-grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 16px;
+    }
 }
 
 .ncll-card--volunteer {
