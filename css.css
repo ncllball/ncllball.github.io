@@ -1346,7 +1346,8 @@ body:not(.cms-right) .only-on-right {
         z-index: 3
     }
 
-    .baseball-landing .ncll-card--overlay .ncll-card__actions .button, .softball-landing .ncll-card--overlay .ncll-card__actions .button, .pd-landing .ncll-card--overlay .ncll-card__actions .button, .pd-landing .ncll-card__actions .button {
+    /* Make button styles global for ncll-card actions; remove page-scoped selectors */
+    .ncll-card__actions .button {
         padding: 6px 14px;
         font-size: 0.8rem;
         font-weight: 600;
@@ -1355,13 +1356,13 @@ body:not(.cms-right) .only-on-right {
         transition: all 0.2s ease
     }
 
-    .baseball-landing .ncll-card--overlay .ncll-card__actions .button--primary, .softball-landing .ncll-card--overlay .ncll-card__actions .button--primary, .pd-landing .ncll-card--overlay .ncll-card__actions .button--primary, .pd-landing .ncll-card__actions .button--primary {
+    .ncll-card__actions .button--primary {
         background: var(--color_blue);
         color: white;
         border: 1px solid var(--color_blue)
     }
 
-    .baseball-landing .ncll-card--overlay .ncll-card__actions .button--primary:hover, .softball-landing .ncll-card--overlay .ncll-card__actions .button--primary:hover, .pd-landing .ncll-card--overlay .ncll-card__actions .button--primary:hover, .pd-landing .ncll-card__actions .button--primary:hover {
+    .ncll-card__actions .button--primary:hover {
         background: #1a2b5c;
         border-color: #1a2b5c
     }
