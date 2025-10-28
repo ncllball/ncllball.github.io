@@ -259,6 +259,33 @@ Global card grid and card styles for universal use
 }
 
 /* Easing + durations */
+
+/* Utility: left alignment and left-heading stripe
+   Many pages use the `left` utility or `h2.left` headings. Reintroduce
+   a small, conservative rule-set so existing markup keeps its intended
+   left-oriented styling and decorative stripe. */
+.left {
+    /* explicit left alignment utility (keeps floats/text anchored left) */
+    float: left;
+}
+
+h2.left, h3.left, h4.left {
+    position: relative;
+    padding-left: 18px; /* space for decorative stripe */
+}
+
+h2.left::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 70%;
+    background: var(--stripe-gradient);
+    border-radius: 2px;
+}
+
 :root {
     --ease-std: cubic-bezier(.2, 0, .2, 1);
     --ease-out: cubic-bezier(0, 0, .2, 1);
