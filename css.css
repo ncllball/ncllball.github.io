@@ -1,3 +1,18 @@
+.purpose-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.purpose-row .clipboard-link {
+    display: flex;
+    align-items: center;
+}
+.purpose-row .clipboard-img {
+    width: 48px;
+    height: auto;
+    margin: 0 6px 0 0;
+    float: none;
+}
 /* Clipboard image for opt-in cards */
 .clipboard-link {
     position: relative;
