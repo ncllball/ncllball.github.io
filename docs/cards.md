@@ -5,7 +5,7 @@ This document describes the new namespaced card component used for program/featu
 ## Purpose / contract
 - Inputs: semantic HTML (article) with title, metadata list and optional small action icon (clipboard).
 - Output: visually consistent card with optional variants (volunteer, PD, division) and two clipboard behaviors (float in content, or pinned to corner).
-- Error modes: if the page hasn't been migrated, legacy `.program-card` styling will continue to apply as a fallback.
+- Error modes: legacy `.program-card` styling may still appear in pages or CSS backups. During migration we extract legacy CSS to `css.legacy.extracted.css` so `css.css` can be cleaned safely.
 - Success criteria: migrated pages render identically (or improved) on desktop/tablet/mobile and do not introduce layout regressions on other pages.
 
 ## Key classes
@@ -72,7 +72,7 @@ Notes:
 3. Add element classes where relevant (`ncll-card__meta`, `ncll-card__clipboard--float`).
 4. Verify on desktop/tablet/mobile. Adjust `ncll-card__clipboard-img` width (56px default) and `margin-left` if needed.
 5. If the page needs a visual variant, add a modifier (e.g., `ncll-card--compact` or `ncll-card--pd`) and define the tweaks in CSS.
-6. Repeat per page. Once all pages migrated and tested, remove legacy selectors from `css.css` (backup before removal).
+6. Repeat per page. As pages are migrated and tested, remove legacy selectors from `css.css` in a single cleanup commit (backup before removal). Removed legacy blocks are written to `css.legacy.extracted.css` and the original `css.css` is backed up as `css.css.pre-legacy-removed.bak` for review.
 
 ## QA checklist (per page)
 - [ ] Desktop layout: card spacing, title alignment, clipboard position.
@@ -92,8 +92,16 @@ Notes:
 - Keep `css.backup.css` around until the migration is fully validated.
 
 ## Next steps
-- Migrate one division page (Baseball or Softball) with overlay variants next, then run a full visual QA pass.
-- After migrating all pages, remove legacy `.program-card` global rules and keep the `ncll-card` system as the canonical pattern.
+- Confirm visual QA for migrated pages (screenshots saved to `screenshots/`).
+- Review `css.legacy.extracted.css` and compare with the backup `css.css.pre-legacy-removed.bak` before consolidating or deleting legacy rules.
+- When ready, remove legacy selector blocks from the extracted file (or keep it as an archive) and ensure `node scripts/check-legacy.js` reports only archived files as the remaining occurrences before final deletion.
+
+Completed notes (migration status):
+
+- Pages migrated in this batch: `Baseball/index.html`, `Softball/index.html`, `Player Development/index.html`.
+- Legacy CSS extracted to `css.legacy.extracted.css`; original `css.css` backed up to `css.css.pre-legacy-removed.bak`.
+
+After completing visual QA and any JS updates, perform the final cleanup commit to remove legacy selectors from the repo.
 
 ---
 
