@@ -85,6 +85,12 @@ h4 .clipboard-img {
     padding-right: 0;
     margin-bottom: 8px;
 }
+/* Ensure floated clipboard icon inside the list doesn't collapse following content */
+.program-meta::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /* Volunteer Lite cards styling */
 .volunteer-lite-list {
     display: flex;
