@@ -86,6 +86,7 @@ Notes:
 - If you want non-rectangular text flow around an icon set `shape-outside: circle(50%);` and ensure the image has transparent space to allow hugging text.
 
 ## Rollback plan
+
 - Because migrations keep the original `.program-card` class in place, rollback is simple: remove `ncll-card` classes from the page or revert the commit.
 - Keep `css.backup.css` around until the migration is fully validated.
 
@@ -96,6 +97,7 @@ Notes:
 ---
 
 If you want, I can now:
+
 - Migrate `Baseball/index.html` as the next PoC, or
 - Create a small `docs/cards.md` example page saved with screenshots (requires external tools).
 
