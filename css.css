@@ -132,6 +132,33 @@ h4 .clipboard-img {
     box-sizing: border-box;
     margin: 0 auto;
 }
+/* Callout box for important notices (e.g. build our bench) */
+.callout {
+    background: var(--color_surface_lighter);
+    border-left: 4px solid var(--color_richblue);
+    padding: 12px 14px;
+    margin: 1em 0;
+    border-radius: 6px;
+}
+.callout.callout-info {
+    border-left-color: var(--color_richblue);
+}
+.callout p {
+    margin: 0;
+}
+.callout .info-icon {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    background: var(--color_richblue);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
 /* (0) Design tokens */
 :root {
     --color_red: #cd163f;
