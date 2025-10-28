@@ -5,7 +5,7 @@ This document describes the new namespaced card component used for program/featu
 ## Purpose / contract
 - Inputs: semantic HTML (article) with title, metadata list and optional small action icon (clipboard).
 - Output: visually consistent card with optional variants (volunteer, PD, division) and two clipboard behaviors (float in content, or pinned to corner).
-- Error modes: legacy `.program-card` styling may still appear in pages or CSS backups. During migration we extract legacy CSS to `css.legacy.extracted.css` so `css.css` can be cleaned safely.
+-- Error modes: legacy `.program-card` styling has been extracted to `css.legacy.extracted.css` and archived. The live HTML pages in this repo have been migrated to `ncll-` classes; `css.css` was cleaned of element-level legacy selectors. Keep the extracted file as a rollback/archive while you complete visual QA.
 - Success criteria: migrated pages render identically (or improved) on desktop/tablet/mobile and do not introduce layout regressions on other pages.
 
 ## Key classes
@@ -67,8 +67,8 @@ Notes:
 - When floating, ensure the meta container clears floats (either `.ncll-card__meta::after` or `u-clearfix`).
 
 ## Migration checklist (safe, incremental)
-1. Audit pages using `.program-card` and note any modifiers like `division-card--overlay`.
-2. Add namespaced classes to the HTML while keeping existing `.program-card` (e.g., `<article class="program-card ncll-card">`).
+1. Review `css.legacy.extracted.css` and `tmp-legacy-selector-report.json` to see any remaining legacy selectors that live outside page HTML (reports and archives may still reference them).
+2. Add namespaced classes to any new pages. The repo's existing landing pages were migrated to `ncll-` classes during the last cleanup; you no longer need to keep `.program-card` in migrated files.
 3. Add element classes where relevant (`ncll-card__meta`, `ncll-card__clipboard--float`).
 4. Verify on desktop/tablet/mobile. Adjust `ncll-card__clipboard-img` width (56px default) and `margin-left` if needed.
 5. If the page needs a visual variant, add a modifier (e.g., `ncll-card--compact` or `ncll-card--pd`) and define the tweaks in CSS.
@@ -88,7 +88,7 @@ Notes:
 
 ## Rollback plan
 
-- Because migrations keep the original `.program-card` class in place, rollback is simple: remove `ncll-card` classes from the page or revert the commit.
+-- Rollback: changes were applied conservatively and a `css.legacy.extracted.css` archive and `css.css.pre-legacy-removed.bak` backup were created. If you need to revert any migration, restore the original files from the backups or via git.
 - Keep `css.backup.css` around until the migration is fully validated.
 
 ## Next steps
