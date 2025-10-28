@@ -58,7 +58,9 @@ h4 .clipboard-img {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* Use flex-start so content flows naturally from the top and we don't get large gaps
+       created by space-between when cards have different content heights. */
+    justify-content: flex-start;
 }
 
 /* Place clipboard image in the top-right corner of each card */
