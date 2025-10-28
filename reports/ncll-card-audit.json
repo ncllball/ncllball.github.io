@@ -1,0 +1,154 @@
+{
+  ".ncll-card__meta": [
+    {
+      "selector": ".pd-landing .ncll-card__meta",
+      "body": "list-style: none;\n    padding: 0;\n    margin: 0 0 10px;\n    font-size: .85rem"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__meta li",
+      "body": "list-style: none;\n    margin: 2px 0;\n    color: var(--color_muted)"
+    },
+    {
+      "selector": ".baseball-landing .ncll-card__meta",
+      "body": "list-style: none;\n        padding: 0;\n        margin: 10px 0 0 0;\n        font-size: 0.8rem;\n        width: 100%;\n        text-align: left"
+    },
+    {
+      "selector": ".softball-landing .ncll-card__meta",
+      "body": "list-style: none;\n        padding: 0;\n        margin: 10px 0 0 0;\n        font-size: 0.8rem;\n        width: 100%;\n        text-align: left"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__meta",
+      "body": "list-style: none;\n        padding: 0;\n        margin: 10px 0 0 0;\n        font-size: 0.8rem;\n        width: 100%;\n        text-align: left"
+    },
+    {
+      "selector": ".baseball-landing .ncll-card__meta li",
+      "body": "margin: 4px 0;\n        line-height: 1.35;\n        list-style: none;\n        color: var(--color_muted);\n        font-size: 0.9rem"
+    },
+    {
+      "selector": ".softball-landing .ncll-card__meta li",
+      "body": "margin: 4px 0;\n        line-height: 1.35;\n        list-style: none;\n        color: var(--color_muted);\n        font-size: 0.9rem"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__meta li",
+      "body": "margin: 4px 0;\n        line-height: 1.35;\n        list-style: none;\n        color: var(--color_muted);\n        font-size: 0.9rem"
+    },
+    {
+      "selector": ".baseball-landing .ncll-card__meta li strong",
+      "body": "color: var(--color_text);\n        font-weight: 600"
+    },
+    {
+      "selector": ".softball-landing .ncll-card__meta li strong",
+      "body": "color: var(--color_text);\n        font-weight: 600"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__meta li strong",
+      "body": "color: var(--color_text);\n        font-weight: 600"
+    }
+  ],
+  ".ncll-card__blurb": [
+    {
+      "selector": ".baseball-landing .ncll-card__blurb",
+      "body": "font-size: 0.9rem;\n        line-height: 1.3;\n        color: var(--color_text)"
+    },
+    {
+      "selector": ".softball-landing .ncll-card__blurb",
+      "body": "font-size: 0.9rem;\n        line-height: 1.3;\n        color: var(--color_text)"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__blurb",
+      "body": "font-size: 0.9rem;\n        line-height: 1.3;\n        color: var(--color_text)"
+    }
+  ],
+  ".ncll-card__graphic": [
+    {
+      "selector": ".baseball-landing .ncll-card__graphic",
+      "body": "width: 100px;\n        height: auto;\n        margin: 8px auto 8px"
+    },
+    {
+      "selector": ".softball-landing .ncll-card__graphic",
+      "body": "width: 100px;\n        height: auto;\n        margin: 8px auto 8px"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__graphic",
+      "body": "width: 100px;\n        height: auto;\n        margin: 8px auto 8px"
+    }
+  ],
+  ".ncll-card__details": [
+    {
+      "selector": ".baseball-landing .ncll-card__details h4",
+      "body": "font-size: 1.05rem;\n        margin: 0px 0 4px 0;\n        color: var(--color_blue);\n        font-weight: 600"
+    },
+    {
+      "selector": ".softball-landing .ncll-card__details h4",
+      "body": "font-size: 1.05rem;\n        margin: 0px 0 4px 0;\n        color: var(--color_blue);\n        font-weight: 600"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__details h4",
+      "body": "font-size: 1.05rem;\n        margin: 0px 0 4px 0;\n        color: var(--color_blue);\n        font-weight: 600"
+    },
+    {
+      "selector": ".baseball-landing .ncll-card__details h4:first-child",
+      "body": "margin-top: 0"
+    },
+    {
+      "selector": ".softball-landing .ncll-card__details h4:first-child",
+      "body": "margin-top: 0"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__details h4:first-child",
+      "body": "margin-top: 0"
+    },
+    {
+      "selector": ".baseball-landing .ncll-card__details p",
+      "body": "font-size: 0.9rem;\n        line-height: 1.45"
+    },
+    {
+      "selector": ".softball-landing .ncll-card__details p",
+      "body": "font-size: 0.9rem;\n        line-height: 1.45"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__details p",
+      "body": "font-size: 0.9rem;\n        line-height: 1.45"
+    },
+    {
+      "selector": ".baseball-landing .ncll-card__details ul",
+      "body": "font-size: 0.9rem;\n        margin: 6px 0 4px 8px"
+    },
+    {
+      "selector": ".softball-landing .ncll-card__details ul",
+      "body": "font-size: 0.9rem;\n        margin: 6px 0 4px 8px"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__details ul",
+      "body": "font-size: 0.9rem;\n        margin: 6px 0 4px 8px"
+    },
+    {
+      "selector": ".baseball-landing .ncll-card__details li",
+      "body": "margin: 3px 0;\n        line-height: 1.35;\n        font-size: .9rem"
+    },
+    {
+      "selector": ".softball-landing .ncll-card__details li",
+      "body": "margin: 3px 0;\n        line-height: 1.35;\n        font-size: .9rem"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__details li",
+      "body": "margin: 3px 0;\n        line-height: 1.35;\n        font-size: .9rem"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__details h4",
+      "body": "font-size: 1.25rem;\n        margin: 0 0 10px 0;\n        color: var(--color_blue);\n        font-weight: 600"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__details p",
+      "body": "font-size: 0.9rem;\n        line-height: 1.3;\n        color: var(--color_text)"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__details ul",
+      "body": "list-style: none;\n        padding: 0;\n        margin: 10px 0 0 0;\n        font-size: 0.8rem;\n        width: 100%;\n        text-align: left"
+    },
+    {
+      "selector": ".pd-landing .ncll-card__details li",
+      "body": "margin: 4px 0;\n        line-height: 1.35;\n        list-style: none;\n        color: var(--color_muted);\n        font-size: 0.9rem"
+    }
+  ]
+}
