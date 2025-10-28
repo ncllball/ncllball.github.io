@@ -129,8 +129,8 @@ h4 .clipboard-img {
 }
 .ncll-card__clipboard--float {
     float: right;
-    margin-left: 12px;
-    width: 56px;
+    margin-left: 10px;
+    width: 48px;
 }
 .ncll-card__clipboard--pinned {
     position: absolute;
@@ -140,13 +140,22 @@ h4 .clipboard-img {
 
 /* Image rules scoped to the namespaced card to avoid conflicts with global clipboard-img settings */
 .ncll-card__clipboard-img {
-    width: 56px;
+    width: 48px;
     height: auto;
     display: block;
     float: right;
-    margin-left: 12px;
+    margin-left: 10px;
     margin-bottom: 8px;
     shape-outside: inset(0);
+}
+
+/* Responsive tweak: slightly smaller clipboard on narrow screens */
+@media (max-width: 480px) {
+    .ncll-card__clipboard--float,
+    .ncll-card__clipboard-img {
+        width: 40px;
+        margin-left: 8px;
+    }
 }
 
 /* small utility helpers */
