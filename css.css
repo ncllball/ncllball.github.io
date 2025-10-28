@@ -27,6 +27,20 @@
     margin-bottom: 6px;
     shape-outside: inset(0);
 }
+
+/* If the clipboard link is placed inside an h4 heading, make it inline with the text */
+h4 .clipboard-link {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 0;
+}
+h4 .clipboard-img {
+    width: 40px;
+    height: auto;
+    margin-left: 8px;
+    margin-bottom: 0;
+    float: none;
+}
 /* Global card grid and card styles for universal use */
 .program-grid {
     display: grid;
