@@ -1313,8 +1313,11 @@ body:not(.cms-right) .only-on-right {
 
 /* Top layer: visible by default, fades on hover/focus */
 .baseball-landing .division-card--overlay .division-card__top-layer,
+.baseball-landing .division-card--overlay .ncll-card__top-layer,
 .softball-landing .division-card--overlay .division-card__top-layer,
-.pd-landing .division-card--overlay .division-card__top-layer {
+.softball-landing .division-card--overlay .ncll-card__top-layer,
+.pd-landing .division-card--overlay .division-card__top-layer,
+.pd-landing .division-card--overlay .ncll-card__top-layer {
     position: absolute;
     inset: 0;
     background: var(--color_surface_light);
@@ -1330,8 +1333,11 @@ body:not(.cms-right) .only-on-right {
 
 /* Bottom layer: always there, revealed on hover/focus */
 .baseball-landing .division-card--overlay .division-card__bottom-layer,
+.baseball-landing .division-card--overlay .ncll-card__body,
 .softball-landing .division-card--overlay .division-card__bottom-layer,
-.pd-landing .division-card--overlay .division-card__bottom-layer {
+.softball-landing .division-card--overlay .ncll-card__body,
+.pd-landing .division-card--overlay .division-card__bottom-layer,
+.pd-landing .division-card--overlay .ncll-card__body {
     position: absolute;
     inset: 0;
     padding: 20px;
@@ -1355,8 +1361,11 @@ body:not(.cms-right) .only-on-right {
 @media (hover: hover) and (pointer: fine) {
 
     .baseball-landing .division-card--overlay:hover .division-card__top-layer,
+    .baseball-landing .division-card--overlay:hover .ncll-card__top-layer,
     .softball-landing .division-card--overlay:hover .division-card__top-layer,
-    .pd-landing .division-card--overlay:hover .division-card__top-layer {
+    .softball-landing .division-card--overlay:hover .ncll-card__top-layer,
+    .pd-landing .division-card--overlay:hover .division-card__top-layer,
+    .pd-landing .division-card--overlay:hover .ncll-card__top-layer {
         opacity: 0;
         pointer-events: none;
     }
@@ -1372,8 +1381,11 @@ body:not(.cms-right) .only-on-right {
     }
 
     .baseball-landing .division-card--overlay .division-card__top-layer::after,
+    .baseball-landing .division-card--overlay .ncll-card__top-layer::after,
     .softball-landing .division-card--overlay .division-card__top-layer::after,
-    .pd-landing .division-card--overlay .division-card__top-layer::after {
+    .softball-landing .division-card--overlay .ncll-card__top-layer::after,
+    .pd-landing .division-card--overlay .division-card__top-layer::after,
+    .pd-landing .division-card--overlay .ncll-card__top-layer::after {
         content: "Tap for details";
         position: absolute;
         bottom: 75px;
@@ -1385,8 +1397,11 @@ body:not(.cms-right) .only-on-right {
     }
 
     .baseball-landing .division-card--overlay:focus-within .division-card__top-layer,
+    .baseball-landing .division-card--overlay:focus-within .ncll-card__top-layer,
     .softball-landing .division-card--overlay:focus-within .division-card__top-layer,
-    .pd-landing .division-card--overlay:focus-within .division-card__top-layer {
+    .softball-landing .division-card--overlay:focus-within .ncll-card__top-layer,
+    .pd-landing .division-card--overlay:focus-within .division-card__top-layer,
+    .pd-landing .division-card--overlay:focus-within .ncll-card__top-layer {
         opacity: 0;
         pointer-events: none;
     }
@@ -1408,8 +1423,11 @@ body:not(.cms-right) .only-on-right {
 
 /* Division blurb */
 .baseball-landing .division-blurb,
+.baseball-landing .ncll-card__blurb,
 .softball-landing .division-blurb,
-.pd-landing .division-blurb {
+.softball-landing .ncll-card__blurb,
+.pd-landing .division-blurb,
+.pd-landing .ncll-card__blurb {
     font-size: 0.9rem;
     line-height: 1.3;
     color: var(--color_text);
@@ -1421,8 +1439,11 @@ body:not(.cms-right) .only-on-right {
 
 /* Division graphic */
 .baseball-landing .division-card__graphic,
+.baseball-landing .ncll-card__graphic,
 .softball-landing .division-card__graphic,
-.pd-landing .division-card__graphic {
+.softball-landing .ncll-card__graphic,
+.pd-landing .division-card__graphic,
+.pd-landing .ncll-card__graphic {
     width: 100px;
     height: auto;
     margin: 8px auto 8px;
@@ -1472,43 +1493,43 @@ body:not(.cms-right) .only-on-right {
     margin: 0 0 24px 0;
 }
 
-.pd-landing .division-card--overlay > .division-detail-content {
+.pd-landing .division-card--overlay > .division__detail-content {
     margin: 0 0 24px 0;
 }
 
 /* Detail content styling */
-.baseball-landing .division-detail-content h4,
-.softball-landing .division-detail-content h4,
-.pd-landing .division-detail-content h4 {
+.baseball-landing .division__detail-content h4,
+.softball-landing .division__detail-content h4,
+.pd-landing .division__detail-content h4 {
     font-size: 1.05rem;
     margin: 0px 0 4px 0;
     color: var(--color_blue);
     font-weight: 600;
 }
 
-.baseball-landing .division-detail-content h4:first-child,
-.softball-landing .division-detail-content h4:first-child,
-.pd-landing .division-detail-content h4:first-child {
+.baseball-landing .division__detail-content h4:first-child,
+.softball-landing .division__detail-content h4:first-child,
+.pd-landing .division__detail-content h4:first-child {
     margin-top: 0;
 }
 
-.baseball-landing .division-detail-content p,
-.softball-landing .division-detail-content p,
-.pd-landing .division-detail-content p {
+.baseball-landing .division__detail-content p,
+.softball-landing .division__detail-content p,
+.pd-landing .division__detail-content p {
     font-size: 0.9rem;
     line-height: 1.45;
 }
 
-.baseball-landing .division-detail-content ul,
-.softball-landing .division-detail-content ul,
-.pd-landing .division-detail-content ul {
+.baseball-landing .division__detail-content ul,
+.softball-landing .division__detail-content ul,
+.pd-landing .division__detail-content ul {
     font-size: 0.9rem;
     margin: 6px 0 4px 8px;
 }
 
-.baseball-landing .division-detail-content li,
-.softball-landing .division-detail-content li,
-.pd-landing .division-detail-content li {
+.baseball-landing .division__detail-content li,
+.softball-landing .division__detail-content li,
+.pd-landing .division__detail-content li {
     margin: 3px 0;
     line-height: 1.35;
     font-size: .9rem;
@@ -1516,8 +1537,11 @@ body:not(.cms-right) .only-on-right {
 
 /* Sticky card actions for both layers */
 .baseball-landing .division-card--overlay .card-actions,
+.baseball-landing .division-card--overlay .ncll-card__actions,
 .softball-landing .division-card--overlay .card-actions,
-.pd-landing .division-card--overlay .card-actions {
+.softball-landing .division-card--overlay .ncll-card__actions,
+.pd-landing .division-card--overlay .card-actions,
+.pd-landing .division-card--overlay .ncll-card__actions {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1535,8 +1559,11 @@ body:not(.cms-right) .only-on-right {
 
 /* Button styling */
 .baseball-landing .division-card--overlay .card-actions .button,
+.baseball-landing .division-card--overlay .ncll-card__actions .button,
 .softball-landing .division-card--overlay .card-actions .button,
-.pd-landing .division-card--overlay .card-actions .button {
+.softball-landing .division-card--overlay .ncll-card__actions .button,
+.pd-landing .division-card--overlay .card-actions .button,
+.pd-landing .division-card--overlay .ncll-card__actions .button {
     padding: 6px 14px;
     font-size: 0.8rem;
     font-weight: 600;
@@ -1546,16 +1573,22 @@ body:not(.cms-right) .only-on-right {
 }
 
 .baseball-landing .division-card--overlay .card-actions .button--primary,
+.baseball-landing .division-card--overlay .ncll-card__actions .button--primary,
 .softball-landing .division-card--overlay .card-actions .button--primary,
-.pd-landing .division-card--overlay .card-actions .button--primary {
+.softball-landing .division-card--overlay .ncll-card__actions .button--primary,
+.pd-landing .division-card--overlay .card-actions .button--primary,
+.pd-landing .division-card--overlay .ncll-card__actions .button--primary {
     background: var(--color_blue);
     color: white;
     border: 1px solid var(--color_blue);
 }
 
 .baseball-landing .division-card--overlay .card-actions .button--primary:hover,
+.baseball-landing .division-card--overlay .ncll-card__actions .button--primary:hover,
 .softball-landing .division-card--overlay .card-actions .button--primary:hover,
-.pd-landing .division-card--overlay .card-actions .button--primary:hover {
+.softball-landing .division-card--overlay .ncll-card__actions .button--primary:hover,
+.pd-landing .division-card--overlay .card-actions .button--primary:hover,
+.pd-landing .division-card--overlay .ncll-card__actions .button--primary:hover {
     background: #1a2b5c;
     border-color: #1a2b5c;
 }
@@ -2549,20 +2582,20 @@ details.footies[open] summary::before {
     margin: 0 0 10px 0;
 }
 
-.pd-landing .division-detail-content h4 {
+.pd-landing .division__detail-content h4 {
     font-size: 1.25rem;
     margin: 0 0 10px 0;
     color: var(--color_blue);
     font-weight: 600;
 }
 
-.pd-landing .division-detail-content p {
+.pd-landing .division__detail-content p {
     font-size: 0.9rem;
     line-height: 1.3;
     color: var(--color_text);
 }
 
-.pd-landing .division-detail-content ul {
+.pd-landing .division__detail-content ul {
     list-style: none;
     padding: 0;
     margin: 10px 0 0 0;
@@ -2571,7 +2604,7 @@ details.footies[open] summary::before {
     text-align: left;
 }
 
-.pd-landing .division-detail-content li {
+.pd-landing .division__detail-content li {
     margin: 4px 0;
     line-height: 1.35;
     list-style: none;
