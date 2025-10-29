@@ -12,118 +12,352 @@
   <main>
     <section id="sizing-charts">
       <h2 class="left">NCLL Uniform Sizing Charts</h2>
-      <img src="https://test1-emgndhaqd0c9h2db.a01.azurefd.net/images/da9632ba-fe72-4e26-a81d-471e6251d883.png" alt="Cheerful snowman playing baseball on a snowy field, wearing a Seattle Mariners jersey and helmet, mid-swing with a determined smile" style="max-width: 100%; height: auto; margin: 1rem 0;">
   <p class="muted">This year we worked hard to ...Vendor codes: PC90H = Hoodies, 4408 = Softball jerseys, ST350 = Coaches shirts, remaining = Baseball jerseys</p>
   <p class="muted"><span class="info-icon" aria-hidden="true">i</span> Chest measurements are measured pit-to-pit across the garment.</p>
 
       <div class="sizing-grid">
-        <article class="sizing-card" id="softball-4408">
-          <h3 class="card-title">Softball Jerseys — 4408<br>(A and above) <span class="unit muted">(in)</span></h3>
-          <table class="sizing-table" aria-describedby="softball-note">
-            <thead>
-              <tr>
-                <th>Size</th>
-                <th>Chest</th>
-                <th>Body Length</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>GS</td><td>13.5</td><td>20</td></tr>
-              <tr><td>GM</td><td>15.5</td><td>22</td></tr>
-              <tr><td>GL</td><td>17.5</td><td>24</td></tr>
-              <tr><td>WS</td><td>19</td><td>26.5</td></tr>
-              <tr><td>WM</td><td>20.5</td><td>27.5</td></tr>
-              <tr><td>WL</td><td>22</td><td>28.5</td></tr>
-              <tr><td>WXL</td><td>23.5</td><td>29.5</td></tr>
-              <tr><td>WXXL</td><td>25</td><td>30.75</td></tr>
-            </tbody>
-          </table>
-          <p id="softball-note" class="muted">Source: vendor spec 4408</p>
-        </article>
+        <!-- Division-first layout: Division header, then cards for each level -->
 
-        <article class="sizing-card" id="baseball">
-          <h3 class="card-title">Baseball Jerseys — HHHH<br>(T‑Ball → Seniors) <span class="unit muted">(in)</span></h3>
-          <table class="sizing-table" aria-describedby="baseball-note">
-            <thead>
-              <tr>
-                <th>Size</th>
-                <th>Chest</th>
-                <th>Body Length</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>YXS</td><td>14</td><td>20</td></tr>
-              <tr><td>YS</td><td>15.5</td><td>21.5</td></tr>
-              <tr><td>YM</td><td>17</td><td>23</td></tr>
-              <tr><td>YL</td><td>18.5</td><td>25.5</td></tr>
-              <tr><td>AS</td><td>20.5</td><td>28.75</td></tr>
-              <tr><td>AM</td><td>22.5</td><td>30</td></tr>
-              <tr><td>AL</td><td>24.5</td><td>31</td></tr>
-              <tr><td>AXL</td><td>26.5</td><td>31.75</td></tr>
-              <tr><td>AXXL</td><td>28.5</td><td>32.25</td></tr>
-            </tbody>
-          </table>
-          <p id="baseball-note" class="muted">Source: vendor baseball specs</p>
-        </article>
+        <section class="division-section" id="division-baseball">
+          <h2 class="left">Baseball</h2>
 
-        <article class="sizing-card" id="hoodies-pc90h">
-          <h3 class="card-title">Hoodies — PC90H<br>(AAA and above)<span class="unit muted"> (in)</span></h3>
-          <table class="sizing-table" aria-describedby="hoodie-note">
-            <thead>
-              <tr>
-                <th>Size</th>
-                <th>Chest</th>
-                <th>Body Length</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>AS</td><td>20</td><td>28</td></tr>
-              <tr><td>AM</td><td>22</td><td>29</td></tr>
-              <tr><td>AL</td><td>24</td><td>30</td></tr>
-              <tr><td>AXL</td><td>26</td><td>31</td></tr>
-              <tr><td>AXXL</td><td>28</td><td>32</td></tr>
-              <tr><td>AXXXL</td><td>30</td><td>33</td></tr>
-              <tr><td>AXXXXL</td><td>32</td><td>34</td></tr>
-            </tbody>
-          </table>
-          <p id="hoodie-note" class="muted">Source: vendor PC90H</p>
-        </article>
+          <div class="program-grid">
+            <!-- Baseball level cards (mirrors Softball markup) -->
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="baseball-kindy-h3" id="baseball-kindy">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="baseball-kindy-h3">Kindy</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <!-- optional graphic: <img class="ncll-card__graphic" src="" alt=""> -->
+                <ul class="ncll-card__meta">
+                  <!-- meta rows like League ages, Format, Fields -->
+                </ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit">
+                    <thead>
+                      <tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>4301</td><td>ST350</td><td>none</td></tr>
+                    </tbody>
+                  </table>
 
-        <article class="sizing-card" id="coaches-st350">
-          <h3 class="card-title">Coaches' Shirts — ST350<br>(all)<span class="unit muted"> (in)</span></h3>
-          <table class="sizing-table" aria-describedby="coaches-note">
-            <thead>
-              <tr>
-                <th>Size</th>
-                <th>Chest</th>
-                <th>Body Length</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>AXS</td><td>18.5</td><td>27</td></tr>
-              <tr><td>AS</td><td>20</td><td>28</td></tr>
-              <tr><td>AM</td><td>21.5</td><td>29</td></tr>
-              <tr><td>AL</td><td>23</td><td>30</td></tr>
-              <tr><td>AXL</td><td>24.5</td><td>31</td></tr>
-              <tr><td>AXXL</td><td>26</td><td>32</td></tr>
-              <tr><td>AXXXL</td><td>28</td><td>32.5</td></tr>
-              <tr><td>AXXXXL</td><td>30</td><td>33</td></tr>
-            </tbody>
-          </table>
-          <p id="coaches-note" class="muted">Source: vendor ST350</p>
-        </article>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit">
+                    <thead>
+                      <tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>4301</td><td>ST350</td><td>none</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="Kindy quick links">
+                <a class="button button--primary" href="#">Register</a>
+                <a class="button button--ghost" href="#">More info</a>
+              </div>
+            </article>
 
-        <article class="sizing-card" id="hats">
-          <h3 class="card-title">Hats</h3>
-          <table class="sizing-table" aria-describedby="hats-note">
-            <thead><tr><th>Type</th><th>Fit</th><th>Notes</th></tr></thead>
-            <tbody>
-              <tr><td>Adjustable</td><td>One size</td><td>Standard adjustable strap</td></tr>
-              <tr><td>Fitted (if provided)</td><td>—</td><td>See vendor spec</td></tr>
-            </tbody>
-          </table>
-          <p id="hats-note" class="muted">Source: vendor hat specs</p>
-        </article>
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="baseball-tball-h3" id="baseball-tball">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="baseball-tball-h3">T‑Ball</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit">
+                    <thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                    <tbody><tr><td>4301</td><td>ST350</td><td>none</td></tr></tbody>
+                  </table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit">
+                    <thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                    <tbody><tr><td>4301</td><td>ST350</td><td>none</td></tr></tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="T‑Ball quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="baseball-a-h3" id="baseball-a">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="baseball-a-h3">A</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>4003</td><td>none</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>ST350</td><td>none</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="A Division quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="baseball-aa-h3" id="baseball-aa">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="baseball-aa-h3">AA</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>4003</td><td>none</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>ST350</td><td>none</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="AA Division quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="baseball-aaa-h3" id="baseball-aaa">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="baseball-aaa-h3">AAA</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>Richardson PTS30</td><td>4003</td><td>PC90H</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>Richardson PTS30</td><td>ST350/ST550</td><td>PC90H</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="AAA Division quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="baseball-majors-h3" id="baseball-majors">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="baseball-majors-h3">Majors</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>Richardson PTS30</td><td>4003</td><td>PC90H</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>Richardson PTS30</td><td>ST350/ST550</td><td>PC90H</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="Majors quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="baseball-juniors-h3" id="baseball-juniors">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="baseball-juniors-h3">Juniors</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>Richardson PTS30</td><td>4003</td><td>PC90H</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>Richardson PTS30</td><td>ST350/ST550</td><td>PC90H</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="Juniors quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="baseball-seniors-h3" id="baseball-seniors">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="baseball-seniors-h3">Seniors</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>Richardson PTS30</td><td>4003</td><td>PC90H</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>Richardson PTS30</td><td>ST350/ST550</td><td>PC90H</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="Seniors quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="division-section" id="division-softball">
+          <h2 class="left">Softball</h2>
+
+          <div class="program-grid">
+            <!-- Softball level cards (mirrors Softball/index.html structure) -->
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="softball-kindy-h3" id="softball-kindy">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="softball-kindy-h3">Kindy</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>4003</td><td>none</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>ST350</td><td>none</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="Kindy quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="softball-tball-h3" id="softball-tball">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="softball-tball-h3">T‑Ball</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>4003</td><td>none</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>ST350</td><td>none</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="T‑Ball quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="softball-a-h3" id="softball-a">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="softball-a-h3">A</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>4003</td><td>none</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>ST350</td><td>none</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="A Division quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="softball-aa-h3" id="softball-aa">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="softball-aa-h3">AA</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>4003</td><td>none</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>ST350</td><td>none</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="AA Division quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="softball-aaa-h3" id="softball-aaa">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="softball-aaa-h3">AAA</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>4003</td><td>none</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>ST350</td><td>none</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="AAA Division quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="softball-majors-h3" id="softball-majors">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="softball-majors-h3">Majors</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>4003</td><td>none</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>ST350</td><td>none</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="Majors quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="softball-juniors-h3" id="softball-juniors">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="softball-juniors-h3">Juniors</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>4003</td><td>none</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>ST350</td><td>none</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="Juniors quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="softball-seniors-h3" id="softball-seniors">
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="softball-seniors-h3">Seniors</h3>
+                <p class="ncll-card__blurb">(Add short blurb here)</p>
+                <ul class="ncll-card__meta"></ul>
+              </div>
+              <div class="ncll-card__body">
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>4003</td><td>none</td></tr></tbody></table>
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit"><thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr></thead>
+                  <tbody><tr><td>4301</td><td>ST350</td><td>none</td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" aria-label="Seniors quick links"><a class="button button--primary" href="#">Register</a></div>
+            </article>
+          </div>
+        </section>
       </div>
     </section>
   </main>
