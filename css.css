@@ -40,6 +40,13 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     align-items: start; /* keep cards top-aligned */
 }
 
+/* Ensure cards inside the program grid fill their grid cell and are left-aligned
+   (override the global .ncll-card centering used for single-column layouts). */
+.program-grid .ncll-card {
+    margin: 0;
+    max-width: 100%;
+}
+
 /* Ensure each article/card composes its internal layout vertically
    and provide a small internal gap so elements don't touch. */
 .program-grid > article,

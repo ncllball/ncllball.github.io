@@ -189,7 +189,6 @@ SIZE,6 3/8′−6 7/8′′,6 7/8′′−7 3/8′′,7 3/8′′−8′′
 Note: hat supplier sheets list head circumference ranges. Below are normalized, decimal-inch ranges for each hat model to make comparisons consistent across vendors. The original supplier charts are preserved below for traceability.
 
 HAT SIZE CHART PTS30 — Normalized (Head circumference, in)
-
 | Size label | Head circumference (in) |
 |---|---:|
 | Youth | 6 3/8–6 5/8 |
@@ -197,33 +196,21 @@ HAT SIZE CHART PTS30 — Normalized (Head circumference, in)
 | SM–MD | 7–7 1/4 |
 | LG–XL | 7 3/8–7 5/8 |
 
-HAT SIZE CHART 4302
-
 HAT SIZE CHART 4301 — Normalized (Head circumference, in)
-
 | Size label | Head circumference (in) |
 |---|---:|
 | Youth | 6 3/8–6 7/8 |
 | SM–MD | 6 7/8–7 3/8 |
 | LG–XL | 7 3/8–8 |
 
-,YOUTH,ADULT
-SIZE,6 3/8′′−7 1/4′′,7′−7 3/4′′
-
 
 HAT SIZE CHART 4302 — Normalized (Head circumference, in)
-
 | Size label | Head circumference (in) |
 |---|---:|
 | Youth | 6 3/8–7 1/4 |
 | Adult | 7–7 3/4 |
 
-HAT SIZE CHART HC10
-,SMALL,M-XL
-SIZE,6 1/4′′−7′′,7′−7 5/8′′
-
 HAT SIZE CHART HC10 — Normalized (Head circumference, in)
-
 | Size label | Head circumference (in) |
 |---|---:|
 | Small | 6 1/4–7 |
