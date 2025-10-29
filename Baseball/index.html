@@ -79,6 +79,41 @@
                 </div>
             </article>
 
+            <!-- Ephemeral Toggle Test Card (temporary) -->
+            <article id="ephemeral-toggle-card" class="ncll-card ncll-card--division ncll-card--overlay ephemeral-toggle" aria-labelledby="ephemeral-toggle-h2">
+                <div class="ncll-card__top-layer">
+                    <h3 class="ncll-card__title" id="ephemeral-toggle-h2">Ephemeral Toggle Test</h3>
+                    <p class="ncll-card__blurb">This test card cycles through multiple body panels when you click the action button. It's temporary and can be removed after testing.</p>
+                    <img class="ncll-card__graphic" src="https://ncllball.github.io/images/bb_cards/t.png" alt="Toggle test illustration">
+                </div>
+
+                <div class="ncll-card__body" data-index="0">
+                    <div class="ncll-card__details">
+                        <h4>Panel 1 — Overview</h4>
+                        <p>This is the first panel. It shows an overview. Click the button to see the next panel.</p>
+                    </div>
+                </div>
+
+                <div class="ncll-card__body" data-index="1">
+                    <div class="ncll-card__details">
+                        <h4>Panel 2 — Sizing</h4>
+                        <p>Here we'd show sizing info pulled from the specs. This panel demonstrates switching content.</p>
+                    </div>
+                </div>
+
+                <div class="ncll-card__body" data-index="2">
+                    <div class="ncll-card__details">
+                        <h4>Panel 3 — Coach Notes</h4>
+                        <p>Coach notes and temporary debug info can live here for the test.</p>
+                    </div>
+                </div>
+
+                <div class="ncll-card__actions" aria-label="Ephemeral toggle actions">
+                    <button type="button" class="button button--primary js-toggle-body">Show 1 of 3</button>
+                    <a class="button button--ghost" href="#" onclick="return false;">Do nothing</a>
+                </div>
+            </article>
+
             <!-- Kindy Coach Pitch Division Card - Bridge between Tee Ball and player pitch for age 6 -->
             <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="kindy-coach-pitch-h2">
                 <div class="ncll-card__top-layer">
@@ -443,5 +478,31 @@
         </div><!-- End single program-grid -->
 
     </main>
+    <script>
+    // Ephemeral toggle script — only affects the test card with id #ephemeral-toggle-card
+    document.addEventListener('DOMContentLoaded', function () {
+        var card = document.getElementById('ephemeral-toggle-card');
+        if (!card) return;
+        var bodies = Array.prototype.slice.call(card.querySelectorAll('.ncll-card__body'));
+        if (!bodies.length) return;
+        var btn = card.querySelector('.js-toggle-body');
+        var idx = 0;
+        // initialize: show only the first
+        bodies.forEach(function (b, i) { b.style.display = (i === idx) ? '' : 'none'; });
+        function updateButton() {
+            if (!btn) return;
+            btn.textContent = 'Show ' + (idx + 1) + ' of ' + bodies.length;
+        }
+        updateButton();
+        if (btn) {
+            btn.addEventListener('click', function () {
+                bodies[idx].style.display = 'none';
+                idx = (idx + 1) % bodies.length;
+                bodies[idx].style.display = '';
+                updateButton();
+            });
+        }
+    });
+    </script>
 </body>
 </html>

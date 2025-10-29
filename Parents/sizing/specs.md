@@ -35,3 +35,48 @@
 | Softball - Majors Coaches  | Champro HC10     | ST350/ST550   | PC90H          |
 | Softball - Juniors Coaches | Champro HC10     | ST350/ST550   | PC90H          |
 | Softball - Seniors Coaches | Champro HC10     | ST350/ST550   | PC90H          |
+
+# SIZE & LENGTH CARDS
+
+![PC90H](SPEC_SHEET_PC90H.jpg)
+Size,Chest,Body Length
+AS,20,28
+AM,22,29
+AL,24,30
+AXL,26,31
+AXXL,28,32
+AXXXL,30,33
+AXXXXL,32,34
+
+![ST350](SPEC_SHEET_ST350.jpg)
+Size,1/2 Chest,Body Length at Back
+AXS,18 1/2,27
+AS,20,28
+AM,21 1/2,29
+AL,23,30
+AXL,24 1/2,31
+AXXL,26,32
+AXXXL,28,32 1/2
+AXXXXL,30,33
+
+![ST550](SPEC_SHEET_ST350.jpg)
+Size,1/2 Chest,Body Length at Back
+AXS,18 1/2,27
+AS,20,28
+AM,21 1/2,29
+AL,23,30
+AXL,24 1/2,31
+AXXL,26,32
+AXXXL,28,32 1/2
+AXXXXL,30,33
+
+![4408](SPEC_SHEET_4408_softball.jpg)
+Size,1/2 Chest,Body Length On Front and Back
+GS,13 1/2,20
+GM,15 1/2,22
+GL,17 1/2,24
+WS,19,26 1/2
+WM,20 1/2,27 1/2
+WL,22,28 1/2
+WXL,23 1/2,29 1/2
+WXXL,25,30 3/4
