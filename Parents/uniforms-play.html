@@ -186,33 +186,7 @@
             border: 0;
         }
 
-        /* Local helpers for horizontal tables inside the playground only */
-        #play-ephemeral-toggle .table-scroll {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            width: 100%;
-            margin: 0.5rem 0;
-        }
-
-        #play-ephemeral-toggle .horizontal {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: max-content; /* allow natural column width, enable horizontal scroll on small screens */
-        }
-
-        #play-ephemeral-toggle .horizontal thead th,
-        #play-ephemeral-toggle .horizontal td {
-            padding: 6px 8px;
-            border: 1px solid var(--color_border_table);
-            vertical-align: middle;
-            white-space: nowrap;
-            font-size: .95rem;
-        }
-
-        #play-ephemeral-toggle .horizontal thead th:first-child {
-            text-align: left;
-            width: 1%;
-        }
+        /* Local helpers removed — using global .table-scroll and .horizontal from css.css */
     </style>
 </head>
 
