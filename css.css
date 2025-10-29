@@ -1413,9 +1413,14 @@ body:not(.cms-right) .only-on-right {
     }
 
     /* (legacy toggle moved to css.legacy.extracted.css) */
-    /* Table component - ensure no wrapping in cells */
-    .table_component table, .table_component th, .table_component td {
-        white-space: nowrap
+    /* Table component - ensure no wrapping in cells
+       Support three names for backwards compatibility: canonical
+       `.table-component`, legacy underscore `.table_component`, and
+       the playground alias `.table-scroll`. */
+    .table-component table, .table-component th, .table-component td,
+    .table_component table, .table_component th, .table_component td,
+    .table-scroll table, .table-scroll th, .table-scroll td {
+        white-space: nowrap;
     }
 
     /* ====== BEGIN Timeline Page Styles (Timeline/timeline.html only) ====== */
@@ -2098,17 +2103,20 @@ body:not(.cms-right) .only-on-right {
         font-size: 1.05rem
     }
 
-    /* Table wrapper for horizontal overflow on small screens */
-    .table_component {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch
-    }
-
-    /* Backwards-compatible alias used by playground: simple horizontal scroll wrapper */
+    /* Canonical table wrapper for horizontal overflow on small screens.
+       Keep legacy/alias names in the selector list for compatibility. */
+    .table-component,
+    .table_component,
     .table-scroll {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         width: 100%;
+    }
+
+    /* Don't center cards that live inside the grid; let them fill/align the cell */
+    .program-grid .ncll-card {
+        margin: 0;
+        max-width: 100%;
     }
 
     /* Horizontal table helper for full-width, non-wrapping table layouts */
@@ -2130,6 +2138,35 @@ body:not(.cms-right) .only-on-right {
     .horizontal thead th:first-child {
         text-align: left;
         width: 1%;
+    }
+
+    /* Improved visual styling for horizontal tables */
+    .horizontal thead th {
+        background: #f3f6fa;
+        color: var(--color_blue);
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .horizontal tbody tr:nth-child(even) {
+        background: var(--table-row-alt, #f9f9f9);
+    }
+
+    .horizontal th:first-child, .horizontal td:first-child {
+        text-align: left;
+        white-space: normal; /* allow the row label column to wrap when needed */
+        font-weight: 600;
+    }
+
+    /* Small-screen adjustments: allow headers to wrap and reduce padding */
+    @media (max-width: 480px) {
+        .horizontal thead th, .horizontal td {
+            padding: 6px 10px;
+            font-size: .92rem;
+        }
+        .horizontal thead th {
+            white-space: normal;
+        }
     }
 
     /* Compact table inside cards */
