@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Uniform Sizing — NCLL (play)</title>
+  <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
+  <style>
+    /* Local playground styles scoped to this file only */
+    /* Scoped to #play-ephemeral-toggle to avoid adding global selectors */
+    #play-ephemeral-toggle .panel { display: none; }
+    #play-ephemeral-toggle input[type="radio"] { position: absolute; left: -9999px; }
+    /* Show the matching panel for the checked radio (radios are placed before panels) */
+    #play-ephemeral-toggle input#play-ephemeral-0:checked ~ .panel0 { display: block; }
+    #play-ephemeral-toggle input#play-ephemeral-1:checked ~ .panel1 { display: block; }
+    #play-ephemeral-toggle input#play-ephemeral-2:checked ~ .panel2 { display: block; }
+
+    /* Show only the correct Next label for current state */
+    #play-ephemeral-toggle .btn-next { display: none; }
+    #play-ephemeral-toggle input#play-ephemeral-0:checked ~ .actions .btn-next-0 { display: inline-block; }
+    #play-ephemeral-toggle input#play-ephemeral-1:checked ~ .actions .btn-next-1 { display: inline-block; }
+    #play-ephemeral-toggle input#play-ephemeral-2:checked ~ .actions .btn-next-2 { display: inline-block; }
+
+    /* Minor visual tweak to ensure labels look like buttons */
+    #play-ephemeral-toggle .btn-next { cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="alert-header"><p>This page is currently under construction. Use at your own risk and check back soon for the finished product!</p></div>
+
+  <main>
+    <section id="sizing-charts">
+      <h2 class="left">NCLL Uniform Sizing Charts</h2>
+  <p class="muted">This year we worked hard to ...Vendor codes: PC90H = Hoodies, 4408 = Softball jerseys, ST350 = Coaches shirts, remaining = Baseball jerseys</p>
+  <p class="muted"><span class="info-icon" aria-hidden="true">i</span> Chest measurements are measured pit-to-pit across the garment.</p>
+
+      <div class="sizing-grid">
+        <!-- Division-first layout: Division header, then cards for each level -->
+
+        <section class="division-section" id="division-baseball">
+          <h2 class="left">Baseball</h2>
+
+          <div class="program-grid">
+            <!-- Baseball level cards (mirrors Softball markup) -->
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="baseball-kindy-h3" id="baseball-kindy">
+                <div class="ncll-card__body">
+              <h3 class="ncll-card__title" id="baseball-kindy-h3">Kindy</h3>
+              <p class="ncll-card__blurb">(Add short blurb here)</p>
+              <div class="ncll-card__graphics">
+                <img class="ncll-card__graphic ncll-card__graphic--hat" src="/images/uniforms/hats/4301_NAVY_LOGO.webp.png" alt="Hat 4301 — Navy logo">
+                <img class="ncll-card__graphic ncll-card__graphic--shirt" src="/images/uniforms/hats/ST350_ATOMIC_BLUE_FORM_FRONT.png" alt="Shirt ST350 — atomic blue">
+              </div>
+              <ul class="ncll-card__meta">
+                <!-- meta rows like League ages, Format, Fields -->
+              </ul>
+                <div class="ncll-card__details">
+                  <h4>Players — Model codes</h4>
+                  <table class="fit">
+                    <thead>
+                      <tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>4301</td><td>ST350</td><td>none</td></tr>
+                    </tbody>
+                  </table>
+
+                  <h5>Coaches — Model codes</h5>
+                  <table class="fit">
+                    <thead>
+                      <tr><th>Hat</th><th>Shirt</th><th>Hoodie</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>4301</td><td>ST350</td><td>none</td></tr>
+                    </tbody>
+                  </table>
+
+                  <h5>Size chart — Shirt (ST350)</h5>
+                  <table class="fit">
+                    <thead><tr><th>Size</th><th>1/2 Chest</th><th>Body Length</th></tr></thead>
+                    <tbody>
+                      <tr><td>AXS</td><td>18 1/2</td><td>27</td></tr>
+                      <tr><td>AS</td><td>20</td><td>28</td></tr>
+                      <tr><td>AM</td><td>21 1/2</td><td>29</td></tr>
+                      <tr><td>AL</td><td>23</td><td>30</td></tr>
+                      <tr><td>AXL</td><td>24 1/2</td><td>31</td></tr>
+                      <tr><td>AXXL</td><td>26</td><td>32</td></tr>
+                      <tr><td>AXXXL</td><td>28</td><td>32 1/2</td></tr>
+                      <tr><td>AXXXXL</td><td>30</td><td>33</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="ncll-card__actions" role="group" aria-label="Kindy quick links">
+                <a class="button button--primary" href="#">Register</a>
+              </div>
+            </article>
+
+            <!-- Play-only ephemeral toggle (CSS-only, scoped to this file) -->
+            <article id="play-ephemeral-toggle" class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="play-ephemeral-toggle-h3">
+              <!-- radios must precede panels for the sibling selector to work -->
+              <input type="radio" name="play-ephemeral" id="play-ephemeral-0" checked>
+              <input type="radio" name="play-ephemeral" id="play-ephemeral-1">
+              <input type="radio" name="play-ephemeral" id="play-ephemeral-2">
+
+              <div class="ncll-card__top-layer">
+                <h3 class="ncll-card__title" id="play-ephemeral-toggle-h3">Playground — Ephemeral Toggle (CSS-only)</h3>
+                <p class="ncll-card__blurb">This playground card lives only in <code>uniforms-play.html</code>. Use it to test layout and CSS-only interactions.</p>
+              </div>
+
+              <div class="ncll-card__body panel panel0">
+                <div class="ncll-card__details">
+                  <h4>Panel A — Overview</h4>
+                  <p>Overview content for the playground panel.</p>
+                </div>
+              </div>
+
+              <div class="ncll-card__body panel panel1">
+                <div class="ncll-card__details">
+                  <h4>Panel B — Sizing</h4>
+                  <p>Sizing content placeholder for the playground panel.</p>
+                </div>
+              </div>
+
+              <div class="ncll-card__body panel panel2">
+                <div class="ncll-card__details">
+                  <h4>Panel C — Notes</h4>
+                  <p>Notes placeholder for the playground panel.</p>
+                </div>
+              </div>
+
+              <div class="ncll-card__actions actions" role="group" aria-label="Playground toggle actions">
+                <label class="button button--primary btn-next btn-next-0" for="play-ephemeral-1">Next</label>
+                <label class="button button--primary btn-next btn-next-1" for="play-ephemeral-2">Next</label>
+                <label class="button button--primary btn-next btn-next-2" for="play-ephemeral-0">Next</label>
+              </div>
+            </article>
+
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

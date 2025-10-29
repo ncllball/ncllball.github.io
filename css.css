@@ -2125,6 +2125,13 @@ body:not(.cms-right) .only-on-right {
         margin: 0
     }
 
+    /* Small utility for subtle version/notice text used on pages like fees */
+    .version-note {
+        font-size: 0.95rem;
+        color: #222;
+        margin-bottom: 1rem;
+    }
+
     /* Small screens: cards stack (grid becomes single column due to auto-fit) */
     @media(max-width:520px) {
         .sizing-card {
