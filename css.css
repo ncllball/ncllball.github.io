@@ -2116,7 +2116,7 @@ body:not(.cms-right) .only-on-right {
     /* Don't center cards that live inside the grid; let them fill/align the cell */
     .program-grid .ncll-card {
         margin: 0;
-        max-width: 100%;
+        max-width: 450px;
     }
 
     /* Horizontal table helper for full-width, non-wrapping table layouts */
