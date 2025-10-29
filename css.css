@@ -239,6 +239,8 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 /* (0) Design tokens */
 :root {
     --color_red: #cd163f;
+    /* Global card max width (single-column cap) */
+    --ncll-card-max: 720px;
     --color_blue: #00013a;
     --color_tan: #e2ddca;
     --color_richblue: #019cde;
@@ -1103,7 +1105,11 @@ body:not(.cms-right) .only-on-right {
     box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
+
+    /* cap card width and center single-column cards */
+    max-width: min(var(--ncll-card-max), 92%);
+    margin: 0 auto;
 }
 
 .ncll-card__title {
@@ -1111,7 +1117,7 @@ body:not(.cms-right) .only-on-right {
     line-height: 1.3;
     color: var(--color_blue);
     text-align: left;
-    display: block
+    display: block;
 }
 
 
