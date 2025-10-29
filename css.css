@@ -2104,6 +2104,34 @@ body:not(.cms-right) .only-on-right {
         -webkit-overflow-scrolling: touch
     }
 
+    /* Backwards-compatible alias used by playground: simple horizontal scroll wrapper */
+    .table-scroll {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+
+    /* Horizontal table helper for full-width, non-wrapping table layouts */
+    .horizontal {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: max-content; /* preserve column widths, allow overflow */
+    }
+
+    .horizontal thead th,
+    .horizontal td {
+        padding: 6px 8px;
+        border: 1px solid var(--color_border_table);
+        vertical-align: middle;
+        white-space: nowrap;
+        font-size: .95rem;
+    }
+
+    .horizontal thead th:first-child {
+        text-align: left;
+        width: 1%;
+    }
+
     /* Compact table inside cards */
     .sizing-table {
         width: 100%;
