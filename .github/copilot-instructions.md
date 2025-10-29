@@ -169,3 +169,26 @@ npm run verify:scripts    # Validate script structure
 - Add `--path="Directory Name"` to limit scope for most normalizers
 - All scripts are idempotent - safe to run multiple times
 - Use `--verbose` for detailed logging on most scripts
+
+
+# 2026 registration fees
+
+baseball
+Division,Fee
+Tee Ball,$145
+Kindy,$155
+A,$195
+AA,$195
+AAA,$265
+Majors,$265
+Juniors,$290
+Seniors,$290
+
+softball
+Division,Fee
+A,$195
+AA,$195
+AAA,$265
+Majors,$265
+Juniors,$290
+Seniors,$290

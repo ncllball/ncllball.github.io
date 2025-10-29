@@ -7,21 +7,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
                 <!-- Scoped CSS for the CSS-only toggle behavior -->
               <style>
-                /* hide all panels by default */
-                #ephemeral-toggle-uniforms .ncll-card__body { display: none; }
-                /* show panel when corresponding radio is checked */
-                #ephemeral-uniforms-0:checked ~ #ephemeral-toggle-uniforms .panel0 { display: block; }
-                #ephemeral-uniforms-1:checked ~ #ephemeral-toggle-uniforms .panel1 { display: block; }
-                #ephemeral-uniforms-2:checked ~ #ephemeral-toggle-uniforms .panel2 { display: block; }
 
-                /* control which Next label is visible */
-                .btn-next { display: none; }
-                #ephemeral-uniforms-0:checked ~ #ephemeral-toggle-uniforms .btn-next-0 { display: inline-block; }
-                #ephemeral-uniforms-1:checked ~ #ephemeral-toggle-uniforms .btn-next-1 { display: inline-block; }
-                #ephemeral-uniforms-2:checked ~ #ephemeral-toggle-uniforms .btn-next-2 { display: inline-block; }
-
-                /* ensure labels look like buttons and inherit existing styles */
-                #ephemeral-toggle-uniforms .btn-next { cursor: pointer; }
               </style>
 </head>
 <body>
@@ -351,54 +337,7 @@
               <div class="ncll-card__actions" aria-label="Seniors quick links"><a class="button button--primary" href="#">Register</a></div>
             </article>
             
-            <!-- Ephemeral Toggle Test Card for uniforms (temporary, CSS-only) -->
-            <article id="ephemeral-toggle-uniforms" class="ncll-card ncll-card--division ncll-card--overlay ephemeral-toggle" aria-labelledby="ephemeral-toggle-uniforms-h3">
-              <!-- Hidden radios drive which panel is visible. First is checked by default. -->
-              <input type="radio" name="ephemeral-uniforms" id="ephemeral-uniforms-0" checked="checked" hidden>
-              <input type="radio" name="ephemeral-uniforms" id="ephemeral-uniforms-1" hidden>
-              <input type="radio" name="ephemeral-uniforms" id="ephemeral-uniforms-2" hidden>
-
-              <div class="ncll-card__top-layer">
-                <h3 class="ncll-card__title" id="ephemeral-toggle-uniforms-h3">Ephemeral Toggle Test</h3>
-                <p class="ncll-card__blurb">Temporary CSS-only test: click the primary button to cycle content panels. Remove when finished.</p>
-                <div class="ncll-card__graphics">
-                  <img class="ncll-card__graphic ncll-card__graphic--hat" src="/images/uniforms/hats/4301_NAVY_LOGO.webp.png" alt="Test hat">
-                </div>
-              </div>
-
-              <!-- Panels: each panel is shown when its matching radio is checked -->
-              <div class="ncll-card__body panel0">
-                <div class="ncll-card__details">
-                  <h4>Panel 1 — Overview</h4>
-                  <p>Overview content for the test panel.</p>
-                </div>
-              </div>
-
-              <div class="ncll-card__body panel1">
-                <div class="ncll-card__details">
-                  <h4>Panel 2 — Sizing</h4>
-                  <p>Sizing details placeholder for the test panel.</p>
-                </div>
-              </div>
-
-              <div class="ncll-card__body panel2">
-                <div class="ncll-card__details">
-                  <h4>Panel 3 — Coach Notes</h4>
-                  <p>Coach notes placeholder for the test panel.</p>
-                </div>
-              </div>
-
-              <!-- Actions: only one 'Next' label is visible at a time; it targets the radio for the next panel -->
-              <div class="ncll-card__actions" aria-label="Ephemeral toggle actions">
-                <!-- Labels act as buttons; they change the checked radio without JS -->
-                <label class="button button--primary btn-next btn-next-0" for="ephemeral-uniforms-1">Next</label>
-                <label class="button button--primary btn-next btn-next-1" for="ephemeral-uniforms-2">Next</label>
-                <label class="button button--primary btn-next btn-next-2" for="ephemeral-uniforms-0">Next</label>
-                <a class="button button--ghost" href="#" onclick="return false;">Do nothing</a>
-              </div>
-
-
-            </article>
+            <!-- Ephemeral test removed from main page; playground copy available at Parents/uniforms-play.html -->
           </div>
         </section>
 
