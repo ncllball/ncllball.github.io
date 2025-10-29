@@ -47,6 +47,19 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     max-width: 100%;
 }
 
+/* Improve packing behavior so cards don't leave large gaps when items vary in height */
+.program-grid {
+    grid-auto-flow: dense;
+}
+
+/* Stronger selector to ensure direct card children fill their grid cell and align to top */
+.program-grid > article,
+.program-grid > .ncll-card {
+    margin: 0;
+    max-width: 100%;
+    align-self: start;
+}
+
 /* Ensure each article/card composes its internal layout vertically
    and provide a small internal gap so elements don't touch. */
 .program-grid > article,
