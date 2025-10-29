@@ -5,6 +5,24 @@
   <title>Uniform Sizing — NCLL</title>
   <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
   <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
+                <!-- Scoped CSS for the CSS-only toggle behavior -->
+              <style>
+                /* hide all panels by default */
+                #ephemeral-toggle-uniforms .ncll-card__body { display: none; }
+                /* show panel when corresponding radio is checked */
+                #ephemeral-uniforms-0:checked ~ #ephemeral-toggle-uniforms .panel0 { display: block; }
+                #ephemeral-uniforms-1:checked ~ #ephemeral-toggle-uniforms .panel1 { display: block; }
+                #ephemeral-uniforms-2:checked ~ #ephemeral-toggle-uniforms .panel2 { display: block; }
+
+                /* control which Next label is visible */
+                .btn-next { display: none; }
+                #ephemeral-uniforms-0:checked ~ #ephemeral-toggle-uniforms .btn-next-0 { display: inline-block; }
+                #ephemeral-uniforms-1:checked ~ #ephemeral-toggle-uniforms .btn-next-1 { display: inline-block; }
+                #ephemeral-uniforms-2:checked ~ #ephemeral-toggle-uniforms .btn-next-2 { display: inline-block; }
+
+                /* ensure labels look like buttons and inherit existing styles */
+                #ephemeral-toggle-uniforms .btn-next { cursor: pointer; }
+              </style>
 </head>
 <body>
   <div class="alert-header"><p>This page is currently under construction. Use at your own risk and check back soon for the finished product!</p></div>
@@ -379,24 +397,7 @@
                 <a class="button button--ghost" href="#" onclick="return false;">Do nothing</a>
               </div>
 
-              <!-- Scoped CSS for the CSS-only toggle behavior -->
-              <style>
-                /* hide all panels by default */
-                #ephemeral-toggle-uniforms .ncll-card__body { display: none; }
-                /* show panel when corresponding radio is checked */
-                #ephemeral-uniforms-0:checked ~ #ephemeral-toggle-uniforms .panel0 { display: block; }
-                #ephemeral-uniforms-1:checked ~ #ephemeral-toggle-uniforms .panel1 { display: block; }
-                #ephemeral-uniforms-2:checked ~ #ephemeral-toggle-uniforms .panel2 { display: block; }
 
-                /* control which Next label is visible */
-                .btn-next { display: none; }
-                #ephemeral-uniforms-0:checked ~ #ephemeral-toggle-uniforms .btn-next-0 { display: inline-block; }
-                #ephemeral-uniforms-1:checked ~ #ephemeral-toggle-uniforms .btn-next-1 { display: inline-block; }
-                #ephemeral-uniforms-2:checked ~ #ephemeral-toggle-uniforms .btn-next-2 { display: inline-block; }
-
-                /* ensure labels look like buttons and inherit existing styles */
-                #ephemeral-toggle-uniforms .btn-next { cursor: pointer; }
-              </style>
             </article>
           </div>
         </section>
