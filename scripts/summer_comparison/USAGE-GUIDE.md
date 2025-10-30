@@ -160,3 +160,4 @@ node scripts/summer_comparison/consolidate.js --write
 3. Check row counts match expectations
 4. Review any warnings from verbose output
 5. Use for analysis, reporting, or further processing
+

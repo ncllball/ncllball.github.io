@@ -149,3 +149,4 @@ Typical PD workflow:
 
 - Console output should clearly indicate DRY vs WRITE.
 - Exit code 0 on success (even if changes proposed in dry mode); non-zero only on fatal errors.
+

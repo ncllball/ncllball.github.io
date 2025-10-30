@@ -981,50 +981,50 @@
 
                         <div class="ncll-card__body panel panel0">
                             <div class="ncll-card__details">
-                                <play-a-h4>Players — Shirt Sizing (YST350)</play-a-h4>
-                                <p>Shirt model for T‑Ball players: <strong>YST350</strong>. Use the normalized
-                                    youth chest and body-length values below to choose the best fit.</p>
+                                <play-a-h4>Players — Shirt Sizing (ST350)</play-a-h4>
+                                <p>Shirt model for T‑Ball players: <strong>ST350</strong>. Below are normalized
+                                    pit‑to‑pit and body length values to help pick the right size.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-tball-1" class="lightbox-thumb">
                                         <img class="ncll-card__graphic ncll-card__graphic--shirt"
                                             src="/images/uniforms/hats/ST350_ATOMIC_BLUE_FORM_FRONT.png"
-                                            alt="Shirt YST350 (youth) front">
+                                            alt="Shirt ST350 front">
                                     </label>
                                 </div>
-                                <play-aa-h5>Size chart — Shirt (YST350) — Youth (Chest / Body length)</play-aa-h5>
+                                <play-aa-h5>Size chart — Shirt (ST350) — Normalized (Pit-to-pit)</play-aa-h5>
                                 <div class="ncll-micro">
-                                    <table class="ncll-micro__table" aria-describedby="yst350-caption">
-    <caption id="yst350-tball-caption" class="sr-only">YST350 youth shirt measurements: size, chest, and body length at back in inches.</caption>
-    <thead>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">XS (4)</th>
-            <th scope="col">S (6/8)</th>
-            <th scope="col">M (10/12)</th>
-            <th scope="col">L (14/16)</th>
-            <th scope="col">XL (18/20)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">Chest</th>
-            <td>15 1/4</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-            <td>19 1/2</td>
-        </tr>
-        <tr>
-            <th scope="row">Body Length at Back</th>
-            <td>20</td>
-            <td>21 1/2</td>
-            <td>23</td>
-            <td>25</td>
-            <td>27</td>
-        </tr>
-    </tbody>
-</table>
-
+                                    <table class="ncll-micro__table" aria-describedby="m4301-tball-caption">
+                                        <caption id="m4301-tball-caption" class="sr-only">Hat 4301 head circumference
+                                            ranges in inches for T‑Ball sizes.</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">YOUTH</th>
+                                                <th scope="col">SM–MD</th>
+                                                <th scope="col">LG–XL</th>
+                                                <th scope="col">M (10/12)</th>
+                                                <th scope="col">L (14/16)</th>
+                                                <th scope="col">XL (18/20)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Chest (in)</th>
+                                                    <td>15 1/4</td>
+                                                    <td>16</td>
+                                                    <td>17</td>
+                                                    <td>18</td>
+                                                    <td>19 1/2</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Body Length at Back (in)</th>
+                                                    <td>20</td>
+                                                    <td>21 1/2</td>
+                                                    <td>23</td>
+                                                    <td>25</td>
+                                                    <td>27</td>
+                                                </tr>
+                                            </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -1042,7 +1042,7 @@
                                 <play-aa-h5>Size chart — Hat (4301) — Normalized (Head circumference)</play-aa-h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="m4301-tball-caption">
-                                        <caption id="m4301-tball-caption" class="sr-only">Hat 4301 head circumference
+                                        <caption id="m4301-tball-caption-2" class="sr-only">Hat 4301 head circumference
                                             ranges in inches for T‑Ball sizes.</caption>
                                         <thead>
                                             <tr>
@@ -2457,5 +2457,3 @@
 </body>
 
 </html>
-
-

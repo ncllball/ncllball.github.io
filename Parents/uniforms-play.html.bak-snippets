@@ -993,38 +993,7 @@
                                 </div>
                                 <play-aa-h5>Size chart — Shirt (YST350) — Youth (Chest / Body length)</play-aa-h5>
                                 <div class="ncll-micro">
-                                    <table class="ncll-micro__table" aria-describedby="yst350-caption">
-    <caption id="yst350-tball-caption" class="sr-only">YST350 youth shirt measurements: size, chest, and body length at back in inches.</caption>
-    <thead>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">XS (4)</th>
-            <th scope="col">S (6/8)</th>
-            <th scope="col">M (10/12)</th>
-            <th scope="col">L (14/16)</th>
-            <th scope="col">XL (18/20)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">Chest</th>
-            <td>15 1/4</td>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-            <td>19 1/2</td>
-        </tr>
-        <tr>
-            <th scope="row">Body Length at Back</th>
-            <td>20</td>
-            <td>21 1/2</td>
-            <td>23</td>
-            <td>25</td>
-            <td>27</td>
-        </tr>
-    </tbody>
-</table>
-
+                                    <!-- SNIPPET: Snippets/yst350-default-table.html id=yst350-tball-caption -->
                                 </div>
                             </div>
                         </div>
