@@ -246,6 +246,203 @@
 
 
         /* Local helpers removed — using global .table-scroll and .horizontal from css.css */
+        /* Duplicate local playground styles for AA interactive card (namespaced) */
+        /* Scoped to #play-ephemeral-aa-toggle to avoid adding global selectors */
+        #play-ephemeral-aa-toggle .panel {
+            display: none;
+        }
+
+        #play-ephemeral-aa-toggle input[type="radio"] {
+            position: absolute;
+            left: -9999px;
+        }
+
+        /* Show the matching panel for the checked radio (radios are placed before panels) */
+        #play-ephemeral-aa-toggle input#play-ephemeral-aa-intro:checked~.panel-intro {
+            display: block;
+        }
+
+        #play-ephemeral-aa-toggle input#play-ephemeral-aa-0:checked~.panel0 {
+            display: block;
+        }
+
+        #play-ephemeral-aa-toggle input#play-ephemeral-aa-1:checked~.panel1 {
+            display: block;
+        }
+
+        #play-ephemeral-aa-toggle input#play-ephemeral-aa-2:checked~.panel2 {
+            display: block;
+        }
+
+        #play-ephemeral-aa-toggle input#play-ephemeral-aa-3:checked~.panel3 {
+            display: block;
+        }
+
+        #play-ephemeral-aa-toggle input#play-ephemeral-aa-4:checked~.panel4 {
+            display: block;
+        }
+
+        /* Show only the correct Next label for current state */
+        #play-ephemeral-aa-toggle .btn-next {
+            display: none;
+        }
+
+        #play-ephemeral-aa-toggle input#play-ephemeral-aa-intro:checked~.actions .btn-next-intro {
+            display: inline-block;
+        }
+
+        #play-ephemeral-aa-toggle input#play-ephemeral-aa-0:checked~.actions .btn-next-0 {
+            display: inline-block;
+        }
+
+        #play-ephemeral-aa-toggle input#play-ephemeral-aa-1:checked~.actions .btn-next-1 {
+            display: inline-block;
+        }
+
+        #play-ephemeral-aa-toggle input#play-ephemeral-aa-2:checked~.actions .btn-next-2 {
+            display: inline-block;
+        }
+
+        #play-ephemeral-aa-toggle input#play-ephemeral-aa-3:checked~.actions .btn-next-3 {
+            display: inline-block;
+        }
+
+        #play-ephemeral-aa-toggle input#play-ephemeral-aa-4:checked~.actions .btn-next-4 {
+            display: inline-block;
+        }
+
+        /* Minor visual tweak to ensure labels look like buttons */
+        #play-ephemeral-aa-toggle .btn-next {
+            cursor: pointer;
+        }
+
+        /* Simple CSS-only lightbox (scoped to playground) */
+        #play-ephemeral-aa-toggle input.lightbox-toggle {
+            position: absolute;
+            left: -9999px;
+        }
+
+        #play-ephemeral-aa-toggle .lightbox-thumb img {
+            max-width: 140px;
+            border-radius: 4px;
+            display: block;
+        }
+
+        /* Make thumbnails grayscale until their lightbox is opened (or hovered/focused) */
+        #play-ephemeral-aa-toggle .lightbox-thumb img {
+            filter: grayscale(90%) contrast(100%);
+            transition: filter 220ms ease, transform 200ms ease;
+        }
+
+        /* remove filter on hover/focus for affordance */
+        #play-ephemeral-aa-toggle .lightbox-thumb:focus img,
+        #play-ephemeral-aa-toggle .lightbox-thumb:hover img {
+            filter: none;
+        }
+
+        /* when the corresponding checkbox is checked (lightbox open), show the thumbnail in color */
+        #play-ephemeral-aa-toggle input#lightbox-aa-1:checked ~ .ncll-card__body label[for="lightbox-aa-1"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-3:checked ~ .ncll-card__body label[for="lightbox-aa-3"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-4:checked ~ .ncll-card__body label[for="lightbox-aa-4"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-5:checked ~ .ncll-card__body label[for="lightbox-aa-5"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-6:checked ~ .ncll-card__body label[for="lightbox-aa-6"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-7:checked ~ .ncll-card__body label[for="lightbox-aa-7"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-8:checked ~ .ncll-card__body label[for="lightbox-aa-8"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-9:checked ~ .ncll-card__body label[for="lightbox-aa-9"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-10:checked ~ .ncll-card__body label[for="lightbox-aa-10"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-12:checked ~ .ncll-card__body label[for="lightbox-aa-12"] img {
+            filter: none;
+            transform: scale(1.02);
+        }
+
+        /* overlay uses opacity/visibility so we can animate fade in/out */
+        #play-ephemeral-aa-toggle .lightbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 220ms ease, visibility 220ms ease;
+            pointer-events: none;
+        }
+
+        /* Show only the overlay matching the checked checkbox (per-image) */
+        #play-ephemeral-aa-toggle input#lightbox-aa-1:checked~.lightbox[data-id="1"] {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        #play-ephemeral-aa-toggle input#lightbox-aa-3:checked~.lightbox[data-id="3"] {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        #play-ephemeral-aa-toggle input#lightbox-aa-4:checked~.lightbox[data-id="4"] {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        #play-ephemeral-aa-toggle .lightbox img {
+            max-width: 92%;
+            max-height: 92%;
+            border-radius: 6px;
+            transform: scale(0.96);
+            transition: transform 260ms ease, opacity 220ms ease;
+            opacity: 0.95;
+        }
+
+        /* lightbox caption under the image */
+        #play-ephemeral-aa-toggle .lightbox .lightbox-caption {
+            margin-top: 12px;
+            color: #fff;
+            font-size: 0.95rem;
+            text-align: center;
+            max-width: 92%;
+        }
+
+        #play-ephemeral-aa-toggle .lightbox .lightbox-caption a {
+            color: #fff;
+            text-decoration: underline;
+            opacity: 0.95;
+        }
+
+        /* scale image up when a specific lightbox is active */
+        #play-ephemeral-aa-toggle input#lightbox-aa-1:checked~.lightbox[data-id="1"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-3:checked~.lightbox[data-id="3"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-4:checked~.lightbox[data-id="4"] img {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        /* clickable overlay to close (label targets the checkbox) */
+        #play-ephemeral-aa-toggle .lightbox .close-btn {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            color: #fff;
+            font-size: 1.1rem;
+            line-height: 1;
+            background: rgba(0, 0, 0, 0.35);
+            padding: 6px 8px;
+            border-radius: 4px;
+        }
+
+        /* make the overlay keyboard-focusable and give a subtle focus ring */
+        #play-ephemeral-aa-toggle .lightbox {
+            cursor: pointer;
+        }
+
+        #play-ephemeral-aa-toggle .lightbox:focus {
+            outline: 3px solid rgba(255, 255, 255, 0.12);
+            outline-offset: 6px;
+        }
     </style>
 </head>
 
@@ -583,6 +780,136 @@
                                 <span class="close-btn" aria-hidden="true">✕</span>
                                 <img src="/images/uniforms/hats/PC90H-JET-BLACK_A3.png" alt="Hoodie PC90H (full)">
                             </label>
+                        </article>
+                    </div>
+                </section>
+                <!-- AA Division card (playground) -->
+                <section class="division-section" id="division-baseball-aa">
+                    <h2 class="left">Baseball — AA Division (play)</h2>
+
+                    <div class="program-grid">
+                        <article class="ncll-card ncll-card--division">
+                            <div class="ncll-card__body">
+                                <div class="ncll-card__details">
+                                    <h3 class="ncll-card__title">AA Division Baseball</h3>
+                                    <h4>Players — Jersey Sizing (4003)</h4>
+                                    <p>Shirt model for AA players: <strong>4003</strong>. Normalized pit-to-pit values below.</p>
+                                    <div class="ncll-micro">
+                                        <table class="ncll-micro__table" aria-describedby="4003-aa-caption">
+                                            <caption id="4003-aa-caption" class="sr-only">Shirt 4003 pit-to-pit measurements in inches for AA division.</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th>YS</th>
+                                                    <th>YM</th>
+                                                    <th>YL</th>
+                                                    <th>AS</th>
+                                                    <th>AM</th>
+                                                    <th>AL</th>
+                                                    <th>AXL</th>
+                                                    <th>AXXL</th>
+                                                    <th>AXXXL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>12-13</td>
+                                                    <td>13-14</td>
+                                                    <td>15-16</td>
+                                                    <td>17-18</td>
+                                                    <td>19-20</td>
+                                                    <td>21-22</td>
+                                                    <td>23-24</td>
+                                                    <td>25-26</td>
+                                                    <td>27-28</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <h4>Players — Hat Sizing (4301)</h4>
+                                    <div class="ncll-micro">
+                                        <table class="ncll-micro__table" aria-describedby="4301-aa-caption">
+                                            <caption id="4301-aa-caption" class="sr-only">Hat 4301 head circumference ranges in inches for AA division.</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th>YOUTH</th>
+                                                    <th>SM–MD</th>
+                                                    <th>LG–XL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>6 3/8–6 7/8</td>
+                                                    <td>6 7/8–7 3/8</td>
+                                                    <td>7 3/8–8</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <h4>Coaches — Jersey Sizing (ST350)</h4>
+                                    <div class="ncll-micro">
+                                        <table class="ncll-micro__table" aria-describedby="st350-aa-caption">
+                                            <caption id="st350-aa-caption" class="sr-only">ST350 coaches shirt pit-to-pit and body length in inches for AA division.</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th>AXS</th>
+                                                    <th>AS</th>
+                                                    <th>AM</th>
+                                                    <th>AL</th>
+                                                    <th>AXL</th>
+                                                    <th>AXXL</th>
+                                                    <th>AXXXL</th>
+                                                    <th>AXXXXL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>18.5</td>
+                                                    <td>20</td>
+                                                    <td>21.5</td>
+                                                    <td>23</td>
+                                                    <td>24.5</td>
+                                                    <td>26</td>
+                                                    <td>28</td>
+                                                    <td>30</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>27</td>
+                                                    <td>28</td>
+                                                    <td>29</td>
+                                                    <td>30</td>
+                                                    <td>31</td>
+                                                    <td>32</td>
+                                                    <td>32.5</td>
+                                                    <td>33</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <h4>Coaches — Hat Sizing (4301)</h4>
+                                    <div class="ncll-micro">
+                                        <table class="ncll-micro__table" aria-describedby="4301-coach-aa-caption">
+                                            <caption id="4301-coach-aa-caption" class="sr-only">Hat 4301 head circumference ranges in inches for AA coaches.</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th>YOUTH</th>
+                                                    <th>SM–MD</th>
+                                                    <th>LG–XL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>6 3/8–6 7/8</td>
+                                                    <td>6 7/8–7 3/8</td>
+                                                    <td>7 3/8–8</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </article>
                     </div>
                 </section>
