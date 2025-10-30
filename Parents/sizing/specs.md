@@ -85,6 +85,17 @@ AXXL,26,32
 AXXXL,28,32 1/2
 AXXXXL,30,33
 
+### YST350 — Normalized (Youth)
+
+Size codes: XS = Youth XS, S = Youth S, M = Youth M, L = Youth L, XL = Youth XL
+
+Size,Numeric Size,Chest,Sleeve From Shoulder,Body Length at Back
+XS,4,15 1/4,12 1/2,20
+S,6/8,16,13 1/2,21 1/2
+M,10/12,17,14 1/2,23
+L,14/16,18,15 1/2,25
+XL,18/20,19 1/2,16 1/2,27
+
 ### ST350 — Normalized (Pit-to-pit)
 
 Size codes: AXS = Adult X-Small, AS = Adult Small, AM = Adult Medium, AL = Adult Large, AXL = Adult X-Large, AXXL = Adult 2X-Large, AXXXL = Adult 3X-Large, AXXXXL = Adult 4X-Large
@@ -175,14 +186,6 @@ AL,21-22
 AXL,23-24
 AXXL,25-26
 AXXXL,27-28
-
-HAT
-,YOUTH,XS-SM,SM-MD,LG-XL
-SIZE,6 3/8′′−6 5/8′′,6
-
-HAT SIZE CHART 4301
-,YOUTH,SM-MD,LG-XL
-SIZE,6 3/8′−6 7/8′′,6 7/8′′−7 3/8′′,7 3/8′′−8′′
 
 ### Normalized hat charts (head circumference)
 
