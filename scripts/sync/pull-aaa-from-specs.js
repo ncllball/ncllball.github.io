@@ -31,6 +31,33 @@ function extractCsvBlock(md, heading) {
   return rows;
 }
 
+// Fallback CSV extractor: more tolerant to stray lines and header formatting.
+function extractCsvBlockFallback(md, heading, minRows = 2) {
+  const idx = md.indexOf(heading);
+  if (idx === -1) return null;
+  const after = md.slice(idx + heading.length);
+  const lines = after.split(/\r?\n/);
+  const rows = [];
+  // look for lines that look like CSV rows: contain a comma and start with an alphanumeric token
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+    if (line.startsWith('#')) break;
+    if (line.startsWith('![')) continue;
+    // consider rows that contain at least one comma
+    if (/^[A-Za-z0-9"'\s\-]+,/.test(line) && line.includes(',')) {
+      rows.push(line);
+    } else if (rows.length > 0 && line.includes(',')) {
+      // continuing data rows (allow some leading punctuation)
+      rows.push(line);
+    }
+    // stop when we see a paragraph break after we've started collecting rows
+    if (rows.length > 0 && line === '') break;
+    if (rows.length >= minRows && /^\s*$/.test(lines[i+1] || '')) break;
+  }
+  return rows.length ? rows : null;
+}
+
 function extractMdTable(md, heading) {
   const idx = md.indexOf(heading);
   if (idx === -1) return null;
@@ -148,11 +175,61 @@ function buildHatTransposed(parsedMdTable, captionId, captionText) {
 
 function replaceBlock(html, ariaDesc, newTableHtml) {
   const re = new RegExp(`<table[\s\S]*?aria-describedby=\"${ariaDesc}\"[\s\S]*?<\/table>`,'m');
-  if (!re.test(html)) {
-    console.warn('Target table aria-describedby="' + ariaDesc + '" not found.');
-    return html;
-  }
-  return html.replace(re, newTableHtml);
+    // More reliable string-based search instead of a single fragile regex.
+    // Find the aria-describedby token, then locate the surrounding <table ...> start and the closing </table>.
+    // try the provided id first, then common playground variants (-play, -play-2)
+    const candidates = [ariaDesc, ariaDesc + '-play', ariaDesc + '-play-2'];
+    let idx = -1;
+    let foundId = null;
+    for (const cand of candidates) {
+      const tokD = `aria-describedby="${cand}"`;
+      const tokS = `aria-describedby='${cand}'`;
+      idx = html.indexOf(tokD);
+      if (idx === -1) idx = html.indexOf(tokS);
+      if (idx !== -1) { foundId = cand; break; }
+    }
+    if (idx === -1) {
+      // As a last resort, try to find any aria-describedby that contains the model token
+      // e.g., for '4003-aaa-caption' try to match aria-describedby containing '4003'.
+      const baseMatch = ariaDesc.match(/([A-Za-z0-9]+)/);
+      if (baseMatch) {
+        const base = baseMatch[1];
+        const reAny = new RegExp(`aria-describedby=["']([^"']*${base}[^"']*)["']`,'m');
+        const m = reAny.exec(html);
+        if (m && m[1]) {
+          const cand = m[1];
+          idx = html.indexOf(`aria-describedby=\"${cand}\"`);
+          if (idx === -1) idx = html.indexOf(`aria-describedby='${cand}'`);
+          if (idx !== -1) {
+            console.log('Found alternate aria-describedby id: ' + cand + ' for requested ' + ariaDesc);
+            foundId = cand;
+          }
+        }
+      }
+      if (idx === -1) {
+        console.warn('Target table aria-describedby="' + ariaDesc + '" not found.');
+        return html;
+      }
+    }
+
+    // find the opening '<table' before the token
+    const start = html.lastIndexOf('<table', idx);
+    if (start === -1) {
+      console.warn('Found aria-describedby="' + ariaDesc + '" but could not locate surrounding <table> start.');
+      return html;
+    }
+
+    // find the closing '</table>' after the token
+    const end = html.indexOf('</table>', idx);
+    if (end === -1) {
+      console.warn('Found aria-describedby="' + ariaDesc + '" but could not locate </table> end.');
+      return html;
+    }
+
+    const sliceEnd = end + '</table>'.length;
+    const before = html.slice(0, start);
+    const after = html.slice(sliceEnd);
+    return before + newTableHtml + after;
 }
 
 function main() {
@@ -161,7 +238,15 @@ function main() {
   let out = html;
 
   // 4003
-  const block4003 = extractCsvBlock(md, '### 4003 — Normalized (Pit-to-pit)');
+  let block4003 = extractCsvBlock(md, '### 4003 — Normalized (Pit-to-pit)');
+  if (!block4003 || block4003.length < 2) {
+    // try a tolerant fallback for messy formatting
+    const fb = extractCsvBlockFallback(md, '### 4003 — Normalized (Pit-to-pit)', 2);
+    if (fb) {
+      console.log('Using fallback CSV extraction for 4003 block; rows=', fb.length);
+      block4003 = fb;
+    }
+  }
   if (block4003) {
     const new4003 = build4003Table(block4003);
     out = replaceBlock(out, '4003-aaa-caption', new4003);
