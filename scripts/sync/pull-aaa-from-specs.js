@@ -91,8 +91,8 @@ function build4003Table(rows) {
   const values = data.map(r => r[1]);
   const ths = sizes.map(s => `<th>${s}</th>`).join('\n                                                ');
   const tds = values.map(v => `<td>${v}</td>`).join('\n                                                ');
-  return `<table class="ncll-micro__table" aria-describedby="4003-aaa-caption">
-                                        <caption id="4003-aaa-caption" class="sr-only">Shirt 4003 pit-to-pit measurements in inches for sizes ${sizes.join(', ')}.</caption>
+  return `<table class="ncll-micro__table" aria-describedby="m4003-aaa-caption">
+                                        <caption id="m4003-aaa-caption" class="sr-only">Shirt 4003 pit-to-pit measurements in inches for sizes ${sizes.join(', ')}.</caption>
                                         <thead>
                                             <tr>
                                                 ${ths}
@@ -249,8 +249,8 @@ function main() {
   }
   if (block4003) {
     const new4003 = build4003Table(block4003);
-    out = replaceBlock(out, '4003-aaa-caption', new4003);
-    out = replaceBlock(out, '4003-caption', new4003); // also update A division table if present
+  out = replaceBlock(out, 'm4003-aaa-caption', new4003);
+  out = replaceBlock(out, 'm4003-caption', new4003); // also update A division table if present
   }
 
   // PC90H
