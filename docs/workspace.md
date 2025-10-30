@@ -22,3 +22,4 @@ Notes
 
 - This is editor-only structure; it does not affect the site or GitHub Pages
 - The existing tasks continue to work from the repo root
+

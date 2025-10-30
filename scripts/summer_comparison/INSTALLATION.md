@@ -118,3 +118,4 @@ If you're still having issues:
 2. Check npm version: `npm --version`
 3. Try: `npm install --verbose` to see detailed output
 4. Check if `node_modules` folder exists after install
+

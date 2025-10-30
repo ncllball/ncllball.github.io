@@ -221,3 +221,4 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
 |---|---:|
 | Small | 6 1/4–7 |
 | M–XL | 7–7 5/8 |
+

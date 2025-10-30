@@ -95,3 +95,4 @@ Comprehensive documentation of data quality standards and normalization rules.
 
 ## Idempotency
 All normalization functions are idempotent - running them multiple times on the same data produces the same result. Canonical names map to themselves.
+

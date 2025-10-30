@@ -45,3 +45,4 @@ Removed alias wrapper `update-at-a-glance.js` and any root-level `build-pd-atagl
 - JSON schema validation for manifest before consumption
 - HTML diff summary output file in `--report` mode
 - Program tagging consistency auditor
+

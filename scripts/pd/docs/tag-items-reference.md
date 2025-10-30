@@ -174,3 +174,4 @@ Gaps / Enhancements:
 - Add normalization rule: all free items use `$0 / <unit> (FREE[; sponsor])`; TBD keeps unit in data-cost-unit for future substitution.
 
 Let me know if you’d like JSON, CSV, or an automated extractor next.
+

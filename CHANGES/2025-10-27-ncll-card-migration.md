@@ -26,3 +26,4 @@ This change introduces a namespaced `ncll-card` component for program/feature ca
 3. Remove legacy CSS selectors permanently after full site migration and QA.
 
 Author: automated change by migration script (applied on 2025-10-27)
+
