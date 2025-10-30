@@ -33,7 +33,7 @@ This is the North Central Little League (Seattle, WA) website - a comprehensive 
 
 ### CSS Architecture
 
-- **Design system**: Consistent color palette (dark blue: #00013a, red: #cc0000, gainsboro for backgrounds)
+- **Design system**: Consistent color palette (dark blue: hex 00013a, red: hex cc0000, gainsboro for backgrounds)
 - **Typography hierarchy**: H1-H6 with specific font sizes (26px, 20px, 18px, 16px, 14px, 20px respectively)
 - **Component classes**: `.button`, `.ncll` (links), `.left` (alignment), `.sponsor-links`, `.team-photo`
 - **Table responsive**: `.fit` class tables with mobile-first breakpoints

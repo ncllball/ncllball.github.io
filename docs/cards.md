@@ -65,6 +65,7 @@ Article using pinned clipboard (corner):
 ```
 
 Notes:
+
 - When pinning the clipboard use `position: relative` on the `.ncll-card` (CSS already sets this).
 - When floating, ensure the meta container clears floats (either `.ncll-card__meta::after` or `u-clearfix`).
 
@@ -86,6 +87,7 @@ Notes:
 - [ ] Keyboard: clipboard link focusable and visible on focus.
 
 ## Common pitfalls & tips
+
 - Conflicting selectors: `clipboard-img` exists globally; prefer `.ncll-card__clipboard-img` to override sizing inside migrated cards.
 - Flexbox `justify-content: space-between` will create uneven vertical gaps across cards of different heights — use `flex-start` for top-aligned stacking.
 - If you want non-rectangular text flow around an icon set `shape-outside: circle(50%);` and ensure the image has transparent space to allow hugging text.
@@ -93,9 +95,11 @@ Notes:
 ## Rollback plan
 
 -- Rollback: changes were applied conservatively and a `css.legacy.extracted.css` archive and `css.css.pre-legacy-removed.bak` backup were created. If you need to revert any migration, restore the original files from the backups or via git.
+
 - Keep `css.backup.css` around until the migration is fully validated.
 
 ## Next steps
+
 - Confirm visual QA for migrated pages (screenshots saved to `screenshots/`).
 - Review `css.legacy.extracted.css` and compare with the backup `css.css.pre-legacy-removed.bak` before consolidating or deleting legacy rules.
 - When ready, remove legacy selector blocks from the extracted file (or keep it as an archive) and ensure `node scripts/check-legacy.js` reports only archived files as the remaining occurrences before final deletion.
