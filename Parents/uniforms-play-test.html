@@ -13,9 +13,22 @@
             margin: 40px 0;
         }
         .ncll-card {
-            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            min-height: 360px; /* ensure cards are same height for visual parity */
             margin: 0;
         }
+        .ncll-card__body {
+            flex: 1 1 auto;
+            padding: 18px;
+        }
+        .fit {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            margin-top: 8px;
+        }
+        .fit th, .fit td { padding: 6px 8px; border-bottom: 1px solid #eee; }
     </style>
 </head>
 <body>
@@ -23,30 +36,54 @@
         <div class="program-grid">
             <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="a-division-h2">
                 <div class="ncll-card__top-layer">
-                    <h3 class="ncll-card__title" id="a-division-h2">A-Division Baseball</h3>
-                    <p class="ncll-card__blurb">A division card content goes here.</p>
+                    <h3 class="ncll-card__title" id="a-division-h2">A — Baseball</h3>
+                    <p class="ncll-card__blurb">Model codes pulled from specs: Hat 4301, Shirt 4003. Socks and belt are league-supplied (OSFA).</p>
                 </div>
                 <div class="ncll-card__body">
                     <div class="ncll-card__details">
-                        <p>Player and coach sizing details for A division.</p>
+                        <h4>Players — Model codes</h4>
+                        <table class="fit" aria-describedby="a-specs">
+                          <caption id="a-specs" class="sr-only">A division player models and extras</caption>
+                          <thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th><th>Socks</th><th>Belt</th></tr></thead>
+                          <tbody><tr><td>4301</td><td>4003</td><td>none</td><td>OSFA</td><td>OSFA</td></tr></tbody>
+                        </table>
+
+                        <h4>Coaches — Model codes</h4>
+                        <table class="fit" aria-describedby="a-coach-specs">
+                          <caption id="a-coach-specs" class="sr-only">A division coach models and extras</caption>
+                          <thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th><th>Socks</th><th>Belt</th></tr></thead>
+                          <tbody><tr><td>4301</td><td>ST350</td><td>none</td><td>none</td><td>none</td></tr></tbody>
+                        </table>
                     </div>
                 </div>
                 <div class="ncll-card__actions" aria-label="A-Division quick links">
-                    <button class="button button--primary">Next</button>
+                    <a class="button button--primary" href="#">Register</a>
                 </div>
             </article>
             <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="aa-division-h2">
                 <div class="ncll-card__top-layer">
-                    <h3 class="ncll-card__title" id="aa-division-h2">AA-Division Baseball</h3>
-                    <p class="ncll-card__blurb">AA division card content goes here.</p>
+                    <h3 class="ncll-card__title" id="aa-division-h2">AA — Baseball</h3>
+                    <p class="ncll-card__blurb">Model codes pulled from specs: Hat 4301, Shirt 4003. Socks and belt are league-supplied (OSFA).</p>
                 </div>
                 <div class="ncll-card__body">
                     <div class="ncll-card__details">
-                        <p>Player and coach sizing details for AA division.</p>
+                        <h4>Players — Model codes</h4>
+                        <table class="fit" aria-describedby="aa-specs">
+                          <caption id="aa-specs" class="sr-only">AA division player models and extras</caption>
+                          <thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th><th>Socks</th><th>Belt</th></tr></thead>
+                          <tbody><tr><td>4301</td><td>4003</td><td>none</td><td>OSFA</td><td>OSFA</td></tr></tbody>
+                        </table>
+
+                        <h4>Coaches — Model codes</h4>
+                        <table class="fit" aria-describedby="aa-coach-specs">
+                          <caption id="aa-coach-specs" class="sr-only">AA division coach models and extras</caption>
+                          <thead><tr><th>Hat</th><th>Shirt</th><th>Hoodie</th><th>Socks</th><th>Belt</th></tr></thead>
+                          <tbody><tr><td>4301</td><td>ST350</td><td>none</td><td>none</td><td>none</td></tr></tbody>
+                        </table>
                     </div>
                 </div>
                 <div class="ncll-card__actions" aria-label="AA-Division quick links">
-                    <button class="button button--primary">Next</button>
+                    <a class="button button--primary" href="#">Register</a>
                 </div>
             </article>
         </div>
