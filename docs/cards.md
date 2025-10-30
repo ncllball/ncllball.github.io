@@ -3,6 +3,7 @@
 This document describes the new namespaced card component used for program/feature cards across the site. It explains the CSS API, example markup, migration checklist, and a short QA guide so contributors migrate safely.
 
 ## Purpose / contract
+
 - Inputs: semantic HTML (article) with title, metadata list and optional small action icon (clipboard).
 - Output: visually consistent card with optional variants (volunteer, PD, division) and two clipboard behaviors (float in content, or pinned to corner).
 -- Error modes: legacy `.program-card` styling has been extracted to `css.legacy.extracted.css` and archived. The live HTML pages in this repo have been migrated to `ncll-` classes; `css.css` was cleaned of element-level legacy selectors. Keep the extracted file as a rollback/archive while you complete visual QA.
@@ -26,6 +27,7 @@ This document describes the new namespaced card component used for program/featu
   - `u-float-right` — utility for simple float behavior
 
 ## CSS location
+
 - PoC styles live in `css.css` (search for `.ncll-card`).
 - Keep design tokens in `:root` (colors, spacing, transitions).
 
@@ -67,6 +69,7 @@ Notes:
 - When floating, ensure the meta container clears floats (either `.ncll-card__meta::after` or `u-clearfix`).
 
 ## Migration checklist (safe, incremental)
+
 1. Review `css.legacy.extracted.css` and `tmp-legacy-selector-report.json` to see any remaining legacy selectors that live outside page HTML (reports and archives may still reference them).
 2. Add namespaced classes to any new pages. The repo's existing landing pages were migrated to `ncll-` classes during the last cleanup; you no longer need to keep `.program-card` in migrated files.
 3. Add element classes where relevant (`ncll-card__meta`, `ncll-card__clipboard--float`).
@@ -75,6 +78,7 @@ Notes:
 6. Repeat per page. As pages are migrated and tested, remove legacy selectors from `css.css` in a single cleanup commit (backup before removal). Removed legacy blocks are written to `css.legacy.extracted.css` and the original `css.css` is backed up as `css.css.pre-legacy-removed.bak` for review.
 
 ## QA checklist (per page)
+
 - [ ] Desktop layout: card spacing, title alignment, clipboard position.
 - [ ] Tablet layout: grid collapse, readable text wrapping.
 - [ ] Mobile layout: single-column stack, icon size reasonable (suggest 40–56px max).
