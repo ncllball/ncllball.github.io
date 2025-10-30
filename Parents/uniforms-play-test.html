@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Uniforms Playground Test</title>
+    <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
+    <style>
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 0;
+            align-items: start;
+            margin: 40px 0;
+        }
+        .ncll-card {
+            min-height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="program-grid">
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="a-division-h2">
+                <div class="ncll-card__top-layer">
+                    <h3 class="ncll-card__title" id="a-division-h2">A-Division Baseball</h3>
+                    <p class="ncll-card__blurb">A division card content goes here.</p>
+                </div>
+                <div class="ncll-card__body">
+                    <div class="ncll-card__details">
+                        <p>Player and coach sizing details for A division.</p>
+                    </div>
+                </div>
+                <div class="ncll-card__actions" aria-label="A-Division quick links">
+                    <button class="button button--primary">Next</button>
+                </div>
+            </article>
+            <article class="ncll-card ncll-card--division ncll-card--overlay" aria-labelledby="aa-division-h2">
+                <div class="ncll-card__top-layer">
+                    <h3 class="ncll-card__title" id="aa-division-h2">AA-Division Baseball</h3>
+                    <p class="ncll-card__blurb">AA division card content goes here.</p>
+                </div>
+                <div class="ncll-card__body">
+                    <div class="ncll-card__details">
+                        <p>Player and coach sizing details for AA division.</p>
+                    </div>
+                </div>
+                <div class="ncll-card__actions" aria-label="AA-Division quick links">
+                    <button class="button button--primary">Next</button>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>
