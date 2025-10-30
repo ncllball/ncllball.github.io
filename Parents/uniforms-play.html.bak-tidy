@@ -132,19 +132,19 @@
         }
 
         /* Show only the overlay matching the checked checkbox (per-image) */
-        #play-ephemeral-a-toggle input#lightbox-1:checked~.lightbox[data-id="play-a-img-1"] {
+        #play-ephemeral-a-toggle input#lightbox-1:checked~.lightbox[data-id="play-a-play-a-h1"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
         }
 
-        #play-ephemeral-a-toggle input#lightbox-3:checked~.lightbox[data-id="play-a-img-2"] {
+        #play-ephemeral-a-toggle input#lightbox-3:checked~.lightbox[data-id="play-a-play-a-h3"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
         }
 
-        #play-ephemeral-a-toggle input#lightbox-4:checked~.lightbox[data-id="play-a-img-3"] {
+        #play-ephemeral-a-toggle input#lightbox-4:checked~.lightbox[data-id="play-a-play-a-h4"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
@@ -175,9 +175,9 @@
         }
 
         /* scale image up when a specific lightbox is active */
-        #play-ephemeral-a-toggle input#lightbox-1:checked~.lightbox[data-id="play-a-hat-1"] img,
-        #play-ephemeral-a-toggle input#lightbox-3:checked~.lightbox[data-id="play-a-hat-2"] img,
-        #play-ephemeral-a-toggle input#lightbox-4:checked~.lightbox[data-id="play-a-img-4"] img {
+        #play-ephemeral-a-toggle input#lightbox-1:checked~.lightbox[data-id="play-a-play-a-h2"] img,
+        #play-ephemeral-a-toggle input#lightbox-3:checked~.lightbox[data-id="play-a-play-a-h2-1"] img,
+        #play-ephemeral-a-toggle input#lightbox-4:checked~.lightbox[data-id="play-a-play-a-h2-2"] img {
             transform: scale(1);
             opacity: 1;
         }
@@ -371,25 +371,25 @@
         }
 
         /* Show only the overlay matching the checked checkbox (per-image) */
-        #play-ephemeral-aa-toggle input#lightbox-aa-1:checked~.lightbox[data-id="play-aa-img-1"] {
+        #play-ephemeral-aa-toggle input#lightbox-aa-1:checked~.lightbox[data-id="play-a-play-aa-h3"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
         }
 
-        #play-ephemeral-aa-toggle input#lightbox-aa-3:checked~.lightbox[data-id="play-aa-img-2"] {
+        #play-ephemeral-aa-toggle input#lightbox-aa-3:checked~.lightbox[data-id="play-a-play-aa-h3-1"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
         }
 
-        #play-ephemeral-aa-toggle input#lightbox-aa-4:checked~.lightbox[data-id="play-aa-img-3"] {
+        #play-ephemeral-aa-toggle input#lightbox-aa-4:checked~.lightbox[data-id="play-a-play-aa-h3-2"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
         }
 
-        #play-ephemeral-aa-toggle input#lightbox-aa-5:checked~.lightbox[data-id="play-aa-img-4"] {
+        #play-ephemeral-aa-toggle input#lightbox-aa-5:checked~.lightbox[data-id="play-aa-play-aa-h5"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
@@ -420,10 +420,10 @@
         }
 
         /* scale image up when a specific lightbox is active */
-        #play-ephemeral-aa-toggle input#lightbox-aa-1:checked~.lightbox[data-id="play-aa-hat-1"] img,
-        #play-ephemeral-aa-toggle input#lightbox-aa-3:checked~.lightbox[data-id="play-aa-hat-2"] img,
-        #play-ephemeral-aa-toggle input#lightbox-aa-4:checked~.lightbox[data-id="play-aa-img-5"] img,
-        #play-ephemeral-aa-toggle input#lightbox-aa-5:checked~.lightbox[data-id="play-aa-img-6"] img {
+        #play-ephemeral-aa-toggle input#lightbox-aa-1:checked~.lightbox[data-id="play-a-play-aa-h4"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-3:checked~.lightbox[data-id="play-a-play-aa-h4-1"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-4:checked~.lightbox[data-id="play-a-play-aa-h4-2"] img,
+        #play-ephemeral-aa-toggle input#lightbox-aa-5:checked~.lightbox[data-id="play-aa-play-aa-h2"] img {
             transform: scale(1);
             opacity: 1;
         }
@@ -643,13 +643,13 @@
         }
 
         /* Show only the overlay matching the checked checkbox (per-image) */
-        #play-ephemeral-tball-toggle input#lightbox-tball-1:checked~.lightbox[data-id="play-tball-img-1"] {
+        #play-ephemeral-tball-toggle input#lightbox-tball-1:checked~.lightbox[data-id="play-a-play-tball-h5"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
         }
 
-        #play-ephemeral-tball-toggle input#lightbox-tball-5:checked~.lightbox[data-id="play-tball-img-2"] {
+        #play-ephemeral-tball-toggle input#lightbox-tball-5:checked~.lightbox[data-id="play-aa-play-tball-h3"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
@@ -680,8 +680,8 @@
         }
 
         /* scale image up when a specific lightbox is active */
-        #play-ephemeral-tball-toggle input#lightbox-tball-1:checked~.lightbox[data-id="play-tball-hat-1"] img,
-        #play-ephemeral-tball-toggle input#lightbox-tball-5:checked~.lightbox[data-id="play-tball-hat-2"] img {
+        #play-ephemeral-tball-toggle input#lightbox-tball-1:checked~.lightbox[data-id="play-a-play-tball-play-6-h6"] img,
+        #play-ephemeral-tball-toggle input#lightbox-tball-5:checked~.lightbox[data-id="play-aa-play-tball-h4"] img {
             transform: scale(1);
             opacity: 1;
         }
@@ -845,32 +845,32 @@
         }
 
         /* Show only the overlay matching the checked checkbox (per-image) */
-        #play-ephemeral-aaa-toggle input#lightbox-aaa-1:checked~.lightbox[data-id="play-aaa-img-1"] {
+        #play-ephemeral-aaa-toggle input#lightbox-aaa-1:checked~.lightbox[data-id="play-a-play-aaa-play-7-h7"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
         }
 
-        #play-ephemeral-aaa-toggle input#lightbox-aaa-3:checked~.lightbox[data-id="play-aaa-img-2"] {
+        #play-ephemeral-aaa-toggle input#lightbox-aaa-3:checked~.lightbox[data-id="play-a-play-aaa-h5"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
         }
 
-        #play-ephemeral-aaa-toggle input#lightbox-aaa-4:checked~.lightbox[data-id="play-aaa-img-3"] {
+        #play-ephemeral-aaa-toggle input#lightbox-aaa-4:checked~.lightbox[data-id="play-a-play-aaa-h5-1"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
         }
 
-        #play-ephemeral-aaa-toggle input#lightbox-aaa-5:checked~.lightbox[data-id="play-aaa-img-4"] {
+        #play-ephemeral-aaa-toggle input#lightbox-aaa-5:checked~.lightbox[data-id="play-aa-play-aaa-h5-2"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
         }
 
         /* show play-aaa-h23 overlay when play-aaa-h23 checkbox is checked */
-        #play-ephemeral-aaa-toggle input#lightbox-aaa-play-aaa-h23:checked~.lightbox[data-id="play-aaa-img-5"] {
+        #play-ephemeral-aaa-toggle input#lightbox-aaa-play-aaa-h23:checked~.lightbox[data-id="play-aaa-h23"] {
             visibility: visible;
             opacity: 1;
             pointer-events: auto;
@@ -901,11 +901,11 @@
         }
 
         /* scale image up when a specific lightbox is active */
-        #play-ephemeral-aaa-toggle input#lightbox-aaa-1:checked~.lightbox[data-id="play-aaa-hat-1"] img,
-        #play-ephemeral-aaa-toggle input#lightbox-aaa-3:checked~.lightbox[data-id="play-aaa-hat-2"] img,
-        #play-ephemeral-aaa-toggle input#lightbox-aaa-4:checked~.lightbox[data-id="play-aaa-img-6"] img,
-        #play-ephemeral-aaa-toggle input#lightbox-aaa-5:checked~.lightbox[data-id="play-aaa-img-7"] img,
-        #play-ephemeral-aaa-toggle input#lightbox-aaa-play-aaa-h23:checked~.lightbox[data-id="play-aaa-img-8"] img {
+        #play-ephemeral-aaa-toggle input#lightbox-aaa-1:checked~.lightbox[data-id="play-a-play-aaa-play-8-h8"] img,
+        #play-ephemeral-aaa-toggle input#lightbox-aaa-3:checked~.lightbox[data-id="play-a-play-aaa-play-6-h6"] img,
+        #play-ephemeral-aaa-toggle input#lightbox-aaa-4:checked~.lightbox[data-id="play-a-play-aaa-play-6-h6-1"] img,
+        #play-ephemeral-aaa-toggle input#lightbox-aaa-5:checked~.lightbox[data-id="play-aa-play-aaa-play-6-play-aa-6-h2"] img,
+        #play-ephemeral-aaa-toggle input#lightbox-aaa-play-aaa-h23:checked~.lightbox[data-id="play-aaa-h23-2"] img {
             transform: scale(1);
             opacity: 1;
         }
@@ -1181,13 +1181,13 @@
                         </div>
 
                         <!-- T-Ball lightbox overlays -->
-                        <label for="lightbox-tball-1" class="lightbox" data-id="play-tball-1-shirt-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-tball-1" class="lightbox" data-id="play-a-play-tball-1-play-9-h9" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/ST350_ATOMIC_BLUE_FORM_FRONT.png" alt="ST350 shirt — full">
                         </label>
-                        <label for="lightbox-tball-5" class="lightbox" data-id="play-tball-5-shirt-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-tball-5" class="lightbox" data-id="play-aa-play-tball-5-play-7-h7" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
@@ -1372,13 +1372,13 @@
                         </div>
 
                         <!-- Kindy lightbox overlays -->
-                        <label for="lightbox-kindy-1" class="lightbox" data-id="play-kindy-1-shirt-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-kindy-1" class="lightbox" data-id="play-a-play-kindy-1-play-10-h10" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/ST350_ATOMIC_BLUE_FORM_FRONT.png" alt="Shirt ST350 — full">
                         </label>
-                        <label for="lightbox-kindy-5" class="lightbox" data-id="play-kindy-5-shirt-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-kindy-5" class="lightbox" data-id="play-aa-play-kindy-5-play-8-h8" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
@@ -1629,21 +1629,21 @@
                                 for="play-ephemeral-intro">Next</label>
                         </div>
                         <!-- lightbox overlays: clicking anywhere in an overlay (including the image) will close it -->
-                        <label for="lightbox-1" class="lightbox" data-id="play-1-badge-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-1" class="lightbox" data-id="play-a-play-1-h11" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/4003_ROYAL_WHITE_LOGO.png"
                                 alt="Shirt 4003 — royal white logo (full)">
                         </label>
-                        <label for="lightbox-3" class="lightbox" data-id="play-3-shirt-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-3" class="lightbox" data-id="play-a-play-3-play-7-h7" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/ST350_ATOMIC_BLUE_FORM_FRONT.png"
                                 alt="Coach shirt ST350 front (full)">
                         </label>
-                        <label for="lightbox-4" class="lightbox" data-id="play-4-shirt-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-4" class="lightbox" data-id="play-a-play-4-play-7-h7" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
@@ -1651,47 +1651,47 @@
                         </label>
 
                         <!-- Extra overlays for additional thumbnails added above -->
-                        <label for="lightbox-5" class="lightbox" data-id="play-5-hat-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-5" class="lightbox" data-id="play-aa-play-5-play-9-h9" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/4301_SCARLET.png" alt="Hat 4301 — scarlet (full)">
                         </label>
-                        <label for="lightbox-6" class="lightbox" data-id="play-6-hat-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-6" class="lightbox" data-id="play-6-play-6-h6" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/PTS30_BLACK-MAROON_FINAL.jpg.png"
                                 alt="Richardson PTS30 play-aaa-h23 (full)">
                         </label>
-                        <label for="lightbox-7" class="lightbox" data-id="play-7-pants-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-7" class="lightbox" data-id="play-7-play-7-h7" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/PTS30_BLACK-MAROON_LEFT.jpg.png"
                                 alt="Richardson PTS30 play-aaa-h23 left view (full)">
                         </label>
-                        <label for="lightbox-8" class="lightbox" data-id="play-8-pants-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-8" class="lightbox" data-id="play-8-play-8-h8" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/PTS30_BLACK-MAROON_BACK.jpg.png"
                                 alt="Richardson PTS30 play-aaa-h23 back view (full)">
                         </label>
-                        <label for="lightbox-9" class="lightbox" data-id="play-9-pants-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-9" class="lightbox" data-id="play-9-play-9-h9" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/HC10_3.png" alt="Coach play-aaa-h23 HC10 variant 3 (full)">
                         </label>
-                        <label for="lightbox-10" class="lightbox" data-id="play-10-img-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-10" class="lightbox" data-id="play-a-play-10-h10" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/HC10_4.png" alt="Coach play-aaa-h23 HC10 variant 4 (full)">
                         </label>
                         <!-- ST550 overlay removed (not used for A-division coaches) -->
-                        <label for="lightbox-12" class="lightbox" data-id="play-12-hoodie-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-12" class="lightbox" data-id="play-a-play-12-h12" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
@@ -1936,66 +1936,66 @@
                         </div>
 
                         <!-- AA lightbox overlays -->
-                        <label for="lightbox-aa-1" class="lightbox" data-id="play-aa-1-badge-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aa-1" class="lightbox" data-id="play-a-play-aa-1-h12" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/4003_ROYAL_WHITE_LOGO.png"
                                 alt="Shirt 4003 — royal white logo (full)">
                         </label>
-                        <label for="lightbox-aa-3" class="lightbox" data-id="play-aa-3-shirt-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aa-3" class="lightbox" data-id="play-a-play-aa-3-h8" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/ST350_ATOMIC_BLUE_FORM_FRONT.png"
                                 alt="Coach shirt ST350 front (full)">
                         </label>
-                        <label for="lightbox-aa-4" class="lightbox" data-id="play-aa-4-shirt-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aa-4" class="lightbox" data-id="play-a-play-aa-4-h8" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/HC10_2.png" alt="Coach play-aaa-h23 HC10 (full)">
                         </label>
-                        <label for="lightbox-aa-5" class="lightbox" data-id="play-aa-5-hat-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aa-5" class="lightbox" data-id="play-aa-play-aa-5-h10" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/4301_SCARLET.png" alt="Hat 4301 — scarlet (full)">
                         </label>
-                        <label for="lightbox-aa-6" class="lightbox" data-id="play-aa-6-hat-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aa-6" class="lightbox" data-id="play-6-play-aa-6-h2" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/PTS30_BLACK-MAROON_FINAL.jpg.png"
                                 alt="Richardson PTS30 play-aaa-h23 (full)">
                         </label>
-                        <label for="lightbox-aa-7" class="lightbox" data-id="play-aa-7-pants-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aa-7" class="lightbox" data-id="play-7-play-aa-7-h2" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/PTS30_BLACK-MAROON_LEFT.jpg.png"
                                 alt="Richardson PTS30 play-aaa-h23 left view (full)">
                         </label>
-                        <label for="lightbox-aa-8" class="lightbox" data-id="play-aa-8-pants-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aa-8" class="lightbox" data-id="play-8-play-aa-8-h2" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/PTS30_BLACK-MAROON_BACK.jpg.png"
                                 alt="Richardson PTS30 play-aaa-h23 back view (full)">
                         </label>
-                        <label for="lightbox-aa-9" class="lightbox" data-id="play-aa-9-pants-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aa-9" class="lightbox" data-id="play-9-play-aa-9-h2" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/HC10_3.png" alt="Coach play-aaa-h23 HC10 variant 3 (full)">
                         </label>
-                        <label for="lightbox-aa-10" class="lightbox" data-id="play-aa-10-img-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aa-10" class="lightbox" data-id="play-a-play-10-play-aa-10-h2" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/HC10_4.png" alt="Coach play-aaa-h23 HC10 variant 4 (full)">
                         </label>
-                        <label for="lightbox-aa-12" class="lightbox" data-id="play-aa-12-hoodie-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aa-12" class="lightbox" data-id="play-a-play-12-play-aa-12-h2" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
@@ -2415,26 +2415,26 @@
                         </div>
 
                         <!-- AAA lightbox overlays -->
-                        <label for="lightbox-aaa-1" class="lightbox" data-id="play-aaa-1-badge-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aaa-1" class="lightbox" data-id="play-a-play-aaa-1-h13" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/4003_ROYAL_WHITE_LOGO.png" alt="Shirt 4003 — full">
                         </label>
-                        <label for="lightbox-aaa-3" class="lightbox" data-id="play-aaa-3-shirt-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aaa-3" class="lightbox" data-id="play-a-play-aaa-3-h9" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/ST350_ATOMIC_BLUE_FORM_FRONT.png"
                                 alt="Coach shirt ST350 — full">
                         </label>
-                        <label for="lightbox-aaa-4" class="lightbox" data-id="play-aaa-4-shirt-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aaa-4" class="lightbox" data-id="play-a-play-aaa-4-h9" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
                             <img src="/images/uniforms/play-aaa-h23s/PC90H-JET-BLACK_A3.png" alt="Hoodie PC90H — full">
                         </label>
-                        <label for="lightbox-aaa-5" class="lightbox" data-id="play-aaa-5-hoodie-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aaa-5" class="lightbox" data-id="play-aa-play-aaa-5-h11" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
@@ -2442,7 +2442,7 @@
                                 alt="Richardson PTS30 play-aaa-h23 — full">
                         </label>
                         <!-- dedicated play-aaa-h23 overlay (namespaced) so coach/player play-aaa-h23 thumbnails reliably open -->
-                        <label for="lightbox-aaa-play-aaa-h23" class="lightbox" data-id="play-aaa-play-aaa-h23-pants-1" role="dialog" aria-modal="true"
+                        <label for="lightbox-aaa-play-aaa-h23" class="lightbox" data-id="play-aaa-h23-3" role="dialog" aria-modal="true"
                             aria-label="Enlarged play-aaa-h23 image" tabindex="0">
                             <span class="sr-only">Close image</span>
                             <span class="close-btn" aria-hidden="true">✕</span>
