@@ -17,7 +17,7 @@
 | Softball - Juniors | 4302             | 4408          | PC90H          | OSFA  | OSFA |
 | Softball - Seniors | 4302             | 4408          | PC90H          | OSFA  | OSFA |
 
-# COACHES HATS & SHIRTS MODEL CHART
+## COACHES HATS & SHIRTS MODEL CHART
 
 | Program/Division         | Hat Model #      | Shirt Model # | Hoodie Model # | Socks | Belt |
 | -------------------------- | ---------------- | ------------- | -------------- | ----- | ---- |
@@ -36,7 +36,7 @@
 | Softball - Juniors Coaches | Champro HC10     | ST350/ST550   | PC90H          | none  | none |
 | Softball - Seniors Coaches | Champro HC10     | ST350/ST550   | PC90H          | none  | none |
 
-# SIZE & LENGTH CARDS
+## SIZE & LENGTH CARDS
 
 ## Legend — measurement conventions
 
@@ -45,6 +45,7 @@
 - Body Length: measured from the highest point at the back (or front when noted) to the hem, expressed in inches.
 
 Notes:
+
 - Where a table column is labelled "1/2 Chest" or "Chest" in the original supplier sheet, we treat that value as pit-to-pit (PTP) for the normalized table below. If you have supplier sheets where "Chest" is a circumference, tell me and I will convert by dividing the circumference by 2.
 - All normalized tables below explicitly show Pit-to-pit (PTP) values so you can use them consistently when ordering.
 
@@ -59,7 +60,7 @@ AXL,26,31
 AXXL,28,32
 AXXXL,30,33
 AXXXXL,32,34
- 
+
 ### PC90H — Normalized (Pit-to-pit)
 
 Size codes: AS = Adult Small, AM = Adult Medium, AL = Adult Large, AXL = Adult X-Large, AXXL = Adult 2X-Large, AXXXL = Adult 3X-Large, AXXXXL = Adult 4X-Large
@@ -83,12 +84,12 @@ AXL,24 1/2,31
 AXXL,26,32
 AXXXL,28,32 1/2
 AXXXXL,30,33
- 
+
 ### ST350 — Normalized (Pit-to-pit)
 
 Size codes: AXS = Adult X-Small, AS = Adult Small, AM = Adult Medium, AL = Adult Large, AXL = Adult X-Large, AXXL = Adult 2X-Large, AXXXL = Adult 3X-Large, AXXXXL = Adult 4X-Large
 
-Size,Pit-to-pit (in),Body Length at Back (in)
+Size
 AXS,18.5,27
 AS,20,28
 AM,21.5,29
@@ -108,7 +109,7 @@ AXL,24 1/2,31
 AXXL,26,32
 AXXXL,28,32 1/2
 AXXXXL,30,33
- 
+
 ### ST550 — Normalized (Pit-to-pit)
 
 Size codes: AXS = Adult X-Small, AS = Adult Small, AM = Adult Medium, AL = Adult Large, AXL = Adult X-Large, AXXL = Adult 2X-Large, AXXXL = Adult 3X-Large, AXXXXL = Adult 4X-Large
@@ -133,7 +134,7 @@ WM,20 1/2,27 1/2
 WL,22,28 1/2
 WXL,23 1/2,29 1/2
 WXXL,25,30 3/4
- 
+
 ### 4408 — Normalized (Pit-to-pit)
 
 Size codes: GS = Girl Small, GM = Girl Medium, GL = Girl Large; WS = Women's Small, WM = Women's Medium, WL = Women's Large, WXL = Women's X-Large, WXXL = Women's 2X-Large
@@ -175,10 +176,9 @@ AXL,23-24
 AXXL,25-26
 AXXXL,27-28
 
-HAT SIZE CHART PTS30
+HAT
 ,YOUTH,XS-SM,SM-MD,LG-XL
-SIZE,6 3/8′′−6 5/8′′,6 5/8′′−7′′,7′−7 1/4′′,7 3/8′′−7 5/8′′
-
+SIZE,6 3/8′′−6 5/8′′,6
 
 HAT SIZE CHART 4301
 ,YOUTH,SM-MD,LG-XL
@@ -189,6 +189,7 @@ SIZE,6 3/8′−6 7/8′′,6 7/8′′−7 3/8′′,7 3/8′′−8′′
 Note: hat supplier sheets list head circumference ranges. Below are normalized, decimal-inch ranges for each hat model to make comparisons consistent across vendors. The original supplier charts are preserved below for traceability.
 
 HAT SIZE CHART PTS30 — Normalized (Head circumference, in)
+
 | Size label | Head circumference (in) |
 |---|---:|
 | Youth | 6 3/8–6 5/8 |
@@ -197,20 +198,22 @@ HAT SIZE CHART PTS30 — Normalized (Head circumference, in)
 | LG–XL | 7 3/8–7 5/8 |
 
 HAT SIZE CHART 4301 — Normalized (Head circumference, in)
+
 | Size label | Head circumference (in) |
 |---|---:|
 | Youth | 6 3/8–6 7/8 |
 | SM–MD | 6 7/8–7 3/8 |
 | LG–XL | 7 3/8–8 |
 
-
 HAT SIZE CHART 4302 — Normalized (Head circumference, in)
+
 | Size label | Head circumference (in) |
 |---|---:|
 | Youth | 6 3/8–7 1/4 |
 | Adult | 7–7 3/4 |
 
 HAT SIZE CHART HC10 — Normalized (Head circumference, in)
+
 | Size label | Head circumference (in) |
 |---|---:|
 | Small | 6 1/4–7 |
