@@ -401,3 +401,4 @@ Source: `scripts/data/school-names.all.csv` and per‑variant `scripts/data/scho
 
 - Canonical total: see first row counts in the CSV (current run captured 34 canonical schools)
 - Use the variants file to see every raw school value plus which CSV and column it came from
+

@@ -13,3 +13,4 @@ Examples:
 node scripts/costs/normalize-cost-format.js --path="Player Development"
 node scripts/costs/normalize-free-cost.js --write
 ```
+

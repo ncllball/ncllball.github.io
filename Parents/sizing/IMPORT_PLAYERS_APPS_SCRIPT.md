@@ -42,3 +42,4 @@ Softball - Seniors,4302,4408,PC90H
 Notes
 - The script writes into the current Google Sheet only; you must run it from the Sheet at the link you provided.
 - If you prefer, you can import `Parents/sizing/specs-players.csv` via File → Import → Upload and choose "Insert new sheet(s)".
+

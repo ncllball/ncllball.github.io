@@ -332,3 +332,4 @@ See `source-columns-inventory.md` for:
 4. Merge into master file
 5. Run final validation on master file
 6. Keep source files for future field additions (see Extensibility section)
+

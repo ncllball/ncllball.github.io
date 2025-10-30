@@ -12,6 +12,7 @@
 		"pd:report": "node scripts/pd/update-all.js --report",
 		"site:content": "node scripts/tools/update-site-content.js",
 		"site:content:write": "node scripts/tools/update-site-content.js --write",
+		"snippets:expand": "node scripts/include/expand-snippets.js",
 		"registration:lint": "node scripts/registration/lint-summerball-csv.js",
 		"registration:schools": "node scripts/registration/normalize-school-names.js",
 		"normalize-schools": "node scripts/data/normalize-schools.js"

@@ -15,3 +15,4 @@ Examples:
 node scripts/footnotes/normalize-scholarship-footies.js --path="2025 Season"
 node scripts/footnotes/dedup-scholarship-footies.js --write
 ```
+
