@@ -43,8 +43,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 
 /* Ensure each article/card composes its internal layout vertically
    and provide a small internal gap so elements don't touch. */
-.program-grid>article,
-.program-grid .ncll-card {
+.program-grid>article {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -55,98 +54,19 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     margin-bottom: 8px;
 }
 
+/* Tablet fallback: collapse to one column when grid can't honor two cards */
+@media (max-width: 768px) {
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Small helper: tighten the layout on narrow screens */
 @media (max-width: 420px) {
     .program-grid {
         grid-template-columns: 1fr;
         grid-row-gap: 16px;
     }
-}
-
-.ncll-card--volunteer {
-    /* placeholder for volunteer-specific tweaks (no visual change) */
-    --ncll-card-variant: 1
-}
-
-.ncll-card__title {
-    margin: 0 0 8px 0
-}
-
-.ncll-card__meta {
-    list-style: none;
-    padding: 0;
-    margin: 0
-}
-
-.ncll-card__meta::after {
-    content: "";
-    display: table;
-    clear: both
-}
-
-.ncll-card__clipboard {
-    display: inline-block;
-    vertical-align: top
-}
-
-.ncll-card__clipboard--float {
-    float: right;
-    margin-left: 10px;
-    width: 44px
-}
-
-.ncll-card__clipboard--pinned {
-    position: absolute;
-    top: 8px;
-    right: 12px
-}
-
-/* Image rules scoped to the namespaced card to avoid conflicts with global clipboard-img settings */
-.ncll-card__clipboard-img {
-    width: 44px;
-    height: auto;
-    display: block;
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 8px;
-    shape-outside: inset(0)
-}
-
-/* Responsive tweak: slightly smaller clipboard on narrow screens */
-@media(max-width:480px) {
-    .ncll-card__clipboard--float, .ncll-card__clipboard-img {
-        width: 36px;
-        margin-left: 8px
-    }
-}
-
-/* Card graphics: ensure consistent crop and sizing across division cards    - object-fit: cover crops images to fill the card area while preserving aspect    - a fixed height keeps cards visually consistent; use responsive breakpoints      to reduce height on narrow screens */
-.ncll-card__graphic {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    display: block;
-    border-radius: 4px;
-    box-sizing: border-box
-}
-
-@media(max-width:720px) {
-    .ncll-card__graphic {
-        height: 140px
-    }
-}
-
-@media(max-width:480px) {
-    .ncll-card__graphic {
-        height: 110px
-    }
-}
-
-/* Keyboard focus styling for clipboard links (accessibility) */
-.ncll-card__clipboard:focus-visible, .clipboard-link:focus-visible {
-    outline: 3px solid var(--color_richblue);
-    outline-offset: 2px;
-    border-radius: 4px
 }
 
 /* small utility helpers */
@@ -1094,324 +1014,6 @@ body:not(.cms-right) .only-on-right {
 }
 
 /* =============== End Right-pane (CMS) helpers =============== */
-/* ================= Player Development landing (scoped) ================ */
-/* Player Development specific grid/card rules removed in favor of global rules.
-   Use the global `.program-grid` and `.ncll-card` styles defined above. */
-
-.ncll-card {
-    background: var(--color_surface_light);
-    border: 1px solid var(--color_border_light);
-    padding: 14px 16px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .06);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    /* cap card width and center single-column cards */
-    max-width: min(var(--ncll-card-max), 92%);
-    margin: 0 auto;
-}
-
-.ncll-card__title {
-    font-size: 1.05rem;
-    line-height: 1.3;
-    color: var(--color_blue);
-    text-align: center;
-    display: block;
-    padding-top: 10px;
-}
-
-
-/* Consolidated global ncll-card rules (generated) */
-.ncll-card__meta {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 10px;
-    font-size: .85rem
-}
-
-.ncll-card__blurb {
-    font-size: 0.9rem;
-    line-height: 1.3;
-    color: var(--color_text)
-}
-
-.ncll-card__graphic {
-    width: 100px;
-    height: auto;
-    margin: 8px auto 8px
-}
-
-.ncll-card__details {
-    margin: 0px 0 4px 0;
-    color: var(--color_blue);
-}
-
-.ncll-card__meta li {
-    list-style: none;
-    margin: 2px 0;
-    color: var(--color_muted)
-}
-
-.status-badge {
-    font-size: .7rem;
-    text-transform: normal;
-    font-weight: 600;
-    padding: 3px 6px;
-    border-radius: 4px;
-    background: var(--color_blue);
-    color: #fff;
-    margin-left: 6px
-}
-
-.status-open {
-    background: #00013a
-}
-
-.status-active {
-    background: var(--color_blue)
-}
-
-.status-soon {
-    background: #cd163f
-}
-
-.status-free {
-    background: var(--color_green)
-}
-
-.status-closed {
-    background: var(--color_gray_aaaa)
-}
-
-/* ================= Baseball/Softball Division Cards ================= */
-/* Grid container and overlay card structure: promote page-scoped selectors to global */
-.program-grid {
-    display: grid;
-    gap: 20px;
-    margin: 20px 0 40px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
-}
-
-.ncll-card--overlay {
-    position: relative;
-    height: 500px;
-    border: 1px solid var(--color_border_light);
-    border-radius: 6px;
-    background: white;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06)
-}
-
-/* Top layer: visible by default, fades on hover/focus (ncll-only selectors) */
-.ncll-card--overlay .ncll-card__top-layer {
-    position: absolute;
-    inset: 0;
-    background: var(--color_surface_light);
-    padding: 24px 20px 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: opacity 0.3s ease;
-    z-index: 2;
-    min-height: 500px
-}
-
-/* Bottom layer: always there, revealed on hover/focus */
-.ncll-card--overlay .ncll-card__body {
-    position: absolute;
-    inset: 0;
-    padding: 20px;
-    padding-bottom: 70px;
-    overflow-y: auto;
-    background: var(--color_surface_light);
-    z-index: 1;
-    min-height: 500px
-}
-
-.ncll-card--overlay .ncll-card__body.pd-override {
-    /* PD-specific override preserved as class-based fallback (no page prefix) */
-    padding: 20px;
-    padding-bottom: 0;
-    overflow-y: auto;
-    background: transparent;
-    z-index: auto;
-    min-height: 500px
-}
-
-/* Hover/focus effect: only on devices that support hover */
-@media(hover:hover) and (pointer:fine) {
-    .ncll-card--overlay:hover .ncll-card__top-layer {
-        opacity: 0;
-        pointer-events: none
-    }
-}
-
-/* Touch devices: tap/focus-within to reveal details, add hint and close button */
-@media(hover:none), (pointer:coarse) {
-    .ncll-card--overlay {
-        cursor: pointer
-    }
-}
-
-.ncll-card--overlay .ncll-card__top-layer::after {
-    content: "Tap for details";
-    position: absolute;
-    bottom: 75px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.75rem;
-    color: var(--color_muted);
-    font-style: italic
-}
-
-.ncll-card--overlay:focus-within .ncll-card__top-layer {
-    opacity: 0;
-    pointer-events: none
-}
-
-.ncll-card__meta {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    font-size: 0.8rem;
-    width: 100%;
-    text-align: left
-}
-
-.ncll-card__meta li {
-    margin: 4px 0;
-    line-height: 1.35;
-    list-style: none;
-    color: var(--color_muted);
-    font-size: 0.9rem
-}
-
-.ncll-card__meta li strong {
-    color: var(--color_text);
-    font-weight: 600
-}
-
-.ncll-card--overlay>h3 {
-    margin: 0 0 20px 0;
-    text-align: center
-}
-
-.ncll-card--overlay>p {
-    margin: 0 0 24px 0;
-    text-align: center
-}
-
-.ncll-card--overlay>ul {
-    margin: 0 0 24px 0
-}
-
-.ncll-card--overlay>.ncll-card__details {
-    margin: 0 0 24px 0
-}
-
-.ncll-card__details h4:first-child {
-    margin-top: 0
-}
-
-.ncll-card__details p {
-    font-size: 0.9rem;
-    line-height: 1.45
-}
-
-.ncll-card__details ul {
-    font-size: 0.9rem;
-    margin: 6px 0 4px 8px
-}
-
-.ncll-card__details li {
-    margin: 3px 0;
-    line-height: 1.35;
-    font-size: .85rem
-}
-
-.ncll-card--overlay .ncll-card__actions {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 0 20px;
-    border-top: 1px solid var(--color_border_light);
-    z-index: 3
-}
-
-/* Make button styles global for ncll-card actions; remove page-scoped selectors */
-.ncll-card__actions .button {
-    padding: 6px 14px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.2s ease
-}
-
-.ncll-card__actions .button--primary {
-    background: var(--color_blue);
-    color: white;
-    border: 1px solid var(--color_blue)
-}
-
-.ncll-card__actions .button--primary:hover {
-    background: #1a2b5c;
-    border-color: #1a2b5c
-}
-
-/* Responsive - single column on mobile */
-@media(max-width:768px) {
-    .program-grid {
-        grid-template-columns: 1fr
-    }
-}
-
-/* Mobile touch improvements for division cards */
-@media(hover:hover) and (pointer:fine) {
-
-    /* Only apply hover effects on devices with precise pointing (mouse/trackpad) */
-    .ncll-card--overlay:hover .ncll-card__top-layer {
-        opacity: 0;
-        pointer-events: none
-    }
-}
-
-@media(hover:none), (pointer:coarse) {
-
-    /* Touch devices - use tap interaction instead */
-    .ncll-card--overlay {
-        cursor: pointer
-    }
-
-    /* Add visual hint that cards are interactive */
-    .ncll-card--overlay .ncll-card__top-layer::after {
-        content: "Tap for details";
-        position: absolute;
-        bottom: 75px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.75rem;
-        color: var(--color_muted);
-        font-style: italic
-    }
-
-    /* Use :focus-within for touch activation */
-    .ncll-card--overlay:focus-within .ncll-card__top-layer {
-        opacity: 0;
-        pointer-events: none
-    }
-}
-
 /* (legacy toggle moved to css.legacy.extracted.css) */
 /* Table component - ensure no wrapping in cells
        Support three names for backwards compatibility: canonical
@@ -2113,12 +1715,6 @@ details.footies[open] summary::before {
     width: 100%;
 }
 
-/* Don't center cards that live inside the grid; let them fill/align the cell */
-.program-grid .ncll-card {
-    margin: 0;
-    max-width: 100%;
-}
-
 /* Horizontal table helper for full-width, non-wrapping table layouts */
 .horizontal {
     width: 100%;
@@ -2309,17 +1905,106 @@ details.footies[open] summary::before {
     margin: 0 0 10px 0
 }
 
+/* ======================================================================
+   Global Card Component (`.ncll-card`)
+   Unified styling for the cards shared across Baseball, Softball,
+   Parents, and Player Development pages. Update this block to keep
+   appearances and interactions consistent across the site.
+   ====================================================================== */
+
+/* Base shell ------------------------------------------------------------ */
+.ncll-card {
+    background: var(--color_surface_light);
+    border: 1px solid var(--color_border_light);
+    padding: 14px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    max-width: min(var(--ncll-card-max), 92%);
+    margin: 0 auto;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.program-grid .ncll-card {
+    margin: 0;
+    max-width: 100%;
+}
+
+.ncll-card--volunteer {
+    /* placeholder for volunteer-specific tweaks (no visual change) */
+    --ncll-card-variant: 1;
+}
+
+/* Copy + meta ----------------------------------------------------------- */
+.ncll-card__title {
+    margin: 0 0 8px 0;
+    font-size: 1.05rem;
+    line-height: 1.3;
+    color: var(--color_blue);
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+}
+
+.ncll-card__meta {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: left;
+}
+
+.ncll-card__meta::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ncll-card__meta li {
+    margin: 4px 0;
+    line-height: 1.35;
+    list-style: none;
+    color: var(--color_muted);
+    font-size: 0.9rem;
+}
+
+.ncll-card__meta li strong {
+    color: var(--color_text);
+    font-weight: 600;
+}
+
+.ncll-card__blurb {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    color: var(--color_text);
+}
+
+.ncll-card__details {
+    margin: 0 0 4px 0;
+    color: var(--color_blue);
+}
+
 .ncll-card__details h4 {
     font-size: 1.25rem;
     margin: 0 0 10px 0;
     color: var(--color_blue);
-    font-weight: 600
+    font-weight: 600;
+}
+
+.ncll-card__details h4:first-child {
+    margin-top: 0;
 }
 
 .ncll-card__details p {
     font-size: 0.9rem;
     line-height: 1.3;
-    color: var(--color_text)
+    color: var(--color_text);
 }
 
 .ncll-card__details ul {
@@ -2328,7 +2013,7 @@ details.footies[open] summary::before {
     margin: 10px 0 0 0;
     font-size: 0.8rem;
     width: 100%;
-    text-align: left
+    text-align: left;
 }
 
 .ncll-card__details li {
@@ -2336,10 +2021,219 @@ details.footies[open] summary::before {
     line-height: 1.35;
     list-style: none;
     color: var(--color_muted);
-    font-size: 0.9rem
+    font-size: 0.9rem;
 }
 
-/* Multi-panel card shared styles */
+/* Supporting visuals ---------------------------------------------------- */
+.ncll-card__clipboard {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ncll-card__clipboard--float {
+    float: right;
+    margin-left: 10px;
+    width: 44px;
+}
+
+.ncll-card__clipboard--pinned {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+}
+
+.ncll-card__clipboard-img {
+    width: 44px;
+    height: auto;
+    display: block;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    shape-outside: inset(0);
+}
+
+@media(max-width:480px) {
+    .ncll-card__clipboard--float,
+    .ncll-card__clipboard-img {
+        width: 36px;
+        margin-left: 8px;
+    }
+}
+
+.ncll-card__graphic {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    margin: 8px auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ncll-card__clipboard:focus-visible,
+.clipboard-link:focus-visible {
+    outline: 3px solid var(--color_richblue);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Status pills ---------------------------------------------------------- */
+.status-badge {
+    font-size: .7rem;
+    text-transform: normal;
+    font-weight: 600;
+    padding: 3px 6px;
+    border-radius: 4px;
+    background: var(--color_blue);
+    color: #fff;
+    margin-left: 6px;
+}
+
+.status-open {
+    background: #00013a;
+}
+
+.status-active {
+    background: var(--color_blue);
+}
+
+.status-soon {
+    background: #cd163f;
+}
+
+.status-free {
+    background: var(--color_green);
+}
+
+.status-closed {
+    background: var(--color_gray_aaaa);
+}
+
+/* Action row ------------------------------------------------------------- */
+.ncll-card__actions .button {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.ncll-card__actions .button--primary {
+    background: var(--color_blue);
+    color: #fff;
+    border: 1px solid var(--color_blue);
+}
+
+.ncll-card__actions .button--primary:hover {
+    background: #1a2b5c;
+    border-color: #1a2b5c;
+}
+
+/* Overlay reveal variant ------------------------------------------------- */
+.ncll-card--overlay {
+    position: relative;
+    height: 500px;
+    border: 1px solid var(--color_border_light);
+    border-radius: 6px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.ncll-card--overlay .ncll-card__top-layer {
+    position: absolute;
+    inset: 0;
+    background: var(--color_surface_light);
+    padding: 24px 20px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    min-height: 500px;
+}
+
+.ncll-card--overlay .ncll-card__body {
+    position: absolute;
+    inset: 0;
+    padding: 20px;
+    padding-bottom: 70px;
+    overflow-y: auto;
+    background: var(--color_surface_light);
+    z-index: 1;
+    min-height: 500px;
+}
+
+.ncll-card--overlay .ncll-card__body.pd-override {
+    padding: 20px;
+    padding-bottom: 0;
+    overflow-y: auto;
+    background: transparent;
+    z-index: auto;
+    min-height: 500px;
+}
+
+.ncll-card--overlay .ncll-card__top-layer::after {
+    content: "Tap for details";
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    color: var(--color_muted);
+    font-style: italic;
+}
+
+.ncll-card--overlay:focus-within .ncll-card__top-layer {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.ncll-card--overlay>h3,
+.ncll-card--overlay>p,
+.ncll-card--overlay>ul,
+.ncll-card--overlay>.ncll-card__details {
+    margin: 0 0 24px 0;
+}
+
+.ncll-card--overlay>h3,
+.ncll-card--overlay>p {
+    text-align: center;
+}
+
+.ncll-card--overlay .ncll-card__actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    border-top: 1px solid var(--color_border_light);
+    z-index: 3;
+}
+
+@media(hover:hover) and (pointer:fine) {
+    .ncll-card--overlay:hover .ncll-card__top-layer {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@media(hover:none), (pointer:coarse) {
+    .ncll-card--overlay {
+        cursor: pointer;
+    }
+}
+
+/* Toggle deck extension -------------------------------------------------- */
 .ncll-card--toggle {
     position: relative;
 }
