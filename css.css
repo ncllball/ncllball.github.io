@@ -1144,10 +1144,8 @@ body:not(.cms-right) .only-on-right {
 }
 
 .ncll-card__details {
-    font-size: 1.05rem;
     margin: 0px 0 4px 0;
     color: var(--color_blue);
-    font-weight: 600
 }
 
 .ncll-card__meta li {
