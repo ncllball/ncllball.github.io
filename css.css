@@ -2017,6 +2017,7 @@ details.footies[open] summary::before {
     margin: 0 0 10px 0;
     color: var(--color_blue);
     font-weight: 600;
+    text-align: left;
 }
 
 .ncll-card__details h4:first-child {
