@@ -2013,14 +2013,14 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__details h4 {
-    font-size: 1.25rem;
+    font-size: .9rem;
     margin: 0 0 10px 0;
     color: var(--color_blue);
     font-weight: 600;
 }
 
 .ncll-card__details h4:first-child {
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .ncll-card__details p {
@@ -2030,10 +2030,8 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__details ul {
-    list-style: none;
     padding: 0;
-    margin: 10px 0 0 0;
-    font-size: 0.8rem;
+    margin: 10px;
     width: 100%;
     text-align: left;
 }
@@ -2041,7 +2039,7 @@ details.footies[open] summary::before {
 .ncll-card__details li {
     margin: 4px 0;
     line-height: 1.35;
-    list-style: none;
+    list-style: disc;
     color: var(--color_muted);
     font-size: 0.85rem;
 }
