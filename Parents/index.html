@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Uniform Sizing — NCLL (play)</title>
-    <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
+    <link rel="stylesheet" type="text/css" href="../css.css">
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
-
+        <link rel="stylesheet" type="text/css" href="temp.css">
 </head>
 
 <body>
@@ -15,7 +15,8 @@
         </p>
     </div>
 
-    <main>
+    <main id="content" role="main" class="uniforms-landing">
+
         <h2 class="left">NCLL Uniform Sizing Charts</h2>
         <p class="muted">This year we worked hard to ...Vendor codes: PC90H = Hoodies, 4408 = Softball jerseys,
             ST350 = Coaches shirts, remaining = Baseball jerseys</p>
@@ -25,37 +26,37 @@
         <div class="sizing-grid">
             <div class="division-toggle__panels">
                 <div class="program-grid">
-                    <!-- T-Ball interactive card (playground) -->
-                    <article id="play-ephemeral-tball-toggle"
-                        class="ncll-card ncll-card--division ncll-card--overlay"
-                        aria-labelledby="play-ephemeral-tball-h3">
+                    <!-- T-Ball interactive card (uniforms) -->
+                    <article id="uniforms-tball-toggle"
+                        class="ncll-card ncll-card--division ncll-card--overlay ncll-card--toggle"
+                        aria-labelledby="uniforms-tball-h3">
                         <!-- radios must precede panels for the sibling selector to work -->
-                        <input type="radio" name="play-ephemeral-tball" id="play-ephemeral-tball-intro" checked>
-                        <input type="radio" name="play-ephemeral-tball" id="play-ephemeral-tball-0">
-                        <input type="radio" name="play-ephemeral-tball" id="play-ephemeral-tball-1">
-                        <input type="radio" name="play-ephemeral-tball" id="play-ephemeral-tball-2">
-                        <input type="radio" name="play-ephemeral-tball" id="play-ephemeral-tball-3">
-                        <input type="radio" name="play-ephemeral-tball" id="play-ephemeral-tball-4">
+                        <input type="radio" name="uniforms-tball" id="uniforms-tball-intro" checked>
+                        <input type="radio" name="uniforms-tball" id="uniforms-tball-0">
+                        <input type="radio" name="uniforms-tball" id="uniforms-tball-1">
+                        <input type="radio" name="uniforms-tball" id="uniforms-tball-2">
+                        <input type="radio" name="uniforms-tball" id="uniforms-tball-3">
+                        <input type="radio" name="uniforms-tball" id="uniforms-tball-4">
                         <!-- hidden checkboxes used to toggle the CSS-only lightbox (one per image) -->
                         <input type="checkbox" id="lightbox-tball-1" class="lightbox-toggle">
                         <input type="checkbox" id="lightbox-tball-5" class="lightbox-toggle">
 
                         <div class="ncll-card__sticky-heading" aria-hidden="true">
-                            <h3 class="ncll-card__title">T-Ball &amp; Kindy Divisions &mdash; Baseball</h3>
+                            <h3 class="ncll-card__title">T-Ball &amp; Kindy &mdash</h3>
                             <div class="ncll-card__actions actions" role="group"
-                                aria-label="T-Ball Playground toggle actions">
+                                aria-label="T-Ball Uniforms toggle actions">
                                 <label class="button button--primary btn-next btn-next-intro"
-                                    for="play-ephemeral-tball-0">Next</label>
+                                    for="uniforms-tball-0">Next</label>
                                 <label class="button button--primary btn-next btn-next-0"
-                                    for="play-ephemeral-tball-1">Next</label>
+                                    for="uniforms-tball-1">Next</label>
                                 <label class="button button--primary btn-next btn-next-1"
-                                    for="play-ephemeral-tball-2">Next</label>
+                                    for="uniforms-tball-2">Next</label>
                                 <label class="button button--primary btn-next btn-next-2"
-                                    for="play-ephemeral-tball-3">Next</label>
+                                    for="uniforms-tball-3">Next</label>
                                 <label class="button button--primary btn-next btn-next-3"
-                                    for="play-ephemeral-tball-4">Next</label>
+                                    for="uniforms-tball-4">Next</label>
                                 <label class="button button--primary btn-next btn-next-4"
-                                    for="play-ephemeral-tball-intro">Back</label>
+                                    for="uniforms-tball-intro">Back</label>
                             </div>
                         </div>
 
@@ -266,24 +267,24 @@
                         <div class="ncll-card__body panel panel4">
                             <div class="ncll-card__details">
                                 <h4>Thank You!</h4>
-                                <p>T‑Ball playground notes.</p>
+                                <p>T‑Ball uniforms notes.</p>
                             </div>
                         </div>
 
                         <div class="ncll-card__actions actions" role="group"
-                            aria-label="T-Ball Playground toggle actions">
+                            aria-label="T-Ball Uniforms toggle actions">
                             <label class="button button--primary btn-next btn-next-intro"
-                                for="play-ephemeral-tball-0">Next</label>
+                                for="uniforms-tball-0">Next</label>
                             <label class="button button--primary btn-next btn-next-0"
-                                for="play-ephemeral-tball-1">Next</label>
+                                for="uniforms-tball-1">Next</label>
                             <label class="button button--primary btn-next btn-next-1"
-                                for="play-ephemeral-tball-2">Next</label>
+                                for="uniforms-tball-2">Next</label>
                             <label class="button button--primary btn-next btn-next-2"
-                                for="play-ephemeral-tball-3">Next</label>
+                                for="uniforms-tball-3">Next</label>
                             <label class="button button--primary btn-next btn-next-3"
-                                for="play-ephemeral-tball-4">Next</label>
+                                for="uniforms-tball-4">Next</label>
                             <label class="button button--primary btn-next btn-next-4"
-                                for="play-ephemeral-tball-intro">Back</label>
+                                for="uniforms-tball-intro">Back</label>
                         </div>
 
                         <!-- T-Ball lightbox overlays -->
@@ -303,33 +304,33 @@
                     </article>
                     <!-- Baseball level cards (mirrors Softball markup) -->
                     <!-- Play-only ephemeral toggle (CSS-only, scoped to this file) -->
-                    
-                    
-                    <article id="play-ephemeral-a-toggle"
-                        class="ncll-card ncll-card--division ncll-card--overlay"
-                        aria-labelledby="play-ephemeral-a-h3">
+
+
+                    <article id="uniforms-a-toggle"
+                        class="ncll-card ncll-card--division ncll-card--overlay ncll-card--toggle"
+                        aria-labelledby="uniforms-a-h3">
                         <!-- radios must precede panels for the sibling selector to work -->
                         <!-- Intro panel is the new default first panel -->
-                        <input type="radio" name="play-ephemeral-a" id="play-ephemeral-a-intro" checked>
-                        <input type="radio" name="play-ephemeral-a" id="play-ephemeral-a-0">
-                        <input type="radio" name="play-ephemeral-a" id="play-ephemeral-a-1">
-                        <input type="radio" name="play-ephemeral-a" id="play-ephemeral-a-2">
-                        <input type="radio" name="play-ephemeral-a" id="play-ephemeral-a-3">
-                        <input type="radio" name="play-ephemeral-a" id="play-ephemeral-a-4">
+                        <input type="radio" name="uniforms-a" id="uniforms-a-intro" checked>
+                        <input type="radio" name="uniforms-a" id="uniforms-a-0">
+                        <input type="radio" name="uniforms-a" id="uniforms-a-1">
+                        <input type="radio" name="uniforms-a" id="uniforms-a-2">
+                        <input type="radio" name="uniforms-a" id="uniforms-a-3">
+                        <input type="radio" name="uniforms-a" id="uniforms-a-4">
                         <!-- hidden checkboxes used to toggle the CSS-only lightbox (one per image) -->
                         <input type="checkbox" id="lightbox-a-1" class="lightbox-toggle">
                         <input type="checkbox" id="lightbox-a-3" class="lightbox-toggle">
                         <input type="checkbox" id="lightbox-a-5" class="lightbox-toggle">
 
                         <div class="ncll-card__sticky-heading" aria-hidden="true">
-                            <h3 class="ncll-card__title" id="play-ephemeral-a-h3">A &amp; AA Divisions &mdash;
+                            <h3 class="ncll-card__title" id="uniforms-a-h3">A &amp; AA Divisions &mdash;
                                 Baseball</h3>
 
                         </div>
 
                         <!-- New Intro panel shown by default -->
                         <div class="ncll-card__body panel panel-intro">
-                            <h4 class="ncll-card__title" id="play-ephemeral-a-h4">A &amp; AA Baseball Uniform
+                            <h4 class="ncll-card__title" id="uniforms-a-h4">A &amp; AA Baseball Uniform
                                 Options
                                 &mdash; Players &amp; Coaches</h4>
                             <p class="ncll-card__blurb">A &amp; AA players receive jersey model
@@ -529,72 +530,73 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>6 3/8-6 7/8</td>
-                                                <td>6 7/8-7 3/8</td>
-                                                <td>7 3/8-8</td>
+                                                <td>6 3/8–6 7/8</td>
+                                                <td>6 7/8–7 3/8</td>
+                                                <td>7 3/8–8</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
-</
-                            <div class="ncll-card__body panel panel4">
-                                <div class="ncll-card__details">
-                                    <h4>Thank You!</h4>
-                                    <p>A &amp; AA baseball notes placeholder.</p>
-                                </div>
-                            </div>
+                        </div>
 
-                            <div class="ncll-card__actions actions" role="group"
-                                aria-label="A &amp; AA Baseball toggle actions">
-                                <label class="button button--primary btn-next btn-next-intro"
-                                    for="play-ephemeral-a-0">Next</label>
-                                <label class="button button--primary btn-next btn-next-0"
-                                    for="play-ephemeral-a-1">Next</label>
-                                <label class="button button--primary btn-next btn-next-1"
-                                    for="play-ephemeral-a-2">Next</label>
-                                <label class="button button--primary btn-next btn-next-2"
-                                    for="play-ephemeral-a-3">Next</label>
-                                <label class="button button--primary btn-next btn-next-3"
-                                    for="play-ephemeral-a-4">Next</label>
-                                <label class="button button--primary btn-next btn-next-4"
-                                    for="play-ephemeral-a-intro">Back</label>
+                        <div class="ncll-card__body panel panel4">
+                            <div class="ncll-card__details">
+                                <h4>Thank You!</h4>
+                                <p>A &amp; AA baseball notes placeholder.</p>
                             </div>
+                        </div>
 
-                            <!-- lightbox overlays: clicking anywhere in an overlay (including the image) will close it -->
-                            <label for="lightbox-a-1" class="lightbox" data-id="1" role="dialog"
+                        <div class="ncll-card__actions actions" role="group"
+                            aria-label="A &amp; AA Baseball toggle actions">
+                            <label class="button button--primary btn-next btn-next-intro"
+                                    for="uniforms-a-0">Next</label>
+                            <label class="button button--primary btn-next btn-next-0"
+                                    for="uniforms-a-1">Next</label>
+                            <label class="button button--primary btn-next btn-next-1"
+                                    for="uniforms-a-2">Next</label>
+                            <label class="button button--primary btn-next btn-next-2"
+                                    for="uniforms-a-3">Next</label>
+                            <label class="button button--primary btn-next btn-next-3"
+                                    for="uniforms-a-4">Next</label>
+                            <label class="button button--primary btn-next btn-next-4"
+                                    for="uniforms-a-intro">Back</label>
+                        </div>
+
+                        <!-- lightbox overlays: clicking anywhere in an overlay (including the image) will close it -->
+                        <label for="lightbox-a-1" class="lightbox" data-id="1" role="dialog"
                                 aria-modal="true" aria-label="Enlarged image" tabindex="0">
-                                <span>Close image</span>
-                                <span class="close-btn" aria-hidden="true">✕</span>
-                                <img src="/images/uniforms/hats/4003_ROYAL_WHITE_LOGO.png"
-                                    alt="Shirt 4003 — royal white logo (full)">
-                            </label>
-                            <label for="lightbox-a-3" class="lightbox" data-id="3" role="dialog"
+                            <span>Close image</span>
+                            <span class="close-btn" aria-hidden="true">✕</span>
+                            <img src="/images/uniforms/hats/4003_ROYAL_WHITE_LOGO.png"
+                                alt="Shirt 4003 — royal white logo (full)">
+                        </label>
+                        <label for="lightbox-a-3" class="lightbox" data-id="3" role="dialog"
                                 aria-modal="true" aria-label="Enlarged image" tabindex="0">
-                                <span>Close image</span>
-                                <span class="close-btn" aria-hidden="true">✕</span>
-                                <img src="/images/uniforms/hats/ST350_ATOMIC_BLUE_FORM_FRONT.png"
-                                    alt="Coach shirt ST350 front (full)">
-                            </label>
-                            <label for="lightbox-a-5" class="lightbox" data-id="5" role="dialog"
+                            <span>Close image</span>
+                            <span class="close-btn" aria-hidden="true">✕</span>
+                            <img src="/images/uniforms/hats/ST350_ATOMIC_BLUE_FORM_FRONT.png"
+                                alt="Coach shirt ST350 front (full)">
+                        </label>
+                        <label for="lightbox-a-5" class="lightbox" data-id="5" role="dialog"
                                 aria-modal="true" aria-label="Enlarged image" tabindex="0">
-                                <span>Close image</span>
-                                <span class="close-btn" aria-hidden="true">✕</span>
-                                <img src="/images/uniforms/hats/4301_SCARLET.png"
-                                    alt="Hat 4301 — scarlet (full)">
-                            </label>
+                            <span>Close image</span>
+                            <span class="close-btn" aria-hidden="true">✕</span>
+                            <img src="/images/uniforms/hats/4301_SCARLET.png"
+                                alt="Hat 4301 — scarlet (full)">
+                        </label>
                     </article>
-                    <article id="play-ephemeral-aaa-toggle"
-                        class="ncll-card ncll-card--division ncll-card--overlay"
-                        aria-labelledby="play-ephemeral-aaa-h4">
-                        <input type="radio" name="play-ephemeral-aaa" id="play-ephemeral-aaa-intro" checked>
-                        <input type="radio" name="play-ephemeral-aaa" id="play-ephemeral-aaa-0">
-                        <input type="radio" name="play-ephemeral-aaa" id="play-ephemeral-aaa-1">
-                        <input type="radio" name="play-ephemeral-aaa" id="play-ephemeral-aaa-2">
-                        <input type="radio" name="play-ephemeral-aaa" id="play-ephemeral-aaa-3">
-                        <input type="radio" name="play-ephemeral-aaa" id="play-ephemeral-aaa-4">
-                        <input type="radio" name="play-ephemeral-aaa" id="play-ephemeral-aaa-5">
-                        <input type="radio" name="play-ephemeral-aaa" id="play-ephemeral-aaa-6">
+                    <article id="uniforms-aaa-toggle"
+                        class="ncll-card ncll-card--division ncll-card--overlay ncll-card--toggle"
+                        aria-labelledby="uniforms-aaa-h4">
+                        <input type="radio" name="uniforms-aaa" id="uniforms-aaa-intro" checked>
+                        <input type="radio" name="uniforms-aaa" id="uniforms-aaa-0">
+                        <input type="radio" name="uniforms-aaa" id="uniforms-aaa-1">
+                        <input type="radio" name="uniforms-aaa" id="uniforms-aaa-2">
+                        <input type="radio" name="uniforms-aaa" id="uniforms-aaa-3">
+                        <input type="radio" name="uniforms-aaa" id="uniforms-aaa-4">
+                        <input type="radio" name="uniforms-aaa" id="uniforms-aaa-5">
+                        <input type="radio" name="uniforms-aaa" id="uniforms-aaa-6">
                         <input type="checkbox" id="lightbox-aaa-jersey" class="lightbox-toggle">
                         <input type="checkbox" id="lightbox-aaa-player-hat" class="lightbox-toggle">
                         <input type="checkbox" id="lightbox-aaa-player-hoodie" class="lightbox-toggle">
@@ -607,7 +609,7 @@
                         </div>
 
                         <div class="ncll-card__body panel panel-intro">
-                            <h4 class="ncll-card__title" id="play-ephemeral-aaa-h4">Majors, Juniors &amp;
+                            <h4 class="ncll-card__title" id="uniforms-aaa-h4">Majors, Juniors &amp;
                                 Seniors Baseball
                                 Uniform Options &mdash; Players &amp; Coaches</h4>
                             <p class="ncll-card__blurb">AAA, Majors, Juniors, and Seniors all use jersey
@@ -746,8 +748,7 @@
                                         <thead>
                                             <tr>
                                                 <th>YOUTH</th>
-                                                <th>XS-SM</th>
-                                                <th>SM-MD</th>
+                                               
                                                 <th>LG-XL</th>
                                             </tr>
                                         </thead>
@@ -1047,21 +1048,21 @@
                         <div class="ncll-card__actions actions" role="group"
                             aria-label="AAA &amp; Upper Baseball toggle actions">
                             <label class="button button--primary btn-next btn-next-intro"
-                                for="play-ephemeral-aaa-0">Next</label>
+                                for="uniforms-aaa-0">Next</label>
                             <label class="button button--primary btn-next btn-next-0"
-                                for="play-ephemeral-aaa-1">Next</label>
+                                for="uniforms-aaa-1">Next</label>
                             <label class="button button--primary btn-next btn-next-1"
-                                for="play-ephemeral-aaa-2">Next</label>
+                                for="uniforms-aaa-2">Next</label>
                             <label class="button button--primary btn-next btn-next-2"
-                                for="play-ephemeral-aaa-3">Next</label>
+                                for="uniforms-aaa-3">Next</label>
                             <label class="button button--primary btn-next btn-next-3"
-                                for="play-ephemeral-aaa-4">Next</label>
+                                for="uniforms-aaa-4">Next</label>
                             <label class="button button--primary btn-next btn-next-4"
-                                for="play-ephemeral-aaa-5">Next</label>
+                                for="uniforms-aaa-5">Next</label>
                             <label class="button button--primary btn-next btn-next-5"
-                                for="play-ephemeral-aaa-6">Next</label>
+                                for="uniforms-aaa-6">Next</label>
                             <label class="button button--primary btn-next btn-next-6"
-                                for="play-ephemeral-aaa-intro">Back</label>
+                                for="uniforms-aaa-intro">Back</label>
                         </div>
 
                         <label for="lightbox-aaa-jersey" class="lightbox" data-id="jersey" role="dialog"
@@ -1112,16 +1113,16 @@
                     </article>
 
                     <!-- Softball A & AA interactive card (players & coaches) -->
-                    <article id="play-ephemeral-softball-a-toggle"
-                        class="ncll-card ncll-card--division ncll-card--overlay"
-                        aria-labelledby="play-ephemeral-softball-a-h3">
+                    <article id="uniforms-softball-a-toggle"
+                        class="ncll-card ncll-card--division ncll-card--overlay ncll-card--toggle"
+                        aria-labelledby="uniforms-softball-a-h3">
                         <!-- radios must precede panels for the sibling selector to work -->
-                        <input type="radio" name="play-ephemeral-softball-a"
-                            id="play-ephemeral-softball-a-intro" checked>
-                        <input type="radio" name="play-ephemeral-softball-a" id="play-ephemeral-softball-a-0">
-                        <input type="radio" name="play-ephemeral-softball-a" id="play-ephemeral-softball-a-1">
-                        <input type="radio" name="play-ephemeral-softball-a" id="play-ephemeral-softball-a-2">
-                        <input type="radio" name="play-ephemeral-softball-a" id="play-ephemeral-softball-a-3">
+                        <input type="radio" name="uniforms-softball-a"
+                            id="uniforms-softball-a-intro" checked>
+                        <input type="radio" name="uniforms-softball-a" id="uniforms-softball-a-0">
+                        <input type="radio" name="uniforms-softball-a" id="uniforms-softball-a-1">
+                        <input type="radio" name="uniforms-softball-a" id="uniforms-softball-a-2">
+                        <input type="radio" name="uniforms-softball-a" id="uniforms-softball-a-3">
                         <!-- lightbox toggles -->
                         <input type="checkbox" id="lightbox-sba-1" class="lightbox-toggle">
                         <input type="checkbox" id="lightbox-sba-3" class="lightbox-toggle">
@@ -1133,7 +1134,7 @@
                         </div>
 
                         <div class="ncll-card__body panel panel-intro">
-                            <h4 class="ncll-card__title" id="play-ephemeral-softball-a-h4">A &amp; AA Softball
+                            <h4 class="ncll-card__title" id="uniforms-softball-a-h4">A &amp; AA Softball
                                 Uniform
                                 Options &mdash; Players &amp; Coaches</h4>
                             <p class="ncll-card__blurb">A &amp; AA softball players receive jersey model
@@ -1365,17 +1366,17 @@
                         </div>
 
                         <div class="ncll-card__actions actions" role="group"
-                            aria-label="Softball A &amp; AA Playground toggle actions">
+                            aria-label="Softball A &amp; AA Uniforms toggle actions">
                             <label class="button button--primary btn-next btn-next-intro"
-                                for="play-ephemeral-softball-a-0">Next</label>
+                                for="uniforms-softball-a-0">Next</label>
                             <label class="button button--primary btn-next btn-next-0"
-                                for="play-ephemeral-softball-a-1">Next</label>
+                                for="uniforms-softball-a-1">Next</label>
                             <label class="button button--primary btn-next btn-next-1"
-                                for="play-ephemeral-softball-a-2">Next</label>
+                                for="uniforms-softball-a-2">Next</label>
                             <label class="button button--primary btn-next btn-next-2"
-                                for="play-ephemeral-softball-a-3">Next</label>
+                                for="uniforms-softball-a-3">Next</label>
                             <label class="button button--primary btn-next btn-next-3"
-                                for="play-ephemeral-softball-a-intro">Back</label>
+                                for="uniforms-softball-a-intro">Back</label>
                         </div>
 
                         <label for="lightbox-sba-1" class="lightbox" data-id="1" role="dialog" aria-modal="true"
@@ -1398,23 +1399,23 @@
                         </label>
                     </article>
                     <!-- Softball Upper Divisions (AAA / Majors / Juniors / Seniors) -->
-                    <article id="play-ephemeral-softball-aaa-toggle"
-                        class="ncll-card ncll-card--division ncll-card--overlay"
-                        aria-labelledby="play-ephemeral-softball-aaa-h3">
-                        <input type="radio" name="play-ephemeral-softball-aaa"
-                            id="play-ephemeral-softball-aaa-intro" checked>
-                        <input type="radio" name="play-ephemeral-softball-aaa"
-                            id="play-ephemeral-softball-aaa-0">
-                        <input type="radio" name="play-ephemeral-softball-aaa"
-                            id="play-ephemeral-softball-aaa-1">
-                        <input type="radio" name="play-ephemeral-softball-aaa"
-                            id="play-ephemeral-softball-aaa-2">
-                        <input type="radio" name="play-ephemeral-softball-aaa"
-                            id="play-ephemeral-softball-aaa-3">
-                        <input type="radio" name="play-ephemeral-softball-aaa"
-                            id="play-ephemeral-softball-aaa-4">
-                        <input type="radio" name="play-ephemeral-softball-aaa"
-                            id="play-ephemeral-softball-aaa-5">
+                    <article id="uniforms-softball-aaa-toggle"
+                        class="ncll-card ncll-card--division ncll-card--overlay ncll-card--toggle"
+                        aria-labelledby="uniforms-softball-aaa-h3">
+                        <input type="radio" name="uniforms-softball-aaa"
+                            id="uniforms-softball-aaa-intro" checked>
+                        <input type="radio" name="uniforms-softball-aaa"
+                            id="uniforms-softball-aaa-0">
+                        <input type="radio" name="uniforms-softball-aaa"
+                            id="uniforms-softball-aaa-1">
+                        <input type="radio" name="uniforms-softball-aaa"
+                            id="uniforms-softball-aaa-2">
+                        <input type="radio" name="uniforms-softball-aaa"
+                            id="uniforms-softball-aaa-3">
+                        <input type="radio" name="uniforms-softball-aaa"
+                            id="uniforms-softball-aaa-4">
+                        <input type="radio" name="uniforms-softball-aaa"
+                            id="uniforms-softball-aaa-5">
                         <input type="checkbox" id="lightbox-sbaaa-1" class="lightbox-toggle">
                         <input type="checkbox" id="lightbox-sbaaa-3" class="lightbox-toggle">
                         <input type="checkbox" id="lightbox-sbaaa-5" class="lightbox-toggle">
@@ -1428,7 +1429,7 @@
                         </div>
 
                         <div class="ncll-card__body panel panel-intro">
-                            <h4 class="ncll-card__title" id="play-ephemeral-softball-aaa-h4">Upper Divisions
+                            <h4 class="ncll-card__title" id="uniforms-softball-aaa-h4">Upper Divisions
                                 (AAA, Majors,
                                 Juniors &amp; Seniors) Uniform Options &mdash; Players &amp; Coaches</h4>
                             <p class="ncll-card__blurb">Upper division softball players wear jersey
@@ -1868,21 +1869,21 @@
                         </div>
 
                         <div class="ncll-card__actions actions" role="group"
-                            aria-label="Softball Upper Playground toggle actions">
+                            aria-label="Softball Upper Uniforms toggle actions">
                             <label class="button button--primary btn-next btn-next-intro"
-                                for="play-ephemeral-softball-aaa-0">Next</label>
+                                for="uniforms-softball-aaa-0">Next</label>
                             <label class="button button--primary btn-next btn-next-0"
-                                for="play-ephemeral-softball-aaa-1">Next</label>
+                                for="uniforms-softball-aaa-1">Next</label>
                             <label class="button button--primary btn-next btn-next-1"
-                                for="play-ephemeral-softball-aaa-2">Next</label>
+                                for="uniforms-softball-aaa-2">Next</label>
                             <label class="button button--primary btn-next btn-next-2"
-                                for="play-ephemeral-softball-aaa-3">Next</label>
+                                for="uniforms-softball-aaa-3">Next</label>
                             <label class="button button--primary btn-next btn-next-3"
-                                for="play-ephemeral-softball-aaa-4">Next</label>
+                                for="uniforms-softball-aaa-4">Next</label>
                             <label class="button button--primary btn-next btn-next-4"
-                                for="play-ephemeral-softball-aaa-5">Next</label>
+                                for="uniforms-softball-aaa-5">Next</label>
                             <label class="button button--primary btn-next btn-next-5"
-                                for="play-ephemeral-softball-aaa-intro">Back</label>
+                                for="uniforms-softball-aaa-intro">Back</label>
                         </div>
 
                         <label for="lightbox-sbaaa-1" class="lightbox" data-id="1" role="dialog"

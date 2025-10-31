@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const file = path.join(__dirname, '..', '..', 'Parents', 'uniforms-play.html');
+const file = path.join(__dirname, '..', '..', 'Parents', 'index.html');
 let s = fs.readFileSync(file, 'utf8');
 const lines = s.split(/\r?\n/);
 
@@ -16,10 +16,10 @@ for (let i=0;i<lines.length;i++){
 }
 
 function findDivisionAround(lineIndex){
-  // search upwards up to 60 lines for #play-ephemeral-<name>-toggle
+  // search upwards up to 60 lines for #uniforms-<name>-toggle
   for (let i=lineIndex; i>=Math.max(0,lineIndex-60); i--) {
     const l = lines[i];
-    const m = l.match(/#play-ephemeral-([a-z0-9-]+)-toggle/);
+    const m = l.match(/#uniforms-([a-z0-9-]+)-toggle/);
     if (m) return m[1];
   }
   // search nearby for label for="lightbox-<name>"
@@ -31,7 +31,7 @@ function findDivisionAround(lineIndex){
   // search downwards too
   for (let i=lineIndex; i<=Math.min(lines.length-1,lineIndex+60); i++) {
     const l = lines[i];
-    const m = l.match(/#play-ephemeral-([a-z0-9-]+)-toggle/);
+    const m = l.match(/#uniforms-([a-z0-9-]+)-toggle/);
     if (m) return m[1];
   }
   return 'site';

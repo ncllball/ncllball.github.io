@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const file = path.join(__dirname, '..', '..', 'Parents', 'uniforms-play.html');
+const file = path.join(__dirname, '..', '..', 'Parents', 'index.html');
 const bak = file + '.bak2';
 let s = fs.readFileSync(file, 'utf8');
 fs.writeFileSync(bak, s, 'utf8');
