@@ -1951,28 +1951,17 @@ details.footies[open] summary::before {
     padding-top: 10px;
 }
 
-.baseball-landing .ncll-card__title::after,
-.ncll-card--baseball .ncll-card__title::after {
-    content: "";
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 0.45rem;
-    background: url(images/site_navigation/baseball.png) no-repeat center / contain;
-    vertical-align: middle;
-    float: right;
+.ncll-card__heading-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.softball-landing .ncll-card__title::after,
-.ncll-card--softball .ncll-card__title::after {
-    content: "";
-    display: inline-block;
+.ncll-card__sport-icon {
     width: 1.5rem;
     height: 1.5rem;
-    margin-left: 0.45rem;
-    background: url(images/site_navigation/softball.png) no-repeat center / contain;
-    vertical-align: middle;
-    float: right;
+    object-fit: contain;
+    display: block;
 }
 
 .ncll-card__meta {
