@@ -4,10 +4,14 @@
     gap: 10px
 }
 
+
+
 .purpose-row .clipboard-link {
     display: flex;
     align-items: center
 }
+
+
 
 .purpose-row .clipboard-img {
     width: 48px;
@@ -16,80 +20,15 @@
     float: none
 }
 
-/* LEGACY: Global clipboard rules (DEPRECATED)    These were used before the namespaced `ncll-card` component existed.    They are preserved here as a commented reference for rollback only.  .clipboard-link{position:relative;display:block;min-height:60px}.clipboard-img{float:right;width:60px;height:82px;margin-left:12px;margin-bottom:6px;shape-outside:inset(0)}*/
-/*
-LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{display:inline-block;vertical-align:middle;min-height:0}h4 .clipboard-img{width:40px;height:auto;margin-left:8px;margin-bottom:0;float:none}
-*/
-/* =====================
-   Program grid (cards)
+.clipboard-img{float:right;width:60px;height:82px;margin-left:12px;margin-bottom:6px;shape-outside:inset(0)}
 
-   This is the global, responsive grid used to layout program/feature
-   cards across multiple landing pages (Baseball, Softball, Player Dev).
-   We prefer CSS Grid with a sensible min column width and a generous
-   gap. Individual card articles are formatted as vertical flex containers
-   so their internal elements (title, meta, details, actions) stack
-   with consistent spacing.
-   ===================== */
-.program-grid {
-    display: grid;
-    /* separate row/column gaps for clearer control */
-    grid-row-gap: 24px;
-    grid-column-gap: 20px;
-    margin: 20px 0 40px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    align-items: start;
-    /* keep cards top-aligned */
-}
 
-/* Ensure each article/card composes its internal layout vertically
-   and provide a small internal gap so elements don't touch. */
-.program-grid>article {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    /* let cards expand to fill the grid cell */
-    width: 100%;
-    box-sizing: border-box;
-    /* visual breathing room between stacked cards on older browsers */
-    margin-bottom: 8px;
-}
-
-/* Tablet fallback: collapse to one column when grid can't honor two cards */
-@media (max-width: 768px) {
-    .program-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Small helper: tighten the layout on narrow screens */
-@media (max-width: 420px) {
-    .program-grid {
-        grid-template-columns: 1fr;
-        grid-row-gap: 16px;
-    }
-}
-
-/* small utility helpers */
-.u-clearfix::after {
-    content: "";
-    display: table;
-    clear: both
-}
 
 .u-float-right {
     float: right
 }
 
-/* Volunteer Lite cards styling */
-.volunteer-lite-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin: 1.5em 0 1em 0;
-    padding: 0;
-    list-style: none
-}
+
 
 .volunteer-lite-card {
     background: var(--color_white);
@@ -106,16 +45,14 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     transition: box-shadow var(--trans-fast) var(--ease-out)
 }
 
+
+
 .volunteer-lite-card:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     border-color: var(--color_red)
 }
 
-/* Volunteer Lite image formatting */
-.volunteer-lite-img-wrap {
-    text-align: center;
-    margin-bottom: 1em
-}
+
 
 .volunteer-lite-img {
     max-width: 100%;
@@ -126,22 +63,19 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     margin: 0 auto
 }
 
-/* Callout box for important notices (e.g. build our bench) */
-.callout {
-    background: var(--color_surface_lighter);
-    border-left: 4px solid var(--color_richblue);
-    padding: 12px 14px;
-    margin: 1em 0;
-    border-radius: 6px
-}
+
 
 .callout.callout-info {
     border-left-color: var(--color_richblue)
 }
 
+
+
 .callout p {
     margin: 0
 }
+
+
 
 .callout .info-icon {
     display: inline-flex;
@@ -157,91 +91,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     vertical-align: middle
 }
 
-/* (0) Design tokens */
-:root {
-    --color_red: #cd163f;
-    /* Global card max width (single-column cap) */
-    --ncll-card-max: 720px;
-    --color_blue: #00013a;
-    --color_tan: #e2ddca;
-    --color_richblue: #019cde;
-    --color_orange: #ff6900;
-    --color_orange_hover: #F57C00;
-    --color_lightgray: gainsboro;
-    --color_darkgray: RGB(68, 68, 68);
-    --color_button: #f0f0f0;
-    /* standardized text/link/info tokens */
-    --color_text: #333333;
-    --color_muted: #555555;
-    --color_link: #0066cc;
-    --color_info: #1976d2;
-    --color_timeline_line: #ccd5db;
-    --color_warning: #f2e427;
-    --color_border: #cccccc;
-    --color_border_light: #dddddd;
-    --color_subtle: #888888;
-    --color_control: #bbbbbb;
-    --color_tag: gainsboro;
-    /* surfaces used by PD landing */
-    --color_surface_light: #fafafa;
-    --color_surface_lighter: #fdfdfd;
-    /* table striping */
-    --table-row-alt: #f9f9f9;
-    /* utility colors used by PD landing badges */
-    --color_green: #2ecc40;
-    --color_gray_aaaa: #aaaaaa;
-    --color_border_table: #dededf;
-    --color_white: #ffffff;
-    --color_black: #000000;
-    --timeline_primary: #cd163f;
-    --timeline_primary_hover: #019cde;
-    --timeline_heading: #3d4351;
-    --timeline_body: #768390;
-    /* sup positioning tokens */
-    /* calendar icon sizing */
-    --cal-icon-size: 1.3em;
-    /* info icon sizing */
-    --info-icon-size: 12px;
-    /* Decorative stripe gradient for h2.left::before */
-    --stripe-gradient: linear-gradient(135deg, #ffffff 5%, var(--color_red) 5% 25%, #ffffff 25% 55%, var(--color_red) 55% 75%, #ffffff 75%);
-    /* font stacks */
-    --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
-    --font_sans: "proxima-nova", var(--font_ui);
-    --font_heading: var(--font_ui);
-    /* tag font */
-    --font_tag: var(--font_ui), "proxima-nova";
-    --age-matrix-td-font: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif
-}
 
-/* Easing + durations */
-
-/* Utility: left alignment and left-heading stripe
-   Many pages use the `left` utility or `h2.left` headings. Reintroduce
-   a small, conservative rule-set so existing markup keeps its intended
-   left-oriented styling and decorative stripe. */
-.left {
-    text-align: left !important;
-    float: none;
-    margin: 0 0 18px 0;
-    padding: 0;
-    color: var(--color_blue) !important;
-
-}
-
-h2.left::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 7px;
-    background-repeat: repeat;
-    background-size: cover;
-    margin-top: 15px;
-    text-align: left;
-    margin-bottom: 20px;
-    /* Decorative stripe uses --stripe-gradient */
-    background-image: var(--stripe-gradient);
-    background-size: 3px 3px;
-}
 
 :root {
     --ease-std: cubic-bezier(.2, 0, .2, 1);
@@ -253,18 +103,26 @@ h2.left::before {
     --transition-base: background var(--trans-med) var(--ease-std), color var(--trans-med) var(--ease-std), transform var(--trans-fast) var(--ease-out), box-shadow var(--trans-fast) var(--ease-out)
 }
 
+
+
 a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-register-cta {
     transition: var(--transition-base)
 }
+
+
 
 /* =========================    BEGIN CMS OVERRIDES (SportsConnect embeds)    These rules hide or adjust elements injected by the SportsConnect CMS    to ensure visual consistency with the NCLL site.     Only applies to embedded registration and CMS content.    ========================= */
 .skAddBanner, .skRightTabs, .skTabHeading, .skCaption {
     display: none !important
 }
 
+
+
 .skHeader .skBanner {
     font-family: var(--font_ui) !important
 }
+
+
 
 .skTabsWrapper {
     display: table-cell;
@@ -274,9 +132,13 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
     padding: 0 0px 0 0
 }
 
+
+
 .skSponsor h2 {
     text-align: center !important
 }
+
+
 
 /* =========================    END CMS OVERRIDES (SportsConnect embeds)    ========================= */
 /* this is the header bar above the tabs (h1 to some of us)*/
@@ -290,95 +152,21 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
     text-transform: none
 }
 
+
+
 /* start global clearfix */
 .clearfix:before, .clearfix:after {
     content: "";
     display: table
 }
 
+
+
 .clearfix:after {
     clear: both
 }
 
-/* end global clearfix */
-/* Compact uniforms/table tweaks moved to the end of this file */
-/* start global typography */
-p, ul, li {
-    text-align: left;
-    font-size: 1.15rem;
-    font-family: var(--font_ui)
-}
 
-ul li {
-    list-style-type: disc
-}
-
-html, body {
-    text-align: left;
-    font-family: var(--font_sans);
-    color: var(--color_text)
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    color: var(--color_black);
-    letter-spacing: normal;
-}
-
-/* Inline emphasis utility moved out of the heading block (nested rules are invalid in plain CSS) */
-.emphasis {
-    font-weight: 600;
-    font-family: var(--font_heading);
-}
-
-h1 {
-    font-size: 1.625rem;
-    text-align: left;
-    line-height: 32px;
-    width: fit-content
-}
-
-h2 {
-    font-size: 1.25rem;
-    text-align: left !important;
-    line-height: 30px
-}
-
-h3 {
-    text-align: left;
-    font-size: 1.125rem;
-    line-height: 26px;
-    margin-bottom: 1px !important
-}
-
-h4 {
-    font-size: 1.1rem;
-    color: var(--color_black);
-    text-align: left;
-    float: none;
-    margin: 0 0 18px 0;
-    padding: 0
-}
-
-h5 {
-    text-align: left;
-    margin-bottom: 9px !important
-}
-
-h6 {
-    font-size: 1.25rem;
-    color: var(--color_red);
-    text-align: left
-}
-
-/* ================= Pitching Reference (global reuse) ================= */
-.pitching-ref nav.page-nav {
-    background: #f8f9fb;
-    border: 1px solid var(--color_lightgray);
-    padding: 12px 16px;
-    border-radius: 6px;
-    max-width: 480px
-}
 
 .pitching-ref nav.page-nav ul {
     list-style: none;
@@ -386,15 +174,21 @@ h6 {
     padding: 0
 }
 
+
+
 .pitching-ref nav.page-nav li {
     margin: .3rem 0
 }
+
+
 
 .pitching-ref table.fit {
     border-collapse: collapse;
     width: 100%;
     margin: 0 0 1rem 0
 }
+
+
 
 .pitching-ref table.fit caption {
     text-align: left;
@@ -405,6 +199,8 @@ h6 {
     border-radius: 4px 4px 0 0
 }
 
+
+
 .pitching-ref table.fit th, .pitching-ref table.fit td {
     padding: 6px 8px;
     border: 1px solid var(--color_border_table);
@@ -412,13 +208,19 @@ h6 {
     font-size: .92rem
 }
 
+
+
 .pitching-ref table.fit thead th {
     background: #e6e9f2
 }
 
+
+
 .pitching-ref table.fit tbody tr:nth-child(even) {
     background: #f3f6fa
 }
+
+
 
 .pitching-ref .note {
     font-size: 12px;
@@ -426,6 +228,8 @@ h6 {
     margin-top: -4px;
     margin-bottom: 1rem
 }
+
+
 
 .battery-box {
     border: 1px solid var(--color_red);
@@ -436,13 +240,19 @@ h6 {
     border-radius: 4px
 }
 
+
+
 .battery-box h3 {
     margin-top: 0
 }
 
+
+
 .print-link {
     margin: .5rem 0 1rem
 }
+
+
 
 .print-btn-float {
     position: fixed;
@@ -459,61 +269,39 @@ h6 {
     z-index: 9999
 }
 
+
+
 .print-btn-float:hover, .print-btn-float:focus-visible {
     background: #e00000
 }
+
+
 
 @media print {
     .print-btn-float {
         display: none !important
     }
-}
 
-@media print {
-    table.fit {
-        page-break-inside: avoid;
-        break-inside: avoid
-    }
+
 
     .battery-box {
         page-break-inside: avoid;
         break-inside: avoid
     }
 
-    h2, h3, h4 {
-        page-break-after: avoid;
-        break-after: avoid
-    }
-}
 
-/* Early season ramp visibility control (CSS-only) */
-.early-season-visible {
-    display: block
-}
 
 .early-season-hidden {
     display: none
 }
 
-/* To hide automatically post-June 1 without JS we rely on manual class swap on June 1 content update or a server build hook (static site cannot detect date). */
-/* Toggle control & archived note styling */
-.early-ramp-toggle {
-    background: var(--color_blue);
-    color: #fff;
-    border: 0;
-    border-radius: 4px;
-    padding: 6px 10px;
-    font-size: .7rem;
-    letter-spacing: .5px;
-    font-weight: 600;
-    cursor: pointer;
-    margin: 0 0 6px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .25)
-}
+
 
 .early-ramp-toggle:hover, .early-ramp-toggle:focus-visible {
     background: #18225c
 }
+
+
 
 .archived-ramp-note {
     font-size: .7rem;
@@ -522,51 +310,15 @@ h6 {
     margin: -2px 0 8px
 }
 
-/* ===================================================================== */
-sup {
-    vertical-align: super;
-    font-size: .6rem;
-    top: 0
-}
 
-/* end global typography */
-/* start global blah blah */
-.at {
-    display: inline-block;
-    padding: 0 2px 2px 2px;
-    font-weight: 600;
-    font-size: 0.85em;
-    color: var(--color_subtle);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    position: relative;
-    top: -0.5px
-}
-
-/* end global blah blah */
-/* start links */
-a.ncll {
-    color: var(--color_red) !important;
-    text-decoration: none
-}
-
-a.ncll:visited {
-    color: var(--color_red) !important
-}
-
-a.ncll:hover {
-    color: var(--color_red) !important
-}
-
-a.ncll:active {
-    color: var(--color_red) !important
-}
 
 /* Start Focus states */
 a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     outline: 2px solid var(--color_blue);
     outline-offset: 2px
 }
+
+
 
 .blurred-text {
     color: transparent;
@@ -575,28 +327,7 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     font-family: Arial, sans-serif
 }
 
-/* end focus states and links */
-/* call-to-action floated image (migrated from backup) */
-.calltoaction {
-    float: right;
-    max-width: 20%;
-    max-height: 175px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding-top: 60px;
-    padding-right: 20px
-}
 
-/* start footies */
-.footies {
-    font-size: 0.8125rem;
-    font-family: var(--font_ui);
-    color: var(--color_muted);
-    margin-top: 10px;
-    border-top: 1px solid var(--color_border_light);
-    padding: 5px 0px 5px 0px;
-    line-height: normal
-}
 
 .footies p {
     font-family: var(--font_ui);
@@ -607,29 +338,26 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     font-size: 0.85rem !important
 }
 
+
+
 .footies a {
     color: var(--color_link);
     text-decoration: none
 }
 
+
+
 .footies a:hover {
     text-decoration: underline
 }
+
+
 
 .footies_note {
     text-decoration: underline
 }
 
-/* Info icon for footnotes */
-.info-icon {
-    width: var(--info-icon-size);
-    height: var(--info-icon-size);
-    overflow: hidden;
-    display: inline-block;
-    margin-right: 0.25em;
-    color: var(--color_red);
-    vertical-align: top
-}
+
 
 .info-icon--framed {
     border: 1px solid var(--color_red);
@@ -637,12 +365,7 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     background-color: white
 }
 
-/* Ensure inline SVG icons scale to the badge size */
-.info-icon svg {
-    width: 100%;
-    height: 100%;
-    display: block
-}
+
 
 .info-icon::before {
     content: '';
@@ -654,49 +377,7 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path fill="%23000" d="M8,5.19a1,1,0,0,0,1-1,.94.94,0,0,0-.23-.68,1,1,0,0,0-1.39-.06,7.75,7.75,0,0,1-1.18.86,4.52,4.52,0,0,1-.8.38,4.71,4.71,0,0,1,.11-.84,7.83,7.83,0,0,1,.42-1.43,1,1,0,0,0-1.29-1.3,1,1,0,0,0-.51,1.3,6.54,6.54,0,0,1,.43,1.43,5.16,5.16,0,0,1,.11.88,5,5,0,0,1-.81-.38,7.83,7.83,0,0,1-1.18-.9,1,1,0,0,0-.75-.26,1,1,0,0,0,.17,2,7,7,0,0,1,1.45,0,5,5,0,0,1,.87.19A4,4,0,0,1,3.79,6a6.28,6.28,0,0,1-1.1.85,1,1,0,0,0-.49.62,1,1,0,0,0,.51,1.32,1,1,0,0,0,1.32-.51A.89.89,0,0,0,4,8a6.58,6.58,0,0,1,.52-1.36A4.79,4.79,0,0,1,5,5.89a3.59,3.59,0,0,1,.49.79A6.22,6.22,0,0,1,6,8a1,1,0,0,0,.49.62,1,1,0,0,0,.94-1.73,7.53,7.53,0,0,1-1.19-.84,7.36,7.36,0,0,1-.63-.62,5.42,5.42,0,0,1,.87-.19A7,7,0,0,1,8,5.19Z"/></svg>') no-repeat center / contain
 }
 
-/* end footies */
-/* Inline date/time + calendar row (matches list item sizing) */
-.cal-inline {
-    font-size: 1.15rem;
-    font-family: var(--font_ui)
-}
 
-/* Reduce motion for users who prefer it */
-@media(prefers-reduced-motion:reduce) {
-    *, *::before, *::after {
-        animation: none !important;
-        transition: none !important
-    }
-}
-
-/* start bottom sticky registration */
-/* Sticky registration heading override (ensures white text if theme changes) */
-#sticky-register-heading {
-    color: var(--color_white) !important;
-    text-align: center;
-    margin-right: 43px
-}
-
-/* Sticky registration bar (CSS-only dismiss variant) */
-.sticky-register {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(135deg, var(--color_blue) 0%, #1a2b5c 100%);
-    color: var(--color_white);
-    font-family: var(--font_ui);
-    padding: 10px 18px;
-    box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.25);
-    z-index: 9999999999;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 14px;
-    isolation: isolate;
-    min-height: 75px;
-    padding-bottom: calc(10px + env(safe-area-inset-bottom))
-}
 
 .sticky-register-inner {
     display: flex;
@@ -707,6 +388,8 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     justify-content: space-between
 }
 
+
+
 .sticky-register-title {
     font-size: 1rem;
     font-weight: 600;
@@ -714,12 +397,16 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     line-height: 1.3
 }
 
+
+
 .sticky-register-meta {
     font-size: .8rem;
     font-weight: 400;
     opacity: .8;
     margin-left: 6px
 }
+
+
 
 .sticky-register-cta {
     background: var(--color_red);
@@ -735,18 +422,26 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     margin-right: 43px
 }
 
+
+
 .sticky-register-cta a {
     color: var(--color_white)
 }
+
+
 
 .sticky-register-cta:hover, .sticky-register-cta:focus-visible {
     background: #e00000;
     transform: translateY(-2px)
 }
 
+
+
 .sticky-register-inner p {
     padding: 0
 }
+
+
 
 @media(max-width:640px) {
     .sticky-register-inner {
@@ -755,28 +450,20 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
         text-align: left
     }
 
+
+
     .sticky-register-cta {
         text-align: center
     }
-}
 
-/* end bottom sticky registration */
-/* Reserve space on pages that include a sticky registration bar */
-.with-sticky-register {
-    padding-bottom: 100px
-}
+
 
 @media(max-width:640px) {
     .with-sticky-register {
         padding-bottom: 140px
     }
-}
 
-/* start tags */
-.tag {
-    margin: 4px 0px 0px 0px;
-    padding: 0px 0px 0px 0px
-}
+
 
 .tag-item {
     float: left;
@@ -798,6 +485,8 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     background: var(--color_tag)
 }
 
+
+
 .tag-item::before {
     content: "";
     position: absolute;
@@ -810,6 +499,8 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     border-right: none;
     background: var(--color_tag)
 }
+
+
 
 .tag-item::after {
     content: "";
@@ -824,13 +515,7 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     border-radius: 50%
 }
 
-/* end tags */
-/* Inline icon-only calendar trigger retained; legacy .cal-inline removed */
-.cal-dropdown {
-    display: inline-block;
-    position: relative;
-    margin-left: 6px
-}
+
 
 .cal-dropdown>.cal-trigger.icon-only {
     display: inline-block;
@@ -848,11 +533,15 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     cursor: pointer
 }
 
+
+
 .cal-dropdown>.cal-trigger.icon-only:focus-visible {
     outline: 2px solid var(--color_blue);
     outline-offset: 2px;
     border-radius: 50%
 }
+
+
 
 .cal-menu {
     position: absolute;
@@ -869,9 +558,13 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     display: none
 }
 
+
+
 .cal-dropdown:focus-within>.cal-menu {
     display: block
 }
+
+
 
 .cal-menu a {
     display: flex;
@@ -884,14 +577,20 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     font-size: 0.95em
 }
 
+
+
 .cal-menu a:hover {
     background: #f7f7f7
 }
+
+
 
 .cal-menu a:focus-visible {
     outline: 2px solid var(--color_blue);
     outline-offset: 2px
 }
+
+
 
 .cal-menu a::before {
     content: "";
@@ -903,39 +602,49 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     background-size: contain
 }
 
+
+
 .cal-menu a[data-cal="google"]::before {
     background-image: url(images/icons/calendar/google.svg)
 }
+
+
 
 .cal-menu a[data-cal="outlook"]::before {
     background-image: url(images/icons/calendar/outlook.svg)
 }
 
+
+
 .cal-menu a[data-cal="apple"]::before {
     background-image: url(images/icons/calendar/apple.svg)
 }
+
+
 
 .cal-menu a[data-cal="yahoo"]::before {
     background-image: url(images/icons/calendar/yahoo.svg)
 }
 
+
+
 .cal-menu a[data-cal="m365"]::before {
     background-image: url(images/icons/calendar/ms365.svg)
 }
+
+
 
 .cal-menu a[data-cal="teams"]::before {
     background-image: url(images/icons/calendar/teams.svg)
 }
 
+
+
 .cal-menu a[data-cal="ics"]::before {
     background-image: url(images/icons/calendar/ics.svg)
 }
 
-/* end calendar dropdown */
-/* Block: Base table component */
-.ncll-table {
-    margin: 6px 0 22px
-}
+
 
 .ncll-table__table {
     width: 100%;
@@ -944,10 +653,14 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     font-family: var(--font_ui)
 }
 
+
+
 .ncll-table__cell {
     padding: 8px 10px;
     border-bottom: 1px solid var(--color_border_light)
 }
+
+
 
 .ncll-table__cell--head {
     text-align: left;
@@ -956,62 +669,31 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     border-bottom: 2px solid var(--color_red)
 }
 
+
+
 .ncll-table__row {
     padding: inherit
 }
+
+
 
 .ncll-table__body {
     padding: inherit
 }
 
-/* Modifiers: Variations of components */
-.ncll-table--baseball {
-    padding: inherit
-}
+
 
 .ncll-table--softball {
     padding: inherit
 }
 
-/* Utility: Specific layout needs */
-.ncll-table__cell:nth-child(2) {
-    text-align: center;
-    white-space: nowrap;
-    font-variant-numeric: tabular-nums
-}
+
 
 .ncll-table__body .ncll-table__row:nth-child(odd) .ncll-table__cell {
     background-color: var(--color_lightgray)
 }
 
-/* ================= Right-pane (CMS) helpers ================= */
-/* These styles are intentionally light-touch and only apply when a page    opts in via <body class="cms-right"> */
-/* Constrain common content widths inside right pane */
-body.cms-right img, body.cms-right table, body.cms-right .ncll-table__table, body.cms-right .button, body.cms-right .gainsboro-button {
-    max-width: 100%
-}
 
-/* Slightly tighter vertical rhythm for headings inside narrow column */
-body.cms-right h2.left {
-    margin-bottom: 12px
-}
-
-body.cms-right h3 {
-    margin: 10px 0
-}
-
-body.cms-right h4 {
-    margin: 8px 0
-}
-
-/* Utilities to control visibility specifically in right pane context */
-.hide-on-right {
-    display: none !important
-}
-
-body:not(.cms-right) .only-on-right {
-    display: none !important
-}
 
 /* =============== End Right-pane (CMS) helpers =============== */
 /* (legacy toggle moved to css.legacy.extracted.css) */
@@ -1025,14 +707,7 @@ body:not(.cms-right) .only-on-right {
     white-space: nowrap;
 }
 
-/* ====== BEGIN Timeline Page Styles (Timeline/timeline.html only) ====== */
-/*  .timeline-page .container-fluid     - Centers and constrains the main content container for the timeline page. .timeline-page .row     - Sets up a flexbox row for layout, with negative margins for grid alignment. .timeline-page .row>[class*="col-"]     - Ensures columns inside the row have correct box sizing and padding. .timeline-page .example-title     - Styles the main example title section (centered, with spacing and border). .timeline-page .example-title p     - Styles the paragraph inside the example title for max width and font size. @media (max-width: 767.98px)     - Adjusts row margins and column paddings for mobile screens. .timeline     - Base timeline container: removes list styles, sets width and line height. .timeline h1, ... h6     - Ensures timeline headings inherit line height. .timeline-item     - Each timeline event: indents and positions relative for marker. .timeline-item:last-child     - Removes bottom padding from last event. .timeline-info     - Styles the info/date section for each event (small, right-aligned). .timeline-marker     - Vertical line and dot marker for each event. .timeline-marker::before     - The colored dot at each event (with gradient and animation). .timeline-marker::after     - The vertical line connecting events. .timeline-item:last-child .timeline-marker::after     - Hides the line after the last event. .timeline-item:not(.period):hover .timeline-marker::before     - On hover, outlines the marker dot. .timeline-content p:last-child     - Removes bottom margin from last paragraph in event. .timeline-title     - Styles the event title (color, weight, spacing). .timeline-content p     - Styles event body text. .timeline-item.period     - Special styling for "period" (section break) events. .timeline-item.period .timeline-info     - Hides info for period events. .timeline-item.period .timeline-marker::before     - Custom marker for period events (no dot). .timeline-item.period .timeline-marker::after     - Shorter line for period events. .timeline-item.period .timeline-content     - Centered, padded content for period events. .timeline-item.period .timeline-title     - Special background and style for period event titles. @media (min-width: 768px)     - "Split" timeline: table layout for larger screens. @media (min-width: 992px)     - "Centered" timeline: alternate left/right layout for extra-large screens. .marker-outline .timeline-marker::before     - Variant: marker dot is outlined, not filled. .marker-outline .timeline-item:hover .timeline-marker::before     - On hover, fills the outlined marker. */
-/* ======= Timeline Page Minimal CSS ======= */
-.timeline-page .container-fluid {
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    max-width: 1100px
-}
+
 
 .timeline-page .row {
     display: flex;
@@ -1042,12 +717,16 @@ body:not(.cms-right) .only-on-right {
     padding: 0 0 4em 0
 }
 
+
+
 .timeline-page .row>[class*="col-"] {
     box-sizing: border-box;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     width: 100%
 }
+
+
 
 .timeline-page .example-title {
     text-align: center;
@@ -1056,46 +735,41 @@ body:not(.cms-right) .only-on-right {
     border-bottom: 1px solid #e4eaec
 }
 
+
+
 .timeline-page .example-title p {
     margin: 0 auto;
     font-size: 16px;
     max-width: 400px
 }
 
-/* Responsive grid for timeline page */
-@media(max-width:767.98px) {
-    .timeline-page .row {
-        margin-left: -1rem;
-        margin-right: -1rem
-    }
+
 
     .timeline-page .row>[class*="col-"] {
         padding-left: 1rem;
         padding-right: 1rem
     }
-}
 
-/* ======= Timeline Component ======= */
-.timeline {
-    line-height: 1.4em;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%
-}
+
 
 .timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
     line-height: inherit
 }
+
+
 
 .timeline-item {
     padding-left: 40px;
     position: relative
 }
 
+
+
 .timeline-item:last-child {
     padding-bottom: 0
 }
+
+
 
 .timeline-info {
     font-size: 12px;
@@ -1107,6 +781,8 @@ body:not(.cms-right) .only-on-right {
     display: flex
 }
 
+
+
 .timeline-marker {
     position: absolute;
     top: 0;
@@ -1114,6 +790,8 @@ body:not(.cms-right) .only-on-right {
     left: 0;
     width: 15px
 }
+
+
 
 .timeline-marker::before {
     background: var(--timeline_primary);
@@ -1131,6 +809,8 @@ body:not(.cms-right) .only-on-right {
     background-size: 3px 3px
 }
 
+
+
 .timeline-marker::after {
     content: "";
     width: 1px;
@@ -1142,18 +822,26 @@ body:not(.cms-right) .only-on-right {
     left: 11px
 }
 
+
+
 .timeline-item:last-child .timeline-marker::after {
     content: none
 }
+
+
 
 .timeline-item:not(.period):hover .timeline-marker::before {
     background: transparent;
     border: 3px solid var(--timeline_primary)
 }
 
+
+
 .timeline-content p:last-child {
     margin-bottom: 0
 }
+
+
 
 .timeline-title {
     color: var(--timeline_heading);
@@ -1163,19 +851,27 @@ body:not(.cms-right) .only-on-right {
     padding: 0
 }
 
+
+
 .timeline-content p {
     color: var(--timeline_body);
     font-size: 14px;
     line-height: 23px
 }
 
+
+
 .timeline-item.period {
     padding: 0
 }
 
+
+
 .timeline-item.period .timeline-info {
     display: none
 }
+
+
 
 .timeline-item.period .timeline-marker::before {
     background: transparent;
@@ -1189,16 +885,22 @@ body:not(.cms-right) .only-on-right {
     position: absolute
 }
 
+
+
 .timeline-item.period .timeline-marker::after {
     content: "";
     height: 25px;
     top: auto
 }
 
+
+
 .timeline-item.period .timeline-content {
     padding: 20px 0 40px;
     text-align: center
 }
+
+
 
 .timeline-item.period .timeline-title {
     margin: 0;
@@ -1210,53 +912,53 @@ body:not(.cms-right) .only-on-right {
     box-shadow: 0 16px 32px rgba(61, 67, 81, 0.18)
 }
 
-/* Split timeline for larger screens */
-@media(min-width:768px) {
-    .timeline-split {
-        display: table;
-        width: 100%
-    }
+
 
     .timeline-split .timeline-item {
         display: table-row;
         padding: 0
     }
 
+
+
     .timeline-split .timeline-info, .timeline-split .timeline-marker, .timeline-split .timeline-content, .timeline-split .timeline-item.period .timeline-info {
         display: table-cell;
         vertical-align: top
     }
 
+
+
     .timeline-split .timeline-marker {
         position: relative
     }
+
+
 
     .timeline-split .timeline-content {
         padding-left: 30px
     }
 
+
+
     .timeline-split .timeline-info {
         padding-right: 30px
     }
+
+
 
     .timeline-split .timeline-item.period .timeline-title {
         left: 0;
         transform: none
     }
-}
 
-/* Centered timeline for extra-large screens */
-@media(min-width:992px) {
-    .timeline-centered, .timeline-centered .timeline-item, .timeline-centered .timeline-info, .timeline-centered .timeline-marker, .timeline-centered .timeline-content {
-        display: block;
-        margin: 0;
-        padding: 0
-    }
+
 
     .timeline-centered .timeline-item {
         padding-bottom: 40px;
         overflow: hidden
     }
+
+
 
     .timeline-centered .timeline-marker {
         position: absolute;
@@ -1264,9 +966,13 @@ body:not(.cms-right) .only-on-right {
         margin-left: -7.5px
     }
 
+
+
     .timeline-centered .timeline-info, .timeline-centered .timeline-content {
         width: 50%
     }
+
+
 
     .timeline-centered>.timeline-item:nth-child(odd) .timeline-info {
         float: left;
@@ -1274,11 +980,15 @@ body:not(.cms-right) .only-on-right {
         padding-right: 30px
     }
 
+
+
     .timeline-centered>.timeline-item:nth-child(odd) .timeline-content {
         float: right;
         text-align: left;
         padding-left: 30px
     }
+
+
 
     .timeline-centered>.timeline-item:nth-child(even) .timeline-info {
         float: right;
@@ -1286,11 +996,15 @@ body:not(.cms-right) .only-on-right {
         padding-left: 30px
     }
 
+
+
     .timeline-centered>.timeline-item:nth-child(even) .timeline-content {
         float: left;
         text-align: right;
         padding-right: 30px
     }
+
+
 
     .timeline-centered>.timeline-item.period .timeline-content {
         float: none;
@@ -1299,9 +1013,13 @@ body:not(.cms-right) .only-on-right {
         text-align: center
     }
 
+
+
     .timeline-centered .timeline-item.period {
         padding: 50px 0 90px
     }
+
+
 
     .timeline-centered .timeline-item.period .timeline-marker::after {
         height: 30px;
@@ -1309,20 +1027,19 @@ body:not(.cms-right) .only-on-right {
         top: auto
     }
 
+
+
     .timeline-centered .timeline-item.period .timeline-title {
         left: auto
     }
-}
 
-/* Marker outline variant */
-.marker-outline .timeline-marker::before {
-    background: transparent;
-    border-color: var(--timeline_primary)
-}
+
 
 .marker-outline .timeline-item:hover .timeline-marker::before {
     background: var(--timeline_primary)
 }
+
+
 
 /* ====== END Timeline Page Styles (Timeline/timeline.html only) */
 /* ====== BEGIN Registration/table Page-Specific Styles ====== */
@@ -1337,6 +1054,8 @@ body:not(.cms-right) .only-on-right {
     margin: 0
 }
 
+
+
 .division-title {
     display: flex;
     align-items: center;
@@ -1347,11 +1066,15 @@ body:not(.cms-right) .only-on-right {
     color: var(--color_blue) !important
 }
 
+
+
 .division-bar .actions {
     display: flex;
     align-items: center;
     gap: 0.5rem
 }
+
+
 
 .aoverb_button {
     background: var(--color_lightgray);
@@ -1370,12 +1093,7 @@ body:not(.cms-right) .only-on-right {
     padding: 6px 6px 6px 6px
 }
 
-/* Age matrix table */
-.age-matrix {
-    border-collapse: collapse;
-    width: 100%;
-    line-height: 1.4
-}
+
 
 .age-matrix thead th {
     border-top: 1pt solid var(--color_red);
@@ -1388,10 +1106,14 @@ body:not(.cms-right) .only-on-right {
     font-family: var(--age-matrix-th-font)
 }
 
+
+
 .age-matrix th:first-child, .age-matrix td:first-child {
     text-align: center;
     width: fit-content
 }
+
+
 
 .age-matrix td {
     color: var(--color_darkgray) !important;
@@ -1403,145 +1125,61 @@ body:not(.cms-right) .only-on-right {
     white-space: nowrap
 }
 
+
+
 .age-matrix tbody tr:first-child td {
     padding-top: 12px
 }
+
+
 
 .age-matrix th br {
     display: inline
 }
 
-/* Responsive table scroll */
-.table_section .table_age {
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch
-}
 
-/* Table striping: even rows */
-table:not(.no-stripe)>tbody>tr:nth-child(even) {
-    background: var(--table-row-alt)
-}
-
-/* Footnotes (collapsible) */
-details.footies {
-    margin: 0.75rem 0 1rem;
-    padding-top: 0.5rem
-}
-
-details.footies summary {
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 600;
-    color: var(--color_blue);
-    user-select: none;
-    padding-bottom: 8px;
-    font-size: 0.85rem
-}
-
-details.footies summary::-webkit-details-marker {
-    display: none
-}
-
-details.footies summary::before {
-    content: "+";
-    display: inline-grid;
-    place-items: center;
-    width: 1rem;
-    height: 1rem;
-    line-height: 1;
-    font-weight: 700;
-    color: #fff;
-    background: var(--color_red);
-    border-radius: 2px
-}
-
-details.footies[open] summary::before {
-    content: "−"
-}
 
 .footies_red {
     border-top: 1pt solid var(--color_red)
 }
 
-/* ====== END Registration/test.html Page-Specific Styles ====== */
-/* ====== BEGIN Additional Utility Styles ====== */
-/* Utility classes */
-.margin-top-0 {
-    margin-top: 0px
-}
+
 
 .margin-top-30 {
     margin-top: 30px
 }
 
+
+
 .margin-bottom-20 {
     margin-bottom: 20px
 }
+
+
 
 .margin-top-10 {
     margin-top: 10px
 }
 
+
+
 .margin-bottom-10 {
     margin-bottom: 10px
 }
+
+
 
 .padding-10 {
     padding: 10px
 }
 
+
+
 .text-center {
     text-align: center
 }
 
-/* End of utility styles section */
-/* ====== BEGIN Fee Coverage Page Styles (Registration/coverage.html) ====== */
-/* These styles are for the fee distribution pie chart and legend on the    "What Fees Cover" page. They were moved from the page's local <style>    block to the global stylesheet for better maintainability and reuse. */
-/* Fee Distribution Pie Chart */
-/* Wrapper to center the chart and handle responsive layout */
-.cost-chart-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
-    flex-wrap: wrap;
-    gap: 2rem
-}
 
-/* Main chart container, sized by --pie-size variable */
-.cost-chart {
-    position: relative;
-    width: var(--pie-size);
-    height: var(--pie-size);
-    border-radius: 50%;
-    overflow: hidden;
-    flex-shrink: 0
-}
-
-/* Inner div that holds the conic-gradient background */
-.cost-pie {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0
-}
-
-/* Legend styles */
-.cost-legend {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 4px 8px;
-    font-size: 0.875rem;
-    line-height: 1.3
-}
 
 .cost-legend li {
     display: flex;
@@ -1550,6 +1188,8 @@ details.footies[open] summary::before {
     font-size: 0.875rem
 }
 
+
+
 .cost-legend .swatch {
     width: 12px;
     height: 12px;
@@ -1557,26 +1197,20 @@ details.footies[open] summary::before {
     display: inline-block
 }
 
+
+
 @media(max-width:960px) {
     .cost-chart-wrapper {
         grid-template-columns: 1fr
     }
 
+
+
     .cost-legend {
         grid-template-columns: repeat(2, minmax(0, 1fr))
     }
-}
 
-@media(max-width:480px) {
-    .cost-legend {
-        font-size: 0.8rem
-    }
-}
 
-.cost-cat {
-    font-weight: 600;
-    color: var(--color_blue)
-}
 
 .diamond::before {
     content: "◆";
@@ -1584,6 +1218,8 @@ details.footies[open] summary::before {
     color: #000000;
     font-size: 1em
 }
+
+
 
 .diamond-red::before {
     font-family: core-icons !important;
@@ -1610,18 +1246,14 @@ details.footies[open] summary::before {
     transition: transform .2s ease, -webkit-transform .2s ease
 }
 
+
+
 .no-break {
     white-space: nowrap;
     display: inline-block
 }
 
-/* ====== END Fee Coverage Page Styles ====== */
-/* ====== BEGIN Venmo Donation Page Styles ====== */
-/* Styles for the Extra-Innings/venmo.html page, providing a clean, centered, card-style layout for the donation call-to-action. */
-.venmo-wrap {
-    display: flex;
-    justify-content: center
-}
+
 
 .venmo-section {
     background: var(--color_white);
@@ -1633,6 +1265,8 @@ details.footies[open] summary::before {
     text-align: center
 }
 
+
+
 .venmo-content .venmo-title {
     color: var(--color_blue);
     margin-top: 0;
@@ -1640,11 +1274,15 @@ details.footies[open] summary::before {
     font-size: 1.5rem
 }
 
+
+
 .venmo-content .venmo-intro {
     font-size: 1rem;
     color: var(--color_muted);
     margin-bottom: 1.5rem
 }
+
+
 
 .venmo-qr-link {
     display: inline-block;
@@ -1655,9 +1293,13 @@ details.footies[open] summary::before {
     transition: box-shadow 0.2s ease-in-out
 }
 
+
+
 .venmo-qr-link:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
 }
+
+
 
 .venmo-qr {
     display: block;
@@ -1666,11 +1308,15 @@ details.footies[open] summary::before {
     height: auto
 }
 
+
+
 .venmo-uses-text {
     font-size: 0.9rem;
     color: var(--color_text);
     margin-bottom: 1.5rem
 }
+
+
 
 .venmo-note {
     font-size: 0.85rem;
@@ -1678,15 +1324,7 @@ details.footies[open] summary::before {
     color: var(--color_darkgray)
 }
 
-/* ====== END Venmo Donation Page Styles ====== */
-/* ====== BEGIN Vendor Uniform Sizing Grid (Parents/uniforms.html) ======    Purpose: present all vendor sizing tables horizontally as responsive cards    - .sizing-grid: grid container for horizontal layout    - .sizing-card: individual card with table    - tables remain accessible; mobile stacks automatically ====================================================================== */
-.sizing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1rem;
-    margin: 1.25rem 0;
-    align-items: start
-}
+
 
 .sizing-card {
     background: var(--color_white, #fff);
@@ -1699,11 +1337,15 @@ details.footies[open] summary::before {
     gap: 0.5rem
 }
 
+
+
 .card-title {
     margin: 0;
     color: var(--color_blue, #00013a);
     font-size: 1.05rem
 }
+
+
 
 /* Canonical table wrapper for horizontal overflow on small screens.
        Keep legacy/alias names in the selector list for compatibility. */
@@ -1715,13 +1357,7 @@ details.footies[open] summary::before {
     width: 100%;
 }
 
-/* Horizontal table helper for full-width, non-wrapping table layouts */
-.horizontal {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: max-content;
-    /* preserve column widths, allow overflow */
-}
+
 
 .horizontal thead th,
 .horizontal td {
@@ -1732,22 +1368,20 @@ details.footies[open] summary::before {
     font-size: .95rem;
 }
 
+
+
 .horizontal thead th:first-child {
     text-align: left;
     width: 1%;
 }
 
-/* Improved visual styling for horizontal tables */
-.horizontal thead th {
-    background: #f3f6fa;
-    color: var(--color_blue);
-    font-weight: 700;
-    text-align: center;
-}
+
 
 .horizontal tbody tr:nth-child(even) {
     background: var(--table-row-alt, #f9f9f9);
 }
+
+
 
 .horizontal th:first-child, .horizontal td:first-child {
     text-align: left;
@@ -1756,25 +1390,13 @@ details.footies[open] summary::before {
     font-weight: 600;
 }
 
-/* Small-screen adjustments: allow headers to wrap and reduce padding */
-@media (max-width: 480px) {
-    .horizontal thead th, .horizontal td {
-        padding: 6px 10px;
-        font-size: .92rem;
-    }
+
 
     .horizontal thead th {
         white-space: normal;
     }
-}
 
-/* Compact table inside cards */
-.sizing-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.95rem;
-    margin-top: 0.5rem
-}
+
 
 .sizing-table th, .sizing-table td {
     padding: 8px 10px;
@@ -1782,44 +1404,21 @@ details.footies[open] summary::before {
     text-align: left
 }
 
+
+
 .sizing-table thead th {
     background: transparent;
     color: var(--color_blue, #00013a);
     font-weight: 700
 }
 
-/* Muted helper text */
-.sizing-card .muted {
-    color: var(--color_muted, #666);
-    font-size: 0.9rem;
-    margin: 0
-}
 
-/* Small utility for subtle version/notice text used on pages like fees */
-.version-note {
-    font-size: 0.95rem;
-    color: #222;
-    margin-bottom: 1rem;
-}
-
-/* Small screens: cards stack (grid becomes single column due to auto-fit) */
-@media(max-width:520px) {
-    .sizing-card {
-        padding: 0.75rem
-    }
 
     .card-title {
         font-size: 1rem
     }
-}
 
-/* ====== END Vendor Uniform Sizing Grid ====== */
-/* ================= Compact uniforms/table tweaks BEGIN ================= */
-.sizing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 12px
-}
+
 
 .sizing-card {
     background: var(--color_surface_light);
@@ -1832,12 +1431,16 @@ details.footies[open] summary::before {
     justify-content: space-between
 }
 
+
+
 .sizing-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
     font-size: .9rem
 }
+
+
 
 .sizing-table th, .sizing-table td {
     padding: 6px 8px;
@@ -1846,6 +1449,8 @@ details.footies[open] summary::before {
     white-space: nowrap
 }
 
+
+
 .sizing-table thead th {
     background: #e6e9f2;
     font-weight: 600;
@@ -1853,19 +1458,27 @@ details.footies[open] summary::before {
     text-align: left
 }
 
+
+
 .sizing-table tbody tr:nth-child(even) {
     background: #f3f6fa
 }
+
+
 
 .sizing-table caption {
     font-size: 0.85rem;
     margin-bottom: 6px
 }
 
+
+
 .sizing-table td:first-child, .sizing-table th:first-child {
     width: 1px;
     white-space: nowrap
 }
+
+
 
 /* Right-align first column (size/type) and add small right padding to separate labels */
 .sizing-table th:first-child, .sizing-table td:first-child {
@@ -1873,29 +1486,26 @@ details.footies[open] summary::before {
     padding-right: 12px
 }
 
+
+
 @media screen and (max-width:768px) {
     .sizing-table {
         font-size: 0.9rem
     }
 
+
+
     .sizing-grid {
         gap: 8px
     }
 
+
+
     .sizing-card {
         padding: 8px 6px
     }
-}
 
-/* ================= Compact uniforms/table tweaks END ================= */
-/* sizing table header unit styling */
-.sizing-table th .unit {
-    display: block;
-    font-size: 0.85rem;
-    font-weight: 400;
-    text-transform: none;
-    color: var(--color_muted)
-}
+
 
 .sizing-card .card-title {
     font-size: 1.05rem;
@@ -1905,51 +1515,21 @@ details.footies[open] summary::before {
     margin: 0 0 10px 0
 }
 
-/* ======================================================================
-   Global Card Component (`.ncll-card`)
-   Unified styling for the cards shared across Baseball, Softball,
-   Parents, and Player Development pages. Update this block to keep
-   appearances and interactions consistent across the site.
-   ====================================================================== */
 
-/* Base shell ------------------------------------------------------------ */
-.ncll-card {
-    background: var(--color_surface_light);
-    border: 1px solid var(--color_border_light);
-    padding: 14px 16px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 12px;
-    width: 100%;
-    max-width: min(var(--ncll-card-max), 92%);
-    margin: 0 auto;
-    margin-bottom: 8px;
-    box-sizing: border-box;
-}
 
 .program-grid .ncll-card {
     margin: 0;
     max-width: 100%;
 }
 
+
+
 .ncll-card--volunteer {
     /* placeholder for volunteer-specific tweaks (no visual change) */
     --ncll-card-variant: 1;
 }
 
-/* Copy + meta ----------------------------------------------------------- */
-.ncll-card__title {
-    margin: 0 0 8px 0;
-    font-size: 1.05rem;
-    line-height: 1.3;
-    color: var(--color_blue);
-    text-align: center;
-    display: block;
-    padding-top: 10px;
-}
+
 
 .ncll-card__heading-title {
     display: flex;
@@ -1958,9 +1538,13 @@ details.footies[open] summary::before {
     gap: 0.5rem;
 }
 
+
+
 .ncll-card__heading-title .ncll-card__title {
     flex: 1;
 }
+
+
 
 .ncll-card__sport-icon {
     width: 1.5rem;
@@ -1973,6 +1557,8 @@ details.footies[open] summary::before {
     justify-content: center;
 }
 
+
+
 .ncll-card__meta {
     list-style: none;
     padding: 0;
@@ -1982,11 +1568,15 @@ details.footies[open] summary::before {
     text-align: left;
 }
 
+
+
 .ncll-card__meta::after {
     content: "";
     display: table;
     clear: both;
 }
+
+
 
 .ncll-card__meta li {
     margin: 4px 0;
@@ -1996,10 +1586,14 @@ details.footies[open] summary::before {
     font-size: 0.9rem;
 }
 
+
+
 .ncll-card__meta li strong {
     color: var(--color_text);
     font-weight: 600;
 }
+
+
 
 .ncll-card__blurb {
     font-size: 0.9rem;
@@ -2007,10 +1601,14 @@ details.footies[open] summary::before {
     color: var(--color_text);
 }
 
+
+
 .ncll-card__details {
     margin: 0 0 4px 0;
     color: var(--color_blue);
 }
+
+
 
 .ncll-card__details h4 {
     font-size: .9rem;
@@ -2020,15 +1618,21 @@ details.footies[open] summary::before {
     text-align: left !important;
 }
 
+
+
 .ncll-card__details h4:first-child {
     margin-top: 10px;
 }
+
+
 
 .ncll-card__details p {
     font-size: 0.9rem;
     line-height: 1.3;
     color: var(--color_text);
 }
+
+
 
 .ncll-card__details ul {
     padding: 0;
@@ -2037,6 +1641,8 @@ details.footies[open] summary::before {
     text-align: left;
 }
 
+
+
 .ncll-card__details li {
     line-height: 1.35;
     list-style: disc;
@@ -2044,15 +1650,13 @@ details.footies[open] summary::before {
     font-size: .9rem;
 }
 
+
+
 .ncll-card__meta li .ncll-card__details li {
     font-size: 0.85rem;
 }
 
-/* Supporting visuals ---------------------------------------------------- */
-.ncll-card__clipboard {
-    display: inline-block;
-    vertical-align: top;
-}
+
 
 .ncll-card__clipboard--float {
     float: right;
@@ -2060,11 +1664,15 @@ details.footies[open] summary::before {
     width: 44px;
 }
 
+
+
 .ncll-card__clipboard--pinned {
     position: absolute;
     top: 8px;
     right: 12px;
 }
+
+
 
 .ncll-card__clipboard-img {
     width: 44px;
@@ -2076,24 +1684,16 @@ details.footies[open] summary::before {
     shape-outside: inset(0);
 }
 
+
+
 @media(max-width:480px) {
     .ncll-card__clipboard--float,
     .ncll-card__clipboard-img {
         width: 36px;
         margin-left: 8px;
     }
-}
 
-.ncll-card__graphic {
-    width: 100px;
-    max-width: 100%;
-    height: auto;
-    margin: 8px auto;
-    object-fit: cover;
-    display: block;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
+
 
 .ncll-card__clipboard:focus-visible,
 .clipboard-link:focus-visible {
@@ -2102,47 +1702,37 @@ details.footies[open] summary::before {
     border-radius: 4px;
 }
 
-/* Status pills ---------------------------------------------------------- */
-.status-badge {
-    font-size: .7rem;
-    text-transform: normal;
-    font-weight: 600;
-    padding: 3px 6px;
-    border-radius: 4px;
-    background: var(--color_blue);
-    color: #fff;
-    margin-left: 6px;
-}
+
 
 .status-open {
     background: #00013a;
 }
 
+
+
 .status-active {
     background: var(--color_blue);
 }
+
+
 
 .status-soon {
     background: #cd163f;
 }
 
+
+
 .status-free {
     background: #2ecc40;
 }
+
+
 
 .status-closed {
     background: #aaaaaa;
 }
 
-/* Action row ------------------------------------------------------------- */
-.ncll-card__sticky-footer .button {
-    padding: 6px 14px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.2s ease;
-}
+
 
 .ncll-card__sticky-footer .button--primary {
     background: var(--color_blue);
@@ -2150,26 +1740,22 @@ details.footies[open] summary::before {
     border: 1px solid var(--color_blue);
 }
 
+
+
 .ncll-card__sticky-footer .button--primary:hover {
     background: #1a2b5c;
     border-color: #1a2b5c;
 }
+
+
 
 .ncll-card__cta .button--primary {
     background: var(--color_blue);
     color: #fff;
     border: 1px solid var(--color_blue);
 }
-/* Overlay reveal variant ------------------------------------------------- */
-.ncll-card--overlay {
-    position: relative;
-    height: 500px;
-    border: 1px solid var(--color_border_light);
-    border-radius: 6px;
-    background: #fff;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
-}
+
+
 
 .ncll-card--overlay .ncll-card__top-layer {
     position: absolute;
@@ -2185,6 +1771,8 @@ details.footies[open] summary::before {
     min-height: 500px;
 }
 
+
+
 .ncll-card--overlay .ncll-card__body {
     position: absolute;
     inset: 0;
@@ -2196,6 +1784,8 @@ details.footies[open] summary::before {
     min-height: 500px;
 }
 
+
+
 .ncll-card--overlay .ncll-card__body.pd-override {
     padding: 20px;
     padding-bottom: 0;
@@ -2205,10 +1795,14 @@ details.footies[open] summary::before {
     min-height: 500px;
 }
 
+
+
 .ncll-card--toggle {
     height: auto;
     min-height: 500px;
 }
+
+
 
 .ncll-card--toggle .ncll-card__body {
     position: relative;
@@ -2219,6 +1813,8 @@ details.footies[open] summary::before {
     padding-bottom: calc(var(--card-toggle-panel-pad-bottom, 1.75rem) + var(--card-toggle-actions-height, 60px));
     background: #fff;
 }
+
+
 
 .ncll-card--overlay .ncll-card__top-layer::after {
     content: "Tap for details";
@@ -2231,10 +1827,14 @@ details.footies[open] summary::before {
     font-style: italic;
 }
 
+
+
 .ncll-card--overlay:focus-within .ncll-card__top-layer {
     opacity: 0;
     pointer-events: none;
 }
+
+
 
 .ncll-card--overlay>h3,
 .ncll-card--overlay>p,
@@ -2243,10 +1843,14 @@ details.footies[open] summary::before {
     margin: 0 0 24px 0;
 }
 
+
+
 .ncll-card--overlay>h3,
 .ncll-card--overlay>p {
     text-align: center;
 }
+
+
 
 .ncll-card--overlay .ncll-card__sticky-footer {
     position: absolute;
@@ -2264,8 +1868,10 @@ details.footies[open] summary::before {
     z-index: 3;
 }
 
+
+
 .ncll-card--toggle .ncll-card__sticky-footer {
-    position: static;
+    position: absolute;
     height: auto;
     padding: 12px 20px;
     border-top: 1px solid var(--color_border_light);
@@ -2274,27 +1880,21 @@ details.footies[open] summary::before {
     box-shadow: none;
 }
 
+
+
 @media(hover:hover) and (pointer:fine) {
     .ncll-card--overlay:hover .ncll-card__top-layer {
         opacity: 0;
         pointer-events: none;
     }
-}
 
-@media(hover:none), (pointer:coarse) {
-    .ncll-card--overlay {
-        cursor: pointer;
-    }
-}
 
-/* Toggle deck extension -------------------------------------------------- */
-.ncll-card--toggle {
-    position: relative;
-}
 
 .ncll-card--toggle .panel {
     display: none;
 }
+
+
 
 :root {
     --card-toggle-sticky-offset: 2.75rem;
@@ -2303,11 +1903,15 @@ details.footies[open] summary::before {
     --card-toggle-panel-pad-bottom: 1.75rem;
 }
 
+
+
 .ncll-card--toggle input[type="radio"],
 .ncll-card--toggle input.lightbox-toggle {
     position: absolute;
     left: -9999px;
 }
+
+
 
 .ncll-micro__table {
     border-collapse: collapse;
@@ -2316,10 +1920,14 @@ details.footies[open] summary::before {
     width: 100%;
 }
 
+
+
 .ncll-micro__table th {
     border-collapse: collapse;
     font-weight: 400;
 }
+
+
 
 .ncll-micro__table thead th {
     border-collapse: collapse;
@@ -2327,15 +1935,21 @@ details.footies[open] summary::before {
     border-top: 1px solid red;
 }
 
+
+
 .ncll-micro__table tbody td {
     border-collapse: collapse;
     font-weight: 400;
     text-align: center;
 }
 
+
+
 .division-toggle {
     margin: 2.5rem 0 3rem;
 }
+
+
 
 .division-toggle__controls {
     display: inline-flex;
@@ -2348,11 +1962,15 @@ details.footies[open] summary::before {
     margin-bottom: 2rem;
 }
 
+
+
 .division-toggle__input {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
+
+
 
 .division-toggle__pill {
     display: inline-flex;
@@ -2368,6 +1986,8 @@ details.footies[open] summary::before {
     transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
+
+
 .division-toggle__input:checked+.division-toggle__pill {
     background: #133c76;
     color: #fff;
@@ -2375,17 +1995,25 @@ details.footies[open] summary::before {
     box-shadow: 0 4px 10px rgba(19, 60, 118, 0.25);
 }
 
+
+
 .division-toggle__input:focus-visible+.division-toggle__pill {
     box-shadow: 0 0 0 3px rgba(19, 60, 118, 0.35);
 }
+
+
 
 #play-division-baseball:checked~.division-toggle__panels #division-softball {
     display: none;
 }
 
+
+
 #play-division-softball:checked~.division-toggle__panels #division-baseball {
     display: none;
 }
+
+
 
 .ncll-card--toggle input[type="radio"][id$="-intro"]:checked~.panel-intro,
 .ncll-card--toggle input[type="radio"][id$="-0"]:checked~.panel0,
@@ -2398,10 +2026,14 @@ details.footies[open] summary::before {
     display: block;
 }
 
+
+
 .ncll-card--toggle .btn-next {
     display: none;
     cursor: pointer;
 }
+
+
 
 .ncll-card--toggle .ncll-card__sticky-heading {
     position: absolute;
@@ -2418,6 +2050,8 @@ details.footies[open] summary::before {
     --sticky-offset: var(--card-toggle-sticky-offset, 6.75rem);
 }
 
+
+
 .ncll-card--toggle .panel {
     padding-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + var(--card-toggle-sticky-gap, 1.5rem));
     padding-bottom: var(--card-toggle-panel-pad-bottom, 1.75rem);
@@ -2425,18 +2059,26 @@ details.footies[open] summary::before {
     scroll-margin-bottom: calc(var(--card-toggle-actions-height, 60px) + 0.5rem);
 }
 
+
+
 .ncll-card--toggle .panel> :first-child {
     margin-top: 0;
 }
+
+
 
 .ncll-card--toggle .ncll-card__sticky-heading h3,
 .ncll-card--toggle .ncll-card__sticky-heading h4 {
     margin: 0;
 }
 
+
+
 .ncll-card--toggle .ncll-card__sticky-heading h4 {
     margin-top: 0.35rem;
 }
+
+
 
 .ncll-card--toggle .ncll-card__sticky-heading .ncll-card__sticky-footer {
     position: static;
@@ -2447,6 +2089,8 @@ details.footies[open] summary::before {
     box-shadow: none;
 }
 
+
+
 .ncll-card--toggle .ncll-card__sticky-subtitle {
     margin: 0.35rem 0 0;
     font-size: 0.95rem;
@@ -2454,6 +2098,8 @@ details.footies[open] summary::before {
     letter-spacing: 0.01em;
     color: #444;
 }
+
+
 
 .ncll-card--toggle input[type="radio"][id$="-intro"]:checked~.actions .btn-next-intro,
 .ncll-card--toggle input[type="radio"][id$="-0"]:checked~.actions .btn-next-0,
@@ -2466,6 +2112,8 @@ details.footies[open] summary::before {
     display: inline-block;
 }
 
+
+
 .ncll-card--toggle .lightbox-thumb img {
     max-width: 140px;
     border-radius: 4px;
@@ -2474,10 +2122,14 @@ details.footies[open] summary::before {
     transition: filter 220ms ease, transform 200ms ease;
 }
 
+
+
 .ncll-card--toggle .lightbox-thumb:hover img,
 .ncll-card--toggle .lightbox-thumb:focus img {
     filter: none;
 }
+
+
 
 .ncll-card--toggle .lightbox {
     display: flex;
@@ -2494,6 +2146,8 @@ details.footies[open] summary::before {
     cursor: pointer;
 }
 
+
+
 .ncll-card--toggle .lightbox img {
     max-width: 92%;
     max-height: 92%;
@@ -2503,10 +2157,14 @@ details.footies[open] summary::before {
     opacity: 0.95;
 }
 
+
+
 .ncll-card--toggle .lightbox:focus {
     outline: 2px solid #fff;
     outline-offset: 8px;
 }
+
+
 
 .ncll-card--toggle .lightbox .lightbox-caption {
     margin-top: 12px;
@@ -2516,11 +2174,15 @@ details.footies[open] summary::before {
     max-width: 92%;
 }
 
+
+
 .ncll-card--toggle .lightbox .lightbox-caption a {
     color: #fff;
     text-decoration: underline;
     opacity: 0.95;
 }
+
+
 
 .ncll-card--toggle .lightbox .close-btn {
     position: absolute;
@@ -2533,6 +2195,8 @@ details.footies[open] summary::before {
     padding: 6px 8px;
     border-radius: 4px;
 }
+
+
 
 .ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.ncll-card__body label[for$="-1"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-3"]:checked~.ncll-card__body label[for$="-3"] img,
@@ -2554,6 +2218,8 @@ details.footies[open] summary::before {
     filter: none;
     transform: scale(1.02);
 }
+
+
 
 .ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"],
 .ncll-card--toggle input.lightbox-toggle[id$="-3"]:checked~.lightbox[data-id="3"],
@@ -2577,6 +2243,8 @@ details.footies[open] summary::before {
     pointer-events: auto;
 }
 
+
+
 .ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-3"]:checked~.lightbox[data-id="3"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-4"]:checked~.lightbox[data-id="4"] img,
@@ -2598,7 +2266,8 @@ details.footies[open] summary::before {
     opacity: 1;
 }
 
+
+
 .subtle {
     font-style: italic;
 }
-
