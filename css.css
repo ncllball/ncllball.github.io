@@ -2249,6 +2249,16 @@ details.footies[open] summary::before {
     z-index: 3;
 }
 
+.ncll-card--toggle .ncll-card__actions {
+    position: static;
+    height: auto;
+    padding: 12px 20px;
+    border-top: 1px solid var(--color_border_light);
+    gap: 12px;
+    background: #fff;
+    box-shadow: none;
+}
+
 @media(hover:hover) and (pointer:fine) {
     .ncll-card--overlay:hover .ncll-card__top-layer {
         opacity: 0;
