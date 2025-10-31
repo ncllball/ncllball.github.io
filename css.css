@@ -2234,7 +2234,6 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--overlay .ncll-card__actions {
-    --card-toggle-actions-height: 60px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2275,6 +2274,8 @@ details.footies[open] summary::before {
 :root {
     --card-toggle-sticky-offset: 2.75rem;
     --card-toggle-sticky-gap: 1.5rem;
+    --card-toggle-actions-height: 60px;
+    --card-toggle-panel-pad-bottom: 1.75rem;
 }
 
 .ncll-card--toggle input[type="radio"],
@@ -2390,11 +2391,12 @@ details.footies[open] summary::before {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
     align-items: center;
     justify-content: space-between;
+    --sticky-offset: var(--card-toggle-sticky-offset, 6.75rem);
 }
 
 .ncll-card--toggle .panel {
     padding-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + var(--card-toggle-sticky-gap, 1.5rem));
-    padding-bottom: calc(var(--card-toggle-panel-pad-bottom, 2.75rem) + var(--card-toggle-actions-height, 60px));
+    padding-bottom: calc(var(--card-toggle-panel-pad-bottom, 1.75rem) + var(--card-toggle-actions-height, 60px));
     scroll-margin-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + 0.5rem);
     scroll-margin-bottom: calc(var(--card-toggle-actions-height, 60px) + 0.5rem);
 }
