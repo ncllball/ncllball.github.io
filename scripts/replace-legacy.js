@@ -14,7 +14,7 @@ const MAP = [
   ['division-hero__title','ncll-card__title'],
   ['division-blurb','ncll-card__blurb'],
   ['division-meta','ncll-card__meta'],
-  ['card-actions','ncll-card__actions'],
+  ['card-actions','ncll-card__sticky-footer'],
   ['division-card--overlay','ncll-card--overlay'],
   [' division-card',' '], // remove standalone division-card in class lists
   ['division-card',''],
@@ -52,3 +52,4 @@ const results = files.map(processFile);
 console.log(JSON.stringify(results,null,2));
 if (!DRY) console.log('Applied replacements to files above.');
 else console.log('Dry-run mode (use --apply to write changes).');
+
