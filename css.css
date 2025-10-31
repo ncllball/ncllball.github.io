@@ -1966,25 +1966,15 @@ details.footies[open] summary::before {
     width: 2rem;
     height: 2rem;
     object-fit: cover;
-    border-radius: 50%;
     flex: 0 0 auto;
-    -webkit-border-radius: 50;
-    -moz-border-radius: 50;
-    -ms-border-radius: 50;
-    -o-border-radius: 50;
 }
 
 .ncll-card__sport-icon--league {
     background-color: #fff;
     padding: 0.125rem;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    -webkit-border-radius: 50;
-    -moz-border-radius: 50;
-    -ms-border-radius: 50;
-    -o-border-radius: 50;
+    width: 2rem;
+    height: 2rem;
 }
 
 .ncll-card__meta {
