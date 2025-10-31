@@ -1963,13 +1963,11 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__sport-icon {
-    height: 2.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     object-fit: cover;
+    border-radius: 50%;
     flex: 0 0 auto;
-}
-
-.ncll-card__sport-icon--league {
-    width: auto;
 }
 
 .ncll-card__meta {
