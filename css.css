@@ -2568,5 +2568,5 @@ details.footies[open] summary::before {
 }
 
 .subtle {
-    text-decoration: italics;
+    font-style: italic;
 }
