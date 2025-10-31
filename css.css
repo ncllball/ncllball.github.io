@@ -2021,7 +2021,11 @@ details.footies[open] summary::before {
     line-height: 1.35;
     list-style: none;
     color: var(--color_muted);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+}
+
+.ncll-card__meta li .ncll-card__details li {
+    font-size: 0.85rem;
 }
 
 /* Supporting visuals ---------------------------------------------------- */
@@ -2488,6 +2492,12 @@ details.footies[open] summary::before {
 .ncll-card--toggle input.lightbox-toggle[id$="-9"]:checked~.ncll-card__body label[for$="-9"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-10"]:checked~.ncll-card__body label[for$="-10"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-12"]:checked~.ncll-card__body label[for$="-12"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-jersey"]:checked~.ncll-card__body label[for$="-jersey"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-player-hat"]:checked~.ncll-card__body label[for$="-player-hat"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-player-hoodie"]:checked~.ncll-card__body label[for$="-player-hoodie"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-shirt"]:checked~.ncll-card__body label[for$="-coach-shirt"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-hoodie"]:checked~.ncll-card__body label[for$="-coach-hoodie"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-hat"]:checked~.ncll-card__body label[for$="-coach-hat"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-hat"]:checked~.ncll-card__body label[for$="-hat"] img {
     filter: none;
     transform: scale(1.02);
@@ -2503,6 +2513,12 @@ details.footies[open] summary::before {
 .ncll-card--toggle input.lightbox-toggle[id$="-9"]:checked~.lightbox[data-id="9"],
 .ncll-card--toggle input.lightbox-toggle[id$="-10"]:checked~.lightbox[data-id="10"],
 .ncll-card--toggle input.lightbox-toggle[id$="-12"]:checked~.lightbox[data-id="12"],
+.ncll-card--toggle input.lightbox-toggle[id$="-jersey"]:checked~.lightbox[data-id="jersey"],
+.ncll-card--toggle input.lightbox-toggle[id$="-player-hat"]:checked~.lightbox[data-id="player-hat"],
+.ncll-card--toggle input.lightbox-toggle[id$="-player-hoodie"]:checked~.lightbox[data-id="player-hoodie"],
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-shirt"]:checked~.lightbox[data-id="coach-shirt"],
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-hoodie"]:checked~.lightbox[data-id="coach-hoodie"],
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-hat"]:checked~.lightbox[data-id="coach-hat"],
 .ncll-card--toggle input.lightbox-toggle[id$="-hat"]:checked~.lightbox[data-id="hat"] {
     visibility: visible;
     opacity: 1;
@@ -2519,6 +2535,12 @@ details.footies[open] summary::before {
 .ncll-card--toggle input.lightbox-toggle[id$="-9"]:checked~.lightbox[data-id="9"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-10"]:checked~.lightbox[data-id="10"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-12"]:checked~.lightbox[data-id="12"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-jersey"]:checked~.lightbox[data-id="jersey"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-player-hat"]:checked~.lightbox[data-id="player-hat"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-player-hoodie"]:checked~.lightbox[data-id="player-hoodie"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-shirt"]:checked~.lightbox[data-id="coach-shirt"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-hoodie"]:checked~.lightbox[data-id="coach-hoodie"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-hat"]:checked~.lightbox[data-id="coach-hat"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-hat"]:checked~.lightbox[data-id="hat"] img {
     transform: scale(1);
     opacity: 1;
