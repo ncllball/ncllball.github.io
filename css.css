@@ -2037,11 +2037,11 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__details li {
-    margin: 4px 0;
+    margin: 10px 0;
     line-height: 1.35;
     list-style: disc;
     color: var(--color_muted);
-    font-size: 0.85rem;
+    font-size: .9rem;
 }
 
 .ncll-card__meta li .ncll-card__details li {
