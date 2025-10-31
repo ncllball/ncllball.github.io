@@ -1951,6 +1951,28 @@ details.footies[open] summary::before {
     padding-top: 10px;
 }
 
+.baseball-landing .ncll-card__title::before,
+.ncll-card--baseball .ncll-card__title::before {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.45rem;
+    background: url(images/site_navigation/baseball.png) no-repeat center / contain;
+    vertical-align: middle;
+}
+
+.softball-landing .ncll-card__title::before,
+.ncll-card--softball .ncll-card__title::before {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.45rem;
+    background: url(images/site_navigation/softball.png) no-repeat center / contain;
+    vertical-align: middle;
+}
+
 .ncll-card__meta {
     list-style: none;
     padding: 0;
