@@ -2398,7 +2398,7 @@ details.footies[open] summary::before {
     padding-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + var(--card-toggle-sticky-gap, 1.5rem));
     padding-bottom: calc(var(--card-toggle-panel-pad-bottom, 2.75rem) + var(--card-toggle-actions-height, 60px));
     scroll-margin-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + 0.5rem);
-    scroll-margin-bottom: calc(var(--card-toggle-actions-height, 160px) + 0.5rem);
+    scroll-margin-bottom: calc(var(--card-toggle-actions-height, 160px) + 1.5rem);
 }
 
 .ncll-card--toggle .panel> :first-child {
