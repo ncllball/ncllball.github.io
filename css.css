@@ -2266,6 +2266,8 @@ details.footies[open] summary::before {
 /* Toggle deck extension -------------------------------------------------- */
 .ncll-card--toggle {
     position: relative;
+    --sticky-offset: var(--card-toggle-sticky-offset, 6.75rem);
+
 }
 
 .ncll-card--toggle .panel {
@@ -2390,7 +2392,6 @@ details.footies[open] summary::before {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
     align-items: center;
     justify-content: space-between;
-    --sticky-offset: var(--card-toggle-sticky-offset, 6.75rem);
 }
 
 .ncll-card--toggle .panel {
