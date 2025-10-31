@@ -1,0 +1,1033 @@
+
+
+/* LEGACY: Global clipboard rules (DEPRECATED)    These were used before the namespaced `ncll-card` component existed.    They are preserved here as a commented reference for rollback only.  .clipboard-link{position:relative;display:block;min-height:60px}
+
+*/
+/*
+LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{display:inline-block;vertical-align:middle;min-height:0}
+
+h4 .clipboard-img{width:40px;height:auto;margin-left:8px;margin-bottom:0;float:none}
+
+
+*/
+/* =====================
+   Program grid (cards)
+
+   This is the global, responsive grid used to layout program/feature
+   cards across multiple landing pages (Baseball, Softball, Player Dev).
+   We prefer CSS Grid with a sensible min column width and a generous
+   gap. Individual card articles are formatted as vertical flex containers
+   so their internal elements (title, meta, details, actions) stack
+   with consistent spacing.
+   ===================== */
+.program-grid {
+    display: grid;
+    /* separate row/column gaps for clearer control */
+    grid-row-gap: 24px;
+    grid-column-gap: 20px;
+    margin: 20px 0 40px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    align-items: start;
+    /* keep cards top-aligned */
+}
+
+
+
+/* Ensure each article/card composes its internal layout vertically
+   and provide a small internal gap so elements don't touch. */
+.program-grid>article {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* let cards expand to fill the grid cell */
+    width: 100%;
+    box-sizing: border-box;
+    /* visual breathing room between stacked cards on older browsers */
+    margin-bottom: 8px;
+}
+
+
+
+/* Tablet fallback: collapse to one column when grid can't honor two cards */
+@media (max-width: 768px) {
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+/* Small helper: tighten the layout on narrow screens */
+@media (max-width: 420px) {
+    .program-grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 16px;
+    }
+
+
+}
+
+/* small utility helpers */
+.u-clearfix::after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+
+
+/* Volunteer Lite cards styling */
+.volunteer-lite-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.5em 0 1em 0;
+    padding: 0;
+    list-style: none
+}
+
+
+
+/* Volunteer Lite image formatting */
+.volunteer-lite-img-wrap {
+    text-align: center;
+    margin-bottom: 1em
+}
+
+
+
+/* Callout box for important notices (e.g. build our bench) */
+.callout {
+    background: var(--color_surface_lighter);
+    border-left: 4px solid var(--color_richblue);
+    padding: 12px 14px;
+    margin: 1em 0;
+    border-radius: 6px
+}
+
+
+
+/* (0) Design tokens */
+:root {
+    --color_red: #cd163f;
+    /* Global card max width (single-column cap) */
+    --ncll-card-max: 720px;
+    --color_blue: #00013a;
+    --color_tan: #e2ddca;
+    --color_richblue: #019cde;
+    --color_orange: #ff6900;
+    --color_orange_hover: #F57C00;
+    --color_lightgray: gainsboro;
+    --color_darkgray: RGB(68, 68, 68);
+    --color_button: #f0f0f0;
+    /* standardized text/link/info tokens */
+    --color_text: #333333;
+    --color_muted: #555555;
+    --color_link: #0066cc;
+    --color_info: #1976d2;
+    --color_timeline_line: #ccd5db;
+    --color_warning: #f2e427;
+    --color_border: #cccccc;
+    --color_border_light: #dddddd;
+    --color_subtle: #888888;
+    --color_control: #bbbbbb;
+    --color_tag: gainsboro;
+    /* surfaces used by PD landing */
+    --color_surface_light: #fafafa;
+    --color_surface_lighter: #fdfdfd;
+    /* table striping */
+    --table-row-alt: #f9f9f9;
+    /* utility colors used by PD landing badges */
+    --color_green: #2ecc40;
+    --color_gray_aaaa: #aaaaaa;
+    --color_border_table: #dededf;
+    --color_white: #ffffff;
+    --color_black: #000000;
+    --timeline_primary: #cd163f;
+    --timeline_primary_hover: #019cde;
+    --timeline_heading: #3d4351;
+    --timeline_body: #768390;
+    /* sup positioning tokens */
+    /* calendar icon sizing */
+    --cal-icon-size: 1.3em;
+    /* info icon sizing */
+    --info-icon-size: 12px;
+    /* Decorative stripe gradient for h2.left::before */
+    --stripe-gradient: linear-gradient(135deg, #ffffff 5%, var(--color_red) 5% 25%, #ffffff 25% 55%, var(--color_red) 55% 75%, #ffffff 75%);
+    /* font stacks */
+    --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    --font_sans: "proxima-nova", var(--font_ui);
+    --font_heading: var(--font_ui);
+    /* tag font */
+    --font_tag: var(--font_ui), "proxima-nova";
+    --age-matrix-td-font: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+
+/* Easing + durations */
+
+/* Utility: left alignment and left-heading stripe
+   Many pages use the `left` utility or `h2.left` headings. Reintroduce
+   a small, conservative rule-set so existing markup keeps its intended
+   left-oriented styling and decorative stripe. */
+.left {
+    text-align: left !important;
+    float: none;
+    margin: 0 0 18px 0;
+    padding: 0;
+    color: var(--color_blue) !important;
+
+}
+
+
+
+h2.left::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 7px;
+    background-repeat: repeat;
+    background-size: cover;
+    margin-top: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+    /* Decorative stripe uses --stripe-gradient */
+    background-image: var(--stripe-gradient);
+    background-size: 3px 3px;
+}
+
+
+
+/* end global clearfix */
+/* Compact uniforms/table tweaks moved to the end of this file */
+/* start global typography */
+p, ul, li {
+    text-align: left;
+    font-size: 1.15rem;
+    font-family: var(--font_ui)
+}
+
+
+
+ul li {
+    list-style-type: disc
+}
+
+
+
+html, body {
+    text-align: left;
+    font-family: var(--font_sans);
+    color: var(--color_text)
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--color_black);
+    letter-spacing: normal;
+}
+
+
+
+/* Inline emphasis utility moved out of the heading block (nested rules are invalid in plain CSS) */
+.emphasis {
+    font-weight: 600;
+    font-family: var(--font_heading);
+}
+
+
+
+h1 {
+    font-size: 1.625rem;
+    text-align: left;
+    line-height: 32px;
+    width: fit-content
+}
+
+
+
+h2 {
+    font-size: 1.25rem;
+    text-align: left !important;
+    line-height: 30px
+}
+
+
+
+h3 {
+    text-align: left;
+    font-size: 1.125rem;
+    line-height: 26px;
+    margin-bottom: 1px !important
+}
+
+
+
+h4 {
+    font-size: 1.1rem;
+    color: var(--color_black);
+    text-align: left;
+    float: none;
+    margin: 0 0 18px 0;
+    padding: 0
+}
+
+
+
+h5 {
+    text-align: left;
+    margin-bottom: 9px !important
+}
+
+
+
+h6 {
+    font-size: 1.25rem;
+    color: var(--color_red);
+    text-align: left
+}
+
+
+
+/* ================= Pitching Reference (global reuse) ================= */
+.pitching-ref nav.page-nav {
+    background: #f8f9fb;
+    border: 1px solid var(--color_lightgray);
+    padding: 12px 16px;
+    border-radius: 6px;
+    max-width: 480px
+}
+
+
+}
+
+@media print {
+    table.fit {
+        page-break-inside: avoid;
+        break-inside: avoid
+    }
+
+
+
+    h2, h3, h4 {
+        page-break-after: avoid;
+        break-after: avoid
+    }
+
+
+}
+
+/* Early season ramp visibility control (CSS-only) */
+.early-season-visible {
+    display: block
+}
+
+
+
+/* To hide automatically post-June 1 without JS we rely on manual class swap on June 1 content update or a server build hook (static site cannot detect date). */
+/* Toggle control & archived note styling */
+.early-ramp-toggle {
+    background: var(--color_blue);
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: .7rem;
+    letter-spacing: .5px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 0 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25)
+}
+
+
+
+/* ===================================================================== */
+sup {
+    vertical-align: super;
+    font-size: .6rem;
+    top: 0
+}
+
+
+
+/* end global typography */
+/* start global blah blah */
+.at {
+    display: inline-block;
+    padding: 0 2px 2px 2px;
+    font-weight: 600;
+    font-size: 0.85em;
+    color: var(--color_subtle);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    top: -0.5px
+}
+
+
+
+/* end global blah blah */
+/* start links */
+a.ncll {
+    color: var(--color_red) !important;
+    text-decoration: none
+}
+
+
+
+a.ncll:visited {
+    color: var(--color_red) !important
+}
+
+
+
+a.ncll:hover {
+    color: var(--color_red) !important
+}
+
+
+
+a.ncll:active {
+    color: var(--color_red) !important
+}
+
+
+
+/* end focus states and links */
+/* call-to-action floated image (migrated from backup) */
+.calltoaction {
+    float: right;
+    max-width: 20%;
+    max-height: 175px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+    padding-right: 20px
+}
+
+
+
+/* start footies */
+.footies {
+    font-size: 0.8125rem;
+    font-family: var(--font_ui);
+    color: var(--color_muted);
+    margin-top: 10px;
+    border-top: 1px solid var(--color_border_light);
+    padding: 5px 0px 5px 0px;
+    line-height: normal
+}
+
+
+
+/* Info icon for footnotes */
+.info-icon {
+    width: var(--info-icon-size);
+    height: var(--info-icon-size);
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 0.25em;
+    color: var(--color_red);
+    vertical-align: top
+}
+
+
+
+/* Ensure inline SVG icons scale to the badge size */
+.info-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block
+}
+
+
+
+/* end footies */
+/* Inline date/time + calendar row (matches list item sizing) */
+.cal-inline {
+    font-size: 1.15rem;
+    font-family: var(--font_ui)
+}
+
+
+
+/* Reduce motion for users who prefer it */
+@media(prefers-reduced-motion:reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important
+    }
+
+
+}
+
+/* start bottom sticky registration */
+/* Sticky registration heading override (ensures white text if theme changes) */
+#sticky-register-heading {
+    color: var(--color_white) !important;
+    text-align: center;
+    margin-right: 43px
+}
+
+
+
+/* Sticky registration bar (CSS-only dismiss variant) */
+.sticky-register {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg, var(--color_blue) 0%, #1a2b5c 100%);
+    color: var(--color_white);
+    font-family: var(--font_ui);
+    padding: 10px 18px;
+    box-shadow: 0 -4px 14px rgba(0, 0, 0, 0.25);
+    z-index: 9999999999;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    isolation: isolate;
+    min-height: 75px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom))
+}
+
+
+}
+
+/* end bottom sticky registration */
+/* Reserve space on pages that include a sticky registration bar */
+.with-sticky-register {
+    padding-bottom: 100px
+}
+
+
+}
+
+/* start tags */
+.tag {
+    margin: 4px 0px 0px 0px;
+    padding: 0px 0px 0px 0px
+}
+
+
+
+/* end tags */
+/* Inline icon-only calendar trigger retained; legacy .cal-inline removed */
+.cal-dropdown {
+    display: inline-block;
+    position: relative;
+    margin-left: 6px
+}
+
+
+
+/* end calendar dropdown */
+/* Block: Base table component */
+.ncll-table {
+    margin: 6px 0 22px
+}
+
+
+
+/* Modifiers: Variations of components */
+.ncll-table--baseball {
+    padding: inherit
+}
+
+
+
+/* Utility: Specific layout needs */
+.ncll-table__cell:nth-child(2) {
+    text-align: center;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums
+}
+
+
+
+/* ================= Right-pane (CMS) helpers ================= */
+/* These styles are intentionally light-touch and only apply when a page    opts in via <body class="cms-right"> */
+/* Constrain common content widths inside right pane */
+body.cms-right img, body.cms-right table, body.cms-right .ncll-table__table, body.cms-right .button, body.cms-right .gainsboro-button {
+    max-width: 100%
+}
+
+
+
+/* Slightly tighter vertical rhythm for headings inside narrow column */
+body.cms-right h2.left {
+    margin-bottom: 12px
+}
+
+
+
+body.cms-right h3 {
+    margin: 10px 0
+}
+
+
+
+body.cms-right h4 {
+    margin: 8px 0
+}
+
+
+
+/* Utilities to control visibility specifically in right pane context */
+.hide-on-right {
+    display: none !important
+}
+
+
+
+body:not(.cms-right) .only-on-right {
+    display: none !important
+}
+
+
+
+/* ====== BEGIN Timeline Page Styles (Timeline/timeline.html only) ====== */
+/*  .timeline-page .container-fluid     - Centers and constrains the main content container for the timeline page. .timeline-page .row     - Sets up a flexbox row for layout, with negative margins for grid alignment. .timeline-page .row>[class*="col-"]     - Ensures columns inside the row have correct box sizing and padding. .timeline-page .example-title     - Styles the main example title section (centered, with spacing and border). .timeline-page .example-title p     - Styles the paragraph inside the example title for max width and font size. @media (max-width: 767.98px)     - Adjusts row margins and column paddings for mobile screens. .timeline     - Base timeline container: removes list styles, sets width and line height. .timeline h1, ... h6     - Ensures timeline headings inherit line height. .timeline-item     - Each timeline event: indents and positions relative for marker. .timeline-item:last-child     - Removes bottom padding from last event. .timeline-info     - Styles the info/date section for each event (small, right-aligned). .timeline-marker     - Vertical line and dot marker for each event. .timeline-marker::before     - The colored dot at each event (with gradient and animation). .timeline-marker::after     - The vertical line connecting events. .timeline-item:last-child .timeline-marker::after     - Hides the line after the last event. .timeline-item:not(.period):hover .timeline-marker::before     - On hover, outlines the marker dot. .timeline-content p:last-child     - Removes bottom margin from last paragraph in event. .timeline-title     - Styles the event title (color, weight, spacing). .timeline-content p     - Styles event body text. .timeline-item.period     - Special styling for "period" (section break) events. .timeline-item.period .timeline-info     - Hides info for period events. .timeline-item.period .timeline-marker::before     - Custom marker for period events (no dot). .timeline-item.period .timeline-marker::after     - Shorter line for period events. .timeline-item.period .timeline-content     - Centered, padded content for period events. .timeline-item.period .timeline-title     - Special background and style for period event titles. @media (min-width: 768px)     - "Split" timeline: table layout for larger screens. @media (min-width: 992px)     - "Centered" timeline: alternate left/right layout for extra-large screens. .marker-outline .timeline-marker::before     - Variant: marker dot is outlined, not filled. .marker-outline .timeline-item:hover .timeline-marker::before     - On hover, fills the outlined marker. */
+/* ======= Timeline Page Minimal CSS ======= */
+.timeline-page .container-fluid {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    max-width: 1100px
+}
+
+
+
+/* Responsive grid for timeline page */
+@media(max-width:767.98px) {
+    .timeline-page .row {
+        margin-left: -1rem;
+        margin-right: -1rem
+    }
+
+
+}
+
+/* ======= Timeline Component ======= */
+.timeline {
+    line-height: 1.4em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+
+
+/* Split timeline for larger screens */
+@media(min-width:768px) {
+    .timeline-split {
+        display: table;
+        width: 100%
+    }
+
+
+}
+
+/* Centered timeline for extra-large screens */
+@media(min-width:992px) {
+    .timeline-centered, .timeline-centered .timeline-item, .timeline-centered .timeline-info, .timeline-centered .timeline-marker, .timeline-centered .timeline-content {
+        display: block;
+        margin: 0;
+        padding: 0
+    }
+
+
+}
+
+/* Marker outline variant */
+.marker-outline .timeline-marker::before {
+    background: transparent;
+    border-color: var(--timeline_primary)
+}
+
+
+
+/* Age matrix table */
+.age-matrix {
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 1.4
+}
+
+
+
+/* Responsive table scroll */
+.table_section .table_age {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch
+}
+
+
+
+/* Table striping: even rows */
+table:not(.no-stripe)>tbody>tr:nth-child(even) {
+    background: var(--table-row-alt)
+}
+
+
+
+/* Footnotes (collapsible) */
+details.footies {
+    margin: 0.75rem 0 1rem;
+    padding-top: 0.5rem
+}
+
+
+
+details.footies summary {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: var(--color_blue);
+    user-select: none;
+    padding-bottom: 8px;
+    font-size: 0.85rem
+}
+
+
+
+details.footies summary::-webkit-details-marker {
+    display: none
+}
+
+
+
+details.footies summary::before {
+    content: "+";
+    display: inline-grid;
+    place-items: center;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #fff;
+    background: var(--color_red);
+    border-radius: 2px
+}
+
+
+
+details.footies[open] summary::before {
+    content: "−"
+}
+
+
+
+/* ====== END Registration/test.html Page-Specific Styles ====== */
+/* ====== BEGIN Additional Utility Styles ====== */
+/* Utility classes */
+.margin-top-0 {
+    margin-top: 0px
+}
+
+
+
+/* End of utility styles section */
+/* ====== BEGIN Fee Coverage Page Styles (Registration/coverage.html) ====== */
+/* These styles are for the fee distribution pie chart and legend on the    "What Fees Cover" page. They were moved from the page's local <style>    block to the global stylesheet for better maintainability and reuse. */
+/* Fee Distribution Pie Chart */
+/* Wrapper to center the chart and handle responsive layout */
+.cost-chart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    gap: 2rem
+}
+
+
+
+/* Main chart container, sized by --pie-size variable */
+.cost-chart {
+    position: relative;
+    width: var(--pie-size);
+    height: var(--pie-size);
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0
+}
+
+
+
+/* Inner div that holds the conic-gradient background */
+.cost-pie {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+
+
+/* Legend styles */
+.cost-legend {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px 8px;
+    font-size: 0.875rem;
+    line-height: 1.3
+}
+
+
+}
+
+@media(max-width:480px) {
+    .cost-legend {
+        font-size: 0.8rem
+    }
+
+
+}
+
+.cost-cat {
+    font-weight: 600;
+    color: var(--color_blue)
+}
+
+
+
+/* ====== END Fee Coverage Page Styles ====== */
+/* ====== BEGIN Venmo Donation Page Styles ====== */
+/* Styles for the Extra-Innings/venmo.html page, providing a clean, centered, card-style layout for the donation call-to-action. */
+.venmo-wrap {
+    display: flex;
+    justify-content: center
+}
+
+
+
+/* ====== END Venmo Donation Page Styles ====== */
+/* ====== BEGIN Vendor Uniform Sizing Grid (Parents/uniforms.html) ======    Purpose: present all vendor sizing tables horizontally as responsive cards    - .sizing-grid: grid container for horizontal layout    - .sizing-card: individual card with table    - tables remain accessible; mobile stacks automatically ====================================================================== */
+.sizing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin: 1.25rem 0;
+    align-items: start
+}
+
+
+
+/* Horizontal table helper for full-width, non-wrapping table layouts */
+.horizontal {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: max-content;
+    /* preserve column widths, allow overflow */
+}
+
+
+
+/* Improved visual styling for horizontal tables */
+.horizontal thead th {
+    background: #f3f6fa;
+    color: var(--color_blue);
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+/* Small-screen adjustments: allow headers to wrap and reduce padding */
+@media (max-width: 480px) {
+    .horizontal thead th, .horizontal td {
+        padding: 6px 10px;
+        font-size: .92rem;
+    }
+
+
+}
+
+/* Compact table inside cards */
+.sizing-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    margin-top: 0.5rem
+}
+
+
+
+/* Muted helper text */
+.sizing-card .muted {
+    color: var(--color_muted, #666);
+    font-size: 0.9rem;
+    margin: 0
+}
+
+
+
+/* Small utility for subtle version/notice text used on pages like fees */
+.version-note {
+    font-size: 0.95rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Small screens: cards stack (grid becomes single column due to auto-fit) */
+@media(max-width:520px) {
+    .sizing-card {
+        padding: 0.75rem
+    }
+
+
+}
+
+/* ====== END Vendor Uniform Sizing Grid ====== */
+/* ================= Compact uniforms/table tweaks BEGIN ================= */
+.sizing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px
+}
+
+
+}
+
+/* ================= Compact uniforms/table tweaks END ================= */
+/* sizing table header unit styling */
+.sizing-table th .unit {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 400;
+    text-transform: none;
+    color: var(--color_muted)
+}
+
+
+
+/* ======================================================================
+   Global Card Component (`.ncll-card`)
+   Unified styling for the cards shared across Baseball, Softball,
+   Parents, and Player Development pages. Update this block to keep
+   appearances and interactions consistent across the site.
+   ====================================================================== */
+
+/* Base shell ------------------------------------------------------------ */
+.ncll-card {
+    background: var(--color_surface_light);
+    border: 1px solid var(--color_border_light);
+    padding: 14px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    max-width: min(var(--ncll-card-max), 92%);
+    margin: 0 auto;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+
+
+/* Copy + meta ----------------------------------------------------------- */
+.ncll-card__title {
+    margin: 0 0 8px 0;
+    font-size: 1.05rem;
+    line-height: 1.3;
+    color: var(--color_blue);
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+}
+
+
+
+/* Supporting visuals ---------------------------------------------------- */
+.ncll-card__clipboard {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+}
+
+.ncll-card__graphic {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    margin: 8px auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+/* Status pills ---------------------------------------------------------- */
+.status-badge {
+    font-size: .7rem;
+    text-transform: normal;
+    font-weight: 600;
+    padding: 3px 6px;
+    border-radius: 4px;
+    background: var(--color_blue);
+    color: #fff;
+    margin-left: 6px;
+}
+
+
+
+/* Action row ------------------------------------------------------------- */
+.ncll-card__sticky-footer .button {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+
+/* Overlay reveal variant ------------------------------------------------- */
+.ncll-card--overlay {
+    position: relative;
+    height: 500px;
+    border: 1px solid var(--color_border_light);
+    border-radius: 6px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+
+}
+
+@media(hover:none), (pointer:coarse) {
+    .ncll-card--overlay {
+        cursor: pointer;
+    }
+
+
+}
+
+/* Toggle deck extension -------------------------------------------------- */
+.ncll-card--toggle {
+    position: relative;
+}
