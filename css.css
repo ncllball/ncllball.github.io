@@ -2434,9 +2434,6 @@ details.footies[open] summary::before {
     margin: 0;
 }
 
-.ncll-card--toggle .ncll-card__sticky-heading h4 {
-    margin-top: 0.35rem;
-}
 
 .ncll-card--toggle .ncll-card__sticky-heading .ncll-card__sticky-footer {
     position: static;
