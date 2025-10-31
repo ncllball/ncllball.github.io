@@ -2205,6 +2205,21 @@ details.footies[open] summary::before {
     min-height: 500px;
 }
 
+.ncll-card--toggle {
+    height: auto;
+    min-height: 500px;
+}
+
+.ncll-card--toggle .ncll-card__body {
+    position: relative;
+    inset: auto;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+    padding-bottom: calc(var(--card-toggle-panel-pad-bottom, 1.75rem) + var(--card-toggle-actions-height, 60px));
+    background: #fff;
+}
+
 .ncll-card--overlay .ncll-card__top-layer::after {
     content: "Tap for details";
     position: absolute;
@@ -2250,6 +2265,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--toggle .ncll-card__sticky-footer {
+    position: static;
     height: auto;
     padding: 12px 20px;
     border-top: 1px solid var(--color_border_light);
@@ -2404,7 +2420,7 @@ details.footies[open] summary::before {
 
 .ncll-card--toggle .panel {
     padding-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + var(--card-toggle-sticky-gap, 1.5rem));
-    padding-bottom: calc(var(--card-toggle-panel-pad-bottom, 1.75rem) + var(--card-toggle-actions-height, 60px));
+    padding-bottom: var(--card-toggle-panel-pad-bottom, 1.75rem);
     scroll-margin-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + 0.5rem);
     scroll-margin-bottom: calc(var(--card-toggle-actions-height, 60px) + 0.5rem);
 }
