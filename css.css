@@ -2234,11 +2234,12 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--overlay .ncll-card__actions {
+    --card-toggle-actions-height: 60px;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: var(--card-toggle-actions-height, 60px);
     background: #fff;
     display: flex;
     align-items: center;
@@ -2395,8 +2396,9 @@ details.footies[open] summary::before {
 
 .ncll-card--toggle .panel {
     padding-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + var(--card-toggle-sticky-gap, 1.5rem));
-    padding-bottom: var(--card-toggle-panel-pad-bottom, 2.75rem);
+    padding-bottom: calc(var(--card-toggle-panel-pad-bottom, 2.75rem) + var(--card-toggle-actions-height, 60px));
     scroll-margin-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + 0.5rem);
+    scroll-margin-bottom: calc(var(--card-toggle-actions-height, 60px) + 0.5rem);
 }
 
 .ncll-card--toggle .panel> :first-child {
