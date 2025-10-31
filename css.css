@@ -2205,6 +2205,21 @@ details.footies[open] summary::before {
     min-height: 500px;
 }
 
+.ncll-card--toggle {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+}
+
+.ncll-card--toggle .ncll-card__body {
+    position: relative;
+    inset: auto;
+    min-height: 0;
+    height: auto;
+    overflow: visible;
+    background: #fff;
+}
+
 .ncll-card--overlay .ncll-card__top-layer::after {
     content: "Tap for details";
     position: absolute;
