@@ -2135,7 +2135,7 @@ details.footies[open] summary::before {
 }
 
 /* Action row ------------------------------------------------------------- */
-.ncll-card__actions .button {
+\.ncll-card__sticky-footer .button {
     padding: 6px 14px;
     font-size: 0.8rem;
     font-weight: 600;
@@ -2144,13 +2144,13 @@ details.footies[open] summary::before {
     transition: all 0.2s ease;
 }
 
-.ncll-card__actions .button--primary {
+\.ncll-card__sticky-footer .button--primary {
     background: var(--color_blue);
     color: #fff;
     border: 1px solid var(--color_blue);
 }
 
-.ncll-card__actions .button--primary:hover {
+\.ncll-card__sticky-footer .button--primary:hover {
     background: #1a2b5c;
     border-color: #1a2b5c;
 }
@@ -2233,7 +2233,7 @@ details.footies[open] summary::before {
     text-align: center;
 }
 
-.ncll-card--overlay .ncll-card__actions {
+.ncll-card--overlay \.ncll-card__sticky-footer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2249,7 +2249,7 @@ details.footies[open] summary::before {
     z-index: 3;
 }
 
-.ncll-card--toggle .ncll-card__actions {
+.ncll-card--toggle \.ncll-card__sticky-footer {
     position: static;
     height: auto;
     padding: 12px 20px;
@@ -2424,7 +2424,7 @@ details.footies[open] summary::before {
     margin-top: 0.35rem;
 }
 
-.ncll-card--toggle .ncll-card__sticky-heading .ncll-card__actions {
+.ncll-card--toggle .ncll-card__sticky-heading \.ncll-card__sticky-footer {
     position: static;
     height: auto;
     border-top: none;
@@ -2587,3 +2587,4 @@ details.footies[open] summary::before {
 .subtle {
     font-style: italic;
 }
+
