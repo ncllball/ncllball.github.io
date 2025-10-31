@@ -2135,7 +2135,7 @@ details.footies[open] summary::before {
 }
 
 /* Action row ------------------------------------------------------------- */
-\.ncll-card__sticky-footer .button {
+.ncll-card__sticky-footer .button {
     padding: 6px 14px;
     font-size: 0.8rem;
     font-weight: 600;
@@ -2144,13 +2144,13 @@ details.footies[open] summary::before {
     transition: all 0.2s ease;
 }
 
-\.ncll-card__sticky-footer .button--primary {
+.ncll-card__sticky-footer .button--primary {
     background: var(--color_blue);
     color: #fff;
     border: 1px solid var(--color_blue);
 }
 
-\.ncll-card__sticky-footer .button--primary:hover {
+.ncll-card__sticky-footer .button--primary:hover {
     background: #1a2b5c;
     border-color: #1a2b5c;
 }
