@@ -2389,7 +2389,7 @@ details.footies[open] summary::before {
 
 .ncll-card--toggle .ncll-card__sticky-heading {
     position: absolute;
-    top: 0.5rem;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 10;
