@@ -3,7 +3,7 @@ const path = require('path');
 
 const repoRoot = path.resolve(__dirname, '..', '..');
 const specsPath = path.join(repoRoot, 'Parents', 'sizing', 'specs.md');
-const targetHtml = path.join(repoRoot, 'Parents', 'uniforms-play.html');
+const targetHtml = path.join(repoRoot, 'Parents', 'index.html');
 
 function readSpecs() {
   return fs.readFileSync(specsPath, 'utf8');
@@ -177,7 +177,7 @@ function replaceBlock(html, ariaDesc, newTableHtml) {
   const re = new RegExp(`<table[\s\S]*?aria-describedby=\"${ariaDesc}\"[\s\S]*?<\/table>`,'m');
     // More reliable string-based search instead of a single fragile regex.
     // Find the aria-describedby token, then locate the surrounding <table ...> start and the closing </table>.
-    // try the provided id first, then common playground variants (-play, -play-2)
+    // try the provided id first, then common uniforms variants (-play, -play-2)
     const candidates = [ariaDesc, ariaDesc + '-play', ariaDesc + '-play-2'];
     let idx = -1;
     let foundId = null;

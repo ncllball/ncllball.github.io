@@ -2339,22 +2339,22 @@ details.footies[open] summary::before {
     font-size: 0.9rem
 }
 
-/* Uniform playground shared styles */
-article[id^="play-ephemeral-"][id$="-toggle"] {
+/* Multi-panel card shared styles */
+.ncll-card--toggle {
     position: relative;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .panel {
+.ncll-card--toggle .panel {
     display: none;
 }
 
 :root {
-    --playground-sticky-offset: 2.75rem;
-    --playground-sticky-gap: 1.5rem;
+    --card-toggle-sticky-offset: 2.75rem;
+    --card-toggle-sticky-gap: 1.5rem;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"],
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle {
+.ncll-card--toggle input[type="radio"],
+.ncll-card--toggle input.lightbox-toggle {
     position: absolute;
     left: -9999px;
 }
@@ -2437,23 +2437,23 @@ article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle {
     display: none;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-intro"]:checked~.panel-intro,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-0"]:checked~.panel0,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-1"]:checked~.panel1,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-2"]:checked~.panel2,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-3"]:checked~.panel3,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-4"]:checked~.panel4,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-5"]:checked~.panel5,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-6"]:checked~.panel6 {
+.ncll-card--toggle input[type="radio"][id$="-intro"]:checked~.panel-intro,
+.ncll-card--toggle input[type="radio"][id$="-0"]:checked~.panel0,
+.ncll-card--toggle input[type="radio"][id$="-1"]:checked~.panel1,
+.ncll-card--toggle input[type="radio"][id$="-2"]:checked~.panel2,
+.ncll-card--toggle input[type="radio"][id$="-3"]:checked~.panel3,
+.ncll-card--toggle input[type="radio"][id$="-4"]:checked~.panel4,
+.ncll-card--toggle input[type="radio"][id$="-5"]:checked~.panel5,
+.ncll-card--toggle input[type="radio"][id$="-6"]:checked~.panel6 {
     display: block;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .btn-next {
+.ncll-card--toggle .btn-next {
     display: none;
     cursor: pointer;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading {
+.ncll-card--toggle .ncll-card__sticky-heading {
     position: absolute;
     top: 0.5rem;
     left: 0;
@@ -2467,28 +2467,28 @@ article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    --sticky-offset: var(--playground-sticky-offset, 6.75rem);
+    --sticky-offset: var(--card-toggle-sticky-offset, 6.75rem);
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .panel {
-    padding-top: calc(var(--sticky-offset, var(--playground-sticky-offset, 6.75rem)) + var(--playground-sticky-gap, 1.5rem));
-    scroll-margin-top: calc(var(--sticky-offset, var(--playground-sticky-offset, 6.75rem)) + 0.5rem);
+.ncll-card--toggle .panel {
+    padding-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + var(--card-toggle-sticky-gap, 1.5rem));
+    scroll-margin-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + 0.5rem);
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .panel> :first-child {
+.ncll-card--toggle .panel> :first-child {
     margin-top: 0;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading h3,
-article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading h4 {
+.ncll-card--toggle .ncll-card__sticky-heading h3,
+.ncll-card--toggle .ncll-card__sticky-heading h4 {
     margin: 0;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading h4 {
+.ncll-card--toggle .ncll-card__sticky-heading h4 {
     margin-top: 0.35rem;
 }
 
-.ncll-card__sticky-heading .ncll-card__actions {
+.ncll-card--toggle .ncll-card__sticky-heading .ncll-card__actions {
     position: static;
     height: auto;
     border-top: none;
@@ -2497,7 +2497,7 @@ article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading h4 {
     box-shadow: none;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-subtitle {
+.ncll-card--toggle .ncll-card__sticky-subtitle {
     margin: 0.35rem 0 0;
     font-size: 0.95rem;
     font-weight: 500;
@@ -2505,18 +2505,18 @@ article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-subtitle {
     color: #444;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-intro"]:checked~.actions .btn-next-intro,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-0"]:checked~.actions .btn-next-0,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-1"]:checked~.actions .btn-next-1,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-2"]:checked~.actions .btn-next-2,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-3"]:checked~.actions .btn-next-3,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-4"]:checked~.actions .btn-next-4,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-5"]:checked~.actions .btn-next-5,
-article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-6"]:checked~.actions .btn-next-6 {
+.ncll-card--toggle input[type="radio"][id$="-intro"]:checked~.actions .btn-next-intro,
+.ncll-card--toggle input[type="radio"][id$="-0"]:checked~.actions .btn-next-0,
+.ncll-card--toggle input[type="radio"][id$="-1"]:checked~.actions .btn-next-1,
+.ncll-card--toggle input[type="radio"][id$="-2"]:checked~.actions .btn-next-2,
+.ncll-card--toggle input[type="radio"][id$="-3"]:checked~.actions .btn-next-3,
+.ncll-card--toggle input[type="radio"][id$="-4"]:checked~.actions .btn-next-4,
+.ncll-card--toggle input[type="radio"][id$="-5"]:checked~.actions .btn-next-5,
+.ncll-card--toggle input[type="radio"][id$="-6"]:checked~.actions .btn-next-6 {
     display: inline-block;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .lightbox-thumb img {
+.ncll-card--toggle .lightbox-thumb img {
     max-width: 140px;
     border-radius: 4px;
     display: block;
@@ -2524,12 +2524,12 @@ article[id^="play-ephemeral-"][id$="-toggle"] .lightbox-thumb img {
     transition: filter 220ms ease, transform 200ms ease;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .lightbox-thumb:hover img,
-article[id^="play-ephemeral-"][id$="-toggle"] .lightbox-thumb:focus img {
+.ncll-card--toggle .lightbox-thumb:hover img,
+.ncll-card--toggle .lightbox-thumb:focus img {
     filter: none;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .lightbox {
+.ncll-card--toggle .lightbox {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2544,7 +2544,7 @@ article[id^="play-ephemeral-"][id$="-toggle"] .lightbox {
     cursor: pointer;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .lightbox img {
+.ncll-card--toggle .lightbox img {
     max-width: 92%;
     max-height: 92%;
     border-radius: 6px;
@@ -2553,12 +2553,12 @@ article[id^="play-ephemeral-"][id$="-toggle"] .lightbox img {
     opacity: 0.95;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .lightbox:focus {
+.ncll-card--toggle .lightbox:focus {
     outline: 2px solid #fff;
     outline-offset: 8px;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .lightbox .lightbox-caption {
+.ncll-card--toggle .lightbox .lightbox-caption {
     margin-top: 12px;
     color: #fff;
     font-size: 0.95rem;
@@ -2566,13 +2566,13 @@ article[id^="play-ephemeral-"][id$="-toggle"] .lightbox .lightbox-caption {
     max-width: 92%;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .lightbox .lightbox-caption a {
+.ncll-card--toggle .lightbox .lightbox-caption a {
     color: #fff;
     text-decoration: underline;
     opacity: 0.95;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] .lightbox .close-btn {
+.ncll-card--toggle .lightbox .close-btn {
     position: absolute;
     top: 18px;
     right: 18px;
@@ -2584,48 +2584,50 @@ article[id^="play-ephemeral-"][id$="-toggle"] .lightbox .close-btn {
     border-radius: 4px;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-1"]:checked~.ncll-card__body label[for$="-1"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-3"]:checked~.ncll-card__body label[for$="-3"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-4"]:checked~.ncll-card__body label[for$="-4"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-5"]:checked~.ncll-card__body label[for$="-5"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-6"]:checked~.ncll-card__body label[for$="-6"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-7"]:checked~.ncll-card__body label[for$="-7"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-8"]:checked~.ncll-card__body label[for$="-8"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-9"]:checked~.ncll-card__body label[for$="-9"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-10"]:checked~.ncll-card__body label[for$="-10"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-12"]:checked~.ncll-card__body label[for$="-12"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-hat"]:checked~.ncll-card__body label[for$="-hat"] img {
+.ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.ncll-card__body label[for$="-1"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-3"]:checked~.ncll-card__body label[for$="-3"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-4"]:checked~.ncll-card__body label[for$="-4"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-5"]:checked~.ncll-card__body label[for$="-5"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-6"]:checked~.ncll-card__body label[for$="-6"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-7"]:checked~.ncll-card__body label[for$="-7"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-8"]:checked~.ncll-card__body label[for$="-8"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-9"]:checked~.ncll-card__body label[for$="-9"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-10"]:checked~.ncll-card__body label[for$="-10"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-12"]:checked~.ncll-card__body label[for$="-12"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-hat"]:checked~.ncll-card__body label[for$="-hat"] img {
     filter: none;
     transform: scale(1.02);
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"],
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-3"]:checked~.lightbox[data-id="3"],
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-4"]:checked~.lightbox[data-id="4"],
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-5"]:checked~.lightbox[data-id="5"],
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-6"]:checked~.lightbox[data-id="6"],
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-7"]:checked~.lightbox[data-id="7"],
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-8"]:checked~.lightbox[data-id="8"],
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-9"]:checked~.lightbox[data-id="9"],
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-10"]:checked~.lightbox[data-id="10"],
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-12"]:checked~.lightbox[data-id="12"],
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-hat"]:checked~.lightbox[data-id="hat"] {
+.ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"],
+.ncll-card--toggle input.lightbox-toggle[id$="-3"]:checked~.lightbox[data-id="3"],
+.ncll-card--toggle input.lightbox-toggle[id$="-4"]:checked~.lightbox[data-id="4"],
+.ncll-card--toggle input.lightbox-toggle[id$="-5"]:checked~.lightbox[data-id="5"],
+.ncll-card--toggle input.lightbox-toggle[id$="-6"]:checked~.lightbox[data-id="6"],
+.ncll-card--toggle input.lightbox-toggle[id$="-7"]:checked~.lightbox[data-id="7"],
+.ncll-card--toggle input.lightbox-toggle[id$="-8"]:checked~.lightbox[data-id="8"],
+.ncll-card--toggle input.lightbox-toggle[id$="-9"]:checked~.lightbox[data-id="9"],
+.ncll-card--toggle input.lightbox-toggle[id$="-10"]:checked~.lightbox[data-id="10"],
+.ncll-card--toggle input.lightbox-toggle[id$="-12"]:checked~.lightbox[data-id="12"],
+.ncll-card--toggle input.lightbox-toggle[id$="-hat"]:checked~.lightbox[data-id="hat"] {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
 }
 
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-3"]:checked~.lightbox[data-id="3"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-4"]:checked~.lightbox[data-id="4"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-5"]:checked~.lightbox[data-id="5"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-6"]:checked~.lightbox[data-id="6"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-7"]:checked~.lightbox[data-id="7"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-8"]:checked~.lightbox[data-id="8"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-9"]:checked~.lightbox[data-id="9"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-10"]:checked~.lightbox[data-id="10"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-12"]:checked~.lightbox[data-id="12"] img,
-article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-hat"]:checked~.lightbox[data-id="hat"] img {
+.ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-3"]:checked~.lightbox[data-id="3"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-4"]:checked~.lightbox[data-id="4"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-5"]:checked~.lightbox[data-id="5"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-6"]:checked~.lightbox[data-id="6"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-7"]:checked~.lightbox[data-id="7"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-8"]:checked~.lightbox[data-id="8"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-9"]:checked~.lightbox[data-id="9"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-10"]:checked~.lightbox[data-id="10"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-12"]:checked~.lightbox[data-id="12"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-hat"]:checked~.lightbox[data-id="hat"] img {
     transform: scale(1);
     opacity: 1;
 }
+
+

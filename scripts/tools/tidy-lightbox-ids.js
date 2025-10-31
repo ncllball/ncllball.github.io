@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const file = path.join(__dirname, '..', '..', 'Parents', 'uniforms-play.html');
+const file = path.join(__dirname, '..', '..', 'Parents', 'index.html');
 const bak = file + '.bak-tidy';
 let s = fs.readFileSync(file, 'utf8');
 fs.writeFileSync(bak, s, 'utf8');
@@ -19,8 +19,8 @@ function around(idx, radius=400){
 }
 
 function inferDivision(ctx){
-  // look for #play-ephemeral-<division>-toggle in context
-  const re = /#play-ephemeral-([a-z0-9-]+)-toggle/g;
+  // look for #uniforms-<division>-toggle in context
+  const re = /#uniforms-([a-z0-9-]+)-toggle/g;
   let mm;
   while ((mm = re.exec(ctx)) !== null) return mm[1];
   // look for label for="lightbox-<division>"
