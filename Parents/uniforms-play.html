@@ -6,244 +6,6 @@
     <title>Uniform Sizing — NCLL (play)</title>
     <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
-    <style>
-        /* Uniform playground shared styles */
-        article[id^="play-ephemeral-"][id$="-toggle"] {
-            position: relative;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .panel {
-            display: none;
-        }
-
-        :root {
-            --playground-sticky-offset: 2.75rem;
-            --playground-sticky-gap: 1.5rem;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"],
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle {
-            position: absolute;
-            left: -9999px;
-        }
-
-        .ncll-micro__table {
-            border-collapse: collapse;
-            font-size: 0.8rem;
-            text-align: center;
-            width: 100%;
-        }
-
-        .ncll-micro__table th {
-            border-collapse: collapse;
-            font-weight: 400;
-        }
-
-        .ncll-micro__table thead th {
-            border-collapse: collapse;
-            border-bottom: 1px solid red;
-            border-top: 1px solid red;
-        }
-
-        .ncll-micro__table tbody td {
-            border-collapse: collapse;
-            font-weight: 400;
-            text-align: center;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-intro"]:checked~.panel-intro,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-0"]:checked~.panel0,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-1"]:checked~.panel1,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-2"]:checked~.panel2,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-3"]:checked~.panel3,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-4"]:checked~.panel4,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-5"]:checked~.panel5,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-6"]:checked~.panel6 {
-            display: block;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .btn-next {
-            display: none;
-            cursor: pointer;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading {
-            position: absolute;
-            top: 0.5rem;
-            left: 0;
-            right: 0;
-            z-index: 10;
-            background: #fff;
-            padding: 0.85rem 1.5rem 0.65rem;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            margin-bottom: 1rem;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            --sticky-offset: var(--playground-sticky-offset, 6.75rem);
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .panel {
-            padding-top: calc(var(--sticky-offset, var(--playground-sticky-offset, 6.75rem)) + var(--playground-sticky-gap, 1.5rem));
-            scroll-margin-top: calc(var(--sticky-offset, var(--playground-sticky-offset, 6.75rem)) + 0.5rem);
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .panel> :first-child {
-            margin-top: 0;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading h3,
-        article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading h4 {
-            margin: 0;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading h4 {
-            margin-top: 0.35rem;
-        }
-
-        .ncll-card__sticky-heading .ncll-card__actions {
-            position: static;
-            height: auto;
-            border-top: none;
-            padding: 0;
-            background: transparent;
-            box-shadow: none;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-subtitle {
-            margin: 0.35rem 0 0;
-            font-size: 0.95rem;
-            font-weight: 500;
-            letter-spacing: 0.01em;
-            color: #444;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-intro"]:checked~.actions .btn-next-intro,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-0"]:checked~.actions .btn-next-0,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-1"]:checked~.actions .btn-next-1,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-2"]:checked~.actions .btn-next-2,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-3"]:checked~.actions .btn-next-3,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-4"]:checked~.actions .btn-next-4,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-5"]:checked~.actions .btn-next-5,
-        article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-6"]:checked~.actions .btn-next-6 {
-            display: inline-block;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .lightbox-thumb img {
-            max-width: 140px;
-            border-radius: 4px;
-            display: block;
-            filter: grayscale(90%) contrast(100%);
-            transition: filter 220ms ease, transform 200ms ease;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .lightbox-thumb:hover img,
-        article[id^="play-ephemeral-"][id$="-toggle"] .lightbox-thumb:focus img {
-            filter: none;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .lightbox {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 9999;
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 220ms ease, visibility 220ms ease;
-            pointer-events: none;
-            cursor: pointer;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .lightbox img {
-            max-width: 92%;
-            max-height: 92%;
-            border-radius: 6px;
-            transform: scale(0.96);
-            transition: transform 260ms ease, opacity 220ms ease;
-            opacity: 0.95;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .lightbox:focus {
-            outline: 2px solid #fff;
-            outline-offset: 8px;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .lightbox .lightbox-caption {
-            margin-top: 12px;
-            color: #fff;
-            font-size: 0.95rem;
-            text-align: center;
-            max-width: 92%;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .lightbox .lightbox-caption a {
-            color: #fff;
-            text-decoration: underline;
-            opacity: 0.95;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] .lightbox .close-btn {
-            position: absolute;
-            top: 18px;
-            right: 18px;
-            color: #fff;
-            font-size: 1.1rem;
-            line-height: 1;
-            background: rgba(0, 0, 0, 0.35);
-            padding: 6px 8px;
-            border-radius: 4px;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-1"]:checked~.ncll-card__body label[for$="-1"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-3"]:checked~.ncll-card__body label[for$="-3"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-4"]:checked~.ncll-card__body label[for$="-4"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-5"]:checked~.ncll-card__body label[for$="-5"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-6"]:checked~.ncll-card__body label[for$="-6"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-7"]:checked~.ncll-card__body label[for$="-7"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-8"]:checked~.ncll-card__body label[for$="-8"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-9"]:checked~.ncll-card__body label[for$="-9"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-10"]:checked~.ncll-card__body label[for$="-10"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-12"]:checked~.ncll-card__body label[for$="-12"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-hat"]:checked~.ncll-card__body label[for$="-hat"] img {
-            filter: none;
-            transform: scale(1.02);
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"],
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-3"]:checked~.lightbox[data-id="3"],
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-4"]:checked~.lightbox[data-id="4"],
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-5"]:checked~.lightbox[data-id="5"],
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-6"]:checked~.lightbox[data-id="6"],
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-7"]:checked~.lightbox[data-id="7"],
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-8"]:checked~.lightbox[data-id="8"],
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-9"]:checked~.lightbox[data-id="9"],
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-10"]:checked~.lightbox[data-id="10"],
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-12"]:checked~.lightbox[data-id="12"],
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-hat"]:checked~.lightbox[data-id="hat"] {
-            visibility: visible;
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-3"]:checked~.lightbox[data-id="3"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-4"]:checked~.lightbox[data-id="4"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-5"]:checked~.lightbox[data-id="5"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-6"]:checked~.lightbox[data-id="6"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-7"]:checked~.lightbox[data-id="7"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-8"]:checked~.lightbox[data-id="8"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-9"]:checked~.lightbox[data-id="9"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-10"]:checked~.lightbox[data-id="10"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-12"]:checked~.lightbox[data-id="12"] img,
-        article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-hat"]:checked~.lightbox[data-id="hat"] img {
-            transform: scale(1);
-            opacity: 1;
-        }
-    </style>
 </head>
 
 <body>
@@ -260,11 +22,7 @@
             pit-to-pit across the garment.</p>
 
         <div class="sizing-grid">
-            <!-- Division-first layout: Division header, then cards for each level -->
-
-            <section class="division-section" id="division-baseball">
-                <h2 class="left">Baseball</h2>
-
+            <div class="division-toggle__panels">
                 <div class="program-grid">
                     <!-- T-Ball interactive card (playground) -->
                     <article id="play-ephemeral-tball-toggle" class="ncll-card ncll-card--division ncll-card--overlay"
@@ -283,37 +41,43 @@
                         <div class="ncll-card__sticky-heading" aria-hidden="true">
                             <h3 class="ncll-card__title">T-Ball &amp; Kindy Divisions &mdash; Baseball</h3>
                             <div class="ncll-card__actions actions" role="group"
-                            aria-label="T-Ball Playground toggle actions">
-                            <label class="button button--primary btn-next btn-next-intro"
-                                for="play-ephemeral-tball-0">Next</label>
-                            <label class="button button--primary btn-next btn-next-0"
-                                for="play-ephemeral-tball-1">Next</label>
-                            <label class="button button--primary btn-next btn-next-1"
-                                for="play-ephemeral-tball-2">Next</label>
-                            <label class="button button--primary btn-next btn-next-2"
-                                for="play-ephemeral-tball-3">Next</label>
-                            <label class="button button--primary btn-next btn-next-3"
-                                for="play-ephemeral-tball-4">Next</label>
-                            <label class="button button--primary btn-next btn-next-4"
-                                for="play-ephemeral-tball-intro">Back</label>
-                        </div>
+                                aria-label="T-Ball Playground toggle actions">
+                                <label class="button button--primary btn-next btn-next-intro"
+                                    for="play-ephemeral-tball-0">Next</label>
+                                <label class="button button--primary btn-next btn-next-0"
+                                    for="play-ephemeral-tball-1">Next</label>
+                                <label class="button button--primary btn-next btn-next-1"
+                                    for="play-ephemeral-tball-2">Next</label>
+                                <label class="button button--primary btn-next btn-next-2"
+                                    for="play-ephemeral-tball-3">Next</label>
+                                <label class="button button--primary btn-next btn-next-3"
+                                    for="play-ephemeral-tball-4">Next</label>
+                                <label class="button button--primary btn-next btn-next-4"
+                                    for="play-ephemeral-tball-intro">Back</label>
+                            </div>
                         </div>
 
                         <div class="ncll-card__body panel panel-intro">
-                            <h4 class="ncll-card__title">T-Ball &amp; Kindy Baseball Uniform Options &mdash; Players
+                            <h4 class="ncll-card__title">T-Ball &amp; Kindy Baseball Uniform Options &mdash;
+                                Players
                                 &amp; Coaches</h4>
 
                             <p class="ncll-card__blurb">T-Ball and Kindy players wear the youth performance tee
-                                <strong>YST350</strong> with hat model <strong>4301</strong>, plus league-supplied socks
-                                and belt (OSFA). Coaches at these levels receive the adult <strong>ST350</strong> top
-                                and matching 4301 cap. Use the panels for pit-to-pit and head-circumference guidance
-                                before submitting sizes.</p>
+                                <strong>YST350</strong> with hat model <strong>4301</strong>, plus
+                                league-supplied socks
+                                and belt (OSFA). Coaches at these levels receive the adult
+                                <strong>ST350</strong> top
+                                and matching 4301 cap. Use the panels for pit-to-pit and head-circumference
+                                guidance
+                                before submitting sizes.
+                            </p>
                         </div>
 
                         <div class="ncll-card__body panel panel0">
                             <div class="ncll-card__details">
                                 <h4>Players - Tee Sizing (YST350)</h4>
-                                <p>Reference the normalized YST350 chart to select the youth tee size for T-Ball and
+                                <p>Reference the normalized YST350 chart to select the youth tee size for T-Ball
+                                    and
                                     Kindy players.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-tball-1" class="lightbox-thumb">
@@ -323,23 +87,8 @@
                                     </label>
                                 </div>
                                 <h5>Size chart - Tee (YST350) - Youth (Chest / Back Length)</h5>
- 
-                                <div class="ncll-micro">
-                                    <table class="ncll-micro__table" aria-describedby="yst350-caption">
-                                        <caption id="yst350-caption">YST350 youth measurements: chest and body length at
-                                            back in inches.</caption>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col"></th>
-                                                <th scope="col">XS (4)</th>
-                                                <th scope="col">S (6/8)</th>
-                                                <th scope="col">M (10/12)</th>
-                                                <th scope="col">L (14/16)</th>
-                                                <th scope="col">XL (18/20)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
+
+                               
                                                 <th scope="row">Chest (in)</th>
                                                 <td>15 1/4</td>
                                                 <td>16</td>
@@ -364,7 +113,8 @@
                         <div class="ncll-card__body panel panel1">
                             <div class="ncll-card__details">
                                 <h4>Players - Hat Sizing (4301)</h4>
-                                <p>Hat model for T-Ball &amp; Kindy players: <strong>4301</strong> (adjustable cap).</p>
+                                <p>Hat model for T-Ball &amp; Kindy players: <strong>4301</strong> (adjustable
+                                    cap).</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-tball-5" class="lightbox-thumb">
                                         <img class="ncll-card__graphic ncll-card__graphic--hat"
@@ -372,10 +122,6 @@
                                     </label>
                                 </div>
                                 <h5>Size chart — Hat (4301) — Normalized (Head circumference)</h5>
-                                <h5>Normalized pit-to-pit chart &mdash; Jersey (4003)</h5>
-                                <h5>Hoodie measurements &mdash; PC90H (players)</h5>
-                                <h5>Coach shirt measurements &mdash; ST550</h5>
-                                <h5>Coach hat size chart &mdash; PTS30</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="4301-tball-caption">
                                         <caption id="4301-tball-caption">Hat 4301 head circumference
@@ -402,7 +148,8 @@
                         <div class="ncll-card__body panel panel2">
                             <div class="ncll-card__details">
                                 <h4>Coaches — Shirt Sizing (ST350)</h4>
-                                <p>Coach shirts use <strong>ST350</strong>. Use the normalized pit-to-pit and body
+                                <p>Coach shirts use <strong>ST350</strong>. Use the normalized pit-to-pit and
+                                    body
                                     length values below when selecting coach sizes for T-Ball &amp; Kindy.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-tball-1" class="lightbox-thumb">
@@ -461,7 +208,8 @@
                         <div class="ncll-card__body panel panel3">
                             <div class="ncll-card__details">
                                 <h4>Coaches - Hat Sizing (4301)</h4>
-                                <p>Coach hat model for T-Ball &amp; Kindy: <strong>4301</strong> (same adjustable cap
+                                <p>Coach hat model for T-Ball &amp; Kindy: <strong>4301</strong> (same
+                                    adjustable cap
                                     used for players; select the closest fit).</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-tball-5" class="lightbox-thumb">
@@ -532,6 +280,8 @@
                     </article>
                     <!-- Baseball level cards (mirrors Softball markup) -->
                     <!-- Play-only ephemeral toggle (CSS-only, scoped to this file) -->
+
+
                     <article id="play-ephemeral-a-toggle" class="ncll-card ncll-card--division ncll-card--overlay"
                         aria-labelledby="play-ephemeral-a-h3">
                         <!-- radios must precede panels for the sibling selector to work -->
@@ -548,20 +298,27 @@
                         <input type="checkbox" id="lightbox-a-5" class="lightbox-toggle">
 
                         <div class="ncll-card__sticky-heading" aria-hidden="true">
-                            <h3 class="ncll-card__title">A &amp; AA Divisions &mdash; Baseball</h3>
+                            <h3 class="ncll-card__title" id="play-ephemeral-a-h3">A &amp; AA Divisions &mdash;
+                                Baseball</h3>
+
                         </div>
 
                         <!-- New Intro panel shown by default -->
                         <div class="ncll-card__body panel panel-intro">
-                            <h4 class="ncll-card__title" id="play-ephemeral-a-h4">A &amp; AA Baseball Uniform Options
+                            <h4 class="ncll-card__title" id="play-ephemeral-a-h4">A &amp; AA Baseball Uniform
+                                Options
                                 &mdash; Players &amp; Coaches</h4>
-                            <p class="ncll-card__blurb">A &amp; AA players receive jersey model <strong>4003</strong>
+                            <p class="ncll-card__blurb">A &amp; AA players receive jersey model
+                                <strong>4003</strong>
                                 with the adjustable
-                                <strong>4301</strong> cap, plus league-supplied socks and belt (OSFA). Coaches at both
+                                <strong>4301</strong> cap, plus league-supplied socks and belt (OSFA). Coaches
+                                at both
                                 levels use the
-                                <strong>ST350</strong> top with the same hat. Order carefully — sizes are final at
+                                <strong>ST350</strong> top with the same hat. Order carefully — sizes are final
+                                at
                                 delivery and reorders
-                                are billed to your account. Use the normalized pit-to-pit charts on the panels to choose
+                                are billed to your account. Use the normalized pit-to-pit charts on the panels
+                                to choose
                                 the best fit.
                             </p>
 
@@ -573,7 +330,8 @@
                             <div class="ncll-card__details">
                                 <h4>Players - Jersey Sizing</h4>
                                 <p>Shirt model for A &amp; AA players: <strong>4003</strong>. Please order the
-                                    player shirt size per the provided chest/length guidance. These divisions do not
+                                    player shirt size per the provided chest/length guidance. These divisions do
+                                    not
                                     issue
                                     hoodies, so focus on the jersey fit.</p>
                                 <div class="ncll-card__graphics">
@@ -623,7 +381,8 @@
                         <div class="ncll-card__body panel panel1">
                             <div class="ncll-card__details">
                                 <h4>Players - Hat Sizing (4301)</h4>
-                                <p>Hat model for A &amp; AA players: <strong>4301</strong>. Hats are the standard
+                                <p>Hat model for A &amp; AA players: <strong>4301</strong>. Hats are the
+                                    standard
                                     youth/adult adjustable cap; choose the closest fit during registration.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-a-5" class="lightbox-thumb">
@@ -660,7 +419,8 @@
                                 <h4>Coaches - Shirt Sizing (ST350)</h4>
                                 <p>Coaches receive shirt model <strong>ST350</strong> across A &amp; AA. Use the
                                     normalized pit-to-pit and
-                                    back length values below when selecting sizes. Coach hoodies are not part of these
+                                    back length values below when selecting sizes. Coach hoodies are not part of
+                                    these
                                     kits.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-a-3" class="lightbox-thumb">
@@ -720,7 +480,8 @@
                         <div class="ncll-card__body panel panel3">
                             <div class="ncll-card__details">
                                 <h4>Coaches - Hat Sizing (4301)</h4>
-                                <p>Coaches hat model for A &amp; AA: <strong>4301</strong>. The coaching staff uses the
+                                <p>Coaches hat model for A &amp; AA: <strong>4301</strong>. The coaching staff
+                                    uses the
                                     same adjustable cap as the players for consistency.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-a-5" class="lightbox-thumb">
@@ -742,25 +503,24 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>6 3/8–6 7/8</td>
-                                                <td>6 7/8–7 3/8</td>
-                                                <td>7 3/8–8</td>
+                                                <td>6 3/8-6 7/8</td>
+                                                <td>6 7/8-7 3/8</td>
+                                                <td>7 3/8-8</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-
                         <div class="ncll-card__body panel panel4">
                             <div class="ncll-card__details">
                                 <h4>Thank You!</h4>
-                                <p>Notes placeholder for the playground panel.</p>
+                                <p>A &amp; AA baseball notes placeholder.</p>
                             </div>
                         </div>
 
                         <div class="ncll-card__actions actions" role="group"
-                            aria-label="A &amp; AA Playground toggle actions">
+                            aria-label="A &amp; AA Baseball toggle actions">
                             <label class="button button--primary btn-next btn-next-intro"
                                 for="play-ephemeral-a-0">Next</label>
                             <label class="button button--primary btn-next btn-next-0"
@@ -774,6 +534,7 @@
                             <label class="button button--primary btn-next btn-next-4"
                                 for="play-ephemeral-a-intro">Back</label>
                         </div>
+
                         <!-- lightbox overlays: clicking anywhere in an overlay (including the image) will close it -->
                         <label for="lightbox-a-1" class="lightbox" data-id="1" role="dialog" aria-modal="true"
                             aria-label="Enlarged image" tabindex="0">
@@ -815,23 +576,27 @@
 
                         <div class="ncll-card__sticky-heading" aria-hidden="true">
                             <h3 class="ncll-card__title">AAA &amp; Upper Divisions &mdash; Baseball</h3>
-
                         </div>
 
                         <div class="ncll-card__body panel panel-intro">
-                            <h4 class="ncll-card__title" id="play-ephemeral-aaa-h4">Majors, Juniors &amp; Seniors Baseball
+                            <h4 class="ncll-card__title" id="play-ephemeral-aaa-h4">Majors, Juniors &amp;
+                                Seniors Baseball
                                 Uniform Options &mdash; Players &amp; Coaches</h4>
                             <p class="ncll-card__blurb">AAA, Majors, Juniors, and Seniors all use jersey
                                 <strong>4003</strong>, Richardson hat <strong>PTS30</strong>, and hoodie
-                                <strong>PC90H</strong>. Coaches pair the same hat and hoodie with ST350 or ST550 tops.
-                                Use the guided panels for chest, pit-to-pit, and head circumference checks before
-                                submitting sizes.</p>
+                                <strong>PC90H</strong>. Coaches pair the same hat and hoodie with ST350 or ST550
+                                tops.
+                                Use the guided panels for chest, pit-to-pit, and head circumference checks
+                                before
+                                submitting sizes.
+                            </p>
                         </div>
 
                         <div class="ncll-card__body panel panel0">
                             <div class="ncll-card__details">
                                 <h4>Players &mdash; Jersey Sizing (4003)</h4>
-                                <p>Start with the supplier chest ranges for quick AAA fit checks, then confirm with the
+                                <p>Start with the supplier chest ranges for quick AAA fit checks, then confirm
+                                    with the
                                     normalized pit-to-pit chart for AAA through Seniors.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-aaa-jersey" class="lightbox-thumb">
@@ -843,7 +608,8 @@
                                 <h5>Supplier chart &mdash; Jersey (4003)</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="4003-aaa-original-caption">
-                                        <caption id="4003-aaa-original-caption">Supplier chest ranges for jersey 4003
+                                        <caption id="4003-aaa-original-caption">Supplier chest ranges for jersey
+                                            4003
                                             (youth/adult).</caption>
                                         <thead>
                                             <tr>
@@ -894,7 +660,8 @@
                                 <h5>Normalized pit-to-pit chart &mdash; Jersey (4003)</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="4003-aaa-caption">
-                                        <caption id="4003-aaa-caption">Normalized pit-to-pit chart for jersey 4003
+                                        <caption id="4003-aaa-caption">Normalized pit-to-pit chart for jersey
+                                            4003
                                             (inches).</caption>
                                         <thead>
                                             <tr>
@@ -930,7 +697,8 @@
                         <div class="ncll-card__body panel panel1">
                             <div class="ncll-card__details">
                                 <h4>Players &mdash; Hat Sizing (PTS30)</h4>
-                                <p>Richardson <strong>PTS30</strong> sizing ranges cover every head from AAA through
+                                <p>Richardson <strong>PTS30</strong> sizing ranges cover every head from AAA
+                                    through
                                     Seniors.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-aaa-player-hat" class="lightbox-thumb">
@@ -942,7 +710,8 @@
                                 <h5>Hat size chart &mdash; PTS30</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="pts30-aaa-player-caption">
-                                        <caption id="pts30-aaa-player-caption">PTS30 head circumference chart (inches).
+                                        <caption id="pts30-aaa-player-caption">PTS30 head circumference chart
+                                            (inches).
                                         </caption>
                                         <thead>
                                             <tr>
@@ -968,7 +737,8 @@
                         <div class="ncll-card__body panel panel2">
                             <div class="ncll-card__details">
                                 <h4>Players &mdash; Hoodie (PC90H)</h4>
-                                <p>Use pit-to-pit and body length to size the <strong>PC90H</strong> hoodie for players
+                                <p>Use pit-to-pit and body length to size the <strong>PC90H</strong> hoodie for
+                                    players
                                     at every upper division level.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-aaa-player-hoodie" class="lightbox-thumb">
@@ -980,7 +750,8 @@
                                 <h5>Hoodie measurements &mdash; PC90H (players)</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="pc90h-aaa-player-caption">
-                                        <caption id="pc90h-aaa-player-caption">PC90H player hoodie pit-to-pit and body
+                                        <caption id="pc90h-aaa-player-caption">PC90H player hoodie pit-to-pit
+                                            and body
                                             length (inches).</caption>
                                         <thead>
                                             <tr>
@@ -1024,7 +795,8 @@
                         <div class="ncll-card__body panel panel3">
                             <div class="ncll-card__details">
                                 <h4>Coaches &mdash; Shirts (ST350 / ST550)</h4>
-                                <p>Coaches across AAA through Seniors default to <strong>ST350</strong>, with a limited
+                                <p>Coaches across AAA through Seniors default to <strong>ST350</strong>, with a
+                                    limited
                                     number in <strong>ST550</strong>. Use the tables to compare fits.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-aaa-coach-shirt" class="lightbox-thumb">
@@ -1036,7 +808,8 @@
                                 <h5>Coach shirt measurements &mdash; ST350</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="st350-aaa-caption">
-                                        <caption id="st350-aaa-caption">ST350 pit-to-pit and back length (inches).
+                                        <caption id="st350-aaa-caption">ST350 pit-to-pit and back length
+                                            (inches).
                                         </caption>
                                         <thead>
                                             <tr>
@@ -1080,7 +853,8 @@
                                 <h5>Coach shirt measurements &mdash; ST550</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="st550-aaa-caption">
-                                        <caption id="st550-aaa-caption">ST550 pit-to-pit and back length (inches).
+                                        <caption id="st550-aaa-caption">ST550 pit-to-pit and back length
+                                            (inches).
                                         </caption>
                                         <thead>
                                             <tr>
@@ -1127,7 +901,8 @@
                         <div class="ncll-card__body panel panel4">
                             <div class="ncll-card__details">
                                 <h4>Coaches &mdash; Hoodie (PC90H)</h4>
-                                <p>Coach hoodies use the same <strong>PC90H</strong> numbers shown in the player hoodie
+                                <p>Coach hoodies use the same <strong>PC90H</strong> numbers shown in the player
+                                    hoodie
                                     table.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-aaa-coach-hoodie" class="lightbox-thumb">
@@ -1138,7 +913,8 @@
                                 <h5>Coach hoodie measurements &mdash; PC90H</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="pc90h-aaa-coach-caption">
-                                        <caption id="pc90h-aaa-coach-caption">PC90H coach hoodie pit-to-pit and body
+                                        <caption id="pc90h-aaa-coach-caption">PC90H coach hoodie pit-to-pit and
+                                            body
                                             length (inches).</caption>
                                         <thead>
                                             <tr>
@@ -1192,7 +968,8 @@
                         <div class="ncll-card__body panel panel5">
                             <div class="ncll-card__details">
                                 <h4>Coaches &mdash; Hat Sizing (PTS30)</h4>
-                                <p>Coaches mirror the player PTS30 hat sizing. Select the appropriate bucket from the
+                                <p>Coaches mirror the player PTS30 hat sizing. Select the appropriate bucket
+                                    from the
                                     chart.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-aaa-coach-hat" class="lightbox-thumb">
@@ -1204,7 +981,8 @@
                                 <h5>Coach hat size chart &mdash; PTS30</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="pts30-aaa-coach-caption">
-                                        <caption id="pts30-aaa-coach-caption">PTS30 head circumference chart for coaches
+                                        <caption id="pts30-aaa-coach-caption">PTS30 head circumference chart for
+                                            coaches
                                             (inches).</caption>
                                         <thead>
                                             <tr>
@@ -1291,15 +1069,8 @@
                             <span class="close-btn" aria-hidden="true">?</span>
                             <img src="/images/uniforms/hats/PTS30_BLACK-MAROON_FINAL.jpg.png" alt="Coach hat full view">
                         </label>
-                </div>
-            </section>
+                    </article>
 
-
-
-            <section class="division-section" id="division-softball">
-                <h2 class="left">Softball</h2>
-
-                <div class="program-grid">
                     <!-- Softball A & AA interactive card (players & coaches) -->
                     <article id="play-ephemeral-softball-a-toggle"
                         class="ncll-card ncll-card--division ncll-card--overlay"
@@ -1322,12 +1093,15 @@
                         </div>
 
                         <div class="ncll-card__body panel panel-intro">
-                            <h4 class="ncll-card__title" id="play-ephemeral-softball-a-h4">A &amp; AA Softball Uniform
+                            <h4 class="ncll-card__title" id="play-ephemeral-softball-a-h4">A &amp; AA Softball
+                                Uniform
                                 Options &mdash; Players &amp; Coaches</h4>
                             <p class="ncll-card__blurb">A &amp; AA softball players receive jersey model
                                 <strong>4408</strong>
-                                and hat model <strong>4302</strong>. Socks and belts are league supplied (OSFA) and no
-                                hoodies are issued at these levels. Coaches receive a matching 4408 top and a Champro
+                                and hat model <strong>4302</strong>. Socks and belts are league supplied (OSFA)
+                                and no
+                                hoodies are issued at these levels. Coaches receive a matching 4408 top and a
+                                Champro
                                 <strong>HC10</strong> coach hat.
                             </p>
                         </div>
@@ -1406,7 +1180,8 @@
                         <div class="ncll-card__body panel panel1">
                             <div class="ncll-card__details">
                                 <h4>Players - Hat Sizing (4302)</h4>
-                                <p>Hat model for softball A &amp; AA players: <strong>4302</strong>. Choose the best
+                                <p>Hat model for softball A &amp; AA players: <strong>4302</strong>. Choose the
+                                    best
                                     head-circumference
                                     range from the chart.</p>
                                 <div class="ncll-card__graphics">
@@ -1418,7 +1193,8 @@
                                 <h5>Size chart - Hat (4302) - Normalized</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="4302-sba-caption">
-                                        <caption id="4302-sba-caption">Hat 4302 head circumference ranges in inches.
+                                        <caption id="4302-sba-caption">Hat 4302 head circumference ranges in
+                                            inches.
                                         </caption>
                                         <thead>
                                             <tr>
@@ -1444,7 +1220,8 @@
                         <div class="ncll-card__body panel panel2">
                             <div class="ncll-card__details">
                                 <h4>Coaches - Jersey Sizing</h4>
-                                <p>Softball A &amp; AA coaches also wear jersey model <strong>4408</strong>. Use the
+                                <p>Softball A &amp; AA coaches also wear jersey model <strong>4408</strong>. Use
+                                    the
                                     same normalized
                                     table when ordering adult sizes.</p>
                                 <div class="ncll-card__graphics">
@@ -1456,7 +1233,8 @@
                                 <h5>Size chart - Jersey (4408) - Adult Sizes</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="4408-sba-coach-caption">
-                                        <caption id="4408-sba-coach-caption">Adult jersey 4408 pit-to-pit and body
+                                        <caption id="4408-sba-coach-caption">Adult jersey 4408 pit-to-pit and
+                                            body
                                             length measurements in inches.</caption>
                                         <thead>
                                             <tr>
@@ -1500,7 +1278,8 @@
                         <div class="ncll-card__body panel panel3">
                             <div class="ncll-card__details">
                                 <h4>Coaches - Hat Sizing (HC10)</h4>
-                                <p>Softball A &amp; AA coaches use Champro <strong>HC10</strong> hats. Match head
+                                <p>Softball A &amp; AA coaches use Champro <strong>HC10</strong> hats. Match
+                                    head
                                     circumference to the
                                     range shown.</p>
                                 <div class="ncll-card__graphics">
@@ -1512,7 +1291,8 @@
                                 <h5>Size chart - Hat (HC10)</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="hc10-sba-caption">
-                                        <caption id="hc10-sba-caption">HC10 coach hat head circumference ranges in
+                                        <caption id="hc10-sba-caption">HC10 coach hat head circumference ranges
+                                            in
                                             inches.</caption>
                                         <thead>
                                             <tr>
@@ -1600,13 +1380,16 @@
                         </div>
 
                         <div class="ncll-card__body panel panel-intro">
-                            <h4 class="ncll-card__title" id="play-ephemeral-softball-aaa-h4">Upper Divisions (AAA, Majors,
+                            <h4 class="ncll-card__title" id="play-ephemeral-softball-aaa-h4">Upper Divisions
+                                (AAA, Majors,
                                 Juniors &amp; Seniors) Uniform Options &mdash; Players &amp; Coaches</h4>
                             <p class="ncll-card__blurb">Upper division softball players wear jersey
                                 <strong>4408</strong>, hat
-                                <strong>4302</strong>, and add hoodie <strong>PC90H</strong>. Coaches receive ST350 (or
+                                <strong>4302</strong>, and add hoodie <strong>PC90H</strong>. Coaches receive
+                                ST350 (or
                                 ST550) tops,
-                                PC90H hoodies, and Champro <strong>HC10</strong> hats. Use the panels to confirm sizing
+                                PC90H hoodies, and Champro <strong>HC10</strong> hats. Use the panels to confirm
+                                sizing
                                 before submitting
                                 orders.
                             </p>
@@ -1615,7 +1398,8 @@
                         <div class="ncll-card__body panel panel0">
                             <div class="ncll-card__details">
                                 <h4>Players - Jersey Sizing</h4>
-                                <p>Jersey model <strong>4408</strong> continues for AAA and older softball teams.</p>
+                                <p>Jersey model <strong>4408</strong> continues for AAA and older softball
+                                    teams.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-sbaaa-1" class="lightbox-thumb">
                                         <img class="ncll-card__graphic ncll-card__graphic--shirt"
@@ -1694,7 +1478,8 @@
                                 <h5>Size chart - Hat (4302)</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="4302-sbaaa-caption">
-                                        <caption id="4302-sbaaa-caption">Hat 4302 head circumference ranges in inches.
+                                        <caption id="4302-sbaaa-caption">Hat 4302 head circumference ranges in
+                                            inches.
                                         </caption>
                                         <thead>
                                             <tr>
@@ -1720,7 +1505,8 @@
                         <div class="ncll-card__body panel panel2">
                             <div class="ncll-card__details">
                                 <h4>Players - Hoodie (PC90H)</h4>
-                                <p>AAA and above receive hoodie model <strong>PC90H</strong>. The table shows normalized
+                                <p>AAA and above receive hoodie model <strong>PC90H</strong>. The table shows
+                                    normalized
                                     pit-to-pit and body length values.</p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-sbaaa-5" class="lightbox-thumb">
@@ -1732,7 +1518,8 @@
                                 <h5>Size chart - Hoodie (PC90H) - Normalized</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="pc90h-sbaaa-caption">
-                                        <caption id="pc90h-sbaaa-caption">PC90H hoodie pit-to-pit and body length
+                                        <caption id="pc90h-sbaaa-caption">PC90H hoodie pit-to-pit and body
+                                            length
                                             measurements in inches.</caption>
                                         <thead>
                                             <tr>
@@ -1787,7 +1574,9 @@
                             <div class="ncll-card__details">
                                 <h4>Coaches - Shirt Options (ST350 / ST550)</h4>
                                 <p>Coaches may choose the lightweight <strong>ST350</strong> short-sleeve or
-                                    <strong>ST550</strong> for additional coverage. Both tables are provided below.</p>
+                                    <strong>ST550</strong> for additional coverage. Both tables are provided
+                                    below.
+                                </p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-sbaaa-7" class="lightbox-thumb">
                                         <img class="ncll-card__graphic ncll-card__graphic--shirt"
@@ -1802,7 +1591,8 @@
                                 <h5>Size chart - ST350 (Pit-to-pit)</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="st350-sbaaa-caption">
-                                        <caption id="st350-sbaaa-caption">ST350 pit-to-pit and body length measurements
+                                        <caption id="st350-sbaaa-caption">ST350 pit-to-pit and body length
+                                            measurements
                                             in inches.</caption>
                                         <thead>
                                             <tr>
@@ -1858,7 +1648,8 @@
                                 <h5>Size chart - ST550 (Pit-to-pit)</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="st550-sbaaa-caption">
-                                        <caption id="st550-sbaaa-caption">ST550 pit-to-pit and body length at back
+                                        <caption id="st550-sbaaa-caption">ST550 pit-to-pit and body length at
+                                            back
                                             measurements in inches.</caption>
                                         <thead>
                                             <tr>
@@ -1927,7 +1718,8 @@
                                 <h5>Size chart - Hat (HC10)</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="hc10-sbaaa-caption">
-                                        <caption id="hc10-sbaaa-caption">HC10 coach hat head circumference ranges in
+                                        <caption id="hc10-sbaaa-caption">HC10 coach hat head circumference
+                                            ranges in
                                             inches.</caption>
                                         <thead>
                                             <tr>
@@ -1953,7 +1745,8 @@
                         <div class="ncll-card__body panel panel5">
                             <div class="ncll-card__details">
                                 <h4>Coaches - Hoodie (PC90H)</h4>
-                                <p>Coaches also receive the PC90H hoodie. Match sizing using the same normalized values.
+                                <p>Coaches also receive the PC90H hoodie. Match sizing using the same normalized
+                                    values.
                                 </p>
                                 <div class="ncll-card__graphics">
                                     <label for="lightbox-sbaaa-5" class="lightbox-thumb">
@@ -1965,7 +1758,8 @@
                                 <h5>Size chart - Hoodie (PC90H) - Coaches</h5>
                                 <div class="ncll-micro">
                                     <table class="ncll-micro__table" aria-describedby="pc90h-sbaaa-coach-caption">
-                                        <caption id="pc90h-sbaaa-coach-caption">PC90H hoodie pit-to-pit and body length
+                                        <caption id="pc90h-sbaaa-coach-caption">PC90H hoodie pit-to-pit and body
+                                            length
                                             measurements in inches (coaches).</caption>
                                         <thead>
                                             <tr>
@@ -2080,7 +1874,7 @@
                         </label>
                     </article>
                 </div>
-            </section>
+            </div>
         </div>
     </main>
 </body>
