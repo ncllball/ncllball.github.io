@@ -1951,17 +1951,22 @@ details.footies[open] summary::before {
     padding-top: 10px;
 }
 
-.ncll-card__heading-title {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
 .ncll-card__sport-icon {
     width: 1.5rem;
     height: 1.5rem;
     object-fit: contain;
     display: block;
+    margin-left: auto;
+}
+
+.ncll-card__heading-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ncll-card__heading-title .ncll-card__title {
+    flex: 1;
 }
 
 .ncll-card__meta {
