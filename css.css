@@ -1970,9 +1970,6 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__sport-icon--league {
-    background-color: #fff;
-    padding: 0.125rem;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
     width: 2rem;
     height: 2rem;
 }
