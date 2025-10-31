@@ -2272,7 +2272,7 @@ details.footies[open] summary::before {
 }
 
 :root {
-    --card-toggle-sticky-offset: 2.75rem;
+    --card-toggle-sticky-offset: 4.75rem;
     --card-toggle-sticky-gap: 1.5rem;
 }
 
