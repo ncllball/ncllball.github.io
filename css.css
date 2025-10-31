@@ -2155,6 +2155,11 @@ details.footies[open] summary::before {
     border-color: #1a2b5c;
 }
 
+.ncll-card__cta .button--primary {
+    background: var(--color_blue);
+    color: #fff;
+    border: 1px solid var(--color_blue);
+}
 /* Overlay reveal variant ------------------------------------------------- */
 .ncll-card--overlay {
     position: relative;
