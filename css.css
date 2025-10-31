@@ -2566,3 +2566,7 @@ details.footies[open] summary::before {
     transform: scale(1);
     opacity: 1;
 }
+
+.subtle {
+    text-decoration: italics;
+}
