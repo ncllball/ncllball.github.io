@@ -2335,3 +2335,276 @@ body:not(.cms-right) .only-on-right {
         color: var(--color_muted);
         font-size: 0.9rem
     }
+
+/* =====================================
+   NCLL Uniform Playground (global styles)
+   ===================================== */
+:root {
+    --playground-sticky-offset: 2.75rem;
+    --playground-sticky-gap: 1.5rem;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] {
+    position: relative;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .panel {
+    display: none;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-intro"]:checked ~ .panel-intro,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-0"]:checked ~ .panel0,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-1"]:checked ~ .panel1,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-2"]:checked ~ .panel2,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-3"]:checked ~ .panel3,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-4"]:checked ~ .panel4,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-5"]:checked ~ .panel5,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-6"]:checked ~ .panel6 {
+    display: block;
+}
+
+.division-toggle {
+    margin: 2.5rem 0 3rem;
+}
+
+.division-toggle__controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem;
+    background: #f4f5f7;
+    border-radius: 999px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
+}
+
+.division-toggle__input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.division-toggle__pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem 1.6rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #42526e;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.division-toggle__input:checked + .division-toggle__pill {
+    background: #133c76;
+    color: #fff;
+    border-color: #133c76;
+    box-shadow: 0 4px 10px rgba(19, 60, 118, 0.25);
+}
+
+.division-toggle__input:focus-visible + .division-toggle__pill {
+    box-shadow: 0 0 0 3px rgba(19, 60, 118, 0.35);
+}
+
+#play-division-baseball:checked ~ .division-toggle__panels #division-softball {
+    display: none;
+}
+
+#play-division-softball:checked ~ .division-toggle__panels #division-baseball {
+    display: none;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff;
+    padding: 0.85rem 1.5rem 0.65rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    --sticky-offset: var(--playground-sticky-offset, 6.75rem);
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .panel {
+    padding-top: calc(var(--sticky-offset, var(--playground-sticky-offset, 6.75rem)) + var(--playground-sticky-gap, 1.5rem));
+    scroll-margin-top: calc(var(--sticky-offset, var(--playground-sticky-offset, 6.75rem)) + 0.5rem);
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .panel > :first-child {
+    margin-top: 0;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading h3,
+article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading h4 {
+    margin: 0;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-heading h4 {
+    margin-top: 0.35rem;
+}
+
+.ncll-card__sticky-heading .ncll-card__actions {
+    position: static;
+    height: auto;
+    border-top: none;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .ncll-card__sticky-subtitle {
+    margin: 0.35rem 0 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: #444;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .btn-next {
+    display: none;
+    cursor: pointer;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-intro"]:checked ~ .actions .btn-next-intro,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-0"]:checked ~ .actions .btn-next-0,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-1"]:checked ~ .actions .btn-next-1,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-2"]:checked ~ .actions .btn-next-2,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-3"]:checked ~ .actions .btn-next-3,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-4"]:checked ~ .actions .btn-next-4,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-5"]:checked ~ .actions .btn-next-5,
+article[id^="play-ephemeral-"][id$="-toggle"] input[type="radio"][id$="-6"]:checked ~ .actions .btn-next-6 {
+    display: inline-block;
+}
+
+.ncll-micro__table {
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+}
+
+.ncll-micro__table th {
+    border-collapse: collapse;
+    font-weight: 400;
+}
+
+.ncll-micro__table thead th {
+    border-collapse: collapse;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+}
+
+.ncll-micro__table tbody td {
+    border-collapse: collapse;
+    font-weight: 400;
+    text-align: center;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .lightbox-thumb img {
+    max-width: 140px;
+    border-radius: 4px;
+    display: block;
+    filter: grayscale(90%) contrast(100%);
+    transition: filter 220ms ease, transform 200ms ease;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .lightbox-thumb:hover img,
+article[id^="play-ephemeral-"][id$="-toggle"] .lightbox-thumb:focus img {
+    filter: none;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .lightbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 220ms ease, visibility 220ms ease;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .lightbox span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .lightbox .close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: auto;
+    height: auto;
+    clip: auto;
+    color: #fff;
+    font-size: 2rem;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] .lightbox img {
+    max-width: min(90vw, 640px);
+    max-height: 80vh;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+    transform: scale(0.96);
+    transition: transform 240ms ease, opacity 240ms ease;
+    opacity: 0.85;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle {
+    position: absolute;
+    left: -9999px;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="1"],
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="3"],
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="5"],
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="7"],
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="8"],
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="10"],
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="jersey"],
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="player-hat"],
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="player-hoodie"],
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="coach-shirt"],
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="coach-hoodie"],
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="coach-hat"],
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle:checked ~ .lightbox[data-id="hat"] {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-1"]:checked ~ .lightbox[data-id="1"] img,
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-3"]:checked ~ .lightbox[data-id="3"] img,
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-4"]:checked ~ .lightbox[data-id="4"] img,
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-5"]:checked ~ .lightbox[data-id="5"] img,
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-6"]:checked ~ .lightbox[data-id="6"] img,
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-7"]:checked ~ .lightbox[data-id="7"] img,
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-8"]:checked ~ .lightbox[data-id="8"] img,
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-9"]:checked ~ .lightbox[data-id="9"] img,
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-10"]:checked ~ .lightbox[data-id="10"] img,
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-12"]:checked ~ .lightbox[data-id="12"] img,
+article[id^="play-ephemeral-"][id$="-toggle"] input.lightbox-toggle[id$="-hat"]:checked ~ .lightbox[data-id="hat"] img {
+    transform: scale(1);
+    opacity: 1;
+}
