@@ -2265,7 +2265,6 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--toggle .ncll-card__sticky-footer {
-    position: static;
     height: auto;
     padding: 12px 20px;
     border-top: 1px solid var(--color_border_light);
