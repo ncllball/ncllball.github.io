@@ -1226,7 +1226,7 @@ body:not(.cms-right) .only-on-right {
     padding: 20px;
     padding-bottom: 70px;
     overflow-y: auto;
-    background: white;
+    background: var(--color_surface_light);
     z-index: 1;
     min-height: 500px
 }
@@ -1329,7 +1329,7 @@ body:not(.cms-right) .only-on-right {
 .ncll-card__details li {
     margin: 3px 0;
     line-height: 1.35;
-    font-size: .9rem
+    font-size: .85rem
 }
 
 .ncll-card--overlay .ncll-card__actions {
@@ -2629,5 +2629,3 @@ details.footies[open] summary::before {
     transform: scale(1);
     opacity: 1;
 }
-
-
