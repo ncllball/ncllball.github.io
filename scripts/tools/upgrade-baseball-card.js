@@ -81,7 +81,7 @@ const baseToken = (() => {
   return tokens[0];
 })();
 
-const slugBase = `play-ephemeral-baseball-${baseToken}`;
+const slugBase = `uniforms-baseball-${baseToken}`;
 const shortSlug = baseToken;
 const hasHero = Boolean(heroImgTag);
 
@@ -174,7 +174,7 @@ const introPanel =
 
 const newBlock = [
   `<!-- ${commentLabel} -->`,
-  `            <article id="${slugBase}-toggle"\n                class="ncll-card ncll-card--division ncll-card--overlay"\n                aria-labelledby="${slugBase}-h3">`,
+  `            <article id="${slugBase}-toggle"\n                class="ncll-card ncll-card--division ncll-card--overlay ncll-card--toggle"\n                aria-labelledby="${slugBase}-h3">`,
   `                <input type="radio" name="${slugBase}" id="${slugBase}-intro" checked>`,
   ...detailSections.map((_, idx) => `                <input type="radio" name="${slugBase}" id="${slugBase}-${idx}">`),
   heroCheckboxLine,
