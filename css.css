@@ -2333,59 +2333,21 @@ details.footies[open] summary::before {
     text-align: center;
 }
 
-.division-toggle {
-    margin: 2.5rem 0 3rem;
-}
 
-.division-toggle__controls {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.35rem;
-    background: #f4f5f7;
-    border-radius: 999px;
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
-    margin-bottom: 2rem;
-}
 
-.division-toggle__input {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
 
-.division-toggle__pill {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.45rem 1.6rem;
-    border-radius: 999px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #42526e;
-    border: 1px solid transparent;
-    cursor: pointer;
-    transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
-}
 
-.division-toggle__input:checked+.division-toggle__pill {
-    background: #133c76;
-    color: #fff;
-    border-color: #133c76;
-    box-shadow: 0 4px 10px rgba(19, 60, 118, 0.25);
-}
 
-.division-toggle__input:focus-visible+.division-toggle__pill {
-    box-shadow: 0 0 0 3px rgba(19, 60, 118, 0.35);
-}
 
-#play-division-baseball:checked~.division-toggle__panels #division-softball {
-    display: none;
-}
 
-#play-division-softball:checked~.division-toggle__panels #division-baseball {
-    display: none;
-}
+
+
+
+
+
+#play-division-baseball:checked~
+
+#play-division-softball:checked~
 
 .ncll-card--toggle input[type="radio"][id$="-intro"]:checked~.panel-intro,
 .ncll-card--toggle input[type="radio"][id$="-0"]:checked~.panel0,
@@ -2601,4 +2563,5 @@ details.footies[open] summary::before {
 .subtle {
     font-style: italic;
 }
+
 
