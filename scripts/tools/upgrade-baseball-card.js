@@ -48,7 +48,7 @@ const detailBlock = grab(
   ''
 );
 const footerActionsInner = grab(
-  /<div class="ncll-card__actions"[^>]*>([\s\S]*?)<\/div>\s*<\/article>/,
+  /<div class="ncll-card__sticky-footer"[^>]*>([\s\S]*?)<\/div>\s*<\/article>/,
   legacyBlock,
   ''
 ).trim();
@@ -110,13 +110,13 @@ const buildActionButtons = (includeBackForLast) => {
 };
 
 const headerActions = [
-  `                <div class="ncll-card__actions actions" role="group" aria-label="${title} card controls">`,
+  `                <div class="ncll-card__sticky-footer actions" role="group" aria-label="${title} card controls">`,
   buildActionButtons(true),
   '                </div>'
 ].join('\n');
 
 const footerActions = [
-  `                <div class="ncll-card__actions actions" role="group"\n                    aria-label="${title} card controls (footer)">`,
+  `                <div class="ncll-card__sticky-footer actions" role="group"\n                    aria-label="${title} card controls (footer)">`,
   buildActionButtons(true),
   '                </div>'
 ].join('\n');
@@ -194,3 +194,4 @@ const updated = source.replace(legacyBlock, newBlock);
 fs.writeFileSync(filePath, updated, 'utf8');
 
 console.log(`Migrated card: ${title}`);
+
