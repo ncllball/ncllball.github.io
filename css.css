@@ -2015,7 +2015,7 @@ details.footies[open] summary::before {
 .ncll-card__details h4 {
     font-size: .9rem;
     margin: 0 0 10px 0;
-    color: var(--color_blue);
+    color: var(--color_red);
     font-weight: 600;
     text-align: left !important;
 }
