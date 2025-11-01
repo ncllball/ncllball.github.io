@@ -120,6 +120,8 @@ If you want, I can now:
 
 Pick which you prefer and I'll proceed.
 
+
+
 What Players Do
 Session Format
 Schedule, Location & Registration
