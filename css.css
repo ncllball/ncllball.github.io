@@ -2591,3 +2591,8 @@ details.footies[open] summary::before {
     height: 250px;
     object-fit: cover;
 }
+.images {
+    right: 0;
+    float: right;
+    padding: 55px 0 20px 20px;
+}
