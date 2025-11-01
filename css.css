@@ -2597,7 +2597,7 @@ details.footies[open] summary::before {
     padding: 55px 0 20px 20px;
 }
 
-.ncll-card__title h4 {
+.ncll-card__body h4 {
     font-size: .9rem;
     margin: 0 0 10px 0;
     color: var(--color_red);
