@@ -2077,6 +2077,7 @@ details.footies[open] summary::before {
 }
 
 @media(max-width:480px) {
+
     .ncll-card__clipboard--float,
     .ncll-card__clipboard-img {
         width: 36px;
@@ -2160,6 +2161,7 @@ details.footies[open] summary::before {
     color: #fff;
     border: 1px solid var(--color_blue);
 }
+
 /* Overlay reveal variant ------------------------------------------------- */
 .ncll-card--overlay {
     position: relative;
@@ -2591,6 +2593,7 @@ details.footies[open] summary::before {
     height: 250px;
     object-fit: cover;
 }
+
 .images {
     right: 0;
     float: right;
@@ -2603,4 +2606,8 @@ details.footies[open] summary::before {
     color: var(--color_subtle);
     font-weight: 600;
     text-align: left !important;
+}
+
+.ncll-micro__table caption {
+    display: none;
 }
