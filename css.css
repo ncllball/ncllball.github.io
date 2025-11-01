@@ -2156,10 +2156,46 @@ details.footies[open] summary::before {
     border-color: #1a2b5c;
 }
 
+.ncll-card__cta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.ncll-card__cta .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
 .ncll-card__cta .button--primary {
     background: var(--color_blue);
     color: #fff;
     border: 1px solid var(--color_blue);
+}
+
+.ncll-card__cta .button--primary:hover {
+    background: #1a2b5c;
+    border-color: #1a2b5c;
+}
+
+.ncll-card__cta .button--ghost {
+    background: #fff;
+    color: var(--color_blue);
+    border: 1px solid var(--color_blue);
+}
+
+.ncll-card__cta .button--ghost:hover {
+    background: var(--color_blue);
+    color: #fff;
 }
 
 /* Overlay reveal variant ------------------------------------------------- */
