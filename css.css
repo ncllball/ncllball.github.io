@@ -2596,3 +2596,11 @@ details.footies[open] summary::before {
     float: right;
     padding: 55px 0 20px 20px;
 }
+
+.ncll-card__title h4 {
+    font-size: .9rem;
+    margin: 0 0 10px 0;
+    color: var(--color_blue);
+    font-weight: 600;
+    text-align: left !important;
+}
