@@ -1990,7 +1990,6 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__meta li {
-    margin: 4px 0;
     line-height: 1.35;
     list-style: none;
     color: var(--color_muted);
