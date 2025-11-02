@@ -1,5 +1,5 @@
-# Default automatic text normalization
-* text=auto
+# Default automatic text normalization (force LF in working tree)
+* text eol=lf
 
 # Ensure consistent LF endings for data files
 *.csv text eol=lf
