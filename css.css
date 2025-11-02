@@ -2241,7 +2241,6 @@ details.footies[open] summary::before {
     inset: 0;
     padding: 20px;
     padding-bottom: 70px;
-    overflow-y: auto;
     background: var(--color_surface_light);
     z-index: 1;
     min-height: 500px;
@@ -2252,7 +2251,6 @@ details.footies[open] summary::before {
 .ncll-card--overlay .ncll-card__body.pd-override {
     padding: 20px;
     padding-bottom: 0;
-    overflow-y: auto;
     background: transparent;
     z-index: auto;
     min-height: 500px;
@@ -2729,5 +2727,3 @@ details.footies[open] summary::before {
 .ncll-micro__table caption {
     display: none;
 }
-
-
