@@ -2438,8 +2438,6 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--toggle .ncll-card__sticky-heading {
-    display: flex;
-    flex-wrap: nowrap;
     position: absolute;
     top: 0;
     left: 0;
