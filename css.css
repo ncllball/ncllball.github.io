@@ -2457,7 +2457,10 @@ details.footies[open] summary::before {
     /* Keeps card headers aligned even when titles wrap */
 }
 
-\.ncll-card--toggle \.ncll-card__body {`n    max-height: calc(100% - var(--ncll-card-actions-height, var(--card-toggle-actions-height)));`n    overflow-y: auto;`n    overscroll-behavior: contain;`n
+.ncll-card--toggle .ncll-card__body {
+    max-height: calc(100% - var(--ncll-card-actions-height, var(--card-toggle-actions-height)));
+    overflow-y: auto;
+    overscroll-behavior: contain;
     padding-top: calc(
         var(--ncll-card-sticky-offset, var(--card-toggle-sticky-height)) +
         var(--ncll-card-sticky-gap, var(--card-toggle-sticky-gap))
@@ -2727,3 +2730,4 @@ details.footies[open] summary::before {
 .ncll-micro__table caption {
     display: none;
 }
+
