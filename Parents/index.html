@@ -39,7 +39,7 @@
 						<input type="checkbox" id="lightbox-tball-5" class="lightbox-toggle" />
 
 						<div class="ncll-card__sticky-heading" aria-hidden="true">
-							<h3 class="ncll-card__title">T-Ball &amp; Kindy</h3>
+								<h3 class="ncll-card__title">T-Ball &amp; Kindy</h3>
 							<div class="ncll-card__sticky-footer actions" role="group" aria-label="T-Ball Uniforms toggle actions">
 								<label class="button button--primary btn-next btn-next-intro" for="uniforms-tball-0">Next</label>
 								<label class="button button--primary btn-next btn-next-0" for="uniforms-tball-1">Next</label>
@@ -266,6 +266,7 @@
 					</article>
 					<!-- Baseball level cards (mirrors Softball markup) -->
 					<!-- Play-only ephemeral toggle (CSS-only, scoped to this file) -->
+
 					<article id="uniforms-a-toggle" class="ncll-card ncll-card--division ncll-card--overlay ncll-card--toggle" aria-labelledby="uniforms-a-h3">
 						<!-- radios must precede panels for the sibling selector to work -->
 						<!-- Intro panel is the new default first panel -->
@@ -281,8 +282,20 @@
 						<input type="checkbox" id="lightbox-a-5" class="lightbox-toggle" />
 
 						<div class="ncll-card__sticky-heading" aria-hidden="true">
-							<h3 class="ncll-card__title" id="uniforms-a-h3">A &amp; AA &mdash; Baseball</h3>
+							<div class="ncll-card__heading-title">
+								<h3 class="ncll-card__title" id="uniforms-a-h3">A &amp; AA &mdash; Baseball</h3>
+							</div>
+
+							<div class="ncll-card__sticky-footer actions" role="group" aria-label="A &amp; AA Baseball toggle actions">
+								<label class="button button--primary btn-next btn-next-intro" for="uniforms-a-0">Next</label>
+								<label class="button button--primary btn-next btn-next-0" for="uniforms-a-1">Next</label>
+								<label class="button button--primary btn-next btn-next-1" for="uniforms-a-2">Next</label>
+								<label class="button button--primary btn-next btn-next-2" for="uniforms-a-3">Next</label>
+								<label class="button button--primary btn-next btn-next-3" for="uniforms-a-4">Next</label>
+								<label class="button button--primary btn-next btn-next-4" for="uniforms-a-intro">Back</label>
+							</div>
 						</div>
+
 						<!-- New Intro panel shown by default -->
 
 						<div class="ncll-card__body panel panel-intro">
@@ -480,14 +493,6 @@
 							</div>
 						</div>
 
-						<div class="ncll-card__sticky-footer actions" role="group" aria-label="A &amp; AA Baseball toggle actions">
-							<label class="button button--primary btn-next btn-next-intro" for="uniforms-a-0">Next</label>
-							<label class="button button--primary btn-next btn-next-0" for="uniforms-a-1">Next</label>
-							<label class="button button--primary btn-next btn-next-1" for="uniforms-a-2">Next</label>
-							<label class="button button--primary btn-next btn-next-2" for="uniforms-a-3">Next</label>
-							<label class="button button--primary btn-next btn-next-3" for="uniforms-a-4">Next</label>
-							<label class="button button--primary btn-next btn-next-4" for="uniforms-a-intro">Back</label>
-						</div>
 						<!-- lightbox overlays: clicking anywhere in an overlay (including the image) will close it -->
 						<label for="lightbox-a-1" class="lightbox" data-id="1" role="dialog" aria-modal="true" aria-label="Enlarged image" tabindex="0">
 							<span>Close image</span>
