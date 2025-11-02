@@ -1,0 +1,848 @@
+Date	Day	Start Permit Time	End Permit Time	field 	Type	Start Time for Event	End Time for Event	Home	Away	Division	Duration of Event (in hours)
+3/25/2025	Tue	6:00 PM	8:30 PM	lw5	Game	6:00 PM	8:30 PM	Project 9-Majors BB	Cedarhouse Flowers-Majors BB	BB Majors	2.5
+3/25/2025	Tue	6:00 PM	9:00 PM	lw6	Game	6:00 PM	8:30 PM	Zahra Lechak-Majors BB	RUG 1	BB Majors	2.5
+3/25/2025	Tue	6:00 PM	9:00 PM	lw3	Game	6:00 PM	8:30 PM	Lincoln HS-Majors BB	El Camión-Majors BB	BB Majors	2.5
+3/25/2025	Tue	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:15 PM	Greenwood Heating & Air A SB	Practice	SB A	1.25
+3/25/2025	Tue	5:00 PM	7:00 PM	ross	Practice	5:45 PM	7:00 PM	TriWest A SB	Practice	SB A	
+3/25/2025	Tue	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:15 PM	Puffin Pediatrics AA SB (Leon)	Practice	SB AA	1.25
+3/25/2025	Tue	5:45 PM	8:15 PM	bitter lake 1	Practice	5:45 PM	8:15 PM	CubeSmart AAA SB	Practice	SB AAA	2.5
+3/25/2025	Tue	6:00 PM	8:15 PM	lw4	Practice	6:00 PM	8:15 PM	Valley Events AAA SB	Practice	SB AAA	2.25
+3/25/2025	Tue	5:45 PM	8:15 PM	bitter lake 1	Practice	5:45 PM	8:15 PM	Orca Analytics AAA SB	Practice	SB AAA	2.5
+3/25/2025	Tue	6:00 PM	8:15 PM	lw4	Practice	6:00 PM	8:15 PM	SB Juniors	Practice	SB Juniors	2.25
+3/26/2025	Wed	5:45 PM	8:15 PM	lw5	Game	6:00 PM	8:15 PM	Harjo Construction-AAA BB	Kitch Switch-AAA BB	BB AAA	2.25
+3/26/2025	Wed	5:45 PM	8:00 PM	lw4	Game	5:45 PM	8:00 PM	Industrious U-District-AAA BB	Focus Baseball-AAA BB	BB AAA	2.25
+3/26/2025	Wed	6:00 PM	9:00 PM	lw6	Game	6:00 PM	8:15 PM	Vertical Construction Group-AAA BB	Cube Smart-AAA BB	BB AAA	2.25
+3/26/2025	Wed	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	7:00 PM	SB AA	Practice	SB AA	2
+3/26/2025	Wed	5:00 PM	7:30 PM	ross	Practice	5:00 PM	7:00 PM	SB AA	Practice	SB AA	2
+3/26/2025	Wed	6:00 PM	9:00 PM	lw3	Practice	6:00 PM	8:00 PM	56th St Market SB Majors	Practice	SB Majors	3
+3/27/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 5	Practice	BB A	1
+3/27/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 6	Practice	BB A	1
+3/27/2025	Thu	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 7	Practice	BB A	1
+3/27/2025	Thu	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 8	Practice	BB A	1
+3/27/2025	Thu	5:45 PM	8:15 PM	lw5	Practice	6:45 PM	8:15 PM	El Camión-Majors BB	Practice	BB Majors	1.5
+3/27/2025	Thu	6:00 PM	8:15 PM	lw6	Practice	6:00 PM	7:30 PM	Project 9-Majors BB	Practice	BB Majors	1.5
+3/27/2025	Thu	6:00 PM	9:00 PM	lw3	Practice	7:15 PM	8:45 PM	Cedarhouse Flowers-Majors BB	Practice	BB Majors	1.5
+3/27/2025	Thu	5:45 PM	8:15 PM	lw5	Practice	5:45 PM	7:15 PM	Zahra Lechak-Majors BB	Practice	BB Majors	1.5
+3/27/2025	Thu	6:00 PM	9:00 PM	lw3	Practice	6:00 PM	7:30 PM	Lincoln HS-Majors BB	Practice	BB Majors	1.5
+3/27/2025	Thu	6:00 PM	9:00 PM	lw4	Game	6:00 PM	8:15 PM	CubeSmart AAA SB	Queen Anne 2	SB AAA	2.25
+3/27/2025	Thu	5:45 PM	7:30 PM	northacres 2	Practice	5:45 PM	7:15 PM	Valley Events AAA SB	Practice	SB AAA	1.5
+3/28/2025	Fri	5:45 PM	8:00 PM	lw3	Practice	5:45 PM	7:00 PM	BB AA 1	Practice	BB AA	1.25
+3/28/2025	Fri	6:00 PM	9:00 PM	bitter lake 1	Practice	6:00 PM	7:15 PM	BB AA 2	Practice	BB AA	1.25
+3/28/2025	Fri	5:45 PM	8:00 PM	lw4	Practice	5:45 PM	7:00 PM	BB AA 3	Practice	BB AA	1.25
+3/28/2025	Fri	5:45 PM	8:00 PM	lw5	Practice	5:45 PM	7:00 PM	BB AA 4	Practice	BB AA	1.25
+3/28/2025	Fri	5:00 PM	7:30 PM	lw6	Practice	5:00 PM	6:15 PM	BB AA 5	Practice	BB AA	1.25
+3/28/2025	Fri	5:00 PM	7:30 PM	lw6	Practice	6:15 PM	7:30 PM	BB AA 6	Practice	BB AA	1.25
+3/28/2025	Fri	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:15 PM	BB AA 7	Practice	BB AA	1.25
+3/28/2025	Fri	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:15 PM	BB AA 8	Practice	BB AA	1.25
+3/29/2025	Sat	8:30 AM	5:30 PM	bfday	Game	3:00 PM	4:30 PM	BB A 1	BB A 2	BB A	1.5
+3/29/2025	Sat	8:30 AM	5:30 PM	bfday	Game	9:00 AM	10:30 AM	BB A 3	BB A 4	BB A	1.5
+3/29/2025	Sat	8:30 AM	5:30 PM	bfday	Game	1:00 PM	2:30 PM	BB A 5	BB A 6	BB A	1.5
+3/29/2025	Sat	8:30 AM	5:30 PM	bfday	Game	11:00 AM	12:30 PM	BB A 7	BB A 8	BB A	1.5
+3/29/2025	Sat	10:00 AM	3:00 PM	bitter lake 1	EMPTY	10:00 AM	3:00 PM	EMPTY	EMPTY	EMPTY	5
+3/29/2025	Sat	9:00 AM	6:00 PM	lw3	Practice	9:00 AM	11:00 AM	Marketime Foods AA SB (Baxter/DeNike)	Practice	SB AA	2
+3/29/2025	Sat	9:00 AM	6:00 PM	lw3	Game	12:30 PM	2:45 PM	Orca Analytics AAA SB	CubeSmart AAA SB	SB AAA	2.5
+3/29/2025	Sat	9:00 AM	6:00 PM	lw3	Practice	3:00 PM	4:30 PM	TriWest A SB	Practice	SB A	1.5
+3/29/2025	Sat	9:00 AM	6:00 PM	lw3	Practice	4:30 PM	6:00 PM	Greenwood Heating & Air A SB	Practice	SB A	1.5
+3/29/2025	Sat	9:00 AM	6:00 PM	lw4	Game	2:00 PM	4:15 PM	Kitch Switch-AAA BB	Northwest 1	BB AAA	2.25
+3/29/2025	Sat	9:00 AM	6:00 PM	lw4	Game	11:30 AM	1:45 PM	Bear Mountain Capital-AAA BB	Cube Smart-AAA BB	BB AAA	2.25
+3/29/2025	Sat	9:00 AM	6:00 PM	lw4	Game	9:00 AM	11:15 AM	Harjo Construction-AAA BB	Industrious U-District-AAA BB	BB AAA	2.25
+3/29/2025	Sat	9:00 AM	6:00 PM	lw4	Practice	4:30 PM	6:00 PM	Lincoln HS-Majors BB	Practice	BB Majors	1.5
+3/29/2025	Sat	9:00 AM	6:00 PM	lw5	Game	3:30 PM	6:00 PM	Vertical Construction Group-AAA BB	Focus Baseball-AAA BB	BB AAA	2.5
+3/29/2025	Sat	9:00 AM	6:00 PM	lw5	Game	10:00 AM	12:30 PM	El Camión-Majors BB	Cedarhouse Flowers-Majors BB	BB Majors	2.5
+3/29/2025	Sat	9:00 AM	6:00 PM	lw5	Game	12:45 PM	3:15 PM	Project 9-Majors BB	Lincoln HS-Majors BB	BB Majors	2.5
+3/29/2025	Sat	9:00 AM	6:00 PM	lw6	Game	10:00 AM	12:00 PM	Green Lake Orthodontics AA SB (Busto)	Phinney Books AA SB (Barnes)	SB AA	2
+3/29/2025	Sat	9:00 AM	6:00 PM	lw6	Game	1:00 PM	3:00 PM	Puffin Pediatrics AA SB (Leon)	Bear Mountain Capital AA SB (Mitchell)	SB AA	2
+3/29/2025	Sat	9:00 AM	6:00 PM	lw6	Game	3:45 PM	6:00 PM	Valley Events AAA SB	Ballard	SB AAA	2.5
+3/30/2025	Sun	5:00 PM	8:00 PM	lw3	EMPTY	5:00 PM	8:00 PM	EMPTY	EMPTY	EMPTY	3
+3/31/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 1	Practice	BB A	1
+3/31/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 2	Practice	BB A	1
+3/31/2025	Mon	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 3	Practice	BB A	1
+3/31/2025	Mon	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 4	Practice	BB A	1
+3/31/2025	Mon	6:00 PM	8:30 PM	bitter lake 1	EMPTY	6:00 PM	8:15 PM	EMPTY	EMPTY	EMPTY	2.5
+3/31/2025	Mon	5:45 PM	9:00 PM	lw3	Practice	5:45 PM	8:00 PM	56th St Market SB Majors	Practice	SB Majors	2.25
+3/31/2025	Mon	6:00 PM	9:00 PM	lw4	EMPTY	6:00 PM	9:00 PM	EMPTY	EMPTY	EMPTY	3
+3/31/2025	Mon	5:45 PM	9:00 PM	lw5	EMPTY	5:45 PM	9:00 PM	EMPTY	EMPTY	EMPTY	3.25
+3/31/2025	Mon	6:00 PM	9:00 PM	lw6	Game	6:00 PM	8:30 PM	Cutter & Buck SB Majors	Shoreline 1	SB Majors	2.5
+4/1/2025	Tue	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:15 PM	Puffin Pediatrics AA SB (Leon)	Practice	SB AA	1.25
+4/1/2025	Tue	5:00 PM	7:45 PM	ross	Practice	5:00 PM	6:30 PM	TriWest A SB	Practice	SB A	1.5
+4/1/2025	Tue	5:00 PM	7:45 PM	ross	Practice	6:15 PM	7:45 PM	Greenwood Heating & Air A SB	Practice	SB A	1.5
+4/1/2025	Tue	5:45 PM	7:45 PM	northacres 1	Practice	5:45 PM	7:45 PM	CubeSmart AAA SB	Practice	SB AAA	2
+4/1/2025	Tue	5:30 PM	7:00 PM	bitter lake 1	Practice	5:30 PM	7:00 PM	Orca Analytics AAA SB	Practice	SB AAA	1.5
+4/1/2025	Tue	5:45 PM	9:00 PM	lw3	Game	5:45 PM	8:15 PM	Cedarhouse Flowers-Majors BB	Magnolia 3	BB Majors	2.5
+4/1/2025	Tue	6:00 PM	9:00 PM	lw4	Game	6:00 PM	8:30 PM	El Camión-Majors BB	Queen Anne 1	BB Majors	2.5
+4/1/2025	Tue	5:45 PM	9:00 PM	lw5	Practice	7:15 PM	8:45 PM	Project 9-Majors BB	Practice	BB Majors	1.5
+4/1/2025	Tue	5:45 PM	9:00 PM	lw5	Practice	5:45 PM	7:15 PM	SB Juniors	Practice	SB Juniors	1.5
+4/1/2025	Tue	6:00 PM	9:00 PM	lw6	Game	6:00 PM	8:15 PM	Valley Events AAA SB	Queen Anne 2	SB AAA	2.25
+4/2/2025	Wed	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	7:00 PM	SB AA	Practice	SB AA	2
+4/2/2025	Wed	5:00 PM	7:30 PM	ross	Practice	5:00 PM	7:00 PM	SB AA	Practice	SB AA	2
+4/2/2025	Wed	6:00 PM	8:30 PM	bitter lake 1	EMPTY	6:00 PM	8:30 PM	EMPTY	EMPTY	EMPTY	2.5
+4/2/2025	Wed	6:00 PM	9:00 PM	lw3	Game	6:00 PM	8:15 PM	Focus Baseball-AAA BB	Harjo Construction-AAA BB	BB AAA	2.25
+4/2/2025	Wed	5:45 PM	9:00 PM	lw4	Game	5:45 PM	8:00 PM	Kitch Switch-AAA BB	Industrious U-District-AAA BB	BB AAA	2.25
+4/2/2025	Wed	5:45 PM	9:00 PM	lw5	Game	5:45 PM	8:00 PM	Bear Mountain Capital-AAA BB	Vertical Construction Group-AAA BB	BB AAA	2.25
+4/2/2025	Wed	5:45 PM	9:00 PM	lw6	Game	5:45 PM	8:15 PM	56th St Market SB Majors	Magnolia 1	SB Majors	2.5
+4/3/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 5	Practice	BB A	1
+4/3/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 6	Practice	BB A	1
+4/3/2025	Thu	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 7	Practice	BB A	1
+4/3/2025	Thu 	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 8	Practice	BB A	1
+4/3/2025	Thu	5:30 PM	8:00 PM	bitter lake 1	EMPTY	5:30 PM	8:00 PM	EMPTY	EMPTY	EMPTY	2.5
+4/3/2025	Thu	6:00 PM	9:00 PM	lw3	Game	6:00 PM	8:15 PM	CubeSmart AAA SB	Magnolia 3	SB AAA	2.25
+4/3/2025	Thu	5:45 PM	8:00 PM	lw4	Practice	5:45 PM	8:00 PM	Valley Events AAA SB	Practice	SB AAA	2.5
+4/3/2025	Thu	6:00 PM	8:30 PM	lw5	Practice	6:30 PM	8:30 PM	El Camión-Majors BB	Practice	BB Majors	2
+4/3/2025	Thu	6:00 PM	9:00 PM	lw6	Game	6:00 PM	8:30 PM	Cedarhouse Flowers-Majors BB	Lincoln HS-Majors BB	BB Majors	2.5
+4/4/2025	Fri	5:00 PM	7:00 PM	bfday	Game	5:00 PM	6:30 PM	BB AA 4	BB AA 5	BB AA	1.5
+4/4/2025	Fri	5:00 PM	7:00 PM	ross	Game	5:00 PM	6:30 PM	BB AA 8	BB AA 2	BB AA	1.5
+4/4/2025	Fri	5:45 PM	8:00 PM	lw3	Game	6:00 PM	7:30 PM	BB AA 1	BB AA 6	BB AA	1.5
+4/4/2025	Fri	5:45 PM	8:00 PM	lw4	Practice	5:45 PM	7:15 PM	BB AA 3	Practice	BB AA	1.5
+4/4/2025	Fri	5:45 PM	8:00 PM	lw4	Practice	6:30 PM	8:00 PM	BB AA 7	Practice	BB AA	1.5
+4/4/2025	Fri	6:00 PM	8:30 PM	lw5	Game	6:00 PM	8:30 PM	SB Juniors	Ballard	SB Juniors	2.5
+4/5/2025	Sat	8:30 AM	5:30 PM	bfday	Game	2:30 PM	4:00 PM	BB A 4	BB A 2	BB A	1.5
+4/5/2025	Sat	8:30 AM	5:30 PM	bfday	Game	4:00 PM	5:30 PM	BB A 7	BB A 5	BB A	1.5
+4/5/2025	Sat	8:30 AM	5:30 PM	bfday	Practice	8:30 AM	10:30 AM	Phinney Books AA SB (Barnes)	Practice	SB AA	2
+4/5/2025	Sat	8:30 AM	5:30 PM	bfday	Game	10:30 AM	12:30 PM	Green Lake Orthodontics AA SB (Busto)	Bear Mountain Capital AA SB (Mitchell)	SB AA	2
+4/5/2025	Sat	8:30 AM	5:30 PM	bfday	Game	12:30 PM	2:30 PM	Marketime Foods AA SB (Baxter/DeNike)	Puffin Pediatrics AA SB (Leon)	SB AA	2
+4/5/2025	Sat	9:00 AM	6:00 PM	lw3	Game	10:45 PM	12:15 PM	BB AA 1	BB AA 2	BB AA	1.5
+4/5/2025	Sat	9:00 AM	6:00 PM	lw3	Game	9:00 AM	10:30 AM	BB AA 3	BB AA 4	BB AA	1.5
+4/5/2025	Sat	9:00 AM	6:00 PM	lw3	Game	3:45 PM	6:00 PM	Kitch Switch-AAA BB	Bear Mountain Capital-AAA BB	BB AAA	2.25
+4/5/2025	Sat	9:00 AM	6:00 PM	lw4	Practice	12:00 PM	2:00 PM	Cedarhouse Flowers-Majors BB	Practice	BB Majors	2
+4/5/2025	Sat	9:00 AM	6:00 PM	lw5	Game	1:00 PM	3:30 PM	CubeSmart AAA SB	Magnolia 1	SB AAA	2
+4/5/2025	Sat	9:00 AM	6:00 PM	lw5	Game	8:30 AM	10:00 AM	BB AA 5	BB AA 6	BB AA	1.5
+4/5/2025	Sat	9:00 AM	6:00 PM	lw5	Game	3:45 PM	6:00 PM	Orca Analytics AAA SB	Valley Events AAA SB	SB AAA	2.25
+4/5/2025	Sat	9:00 AM	6:00 PM	lw6	Game	9:00 AM	10:30 AM	BB AA 8	BB AA 7	BB AA	1.5
+4/5/2025	Sat	9:00 AM	6:00 PM	lw6	Game	3:45 PM	6:00 PM	Focus Baseball-AAA BB	RUG 1	BB AAA	2.25
+4/5/2025	Sat	9:00 AM	6:00 PM	lw6	Game	10:45 AM	1:00 PM	Cube Smart-AAA BB	Harjo Construction-AAA BB	BB AAA	2.25
+4/5/2025	Sat	9:00 AM	6:00 PM	lw6	Game	1:15 PM	3:30 PM	Industrious U-District-AAA BB	Vertical Construction Group-AAA BB	BB AAA	2.25
+4/7/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 1	Practice	BB A	1
+4/7/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 2	Practice	BB A	1
+4/7/2025	Mon	5:45 PM	9:00 PM	lw3	Practice	5:45 PM	6:45 PM	BB A 3	Practice	BB A	1
+4/7/2025	Mon	5:45 PM	9:00 PM	lw3	Practice	6:45 PM	7:45 PM	BB A 4	Practice	BB A	1
+4/7/2025	Mon	5:45 PM	8:15 PM	lw4	Game	5:45 PM	8:15 PM	56th St Market SB Majors	Northeast 3	SB Majors	2.5
+4/7/2025	Mon	5:45 PM	9:00 PM	lw5	EMPTY	5:45 PM	9:00 PM	EMPTY	EMPTY	EMPTY	3.25
+4/7/2025	Mon	5:45 PM	9:00 PM	lw6	Game	5:45 PM	8:15 PM	SB Juniors	Northwest	SB Juniors	2.5
+4/8/2025	Tue	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	7:00 PM	Puffin Pediatrics AA SB (Leon)	Practice	SB AA	2
+4/8/2025	Tue	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:30 PM	TriWest A SB	Practice	SB A	1.5
+4/8/2025	Tue	5:00 PM	7:00 PM	ross	Practice	5:30 PM	7:00 PM	Greenwood Heating & Air A SB	Practice	SB A	1.5
+4/8/2025	Tue	6:00 PM	9:00 PM	lw3	Game	6:00 PM	8:30 PM	Zahra Lechak-Majors BB	Project 9-Majors BB	BB Majors	2.5
+4/8/2025	Tue	6:00 PM	9:00 PM	lw4	Game	6:00 PM	8:30 PM	Cedarhouse Flowers-Majors BB	Queen Anne 3	BB Majors	2.5
+4/8/2025	Tue	6:00 PM	9:00 PM	lw5	Game	6:00 PM	8:30 PM	Lincoln HS-Majors BB	Ballard 4	BB Majors	2.5
+4/8/2025	Tue	5:45 PM	9:00 PM	lw6	Game	5:45 PM	8:15 PM	El Camión-Majors BB	RUG 1	BB Majors	2.5
+4/9/2025	Wed	5:45 PM	8:00 PM	lw3	Game	5:45 PM	8:00 PM	Cube Smart-AAA BB	Focus Baseball-AAA BB	BB AAA	2.25
+4/9/2025	Wed	5:45 PM	8:00 PM	lw6	Game	5:45 PM	8:00 PM	Industrious U-District-AAA BB	Bear Mountain Capital-AAA BB	BB AAA	2.25
+4/9/2025	Wed	5:45 PM	9:00 PM	lw5	Game	5:45 PM	8:00 PM	Vertical Construction Group-AAA BB	Kitch Switch-AAA BB	BB AAA	2.25
+4/9/2025	Wed	5:00 PM	7:30 PM	ross	Practice	5:00 PM	7:30 PM	SB AA	Practice	SB AA	2.5
+4/9/2025	Wed	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	7:00 PM	SB AA	Practice	SB AA	2
+4/9/2025	Wed	5:45 PM	9:00 PM	lw4	Game	5:45 PM	8:15 PM	56th St Market SB Majors	Northeast 1	SB Majors	2.5
+4/10/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 5	Practice	BB A	1
+4/10/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 6	Practice	BB A	1
+4/10/2025	Thu	6:00 PM	8:15 PM	lw5	EMPTY	6:00 PM	8:15 PM	EMPTY	EMPTY	EMPTY	2.25
+4/10/2025	Thu	5:45 PM	9:00 PM	lw6	Game	5:45 PM	8:15 PM	Project 9-Majors BB	Northwest 2	BB Majors	2.5
+4/10/2025	Thu	6:00 PM	9:00 PM	lw3	Game	6:00 PM	8:30 PM	Zahra Lechak-Majors BB	Queen Anne 1	BB Majors	2.5
+4/10/2025	Thu	5:45 PM	8:00 PM	lw4	Game	5:45 PM	8:00 PM	El Camión-Majors BB	Lincoln HS-Majors BB	BB Majors	2.25
+4/11/2025	Fri	5:00 PM	7:30 PM	lw6	Practice	5:00 PM	6:00 PM	BB A 7	Practice	BB A	1
+4/11/2025	Fri	5:00 PM	7:30 PM	lw6	Practice	6:00 PM	7:00 PM	BB A 8	Practice	BB A	1
+4/11/2025	Fri	5:45 PM	8:00 PM	lw4	Practice	5:45 PM	7:00 PM	BB AA 1	Practice	BB AA	1.25
+4/11/2025	Fri	5:45 PM	8:00 PM	lw5	Practice	5:45 PM	7:00 PM	BB AA 3	Practice	BB AA	1.25
+4/11/2025	Fri	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:15 PM	BB AA 6	Practice	BB AA	1.25
+4/11/2025	Fri	5:45 PM	9:00 PM	lw3	Game	5:45 PM	8:15 PM	Cutter & Buck SB Majors	RUG 2	SB Majors	2.5
+4/12/2025	Sat	8:30 AM	5:30 PM	bfday	Game	11:00 AM	12:30 PM	BB A 3	BB A 1	BB A	1.5
+4/12/2025	Sat	8:30 AM	5:30 PM	bfday	Game	9:00 AM	10:30 AM	BB A 8	BB A 6	BB A	1.5
+4/12/2025	Sat	8:30 AM	5:30 PM	bfday	Game	1:00 PM	2:30 PM	TBD	TBD	BB A	1.5
+4/12/2025	Sat	8:30 AM	5:30 PM	bfday	Game	2:30 PM	4:00 PM	TBD	TBD	BB A	1.5
+4/12/2025	Sat	8:30 AM	5:30 PM	bfday	Practice	4:00 PM	5:30 PM	Bear Mountain Capital AA SB (Mitchell)	Practice	SB AA	1.5
+4/12/2025	Sat	12:00 PM	4:00 PM	ross	Game	12:00 PM	1:30 PM	Puffin Pediatrics AA SB (Leon)	Green Lake Orthodontics AA SB (Busto)	SB AA	1.5
+4/12/2025	Sat	12:00 PM	4:00 PM	ross	Game	2:00 PM	4:00 PM	Phinney Books AA SB (Barnes)	Marketime Foods AA SB (Baxter/DeNike)	SB AA	1.5
+4/12/2025	Sat	9:00 AM	6:00 PM	lw3	Game	9:00 AM	11:15 AM	Focus Baseball-AAA BB	Bear Mountain Capital-AAA BB	BB AAA	2.25
+4/12/2025	Sat	9:00 AM	6:00 PM	lw3	Game	11:30 AM	2:00 PM	El Camión-Majors BB	Zahra Lechak-Majors BB	BB Majors	2.5
+4/12/2025	Sat	9:00 AM	6:00 PM	lw3	EMPTY	2:00 AM	6:00 PM	EMPTY	EMPTY	EMPTY	4
+4/12/2025	Sat	9:00 AM	6:00 PM	lw4	Practice	9:00 AM	10:30 AM	Valley Events AAA SB	Practice	SB AAA	1.5
+4/12/2025	Sat	9:00 AM	6:00 PM	lw4	EMPTY	10:30 AM	6:00 PM	EMPTY	EMPTY	EMPTY	7.5
+4/12/2025	Sat	9:00 AM	6:00 PM	lw5	Game	10:45 AM	12:15 PM	BB AA 1	BB AA 3	BB AA	1.5
+4/12/2025	Sat	9:00 AM	6:00 PM	lw5	Game	9:00 AM	10:30 AM	BB AA 2	BB AA 5	BB AA	1.5
+4/12/2025	Sat	9:00 AM	6:00 PM	lw5	Game	12:30 PM	2:00 PM	BB AA 3	BB AA 7	BB AA	2
+4/12/2025	Sat	9:00 AM	6:00 PM	lw5	Game	4:00 PM	6:00 PM	BB AA 6	BB AA 8	BB AA	1.5
+4/12/2025	Sat	9:00 AM	6:00 PM	lw5	Game	2:15 PM	3:45 PM	BB AA 7	BB AA 4	BB AA	1.5
+4/12/2025	Sat	9:00 AM	6:00 PM	lw6	Practice	9:00 AM	11:00 AM	56th St Market SB Majors	Practice	SB Majors	2
+4/12/2025	Sat	9:00 AM	6:00 PM	lw6	Practice	11:00 AM	1:00 PM	Cutter & Buck SB Majors	Practice	SB Majors	2
+4/12/2025	Sat	9:00 AM	6:00 PM	lw6	EMPTY	11:00 AM	6:00 PM	EMPTY	EMPTY	EMPTY	7
+4/13/2025	Sun	3:00 PM	6:00 PM	lw3	EMPTY	3:00 PM	6:00 PM	EMPTY	EMPTY	EMPTY	3
+4/14/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 1	Practice	BB A	1
+4/14/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 2	Practice	BB A	1
+4/14/2025	Mon	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 3	Practice	BB A	1
+4/14/2025	Mon	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 4	Practice	BB A	1
+4/14/2025	Mon	6:00 PM	8:00 PM	green lake 1	Coach Booked	6:00 PM	8:00 PM	BB AAA 	BB AAA	BB AAA	2
+4/14/2025	Mon	5:45 PM	8:15 PM	bitter lake 1	Coach Booked	5:45 PM	8:15 PM	BB AAA	BB AAA	BB AAA	2.5
+4/14/2025	Mon	6:00 PM	9:00 PM	lw3	Coach Booked	6:00 PM	9:00 PM	BB AAA	BB AAA	BB AAA	3
+4/14/2025	Mon	5:45 PM	9:00 PM	lw4	Coach Booked	5:45 PM	9:00 PM	BB AAA	BB AAA	BB AAA	3.25
+4/14/2025	Mon	5:45 PM	9:00 PM	lw5	Coach Booked	5:45 PM	9:00 PM	BB AAA	BB AAA	BB AAA	3.25
+4/15/2025	Tue	5:00 PM	7:00 PM	bfday	EMPTY	5:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2
+4/15/2025	Tue	5:00 PM	7:00 PM	ross	Practice	5:00 PM	7:00 PM	Greenwood Heating & Air A SB	Practice	SB A	2
+4/15/2025	Tue	5:00 PM	8:30 PM	bitter lake 1	EMPTY	5:00 PM	8:30 PM	EMPTY	EMPTY	EMPTY	3.5
+4/15/2025	Tue	5:45 PM	9:00 PM	lw3	Practice	5:45 PM	8:15 PM	Valley Events AAA SB	Practice	SB AAA	2.5
+4/15/2025	Tue	5:45 PM	9:00 PM	lw4	Practice/GAME	5:45 PM	8:15 PM	Zahra Lechak-Majors BB	Project 9-Majors BB	BB Majors	2.5
+4/15/2025	Tue	6:00 PM	9:00 PM	lw5	Practice/GAME	6:00 PM	8:30 PM	BB Majors	Practice/GAME	BB majors	2.5
+4/15/2025	Tue	6:00 PM	9:00 PM	lw6	Practice	6:00 PM	7:30 PM	SB Juniors	Practice	SB Juniors	1.5
+4/16/2025	Wed	5:00 PM	7:30 PM	ross	EMPTY	5:00 PM	7:30 PM	EMPTY	EMPTY	EMPTY	2.5
+4/16/2025	Wed	5:00 PM	7:30 PM	bfday	EMPTY	5:00 PM	7:30 PM	EMPTY	EMPTY	EMPTY	2.5
+4/16/2025	Wed	6:00 PM	9:00 PM	bitter lake 1	Coach Booked	6:00 PM	8:15 PM	BB AAA	BB AAA	BB AAA	2.25
+4/16/2025	Wed	5:45 PM	8:30 PM	lw3	Game	5:45 PM	8:30 PM	El Camión-Majors BB	RUG 1	BB Majors	2.5
+4/16/2025	Wed	6:00 PM	8:15 PM	lw4	Coach Booked	6:00 PM	8:15 PM	BB AAA	BB AAA	BB AAA	2.25
+4/16/2025	Wed	5:45 PM	8:15 PM	lw5	Coach Booked	5:45 PM	8:15 PM	BB AAA	BB AAA	BB AAA	2.5
+4/16/2025	Wed	6:00 PM	7:30 PM	lw6	EMPTY	6:00 PM	7:30 PM	EMPTY	EMPTY	EMPTY	1.5
+4/17/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 5	Practice	BB A	1
+4/17/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 6	Practice	BB A	1
+4/17/2025	Thu	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 7	Practice	BB A	1
+4/17/2025	Thu 	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 8	Practice	BB A	1
+4/17/2025	Thu	6:00 PM	8:15 PM	lw3	Practice	6:00 PM	8:15 PM	Valley Events AAA SB	Practice	SB AAA	2.25
+4/17/2025	Thu	5:45 PM	8:00 PM	lw4	EMPTY	5:45 PM	8:00 PM	EMPTY	EMPTY	EMPTY	2.25
+4/17/2025	Thu	5:45 PM	9:00 PM	lw5	Practice/GAME	5:45 PM	9:00 PM	BB Majors	Practice/GAME	BB majors	3.25
+4/17/2025	Thu	6:00 PM	9:00 PM	lw6	Practice/GAME	6:00 PM	9:00 PM	BB Majors	Practice/GAME	BB majors	3
+4/18/2025	Fri	5:45 PM	8:00 PM	lw4	Game	5:45 PM	7:15 PM	BB AA 1	BB AA 4	BB AA	1.5
+4/18/2025	Fri	5:00 PM	7:00 PM	bfday	Game	5:00 PM	6:30 PM	BB AA 2	BB AA 6	BB AA	1.5
+4/18/2025	Fri	5:00 PM	7:00 PM	ross	Game	5:00 PM	6:30 PM	BB AA 5	BB AA 7	BB AA	1.5
+4/18/2025	Fri	5:45 PM	8:00 PM	lw5	Game	5:45 PM	7:15 PM	BB AA 8	BB AA 3	BB AA	1.5
+4/18/2025	Fri	5:45 PM	8:00 PM	lw3	EMPTY	5:45 PM	8:00 PM	EMPTY	EMPTY	EMPTY	2.25
+4/18/2025	Fri	5:00 PM	7:30 PM	lw6	EMPTY	5:00 PM	6:30 PM	EMPTY	EMPTY	EMPTY	2.5
+4/19/2025	Sat	8:30 AM	5:30 PM	bfday	Game	9:00 AM	10:30 AM	TBD	TBD	BB A	1.5
+4/19/2025	Sat	8:30 AM	5:30 PM	bfday	Game	11:00 AM	12:30 PM	TBD	TBD	BB A	1.5
+4/19/2025	Sat	8:30 AM	5:30 PM	bfday	Game	1:00 AM	2:30 PM	TBD	TBD	BB A	1.5
+4/19/2025	Sat	8:30 AM	5:30 PM	bfday	Game	3:00 PM	4:30 PM	TBD	TBD	BB A	1.5
+4/19/2025	Sat	9:00 AM	5:00 PM	ross	Practice	10:00 AM	11:30 AM	Greenwood Heating & Air A SB	Practice	SB A	1.5
+4/19/2025	Sat	9:00 AM	5:00 PM	ross	EMPTY	12:00 PM	5:00 PM	EMPTY	EMPTY	EMPTY	5
+4/19/2025	Sat	10:00 AM	3:00 PM	bitter lake 1	EMPTY	10:00 AM	3:00 PM	EMPTY	EMPTY	EMPTY	4
+4/19/2025	Sat	9:00 AM	6:00 PM	lw3	EMPTY	9:00 AM	2:00 PM	EMPTY	EMPTY	EMPTY	5
+4/19/2025	Sat	9:00 AM	6:00 PM	lw3	Practice	2:00 PM	4:00 PM	Valley Events AAA SB	Practice	SB AAA	2
+4/19/2025	Sat	9:00 AM	6:00 PM	lw4	EMPTY	9:00 AM	6:00 PM	EMPTY	EMPTY	EMPTY	9
+4/19/2025	Sat	9:00 AM	6:00 PM	lw5	EMPTY	9:00 AM	1:00 PM	EMPTY	EMPTY	EMPTY	4
+4/19/2025	Sat	9:00 AM	6:00 PM	lw5	Game	1:00 PM	3:30 PM	Cedarhouse Flowers-Majors BB	Ballard 3	BB Majors	2.5
+4/19/2025	Sat	9:00 AM	6:00 PM	lw5	Practice	3:30 PM	6:00 PM	Project 9-Majors BB	Practice	BB Majors	2.5
+4/19/2025	Sat	9:00 AM	6:00 PM	lw6	Game	9:00 AM	11:15 AM	Harjo Construction-AAA BB	Vertical Construction Group-AAA BB	BB AAA	2.25
+4/19/2025	Sat	9:00 AM	6:00 PM	lw6	Game	11:30 AM	2:00 PM	El Camión-Majors BB	Zahra Lechak-Majors BB	BB Majors	2.5
+4/19/2025	Sat	9:00 AM	6:00 PM	lw6	Game	2:30 PM	5:00 PM	Lincoln HS-Majors BB	Queen Anne 1	BB Majors	2.5
+4/20/2025	Sun	9:00 AM	5:00 PM	ross	EMPTY	9:00 AM	5:00 PM	EMPTY	EMPTY	EMPTY	8
+4/20/2025	Sun	3:00 PM	8:00 PM	eagle staff 60	EMPTY	3:00 PM	8:00 PM	EMPTY	EMPTY	EMPTY	5
+4/21/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 1	Practice	BB A	1
+4/21/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 2	Practice	BB A	1
+4/21/2025	Mon	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 3	Practice	BB A	1
+4/21/2025	Mon	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 4	Practice	BB A	1
+4/21/2025	Mon	6:00 PM	8:00 PM	bitter lake 1	EMPTY	6:00 PM	8:00 PM	EMPTY	EMPTY	EMPTY	2
+4/21/2025	Mon	6:00 PM	8:15 PM	lw3	EMPTY	6:00 PM	8:15 PM	EMPTY	EMPTY	EMPTY	2.25
+4/21/2025	Mon	5:45 PM	9:00 PM	lw4	Game	5:45 PM	8:15 PM	Cutter & Buck SB Majors	Ballard 2	SB Majors	2.5
+4/21/2025	Mon	5:45 PM	9:00 PM	lw5	Game	6:00 PM	8:30 PM	Kitch Switch-AAA BB	Cube Smart-AAA BB	BB AAA	2.5
+4/22/2025	Tue	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	7:00 PM	SB AA	Practice	SB AA	2
+4/22/2025	Tue	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:30 PM	TriWest A SB	Practice	SB A	1.5
+4/22/2025	Tue	5:00 PM	7:00 PM	ross	Practice	5:30 PM	7:00 PM	Greenwood Heating & Air A SB	Practice	SB A	1.5
+4/22/2025	Tue	5:00 PM	7:00 PM	bitter lake 1	Practice	5:00 PM	6:30 PM	SB Juniors	Practice	SB Juniors	1.5
+4/22/2025	Tue	6:00 PM	9:00 PM	lw3	Game	6:00 PM	8:30 PM	Lincoln HS-Majors BB	Queen Anne 2	BB Majors	2.5
+4/22/2025	Tue	6:00 PM	9:00 PM	lw4	Game	6:00 PM	8:15 PM	Orca Analytics AAA SB	Ballard	SB AAA	2.25
+4/22/2025	Tue	5:45 PM	9:00 PM	lw5	Game	5:45 PM	8:15 PM	Zahra Lechak-Majors BB	Ballard 4	BB Majors	2.5
+4/22/2025	Tue	5:45 PM	9:00 PM	lw6	Game	5:45 PM	8:15 PM	Project 9-Majors BB	Ballard 1	BB Majors	2.5
+4/23/2025	Wed	6:00 PM	8:15 PM	green lake 1	Game	6:00 PM	8:15 PM	Harjo Construction-AAA BB	Focus Baseball-AAA BB	BB AAA	2.25
+4/23/2025	Wed	6:00 PM	8:30 PM	lw5	Game	6:00 PM	8:15 PM	Cube Smart-AAA BB	Northwest 1	BB AAA	2.25
+4/23/2025	Wed	6:00 PM	8:15 PM	lw3	Game	6:00 PM	8:15 PM	Industrious U-District-AAA BB	Kitch Switch-AAA BB	BB AAA	2.25
+4/23/2025	Wed	5:45 PM	8:15 PM	lw4	Game	5:45 PM	8:00 PM	Vertical Construction Group-AAA BB	Bear Mountain Capital-AAA BB	BB AAA	2.25
+4/23/2025	Wed	6:00 PM	8:00 PM	bitter lake 1	EMPTY	6:00 PM	8:00 PM	EMPTY	EMPTY	EMPTY	2
+4/23/2025	Wed	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	7:00 PM	SB AA	Practice	SB AA	2
+4/23/2025	Wed	5:00 PM	7:30 PM	ross	Practice	5:00 PM	7:00 PM	SB AA	Practice	SB AA	2
+4/24/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 5	Practice	BB A	1
+4/24/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 6	Practice	BB A	1
+4/24/2025	Thu	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 7	Practice	BB A	1
+4/24/2025	Thu 	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 8	Practice	BB A	1
+4/24/2025	Thu	5:45 PM	9:00 PM	lw5	Game	5:45 PM	8:15 PM	El Camión-Majors BB	Queen Anne 4	BB Majors	2.5
+4/24/2025	Thu	6:00 PM	9:00 PM	lw4	Game	6:00 PM	8:30 PM	Project 9-Majors BB	Queen Anne 1	BB Majors	2.5
+4/24/2025	Thu	6:00 PM	9:00 PM	lw3	Game	6:00 PM	8:30 PM	Lincoln HS-Majors BB	Cedarhouse Flowers-Majors BB	BB Majors	2.5
+4/24/2025	Thu	6:00 PM	9:00 PM	lw6	Game	6:00 PM	8:15 PM	CubeSmart AAA SB	Magnolia 4	SB AAA	2.25
+4/24/2025	Thu	5:00 PM	7:00 PM	bitter lake 1	Practice	5:00 PM	7:00 PM	Orca Analytics AAA SB	Practice	SB AAA	2
+4/25/2025	Fri	5:45 PM	9:00 PM	lw3	Practice	7:30 PM	9:00 PM	BB AA 2	Practice	BB AA	1.5
+4/25/2025	Fri	5:45 PM	9:00 PM	lw3	Practice	5:45 PM	7:15 PM	BB AA 7	Practice	BB AA	1.5
+4/25/2025	Fri	5:45 PM	9:00 PM	lw6	Practice	5:45 PM	7:15 PM	BB AA 4	Practice	BB AA	1.5
+4/25/2025	Fri	5:45 PM	9:00 PM	lw6	Practice	7:15 PM	8:45 PM	BB AA 8	Practice	BB AA	1.5
+4/25/2025	Fri	5:00 PM	7:00 PM	bfday	EMPTY	5:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2
+4/25/2025	Fri	5:00 PM	7:00 PM	ross	EMPTY	5:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2
+4/25/2025	Fri	5:00 PM	7:00 PM	bitter lake 1	EMPTY	5:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2
+4/25/2025	Fri	5:45 PM	9:00 PM	lw5	Game	6:00 PM	8:30 PM	SB Juniors	North Bothell	SB Juniors	2.5
+4/25/2025	Fri	5:45 PM	9:00 PM	lw4	Game	5:45 PM	8:15 PM	56th St Market SB Majors	Magnolia 3	SB Majors	2.5
+4/26/2025	Sat	8:30 AM	5:30 PM	bfday	Game	3:00 PM	4:30 PM	BB A 3	BB A 2	BB A	1.5
+4/26/2025	Sat	8:30 AM	5:30 PM	bfday	Game	1:00 AM	2:30 PM	BB A 5	BB A 1	BB A	1.5
+4/26/2025	Sat	8:30 AM	5:30 PM	bfday	Game	9:00 AM	10:30 AM	BB A 6	BB A 4 	BB A	1.5
+4/26/2025	Sat	8:30 AM	5:30 PM	bfday	Game	11:00 AM	12:30 PM	BB A 8	BB A 7	BB A	1.5
+4/26/2025	Sat	8:30 AM	7:00 PM	lw5	Game	8:30 AM	10:00 AM	BB AA 3	BB AA 6	BB AA	1.5
+4/26/2025	Sat	8:30 AM	7:00 PM	lw3	Game	8:30 AM	10:00 AM	BB AA 4	BB AA 8	BB AA	2.25
+4/26/2025	Sat	8:30 AM	7:00 PM	lw4	Practice	8:30 AM	10:00 AM	BB AA 5	Practice	BB AA	1.5
+4/26/2025	Sat	8:30 AM	7:00 PM	lw4	Game	10:00 AM	11:30 AM	BB AA 5	BB AA 1	BB AA	1.5
+4/26/2025	Sat	8:30 AM	7:00 PM	lw6	Game	8:30 AM	10:00 AM	BB AA 7	BB AA 2	BB AA	1.5
+4/26/2025	Sat	8:30 AM	7:00 PM	lw6	Game	10:15 AM	12:30 PM	Bear Mountain Capital-AAA BB	Northwest 3	BB AAA	2.5
+4/26/2025	Sat	8:30 AM	7:00 PM	lw6	Game	1:00 PM	3:15 PM	Harjo Construction-AAA BB	Magnolia 4	BB AAA	2.5
+4/26/2025	Sat	8:30 AM	7:00 PM	lw6	Game	3:45 PM	6:00 PM	Industrious U-District-AAA BB	Magnolia 3	BB AAA	2.5
+4/26/2025	Sat	8:30 AM	7:00 PM	lw4	Game	11:30 AM	2:00 PM	Cedarhouse Flowers-Majors BB	Queen Anne 1	BB Majors	2.5
+4/26/2025	Sat	8:30 AM	7:00 PM	lw4	Game	2:00 PM	4:30 PM	Zahra Lechak-Majors BB	RUG 2	BB Majors	2.5
+4/26/2025	Sat	10:00 AM	3:00 PM	bitter lake 1	EMPTY	10:00 AM	3:00 PM	EMPTY	EMPTY	EMPTY	5
+4/26/2025	Sat	8:30 AM	7:00 PM	lw3	EMPTY	4:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	3
+4/26/2025	Sat	8:30 AM	7:00 PM	lw5	EMPTY	12:30 PM	7:00 PM	EMPTY	EMPTY	EMPTY	6.5
+4/26/2025	Sat	8:30 AM	5:30 PM	ross	Game	8:30 AM	10:15 AM	TriWest A SB	Greenwood Heating & Air A SB	SB A	1.75
+4/26/2025	Sat	8:30 AM	5:30 PM	ross	Practice	10:15 AM	11:30 AM	Green Lake Orthodontics AA SB (Busto)	Practice	SB AA	1.25
+4/26/2025	Sat	8:30 AM	5:30 PM	ross	Game	12:00 PM	2:00 PM	Phinney Books AA SB (Barnes)	Puffin Pediatrics AA SB (Leon)	SB AA	2
+4/26/2025	Sat	8:30 AM	5:30 PM	ross	Game	2:00 PM	4:00 PM	Bear Mountain Capital AA SB (Mitchell)	Marketime Foods AA SB (Baxter/DeNike)	SB AA	2
+4/26/2025	Sat	8:30 AM	7:00 PM	lw5	Practice	11:00 AM	12:30 PM	CubeSmart AAA SB	Practice	SB AAA	1.5
+4/26/2025	Sat	8:30 AM	7:00 PM	lw3	EMPTY	1:45 PM	4:00 PM	EMPTY	EMPTY	EMPTY	2.25
+4/26/2025	Sat	8:30 AM	7:00 PM	lw3	Game	11:00 AM	1:15 PM	Orca Analytics AAA SB	Magnolia 3	SB AAA	2.25
+4/27/2025	Sun	4:00 PM	7:00 PM	bitter lake 1	EMPTY	4:30 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2.5
+4/28/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 1	Practice	BB A	1
+4/28/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 2	Practice	BB A	1
+4/28/2025	Mon	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 3	Practice	BB A	1
+4/28/2025	Mon	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 4	Practice	BB A	1
+4/28/2025	Mon	7:00 PM	8:30 PM	bitter lake 1	EMPTY	7:00 PM	8:30 PM	EMPTY	EMPTY	EMPTY	1.5
+4/28/2025	Mon	5:45 PM	8:00 PM	lw3	EMPTY	5:45 PM	8:00 PM	EMPTY	EMPTY	EMPTY	2.25
+4/28/2025	Mon	5:45 PM	8:00 PM	lw6	Game	5:45 PM	8:00 PM	Valley Events AAA SB	Magnolia 2	SB AAA	2.25
+4/28/2025	Mon	6:00 PM	9:00 PM	lw5	Game	6:30 PM	9:00 PM	SB Juniors	Northeast	SB Juniors	2.5
+4/28/2025	Mon	6:00 PM	9:00 PM	lw4	Game	6:00 PM	8:30 PM	Cutter & Buck SB Majors	56th St Market SB Majors	SB Majors	2.5
+4/29/2025	Tue	5:45 PM	9:00 PM	lw4	Game	5:45 PM	8:15 PM	Project 9-Majors BB	Zahra Lechak-Majors BB	BB Majors	2.5
+4/29/2025	Tue	5:45 PM	9:00 PM	lw3	Game	5:45 PM	8:15 PM	Cedarhouse Flowers-Majors BB	El Camión-Majors BB	BB Majors	2.5
+4/29/2025	Tue	5:00 PM	7:00 PM	bitter lake 1	EMPTY	5:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2
+4/29/2025	Tue	5:00 PM	7:00 PM	ross	Game	5:00 PM	6:45 PM	Greenwood Heating & Air A SB	RUG 4	SB A	1.75
+4/29/2025	Tue	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:30 PM	Puffin Pediatrics AA SB (Leon)	Practice	SB AA	1.5
+4/29/2025	Tue	6:00 PM	9:00 PM	lw6	Game	6:00 PM	8:15 PM	CubeSmart AAA SB	Queen Anne 1	SB AAA	1.5
+4/29/2025	Tue	6:00 PM	8:30 PM	lw5	Practice	6:00 PM	7:30 PM	SB Juniors	Practice	SB Juniors	2.5
+4/30/2025	Wed	5:45 PM	8:00 PM	lw3	Game	5:45 PM	8:00 PM	Bear Mountain Capital-AAA BB	Kitch Switch-AAA BB	BB AAA	2.25
+4/30/2025	Wed	5:45 PM	8:30 PM	lw4	Game	5:45 PM	8:00 PM	Harjo Construction-AAA BB	Cube Smart-AAA BB	BB AAA	2.25
+4/30/2025	Wed	6:00 PM	9:00 PM	lw5	Game	6:00 PM	8:15 PM	Vertical Construction Group-AAA BB	Industrious U-District-AAA BB	BB AAA	2.25
+4/30/2025	Wed	5:00 PM	7:30 PM	ross	Game	5:00 PM	7:00 PM	Bear Mountain Capital AA SB (Mitchell)	Phinney Books AA SB (Barnes)	SB AA	2
+4/30/2025	Wed	5:00 PM	7:30 PM	bfday	Game	5:00 PM	7:00 PM	Marketime Foods AA SB (Baxter/DeNike)	Green Lake Orthodontics AA SB (Busto)	SB AA	2
+4/30/2025	Wed	5:45 PM	9:00 PM	bitter lake 1	Game	5:45 PM	8:15 PM	56th St Market SB Majors	Ballard 2	SB Majors	2.5
+5/1/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 5	Practice	BB A	1
+5/1/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 6	Practice	BB A	1
+5/1/2025	Thu	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 7	Practice	BB A	1
+5/1/2025	Thu 	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 8	Practice	BB A	1
+5/1/2025	Thu	5:45 PM	8:15 PM	bitter lake 1	Practice	5:45 PM	8:15 PM	CubeSmart AAA SB	Practice	SB AAA	3
+5/1/2025	Thu	6:00 PM	9:00 PM	lw3	Game	6:00 PM	9:00 PM	Project 9-Majors BB	Ballard 3	BB Majors	2.5
+5/1/2025	Thu	6:00 PM	9:00 PM	lw4	Game	6:00 PM	9:00 PM	Lincoln HS-Majors BB	Ballard	BB Majors	2.5
+5/1/2025	Thu	5:45 PM	9:00 PM	lw5	Game	5:45 PM	8:00 PM	Valley Events AAA SB	Magnolia 4	SB AAA	2.25
+5/2/2025	Fri	5:00 PM	7:30 PM	bfday	Game	5:00 PM	6:30 PM	BB AA 2	BB AA 4	BB AA	1.5
+5/2/2025	Fri	5:45 PM	9:00 PM	lw5	Game	5:45 PM	7:15 PM	BB AA 3	BB AA 5	BB AA	1.5
+5/2/2025	Fri	5:00 PM	7:00 PM	ross	Game	5:00 PM	6:30 PM	BB AA 6	BB AA 8	BB AA	1.5
+5/2/2025	Fri	5:45 PM	9:00 PM	lw3	Game	5:45 PM	7:15 PM	BB AA 7	BB AA 1	BB AA	1.5
+5/2/2025	Fri	5:00 PM	8:00 PM	bitter lake 1	Game	5:00 PM	7:30 PM	Cedarhouse Flowers-Majors BB	Queen Anne 3	BB Majors	2.5
+5/2/2025	Fri	5:45 PM	9:00 PM	lw4	Game	5:45 PM	8:15 PM	56th St Market SB Majors	RUG 1	SB Majors	2.5
+5/3/2025	Sat	8:30 AM	5:30 PM	bfday	Game	11:00 AM	12:30 PM	BB A 4	BB A 1	BB A	1.5
+5/3/2025	Sat	8:30 AM	5:30 PM	bfday	Game	1:00 AM	2:30 PM	BB A 6	BB A 2	BB A	1.5
+5/3/2025	Sat	8:30 AM	5:30 PM	bfday	Game	9:00 AM	10:30 AM	BB A 7	BB A 5	BB A	1.5
+5/3/2025	Sat	8:30 AM	5:30 PM	bfday	Game	3:00 PM	4:30 PM	BB A 8	BB A 3	BB A	1.5
+5/3/2025	Sat	8:30 AM	7:00 PM	lw4	Game	8:30 AM	10:00 AM	BB AA 1	BB AA 8	BB AA	1.5
+5/3/2025	Sat	8:30 AM	7:00 PM	lw3	Game	8:30 AM	10:00 AM	BB AA 2	BB AA 3	BB AA	1.5
+5/3/2025	Sat	8:30 AM	7:00 PM	lw5	Game	8:30 AM	10:00 AM	BB AA 4	BB AA 6	BB AA	2
+5/3/2025	Sat	8:30 AM	7:00 PM	lw6	Game	8:30 AM	10:00 AM	BB AA 7	BB AA 5	BB AA	1.5
+5/3/2025	Sat	8:30 AM	7:00 PM	lw6	Game	4:45 PM	7:00 PM	Focus Baseball-AAA BB	Cube Smart-AAA BB	BB AAA	2.25
+5/3/2025	Sat	8:30 AM	7:00 PM	lw3	Game	10:15 AM	12:30 PM	Kitch Switch-AAA BB	Vertical Construction Group-AAA BB	BB AAA	2.25
+5/3/2025	Sat	8:30 AM	7:00 PM	lw3	Game	12:45 PM	3:00 PM	Bear Mountain Capital-AAA BB	Industrious U-District-AAA BB	BB AAA	2.25
+5/3/2025	Sat	8:30 AM	7:00 PM	lw4	Game	10:15 AM	12:30 PM	Harjo Construction-AAA BB	RUG 5	BB AAA	2.25
+5/3/2025	Sat	8:30 AM	7:00 PM	lw3	Game	4:00 PM	6:30 PM	Zahra Lechak-Majors BB	El Camión-Majors BB	BB Majors	2.5
+5/3/2025	Sat	8:30 AM	7:00 PM	lw6	Game	2:00 PM	4:30 PM	Lincoln HS-Majors BB	Project 9-Majors BB	BB Majors	2.5
+5/3/2025	Sat	8:30 AM	7:00 PM	lw4	EMPTY	12:30 PM	7:00 PM	EMPTY	EMPTY	EMPTY	6.5
+5/3/2025	Sat	8:30 AM	7:00 PM	lw5	EMPTY	10:00 AM	1:00 PM	Zahra Lechak-Majors BB	El Camión-Majors BB	BB Majors	3
+5/3/2025	Sat	8:30 AM	7:00 PM	lw5	EMPTY	1:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	6
+5/3/2025	Sat	8:30 AM	5:30 PM	ross	Game	11:15 AM	1:00 PM	TriWest A SB	RUG 4	SB A	1.75
+5/3/2025	Sat	8:30 AM	5:30 PM	ross	Game	1:15 PM	3:15 PM	Phinney Books AA SB (Barnes)	Green Lake Orthodontics AA SB (Busto)	SB AA	2
+5/3/2025	Sat	8:30 AM	5:30 PM	ross	Game	3:30 PM	5:30 PM	Bear Mountain Capital AA SB (Mitchell)	Puffin Pediatrics AA SB (Leon)	SB AA	2
+5/3/2025	Sat	8:30 AM	5:30 PM	ross	Practice	9:00 AM	11:00 AM	Marketime Foods AA SB (Baxter/DeNike)	Practice	SB AA	1.75
+5/3/2025	Sat	8:30 AM	7:00 PM	lw6	Game	11:00 AM	1:15 PM	Orca Analytics AAA SB	Magnolia 2	SB AAA	2.25
+5/4/2025	Sun	3:00 PM	8:00 PM	lw6	EMPTY	3:00 PM	8:00 PM	EMPTY	EMPTY	EMPTY	5
+5/5/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 1	Practice	BB A	1
+5/5/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 2	Practice	BB A	1
+5/5/2025	Mon	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 3	Practice	BB A	1
+5/5/2025	Mon	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 4	Practice	BB A	1
+5/5/2025	Mon	5:00 PM	8:00 PM	bitter lake 1	Practice	5:00 PM	6:30 PM	BB AAA 1	Practice	BB AAA	1.5
+5/5/2025	Mon	5:00 PM	8:00 PM	bitter lake 1	Practice	5:45 PM	7:15 PM	BB AAA 2	Practice		
+5/5/2025	Mon	5:00 PM	8:00 PM	bitter lake 1	Practice	6:30 PM	8:00 PM	BB AAA 3	Practice	BB AAA	1.5
+5/5/2025	Mon	6:00 PM	8:00 PM	Green lake 1	Practice	6:00 PM	7:30 PM	BB AAA 4	Practice	BB AAA	1.5
+5/5/2025	Mon	6:00 PM	8:00 PM	Green lake 1	Practice	6:30 PM	8:00 PM	BB AAA 5	Practice		
+5/5/2025	Mon	6:00 PM	8:00 PM	Green lake 2	Practice	6:00 PM	7:30 PM	BB AAA 6	Practice	BB AAA	1.5
+5/5/2025	Mon	6:00 PM	8:00 PM	Green lake 2	Practice	6:30 PM	8:00 PM	BB AAA 7	Practice	BB AAA	1.5
+5/5/2025	Mon	5:45 PM	9:00 PM	lw3	Game	5:45 PM	8:15 PM	El Camión-Majors BB	QALL Ken's Market	BB Majors	1.5
+5/5/2025	Mon	6:00 PM	9:00 PM	lw4	Game	6:00 PM	8:30 PM	56th St Market SB Majors	Northeast 2	SB Majors	2.25
+5/5/2025	Mon	5:45 PM	9:00 PM	lw5	Game	5:45 PM	8:15 PM	SB Juniors	Shoreline	SB Juniors	2.5
+5/5/2025	Mon	5:45 PM	8:00 PM	lw6	Game	5:45 PM	8:00 PM	Cutter & Buck SB Majors	Shoreline 2	SB Majors	2.25
+5/6/2025	Tue	5:45 PM	9:00 PM	lw5	Game	5:45 PM	8:15 PM	El Camión-Majors BB	Shoreline 1	BB Majors	2.5
+5/6/2025	Tue	5:45 PM	9:00 PM	lw3	Game	5:45 PM	8:15 PM	Cedarhouse Flowers-Majors BB	Project 9-Majors BB	BB Majors	2.5
+5/6/2025	Tue	5:45 PM	9:00 PM	lw4	Game	5:45 PM	8:15 PM	Zahra Lechak-Majors BB	Lincoln HS-Majors BB	BB Majors	2.5
+5/6/2025	Tue	5:00 PM	7:00 PM	bitter lake 1	EMPTY	5:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2
+5/6/2025	Tue	5:00 PM	7:00 PM	bfday	Game	5:00 PM	7:00 PM	SB A 1	Queen Anne 2	SB A	2
+5/6/2025	Tue	5:00 PM	7:00 PM	ross	Game	5:00 PM	7:00 PM	Marketime Foods AA SB (Baxter/DeNike)	Puffin Pediatrics AA SB (Leon)	SB AA	1.75
+5/6/2025	Tue	5:45 PM	9:00 PM	lw6	Game	5:45 PM	8:00 PM	Valley Events AAA SB	Queen Anne 1	SB AAA	1.5
+5/7/2025	Wed	5:45 PM	8:00 PM	lw3	Game	5:45 PM	8:00 PM	Bear Mountain Capital-AAA BB	Focus Baseball-AAA BB	BB AAA	2.25
+5/7/2025	Wed	5:45 PM	8:30 PM	lw4	Game	5:45 PM	8:00 PM	Cube Smart-AAA BB	Kitch Switch-AAA BB	BB AAA 	2.5
+5/7/2025	Wed	5:00 PM	7:15 PM	lw6	Game	5:00 PM	7:15 PM	Industrious U-District-AAA BB	Queen Anne 3	BB AAA	2.25
+5/7/2025	Wed	5:45 PM	8:15 PM	lw5	Game	5:45 PM	8:00 PM	Vertical Construction Group-AAA BB	Harjo Construction-AAA BB	BB AAA	2.25
+5/7/2025	Wed	5:00 PM	7:30 PM	bitter lake 1	EMPTY	5:00 PM	7:30 PM	EMPTY	EMPTY	EMPTY	2.5
+5/7/2025	Wed	5:00 PM	7:30 PM	bfday	Game	5:00 PM	7:00 PM	Phinney Books AA SB (Barnes)	Practice	SB AA	2
+5/7/2025	Wed	5:00 PM	7:00 PM	ross	Game	5:00 PM	7:00 PM	Bear Mountain Capital AA SB (Mitchell)	Green Lake Orthodontics AA SB (Busto)	SB AA	2
+5/8/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 5	Practice	BB A	1
+5/8/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 6	Practice	BB A	1
+5/8/2025	Thu	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 7	Practice	BB A	1
+5/8/2025	Thu 	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 8	Practice	BB A	1
+5/8/2025	Thu	5:45 PM	9:00 PM	lw3	Game	5:45 PM	8:15 PM	El Camión-Majors BB	Shoreline 4	BB Majors	2.5
+5/8/2025	Thu	5:45 PM	9:00 PM	lw4	Game	6:15 PM	8:45 PM	SB Juniors	NW/RUG	SB Juniors	2.5
+5/8/2025	Thu	5:45 PM	9:00 PM	lw5	Practice	5:45 PM	7:15 PM	Zahra Lechak-Majors BB	Practice	BB Majors	1.5
+5/8/2025	Thu	5:45 PM	9:00 PM	lw5	Practice	6:00 PM	7:30 PM	Project 9-Majors BB	Practice	BB Majors	1.5
+5/8/2025	Thu	5:45 PM	9:00 PM	lw5	Practice	7:15 PM	8:45 PM	Cedarhouse Flowers-Majors BB	Practice	BB Majors	1.5
+5/8/2025	Thu	5:45 PM	9:00 PM	lw5	Practice	7:30 PM	9:00 PM	Lincoln HS-Majors BB	Practice	BB Majors	1.5
+5/8/2025	Thu	5:45 PM	9:00 PM	lw6	Game	5:45 PM	8:00 PM	Valley Events AAA SB	Magnolia 1	SB AAA	2.5
+5/8/2025	Thu	5:00 PM	7:00 PM	bitter lake 1	Practice	5:00 PM	7:00 PM	CubeSmart AAA SB	Practice	SB AAA	2
+5/9/2025	Fri	5:00 PM	7:00 PM	bfday	EMPTY	5:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2
+5/9/2025	Fri	5:00 PM	7:00 PM	ross	EMPTY	5:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2
+5/9/2025	Fri	5:45 PM	9:00 PM	lw3	EMPTY	5:45 PM	9:00 PM	EMPTY	EMPTY	EMPTY	3.25
+5/9/2025	Fri	5:45 PM	9:00 PM	lw4	EMPTY	5:45 PM	9:00 PM	EMPTY	EMPTY	EMPTY	3.25
+5/9/2025	Fri	5:45 PM	9:00 PM	lw5	EMPTY	5:45 PM	9:00 PM	EMPTY	EMPTY	EMPTY	3.25
+5/9/2025	Fri	5:45 PM	9:00 PM	lw6	EMPTY	5:45 PM	9:00 PM	EMPTY	EMPTY	EMPTY	3.25
+5/10/2025	Sat	8:30 AM	5:30 PM	bfday	Game	11:00 AM	12:30 PM	BB A 5	BB A 4 	BB A	1.5
+5/10/2025	Sat	8:30 AM	5:30 PM	bfday	Game	9:00 AM	10:30 AM	BB A 6	BB A 1	BB A	1.5
+5/10/2025	Sat	8:30 AM	5:30 PM	bfday	Game	1:00 AM	2:30 PM	BB A 7	BB A 2	BB A	1.5
+5/10/2025	Sat	8:30 AM	5:30 PM	bfday	Game	3:00 PM	4:30 PM	BB A 8	BB A 3	BB A	1.5
+5/10/2025	Sat	8:30 AM	5:30 PM	ross	Game	9:00 AM	10:45 AM	Greenwood Heating & Air A SB	RUG 2	SB A	1.75
+5/10/2025	Sat	8:30 AM	5:30 PM	ross	Practice	11:15 AM	1:15 PM	Bear Mountain Capital AA SB (Mitchell)	Practice	SB AA	2
+5/10/2025	Sat	8:30 AM	5:30 PM	ross	Game	1:30 PM	3:30 PM	Green Lake Orthodontics AA SB (Busto)	Puffin Pediatrics AA SB (Leon)	SB AA	2
+5/10/2025	Sat	8:30 AM	5:30 PM	ross	Game	3:30 PM	5:30 PM	Marketime Foods AA SB (Baxter/DeNike)	Phinney Books AA SB (Barnes)	SB AA	2
+5/10/2025	Sat	11:00 AM	2:00 PM	bitter lake 1	EMPTY	11:00 AM	2:00 PM	EMPTY	EMPTY	EMPTY	3
+5/10/2025	Sat	8:30 AM	7:00 PM	lw3	Practice	8:30 AM	10:00 AM	BB AA 2	BB AA 1	BB AA	1.5
+5/10/2025	Sat	8:30 AM	7:00 PM	lw3	Game	10:00 AM	11:30 AM	BB AA 2	BB AA 1	BB AA	1.5
+5/10/2025	Sat	8:30 AM	7:00 PM	lw3	Game	11:30 AM	1:45 PM	CubeSmart AAA SB	Valley Events AAA SB	SB AAA	2.25
+5/10/2025	Sat	8:30 AM	7:00 PM	lw3	Game	2:00 PM	4:15 PM	Orca Analytics AAA SB	Magnolia 5	SB AAA	2.25
+5/10/2025	Sat	8:30 AM	7:00 PM	lw4	Game	8:30 AM	10:00 AM	BB AA 5	BB AA 6	BB AA	1.5
+5/10/2025	Sat	8:30 AM	7:00 PM	lw4	Game	10:15 AM	11:45 AM	BB AA 7	BB AA 8	BB AA	1.5
+5/10/2025	Sat	8:30 AM	7:00 PM	lw4	Game	11:45 AM	2:00 PM	Harjo Construction-AAA BB	Bear Mountain Capital-AAA BB	BB AAA	2.25
+5/10/2025	Sat	8:30 AM	7:00 PM	lw4	Game	2:15 PM	4:30 PM	Industrious U-District-AAA BB	Cube Smart-AAA BB	BB AAA	2.25
+5/10/2025	Sat	8:30 AM	7:00 PM	lw4	Game	4:30 PM	7:00 PM	56th St Market SB Majors	Northeast 3	SB Majors	2.5
+5/10/2025	Sat	8:30 AM	7:00 PM	lw5	Practice	10:00 AM	12:00 PM	Lincoln HS-Majors BB	Practice	BB Majors	2
+5/10/2025	Sat	8:30 AM	7:00 PM	lw5	EMPTY	12:00 PM	4:00 AM	EMPTY	EMPTY	EMPTY	7
+5/10/2025	Sat	8:30 AM	7:00 PM	lw5	Game	4:30 PM	7:00 PM	Cutter & Buck SB Majors	Ballard 1	SB Majors	2.5
+5/10/2025	Sat	8:30 AM	7:00 PM	lw6	Practice	8:30 AM	10:00 AM	BB AA 3	BB AA 4	BB AA	1.5
+5/10/2025	Sat	8:30 AM	7:00 PM	lw6	Game	10:15 AM	11:45 AM	BB AA 4	BB AA 3	BB AA	1.5
+5/10/2025	Sat	8:30 AM	7:00 PM	lw6	Game	12:15 PM	2:30 PM	Kitch Switch-AAA BB	Focus Baseball-AAA BB	BB AAA	2.25
+5/10/2025	Sat	8:30 AM	7:00 PM	lw6	Game	4:45 PM	7:00 PM	Vertical Construction Group-AAA BB	Northwest 4	BB AAA	2.25
+5/11/2025	Sun	2:00 PM	5:00 PM	lw4	EMPTY	2:00 PM	4:30 PM	EMPTY	EMPTY	EMPTY	2.5
+5/11/2025	Sun	6:00 PM	8:30 PM	lw6	EMPTY	6:00 PM	8:30 PM	EMPTY	EMPTY	EMPTY	2.5
+5/12/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 1	Practice	BB A	1
+5/12/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 2	Practice	BB A	1
+5/12/2025	Mon	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 3	Practice	BB A	1
+5/12/2025	Mon	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 4	Practice	BB A	1
+5/12/2025	Mon	5:00 PM	8:00 PM	bitter lake 1	Practice	5:00 PM	6:30 PM	BB AAA 1	Practice	BB AAA	1.5
+5/12/2025	Mon	5:45 PM	8:30 PM	Greenlake 1	Practice	5:45 PM	8:30 PM	BB AAA 2	Practice	BB AAA	
+5/12/2025	Mon	5:45 PM	8:30 PM	Greenlake 2	Practice	5:45 PM	8:30 PM	BB AAA 3	Practice	BB AAA	
+5/12/2025	Mon	5:45 PM	9:00 PM	lw4	Game	5:45 PM	8:00 PM	Focus Baseball-AAA BB	Industrious U-District-AAA BB	BB AAA	2.25
+5/12/2025	Mon	5:45 PM	9:00 PM	lw5	Practice	5:45 PM	7:15 PM	BB AAA 4	Practice	BB AAA	1.5
+5/12/2025	Mon	5:45 PM	9:00 PM	lw5	Practice	7:30 PM	9:00 PM	BB AAA 5	Practice	BB AAA	1.5
+5/12/2025	Mon	5:15 PM	9:00 PM	lw6	Game	5:15 PM	7:45 PM	Cutter & Buck SB Majors	Northwest	SB Majors	2.5
+5/13/2025	Tue	5:00 PM	7:00 PM	bfday	EMPTY	5:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2
+5/13/2025	Tue	5:00 PM	7:00 PM	ross	Game	5:00 PM	7:00 PM	Puffin Pediatrics AA SB (Leon)	Phinney Books AA SB (Barnes)	SB AA	2
+5/13/2025	Tue	5:00 PM	7:00 PM	bitter lake 1	Practice	5:00 PM	7:00 PM	SB Juniors	Practice	SB Juniors	2
+5/13/2025	Tue	5:45 PM	9:00 PM	lw3	Game	5:45 PM	8:15 PM	Project 9-Majors BB	El Camión-Majors BB	BB Majors	2.5
+5/13/2025	Tue	5:15 PM	9:00 PM	lw4	Practice	5:15 PM	6:45 PM	Orca Analytics AAA SB	Practice	SB AAA	1.5
+5/13/2025	Tue	5:15 PM	9:00 PM	lw4	Practice	6:15 PM	7:45 PM	Valley Events AAA SB	Practice	SB AAA	1.5
+5/13/2025	Tue	5:15 PM	9:00 PM	lw4	Practice	7:00 PM	8:45 PM	CubeSmart AAA SB	Practice	SB AAA	1.75
+5/13/2025	Tue	5:45 PM	9:00 PM	lw5	Game	5:45 PM	8:15 PM	Zahra Lechak-Majors BB	Cedarhouse Flowers-Majors BB	BB Majors	2.5
+5/13/2025	Tue	5:45 PM	9:00 PM	lw6	PRACTICE	5:45 PM	9:00 PM	AAA SB		SB AAA	2
+5/14/2025	Wed	5:45 PM	8:00 PM	lw3	Game	5:45 PM	8:00 PM	Kitch Switch-AAA BB	Harjo Construction-AAA BB	BB AAA	2.25
+5/14/2025	Wed	5:45 PM	8:15 PM	lw5	Game	5:45 PM	8:00 PM	Bear Mountain Capital-AAA BB	RUG 4	BB AAA	2.25
+5/14/2025	Wed	5:45 PM	8:30 PM	lw4	Game	5:45 PM	8:00 PM	Cube Smart-AAA BB	Vertical Construction Group-AAA BB	BB AAA	2.25
+5/14/2025	Wed	5:00 PM	7:30 PM	bfday	Practice	5:00 PM	7:00 PM	Green Lake Orthodontics AA SB (Busto)	Practice	SB AA	2.5
+5/14/2025	Wed	5:00 PM	7:30 PM	ross	Game	5:00 PM	7:00 PM	Marketime Foods AA SB (Baxter/DeNike)	Bear Mountain Capital AA SB (Mitchell)	SB AA	2
+5/14/2025	Wed	5:30 PM	9:00 PM	lw6	Game	5:45 PM	8:15 PM	56th St Market SB Majors	Magnolia 2	SB Majors	2.5
+5/14/2025	Wed	5:45 PM	9:00 PM	bitter lake 1	Practice	5:45 PM	7:30 PM	Industrious U-District-AAA BB	Practice	BB AAA	1.75
+5/14/2025	Wed	5:45 PM	9:00 PM	bitter lake 1	Practice	7:30 PM	9:00 PM	Focus Baseball-AAA BB	Practice	BB AAA	1.5
+5/15/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 5	Practice	BB A	1
+5/15/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 6	Practice	BB A	1
+5/15/2025	Thu	5:00 PM	7:00 PM	ross	Practice	5:00 PM	6:00 PM	BB A 7	Practice	BB A	1
+5/15/2025	Thu 	5:00 PM	7:00 PM	ross	Practice	6:00 PM	7:00 PM	BB A 8	Practice	BB A	1
+5/15/2025	Thu	5:45 PM	8:00 PM	lw3	Game	5:45 PM	8:00 PM	Orca Analytics AAA SB	Queen Anne 1	SB AAA	2.25
+5/15/2025	Thu	5:45 PM	8:30 PM	lw4	Game	5:45 PM	8:15 PM	Lincoln HS-Majors BB	Magnolia 2	BB Majors	2.5
+5/15/2025	Thu	5:45 PM	8:15 PM	lw5	Game	5:45 PM	8:15 PM	Shoreline 1	Cedarhouse Flowers-Majors BB	Game	2.5
+5/15/2025	Thu	5:00 PM	6:15 PM	lw6	Practice	5:00 PM	6:15 PM	Valley Events AAA SB	Practice	SB AAA	1.25
+5/15/2025	Thu	5:00 PM	7:00 PM	bitter lake 1	Practice	5:00 PM	7:00 PM	Majors BB Practice	Practice	BB Majors	2
+5/16/2025	Fri	5:00 PM	7:00 PM	bfday	EMPTY	5:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2
+5/16/2025	Fri	5:00 PM	7:00 PM	ross	EMPTY	5:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2
+5/16/2025	Fri	5:45 PM	9:00 PM	lw3	EMPTY	5:45 PM	9:00 PM	EMPTY	EMPTY	EMPTY	3.25
+5/16/2025	Fri	5:45 PM	9:00 PM	lw4	EMPTY	5:45 PM	9:00 PM	EMPTY	EMPTY	EMPTY	3.25
+5/16/2025	Fri	5:15 PM	9:00 PM	lw6	Game	6:00 PM	8:30 PM	SB Juniors	Ballard	SB Juniors	2.5
+5/16/2025	Fri	5:45 PM	9:00 PM	lw5	Game	5:45 PM	8:15 PM	Cutter & Buck SB Majors	Queen Anne	SB Majors	2.5
+5/17/2025	Sat	10:00 AM	3:00 PM	bitter lake 1	Practice	10:00 AM	11:30 AM	BB AA 6	BB AA 7	BB AA	1.5
+5/17/2025	Sat	10:00 AM	3:00 PM	bitter lake 1	Open	11:30 AM	3:00 PM	Open Practice	Open Practice	Any	3.5
+5/17/2025	Sat	8:30 AM	5:30 PM	ross	Game	8:30 AM	10:15 AM	Greenwood Heating & Air A SB	Queen Anne	SB A	1.75
+5/17/2025	Sat	8:30 AM	5:30 PM	ross	Game	10:30 AM	12:15 PM	TriWest A SB	RUG 3	SB A	1.75
+5/17/2025	Sat	8:30 AM	5:30 PM	ross	Game	12:30 PM	2:30 PM	Green Lake Orthodontics AA SB (Busto)	Marketime Foods AA SB (Baxter/DeNike)	SB AA	2
+5/17/2025	Sat	8:30 AM	5:30 PM	ross	Game	3:00 PM	5:00 PM	Phinney Books AA SB (Barnes)	Bear Mountain Capital AA SB (Mitchell)	SB AA	2
+5/17/2025	Sat	8:30 AM	5:30 PM	bfday	Practice	8:30 AM	9:45 AM	Puffin Pediatrics AA SB (Leon)	Practice	SB AA	1.25
+5/17/2025	Sat	8:30 AM	5:30 PM	bfday	Game	10:00 AM	11:30 AM	BB A 2	BB A 6	BB A	1.5
+5/17/2025	Sat	8:30 AM	5:30 PM	bfday	Game	12:00 PM	1:30 PM	BB A 7	BB A 1	BB A	1.5
+5/17/2025	Sat	8:30 AM	5:30 PM	bfday	Game	2:00 PM	3:30 PM	BB A 5	BB A 3/4	BB A	1.5
+5/17/2025	Sat	8:30 AM	5:30 PM	bfday	Game	4:00 PM	5:30 PM	BB A 8	BB A 3/4	BB A	1.5
+5/17/2025	Sat	8:30 AM	7:00 PM	lw3	Game	8:30 AM	10:00 AM	BB AA 4	BB AA 1	BB AA	1.5
+5/17/2025	Sat	8:30 AM	7:00 PM	lw3	Game	10:00 AM	12:00 PM	El Camión-Majors BB	Lincoln HS-Majors BB	BB Majors	2
+5/17/2025	Sat	8:30 AM	7:00 PM	lw3	Game	12:30 PM	2:30 PM	Magnolia 5	El Camión-Majors BB	BB Majors	2
+5/17/2025	Sat	8:30 AM	7:00 PM	lw3	Game	3:00 PM	5:15 PM	Kitch Switch-AAA BB	Magnolia 6	BB AAA	4.5
+5/17/2025	Sat	8:30 AM	7:00 PM	lw4	Game	8:30 AM	10:00 AM	BB AA 3	BB AA 8	BB AA	1.5
+5/17/2025	Sat	8:30 AM	7:00 PM	lw4	Game	10:30 AM	12:00 PM	BB AA 3	BB AA 1	BB AA	1.5
+5/17/2025	Sat	8:30 AM	7:00 PM	lw4	Game	1:00 PM	2:30 PM	BB AA 6	BB AA 2	BB AA	1.5
+5/17/2025	Sat	8:30 AM	7:00 PM	lw4	Game	2:45 PM	4:15 PM	BB AA 8	BB AA 5	BB AA	1.5
+5/17/2025	Sat	8:30 AM	7:00 PM	lw4	Practice	4:00 PM	5:30 PM	BB AA 5	BB AA 8	BB AA	1.5
+5/17/2025	Sat	8:30 AM	7:00 PM	lw5	Game	8:30 AM	10:00 AM	BB AA 5	BB AA 2	BB AA	1.5
+5/17/2025	Sat	8:30 AM	7:00 PM	lw5	Game	10:00 AM	12:00 PM	Project 9-Majors BB	Magnolia 5	BB Majors	2
+5/17/2025	Sat	8:30 AM	7:00 PM	lw5	Game	12:30 PM	2:30 PM	RUG 3	Project 9-Majors BB	BB Majors	2
+5/17/2025	Sat	8:30 AM	7:00 PM	lw5	Game	3:00 PM	5:00 PM	Lincoln HS-Majors BB	RUG 3	BB Majors	2
+5/17/2025	Sat	8:30 AM	7:00 PM	lw5	Game	5:00 PM	7:00 PM	BB AA 4	BB AA 7	BB AA	1.5
+5/17/2025	Sat	8:30 AM	7:00 PM	lw6	Game	8:30 AM	10:00 AM	BB AA 6	BB AA 7	BB AA	1.5
+5/17/2025	Sat	8:30 AM	7:00 PM	lw6	Game	11:00 AM	1:15 PM	CubeSmart AAA SB	Orca Analytics AAA SB	SB AAA	2.25
+5/17/2025	Sat	8:30 AM	7:00 PM	lw6	Game	2:15 PM	4:30 PM	Focus Baseball-AAA BB	Ballard 2	BB AAA	2.25
+5/17/2025	Sat	8:30 AM	7:00 PM	lw6	Game	4:45 PM	7:00 PM	Cube Smart-AAA BB	Ballard 3	BB AAA	2.25
+5/18/2025	Sun	9:00 AM	5:00 PM	ross	EMPTY	9:00 AM	5:00 PM	EMPTY	EMPTY	EMPTY	8
+5/18/2025	Sun	3:00 PM	9:00 PM	lw6	Practice	3:00 PM	5:30 PM	Baseball Practice		BB Majors	2.5
+5/18/2025	Sun	3:00 PM	9:00 PM	lw6	Game	6:00 PM	8:30 PM	SB Juniors	Northwest	SB Juniors	2.5
+5/19/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB AA 1	Practice	BB AA	1
+5/19/2025	Mon	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB AA 2	Practice	BB AA	1
+5/19/2025	Mon	5:30 PM	7:30 PM	ross	Practice	5:30 PM	6:30 PM	BB AA 3	Practice	BB AA	1
+5/19/2025	Mon	5:30 PM	7:30 PM	ross	Practice	6:30 PM	7:30 PM	BB AA 4	Practice	BB AA	1
+5/19/2025	Mon	5:00 PM	7:00 PM	bitter lake 1	Practice	5:00 PM	7:00 PM	BB AAA 1	Practice	BB AAA	2
+5/19/2025	Mon	5:45 PM	9:00 PM	lw3	EMPTY	5:45 PM	9:00 PM	EMPTY	EMPTY	EMPTY	3.25
+5/19/2025	Mon	5:45 PM	9:00 PM	lw4	Practice	5:45 PM	7:15 PM	BB AAA 2	Practice	BB AAA	1.5
+5/19/2025	Mon	5:45 PM	9:00 PM	lw4	Practice	7:30 PM	9:00 PM	BB AAA 3	Practice	BB AAA	1.5
+5/19/2025	Mon	5:45 PM	9:00 PM	lw5	Practice	5:45 PM	7:15 PM	BB AAA 4	Practice	BB AAA	1.5
+5/19/2025	Mon	5:45 PM	9:00 PM	lw5	Practice	7:30 PM	9:00 PM	BB AAA 5	Practice	BB AAA	1.5
+5/19/2025	Mon	5:45 PM	9:00 PM	lw6	Practice	5:45 PM	7:15 PM	BB AAA 6	Practice	BB AAA	1.5
+5/19/2025	Mon	5:45 PM	9:00 PM	lw6	Practice	7:30 PM	9:00 PM	BB AAA 7	Practice	BB AAA	1.5
+5/20/2025	Tue	5:45 PM	9:00 PM	lw3	Coach Booked	5:45 PM	9:00 PM	BB Majors	BB Majors	BB Majors	3.25
+5/20/2025	Tue	5:45 PM	9:00 PM	lw4	Coach Booked	5:45 PM	9:00 PM	BB Majors	BB Majors	BB Majors	3.25
+5/20/2025	Tue	5:45 PM	9:00 PM	lw5	Game	6:15 PM	8:45 PM	Cube Smart-AAA SB	Magnolia 3	SB AAA	2.5
+5/20/2025	Tue	5:30 PM	7:30 PM	ross	Game	5:30 PM	7:15 PM	Greenwood Heating & Air A SB	TriWest A SB	SB A	1.75
+5/20/2025	Tue	5:00 PM	7:00 PM	bfday	Game	5:00 PM	7:00 PM	Puffin Pediatrics AA SB (Leon)	Bear Mountain Capital AA SB (Mitchell)	SB AA	2
+5/20/2025	Tue	5:45 PM	8:00 PM	lw6	Game	5:45 PM	8:00 PM	Valley Events AAA SB	Orca Analytics AAA SB	SB AAA	2.25
+5/20/2025	Tue	5:45 PM	8:15 PM	northacres 2	Game	5:45 PM	8:00 PM	Green Lake Orthodontics AA SB (Busto)	Phinney Books AA SB (Barnes)	SB AA	1.5
+5/21/2025	Wed	5:45 PM	9:00 PM	lw3	Game	5:45 PM	8:00 PM	Focus Baseball-AAA BB	Vertical Construction Group-AAA BB	BB AAA	2.25
+5/21/2025	Wed	5:45 PM	8:15 PM	lw4	Game	5:45 PM	8:00 PM	Industrious U-District-AAA BB	Harjo Construction-AAA BB	BB AAA	2.25
+5/21/2025	Wed	5:45 PM	9:00 PM	lw5	Game	5:45 PM	8:00 PM	Cube Smart-AAA BB	Bear Mountain Capital-AAA BB	BB AAA	2.25
+5/21/2025	Wed	5:45 PM	8:30 PM	lw6	Home Run Derby	5:45 PM	8:30 PM	Home Run Derby	Home Run Derby	HRD	2.25
+5/21/2025	Wed	5:30 PM	8:00 PM	ross	Game	5:30 PM	7:30 PM	SB Juniors	Ballard	SB Juniors	2
+5/21/2025	Wed	5:00 PM	7:30 PM	bfday	Practice	5:00 PM	7:00 PM	Marketime Foods AA SB (Baxter/DeNike)	Practice	SB AA	2
+5/22/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 5	Practice	BB A	1
+5/22/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 6	Practice	BB A	1
+5/22/2025	Thu	5:30 PM	8:00 PM	ross	Practice	5:30 PM	6:30 PM	BB A 7	Practice	BB A	1
+5/22/2025	Thu 	5:30 PM	8:00 PM	ross	Practice	6:30 PM	7:30 PM	BB A 8	Practice	BB A	1
+5/22/2025	Thu	5:45 PM	8:45 PM	lw3	Game	5:45 PM	8:45 PM	BB MAJORS PLAYOFF 1	BB MAJORS PLAYOFF 1	BB Majors	3
+5/22/2025	Thu	5:45 PM	8:00 PM	lw4	Game	5:45 PM	8:00 PM	BB MAJORS PLAYOFF 2	BB MAJORS PLAYOFF 2	BB Majors	2.25
+5/22/2025	Thu	5:45 PM	8:00 PM	lw5	Game	5:45 PM	8:00 PM	BB MAJORS PLAYOFF 3	BB MAJORS PLAYOFF 3	BB Majors	2.25
+5/22/2025	Thu	5:00 PM	6:30 PM	lw6	Practice	5:00 PM	6:30 PM	Orca Analytics AAA SB	Practice	SB AAA	1.5
+5/23/2025	Fri	5:30 PM	7:30 PM	ross	Game	5:30 PM	7:00 PM	BB AA 1	BB AA 5	BB AA	1.5
+5/23/2025	Fri	5:00 PM	7:30 PM	bfday	Game	5:00 PM	6:30 PM	BB AA 2	BB AA 7	BB AA	1.5
+5/23/2025	Fri	6:00 PM	8:30 PM	northacres 2	EMPTY	6:00 PM	8:30 PM	EMPTY	EMPTY	EMPTY	2.5
+5/23/2025	Fri	5:45 PM	8:45 PM	lw3	TOC Game	5:45 PM	8:45 PM	56th St Market SB Majors	Magnolia Boom Baby Rats	SB Majors	3
+5/23/2025	Fri	5:45 PM	8:45 PM	lw4	Practice	5:45 PM	8:45 PM	10s SB All Star Tryouts	Tryout	SB AAA	3
+5/23/2025	Fri	5:45 PM	8:45 PM	lw5	EMPTY	5:45 PM	8:45 PM	EMPTY	EMPTY	EMPTY	3
+5/23/2025	Fri	5:45 PM	8:45 PM	lw6	EMPTY	5:45 PM	8:45 PM	EMPTY	EMPTY	EMPTY	3
+5/23/2025	Fri	5:00 PM	7:30 PM	bitter lake 1	EMPTY	5:00 PM	7:30 PM	EMPTY	EMPTY	EMPTY	2.5
+5/24/2025	Sat	8:30 AM	5:30 PM	bfday	Game	3:00 PM	4:30 PM	BB A 5	BB A 4 	BB A	1.5
+5/24/2025	Sat	8:30 AM	5:30 PM	bfday	Game	11:00 AM	12:30 PM	BB A 6	BB A 2	BB A	1.5
+5/24/2025	Sat	8:30 AM	5:30 PM	bfday	Game	1:00 AM	2:30 PM	BB A 7	BB A 3	BB A	1.5
+5/24/2025	Sat	8:30 AM	5:30 PM	bfday	Game	9:00 AM	10:30 AM	BB A 8	BB A 1	BB A	1.5
+5/24/2025	Sat	8:30 AM	5:30 PM	ross	Practice	9:00 AM	10:00 AM	Marketime Foods AA SB (Baxter/DeNike)	Practice	SB AA	1
+5/24/2025	Sat	8:30 AM	5:30 PM	ross	EMPTY	10:00 AM	5:30 PM	EMPTY	EMPTY	EMPTY	7.5
+5/26/2025	Mon	5:00 PM	6:30 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 1	Practice	BB A	1
+5/26/2025	Mon	5:00 PM	6:30 PM	bfday	Practice	5:30 PM	6:30 PM	BB A 2	Practice	BB A	1
+5/26/2025	Mon	5:00 PM	8:30 PM	ross	Practice	5:00 PM	6:00 PM	BB A 3	Practice	BB A	1
+5/26/2025	Mon	5:00 PM	8:30 PM	ross	Practice	6:00 PM	7:00 PM	BB A 4	Practice	BB A	1
+5/26/2025	Mon	4:30 PM	6:30 PM	bitter lake 1	Practice	4:30 PM	6:30 PM	BB AAA 1	Practice	BB AAA	2
+5/26/2025	Mon	7:00 PM	9:00 PM	lw3	Practice	7:00 PM	8:30 PM	BB AAA 2	Practice	BB AAA	1.5
+5/26/2025	Mon	7:00 PM	9:00 PM	lw3	Practice	7:30 PM	9:00 PM	BB AAA 3	Practice	BB AAA	1.5
+5/26/2025	Mon	7:00 PM	9:00 PM	lw4	Practice	7:00 PM	8:30 PM	BB AAA 4	Practice	BB AAA	1.5
+5/26/2025	Mon	7:00 PM	9:00 PM	lw4	Practice	7:30 PM	9:00 PM	BB AAA 5	Practice	BB AAA	1.5
+5/26/2025	Mon	7:00 PM	9:00 PM	lw5	Practice	7:00 PM	8:30 PM	BB AAA 6	Practice	BB AAA	1.5
+5/26/2025	Mon	7:00 PM	9:00 PM	lw5	Practice	7:30 PM	9:00 PM	BB AAA 7	Practice	BB AAA	1.5
+5/26/2025	Mon	7:00 PM	8:00 PM	lw6	Open	7:00 PM	8:00 PM	Open Practice	Open Practice	BB AAA	1
+5/27/2025	Tue	5:00 PM	6:30 PM	bfday	EMPTY	5:00 PM	6:30 PM	EMPTY	EMPTY	EMPTY	1.5
+5/27/2025	Tue	5:00 PM	8:00 PM	ross	Game	5:00 PM	6:45 PM	TriWest A SB	Queen Anne	SB A	1.75
+5/27/2025	Tue	5:00 PM	7:00 PM	bitter lake 1	Open	5:00 PM	7:00 PM	BB AAA	BB AAA	BB AAA	2
+5/27/2025	Tue	5:45 PM	8:30 PM	lw3	TOC Game	6:00 PM	8:30 PM	CubeSmart AAA SB	NESLL Ultraviolet	SB AAA	2.75
+5/27/2025	Tue	5:45 PM	9:00 PM	lw4	TOC Game	6:15 PM	8:30 PM	RUGLL Raptors AAA SB	QA Catachinos AAA SB 	SB AAA	3.25
+5/27/2025	Tue	5:45 PM	9:00 PM	lw5	Coach Booked	5:45 PM	9:00 PM	BB Majors	BB Majors	BB Majors	3.25
+5/27/2025	Tue	5:45 PM	9:00 PM	lw6	Game	6:00 PM	7:45 PM	Puffin Pediatrics AA SB (Leon)	Marketime Foods AA SB (Baxter/DeNike)	SB AA	2
+5/28/2025	Wed	5:45 PM	8:00 PM	lw3	Open	5:45 PM	8:00 PM	BB AAA	BB AAA	BB AAA	2.25
+5/28/2025	Wed	5:45 PM	8:15 PM	lw4	TOC Game 	5:45 PM	8:15 PM	Cutter & Buck SB Majors 	Ballard #1	SB Majors 	2.5
+5/28/2025	Wed	5:45 PM	8:30 PM	lw5	TOC Game	5:45 PM	8:30 PM	RUG Aftershocks	56th St Market SB Majors	SB Majors	3.25
+5/28/2025	Wed	5:00 PM	6:45 PM	bitter lake 1	Open	5:00 PM	6:45 PM	BB AAA	BB AAA	BB AAA	1.75
+5/28/2025	Wed	5:00 PM	7:30 PM	ross	Game	5:00 PM	7:00 PM	Green Lake Orthodontics AA SB (Busto)	Bear Mountain Capital AA SB (Mitchell)	SB AA	2.25
+5/28/2025	Wed	5:00 PM	7:30 PM	bfday	Practice	5:00 PM	7:00 PM	Phinney Books AA SB (Barnes)	Practice	SB AA	2.5
+5/29/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	5:00 PM	6:00 PM	BB A 5	Practice	BB A	1
+5/29/2025	Thu	5:00 PM	7:00 PM	bfday	Practice	6:00 PM	7:00 PM	BB A 6	Practice	BB A	1
+5/29/2025	Thu	5:00 PM	7:30 PM	ross	Practice	5:00 PM	6:00 PM	BB A 7	Practice	BB A	1
+5/29/2025	Thu 	5:00 PM	7:30 PM	ross	Practice	6:00 PM	7:00 PM	BB A 8	Practice	BB A	1
+5/29/2025	Thu	5:45 PM	8:15 PM	lw4	Game	5:45 PM	8:15 PM	BB MAJORS PLAYOFF 4	BB MAJORS PLAYOFF 4	BB Majors	2.5
+5/29/2025	Thu	5:45 PM	8:30 PM	lw5	Game	5:45 PM	8:30 PM	BB MAJORS PLAYOFF 5	BB MAJORS PLAYOFF 5	BB Majors	2.75
+5/30/2025	Fri	5:00 PM	7:00 PM	bfday	Game	5:00 PM	6:30 PM	BB AA 6	BB AA 3	BB AA	1.5
+5/30/2025	Fri	5:00 PM	7:30 PM	ross	EMPTY	5:00 PM	7:30 PM	EMPTY	EMPTY	EMPTY	2.5
+5/30/2025	Fri	5:30 PM	7:30 PM	bitter lake 1	Open	5:30 PM	7:30 PM	Open Practice	Open Practice	Any	2
+5/30/2025	Fri	5:45 PM	7:00 PM	lw3	Open	5:30 PM	7:00 PM	BB AAA	BB AAA	BB AAA	1.25
+5/30/2025	Fri	5:45 PM	9:00 PM	lw4	AAA TOC Game	5:45 PM	9:00 PM	Orca Analytics AAA SB	RUGLL Raptors	SB AAA	3.25
+5/30/2025	Fri	5:45 PM	9:00 PM	lw5	Open	5:45 PM	9:00 PM	BB AAA	BB AAA	BB AAA	3.25
+5/30/2025	Fri	5:00 PM	7:00 PM	lw6	Game	5:30 PM	7:00 PM	BB AA 8	BB AA 4	BB AA	1.5
+May 31, 2025	Sat	9:00 AM	5:00 PM	Ross	Game	9:00 AM	11:00 AM	SB A 1	RUG 1	SB A	2
+May 31, 2025	Sat	9:00 AM	5:00 PM	Ross	Game	11:30 AM	1:30 PM	BB AA PLAYOFF 1	BB AA PLAYOFF 1	BB AA	2
+May 31, 2025	Sat	9:00 AM	5:00 PM	Ross	Game	2:00 PM	4:00 PM	BB AA PLAYOFF 2	BB AA PLAYOFF 2	BB AA	2
+May 31, 2025	Sat	9:00 AM	6:00 PM	Dahl 3	EMPTY	9:00 AM	6:00 PM	EMPTY	EMPTY	EMPTY	9
+May 31, 2025	Sat	9:00 AM	3:00 PM	lw3	Game	9:00 AM	11:30 PM	BB AAA PLAYOFF 1	BB AAA PLAYOFF 1	BB AAA	2.5
+May 31, 2025	Sat	9:00 AM	3:00 PM	lw3	Game	11:30 PM	3:00 PM	BB MAJORS PLAYOFF 6	BB MAJORS PLAYOFF 6	BB Majors	4
+May 31, 2025	Sat	9:00 AM	3:00 PM	lw4	Game	9:00 AM	11:30 AM	BB AAA PLAYOFF 2	BB AAA PLAYOFF 2	BB AAA	2.5
+May 31, 2025	Sat	9:00 AM	3:00 PM	lw4	Game	12:00 PM	3:00 PM	BB AAA PLAYOFF 3	BB AAA PLAYOFF 3	BB AAA	3
+May 31, 2025	Sat	9:00 AM	9:00 PM	lw5	Game	9:00 AM	11:00 AM	BB AA PLAYOFF 3	BB AA PLAYOFF 3	BB AA	2
+May 31, 2025	Sat	9:00 AM	9:00 PM	lw5	Game	11:30 AM	2:30 PM	BB MAJORS PLAYOFF 7	BB MAJORS PLAYOFF 7	BB Majors	3
+May 31, 2025	Sat	9:00 AM	9:00 PM	lw5	Game	3:00 PM	6:00 PM	BB MAJORS PLAYOFF 9	BB MAJORS PLAYOFF 9	BB Majors	3
+May 31, 2025	Sat	9:00 AM	9:00 PM	lw5	EMPTY	6:00 PM	9:00 PM	EMPTY	EMPTY	EMPTY	3
+May 31, 2025	Sat	9:00 AM	9:00 PM	lw6	Game	9:00 AM	11:00 AM	BB AA PLAYOFF 4	BB AA PLAYOFF 4	BB AA	2
+May 31, 2025	Sat	9:00 AM	9:00 PM	lw6	Game	11:00 AM	1:00 PM	Marketime Foods AA SB (Baxter/DeNike)	Green Lake Orthodontics AA SB (Busto)	SB AA	2
+May 31, 2025	Sat	9:00 AM	9:00 PM	lw6	Game	1:00 PM	3:00 PM	Bear Mountain Capital AA SB (Mitchell)	Phinney Books AA SB (Barnes)	SB AA	2
+May 31, 2025	Sat	9:00 AM	9:00 PM	lw6	Practice	3:00 PM	4:00 PM	Puffin Pediatrics AA SB (Leon)	Practice	SB AA	1
+May 31, 2025	Sat	9:00 AM	9:00 PM	lw6	AAA TOC Game	4:00 PM	7:00 PM	Valley Events AAA SB	NESLL Slay Queens	SB AAA	3
+May 31, 2025	Sat	9:00 AM	9:00 PM	lw6	EMPTY	7:00 PM	9:00 PM	EMPTY	EMPTY		2
+Jun 1, 2025	Sun	9:00 AM	4:15 PM	Ross	EMPTY	9:00 AM	4:15 PM	EMPTY	EMPTY	EMPTY	7.25
+Jun 1, 2025	Sun	1:30 PM	7:30 PM	lw4	EMPTY	1:00 PM	7:30 PM	EMPTY	EMPTY	EMPTY	6
+Jun 2, 2025	Mon	5:30 PM	7:30 PM	Ross	EMPTY	5:30 PM	7:30 PM	EMPTY	EMPTY	EMPTY	2
+Jun 2, 2025	Mon	4:30 PM	7:00 PM	Dahl 3	EMPTY	4:30 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2.5
+Jun 2, 2025	Mon	5:45 PM	7:15 PM	lw3							
+Jun 2, 2025	Mon	5:45 PM	8:45 PM	lw4	Game	5:45 PM	8:45 PM	BB AAA PLAYOFF 4	BB AAA PLAYOFF 4	BB AAA	3
+Jun 2, 2025	Mon	5:45 PM	8:30 PM	lw5	Game	5:45 PM	8:30 PM	BB AAA PLAYOFF 5	BB AAA PLAYOFF 5	BB AAA	2.75
+Jun 2, 2025	Mon	5:30 PM	8:00 PM	lw6	Game	5:30 PM	8:00 PM	BB AAA PLAYOFF 6	BB AAA PLAYOFF 6	BB AAA	2.5
+Jun 3, 2025	Tue	5:30 PM	7:30 PM	Ross	Game	5:30 PM	7:30 PM	SB A 2	Queen Anne 2	SB A	2
+Jun 3, 2025	Tue	6:00 PM	8:00 PM	Magnuson 11	Game	6:00 PM	8:00 PM	Phinney Books AA SB (Barnes)	Puffin Pediatrics AA SB (Leon)	SB AA	2
+Jun 3, 2025	Tue	5:45 PM	8:45 PM	lw4	Game	5:45 PM	8:45 PM	BB MAJORS PLAYOFF 9	BB MAJORS PLAYOFF 9	BB Majors	3
+Jun 3, 2025	Tue	5:45 PM	8:30 PM	lw5	Game	5:45 PM	8:30 PM	BB MAJORS PLAYOFF 8	BB MAJORS PLAYOFF 8	BB Majors	2.75
+Jun 4, 2025	Wed	5:30 PM	7:30 PM	Ross	Game	5:30 PM	7:30 PM	BB AA PLAYOFF 4	BB AA PLAYOFF 4	BB AA	2
+Jun 4, 2025	Wed	5:45 PM	8:15 PM	Thornton Creek 1	Game	6:00 PM	8:00 PM	BB AA PLAYOFF 5	BB AA PLAYOFF 5	BB AA	2
+Jun 4, 2025	Wed	5:45 PM	8:30 PM	lw4	Game	6:00 PM	8:00 PM	BB AA PLAYOFF 6	BB AA PLAYOFF 6	BB AA	2
+Jun 4, 2025	Wed	5:00 PM	8:30 PM	lw5	Game	5:30 PM	7:30 PM	Bear Mountain Capital AA SB (Mitchell)	Marketime Foods AA SB (Baxter/DeNike)	SB AA	2
+Jun 4, 2025	Wed	5:45 PM	7:15 PM	lw6	Game	5:45 PM	7:15 PM	BB AA PLAYOFF 7	BB AA PLAYOFF 7	BB AA	1.5
+Jun 5, 2025	Thu	5:30 PM	7:30 PM	Ross	Practice	5:30 PM	6:30 PM	BB A 1	BB A 2	BB A	1
+Jun 5, 2025	Thu	5:30 PM	7:30 PM	Ross	Practice	6:30 PM	7:30 PM	BB A 3	BB A 4	BB A	1
+Jun 5, 2025	Thu	5:45 PM	7:45 PM	northacres 2	Practice	5:45 PM	6:45 PM	BB A 5	BB A 6	BB A	1
+Jun 5, 2025	Thu	5:45 PM	7:45 PM	northacres 2	Practice	7:45 PM	8:45 PM	BB A 7	BB A 8	BB A	1
+Jun 5, 2025	Thu	5:00 PM	9:00 PM	BF Day	Practice	5:00 PM	7:00 PM	BB U10 All Stars	BB INT All Stars	BB All Stars	2
+Jun 5, 2025	Thu	5:00 PM	9:00 PM	BF Day	Practice	7:00 PM	9:00 PM	SB U12 All Stars	SB U10 All Stars	SB All Stars	2
+Jun 5, 2025	Thu	5:45 PM	8:00 PM	lw5	Game	4:45 PM	7:15 PM	BB AAA PLAYOFF 7	BB AAA PLAYOFF 7	BB AAA	2.5
+Jun 6, 2025	Fri	5:30 PM	7:30 PM	Ross	Practice	5:30 PM	7:30 PM	BB U10 All Stars	Practice	BB U10	2
+Jun 6, 2025	Fri	5:00 PM	7:00 PM	Dahl 3	EMPTY	5:00 PM	7:00 PM	EMPTY	EMPTY	EMPTY	2
+Jun 6, 2025	Fri	6:15 PM	9:00 PM	Eagle Staff (60)	Practice	6:15 PM	8:15 PM	SB U12 All Stars	Practice	SB U12	2
+Jun 6, 2025	Fri	6:00 PM	8:00 PM	lw4	Practice	7:00 PM	8:00 PM	BB U11 All Stars	Practice	BB U11	2
+Jun 6, 2025	Fri	5:45 PM	9:45 PM	lw5	Practice	6:00 PM	8:00 PM	BB INT All Stars	Practice	BB INT	2
+Jun 6, 2025	Fri	5:00 PM	8:00 PM	lw6	Practice	6:00 PM	8:00 PM	SB U10 All Stars	Practice	SB U10	2
+Jun 7, 2025	Sat	9:00 AM	5:00 PM	Ross	Game	9:00 AM	11:00 AM	SB A 2	RUG 1	SB A	2
+Jun 7, 2025	Sat	9:00 AM	5:00 PM	Ross	Game	1:00 PM	2:30 PM	02 TRAUBE	01 WICK	BB A	1.5
+Jun 7, 2025	Sat	9:00 AM	5:00 PM	Ross	Game	3:00 PM	4:30 PM	06 SALMERON	03 CLINCH	BB A	1.5
+Jun 7, 2025	Sat	9:00 AM	1:00 PM	BF Day	Game	9:00 AM	10:30 AM	07 DOUGLAS	04 HATRIDGE	BB A	1.5
+Jun 7, 2025	Sat	9:00 AM	1:00 PM	BF Day	Game	11:00 AM	12:30 PM	05 YOKEL	08 BACH	BB A	1.5
+Jun 7, 2025	Sat	4:00 PM	7:00 PM	Eagle Staff (60)	Game	4:00 PM	7:00 PM	BB AAA CHAMPIONSHIP	BB AAA CHAMPIONSHIP	BB AAA	3
+Jun 7, 2025	Sat	9:00 AM	3:00 PM	lw4	Game	9:00 AM	11:00 AM	BB AA PLAYOFF 9	BB AA PLAYOFF 9	BB AA	2
+Jun 7, 2025	Sat	9:00 AM	3:00 PM	lw4	Game	12:30 PM	3:30 PM	BB AAA PLAYOFF 8	BB AAA PLAYOFF 8	BB AAA	3
+Jun 7, 2025	Sat	11:30 PM	7:00 PM	lw5	Game	11:30 PM	1:30 PM	BB AA PLAYOFF 10	BB AA PLAYOFF 10	BB AA	2
+Jun 7, 2025	Sat	11:30 PM	7:00 PM	lw5	Game	2:00 PM	4:00 PM	Puffin Pediatrics AA SB (Leon)	Green Lake Orthodontics AA SB (Busto)	SB AA	2
+Jun 7, 2025	Sat	11:30 PM	7:00 PM	lw5	Game	4:30 PM	7:00 PM	BB AA CHAMPIONSHIP	BB AA CHAMPIONSHIP 	BB AA	2.5
+Jun 7, 2025	Sat	9:00 AM	1:00 PM	lw6	Game	9:00 AM	11:00 AM	BB AA PLAYOFF 11	BB AA PLAYOFF 11	BB AA	2
+Jun 7, 2025	Sat	9:00 AM	1:00 PM	lw6	Game	11:00 AM	1:00 PM	Phinney Books AA SB (Barnes)	Marketime Foods AA SB (Baxter/DeNike)	SB AA	2
+Jun 8, 2025	Sun	4:00 PM	6:00 PM	lw3	EMPTY	4:00 PM	6:00 PM	EMPTY	EMPTY	EMPTY	2
+Jun 8, 2025	Sun	4:00 PM	8:00 PM	lw6	Practice	5:00 PM	7:00 PM	SB U12 All Stars	Practice	SB U12	2
+Jun 9, 2025	Mon	5:30 PM	7:30 PM	Ross	Practice	5:30 PM	7:30 PM	SB U10 All Stars	Practice	SB U10	2
+Jun 9, 2025	Mon	4:00 PM	6:00 PM	Northacres 1	EMPTY	4:00 PM	6:00 PM	EMPTY	EMPTY	EMPTY	2
+Jun 9, 2025	Mon	4:00 PM	6:00 PM	Northacres 2	Practice	4:00 PM	6:00 PM	BB U10 All Stars	Practice	BB U10	2
+Jun 9, 2025	Mon	6:00 PM	8:00 PM	lw3	Practice	6:00 PM	8:00 PM	SB U12 All Stars	Practice	SB U12	2
+Jun 9, 2025	Mon	6:00 PM	8:30 PM	lw4	Practice	6:00 PM	8:30 PM	BB U11 All Stars	Practice	BB U11	2.5
+Jun 9, 2025	Mon	6:00 PM	9:00 PM	lw5	EMPTY	6:00 PM	9:00 PM	EMPTY	EMPTY	EMPTY	3
+Jun 9, 2025	Mon	5:00 PM	7:30 PM	lw6	Practice	6:00 PM	7:30 PM	BB INT All Stars	Practice	BB INT	1.5
+Jun 10, 2025	Tue	5:30 PM	7:30 PM	Ross	Game	6:00 PM	7:30 PM	TriWest A SB	RUG 3	SB A	1.5
+Jun 10, 2025	Tue	5:00 PM	9:00 PM	View Ridge 1	Practice	5:00 PM	6:00 PM	BB A 1	BB A 2	BB A	1
+Jun 10, 2025	Tue	5:00 PM	9:00 PM	View Ridge 1	Practice	6:00 PM	7:00 PM	BB A 3	BB A 4	BB A	1
+Jun 10, 2025	Tue	5:00 PM	9:00 PM	View Ridge 1	Practice	7:00 PM	8:00 PM	BB A 5	BB A 6	BB A	1
+Jun 10, 2025	Tue	5:00 PM	9:00 PM	View Ridge 1	Practice	8:00 PM	9:00 PM	BB A 7	BB A 8	BB A	1
+Jun 10, 2025	Tue	7:15 PM	9:00 PM	Northacres 2	Practice	7:15 PM	9:00 PM	SB U10 All Stars	Practice	SB U10	1.75
+Jun 10, 2025	Tue	6:00 PM	9:00 PM	lw5	Practice	6:00 PM	8:30 PM	BB U10 All Stars	Practice	BB U10	2.5
+Jun 11, 2025	Wed	5:00 PM	7:30 PM	Ross	Practice	5:00 PM	7:30 PM	SB U10 All Stars	Practice	SB U10	2.5
+Jun 11, 2025	Wed	5:30 PM	9:30 PM	Magnuson 10	Practice	6:00 PM	8:30 PM	SB U12 All Stars	Practice	SB U12	2.5
+Jun 11, 2025	Wed	5:30 PM	7:30 PM	lw3	Practice	5:30 PM	7:30 PM	BB INT All Stars	Practice	BB INT	2
+Jun 11, 2025	Wed	5:45 PM	9:00 PM	lw4	Scrimmage	5:45 PM	9:00 PM	BB U11 All Stars	QALL U11s	BB U11	3.25
+Jun 11, 2025	Wed	5:00 PM	9:00 PM	lw6	Game	5:30 PM	7:15 PM	SB AA	SB AA	SB AA	1.75
+Jun 11, 2025	Wed	5:00 PM	9:00 PM	lw6	Practice	7:30 PM	9:00 PM	BB U10 All Stars	Practice	BB U10	2.5
+Jun 12, 2025	Thu	5:30 PM	7:30 PM	Ross	Practice	5:30 PM	6:30 PM	BB A 1	BB A 2	BB A	1
+Jun 12, 2025	Thu	5:30 PM	7:30 PM	Ross	Practice	6:30 PM	7:30 PM	BB A 3	BB A 4	BB A	1
+Jun 12, 2025	Thu	5:00 PM	9:30 PM	Magnuson 10	Practice	7:00 PM	9:00 PM	SB Juniors	Practice	SB Juniors	2
+Jun 12, 2025	Thu	5:30 PM	7:30 PM	lw5	Practice	5:30 PM	7:30 PM	BB INT All Stars	Practice	BB INT	2
+Jun 12, 2025	Thu	6:00 PM	8:00 PM	lw6	Practice	6:00 PM	7:00 PM	BB A 5	BB A 6	BB A	1
+Jun 12, 2025	Thu	6:00 PM	8:00 PM	lw6	Practice	7:00 PM	8:00 PM	BB A 7	BB A 8	BB A	1
+Jun 13, 2025	Fri	5:30 PM	7:30 PM	Ross	EMPTY	5:30 PM	7:30 PM	EMPTY	EMPTY	EMPTY	2
+Jun 13, 2025	Fri	6:00 PM	9:00 PM	Eagle Staff (60)	Practice	6:30 PM	8:30 PM	SB U12 All Stars	Practice	SB U12	2
+Jun 13, 2025	Fri	5:45 PM	8:00 PM	lw3	Practice	6:00 PM	8:00 PM	SB U10 All Stars	Practice	SB U10	2
+Jun 13, 2025	Fri	5:45 PM	9:00 PM	lw4	Practice	5:45 PM	8:45 PM	BB U11 All Stars	Practice	BB U11	3
+Jun 13, 2025	Fri	5:45 PM	8:45 PM	lw5	Practice	5:45 PM	8:45 PM	BB U10 All Stars	Practice	BB U10	3
+Jun 13, 2025	Fri	5:00 PM	6:30 PM	lw6	Practice	5:00 PM	6:30 PM	BB U12 All Stars	Practice	BB U12	1.5
+Jun 14, 2025	Sat	10:00 AM	4:00 PM	Ross	Game	10:00 AM	11:30 AM	04 HATRIDGE	03 CLINCH	BB A	1.5
+Jun 14, 2025	Sat	10:00 AM	4:00 PM	Ross	Game	12:00 PM	1:30 PM	02 TRAUBE	06 SALMERON	BB A	1.5
+Jun 14, 2025	Sat	10:00 AM	4:00 PM	Ross	Game	2:00 PM	3:30 PM	08 BACH	07 DOUGLAS	BB A	1.5
+Jun 14, 2025	Sat	4:00 PM	7:00 PM	Eagle Staff (60)	Practice	4:00 PM	7:00 PM	SB U12 All Stars	Practice	SB U12	3
+Jun 14, 2025	Sat	9:00 AM	4:00 PM	lw3	Game	9:00 AM	10:30 AM	05 YOKEL	01 WICK	BB A	1.5
+Jun 14, 2025	Sat	9:00 AM	4:00 PM	lw3	Practice	12:00 PM	4:00 PM	BB INT All Stars	Practice	BB INT	4
+Jun 14, 2025	Sat	9:00 AM	4:00 PM	lw4	Practice	9:00 PM	12:00 PM	BB U10 All Stars	Practice	BB U10	3
+Jun 14, 2025	Sat	9:00 AM	4:00 PM	lw4	Practice	1:00 PM	4:00 PM	BB U10 All Stars	Practice	BB U10	3
+Jun 14, 2025	Sat	9:00 AM	4:00 PM	lw6	EMPTY	9:00 AM	12:00 PM	SB U10 All Stars	Practice	SB U10	3
+Jun 14, 2025	Sat	9:00 AM	4:00 PM	lw6	EMPTY	1:00 PM	4:00 PM	SB U10 All Stars	Practice	SB U10	3
+Jun 15, 2025	Sun	11:00 AM	5:00 PM	Ross	Practice	11:00 AM	2:00 PM	SB U10 All Stars	Practice	SB U10	3
+Jun 15, 2025	Sun	11:00 AM	5:00 PM	Ross	Practice	2:00 PM	5:00 PM	SB U12 All Stars	Practice	SB U12	3
+Jun 15, 2025	Sun	9:00 AM	4:00 PM	lw5	Practice	9:00 AM	12:30 PM	BB U10 All Stars	Practice	BB U10	3.5
+Jun 15, 2025	Sun	9:00 AM	4:00 PM	lw5	Practice	12:30 PM	4:00 PM	BB INT All Stars	Practice	BB INT	3.5
+Jun 16, 2025	Mon	5:30 PM	7:30 PM	Ross	Practice	5:30 PM	7:30 PM	SB U10 All Stars	Practice	SB U10	2
+Jun 16, 2025	Mon	5:00 PM	7:30 PM	Dahl 4	Practice	5:00 PM	7:30 PM	BB U11 All Stars	Practice	BB U11	2.5
+Jun 16, 2025	Mon	5:00 PM	9:00 PM	lw3	Practice	6:30 PM	8:30 PM	SB U12 All Stars	Practice	SB U12	2
+Jun 16, 2025	Mon	5:00 PM	9:00 PM	lw5	Practice	6:00 PM	8:30 PM	BB U10 All Stars	Practice	BB U10	2.5
+Jun 16, 2025	Mon	5:00 PM	7:00 PM	lw6	Practice	5:00 PM	7:00 PM	BB U12 All Stars	Practice	BB U12	2
+Jun 17, 2025	Tue	5:30 PM	7:30 PM	Ross	Practice	5:30 PM	7:30 PM	BB U10 All Stars	Practice	BB U10	2
+Jun 17, 2025	Tue	5:00 PM	7:00 PM	Ingraham 2 (60)	Practice	5:00 PM	7:00 PM	BB INT All Stars	Practice	BB INT	2
+Jun 17, 2025	Tue	4:45 PM	6:15 PM	lw6	Practice	5:00 PM	6:15 PM	SB U12 All Stars	Practice	SB U12	1.25
+Jun 18, 2025	Wed	5:30 PM	7:30 PM	Ross	Practice	5:30 PM	7:30 PM	SB U10 All Stars	Practice	SB U10	2
+Jun 18, 2025	Wed	6:00 PM	8:00 PM	Magnuson 10	Practice	6:00 PM	8:00 PM	BB U11 All Stars	Practice	BB U11	2
+Jun 18, 2025	Wed	5:00 PM	7:00 PM	Dahl 4	Practice	5:00 PM	7:00 PM	BB U10 All Stars	Practice	BB U10	2
+Jun 18, 2025	Wed	5:00 PM	7:00 PM	lw3	Practice	5:00 PM	7:00 PM	BB INT All Stars	Practice	BB INT	2
+Jun 19, 2025	Thu	5:30 PM	7:30 PM	Ross	Practice	5:30 PM	7:30 PM	SB U10 All Stars	Practice	SB U12	2
+Jun 19, 2025	Thu	4:00 PM	6:45 PM	Ingraham 2 (60)	Practice	4:00 PM	6:30 PM	BB U10 All Stars	Practice	BB U10	2.5
+Jun 19, 2025	Thu	5:00 PM	6:30 PM	View Ridge 1	EMPTY	5:00 PM	6:30 PM	EMPTY	EMPTY	EMPTY	1.5
+Jun 19, 2025	Thu	5:00 PM	6:15 PM	lw3	Practice	5:00 PM	6:15 PM	BB U11 All Stars	Practice	BB U11	1.25
+Jun 19, 2025	Thu	5:00 PM	9:30 PM	lw5	Practice	7:00 PM	9:00 PM	BB INT All Stars	Practice	BB INT	3
+Jun 20, 2025	Fri	4:00 PM	7:00 PM	Ingraham 2 (60)	Practice	4:00 PM	7:00 PM	BB INT All Stars	Practice	BB INT	3
+Jun 20, 2025	Fri	5:00 PM	9:00 PM	lw3	Practice	5:00 PM	7:00 PM	SB U10 All Stars	Practice	SB U10	2
+Jun 20, 2025	Fri	5:00 PM	9:00 PM	lw3	Practice	7:00 PM	9:00 PM	SB U12 All Stars	Practice	SB U12	2
+Jun 20, 2025	Fri	5:00 PM	7:00 PM	lw4	Practice	5:00 PM	7:00 PM	BB U11 All Stars	Practice	BB U11	2
+Jun 21, 2025	Sat	9:00 AM	5:00 PM	Ross	EMPTY	9:00 AM	5:00 PM	EMPTY	EMPTY	EMPTY	8
+Jun 21, 2025	Sat	4:00 PM	7:00 PM	Eagle Staff (60)	Practice	4:00 PM	7:00 PM	SB U12 All Stars	Practice	SB U12	3
+Jun 21, 2025	Sat	10:00 AM	2:00 PM	lw5	Practice	10:00 AM	2:00 PM	BB INT All Stars	Practice	BB INT	4
+Jun 21, 2025	Sat	10:00 AM	2:00 PM	lw6	Practice	10:00 AM	2:00 PM	SB U10 All Stars	Practice	SB U10	4
+Jun 22, 2025	Sun	11:00 AM	5:00 PM	Ross	Practice	11:00 AM	1:00 PM	BB INT All Stars	Practice	BB INT	2
+Jun 22, 2025	Sun	11:00 AM	5:00 PM	Ross	Practice	1:00 PM	3:00 PM	SB U10 All Stars	Practice	SB U10	2
+Jun 22, 2025	Sun	11:00 AM	5:00 PM	Ross	Practice	3:00 PM	5:00 PM	SB U12 All Stars	Practice	SB U12	2
+Jun 23, 2025	Mon	6:30 PM	8:15 PM	Eagle Staff (60)	Practice	6:30 PM	8:15 PM	BB U12 All Stars	Practice	BB U12	1.75
+Jun 23, 2025	Mon	5:15 PM	7:15 PM	lw3	Practice	5:15 PM	7:15 PM	BB INT All Stars	Practice	BB INT	2
+Jun 23, 2025	Mon	5:45 PM	9:00 PM	lw4	Practice	6:00 PM	8:00 PM	BB U10 All Stars	Practice	BB U10	2
+Jun 23, 2025	Mon	5:00 PM	9:00 PM	lw5	Practice	6:00 PM	8:00 PM	SB U12 All Stars	Practice	SB U12	2
+Jun 24, 2025	Tue	5:00 PM	8:00 PM	Ross	Practice	5:00 PM	8:00 PM	BB U10 All Stars	Practice	BB U10	3
+Jun 24, 2025	Tue	4:45 PM	6:15 PM	lw3	Practice	4:45 PM	6:15 PM	BB INT All Stars	Practice	BB INT	1.5
+Jun 24, 2025	Tue	5:45 PM	9:00 PM	lw4	Scrimmage	6:00 PM	9:00 PM	SB U10 All Stars	Kirkland National U10	SB U10	3
+Jun 24, 2025	Tue	5:00 PM	9:00 PM	lw5	Practice	6:00 PM	7:00 PM	BB U11 All Stars	Practice	BB U11	1
+Jun 24, 2025	Tue	5:00 PM	9:00 PM	lw5	Practice	7:00 PM	9:00 PM	SB U12 All Stars	Practice	SB U12	2
+Jun 25, 2025	Wed	5:00 PM	8:00 PM	Ross	Practice	5:00 PM	8:00 PM	SB U10 All Stars	Practice	SB U10	3
+Jun 25, 2025	Wed	5:00 PM	9:00 PM	lw3	Practice	6:00 PM	9:00 PM	SB U12 All Stars	Practice	SB U12	3
+Jun 25, 2025	Wed	5:45 PM	9:45 PM	lw4	Practice	6:00 PM	9:00 PM	BB U10 All Stars	Practice	BB U10	3
+Jun 25, 2025	Wed	5:00 PM	9:00 PM	lw5	Practice	6:00 PM	9:00 PM	BB INT All Stars	Practice	BB INT	3
+Jun 25, 2025	Wed	5:00 PM	9:00 PM	lw6	Practice	6:00 PM	9:00 PM	BB U12 All Stars	Practice	BB U12	3
+Jun 26, 2025	Thu	5:45 PM	9:00 PM	lw4	Practice	6:00 PM	9:00 PM	BB U10 All Stars	Practice	BB U10	3
+Jun 26, 2025	Thu	5:00 PM	9:00 PM	lw5	Practice	5:00 PM	7:00 PM	SB U10 All Stars	Practice	SB U10	2
+Jun 26, 2025	Thu	5:00 PM	9:00 PM	lw5	Practice	7:00 PM	9:00 PM	SB U12 All Stars	Practice	SB U12	2
+Jun 27, 2025	Fri	5:00 PM	9:00 PM	lw5	Practice	5:00 PM	9:00 PM	SB U10 All Stars	Practice	SB U10	4
+Jun 27, 2025	Fri	5:00 PM	9:00 PM	lw6	Practice	5:00 PM	9:00 PM	SB U12 All Stars	Practice	SB U12	4
+Jun 28, 2025	Sat	10:00 AM	12:00 PM	Ross	Practice	10:00 AM	12:00 PM	SB U10 All Stars	Practice	SB U10	2
+Jun 28, 2025	Sat	10:30 AM	5:00 PM	Eagle Staff (60)	Practice	10:30 AM	1:30 PM	BB U11 All Stars	Practice	BB U11	3
+Jun 28, 2025	Sat	10:30 AM	5:00 PM	Eagle Staff (60)	Practice	2:00 PM	5:00 PM	SB U12 All Stars	Practice	SB U12	3
+Jun 28, 2025	Sat	10:00 AM	2:00 PM	lw5	Practice	10:00 AM	1:00 PM	BB U12 All Stars	Practice	BB U10	3
+Jun 29, 2025	Sun	3:00 PM	5:00 PM	Eagle Staff (60)	Practice	3:00 PM	5:00 PM	SB U12 All Stars	Practice	SB U12	2
+Jun 29, 2025	Sun	3:00 PM	5:00 PM	lw3	Practice	3:00 PM	5:00 PM	BB U12 All Stars	Practice	BB U12	2
+Jun 29, 2025	Sun	3:00 PM	5:00 PM	lw4	Practice	3:00 PM	5:00 PM	BB U10 All Stars	Practice	BB U10	2
+Jun 29, 2025	Sun	3:00 PM	5:00 PM	lw5	Practice	3:00 PM	5:00 PM	SB U10 All Stars	Practice	SB U10	2
+Jun 30, 2025	Mon	4:30 PM	6:30 PM	Eagle Staff (60)	Practice	4:30 PM	6:30 PM	BB U11 All Stars	Practice	BB U11	2
+Jun 30, 2025	Mon	3:00 PM	5:30 PM	Ross	Practice	3:00 PM	5:30 PM	SB U10 All Stars	Practice	SB U10	2.5
+Jun 30, 2025	Mon	3:00 PM	5:30 PM	Northacres 2	Practice	3:00 PM	5:30 PM	SB U12 All Stars	Practice	SB U12	2.5
+Jul 1, 2025	Tue	4:00 PM	6:00 PM	Ross	Practice	4:00 PM	6:00 PM	SB U10 All Stars	Practice	SB U10	2
+Jul 1, 2025	Tue	6:30 PM	10:00 PM	Ingraham 2 (60)	EMPTY	6:30 PM	10:00 PM	EMPTY	EMPTY	EMPTY	3.5
+Jul 1, 2025	Tue	4:00 PM	5:30 PM	lw3	EMPTY	4:00 PM	5:30 PM	EMPTY	EMPTY	EMPTY	1.5
+Jul 1, 2025	Tue	5:00 PM	8:00 PM	lw4	Practice	6:30 PM	8:00 PM	BB U11 All Stars	Practice	BB U11	1.5
+Jul 1, 2025	Tue	9:00 AM	5:00 PM	lw5	EMPTY	9:00 PM	2:00 PM	EMPTY	EMPTY	EMPTY	5
+Jul 1, 2025	Tue	9:00 AM	5:00 PM	lw5	Practice	2:00 PM	5:00 PM	SB U12 All Stars	Practice	SB U12	3
+Jul 1, 2025	Tue	4:00 PM	5:30 PM	lw6	EMPTY	4:00 PM	5:30 PM	EMPTY	EMPTY	EMPTY	1.5
+Jul 2, 2025	Wed	5:30 PM	8:30 PM	Ross	Practice	5:30 PM	8:30 PM	SB U10 All Stars	Practice	SB U10	2
+Jul 2, 2025	Wed	2:00 PM	4:00 PM	lw3	Practice	2:00 PM	4:00 PM	SB U12 All Stars	Practice	SB U12	2
+Jul 2, 2025	Wed	5:00 PM	8:00 PM	lw4	Scrimmage	5:00 PM	8:00 PM	BB U11 All Stars	TBD	BB U11	3
+Jul 2, 2025	Wed	5:00 PM	6:30 PM	lw6	EMPTY	5:00 PM	6:30 PM	EMPTY	EMPTY	EMPTY	1.5
+Jul 3, 2025	Thu	5:30 PM	8:00 PM	Ross	Practice	5:30 PM	8:00 PM	SB U10 All Stars	Practice	SB U10	2.5
+Jul 3, 2025	Thu	5:00 PM	7:00 PM	lw3	Practice	5:00 PM	7:00 PM	SB U12 All Stars	Practice	SB U12	2
+Jul 3, 2025	Thu	6:00 PM	8:00 PM	lw5	Practice	6:00 PM	8:00 PM	BB U10 All Stars	Practice	BB U10	2
+Jul 3, 2025	Thu	6:00 PM	8:00 PM	Dahl 2	Practice	6:00 PM	8:00 PM	BB U11 All Stars	Practice	BB U11	2
+Jul 4, 2025	Fri	6:30 PM	8:00 PM	Eagle Staff (60)	Practice	6:30 PM	8:00 PM	SB U12 All Stars	Practice	SB U12	1.5
+Jul 4, 2025	Fri	5:00 PM	7:00 PM	lw3	Practice	5:00 PM	7:00 PM	SB U10 All Stars	Practice	SB U10	2
+Jul 5, 2025	Sat	9:00 AM	12:00 PM	Ross	Practice	9:00 AM	12:00 PM	BB U10 All Stars	Practice	BB U10	2
+Jul 5, 2025	Sat	1:00 PM	5:00 PM	Eagle Staff (60)	Practice	1:00 PM	3:00 PM	SB U10 All Stars	Practice	SB U10	2
+Jul 5, 2025	Sat	1:00 PM	5:00 PM	Eagle Staff (60)	Practice	3:00 PM	5:00 PM	SB U12 All Stars	Practice	SB U12	2
+Jul 6, 2025	Sun	3:00 PM	5:30 PM	Eagle Staff (60)	Practice	3:00 PM	5:30 PM	SB U12 All Stars	Practice	SB U12	2.5
+Jul 6, 2025	Sun	3:00 PM	5:00 PM	lw3	Practice	3:00 PM	5:00 PM	BB U11 All Stars	Practice	BB U11	2
+Jul 6, 2025	Sun	3:00 PM	5:00 PM	lw4	Practice	3:00 PM	5:00 PM	BB U10 All Stars	Practice	BB U10	2
+Jul 6, 2025	Sun	3:00 PM	5:00 PM	lw5	Practice	3:00 PM	5:00 PM	SB U10 All Stars	Practice	SB U10	2
+Jul 7, 2025	Mon	5:30 PM	8:30 PM	Ross							
+Jul 7, 2025	Mon	5:45 PM	8:15 PM	Dahl 4							
+Jul 7, 2025	Mon	5:45 PM	8:15 PM	Northacres 2							
+Jul 8, 2025	Tue	4:00 PM	6:00 PM	Ross							
+Jul 8, 2025	Tue	5:00 PM	7:00 PM	Northacres 2							
+Jul 8, 2025	Tue	3:00 PM	6:00 PM	lw3							
+Jul 8, 2025	Tue	5:00 PM	8:00 PM	lw4							
+Jul 8, 2025	Tue	4:00 PM	5:30 PM	lw6							
+Jul 9, 2025	Wed	5:30 PM	8:30 PM	Ross							
+Jul 9, 2025	Wed	3:00 PM	6:00 PM	lw3							
+Jul 9, 2025	Wed	5:00 PM	8:00 PM	lw4							
+Jul 9, 2025	Wed	4:00 PM	5:30 PM	lw6							
+Jul 10, 2025	Thu	5:30 PM	8:00 PM	Ross							
+Jul 10, 2025	Thu	5:45 PM	8:15 PM	Dahl 4							
+Jul 10, 2025	Thu	4:00 PM	9:00 PM	lw4							
+Jul 11, 2025	Fri	6:00 PM	8:00 PM	Eagle Staff (60)							
+Jul 11, 2025	Fri	5:00 PM	8:00 PM	lw5							
+Jul 12, 2025	Sat	9:00 AM	11:00 AM	Eagle Staff (60)							
+Jul 13, 2025	Sun	9:00 AM	11:00 AM	lw5							
+Jul 14, 2025	Mon	5:30 PM	8:30 PM	Ross							
+Jul 14, 2025	Mon	4:15 PM	8:00 PM	lw3							
+Jul 14, 2025	Mon	4:00 PM	9:00 PM	lw4							
+Jul 14, 2025	Mon	4:00 PM	9:00 PM	lw5							
+Jul 15, 2025	Tue	4:00 PM	6:00 PM	Ross							
+Jul 15, 2025	Tue	4:15 PM	6:30 PM	lw3							
+Jul 15, 2025	Tue	4:00 PM	9:00 PM	lw4							
+Jul 16, 2025	Wed	4:15 PM	6:30 PM	lw3							
+Jul 16, 2025	Wed	4:00 PM	5:30 PM	lw4							
+Jul 16, 2025	Wed	5:00 PM	8:30 PM	Ross							
+Jul 17, 2025	Thu	5:30 PM	8:00 PM	Ross							
+Jul 17, 2025	Thu	4:15 PM	6:30 PM	lw3							
+Jul 17, 2025	Thu	4:00 PM	9:00 PM	lw4							
+Jul 17, 2025	Thu	5:00 PM	7:00 PM	lw5							
+Jul 21, 2025	Mon	5:30 PM	8:30 PM	Ross							
+Jul 21, 2025	Mon	4:00 PM	9:00 PM	lw4							
+Jul 21, 2025	Mon	4:00 PM	9:00 PM	lw5							
+Jul 22, 2025	Tue	5:00 PM	8:00 PM	lw3							
+Jul 22, 2025	Tue	5:30 PM	8:00 PM	Ross							
+Jul 23, 2025	Wed	5:45 PM	8:00 PM	Ross							
+Jul 23, 2025	Wed	4:00 PM	6:30 PM	lw3							
+Jul 23, 2025	Wed	4:00 PM	6:00 PM	lw4							
+Jul 24, 2025	Thu	5:30 PM	8:00 PM	Ross							
+Jul 24, 2025	Thu	5:00 PM	8:00 PM	lw3							
+Jul 27, 2025	Sun	6:00 PM	8:00 PM	Magnuson 9							
+Jul 28, 2025	Mon	5:00 PM	05:00 PM - 08:30 PM	Ross							
+Jul 28, 2025	Mon	5:00 PM	8:00 PM	lw3							
+Jul 28, 2025	Mon	4:00 PM	6:00 PM	lw4							
+Jul 29, 2025	Tue	5:30 PM	8:00 PM	Ross							
+Jul 29, 2025	Tue	5:00 PM	8:00 PM	lw3							
+Jul 30, 2025	Wed	5:00 PM	7:45 PM	lw3							
+Jul 30, 2025	Wed	4:00 PM	6:00 PM	lw4							
+Jul 31, 2025	Thu	5:45 PM	8:00 PM	Ross							
+Jul 31, 2025	Thu	5:00 PM	8:00 PM	Magnuson 10							
+Jul 31, 2025	Thu	5:00 PM	8:00 PM	lw3							
+Jul 31, 2025	Thu	4:00 PM	6:00 PM	lw5							
+Jul 31, 2025	Thu	4:00 PM	9:00 PM	lw6							
+Aug 4, 2025	Mon	5:30 PM	8:00 PM	Ross							
+Aug 4, 2025	Mon	3:30 PM	5:30 PM	Magnuson 9							
+Aug 4, 2025	Mon	6:00 PM	8:00 PM	Dahl 3							
+Aug 4, 2025	Mon	5:30 PM	8:00 PM	Northacres 2							
+Aug 5, 2025	Tue	5:30 PM	8:00 PM	Ross							
+Aug 5, 2025	Tue	6:00 PM	8:00 PM	Dahl 3							
+Aug 5, 2025	Tue	5:30 PM	8:00 PM	lw6							
+Aug 6, 2025	Wed	5:30 PM	8:00 PM	Magnuson 11							
+Aug 6, 2025	Wed	5:30 PM	8:00 PM	Bitter Lake 1							
+Aug 7, 2025	Thu	5:30 PM	8:00 PM	Ross							
+Aug 7, 2025	Thu	5:30 PM	8:00 PM	Magnuson 10							
+Aug 7, 2025	Thu	5:30 PM	8:00 PM	Northacres 2							
+Aug 7, 2025	Thu	5:30 PM	8:00 PM	lw6							
+Aug 19, 2025	Tue	5:30 PM	8:00 PM	Ross							
+Aug 19, 2025	Tue	4:00 PM	6:30 PM	lw4							
+Aug 20, 2025	Wed	4:00 PM	6:30 PM	lw6							
+Aug 21, 2025	Thu	5:30 PM	8:00 PM	Ross							
+Aug 23, 2025	Sat	9:00 AM	2:30 PM	lw3							
+Aug 23, 2025	Sat	9:00 AM	6:30 PM	lw4							
+Aug 23, 2025	Sat	4:30 PM	6:30 PM	lw6							
+Aug 26, 2025	Tue	6:00 PM	8:00 PM	Ross							

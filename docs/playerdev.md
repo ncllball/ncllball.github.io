@@ -2,6 +2,10 @@
 
 headers for player development cards
 
+## Planning Resources
+
+- [2025 Schedule Breakdown](./schedule-2025-breakdown.md) — field usage, practice/game nights, and hours by division.
+
 What Players Do
 Session Format
 Schedule, Location & Registration
