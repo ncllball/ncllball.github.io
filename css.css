@@ -1966,7 +1966,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__heading-title {
-    display: flex;
+    display: contents;
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
