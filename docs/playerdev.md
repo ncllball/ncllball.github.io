@@ -1,3 +1,5 @@
+# Player Development Card Headers
+
 headers for player development cards
 
 What Players Do
@@ -18,10 +20,8 @@ Schedule & Registration
 Player Fit
 Camp Experience
 
-
-all winterball26 friensd of ncll 
-
+all winterball26 friensd of ncll
 
 Winter Softball Programs
 Pitching Development
-Camps
+Camp
