@@ -2324,6 +2324,9 @@ details.footies[open] summary::before {
 /* Toggle deck extension -------------------------------------------------- */
 .ncll-card--toggle {
     position: relative;
+    --ncll-card-sticky-offset: var(--card-toggle-sticky-height);
+    --ncll-card-sticky-gap: var(--card-toggle-sticky-gap);
+    --ncll-card-actions-height: var(--card-toggle-actions-height);
 }
 
 .ncll-card--toggle .panel {
@@ -2331,7 +2334,7 @@ details.footies[open] summary::before {
 }
 
 :root {
-    --card-toggle-sticky-offset: 1.6rem;
+    --card-toggle-sticky-height: 6.75rem;
     --card-toggle-sticky-gap: 1.5rem;
     --card-toggle-actions-height: 60px;
     --card-toggle-panel-pad-bottom: 1.75rem;
@@ -2449,16 +2452,19 @@ details.footies[open] summary::before {
     margin-bottom: 1rem;
     align-items: center;
     justify-content: center;
-    --sticky-offset: var(--card-toggle-sticky-offset, 6.75rem);
-    min-height: var(--pd-card-sticky-min-height, 3rem);
+    --sticky-offset: var(--ncll-card-sticky-offset, var(--card-toggle-sticky-height));
+    min-height: var(--sticky-offset, var(--pd-card-sticky-min-height, 3rem));
     /* Keeps card headers aligned even when titles wrap */
 }
 
-.ncll-card--toggle .panel {
-    padding-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + var(--card-toggle-sticky-gap, 1.5rem));
+.ncll-card--toggle .ncll-card__body {
+    padding-top: calc(
+        var(--ncll-card-sticky-offset, var(--card-toggle-sticky-height)) +
+        var(--ncll-card-sticky-gap, var(--card-toggle-sticky-gap))
+    );
     padding-bottom: var(--card-toggle-panel-pad-bottom, 1.75rem);
-    scroll-margin-top: calc(var(--sticky-offset, var(--card-toggle-sticky-offset, 6.75rem)) + 0.5rem);
-    scroll-margin-bottom: calc(var(--card-toggle-actions-height, 60px) + 0.5rem);
+    scroll-margin-top: calc(var(--ncll-card-sticky-offset, var(--card-toggle-sticky-height)) + 0.5rem);
+    scroll-margin-bottom: calc(var(--ncll-card-actions-height, var(--card-toggle-actions-height)) + 0.5rem);
 }
 
 .ncll-card--toggle .panel> :first-child {
