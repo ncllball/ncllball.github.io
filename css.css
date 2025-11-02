@@ -2437,6 +2437,7 @@ details.footies[open] summary::before {
     cursor: pointer;
 }
 
+
 .ncll-card--toggle .ncll-card__sticky-heading {
     display: flex;
     flex-wrap: nowrap;
