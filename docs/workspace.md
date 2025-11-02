@@ -22,3 +22,7 @@ Notes
 
 - This is editor-only structure; it does not affect the site or GitHub Pages
 - The existing tasks continue to work from the repo root
+
+## Related Docs
+
+- [2025 Schedule Breakdown](./schedule-2025-breakdown.md) — snapshot of fields, nights, and hours by division for planning.
