@@ -5,6 +5,7 @@ _Source: `.github/projects/schedule/master_2025.tsv` — generated automatically
 Counts reflect individual permit slots; hours sum the scheduled duration of those slots.
 
 ## Any
+
 - **Practice slots:** 0 (0.0 hrs total)
 - **Practice nights:** none scheduled
 - **Practice fields:** none scheduled
