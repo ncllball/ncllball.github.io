@@ -2449,7 +2449,7 @@ details.footies[open] summary::before {
     border-bottom: 1px solid var(--color_border_light);
     margin-bottom: 1rem;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     --sticky-offset: var(--card-toggle-sticky-offset, 6.75rem);
     min-height: var(--pd-card-sticky-min-height, 3rem);
     /* Keeps card headers aligned even when titles wrap */
