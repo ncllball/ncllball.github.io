@@ -2431,7 +2431,6 @@ details.footies[open] summary::before {
 .ncll-card--toggle input[type="radio"][id$="-6"]:checked~.panel6 {
     display: block;
 }
-
 .ncll-card--toggle .btn-next {
     display: none;
     cursor: pointer;
