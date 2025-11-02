@@ -2334,7 +2334,7 @@ details.footies[open] summary::before {
 }
 
 :root {
-    --card-toggle-sticky-height: 6.75rem;
+    --card-toggle-sticky-height: 5.25rem;
     --card-toggle-sticky-gap: 1.5rem;
     --card-toggle-actions-height: 60px;
     --card-toggle-panel-pad-bottom: 1.75rem;
