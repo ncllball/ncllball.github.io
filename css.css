@@ -2247,6 +2247,14 @@ details.footies[open] summary::before {
     min-height: 500px;
 }
 
+.ncll-card--overlay.ncll-card--toggle .ncll-card__body {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: var(--ncll-card-actions-height, var(--card-toggle-actions-height));
+    padding-bottom: calc(var(--card-toggle-panel-pad-bottom, 1.75rem) + 10px);
+}
+
 .ncll-card--overlay .ncll-card__body.pd-override {
     padding: 20px;
     padding-bottom: 0;
@@ -2301,7 +2309,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--toggle .ncll-card__sticky-footer {
-    height: auto;
+    min-height: var(--ncll-card-actions-height, var(--card-toggle-actions-height));
     padding: 12px 20px;
     border-top: 1px solid var(--color_border_light);
     gap: 12px;
@@ -2337,7 +2345,7 @@ details.footies[open] summary::before {
 :root {
     --card-toggle-sticky-height: 4rem;
     --card-toggle-sticky-gap: 1rem;
-    --card-toggle-actions-height: 60px;
+    --card-toggle-actions-height: 72px;
     --card-toggle-panel-pad-bottom: 1.75rem;
 }
 
