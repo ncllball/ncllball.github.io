@@ -1,4 +1,6 @@
-# 1 going wSO i know thsi is alte but I forget what it takes to get things together. I've been owrking on the path our users will take and making sure we have alwesome web content along the way. You should know, it is hard to actually have folks test these things. It needs to be open If you want to really test it and there is no real way to open it without it being available to everyone in the NCLL commuinitity via their SPorts Connect page. Even if I don't paste a link anywhere on the website, the system will still show it as available to users. 
+# i know thsi is alte but I forget what it takes to get things together. I've been owrking on the path our users will take and making sure we have alwesome web content along the way. You should know, it is hard to actually have folks test these things. It needs to be open If you want to really test it and there is no real way to open it without it being available to everyone in the NCLL commuinitity via their SPorts Connect page. Even if I don't paste a link anywhere on the website, the system will still show it as available to users.
+
+
 
 The nice feature that helps me the registrar the most is the ability to add your kid to the cart even if the thing is closed. So that being said, if you havee a kidf and actually want to get registered and test it that way, just let me know and I'll add it to your cart. 
 
@@ -15,6 +17,7 @@ i pruned a bunch for a few reasons:
 - settled on these tiles
 - the main places youll see them are:
 
+We put a bunhc of time in trying to get families to a better decisiosn for ordering clothing. 
 
 Player Development Programs
 uniform sizing charts
