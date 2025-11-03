@@ -1962,7 +1962,7 @@ details.footies[open] summary::before {
     color: var(--color_blue);
     text-align: center;
     padding-top: 1px;
-    margin-top: auto;
+    margin-top: auto !important;
 }
 
 .ncll-card__heading-title {
