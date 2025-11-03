@@ -2533,10 +2533,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--toggle .lightbox-thumb img {
-    max-width: 140px;
-    border-radius: 4px;
     display: block;
-    filter: grayscale(90%) contrast(100%);
     transition: filter 220ms ease, transform 200ms ease;
 }
 
