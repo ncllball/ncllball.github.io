@@ -2051,7 +2051,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__details li {
-    line-height: 1.35;
+    line-height: 1.7;
     list-style: disc;
     color: var(--color_muted);
     font-size: .9rem;
