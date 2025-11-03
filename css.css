@@ -2003,7 +2003,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__meta li {
-    line-height: 1.35;
+    line-height: 1.7;
     list-style: none;
     color: var(--color_muted);
     font-size: 0.9rem;
