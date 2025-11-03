@@ -2108,6 +2108,27 @@ details.footies[open] summary::before {
     box-sizing: border-box;
 }
 
+.ncll-card__graphics--pair {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px 0;
+}
+
+.ncll-card__graphics--pair .ncll-card__graphic {
+    flex: 1 1 0;
+    width: 100%;
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    .ncll-card__graphics--pair {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
 .ncll-card__clipboard:focus-visible,
 .clipboard-link:focus-visible {
     outline: 3px solid var(--color_richblue);
