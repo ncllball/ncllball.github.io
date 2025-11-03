@@ -2190,7 +2190,7 @@ details.footies[open] summary::before {
 
 .ncll-card__sticky-footer .button--primary {
     background: var(--color_blue);
-    color: #fff;
+    color: #fff !important;
     border: 1px solid var(--color_blue);
 }
 
