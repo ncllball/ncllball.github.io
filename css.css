@@ -2113,7 +2113,8 @@ details.footies[open] summary::before {
     gap: 20px;
     justify-content: center;
     align-items: stretch;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 600px;
 }
 
 .ncll-card__graphics--pair .lightbox-thumb {
