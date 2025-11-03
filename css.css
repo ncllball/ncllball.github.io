@@ -2116,8 +2116,15 @@ details.footies[open] summary::before {
     margin: 20px 0;
 }
 
-.ncll-card__graphics--pair .ncll-card__graphic {
+.ncll-card__graphics--pair .lightbox-thumb {
     flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ncll-card__graphics--pair .lightbox-thumb img {
+    width: 100%;
     max-width: none;
     height: auto;
     margin: 0;
