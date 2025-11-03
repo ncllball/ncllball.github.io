@@ -2598,6 +2598,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.ncll-card__body label[for$="-1"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-2"]:checked~.ncll-card__body label[for$="-2"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-3"]:checked~.ncll-card__body label[for$="-3"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-4"]:checked~.ncll-card__body label[for$="-4"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-5"]:checked~.ncll-card__body label[for$="-5"] img,
@@ -2619,6 +2620,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"],
+.ncll-card--toggle input.lightbox-toggle[id$="-2"]:checked~.lightbox[data-id="2"],
 .ncll-card--toggle input.lightbox-toggle[id$="-3"]:checked~.lightbox[data-id="3"],
 .ncll-card--toggle input.lightbox-toggle[id$="-4"]:checked~.lightbox[data-id="4"],
 .ncll-card--toggle input.lightbox-toggle[id$="-5"]:checked~.lightbox[data-id="5"],
@@ -2641,6 +2643,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-2"]:checked~.lightbox[data-id="2"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-3"]:checked~.lightbox[data-id="3"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-4"]:checked~.lightbox[data-id="4"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-5"]:checked~.lightbox[data-id="5"] img,
