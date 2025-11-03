@@ -2381,11 +2381,12 @@ details.footies[open] summary::before {
     font-size: 0.8rem;
     text-align: center;
     width: 100%;
+    color: var(--color_darkgray);
 }
 
 .ncll-micro__table th {
     border-collapse: collapse;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .ncll-micro__table thead th {
@@ -2398,6 +2399,8 @@ details.footies[open] summary::before {
     border-collapse: collapse;
     font-weight: 400;
     text-align: center;
+    line-height: 1.8;
+
 }
 
 .division-toggle {
