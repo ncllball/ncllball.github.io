@@ -2102,7 +2102,7 @@ details.footies[open] summary::before {
     width: 200px;
     max-width: 100%;
     height: auto;
-    margin: 20px auto 10px auto;
+    margin: 10px auto 20px auto;
     object-fit: cover;
     display: block;
     border-radius: 4px;
