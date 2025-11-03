@@ -2145,7 +2145,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__graphic {
-    width: 100px;
+    width: 200px;
     max-width: 100%;
     height: auto;
     margin: 10px auto 40px auto;
