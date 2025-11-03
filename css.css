@@ -1,3 +1,49 @@
+:root {
+    /* TEMP: font-family testing variables */
+    --tk-proxima-nova-condensed: "proxima-nova-condensed",sans-serif;
+    --tk-proxima-nova-extra-condensed: "proxima-nova-extra-condensed",sans-serif;
+    --tk-refrigerator-deluxe: "refrigerator-deluxe",sans-serif;
+    --tk-cronos-pro: "cronos-pro",sans-serif;
+    --tk-cronos-pro-caption: "cronos-pro-caption",sans-serif;
+    --tk-cronos-pro-display: "cronos-pro-display",sans-serif;
+    --tk-roboto: "roboto",sans-serif;
+    --tk-cronos-pro-subhead: "cronos-pro-subhead",sans-serif;
+    --tk-source-sans-pro: "source-sans-pro",sans-serif;
+    --tk-source-serif-pro: "source-serif-pro",serif;
+    --tk-prohibition: "prohibition",sans-serif;
+    --tk-roboto-condensed: "roboto-condensed",sans-serif;
+    --tk-erbaum: "erbaum",sans-serif;
+    --tk-wingdings: "wingdings",sans-serif;
+    --tk-wingdings-3: "wingdings-3",sans-serif;
+    --tk-wingdings-2: "wingdings-2",sans-serif;
+    --tk-noto-sans-display-extraconde: "noto-sans-display-extraconde",sans-serif;
+    --tk-noto-sans-display-condensed: "noto-sans-display-condensed",sans-serif;
+    --tk-noto-sans-display-semiconden: "noto-sans-display-semiconden",sans-serif;
+    --tk-noto-sans-display: "noto-sans-display",sans-serif;
+    --tk-source-serif-4: "source-serif-4",serif;
+    --tk-quinn-display: "quinn-display",serif;
+    --tk-manifold-cf: "manifold-cf",sans-serif;
+    --tk-proxima-sera: "proxima-sera",sans-serif;
+    --tk-nexa-rust-sans-black-2: "nexa-rust-sans-black-2",sans-serif;
+    --tk-nexa-rust-sans-black-shad-2: "nexa-rust-sans-black-shad-2",sans-serif;
+    --tk-nexa-rust-slab-black: "nexa-rust-slab-black",sans-serif;
+    --tk-nexa-rust-slab-black-2: "nexa-rust-slab-black-2",sans-serif;
+    --tk-nexa-rust-slab-black-shad-2: "nexa-rust-slab-black-shad-2",sans-serif;
+    --tk-nexa-rust-script-shad-2: "nexa-rust-script-shad-2",sans-serif;
+    --tk-zuume: "zuume",sans-serif;
+    --tk-kensington: "kensington",sans-serif;
+    --tk-config-variable: "config-variable",sans-serif;
+    --tk-archer-hairline-pro: "archer-hairline-pro",sans-serif;
+    --tk-archer-thin-pro: "archer-thin-pro",sans-serif;
+    --tk-archer-pro: "archer-pro",sans-serif;
+    --tk-gotham-xnarrow: "gotham-xnarrow",sans-serif;
+    --tk-gotham-narrow: "gotham-narrow",sans-serif;
+    --tk-gotham-condensed: "gotham-condensed",sans-serif;
+    --tk-gotham: "gotham",sans-serif;
+    --tk-corbel: "corbel",sans-serif;
+    --tk-comma-sans: "comma-sans",sans-serif;
+}
+
 .purpose-row {
     display: flex;
     align-items: center;
@@ -2102,11 +2148,12 @@ details.footies[open] summary::before {
     width: 100px;
     max-width: 100%;
     height: auto;
-    margin: 10px auto 20px auto;
+    margin: 10px auto 40px auto;
     object-fit: cover;
     display: block;
     border-radius: 4px;
     box-sizing: border-box;
+    
 }
 
 .ncll-card__graphics--pair {
