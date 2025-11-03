@@ -2756,3 +2756,7 @@ details.footies[open] summary::before {
 .ncll-micro__table caption {
     display: none;
 }
+
+.measurement {
+        width: 200px;
+}
