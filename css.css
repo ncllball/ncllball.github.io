@@ -2429,6 +2429,7 @@ details.footies[open] summary::before {
     text-align: center;
     width: 100%;
     color: var(--color_darkgray);
+    font-family: var(--tk-noto-sans-display-semiconden);
 }
 
 .ncll-micro__table th {
