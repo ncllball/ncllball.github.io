@@ -2447,6 +2447,9 @@ details.footies[open] summary::before {
     border-collapse: collapse;
     font-weight: 400;
     text-align: center;
+        padding: 0px;
+    line-height: 1.7;
+
 
 }
 
