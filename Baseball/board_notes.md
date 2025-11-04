@@ -13,3 +13,6 @@ Hey board, quick download before we open registration. Keeping it casual so you 
 
 
 While everyone checks it out, Let me know nay other questions. Ill be working on porting the volunteer and umpire information and links over.
+
+*This is where the practice/game days for each division came from. 
+https://github.com/ncllball/ncllball.github.io/blob/main/docs/schedule-2025-breakdown.md
