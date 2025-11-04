@@ -1461,6 +1461,13 @@ body:not(.cms-right) .only-on-right {
     white-space: nowrap
 }
 
+.age-matrix thead th:nth-child(3),
+.age-matrix thead th:nth-child(4),
+.age-matrix tbody td:nth-child(3),
+.age-matrix tbody td:nth-child(4) {
+    text-align: center;
+}
+
 .age-matrix tbody tr:first-child td {
     padding-top: 12px
 }
