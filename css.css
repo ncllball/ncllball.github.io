@@ -2676,6 +2676,8 @@ details.footies[open] summary::before {
 .ncll-card--toggle input.lightbox-toggle[id$="-coach-shirt"]:checked~.ncll-card__body label[for$="-coach-shirt"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-coach-hoodie"]:checked~.ncll-card__body label[for$="-coach-hoodie"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-coach-hat"]:checked~.ncll-card__body label[for$="-coach-hat"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-hat-left"]:checked~.ncll-card__body label[for$="-coach-hat-left"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-hat-back"]:checked~.ncll-card__body label[for$="-coach-hat-back"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-hat"]:checked~.ncll-card__body label[for$="-hat"] img {
     filter: none;
     transform: scale(1.02);
@@ -2698,6 +2700,8 @@ details.footies[open] summary::before {
 .ncll-card--toggle input.lightbox-toggle[id$="-coach-shirt"]:checked~.lightbox[data-id="coach-shirt"],
 .ncll-card--toggle input.lightbox-toggle[id$="-coach-hoodie"]:checked~.lightbox[data-id="coach-hoodie"],
 .ncll-card--toggle input.lightbox-toggle[id$="-coach-hat"]:checked~.lightbox[data-id="coach-hat"],
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-hat-left"]:checked~.lightbox[data-id="coach-hat-left"],
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-hat-back"]:checked~.lightbox[data-id="coach-hat-back"],
 .ncll-card--toggle input.lightbox-toggle[id$="-hat"]:checked~.lightbox[data-id="hat"] {
     visibility: visible;
     opacity: 1;
@@ -2721,6 +2725,8 @@ details.footies[open] summary::before {
 .ncll-card--toggle input.lightbox-toggle[id$="-coach-shirt"]:checked~.lightbox[data-id="coach-shirt"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-coach-hoodie"]:checked~.lightbox[data-id="coach-hoodie"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-coach-hat"]:checked~.lightbox[data-id="coach-hat"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-hat-left"]:checked~.lightbox[data-id="coach-hat-left"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-coach-hat-back"]:checked~.lightbox[data-id="coach-hat-back"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-hat"]:checked~.lightbox[data-id="hat"] img {
     transform: scale(1);
     opacity: 1;
