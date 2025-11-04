@@ -265,7 +265,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     /* font stacks */
     --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     --font_sans: "proxima-nova", var(--font_ui);
-    --font_heading: var(--font_ui);
+    --font_heading: var(--tk-noto-sans-display-semiconden), var(--font_ui);
     /* tag font */
     --font_tag: var(--font_ui), "proxima-nova";
     --age-matrix-td-font: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif
@@ -283,7 +283,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     margin: 0 0 18px 0;
     padding: 0;
     color: var(--color_blue) !important;
-
+    font-family: var(--font_heading) !important;
 }
 
 h2.left::before {
@@ -2161,12 +2161,6 @@ details.footies[open] summary::before {
     height: auto;
 }
 
-.ncll-card__graphic--top_tight {
-    margin: 0px auto 20px auto;
-}
-.ncll-card__graphics--top_tight {
-    margin: 0px auto 20px auto;
-}
 .ncll-card__graphics--pair {
     display: flex;
     gap: 20px;
