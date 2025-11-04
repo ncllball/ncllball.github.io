@@ -2156,6 +2156,11 @@ details.footies[open] summary::before {
     
 }
 
+.ncll-card__graphic--small {
+	width: 100px;
+	height: auto;
+}
+
 .ncll-card__graphics--pair {
     display: flex;
     gap: 20px;
