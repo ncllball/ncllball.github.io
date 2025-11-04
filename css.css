@@ -2457,9 +2457,10 @@ details.footies[open] summary::before {
 
 
 }
-.ncll-micro__table tbody tr:first-child td {
-    border-top: 1px solid var(--color_midgray, #d0d0d0);
-    padding-top: 0.4rem;
+.ncll-micro__table tbody tr:first-child td,
+.ncll-micro__table tbody tr:first-child th {
+    padding-top: .8rem;
+    line-height:1.2
 }
 
 .division-toggle {
