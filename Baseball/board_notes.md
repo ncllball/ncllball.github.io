@@ -19,6 +19,9 @@ i pruned a bunch for a few reasons:
 
 We put a bunhc of time in trying to get families to a better decisiosn for ordering clothing. 
 
+
+These are the pages on the website that users will need to access of this years regsitraiotnr. 
+
 Player Development Programs
 uniform sizing charts
 baseball information
@@ -30,3 +33,6 @@ easier and faster this year
  Are you interested in volunteering as a Parent Helper/Assistant for winter training? This is *NOT* a Head Coach role. These kids need extra eyes, ears, and hands. Program Coordinator Jay Tufte will contact you if you select "Yes."
 
 
+focused on getting better unifrom outcomes with increased visibility into what we offer, but with that comes a bit more complex registration sizing questions. becasue we cant ask different questions of different divisions. 
+
+given more detail this year than any other,. notice for the 
