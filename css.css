@@ -2162,9 +2162,11 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__graphic--top_tight {
-    margin: 20px auto 30px auto;
+    margin: 0px auto 20px auto;
 }
-
+.ncll-card__graphics--top_tight {
+    margin: 0px auto 20px auto;
+}
 .ncll-card__graphics--pair {
     display: flex;
     gap: 20px;
