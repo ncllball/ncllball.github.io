@@ -1,47 +1,47 @@
 :root {
     /* TEMP: font-family testing variables */
-    --tk-proxima-nova-condensed: "proxima-nova-condensed",sans-serif;
-    --tk-proxima-nova-extra-condensed: "proxima-nova-extra-condensed",sans-serif;
-    --tk-refrigerator-deluxe: "refrigerator-deluxe",sans-serif;
-    --tk-cronos-pro: "cronos-pro",sans-serif;
-    --tk-cronos-pro-caption: "cronos-pro-caption",sans-serif;
-    --tk-cronos-pro-display: "cronos-pro-display",sans-serif;
-    --tk-roboto: "roboto",sans-serif;
-    --tk-cronos-pro-subhead: "cronos-pro-subhead",sans-serif;
-    --tk-source-sans-pro: "source-sans-pro",sans-serif;
-    --tk-source-serif-pro: "source-serif-pro",serif;
-    --tk-prohibition: "prohibition",sans-serif;
-    --tk-roboto-condensed: "roboto-condensed",sans-serif;
-    --tk-erbaum: "erbaum",sans-serif;
-    --tk-wingdings: "wingdings",sans-serif;
-    --tk-wingdings-3: "wingdings-3",sans-serif;
-    --tk-wingdings-2: "wingdings-2",sans-serif;
-    --tk-noto-sans-display-extraconde: "noto-sans-display-extraconde",sans-serif;
-    --tk-noto-sans-display-condensed: "noto-sans-display-condensed",sans-serif;
-    --tk-noto-sans-display-semiconden: "noto-sans-display-semiconden",sans-serif;
-    --tk-noto-sans-display: "noto-sans-display",sans-serif;
-    --tk-source-serif-4: "source-serif-4",serif;
-    --tk-quinn-display: "quinn-display",serif;
-    --tk-manifold-cf: "manifold-cf",sans-serif;
-    --tk-proxima-sera: "proxima-sera",sans-serif;
-    --tk-nexa-rust-sans-black-2: "nexa-rust-sans-black-2",sans-serif;
-    --tk-nexa-rust-sans-black-shad-2: "nexa-rust-sans-black-shad-2",sans-serif;
-    --tk-nexa-rust-slab-black: "nexa-rust-slab-black",sans-serif;
-    --tk-nexa-rust-slab-black-2: "nexa-rust-slab-black-2",sans-serif;
-    --tk-nexa-rust-slab-black-shad-2: "nexa-rust-slab-black-shad-2",sans-serif;
-    --tk-nexa-rust-script-shad-2: "nexa-rust-script-shad-2",sans-serif;
-    --tk-zuume: "zuume",sans-serif;
-    --tk-kensington: "kensington",sans-serif;
-    --tk-config-variable: "config-variable",sans-serif;
-    --tk-archer-hairline-pro: "archer-hairline-pro",sans-serif;
-    --tk-archer-thin-pro: "archer-thin-pro",sans-serif;
-    --tk-archer-pro: "archer-pro",sans-serif;
-    --tk-gotham-xnarrow: "gotham-xnarrow",sans-serif;
-    --tk-gotham-narrow: "gotham-narrow",sans-serif;
-    --tk-gotham-condensed: "gotham-condensed",sans-serif;
-    --tk-gotham: "gotham",sans-serif;
-    --tk-corbel: "corbel",sans-serif;
-    --tk-comma-sans: "comma-sans",sans-serif;
+    --tk-proxima-nova-condensed: "proxima-nova-condensed", sans-serif;
+    --tk-proxima-nova-extra-condensed: "proxima-nova-extra-condensed", sans-serif;
+    --tk-refrigerator-deluxe: "refrigerator-deluxe", sans-serif;
+    --tk-cronos-pro: "cronos-pro", sans-serif;
+    --tk-cronos-pro-caption: "cronos-pro-caption", sans-serif;
+    --tk-cronos-pro-display: "cronos-pro-display", sans-serif;
+    --tk-roboto: "roboto", sans-serif;
+    --tk-cronos-pro-subhead: "cronos-pro-subhead", sans-serif;
+    --tk-source-sans-pro: "source-sans-pro", sans-serif;
+    --tk-source-serif-pro: "source-serif-pro", serif;
+    --tk-prohibition: "prohibition", sans-serif;
+    --tk-roboto-condensed: "roboto-condensed", sans-serif;
+    --tk-erbaum: "erbaum", sans-serif;
+    --tk-wingdings: "wingdings", sans-serif;
+    --tk-wingdings-3: "wingdings-3", sans-serif;
+    --tk-wingdings-2: "wingdings-2", sans-serif;
+    --tk-noto-sans-display-extraconde: "noto-sans-display-extraconde", sans-serif;
+    --tk-noto-sans-display-condensed: "noto-sans-display-condensed", sans-serif;
+    --tk-noto-sans-display-semiconden: "noto-sans-display-semiconden", sans-serif;
+    --tk-noto-sans-display: "noto-sans-display", sans-serif;
+    --tk-source-serif-4: "source-serif-4", serif;
+    --tk-quinn-display: "quinn-display", serif;
+    --tk-manifold-cf: "manifold-cf", sans-serif;
+    --tk-proxima-sera: "proxima-sera", sans-serif;
+    --tk-nexa-rust-sans-black-2: "nexa-rust-sans-black-2", sans-serif;
+    --tk-nexa-rust-sans-black-shad-2: "nexa-rust-sans-black-shad-2", sans-serif;
+    --tk-nexa-rust-slab-black: "nexa-rust-slab-black", sans-serif;
+    --tk-nexa-rust-slab-black-2: "nexa-rust-slab-black-2", sans-serif;
+    --tk-nexa-rust-slab-black-shad-2: "nexa-rust-slab-black-shad-2", sans-serif;
+    --tk-nexa-rust-script-shad-2: "nexa-rust-script-shad-2", sans-serif;
+    --tk-zuume: "zuume", sans-serif;
+    --tk-kensington: "kensington", sans-serif;
+    --tk-config-variable: "config-variable", sans-serif;
+    --tk-archer-hairline-pro: "archer-hairline-pro", sans-serif;
+    --tk-archer-thin-pro: "archer-thin-pro", sans-serif;
+    --tk-archer-pro: "archer-pro", sans-serif;
+    --tk-gotham-xnarrow: "gotham-xnarrow", sans-serif;
+    --tk-gotham-narrow: "gotham-narrow", sans-serif;
+    --tk-gotham-condensed: "gotham-condensed", sans-serif;
+    --tk-gotham: "gotham", sans-serif;
+    --tk-corbel: "corbel", sans-serif;
+    --tk-comma-sans: "comma-sans", sans-serif;
 }
 
 .purpose-row {
@@ -2153,12 +2153,16 @@ details.footies[open] summary::before {
     display: block;
     border-radius: 4px;
     box-sizing: border-box;
-    
+
 }
 
 .ncll-card__graphic--small {
-	width: 80px;
-	height: auto;
+    width: 80px;
+    height: auto;
+}
+
+.ncll-card__graphic--top_tight {
+    margin: 20px auto 30px auto;
 }
 
 .ncll-card__graphics--pair {
@@ -2452,15 +2456,16 @@ details.footies[open] summary::before {
     border-collapse: collapse;
     font-weight: 400;
     text-align: center;
-        padding: 0px;
+    padding: 0px;
     line-height: 1.7;
 
 
 }
+
 .ncll-micro__table tbody tr:first-child td,
 .ncll-micro__table tbody tr:first-child th {
     padding-top: .8rem;
-    line-height:1.2
+    line-height: 1.2
 }
 
 .division-toggle {
@@ -2529,10 +2534,12 @@ details.footies[open] summary::before {
 .ncll-card--toggle input[type="radio"][id$="-8"]:checked~.panel8 {
     display: block;
 }
+
 .ncll-card--toggle .btn-next {
     display: none;
     cursor: pointer;
 }
+
 .ncll-card--toggle .ncll-card__sticky-heading {
     display: flex;
     flex-wrap: nowrap;
@@ -2552,10 +2559,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--toggle .ncll-card__body {
-    padding-top: calc(
-        var(--ncll-card-sticky-offset, var(--card-toggle-sticky-height)) +
-        var(--ncll-card-sticky-gap, var(--card-toggle-sticky-gap))
-    );
+    padding-top: calc(var(--ncll-card-sticky-offset, var(--card-toggle-sticky-height)) + var(--ncll-card-sticky-gap, var(--card-toggle-sticky-gap)));
     padding-bottom: var(--card-toggle-panel-pad-bottom, 1.75rem);
     scroll-margin-top: calc(var(--ncll-card-sticky-offset, var(--card-toggle-sticky-height)) + 0.5rem);
     scroll-margin-bottom: calc(var(--ncll-card-actions-height, var(--card-toggle-actions-height)) + 0.5rem);
@@ -2832,5 +2836,5 @@ details.footies[open] summary::before {
 }
 
 .measurement {
-        width: 150px;
+    width: 150px;
 }
