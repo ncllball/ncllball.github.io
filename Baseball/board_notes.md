@@ -1,38 +1,15 @@
-# i know thsi is alte but I forget what it takes to get things together. I've been owrking on the path our users will take and making sure we have alwesome web content along the way. You should know, it is hard to actually have folks test these things. It needs to be open If you want to really test it and there is no real way to open it without it being available to everyone in the NCLL commuinitity via their SPorts Connect page. Even if I don't paste a link anywhere on the website, the system will still show it as available to users.
+## Board update — registration prep
+
+Hey board, quick download before we open registration. Keeping it casual so you have the talking points handy.
+
+- **Testing reality:** Sports Connect only lets us fully test when a program is “live,” even if the link isn’t posted. If you want to walk through it with your own player, ping me and I’ll drop the closed program in your cart so nothing leaks before being ready.
+- **Build cadence:** I stand up the baseball flow first ([Baseball divisions overview](https://www.ncllball.com/Default.aspx?tabid=2111979)), then port the same pattern over to softball ([Softball divisions overview](https://www.ncllball.com/Default.aspx?tabid=2111980)) so the language and cards stay synced. So Softball will be completed shortly after Baseball.
+- **Medical release trim:** The refreshed [registration instructions](https://www.ncllball.com/Default.aspx?tabid=2244720) point families at the slimmer copy, but they still need the [Little League medical release form](https://www.littleleague.org/downloads/medical-release-form/). Hoping for true in-line e-sign next season.
+- **Mobile-first cards:** All our new tiles live across the hub pages (example: [uniform sizing](https://www.ncllball.com/Default.aspx?tabid=2113971)), which keeps the layout reusable and phone-friendly for both families and helpers.
+- **Uniform push:** Registration now links straight back to the [uniform sizing](https://www.ncllball.com/Default.aspx?tabid=2113971) so we cut down on wrong jersey/hat picks in March.
+- **Volunteer nudge:** The new [volunteer lists page](https://www.ncllball.com/Default.aspx?tabid=2121042) is looking for final edits—the top two lists are solid, the rest are drafts, so send ideas.
+- **Season timeline:** Give [the 2026 season timeline](https://www.ncllball.com/Default.aspx?tabid=2244689) a once-over.
+- **UPDATED Pages we’ll see most of during registration:** [Player Development programs](https://www.ncllball.com/Default.aspx?tabid=2111984), [uniform sizing](https://www.ncllball.com/Default.aspx?tabid=2113971), [baseball landing](https://www.ncllball.com/Default.aspx?tabid=2111979), [softball landing](https://www.ncllball.com/Default.aspx?tabid=2111980).
 
 
-
-The nice feature that helps me the registrar the most is the ability to add your kid to the cart even if the thing is closed. So that being said, if you havee a kidf and actually want to get registered and test it that way, just let me know and I'll add it to your cart. 
-
-A few notes
-- i do baseball first and then adapt that to softball
-- medial release
-i pruned a bunch for a few reasons:
-	i wasnt comfortable with how it went
-	that stuff was really valuable when we wrote it out of covid
-
-- the whole theme is to share as much information as possible but in a really digestible way
-- mobile was even more important
-- reusable, the ai only has to know one things and it will know it really well
-- settled on these tiles
-- the main places youll see them are:
-
-We put a bunhc of time in trying to get families to a better decisiosn for ordering clothing. 
-
-
-These are the pages on the website that users will need to access of this years regsitraiotnr. 
-
-Player Development Programs
-uniform sizing charts
-baseball information
-softball information
-
-
-easier and faster this year
-
- Are you interested in volunteering as a Parent Helper/Assistant for winter training? This is *NOT* a Head Coach role. These kids need extra eyes, ears, and hands. Program Coordinator Jay Tufte will contact you if you select "Yes."
-
-
-focused on getting better unifrom outcomes with increased visibility into what we offer, but with that comes a bit more complex registration sizing questions. becasue we cant ask different questions of different divisions. 
-
-given more detail this year than any other,. notice for the 
+While everyone checks it out, Let me know nay other questions. Ill be working on porting the volunteer and umpire information and links over.
