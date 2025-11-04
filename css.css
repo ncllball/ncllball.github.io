@@ -1443,7 +1443,7 @@ body:not(.cms-right) .only-on-right {
     text-align: center;
     padding: 6px 10px 6px 10px;
     white-space: nowrap;
-    font-family: var(--age-matrix-th-font)
+    font-family: var(--tk-noto-sans-display-condensed)
 }
 
 .age-matrix th:first-child, .age-matrix td:first-child {
