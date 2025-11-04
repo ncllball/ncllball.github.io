@@ -2520,7 +2520,8 @@ details.footies[open] summary::before {
 .ncll-card--toggle input[type="radio"][id$="-4"]:checked~.panel4,
 .ncll-card--toggle input[type="radio"][id$="-5"]:checked~.panel5,
 .ncll-card--toggle input[type="radio"][id$="-6"]:checked~.panel6,
-.ncll-card--toggle input[type="radio"][id$="-7"]:checked~.panel7 {
+.ncll-card--toggle input[type="radio"][id$="-7"]:checked~.panel7,
+.ncll-card--toggle input[type="radio"][id$="-8"]:checked~.panel8 {
     display: block;
 }
 .ncll-card--toggle .btn-next {
@@ -2590,7 +2591,8 @@ details.footies[open] summary::before {
 .ncll-card--toggle input[type="radio"][id$="-4"]:checked~.actions .btn-next-4,
 .ncll-card--toggle input[type="radio"][id$="-5"]:checked~.actions .btn-next-5,
 .ncll-card--toggle input[type="radio"][id$="-6"]:checked~.actions .btn-next-6,
-.ncll-card--toggle input[type="radio"][id$="-7"]:checked~.actions .btn-next-7 {
+.ncll-card--toggle input[type="radio"][id$="-7"]:checked~.actions .btn-next-7,
+.ncll-card--toggle input[type="radio"][id$="-8"]:checked~.actions .btn-next-8 {
     display: inline-block;
 }
 
@@ -2669,6 +2671,7 @@ details.footies[open] summary::before {
 .ncll-card--toggle input.lightbox-toggle[id$="-8"]:checked~.ncll-card__body label[for$="-8"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-9"]:checked~.ncll-card__body label[for$="-9"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-10"]:checked~.ncll-card__body label[for$="-10"] img,
+.ncll-card--toggle input.lightbox-toggle[id$="-11"]:checked~.ncll-card__body label[for$="-11"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-12"]:checked~.ncll-card__body label[for$="-12"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-jersey"]:checked~.ncll-card__body label[for$="-jersey"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-player-hat"]:checked~.ncll-card__body label[for$="-player-hat"] img,
@@ -2693,6 +2696,7 @@ details.footies[open] summary::before {
 .ncll-card--toggle input.lightbox-toggle[id$="-8"]:checked~.lightbox[data-id="8"],
 .ncll-card--toggle input.lightbox-toggle[id$="-9"]:checked~.lightbox[data-id="9"],
 .ncll-card--toggle input.lightbox-toggle[id$="-10"]:checked~.lightbox[data-id="10"],
+.ncll-card--toggle input.lightbox-toggle[id$="-11"]:checked~.lightbox[data-id="11"],
 .ncll-card--toggle input.lightbox-toggle[id$="-12"]:checked~.lightbox[data-id="12"],
 .ncll-card--toggle input.lightbox-toggle[id$="-jersey"]:checked~.lightbox[data-id="jersey"],
 .ncll-card--toggle input.lightbox-toggle[id$="-player-hat"]:checked~.lightbox[data-id="player-hat"],
