@@ -2514,7 +2514,8 @@ details.footies[open] summary::before {
 .ncll-card--toggle input[type="radio"][id$="-3"]:checked~.panel3,
 .ncll-card--toggle input[type="radio"][id$="-4"]:checked~.panel4,
 .ncll-card--toggle input[type="radio"][id$="-5"]:checked~.panel5,
-.ncll-card--toggle input[type="radio"][id$="-6"]:checked~.panel6 {
+.ncll-card--toggle input[type="radio"][id$="-6"]:checked~.panel6,
+.ncll-card--toggle input[type="radio"][id$="-7"]:checked~.panel7 {
     display: block;
 }
 .ncll-card--toggle .btn-next {
@@ -2583,7 +2584,8 @@ details.footies[open] summary::before {
 .ncll-card--toggle input[type="radio"][id$="-3"]:checked~.actions .btn-next-3,
 .ncll-card--toggle input[type="radio"][id$="-4"]:checked~.actions .btn-next-4,
 .ncll-card--toggle input[type="radio"][id$="-5"]:checked~.actions .btn-next-5,
-.ncll-card--toggle input[type="radio"][id$="-6"]:checked~.actions .btn-next-6 {
+.ncll-card--toggle input[type="radio"][id$="-6"]:checked~.actions .btn-next-6,
+.ncll-card--toggle input[type="radio"][id$="-7"]:checked~.actions .btn-next-7 {
     display: inline-block;
 }
 
