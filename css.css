@@ -2548,26 +2548,29 @@ details.footies[open] summary::before {
 
 
 
+.ncll-card--toggle {
+    position: relative;
+    padding-bottom: 4.5rem;
+}
+
 .ncll-card--toggle .actions {
-    position: sticky;
-    bottom: 0;
-    inset-inline: 0;
+    position: absolute;
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
     min-height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1.25rem;
-    padding: 0.75rem 1.25rem;
-    margin-top: 1.5rem;
-    background: #fff;
-    border-top: 1px solid var(--color_border_light);
-    z-index: 5;
-    box-shadow: 0 -4px 12px rgba(19, 60, 118, 0.08);
+    background: transparent;
+    pointer-events: none;
 }
 
 .ncll-card--toggle .btn-next,
 .ncll-card--toggle .btn-prev {
     display: none;
+    pointer-events: auto;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
