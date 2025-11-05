@@ -2546,10 +2546,54 @@ details.footies[open] summary::before {
     display: block;
 }
 
+.ncll-card--toggle .actions {
+    position: relative;
+    min-height: 3.5rem;
+}
+
 .ncll-card--toggle .btn-next,
 .ncll-card--toggle .btn-prev {
     display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-image: var(--stripe-gradient);
+    background-size: 200% 200%;
+    border: 2px solid var(--color_darkblue, #133c76);
+    color: transparent;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-indent: -9999px;
+    overflow: hidden;
+    box-shadow: 0 6px 14px rgba(19, 60, 118, 0.25);
+}
+
+.ncll-card--toggle .btn-prev {
+    left: 0;
+}
+
+.ncll-card--toggle .btn-next {
+    right: 0;
+}
+
+.ncll-card--toggle .btn-next::after,
+.ncll-card--toggle .btn-prev::after {
+    text-indent: 0;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.ncll-card--toggle .btn-next::after {
+    content: '›';
+}
+
+.ncll-card--toggle .btn-prev::after {
+    content: '‹';
 }
 
 .ncll-card--toggle .ncll-card__sticky-heading {
@@ -2614,7 +2658,7 @@ details.footies[open] summary::before {
 .ncll-card--toggle input[type="radio"][id$="-6"]:checked~.actions .btn-next-6,
 .ncll-card--toggle input[type="radio"][id$="-7"]:checked~.actions .btn-next-7,
 .ncll-card--toggle input[type="radio"][id$="-8"]:checked~.actions .btn-next-8 {
-    display: inline-block;
+    display: inline-flex;
 }
 
 .ncll-card--toggle input[type="radio"][id$="-0"]:checked~.actions .btn-prev-0,
@@ -2628,7 +2672,7 @@ details.footies[open] summary::before {
 .ncll-card--toggle input[type="radio"][id$="-8"]:checked~.actions .btn-prev-8,
 .ncll-card--toggle input[type="radio"][id$="-9"]:checked~.actions .btn-prev-9,
 .ncll-card--toggle input[type="radio"][id$="-10"]:checked~.actions .btn-prev-10 {
-    display: inline-block;
+    display: inline-flex;
 }
 
 .ncll-card--toggle .lightbox-thumb img {
