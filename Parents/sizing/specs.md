@@ -204,9 +204,8 @@ HAT SIZE CHART 4301 — Normalized (Head circumference, in)
 
 | Size label | Head circumference (in) |
 |---|---:|
-| Youth | 6 3/8–6 7/8 |
-| SM–MD | 6 7/8–7 3/8 |
-| LG–XL | 7 3/8–8 |
+| Youth | 6 3/8–7 1/4 |
+| Adult | 7–7 3/4 |
 
 HAT SIZE CHART 4302 — Normalized (Head circumference, in)
 
@@ -227,8 +226,8 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
 | --- | --- | --- | --- |
 | Baseball - T-Ball | Youth adjustable strap | YXS, YS, YM, YL (ST350) | none |
 | Baseball - Kindy | Youth adjustable strap | YXS, YS, YM, YL (ST350) | none |
-| Baseball - A | Youth adjustable strap | YS, YM, YL, YXL, AS, AM, AL (4003) | none |
-| Baseball - AA | Youth adjustable strap | YS, YM, YL, YXL, AS, AM, AL (4003) | none |
+| Baseball - A | Youth or Adult adjustable strap | YS, YM, YL, YXL, AS, AM, AL (4003) | none |
+| Baseball - AA | Youth or Adult adjustable strap | YS, YM, YL, YXL, AS, AM, AL (4003) | none |
 | Baseball - AAA | Youth, XS-SM, SM-MD, LG-XL (PTS30) | YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Baseball - Majors | Youth, XS-SM, SM-MD, LG-XL (PTS30) | YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Baseball - Juniors | XS-SM, SM-MD, LG-XL (PTS30) | AS, AM, AL, AXL, AXXL, AXXXL (4003) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
@@ -246,8 +245,8 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
 | --- | --- | --- | --- |
 | Baseball - T-Ball Coaches | Youth adjustable strap (4301) | AS, AM, AL, AXL, AXXL, AXXXL (ST350) | none |
 | Baseball - Kindy Coaches | Youth adjustable strap (4301) | AS, AM, AL, AXL, AXXL, AXXXL (ST350) | none |
-| Baseball - A Coaches | Youth adjustable strap (4301) | AS, AM, AL, AXL, AXXL, AXXXL (ST350) | none |
-| Baseball - AA Coaches | Youth adjustable strap (4301) | AS, AM, AL, AXL, AXXL, AXXXL (ST350) | none |
+| Baseball - A Coaches | Youth or Adult adjustable strap (4301) | AS, AM, AL, AXL, AXXL, AXXXL (ST350) | none |
+| Baseball - AA Coaches | Youth or Adult adjustable strap (4301) | AS, AM, AL, AXL, AXXL, AXXXL (ST350) | none |
 | Baseball - AAA Coaches | Youth, XS-SM, SM-MD, LG-XL (PTS30) | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Baseball - Majors Coaches | Youth, XS-SM, SM-MD, LG-XL (PTS30) | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Baseball - Juniors Coaches | XS-SM, SM-MD, LG-XL (PTS30) | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
