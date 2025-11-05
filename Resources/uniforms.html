@@ -14,6 +14,21 @@
 			font-family: Barlow, sans-serif;
 			font-weight: 600;
 		}
+
+		:root {
+			--hoodie-left-width: 100%;
+			--hoodie-right-width: 100%;
+		}
+
+		.ncll-card__graphic--hoodie-left {
+			width: var(--hoodie-left-width);
+			max-width: 100%;
+		}
+
+		.ncll-card__graphic--hoodie-right {
+			width: var(--hoodie-right-width);
+			max-width: 100%;
+		}
 	</style>
 </head>
 
@@ -232,7 +247,7 @@
 						</div>
 					</div>
 
-					<div class="ncll-card__body panel panel6">
+					<div class="ncll-card__body panel panel7">
 						<div class="ncll-card__details">
 							<h4 class="left">Quick Size Checklist</h4>
 							<p>Need the TL;DR? This table lists every size we gather for T-Ball &amp; Kindy uniforms so you can double-check your dropdowns.</p>
@@ -535,7 +550,7 @@
 							your family.</h4>
 					</div>
 
-					<div class="ncll-card__body panel panel6">
+					<div class="ncll-card__body panel panel7">
 						<div class="ncll-card__details">
 							<h4 class="left">Quick Size Checklist</h4>
 							<p>Keep this cheat sheet handy when you build dropdowns or confirm orders for A &amp; AA baseball.</p>
@@ -621,11 +636,12 @@
 					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-1" /> <!-- Players jersey measurements -->
 					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-2" /> <!-- Coach shirt gallery -->
 					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-3" /> <!-- Coach shirt measurements -->
-					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-4" /> <!-- PC90H hoodie visuals -->
-					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-5" /> <!-- PC90H hoodie size chart -->
-					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-6" /> <!-- Hat visuals -->
-					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-7" /> <!-- Hat size chart & notes -->
-					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-8" /> <!-- Size checklist -->
+					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-4" /> <!-- PC90HY hoodie visuals -->
+					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-5" /> <!-- PC90H hoodie visuals -->
+					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-6" /> <!-- PC90 hoodie size charts -->
+					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-7" /> <!-- Hat visuals -->
+					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-8" /> <!-- Hat size chart & notes -->
+					<input type="radio" name="uniforms-aaa" id="uniforms-aaa-9" /> <!-- Size checklist -->
 					<input type="checkbox" id="lightbox-aaa-jersey" class="lightbox-toggle" />
 					<input type="checkbox" id="lightbox-aaa-player-hoodie" class="lightbox-toggle" />
 					<input type="checkbox" id="lightbox-aaa-coach-shirt" class="lightbox-toggle" />
@@ -831,23 +847,41 @@
 
 					<div class="ncll-card__body panel panel4">
 						<div class="ncll-card__details">
-							<h4>PC90HY &amp; PC90H Hoodies &mdash; Players &amp; Coaches</h4>
-							<p>Younger AAA players start in the Youth <strong>PC90HY</strong> run (YXS&ndash;YXL) before moving into the Adult <strong>PC90H</strong> that coaches wear year-round. Preview both cuts here, then advance for the stacked size charts.</p>
+							<h4>PC90HY Hoodie &mdash; Players</h4>
+							<p>Younger AAA players start in the Youth <strong>PC90HY</strong> run (YXS&ndash;YXL). Preview the cut here, then use the next two panels for adult counterparts and the shared size grids.</p>
 
 							<div class="ncll-card__graphics ncll-card__graphics--pair">
 								<label for="lightbox-aaa-player-hoodie" class="lightbox-thumb">
-									<img class="ncll-card__graphic ncll-card__graphic--hoodie" src="https://ncllball.github.io/images/uniforms/hats/PC90HY_FRONT_FINAL.png" alt="PC90HY Youth hoodie front — players" />
+									<img class="ncll-card__graphic ncll-card__graphic--hoodie ncll-card__graphic--hoodie-left" src="https://ncllball.github.io/images/uniforms/hats/PC90HY_FRONT_FINAL.png" alt="PC90HY Youth hoodie front — players" />
 								</label>
-								<label for="lightbox-aaa-coach-hoodie" class="lightbox-thumb">
-									<img class="ncll-card__graphic ncll-card__graphic--hoodie" src="https://ncllball.github.io/images/uniforms/hats/PC90H_FRONT_FINAL.png" alt="PC90H Adult hoodie back — coaches" />
+								<label for="lightbox-aaa-player-hoodie" class="lightbox-thumb">
+									<img class="ncll-card__graphic ncll-card__graphic--hoodie ncll-card__graphic--hoodie-right" src="https://ncllball.github.io/images/uniforms/hats/PC90HY_FRONT_FINAL.png" alt="PC90HY Youth hoodie alternate angle" />
 								</label>
 							</div>
 
-							<p class="ncll-card__note">Youth players pick from PC90HY sizes first. When they outgrow YXL, slide into the PC90H Adult chart with the coaches.</p>
+							<p class="ncll-card__note">Stay in PC90HY sizes until a player outgrows YXL.</p>
 						</div>
 					</div>
 
 					<div class="ncll-card__body panel panel5">
+						<div class="ncll-card__details">
+							<h4>PC90H Hoodie &mdash; Coaches</h4>
+							<p>Coaching adults (and players who size up) wear the Adult <strong>PC90H</strong> pullover from AAA through Seniors. Preview the front/back before checking the combined size grids.</p>
+
+							<div class="ncll-card__graphics ncll-card__graphics--pair">
+								<label for="lightbox-aaa-coach-hoodie" class="lightbox-thumb">
+									<img class="ncll-card__graphic ncll-card__graphic--hoodie ncll-card__graphic--hoodie-left" src="https://ncllball.github.io/images/uniforms/hats/PC90H_FRONT_FINAL.png" alt="PC90H Adult hoodie front — coaches" />
+								</label>
+								<label for="lightbox-aaa-coach-hoodie" class="lightbox-thumb">
+									<img class="ncll-card__graphic ncll-card__graphic--hoodie ncll-card__graphic--hoodie-right" src="https://ncllball.github.io/images/uniforms/hats/PC90H_BACK_FINAL.png" alt="PC90H Adult hoodie back — coaches" />
+								</label>
+							</div>
+
+							<p class="ncll-card__note">When a player needs more room, bump straight into the PC90H chart below.</p>
+						</div>
+					</div>
+
+					<div class="ncll-card__body panel panel6">
 						<div class="ncll-card__details">
 							<h4>PC90HY &amp; PC90H Hoodie Size Charts</h4>
 							<p>Select from the Youth <strong>PC90HY</strong> table first. When a player sizes out of YXL, move to the <strong>PC90H</strong> grid that coaches already use.</p>
@@ -965,7 +999,7 @@
 						</div>
 					</div>
 
-					<div class="ncll-card__body panel panel7">
+					<div class="ncll-card__body panel panel8">
 						<div class="ncll-card__details">
 							<h4>PTS30 Size Chart &mdash; Players &amp; Coaches</h4>
 							<p>Use this chart to pick the flexfit size for your player (and any coaching Adults).</p>
@@ -985,10 +1019,10 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td>6.375&ndash;6.625</td>
-											<td>6.625&ndash;7</td>
-											<td>7&ndash;7.25</td>
-											<td>7.375&ndash;7.625</td>
+											<td>6.375 &ndash; 6.625</td>
+											<td>6.625 &ndash; 7</td>
+											<td>7 &ndash; 7.25</td>
+											<td>7.375 &ndash; 7.625</td>
 										</tr>
 									</tbody>
 								</table>
@@ -1002,7 +1036,7 @@
 						</div>
 					</div>
 
-					<div class="ncll-card__body panel panel8">
+					<div class="ncll-card__body panel panel9">
 						<div class="ncll-card__details">
 							<h4 class="left">Quick Size Checklist</h4>
 							<p>Keep this summary nearby when you collect AAA+ baseball sizes for both dugouts.</p>
@@ -1039,7 +1073,7 @@
 
                     <div class="ncll-card__sticky-footer">
                         <div class="actions" role="group" aria-label="AAA &amp; Upper baseball uniforms card controls">
-                            <label class="button button--secondary btn-prev btn-prev-start" for="uniforms-aaa-8">Back</label>
+                            <label class="button button--secondary btn-prev btn-prev-start" for="uniforms-aaa-9">Back</label>
                             <label class="button button--primary btn-next btn-next-intro" for="uniforms-aaa-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="uniforms-aaa-intro">Back</label>
 							<label class="button button--primary btn-next btn-next-0" for="uniforms-aaa-1">Next</label>
@@ -1058,7 +1092,9 @@
 							<label class="button button--secondary btn-prev btn-prev-7" for="uniforms-aaa-6">Back</label>
 							<label class="button button--primary btn-next btn-next-7" for="uniforms-aaa-8">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-8" for="uniforms-aaa-7">Back</label>
-							<label class="button button--primary btn-next btn-next-8" for="uniforms-aaa-intro">Start Over</label>
+							<label class="button button--primary btn-next btn-next-8" for="uniforms-aaa-9">Next</label>
+							<label class="button button--secondary btn-prev btn-prev-9" for="uniforms-aaa-8">Back</label>
+							<label class="button button--primary btn-next btn-next-9" for="uniforms-aaa-intro">Start Over</label>
                         </div>
                     </div>
 
@@ -1685,10 +1721,10 @@
 
 							<div class="ncll-card__graphics ncll-card__graphics--pair">
 								<label for="lightbox-sbaaa-player-hoodie" class="lightbox-thumb">
-									<img class="ncll-card__graphic ncll-card__graphic--hoodie" src="https://ncllball.github.io/images/uniforms/hats/PC90HY_FRONT_FINAL.png" alt="PC90HY Youth hoodie front view" />
+									<img class="ncll-card__graphic ncll-card__graphic--hoodie ncll-card__graphic--hoodie-left" src="https://ncllball.github.io/images/uniforms/hats/PC90HY_FRONT_FINAL.png" alt="PC90HY Youth hoodie front view" />
 								</label>
 								<label for="lightbox-sbaaa-2" class="lightbox-thumb">
-									<img class="ncll-card__graphic ncll-card__graphic--hoodie" src="https://ncllball.github.io/images/uniforms/hats/PC90H_BACK_FINAL.png" alt="PC90H Adult hoodie back view" />
+									<img class="ncll-card__graphic ncll-card__graphic--hoodie ncll-card__graphic--hoodie-right" src="https://ncllball.github.io/images/uniforms/hats/PC90H_BACK_FINAL.png" alt="PC90H Adult hoodie back view" />
 								</label>
 							</div>
 
