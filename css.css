@@ -2160,9 +2160,9 @@ details.footies[open] summary::before {
     height: auto;
     display: block;
     float: right;
-    margin-left: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     shape-outside: inset(0);
+    margin-right:200px
 }
 
 @media(max-width:480px) {
