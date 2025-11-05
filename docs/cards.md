@@ -106,7 +106,7 @@ Notes:
 
 Completed notes (migration status):
 
-- Pages migrated in this batch: `Baseball/index.html`, `Softball/index.html`, `Player Development/index.html`.
+- Pages migrated in this batch: `Programs/baseball.html`, `Softball/index.html`, `Player Development/index.html`.
 - Legacy CSS extracted to `css.legacy.extracted.css`; original `css.css` backed up to `css.css.pre-legacy-removed.bak`.
 
 After completing visual QA and any JS updates, perform the final cleanup commit to remove legacy selectors from the repo.
