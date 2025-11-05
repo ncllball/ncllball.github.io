@@ -2597,13 +2597,21 @@ details.footies[open] summary::before {
 .ncll-card--toggle .btn-next:hover,
 .ncll-card--toggle .btn-next:focus {
     transform: translateY(-1px);
-    box-shadow: 0 10px 22px rgba(205, 22, 63, 0.34);
+    box-shadow: 0 10px 22px rgba(19, 29, 48, 0.28);
+    background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolyline fill='none' stroke='%23133c76' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' points='8 4 16 12 8 20'/%3E%3C/svg%3E"),
+        linear-gradient(145deg, rgba(230, 230, 230, 0.45), rgba(0, 0, 0, 0)),
+        repeating-linear-gradient(135deg, #c1c8d6 0 1px, #ffffff 1px 2.3px);
 }
 
 .ncll-card--toggle .btn-prev:hover,
 .ncll-card--toggle .btn-prev:focus {
     transform: translateY(-1px) scaleX(-1);
-    box-shadow: 0 10px 22px rgba(205, 22, 63, 0.34);
+    box-shadow: 0 10px 22px rgba(19, 29, 48, 0.28);
+    background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolyline fill='none' stroke='%23133c76' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' points='8 4 16 12 8 20'/%3E%3C/svg%3E"),
+        linear-gradient(145deg, rgba(230, 230, 230, 0.45), rgba(0, 0, 0, 0)),
+        repeating-linear-gradient(135deg, #c1c8d6 0 1px, #ffffff 1px 2.3px);
 }
 
 .ncll-card--toggle .btn-prev {
