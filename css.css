@@ -2095,7 +2095,7 @@ details.footies[open] summary::before {
     margin: 0 0 4px 0;
     color: var(--color_blue);
 }
-.lists h4.left {
+#lists h4.left {
     padding-left: 10px;
     margin-bottom: 0;
     font-size: x-large;
