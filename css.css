@@ -2156,21 +2156,24 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__clipboard-img {
-    width: 44px;
+    width: 120px;
     height: auto;
     display: block;
-    float: right;
-    margin-bottom: 0px;
-    shape-outside: inset(0);
-    margin-right:200px
+    float: none;
+    margin: 0 auto 12px;
+    shape-outside: none;
+}
+
+.ncll-card__clipboard.ncll-card__clipboard--float {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
 }
 
 @media(max-width:480px) {
 
-    .ncll-card__clipboard--float,
     .ncll-card__clipboard-img {
-        width: 36px;
-        margin-left: 8px;
+        width: 90px;
     }
 }
 
