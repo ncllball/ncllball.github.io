@@ -12,7 +12,7 @@ const path = require('path');
 
   const pages = [
     { file: 'Volunteer/friendslist.html', slug: 'volunteer' },
-    { file: 'Baseball/index.html', slug: 'baseball' },
+    { file: 'Programs/baseball.html', slug: 'baseball' },
     { file: 'Softball/index.html', slug: 'softball' },
     { file: 'Player Development/index.html', slug: 'pd' },
   ];
