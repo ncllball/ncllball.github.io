@@ -2578,8 +2578,10 @@ details.footies[open] summary::before {
     width: 3.2rem;
     height: 3rem;
     border-radius: 50%;
-    background-image: var(--stripe-gradient);
-    background-size: 3px 3px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
     border: 2px solid var(--color_darkblue, #133c76);
     color: transparent;
     cursor: pointer;
@@ -2592,26 +2594,15 @@ details.footies[open] summary::before {
 
 .ncll-card--toggle .btn-prev {
     order: 0;
+    background-image: url('https://ncllball.github.io/images/site_navigation/baseball.png');
+    transform: scaleX(-1);
+    filter: drop-shadow(0 0 3px rgba(19, 60, 118, 0.35));
 }
 
 .ncll-card--toggle .btn-next {
     order: 1;
-}
-
-.ncll-card--toggle .btn-next::after,
-.ncll-card--toggle .btn-prev::after {
-    text-indent: 0;
-    color: #fff;
-    font-size: 1.8rem;
-    line-height: 1;
-}
-
-.ncll-card--toggle .btn-next::after {
-    content: '›';
-}
-
-.ncll-card--toggle .btn-prev::after {
-    content: '‹';
+    background-image: url('https://ncllball.github.io/images/site_navigation/baseball.png');
+    filter: drop-shadow(0 0 3px rgba(19, 60, 118, 0.35));
 }
 
 .ncll-card--toggle .ncll-card__sticky-heading {
