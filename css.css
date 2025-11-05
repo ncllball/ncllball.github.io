@@ -322,7 +322,9 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
 .skNav a {
     text-transform: capitalize !important;
 }
-
+.subMenuItem {
+    word-break: keep-all !important;
+}
 .skHeader .skBanner {
     font-family: var(--font_ui) !important
 }
