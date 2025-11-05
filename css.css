@@ -2546,17 +2546,20 @@ details.footies[open] summary::before {
     display: block;
 }
 
+
 .ncll-card--toggle .actions {
     position: relative;
     min-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    margin-top: 0.75rem;
 }
 
 .ncll-card--toggle .btn-next,
 .ncll-card--toggle .btn-prev {
     display: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -2573,11 +2576,11 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--toggle .btn-prev {
-    left: 0;
+    order: 0;
 }
 
 .ncll-card--toggle .btn-next {
-    right: 0;
+    order: 1;
 }
 
 .ncll-card--toggle .btn-next::after,
