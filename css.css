@@ -326,7 +326,9 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
 .skHeader .skBanner {
     font-family: var(--font_ui) !important
 }
-
+#dnnStandardMenu .subMenuItem {
+    word-break: keep-all !important;
+}
 .skTabsWrapper {
     display: table-cell;
     width: calc(100% - 32px);
