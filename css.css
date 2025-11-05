@@ -2556,17 +2556,17 @@ details.footies[open] summary::before {
 .ncll-card--toggle .actions {
     position: absolute;
     left: 50%;
-    bottom: 1.25rem;
+    bottom: 0;
     transform: translateX(-50%);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.85rem;
-    background: transparent;
-    padding: 0;
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
+    gap: 1.25rem;
+    background: rgba(255, 255, 255, 0.97);
+    padding: 0.45rem 1.4rem;
+    border-radius: 999px;
+    box-shadow: 0 12px 28px rgba(19, 60, 118, 0.18);
+    border: 1px solid rgba(19, 60, 118, 0.25);
     pointer-events: none;
     z-index: 8;
 }
@@ -2575,8 +2575,8 @@ details.footies[open] summary::before {
 .ncll-card--toggle .btn-prev {
     display: none;
     pointer-events: auto;
-    width: 3.2rem;
-    height: 3rem;
+    width: 2.6rem;
+    height: 2.6rem;
     border-radius: 50%;
     background-color: #fff;
     background-image:
@@ -2585,16 +2585,16 @@ details.footies[open] summary::before {
         repeating-linear-gradient(135deg, var(--color_red, #cd163f) 0 2px, #ffffff 2px 4px);
     background-repeat: no-repeat, no-repeat, repeat;
     background-position: center, center, center;
-    background-size: 42%, 130%, auto;
-    border: 2px solid rgba(205, 22, 63, 0.8);
+    background-size: 38%, 120%, auto;
+    border: 2px solid rgba(205, 22, 63, 0.78);
     color: transparent;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     text-indent: -9999px;
     overflow: hidden;
-    box-shadow: 0 6px 18px rgba(205, 22, 63, 0.28);
-    transition: transform 180ms ease, box-shadow 180ms ease;
+    box-shadow: 0 5px 14px rgba(205, 22, 63, 0.26);
+    transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
 .ncll-card--toggle .btn-next:hover,
