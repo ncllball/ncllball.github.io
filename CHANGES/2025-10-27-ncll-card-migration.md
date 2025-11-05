@@ -9,7 +9,7 @@ This change introduces a namespaced `ncll-card` component for program/feature ca
 - `css.css` — Added `.ncll-card` component rules; commented legacy global clipboard rules for rollback.
 - `Volunteer/friendslist.html` — Migrated to `ncll-card` pattern. Clipboard image made the single opt-in control; added descriptive `aria-label`s; images marked decorative (`alt=""` + `aria-hidden="true").`
 - `Programs/baseball.html` — Added `ncll-card` classes and element classes to division cards as a PoC.
-- `Softball/index.html` — Added `ncll-card` classes and element classes as a PoC.
+- `Programs/softball.html` — Added `ncll-card` classes and element classes as a PoC.
 - `Player Development/index.html` — Added `ncll-card` classes and element classes as a PoC.
 - `docs/cards.md` — Documentation and migration checklist for `ncll-card`.
 
