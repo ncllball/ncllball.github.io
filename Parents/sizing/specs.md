@@ -6,14 +6,14 @@
 | Baseball - Kindy   | 4301             | ST350         | none           | OSFA  | OSFA |
 | Baseball - A       | 4301             | 4003          | none           | OSFA  | OSFA |
 | Baseball - AA      | 4301             | 4003          | none           | OSFA  | OSFA |
-| Baseball - AAA     | Richardson PTS30 | 4003          | PC90H          | OSFA  | OSFA |
-| Baseball - Majors  | Richardson PTS30 | 4003          | PC90H          | OSFA  | OSFA |
-| Baseball - Juniors | Richardson PTS30 | 4003          | PC90H          | OSFA  | OSFA |
-| Baseball - Seniors | Richardson PTS30 | 4003          | PC90H          | OSFA  | OSFA |
+| Baseball - AAA     | PTS30            | 4003          | PC90YH/PC90H   | OSFA  | OSFA |
+| Baseball - Majors  | PTS30            | 4003          | PC90YH/PC90H   | OSFA  | OSFA |
+| Baseball - Juniors | PTS30            | 4003          | PC90H          | OSFA  | OSFA |
+| Baseball - Seniors | PTS30            | 4003          | PC90H          | OSFA  | OSFA |
 | Softball - A       | 4302             | 4408          | none           | OSFA  | OSFA |
 | Softball - AA      | 4302             | 4408          | none           | OSFA  | OSFA |
-| Softball - AAA     | 4302             | 4408          | PC90H          | OSFA  | OSFA |
-| Softball - Majors  | 4302             | 4408          | PC90H          | OSFA  | OSFA |
+| Softball - AAA     | 4302             | 4408          | PC90YH/PC90H   | OSFA  | OSFA |
+| Softball - Majors  | 4302             | 4408          | PC90YH/PC90H   | OSFA  | OSFA |
 | Softball - Juniors | 4302             | 4408          | PC90H          | OSFA  | OSFA |
 | Softball - Seniors | 4302             | 4408          | PC90H          | OSFA  | OSFA |
 
@@ -25,10 +25,10 @@
 | Baseball - Kindy Coaches   | 4301             | ST350         | none           | none  | none |
 | Baseball - A Coaches       | 4301             | ST350         | none           | none  | none |
 | Baseball - AA Coaches      | 4301             | ST350         | none           | none  | none |
-| Baseball - AAA Coaches     | Richardson PTS30 | ST350/ST550   | PC90H          | none  | none |
-| Baseball - Majors Coaches  | Richardson PTS30 | ST350/ST550   | PC90H          | none  | none |
-| Baseball - Juniors Coaches | Richardson PTS30 | ST350/ST550   | PC90H          | none  | none |
-| Baseball - Seniors Coaches | Richardson PTS30 | ST350/ST550   | PC90H          | none  | none |
+| Baseball - AAA Coaches     | PTS30            | ST350/ST550   | PC90H          | none  | none |
+| Baseball - Majors Coaches  | PTS30            | ST350/ST550   | PC90H          | none  | none |
+| Baseball - Juniors Coaches | PTS30            | ST350/ST550   | PC90H          | none  | none |
+| Baseball - Seniors Coaches | PTS30            | ST350/ST550   | PC90H          | none  | none |
 | Softball - A Coaches       | Champro HC10     | 4408          | none           | none  | none |
 | Softball - AA Coaches      | Champro HC10     | 4408          | none           | none  | none |
 | Softball - AAA Coaches     | Champro HC10     | ST350/ST550   | PC90H          | none  | none |
@@ -49,7 +49,7 @@ Notes:
 - Where a table column is labelled "1/2 Chest" or "Chest" in the original supplier sheet, we treat that value as pit-to-pit (PTP) for the normalized table below. If you have supplier sheets where "Chest" is a circumference, tell me and I will convert by dividing the circumference by 2.
 - All normalized tables below explicitly show Pit-to-pit (PTP) values so you can use them consistently when ordering.
 
-Size codes (master): YS = Youth Small; YM = Youth Medium; YL = Youth Large; GS = Girl Small; GM = Girl Medium; GL = Girl Large; WS = Women's Small; WM = Women's Medium; WL = Women's Large; WXL = Women's X-Large; WXXL = Women's 2X-Large; AXS = Adult X-Small; AS = Adult Small; AM = Adult Medium; AL = Adult Large; AXL = Adult X-Large; AXXL = Adult 2X-Large; AXXXL = Adult 3X-Large; AXXXXL = Adult 4X-Large
+Size codes (master): YXS = Youth X-Small; YS = Youth Small; YM = Youth Medium; YL = Youth Large; YXL = Youth X-Large; GS = Girl Small; GM = Girl Medium; GL = Girl Large; WS = Women's Small; WM = Women's Medium; WL = Women's Large; WXL = Women's X-Large; WXXL = Women's 2X-Large; AXS = Adult X-Small; AS = Adult Small; AM = Adult Medium; AL = Adult Large; AXL = Adult X-Large; AXXL = Adult 2X-Large; AXXXL = Adult 3X-Large; AXXXXL = Adult 4X-Large
 
 ![PC90H](SPEC_SHEET_PC90H.jpg)
 Size,Chest,Body Length
@@ -73,6 +73,17 @@ AXL,26,31
 AXXL,28,32
 AXXXL,30,33
 AXXXXL,32,34
+
+### PC90YH — Normalized (Pit-to-pit)
+
+Size codes: YXS = Youth X-Small, YS = Youth Small, YM = Youth Medium, YL = Youth Large, YXL = Youth X-Large
+
+Size,Pit-to-pit (in),Body Length (in)
+YXS,14,18
+YS,16,20.5
+YM,17,23
+YL,18,25
+YXL,20,26.5
 
 ![ST350](SPEC_SHEET_ST350.jpg)
 Size,1/2 Chest,Body Length at Back
@@ -220,6 +231,7 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
 |---|---:|
 | Small | 6 1/4–7 |
 | M–XL | 7–7 5/8 |
+
 ## Player Size Offerings
 
 | Program/Division | Hat Sizes Offered | Shirt/Jersey Sizes Offered | Hoodie Sizes Offered |
@@ -228,14 +240,14 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
 | Baseball - Kindy | Youth adjustable strap | YXS, YS, YM, YL (ST350) | none |
 | Baseball - A | Youth or Adult adjustable strap | YS, YM, YL, YXL, AS, AM, AL (4003) | none |
 | Baseball - AA | Youth or Adult adjustable strap | YS, YM, YL, YXL, AS, AM, AL (4003) | none |
-| Baseball - AAA | Youth, XS-SM, SM-MD, LG-XL (PTS30) | YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Baseball - Majors | Youth, XS-SM, SM-MD, LG-XL (PTS30) | YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Baseball - AAA | Youth, XS-SM, SM-MD, LG-XL (PTS30) | YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003) | YXS, YS, YM, YL, YXL (PC90YH); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Baseball - Majors | Youth, XS-SM, SM-MD, LG-XL (PTS30) | YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003) | YXS, YS, YM, YL, YXL (PC90YH); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Baseball - Juniors | XS-SM, SM-MD, LG-XL (PTS30) | AS, AM, AL, AXL, AXXL, AXXXL (4003) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Baseball - Seniors | XS-SM, SM-MD, LG-XL (PTS30) | AS, AM, AL, AXL, AXXL, AXXXL (4003) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Softball - A | Youth adjustable strap (4302 visor) | GS, GM, GL, WS, WM, WL, WXL, WXXL (4408) | none |
 | Softball - AA | Youth adjustable strap (4302 visor) | GS, GM, GL, WS, WM, WL, WXL, WXXL (4408) | none |
-| Softball - AAA | Youth adjustable strap, Adult adjustable strap (4302 visor) | GS, GM, GL, WS, WM, WL, WXL, WXXL (4408) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Softball - Majors | Youth adjustable strap, Adult adjustable strap (4302 visor) | GS, GM, GL, WS, WM, WL, WXL, WXXL (4408) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Softball - AAA | Youth adjustable strap, Adult adjustable strap (4302 visor) | GS, GM, GL, WS, WM, WL, WXL, WXXL (4408) | YXS, YS, YM, YL, YXL (PC90YH); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Softball - Majors | Youth adjustable strap, Adult adjustable strap (4302 visor) | GS, GM, GL, WS, WM, WL, WXL, WXXL (4408) | YXS, YS, YM, YL, YXL (PC90YH); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Softball - Juniors | Adult adjustable strap (4302 visor) | WS, WM, WL, WXL, WXXL (4408) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Softball - Seniors | Adult adjustable strap (4302 visor) | WS, WM, WL, WXL, WXXL (4408) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 
