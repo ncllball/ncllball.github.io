@@ -2582,7 +2582,7 @@ details.footies[open] summary::before {
     background-image:
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolyline fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' points='8 4 16 12 8 20'/%3E%3C/svg%3E"),
         linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0)),
-        repeating-linear-gradient(135deg, var(--color_red, #cd163f) 0 3px, #ffffff 3px 6px);
+        repeating-linear-gradient(135deg, var(--color_red, #cd163f) 0 2px, #ffffff 2px 4px);
     background-repeat: no-repeat, no-repeat, repeat;
     background-position: center, center, center;
     background-size: 42%, 130%, auto;
