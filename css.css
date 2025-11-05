@@ -2554,10 +2554,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--toggle .actions {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -2567,8 +2564,8 @@ details.footies[open] summary::before {
     border-radius: 999px;
     box-shadow: 0 12px 28px rgba(19, 60, 118, 0.18);
     border: 1px solid rgba(19, 60, 118, 0.25);
-    pointer-events: none;
-    z-index: 8;
+    pointer-events: auto;
+    z-index: 1;
 }
 
 .ncll-card--toggle .btn-next,
