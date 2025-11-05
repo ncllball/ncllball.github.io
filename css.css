@@ -1752,7 +1752,7 @@ details.footies[open] summary::before {
 }
 
 /* ====== END Venmo Donation Page Styles ====== */
-/* ====== BEGIN Vendor Uniform Sizing Grid (Parents/uniforms.html) ======    Purpose: present all vendor sizing tables horizontally as responsive cards    - .sizing-grid: grid container for horizontal layout    - .sizing-card: individual card with table    - tables remain accessible; mobile stacks automatically ====================================================================== */
+/* ====== BEGIN Vendor Uniform Sizing Grid (Resources/uniforms.html) ======    Purpose: present all vendor sizing tables horizontally as responsive cards    - .sizing-grid: grid container for horizontal layout    - .sizing-card: individual card with table    - tables remain accessible; mobile stacks automatically ====================================================================== */
 .sizing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -2546,7 +2546,8 @@ details.footies[open] summary::before {
     display: block;
 }
 
-.ncll-card--toggle .btn-next {
+.ncll-card--toggle .btn-next,
+.ncll-card--toggle .btn-prev {
     display: none;
     cursor: pointer;
 }
@@ -2613,6 +2614,20 @@ details.footies[open] summary::before {
 .ncll-card--toggle input[type="radio"][id$="-6"]:checked~.actions .btn-next-6,
 .ncll-card--toggle input[type="radio"][id$="-7"]:checked~.actions .btn-next-7,
 .ncll-card--toggle input[type="radio"][id$="-8"]:checked~.actions .btn-next-8 {
+    display: inline-block;
+}
+
+.ncll-card--toggle input[type="radio"][id$="-0"]:checked~.actions .btn-prev-0,
+.ncll-card--toggle input[type="radio"][id$="-1"]:checked~.actions .btn-prev-1,
+.ncll-card--toggle input[type="radio"][id$="-2"]:checked~.actions .btn-prev-2,
+.ncll-card--toggle input[type="radio"][id$="-3"]:checked~.actions .btn-prev-3,
+.ncll-card--toggle input[type="radio"][id$="-4"]:checked~.actions .btn-prev-4,
+.ncll-card--toggle input[type="radio"][id$="-5"]:checked~.actions .btn-prev-5,
+.ncll-card--toggle input[type="radio"][id$="-6"]:checked~.actions .btn-prev-6,
+.ncll-card--toggle input[type="radio"][id$="-7"]:checked~.actions .btn-prev-7,
+.ncll-card--toggle input[type="radio"][id$="-8"]:checked~.actions .btn-prev-8,
+.ncll-card--toggle input[type="radio"][id$="-9"]:checked~.actions .btn-prev-9,
+.ncll-card--toggle input[type="radio"][id$="-10"]:checked~.actions .btn-prev-10 {
     display: inline-block;
 }
 
