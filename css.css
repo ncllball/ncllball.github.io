@@ -2547,14 +2547,22 @@ details.footies[open] summary::before {
 }
 
 
+
 .ncll-card--toggle .actions {
-    position: relative;
+    position: sticky;
+    bottom: 0;
+    inset-inline: 0;
     min-height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1.25rem;
-    margin-top: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    margin-top: 1.5rem;
+    background: #fff;
+    border-top: 1px solid var(--color_border_light);
+    z-index: 5;
+    box-shadow: 0 -4px 12px rgba(19, 60, 118, 0.08);
 }
 
 .ncll-card--toggle .btn-next,
