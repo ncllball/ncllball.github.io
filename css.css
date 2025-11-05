@@ -2665,34 +2665,34 @@ details.footies[open] summary::before {
     color: #444;
 }
 
-.ncll-card--toggle input[type="radio"][id$="-intro"]:checked~.actions .btn-next-intro,
-.ncll-card--toggle input[type="radio"][id$="-0"]:checked~.actions .btn-next-0,
-.ncll-card--toggle input[type="radio"][id$="-1"]:checked~.actions .btn-next-1,
-.ncll-card--toggle input[type="radio"][id$="-2"]:checked~.actions .btn-next-2,
-.ncll-card--toggle input[type="radio"][id$="-3"]:checked~.actions .btn-next-3,
-.ncll-card--toggle input[type="radio"][id$="-4"]:checked~.actions .btn-next-4,
-.ncll-card--toggle input[type="radio"][id$="-5"]:checked~.actions .btn-next-5,
-.ncll-card--toggle input[type="radio"][id$="-6"]:checked~.actions .btn-next-6,
-.ncll-card--toggle input[type="radio"][id$="-7"]:checked~.actions .btn-next-7,
-.ncll-card--toggle input[type="radio"][id$="-8"]:checked~.actions .btn-next-8 {
+.ncll-card--toggle input[type="radio"][id$="-intro"]:checked~.ncll-card__sticky-footer .actions .btn-next-intro,
+.ncll-card--toggle input[type="radio"][id$="-0"]:checked~.ncll-card__sticky-footer .actions .btn-next-0,
+.ncll-card--toggle input[type="radio"][id$="-1"]:checked~.ncll-card__sticky-footer .actions .btn-next-1,
+.ncll-card--toggle input[type="radio"][id$="-2"]:checked~.ncll-card__sticky-footer .actions .btn-next-2,
+.ncll-card--toggle input[type="radio"][id$="-3"]:checked~.ncll-card__sticky-footer .actions .btn-next-3,
+.ncll-card--toggle input[type="radio"][id$="-4"]:checked~.ncll-card__sticky-footer .actions .btn-next-4,
+.ncll-card--toggle input[type="radio"][id$="-5"]:checked~.ncll-card__sticky-footer .actions .btn-next-5,
+.ncll-card--toggle input[type="radio"][id$="-6"]:checked~.ncll-card__sticky-footer .actions .btn-next-6,
+.ncll-card--toggle input[type="radio"][id$="-7"]:checked~.ncll-card__sticky-footer .actions .btn-next-7,
+.ncll-card--toggle input[type="radio"][id$="-8"]:checked~.ncll-card__sticky-footer .actions .btn-next-8 {
     display: inline-flex;
 }
 
-.ncll-card--toggle input[type="radio"][id$="-0"]:checked~.actions .btn-prev-0,
-.ncll-card--toggle input[type="radio"][id$="-1"]:checked~.actions .btn-prev-1,
-.ncll-card--toggle input[type="radio"][id$="-2"]:checked~.actions .btn-prev-2,
-.ncll-card--toggle input[type="radio"][id$="-3"]:checked~.actions .btn-prev-3,
-.ncll-card--toggle input[type="radio"][id$="-4"]:checked~.actions .btn-prev-4,
-.ncll-card--toggle input[type="radio"][id$="-5"]:checked~.actions .btn-prev-5,
-.ncll-card--toggle input[type="radio"][id$="-6"]:checked~.actions .btn-prev-6,
-.ncll-card--toggle input[type="radio"][id$="-7"]:checked~.actions .btn-prev-7,
-.ncll-card--toggle input[type="radio"][id$="-8"]:checked~.actions .btn-prev-8,
-.ncll-card--toggle input[type="radio"][id$="-9"]:checked~.actions .btn-prev-9,
-.ncll-card--toggle input[type="radio"][id$="-10"]:checked~.actions .btn-prev-10 {
+.ncll-card--toggle input[type="radio"][id$="-0"]:checked~.ncll-card__sticky-footer .actions .btn-prev-0,
+.ncll-card--toggle input[type="radio"][id$="-1"]:checked~.ncll-card__sticky-footer .actions .btn-prev-1,
+.ncll-card--toggle input[type="radio"][id$="-2"]:checked~.ncll-card__sticky-footer .actions .btn-prev-2,
+.ncll-card--toggle input[type="radio"][id$="-3"]:checked~.ncll-card__sticky-footer .actions .btn-prev-3,
+.ncll-card--toggle input[type="radio"][id$="-4"]:checked~.ncll-card__sticky-footer .actions .btn-prev-4,
+.ncll-card--toggle input[type="radio"][id$="-5"]:checked~.ncll-card__sticky-footer .actions .btn-prev-5,
+.ncll-card--toggle input[type="radio"][id$="-6"]:checked~.ncll-card__sticky-footer .actions .btn-prev-6,
+.ncll-card--toggle input[type="radio"][id$="-7"]:checked~.ncll-card__sticky-footer .actions .btn-prev-7,
+.ncll-card--toggle input[type="radio"][id$="-8"]:checked~.ncll-card__sticky-footer .actions .btn-prev-8,
+.ncll-card--toggle input[type="radio"][id$="-9"]:checked~.ncll-card__sticky-footer .actions .btn-prev-9,
+.ncll-card--toggle input[type="radio"][id$="-10"]:checked~.ncll-card__sticky-footer .actions .btn-prev-10 {
     display: inline-flex;
 }
 
-.ncll-card--toggle input[type="radio"][id$="-intro"]:checked~.actions .btn-prev-start {
+.ncll-card--toggle input[type="radio"][id$="-intro"]:checked~.ncll-card__sticky-footer .actions .btn-prev-start {
     display: inline-flex;
 }
 
