@@ -2550,28 +2550,32 @@ details.footies[open] summary::before {
 
 .ncll-card--toggle {
     position: relative;
-    padding-bottom: 4.5rem;
+    padding-bottom: 5.25rem;
 }
 
 .ncll-card--toggle .actions {
     position: absolute;
-    left: 1.25rem;
-    right: 1.25rem;
+    left: 50%;
     bottom: 1.25rem;
-    min-height: 3.5rem;
-    display: flex;
+    transform: translateX(-50%);
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1.25rem;
-    background: transparent;
+    justify-content: center;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.97);
+    padding: 0.6rem 1.5rem;
+    border-radius: 999px;
+    box-shadow: 0 10px 24px rgba(19, 60, 118, 0.18);
+    border: 1px solid rgba(19, 60, 118, 0.25);
     pointer-events: none;
+    z-index: 8;
 }
 
 .ncll-card--toggle .btn-next,
 .ncll-card--toggle .btn-prev {
     display: none;
     pointer-events: auto;
-    width: 3rem;
+    width: 3.2rem;
     height: 3rem;
     border-radius: 50%;
     background-image: var(--stripe-gradient);
@@ -2686,6 +2690,10 @@ details.footies[open] summary::before {
 .ncll-card--toggle input[type="radio"][id$="-8"]:checked~.actions .btn-prev-8,
 .ncll-card--toggle input[type="radio"][id$="-9"]:checked~.actions .btn-prev-9,
 .ncll-card--toggle input[type="radio"][id$="-10"]:checked~.actions .btn-prev-10 {
+    display: inline-flex;
+}
+
+.ncll-card--toggle input[type="radio"][id$="-intro"]:checked~.actions .btn-prev-start {
     display: inline-flex;
 }
 
