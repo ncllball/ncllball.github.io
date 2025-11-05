@@ -319,6 +319,9 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
 .skAddBanner, .skRightTabs, .skTabHeading, .skCaption {
     display: none !important
 }
+.skNav a {
+    text-transform: lowercase !important; 
+}
 
 .skHeader .skBanner {
     font-family: var(--font_ui) !important

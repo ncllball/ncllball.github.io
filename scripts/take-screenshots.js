@@ -14,7 +14,7 @@ const path = require('path');
     { file: 'Volunteer/friendslist.html', slug: 'volunteer' },
     { file: 'Programs/baseball.html', slug: 'baseball' },
     { file: 'Programs/softball.html', slug: 'softball' },
-    { file: 'Player Development/index.html', slug: 'pd' },
+    { file: 'Programs/playerdev.html', slug: 'pd' },
   ];
 
   const outDir = path.join(process.cwd(), 'screenshots');
