@@ -2558,12 +2558,12 @@ details.footies[open] summary::before {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 1.25rem;
-    background: rgba(255, 255, 255, 0.97);
-    padding: 0.45rem 1.4rem;
-    border-radius: 999px;
-    box-shadow: 0 12px 28px rgba(19, 60, 118, 0.18);
-    border: 1px solid rgba(19, 60, 118, 0.25);
+    gap: 1rem;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
     pointer-events: auto;
     z-index: 1;
 }
@@ -2572,18 +2572,18 @@ details.footies[open] summary::before {
 .ncll-card--toggle .btn-prev {
     display: none;
     pointer-events: auto;
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border-radius: 50%;
     background-color: #fff;
     background-image:
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolyline fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' points='8 4 16 12 8 20'/%3E%3C/svg%3E"),
         linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0)),
-        repeating-linear-gradient(135deg, var(--color_red, #cd163f) 0 2px, #ffffff 2px 4px);
+        repeating-linear-gradient(135deg, var(--color_red, #cd163f) 0 1.25px, #ffffff 1.25px 3px);
     background-repeat: no-repeat, no-repeat, repeat;
     background-position: center, center, center;
-    background-size: 38%, 120%, auto;
-    border: 2px solid rgba(205, 22, 63, 0.78);
+    background-size: 32%, 110%, auto;
+    border: 1.8px solid rgba(205, 22, 63, 0.75);
     color: transparent;
     cursor: pointer;
     align-items: center;
