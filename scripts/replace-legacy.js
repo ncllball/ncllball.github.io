@@ -4,7 +4,7 @@ const argv = require('minimist')(process.argv.slice(2));
 
 const ROOT = process.cwd();
 const DRY = !argv.apply;
-const files = argv._.length ? argv._ : ['Programs/baseball.html','Programs/softball.html','Player Development/index.html','Volunteer/friendslist.html'];
+const files = argv._.length ? argv._ : ['Programs/baseball.html','Programs/softball.html','Programs/playerdev.html','Volunteer/friendslist.html'];
 
 const MAP = [
   ['division__detail-content','ncll-card__details'],
