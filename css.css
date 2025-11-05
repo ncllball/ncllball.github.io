@@ -2595,10 +2595,14 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--toggle .btn-next:hover,
-.ncll-card--toggle .btn-next:focus,
+.ncll-card--toggle .btn-next:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(205, 22, 63, 0.34);
+}
+
 .ncll-card--toggle .btn-prev:hover,
 .ncll-card--toggle .btn-prev:focus {
-    transform: translateY(-1px);
+    transform: translateY(-1px) scaleX(-1);
     box-shadow: 0 10px 22px rgba(205, 22, 63, 0.34);
 }
 
