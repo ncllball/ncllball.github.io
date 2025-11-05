@@ -322,6 +322,9 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
 .skNav a {
     text-transform: capitalize !important;
 }
+.skNav #dnnStandardMenu .root .m {
+    width: 300px !important;
+}
 .subMenuItem {
     word-break: keep-all !important;
 }
