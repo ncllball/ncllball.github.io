@@ -320,7 +320,7 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
     display: none !important
 }
 .skNav a {
-    text-transform: lowercase !important; 
+    text-transform: normal !important; 
 }
 
 .skHeader .skBanner {
