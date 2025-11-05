@@ -2579,7 +2579,7 @@ details.footies[open] summary::before {
     height: 3rem;
     border-radius: 50%;
     background-image: var(--stripe-gradient);
-    background-size: 200% 200%;
+    background-size: 3px 3px;
     border: 2px solid var(--color_darkblue, #133c76);
     color: transparent;
     cursor: pointer;
