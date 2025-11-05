@@ -2561,12 +2561,12 @@ details.footies[open] summary::before {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    background: rgba(255, 255, 255, 0.97);
-    padding: 0.6rem 1.5rem;
-    border-radius: 999px;
-    box-shadow: 0 10px 24px rgba(19, 60, 118, 0.18);
-    border: 1px solid rgba(19, 60, 118, 0.25);
+    gap: 0.85rem;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
     pointer-events: none;
     z-index: 8;
 }
