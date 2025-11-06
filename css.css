@@ -1785,8 +1785,7 @@ details.footies[open] summary::before {
 
 /* Canonical table wrapper for horizontal overflow on small screens.
        Keep legacy/alias names in the selector list for compatibility. */
-.table-component,
-.table_component,
+
 .table-scroll {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
