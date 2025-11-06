@@ -2963,3 +2963,9 @@ details.footies[open] summary::before {
 .measurement {
     width: 150px;
 }
+.stickout_1 {
+    font-weight: 600;
+}
+.stickout_2 {
+    display: none;
+}
