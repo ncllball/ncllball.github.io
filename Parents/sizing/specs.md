@@ -6,14 +6,14 @@
 | Baseball - Kindy   | 4301        | ST350                    | none           | OSFA  | OSFA |
 | Baseball - A       | 4301        | 4003                     | none           | OSFA  | OSFA |
 | Baseball - AA      | 4301        | 4003                     | none           | OSFA  | OSFA |
-| Baseball - AAA     | PTS30       | 4003                     | PC90YH/PC90H   | OSFA  | OSFA |
-| Baseball - Majors  | PTS30       | 4003                     | PC90YH/PC90H   | OSFA  | OSFA |
+| Baseball - AAA     | PTS30       | 4003                     | PC90HY/PC90H   | OSFA  | OSFA |
+| Baseball - Majors  | PTS30       | 4003                     | PC90HY/PC90H   | OSFA  | OSFA |
 | Baseball - Juniors | PTS30       | 4003                     | PC90H          | OSFA  | OSFA |
 | Baseball - Seniors | PTS30       | 4003                     | PC90H          | OSFA  | OSFA |
 | Softball - A       | 4302        | 4408 GIRLS / 4408 WOMENS | none           | OSFA  | OSFA |
 | Softball - AA      | 4302        | 4408 GIRLS / 4408 WOMENS | none           | OSFA  | OSFA |
-| Softball - AAA     | 4302        | 4408 GIRLS / 4408 WOMENS | PC90YH/PC90H   | OSFA  | OSFA |
-| Softball - Majors  | 4302        | 4408 GIRLS / 4408 WOMENS | PC90YH/PC90H   | OSFA  | OSFA |
+| Softball - AAA     | 4302        | 4408 GIRLS / 4408 WOMENS | PC90HY/PC90H   | OSFA  | OSFA |
+| Softball - Majors  | 4302        | 4408 GIRLS / 4408 WOMENS | PC90HY/PC90H   | OSFA  | OSFA |
 | Softball - Juniors | 4302        | 4408 WOMENS              | PC90H          | OSFA  | OSFA |
 | Softball - Seniors | 4302        | 4408 WOMENS              | PC90H          | OSFA  | OSFA |
 
@@ -74,7 +74,7 @@ AXXL,28,32
 AXXXL,30,33
 AXXXXL,32,34
 
-### PC90YH — Normalized (Pit-to-pit)
+### PC90HY — Normalized (Pit-to-pit)
 
 Size codes: YXS = Youth X-Small, YS = Youth Small, YM = Youth Medium, YL = Youth Large, YXL = Youth X-Large
 
@@ -236,41 +236,41 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
 
 ## Player Size Offerings
 
-| Program/Division   | Hat Sizes Offered                                           | Shirt/Jersey Sizes Offered                                   | Hoodie Sizes Offered                                                        |
-|--------------------|-------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------------------------------------------|
-| Baseball - T-Ball  | Youth adjustable strap                                      | YXS, YS, YM, YL (ST350)                                      | none                                                                        |
-| Baseball - Kindy   | Youth adjustable strap                                      | YXS, YS, YM, YL (ST350)                                      | none                                                                        |
-| Baseball - A       | Youth or Adult adjustable strap                             | YS, YM, YL, YXL, AS, AM, AL (4003)                           | none                                                                        |
-| Baseball - AA      | Youth or Adult adjustable strap                             | YS, YM, YL, YXL, AS, AM, AL (4003)                           | none                                                                        |
-| Baseball - AAA     | Youth, XS-SM, SM-MD, LG-XL (PTS30)                          | YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003)         | YXS, YS, YM, YL, YXL (PC90YH); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Baseball - Majors  | Youth, XS-SM, SM-MD, LG-XL (PTS30)                          | YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003)         | YXS, YS, YM, YL, YXL (PC90YH); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Baseball - Juniors | XS-SM, SM-MD, LG-XL (PTS30)                                 | AS, AM, AL, AXL, AXXL, AXXXL (4003)                          | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)                                |
-| Baseball - Seniors | XS-SM, SM-MD, LG-XL (PTS30)                                 | AS, AM, AL, AXL, AXXL, AXXXL (4003)                          | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)                                |
-| Softball - A       | Youth adjustable strap (4302 visor)                         | GS, GM, GL (4408 GIRLS); WS, WM, WL, WXL, WXXL (4408 WOMENS) | none                                                                        |
-| Softball - AA      | Youth adjustable strap (4302 visor)                         | GS, GM, GL (4408 GIRLS); WS, WM, WL, WXL, WXXL (4408 WOMENS) | none                                                                        |
-| Softball - AAA     | Youth adjustable strap, Adult adjustable strap (4302 visor) | GS, GM, GL (4408 GIRLS); WS, WM, WL, WXL, WXXL (4408 WOMENS) | YXS, YS, YM, YL, YXL (PC90YH); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Softball - Majors  | Youth adjustable strap, Adult adjustable strap (4302 visor) | GS, GM, GL (4408 GIRLS); WS, WM, WL, WXL, WXXL (4408 WOMENS) | YXS, YS, YM, YL, YXL (PC90YH); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Softball - Juniors | Adult adjustable strap (4302 visor)                         | WS, WM, WL, WXL, WXXL (4408 WOMENS)                          | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)                                |
-| Softball - Seniors | Adult adjustable strap (4302 visor)                         | WS, WM, WL, WXL, WXXL (4408 WOMENS)                          | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)                                |
+| Program/Division   | Hat Sizes Offered                                                        | Shirt/Jersey Sizes Offered                                   | Hoodie Sizes Offered                                                        |
+|--------------------|--------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------------------------------------------|
+| Baseball - T-Ball  | Youth adjustable strap                                                   | YXS, YS, YM, YL, YXL (ST350)                                 | none                                                                        |
+| Baseball - Kindy   | Youth adjustable strap                                                   | YXS, YS, YM, YL, YXL (ST350)                                 | none                                                                        |
+| Baseball - A       | Youth adjustable strap (4301); Adult adjustable strap (4301)             | YS, YM, YL, YXL, AS, AM, AL (4003)                           | none                                                                        |
+| Baseball - AA      | Youth adjustable strap (4301); Adult adjustable strap (4301)             | YS, YM, YL, YXL, AS, AM, AL (4003)                           | none                                                                        |
+| Baseball - AAA     | Youth, XS-SM, SM-MD, LG-XL (PTS30)                                       | YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003)         | YXS, YS, YM, YL, YXL (PC90HY); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Baseball - Majors  | Youth, XS-SM, SM-MD, LG-XL (PTS30)                                       | YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003)         | YXS, YS, YM, YL, YXL (PC90HY); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Baseball - Juniors | XS-SM, SM-MD, LG-XL (PTS30)                                              | AS, AM, AL, AXL, AXXL, AXXXL (4003)                          | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)                                |
+| Baseball - Seniors | XS-SM, SM-MD, LG-XL (PTS30)                                              | AS, AM, AL, AXL, AXXL, AXXXL (4003)                          | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)                                |
+| Softball - A       | Youth adjustable strap (4302 visor)                                      | GS, GM, GL (4408 GIRLS); WS, WM, WL, WXL, WXXL (4408 WOMENS) | none                                                                        |
+| Softball - AA      | Youth adjustable strap (4302 visor)                                      | GS, GM, GL (4408 GIRLS); WS, WM, WL, WXL, WXXL (4408 WOMENS) | none                                                                        |
+| Softball - AAA     | Youth adjustable strap (4302 visor); Adult adjustable strap (4302 visor) | GS, GM, GL (4408 GIRLS); WS, WM, WL, WXL, WXXL (4408 WOMENS) | YXS, YS, YM, YL, YXL (PC90HY); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Softball - Majors  | Youth adjustable strap (4302 visor); Adult adjustable strap (4302 visor) | GS, GM, GL (4408 GIRLS); WS, WM, WL, WXL, WXXL (4408 WOMENS) | YXS, YS, YM, YL, YXL (PC90HY); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Softball - Juniors | Adult adjustable strap (4302 visor)                                      | WS, WM, WL, WXL, WXXL (4408 WOMENS)                          | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)                                |
+| Softball - Seniors | Adult adjustable strap (4302 visor)                                      | WS, WM, WL, WXL, WXXL (4408 WOMENS)                          | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)                                |
 
 ## Coach Size Offerings
 
-| Program/Division           | Hat Sizes Offered                      | Shirt/Jersey Sizes Offered                 | Hoodie Sizes Offered                         |
-|----------------------------|----------------------------------------|--------------------------------------------|----------------------------------------------|
-| Baseball - T-Ball Coaches  | Youth adjustable strap (4301)          | AS, AM, AL, AXL, AXXL, AXXXL (ST350)       | none                                         |
-| Baseball - Kindy Coaches   | Youth adjustable strap (4301)          | AS, AM, AL, AXL, AXXL, AXXXL (ST350)       | none                                         |
-| Baseball - A Coaches       | Youth or Adult adjustable strap (4301) | AS, AM, AL, AXL, AXXL, AXXXL (ST350)       | none                                         |
-| Baseball - AA Coaches      | Youth or Adult adjustable strap (4301) | AS, AM, AL, AXL, AXXL, AXXXL (ST350)       | none                                         |
-| Baseball - AAA Coaches     | Youth, XS-SM, SM-MD, LG-XL (PTS30)     | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Baseball - Majors Coaches  | Youth, XS-SM, SM-MD, LG-XL (PTS30)     | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Baseball - Juniors Coaches | XS-SM, SM-MD, LG-XL (PTS30)            | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Baseball - Seniors Coaches | XS-SM, SM-MD, LG-XL (PTS30)            | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Softball - A Coaches       | Small, M-XL (HC10)                     | AS, AM, AL, AXL, AXXL, AXXXL (4408 WOMENS) | none                                         |
-| Softball - AA Coaches      | Small, M-XL (HC10)                     | AS, AM, AL, AXL, AXXL, AXXXL (4408 WOMENS) | none                                         |
-| Softball - AAA Coaches     | Small, M-XL (HC10)                     | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Softball - Majors Coaches  | Small, M-XL (HC10)                     | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Softball - Juniors Coaches | Small, M-XL (HC10)                     | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
-| Softball - Seniors Coaches | Small, M-XL (HC10)                     | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550) | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Program/Division           | Hat Sizes Offered                                            | Shirt/Jersey Sizes Offered                        | Hoodie Sizes Offered                         |
+|----------------------------|--------------------------------------------------------------|---------------------------------------------------|----------------------------------------------|
+| Baseball - T-Ball Coaches  | Youth adjustable strap (4301); Adult adjustable strap (4301) | AXS, AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (ST350) | none                                         |
+| Baseball - Kindy Coaches   | Youth adjustable strap (4301); Adult adjustable strap (4301) | AXS, AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (ST350) | none                                         |
+| Baseball - A Coaches       | Youth adjustable strap (4301); Adult adjustable strap (4301) | AXS, AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (ST350) | none                                         |
+| Baseball - AA Coaches      | Youth adjustable strap (4301); Adult adjustable strap (4301) | AXS, AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (ST350) | none                                         |
+| Baseball - AAA Coaches     | Youth, XS-SM, SM-MD, LG-XL (PTS30)                           | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Baseball - Majors Coaches  | Youth, XS-SM, SM-MD, LG-XL (PTS30)                           | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Baseball - Juniors Coaches | XS-SM, SM-MD, LG-XL (PTS30)                                  | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Baseball - Seniors Coaches | XS-SM, SM-MD, LG-XL (PTS30)                                  | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Softball - A Coaches       | Small, M-XL (HC10)                                           | AS, AM, AL, AXL, AXXL, AXXXL (4408 WOMENS)        | none                                         |
+| Softball - AA Coaches      | Small, M-XL (HC10)                                           | AS, AM, AL, AXL, AXXL, AXXXL (4408 WOMENS)        | none                                         |
+| Softball - AAA Coaches     | Small, M-XL (HC10)                                           | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Softball - Majors Coaches  | Small, M-XL (HC10)                                           | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Softball - Juniors Coaches | Small, M-XL (HC10)                                           | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Softball - Seniors Coaches | Small, M-XL (HC10)                                           | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 
 ## Size Offering Lists
 
@@ -278,28 +278,28 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
 
 - Baseball - T-Ball
   - Hat: Youth adjustable strap
-  - Shirt/Jersey: YXS, YS, YM, YL (ST350)
+  - Shirt/Jersey: YXS, YS, YM, YL, YXL (ST350)
   - Hoodie: none
 - Baseball - Kindy
   - Hat: Youth adjustable strap
-  - Shirt/Jersey: YXS, YS, YM, YL (ST350)
+  - Shirt/Jersey: YXS, YS, YM, YL, YXL (ST350)
   - Hoodie: none
 - Baseball - A
-  - Hat: Youth or Adult adjustable strap
+  - Hat: Youth adjustable strap (4301); Adult adjustable strap (4301)
   - Shirt/Jersey: YS, YM, YL, YXL, AS, AM, AL (4003)
   - Hoodie: none
 - Baseball - AA
-  - Hat: Youth or Adult adjustable strap
+  - Hat: Youth adjustable strap (4301); Adult adjustable strap (4301)
   - Shirt/Jersey: YS, YM, YL, YXL, AS, AM, AL (4003)
   - Hoodie: none
 - Baseball - AAA
   - Hat: Youth, XS-SM, SM-MD, LG-XL (PTS30)
   - Shirt/Jersey: YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003)
-  - Hoodie: YXS, YS, YM, YL, YXL (PC90YH); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
+  - Hoodie: YXS, YS, YM, YL, YXL (PC90HY); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
 - Baseball - Majors
   - Hat: Youth, XS-SM, SM-MD, LG-XL (PTS30)
   - Shirt/Jersey: YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003)
-  - Hoodie: YXS, YS, YM, YL, YXL (PC90YH); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
+  - Hoodie: YXS, YS, YM, YL, YXL (PC90HY); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
 - Baseball - Juniors
   - Hat: XS-SM, SM-MD, LG-XL (PTS30)
   - Shirt/Jersey: AS, AM, AL, AXL, AXXL, AXXXL (4003)
@@ -317,13 +317,13 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
   - Shirt/Jersey: GS, GM, GL (4408 GIRLS); WS, WM, WL, WXL, WXXL (4408 WOMENS)
   - Hoodie: none
 - Softball - AAA
-  - Hat: Youth adjustable strap, Adult adjustable strap (4302 visor)
+  - Hat: Youth adjustable strap (4302 visor); Adult adjustable strap (4302 visor)
   - Shirt/Jersey: GS, GM, GL (4408 GIRLS); WS, WM, WL, WXL, WXXL (4408 WOMENS)
-  - Hoodie: YXS, YS, YM, YL, YXL (PC90YH); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
+  - Hoodie: YXS, YS, YM, YL, YXL (PC90HY); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
 - Softball - Majors
-  - Hat: Youth adjustable strap, Adult adjustable strap (4302 visor)
+  - Hat: Youth adjustable strap (4302 visor); Adult adjustable strap (4302 visor)
   - Shirt/Jersey: GS, GM, GL (4408 GIRLS); WS, WM, WL, WXL, WXXL (4408 WOMENS)
-  - Hoodie: YXS, YS, YM, YL, YXL (PC90YH); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
+  - Hoodie: YXS, YS, YM, YL, YXL (PC90HY); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
 - Softball - Juniors
   - Hat: Adult adjustable strap (4302 visor)
   - Shirt/Jersey: WS, WM, WL, WXL, WXXL (4408 WOMENS)
@@ -336,20 +336,20 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
 ### Coaches
 
 - Baseball - T-Ball Coaches
-  - Hat: Youth adjustable strap (4301)
-  - Shirt/Jersey: AS, AM, AL, AXL, AXXL, AXXXL (ST350)
+  - Hat: Youth adjustable strap (4301); Adult adjustable strap (4301)
+  - Shirt/Jersey: AXS, AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (ST350)
   - Hoodie: none
 - Baseball - Kindy Coaches
-  - Hat: Youth adjustable strap (4301)
-  - Shirt/Jersey: AS, AM, AL, AXL, AXXL, AXXXL (ST350)
+  - Hat: Youth adjustable strap (4301); Adult adjustable strap (4301)
+  - Shirt/Jersey: AXS, AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (ST350)
   - Hoodie: none
 - Baseball - A Coaches
-  - Hat: Youth or Adult adjustable strap (4301)
-  - Shirt/Jersey: AS, AM, AL, AXL, AXXL, AXXXL (ST350)
+  - Hat: Youth adjustable strap (4301); Adult adjustable strap (4301)
+  - Shirt/Jersey: AXS, AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (ST350)
   - Hoodie: none
 - Baseball - AA Coaches
-  - Hat: Youth or Adult adjustable strap (4301)
-  - Shirt/Jersey: AS, AM, AL, AXL, AXXL, AXXXL (ST350)
+  - Hat: Youth adjustable strap (4301); Adult adjustable strap (4301)
+  - Shirt/Jersey: AXS, AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (ST350)
   - Hoodie: none
 - Baseball - AAA Coaches
   - Hat: Youth, XS-SM, SM-MD, LG-XL (PTS30)
@@ -391,3 +391,108 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
   - Hat: Small, M-XL (HC10)
   - Shirt/Jersey: AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)
   - Hoodie: AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
+
+### Player Size Drilldown (Quick Reference)
+
+| Program (coverage)        | Hat sizes offered                                                        | Shirt/Jersey sizes offered                | Hoodie sizes offered                |
+|---------------------------|--------------------------------------------------------------------------|-------------------------------------------|-------------------------------------|
+| T-Ball & Kindy — Baseball | Youth adjustable strap (4301)                                            | YXS–YXL (YST350)                          | Not issued                          |
+| A & AA — Baseball         | Youth adjustable strap (4301); Adult adjustable strap (4301)             | YS–YXL; AS–AL (4003)                      | Not issued                          |
+| AAA & Upper — Baseball¹   | Youth, XS–SM, SM–MD, LG–XL (PTS30)                                       | YS–YXL; AS–AXXXL (4003)                   | YXS–YXL (PC90HY); AS–AXXXXL (PC90H) |
+| A & AA — Softball         | Youth adjustable strap (4302 visor)                                      | GS–GL (4408 GIRLS); WS–WXXL (4408 WOMENS) | Not issued                          |
+| AAA & Upper — Softball²   | Youth adjustable strap (4302 visor); Adult adjustable strap (4302 visor) | GS–GL (4408 GIRLS); WS–WXXL (4408 WOMENS) | YXS–YXL (PC90HY); AS–AXXXXL (PC90H) |
+
+¹ Includes Baseball AAA, Majors, Juniors, and Seniors.  
+² Includes Softball AAA, Majors, Juniors, and Seniors.
+
+### Coach Size Drilldown (Quick Reference)
+
+| Program (coverage)        | Hat sizes offered                                            | Shirt/Jersey sizes offered | Hoodie sizes offered |
+|---------------------------|--------------------------------------------------------------|----------------------------|----------------------|
+| T-Ball & Kindy — Baseball | Youth adjustable strap (4301); Adult adjustable strap (4301) | AXS–AXXXXL (ST350)         | Not issued           |
+| A & AA — Baseball         | Youth adjustable strap (4301); Adult adjustable strap (4301) | AXS–AXXXXL (ST350)         | Not issued           |
+| AAA & Upper — Baseball¹   | Youth, XS–SM, SM–MD, LG–XL (PTS30)                           | AS–AXXXL (ST350/ST550)     | AS–AXXXXL (PC90H)    |
+| A & AA — Softball         | Small, M–XL (Champro HC10)                                   | AS–AXXXL (4408 WOMENS)     | Not issued           |
+| AAA & Upper — Softball²   | Small, M–XL (Champro HC10)                                   | AS–AXXXL (ST350/ST550)     | AS–AXXXXL (PC90H)    |
+
+### Player Size Summary by Sport
+
+| Program  | Hat sizes offered                                                                                | Shirt/Jersey sizes offered                | Hoodie sizes offered                |
+|----------|--------------------------------------------------------------------------------------------------|-------------------------------------------|-------------------------------------|
+| Baseball | Youth adjustable strap (4301); Adult adjustable strap (4301); Youth, XS–SM, SM–MD, LG–XL (PTS30) | YXS–YXL (YST350); YS–YXL, AS–AXXXL (4003) | YXS–YXL (PC90HY); AS–AXXXXL (PC90H) |
+| Softball | Youth adjustable strap (4302 visor); Adult adjustable strap (4302 visor)                         | GS–GL (4408 GIRLS); WS–WXXL (4408 WOMENS) | YXS–YXL (PC90HY); AS–AXXXXL (PC90H) |
+
+#### Copy-ready Player Size Summary
+
+**Baseball**
+- Hat: Youth adjustable strap (4301); Adult adjustable strap (4301); Youth, XS–SM, SM–MD, LG–XL (PTS30)
+- Hat Sizes expanded:
+  - Youth adjustable strap (4301)
+  - Adult adjustable strap (4301)
+  - Youth, XS–SM, SM–MD, LG–XL (PTS30)
+- Shirt/Jersey: YXS–YXL (YST350); YS–YXL, AS–AXXXL (4003)
+- Shirt/Jersey Sizes expanded:
+  - YXS, YS, YM, YL, YXL (YST350)
+  - YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003)
+- Hoodie: YXS–YXL (PC90HY); AS–AXXXXL (PC90H)
+- Hoodie Sizes expanded:
+  - YXS, YS, YM, YL, YXL (PC90HY)
+  - AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
+
+**Softball**
+- Hat: Youth adjustable strap (4302 visor); Adult adjustable strap (4302 visor)
+- Hat Sizes expanded:
+  - Youth adjustable strap (4302 visor)
+  - Adult adjustable strap (4302 visor)
+- Shirt/Jersey: GS–GL (4408 GIRLS); WS–WXXL (4408 WOMENS)
+- Shirt/Jersey Sizes expanded:
+  - GS, GM, GL (4408 GIRLS)
+  - WS, WM, WL, WXL, WXXL (4408 WOMENS)
+- Hoodie: YXS–YXL (PC90HY); AS–AXXXXL (PC90H)
+- Hoodie Sizes expanded:
+  - YXS, YS, YM, YL, YXL (PC90HY)
+  - AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
+
+### Coach Size Summary by Sport
+
+| Program  | Hat sizes offered                                                                                | Shirt/Jersey sizes offered          | Hoodie sizes offered |
+|----------|--------------------------------------------------------------------------------------------------|-------------------------------------|----------------------|
+| Baseball | Youth adjustable strap (4301); Adult adjustable strap (4301); Youth, XS–SM, SM–MD, LG–XL (PTS30) | AXS–AXXXXL (ST350/ST550)            | AS–AXXXXL (PC90H)    |
+| Softball | Small, M–XL (Champro HC10)                                                                       | AS–AXXXL (4408 WOMENS; ST350/ST550) | AS–AXXXXL (PC90H)    |
+
+#### Copy-ready Coach Size Summary
+
+**Baseball**
+- Hat: Youth adjustable strap (4301); Adult adjustable strap (4301); Youth, XS–SM, SM–MD, LG–XL (PTS30)
+- Hat Sizes expanded:
+  - Youth adjustable strap (4301)
+  - Adult adjustable strap (4301)
+  - Youth, XS–SM, SM–MD, LG–XL (PTS30)
+- Shirt/Jersey: AXS–AXXXXL (ST350/ST550)
+- Shirt/Jersey Sizes expanded:
+  - AXS, AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (ST350/ST550)
+- Hoodie: AS–AXXXXL (PC90H)
+- Hoodie Sizes expanded:
+  - AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
+
+**Softball**
+- Hat: Small, M–XL (Champro HC10)
+- Hat Sizes expanded:
+  - Small, M–XL (Champro HC10)
+- Shirt/Jersey: AS–AXXXL (4408 WOMENS; ST350/ST550)
+- Shirt/Jersey Sizes expanded:
+  - AS, AM, AL, AXL, AXXL, AXXXL (4408 WOMENS; ST350/ST550)
+- Hoodie: AS–AXXXXL (PC90H)
+- Hoodie Sizes expanded:
+  - AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
+
+
+Please choose a shirt:
+Hat size:
+Shirt/Jersey size:
+Hoodie Size:
+
+Must read regarding Uniform Sizing!
+
+
+
