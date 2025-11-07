@@ -267,7 +267,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     --font_sans: "proxima-nova", var(--font_ui);
     --font_heading: var(--tk-noto-sans-display-semiconden), var(--font_ui);
     /* tag font */
-    --font_tag: var(--font_ui), "prxima-nova";
+    --font_tag: var(--font_ui), "proxima-nova";
     --age-matrix-td-font: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif
 }
 
@@ -2494,8 +2494,9 @@ details.footies[open] summary::before {
     padding: 12px 20px;
     border-top: 1px solid var(--color_border_light);
     gap: 12px;
-    background: #fff;
     box-shadow: none;
+    background: var(--color_surface_light);
+    border-bottom: 0px solid var(--color_border_light);
 }
 
 @media(hover:hover) and (pointer:fine) {
@@ -2735,8 +2736,8 @@ details.footies[open] summary::before {
     left: 0;
     right: 0;
     z-index: 10;
-    background: #fff;
-    border-bottom: 1px solid var(--color_border_light);
+    background: var(--color_surface_light);
+    border-bottom: 0px solid var(--color_border_light);
     margin-bottom: 1rem;
     align-items: center;
     justify-content: center;
