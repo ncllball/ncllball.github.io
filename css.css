@@ -2643,8 +2643,8 @@ details.footies[open] summary::before {
 .ncll-card--toggle .btn-prev {
     display: none;
     pointer-events: auto;
-    width: 2.1rem;
-    height: 2.1rem;
+    width: 3.1rem;
+    height: 3.1rem;
     padding: 0;
     box-sizing: border-box;
     border-radius: 50%;
@@ -2658,7 +2658,7 @@ details.footies[open] summary::before {
         repeating-linear-gradient(135deg, var(--nav-stripe-color) 0 1px, #ffffff 1px 2.3px);
     background-repeat: no-repeat, no-repeat, repeat;
     background-position: center, center, center;
-    background-size: 30%, 110%, auto;
+    background-size: 60%, 110%, auto;
     border: 1.6px solid var(--nav-border-color);
     color: transparent;
     cursor: pointer;
