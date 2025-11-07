@@ -2104,7 +2104,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__details h4:first-child {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .ncll-card__details p {
