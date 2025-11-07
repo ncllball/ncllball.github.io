@@ -2036,6 +2036,8 @@ details.footies[open] summary::before {
     margin: 0 auto;
     margin-bottom: 8px;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 .program-grid .ncll-card {
@@ -2117,6 +2119,14 @@ details.footies[open] summary::before {
 .ncll-card__details {
     margin: 0 0 4px 0;
     color: var(--color_blue);
+}
+
+.ncll-card__body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0 0 1.25rem 0;
+    box-sizing: border-box;
+    min-height: 0;
 }
 #lists h4.left {
     padding-left: 20px;
@@ -2287,6 +2297,19 @@ details.footies[open] summary::before {
 }
 
 /* Action row ------------------------------------------------------------- */
+.ncll-card__sticky-footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 12px 16px;
+    background: #fff;
+    border-top: 1px solid var(--color_border_light);
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
 .ncll-card__sticky-footer .button {
     padding: 6px 14px;
     font-size: 0.8rem;
@@ -2363,7 +2386,7 @@ details.footies[open] summary::before {
     position: absolute;
     inset: 0;
     background: var(--color_surface_light);
-    padding: 24px 20px 70px;
+    padding: 24px 20px calc(var(--card-toggle-actions-height, 60px) + 14px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2377,10 +2400,11 @@ details.footies[open] summary::before {
     position: absolute;
     inset: 0;
     padding: 20px;
-    padding-bottom: 70px;
+    padding-bottom: calc(var(--card-toggle-actions-height, 60px) + 14px);
     background: var(--color_surface_light);
     z-index: 1;
     min-height: 500px;
+    overflow-y: auto;
 }
 
 
@@ -2396,7 +2420,7 @@ details.footies[open] summary::before {
 .ncll-card--overlay .ncll-card__top-layer::after {
     content: "Tap for details";
     position: absolute;
-    bottom: 75px;
+    bottom: calc(var(--card-toggle-actions-height, 60px) + 15px);
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.75rem;
@@ -2475,7 +2499,7 @@ details.footies[open] summary::before {
     --card-toggle-sticky-height: 4rem;
     --card-toggle-sticky-gap: 1rem;
     --card-toggle-actions-height: 60px;
-    --card-toggle-panel-pad-bottom: 1.75rem;
+    --card-toggle-panel-pad-bottom: calc(var(--card-toggle-actions-height) + 1.25rem);
 }
 
 .ncll-card--toggle input[type="radio"],
