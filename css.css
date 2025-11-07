@@ -2491,7 +2491,7 @@ details.footies[open] summary::before {
 
 .ncll-card--toggle .ncll-card__sticky-footer {
     height: auto;
-    padding: 12px 20px;
+    padding: 20px 8px;
     border-top: 0px solid var(--color_surface_light);
     gap: 12px;
     box-shadow: none;
