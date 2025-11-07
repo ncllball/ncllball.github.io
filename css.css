@@ -2371,12 +2371,6 @@ details.footies[open] summary::before {
     color: #fff;
 }
 
-.button,
-label.button {
-    -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
-}
-
 @media (max-width: 640px) {
     .ncll-card__blurb,
     .ncll-card__meta,
