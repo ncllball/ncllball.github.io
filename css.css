@@ -439,6 +439,35 @@ h6 {
     text-align: left
 }
 
+.cta-panel {
+    border: 2px solid var(--color_red);
+    border-radius: 14px;
+    padding: 1.5rem 1.75rem;
+    margin: 2rem 0;
+    background: var(--color_white);
+    box-shadow: 0 12px 35px rgba(7, 20, 43, .08);
+}
+
+.cta-panel ul {
+    margin-bottom: 1.25rem;
+}
+
+.cta-panel h2 {
+    margin-top: 0;
+}
+
+.cta-panel .cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    align-items: center;
+}
+
+.cta-panel .cta-actions a {
+    font-weight: 600;
+    letter-spacing: .02em;
+}
+
 /* ================= Pitching Reference (global reuse) ================= */
 .pitching-ref nav.page-nav {
     background: #f8f9fb;
