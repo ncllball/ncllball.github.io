@@ -9,7 +9,7 @@ This document captures the standardized tag strip items (the top metadata list) 
 ## 2025 Winter Teen BB Training
 
 - Dates: Nov 9, 2024 - Feb 22, 2025
-- Location: Focus Baseball Indoor Facility
+- Location: Focus Baseball Cages
 - Day: Tuesdays
 - Time: 5:00 – 6:30 PM
 - Cost: TBD
