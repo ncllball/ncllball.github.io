@@ -2492,11 +2492,10 @@ details.footies[open] summary::before {
 .ncll-card--toggle .ncll-card__sticky-footer {
     height: auto;
     padding: 12px 20px;
-    border-top: 1px solid var(--color_border_light);
+    border-top: 0px solid var(--color_surface_light);
     gap: 12px;
     box-shadow: none;
     background: var(--color_surface_light);
-    border-bottom: 0px solid var(--color_border_light);
 }
 
 @media(hover:hover) and (pointer:fine) {
