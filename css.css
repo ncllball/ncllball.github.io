@@ -2401,6 +2401,7 @@ details.footies[open] summary::before {
     min-height: var(--ncll-card-height);
 }
 
+/* === Begin: Overlay scrollbar styling ================================= */
 .ncll-card--overlay .ncll-card__body {
     position: absolute;
     inset: 0;
@@ -2410,7 +2411,29 @@ details.footies[open] summary::before {
     z-index: 1;
     min-height: var(--ncll-card-height);
     overflow-y: auto;
+    scrollbar-color: #cd163f #f5f5f5;
+    scrollbar-width: thin;
 }
+
+.ncll-card--overlay .ncll-card__body::-webkit-scrollbar {
+    width: 10px;
+}
+
+.ncll-card--overlay .ncll-card__body::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 6px;
+}
+
+.ncll-card--overlay .ncll-card__body::-webkit-scrollbar-thumb {
+    background: #cd163f;
+    border-radius: 6px;
+    border: 2px solid #f5f5f5;
+}
+
+.ncll-card--overlay .ncll-card__body::-webkit-scrollbar-thumb:hover {
+    background: #a50f30;
+}
+/* === End: Overlay scrollbar styling =================================== */
 
 
 
