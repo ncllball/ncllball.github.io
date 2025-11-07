@@ -2371,6 +2371,17 @@ details.footies[open] summary::before {
     color: #fff;
 }
 
+@media (max-width: 640px) {
+    .ncll-card__blurb,
+    .ncll-card__meta,
+    .ncll-card__meta li,
+    .ncll-card__details p,
+    .ncll-card__details li {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+
 /* Overlay reveal variant ------------------------------------------------- */
 
 :root {
