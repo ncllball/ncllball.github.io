@@ -2372,31 +2372,6 @@ details.footies[open] summary::before {
 }
 
 /* Anchor-based navigation variant (no inputs) */
-.ncll-card--target .target-panel {
-    display: none;
-}
-
-.ncll-card--target .target-panel.is-default,
-.ncll-card--target .target-panel:target {
-    display: block;
-}
-
-.ncll-card--target .target-panels:has(.target-panel:target) .target-panel {
-    display: none;
-}
-
-.ncll-card--target .target-panels:has(.target-panel:target) .target-panel:target {
-    display: block;
-}
-
-.ncll-card--target .target-panels:has(.target-panel:target) .target-panel.is-default:not(:target) {
-    display: none;
-}
-
-.ncll-card--target .target-panels:not(:has(.target-panel:target)) .target-panel.is-default {
-    display: block;
-}
-
 @media (max-width: 640px) {
     .ncll-card__blurb,
     .ncll-card__meta,
