@@ -2541,13 +2541,6 @@ details.footies[open] summary::before {
     display: none;
 }
 
-:root {
-    --card-toggle-sticky-height: 4rem;
-    --card-toggle-sticky-gap: 1rem;
-    --card-toggle-actions-height: 60px;
-    --card-toggle-panel-pad-bottom: calc(var(--card-toggle-actions-height) + 1.25rem);
-}
-
 .ncll-card--toggle input[type="radio"],
 .ncll-card--toggle input.lightbox-toggle {
     position: absolute;
