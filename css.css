@@ -383,6 +383,16 @@ p, ul, li {
     font-family: var(--font_ui)
 }
 
+.uniforms-landing .figure__lead {
+    margin-bottom: 0.35rem;
+}
+
+.uniforms-landing .figure__lead+.ncll-card__graphics,
+.uniforms-landing .figure__lead+.ncll-card__graphics--inline,
+.uniforms-landing .figure__lead+.ncll-card__graphics--pair {
+    margin-top: 0.5rem;
+}
+
 ul li {
     list-style-type: disc
 }
