@@ -268,7 +268,13 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     --font_heading: var(--tk-noto-sans-display-semiconden), var(--font_ui);
     /* tag font */
     --font_tag: var(--font_ui), "proxima-nova";
-    --age-matrix-td-font: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif
+    --age-matrix-td-font: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+
+    /* card sizes  */
+    --card-toggle-sticky-height: 4rem;
+    --card-toggle-sticky-gap: 1rem;
+    --card-toggle-actions-height: 60px;
+    --card-toggle-panel-pad-bottom: calc(var(--card-toggle-actions-height) + 2.25rem);
 }
 
 /* Easing + durations */
