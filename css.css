@@ -3391,3 +3391,6 @@ details.footies[open] summary::before {
 .stickout_2 {
     display: none;
 }
+.ncll-card__graphic--top_tight {
+    margin: 0px auto 0px auto;
+}
