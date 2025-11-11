@@ -12,15 +12,41 @@
     --tk-source-serif-pro: "source-serif-pro", serif;
     --tk-prohibition: "prohibition", sans-serif;
     --tk-roboto-condensed: "roboto-condensed", sans-serif;
+    --tk-agenda: "agenda", sans-serif;
+    --tk-agenda-condensed: "agenda-condensed", sans-serif;
+    --tk-agenda-extra-condensed: "agenda-extra-condensed", sans-serif;
+    --tk-agenda-ultra-condensed: "agenda-ultra-condensed", sans-serif;
+    --tk-interstate: "interstate", sans-serif;
+    --tk-interstate-compressed: "interstate-compressed", sans-serif;
+    --tk-interstate-condensed: "interstate-condensed", sans-serif;
     --tk-erbaum: "erbaum", sans-serif;
+    --tk-quasimoda-2: "quasimoda-2", sans-serif;
+    --tk-quasimoda: "quasimoda", sans-serif;
     --tk-wingdings: "wingdings", sans-serif;
+    --tk-pt-sans-pro: "pt-sans-pro", sans-serif;
+    --tk-pt-sans-pro-caption: "pt-sans-pro-caption", sans-serif;
+    --tk-pt-sans-pro-condensed: "pt-sans-pro-condensed", sans-serif;
+    --tk-pt-sans-pro-extra-condensed: "pt-sans-pro-extra-condensed", sans-serif;
+    --tk-pt-sans-pro-narrow: "pt-sans-pro-narrow", sans-serif;
     --tk-wingdings-3: "wingdings-3", sans-serif;
     --tk-wingdings-2: "wingdings-2", sans-serif;
     --tk-noto-sans-display-extraconde: "noto-sans-display-extraconde", sans-serif;
     --tk-noto-sans-display-condensed: "noto-sans-display-condensed", sans-serif;
     --tk-noto-sans-display-semiconden: "noto-sans-display-semiconden", sans-serif;
     --tk-noto-sans-display: "noto-sans-display", sans-serif;
+    --tk-zeitung-micro: "zeitung-micro", sans-serif;
+    --tk-zeitung-mono: "zeitung-mono", sans-serif;
+    --tk-zeitung: "zeitung", sans-serif;
+    --tk-bebas-neue-semirounded: "bebas-neue-semirounded", sans-serif;
+    --tk-bebas-neue-pro: "bebas-neue-pro", sans-serif;
+    --tk-bebas-neue-pro-semiexpanded: "bebas-neue-pro-semiexpanded", sans-serif;
+    --tk-bebas-neue-pro-expanded: "bebas-neue-pro-expanded", sans-serif;
     --tk-source-serif-4: "source-serif-4", serif;
+    --tk-darkmode-on: "darkmode-on", sans-serif;
+    --tk-apparat-light: "apparat-light", sans-serif;
+    --tk-apparat: "apparat", sans-serif;
+    --tk-apparat-semicond-light: "apparat-semicond-light", sans-serif;
+    --tk-apparat-semicond: "apparat-semicond", sans-serif;
     --tk-quinn-display: "quinn-display", serif;
     --tk-manifold-cf: "manifold-cf", sans-serif;
     --tk-proxima-sera: "proxima-sera", sans-serif;
@@ -40,8 +66,296 @@
     --tk-gotham-narrow: "gotham-narrow", sans-serif;
     --tk-gotham-condensed: "gotham-condensed", sans-serif;
     --tk-gotham: "gotham", sans-serif;
+    --tk-aptos: "aptos", sans-serif;
+    --tk-aptos-display: "aptos-display", sans-serif;
+    --tk-aptos-narrow: "aptos-narrow", sans-serif;
     --tk-corbel: "corbel", sans-serif;
     --tk-comma-sans: "comma-sans", sans-serif;
+}
+
+/* Typekit helper classes */
+.tk-proxima-nova-condensed {
+    font-family: var(--tk-proxima-nova-condensed);
+}
+
+.tk-proxima-nova-extra-condensed {
+    font-family: var(--tk-proxima-nova-extra-condensed);
+}
+
+.tk-refrigerator-deluxe {
+    font-family: var(--tk-refrigerator-deluxe);
+}
+
+.tk-cronos-pro {
+    font-family: var(--tk-cronos-pro);
+}
+
+.tk-cronos-pro-caption {
+    font-family: var(--tk-cronos-pro-caption);
+}
+
+.tk-cronos-pro-display {
+    font-family: var(--tk-cronos-pro-display);
+}
+
+.tk-roboto {
+    font-family: var(--tk-roboto);
+}
+
+.tk-cronos-pro-subhead {
+    font-family: var(--tk-cronos-pro-subhead);
+}
+
+.tk-source-sans-pro {
+    font-family: var(--tk-source-sans-pro);
+}
+
+.tk-source-serif-pro {
+    font-family: var(--tk-source-serif-pro);
+}
+
+.tk-prohibition {
+    font-family: var(--tk-prohibition);
+}
+
+.tk-roboto-condensed {
+    font-family: var(--tk-roboto-condensed);
+}
+
+.tk-agenda {
+    font-family: var(--tk-agenda);
+}
+
+.tk-agenda-condensed {
+    font-family: var(--tk-agenda-condensed);
+}
+
+.tk-agenda-extra-condensed {
+    font-family: var(--tk-agenda-extra-condensed);
+}
+
+.tk-agenda-ultra-condensed {
+    font-family: var(--tk-agenda-ultra-condensed);
+}
+
+.tk-interstate {
+    font-family: var(--tk-interstate);
+}
+
+.tk-interstate-compressed {
+    font-family: var(--tk-interstate-compressed);
+}
+
+.tk-interstate-condensed {
+    font-family: var(--tk-interstate-condensed);
+}
+
+.tk-erbaum {
+    font-family: var(--tk-erbaum);
+}
+
+.tk-quasimoda-2 {
+    font-family: var(--tk-quasimoda-2);
+}
+
+.tk-quasimoda {
+    font-family: var(--tk-quasimoda);
+}
+
+.tk-wingdings {
+    font-family: var(--tk-wingdings);
+}
+
+.tk-pt-sans-pro {
+    font-family: var(--tk-pt-sans-pro);
+}
+
+.tk-pt-sans-pro-caption {
+    font-family: var(--tk-pt-sans-pro-caption);
+}
+
+.tk-pt-sans-pro-condensed {
+    font-family: var(--tk-pt-sans-pro-condensed);
+}
+
+.tk-pt-sans-pro-extra-condensed {
+    font-family: var(--tk-pt-sans-pro-extra-condensed);
+}
+
+.tk-pt-sans-pro-narrow {
+    font-family: var(--tk-pt-sans-pro-narrow);
+}
+
+.tk-wingdings-3 {
+    font-family: var(--tk-wingdings-3);
+}
+
+.tk-wingdings-2 {
+    font-family: var(--tk-wingdings-2);
+}
+
+.tk-noto-sans-display-extraconde {
+    font-family: var(--tk-noto-sans-display-extraconde);
+}
+
+.tk-noto-sans-display-condensed {
+    font-family: var(--tk-noto-sans-display-condensed);
+}
+
+.tk-noto-sans-display-semiconden {
+    font-family: var(--tk-noto-sans-display-semiconden);
+}
+
+.tk-noto-sans-display {
+    font-family: var(--tk-noto-sans-display);
+}
+
+.tk-zeitung-micro {
+    font-family: var(--tk-zeitung-micro);
+}
+
+.tk-zeitung-mono {
+    font-family: var(--tk-zeitung-mono);
+}
+
+.tk-zeitung {
+    font-family: var(--tk-zeitung);
+}
+
+.tk-bebas-neue-semirounded {
+    font-family: var(--tk-bebas-neue-semirounded);
+}
+
+.tk-bebas-neue-pro {
+    font-family: var(--tk-bebas-neue-pro);
+}
+
+.tk-bebas-neue-pro-semiexpanded {
+    font-family: var(--tk-bebas-neue-pro-semiexpanded);
+}
+
+.tk-bebas-neue-pro-expanded {
+    font-family: var(--tk-bebas-neue-pro-expanded);
+}
+
+.tk-source-serif-4 {
+    font-family: var(--tk-source-serif-4);
+}
+
+.tk-darkmode-on {
+    font-family: var(--tk-darkmode-on);
+}
+
+.tk-apparat-light {
+    font-family: var(--tk-apparat-light);
+}
+
+.tk-apparat {
+    font-family: var(--tk-apparat);
+}
+
+.tk-apparat-semicond-light {
+    font-family: var(--tk-apparat-semicond-light);
+}
+
+.tk-apparat-semicond {
+    font-family: var(--tk-apparat-semicond);
+}
+
+.tk-quinn-display {
+    font-family: var(--tk-quinn-display);
+}
+
+.tk-manifold-cf {
+    font-family: var(--tk-manifold-cf);
+}
+
+.tk-proxima-sera {
+    font-family: var(--tk-proxima-sera);
+}
+
+.tk-nexa-rust-sans-black-2 {
+    font-family: var(--tk-nexa-rust-sans-black-2);
+}
+
+.tk-nexa-rust-sans-black-shad-2 {
+    font-family: var(--tk-nexa-rust-sans-black-shad-2);
+}
+
+.tk-nexa-rust-slab-black {
+    font-family: var(--tk-nexa-rust-slab-black);
+}
+
+.tk-nexa-rust-slab-black-2 {
+    font-family: var(--tk-nexa-rust-slab-black-2);
+}
+
+.tk-nexa-rust-slab-black-shad-2 {
+    font-family: var(--tk-nexa-rust-slab-black-shad-2);
+}
+
+.tk-nexa-rust-script-shad-2 {
+    font-family: var(--tk-nexa-rust-script-shad-2);
+}
+
+.tk-zuume {
+    font-family: var(--tk-zuume);
+}
+
+.tk-kensington {
+    font-family: var(--tk-kensington);
+}
+
+.tk-config-variable {
+    font-family: var(--tk-config-variable);
+}
+
+.tk-archer-hairline-pro {
+    font-family: var(--tk-archer-hairline-pro);
+}
+
+.tk-archer-thin-pro {
+    font-family: var(--tk-archer-thin-pro);
+}
+
+.tk-archer-pro {
+    font-family: var(--tk-archer-pro);
+}
+
+.tk-gotham-xnarrow {
+    font-family: var(--tk-gotham-xnarrow);
+}
+
+.tk-gotham-narrow {
+    font-family: var(--tk-gotham-narrow);
+}
+
+.tk-gotham-condensed {
+    font-family: var(--tk-gotham-condensed);
+}
+
+.tk-gotham {
+    font-family: var(--tk-gotham);
+}
+
+.tk-aptos {
+    font-family: var(--tk-aptos);
+}
+
+.tk-aptos-display {
+    font-family: var(--tk-aptos-display);
+}
+
+.tk-aptos-narrow {
+    font-family: var(--tk-aptos-narrow);
+}
+
+.tk-corbel {
+    font-family: var(--tk-corbel);
+}
+
+.tk-comma-sans {
+    font-family: var(--tk-comma-sans);
 }
 
 .purpose-row {

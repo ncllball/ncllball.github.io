@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Stripe Gradient Scratchpad</title>
+    <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
+    <style>
+        :root {
+            --color_blue: #133c76;
+            --color_red: #cd163f;
+
+            --nav-stripe-color: var(--color_red, #cd163f);
+            --nav-border-color: rgba(205, 22, 63, 0.7);
+            --nav-border-color-blue: rgba(19, 60, 118, 0.65);
+
+            --stripe-tight: repeating-linear-gradient(125deg,
+                    #fff 0 6px,
+                    transparent 6px 12px,
+                    var(--color_red) 12px 18px);
+
+            --stripe-tight-micro: repeating-linear-gradient(135deg,
+                    #fff 0 4px,
+                    transparent 4px 8px,
+                    var(--color_red) 8px 12px);
+
+            --stripe-tight-micro-double: repeating-linear-gradient(135deg,
+                    #fff 0 2px,
+                    transparent 2px 4px,
+                    var(--color_red) 4px 6px);
+
+            --stripe-tight-candy: repeating-linear-gradient(120deg,
+                    var(--color_red) 0 10px,
+                    #fff 10px 18px);
+
+            --stripe-tight-blue: repeating-linear-gradient(132deg,
+                    rgba(255, 255, 255, 0.12) 0 6px,
+                    var(--color_blue) 6px 12px);
+
+            --stripe-tight-blue-pop: repeating-linear-gradient(140deg,
+                    rgba(255, 255, 255, 0.25) 0 5px,
+                    var(--color_blue) 5px 11px,
+                    rgba(255, 255, 255, 0.7) 11px 13px);
+
+            --stripe-tight-blue-chevron: repeating-linear-gradient(150deg,
+                    rgba(255, 255, 255, 0.18) 0 4px,
+                    var(--color_blue) 4px 9px);
+
+            --stripe-tight-blue-micro-double: repeating-linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.28) 0 2px,
+                    rgba(255, 255, 255, 0) 2px 4px,
+                    var(--color_blue) 4px 6px);
+
+            --stripe-tight-blue-micro-quad: repeating-linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.28) 0 1px,
+                    rgba(255, 255, 255, 0) 1px 2px,
+                    var(--color_blue) 2px 3px);
+
+            --stripe-tight-red-micro-quad: repeating-linear-gradient(135deg,
+                    rgba(255, 255, 255, 0.9) 0 1px,
+                    rgba(255, 255, 255, 0) 1px 2px,
+                    var(--color_red) 2px 3px);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "proxima-nova", "Segoe UI", system-ui, sans-serif;
+            background: #f5f7fb;
+            color: #0d1c30;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 48px 16px;
+        }
+
+        .playground {
+            width: min(1100px, 100%);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .stripe-card {
+            --card-background: var(--stripe-tight);
+            position: relative;
+            padding: 32px 24px;
+            border-radius: 28px;
+            border: 1.6px solid var(--nav-border-color);
+            background-color: #fff;
+            background-image: var(--card-background);
+            background-repeat: repeat;
+            background-size: auto;
+            color: #0d1c30;
+            box-shadow:
+                0 12px 24px rgba(19, 60, 118, 0.15),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+        }
+
+        .stripe-card h2 {
+            margin: 0 0 12px;
+            font-size: 1rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .stripe-card p {
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .stripe-card.tight {
+            --card-background: var(--stripe-tight);
+        }
+
+        .stripe-card.tight-micro {
+            --card-background: var(--stripe-tight-micro);
+        }
+
+        .stripe-card.tight-micro-double {
+            --card-background: var(--stripe-tight-micro-double);
+        }
+
+        .stripe-card.tight-candy {
+            --card-background: var(--stripe-tight-candy);
+        }
+
+        .stripe-card.tight-blue-base {
+            color: #fff;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+            border-color: var(--nav-border-color-blue);
+            background-color: var(--color_white);
+        }
+
+        .stripe-card.tight-blue {
+            --card-background: var(--stripe-tight-blue);
+        }
+
+        .stripe-card.tight-blue-pop {
+            --card-background: var(--stripe-tight-blue-pop);
+        }
+
+        .stripe-card.tight-blue-chevron {
+            --card-background: var(--stripe-tight-blue-chevron);
+        }
+
+        .stripe-card.tight-blue-micro-double {
+            --card-background: var(--stripe-tight-blue-micro-double);
+        }
+
+        .stripe-card.tight-blue-micro-quad {
+            --card-background: var(--stripe-tight-blue-micro-quad);
+        }
+
+        .stripe-card.tight-red {
+            border-color: var(--nav-border-color);
+        }
+
+        .stripe-card.tight-red-micro-quad {
+            --card-background: var(--stripe-tight-red-micro-quad);
+        }
+
+        .stripe-card.badge {
+            border-radius: 50%;
+            width: 220px;
+            height: 220px;
+            aspect-ratio: 1;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 4px;
+            background-color: #fff;
+            background-image:
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolyline fill='none' stroke='%23133c76' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' points='8 4 16 12 8 20'/%3E%3C/svg%3E"),
+                var(--stripe-tight);
+            background-repeat: no-repeat, repeat;
+            background-position: center, center;
+            background-size: 60%, auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="playground">
+        <article class="stripe-card">
+            <h2>01. Banded Classic</h2>
+            <p>Matches the original red-and-white diagonal rhythm from your notes.</p>
+        </article>
+
+        <article class="stripe-card tight">
+            <h2>02. Tri-Tone</h2>
+            <p>Quick tri-tone repeat mixing white, transparent cutouts, and solid red.</p>
+        </article>
+
+        <article class="stripe-card tight-micro">
+            <h2>03. Micro Tight</h2>
+            <p>Dense red/white striping for top/bottom sticky bars or slim separators.</p>
+        </article>
+
+        <article class="stripe-card tight-micro-double">
+            <h2>04. Micro x2</h2>
+            <p>Twice the frequency of Micro Tight for ultra-fine striping accents.</p>
+        </article>
+
+        <article class="stripe-card tight-candy">
+            <h2>05. Candy Cane</h2>
+            <p>Bold two-tone diagonal bands that read clearly at smaller scales.</p>
+        </article>
+
+        <article class="stripe-card tight-blue-base tight-blue">
+            <h2>06. Navy Tight</h2>
+            <p>Blue base with translucent white lanes; white lettering pops for nav chips.</p>
+        </article>
+
+        <article class="stripe-card tight-blue-base tight-blue-pop">
+            <h2>07. Navy Accent</h2>
+            <p>Bright white pinlines break up the navy stripes for extra pop without adding new colors.</p>
+        </article>
+
+        <article class="stripe-card tight-blue-base tight-blue-chevron">
+            <h2>08. Navy Chevron</h2>
+            <p>Micro navy striping with white chevrons &mdash; perfect for CTAs.</p>
+        </article>
+
+        <article class="stripe-card tight-blue-base tight-blue-micro-double">
+            <h2>09. Navy Micro x2</h2>
+            <p>Same ultra-fine spacing as Micro Tight but rendered in navy and white.</p>
+        </article>
+
+        <article class="stripe-card tight-blue-base tight-blue-micro-quad">
+            <h2>10. Navy Micro x4</h2>
+            <p>Line spacing cut in half again for a woven-fabric vibe using only navy and white.</p>
+        </article>
+
+        <article class="stripe-card badge">
+            <h2>11. Badge</h2>
+            <p>Circle treatment to preview sticky nav pills.</p>
+        </article>
+
+        <article class="stripe-card tight tight-red tight-red-micro-quad">
+            <h2>12. Scarlet Micro x4</h2>
+            <p>Navy’s micro-quad pattern remixed with `--color_red` and white only.</p>
+        </article>
+    </div>
+
+    <!-- Uniform card template sandbox -->
+    <article id="uniforms-template-toggle" class="ncll-card ncll-card--division ncll-card--overlay ncll-card--template ncll-card--toggle" aria-labelledby="uniforms-template-h3">
+        <input type="radio" name="uniforms-template" id="uniforms-template-intro" checked />
+        <input type="radio" name="uniforms-template" id="uniforms-template-0" />
+        <input type="radio" name="uniforms-template" id="uniforms-template-1" />
+
+        <div class="ncll-card__sticky-heading stripe-card tight tight-red tight-red-micro-quad" aria-hidden="true">
+            <div class="ncll-card__heading-title">
+                <img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+                <div>
+                    <p class="eyebrow">Prototype Deck</p>
+                    <h3 class="ncll-card__title" id="uniforms-template-h3">Template Card</h3>
+                </div>
+                <img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/softball.png" alt="Softball icon" />
+            </div>
+        </div>
+
+        <div class="ncll-card__body panel panel-intro">
+            <h4 class="left ncll-card__title">Use This Card to Experiment</h4>
+            <p class="ncll-card__blurb">Duplicate styles, tweak gradients, or try new layout ideas without touching the live cards. Everything inside this box mirrors the structure of our production cards.</p>
+            <p class="ncll-card__blurb">Swap imagery, colors, and typography right here, then copy the pieces you love into the actual uniform panels when you’re ready.</p>
+            <p class="ncll-card__note figure__lead">Example blurb: “Players receive the Metro Hoodie PC90 in charcoal and a matching snapback.”</p>
+            <ul class="ncll-card__meta">
+                <li><strong>Dates:</strong> TBD (sample: Jan 11 &ndash; Feb 1)</li>
+                <li><strong>Division:</strong> Baseball &amp; Softball (Upper Div)</li>
+                <li><strong>Cost:</strong> TBD (last run $45)</li>
+                <li><strong>Status:</strong> <span class="status-badge status-open">Open</span></li>
+            </ul>
+        </div>
+
+        <div class="ncll-card__body panel panel0">
+            <div class="ncll-card__details">
+                <h4 class="left">Sample Content Block</h4>
+                <p class="figure__lead">Drop in mock tables, lists, or graphics &mdash; all of the standard `.ncll-card__*` hooks are available so you can test combinations quickly.</p>
+
+                <div class="ncll-card__graphics ncll-card__graphics--pair">
+                    <figure class="lightbox-thumb">
+                        <img class="ncll-card__graphic ncll-card__graphic--shirt" src="https://via.placeholder.com/320x320/133c76/ffffff?text=Front" alt="Placeholder front view" />
+                        <figcaption>Placeholder front view</figcaption>
+                    </figure>
+                    <figure class="lightbox-thumb">
+                        <img class="ncll-card__graphic ncll-card__graphic--shirt" src="https://via.placeholder.com/320x320/cd163f/ffffff?text=Back" alt="Placeholder back view" />
+                        <figcaption>Placeholder back view</figcaption>
+                    </figure>
+                </div>
+
+                <div class="ncll-micro">
+                    <table class="ncll-micro__table" aria-describedby="template-table-caption">
+                        <caption id="template-table-caption">Dummy size grid for quick spacing tests.</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Size</th>
+                                <th scope="col">Pit (in)</th>
+                                <th scope="col">Back (in)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">XS</th>
+                                <td>16.5</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">M</th>
+                                <td>20.25</td>
+                                <td>28.5</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">XL</th>
+                                <td>24.5</td>
+                                <td>31.75</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <ul>
+                    <li><strong>Mock note:</strong> “Youth hat fits 6.375&ndash;7&Prime; circumference.”</li>
+                    <li><strong>Reminder:</strong> “Swap in actual jersey art before shipping.”</li>
+                    <li><strong>CTA idea:</strong> “Add ‘Download PDF’ button next to Next/Back controls.”</li>
+                </ul>
+
+                <div class="ncll-card__cta">
+                    <a class="button button--primary" href="#" role="button">Mock CTA</a>
+                    <p class="ncll-card__note">Example CTA: “Reserve your spot”</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ncll-card__body panel panel1">
+            <div class="ncll-card__details">
+                <h4 class="left">Secondary Panel Sample</h4>
+                <p>Use this panel to test text-only layouts, callouts, or accordion ideas.</p>
+                <div class="callout callout-info">
+                    <p><span class="info-icon" aria-hidden="true"></span>Example callout message &mdash; “Coach samples ship two weeks before Opening Day.”</p>
+                </div>
+                <ol>
+                    <li>Drop in FAQ bullets or numbered instructions.</li>
+                    <li>Make sure typography tokens (eyebrow, sr-only, figure lead) look right.</li>
+                    <li>Test longer paragraphs to check padding and scrollbar behavior.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="ncll-card__sticky-footer">
+            <div class="actions" role="group" aria-label="Template card controls">
+                <label class="button button--secondary btn-prev btn-prev-start" for="uniforms-template-1">Back</label>
+                <label class="button button--primary btn-next btn-next-intro" for="uniforms-template-0">Next</label>
+                <label class="button button--secondary btn-prev btn-prev-0" for="uniforms-template-intro">Back</label>
+                <label class="button button--primary btn-next btn-next-0" for="uniforms-template-1">Next</label>
+                <label class="button button--secondary btn-prev btn-prev-1" for="uniforms-template-0">Back</label>
+                <label class="button button--primary btn-next btn-next-1" for="uniforms-template-intro">Start Over</label>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>
