@@ -3556,3 +3556,7 @@ details.footies[open] summary::before {
             background-position: center, center;
             background-size: 60%, auto;
         }
+
+        .title_text {
+            background-color: white;
+        }
