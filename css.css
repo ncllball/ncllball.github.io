@@ -2389,6 +2389,7 @@ details.footies[open] summary::before {
     text-align: center;
     padding-top: 1px;
     margin-top: auto !important;
+    font-family: var(--tk-noto-sans-display-semiconden);
 }
 
 .ncll-card__heading-title {
