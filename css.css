@@ -2892,6 +2892,8 @@ details.footies[open] summary::before {
     border-collapse: collapse;
     border-bottom: 1px solid red;
     border-top: 1px solid red;
+    line-height: normal;
+
 }
 
 .ncll-micro__table tbody td {
