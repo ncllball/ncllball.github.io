@@ -2944,11 +2944,8 @@ details.footies[open] summary::before {
 }
 
 .ncll-size-grid tbody td {
-    background-color: #fff;
-    font-weight: 600;
+    font-weight: 400;
     padding: 0.55rem 0.35rem;
-    border-right: 1px solid rgba(19, 60, 118, 0.08);
-    border-top: 1px solid rgba(19, 60, 118, 0.08);
 }
 
 .ncll-size-grid tbody td:last-child {
