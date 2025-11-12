@@ -3398,5 +3398,9 @@ details.footies[open] summary::before {
     margin: 0px auto 0px auto;
 }
 .double_chart {
-
+    padding:0px;
 }
+		.text-background {
+			background-color: #fff;
+			padding: 5px 10px;
+		}
