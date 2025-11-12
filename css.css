@@ -2926,13 +2926,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-size-grid thead th {
-    background-color: rgba(19, 60, 118, 0.88);
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-size: 0.78rem;
-    padding: 0.5rem 0.35rem;
-    border-right: 1px solid rgba(255, 255, 255, 0.15);
+
 }
 
 .ncll-size-grid thead th:first-child {
