@@ -2547,7 +2547,7 @@ details.footies[open] summary::before {
     width: 200px;
     max-width: 100%;
     height: auto;
-    margin: 20px auto 30px auto;
+    margin: 10px auto 20px auto;
     object-fit: cover;
     display: block;
     border-radius: 4px;
@@ -2910,17 +2910,6 @@ details.footies[open] summary::before {
     line-height: 1.2
 }
 
-.ncll-micro-pair {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 12px;
-}
-
-.ncll-micro-pair .ncll-micro {
-    flex: 1 1 220px;
-    margin-top: 0;
-}
 
 .division-toggle {
     margin: 2.5rem 0 3rem;
