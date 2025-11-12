@@ -29,6 +29,37 @@
 			width: var(--hoodie-right-width);
 			max-width: 100%;
 		}
+
+		.text-background {
+			background-color: #fff;
+			padding: 0 .2em;
+		}
+
+		.u-width-180 {
+			width: 180px;
+		}
+
+		.u-pt-15 {
+			padding-top: 15px;
+		}
+
+		.u-mt-12 {
+			margin-top: 12px;
+		}
+
+		.u-table-pit-row th {
+			text-align: left;
+			padding-top: 1px;
+		}
+
+		.u-table-pit-row td {
+			padding-top: 1px;
+		}
+
+		.u-lh-tight {
+			line-height: 1.2;
+		}
+
 	</style>
 </head>
 
@@ -57,7 +88,9 @@
 					<input type="checkbox" id="lightbox-tball-8" class="lightbox-toggle" />
 
 					<div class="ncll-card__sticky-heading" aria-hidden="true">
-						<h3 class="ncll-card__title">T-Ball &amp; Kindy</h3>
+						<div class="ncll-card__heading-title">
+							<h3 class="ncll-card__title"><span class="text-background">T-Ball &amp; Kindy</span></h3>
+						</div>
 					</div>
 
 					<div class="ncll-card__body panel panel-intro">
@@ -352,9 +385,8 @@
 
 					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
-							<h3 class="ncll-card__title" id="uniforms-a-h3">A &amp; AA &mdash; Baseball</h3>
+							<h3 class="ncll-card__title" id="uniforms-a-h3"><span class="text-background">A &amp; AA &mdash; Baseball</span></h3>
 						</div>
-
 					</div>
 
 					<div class="ncll-card__body panel panel-intro">
@@ -376,7 +408,7 @@
 
 							<div class="ncll-card__graphics">
 								<label for="lightbox-a-1" class="lightbox-thumb">
-									<img style="width: 180px;" class="ncll-card__graphic ncll-card__graphic--shirt ncll-card__graphic--top_tight" src="https://ncllball.github.io/images/uniforms/hats/4003_ROYAL_FRONT_FINAL.png" alt="Jersey 4003 front" />
+									<img class="ncll-card__graphic ncll-card__graphic--shirt ncll-card__graphic--top_tight u-width-180" src="https://ncllball.github.io/images/uniforms/hats/4003_ROYAL_FRONT_FINAL.png" alt="Jersey 4003 front" />
 								</label>
 							</div>
 						</div>
@@ -402,16 +434,16 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<th style="text-align: left;padding-top:1px;" scope="row">pit</th>
-											<td style="padding-top:1px;">12&ndash;13</td>
-											<td style="padding-top:1px;">13&ndash;14</td>
-											<td style="padding-top:1px;">15&ndash;16</td>
+										<tr class="u-table-pit-row">
+											<th scope="row">pit</th>
+											<td>12&ndash;13</td>
+											<td>13&ndash;14</td>
+											<td>15&ndash;16</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
-							<div style="padding-top:15px;" class="ncll-micro">
+							<div class="ncll-micro u-pt-15">
 								<table class="ncll-micro__table" aria-describedby="4003-adult-caption">
 									<caption id="4003-adult-caption">
 										Chest and pit-to-pit guidance (inches) for 4003 jerseys &mdash; Adult cuts.
@@ -428,14 +460,14 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<th style="text-align: left;padding-top:1px;" scope="row">pit</th>
-											<td style="padding-top:1px;">17&ndash;18</td>
-											<td style="padding-top:1px;">19&ndash;20</td>
-											<td style="padding-top:1px;">21&ndash;22</td>
-											<td style="padding-top:1px;">23&ndash;24</td>
-											<td style="padding-top:1px;">25&ndash;26</td>
-											<td style="padding-top:1px;">27&ndash;28</td>
+										<tr class="u-table-pit-row">
+											<th scope="row">pit</th>
+											<td>17&ndash;18</td>
+											<td>19&ndash;20</td>
+											<td>21&ndash;22</td>
+											<td>23&ndash;24</td>
+											<td>25&ndash;26</td>
+											<td>27&ndash;28</td>
 										</tr>
 									</tbody>
 								</table>
@@ -583,16 +615,16 @@
 									</thead>
 									<tbody>
 										<tr>
-											<th style="line-height:1.2;" scope="row">Players</th>
-											<td style="line-height:1.2;">Youth (4301);Adult (4301)</td>
-											<td style="line-height:1.2;">YS&ndash;YXL plus AS&ndash;AL (4003)</td>
-											<td style="line-height:1.2;">Not issued</td>
+											<th class="u-lh-tight" scope="row">Players</th>
+											<td class="u-lh-tight">Youth (4301);Adult (4301)</td>
+											<td class="u-lh-tight">YS&ndash;YXL plus AS&ndash;AL (4003)</td>
+											<td class="u-lh-tight">Not issued</td>
 										</tr>
 										<tr>
-											<th style="line-height:1.2;" scope="row">Coach</th>
-											<td style="line-height:1.2;">Youth (4301);Adult (4301)</td>
-											<td style="line-height:1.2;">AS&ndash;AXXXL (ST350)</td>
-											<td style="line-height:1.2;">Not issued</td>
+											<th class="u-lh-tight" scope="row">Coach</th>
+											<td class="u-lh-tight">Youth (4301);Adult (4301)</td>
+											<td class="u-lh-tight">AS&ndash;AXXXL (ST350)</td>
+											<td class="u-lh-tight">Not issued</td>
 										</tr>
 									</tbody>
 								</table>
@@ -667,7 +699,9 @@
 					<input type="checkbox" id="lightbox-aaa-coach-hat-back" class="lightbox-toggle" />
 
 					<div class="ncll-card__sticky-heading" aria-hidden="true">
-						<h3 class="ncll-card__title">AAA &amp; Upper &mdash; Baseball</h3>
+						<div class="ncll-card__heading-title">
+							<h3 class="ncll-card__title"><span class="text-background">AAA &amp; Upper &mdash; Baseball</span></h3>
+						</div>
 					</div>
 
 					<div class="ncll-card__body panel panel-intro">
@@ -726,7 +760,7 @@
 									</tbody>
 								</table>
 							</div>
-							<div class="ncll-micro" style="margin-top: 12px;">
+							<div class="ncll-micro u-mt-12">
 								<table class="ncll-micro__table" aria-describedby="4003-aaa-adult-caption">
 									<caption id="4003-aaa-adult-caption">
 										Chest and pit-to-pit guidance (inches) for 4003 jerseys &mdash; Adult cuts.
@@ -1192,7 +1226,9 @@
 					<input type="checkbox" id="lightbox-sba-7" class="lightbox-toggle" />
 
 					<div class="ncll-card__sticky-heading" aria-hidden="true">
-						<h3 class="ncll-card__title">A &amp; AA &mdash; Softball</h3>
+						<div class="ncll-card__heading-title">
+							<h3 class="ncll-card__title"><span class="text-background">A &amp; AA &mdash; Softball</span></h3>
+						</div>
 					</div>
 
 					<div class="ncll-card__body panel panel-intro">
@@ -1545,7 +1581,9 @@
 					<input type="checkbox" id="lightbox-sbaaa-12" class="lightbox-toggle" />
 
 					<div class="ncll-card__sticky-heading" aria-hidden="true">
-						<h3 class="ncll-card__title">AAA &amp; Upper &mdash; Softball</h3>
+						<div class="ncll-card__heading-title">
+							<h3 class="ncll-card__title"><span class="text-background">AAA &amp; Upper &mdash; Softball</span></h3>
+						</div>
 					</div>
 
 					<div class="ncll-card__body panel panel-intro">
