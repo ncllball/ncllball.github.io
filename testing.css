@@ -165,3 +165,27 @@
 .text-background {
     background-color: white;
 }
+		.u-width-180 {
+			width: 180px;
+		}
+
+		.u-pt-15 {
+			padding-top: 15px;
+		}
+
+		.u-mt-12 {
+			margin-top: 12px;
+		}
+
+		.u-table-pit-row th {
+			text-align: left;
+			padding-top: 1px;
+		}
+
+		.u-table-pit-row td {
+			padding-top: 1px;
+		}
+
+		.u-lh-tight {
+			line-height: 1.2;
+		}
