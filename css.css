@@ -2926,7 +2926,7 @@ details.footies[open] summary::before {
 }
 
 .ncll-size-grid thead th:first-child {
-    width: 6rem;
+    width: 3rem;
 }
 
 .ncll-size-grid thead th:last-child {
