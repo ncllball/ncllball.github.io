@@ -2930,7 +2930,6 @@ details.footies[open] summary::before {
 }
 
 .ncll-size-grid thead th:first-child {
-    background-color: rgba(19, 60, 118, 0.7);
     width: 6rem;
 }
 
