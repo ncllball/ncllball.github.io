@@ -641,21 +641,27 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
 .skAddBanner, .skRightTabs, .skTabHeading, .skCaption {
     display: none !important
 }
+
 .skNav a {
     text-transform: capitalize !important;
 }
+
 .skNav #dnnStandardMenu .root .m {
     width: 300px !important;
 }
+
 .subMenuItem {
     word-break: keep-all !important;
 }
+
 .skHeader .skBanner {
     font-family: var(--font_ui) !important
 }
+
 #dnnStandardMenu .subMenuItem {
     word-break: keep-all !important;
 }
+
 .skTabsWrapper {
     display: table-cell;
     width: calc(100% - 32px);
@@ -2461,6 +2467,7 @@ details.footies[open] summary::before {
     box-sizing: border-box;
     min-height: 0;
 }
+
 #lists h4.left {
     padding-left: 20px;
     margin-bottom: 0;
@@ -2706,6 +2713,7 @@ details.footies[open] summary::before {
 
 /* Anchor-based navigation variant (no inputs) */
 @media (max-width: 640px) {
+
     .ncll-card__blurb,
     .ncll-card__meta,
     .ncll-card__meta li,
@@ -2778,6 +2786,7 @@ details.footies[open] summary::before {
 .ncll-card--overlay .ncll-card__body::-webkit-scrollbar-thumb:hover {
     background: #a50f30;
 }
+
 /* === End: Overlay scrollbar styling =================================== */
 
 
@@ -2910,6 +2919,58 @@ details.footies[open] summary::before {
 .ncll-micro__table tbody tr:first-child th {
     padding-top: .8rem;
     line-height: 1.2
+}
+
+.ncll-size-grid {
+    border: 1px solid rgba(19, 60, 118, 0.2);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(19, 60, 118, 0.04), rgba(19, 60, 118, 0));
+}
+
+.ncll-size-grid thead th {
+    background-color: rgba(19, 60, 118, 0.88);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.78rem;
+    padding: 0.5rem 0.35rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ncll-size-grid thead th:first-child {
+    background-color: rgba(19, 60, 118, 0.7);
+    width: 6rem;
+}
+
+.ncll-size-grid thead th:last-child {
+    border-right: none;
+}
+
+.ncll-size-grid tbody th {
+    background-color: rgba(19, 60, 118, 0.1);
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    padding: 0.6rem 0.35rem;
+    border-right: 1px solid rgba(19, 60, 118, 0.15);
+}
+
+.ncll-size-grid tbody td {
+    background-color: #fff;
+    font-weight: 600;
+    padding: 0.55rem 0.35rem;
+    border-right: 1px solid rgba(19, 60, 118, 0.08);
+    border-top: 1px solid rgba(19, 60, 118, 0.08);
+}
+
+.ncll-size-grid tbody td:last-child {
+    border-right: none;
+}
+
+.ncll-size-grid tbody tr:last-child td,
+.ncll-size-grid tbody tr:last-child th {
+    border-bottom: none;
 }
 
 
@@ -3388,19 +3449,24 @@ details.footies[open] summary::before {
 .measurement {
     width: 150px;
 }
+
 .stickout_1 {
     font-weight: 600;
 }
+
 .stickout_2 {
     display: none;
 }
+
 .ncll-card__graphic--top_tight {
     margin: 0px auto 0px auto;
 }
+
 .double_chart {
-    padding:0px;
+    padding: 0px;
 }
-		.text-background {
-			background-color: #fff;
-			padding: 5px 10px;
-		}
+
+.text-background {
+    background-color: #fff;
+    padding: 5px 10px;
+}
