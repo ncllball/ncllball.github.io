@@ -2921,6 +2921,10 @@ details.footies[open] summary::before {
     line-height: 1.2
 }
 
+.ncll-micro + .ncll-micro {
+    margin-top: 20px;
+}
+
 .ncll-size-grid {
 
 }
