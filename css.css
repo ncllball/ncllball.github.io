@@ -2925,14 +2925,6 @@ details.footies[open] summary::before {
     margin-top: 10px;
 }
 
-.ncll-size-grid {
-
-}
-
-.ncll-size-grid thead th {
-
-}
-
 .ncll-size-grid thead th:first-child {
     width: 6rem;
 }
@@ -2949,15 +2941,6 @@ details.footies[open] summary::before {
 .ncll-size-grid tbody td {
     font-weight: 400;
     padding: 0.55rem 0.35rem;
-}
-
-.ncll-size-grid tbody td:last-child {
-    border-right: none;
-}
-
-.ncll-size-grid tbody tr:last-child td,
-.ncll-size-grid tbody tr:last-child th {
-    border-bottom: none;
 }
 
 
