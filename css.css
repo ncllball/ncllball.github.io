@@ -2561,20 +2561,36 @@ details.footies[open] summary::before {
     box-sizing: border-box;
 
 }
+.ncll-card__graphic--xxlarge {
+    width: 200px;
+    height: auto;
+}
+.ncll-card__graphic--xlargest {
+    width: 185px;
+    height: auto;
+}
+.ncll-card__graphic--xlarger {
+    width: 170px;
+    height: auto;
+}
+.ncll-card__graphic--xlarge {
+    width: 155px;
+    height: auto;
+}
 .ncll-card__graphic--largest {
-    width: 175px;
+    width: 140px;
     height: auto;
 }
 .ncll-card__graphic--larger {
-    width: 150px;
+    width: 125px;
     height: auto;
 }
 .ncll-card__graphic--large {
-    width: 120px;
+    width: 110px;
     height: auto;
 }
 .ncll-card__graphic--medium {
-    width: 100px;
+    width: 95px;
     height: auto;
 }
 .ncll-card__graphic--small {
