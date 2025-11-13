@@ -2561,7 +2561,10 @@ details.footies[open] summary::before {
     box-sizing: border-box;
 
 }
-
+.ncll-card__graphic--medium {
+    width: 100px;
+    height: auto;
+}
 .ncll-card__graphic--small {
     width: 80px;
     height: auto;
@@ -2570,6 +2573,7 @@ details.footies[open] summary::before {
     width: 50px;
     height: auto;
 }
+
 .ncll-card__graphics--pair {
     display: flex;
     gap: 20px;
