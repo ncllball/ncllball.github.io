@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Volunteer Hub - North Central Little League</title>
+	<link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
+	<link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
+	<style>
+		/* ====== Volunteer Hub Styles ====== */
+		.volunteer-hub-container {
+			max-width: 1400px;
+			margin: 0 auto;
+			padding: 2rem 1rem;
+		}
+
+		.hub-intro {
+			text-align: center;
+			max-width: 800px;
+			margin: 0 auto 3rem;
+		}
+
+		.hub-intro h1 {
+			color: var(--color_blue);
+			font-size: 2.5rem;
+			margin-bottom: 1rem;
+		}
+
+		.hub-intro p {
+			font-size: 1.125rem;
+			color: var(--color_text);
+			line-height: 1.6;
+		}
+
+		/* ====== Hub and Spoke Layout ====== */
+		.hub-spoke-container {
+			position: relative;
+			width: 100%;
+			max-width: 900px;
+			margin: 4rem auto;
+			min-height: 700px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		/* Central Hub - Kids */
+		.hub-center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 10;
+			width: 70px;
+			height: 70px;
+			background: linear-gradient(135deg, var(--color_red) 0%, var(--color_blue) 100%);
+			border-radius: 50%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			box-shadow: 0 8px 24px rgba(0, 1, 58, 0.3);
+			border: 3px solid white;
+		}
+
+		.hub-center-content {
+			text-align: center;
+			color: white;
+			padding: 0 0.25rem;
+		}
+
+		.hub-center-icon {
+			font-size: 1.35rem;
+			margin-bottom: 0.2rem;
+			line-height: 1;
+		}
+
+		.hub-center-text {
+			font-size: 0.75rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.3px;
+		}
+
+		/* SVG spokes that connect hub to each card */
+		.hub-lines {
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 3;
+			pointer-events: none;
+		}
+
+		.hub-line {
+			fill: none;
+			stroke: rgba(1, 156, 222, 0.75);
+			stroke-width: 1;
+			stroke-linecap: round;
+			filter: drop-shadow(0 0 8px rgba(0, 1, 58, 0.25));
+		}
+
+		/* Spoke Cards */
+		.spoke-card {
+			position: absolute;
+			width: 110px;
+			background: white;
+			border-radius: 10px;
+			padding: 0.75rem;
+			box-shadow: 0 4px 12px rgba(0, 1, 58, 0.15);
+			border: 1px solid var(--color_border_light);
+			transition: all 0.3s ease;
+			cursor: pointer;
+			z-index: 5;
+		}
+
+		.spoke-card:hover {
+			transform: scale(1.05);
+			box-shadow: 0 8px 20px rgba(0, 1, 58, 0.25);
+			border-color: var(--color_richblue);
+		}
+
+		.spoke-card-1 {
+			top: 7%;
+			left: 15%;
+		}
+
+		.spoke-card-2 {
+			top: 7%;
+			right: 15%;
+		}
+
+		.spoke-card-3 {
+			bottom: 7%;
+			left: 15%;
+		}
+
+		.spoke-card-4 {
+			bottom: 7%;
+			right: 15%;
+		}
+
+		.spoke-card-icon {
+			font-size: 1.5rem;
+			margin-bottom: 0.4rem;
+			text-align: center;
+		}
+
+		.spoke-card-title {
+			font-size: 0.85rem;
+			font-weight: 700;
+			color: var(--color_blue);
+			text-align: center;
+			margin-bottom: 0.3rem;
+		}
+
+		.spoke-card-subtitle {
+			font-size: 0.65rem;
+			color: var(--color_muted);
+			text-align: center;
+			margin-bottom: 0.5rem;
+		}
+
+		.spoke-card-cta {
+			display: block;
+			text-align: center;
+			padding: 0.3rem 0.5rem;
+			background: var(--color_richblue);
+			color: white;
+			border-radius: 5px;
+			font-weight: 600;
+			text-decoration: none;
+			font-size: 0.7rem;
+			transition: background 0.3s ease;
+		}
+
+		.spoke-card-cta:hover {
+			background: var(--color_blue);
+		}
+
+		/* ====== Modal/Lightbox System ====== */
+		.modal-trigger {
+			display: none;
+		}
+
+		.modal-overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 1, 58, 0.85);
+			z-index: 1000;
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 0.3s ease, visibility 0.3s ease;
+			overflow-y: auto;
+			backdrop-filter: blur(4px);
+		}
+
+		.modal-trigger:checked+.modal-overlay {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.modal-content {
+			position: relative;
+			max-width: 900px;
+			margin: 2rem auto;
+			background: white;
+			border-radius: 12px;
+			padding: 2.5rem;
+			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+			transform: scale(0.9) translateY(-20px);
+			transition: transform 0.3s ease;
+		}
+
+		.modal-trigger:checked+.modal-overlay .modal-content {
+			transform: scale(1) translateY(0);
+		}
+
+		.modal-close {
+			display: inline-block;
+			padding: 0.75rem 2rem;
+			background: var(--color_red);
+			color: white;
+			border-radius: 6px;
+			text-decoration: none;
+			font-weight: 600;
+			transition: background 0.3s ease;
+			cursor: pointer;
+		}
+
+		.modal-close:hover {
+			background: var(--color_blue);
+		}
+
+		.modal-header {
+			border-bottom: 3px solid var(--color_red);
+			padding-bottom: 1rem;
+			margin-bottom: 1.5rem;
+		}
+
+		.modal-title {
+			font-size: 2rem;
+			color: var(--color_blue);
+			margin: 0;
+		}
+
+		.modal-icon {
+			font-size: 3rem;
+			margin-right: 1rem;
+			vertical-align: middle;
+		}
+
+		.role-section {
+			margin-bottom: 2rem;
+			padding: 1.5rem;
+			background: var(--color_surface_light);
+			border-radius: 8px;
+			border-left: 4px solid var(--color_richblue);
+		}
+
+		.role-section h3 {
+			color: var(--color_blue);
+			margin-top: 0;
+			font-size: 1.5rem;
+		}
+
+		.role-section h4 {
+			color: var(--color_red);
+			margin-top: 1rem;
+			font-size: 1.125rem;
+		}
+
+		.role-section ul {
+			margin: 0.5rem 0;
+			padding-left: 1.5rem;
+		}
+
+		.role-section li {
+			margin-bottom: 0.5rem;
+			line-height: 1.6;
+		}
+
+		/* ====== Mobile Responsive ====== */
+		@media (max-width: 768px) {
+			.hub-intro h1 {
+				font-size: 1.75rem;
+			}
+
+			.hub-spoke-container {
+				min-height: 900px;
+				margin: 2rem auto;
+			}
+
+			.hub-center {
+				width: 55px;
+				height: 55px;
+			}
+
+			.hub-center-icon {
+				font-size: 1.1rem;
+			}
+
+			.hub-center-text {
+				font-size: 0.65rem;
+			}
+
+			.spoke-card {
+				width: 90px;
+				padding: 0.6rem;
+			}
+
+			.spoke-card-1 {
+				top: 2%;
+				left: 5%;
+			}
+
+			.spoke-card-2 {
+				top: 2%;
+				right: 5%;
+			}
+
+			.spoke-card-3 {
+				bottom: 2%;
+				left: 5%;
+			}
+
+			.spoke-card-4 {
+				bottom: 2%;
+				right: 5%;
+			}
+
+			.spoke-card-icon {
+				font-size: 2rem;
+			}
+
+			.spoke-card-title {
+				font-size: 0.75rem;
+			}
+
+			.spoke-card-subtitle {
+				font-size: 0.6rem;
+			}
+
+			.hub-lines {
+				display: none;
+			}
+
+			.modal-content {
+				margin: 1rem;
+				padding: 1.5rem;
+			}
+
+			.modal-title {
+				font-size: 1.5rem;
+			}
+
+			.modal-icon {
+				font-size: 2rem;
+				display: block;
+				margin-bottom: 0.5rem;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.spoke-card {
+				width: 80px;
+				padding: 0.5rem;
+			}
+
+			.spoke-card-title {
+				font-size: 0.65rem;
+			}
+
+			.spoke-card-subtitle {
+				font-size: 0.55rem;
+				margin-bottom: 0.35rem;
+			}
+
+			.spoke-card-cta {
+				padding: 0.25rem 0.5rem;
+				font-size: 0.65rem;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<main class="volunteer-hub-container">
+		<!-- Introduction -->
+		<section class="hub-intro">
+			<h1>Volunteer Hub</h1>
+			<p>At North Central Little League, everything we do revolves around <strong>the kids</strong>. Our 800 families come together to create unforgettable experiences for young athletes. Whether you have 2 hours or 20, there's a way for you to make an impact. Explore the opportunities below and find your perfect fit.</p>
+		</section>
+
+		<!-- Hub and Spoke Diagram -->
+		<div class="hub-spoke-container">
+			<!-- Central Hub -->
+			<div class="hub-center">
+				<div class="hub-center-content">
+					<div class="hub-center-icon">⚾</div>
+					<div class="hub-center-text">The Kids</div>
+				</div>
+			</div>
+
+			<!-- Connecting Spokes -->
+			<svg class="hub-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+				<path class="hub-line" d="M50 50 C 42 35, 32 24, 20 15" />
+				<path class="hub-line" d="M50 50 C 58 35, 68 24, 80 15" />
+				<path class="hub-line" d="M50 50 C 40 65, 32 76, 20 85" />
+				<path class="hub-line" d="M50 50 C 60 65, 68 76, 80 85" />
+			</svg>
+
+			<!-- Spoke Card 1: Umpiring -->
+			<label for="modal-umpiring" class="spoke-card spoke-card-1">
+				<div class="spoke-card-icon">👨‍⚖️</div>
+				<h3 class="spoke-card-title">Umpiring</h3>
+				<p class="spoke-card-subtitle">Call the game with confidence</p>
+				<span class="spoke-card-cta">Learn More</span>
+			</label>
+
+			<!-- Spoke Card 2: Team Level -->
+			<label for="modal-team" class="spoke-card spoke-card-2">
+				<div class="spoke-card-icon">👥</div>
+				<h3 class="spoke-card-title">Team Level</h3>
+				<p class="spoke-card-subtitle">Coach, assist, manage</p>
+				<span class="spoke-card-cta">Learn More</span>
+			</label>
+
+			<!-- Spoke Card 3: League Level -->
+			<label for="modal-league" class="spoke-card spoke-card-3">
+				<div class="spoke-card-icon">🏆</div>
+				<h3 class="spoke-card-title">League Level</h3>
+				<p class="spoke-card-subtitle">Board & key volunteers</p>
+				<span class="spoke-card-cta">Learn More</span>
+			</label>
+
+			<!-- Spoke Card 4: Ad-hoc -->
+			<label for="modal-adhoc" class="spoke-card spoke-card-4">
+				<div class="spoke-card-icon">🙌</div>
+				<h3 class="spoke-card-title">Ad-hoc</h3>
+				<p class="spoke-card-subtitle">Events & ground care</p>
+				<span class="spoke-card-cta">Learn More</span>
+			</label>
+		</div>
+
+		<!-- ====== MODAL 1: UMPIRING ====== -->
+		<input type="checkbox" id="modal-umpiring" class="modal-trigger" />
+		<label for="modal-umpiring" class="modal-overlay">
+			<div class="modal-content" onclick="event.stopPropagation();">
+				<div class="modal-header">
+					<h2 class="modal-title">
+						<span class="modal-icon">👨‍⚖️</span>
+						Umpiring
+					</h2>
+				</div>
+
+				<div class="role-section">
+					<h3>Overview</h3>
+					<p>Umpires are the backbone of every game, ensuring fair play and keeping the action moving. Whether you're brand new to the role or have years of experience, we provide training, support, and mentorship to help you succeed behind the plate and on the bases.</p>
+				</div>
+
+				<div class="role-section">
+					<h3>What Umpires Do</h3>
+					<ul>
+						<li><strong>Call balls and strikes</strong> - Make judgment calls on pitches to keep the game fair</li>
+						<li><strong>Rule on plays</strong> - Determine safe/out calls at bases and in the field</li>
+						<li><strong>Maintain game flow</strong> - Keep the game moving at an appropriate pace</li>
+						<li><strong>Ensure player safety</strong> - Watch for rule violations that could lead to injuries</li>
+						<li><strong>Communicate with coaches</strong> - Explain calls clearly and manage coach interactions professionally</li>
+					</ul>
+				</div>
+
+				<div class="role-section">
+					<h3>Time Commitment</h3>
+					<p>Games typically last 1.5-2 hours. Most umpires work 1-3 games per week during the season (April-June). We're flexible and work around your schedule.</p>
+				</div>
+
+				<div class="role-section">
+					<h3>Training & Support</h3>
+					<ul>
+						<li>Pre-season training clinics (in-person and online)</li>
+						<li>Mentorship from experienced umpires</li>
+						<li>Rules clinics and ongoing development</li>
+						<li>Protective equipment provided by the league</li>
+					</ul>
+				</div>
+
+				<div class="role-section">
+					<h3>Why Volunteer as an Umpire?</h3>
+					<ul>
+						<li>Best seat in the house for every game</li>
+						<li>Learn the game inside and out</li>
+						<li>Earn stipends for your time (optional)</li>
+						<li>Build confidence and decision-making skills</li>
+						<li>Join a supportive community of fellow umpires</li>
+					</ul>
+				</div>
+
+				<label for="modal-umpiring" class="modal-close">Close</label>
+			</div>
+		</label>
+
+		<!-- ====== MODAL 2: TEAM LEVEL ====== -->
+		<input type="checkbox" id="modal-team" class="modal-trigger" />
+		<label for="modal-team" class="modal-overlay">
+			<div class="modal-content" onclick="event.stopPropagation();">
+				<div class="modal-header">
+					<h2 class="modal-title">
+						<span class="modal-icon">👥</span>
+						Team Level Volunteers
+					</h2>
+				</div>
+
+				<div class="role-section">
+					<h3>Overview</h3>
+					<p>Team-level volunteers work directly with players throughout the season. These roles are the heart of our league, providing coaching, mentorship, and organization that helps kids develop skills, confidence, and a love for the game.</p>
+				</div>
+
+				<div class="role-section">
+					<h4>Head Coach</h4>
+					<p><strong>The leader of the team</strong> - responsible for practices, game strategy, and player development.</p>
+					<ul>
+						<li><strong>Plan and run practices</strong> - Design drills and activities that build fundamental skills</li>
+						<li><strong>Manage games</strong> - Set lineups, make in-game decisions, and communicate with umpires</li>
+						<li><strong>Develop players</strong> - Provide individual feedback and encourage growth</li>
+						<li><strong>Lead team culture</strong> - Create a positive, inclusive environment where all kids thrive</li>
+						<li><strong>Coordinate with volunteers</strong> - Work with assistant coaches and team managers</li>
+					</ul>
+					<p><strong>Time Commitment:</strong> 6-8 hours per week (2 practices + 2 games + planning)</p>
+					<p><strong>Training:</strong> Pre-season coaching clinics, ongoing support from division coordinators</p>
+				</div>
+
+				<div class="role-section">
+					<h4>Assistant Coach</h4>
+					<p><strong>The right hand</strong> - supports the head coach and works directly with players during practices and games.</p>
+					<ul>
+						<li><strong>Help run practices</strong> - Lead stations, work with small groups, provide one-on-one instruction</li>
+						<li><strong>Coach during games</strong> - Run bases, coach first/third base, support dugout management</li>
+						<li><strong>Player development</strong> - Focus on specific skills (hitting, pitching, fielding)</li>
+						<li><strong>Fill in when needed</strong> - Step up if the head coach is unavailable</li>
+						<li><strong>Build relationships</strong> - Connect with players and families</li>
+					</ul>
+					<p><strong>Time Commitment:</strong> 4-6 hours per week (practices + games)</p>
+					<p><strong>Perfect for:</strong> Parents new to coaching, former players, or anyone who loves working with kids</p>
+				</div>
+
+				<div class="role-section">
+					<h4>Team Manager</h4>
+					<p><strong>The organizer</strong> - handles logistics, communication, and administrative tasks so coaches can focus on the game.</p>
+					<ul>
+						<li><strong>Communication hub</strong> - Send practice/game reminders, coordinate schedules, manage team email list</li>
+						<li><strong>Organize team logistics</strong> - Snack schedules, team parties, photo day coordination</li>
+						<li><strong>Field preparation</strong> - Arrive early to set up equipment, organize dugout</li>
+						<li><strong>Scorekeeping & stats</strong> - Track game scores, submit results, maintain records</li>
+						<li><strong>Liaise with league</strong> - Communicate with division coordinators on team needs</li>
+						<li><strong>Fundraising support</strong> - Help coordinate team-level fundraising activities</li>
+					</ul>
+					<p><strong>Time Commitment:</strong> 3-5 hours per week (game attendance + communication/admin work)</p>
+					<p><strong>Perfect for:</strong> Organized parents, people who love logistics, anyone who wants to help without coaching</p>
+				</div>
+
+				<div class="role-section">
+					<h3>Why Volunteer at the Team Level?</h3>
+					<ul>
+						<li>Watch your child (or others) grow in skills and confidence</li>
+						<li>Build lasting friendships with families</li>
+						<li>Make a direct, visible impact on kids' experiences</li>
+						<li>Learn alongside the players</li>
+						<li>Create memories that last a lifetime</li>
+					</ul>
+				</div>
+
+				<label for="modal-team" class="modal-close">Close</label>
+			</div>
+		</label>
+
+		<!-- ====== MODAL 3: LEAGUE LEVEL ====== -->
+		<input type="checkbox" id="modal-league" class="modal-trigger" />
+		<label for="modal-league" class="modal-overlay">
+			<div class="modal-content" onclick="event.stopPropagation();">
+				<div class="modal-header">
+					<h2 class="modal-title">
+						<span class="modal-icon">🏆</span>
+						League Level Volunteers
+					</h2>
+				</div>
+
+				<div class="role-section">
+					<h3>Overview</h3>
+					<p>League-level volunteers keep NCLL running smoothly behind the scenes. These roles require a larger time commitment but offer the opportunity to shape league-wide programs, policies, and culture for all 800 families.</p>
+				</div>
+
+				<div class="role-section">
+					<h4>Board Members</h4>
+					<p><strong>League leadership</strong> - elected positions that guide the strategic direction of NCLL.</p>
+					<p><strong>Key Positions Include:</strong></p>
+					<ul>
+						<li><strong>President</strong> - Overall league leadership, community relations, strategic planning</li>
+						<li><strong>Vice Presidents (Baseball/Softball)</strong> - Oversee all baseball or softball operations, division coordination, coach support</li>
+						<li><strong>Secretary</strong> - Meeting minutes, records management, official correspondence</li>
+						<li><strong>Treasurer</strong> - Budget management, financial reporting, bookkeeping</li>
+						<li><strong>Player Agent</strong> - Registration oversight, roster management, player eligibility</li>
+						<li><strong>Safety Officer</strong> - Risk management, injury protocols, facility inspections</li>
+						<li><strong>Information Officer (CIO)</strong> - Website, communications, technology systems</li>
+					</ul>
+					<p><strong>Time Commitment:</strong> 8-15 hours per week during season; 3-5 hours off-season</p>
+					<p><strong>Term:</strong> Typically 1-2 years; elections held annually</p>
+				</div>
+
+				<div class="role-section">
+					<h4>Key Volunteers (Non-Board)</h4>
+					<p><strong>Essential roles</strong> that support specific league functions. These positions report to board members but don't require board election.</p>
+					<ul>
+						<li><strong>Division Coordinators</strong> - Support coaches in a specific division (AAA, Majors, etc.), organize assessments, handle scheduling</li>
+						<li><strong>Umpire Coordinator</strong> - Recruit, train, and schedule umpires for all games</li>
+						<li><strong>Equipment Manager</strong> - Inventory, maintenance, and distribution of league equipment</li>
+						<li><strong>Field Coordinator</strong> - Liaise with Seattle Parks, schedule field usage, coordinate maintenance</li>
+						<li><strong>Sponsorship Coordinator</strong> - Solicit sponsors, manage relationships, coordinate banner placements</li>
+						<li><strong>Volunteer Coordinator</strong> - Recruit volunteers, match people to roles, track volunteer hours</li>
+						<li><strong>Concessions Manager</strong> - Organize snack shack operations, manage inventory and volunteers</li>
+						<li><strong>Tournament Director</strong> - Plan and execute special events (opening day, all-stars, home run derby)</li>
+					</ul>
+					<p><strong>Time Commitment:</strong> Varies by role; typically 4-8 hours per week during season</p>
+				</div>
+
+				<div class="role-section">
+					<h3>Skills Needed</h3>
+					<ul>
+						<li>Organization and attention to detail</li>
+						<li>Communication and people skills</li>
+						<li>Problem-solving and flexibility</li>
+						<li>Commitment to the league's mission</li>
+						<li>Willingness to learn (we provide training!)</li>
+					</ul>
+				</div>
+
+				<div class="role-section">
+					<h3>Why Volunteer at the League Level?</h3>
+					<ul>
+						<li>Shape the experience for 800+ families</li>
+						<li>Build leadership and management skills</li>
+						<li>Deep involvement in your community</li>
+						<li>Network with passionate, dedicated volunteers</li>
+						<li>Leave a lasting legacy for future players</li>
+					</ul>
+				</div>
+
+				<label for="modal-league" class="modal-close">Close</label>
+			</div>
+		</label>
+
+		<!-- ====== MODAL 4: AD-HOC ====== -->
+		<input type="checkbox" id="modal-adhoc" class="modal-trigger" />
+		<label for="modal-adhoc" class="modal-overlay">
+			<div class="modal-content" onclick="event.stopPropagation();">
+				<div class="modal-header">
+					<h2 class="modal-title">
+						<span class="modal-icon">🙌</span>
+						Ad-hoc Volunteers
+					</h2>
+				</div>
+
+				<div class="role-section">
+					<h3>Overview</h3>
+					<p>Can't commit to a season-long role? No problem! Ad-hoc volunteers are the flexible heroes who jump in when needed. Whether you have a free Saturday or want to help with a specific project, there's always a place for you.</p>
+				</div>
+
+				<div class="role-section">
+					<h4>Event Volunteers</h4>
+					<p><strong>Special events</strong> - help create memorable moments for players and families throughout the season.</p>
+					<p><strong>Event Opportunities Include:</strong></p>
+					<ul>
+						<li><strong>Opening Day</strong> - Field setup, registration table, parade coordination, ceremony support (April)</li>
+						<li><strong>Photo Day</strong> - Guide teams to photographer, organize lineups, distribute order forms (May)</li>
+						<li><strong>Home Run Derby</strong> - Pitch to contestants, track scores, manage brackets (May/June)</li>
+						<li><strong>All-Star Events</strong> - Tournament support, concessions, scorekeeping (June/July)</li>
+						<li><strong>Skills Clinics</strong> - Station support, equipment management, registration (Various dates)</li>
+						<li><strong>Fundraisers</strong> - Raffle sales, auction organization, event setup (Throughout season)</li>
+						<li><strong>End-of-Season Celebrations</strong> - Party planning, award distribution, cleanup (June)</li>
+					</ul>
+					<p><strong>Time Commitment:</strong> 2-4 hours per event; volunteer for one event or many</p>
+					<p><strong>Sign-up:</strong> We send email blasts before each event with volunteer needs and sign-up links</p>
+				</div>
+
+				<div class="role-section">
+					<h4>Ground Gremlins</h4>
+					<p><strong>Field maintenance crew</strong> - keep our playing surfaces safe, beautiful, and game-ready.</p>
+					<p><strong>What Ground Gremlins Do:</strong></p>
+					<ul>
+						<li><strong>Field prep</strong> - Dragging infields, lining basepaths, setting bases before games</li>
+						<li><strong>Mound maintenance</strong> - Repairing pitcher's mounds, filling holes, packing clay</li>
+						<li><strong>General upkeep</strong> - Weeding, raking, cleaning dugouts, emptying trash</li>
+						<li><strong>Equipment care</strong> - Organizing storage sheds, maintaining field equipment</li>
+						<li><strong>Safety checks</strong> - Identifying hazards, reporting issues to field coordinator</li>
+						<li><strong>Seasonal projects</strong> - Spring field prep, end-of-season deep cleaning</li>
+					</ul>
+					<p><strong>Time Commitment:</strong> Flexible! Join scheduled work parties (usually Saturday mornings) or grab a rake whenever you're at the field</p>
+					<p><strong>Work Parties:</strong> Typically 2-3 hours; held monthly during season and for pre-season prep</p>
+					<p><strong>Drop-in help:</strong> Even 15 minutes of raking between games makes a difference</p>
+				</div>
+
+				<div class="role-section">
+					<h3>Perfect For</h3>
+					<ul>
+						<li>Parents with unpredictable schedules</li>
+						<li>People who want to help without a long-term commitment</li>
+						<li>Families looking for a fun group activity</li>
+						<li>Anyone who wants to give back in small, meaningful ways</li>
+						<li>Volunteers who want to try different roles to find their fit</li>
+					</ul>
+				</div>
+
+				<div class="role-section">
+					<h3>How to Get Involved</h3>
+					<ol>
+						<li><strong>Join our volunteer email list</strong> - We send opportunities 1-2 weeks before each event</li>
+						<li><strong>Sign up via online forms</strong> - Click the link, choose your time slot, done!</li>
+						<li><strong>Show up ready to help</strong> - We provide instruction, supplies, and plenty of gratitude</li>
+					</ol>
+				</div>
+
+				<div class="role-section">
+					<h3>Why Ad-hoc Volunteering Matters</h3>
+					<ul>
+						<li>Every event creates lasting memories for kids</li>
+						<li>Well-maintained fields keep players safe and games on schedule</li>
+						<li>Flexibility means more people can participate</li>
+						<li>You're part of a community effort that makes NCLL special</li>
+						<li>Small contributions add up to a huge impact</li>
+					</ul>
+				</div>
+
+				<label for="modal-adhoc" class="modal-close">Close</label>
+			</div>
+		</label>
+
+		<!-- Call to Action -->
+		<section class="hub-intro" style="margin-top: 4rem;">
+			<h2 class="left">Ready to Get Involved?</h2>
+			<p>Contact our <a class="ncll" href="mailto:volunteer&#64;ncllball.com">Volunteer Coordinator</a> to discuss opportunities, or reach out to a specific area coordinator:</p>
+			<ul style="text-align: left; max-width: 600px; margin: 1rem auto;">
+				<li><strong>Umpiring:</strong> <a class="ncll" href="mailto:umpires&#64;ncllball.com">umpires&#64;ncllball.com</a></li>
+				<li><strong>Coaching:</strong> <a class="ncll" href="mailto:coaching&#64;ncllball.com">coaching&#64;ncllball.com</a></li>
+				<li><strong>Board & Key Volunteers:</strong> <a class="ncll" href="mailto:board&#64;ncllball.com">board&#64;ncllball.com</a></li>
+				<li><strong>Events:</strong> <a class="ncll" href="mailto:events&#64;ncllball.com">events&#64;ncllball.com</a></li>
+			</ul>
+		</section>
+	</main>
+</body>
+
+</html>
