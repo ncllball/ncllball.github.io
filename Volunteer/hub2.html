@@ -54,33 +54,39 @@
 			z-index: 10;
 			width: 70px;
 			height: 70px;
-			background: linear-gradient(135deg, var(--color_red) 0%, var(--color_blue) 100%);
+			background:
+				linear-gradient(160deg, rgba(0, 1, 58, 0.35), rgba(205, 22, 63, 0.35)),
+				url("https://ncllball.github.io/images/ump_cards/baseball.png");
+			background-size: cover;
+			background-position: center;
 			border-radius: 50%;
 			display: flex;
-			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			box-shadow: 0 8px 24px rgba(0, 1, 58, 0.3);
-			border: 3px solid white;
+			box-shadow: 0 10px 25px rgba(0, 1, 58, 0.4);
+			overflow: hidden;
 		}
 
 		.hub-center-content {
 			text-align: center;
-			color: white;
+			color: var(--color_blue);
 			padding: 0 0.25rem;
 		}
 
 		.hub-center-icon {
-			font-size: 1.35rem;
-			margin-bottom: 0.2rem;
-			line-height: 1;
+			display: none;
 		}
 
 		.hub-center-text {
-			font-size: 0.75rem;
-			font-weight: 700;
+			font-size: 0.8rem;
+			font-weight: 800;
 			text-transform: uppercase;
-			letter-spacing: 0.3px;
+			letter-spacing: 0.08em;
+			background: rgba(255, 255, 255, 0.4);
+			color: var(--color_blue);
+			border-radius: 999px;
+			padding: 0.15rem 0.4rem;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 		}
 
 		/* SVG spokes that connect hub to each card */
@@ -401,8 +407,7 @@
 			<!-- Central Hub -->
 			<div class="hub-center">
 				<div class="hub-center-content">
-					<div class="hub-center-icon">⚾</div>
-					<div class="hub-center-text">The Kids</div>
+					<div class="hub-center-text">Kids</div>
 				</div>
 			</div>
 
