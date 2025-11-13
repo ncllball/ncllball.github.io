@@ -2566,10 +2566,14 @@ details.footies[open] summary::before {
     height: auto;
 }
 .ncll-card__graphic--small {
+    width: 100px;
+    height: auto;
+}
+.ncll-card__graphic--smaller {
     width: 80px;
     height: auto;
 }
-.ncll-card__graphic--xsmall {
+.ncll-card__graphic--smallest {
     width: 50px;
     height: auto;
 }
