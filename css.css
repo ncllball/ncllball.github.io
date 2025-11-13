@@ -2561,8 +2561,12 @@ details.footies[open] summary::before {
     box-sizing: border-box;
 
 }
+.ncll-card__graphic--large {
+    width: 150px;
+    height: auto;
+}
 .ncll-card__graphic--medium {
-    width: 100px;
+    width: 120px;
     height: auto;
 }
 .ncll-card__graphic--small {
