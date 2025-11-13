@@ -101,89 +101,126 @@
 
 		.hub-line {
 			fill: none;
-			stroke: rgba(1, 156, 222, 0.75);
-			stroke-width: 1;
+			stroke: rgba(0, 1, 58, 0.85);
+			stroke-width: 0.5;
 			stroke-linecap: round;
-			filter: drop-shadow(0 0 8px rgba(0, 1, 58, 0.25));
+			filter: drop-shadow(0 0 3px rgba(0, 1, 58, 0.35));
 		}
 
-		/* Spoke Cards */
-		.spoke-card {
+		/* Spoke nodes (circular anchors) */
+		.spoke-node {
 			position: absolute;
-			width: 110px;
-			background: white;
-			border-radius: 10px;
-			padding: 0.75rem;
-			box-shadow: 0 4px 12px rgba(0, 1, 58, 0.15);
-			border: 1px solid var(--color_border_light);
-			transition: all 0.3s ease;
+			width: 140px;
+			height: 140px;
+			border-radius: 50%;
+			background: linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(226, 221, 202, 0.65));
+			border: 3px solid rgba(0, 1, 58, 0.12);
+			box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
 			cursor: pointer;
+			transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 			z-index: 5;
-		}
-
-		.spoke-card:hover {
-			transform: scale(1.05);
-			box-shadow: 0 8px 20px rgba(0, 1, 58, 0.25);
-			border-color: var(--color_richblue);
-		}
-
-		.spoke-card-1 {
-			top: 7%;
-			left: 15%;
-		}
-
-		.spoke-card-2 {
-			top: 7%;
-			right: 15%;
-		}
-
-		.spoke-card-3 {
-			bottom: 7%;
-			left: 15%;
-		}
-
-		.spoke-card-4 {
-			bottom: 7%;
-			right: 15%;
-		}
-
-		.spoke-card-icon {
-			font-size: 1.5rem;
-			margin-bottom: 0.4rem;
-			text-align: center;
-		}
-
-		.spoke-card-title {
-			font-size: 0.85rem;
-			font-weight: 700;
-			color: var(--color_blue);
-			text-align: center;
-			margin-bottom: 0.3rem;
-		}
-
-		.spoke-card-subtitle {
-			font-size: 0.65rem;
-			color: var(--color_muted);
-			text-align: center;
-			margin-bottom: 0.5rem;
-		}
-
-		.spoke-card-cta {
-			display: block;
-			text-align: center;
-			padding: 0.3rem 0.5rem;
-			background: var(--color_richblue);
-			color: white;
-			border-radius: 5px;
-			font-weight: 600;
 			text-decoration: none;
-			font-size: 0.7rem;
-			transition: background 0.3s ease;
+			color: var(--color_blue);
+			overflow: visible;
 		}
 
-		.spoke-card-cta:hover {
-			background: var(--color_blue);
+		.spoke-node:hover,
+		.spoke-node:focus-visible {
+			transform: scale(1.05);
+			box-shadow: 0 16px 32px rgba(0, 1, 58, 0.25);
+			border-color: rgba(0, 1, 58, 0.35);
 		}
+
+		.spoke-node-1 {
+			top: 6%;
+			left: 14%;
+		}
+
+		.spoke-node-2 {
+			top: 6%;
+			right: 14%;
+			left: auto;
+		}
+
+		.spoke-node-3 {
+			bottom: 6%;
+			left: 14%;
+		}
+
+		.spoke-node-4 {
+			bottom: 6%;
+			right: 14%;
+		}
+
+		.spoke-node__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 0.35rem;
+			padding: 0.5rem;
+		}
+
+		.spoke-node__title {
+			font-size: 1rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+		}
+
+		.spoke-node__caption {
+			font-size: 0.7rem;
+			color: var(--color_muted);
+		}
+
+		.team-focuses {
+			position: absolute;
+			inset: 0;
+			pointer-events: none;
+		}
+
+		.team-focus {
+			position: absolute;
+			width: 90px;
+			height: 90px;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.94);
+			border: 2px solid rgba(0, 1, 58, 0.18);
+			box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 0.4rem;
+			font-size: 0.62rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			color: var(--color_blue);
+		}
+
+		.team-focus--head {
+			top: -35px;
+			left: 15%;
+			transform: translate(-50%, -50%);
+		}
+
+		.team-focus--assistant {
+			top: -55px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.team-focus--manager {
+			top: -35px;
+			right: 5%;
+			transform: translate(50%, -50%);
+		}
+
 
 		/* ====== Modal/Lightbox System ====== */
 		.modal-trigger {
@@ -314,46 +351,47 @@
 				font-size: 0.65rem;
 			}
 
-			.spoke-card {
-				width: 90px;
-				padding: 0.6rem;
+			.spoke-node {
+				width: 100px;
+				height: 100px;
 			}
 
-			.spoke-card-1 {
+			.team-focus {
+				display: none;
+			}
+
+			.spoke-node-1 {
 				top: 2%;
-				left: 5%;
+				left: 8%;
 			}
 
-			.spoke-card-2 {
+			.spoke-node-2 {
 				top: 2%;
-				right: 5%;
+				right: 8%;
 			}
 
-			.spoke-card-3 {
+			.spoke-node-3 {
 				bottom: 2%;
-				left: 5%;
+				left: 8%;
 			}
 
-			.spoke-card-4 {
+			.spoke-node-4 {
 				bottom: 2%;
-				right: 5%;
+				right: 8%;
 			}
 
-			.spoke-card-icon {
-				font-size: 2rem;
-			}
-
-			.spoke-card-title {
+			.spoke-node__title {
 				font-size: 0.75rem;
 			}
 
-			.spoke-card-subtitle {
+			.spoke-node__caption {
 				font-size: 0.6rem;
 			}
 
 			.hub-lines {
 				display: none;
 			}
+
 
 			.modal-content {
 				margin: 1rem;
@@ -372,23 +410,17 @@
 		}
 
 		@media (max-width: 480px) {
-			.spoke-card {
-				width: 80px;
-				padding: 0.5rem;
+			.spoke-node {
+				width: 85px;
+				height: 85px;
 			}
 
-			.spoke-card-title {
+			.spoke-node__title {
 				font-size: 0.65rem;
 			}
 
-			.spoke-card-subtitle {
+			.spoke-node__caption {
 				font-size: 0.55rem;
-				margin-bottom: 0.35rem;
-			}
-
-			.spoke-card-cta {
-				padding: 0.25rem 0.5rem;
-				font-size: 0.65rem;
 			}
 		}
 	</style>
@@ -398,12 +430,13 @@
 	<main class="volunteer-hub-container">
 		<!-- Introduction -->
 		<section class="hub-intro">
-			<h1>Volunteer Hub</h1>
-			<p>At North Central Little League, everything we do revolves around <strong>the kids</strong>. Our 800 families come together to create unforgettable experiences for young athletes. Whether you have 2 hours or 20, there's a way for you to make an impact. Explore the opportunities below and find your perfect fit.</p>
+		<h1>Volunteer Hub</h1>
+		<p>At North Central Little League, everything we do revolves around <strong>the kids</strong>. Our 800 families come together to create unforgettable experiences for young athletes. Whether you have 2 hours or 20, there's a way for you to make an impact. Explore the opportunities below and find your perfect fit.</p>
 		</section>
 
 		<!-- Hub and Spoke Diagram -->
 		<div class="hub-spoke-container">
+            
 			<!-- Central Hub -->
 			<div class="hub-center">
 				<div class="hub-center-content">
@@ -413,44 +446,49 @@
 
 			<!-- Connecting Spokes -->
 			<svg class="hub-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-				<path class="hub-line" d="M50 50 C 42 35, 32 24, 20 15" />
-				<path class="hub-line" d="M50 50 C 58 35, 68 24, 80 15" />
-				<path class="hub-line" d="M50 50 C 40 65, 32 76, 20 85" />
-				<path class="hub-line" d="M50 50 C 60 65, 68 76, 80 85" />
+				<path class="hub-line" d="M50 50 C 44 38, 38 30, 30 24" />
+				<path class="hub-line" d="M50 50 C 58 38, 63 30, 65 24" />
+				<path class="hub-line" d="M50 50 C 44 62, 38 70, 30 76" />
+				<path class="hub-line" d="M50 50 C 56 62, 62 70, 70 76" />
 			</svg>
 
-			<!-- Spoke Card 1: Umpiring -->
-			<label for="modal-umpiring" class="spoke-card spoke-card-1">
-				<div class="spoke-card-icon">👨‍⚖️</div>
-				<h3 class="spoke-card-title">Umpiring</h3>
-				<p class="spoke-card-subtitle">Call the game with confidence</p>
-				<span class="spoke-card-cta">Learn More</span>
+				<!-- Spoke Node 1: Umpiring -->
+				<label for="modal-umpiring" class="spoke-node spoke-node-1">
+					<div class="spoke-node__content">
+						<span class="spoke-node__title">Umpiring</span>
+						<span class="spoke-node__caption">Game officials</span>
+					</div>
+				</label>
+
+				<!-- Spoke Node 2: Team Level -->
+			<label for="modal-team" class="spoke-node spoke-node-2">
+				<div class="spoke-node__content">
+					<span class="spoke-node__title">Team</span>
+					<span class="spoke-node__caption">Coaches &amp; managers</span>
+				</div>
+				<div class="team-focuses" aria-hidden="true">
+					<div class="team-focus team-focus--head">Head Coach</div>
+					<div class="team-focus team-focus--assistant">Assistant Coach</div>
+					<div class="team-focus team-focus--manager">Team Manager</div>
+				</div>
 			</label>
 
-			<!-- Spoke Card 2: Team Level -->
-			<label for="modal-team" class="spoke-card spoke-card-2">
-				<div class="spoke-card-icon">👥</div>
-				<h3 class="spoke-card-title">Team Level</h3>
-				<p class="spoke-card-subtitle">Coach, assist, manage</p>
-				<span class="spoke-card-cta">Learn More</span>
-			</label>
+				<!-- Spoke Node 3: League Level -->
+				<label for="modal-league" class="spoke-node spoke-node-3">
+					<div class="spoke-node__content">
+						<span class="spoke-node__title">League</span>
+						<span class="spoke-node__caption">Board &amp; key roles</span>
+					</div>
+				</label>
 
-			<!-- Spoke Card 3: League Level -->
-			<label for="modal-league" class="spoke-card spoke-card-3">
-				<div class="spoke-card-icon">🏆</div>
-				<h3 class="spoke-card-title">League Level</h3>
-				<p class="spoke-card-subtitle">Board & key volunteers</p>
-				<span class="spoke-card-cta">Learn More</span>
-			</label>
-
-			<!-- Spoke Card 4: Ad-hoc -->
-			<label for="modal-adhoc" class="spoke-card spoke-card-4">
-				<div class="spoke-card-icon">🙌</div>
-				<h3 class="spoke-card-title">Ad-hoc</h3>
-				<p class="spoke-card-subtitle">Events & ground care</p>
-				<span class="spoke-card-cta">Learn More</span>
-			</label>
-		</div>
+				<!-- Spoke Node 4: Ad-hoc -->
+				<label for="modal-adhoc" class="spoke-node spoke-node-4">
+					<div class="spoke-node__content">
+						<span class="spoke-node__title">Ad Hoc</span>
+						<span class="spoke-node__caption">Events &amp; grounds</span>
+					</div>
+				</label>
+			</div>
 
 		<!-- ====== MODAL 1: UMPIRING ====== -->
 		<input type="checkbox" id="modal-umpiring" class="modal-trigger" />
