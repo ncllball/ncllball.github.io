@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Volunteer Hub &amp; Spoke | North Central Little League</title>
+		<link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
+		<link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
+		<style>
+			body {
+				margin: 0;
+				font-family: var(--tk-interstate, "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+				color: var(--color_tan, #e2ddca);
+				background: radial-gradient(circle at top, rgba(1, 156, 222, 0.2), transparent 60%), linear-gradient(135deg, var(--color_blue, #00013a), #0b1a58 55%, var(--color_richblue, #019cde));
+				min-height: 100vh;
+			}
+
+			main.volunteer-hub {
+				max-width: 1100px;
+				margin: 0 auto;
+				padding: 3rem 1.5rem 4rem;
+			}
+
+			.hub-hero {
+				text-align: center;
+				color: var(--color_tan, #e2ddca);
+				margin-bottom: 2.5rem;
+			}
+
+			.hub-hero h1 {
+				font-size: clamp(2.1rem, 4vw, 3rem);
+				margin-bottom: 0.5rem;
+				letter-spacing: 0.05em;
+			}
+
+			.hub-hero p {
+				max-width: 720px;
+				margin: 0.5rem auto;
+				line-height: 1.7;
+				color: rgba(226, 221, 202, 0.9);
+			}
+
+			.hub-hero strong {
+				color: var(--color_richblue, #019cde);
+			}
+
+			.hub-spokes {
+				background: rgba(0, 1, 58, 0.35);
+				border: 1px solid rgba(1, 156, 222, 0.25);
+				border-radius: 1.5rem;
+				padding: 2rem;
+				position: relative;
+				overflow: hidden;
+			}
+
+			.hub-spoke-grid {
+				display: grid;
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				grid-template-rows: repeat(2, minmax(220px, auto));
+				grid-template-areas:
+					"ump hub team"
+					"league hub adhoc";
+				gap: 1.7rem;
+				position: relative;
+				z-index: 1;
+			}
+
+			.hub-spoke-grid::before,
+			.hub-spoke-grid::after {
+				content: "";
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				background: linear-gradient(90deg, transparent, rgba(1, 156, 222, 0.65), transparent);
+				z-index: 0;
+			}
+
+			.hub-spoke-grid::before {
+				width: 88%;
+				height: 2px;
+			}
+
+			.hub-spoke-grid::after {
+				width: 2px;
+				height: 88%;
+			}
+
+			.hub-core {
+				grid-area: hub;
+				background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.15), transparent 60%), linear-gradient(160deg, var(--color_red, #cd163f), #ff8258);
+				border-radius: 50%;
+				width: clamp(220px, 18vw, 260px);
+				height: clamp(220px, 18vw, 260px);
+				margin: 0 auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				color: var(--color_white, #ffffff);
+				box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+				position: relative;
+				z-index: 2;
+				padding: 2rem;
+			}
+
+			.hub-core h2 {
+				margin: 0;
+				font-size: 1.6rem;
+			}
+
+			.hub-core span {
+				display: block;
+				font-size: 3.1rem;
+				font-weight: 700;
+				line-height: 1.1;
+			}
+
+			.spoke-card {
+				background: rgba(255, 255, 255, 0.92);
+				border-radius: 1.2rem;
+				padding: 1.5rem;
+				border: 1px solid rgba(0, 1, 58, 0.08);
+				box-shadow: 0 25px 60px rgba(0, 0, 0, 0.20);
+				display: flex;
+				flex-direction: column;
+				gap: 0.9rem;
+				position: relative;
+				z-index: 1;
+				color: var(--color_text, #333);
+			}
+
+			.spoke-card::before {
+				content: "";
+				position: absolute;
+				left: 1.5rem;
+				right: 1.5rem;
+				top: 0.75rem;
+				height: 4px;
+				border-radius: 999px;
+				background: linear-gradient(90deg, transparent, rgba(205, 22, 63, 0.8), transparent);
+			}
+
+			.spoke-card h3 {
+				margin: 0.2rem 0 0.6rem;
+				color: var(--color_blue, #00013a);
+				font-size: 1.35rem;
+			}
+
+			.spoke-card p {
+				margin: 0;
+				line-height: 1.5;
+				color: var(--color_muted, #555);
+			}
+
+			.spoke-card ul {
+				margin: 0;
+				padding-left: 1.2rem;
+				color: var(--color_muted, #444);
+			}
+
+			.spoke-card li + li {
+				margin-top: 0.3rem;
+			}
+
+			.spoke-card__tag {
+				text-transform: uppercase;
+				font-size: 0.9rem;
+				letter-spacing: 0.12em;
+				color: var(--color_red, #cd163f);
+				font-weight: 700;
+			}
+
+			.spoke-card__action {
+				margin-top: auto;
+				align-self: flex-start;
+				background: transparent;
+				border: 1px solid var(--color_richblue, #019cde);
+				color: var(--color_richblue, #019cde);
+				padding: 0.4rem 1rem;
+				border-radius: 999px;
+				font-weight: 600;
+				text-decoration: none;
+				transition: background 0.3s ease, color 0.3s ease;
+			}
+
+			.spoke-card__action:hover,
+			.spoke-card__action:focus-visible {
+				background: var(--color_richblue, #019cde);
+				color: var(--color_white, #ffffff);
+			}
+
+			.spoke-card--umpiring {
+				grid-area: ump;
+			}
+
+			.spoke-card--team {
+				grid-area: team;
+			}
+
+			.spoke-card--league {
+				grid-area: league;
+			}
+
+			.spoke-card--adhoc {
+				grid-area: adhoc;
+			}
+
+			.overlay-hint {
+				text-align: center;
+				color: rgba(226, 221, 202, 0.75);
+				margin-top: 1.5rem;
+				font-size: 0.95rem;
+			}
+
+			/* Lightbox overlay powered by :target */
+			.volunteer-overlay {
+				position: fixed;
+				inset: 0;
+				background: rgba(0, 1, 58, 0.85);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 1.5rem;
+				opacity: 0;
+				visibility: hidden;
+				transition: opacity 0.25s ease;
+				z-index: 10;
+				overflow-y: auto;
+			}
+
+			.volunteer-overlay:target {
+				opacity: 1;
+				visibility: visible;
+			}
+
+			.volunteer-overlay__content {
+				background: #fefefe;
+				border-radius: 1rem;
+				max-width: 640px;
+				color: #111;
+				padding: 2rem 2.5rem;
+				box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+				position: relative;
+			}
+
+			.volunteer-overlay__content h3 {
+				margin-top: 0;
+				color: var(--color_blue, #00013a);
+			}
+
+			.volunteer-overlay__content p {
+				line-height: 1.6;
+			}
+
+			.volunteer-overlay__content ul {
+				padding-left: 1.25rem;
+				margin: 0.5rem 0 0;
+			}
+
+			.overlay-close {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.3rem;
+				margin-top: 1.5rem;
+				font-weight: 600;
+				text-decoration: none;
+				color: var(--color_red, #cd163f);
+			}
+
+			.overlay-close::before {
+				content: "←";
+				font-size: 1rem;
+			}
+
+			@media (max-width: 960px) {
+				.hub-spoke-grid {
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+					grid-template-rows: repeat(3, minmax(220px, auto));
+					grid-template-areas:
+						"hub hub"
+						"ump team"
+						"league adhoc";
+				}
+
+				.hub-spoke-grid::after {
+					display: none;
+				}
+
+				.hub-core {
+					width: clamp(220px, 40vw, 320px);
+					height: clamp(220px, 40vw, 320px);
+				}
+			}
+
+			@media (max-width: 640px) {
+				.hub-spokes {
+					padding: 1.5rem;
+				}
+
+				.hub-spoke-grid {
+					grid-template-columns: 1fr;
+					grid-template-rows: none;
+					grid-template-areas:
+						"hub"
+						"ump"
+						"team"
+						"league"
+						"adhoc";
+				}
+
+				.hub-spoke-grid::before {
+					display: none;
+				}
+
+				.spoke-card {
+					padding: 1.25rem;
+				}
+			}
+
+			@media (prefers-reduced-motion: reduce) {
+				* {
+					transition: none !important;
+					animation: none !important;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<main id="content" role="main" class="volunteer-hub">
+			<section class="hub-hero">
+				<h1>Volunteer Hub &amp; Spoke</h1>
+				<p>
+					Every hour you share keeps <strong>800 families</strong> playing, cheering, and growing. Imagine the league as a wheel:
+					our kids are the center, and each spoke is a pathway for adults to keep that wheel rolling smoothly.
+				</p>
+				<p>Pick the spoke that matches your time, interests, or skills—then click in to see what it looks like in action.</p>
+			</section>
+
+			<section id="volunteer-hub" class="hub-spokes">
+				<div class="hub-spoke-grid">
+					<div class="hub-core" aria-label="Kids are the center of every volunteer effort">
+						<div>
+							<h2>It all revolves around</h2>
+							<span>Our Kids</span>
+							<p style="margin: 0.2rem 0 0; font-size: 0.95rem; letter-spacing: 0.05em;">Connected by every volunteer spoke</p>
+						</div>
+					</div>
+
+					<article class="spoke-card spoke-card--umpiring">
+						<p class="spoke-card__tag">Spoke · Umpiring</p>
+						<h3>Game-Day Officials</h3>
+						<p>
+							Keep games fair, fast, and fun. You'll provide consistency across divisions and give kids the stage they deserve.
+						</p>
+						<ul>
+							<li>Pick plate or base work to match your comfort level.</li>
+							<li>On-field mentors help with mechanics and rules.</li>
+							<li>Gear, clinics, and pre-season scrimmages provided.</li>
+						</ul>
+						<p><strong>Example:</strong> Volunteer as the base umpire for a Majors Saturday double-header so players compete with confidence.</p>
+						<a href="#detail-umpiring" class="spoke-card__action">See how it works</a>
+					</article>
+
+					<article class="spoke-card spoke-card--team">
+						<p class="spoke-card__tag">Spoke · Team Level</p>
+						<h3>Bench-to-bleachers Crew</h3>
+						<p>Every team needs a trio of leaders to run smoothly from March to June.</p>
+						<ul>
+							<li><strong>Head Coach:</strong> Sets the tone, plans practices, leads game decisions.</li>
+							<li><strong>Assistant Coach:</strong> Focuses on small groups, pitching, and player check-ins.</li>
+							<li><strong>Team Manager:</strong> Handles TeamSnap, snack schedules, and parent comms.</li>
+						</ul>
+						<p><strong>Example:</strong> A rookie team manager keeps 12 families aligned on rainouts and jersey pickup so the coach can stay on the field.</p>
+						<a href="#detail-team" class="spoke-card__action">See how it works</a>
+					</article>
+
+					<article class="spoke-card spoke-card--league">
+						<p class="spoke-card__tag">Spoke · League Level</p>
+						<h3>Key Volunteers &amp; Board</h3>
+						<p>These roles operate the full machine—scheduling 500+ games, opening fields, and planning events.</p>
+						<ul>
+							<li><strong>Board seats:</strong> Player Agent, Safety Officer, Treasurer, Secretary.</li>
+							<li><strong>Key friends:</strong> Concessions, Sponsorships, Scheduler, Communications.</li>
+							<li>Flexible apprenticeships so you can shadow before taking the wheel.</li>
+						</ul>
+						<p><strong>Example:</strong> Our Scheduler builds master calendars in January so every division knows its practice window by February.</p>
+						<a href="#detail-league" class="spoke-card__action">See how it works</a>
+					</article>
+
+					<article class="spoke-card spoke-card--adhoc">
+						<p class="spoke-card__tag">Spoke · Ad Hoc</p>
+						<h3>Pop-Up Squads</h3>
+						<p>Two flexible lists let you jump in when you can—perfect for families with rotating schedules.</p>
+						<ul>
+							<li><strong>Event List:</strong> Opening Day setup, picture day wranglers, fundraiser nights.</li>
+							<li><strong>Ground Gremlins:</strong> Infield repairs, dugout painting, tarp pulls after storms.</li>
+							<li>We text when help is needed; you tap in when available.</li>
+						</ul>
+						<p><strong>Example:</strong> Three Ground Gremlins filled low spots on Field 2 after a Friday rain and saved Saturday's AAA slate.</p>
+						<a href="#detail-adhoc" class="spoke-card__action">See how it works</a>
+					</article>
+				</div>
+				<p class="overlay-hint">Tap or click any spoke to spotlight the details in a lightbox-style overlay.</p>
+			</section>
+		</main>
+
+		<section class="volunteer-overlay" id="detail-umpiring" role="dialog" aria-modal="true" aria-labelledby="detail-umpiring-title">
+			<div class="volunteer-overlay__content">
+				<h3 id="detail-umpiring-title">Umpiring: The voice of calm between the lines</h3>
+				<p>
+					Umpires are the immediate guardians of pace, safety, and sportsmanship. We pair newer volunteers with veterans on lower
+					diamonds so you can develop your strike zone and mechanics in real time. Pre-season clinics cover field positioning,
+					conflict de-escalation, and how to communicate with coaches the Little League way.
+				</p>
+				<p><strong>What an assignment looks like:</strong></p>
+				<ul>
+					<li>Arrive 20 minutes early for a plate meeting and field check.</li>
+					<li>Run a Majors double-header: plate for Game 1, swap to bases for Game 2.</li>
+					<li>Debrief with the UIC afterward so you keep sharpening skills.</li>
+				</ul>
+				<p>Every accurate call gives kids confidence that their effort matters.</p>
+				<a class="overlay-close" href="#volunteer-hub">Back to hub</a>
+			</div>
+		</section>
+
+		<section class="volunteer-overlay" id="detail-team" role="dialog" aria-modal="true" aria-labelledby="detail-team-title">
+			<div class="volunteer-overlay__content">
+				<h3 id="detail-team-title">Team-Level Leaders: The daily pulse of the league</h3>
+				<p>
+					This spoke is perfect if you love being around your player's team each week. We provide coaching clinics, practice
+					plans, and administrative templates so you can focus on relationships. Team managers often onboard new families,
+					while assistant coaches run stations so players move constantly.
+				</p>
+				<p><strong>What a season looks like:</strong></p>
+				<ul>
+					<li>Pre-season: attend coaching orientation, align on team values, set expectations with parents.</li>
+					<li>In-season: run two practices plus game-day warmups, keep snack and dugout rotations shared in TeamSnap.</li>
+					<li>Post-season: celebrate awards night, gather feedback for next year.</li>
+				</ul>
+				<p>The trio keeps the team steady so kids can simply show up ready to learn.</p>
+				<a class="overlay-close" href="#volunteer-hub">Back to hub</a>
+			</div>
+		</section>
+
+		<section class="volunteer-overlay" id="detail-league" role="dialog" aria-modal="true" aria-labelledby="detail-league-title">
+			<div class="volunteer-overlay__content">
+				<h3 id="detail-league-title">League-Level Roles: Strategic and steady</h3>
+				<p>
+					The league spoke stretches beyond individual teams to coordinate facilities, finance, and communication. Board members
+					meet monthly (more often pre-season) to keep policy aligned with Little League International. Key volunteers plug into
+					shorter sprints: concessions leads train teen workers, sponsorship chairs build partnerships, and communications
+					volunteers translate schedules into parent-friendly updates.
+				</p>
+				<p><strong>What stewardship feels like:</strong></p>
+				<ul>
+					<li>A Safety Officer audits equipment and AED stations before Opening Day.</li>
+					<li>A Concessions Director orders inventory weekly and mentors youth workers.</li>
+					<li>A Communications lead recaps board decisions as Friday e-mails to 800 families.</li>
+				</ul>
+				<p>These leaders ensure every spoke is aligned with the mission.</p>
+				<a class="overlay-close" href="#volunteer-hub">Back to hub</a>
+			</div>
+		</section>
+
+		<section class="volunteer-overlay" id="detail-adhoc" role="dialog" aria-modal="true" aria-labelledby="detail-adhoc-title">
+			<div class="volunteer-overlay__content">
+				<h3 id="detail-adhoc-title">Ad Hoc Squads: Fast help when it matters</h3>
+				<p>
+					Our Event List and Ground Gremlins are text-first volunteer pools. You opt in once, then receive short messages any time
+					we need bodies. No guilt if you cannot make it—just jump in when the timing works.
+				</p>
+				<p><strong>Event List example:</strong> We host a Hit-A-Thon at Lower Ross. Volunteers cover registration tables, run music,
+					and tally pledges for two hours.</p>
+				<p><strong>Ground Gremlins example:</strong> After a downpour, we call for six adults to broom puddles, nail drag infields,
+					and reset mound clay. Ninety minutes later, the fields are playable.</p>
+				<p>Small bursts of effort keep the entire wheel balanced for the weekend.</p>
+				<a class="overlay-close" href="#volunteer-hub">Back to hub</a>
+			</div>
+		</section>
+	</body>
+</html>
