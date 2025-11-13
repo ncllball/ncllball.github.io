@@ -2561,20 +2561,28 @@ details.footies[open] summary::before {
     box-sizing: border-box;
 
 }
-.ncll-card__graphic--large {
+.ncll-card__graphic--largest {
+    width: 175px;
+    height: auto;
+}
+.ncll-card__graphic--larger {
     width: 150px;
     height: auto;
 }
-.ncll-card__graphic--medium {
+.ncll-card__graphic--large {
     width: 120px;
     height: auto;
 }
-.ncll-card__graphic--small {
+.ncll-card__graphic--medium {
     width: 100px;
     height: auto;
 }
-.ncll-card__graphic--smaller {
+.ncll-card__graphic--small {
     width: 80px;
+    height: auto;
+}
+.ncll-card__graphic--smaller {
+    width: 65px;
     height: auto;
 }
 .ncll-card__graphic--smallest {
