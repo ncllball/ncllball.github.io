@@ -1813,7 +1813,6 @@ body:not(.cms-right) .only-on-right {
 }
 
 .age-matrix thead th {
-    border-top: 1pt solid var(--color_red);
     border-bottom: 1pt solid var(--color_red);
     font-weight: 700;
     font-size: 0.9rem !important;
@@ -3483,6 +3482,6 @@ details.footies[open] summary::before {
 }
 .board-volunteers .division-header {
     text-align: center;
-    background-color: #fff;
     padding: 5px 10px;
+    border-bottom: 1pt solid var(--color_red);
 }
