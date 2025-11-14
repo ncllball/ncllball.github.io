@@ -54,9 +54,7 @@
 			z-index: 10;
 			width: 70px;
 			height: 70px;
-			background:
-				linear-gradient(160deg, rgba(0, 1, 58, 0.35), rgba(205, 22, 63, 0.35)),
-				url("https://ncllball.github.io/images/ump_cards/baseball.png");
+			background: url("https://ncllball.github.io/images/ump_cards/kids.png");
 			background-size: cover;
 			background-position: center;
 			border-radius: 50%;
@@ -67,10 +65,19 @@
 			overflow: hidden;
 		}
 
+		.hub-center::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: radial-gradient(circle, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.55) 55%, rgba(0, 0, 0, 0.15) 100%);
+		}
+
 		.hub-center-content {
 			text-align: center;
 			color: var(--color_blue);
 			padding: 0 0.25rem;
+			position: relative;
+			z-index: 1;
 		}
 
 		.hub-center-icon {
@@ -78,15 +85,16 @@
 		}
 
 		.hub-center-text {
-			font-size: 0.8rem;
+			font-size: 0.82rem;
 			font-weight: 800;
 			text-transform: uppercase;
-			letter-spacing: 0.08em;
-			background: rgba(255, 255, 255, 0.4);
+			letter-spacing: 0.12em;
+			background: rgba(255, 255, 255, 0.9);
 			color: var(--color_blue);
 			border-radius: 999px;
-			padding: 0.15rem 0.4rem;
-			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+			padding: 0.2rem 0.5rem;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+			backdrop-filter: blur(2px);
 		}
 
 		/* SVG spokes that connect hub to each card */
@@ -110,12 +118,12 @@
 		/* Spoke nodes (circular anchors) */
 		.spoke-node {
 			position: absolute;
-			width: 140px;
-			height: 140px;
+			width: 90px;
+			height: 90px;
 			border-radius: 50%;
 			background: linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(226, 221, 202, 0.65));
-			border: 3px solid rgba(0, 1, 58, 0.12);
-			box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+			border: 2px solid rgba(0, 1, 58, 0.15);
+			box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -135,25 +143,31 @@
 			border-color: rgba(0, 1, 58, 0.35);
 		}
 
+		.team-focus:hover,
+		.team-focus:focus-visible {
+			transform: scale(1.05);
+			box-shadow: 0 16px 32px rgba(0, 1, 58, 0.25);
+			border-color: rgba(0, 1, 58, 0.35);
+		}
+
 		.spoke-node-1 {
-			top: 6%;
-			left: 14%;
+			top: calc(24% - 45px);
+			left: calc(30% - 45px);
 		}
 
 		.spoke-node-2 {
-			top: 6%;
-			right: 14%;
-			left: auto;
+			top: calc(24% - 45px);
+			left: calc(65% - 45px);
 		}
 
 		.spoke-node-3 {
-			bottom: 6%;
-			left: 14%;
+			top: calc(76% - 45px);
+			left: calc(30% - 45px);
 		}
 
 		.spoke-node-4 {
-			bottom: 6%;
-			right: 14%;
+			top: calc(76% - 45px);
+			left: calc(70% - 45px);
 		}
 
 		.spoke-node__content {
@@ -177,49 +191,137 @@
 			color: var(--color_muted);
 		}
 
-		.team-focuses {
+		.team-focuses,
+		.ump-focuses,
+		.league-focuses,
+		.popup-focuses {
 			position: absolute;
-			inset: 0;
-			pointer-events: none;
+			width: 0;
+			height: 0;
+			transform: translate(-50%, -50%);
+			z-index: 6;
 		}
 
-		.team-focus {
+		.team-focuses {
+			top: 24%;
+			left: 65%;
+		}
+
+		.ump-focuses {
+			top: 24%;
+			left: 30%;
+		}
+
+		.league-focuses {
+			top: 76%;
+			left: 30%;
+		}
+
+		.popup-focuses {
+			top: 76%;
+			left: 70%;
+		}
+
+		.team-focus,
+		.ump-focus,
+		.league-focus,
+		.popup-focus {
 			position: absolute;
-			width: 90px;
-			height: 90px;
+			width: var(--focus-size, 78px);
+			height: var(--focus-size, 78px);
 			border-radius: 50%;
-			background: rgba(255, 255, 255, 0.94);
+			background: rgba(255, 255, 255, 0.95);
 			border: 2px solid rgba(0, 1, 58, 0.18);
 			box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			text-align: center;
-			padding: 0.4rem;
-			font-size: 0.62rem;
+			font-size: 0.58rem;
 			font-weight: 700;
 			text-transform: uppercase;
 			letter-spacing: 0.05em;
 			color: var(--color_blue);
+			pointer-events: auto;
+			cursor: pointer;
+			padding: var(--focus-padding, 0.35rem);
+			transform-origin: center;
+			transform: rotate(var(--angle, 0deg)) translateX(var(--radius, 95px)) rotate(calc(var(--angle, 0deg) * -1)) translate(-50%, -50%);
+			transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+		}
+
+		.league-focus,
+		.popup-focus {
+			--focus-size: 74px;
+			--focus-padding: 0.3rem;
+			--radius: 90px;
+			box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
 		}
 
 		.team-focus--head {
-			top: -35px;
-			left: 15%;
-			transform: translate(-50%, -50%);
+			--angle: -80deg;
+			--radius: 100px;
 		}
 
 		.team-focus--assistant {
-			top: -55px;
-			left: 50%;
-			transform: translate(-50%, -50%);
+			--angle: -20deg;
+			--radius: 100px;
 		}
 
 		.team-focus--manager {
-			top: -35px;
-			right: 5%;
-			transform: translate(50%, -50%);
+			--angle: 40deg;
+			--radius: 100px;
 		}
+
+		.ump-focus--field {
+			--angle: 130deg;
+			--radius: 105px;
+		}
+
+		.ump-focus--chief {
+			--angle: 180deg;
+			--radius: 105px;
+		}
+
+		.ump-focus--coordinator {
+			--angle: 230deg;
+			--radius: 105px;
+		}
+
+		.league-focus--board {
+			--angle: 200deg;
+			--radius: 110px;
+		}
+
+		.league-focus--keyvol {
+			--angle: 340deg;
+			--radius: 110px;
+		}
+
+
+		.team-focus:hover,
+		.team-focus:focus-visible,
+		.ump-focus:hover,
+		.ump-focus:focus-visible,
+		.league-focus:hover,
+		.league-focus:focus-visible,
+		.popup-focus:hover,
+		.popup-focus:focus-visible {
+			transform: rotate(var(--angle, 0deg)) translateX(var(--radius, 95px)) rotate(calc(var(--angle, 0deg) * -1)) translate(-50%, -50%) scale(1.05);
+			box-shadow: 0 16px 32px rgba(0, 1, 58, 0.25);
+			border-color: rgba(0, 1, 58, 0.35);
+		}
+
+
+	.popup-focus--events {
+		--angle: -15deg;
+		--radius: 100px;
+	}
+
+	.popup-focus--grounds {
+		--angle: 45deg;
+		--radius: 100px;
+	}
 
 
 		/* ====== Modal/Lightbox System ====== */
@@ -352,11 +454,14 @@
 			}
 
 			.spoke-node {
-				width: 100px;
-				height: 100px;
+				width: 65px;
+				height: 65px;
 			}
 
-			.team-focus {
+			.team-focuses,
+			.ump-focuses,
+			.league-focuses,
+			.popup-focuses {
 				display: none;
 			}
 
@@ -411,8 +516,8 @@
 
 		@media (max-width: 480px) {
 			.spoke-node {
-				width: 85px;
-				height: 85px;
+				width: 55px;
+				height: 55px;
 			}
 
 			.spoke-node__title {
@@ -452,13 +557,18 @@
 				<path class="hub-line" d="M50 50 C 56 62, 62 70, 70 76" />
 			</svg>
 
-				<!-- Spoke Node 1: Umpiring -->
-				<label for="modal-umpiring" class="spoke-node spoke-node-1">
-					<div class="spoke-node__content">
-						<span class="spoke-node__title">Umpiring</span>
-						<span class="spoke-node__caption">Game officials</span>
-					</div>
-				</label>
+			<!-- Spoke Node 1: Umpiring -->
+			<label for="modal-umpiring" class="spoke-node spoke-node-1">
+				<div class="spoke-node__content">
+					<span class="spoke-node__title">Umpiring</span>
+					<span class="spoke-node__caption">Game officials</span>
+				</div>
+			</label>
+			<div class="ump-focuses" role="group" aria-label="Umpiring roles">
+				<label for="modal-ump-field" class="ump-focus ump-focus--field">Umpire</label>
+				<label for="modal-ump-chief" class="ump-focus ump-focus--chief">Umpire in Chief</label>
+				<label for="modal-ump-coordinator" class="ump-focus ump-focus--coordinator">Umpire Coordinator</label>
+			</div>
 
 				<!-- Spoke Node 2: Team Level -->
 			<label for="modal-team" class="spoke-node spoke-node-2">
@@ -466,34 +576,40 @@
 					<span class="spoke-node__title">Team</span>
 					<span class="spoke-node__caption">Coaches &amp; managers</span>
 				</div>
-				<div class="team-focuses" aria-hidden="true">
-					<div class="team-focus team-focus--head">Head Coach</div>
-					<div class="team-focus team-focus--assistant">Assistant Coach</div>
-					<div class="team-focus team-focus--manager">Team Manager</div>
+			</label>
+			<div class="team-focuses" role="group" aria-label="Team roles">
+				<label for="modal-team-head" class="team-focus team-focus--head">Head Coach</label>
+				<label for="modal-team-assistant" class="team-focus team-focus--assistant">Assistant Coach</label>
+				<label for="modal-team-manager" class="team-focus team-focus--manager">Team Manager</label>
+			</div>
+
+		<!-- Spoke Node 3: League Level -->
+		<label for="modal-league" class="spoke-node spoke-node-3">
+			<div class="spoke-node__content">
+				<span class="spoke-node__title">League</span>
+				<span class="spoke-node__caption">Board &amp; key roles</span>
+			</div>
+		</label>
+		<div class="league-focuses" role="group" aria-label="League roles">
+			<label for="modal-league" class="league-focus league-focus--keyvol">Key Volunteers</label>
+			<label for="modal-league" class="league-focus league-focus--board">Board Seats</label>
+		</div>			<!-- Spoke Node 4: Pop-Up Support -->
+			<label for="modal-adhoc" class="spoke-node spoke-node-4">
+				<div class="spoke-node__content">
+					<span class="spoke-node__title">Pop-Up Support</span>
+					<span class="spoke-node__caption">Events &amp; grounds</span>
 				</div>
 			</label>
-
-				<!-- Spoke Node 3: League Level -->
-				<label for="modal-league" class="spoke-node spoke-node-3">
-					<div class="spoke-node__content">
-						<span class="spoke-node__title">League</span>
-						<span class="spoke-node__caption">Board &amp; key roles</span>
-					</div>
-				</label>
-
-				<!-- Spoke Node 4: Ad-hoc -->
-				<label for="modal-adhoc" class="spoke-node spoke-node-4">
-					<div class="spoke-node__content">
-						<span class="spoke-node__title">Ad Hoc</span>
-						<span class="spoke-node__caption">Events &amp; grounds</span>
-					</div>
-				</label>
+			<div class="popup-focuses" role="group" aria-label="Pop-Up Support lists">
+				<label for="modal-adhoc" class="popup-focus popup-focus--events">Events List</label>
+				<label for="modal-adhoc" class="popup-focus popup-focus--grounds">Ground Gremlins</label>
+			</div>
 			</div>
 
 		<!-- ====== MODAL 1: UMPIRING ====== -->
 		<input type="checkbox" id="modal-umpiring" class="modal-trigger" />
-		<label for="modal-umpiring" class="modal-overlay">
-			<div class="modal-content" onclick="event.stopPropagation();">
+	<label for="modal-umpiring" class="modal-overlay">
+		<div class="modal-content" onclick="event.stopPropagation();">
 				<div class="modal-header">
 					<h2 class="modal-title">
 						<span class="modal-icon">👨‍⚖️</span>
@@ -543,9 +659,84 @@
 					</ul>
 				</div>
 
-				<label for="modal-umpiring" class="modal-close">Close</label>
+		<label for="modal-umpiring" class="modal-close">Close</label>
+	</div>
+</label>
+
+	<!-- ====== MODAL 1a: ON-FIELD UMPIRE ====== -->
+	<input type="checkbox" id="modal-ump-field" class="modal-trigger" />
+	<label for="modal-ump-field" class="modal-overlay">
+		<div class="modal-content" onclick="event.stopPropagation();">
+			<div class="modal-header">
+				<h2 class="modal-title">
+					<span class="modal-icon">⚾</span>
+					On-Field Umpire
+				</h2>
 			</div>
-		</label>
+			<div class="role-section">
+				<h3>Call the game</h3>
+				<p><strong>Plate and base umpires</strong> keep every matchup fair, safe, and on time.</p>
+				<ul>
+					<li>Rotate between plate and base assignments</li>
+					<li>Manage game tempo, enforce rules, and communicate with coaches</li>
+					<li>Apply training from clinics and peer mentoring</li>
+					<li>Model calm, confident decision-making for players and parents</li>
+				</ul>
+				<p><strong>Time commitment:</strong> 1–3 games per week (90 minutes each) during the season</p>
+			</div>
+			<label for="modal-ump-field" class="modal-close">Close</label>
+		</div>
+	</label>
+
+	<!-- ====== MODAL 1b: UMPire IN CHIEF ====== -->
+	<input type="checkbox" id="modal-ump-chief" class="modal-trigger" />
+	<label for="modal-ump-chief" class="modal-overlay">
+		<div class="modal-content" onclick="event.stopPropagation();">
+			<div class="modal-header">
+				<h2 class="modal-title">
+					<span class="modal-icon">🧢</span>
+					Umpire in Chief
+				</h2>
+			</div>
+			<div class="role-section">
+				<h3>Lead the crew</h3>
+				<p><strong>The UIC</strong> mentors the staff, keeps mechanics sharp, and settles tricky rules questions.</p>
+				<ul>
+					<li>Run preseason mechanics and rules clinics</li>
+					<li>Shadow new umpires on the diamond and provide real-time coaching</li>
+					<li>Standardize interpretations so every field calls the same game</li>
+					<li>Coordinate evaluations and feedback with the board</li>
+				</ul>
+				<p><strong>Time commitment:</strong> 4–6 hrs/week during the peak season (fewer in offseason)</p>
+			</div>
+			<label for="modal-ump-chief" class="modal-close">Close</label>
+		</div>
+	</label>
+
+	<!-- ====== MODAL 1c: UMPire COORDINATOR ====== -->
+	<input type="checkbox" id="modal-ump-coordinator" class="modal-trigger" />
+	<label for="modal-ump-coordinator" class="modal-overlay">
+		<div class="modal-content" onclick="event.stopPropagation();">
+			<div class="modal-header">
+				<h2 class="modal-title">
+					<span class="modal-icon">📅</span>
+					Umpire Coordinator
+				</h2>
+			</div>
+			<div class="role-section">
+				<h3>Schedule &amp; support</h3>
+				<p><strong>The coordinator</strong> makes sure every game has coverage and that volunteers know where to be.</p>
+				<ul>
+					<li>Build weekly assignments and handle last-minute swaps</li>
+					<li>Track availability, certifications, and stipend preferences</li>
+					<li>Communicate rainouts, time changes, and field moves</li>
+					<li>Celebrate milestones—first solo plate job, perfect attendance, etc.</li>
+				</ul>
+				<p><strong>Time commitment:</strong> 3–4 hrs/week plus heavier planning time pre-season</p>
+			</div>
+			<label for="modal-ump-coordinator" class="modal-close">Close</label>
+		</div>
+	</label>
 
 		<!-- ====== MODAL 2: TEAM LEVEL ====== -->
 		<input type="checkbox" id="modal-team" class="modal-trigger" />
@@ -563,48 +754,9 @@
 					<p>Team-level volunteers work directly with players throughout the season. These roles are the heart of our league, providing coaching, mentorship, and organization that helps kids develop skills, confidence, and a love for the game.</p>
 				</div>
 
-				<div class="role-section">
-					<h4>Head Coach</h4>
-					<p><strong>The leader of the team</strong> - responsible for practices, game strategy, and player development.</p>
-					<ul>
-						<li><strong>Plan and run practices</strong> - Design drills and activities that build fundamental skills</li>
-						<li><strong>Manage games</strong> - Set lineups, make in-game decisions, and communicate with umpires</li>
-						<li><strong>Develop players</strong> - Provide individual feedback and encourage growth</li>
-						<li><strong>Lead team culture</strong> - Create a positive, inclusive environment where all kids thrive</li>
-						<li><strong>Coordinate with volunteers</strong> - Work with assistant coaches and team managers</li>
-					</ul>
-					<p><strong>Time Commitment:</strong> 6-8 hours per week (2 practices + 2 games + planning)</p>
-					<p><strong>Training:</strong> Pre-season coaching clinics, ongoing support from division coordinators</p>
-				</div>
-
-				<div class="role-section">
-					<h4>Assistant Coach</h4>
-					<p><strong>The right hand</strong> - supports the head coach and works directly with players during practices and games.</p>
-					<ul>
-						<li><strong>Help run practices</strong> - Lead stations, work with small groups, provide one-on-one instruction</li>
-						<li><strong>Coach during games</strong> - Run bases, coach first/third base, support dugout management</li>
-						<li><strong>Player development</strong> - Focus on specific skills (hitting, pitching, fielding)</li>
-						<li><strong>Fill in when needed</strong> - Step up if the head coach is unavailable</li>
-						<li><strong>Build relationships</strong> - Connect with players and families</li>
-					</ul>
-					<p><strong>Time Commitment:</strong> 4-6 hours per week (practices + games)</p>
-					<p><strong>Perfect for:</strong> Parents new to coaching, former players, or anyone who loves working with kids</p>
-				</div>
-
-				<div class="role-section">
-					<h4>Team Manager</h4>
-					<p><strong>The organizer</strong> - handles logistics, communication, and administrative tasks so coaches can focus on the game.</p>
-					<ul>
-						<li><strong>Communication hub</strong> - Send practice/game reminders, coordinate schedules, manage team email list</li>
-						<li><strong>Organize team logistics</strong> - Snack schedules, team parties, photo day coordination</li>
-						<li><strong>Field preparation</strong> - Arrive early to set up equipment, organize dugout</li>
-						<li><strong>Scorekeeping & stats</strong> - Track game scores, submit results, maintain records</li>
-						<li><strong>Liaise with league</strong> - Communicate with division coordinators on team needs</li>
-						<li><strong>Fundraising support</strong> - Help coordinate team-level fundraising activities</li>
-					</ul>
-					<p><strong>Time Commitment:</strong> 3-5 hours per week (game attendance + communication/admin work)</p>
-					<p><strong>Perfect for:</strong> Organized parents, people who love logistics, anyone who wants to help without coaching</p>
-				</div>
+		<div class="role-section">
+			<p><strong>Explore specific team roles:</strong> Tap <em>Head Coach</em>, <em>Assistant Coach</em>, or <em>Team Manager</em> around the Team spoke to see expectations, time commitment, and training for each spot.</p>
+		</div>
 
 				<div class="role-section">
 					<h3>Why Volunteer at the Team Level?</h3>
@@ -617,9 +769,90 @@
 					</ul>
 				</div>
 
-				<label for="modal-team" class="modal-close">Close</label>
+		<label for="modal-team" class="modal-close">Close</label>
+		</div>
+	</label>
+
+	<!-- ====== MODAL 2a: HEAD COACH ====== -->
+	<input type="checkbox" id="modal-team-head" class="modal-trigger" />
+	<label for="modal-team-head" class="modal-overlay">
+		<div class="modal-content" onclick="event.stopPropagation();">
+			<div class="modal-header">
+				<h2 class="modal-title">
+					<span class="modal-icon">⚾</span>
+					Head Coach
+				</h2>
 			</div>
-		</label>
+			<div class="role-section">
+				<h3>Lead the dugout</h3>
+				<p><strong>The leader of the team</strong> – responsible for practices, game strategy, and player development.</p>
+				<ul>
+					<li><strong>Plan and run practices</strong> with fast-paced drills tailored to your roster</li>
+					<li><strong>Manage games</strong> – set lineups, make in-game moves, communicate with umps</li>
+					<li><strong>Develop players</strong> through consistent feedback and encouragement</li>
+					<li><strong>Shape culture</strong> – keep the dugout positive, inclusive, and focused on growth</li>
+					<li><strong>Coordinate volunteers</strong> – align assistant coaches and team managers</li>
+				</ul>
+				<p><strong>Time commitment:</strong> 6–8 hrs/week (two practices, games, planning)</p>
+				<p><strong>Training:</strong> Pre-season clinics, practice plans, and support from division coordinators</p>
+			</div>
+			<label for="modal-team-head" class="modal-close">Close</label>
+		</div>
+	</label>
+
+	<!-- ====== MODAL 2b: ASSISTANT COACH ====== -->
+	<input type="checkbox" id="modal-team-assistant" class="modal-trigger" />
+	<label for="modal-team-assistant" class="modal-overlay">
+		<div class="modal-content" onclick="event.stopPropagation();">
+			<div class="modal-header">
+				<h2 class="modal-title">
+					<span class="modal-icon">🤝</span>
+					Assistant Coach
+				</h2>
+			</div>
+			<div class="role-section">
+				<h3>Right-hand energy</h3>
+				<p><strong>The right hand</strong> – supports the head coach and works directly with players during practices and games.</p>
+				<ul>
+					<li><strong>Run practice stations</strong> and small-group instruction</li>
+					<li><strong>Coach during games</strong> – base coaching, dugout management, situational tips</li>
+					<li><strong>Focus on skills</strong> such as hitting, pitching, or catching</li>
+					<li><strong>Step up when needed</strong> if the head coach is unavailable</li>
+					<li><strong>Build relationships</strong> with players and parents</li>
+				</ul>
+				<p><strong>Time commitment:</strong> 4–6 hrs/week (practices + games)</p>
+				<p><strong>Perfect for:</strong> newer coaches, former players, or anyone who enjoys teaching fundamentals</p>
+			</div>
+			<label for="modal-team-assistant" class="modal-close">Close</label>
+		</div>
+	</label>
+
+	<!-- ====== MODAL 2c: TEAM MANAGER ====== -->
+	<input type="checkbox" id="modal-team-manager" class="modal-trigger" />
+	<label for="modal-team-manager" class="modal-overlay">
+		<div class="modal-content" onclick="event.stopPropagation();">
+			<div class="modal-header">
+				<h2 class="modal-title">
+					<span class="modal-icon">📋</span>
+					Team Manager
+				</h2>
+			</div>
+			<div class="role-section">
+				<h3>Logistics quarterback</h3>
+				<p><strong>The organizer</strong> – handles communication and logistics so coaches can focus on the field.</p>
+				<ul>
+					<li><strong>Communication hub</strong> – send reminders, coordinate schedules, manage the team list</li>
+					<li><strong>Organize logistics</strong> – snacks, photos, team parties, dugout prep</li>
+					<li><strong>Record keeping</strong> – scorebooks, results, volunteer hours</li>
+					<li><strong>Liaison</strong> – relay info between families and division coordinators</li>
+					<li><strong>Support fundraising</strong> or special events when needed</li>
+				</ul>
+				<p><strong>Time commitment:</strong> 3–5 hrs/week (games plus admin work)</p>
+				<p><strong>Perfect for:</strong> organized parents, logistics lovers, or anyone wanting to help off the field</p>
+			</div>
+			<label for="modal-team-manager" class="modal-close">Close</label>
+		</div>
+	</label>
 
 		<!-- ====== MODAL 3: LEAGUE LEVEL ====== -->
 		<input type="checkbox" id="modal-league" class="modal-trigger" />
@@ -696,20 +929,20 @@
 			</div>
 		</label>
 
-		<!-- ====== MODAL 4: AD-HOC ====== -->
+		<!-- ====== MODAL 4: POP-UP SUPPORT ====== -->
 		<input type="checkbox" id="modal-adhoc" class="modal-trigger" />
 		<label for="modal-adhoc" class="modal-overlay">
 			<div class="modal-content" onclick="event.stopPropagation();">
 				<div class="modal-header">
 					<h2 class="modal-title">
 						<span class="modal-icon">🙌</span>
-						Ad-hoc Volunteers
+						Pop-Up Support
 					</h2>
 				</div>
 
 				<div class="role-section">
-					<h3>Overview</h3>
-					<p>Can't commit to a season-long role? No problem! Ad-hoc volunteers are the flexible heroes who jump in when needed. Whether you have a free Saturday or want to help with a specific project, there's always a place for you.</p>
+			<h3>Overview</h3>
+			<p>Can't commit to a season-long role? No problem! Pop-Up Support volunteers are the flexible heroes who jump in when needed. Whether you have a free Saturday or want to help with a specific project, there's always a place for you.</p>
 				</div>
 
 				<div class="role-section">
@@ -766,8 +999,8 @@
 					</ol>
 				</div>
 
-				<div class="role-section">
-					<h3>Why Ad-hoc Volunteering Matters</h3>
+		<div class="role-section">
+			<h3>Why Pop-Up Support Matters</h3>
 					<ul>
 						<li>Every event creates lasting memories for kids</li>
 						<li>Well-maintained fields keep players safe and games on schedule</li>
