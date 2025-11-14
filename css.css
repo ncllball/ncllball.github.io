@@ -1939,9 +1939,8 @@ details.footies[open] summary::before {
 }
 
 .text-center {
-    text-align: center
+    text-align: center !important
 }
-
 /* End of utility styles section */
 /* ====== BEGIN Fee Coverage Page Styles (Registration/coverage.html) ====== */
 /* These styles are for the fee distribution pie chart and legend on the    "What Fees Cover" page. They were moved from the page's local <style>    block to the global stylesheet for better maintainability and reuse. */
