@@ -1828,6 +1828,14 @@ body:not(.cms-right) .only-on-right {
     width: fit-content
 }
 
+/* Contact page tables should remain left-aligned even with shared age-matrix styles */
+.contact-landing .age-matrix th,
+.contact-landing .age-matrix td,
+.contact-landing .age-matrix th:first-child,
+.contact-landing .age-matrix td:first-child {
+    text-align: left !important
+}
+
 .age-matrix td {
     color: var(--color_darkgray) !important;
     font-size: 0.9rem !important;
