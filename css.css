@@ -1814,6 +1814,7 @@ body:not(.cms-right) .only-on-right {
 
 .age-matrix thead th {
     border-bottom: 1pt solid var(--color_red);
+    border-top: 1pt solid var(--color_red);
     font-weight: 700;
     font-size: 0.9rem !important;
     text-align: center;
@@ -1940,6 +1941,7 @@ details.footies[open] summary::before {
 .text-center {
     text-align: center !important
 }
+
 /* End of utility styles section */
 /* ====== BEGIN Fee Coverage Page Styles (Registration/coverage.html) ====== */
 /* These styles are for the fee distribution pie chart and legend on the    "What Fees Cover" page. They were moved from the page's local <style>    block to the global stylesheet for better maintainability and reuse. */
@@ -2559,46 +2561,57 @@ details.footies[open] summary::before {
     box-sizing: border-box;
 
 }
+
 .ncll-card__graphic--xxlarge {
     width: 200px;
     height: auto;
 }
+
 .ncll-card__graphic--xlargest {
     width: 185px;
     height: auto;
 }
+
 .ncll-card__graphic--xlarger {
     width: 170px;
     height: auto;
 }
+
 .ncll-card__graphic--xlarge {
     width: 155px;
     height: auto;
 }
+
 .ncll-card__graphic--largest {
     width: 140px;
     height: auto;
 }
+
 .ncll-card__graphic--larger {
     width: 125px;
     height: auto;
 }
+
 .ncll-card__graphic--large {
     width: 110px;
     height: auto;
 }
+
 .ncll-card__graphic--medium {
     width: 95px;
     height: auto;
 }
+
 .ncll-card__graphic--small {
     width: 80px;
     height: auto;
 }
+
 .ncll-card__graphic--smaller {
     width: 65px;
     height: auto;
 }
+
 .ncll-card__graphic--smallest {
     width: 50px;
     height: auto;
@@ -2958,7 +2971,7 @@ details.footies[open] summary::before {
     line-height: 1.2
 }
 
-.ncll-micro + .ncll-micro {
+.ncll-micro+.ncll-micro {
     margin-top: 10px;
 }
 
@@ -3480,8 +3493,9 @@ details.footies[open] summary::before {
 .board-volunteers .age-matrix td {
     text-align: center;
 }
+
 .board-volunteers .division-header {
     text-align: center;
     padding: 5px 10px;
-    border-bottom: 1pt solid var(--color_red);
+    font-weight: 900;
 }
