@@ -3504,3 +3504,8 @@ details.footies[open] summary::before {
 .contact-landing .age-matrix td {
     text-align: center;
 }
+
+.fees-landing .age-matrix th,
+.fees-landing .age-matrix td {
+    text-align: center;
+}
