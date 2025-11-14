@@ -151,23 +151,23 @@
 		}
 
 		.spoke-node-1 {
-			top: calc(24% - 45px);
-			left: calc(30% - 45px);
+			top: calc(34% - 45px);
+			left: calc(37% - 45px);
 		}
 
 		.spoke-node-2 {
-			top: calc(24% - 45px);
-			left: calc(65% - 45px);
+			top: calc(34% - 45px);
+			left: calc(63% - 45px);
 		}
 
 		.spoke-node-3 {
-			top: calc(76% - 45px);
-			left: calc(30% - 45px);
+			top: calc(66% - 45px);
+			left: calc(37% - 45px);
 		}
 
 		.spoke-node-4 {
-			top: calc(76% - 45px);
-			left: calc(70% - 45px);
+			top: calc(66% - 45px);
+			left: calc(63% - 45px);
 		}
 
 		.spoke-node__content {
@@ -203,23 +203,23 @@
 		}
 
 		.team-focuses {
-			top: 24%;
-			left: 65%;
+			top: 34%;
+			left: 63%;
 		}
 
 		.ump-focuses {
-			top: 24%;
-			left: 30%;
+			top: 34%;
+			left: 37%;
 		}
 
 		.league-focuses {
-			top: 76%;
-			left: 30%;
+			top: 66%;
+			left: 37%;
 		}
 
 		.popup-focuses {
-			top: 76%;
-			left: 70%;
+			top: 66%;
+			left: 63%;
 		}
 
 		.team-focus,
@@ -254,7 +254,7 @@
 		.popup-focus {
 			--focus-size: 74px;
 			--focus-padding: 0.3rem;
-			--radius: 90px;
+			--radius: 95px;
 			box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
 		}
 
@@ -274,30 +274,39 @@
 		}
 
 		.ump-focus--field {
-			--angle: 130deg;
-			--radius: 105px;
+			--angle: 140deg;
+			--radius: 100px;
 		}
 
 		.ump-focus--chief {
-			--angle: 180deg;
-			--radius: 105px;
+			--angle: 200deg;
+			--radius: 100px;
 		}
 
 		.ump-focus--coordinator {
-			--angle: 230deg;
-			--radius: 105px;
+			--angle: 260deg;
+			--radius: 100px;
 		}
 
 		.league-focus--board {
-			--angle: 200deg;
-			--radius: 110px;
+			--angle: 190deg;
+			--radius: 100px;
 		}
 
 		.league-focus--keyvol {
-			--angle: 340deg;
-			--radius: 110px;
+			--angle: 135deg;
+			--radius: 100px;
 		}
 
+		.popup-focus--events {
+			--angle: -10deg;
+			--radius: 105px;
+		}
+
+		.popup-focus--grounds {
+			--angle: 45deg;
+			--radius: 100px;
+		}
 
 		.team-focus:hover,
 		.team-focus:focus-visible,
@@ -311,17 +320,6 @@
 			box-shadow: 0 16px 32px rgba(0, 1, 58, 0.25);
 			border-color: rgba(0, 1, 58, 0.35);
 		}
-
-
-	.popup-focus--events {
-		--angle: -15deg;
-		--radius: 100px;
-	}
-
-	.popup-focus--grounds {
-		--angle: 45deg;
-		--radius: 100px;
-	}
 
 
 		/* ====== Modal/Lightbox System ====== */
@@ -437,7 +435,7 @@
 
 			.hub-spoke-container {
 				min-height: 900px;
-				margin: 2rem auto;
+				margin: 1rem auto;
 			}
 
 			.hub-center {
@@ -532,12 +530,11 @@
 </head>
 
 <body>
-	<main class="volunteer-hub-container">
+	<main class="volunteer-hub-">
 		<!-- Introduction -->
-		<section class="hub-intro">
 		<h1>Volunteer Hub</h1>
 		<p>At North Central Little League, everything we do revolves around <strong>the kids</strong>. Our 800 families come together to create unforgettable experiences for young athletes. Whether you have 2 hours or 20, there's a way for you to make an impact. Explore the opportunities below and find your perfect fit.</p>
-		</section>
+
 
 		<!-- Hub and Spoke Diagram -->
 		<div class="hub-spoke-container">
@@ -551,10 +548,10 @@
 
 			<!-- Connecting Spokes -->
 			<svg class="hub-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-				<path class="hub-line" d="M50 50 C 44 38, 38 30, 30 24" />
-				<path class="hub-line" d="M50 50 C 58 38, 63 30, 65 24" />
-				<path class="hub-line" d="M50 50 C 44 62, 38 70, 30 76" />
-				<path class="hub-line" d="M50 50 C 56 62, 62 70, 70 76" />
+				<path class="hub-line" d="M50 50 C 45 43, 41 38, 37 34" />
+				<path class="hub-line" d="M50 50 C 55 43, 59 38, 63 34" />
+				<path class="hub-line" d="M50 50 C 45 57, 41 62, 37 66" />
+				<path class="hub-line" d="M50 50 C 55 57, 59 62, 63 66" />
 			</svg>
 
 			<!-- Spoke Node 1: Umpiring -->
