@@ -3499,3 +3499,8 @@ details.footies[open] summary::before {
     padding: 5px 10px;
     font-weight: 900;
 }
+
+.contact-landing .age-matrix th,
+.contact-landing .age-matrix td {
+    text-align: center;
+}
