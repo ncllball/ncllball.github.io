@@ -1863,6 +1863,13 @@ body:not(.cms-right) .only-on-right {
 
 
 
+/* Responsive table scroll */
+.table_section .table_age {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch
+}
+
 /* Table striping: even rows */
 table:not(.no-stripe)>tbody>tr:nth-child(even) {
     background: var(--table-row-alt)
