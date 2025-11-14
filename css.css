@@ -3476,3 +3476,8 @@ details.footies[open] summary::before {
     background-color: #fff;
     padding: 5px 10px;
 }
+
+.board-volunteers .age-matrix th,
+.board-volunteers .age-matrix td {
+    text-align: center;
+}
