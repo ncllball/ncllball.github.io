@@ -27,16 +27,25 @@
             <p>The badge should always be the first mark fans and families see when we introduce a new property.</p>
             <div class="logo-grid" aria-label="NCLL badge variations">
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/1.black.and.red.on.white.main.png"
-                        data-download="https://ncllball.github.io/images/logos/1.black.and.red.on.white.main.png"
-                        data-caption="Badge — primary version">
-                        <img src="https://ncllball.github.io/images/logos/1.black.and.red.on.white.main.png" alt="Badge on white background"
-                            loading="lazy" width="220" height="220" />
-                    </button>
-                    <figcaption>Badge — primary version &mdash; <a class="ncll"
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-badge-primary" />
+                    <label for="logo-badge-primary" class="logo-lightbox-trigger">
+                        <img src="https://ncllball.github.io/images/logos/1.black.and.red.on.white.main.png"
+                            alt="Badge on white background" loading="lazy" width="220" height="220" />
+                    </label>
+                    <figcaption id="logo-badge-primary-caption">Badge — primary version &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/1.black.and.red.on.white.main.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-badge-primary-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-badge-primary" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-badge-primary" class="logo-lightbox-close" aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/1.black.and.red.on.white.main.png"
+                                alt="Badge — primary version" />
+                            <p><a class="ncll" href="https://ncllball.github.io/images/logos/1.black.and.red.on.white.main.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
             </div>
         </section>
@@ -48,52 +57,93 @@
             <p>Keep adequate padding around the clover and avoid stretching or modifying the proportions.</p>
             <div class="logo-grid" aria-label="Primary NC clover variations">
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/3.black.on.white.and.red.cloverleaf.png"
-                        data-download="https://ncllball.github.io/images/logos/3.black.on.white.and.red.cloverleaf.png"
-                        data-caption="Black on white + red">
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-clover-black-red" />
+                    <label for="logo-clover-black-red" class="logo-lightbox-trigger">
                         <img src="https://ncllball.github.io/images/logos/3.black.on.white.and.red.cloverleaf.png"
                             alt="Clover mark on white with red outline" loading="lazy" width="220" height="220" />
-                    </button>
-                    <figcaption>Black on white + red &mdash; <a class="ncll"
+                    </label>
+                    <figcaption id="logo-clover-black-red-caption">Black on white + red &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/3.black.on.white.and.red.cloverleaf.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-clover-black-red-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-clover-black-red" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-clover-black-red" class="logo-lightbox-close" aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/3.black.on.white.and.red.cloverleaf.png"
+                                alt="Black on white + red clover logo" />
+                            <p><a class="ncll" href="https://ncllball.github.io/images/logos/3.black.on.white.and.red.cloverleaf.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/3.black.on.white.and.white.cloverleaf.png"
-                        data-download="https://ncllball.github.io/images/logos/3.black.on.white.and.white.cloverleaf.png"
-                        data-caption="Black on white">
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-clover-black-white" />
+                    <label for="logo-clover-black-white" class="logo-lightbox-trigger">
                         <img src="https://ncllball.github.io/images/logos/3.black.on.white.and.white.cloverleaf.png"
                             alt="Clover mark on white" loading="lazy" width="220" height="220" />
-                    </button>
-                    <figcaption>Black on white &mdash; <a class="ncll"
+                    </label>
+                    <figcaption id="logo-clover-black-white-caption">Black on white &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/3.black.on.white.and.white.cloverleaf.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-clover-black-white-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-clover-black-white" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-clover-black-white" class="logo-lightbox-close"
+                                aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/3.black.on.white.and.white.cloverleaf.png"
+                                alt="Black on white clover logo" />
+                            <p><a class="ncll"
+                                    href="https://ncllball.github.io/images/logos/3.black.on.white.and.white.cloverleaf.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/3.white.on.black.and.red.cloverleaf.png"
-                        data-download="https://ncllball.github.io/images/logos/3.white.on.black.and.red.cloverleaf.png"
-                        data-caption="White on black + red">
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-clover-white-red" />
+                    <label for="logo-clover-white-red" class="logo-lightbox-trigger">
                         <img src="https://ncllball.github.io/images/logos/3.white.on.black.and.red.cloverleaf.png"
                             alt="White clover on black with red outline" loading="lazy" width="220" height="220" />
-                    </button>
-                    <figcaption>White on black + red &mdash; <a class="ncll"
+                    </label>
+                    <figcaption id="logo-clover-white-red-caption">White on black + red &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/3.white.on.black.and.red.cloverleaf.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-clover-white-red-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-clover-white-red" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-clover-white-red" class="logo-lightbox-close" aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/3.white.on.black.and.red.cloverleaf.png"
+                                alt="White on black + red clover logo" />
+                            <p><a class="ncll"
+                                    href="https://ncllball.github.io/images/logos/3.white.on.black.and.red.cloverleaf.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/3.white.on.black.and.white.cloverleaf.png"
-                        data-download="https://ncllball.github.io/images/logos/3.white.on.black.and.white.cloverleaf.png"
-                        data-caption="White on black">
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-clover-white-black" />
+                    <label for="logo-clover-white-black" class="logo-lightbox-trigger">
                         <img src="https://ncllball.github.io/images/logos/3.white.on.black.and.white.cloverleaf.png"
                             alt="White clover on black" loading="lazy" width="220" height="220" />
-                    </button>
-                    <figcaption>White on black &mdash; <a class="ncll"
+                    </label>
+                    <figcaption id="logo-clover-white-black-caption">White on black &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/3.white.on.black.and.white.cloverleaf.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-clover-white-black-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-clover-white-black" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-clover-white-black" class="logo-lightbox-close"
+                                aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/3.white.on.black.and.white.cloverleaf.png"
+                                alt="White on black clover logo" />
+                            <p><a class="ncll"
+                                    href="https://ncllball.github.io/images/logos/3.white.on.black.and.white.cloverleaf.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
             </div>
         </section>
@@ -104,64 +154,112 @@
                 on apparel, banners, or situations where text clarity is essential (e.g., sponsor decks, signage).</p>
             <div class="logo-grid" aria-label="Secondary wordmark variations">
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/2.black.and.red.on.white.png"
-                        data-download="https://ncllball.github.io/images/logos/2.black.and.red.on.white.png"
-                        data-caption="Black/red on white">
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-wordmark-black-red" />
+                    <label for="logo-wordmark-black-red" class="logo-lightbox-trigger">
                         <img src="https://ncllball.github.io/images/logos/2.black.and.red.on.white.png"
                             alt="Wordmark black and red on white" loading="lazy" width="220" height="120" />
-                    </button>
-                    <figcaption>Black/red on white &mdash; <a class="ncll"
+                    </label>
+                    <figcaption id="logo-wordmark-black-red-caption">Black/red on white &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/2.black.and.red.on.white.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-wordmark-black-red-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-wordmark-black-red" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-wordmark-black-red" class="logo-lightbox-close"
+                                aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/2.black.and.red.on.white.png"
+                                alt="Black/red on white wordmark" />
+                            <p><a class="ncll" href="https://ncllball.github.io/images/logos/2.black.and.red.on.white.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/2.black.on.white.png"
-                        data-download="https://ncllball.github.io/images/logos/2.black.on.white.png"
-                        data-caption="Black on white">
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-wordmark-black" />
+                    <label for="logo-wordmark-black" class="logo-lightbox-trigger">
                         <img src="https://ncllball.github.io/images/logos/2.black.on.white.png" alt="Wordmark black on white"
                             loading="lazy" width="220" height="120" />
-                    </button>
-                    <figcaption>Black on white &mdash; <a class="ncll"
+                    </label>
+                    <figcaption id="logo-wordmark-black-caption">Black on white &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/2.black.on.white.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-wordmark-black-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-wordmark-black" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-wordmark-black" class="logo-lightbox-close" aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/2.black.on.white.png"
+                                alt="Black on white wordmark" />
+                            <p><a class="ncll" href="https://ncllball.github.io/images/logos/2.black.on.white.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/2.red.and.black.on.white.png"
-                        data-download="https://ncllball.github.io/images/logos/2.red.and.black.on.white.png"
-                        data-caption="Red &amp; black on white">
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-wordmark-red-black" />
+                    <label for="logo-wordmark-red-black" class="logo-lightbox-trigger">
                         <img src="https://ncllball.github.io/images/logos/2.red.and.black.on.white.png"
                             alt="Wordmark red and black on white" loading="lazy" width="220" height="120" />
-                    </button>
-                    <figcaption>Red &amp; black on white &mdash; <a class="ncll"
+                    </label>
+                    <figcaption id="logo-wordmark-red-black-caption">Red &amp; black on white &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/2.red.and.black.on.white.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-wordmark-red-black-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-wordmark-red-black" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-wordmark-red-black" class="logo-lightbox-close"
+                                aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/2.red.and.black.on.white.png"
+                                alt="Red &amp; black on white wordmark" />
+                            <p><a class="ncll" href="https://ncllball.github.io/images/logos/2.red.and.black.on.white.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/2.white.and.red.on.black.png"
-                        data-download="https://ncllball.github.io/images/logos/2.white.and.red.on.black.png"
-                        data-caption="White &amp; red on black">
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-wordmark-white-red" />
+                    <label for="logo-wordmark-white-red" class="logo-lightbox-trigger">
                         <img src="https://ncllball.github.io/images/logos/2.white.and.red.on.black.png"
                             alt="Wordmark white and red on black" loading="lazy" width="220" height="120" />
-                    </button>
-                    <figcaption>White &amp; red on black &mdash; <a class="ncll"
+                    </label>
+                    <figcaption id="logo-wordmark-white-red-caption">White &amp; red on black &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/2.white.and.red.on.black.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-wordmark-white-red-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-wordmark-white-red" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-wordmark-white-red" class="logo-lightbox-close"
+                                aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/2.white.and.red.on.black.png"
+                                alt="White &amp; red on black wordmark" />
+                            <p><a class="ncll" href="https://ncllball.github.io/images/logos/2.white.and.red.on.black.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/2.white.on.black.png"
-                        data-download="https://ncllball.github.io/images/logos/2.white.on.black.png"
-                        data-caption="White on black">
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-wordmark-white" />
+                    <label for="logo-wordmark-white" class="logo-lightbox-trigger">
                         <img src="https://ncllball.github.io/images/logos/2.white.on.black.png" alt="Wordmark white on black"
                             loading="lazy" width="220" height="120" />
-                    </button>
-                    <figcaption>White on black &mdash; <a class="ncll"
+                    </label>
+                    <figcaption id="logo-wordmark-white-caption">White on black &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/2.white.on.black.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-wordmark-white-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-wordmark-white" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-wordmark-white" class="logo-lightbox-close" aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/2.white.on.black.png"
+                                alt="White on black wordmark" />
+                            <p><a class="ncll" href="https://ncllball.github.io/images/logos/2.white.on.black.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
             </div>
         </section>
@@ -172,52 +270,91 @@
                 difficult to reproduce. Think helmets, equipment decals, or budget-conscious merch runs.</p>
             <div class="logo-grid" aria-label="Flat logo variations">
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/4.black.and.red.on.white.png"
-                        data-download="https://ncllball.github.io/images/logos/4.black.and.red.on.white.png"
-                        data-caption="Black/red on white (flat)">
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-flat-black-red" />
+                    <label for="logo-flat-black-red" class="logo-lightbox-trigger">
                         <img src="https://ncllball.github.io/images/logos/4.black.and.red.on.white.png"
                             alt="Flat logo black and red on white" loading="lazy" width="220" height="160" />
-                    </button>
-                    <figcaption>Black/red on white &mdash; <a class="ncll"
+                    </label>
+                    <figcaption id="logo-flat-black-red-caption">Black/red on white &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/4.black.and.red.on.white.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-flat-black-red-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-flat-black-red" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-flat-black-red" class="logo-lightbox-close" aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/4.black.and.red.on.white.png"
+                                alt="Black/red on white flat logo" />
+                            <p><a class="ncll" href="https://ncllball.github.io/images/logos/4.black.and.red.on.white.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/4.white.on.black.png"
-                        data-download="https://ncllball.github.io/images/logos/4.white.on.black.png"
-                        data-caption="White on black (flat)">
-                        <img src="https://ncllball.github.io/images/logos/4.white.on.black.png" alt="Flat logo white on black"
-                            loading="lazy" width="220" height="160" />
-                    </button>
-                    <figcaption>White on black &mdash; <a class="ncll"
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-flat-white-black" />
+                    <label for="logo-flat-white-black" class="logo-lightbox-trigger">
+                        <img src="https://ncllball.github.io/images/logos/4.white.on.black.png"
+                            alt="Flat logo white on black" loading="lazy" width="220" height="160" />
+                    </label>
+                    <figcaption id="logo-flat-white-black-caption">White on black &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/4.white.on.black.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-flat-white-black-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-flat-white-black" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-flat-white-black" class="logo-lightbox-close"
+                                aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/4.white.on.black.png"
+                                alt="White on black flat logo" />
+                            <p><a class="ncll" href="https://ncllball.github.io/images/logos/4.white.on.black.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/4.black.on.white.png"
-                        data-download="https://ncllball.github.io/images/logos/4.black.on.white.png"
-                        data-caption="Black on white (flat)">
-                        <img src="https://ncllball.github.io/images/logos/4.black.on.white.png" alt="Flat logo black on white"
-                            loading="lazy" width="220" height="160" />
-                    </button>
-                    <figcaption>Black on white &mdash; <a class="ncll"
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-flat-black-white" />
+                    <label for="logo-flat-black-white" class="logo-lightbox-trigger">
+                        <img src="https://ncllball.github.io/images/logos/4.black.on.white.png"
+                            alt="Flat logo black on white" loading="lazy" width="220" height="160" />
+                    </label>
+                    <figcaption id="logo-flat-black-white-caption">Black on white &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/4.black.on.white.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-flat-black-white-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-flat-black-white" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-flat-black-white" class="logo-lightbox-close"
+                                aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/4.black.on.white.png"
+                                alt="Black on white flat logo" />
+                            <p><a class="ncll" href="https://ncllball.github.io/images/logos/4.black.on.white.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
                 <figure>
-                    <button type="button" class="logo-lightbox-trigger"
-                        data-image="https://ncllball.github.io/images/logos/4.white.and.red.on.black.png"
-                        data-download="https://ncllball.github.io/images/logos/4.white.and.red.on.black.png"
-                        data-caption="White/red on black (flat)">
+                    <input type="checkbox" class="logo-lightbox-toggle" id="logo-flat-white-red" />
+                    <label for="logo-flat-white-red" class="logo-lightbox-trigger">
                         <img src="https://ncllball.github.io/images/logos/4.white.and.red.on.black.png"
                             alt="Flat logo white and red on black" loading="lazy" width="220" height="160" />
-                    </button>
-                    <figcaption>White/red on black &mdash; <a class="ncll"
+                    </label>
+                    <figcaption id="logo-flat-white-red-caption">White/red on black &mdash; <a class="ncll"
                             href="https://ncllball.github.io/images/logos/4.white.and.red.on.black.png"
                             target="_blank" rel="noopener noreferrer">Download PNG</a></figcaption>
+                    <div class="logo-lightbox-panel" role="dialog" aria-modal="true"
+                        aria-labelledby="logo-flat-white-red-caption">
+                        <label class="logo-lightbox-backdrop" for="logo-flat-white-red" aria-hidden="true"></label>
+                        <div class="logo-lightbox-inner">
+                            <label for="logo-flat-white-red" class="logo-lightbox-close" aria-label="Close">&times;</label>
+                            <img src="https://ncllball.github.io/images/logos/4.white.and.red.on.black.png"
+                                alt="White/red on black flat logo" />
+                            <p><a class="ncll"
+                                    href="https://ncllball.github.io/images/logos/4.white.and.red.on.black.png"
+                                    target="_blank" rel="noopener noreferrer">Download PNG</a></p>
+                        </div>
+                    </div>
                 </figure>
             </div>
         </section>
@@ -246,72 +383,7 @@
                 <li>Giveaways and contests on social media highlighting new merch drops.</li>
             </ul>
         </section>
-
-        <div class="logo-lightbox-overlay" aria-hidden="true" role="dialog" aria-modal="true">
-            <button class="logo-lightbox-close" type="button" aria-label="Close logo preview">&times;</button>
-            <img src="" alt="" />
-            <p class="logo-lightbox-caption"></p>
-            <p class="logo-lightbox-download"><a href="#" target="_blank" rel="noopener noreferrer">Open original</a></p>
-        </div>
     </main>
-    <script>
-        (() => {
-            const overlay = document.querySelector('.logo-lightbox-overlay');
-            if (!overlay) return;
-
-            const overlayImg = overlay.querySelector('img');
-            const overlayCaption = overlay.querySelector('.logo-lightbox-caption');
-            const overlayLink = overlay.querySelector('.logo-lightbox-download a');
-            const closeBtn = overlay.querySelector('.logo-lightbox-close');
-            let lastTrigger = null;
-
-            const openLightbox = ({ image, caption, download }) => {
-                overlayImg.src = image;
-                overlayImg.alt = caption || '';
-                overlayCaption.textContent = caption || '';
-                overlayLink.href = download || image;
-                overlay.setAttribute('aria-hidden', 'false');
-                overlay.classList.add('is-open');
-                closeBtn.focus();
-            };
-
-            const closeLightbox = () => {
-                overlay.classList.remove('is-open');
-                overlay.setAttribute('aria-hidden', 'true');
-                overlayImg.removeAttribute('src');
-                overlayCaption.textContent = '';
-                overlayLink.href = '#';
-                if (lastTrigger) {
-                    lastTrigger.focus();
-                }
-            };
-
-            document.querySelectorAll('.logo-lightbox-trigger').forEach((trigger) => {
-                trigger.addEventListener('click', () => {
-                    lastTrigger = trigger;
-                    openLightbox({
-                        image: trigger.dataset.image,
-                        caption: trigger.dataset.caption,
-                        download: trigger.dataset.download
-                    });
-                });
-            });
-
-            closeBtn.addEventListener('click', closeLightbox);
-
-            overlay.addEventListener('click', (event) => {
-                if (event.target === overlay) {
-                    closeLightbox();
-                }
-            });
-
-            document.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape' && overlay.classList.contains('is-open')) {
-                    closeLightbox();
-                }
-            });
-        })();
-    </script>
 </body>
 
 </html>
