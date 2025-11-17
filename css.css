@@ -2278,6 +2278,11 @@ details.footies[open] summary::before {
     font-weight: 600
 }
 
+.logo-lightbox-image {
+    display: block;
+    cursor: pointer
+}
+
 .logo-lightbox-close {
     position: absolute;
     top: -12px;
