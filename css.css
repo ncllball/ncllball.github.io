@@ -2218,69 +2218,80 @@ details.footies[open] summary::before {
     color: var(--color_darkgray)
 }
 
-.logo-lightbox-overlay {
+.logo-lightbox-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none
+}
+
+.logo-lightbox-panel {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.85);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
     padding: 20px;
-    z-index: 10000;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 10000;
     transition: opacity 220ms ease, visibility 220ms ease
 }
 
-.logo-lightbox-overlay.is-open {
+.logo-lightbox-toggle:checked ~ .logo-lightbox-panel {
     opacity: 1;
     visibility: visible;
     pointer-events: auto
 }
 
-.logo-lightbox-overlay img {
-    max-width: min(960px, 92vw);
-    max-height: 70vh;
-    width: auto;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+.logo-lightbox-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer
+}
+
+.logo-lightbox-inner {
+    position: relative;
     background: #fff;
-    padding: 10px
-}
-
-.logo-lightbox-caption,
-.logo-lightbox-download {
-    color: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    max-width: min(960px, 90vw);
+    width: 100%;
     text-align: center;
-    max-width: 600px
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35)
 }
 
-.logo-lightbox-download a {
-    color: #fff;
-    text-decoration: underline;
+.logo-lightbox-inner img {
+    width: 100%;
+    height: auto;
+    max-height: min(70vh, 520px);
+    object-fit: contain
+}
+
+.logo-lightbox-inner p {
+    margin-top: 12px
+}
+
+.logo-lightbox-inner a {
     font-weight: 600
 }
 
 .logo-lightbox-close {
     position: absolute;
-    top: 24px;
-    right: 24px;
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: #fff;
-    font-size: 2rem;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 1.5rem;
     line-height: 1;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--color_black);
+    padding: 2px 8px;
+    border-radius: 6px
 }
 
 .logo-lightbox-close:focus-visible {
-    outline: 2px solid #fff;
+    outline: 2px solid var(--color_blue);
     outline-offset: 4px
 }
 
