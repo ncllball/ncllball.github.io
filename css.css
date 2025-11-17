@@ -2248,7 +2248,8 @@ details.footies[open] summary::before {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.8);
-    cursor: pointer
+    cursor: pointer;
+    display: block
 }
 
 .logo-lightbox-inner {
@@ -2279,20 +2280,21 @@ details.footies[open] summary::before {
 
 .logo-lightbox-close {
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: -12px;
+    right: -12px;
     cursor: pointer;
     font-size: 1.5rem;
     line-height: 1;
-    background: rgba(0, 0, 0, 0.1);
-    color: var(--color_black);
-    padding: 2px 8px;
-    border-radius: 6px
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4)
 }
 
 .logo-lightbox-close:focus-visible {
-    outline: 2px solid var(--color_blue);
-    outline-offset: 4px
+    outline: 2px solid #fff;
+    outline-offset: 3px
 }
 
 /* Horizontal table helper for full-width, non-wrapping table layouts */
