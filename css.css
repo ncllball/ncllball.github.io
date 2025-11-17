@@ -2218,6 +2218,12 @@ details.footies[open] summary::before {
     color: var(--color_darkgray)
 }
 
+.logo-lightbox-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none
+}
+
 .logo-lightbox-panel {
     position: fixed;
     inset: 0;
@@ -2232,7 +2238,7 @@ details.footies[open] summary::before {
     transition: opacity 220ms ease, visibility 220ms ease
 }
 
-.logo-lightbox-panel:target {
+.logo-lightbox-toggle:checked~.logo-lightbox-panel {
     opacity: 1;
     visibility: visible;
     pointer-events: auto
