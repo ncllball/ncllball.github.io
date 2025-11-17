@@ -2177,14 +2177,17 @@ details.footies[open] summary::before {
 /* Logo gallery on About/logo.html */
 .logo-landing .logo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 16px;
-    margin: 20px 0
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin: 20px 0;
+    justify-items: center
 }
 
 .logo-landing figure {
     margin: 0;
-    text-align: center
+    text-align: center;
+    width: 100%;
+    max-width: 260px
 }
 
 .logo-landing .logo-lightbox-trigger {
