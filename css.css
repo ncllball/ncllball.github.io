@@ -1833,7 +1833,13 @@ body:not(.cms-right) .only-on-right {
 .contact-landing .age-matrix td,
 .contact-landing .age-matrix th:first-child,
 .contact-landing .age-matrix td:first-child {
-    text-align: left !important
+    text-align: left !important;
+    width: 35%
+}
+
+.contact-landing .age-matrix th:nth-child(2),
+.contact-landing .age-matrix td:nth-child(2) {
+    width: 65%
 }
 
 .age-matrix td {
