@@ -470,6 +470,11 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     }
 }
 
+.board-volunteers tr.open-position td {
+    background: rgba(205, 22, 63, 0.12);
+    font-weight: 600
+}
+
 /* Volunteer Lite cards styling */
 .volunteer-lite-list {
     display: flex;
@@ -3676,7 +3681,4 @@ details.footies[open] summary::before {
 .fees-landing .age-matrix th,
 .fees-landing .age-matrix td {
     text-align: center;
-}
-.open-positions {
-
 }
