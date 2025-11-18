@@ -3683,11 +3683,6 @@ details.footies[open] summary::before {
     padding: 5px 10px;
 }
 
-.board-volunteers .age-matrix th,
-.board-volunteers .age-matrix td {
-    text-align: center;
-}
-
 .board-volunteers .division-header {
     text-align: center;
     padding: 5px 10px;
