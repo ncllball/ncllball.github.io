@@ -488,6 +488,21 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     text-align: center;
 }
 
+.board-volunteers .age-matrix th:nth-child(1),
+.board-volunteers .age-matrix td:nth-child(1) {
+    width: 28%;
+}
+
+.board-volunteers .age-matrix th:nth-child(2),
+.board-volunteers .age-matrix td:nth-child(2) {
+    width: 32%;
+}
+
+.board-volunteers .age-matrix th:nth-child(3),
+.board-volunteers .age-matrix td:nth-child(3) {
+    width: 40%;
+}
+
 .board-volunteers .badge-open {
     display: inline-block;
     margin-left: 8px;
