@@ -3691,6 +3691,8 @@ details.footies[open] summary::before {
     text-align: center;
     padding: 5px 10px;
     font-weight: 900;
+    background: var(--color_darkgray);
+    color: #fff;
 }
 
 .contact-landing .age-matrix th,
