@@ -471,7 +471,8 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 }
 
 .board-volunteers tr.open-position td {
-    background: rgba(205, 22, 63, 0.12);
+    background: rgba(25, 25, 35, 0.9);
+    color: #fff;
     font-weight: 600
 }
 
