@@ -483,6 +483,11 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     background: var(--color_white);
 }
 
+.board-volunteers .age-matrix th,
+.board-volunteers .age-matrix td {
+    text-align: center;
+}
+
 .board-volunteers .badge-open {
     display: inline-block;
     margin-left: 8px;
