@@ -474,7 +474,6 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     background: var(--color_surface_lighter);
     color: var(--color_text);
     font-weight: 600;
-    transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
 }
 
 .board-volunteers tr.open-position:hover td,
