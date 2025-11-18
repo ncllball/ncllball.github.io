@@ -454,6 +454,22 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     float: right
 }
 
+.media-float-right {
+    float: right;
+    width: clamp(180px, 30%, 260px);
+    height: auto;
+    margin: 0 0 10px 20px
+}
+
+@media (max-width: 640px) {
+    .media-float-right {
+        float: none;
+        display: block;
+        width: min(260px, 90%);
+        margin: 0 auto 16px auto
+    }
+}
+
 /* Volunteer Lite cards styling */
 .volunteer-lite-list {
     display: flex;
