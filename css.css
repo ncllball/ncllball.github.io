@@ -3689,10 +3689,9 @@ details.footies[open] summary::before {
 
 .board-volunteers .division-header {
     text-align: center;
-    padding: 5px 10px;
-    font-weight: 900;
+    font-weight: 600;
     background: var(--color_darkgray);
-    color: #fff;
+    color: #fff !important;
 }
 
 .contact-landing .age-matrix th,
