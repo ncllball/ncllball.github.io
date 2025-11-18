@@ -471,24 +471,18 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 }
 
 .board-volunteers tr.open-position td {
-    background: rgba(25, 25, 35, 0.9);
-    color: #fff;
-    font-weight: 600
-}
-
-.board-volunteers tr.open-bar td {
-    border-left: 6px solid var(--color_red);
     background: var(--color_surface_lighter);
     color: var(--color_text);
+    font-weight: 600;
+    border-left: 4px solid var(--color_red);
+    transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
 }
 
-.board-volunteers tr.open-icon .info-icon {
-    margin-right: 6px;
-}
-
-.board-volunteers tr.open-stripe td {
-    background-image: repeating-linear-gradient(135deg, rgba(205, 22, 63, 0.15), rgba(205, 22, 63, 0.15) 8px, rgba(205, 22, 63, 0.08) 8px, rgba(205, 22, 63, 0.08) 16px);
-    color: var(--color_text);
+.board-volunteers tr.open-position:hover td,
+.board-volunteers tr.open-position:focus-within td {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.14);
+    background: var(--color_white);
 }
 
 .board-volunteers .badge-open {
@@ -496,19 +490,11 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     margin-left: 8px;
     background: var(--color_red);
     color: #fff !important;
-    padding: 2px 10px;
+    padding: 3px 12px;
     border-radius: 999px;
-    font-size: 0.75rem;
-}
-
-.board-volunteers tr.open-hover td {
-    transition: transform 120ms ease, box-shadow 120ms ease;
-}
-
-.board-volunteers tr.open-hover:hover td,
-.board-volunteers tr.open-hover:focus-within td {
-    transform: scale(1.01);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* Volunteer Lite cards styling */
