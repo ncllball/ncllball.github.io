@@ -2270,6 +2270,10 @@ details.footies[open] summary::before {
     outline-offset: 4px
 }
 
+.history-landing .logo-landing {
+    margin-top: 20px;
+}
+
 .logo-landing .logo-lightbox-trigger img {
     width: 100%;
     max-width: 200px;
