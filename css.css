@@ -3717,3 +3717,16 @@ details.footies[open] summary::before {
 .fees-landing .age-matrix td {
     text-align: center;
 }
+
+/* CMS-right logo page list alignment */
+.cms-right .timeline-list,
+.cms-right .outcomes-list {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.cms-right .timeline-list li,
+.cms-right .outcomes-list li {
+    margin-bottom: .6em;
+}
