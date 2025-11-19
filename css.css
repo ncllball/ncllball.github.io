@@ -2331,7 +2331,8 @@ details.footies[open] summary::before {
 .carousel input[type="radio"]:nth-of-type(6):checked ~ .carousel-images .img6,
 .carousel input[type="radio"]:nth-of-type(7):checked ~ .carousel-images .img7,
 .carousel input[type="radio"]:nth-of-type(8):checked ~ .carousel-images .img8,
-.carousel input[type="radio"]:nth-of-type(9):checked ~ .carousel-images .img9 {
+.carousel input[type="radio"]:nth-of-type(9):checked ~ .carousel-images .img9,
+.carousel input[type="radio"]:nth-of-type(10):checked ~ .carousel-images .img10 {
     opacity: 1;
     z-index: 1;
 }
@@ -2378,7 +2379,8 @@ details.footies[open] summary::before {
 .carousel input[type="radio"]:nth-of-type(6):checked ~ .carousel-controls label[for*="6"],
 .carousel input[type="radio"]:nth-of-type(7):checked ~ .carousel-controls label[for*="7"],
 .carousel input[type="radio"]:nth-of-type(8):checked ~ .carousel-controls label[for*="8"],
-.carousel input[type="radio"]:nth-of-type(9):checked ~ .carousel-controls label[for*="9"] {
+.carousel input[type="radio"]:nth-of-type(9):checked ~ .carousel-controls label[for*="9"],
+.carousel input[type="radio"]:nth-of-type(10):checked ~ .carousel-controls label[for*="10"] {
     background: var(--color_text);
 }
 
@@ -2390,7 +2392,8 @@ details.footies[open] summary::before {
 .carousel input[type="radio"]:nth-of-type(6):checked ~ .carousel-caption-container .caption6,
 .carousel input[type="radio"]:nth-of-type(7):checked ~ .carousel-caption-container .caption7,
 .carousel input[type="radio"]:nth-of-type(8):checked ~ .carousel-caption-container .caption8,
-.carousel input[type="radio"]:nth-of-type(9):checked ~ .carousel-caption-container .caption9 {
+.carousel input[type="radio"]:nth-of-type(9):checked ~ .carousel-caption-container .caption9,
+.carousel input[type="radio"]:nth-of-type(10):checked ~ .carousel-caption-container .caption10 {
     display: block;
 }
 
