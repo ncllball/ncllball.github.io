@@ -3546,6 +3546,7 @@ details.footies[open] summary::before {
     right: 0;
     z-index: 10;
     background: var(--stripe-tight-red-micro-quad);
+    background-color: white;
     border-bottom: 1px solid var(--color_border_light);
     margin-bottom: 1rem;
     align-items: center;
