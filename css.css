@@ -698,7 +698,7 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
 }
 
 /* =========================    BEGIN CMS OVERRIDES (SportsConnect embeds)    These rules hide or adjust elements injected by the SportsConnect CMS    to ensure visual consistency with the NCLL site.     Only applies to embedded registration and CMS content.    ========================= */
-.skAddBanner, .skRightTabs, .skTabHeading, .skCaption {
+/* .skAddBanner, .skRightTabs, .skTabHeading, .skCaption {
     display: none !important
 }
 
