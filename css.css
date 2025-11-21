@@ -704,7 +704,16 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
 #onetrust-consent-sdk {
     display: none !important;
 }
+
+.skTabsWrapper {
+    display: table-cell;
+    width: calc(100% - 32px);
+    background: var(--color_white);
+    vertical-align: top;
+    padding: 0 0px 0 0
+}
     */
+
 .skNav a {
     text-transform: capitalize !important;
 }
@@ -723,14 +732,6 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
 
 #dnnStandardMenu .subMenuItem {
     word-break: keep-all !important;
-}
-
-.skTabsWrapper {
-    display: table-cell;
-    width: calc(100% - 32px);
-    background: var(--color_white);
-    vertical-align: top;
-    padding: 0 0px 0 0
 }
 
 .skSponsor h2 {
@@ -2334,16 +2335,16 @@ details.footies[open] summary::before {
 }
 
 /* Show active carousel images using the order of radios in the carousel */
-.carousel input[type="radio"]:nth-of-type(1):checked ~ .carousel-images .img1,
-.carousel input[type="radio"]:nth-of-type(2):checked ~ .carousel-images .img2,
-.carousel input[type="radio"]:nth-of-type(3):checked ~ .carousel-images .img3,
-.carousel input[type="radio"]:nth-of-type(4):checked ~ .carousel-images .img4,
-.carousel input[type="radio"]:nth-of-type(5):checked ~ .carousel-images .img5,
-.carousel input[type="radio"]:nth-of-type(6):checked ~ .carousel-images .img6,
-.carousel input[type="radio"]:nth-of-type(7):checked ~ .carousel-images .img7,
-.carousel input[type="radio"]:nth-of-type(8):checked ~ .carousel-images .img8,
-.carousel input[type="radio"]:nth-of-type(9):checked ~ .carousel-images .img9,
-.carousel input[type="radio"]:nth-of-type(10):checked ~ .carousel-images .img10 {
+.carousel input[type="radio"]:nth-of-type(1):checked~.carousel-images .img1,
+.carousel input[type="radio"]:nth-of-type(2):checked~.carousel-images .img2,
+.carousel input[type="radio"]:nth-of-type(3):checked~.carousel-images .img3,
+.carousel input[type="radio"]:nth-of-type(4):checked~.carousel-images .img4,
+.carousel input[type="radio"]:nth-of-type(5):checked~.carousel-images .img5,
+.carousel input[type="radio"]:nth-of-type(6):checked~.carousel-images .img6,
+.carousel input[type="radio"]:nth-of-type(7):checked~.carousel-images .img7,
+.carousel input[type="radio"]:nth-of-type(8):checked~.carousel-images .img8,
+.carousel input[type="radio"]:nth-of-type(9):checked~.carousel-images .img9,
+.carousel input[type="radio"]:nth-of-type(10):checked~.carousel-images .img10 {
     opacity: 1;
     z-index: 1;
 }
@@ -2382,29 +2383,29 @@ details.footies[open] summary::before {
     transition: background 0.3s;
 }
 
-.carousel input[type="radio"]:nth-of-type(1):checked ~ .carousel-controls label[for*="1"],
-.carousel input[type="radio"]:nth-of-type(2):checked ~ .carousel-controls label[for*="2"],
-.carousel input[type="radio"]:nth-of-type(3):checked ~ .carousel-controls label[for*="3"],
-.carousel input[type="radio"]:nth-of-type(4):checked ~ .carousel-controls label[for*="4"],
-.carousel input[type="radio"]:nth-of-type(5):checked ~ .carousel-controls label[for*="5"],
-.carousel input[type="radio"]:nth-of-type(6):checked ~ .carousel-controls label[for*="6"],
-.carousel input[type="radio"]:nth-of-type(7):checked ~ .carousel-controls label[for*="7"],
-.carousel input[type="radio"]:nth-of-type(8):checked ~ .carousel-controls label[for*="8"],
-.carousel input[type="radio"]:nth-of-type(9):checked ~ .carousel-controls label[for*="9"],
-.carousel input[type="radio"]:nth-of-type(10):checked ~ .carousel-controls label[for*="10"] {
+.carousel input[type="radio"]:nth-of-type(1):checked~.carousel-controls label[for*="1"],
+.carousel input[type="radio"]:nth-of-type(2):checked~.carousel-controls label[for*="2"],
+.carousel input[type="radio"]:nth-of-type(3):checked~.carousel-controls label[for*="3"],
+.carousel input[type="radio"]:nth-of-type(4):checked~.carousel-controls label[for*="4"],
+.carousel input[type="radio"]:nth-of-type(5):checked~.carousel-controls label[for*="5"],
+.carousel input[type="radio"]:nth-of-type(6):checked~.carousel-controls label[for*="6"],
+.carousel input[type="radio"]:nth-of-type(7):checked~.carousel-controls label[for*="7"],
+.carousel input[type="radio"]:nth-of-type(8):checked~.carousel-controls label[for*="8"],
+.carousel input[type="radio"]:nth-of-type(9):checked~.carousel-controls label[for*="9"],
+.carousel input[type="radio"]:nth-of-type(10):checked~.carousel-controls label[for*="10"] {
     background: var(--color_text);
 }
 
-.carousel input[type="radio"]:nth-of-type(1):checked ~ .carousel-caption-container .caption1,
-.carousel input[type="radio"]:nth-of-type(2):checked ~ .carousel-caption-container .caption2,
-.carousel input[type="radio"]:nth-of-type(3):checked ~ .carousel-caption-container .caption3,
-.carousel input[type="radio"]:nth-of-type(4):checked ~ .carousel-caption-container .caption4,
-.carousel input[type="radio"]:nth-of-type(5):checked ~ .carousel-caption-container .caption5,
-.carousel input[type="radio"]:nth-of-type(6):checked ~ .carousel-caption-container .caption6,
-.carousel input[type="radio"]:nth-of-type(7):checked ~ .carousel-caption-container .caption7,
-.carousel input[type="radio"]:nth-of-type(8):checked ~ .carousel-caption-container .caption8,
-.carousel input[type="radio"]:nth-of-type(9):checked ~ .carousel-caption-container .caption9,
-.carousel input[type="radio"]:nth-of-type(10):checked ~ .carousel-caption-container .caption10 {
+.carousel input[type="radio"]:nth-of-type(1):checked~.carousel-caption-container .caption1,
+.carousel input[type="radio"]:nth-of-type(2):checked~.carousel-caption-container .caption2,
+.carousel input[type="radio"]:nth-of-type(3):checked~.carousel-caption-container .caption3,
+.carousel input[type="radio"]:nth-of-type(4):checked~.carousel-caption-container .caption4,
+.carousel input[type="radio"]:nth-of-type(5):checked~.carousel-caption-container .caption5,
+.carousel input[type="radio"]:nth-of-type(6):checked~.carousel-caption-container .caption6,
+.carousel input[type="radio"]:nth-of-type(7):checked~.carousel-caption-container .caption7,
+.carousel input[type="radio"]:nth-of-type(8):checked~.carousel-caption-container .caption8,
+.carousel input[type="radio"]:nth-of-type(9):checked~.carousel-caption-container .caption9,
+.carousel input[type="radio"]:nth-of-type(10):checked~.carousel-caption-container .caption10 {
     display: block;
 }
 
@@ -2425,7 +2426,7 @@ details.footies[open] summary::before {
     z-index: 9999;
 }
 
-.enlarge-toggle:checked + .enlarge-overlay {
+.enlarge-toggle:checked+.enlarge-overlay {
     display: flex;
 }
 
@@ -2447,6 +2448,7 @@ details.footies[open] summary::before {
     cursor: pointer;
     z-index: 10001;
 }
+
 /* end carousel & image enlargement */
 
 .logo-landing .logo-lightbox-trigger img {
