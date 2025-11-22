@@ -2820,6 +2820,7 @@ details.footies[open] summary::before {
     font-size: 0.8rem;
     width: 100%;
     text-align: left;
+    padding: 1px 18px 0px 17px;
 }
 
 .ncll-card__meta::after {
