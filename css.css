@@ -2817,8 +2817,6 @@ details.footies[open] summary::before {
 
 .ncll-card__meta {
     list-style: none;
-    padding: 0;
-    margin: 0px 0px 0px 20px !important;
     font-size: 0.8rem;
     width: 100%;
     text-align: left;
@@ -2886,7 +2884,6 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__details ul, .ncll-card__details ol {
-    padding: 0 0 0 10px;
     margin: 10px;
     width: 100%;
     text-align: left;
