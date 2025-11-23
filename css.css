@@ -3944,7 +3944,7 @@ details.footies[open] summary::before {
     white-space: nowrap;
 }
 .registration-listing .remaining-min-height h5.row-title {
-    bottom: 0px;
+    bottom: -40px;
     position: absolute;
     white-space: nowrap;
 }
