@@ -2887,7 +2887,7 @@ details.footies[open] summary::before {
 .ncll-card__details ul, .ncll-card__details ol {
     margin: 10px;
     text-align: left;
-    padding:10px;
+    padding: 0px 10px 0px 10px;
 }
 
 .ncll-card__details li {
