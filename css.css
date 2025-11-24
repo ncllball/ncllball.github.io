@@ -2818,7 +2818,6 @@ details.footies[open] summary::before {
 .ncll-card__meta {
     list-style: none;
     font-size: 0.8rem;
-    width: 100%;
     text-align: left;
     /* padding: 1px 18px 0px 17px; */
     padding: 0px 8px 0px 8px;
