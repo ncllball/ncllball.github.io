@@ -2884,7 +2884,13 @@ details.footies[open] summary::before {
     color: var(--color_text);
 }
 
-.ncll-card__details ul, .ncll-card__details ol {
+.ncll-card__details ul {
+    margin: 10px;
+    text-align: left;
+    padding: 0px 10px 0px 10px;
+}
+
+.ncll-card__details ol {
     margin: 10px;
     text-align: left;
     padding: 0px 10px 0px 10px;
