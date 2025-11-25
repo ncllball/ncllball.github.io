@@ -3954,3 +3954,6 @@ details.footies[open] summary::before {
     position: absolute;
     white-space: nowrap;
 }
+.age-matrix tbody tr:last-child td {
+    padding-bottom: 12px;
+}
