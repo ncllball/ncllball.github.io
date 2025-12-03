@@ -3053,7 +3053,7 @@ details.footies[open] summary::before {
 
 /* Status pills ---------------------------------------------------------- */
 .status-badge {
-    font-size: .7rem;
+    font-size: .75rem;
     text-transform: normal;
     font-weight: 600;
     padding: 3px 6px;
@@ -3065,37 +3065,37 @@ details.footies[open] summary::before {
 }
 
 .status-open {
-    background: rgba(46, 204, 64, 0.18);
+    background: rgba(46, 204, 64, 0.25);
     color: #0f5c15;
     border: 1px solid #2ecc40;
 }
 
 .status-email {
-    background: rgba(246, 195, 68, 0.2);
+    background: rgba(246, 195, 68, 0.25);
     color: #5a4200;
     border: 1px solid #f6c344;
 }
 
 .status-active {
-    background: rgba(0, 117, 192, 0.18);
+    background: rgba(0, 117, 192, 0.25);
     color: var(--color_blue);
     border: 1px solid var(--color_blue);
 }
 
 .status-soon {
-    background: rgba(205, 22, 63, 0.18);
+    background: rgba(205, 22, 63, 0.25);
     color: #7a0d26;
     border: 1px solid var(--color_red);
 }
 
 .status-free {
-    background: rgba(46, 204, 64, 0.18);
+    background: rgba(46, 204, 64, 0.25);
     color: #0f5c15;
     border: 1px solid #2ecc40;
 }
 
 .status-closed {
-    background: rgba(205, 22, 63, 0.18);
+    background: rgba(205, 22, 63, 0.25);
     color: var(--color_red);
     border: 1px solid var(--color_red);
 }
