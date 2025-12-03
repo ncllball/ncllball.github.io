@@ -2242,6 +2242,11 @@ details.footies[open] summary::before {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     width: 100%;
+    cursor: grab;
+}
+
+.table-scroll.is-grabbed {
+    cursor: grabbing;
 }
 
 /* Logo gallery on About/logo.html */
@@ -3056,7 +3061,7 @@ details.footies[open] summary::before {
     font-size: .75rem;
     text-transform: normal;
     font-weight: 600;
-    padding: 3px 6px;
+    padding: 2px 5px;
     border-radius: 4px;
     background: transparent;
     color: #111;
