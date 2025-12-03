@@ -1,0 +1,236 @@
+[
+  {
+    "season": "2025",
+    "sport": "Baseball",
+    "division": "A - Division BASEBALL",
+    "total": 63,
+    "new": 9,
+    "returning": 54,
+    "new_pct": 14.3
+  },
+  {
+    "season": "2025",
+    "sport": "Baseball",
+    "division": "AA - Division BASEBALL",
+    "total": 59,
+    "new": 3,
+    "returning": 56,
+    "new_pct": 5.1
+  },
+  {
+    "season": "2025",
+    "sport": "Baseball",
+    "division": "AAA - Division BASEBALL",
+    "total": 61,
+    "new": 2,
+    "returning": 59,
+    "new_pct": 3.3
+  },
+  {
+    "season": "2025",
+    "sport": "Baseball",
+    "division": "Juniors - Division BASEBALL",
+    "total": 4,
+    "new": 1,
+    "returning": 3,
+    "new_pct": 25.0
+  },
+  {
+    "season": "2025",
+    "sport": "Baseball",
+    "division": "Kindergarten Coach Pitch",
+    "total": 57,
+    "new": 16,
+    "returning": 41,
+    "new_pct": 28.1
+  },
+  {
+    "season": "2025",
+    "sport": "Baseball",
+    "division": "Majors - Division BASEBALL",
+    "total": 44,
+    "new": 1,
+    "returning": 43,
+    "new_pct": 2.3
+  },
+  {
+    "season": "2025",
+    "sport": "Baseball",
+    "division": "Seniors - Division BASEBALL",
+    "total": 1,
+    "new": 0,
+    "returning": 1,
+    "new_pct": 0.0
+  },
+  {
+    "season": "2025",
+    "sport": "Baseball",
+    "division": "Tee-ball Division",
+    "total": 27,
+    "new": 26,
+    "returning": 1,
+    "new_pct": 96.3
+  },
+  {
+    "season": "2025",
+    "sport": "Softball",
+    "division": "A Division SOFTBALL",
+    "total": 17,
+    "new": 12,
+    "returning": 5,
+    "new_pct": 70.6
+  },
+  {
+    "season": "2025",
+    "sport": "Softball",
+    "division": "AA Division SOFTBALL",
+    "total": 28,
+    "new": 1,
+    "returning": 27,
+    "new_pct": 3.6
+  },
+  {
+    "season": "2025",
+    "sport": "Softball",
+    "division": "AAA Division SOFTBALL",
+    "total": 19,
+    "new": 0,
+    "returning": 19,
+    "new_pct": 0.0
+  },
+  {
+    "season": "2025",
+    "sport": "Softball",
+    "division": "Junior Division SOFTBALL",
+    "total": 9,
+    "new": 0,
+    "returning": 9,
+    "new_pct": 0.0
+  },
+  {
+    "season": "2025",
+    "sport": "Softball",
+    "division": "Majors Division SOFTBALL",
+    "total": 16,
+    "new": 0,
+    "returning": 16,
+    "new_pct": 0.0
+  },
+  {
+    "season": "2026",
+    "sport": "Baseball",
+    "division": "A - Division BASEBALL",
+    "total": 18,
+    "new": 2,
+    "returning": 16,
+    "new_pct": 11.1
+  },
+  {
+    "season": "2026",
+    "sport": "Baseball",
+    "division": "AA - Division BASEBALL",
+    "total": 45,
+    "new": 5,
+    "returning": 40,
+    "new_pct": 11.1
+  },
+  {
+    "season": "2026",
+    "sport": "Baseball",
+    "division": "AAA - Division BASEBALL",
+    "total": 14,
+    "new": 1,
+    "returning": 13,
+    "new_pct": 7.1
+  },
+  {
+    "season": "2026",
+    "sport": "Baseball",
+    "division": "Juniors - Division BASEBALL",
+    "total": 7,
+    "new": 0,
+    "returning": 7,
+    "new_pct": 0.0
+  },
+  {
+    "season": "2026",
+    "sport": "Baseball",
+    "division": "Kindergarten Coach Pitch",
+    "total": 26,
+    "new": 11,
+    "returning": 15,
+    "new_pct": 42.3
+  },
+  {
+    "season": "2026",
+    "sport": "Baseball",
+    "division": "Majors - Division BASEBALL",
+    "total": 21,
+    "new": 0,
+    "returning": 21,
+    "new_pct": 0.0
+  },
+  {
+    "season": "2026",
+    "sport": "Baseball",
+    "division": "Seniors - Division BASEBALL",
+    "total": 1,
+    "new": 0,
+    "returning": 1,
+    "new_pct": 0.0
+  },
+  {
+    "season": "2026",
+    "sport": "Baseball",
+    "division": "Tee-ball Division",
+    "total": 14,
+    "new": 13,
+    "returning": 1,
+    "new_pct": 92.9
+  },
+  {
+    "season": "2026",
+    "sport": "Softball",
+    "division": "A - Division SOFTBALL",
+    "total": 13,
+    "new": 7,
+    "returning": 6,
+    "new_pct": 53.8
+  },
+  {
+    "season": "2026",
+    "sport": "Softball",
+    "division": "AA - Division SOFTBALL",
+    "total": 19,
+    "new": 2,
+    "returning": 17,
+    "new_pct": 10.5
+  },
+  {
+    "season": "2026",
+    "sport": "Softball",
+    "division": "AAA - Division SOFTBALL",
+    "total": 11,
+    "new": 0,
+    "returning": 11,
+    "new_pct": 0.0
+  },
+  {
+    "season": "2026",
+    "sport": "Softball",
+    "division": "Junior - Division SOFTBALL",
+    "total": 3,
+    "new": 0,
+    "returning": 3,
+    "new_pct": 0.0
+  },
+  {
+    "season": "2026",
+    "sport": "Softball",
+    "division": "Majors - Division SOFTBALL",
+    "total": 6,
+    "new": 0,
+    "returning": 6,
+    "new_pct": 0.0
+  }
+]
