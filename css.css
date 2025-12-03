@@ -3058,35 +3058,44 @@ details.footies[open] summary::before {
     font-weight: 600;
     padding: 3px 6px;
     border-radius: 4px;
-    background: var(--color_blue);
-    color: #fff;
+    background: transparent;
+    color: #111;
     margin-left: 6px;
+    border: 1px solid transparent;
 }
 
 .status-open {
-    background: #2ecc40;
+    background: rgba(46, 204, 64, 0.18);
+    color: #0f5c15;
+    border: 1px solid #2ecc40;
 }
 
 .status-email {
-    background: rgba(246, 195, 68, 0.7);
+    background: rgba(246, 195, 68, 0.2);
     color: #5a4200;
     border: 1px solid #f6c344;
 }
 
 .status-active {
-    background: var(--color_blue);
+    background: rgba(0, 117, 192, 0.18);
+    color: var(--color_blue);
+    border: 1px solid var(--color_blue);
 }
 
 .status-soon {
-    background: #cd163f;
+    background: rgba(205, 22, 63, 0.18);
+    color: #7a0d26;
+    border: 1px solid var(--color_red);
 }
 
 .status-free {
-    background: #2ecc40;
+    background: rgba(46, 204, 64, 0.18);
+    color: #0f5c15;
+    border: 1px solid #2ecc40;
 }
 
 .status-closed {
-    background: rgba(205, 22, 63, 0.15);
+    background: rgba(205, 22, 63, 0.18);
     color: var(--color_red);
     border: 1px solid var(--color_red);
 }
