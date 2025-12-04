@@ -2797,15 +2797,14 @@ details.footies[open] summary::before {
 }
 
 .ncll-card__heading-title {
-    display: flex;
+    display: contents;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 0.5rem;
 }
 
 .ncll-card__heading-title .ncll-card__title {
     flex: 1;
-    text-align: center;
 }
 
 .ncll-card__sport-icon {
