@@ -2,362 +2,362 @@
 
 :root {
     /* TEMP: font-family testing variables */
-    --tk-proxima-nova-condensed: "proxima-nova-condensed", sans-serif;
-    --tk-proxima-nova-extra-condensed: "proxima-nova-extra-condensed", sans-serif;
-    --tk-refrigerator-deluxe: "refrigerator-deluxe", sans-serif;
-    --tk-cronos-pro: "cronos-pro", sans-serif;
-    --tk-cronos-pro-caption: "cronos-pro-caption", sans-serif;
-    --tk-cronos-pro-display: "cronos-pro-display", sans-serif;
-    --tk-roboto: "roboto", sans-serif;
-    --tk-cronos-pro-subhead: "cronos-pro-subhead", sans-serif;
-    --tk-source-sans-pro: "source-sans-pro", sans-serif;
-    --tk-source-serif-pro: "source-serif-pro", serif;
-    --tk-prohibition: "prohibition", sans-serif;
-    --tk-roboto-condensed: "roboto-condensed", sans-serif;
-    --tk-agenda: "agenda", sans-serif;
-    --tk-agenda-condensed: "agenda-condensed", sans-serif;
-    --tk-agenda-extra-condensed: "agenda-extra-condensed", sans-serif;
-    --tk-agenda-ultra-condensed: "agenda-ultra-condensed", sans-serif;
-    --tk-interstate: "interstate", sans-serif;
-    --tk-interstate-compressed: "interstate-compressed", sans-serif;
-    --tk-interstate-condensed: "interstate-condensed", sans-serif;
-    --tk-erbaum: "erbaum", sans-serif;
-    --tk-quasimoda-2: "quasimoda-2", sans-serif;
-    --tk-quasimoda: "quasimoda", sans-serif;
-    --tk-wingdings: "wingdings", sans-serif;
-    --tk-pt-sans-pro: "pt-sans-pro", sans-serif;
-    --tk-pt-sans-pro-caption: "pt-sans-pro-caption", sans-serif;
-    --tk-pt-sans-pro-condensed: "pt-sans-pro-condensed", sans-serif;
-    --tk-pt-sans-pro-extra-condensed: "pt-sans-pro-extra-condensed", sans-serif;
-    --tk-pt-sans-pro-narrow: "pt-sans-pro-narrow", sans-serif;
-    --tk-wingdings-3: "wingdings-3", sans-serif;
-    --tk-wingdings-2: "wingdings-2", sans-serif;
-    --tk-noto-sans-display-extraconde: "noto-sans-display-extraconde", sans-serif;
-    --tk-noto-sans-display-condensed: "noto-sans-display-condensed", sans-serif;
-    --tk-noto-sans-display-semiconden: "noto-sans-display-semiconden", sans-serif;
-    --tk-noto-sans-display: "noto-sans-display", sans-serif;
-    --tk-zeitung-micro: "zeitung-micro", sans-serif;
-    --tk-zeitung-mono: "zeitung-mono", sans-serif;
-    --tk-zeitung: "zeitung", sans-serif;
-    --tk-bebas-neue-semirounded: "bebas-neue-semirounded", sans-serif;
-    --tk-bebas-neue-pro: "bebas-neue-pro", sans-serif;
-    --tk-bebas-neue-pro-semiexpanded: "bebas-neue-pro-semiexpanded", sans-serif;
-    --tk-bebas-neue-pro-expanded: "bebas-neue-pro-expanded", sans-serif;
-    --tk-source-serif-4: "source-serif-4", serif;
-    --tk-darkmode-on: "darkmode-on", sans-serif;
-    --tk-apparat-light: "apparat-light", sans-serif;
-    --tk-apparat: "apparat", sans-serif;
-    --tk-apparat-semicond-light: "apparat-semicond-light", sans-serif;
-    --tk-apparat-semicond: "apparat-semicond", sans-serif;
-    --tk-quinn-display: "quinn-display", serif;
-    --tk-manifold-cf: "manifold-cf", sans-serif;
-    --tk-proxima-sera: "proxima-sera", sans-serif;
-    --tk-nexa-rust-sans-black-2: "nexa-rust-sans-black-2", sans-serif;
-    --tk-nexa-rust-sans-black-shad-2: "nexa-rust-sans-black-shad-2", sans-serif;
-    --tk-nexa-rust-slab-black: "nexa-rust-slab-black", sans-serif;
-    --tk-nexa-rust-slab-black-2: "nexa-rust-slab-black-2", sans-serif;
-    --tk-nexa-rust-slab-black-shad-2: "nexa-rust-slab-black-shad-2", sans-serif;
-    --tk-nexa-rust-script-shad-2: "nexa-rust-script-shad-2", sans-serif;
-    --tk-zuume: "zuume", sans-serif;
-    --tk-kensington: "kensington", sans-serif;
-    --tk-config-variable: "config-variable", sans-serif;
-    --tk-archer-hairline-pro: "archer-hairline-pro", sans-serif;
-    --tk-archer-thin-pro: "archer-thin-pro", sans-serif;
-    --tk-archer-pro: "archer-pro", sans-serif;
-    --tk-gotham-xnarrow: "gotham-xnarrow", sans-serif;
-    --tk-gotham-narrow: "gotham-narrow", sans-serif;
-    --tk-gotham-condensed: "gotham-condensed", sans-serif;
-    --tk-gotham: "gotham", sans-serif;
-    --tk-aptos: "aptos", sans-serif;
-    --tk-aptos-display: "aptos-display", sans-serif;
-    --tk-aptos-narrow: "aptos-narrow", sans-serif;
-    --tk-corbel: "corbel", sans-serif;
-    --tk-comma-sans: "comma-sans", sans-serif;
+    --font_tk-proxima-nova-condensed: "proxima-nova-condensed", sans-serif;
+    --font_tk-proxima-nova-extra-condensed: "proxima-nova-extra-condensed", sans-serif;
+    --font_tk-refrigerator-deluxe: "refrigerator-deluxe", sans-serif;
+    --font_tk-cronos-pro: "cronos-pro", sans-serif;
+    --font_tk-cronos-pro-caption: "cronos-pro-caption", sans-serif;
+    --font_tk-cronos-pro-display: "cronos-pro-display", sans-serif;
+    --font_tk-roboto: "roboto", sans-serif;
+    --font_tk-cronos-pro-subhead: "cronos-pro-subhead", sans-serif;
+    --font_tk-source-sans-pro: "source-sans-pro", sans-serif;
+    --font_tk-source-serif-pro: "source-serif-pro", serif;
+    --font_tk-prohibition: "prohibition", sans-serif;
+    --font_tk-roboto-condensed: "roboto-condensed", sans-serif;
+    --font_tk-agenda: "agenda", sans-serif;
+    --font_tk-agenda-condensed: "agenda-condensed", sans-serif;
+    --font_tk-agenda-extra-condensed: "agenda-extra-condensed", sans-serif;
+    --font_tk-agenda-ultra-condensed: "agenda-ultra-condensed", sans-serif;
+    --font_tk-interstate: "interstate", sans-serif;
+    --font_tk-interstate-compressed: "interstate-compressed", sans-serif;
+    --font_tk-interstate-condensed: "interstate-condensed", sans-serif;
+    --font_tk-erbaum: "erbaum", sans-serif;
+    --font_tk-quasimoda-2: "quasimoda-2", sans-serif;
+    --font_tk-quasimoda: "quasimoda", sans-serif;
+    --font_tk-wingdings: "wingdings", sans-serif;
+    --font_tk-pt-sans-pro: "pt-sans-pro", sans-serif;
+    --font_tk-pt-sans-pro-caption: "pt-sans-pro-caption", sans-serif;
+    --font_tk-pt-sans-pro-condensed: "pt-sans-pro-condensed", sans-serif;
+    --font_tk-pt-sans-pro-extra-condensed: "pt-sans-pro-extra-condensed", sans-serif;
+    --font_tk-pt-sans-pro-narrow: "pt-sans-pro-narrow", sans-serif;
+    --font_tk-wingdings-3: "wingdings-3", sans-serif;
+    --font_tk-wingdings-2: "wingdings-2", sans-serif;
+    --font_tk-noto-sans-display-extraconde: "noto-sans-display-extraconde", sans-serif;
+    --font_tk-noto-sans-display-condensed: "noto-sans-display-condensed", sans-serif;
+    --font_tk-noto-sans-display-semiconden: "noto-sans-display-semiconden", sans-serif;
+    --font_tk-noto-sans-display: "noto-sans-display", sans-serif;
+    --font_tk-zeitung-micro: "zeitung-micro", sans-serif;
+    --font_tk-zeitung-mono: "zeitung-mono", sans-serif;
+    --font_tk-zeitung: "zeitung", sans-serif;
+    --font_tk-bebas-neue-semirounded: "bebas-neue-semirounded", sans-serif;
+    --font_tk-bebas-neue-pro: "bebas-neue-pro", sans-serif;
+    --font_tk-bebas-neue-pro-semiexpanded: "bebas-neue-pro-semiexpanded", sans-serif;
+    --font_tk-bebas-neue-pro-expanded: "bebas-neue-pro-expanded", sans-serif;
+    --font_tk-source-serif-4: "source-serif-4", serif;
+    --font_tk-darkmode-on: "darkmode-on", sans-serif;
+    --font_tk-apparat-light: "apparat-light", sans-serif;
+    --font_tk-apparat: "apparat", sans-serif;
+    --font_tk-apparat-semicond-light: "apparat-semicond-light", sans-serif;
+    --font_tk-apparat-semicond: "apparat-semicond", sans-serif;
+    --font_tk-quinn-display: "quinn-display", serif;
+    --font_tk-manifold-cf: "manifold-cf", sans-serif;
+    --font_tk-proxima-sera: "proxima-sera", sans-serif;
+    --font_tk-nexa-rust-sans-black-2: "nexa-rust-sans-black-2", sans-serif;
+    --font_tk-nexa-rust-sans-black-shad-2: "nexa-rust-sans-black-shad-2", sans-serif;
+    --font_tk-nexa-rust-slab-black: "nexa-rust-slab-black", sans-serif;
+    --font_tk-nexa-rust-slab-black-2: "nexa-rust-slab-black-2", sans-serif;
+    --font_tk-nexa-rust-slab-black-shad-2: "nexa-rust-slab-black-shad-2", sans-serif;
+    --font_tk-nexa-rust-script-shad-2: "nexa-rust-script-shad-2", sans-serif;
+    --font_tk-zuume: "zuume", sans-serif;
+    --font_tk-kensington: "kensington", sans-serif;
+    --font_tk-config-variable: "config-variable", sans-serif;
+    --font_tk-archer-hairline-pro: "archer-hairline-pro", sans-serif;
+    --font_tk-archer-thin-pro: "archer-thin-pro", sans-serif;
+    --font_tk-archer-pro: "archer-pro", sans-serif;
+    --font_tk-gotham-xnarrow: "gotham-xnarrow", sans-serif;
+    --font_tk-gotham-narrow: "gotham-narrow", sans-serif;
+    --font_tk-gotham-condensed: "gotham-condensed", sans-serif;
+    --font_tk-gotham: "gotham", sans-serif;
+    --font_tk-aptos: "aptos", sans-serif;
+    --font_tk-aptos-display: "aptos-display", sans-serif;
+    --font_tk-aptos-narrow: "aptos-narrow", sans-serif;
+    --font_tk-corbel: "corbel", sans-serif;
+    --font_tk-comma-sans: "comma-sans", sans-serif;
 }
 
 /* Typekit helper classes */
 .tk-proxima-nova-condensed {
-    font-family: var(--tk-proxima-nova-condensed);
+    font-family: var(--font_tk-proxima-nova-condensed);
 }
 
 .tk-proxima-nova-extra-condensed {
-    font-family: var(--tk-proxima-nova-extra-condensed);
+    font-family: var(--font_tk-proxima-nova-extra-condensed);
 }
 
 .tk-refrigerator-deluxe {
-    font-family: var(--tk-refrigerator-deluxe);
+    font-family: var(--font_tk-refrigerator-deluxe);
 }
 
 .tk-cronos-pro {
-    font-family: var(--tk-cronos-pro);
+    font-family: var(--font_tk-cronos-pro);
 }
 
 .tk-cronos-pro-caption {
-    font-family: var(--tk-cronos-pro-caption);
+    font-family: var(--font_tk-cronos-pro-caption);
 }
 
 .tk-cronos-pro-display {
-    font-family: var(--tk-cronos-pro-display);
+    font-family: var(--font_tk-cronos-pro-display);
 }
 
 .tk-roboto {
-    font-family: var(--tk-roboto);
+    font-family: var(--font_tk-roboto);
 }
 
 .tk-cronos-pro-subhead {
-    font-family: var(--tk-cronos-pro-subhead);
+    font-family: var(--font_tk-cronos-pro-subhead);
 }
 
 .tk-source-sans-pro {
-    font-family: var(--tk-source-sans-pro);
+    font-family: var(--font_tk-source-sans-pro);
 }
 
 .tk-source-serif-pro {
-    font-family: var(--tk-source-serif-pro);
+    font-family: var(--font_tk-source-serif-pro);
 }
 
 .tk-prohibition {
-    font-family: var(--tk-prohibition);
+    font-family: var(--font_tk-prohibition);
 }
 
 .tk-roboto-condensed {
-    font-family: var(--tk-roboto-condensed);
+    font-family: var(--font_tk-roboto-condensed);
 }
 
 .tk-agenda {
-    font-family: var(--tk-agenda);
+    font-family: var(--font_tk-agenda);
 }
 
 .tk-agenda-condensed {
-    font-family: var(--tk-agenda-condensed);
+    font-family: var(--font_tk-agenda-condensed);
 }
 
 .tk-agenda-extra-condensed {
-    font-family: var(--tk-agenda-extra-condensed);
+    font-family: var(--font_tk-agenda-extra-condensed);
 }
 
 .tk-agenda-ultra-condensed {
-    font-family: var(--tk-agenda-ultra-condensed);
+    font-family: var(--font_tk-agenda-ultra-condensed);
 }
 
 .tk-interstate {
-    font-family: var(--tk-interstate);
+    font-family: var(--font_tk-interstate);
 }
 
 .tk-interstate-compressed {
-    font-family: var(--tk-interstate-compressed);
+    font-family: var(--font_tk-interstate-compressed);
 }
 
 .tk-interstate-condensed {
-    font-family: var(--tk-interstate-condensed);
+    font-family: var(--font_tk-interstate-condensed);
 }
 
 .tk-erbaum {
-    font-family: var(--tk-erbaum);
+    font-family: var(--font_tk-erbaum);
 }
 
 .tk-quasimoda-2 {
-    font-family: var(--tk-quasimoda-2);
+    font-family: var(--font_tk-quasimoda-2);
 }
 
 .tk-quasimoda {
-    font-family: var(--tk-quasimoda);
+    font-family: var(--font_tk-quasimoda);
 }
 
 .tk-wingdings {
-    font-family: var(--tk-wingdings);
+    font-family: var(--font_tk-wingdings);
 }
 
 .tk-pt-sans-pro {
-    font-family: var(--tk-pt-sans-pro);
+    font-family: var(--font_tk-pt-sans-pro);
 }
 
 .tk-pt-sans-pro-caption {
-    font-family: var(--tk-pt-sans-pro-caption);
+    font-family: var(--font_tk-pt-sans-pro-caption);
 }
 
 .tk-pt-sans-pro-condensed {
-    font-family: var(--tk-pt-sans-pro-condensed);
+    font-family: var(--font_tk-pt-sans-pro-condensed);
 }
 
 .tk-pt-sans-pro-extra-condensed {
-    font-family: var(--tk-pt-sans-pro-extra-condensed);
+    font-family: var(--font_tk-pt-sans-pro-extra-condensed);
 }
 
 .tk-pt-sans-pro-narrow {
-    font-family: var(--tk-pt-sans-pro-narrow);
+    font-family: var(--font_tk-pt-sans-pro-narrow);
 }
 
 .tk-wingdings-3 {
-    font-family: var(--tk-wingdings-3);
+    font-family: var(--font_tk-wingdings-3);
 }
 
 .tk-wingdings-2 {
-    font-family: var(--tk-wingdings-2);
+    font-family: var(--font_tk-wingdings-2);
 }
 
 .tk-noto-sans-display-extraconde {
-    font-family: var(--tk-noto-sans-display-extraconde);
+    font-family: var(--font_tk-noto-sans-display-extraconde);
 }
 
 .tk-noto-sans-display-condensed {
-    font-family: var(--tk-noto-sans-display-condensed);
+    font-family: var(--font_tk-noto-sans-display-condensed);
 }
 
 .tk-noto-sans-display-semiconden {
-    font-family: var(--tk-noto-sans-display-semiconden);
+    font-family: var(--font_tk-noto-sans-display-semiconden);
 }
 
 .tk-noto-sans-display {
-    font-family: var(--tk-noto-sans-display);
+    font-family: var(--font_tk-noto-sans-display);
 }
 
 .tk-zeitung-micro {
-    font-family: var(--tk-zeitung-micro);
+    font-family: var(--font_tk-zeitung-micro);
 }
 
 .tk-zeitung-mono {
-    font-family: var(--tk-zeitung-mono);
+    font-family: var(--font_tk-zeitung-mono);
 }
 
 .tk-zeitung {
-    font-family: var(--tk-zeitung);
+    font-family: var(--font_tk-zeitung);
 }
 
 .tk-bebas-neue-semirounded {
-    font-family: var(--tk-bebas-neue-semirounded);
+    font-family: var(--font_tk-bebas-neue-semirounded);
 }
 
 .tk-bebas-neue-pro {
-    font-family: var(--tk-bebas-neue-pro);
+    font-family: var(--font_tk-bebas-neue-pro);
 }
 
 .tk-bebas-neue-pro-semiexpanded {
-    font-family: var(--tk-bebas-neue-pro-semiexpanded);
+    font-family: var(--font_tk-bebas-neue-pro-semiexpanded);
 }
 
 .tk-bebas-neue-pro-expanded {
-    font-family: var(--tk-bebas-neue-pro-expanded);
+    font-family: var(--font_tk-bebas-neue-pro-expanded);
 }
 
 .tk-source-serif-4 {
-    font-family: var(--tk-source-serif-4);
+    font-family: var(--font_tk-source-serif-4);
 }
 
 .tk-darkmode-on {
-    font-family: var(--tk-darkmode-on);
+    font-family: var(--font_tk-darkmode-on);
 }
 
 .tk-apparat-light {
-    font-family: var(--tk-apparat-light);
+    font-family: var(--font_tk-apparat-light);
 }
 
 .tk-apparat {
-    font-family: var(--tk-apparat);
+    font-family: var(--font_tk-apparat);
 }
 
 .tk-apparat-semicond-light {
-    font-family: var(--tk-apparat-semicond-light);
+    font-family: var(--font_tk-apparat-semicond-light);
 }
 
 .tk-apparat-semicond {
-    font-family: var(--tk-apparat-semicond);
+    font-family: var(--font_tk-apparat-semicond);
 }
 
 .tk-quinn-display {
-    font-family: var(--tk-quinn-display);
+    font-family: var(--font_tk-quinn-display);
 }
 
 .tk-manifold-cf {
-    font-family: var(--tk-manifold-cf);
+    font-family: var(--font_tk-manifold-cf);
 }
 
 .tk-proxima-sera {
-    font-family: var(--tk-proxima-sera);
+    font-family: var(--font_tk-proxima-sera);
 }
 
 .tk-nexa-rust-sans-black-2 {
-    font-family: var(--tk-nexa-rust-sans-black-2);
+    font-family: var(--font_tk-nexa-rust-sans-black-2);
 }
 
 .tk-nexa-rust-sans-black-shad-2 {
-    font-family: var(--tk-nexa-rust-sans-black-shad-2);
+    font-family: var(--font_tk-nexa-rust-sans-black-shad-2);
 }
 
 .tk-nexa-rust-slab-black {
-    font-family: var(--tk-nexa-rust-slab-black);
+    font-family: var(--font_tk-nexa-rust-slab-black);
 }
 
 .tk-nexa-rust-slab-black-2 {
-    font-family: var(--tk-nexa-rust-slab-black-2);
+    font-family: var(--font_tk-nexa-rust-slab-black-2);
 }
 
 .tk-nexa-rust-slab-black-shad-2 {
-    font-family: var(--tk-nexa-rust-slab-black-shad-2);
+    font-family: var(--font_tk-nexa-rust-slab-black-shad-2);
 }
 
 .tk-nexa-rust-script-shad-2 {
-    font-family: var(--tk-nexa-rust-script-shad-2);
+    font-family: var(--font_tk-nexa-rust-script-shad-2);
 }
 
 .tk-zuume {
-    font-family: var(--tk-zuume);
+    font-family: var(--font_tk-zuume);
 }
 
 .tk-kensington {
-    font-family: var(--tk-kensington);
+    font-family: var(--font_tk-kensington);
 }
 
 .tk-config-variable {
-    font-family: var(--tk-config-variable);
+    font-family: var(--font_tk-config-variable);
 }
 
 .tk-archer-hairline-pro {
-    font-family: var(--tk-archer-hairline-pro);
+    font-family: var(--font_tk-archer-hairline-pro);
 }
 
 .tk-archer-thin-pro {
-    font-family: var(--tk-archer-thin-pro);
+    font-family: var(--font_tk-archer-thin-pro);
 }
 
 .tk-archer-pro {
-    font-family: var(--tk-archer-pro);
+    font-family: var(--font_tk-archer-pro);
 }
 
 .tk-gotham-xnarrow {
-    font-family: var(--tk-gotham-xnarrow);
+    font-family: var(--font_tk-gotham-xnarrow);
 }
 
 .tk-gotham-narrow {
-    font-family: var(--tk-gotham-narrow);
+    font-family: var(--font_tk-gotham-narrow);
 }
 
 .tk-gotham-condensed {
-    font-family: var(--tk-gotham-condensed);
+    font-family: var(--font_tk-gotham-condensed);
 }
 
 .tk-gotham {
-    font-family: var(--tk-gotham);
+    font-family: var(--font_tk-gotham);
 }
 
 .tk-aptos {
-    font-family: var(--tk-aptos);
+    font-family: var(--font_tk-aptos);
 }
 
 .tk-aptos-display {
-    font-family: var(--tk-aptos-display);
+    font-family: var(--font_tk-aptos-display);
 }
 
 .tk-aptos-narrow {
-    font-family: var(--tk-aptos-narrow);
+    font-family: var(--font_tk-aptos-narrow);
 }
 
 .tk-corbel {
-    font-family: var(--tk-corbel);
+    font-family: var(--font_tk-corbel);
 }
 
 .tk-comma-sans {
-    font-family: var(--tk-comma-sans);
+    font-family: var(--font_tk-comma-sans);
 }
 
 .purpose-row {
@@ -620,17 +620,17 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     --color_surface_light: #fafafa;
     --color_surface_lighter: #fdfdfd;
     /* table striping */
-    --table-row-alt: #f9f9f9;
+    --color_table_row_alt: #f9f9f9;
     /* utility colors used by PD landing badges */
     --color_green: #2ecc40;
     --color_gray_aaaa: #aaaaaa;
     --color_border_table: #dededf;
     --color_white: #ffffff;
     --color_black: #000000;
-    --timeline_primary: #cd163f;
-    --timeline_primary_hover: #019cde;
-    --timeline_heading: #3d4351;
-    --timeline_body: #768390;
+    --color_timeline_primary: #cd163f;
+    --color_timeline_primary_hover: #019cde;
+    --color_timeline_heading: #3d4351;
+    --color_timeline_body: #768390;
     /* sup positioning tokens */
     /* calendar icon sizing */
     --cal-icon-size: 1.3em;
@@ -641,10 +641,10 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     /* font stacks */
     --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     --font_sans: "proxima-nova", var(--font_ui);
-    --font_heading: var(--tk-noto-sans-display-semiconden), var(--font_ui);
+    --font_heading: var(--font_tk-noto-sans-display-semiconden), var(--font_ui);
     /* tag font */
     --font_tag: var(--font_ui), "proxima-nova";
-    --age-matrix-td-font: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    --font_age_matrix_td: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 
     /* card sizes  */
     --card-toggle-sticky-height: 4rem;
@@ -1599,7 +1599,7 @@ body:not(.cms-right) .only-on-right {
     font-weight: 400;
     margin: 0 0 0.5em 0;
     white-space: nowrap;
-    color: var(--timeline_heading);
+    color: var(--color_timeline_heading);
     text-align: right;
     display: flex
 }
@@ -1613,7 +1613,7 @@ body:not(.cms-right) .only-on-right {
 }
 
 .timeline-marker::before {
-    background: var(--timeline_primary);
+    background: var(--color_timeline_primary);
     border: 3px solid transparent;
     border-radius: 100%;
     content: "";
@@ -1645,7 +1645,7 @@ body:not(.cms-right) .only-on-right {
 
 .timeline-item:not(.period):hover .timeline-marker::before {
     background: transparent;
-    border: 3px solid var(--timeline_primary)
+    border: 3px solid var(--color_timeline_primary)
 }
 
 .timeline-content p:last-child {
@@ -1653,7 +1653,7 @@ body:not(.cms-right) .only-on-right {
 }
 
 .timeline-title {
-    color: var(--timeline_heading);
+    color: var(--color_timeline_heading);
     font-weight: 600;
     margin-top: 0;
     text-align: left !important;
@@ -1661,7 +1661,7 @@ body:not(.cms-right) .only-on-right {
 }
 
 .timeline-content p {
-    color: var(--timeline_body);
+    color: var(--color_timeline_body);
     font-size: 14px;
     line-height: 23px
 }
@@ -1700,7 +1700,7 @@ body:not(.cms-right) .only-on-right {
 .timeline-item.period .timeline-title {
     margin: 0;
     padding: 0.65rem 1.9rem 0.75rem;
-    background: var(--timeline_heading);
+    background: var(--color_timeline_heading);
     color: #fff;
     border-radius: 0;
     font-size: 1.05rem;
@@ -1814,11 +1814,11 @@ body:not(.cms-right) .only-on-right {
 /* Marker outline variant */
 .marker-outline .timeline-marker::before {
     background: transparent;
-    border-color: var(--timeline_primary)
+    border-color: var(--color_timeline_primary)
 }
 
 .marker-outline .timeline-item:hover .timeline-marker::before {
-    background: var(--timeline_primary)
+    background: var(--color_timeline_primary)
 }
 
 /* ====== END Timeline Page Styles (Timeline/timeline.html only) */
@@ -1882,7 +1882,7 @@ body:not(.cms-right) .only-on-right {
     text-align: center;
     padding: 6px 10px 6px 10px;
     white-space: nowrap;
-    font-family: var(--tk-noto-sans-display-condensed)
+    font-family: var(--font_tk-noto-sans-display-condensed)
 }
 
 .age-matrix th:first-child, .age-matrix td:first-child {
@@ -1907,7 +1907,7 @@ body:not(.cms-right) .only-on-right {
 .age-matrix td {
     color: var(--color_darkgray) !important;
     font-size: 0.9rem !important;
-    font-family: var(--age-matrix-td-font);
+    font-family: var(--font_age_matrix_td);
     line-height: 1.35rem;
     padding: 2px 10px 2px 10px;
     text-align: left;
@@ -1948,7 +1948,7 @@ body:not(.cms-right) .only-on-right {
 
 /* Table striping: even rows */
 table:not(.no-stripe)>tbody>tr:nth-child(even) {
-    background: var(--table-row-alt)
+    background: var(--color_table_row_alt)
 }
 
 /* Footnotes (collapsible) */
@@ -2586,7 +2586,7 @@ details.footies[open] summary::before {
 }
 
 .horizontal tbody tr:nth-child(even) {
-    background: var(--table-row-alt, #f9f9f9);
+    background: var(--color_table_row_alt, #f9f9f9);
 }
 
 .horizontal th:first-child, .horizontal td:first-child {
@@ -2793,7 +2793,7 @@ details.footies[open] summary::before {
     text-align: center;
     padding-top: 1px;
     margin-top: auto !important;
-    font-family: var(--tk-noto-sans-display-semiconden);
+    font-family: var(--font_tk-noto-sans-display-semiconden);
 }
 
 .ncll-card__heading-title {
@@ -3356,7 +3356,7 @@ details.footies[open] summary::before {
     text-align: center;
     width: 100%;
     color: var(--color_darkgray);
-    font-family: var(--tk-noto-sans-display-semiconden);
+    font-family: var(--font_tk-noto-sans-display-semiconden);
 }
 
 .ncll-micro__table th {
@@ -3514,17 +3514,17 @@ details.footies[open] summary::before {
     box-sizing: border-box;
     border-radius: 50%;
     background-color: #fff;
-    --nav-stripe-color: var(--color_red, #cd163f);
-    --nav-border-color: rgba(205, 22, 63, 0.7);
-    --nav-sheen: rgba(255, 255, 255, 0.2);
+    --color_nav_stripe: var(--color_red, #cd163f);
+    --color_nav_border: rgba(205, 22, 63, 0.7);
+    --color_nav_sheen: rgba(255, 255, 255, 0.2);
     background-image:
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolyline fill='none' stroke='%23133c76' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' points='8 4 16 12 8 20'/%3E%3C/svg%3E"),
-        linear-gradient(145deg, var(--nav-sheen), rgba(0, 0, 0, 0)),
-        repeating-linear-gradient(135deg, var(--nav-stripe-color) 0 1px, #ffffff 1px 2.3px);
+        linear-gradient(145deg, var(--color_nav_sheen), rgba(0, 0, 0, 0)),
+        repeating-linear-gradient(135deg, var(--color_nav_stripe) 0 1px, #ffffff 1px 2.3px);
     background-repeat: no-repeat, no-repeat, repeat;
     background-position: center, center, center;
     background-size: 60%, 110%, auto;
-    border: 1.6px solid var(--nav-border-color);
+    border: 1.6px solid var(--color_nav_border);
     color: transparent;
     cursor: pointer;
     align-items: center;
@@ -3537,18 +3537,18 @@ details.footies[open] summary::before {
 
 .ncll-card--toggle .btn-next:hover,
 .ncll-card--toggle .btn-next:focus {
-    --nav-stripe-color: #c1c8d6;
-    --nav-border-color: rgba(19, 29, 48, 0.36);
-    --nav-sheen: rgba(230, 230, 230, 0.45);
+    --color_nav_stripe: #c1c8d6;
+    --color_nav_border: rgba(19, 29, 48, 0.36);
+    --color_nav_sheen: rgba(230, 230, 230, 0.45);
     transform: translateY(-1px);
     box-shadow: 0 10px 22px rgba(19, 29, 48, 0.28);
 }
 
 .ncll-card--toggle .btn-prev:hover,
 .ncll-card--toggle .btn-prev:focus {
-    --nav-stripe-color: #c1c8d6;
-    --nav-border-color: rgba(19, 29, 48, 0.36);
-    --nav-sheen: rgba(230, 230, 230, 0.45);
+    --color_nav_stripe: #c1c8d6;
+    --color_nav_border: rgba(19, 29, 48, 0.36);
+    --color_nav_sheen: rgba(230, 230, 230, 0.45);
     transform: translateY(-1px) scaleX(-1);
     box-shadow: 0 10px 22px rgba(19, 29, 48, 0.28);
 }
