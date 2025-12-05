@@ -3897,7 +3897,7 @@ details.footies[open] summary::before {
 
 .text-background {
     background-color: #fff;
-    padding: 0px 5px;
+    padding: 0px 5px 0px 5px;
     display:inline;
 }
 
