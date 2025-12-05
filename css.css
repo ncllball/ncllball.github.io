@@ -2785,7 +2785,7 @@ details.footies[open] summary::before {
 
 /* Copy + meta ----------------------------------------------------------- */
 .ncll-card__title {
-    font-size: 1.05rem;
+    font-size: 1.0rem;
     color: var(--color_blue) !important;
     text-align: center;
     margin-top: auto !important;
