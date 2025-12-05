@@ -3571,8 +3571,7 @@ details.footies[open] summary::before {
     align-items: center;
     justify-content: center;
     --sticky-offset: var(--ncll-card-sticky-offset, var(--card-toggle-sticky-height));
-    min-height: var(--sticky-offset, var(--pd-card-sticky-min-height, 3rem));
-    /* Keeps card headers aligned even when titles wrap */
+    height: 4rem;
 }
 
 .ncll-card--toggle .ncll-card__body {
