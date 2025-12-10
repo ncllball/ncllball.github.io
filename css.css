@@ -545,13 +545,15 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     border-color: var(--color_red)
 }
 
-/* Volunteer Lite image formatting */
-.volunteer-lite-img-wrap {
+/* Volunteer landing image formatting */
+  .volunteer-lite-img-wrap,
+  .volunteer-landing-img-wrap {
     text-align: center;
     margin-bottom: 1em
 }
 
-.volunteer-lite-img {
+  .volunteer-lite-img,
+  .volunteer-landing-img {
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -2015,7 +2017,9 @@ details.footies[open] summary::before {
 .margin-bottom-10 {
     margin-bottom: 10px
 }
-
+.margin-bottom-0 {
+    margin-bottom: 0px
+}
 .padding-10 {
     padding: 10px
 }
@@ -2781,6 +2785,16 @@ details.footies[open] summary::before {
 .ncll-card--volunteer {
     /* placeholder for volunteer-specific tweaks (no visual change) */
     --ncll-card-variant: 1;
+}
+
+.volunteer-landing .ncll-card--volunteer {
+    /* Give volunteer cards more vertical room so panel scrollbars are backup only */
+    --ncll-card-height: 640px;
+}
+
+.volunteer-landing .volunteer-card--team {
+    /* Extra height for the Team Level card to avoid scroll reliance */
+    --ncll-card-height: 720px;
 }
 
 .volunteer-landing__section-label {
