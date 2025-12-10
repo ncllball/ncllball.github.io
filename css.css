@@ -2794,6 +2794,7 @@ details.footies[open] summary::before {
     text-transform: uppercase;
     font-weight: 700;
     padding:0px 0px 0px 0px;
+    margin-top: 0px;
 }
 
 .volunteer-landing__section-label strong {
