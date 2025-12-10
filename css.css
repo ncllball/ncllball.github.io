@@ -2783,6 +2783,18 @@ details.footies[open] summary::before {
     --ncll-card-variant: 1;
 }
 
+.volunteer-landing__section-label {
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.volunteer-landing__section-label strong {
+    font-weight: inherit;
+}
+
 /* Copy + meta ----------------------------------------------------------- */
 .ncll-card__title {
     font-size: 1.0rem;
