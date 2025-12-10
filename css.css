@@ -2787,16 +2787,6 @@ details.footies[open] summary::before {
     --ncll-card-variant: 1;
 }
 
-.volunteer-landing .ncll-card--volunteer {
-    /* Give volunteer cards more vertical room so panel scrollbars are backup only */
-    --ncll-card-height: 640px;
-}
-
-.volunteer-landing .volunteer-card--team {
-    /* Extra height for the Team Level card to avoid scroll reliance */
-    --ncll-card-height: 720px;
-}
-
 .volunteer-landing__section-label {
     margin: 1.5rem 0 0.5rem;
     font-size: 1rem;
