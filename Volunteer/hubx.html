@@ -11,25 +11,26 @@
 </head>
 
 <body>
-		<main id="content" class="volunteer-landing" role="main">
+    <main id="content" class="volunteer-landing" role="main">
         <h1 class="h1-seo sr-only left">Volunteer Hub</h1>
 
-        <section id="volunteer-lite-intro">
-            <h1 class="left sr only">Volunteer Hub</h1>
-            <div class="volunteer-lite-img-wrap">
-                <img src="https://ncllball.github.io/images/silos/volunteers/banner.png" alt="NCLL Volunteer Lite" class="volunteer-lite-img team-photo" />
+        <!-- Hero intro for the volunteer landing page -->
+        <section id="volunteer-landing-intro">
+            <div class="volunteer-landing-img-wrap">
+                <img src="https://ncllball.github.io/images/silos/volunteers/banner.png" alt="NCLL Volunteer Lite" class="volunteer-landing-img team-photo" />
             </div>
-            <p class="volunteer-landing__section-label"><strong>Welcome to the new Volunteer Hub.</strong> This is the one place to raise your hand for the roles and quick-call crews that keep NCLL running.</p>
-            <p class="volunteer-landing__section-label"><strong>No Experience? No Problem!</strong> No experience is required to become a volunteer. Most of the volunteer opportunities require little or no training. NCLL will provide you with any necessary training (as well as support and encouragement) to help you succeed. There are four primary Volunteer Roles at NCLL you can read about below: team level, league level, umpiring, and "pop-up" support.</p>
-
+            <p><strong>Welcome to the new Volunteer Hub.</strong> This is the one place to raise your hand for the roles and quick-call crews that keep NCLL running.</p>
+            <p><strong>No Experience? No Problem!</strong> No experience is required to become a volunteer. Most of the volunteer opportunities require little or no training. NCLL will provide you with any necessary training (as well as support and encouragement) to help you succeed. There are four primary Volunteer Roles at NCLL you can read about below: team level, league level, umpiring, and "pop-up" support.</p>
             <p>We've all got our place, come and find yours!</p>
         </section>
 
         <h2 class="left">Volunteer Crews</h2>
 
+        <!-- Program grid of volunteer role cards; each article uses radio/label toggles to swap panels -->
         <div class="program-grid">
             <!-- Card: Team Level -->
-            <article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+            <article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle volunteer-card--team">
+                <!-- Radio inputs control the tabbed panels below; labels in the sticky footer target these ids -->
                 <input type="radio" name="vol-coach" id="vol-coach-intro" checked />
                 <input type="radio" name="vol-coach" id="vol-coach-0" />
                 <input type="radio" name="vol-coach" id="vol-coach-1" />
@@ -53,11 +54,11 @@
                 </div>
                 <div class="ncll-card__body panel panel0">
                     <div class="ncll-card__details">
-							<h4 class="left">Team Level Volunteers</h4>
+                        <h4 class="left">Team Level Volunteers</h4>
 
                         <p>Team-level volunteers work directly with players throughout the season. These roles are the heart of our league, providing coaching, mentorship, and organization that helps kids develop skills, confidence, and a love for the game.</p>
 
-							<h4 class="left">Why Volunteer at the Team Level?</h4>
+                        <h4 class="left">Why Volunteer at the Team Level?</h4>
 
                         <ul class="ncll-card__meta">
                             <li>Watch your child (or others) grow in skills and confidence</li>
@@ -72,7 +73,7 @@
                 </div>
                 <div class="ncll-card__body panel panel1">
                     <div class="ncll-card__details">
-							<h4 class="left">Head Coach</h4>
+                        <h4 class="left">Head Coach</h4>
                         <ul class="ncll-card__meta">
                             <li>Leads the team, makes key decisions, recruits staff, plans practices, assigns positions, enforces rules, and fosters a love of baseball.</li>
                             <li>Responsible for practices, game strategy, and player development.</li>
@@ -88,7 +89,7 @@
                 </div>
                 <div class="ncll-card__body panel panel2">
                     <div class="ncll-card__details">
-							<h4 class="left">Assistant Coach</h4>
+                        <h4 class="left">Assistant Coach</h4>
                         <ul class="ncll-card__meta">
                             <li>The backbone of our league, assisting with younger players, running drills, and helping the Head Coach focus on individual instruction. If you can follow directions, you can assist!</li>
                             <li>Right-hand energy - supports the head coach and works directly with players during practices and games.</li>
@@ -104,7 +105,7 @@
                 </div>
                 <div class="ncll-card__body panel panel3">
                     <div class="ncll-card__details">
-							<h4 class="left">Team Manager</h4>
+                        <h4 class="left">Team Manager</h4>
                         <ul class="ncll-card__meta">
                             <li>Often considered the "Team Mom" or "Team Dad."</li>
                             <li>Helping with pitch count and/or GameChanger scorekeeping.</li>
@@ -125,7 +126,7 @@
                 </div>
                 <div class="ncll-card__body panel panel4">
                     <div class="ncll-card__details">
-							<h4 class="left">Future Volunteers!</h4>
+                        <h4 class="left">Future Volunteers!</h4>
                         <p>Begin your journey by logging into your <a class="ncll" href="https://ncllball.com" rel="noopener">Sports Connect</a> account and clicking the "Volunteer" tab on the left.</p>
                         <p>Prefer one step? You can also sign up while registering your athlete for any program we offer.</p>
                         <p>Questions? Please reach out below! We hope to see you soon!</p>
@@ -165,10 +166,9 @@
                 </div>
                 <div class="ncll-card__body panel panel-intro">
                     <div class="ncll-card__details">
+                        <p class="ncll-card__blurb"><strong>League Level Volunteers</strong> keep NCLL running smoothly behind the scenes. Board and Key Volunteer roles take a bigger time commitment but let you shape programs, policies, and culture for all 800 families.</p>
+                        <p>If you have a passion to grow—or a pain point to fix—tell us and we'll connect you to the role where you can make it happen.</p>
 
-						<p class="ncll-card__blurb"><strong>League Level Volunteers</strong> keep NCLL running smoothly behind the scenes. Board and Key Volunteer roles take a bigger time commitment but let you shape programs, policies, and culture for all 800 families.</p>
-						<p>If you have a passion to grow—or a pain point to fix—tell us and we'll connect you to the role where you can make it happen.</p>
-                        
                         <div class="ncll-card__graphics">
                             <img class="ncll-card__graphic" src="https://ncllball.github.io/images/silos/volunteers/board.png" alt="League-level board volunteers around a table" />
                         </div>
@@ -176,9 +176,9 @@
                 </div>
                 <div class="ncll-card__body panel panel0">
                     <div class="ncll-card__details">
-							<h4 class="left">Board Members</h4>
+                        <h4 class="left">Board Members</h4>
                         <p>The NCLL Board oversees operations and votes on key positions annually. Many volunteers start by running a program or initiative before joining the Board. League leadership roles are elected positions that guide the strategic direction of NCLL, with terms typically 1-2 years and elections held annually.</p>
-							<p class="volunteer-landing__section-label"><strong>Key Positions Include:</strong></p>
+                        <p class="volunteer-landing__section-label"><strong>Key Positions Include:</strong></p>
                         <ul class="ncll-card__meta">
                             <li><span>President</span> - Overall league leadership, community relations, strategic planning</li>
                             <li><span>Vice Presidents (Baseball/Softball)</span> - Oversee all baseball or softball operations, division coordination, coach support</li>
@@ -190,9 +190,10 @@
                             <li><span>Time Commitment</span>: 8-15 hours per week during season; 3-5 hours off-season</li>
                         </ul>
 
-							<h4 class="left">Key Volunteers (Non-Board)</h4>
-                        <p>Key Volunteers: These volunteers identify a need, passion, or problem and help the Board find solutions. Tasks range from organizing Photo Day to managing the website.</p><p>Essential roles that support specific league functions. These positions report to board members but don't require board election.</p>
-							<p class="volunteer-landing__section-label"><strong>Key Positions Include:</strong></p>
+                        <h4 class="left">Key Volunteers (Non-Board)</h4>
+                        <p>Key Volunteers: These volunteers identify a need, passion, or problem and help the Board find solutions. Tasks range from organizing Photo Day to managing the website.</p>
+                        <p>Essential roles that support specific league functions. These positions report to board members but don't require board election.</p>
+                        <p class="volunteer-landing__section-label"><strong>Key Positions Include:</strong></p>
                         <ul class="ncll-card__meta">
                             <li><span>Division Coordinators</span> - Support coaches in a specific division (AAA, Majors, etc.), organize assessments, handle scheduling</li>
                             <li><span>Umpire Coordinator</span> - Recruit, train, and schedule umpires for all games</li>
@@ -205,7 +206,7 @@
                             <li><span>Time Commitment</span>: Varies by role; typically 4-8 hours per week during season</li>
                         </ul>
 
-							<p class="volunteer-landing__section-label"><strong>Skills Needed</strong></p>
+                        <p class="volunteer-landing__section-label"><strong>Skills Needed</strong></p>
                         <ul class="ncll-card__meta">
                             <li>Organization and attention to detail</li>
                             <li>Communication and people skills</li>
@@ -214,7 +215,7 @@
                             <li>Willingness to learn (we provide training!)</li>
                         </ul>
 
-                            <p class="volunteer-landing__section-label"><strong>Why Volunteer at the League Level?</strong></p>
+                        <p class="volunteer-landing__section-label"><strong>Why Volunteer at the League Level?</strong></p>
 
                         <ul class="ncll-card__meta">
                             <li>Shape the experience for 800+ families</li>
@@ -227,7 +228,6 @@
                         <div class="ncll-card__cta">
                             <a class="button button--primary" href="mailto:registrar@ncllball.com?subject=Ground%20Gremlins%20Field%20Crew">Join Field Crew</a>
                         </div>
-
                     </div>
                 </div>
 
@@ -262,12 +262,11 @@
                 </div>
                 <div class="ncll-card__body panel panel0">
                     <div class="ncll-card__details">
-
                         <p>NCLL boasts one of the best umpire crews in the district. While many believe umpires are part of Little League, they actually operate independently and work with us, not for us. By joining the Umpire Registry, umpires gain access to a unique network dedicated to improving the game for players everywhere.</p>
 
-                          <p class="volunteer-landing__section-label"><strong>Overview</strong> Umpires are the backbone of every game, ensuring fair play and keeping the action moving. Whether you're brand new to the role or have years of experience, we provide training, support, and mentorship to help you succeed behind the plate and on the bases.</p>
+                        <p><strong>Overview</strong> Umpires are the backbone of every game, ensuring fair play and keeping the action moving. Whether you're brand new to the role or have years of experience, we provide training, support, and mentorship to help you succeed behind the plate and on the bases.</p>
 
-                          <p class="volunteer-landing__section-label"><strong>What Umpires Do</strong></p>
+                        <p class="volunteer-landing__section-label"><strong>What Umpires Do</strong></p>
                         <ul class="ncll-card__meta">
                             <li>Call balls and strikes - make judgment calls on pitches to keep the game fair</li>
                             <li>Rule on plays - determine safe/out calls at bases and in the field</li>
@@ -302,9 +301,9 @@
                         <p class="volunteer-landing__section-label"><strong>Umpire Roles</strong></p>
                         <ol class="ncll-card__meta">
                             <li>
-                                <strong>Umpire Coordinator</strong> — schedule &amp; support. The coordinator makes sure every game has coverage and that volunteers know where to be.
-                                <ul>
-                                    <li>Build weekly assignments and handle last-minute swaps</li>
+									<strong>Umpire Coordinator</strong> — schedule &amp; support. The coordinator makes sure every game has coverage and that volunteers know where to be.
+									<ul>
+										<li>Build weekly assignments and handle last-minute swaps</li>
                             <li>Track availability, certifications, and stipend preferences</li>
                             <li>Communicate rainouts, time changes, and field moves</li>
                             <li>Celebrate milestones—first solo plate job, perfect attendance, etc.</li>
@@ -312,9 +311,9 @@
                             </ul>
                             </li>
                             <li>
-                                <strong>Umpire in Chief</strong> — lead the crew. The UIC mentors the staff, keeps mechanics sharp, and settles tricky rules questions.
-                                <ul>
-                                    <li>Run preseason mechanics and rules clinics</li>
+									<strong>Umpire in Chief</strong> — lead the crew. The UIC mentors the staff, keeps mechanics sharp, and settles tricky rules questions.
+									<ul>
+										<li>Run preseason mechanics and rules clinics</li>
                             <li>Shadow new umpires on the diamond and provide real-time coaching</li>
                             <li>Standardize interpretations so every field calls the same game</li>
                             <li>Coordinate evaluations and feedback with the board</li>
@@ -322,9 +321,9 @@
                             </ul>
                             </li>
                             <li>
-                                <strong>On-Field Umpire</strong> — call the game. Plate and base umpires keep every matchup fair, safe, and on time.
-                                <ul>
-                                    <li>Rotate between plate and base assignments</li>
+									<strong>On-Field Umpire</strong> — call the game. Plate and base umpires keep every matchup fair, safe, and on time.
+									<ul>
+										<li>Rotate between plate and base assignments</li>
                             <li>Manage game tempo, enforce rules, and communicate with coaches</li>
                             <li>Apply training from clinics and peer mentoring</li>
                             <li>Model calm, confident decision-making for players and parents</li>
@@ -337,7 +336,7 @@
 
                         <div class="ncll-card__cta">
                             <a class="button button--primary" href="mailto:registrar@ncllball.com?subject=On-Call%20Umpire%20List">Join Umpire List</a>
-                            <a class="button button--secondary" style="background:#f6b800;color:#102542;" href="https://www.ncllball.com/Default.aspx?tabid=2111983" rel="noopener">Learn More</a>
+                            <a class="button button--secondary" style="background: #f6b800; color: #102542" href="https://www.ncllball.com/Default.aspx?tabid=2111983" rel="noopener">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -358,13 +357,14 @@
                 <div class="ncll-card__sticky-heading">
                     <div class="ncll-card__heading-title">
                         <img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
-                        <h3 class="ncll-card__title"><span class="text-background">POP UP Support</span></h3>
+                        <h3 class="ncll-card__title"><span class="text-background">"POP UP" Support</span></h3>
                         <img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
                     </div>
                 </div>
                 <div class="ncll-card__body panel panel-intro">
                     <div class="ncll-card__details">
-                        <p class="ncll-card__blurb">It's baseball, and just like on the field, "Pop Ups" happen — we just don't always know when or where. Read on to learn more about these adhoc single-shift type events and don't forget to sign up on our volunteer lists page!</p>
+                        <p class="ncll-card__blurb">It's baseball, and just like on the field, <strong>"Pop-Ups"</strong> happen—we don't always know when or where. Pop-Up Support volunteers are the flexible heroes who jump in for single-shift, ad hoc needs. Can't commit to a season-long role? No problem. From field maintenance to event support, every one-off helps, and it's commitment-free when you join our volunteer lists page.</p>
+
                         <div class="ncll-card__graphics">
                             <img class="ncll-card__graphic" src="https://ncllball.github.io/images/silos/volunteers/field.png" alt="Field crew volunteers preparing the diamond" />
                         </div>
@@ -376,10 +376,8 @@
                             <li><strong>Roles:</strong> Setup/teardown, check-in, flow, hospitality</li>
                             <li><strong>Great for:</strong> Flexible schedules, first-time volunteers</li>
                         </ul>
-                        <p>Ad-Hoc Volunteering For those who can't commit to a season-long role, there are plenty of one-time or short-term opportunities to pitch in. From field maintenance to event support, every bit of help makes a difference!</p>
-                        <p>Pop-Up Support<br />Overview<br />Can't commit to a season-long role? No problem! Pop-Up Support volunteers are the flexible heroes who jump in when needed. Whether you have a free Saturday or want to help with a specific project, there's always a place for you.</p>
                         <p>Event Volunteers<br />Special events - help create memorable moments for players and families throughout the season.</p>
-                          <p class="volunteer-landing__section-label"><strong>Event Opportunities Include:</strong></p>
+                        <p class="volunteer-landing__section-label"><strong>Event Opportunities Include:</strong></p>
                         <p>
 								Opening Day - Field setup, registration table, parade coordination, ceremony support (April)<br />
 								Photo Day - Guide teams to photographer, organize lineups, distribute order forms (May)<br />
@@ -392,7 +390,7 @@
 							</p>
                         <p>Sign-up: We send email blasts before each event with volunteer needs and sign-up links</p>
                         <p>Ground Gremlins<br />Field maintenance crew - keep our playing surfaces safe, beautiful, and game-ready.</p>
-                          <p class="volunteer-landing__section-label"><strong>What Ground Gremlins Do:</strong></p>
+                        <p class="volunteer-landing__section-label"><strong>What Ground Gremlins Do:</strong></p>
                         <p>
 								Field prep - Dragging infields, lining basepaths, setting bases before games<br />
 								Mound maintenance - Repairing pitcher's mounds, filling holes, packing clay<br />
@@ -462,7 +460,7 @@
                 </div>
                 <div class="ncll-card__body panel panel0">
                     <div class="ncll-card__details">
-                          <p class="volunteer-landing__section-label"><strong>Action item for volunteers:</strong> Ask your HR department if your company has a program to donate dollars for your volunteer time. Each company has its own process.</p>
+                        <p><strong>Action item for volunteers:</strong> Ask your HR department if your company has a program to donate dollars for your volunteer time. Each company has its own process.</p>
                         <p>Volunteer time already means the world to NCLL--we literally could not operate without volunteers. With these company-giving programs, volunteers can easily support what they care about even more. Time literally is money. Funds from volunteer giving programs help pay for uniforms, player development, equipment and more.</p>
                         <p>Questions? Email treasurer@ncllball.com.</p>
                         <div class="ncll-card__cta">
