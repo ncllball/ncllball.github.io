@@ -1999,27 +1999,27 @@ details.footies[open] summary::before {
 /* ====== BEGIN Additional Utility Styles ====== */
 /* Utility classes */
 .margin-top-0 {
-    margin-top: 0px
+    margin-top: 0px !important;
 }
-
+.margin-bottom-0 {
+    margin-bottom: 0px !important;
+}
 .margin-top-30 {
-    margin-top: 30px
+    margin-top: 30px;
 }
 
 .margin-bottom-20 {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .margin-top-10 {
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .margin-bottom-10 {
     margin-bottom: 10px
 }
-.margin-bottom-0 {
-    margin-bottom: 0px
-}
+
 .padding-10 {
     padding: 10px
 }
