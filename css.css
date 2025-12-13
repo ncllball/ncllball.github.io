@@ -2806,7 +2806,7 @@ details.footies[open] summary::before {
     margin: 0.75rem 0 0.35rem;
     font-size: 0.95rem;
     letter-spacing: 0.01em;
-    color: var(--color_red);
+    color: var(--color_red) !important;
 }
 
 /* Copy + meta ----------------------------------------------------------- */
