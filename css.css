@@ -2809,7 +2809,7 @@ details.footies[open] summary::before {
     color: var(--color_red) !important;
     font-weight: 400;
     text-transform: normal;
-
+    font-family: var(--font_tk-noto-sans-display-extraconde) !important;
 }
 
 /* Copy + meta ----------------------------------------------------------- */
