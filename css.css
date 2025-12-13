@@ -2806,9 +2806,9 @@ details.footies[open] summary::before {
     margin: 0.75rem 0 0.35rem;
     font-size: 0.75rem;
     letter-spacing: 0.01em;
-    color: var(--color_gray) !important;
-    font-weight: 800;
-    text-transform: uppercase;
+    color: var(--color_red) !important;
+    font-weight: 400;
+    text-transform: normal;
 
 }
 
