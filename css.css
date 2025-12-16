@@ -3999,20 +3999,6 @@ details.footies[open] summary::before {
     padding-bottom: 12px;
 }
 
-/* Ground Gremlins block styling */
-.ground-gremlins-card .ncll-card__body {
-    background: #f5f5f5;
-}
-
-.ground-gremlins-card .ncll-card__details {
-    padding: 16px;
-    border-radius: 10px;
-}
-
-.ground-gremlins-card .ncll-card__body + .ncll-card__body {
-    margin-top: 8px;
-}
-
 .ground-gremlins-link {
     background: #f5f5f5;
     color: #102542;
