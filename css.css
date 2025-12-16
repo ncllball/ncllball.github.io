@@ -4013,14 +4013,14 @@ details.footies[open] summary::before {
 }
 
 .ad-hoc-heroes-link {
-    background: #f6b800;
-    border-color: #f6b800;
-    color: #102542;
+    background: var(--color_red);
+    border-color: var(--color_red);
+    color: #fff;
 }
 
 .ad-hoc-heroes-link:hover,
 .ad-hoc-heroes-link:focus-visible {
-    background: #dca600;
-    border-color: #dca600;
-    color: #102542;
+    background: #b81236;
+    border-color: #b81236;
+    color: #fff;
 }
