@@ -4025,3 +4025,16 @@ details.footies[open] summary::before {
     color: #102542;
     border-color: #c5c5c5;
 }
+
+.ad-hoc-heroes-link {
+    background: #444;
+    border-color: #444;
+    color: #fff;
+}
+
+.ad-hoc-heroes-link:hover,
+.ad-hoc-heroes-link:focus-visible {
+    background: #222;
+    border-color: #222;
+    color: #fff;
+}
