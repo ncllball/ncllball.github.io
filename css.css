@@ -2932,6 +2932,10 @@ details.footies[open] summary::before {
     font-size: .9rem;
 }
 
+.ncll-card__details ol li {
+    list-style: decimal;
+}
+
 .ncll-card__meta li .ncll-card__details li {
     font-size: 0.85rem;
 }
