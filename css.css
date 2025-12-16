@@ -2922,7 +2922,7 @@ details.footies[open] summary::before {
 .ncll-card__details ol {
     margin: 10px;
     text-align: left;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 0px 0px 10px;
 }
 
 .ncll-card__details li {
@@ -2934,7 +2934,6 @@ details.footies[open] summary::before {
 
 .ncll-card__details ol li {
     list-style: decimal;
-    padding-right: 0px;
 }
 
 .ncll-card__meta li .ncll-card__details li {
