@@ -2242,6 +2242,10 @@ details.footies[open] summary::before {
     height: auto
 }
 
+.venmo-qr--small {
+    max-width: 140px;
+}
+
 .venmo-uses-text {
     font-size: 0.9rem;
     color: var(--color_text);
