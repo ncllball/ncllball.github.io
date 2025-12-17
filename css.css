@@ -4104,3 +4104,8 @@ details.footies[open] summary::before {
     border-color: #b81236;
     color: #fff;
 }
+
+/* Related links sizing */
+.related-links a {
+    font-size: 0.8rem;
+}
