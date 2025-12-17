@@ -564,20 +564,20 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 
 .volunteer-landing-intro__aside {
     float: right;
-    max-width: 280px;
+    max-width: 220px;
     width: 100%;
     background: #fff;
     border: 1px solid var(--color_border_light);
     border-left: 4px solid var(--color_red);
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
-    padding: 14px 16px;
-    margin: 0 0 12px 18px;
+    padding: 10px 12px;
+    margin: 0 0 12px 14px;
 }
 
 .volunteer-landing__aside-title {
-    margin: 0 0 8px 0;
-    font-size: 0.95rem;
+    margin: 0 0 6px 0;
+    font-size: 0.9rem;
     color: var(--color_blue);
 }
 
@@ -586,7 +586,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 6px;
+    gap: 4px;
 }
 
 .volunteer-landing__aside-list a {

@@ -16,6 +16,9 @@
 
         <!-- Hero intro for the volunteer landing page -->
         <section id="volunteer-landing-intro">
+            <div class="volunteer-landing-img-wrap">
+                <img src="https://ncllball.github.io/images/silos/volunteers/banner.png" alt="NCLL Volunteer Lite" class="volunteer-landing-img team-photo" />
+            </div>
             <aside class="volunteer-landing-intro__aside" aria-label="Related volunteer links">
                 <h4 class="volunteer-landing__aside-title">Related links</h4>
                 <ul class="volunteer-landing__aside-list">
@@ -24,9 +27,6 @@
                     <li><a class="ncll" href="mailto:safety@ncllball.com?subject=Background%20Check%20Help">Background Check Help</a></li>
                 </ul>
             </aside>
-            <div class="volunteer-landing-img-wrap">
-                <img src="https://ncllball.github.io/images/silos/volunteers/banner.png" alt="NCLL Volunteer Lite" class="volunteer-landing-img team-photo" />
-            </div>
             <p><strong>Welcome to the new Volunteer Hub.</strong> This is the one place to raise your hand for the roles and quick-call crews that keep NCLL running.</p>
             <p><strong>No Experience? No Problem!</strong> No experience is required to become a volunteer. Most of the volunteer opportunities require little or no training. NCLL will provide you with any necessary training (as well as support and encouragement) to help you succeed. There are four primary Volunteer Roles at NCLL you can read about below: <strong>1) Team Level</strong>, <strong>2) League Level</strong>, <strong>3) Umpiring</strong>, and <strong>4) "Pop-Up" Support</strong>.</p>
             <p>We've all got our place, come and find yours!</p>
@@ -756,7 +756,10 @@
             </article>
 
             <!-- Card: Other Ways to Support NCLL -->
-            <article class="ncll-card ncll-card--overlay ncll-card--volunteer">
+            <article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+                <input type="radio" name="vol-support" id="vol-support-intro" checked />
+                <input type="radio" name="vol-support" id="vol-support-0" />
+
                 <div class="ncll-card__sticky-heading">
                     <div class="ncll-card__heading-title">
                         <img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
@@ -768,6 +771,13 @@
                 <div class="ncll-card__body panel panel-intro">
                     <div class="ncll-card__details">
                         <p class="ncll-card__blurb">Not on a team or a schedule? There are still high-impact ways to help the league thrive.</p>
+                        <p class="ncll-card__blurb">Tap the next arrow to see quick ways you can help without a season-long commitment.</p>
+                    </div>
+                </div>
+
+                <div class="ncll-card__body panel panel0">
+                    <div class="ncll-card__details">
+                        <h4 class="left">How to Help</h4>
                         <ul class="ncll-card__meta">
                             <li><strong>Employer Matching:</strong> Log your hours so companies can double the impact.</li>
                             <li><strong>Sponsorships:</strong> Connect us with local businesses for banners and gear.</li>
@@ -778,6 +788,15 @@
                             <a class="button button--primary" href="mailto:treasurer@ncllball.com?subject=Employer%20Matching%20or%20Donations">Matching or Donations</a>
                             <a class="button button--secondary button--red" href="mailto:sponsorship@ncllball.com?subject=NCLL%20Sponsorship">Sponsor the League</a>
                         </div>
+                    </div>
+                </div>
+
+                <div class="ncll-card__sticky-footer">
+                    <div class="actions" role="group">
+                        <label class="button button--secondary btn-prev btn-prev-start" for="vol-support-0">Back</label>
+                        <label class="button button--primary btn-next btn-next-intro" for="vol-support-0">Next</label>
+                        <label class="button button--secondary btn-prev btn-prev-0" for="vol-support-intro">Back</label>
+                        <label class="button button--primary btn-next btn-next-0" for="vol-support-intro">Start Over</label>
                     </div>
                 </div>
             </article>
