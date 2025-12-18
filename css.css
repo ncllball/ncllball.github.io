@@ -4110,3 +4110,30 @@ details.footies[open] summary::before {
     font-size: 0.8rem;
     white-space: nowrap;
 }
+
+/* Related links (volunteer sidebar) - blue text and markers */
+.volunteer-landing__aside-list.related-links {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.volunteer-landing__aside-list.related-links li {
+    position: relative;
+    padding-left: 14px;
+    margin: 6px 0;
+}
+
+.volunteer-landing__aside-list.related-links li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color_blue);
+    line-height: 1;
+}
+
+.volunteer-landing__aside-list.related-links a {
+    color: var(--color_blue) !important;
+    font-weight: 600;
+}
