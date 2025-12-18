@@ -4108,4 +4108,5 @@ details.footies[open] summary::before {
 /* Related links sizing */
 .related-links a {
     font-size: 0.8rem;
+    white-space: nowrap;
 }
