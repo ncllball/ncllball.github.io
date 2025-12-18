@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="NCLL Helping Hub: quick ways to support the league through sponsorships, Venmo, alumni, equipment, services, and social." />
     <title>Helping Hub - NCLL</title>
-    <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css?v=20250212" />
+    <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
 </head>
 
 <body>
-    <main id="content" class="volunteer-landing" role="main">
+    <main class="volunteer-landing" id="content" role="main">
         <h1 class="h1-seo sr-only left">Helping Hub</h1>
 
         <section id="volunteer-landing-intro">
             <div class="volunteer-landing-img-wrap">
-                <img src="https://ncllball.github.io/images/silos/volunteers/banner.png" alt="NCLL Helping Hub" class="volunteer-landing-img team-photo" />
+                <img class="volunteer-landing-img team-photo" src="https://ncllball.github.io/images/silos/volunteers/banner.png" alt="NCLL Helping Hub" />
             </div>
             <p><strong>Welcome to the Helping Hub.</strong> Quick, high-impact ways to support North Central Little League without taking on a season-long role.</p>
             <p><strong>Pick what fits you best:</strong> sponsorships, Venmo giving, alumni connections, equipment donations, in-kind services, and boosting us on social.</p>
@@ -27,8 +27,10 @@
         <div class="program-grid">
             <!-- Card: Sponsorships -->
             <article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
-                <input type="radio" name="help-sponsor" id="help-sponsor-intro" checked />
-                <input type="radio" name="help-sponsor" id="help-sponsor-0" />
+                <input class="radio" type="radio" name="help-sponsor" id="help-sponsor-intro" checked />
+                <input class="radio" type="radio" name="help-sponsor" id="help-sponsor-0" />
+                <input class="radio" type="radio" name="help-sponsor" id="help-sponsor-1" />
+                <input class="radio" type="radio" name="help-sponsor" id="help-sponsor-2" />
 
                 <div class="ncll-card__sticky-heading">
                     <div class="ncll-card__heading-title">
@@ -39,8 +41,8 @@
                 </div>
 
                 <div class="ncll-card__body panel panel-intro">
-                    <div class="ncll-card__media">
-                        <img src="https://ncllball.github.io/images/silos/volunteers/sponsorship/kid.png" alt="Young NCLL player ready to play" class="team-photo" />
+                    <div class="ncll-card__details">
+                        <img class="ncll-card__graphic ncll-card__graphic--large" src="https://ncllball.github.io/images/silos/volunteers/sponsorship/kid.png" alt="Young NCLL player ready to play" />
                     </div>
                     <div class="ncll-card__details">
                         <p class="ncll-card__blurb">Community sponsors keep NCLL strong - uniforms, fields, clinics, and scholarships all rely on local partners. We will match your business to the right division or event.</p>
@@ -63,8 +65,38 @@
                         </ul>
                         <p class="ncll-card__blurb"><strong>2025 season:</strong> $900 per team (covers uniforms). NCLL is a 501(c)(3).</p>
                         <div class="ncll-card__cta">
-                            <a class="button button--primary" href="mailto:ncllsponsorships@gmail.com?subject=NCLL%20Sponsorship">Contact Sponsorships</a>
+                            <a class="button button--primary" href="mailto:ncllsponsorships@gmail.com- subject=NCLL%20Sponsorship">Contact Sponsorships</a>
                             <a class="button button--secondary" href="/Sponsorships/leaguesponsorship.html">Full sponsor details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ncll-card__body panel panel1">
+                    <div class="ncll-card__details">
+                        <h4 class="left">How to get started</h4>
+                        <ul class="ncll-card__meta">
+                            <li>Email your business name, contact, and preferred sport/division.</li>
+                            <li>Send your logo (vector or high-res PNG) for uniforms and web.</li>
+                            <li>Confirm team count: $900 per team covers full uniform set.</li>
+                            <li>We pair you with a team and share key dates and payment details.</li>
+                        </ul>
+                        <div class="ncll-card__cta">
+                            <a class="button button--primary" href="mailto:ncllsponsorships@gmail.com- subject=Sponsor%20a%20Team">Start my sponsorship</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ncll-card__body panel panel2">
+                    <div class="ncll-card__details">
+                        <h4 class="left">Good to know</h4>
+                        <ul class="ncll-card__meta">
+                            <li>NCLL is a 501(c)(3); sponsorships may be tax-deductible.</li>
+                            <li>Plaques delivered at season end to display at your business.</li>
+                            <li>Recognition across site, social, events, and team gatherings.</li>
+                            <li>Sponsorships help fund scholarships so every kid can play.</li>
+                        </ul>
+                        <div class="ncll-card__cta">
+                            <a class="button button--secondary" href="/Sponsorships/leaguesponsorship.html">See full sponsor page</a>
                         </div>
                     </div>
                 </div>
@@ -73,8 +105,59 @@
                     <div class="actions" role="group">
                         <label class="button button--secondary btn-prev btn-prev-start" for="help-sponsor-0">Back</label>
                         <label class="button button--primary btn-next btn-next-intro" for="help-sponsor-0">Next</label>
+
                         <label class="button button--secondary btn-prev btn-prev-0" for="help-sponsor-intro">Back</label>
-                        <label class="button button--primary btn-next btn-next-0" for="help-sponsor-intro">Start Over</label>
+                        <label class="button button--primary btn-next btn-next-0" for="help-sponsor-1">Next</label>
+
+                        <label class="button button--secondary btn-prev btn-prev-1" for="help-sponsor-0">Back</label>
+                        <label class="button button--primary btn-next btn-next-1" for="help-sponsor-2">Next</label>
+
+                        <label class="button button--secondary btn-prev btn-prev-2" for="help-sponsor-1">Back</label>
+                        <label class="button button--primary btn-next btn-next-2" for="help-sponsor-intro">Start Over</label>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card: Registration During Donation -->
+            <article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+                <input type="radio" name="help-registration" id="help-registration-intro" checked />
+                <input type="radio" name="help-registration" id="help-registration-0" />
+
+                <div class="ncll-card__sticky-heading">
+                    <div class="ncll-card__heading-title">
+                        <img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+                        <h3 class="ncll-card__title"><span class="text-background">Registration Donations</span></h3>
+                        <img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+                    </div>
+                </div>
+
+                <div class="ncll-card__body panel panel-intro">
+                    <div class="ncll-card__details">
+                        <p class="ncll-card__blurb">Add a donation while you register your player. It is a fast way to fund scholarships and field upkeep alongside your regular fees.</p>
+                    </div>
+                </div>
+
+                <div class="ncll-card__body panel panel0">
+                    <div class="ncll-card__details">
+                        <h4 class="left">How it works</h4>
+                        <ul class="ncll-card__meta">
+                            <li>During checkout, choose an optional donation amount that fits your budget.</li>
+                            <li>Every dollar goes to scholarships, gear, and field maintenance.</li>
+                            <li>Receipts come with your registration confirmation.</li>
+                        </ul>
+                        <div class="ncll-card__cta">
+                            <a class="button button--primary" href="/Registration/mainreg.html">Go to registration</a>
+                            <a class="button button--secondary" href="mailto:info@ncllball.com- subject=Registration%20Donation%20Question">Questions- </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ncll-card__sticky-footer">
+                    <div class="actions" role="group">
+                        <label class="button button--secondary btn-prev btn-prev-start" for="help-registration-0">Back</label>
+                        <label class="button button--primary btn-next btn-next-intro" for="help-registration-0">Next</label>
+                        <label class="button button--secondary btn-prev btn-prev-0" for="help-registration-intro">Back</label>
+                        <label class="button button--primary btn-next btn-next-0" for="help-registration-intro">Start Over</label>
                     </div>
                 </div>
             </article>
@@ -96,8 +179,8 @@
                     <div class="ncll-card__details">
                         <p class="ncll-card__blurb">Send a fast gift to help cover fields, scholarships, and clinics.</p>
                         <aside class="venmo-wrap">
-                            <a href="https://ncllball.github.io/images/site_content/venmo_qr.png" target="_blank" rel="noopener noreferrer" class="venmo-qr-link" title="Open QR in a new tab">
-                                <img src="https://ncllball.github.io/images/site_content/venmo_qr.png" alt="Venmo QR code for North Central Little League donations" class="venmo-qr venmo-qr--small" />
+                            <a class="venmo-qr-link" href="https://ncllball.github.io/images/site_content/venmo_qr.png" target="_blank" rel="noopener noreferrer" title="Open QR in a new tab">
+                                <img class="venmo-qr venmo-qr--small" src="https://ncllball.github.io/images/site_content/venmo_qr.png" alt="Venmo QR code for North Central Little League donations" />
                             </a>
                         </aside>
                     </div>
@@ -148,7 +231,7 @@
                         <h4 class="left">Join the alumni list</h4>
                         <p>Share your contact info, year, and division so we can invite you to alumni days and mentorship events.</p>
                         <div class="ncll-card__cta">
-                            <a class="button button--primary" href="mailto:info@ncllball.com?subject=Alumni%20List%20Signup">Add Me to Alumni List</a>
+                            <a class="button button--primary" href="mailto:info@ncllball.com- subject=Alumni%20List%20Signup">Add Me to Alumni List</a>
                         </div>
                     </div>
                 </div>
@@ -191,7 +274,7 @@
                             <li>Storage: bins, shelves for sheds.</li>
                         </ul>
                         <div class="ncll-card__cta">
-                            <a class="button button--primary" href="mailto:equipment@ncllball.com?subject=Equipment%20Donation">Coordinate a Drop-Off</a>
+                            <a class="button button--primary" href="mailto:equipment@ncllball.com- subject=Equipment%20Donation">Coordinate a Drop-Off</a>
                         </div>
                     </div>
                 </div>
@@ -234,7 +317,7 @@
                             <li>Printing: banners, flyers, signage.</li>
                         </ul>
                         <div class="ncll-card__cta">
-                            <a class="button button--primary" href="mailto:info@ncllball.com?subject=In-Kind%20Services">Offer Services</a>
+                            <a class="button button--primary" href="mailto:info@ncllball.com- subject=In-Kind%20Services">Offer Services</a>
                         </div>
                     </div>
                 </div>
@@ -279,6 +362,62 @@
                         <div class="ncll-card__cta">
                             <a class="button button--secondary button--social-gradient" href="https://www.instagram.com/ncllball" rel="noopener">Follow @ncllball</a>
                         </div>
+                        <div class="social-embed">
+                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/northcentrallittleleague/- utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                                <div style="padding:16px;">
+                                    <a class="insta-embed-link" href="https://www.instagram.com/northcentrallittleleague/- utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                                        <div style=" display: flex; flex-direction: row; align-items: center;">
+                                            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                                            </div>
+                                        </div>
+                                        <div style="padding: 19% 0;"></div>
+                                        <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                            <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                        <g>
+                                                            <path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div style="padding-top: 8px;">
+                                            <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div>
+                                        </div>
+                                        <div style="padding: 12.5% 0;"></div>
+                                        <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                            <div>
+                                                <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                                                <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                                                <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                                            </div>
+                                            <div style="margin-left: 8px;">
+                                                <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                                                <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                                            </div>
+                                            <div style="margin-left: auto;">
+                                                <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                                                <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                                                <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+                                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+                                        </div>
+                                    </a>
+                                    <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                        <a class="insta-embed-link" href="https://www.instagram.com/northcentrallittleleague/- utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">North Central Little League</a>
+                                        (@<a class="insta-embed-link" href="https://www.instagram.com/northcentrallittleleague/- utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">northcentrallittleleague</a>)  Instagram photos and videos
+                                    </p>
+                                </div>
+                            </blockquote>
+                            <script async src="https://www.instagram.com/embed.js"></script>
+                        </div>
                     </div>
                 </div>
 
@@ -296,4 +435,3 @@
 </body>
 
 </html>
-
