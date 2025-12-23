@@ -3150,6 +3150,14 @@ details.footies[open] summary::before {
     background: rgba(46, 204, 64, 0.25);
 }
 
+.status-soon {
+    background: rgba(246, 195, 68, 0.25);
+}
+
+.status-closed {
+    background: rgba(205, 22, 63, 0.25);
+}
+
 .status-email {
     background: rgba(246, 195, 68, 0.25);
     /*color: #5a4200;*/
@@ -3161,20 +3169,10 @@ details.footies[open] summary::before {
     border: 1px solid var(--color_blue);
 }
 
-.status-soon {
-    background: rgba(205, 22, 63, 0.25);
-    color: #7a0d26;
-    border: 1px solid var(--color_red);
-}
-
 .status-free {
     background: rgba(46, 204, 64, 0.25);
     color: #0f5c15;
     border: 1px solid #2ecc40;
-}
-
-.status-closed {
-    background: rgba(205, 22, 63, 0.25);
 }
 
 /* Action row ------------------------------------------------------------- */
