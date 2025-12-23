@@ -2299,6 +2299,11 @@ details.footies[open] summary::before {
     cursor: grabbing;
 }
 
+.pd-landing .table-scroll,
+.pd-landing .table-scroll.is-grabbed {
+    cursor: default;
+}
+
 /* Logo gallery on About/logo.html */
 .logo-landing .logo-grid {
     display: grid;
