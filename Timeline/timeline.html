@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,38 @@
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
 
     <style>
+        .timeline-month-nav {
+            margin: 0 0 1.5rem;
+            padding: 1rem 1.25rem;
+            background: #f5f7fb;
+            border: 1px solid #dde3ed;
+            border-radius: 6px;
+        }
 
+        .timeline-month-nav h2 {
+            margin: 0 0 0.5rem;
+            font-size: 1.15rem;
+            color: var(--color_blue);
+        }
+
+        .timeline-month-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem 1.5rem;
+        }
+
+        .timeline-month-nav a {
+            color: var(--color_blue);
+            text-decoration: none;
+        }
+
+        .timeline-month-nav a:hover,
+        .timeline-month-nav a:focus {
+            text-decoration: underline;
+        }
     </style>
 
 
@@ -24,6 +55,23 @@
                     "fuzzy" are approximate.</p>
             </div>
             <div class="col-xs-12">
+                <div class="timeline-month-nav" aria-label="Jump to month">
+                    <h2>Jump to a Month</h2>
+                    <ul>
+                        <li><a href="#sep-2025">Sep 2025</a></li>
+                        <li><a href="#oct-2025">Oct 2025</a></li>
+                        <li><a href="#nov-2025">Nov 2025</a></li>
+                        <li><a href="#dec-2025">Dec 2025</a></li>
+                        <li><a href="#jan-2026">Jan 2026</a></li>
+                        <li><a href="#feb-2026">Feb 2026</a></li>
+                        <li><a href="#mar-2026">Mar 2026</a></li>
+                        <li><a href="#apr-2026">Apr 2026</a></li>
+                        <li><a href="#may-2026">May 2026</a></li>
+                        <li><a href="#jun-2026">Jun 2026</a></li>
+                        <li><a href="#jul-2026">Jul 2026</a></li>
+                        <li><a href="#aug-2026">Aug 2026</a></li>
+                    </ul>
+                </div>
                 <ul class="timeline timeline-split">
                     <!-- September 2025 -->
                     <li class="timeline-item period">
@@ -962,4 +1010,3 @@
 
 
 </body></html>
-
