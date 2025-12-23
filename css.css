@@ -2259,7 +2259,7 @@ details.footies[open] summary::before {
 }
 
 /* ====== END Venmo Donation Page Styles ====== */
-/* ====== BEGIN Vendor Uniform Sizing Grid (Resources/uniforms.html) ======    Purpose: present all vendor sizing tables horizontally as responsive cards    - .sizing-grid: grid container for horizontal layout    - .sizing-card: individual card with table    - tables remain accessible; mobile stacks automatically ====================================================================== */
+/* ====== BEGIN Vendor Uniform Sizing Grid (Resources/uniforms-hub.html) ======    Purpose: present all vendor sizing tables horizontally as responsive cards    - .sizing-grid: grid container for horizontal layout    - .sizing-card: individual card with table    - tables remain accessible; mobile stacks automatically ====================================================================== */
 .sizing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
