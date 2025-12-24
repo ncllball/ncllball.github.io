@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 Season Timeline – North Central Little League (Seattle)</title>
+    <title>2026 Season Timeline - North Central Little League (Seattle)</title>
     <meta name="description" content="Comprehensive 2026 season timeline for North Central Little League (Seattle): registration, assessments, clinics, practices, games, tournaments, and postseason milestones.">
     <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
@@ -14,6 +14,7 @@
             background: #f5f7fb;
             border: 1px solid #dde3ed;
             border-radius: 6px;
+            display: block;
         }
 
         .timeline-month-nav h2 {
@@ -39,6 +40,26 @@
         .timeline-month-nav a:hover,
         .timeline-month-nav a:focus {
             text-decoration: underline;
+        }
+    
+
+        /* Keep the timeline columns aligned across month sections */
+        @media (min-width: 768px) {
+            .timeline-month .timeline.timeline-split {
+                table-layout: fixed;
+            }
+
+            .timeline-month .timeline-split .timeline-info {
+                width: 28%;
+            }
+
+            .timeline-month .timeline-split .timeline-marker {
+                width: 40px;
+            }
+
+            .timeline-month .timeline-split .timeline-content {
+                width: 72%;
+            }
         }
     </style>
 
@@ -72,51 +93,52 @@
                         <li><a href="#aug-2026">Aug 2026</a></li>
                     </ul>
                 </div>
-                <ul class="timeline timeline-split">
-                    <!-- September 2025 -->
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 id="sep-2025" class="timeline-title">September 2025</h2>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-info"><span>September 1<sup>st</sup>, 2025</span></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Labor Day</h3>
-                            <p>Federal holiday; limited field access.</p>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-info"><span>September 25<sup>th</sup>, 2025</span></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Season Kickoff Celebration and Board Voting</h3>
-                            <p>This is our League-wide celebration for all the volunteers (coaches, board, umpires,
-                                etc.) who helped to make the 2025 season successful. We will also hold our annual
-                                board elections during this meeting. For 2025, this will be held on September 25<sup>th</sup>. Keep
-                                your eye out for emails regarding the event or reach out to <a href="mailto:president@ncllball.com" class="ncll">president@ncllball.com</a>. This
-                                is the time for all our volunteers to come and take your bow and see what's in store for
-                                next year!</p>
-                        </div>
-                    </li>
+                <!-- START: September 2025 -->
+                <section class="timeline-month" id="section-sep-2025">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 id="sep-2025" class="timeline-title">September 2025</h2>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info"><span>September 1<sup>st</sup>, 2025</span></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Labor Day</h3>
+                            <p>Federal holiday; limited field access—good day for rest or a backyard catch.</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info"><span>September 25<sup>th</sup>, 2025</span></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Season Kickoff Celebration and Board Voting</h3>
+                                <p>Volunteer thank-you night and our annual board vote—food, community, and a first look at what’s ahead for 2026. Mark September 25<sup>th</sup> and come celebrate the people who made last season great. Questions? <a href="mailto:president@ncllball.com" class="ncll">president@ncllball.com</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <!-- END: September 2025 -->
 
-                    <!-- October 2025 -->
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 id="oct-2025" class="timeline-title">October 2025</h2>
-                        </div>
-                    </li>
+                <!-- START: October 2025 -->
+                <section class="timeline-month" id="section-oct-2025">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 id="oct-2025" class="timeline-title">October 2025</h2>
+                            </div>
+                        </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>October 13<sup>th</sup>, 2025</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">Indigenous Peoples’ Day</h3>
-                            <p>Federal holiday; school closed.</p>
+                            <h3 class="timeline-title">Indigenous Peoples Day</h3>
+                            <p>Federal holiday; school closed—plan around limited facilities.</p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -124,7 +146,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Volunteer Recruitment Party</h3>
-                            <p>Recruitment for volunteers opens <a class="ncll" href="/Volunteer/index.html">Volunteer hub</a></p>
+                            <p>Kickoff mixer for new and returning helpers—meet the board, grab a slice, and see where you can plug in. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2117276">Volunteer hub</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -132,7 +154,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">2026 Regular Season BASEBALL/SOFTBALL Registration Testing (Internal)</h3>
-                            <p>We will be conducting internal tests of our 2026 registration system. This is primarily for board members and key volunteers, but if you would like to participate and help us test, please contact the <a class="ncll" href="mailto:registrar@ncllball.com">registrar</a> to be added to the test group. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112172">Test Link</a></p>
+                            <p>Help us stress-test and smooth out the 2026 registration flow before families pile in. Board, key volunteers, and any tech-friendly helpers welcome—email the <a class="ncll" href="mailto:registrar@ncllball.com">registrar</a> to join the test crew. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112172">Internal testing</a> (<a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112172">link</a>)</p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -140,18 +162,23 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Halloween</h3>
-                            <p>Evening activities; potential conflicts with events.</p>
+                            <p>Evening activities; expect trick-or-treat conflicts—no league events scheduled.</p>
                         </div>
                     </li>
+                    </ul>
+                </section>
+                <!-- END: October 2025 -->
 
-                    <!-- November 2025 -->
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 id="nov-2025" class="timeline-title">November 2025</h2>
-                        </div>
-                    </li>
+                <!-- START: November 2025 -->
+                <section class="timeline-month" id="section-nov-2025">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 id="nov-2025" class="timeline-title">November 2025</h2>
+                            </div>
+                        </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>November 2<sup>nd</sup>, 2025</span></div>
                         <div class="timeline-marker"></div>
@@ -165,7 +192,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">2026 Regular Season SOFTBALL Registration Opens</h3>
-                            <p>Registration for the 2026 Softball season is now open for all divisions, from A to Seniors. Be sure to register early to secure your spot. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112172">Register Now</a></p>
+                            <p>2026 Softball is open—A through Seniors. Lock in your spot early so we can place friends together, plan coaches, and keep teams balanced. New families encouraged; returning players, welcome back! <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112172">Register</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -173,15 +200,23 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">2026 Regular Season BASEBALL Registration Opens</h3>
-                            <p>Registration for the 2026 Baseball season is now open for all divisions, from T-Ball to Seniors. We encourage families to register early to help us with planning. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112172">Register Now</a></p>
+                            <p>2026 Baseball is open—T-Ball through Seniors. Save your spot now so we can form teams early, align coaches, and honor buddy requests. New families encouraged; returning players, welcome back! <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112172">Register</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
-                        <div class="timeline-info"><span>Week of Nov 4, 2025</span></div>
+                        <div class="timeline-info"><span>November 3, 2025</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Winterball26 Baseball AAA/Majors Training starts</h3>
-                            <p>Weekly indoor sessions at The Hive/Focus for AAA and Majors divisions to maintain skills during off-season. Continues through late January with breaks for Thanksgiving and winter holidays. <a class="ncll" href="/Player Development/winterball26-aaa-majors-baseball-training.html">Program page</a></p>
+                            <p>High-rep, indoor skill build at The Hive/Focus for AAA and Majors: live pitching/hitting cages, defense reps, and instructor-led drills to stay sharp all winter. Runs Nov 3 - Jan 26 with breaks for Thanksgiving and winter holidays. Limited slots; jump in early. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112053">Register</a></p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info"><span>November 9, 2025</span></div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Winterball26 BB TEEN Training I begins</h3>
+                            <p>Sunday-night grind for 13-16s: live BP, fielding work, and reps that keep you ahead of spring. 15 sessions through Feb 22 at Focus Baseball. Grab a slot and keep building. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2117407">Register</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -197,7 +232,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Coach Recruitment</h3>
-                            <p>Recruitment for coaches opens <a class="ncll" href="/Coaching/overview.html">Coaching info</a></p>
+                            <p>Coach signups open—step into the dugout, get training, and shape a team’s season. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2111982">Coaching info</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -205,7 +240,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Thanksgiving Day</h3>
-                            <p>Federal holiday; limited activities</p>
+                            <p>Federal holiday; limited activities—enjoy family time</p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -216,29 +251,50 @@
                             <p>Holiday break.</p>
                         </div>
                     </li>
+                    </ul>
+                </section>
+                <!-- END: November 2025 -->
 
-                    <!-- December 2025 -->
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 id="dec-2025" class="timeline-title">December 2025</h2>
-                        </div>
-                    </li>
+                <!-- START: December 2025 -->
+                <section class="timeline-month" id="section-dec-2025">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 id="dec-2025" class="timeline-title">December 2025</h2>
+                            </div>
+                        </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>All month, 2025</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Winterball26 Baseball AAA/Majors Training continues</h3>
-                            <p>Weekly indoors <a class="ncll" href="/Player Development/winterball26-aaa-majors-baseball-training.html">Program page</a></p>
+                            <p>Keep the swing warm all December: weekly indoor reps, live cage work, and defense tune-ups for AAA/Majors at The Hive/Focus. Stay sharp while the weather isn’t. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112053">Register</a></p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info"><span>December 6, 2025</span></div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Winterball26 BB TEEN Training II begins</h3>
+                            <p>Saturday-night lights for 13-16s: high-energy reps, live BP, and reps with peers at Focus Baseball. Extra cohort opens more spots and runs through Feb 22. Grab a slot and keep the winter rust away. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2117407">Register</a></p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info"><span>December 7, 2025</span></div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Nicola Simpson Pitching Clinic opens</h3>
+                            <p>Two-week softball pitching cohorts (AAA/Majors) at North Seattle Batting Cages: small-group instruction, lots of ball-in-hand reps, and quick gains before league play. First blocks run Dec 7/14. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2245938">Register</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>December 31, 2025</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">New Year’s Eve</h3>
-                            <p>Year-end; limited activities</p>
+                            <h3 class="timeline-title">New Years Eve</h3>
+                            <p>Year-end; limited activities—great night for team get-togethers or rest</p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -254,32 +310,37 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">No Winterball26 Baseball AAA/Majors Training sessions</h3>
-                            <p>Winter break</p>
+                            <p>Winter break—no AAA/Majors sessions these weeks</p>
                         </div>
                     </li>
+                    </ul>
+                </section>
+                <!-- END: December 2025 -->
 
-                    <!-- January 2026 -->
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 id="jan-2026" class="timeline-title">January 2026</h2>
-                        </div>
-                    </li>
+                <!-- START: January 2026 -->
+                <section class="timeline-month" id="section-jan-2026">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 id="jan-2026" class="timeline-title">January 2026</h2>
+                            </div>
+                        </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>January 1, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">New Year’s Day</h3>
-                            <p>Federal holiday; school/fields closed</p>
+                            <h3 class="timeline-title">New Year's Day</h3>
+                            <p>Federal holiday; school/fields closed—league dark for the day.</p>
                         </div>
                     </li>
                     <li class="timeline-item">
-                        <div class="timeline-info"><span>January 11, 2026</span></div>
+                        <div class="timeline-info"><span>January 3, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">Softball Winterball26 Training starts</h3>
-                            <p>Pre-season training begins for Softball Juniors, Majors, and AAA divisions to prepare for upcoming assessments and season. Indoor skills development and conditioning. <a class="ncll" href="/Player Development/winterball25-aaa-majors-softball-training.html">Program page</a></p>
+                            <h3 class="timeline-title">Winterball26 SB AAA/Majors begins</h3>
+                            <p><strong>FREE</strong>, league-sponsored Saturday tune-ups for AAA/Majors softball: Jan 3, 10, 17, 24, 31 (12:00 or 1:30 blocks) at Wallingford Boys &amp; Girls Club. Zero cost, plenty of reps—keep the arm loose, get live work, stay ready for assessments. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2246307">Register</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -287,15 +348,15 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Martin Luther King Jr. Day</h3>
-                            <p>Federal holiday; day of service</p>
+                            <p>Federal holiday; day of service—join a volunteer project or rest up.</p>
                         </div>
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>Late January, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">Assessments – Baseball</h3>
-                            <p>Player evaluations for BB: Majors / AAA divisions to ensure competitive balance and appropriate team placements. A/AA assessment window also opens. All players in these divisions must attend regardless of previous division experience. <a class="ncll" href="/Registration/main.reg.2026.html#assessments">Details</a></p>
+                            <h3 class="timeline-title">Assessments - Baseball</h3>
+                            <p>Mandatory assessments for BB Majors/AAA: arms, bats, and defense get a look so we can build balanced teams. Every player in these divisions attends and everyone is placed on a team—give us a clean read on where you belong. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112173">Details</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -303,15 +364,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Registration goes to waitlist</h3>
-                            <p>Registration closes for Teen BB; SB: Juniors / Majors / AAA; BB: Majors / AAA. After this date, registration moves to waitlist basis subject to roster availability. <a class="ncll" href="/Registration/main.reg.2026.html">Registration info</a></p>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-info"><span>Late Jan – Mid Feb, 2026</span></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">RHS Fastpitch Winter Batting Clinic</h3>
-                            <p>External program <a class="ncll" href="/Player Development/2025 RHS Fastpitch Winter Batting Clinic.html">Program page</a></p>
+                            <p>Last day before waitlists for Teen BB; SB Juniors/Majors/AAA; BB Majors/AAA. Save your roster spot now-after today it's waitlist only. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112136">Register</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -319,24 +372,29 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Winter AAA/Majors Training ends</h3>
-                            <p>Final indoor sessions <a class="ncll" href="/Player Development/winterball26-aaa-majors-baseball-training.html">Program page</a></p>
+                            <p>Final indoor push before we shift outdoors—one more week to lock in gains.</p>
                         </div>
                     </li>
+                    </ul>
+                </section>
+                <!-- END: January 2026 -->
 
-                    <!-- February 2026 -->
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 id="feb-2026" class="timeline-title">February 2026</h2>
-                        </div>
-                    </li>
+                <!-- START: February 2026 -->
+                <section class="timeline-month" id="section-feb-2026">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 id="feb-2026" class="timeline-title">February 2026</h2>
+                            </div>
+                        </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>Early February, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">Assessments – Softball</h3>
-                            <p>Player evaluations for all softball divisions to assess skills and ensure competitive team balance. Division-specific times communicated via email. Required for all players in AAA, Majors, and Juniors divisions. <a class="ncll" href="/Registration/main.reg.2026.html#assessments">Details</a></p>
+                            <h3 class="timeline-title">Assessments - Softball</h3>
+                            <p>Mandatory softball assessments to balance teams across all divisions (AAA/Majors/Juniors required). Division-specific times sent via email. Everyone is placed on a team—show up, get measured, and help us build even rosters. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112173">Details</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -344,7 +402,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Team formations complete</h3>
-                <p>Draft process completed and teams finalized for Teen BB; SB: Juniors / Majors / AAA; BB: Majors / AAA. Families notified of team assignments via email. Coaches begin planning first practices.</p>
+                <p>Draft wraps and teams are set for Teen BB; SB: Juniors / Majors / AAA; BB: Majors / AAA. Watch for your team email-coaches start mapping practices right away. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112136">Team formations info</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -352,23 +410,23 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Registration goes to waitlist</h3>
-                            <p>A/AA</p>
+                            <p>A/AA registration moves to waitlist-claim a spot now to avoid delays. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112136">Register</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>February 16, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">Presidents’ Day</h3>
-                <p>Federal holiday; during SPS Mid‑winter break</p>
+                            <h3 class="timeline-title">Presidents Day</h3>
+                <p>Federal holiday; during SPS Mid-winter break—no league events planned.</p>
                         </div>
                     </li>
                     <li class="timeline-item">
-                        <div class="timeline-info"><span>February 16–20, 2026</span></div>
+                        <div class="timeline-info"><span>February 16-20, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">SPS Mid-winter break</h3>
-                            <p>Expect reduced availability</p>
+                            <p>Schools out—expect reduced availability for gyms/fields and families traveling.</p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -376,7 +434,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">A Fundamentals Clinic 1</h3>
-                            <p>Instructor: Mark Linden</p>
+                            <p>Instructor: Mark Linden. Fundamental tune-up for young players; details and signup communicated via email.</p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -384,7 +442,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Coach Safety and Orientation</h3>
-                            <p>Required training for all coaches covering safety protocols, Little League rules, league policies, and best practices. Background checks must be completed. This training is mandatory before coaches can begin practices with teams.</p>
+                            <p>Required training for all coaches covering safety, LL rules, league policies, and best practices. Background checks must be completed—finish this to unlock practices with your team.</p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -392,7 +450,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Registration goes to waitlist</h3>
-                            <p>All Divisions and T‑Ball</p>
+                            <p>All Divisions and T-Ball shift to waitlist-last call to register before spots depend on openings. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112136">Register</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -400,26 +458,32 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Winterball25 Free February Baseball</h3>
-                            <p>AAA/Majors; evening sessions at Robert Eagle Staff <a class="ncll" href="/Player Development/winterball25-free-february.html">Program page</a></p>
+                            <p><strong>FREE</strong> evening sessions for AAA/Majors at Robert Eagle Staff—extra reps without extra cost. <a class="ncll" href="/Player Development/winterball25-free-february.html">Program page</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
-                        <div class="timeline-info"><span>Late Feb – Early Mar, 2026</span></div>
+                        <div class="timeline-info"><span>Late Feb - Early Mar, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">AA Baseball Pitching Clinic</h3>
-                            <p>3‑session series at NW Sting "The Hive" <a class="ncll" href="/Player Development/winterball25-aa-baseball-pitching-training.html">Program page</a></p>
+                            <p>3-session series at NW Sting "The Hive" focused on AA pitching fundamentals. <a class="ncll" href="/Player Development/winterball25-aa-baseball-pitching-training.html">Program page</a></p>
                         </div>
                     </li>
 
-                    <!-- March 2026 -->
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 id="mar-2026" class="timeline-title">March 2026</h2>
-                        </div>
-                    </li>
+                    </ul>
+                </section>
+                <!-- END: February 2026 -->
+
+                <!-- START: March 2026 -->
+                <section class="timeline-month" id="section-mar-2026">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 id="mar-2026" class="timeline-title">March 2026</h2>
+                            </div>
+                        </li>
                                         <li class="timeline-item">
                         <div class="timeline-info"><span>Second Sunday, 2026</span></div>
                         <div class="timeline-marker"></div>
@@ -432,7 +496,7 @@
                         <div class="timeline-info"><span>March 17, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">St. Patrick’s Day</h3>
+                            <h3 class="timeline-title">St. Patricks Day</h3>
                             <p>Evening events may impact availability</p>
                         </div>
                     </li>
@@ -457,7 +521,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Team formations complete</h3>
-                            <p>A/AA</p>
+                            <p>A/AA team assignments finalized; watch your inbox for details. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112136">Team formations info</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -481,7 +545,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Mark Linden trainings</h3>
-                <p>BB: Majors/AAA Tue 6:00–8:30pm; Sun 9:45–11:00am</p>
+                <p>BB: Majors/AAA Tue 6:00-8:30 PM; Sun 9:45-11:00 AM</p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -489,7 +553,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Mark Linden trainings</h3>
-                            <p>A/AA Tue 6:00–8:30pm; Sun 9:45–11:00am
+                            <p>A/AA Tue 6:00-8:30 PM; Sun 9:45-11:00 AM
                             </p>
                         </div>
                     </li>
@@ -498,15 +562,15 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Mark Linden trainings</h3>
-                <p>T‑Ball Tue 6:00–8:30pm; Sun 9:45–11:00am</p>
+                <p>T-Ball Tue 6:00-8:30 PM; Sun 9:45-11:00 AM</p>
                         </div>
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>First two Saturdays, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">Single‑A Baseball Fundamentals</h3>
-                            <p>Two 1‑hr slots each day</p>
+                            <h3 class="timeline-title">Single-A Baseball Fundamentals</h3>
+                            <p>Two 1-hr slots each day</p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -522,7 +586,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Team formations complete</h3>
-                            <p>T‑Ball</p>
+                            <p>T-Ball team assignments finalized; watch your inbox for details. <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112136">Team formations info</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -602,7 +666,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">PRACTICES start</h3>
-                            <p>T‑Ball</p>
+                            <p>T-Ball</p>
                         </div>
                     </li>
                     <!-- moved A/AA games start to early April -->
@@ -618,19 +682,24 @@
                         <div class="timeline-info"><span>Late March (Sundays), 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">In‑Season SB Pitching</h3>
-                            <p>Two 1‑hr sessions, Lower Woodland <a class="ncll" href="/Player Development/2025 In-Season Double-AA (and up) SB Pitching.html">Program page</a></p>
+                            <h3 class="timeline-title">In-Season SB Pitching</h3>
+                            <p>Two 1-hr sessions, Lower Woodland <a class="ncll" href="/Player Development/2025 In-Season Double-AA (and up) SB Pitching.html">Program page</a></p>
                         </div>
                     </li>
+                    </ul>
+                </section>
+                <!-- END: March 2026 -->
 
-                    <!-- April 2026 -->
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 id="apr-2026" class="timeline-title">April 2026</h2>
-                        </div>
-                    </li>
+                <!-- START: April 2026 -->
+                <section class="timeline-month" id="section-apr-2026">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 id="apr-2026" class="timeline-title">April 2026</h2>
+                            </div>
+                        </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>Early April, 2026</span></div>
                         <div class="timeline-marker"></div>
@@ -644,7 +713,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">GAMES start</h3>
-                            <p>T‑Ball</p>
+                            <p>T-Ball</p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -672,7 +741,7 @@
                         </div>
                     </li>
                     <li class="timeline-item">
-                        <div class="timeline-info"><span>April 13–17, 2026</span></div>
+                        <div class="timeline-info"><span>April 13-17, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">SPS Spring Break</h3>
@@ -691,24 +760,29 @@
                         <div class="timeline-info"><span>Early/Mid April (Sundays), 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">In‑Season SB Pitching</h3>
+                            <h3 class="timeline-title">In-Season SB Pitching</h3>
                             <p>Sessions continue</p>
                         </div>
                     </li>
+                    </ul>
+                </section>
+                <!-- END: April 2026 -->
 
-                    <!-- May 2026 -->
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 id="may-2026" class="timeline-title">May 2026</h2>
-                        </div>
-                    </li>
+                <!-- START: May 2026 -->
+                <section class="timeline-month" id="section-may-2026">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 id="may-2026" class="timeline-title">May 2026</h2>
+                            </div>
+                        </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>Second Sunday, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">Mother’s Day</h3>
+                            <h3 class="timeline-title">Mothers Day</h3>
                             <p>Common holiday; family commitments</p>
                         </div>
                     </li>
@@ -716,7 +790,7 @@
                         <div class="timeline-info"><span>May 5, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">All‑Stars Information Released</h3>
+                            <h3 class="timeline-title">All-Stars Information Released</h3>
                 <p>League-wide email sent to all families with All-Star program information, eligibility requirements, player application form, and tournament schedule. Applications available for download.</p>
                         </div>
                     </li>
@@ -724,23 +798,23 @@
                         <div class="timeline-info"><span>May 15, 2026 (9:00 PM deadline)</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">All‑Stars Applications Due</h3>
+                            <h3 class="timeline-title">All-Stars Applications Due</h3>
                 <p>Player applications must be submitted by 9:00 PM to coaches or via email. Applies to all divisions: SB: Juniors / Majors / AAA / 10U; BB: Seniors / Juniors / Majors / AAA / 11U / 10U. Required for All-Star consideration.</p>
                         </div>
                     </li>
                     <li class="timeline-item">
-                        <div class="timeline-info"><span>May 16, 2026 (Friday, 6:00-9:00 PM)</span></div>
+                        <div class="timeline-info"><span>May 16, 2026 (Saturday, 6:00-9:00 PM)</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">All‑Stars Tryouts - Baseball</h3>
+                            <h3 class="timeline-title">All-Stars Tryouts - Baseball</h3>
                 <p>Baseball All-Star tryouts at Lower Woodland Field #3 or #4. Scheduled by age: 12U (6-7 PM), 11U (7-8 PM), 10U (8-9 PM). Similar format to February assessments. Highly recommended but not mandatory. Coaches evaluate skills, attitude, work ethic.</p>
                         </div>
                     </li>
                     <li class="timeline-item">
-                        <div class="timeline-info"><span>May 23, 2026 (Friday, 6:00-8:00 PM)</span></div>
+                        <div class="timeline-info"><span>May 23, 2026 (Saturday, 6:00-8:00 PM)</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">All‑Stars Tryouts - Softball 10U</h3>
+                            <h3 class="timeline-title">All-Stars Tryouts - Softball 10U</h3>
                 <p>Softball 10U tryouts at Lower Woodland Field #4. Time: 6:00-8:00 PM. RSVP required via SignUpGenius. Note: 12U Softball does NOT have tryouts - selection based on season performance and coach evaluations.</p>
                         </div>
                     </li>
@@ -756,7 +830,7 @@
                         <div class="timeline-info"><span>May 21, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">Post‑season tournament begins</h3>
+                            <h3 class="timeline-title">Post-season tournament begins</h3>
                 <p>SB: Juniors / Majors / AAA; BB: Majors / AAA</p>
                         </div>
                     </li>
@@ -769,7 +843,7 @@
                         </div>
                     </li>
                     <li class="timeline-item">
-                        <div class="timeline-info"><span>May 21, 2026 (Wednesday)</span></div>
+                        <div class="timeline-info"><span>May 21, 2026 (Thursday)</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">NCLL Home Run Derby</h3>
@@ -780,8 +854,8 @@
                         <div class="timeline-info"><span>May 23-24, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">All‑Stars teams announced</h3>
-                            <p>Rosters finalized and announced via email for all All-Star teams (Baseball: 10U, 11U, 12U, Juniors, Seniors; Softball: 10U, 11U, 12U, Juniors). Initial team meetings scheduled. Practices begin early June. <a class="ncll" href="/All-Stars/allstar introductions.html">All‑Stars hub</a></p>
+                            <h3 class="timeline-title">All-Stars teams announced</h3>
+                            <p>Rosters finalized and announced via email for all All-Star teams (Baseball: 10U, 11U, 12U, Juniors, Seniors; Softball: 10U, 11U, 12U, Juniors). Initial team meetings scheduled. Practices begin early June. <a class="ncll" href="/All-Stars/allstar introductions.html">All-Stars hub</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -789,26 +863,31 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Photo Day - Lower Divisions</h3>
-                            <p>Team and individual photos at Lower Woodland for A / AA / Kindy / T‑Ball divisions; SB Majors. Scheduled times by team communicated via email. Players in full uniform. Professional photographer with online ordering. <a class="ncll" href="/2026 Season/2026 photoday.html#schedule">Photo Day details</a></p>
+                            <p>Team and individual photos at Lower Woodland for A / AA / Kindy / T-Ball divisions; SB Majors. Scheduled times by team communicated via email. Players in full uniform. Professional photographer with online ordering. <a class="ncll" href="/2026 Season/2026 photoday.html#schedule">Photo Day details</a></p>
                         </div>
                     </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>Early/Mid May (Sundays), 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">In‑Season SB Pitching</h3>
+                            <h3 class="timeline-title">In-Season SB Pitching</h3>
                             <p>Final sessions</p>
                         </div>
                     </li>
+                    </ul>
+                </section>
+                <!-- END: May 2026 -->
 
-                    <!-- June 2026 -->
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 id="jun-2026" class="timeline-title">June 2026</h2>
-                        </div>
-                    </li>
+                <!-- START: June 2026 -->
+                <section class="timeline-month" id="section-jun-2026">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 id="jun-2026" class="timeline-title">June 2026</h2>
+                            </div>
+                        </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>June 14, 2026</span></div>
                         <div class="timeline-marker"></div>
@@ -830,7 +909,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Regular season ends</h3>
-                            <p>A/AA, T‑Ball</p>
+                            <p>A/AA, T-Ball</p>
                         </div>
                     </li>
                     <li class="timeline-item">
@@ -845,7 +924,7 @@
                         <div class="timeline-info"><span>Third Sunday, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">Father’s Day</h3>
+                            <h3 class="timeline-title">Fathers Day</h3>
                             <p>Common holiday; family commitments</p>
                         </div>
                     </li>
@@ -853,7 +932,7 @@
                         <div class="timeline-info"><span>June 1-2, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="timeline-title">All‑Stars Week 1 - Practices &amp; Scrimmages Begin</h3>
+                            <h3 class="timeline-title">All-Stars Week 1 - Practices &amp; Scrimmages Begin</h3>
                             <p>All-Star teams begin intensive practice schedule. Expect majority of weeknights and weekends committed to practices, scrimmages, and warm-up tournaments. Baseball and softball teams ramp up preparation for District 8 tournaments. NCLL AAA &amp; Majors playoffs also occurring.</p>
                         </div>
                     </li>
@@ -914,7 +993,7 @@
                         </div>
                     </li>
                     <li class="timeline-item">
-                        <div class="timeline-info"><span>June 5–30, 2026</span></div>
+                        <div class="timeline-info"><span>June 5-30, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Summerball Registration Window</h3>
@@ -929,15 +1008,20 @@
                             <p>Team rosters and schedules communicated via email and website. Players receive game jerseys (wear spring cap). Season runs July 7 - August 14 with 2 games per week (10-12 total games). <a class="ncll" href="/2025 Season/summerball25.html">Summerball info</a></p>
                         </div>
                     </li>
+                    </ul>
+                </section>
+                <!-- END: June 2026 -->
 
-                    <!-- July 2026 -->
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 id="jul-2026" class="timeline-title">July 2026</h2>
-                        </div>
-                    </li>
+                <!-- START: July 2026 -->
+                <section class="timeline-month" id="section-jul-2026">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 id="jul-2026" class="timeline-title">July 2026</h2>
+                            </div>
+                        </li>
                     <li class="timeline-item">
                         <div class="timeline-info"><span>July 4, 2026</span></div>
                         <div class="timeline-marker"></div>
@@ -971,42 +1055,75 @@
                         </div>
                     </li>
                     <li class="timeline-item">
-                        <div class="timeline-info"><span>July 7 – August 14, 2026</span></div>
+                        <div class="timeline-info"><span>July 7 - August 14, 2026</span></div>
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">Summerball season</h3>
                             <p>Low-pressure, fun summer baseball and softball! Games-only format with 2 games per week, totaling 10-12 games. No practices. Flexible attendance - perfect for summer schedules. Teams sorted by friend requests. Single-A and Softball programs use sandlot format (pick teams each game). <a class="ncll" href="/2025 Season/summerball25.html">Summerball info</a></p>
                         </div>
                     </li>
+                    </ul>
+                </section>
+                <!-- END: July 2026 -->
 
-                    <!-- August 2026 -->
-                    <li class="timeline-item period">
-                        <div class="timeline-info"></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h2 id="aug-2026" class="timeline-title">August 2026</h2>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-info"><span>All month, 2026</span></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">No major federal holidays</h3>
-                <p>Regular scheduling; monitor All‑Stars and Summerball</p>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <div class="timeline-info"><span>Mid August, 2026</span></div>
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Summerball season ends</h3>
-                            <p>Final games</p>
-                        </div>
-                    </li>
-                </ul>
+                <!-- START: August 2026 -->
+                <section class="timeline-month" id="section-aug-2026">
+                    <ul class="timeline timeline-split">
+                        <li class="timeline-item period">
+                            <div class="timeline-info"></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h2 id="aug-2026" class="timeline-title">August 2026</h2>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info"><span>All month, 2026</span></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">No major federal holidays</h3>
+                                <p>Regular scheduling; monitor All-Stars and Summerball</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-info"><span>Mid August, 2026</span></div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Summerball season ends</h3>
+                                <p>Final games</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <!-- END: August 2026 -->
+
             </div>
         </div>
     </div>
+    <script>
+        (function addWeekdayLabels() {
+            const weekdayPrefixPattern = /^(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday),\s/i;
+            const monthRegex = /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s+(\d{4})$/;
+            document.querySelectorAll('.timeline-info span').forEach((span) => {
+                const raw = span.textContent.trim();
+                if (!raw || weekdayPrefixPattern.test(raw)) return;
 
+                const normalized = raw
+                    .replace(/\s+/g, ' ')
+                    .replace(/(\d)(st|nd|rd|th)/gi, '$1')
+                    .replace(/\s*,\s*/, ', ')
+                    .trim();
 
+                const match = normalized.match(monthRegex);
+                if (!match) return;
+
+                const [, month, day, year] = match;
+                const dateStr = `${month} ${day}, ${year}`;
+                const dateVal = new Date(dateStr);
+                if (Number.isNaN(dateVal.getTime())) return;
+
+                const weekday = dateVal.toLocaleDateString('en-US', { weekday: 'long' });
+                span.textContent = `${weekday}, ${raw}`;
+            });
+        })();
+    </script>
 </body></html>

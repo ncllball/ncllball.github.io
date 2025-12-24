@@ -9,5 +9,6 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "html.suggest.html5": false,
     "liveServer.settings.port": 5501,
-    "editor.hover.enabled": "off"
+    "editor.hover.enabled": "off",
+    "chatgpt.openOnStartup": true
 }
