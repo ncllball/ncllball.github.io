@@ -4176,14 +4176,19 @@ details.footies[open] summary::before {
     font-weight: 700;
     font-size: 0.95rem;
     line-height: 1.2;
-    margin-right: 10px;
     margin-top: 2px;
 }
 
+.callout__icon svg {
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
+}
+
 .callout span:not(.callout__icon) {
-    font-size: 1rem;
+    font-size: 0.97rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.45;
     display: inline-block;
     vertical-align: top;
 }
