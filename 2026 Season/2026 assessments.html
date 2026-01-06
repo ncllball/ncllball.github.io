@@ -1,76 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
-    <title>Player Development Dashboard</title>
-    <link rel="icon" href="https://ncllball.github.io/favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026 Assessments (AAA & Majors) | NCLL</title>
+  <meta name="description" content="2026 NCLL Assessments hub for AAA and Majors Baseball/Softball. Dates, locations, SignUpGenius links, volunteer needs, and player development tie-ins." />
+  <link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
+  <style>
+    /* Tighter sign-up buttons on desktop; keep full-size defaults on mobile */
+    @media (min-width: 768px) {
+      .key-dates-table .button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+      }
+      .assessments-cta .button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <main id="content" role="main">
     <section>
-        <h2 class="left">Player Development Dashboard</h2>
-        <p>We are finalizing exact windows with our facility partners. Expect confirmed schedules via email in early January along with SignUpGenius links.</p>
+      <ul class="tag clearfix" data-range-start="2026-01-24" data-range-end="2026-02-07" data-program-name="Assessments 2026" data-focus="AAA / Majors Placement">
+        <li class="tag-item" data-tag="dates"><strong>Dates:</strong> Baseball Jan 24 (Sat); Softball Feb 7 (Sat)</li>
+        <li class="tag-item" data-tag="location"><strong>Location:</strong> Baseball at <a class="ncll" href="https://maps.google.com/?q=Robert+Eagle+Staff+Middle+School+1330+N+90th+St+Seattle+WA+98103" target="_blank" rel="noopener">Robert Eagle Staff Middle School</a>; Softball at <a class="ncll" href="https://maps.google.com/?q=Wallingford+Boys+and+Girls+Club+1310+N+45th+St+Seattle+WA+98103" target="_blank" rel="noopener">Wallingford Boys &amp; Girls Club</a></li>
+        <li class="tag-item" data-tag="times"><strong>Times:</strong> Baseball 1:154:30 PM (check-in 1:00 PM); Softball AAA 123, Majors 36</li>
+        <li class="tag-item" data-tag="divisions" data-sport="baseball;softball" data-division-levels="aaa;majors"><strong>Division(s):</strong> AAA &amp; Majors (Baseball and Softball)</li>
+        <li class="tag-item" data-tag="cost" data-cost-status="free"><strong>Cost:</strong> Included with registration (no extra fee)</li>
+        <li class="tag-item" data-tag="registration"><strong>Registration:</strong> SignUpGenius for players and volunteers</li>
+        <li class="tag-item" data-tag="player-development"><strong>Player Development:</strong> Prep via <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2111984" target="_blank" rel="noopener">Player Development dashboard</a> and upcoming Free February reps</li>
+      </ul>
     </section>
 
     <section>
-        <h4 class="left">Purpose & Objectives</h4>
-        <p>Player assessments help us evaluate skills to ensure fair team placement and create balanced teams for a fun and competitive season. We will be assessing the following skills:</p>
-        <ul>
-            <li>Running</li>
-            <li>Fielding</li>
-            <li>Throwing</li>
-            <li>Batting</li>
-            <li>Pitching (optional)</li>
-            <li>Catching (optional)</li>
-        </ul>
+      <h2 class="left">2026 Assessments (AAA &amp; Majors)</h2>
+      <p>Mandatory assessments are how we build balanced teams and place every player where they will grow. Please register your player and, if possible, grab a volunteer slot to keep check-in, warm-ups, and station timing moving.</p>
+      <div class="ncll-card__cta assessments-cta">
+        <a class="button button--primary" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414293-2026#/" target="_blank" rel="noopener noreferrer">Player Sign-Up (Baseball)</a>
+        <a class="button button--red" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414227-2026#/" target="_blank" rel="noopener noreferrer">Volunteer Sign-Up (Baseball)</a>
+        <a class="button button--ghost" href="https://www.signupgenius.com/go/softball-2026-assessments" target="_blank" rel="noopener noreferrer">Player Sign-Up (Softball) - coming soon</a>
+      </div>
+      <p class="footies"><span class="info-icon" aria-hidden="true"></span>New to NCLL? Read <a class="ncll" href="/2026 Season/assessments - what to expect.html">Assessments: What to Expect</a> for a season-agnostic overview.</p>
     </section>
 
-    <section>
-        <h2 class="left">Mandatory Assessments</h2>
-        <p>Assessments are <span>mandatory</span> for players seeking placement in these divisions:</p>
-        <ul>
-            <li>Baseball AAA</li>
-            <li>Baseball Majors</li>
-            <li>Baseball Juniors</li>
-            <li>Softball AAA</li>
-            <li>Softball Majors</li>
-        </ul>
+    <section aria-labelledby="schedule">
+      <h2 class="left" id="schedule">Key dates</h2>
+      <div class="table_age table-scroll">
+        <table class="age-matrix fit key-dates-table">
+          <thead>
+            <tr>
+              <th scope="col">Sport</th>
+              <th scope="col" style="text-align:center;">Division(s)</th>
+              <th scope="col">Date</th>
+              <th scope="col">Time</th>
+              <th scope="col">Location</th>
+              <th scope="col">Notes</th>
+              <th scope="col">Sign-Up</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Baseball</td>
+              <td style="text-align:center;">AAA<br>Majors</td>
+              <td>Sat, Jan 24</td>
+              <td>Check-in starts 1:00 PM</td>
+              <td><a class="ncll" href="https://maps.google.com/?q=Robert+Eagle+Staff+Middle+School+1330+N+90th+St+Seattle+WA+98103" target="_blank" rel="noopener noreferrer">Robert Eagle <br>Staff MS</a></td>
+              <td><strong>Majors:</strong> 1:00-2:30<br><strong>AAA:</strong> 2:30-3:45</td>
+              <td><a class="button button--primary" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414293-2026#/" target="_blank" rel="noopener noreferrer">Player Sign-Up</a></td>
+            </tr>
+            <tr>
+              <td>Softball</td>
+              <td style="text-align:center;">AAA<br>Majors</td>
+              <td>Sat, Feb 7</td>
+              <td>Check-in starts 12:00 PM</td>
+              <td><a class="ncll" href="https://maps.google.com/?q=Wallingford+Boys+and+Girls+Club+1310+N+45th+St+Seattle+WA+98103" target="_blank" rel="noopener noreferrer">Wallingford Boys <br>&amp; Girls Club<br></a></td>
+              <td><strong>AAA:</strong> 12:00-3:00<br><strong>Majors:</strong> 3:00-6:00</td>
+              <td><a class="button button--ghost" href="https://www.signupgenius.com/go/softball-2026-assessments" target="_blank" rel="noopener noreferrer">Player Sign-Up</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
-    <section>
-        <h2 class="left">Assessment Windows & Locations</h2>
-        <ul>
-            <li><span>Baseball AAA/Majors:</span> <time class="fuzzy" datetime="2026-01-24">Late January 2026 (Saturday)</time> | Target window 1:00 PM – 5:00 PM at <a class="ncll" href="https://maps.app.goo.gl/6WJUWm5YgdzuYXmp8" target="_blank" rel="noopener">Robert Eagle Staff Middle School</a></li>
-            <li><span>Softball AAA/Majors:</span> <time class="fuzzy" datetime="2026-02-08">Early February 2026 (Saturday)</time> | Afternoon blocks at <a class="ncll" href="https://maps.app.goo.gl/nbGV9kWKVmn6UuZF6" target="_blank" rel="noopener">Wallingford Boys & Girls Club</a></li>
-        </ul>
-        <p class="footies"><i>Heads up:</i> Exact check-in groups and times will be emailed and posted here once the gyms confirm final availability.</p>
+    <section aria-labelledby="reminders">
+      <h2 class="left" id="reminders">Reminders</h2>
+      <ul>
+        <li><strong>Coaches:</strong> If you cannot attend, email <a class="ncll" href="mailto:baseball@ncllball.com">baseball@ncllball.com</a> so we can plan coverage.</li>
+        <li><strong>What to bring:</strong> Glove, water, warm clothing; turf shoes/sneakers/cleats (no metal spikes); helmet (loaners may be available); bat optional.</li>
+        <li><strong>Weather:</strong> Baseball is rain or shine; softball is indoors. Watch email and the site morning-of for updates.</li>
+      </ul>
     </section>
 
-    <section>
-        <h2 class="left">Registration & Volunteering</h2>
-        <p>Players must be registered for the 2026 regular season before claiming a slot. We open assessment sign-ups in early January and will link them here.</p>
-        <ul>
-            <li><span>Baseball AAA/Majors:</span> Assessment registration (link coming early January) | Volunteer shifts will open alongside the player sign-up.</li>
-            <li><span>Softball AAA/Majors:</span> Assessment registration (link coming soon) | To volunteer, please <a class="ncll" href="mailto:softball%40ncllball.com">email Gayle Perez, VP of Softball</a> while we finalize the SignUpGenius.</li>
-        </ul>
-        <p class="footies"><i>NOTE:</i> If a link is marked “coming soon,” it simply means the facility schedule is still being confirmed. Watch your inbox for the launch email.</p>
+    <section aria-labelledby="volunteers">
+      <h2 class="left" id="volunteers">Volunteers</h2>
+      <p>Helping with check-in, warm-ups, and station timing keeps assessments moving and gets players more reps. If you can lend a hand, grab a slot below.</p>
+      <ul>
+        <li><strong>Date/Time:</strong> Saturday, Jan 24  12:30 PM to 5:00 PM (assessments run 1:15-4:30 PM)</li>
+        <li><strong>Location:</strong> Robert Eagle Staff Middle School</li>
+        <li><strong>Roles needed:</strong> check-in/welcome (bibs, first aid, directing players, setup), drill coaches (grounders, timing runs), assessors (prioritize Majors/AAA coaches), tents/awnings setup (rain or shine)</li>
+        <li><strong>Shifts:</strong> Two shifts; sign up for both if you can</li>
+        <li><strong>Contact:</strong> Cole Parsons  <a class="ncll" href="mailto:baseball@ncllball.com">baseball@ncllball.com</a></li>
+      </ul>
+      <div class="ncll-card__cta assessments-cta">
+        <a class="button button--primary" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414227-2026#/" target="_blank" rel="noopener noreferrer">Volunteer Sign-Up</a>
+      </div>
+      <p class="footies">Players must sign up separately: <a class="ncll" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414293-2026" target="_blank" rel="noopener noreferrer">Player Sign-Up</a></p>
     </section>
 
-    <section>
-        <h2 class="left">Player Development Opportunities</h2>
-        <p>Want to get some practice in before assessments? Visit the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2111984">Player Development Dashboard</a> for Winterball clinics, bullpen tune-ups, and other ways to knock off the rust.</p>
+    <section aria-labelledby="player-dev">
+      <h2 class="left" id="player-dev">Player Development tie-in</h2>
+      <p>Assessments live alongside our winter training menu. Use these to arrive warm, confident, and ready:</p>
+      <ul>
+        <li>Upcoming <strong>Free February</strong> tune-ups (Baseball AAA/Majors) will post to the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2111984" target="_blank" rel="noopener">Player Development dashboard</a> on Sports Connect; expect Saturday evening turf reps. We will mirror the 2025 format and drop SignUpGenius links once fields are locked.</li>
+        <li>Softball winter reps continue at Wallingford BGC (see Winterball26 Softball Training) with emphasis on arm care and timing ahead of the Feb 7 assessments.</li>
+      </ul>
     </section>
 
-    <section>
-        <h2 class="left">Contact Information</h2>
-        <ul>
-            <li><a class="ncll" href="mailto:baseball%40ncllball.com">Cole Parsons</a>, VP, Baseball</li>
-            <li><a class="ncll" href="mailto:softball%40ncllball.com">Gayle Perez</a>, VP, Softball</li>
-        </ul>
-    </section>
-
+  </main>
 </body>
+
 </html>
 
