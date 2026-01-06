@@ -4085,17 +4085,17 @@ details.footies[open] summary::before {
 .button--red {
 	background: var(--color_red);
 	border-color: var(--color_red);
-	color: #fff;
+	color: #fff !important;
 }
 .button--red:visited {
-	color: #fff;
+	color: #fff !important;
 }
 
 .button--red:hover,
 .button--red:focus-visible {
 	background: #b81236;
 	border-color: #b81236;
-    color: #fff;
+    color: #fff !important;
 }
 
 .button--social-gradient {
