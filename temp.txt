@@ -889,7 +889,7 @@
 					</div>
 					<div class="ncll-card__body panel panel-intro">
 						<div class="ncll-card__details">
-							<p class="ncll-card__blurb">Coach Ray "Raybo" Atkinson's Winterball series delivers 90-minute indoor sessions that blend hitting pattern tune-ups, athletic movement, and durable arm care.</p>
+							<p class="ncll-card__blurb">Coach Ray "Raybo" Atkinson's Sunday-night Winterball series delivers 90-minute indoor sessions that blend hitting pattern tune-ups, athletic movement, and durable arm care-powered by the same championship intensity he brings to Lincoln HS.</p>
 							<p class="ncll-card__blurb">The <strong>focus</strong> is on league-age 13-16 athletes logging consistent, high-feedback reps before school-ball tryouts: 15 total Sundays (Nov 9 - Feb 22) capped at 12 players to keep instruction tight.</p>
 							<ul class="ncll-card__meta">
 								<li><strong>Dates:</strong> Nov 9, 2025 - Feb 22, 2026</li>
