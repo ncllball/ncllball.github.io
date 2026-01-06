@@ -4166,16 +4166,26 @@ details.footies[open] summary::before {
 }
 
 .callout__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: #e5e7eb;
     font-weight: 700;
+    font-size: 0.95rem;
     line-height: 1.2;
-    min-width: 1.25rem;
-    margin-right: 8px;
+    margin-right: 10px;
+    margin-top: 2px;
 }
 
 .callout span:not(.callout__icon) {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .callout--note {
