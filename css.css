@@ -4134,6 +4134,17 @@ details.footies[open] summary::before {
 }
 
 @media (min-width: 768px) {
+    .ncll-card__cta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .ncll-card__cta .button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+        width: auto;
+        display: inline-flex;
+    }
     .key-dates-table .button {
         padding: 6px 12px;
         font-size: 0.9rem;
