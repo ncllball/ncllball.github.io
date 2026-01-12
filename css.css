@@ -4249,3 +4249,6 @@ details.footies[open] summary::before {
 .callout--danger .callout__icon {
     color: #b91c1c;
 }
+#dnnStandardMenu .txt {
+    text-transform: lowercase !important;
+}
