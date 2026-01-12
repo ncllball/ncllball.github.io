@@ -4250,5 +4250,5 @@ details.footies[open] summary::before {
     color: #b91c1c;
 }
 #dnnStandardMenu .txt {
-    text-transform: lowercase !important;
+    text-transform: capitalize !important;
 }
