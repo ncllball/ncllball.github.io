@@ -33,6 +33,27 @@
       border-color: #555;
       color: #d6202a;
     }
+
+    /* Mobile tag list: allow wrapping so the first section doesn't overflow */
+    @media (max-width: 640px) {
+      .tag-item {
+        float: none;
+        display: block;
+        white-space: normal;
+        height: auto;
+        line-height: 1.4;
+        margin-left: 16px;
+        margin-right: 0;
+        padding-right: 12px;
+        padding-left: 12px;
+        border-radius: 6px;
+        box-shadow: none;
+      }
+      .tag-item::before,
+      .tag-item::after {
+        display: none;
+      }
+    }
   </style>
 </head>
 
@@ -45,7 +66,7 @@
         <li class="tag-item" data-tag="times"><strong>Times:</strong> BB/MAJ 1:00-2:30, AAA 2:30-3:45; SB/AAA 12:00-3:00, MAJ 3:00-6:00</li>
         <li class="tag-item" data-tag="divisions" data-sport="baseball;softball" data-division-levels="aaa;majors"><strong>Division(s):</strong> AAA &amp; Majors (Baseball and Softball)</li>
         <li class="tag-item" data-tag="cost" data-cost-status="free"><strong>Cost:</strong> Included with registration</li>
-        <li class="tag-item" data-tag="registration"><strong>Registration:</strong> <a class="ncll" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414293-2026#/" target="_blank" rel="noopener">Player Sign-Up (Baseball)</a> | <a class="ncll" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414227-2026#/" target="_blank" rel="noopener">Volunteer Sign-Up (Baseball)</a> | <a class="ncll" href="https://www.signupgenius.com/go/10C0A45ADA62FA3F8C61-61499109-softball#/" target="_blank" rel="noopener">Softball Player Sign-Up</a></li>
+        <li class="tag-item" data-tag="registration"><strong>Registration:</strong> <a class="ncll" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414293-2026#/" target="_blank" rel="noopener">Player Sign-Up (Baseball)</a> | <a class="ncll" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414227-2026#/" target="_blank" rel="noopener">Volunteer Sign-Up (Baseball)</a> | <a class="ncll" href="https://www.signupgenius.com/go/10C0A45ADA62FA3F8C61-61499109-softball#/" target="_blank" rel="noopener">Softball Player Sign-Up</a> | <a class="ncll" href="mailto:softball@ncllball.com?subject=Assessment%20Volunteer">Softball Volunteer (Email)</a></li>
         <li class="tag-item" data-tag="player-development"><strong>Player Development:</strong> Check the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2111984" target="_blank" rel="noopener">Player Development dashboard</a></li>
       </ul>
     </section>
@@ -67,8 +88,8 @@
       <p>New to NCLL or AAA? Read <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2246737" target="_blank" rel="noopener noreferrer">Assessments: What to Expect</a> for the basics of what happens at this yearly NCLL event. You can also learn about the AAA draft in our <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112136" target="_blank" rel="noopener noreferrer">AAA Draft Overview</a>.</p>
       <div class="ncll-card__cta assessments-cta">
         <a class="button button--primary" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414293-2026#/" target="_blank" rel="noopener noreferrer">Player Sign-Up (Baseball)</a>
-        <a class="button button--red" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414227-2026#/" target="_blank" rel="noopener noreferrer">Volunteer Sign-Up (Baseball)</a>
-        <a class="button button--ghost" href="https://www.signupgenius.com/go/10C0A45ADA62FA3F8C61-61499109-softball#/" target="_blank" rel="noopener noreferrer">Player Sign-Up (Softball)</a>
+        
+        <a class="button button--red" href="https://www.signupgenius.com/go/10C0A45ADA62FA3F8C61-61499109-softball#/" target="_blank" rel="noopener noreferrer">Player Sign-Up (Softball)</a>
       </div>
 
 
@@ -81,31 +102,28 @@
           <thead>
             <tr>
               <th scope="col">Sport</th>
-              <th scope="col" style="text-align:center;">Division(s)</th>
+              <th scope="col" style="text-align:center;">Divisions</th>
               <th scope="col">Date</th>
               <th scope="col">Time</th>
               <th scope="col">Location</th>
-              <th scope="col">Notes</th>
               <th scope="col">Sign-Up</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Baseball</td>
-              <td style="text-align:center;">AAA<br>Majors</td>
+              <td><strong>Baseball</strong></td>
+              <td style="text-align:center;"><strong>Majors:</strong> 1:00-2:30<br><strong>AAA:</strong> 2:30-3:45</td>
               <td>Sat, Jan 24</td>
               <td>Check-in starts 1:00 PM</td>
               <td><a class="ncll" href="https://maps.google.com/?q=Robert+Eagle+Staff+Middle+School+1330+N+90th+St+Seattle+WA+98103" target="_blank" rel="noopener noreferrer">Robert Eagle <br>Staff MS</a></td>
-              <td><strong>Majors:</strong> 1:00-2:30<br><strong>AAA:</strong> 2:30-3:45</td>
               <td><a class="ncll" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414293-2026#/" target="_blank" rel="noopener noreferrer">Player Sign-Up</a></td>
             </tr>
             <tr>
-              <td>Softball</td>
-              <td style="text-align:center;">AAA<br>Majors</td>
+              <td><strong>Softball</strong></td>
+              <td style="text-align:center;"><strong>AAA:</strong> 12:00-3:00<br><strong>Majors:</strong> 3:00-6:00</td>
               <td>Sat, Feb 7</td>
               <td>Check-in starts 12:00 PM</td>
               <td><a class="ncll" href="https://maps.google.com/?q=Wallingford+Boys+and+Girls+Club+1310+N+45th+St+Seattle+WA+98103" target="_blank" rel="noopener noreferrer">Wallingford Boys <br>&amp; Girls Club<br></a></td>
-              <td><strong>AAA:</strong> 12:00-3:00<br><strong>Majors:</strong> 3:00-6:00</td>
               <td><a class="ncll" href="https://www.signupgenius.com/go/10C0A45ADA62FA3F8C61-61499109-softball#/" target="_blank" rel="noopener noreferrer">Player Sign-Up</a></td>
             </tr>
           </tbody>
@@ -115,7 +133,7 @@
 
     <section aria-labelledby="volunteers">
       <h2 class="left" id="volunteers">Volunteers</h2>
-      <p>Helping with check-in, warm-ups, and station timing keeps assessments moving and gets players more reps. If you can lend a hand, grab a slot in the Volunteer SignUpGenius registration below.</p>
+      <p>Helping with check-in, warm-ups, and station timing keeps assessments moving and gets players more reps. Baseball volunteers use SignUpGenius, while softball volunteers should email the contact below.</p>
       <ul>
         <li><strong>Coaches:</strong> If you cannot attend, email <a class="ncll" href="mailto:baseball@ncllball.com">baseball@ncllball.com</a> so we can plan coverage.</li>
         <li><strong>Date/Time:</strong> Saturday, Jan 24 12:30 PM to 5:00 PM (assessments run 1:15-4:30 PM)</li>
@@ -123,10 +141,11 @@
         <li><strong>Roles needed:</strong> check-in/welcome (bibs, first aid, directing players, setup), drill coaches (grounders, timing runs), assessors (prioritize Majors/AAA coaches), tents/awnings setup (rain or shine)</li>
         <li><strong>Shifts:</strong> Two shifts; sign up for both if you can</li>
         <li><strong>Baseball Contact:</strong> Cole Parsons <a class="ncll" href="mailto:baseball@ncllball.com">baseball@ncllball.com</a></li>
-        <li><strong>Softball Contact:</strong> If you would like to volunteer to help with softball, please reach out to Gayle or Chris at <a class="ncll" href="mailto:softball@ncllball.com">softball@ncllball.com</a></li>
+        <li><strong>Softball Contact:</strong> If you would like to volunteer to help with softball, please email <a class="ncll" href="mailto:softball@ncllball.com?subject=Assessment%20Volunteer">softball@ncllball.com</a> (subject: Assessment Volunteer).</li>
       </ul>
       <div class="ncll-card__cta assessments-cta">
-        <a class="button button--red" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414227-2026#/" target="_blank" rel="noopener noreferrer">Volunteer Sign-Up (Baseball)</a>
+        <a class="button button--primary" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414227-2026#/" target="_blank" rel="noopener noreferrer">Volunteer Sign-Up (Baseball)</a>
+        <a class="button button--red" href="mailto:softball@ncllball.com?subject=Assessment%20Volunteer">Volunteer Sign-Up (Softball)</a>
       </div>
     </section>
 
