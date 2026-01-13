@@ -1970,6 +1970,10 @@ body:not(.cms-right) .only-on-right {
     display: inline
 }
 
+.footnote-normal {
+    font-weight: 400;
+}
+
 
 
 /* Responsive table scroll */
