@@ -4173,6 +4173,7 @@ details.footies[open] summary::before {
     margin: 14px 0;
     border-radius: 6px;
     border-left: 4px solid #d1d5db;
+    border-right: 4px solid #d1d5db;
     background: #f8fafc;
 }
 
