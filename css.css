@@ -1918,6 +1918,11 @@ body:not(.cms-right) .only-on-right {
     width: fit-content
 }
 
+.age-matrix--reg th:first-child,
+.age-matrix--reg td:first-child {
+    text-align: right;
+}
+
 /* Contact page tables should remain left-aligned even with shared age-matrix styles */
 .contact-landing .age-matrix th,
 .contact-landing .age-matrix td,
