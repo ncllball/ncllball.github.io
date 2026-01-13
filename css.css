@@ -4197,14 +4197,6 @@ details.footies[open] summary::before {
     fill: currentColor;
 }
 
-.weui--error-filled {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2300013a' fill-rule='evenodd' d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10m-.763-15.864l.11 7.596h1.305l.11-7.596zm.759 10.967c.512 0 .902-.383.902-.882c0-.5-.39-.882-.902-.882a.88.88 0 0 0-.896.882c0 .499.396.882.896.882'/%3E%3C/svg%3E");
-}
 
 .callout span:not(.callout__icon) {
     font-size: 0.97rem;
