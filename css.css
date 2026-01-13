@@ -4183,7 +4183,7 @@ details.footies[open] summary::before {
     width: 1.6rem;
     height: 1.6rem;
     border-radius: 50%;
-    background: #e5e7eb;
+    background: transparent;
     font-weight: 700;
     font-size: 0.95rem;
     line-height: 1.2;
