@@ -1155,7 +1155,7 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
 
 .checklist li {
     position: relative;
-    padding-left: 20px;
+    padding-left: 14px;
     margin: 6px 0;
     list-style: none !important;
     list-style-type: none !important;
