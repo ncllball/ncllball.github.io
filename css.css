@@ -456,7 +456,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 
 .media-float-right {
     float: right;
-    width: clamp(180px, 30%, 260px);
+    width: clamp(180px, 30%, 160px);
     height: auto;
     margin: 0 0 10px 20px
 }
