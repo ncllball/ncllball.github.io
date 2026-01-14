@@ -1157,6 +1157,9 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     position: relative;
     padding-left: 22px;
     margin: 6px 0;
+    list-style: none !important;
+    list-style-type: none !important;
+    list-style-image: none !important;
 }
 
 .checklist li::before {
