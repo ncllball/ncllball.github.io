@@ -3101,6 +3101,11 @@ details.footies[open] summary::before {
     height: auto;
 }
 
+.ncll-card__graphic--width {
+    width: 100%;
+    height: auto;
+}
+
 .ncll-card__graphic--medium {
     width: 95px;
     height: auto;
