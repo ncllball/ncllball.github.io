@@ -4285,7 +4285,7 @@ details.footies[open] summary::before {
 .callout span:not(.callout__icon) {
     font-size: 0.97rem;
     font-weight: 400;
-    line-height: 1.45;
+    line-height: 1.75;
     display: inline-block;
     vertical-align: top;
 }
