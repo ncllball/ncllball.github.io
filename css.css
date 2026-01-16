@@ -4276,6 +4276,11 @@ details.footies[open] summary::before {
     background: #f8fafc;
 }
 
+p:has(+ .callout) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 .callout__icon {
   width: 74px;
   height: 74px;
