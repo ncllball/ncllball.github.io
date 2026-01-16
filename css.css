@@ -1055,6 +1055,12 @@ sup {
     top: 0
 }
 
+.ncll-italic-accent {
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: var(--color_subtle);
+}
+
 /* end global typography */
 /* start global blah blah */
 .at {
