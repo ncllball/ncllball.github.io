@@ -4320,8 +4320,10 @@ details.footies[open] summary::before {
 }
 
 .callout--info {
-    border-color: #2563eb;
-    background: #eef2ff;
+  width: 74px;
+  height: 74px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='21' fill='%2300013a'/%3E%3Cpath fill='%23fff' d='M22 22h4v11h-4z'/%3E%3Ccircle cx='24' cy='16.5' r='2.5' fill='%23fff'/%3E%3C/svg%3E");
 }
 
 .callout--info .callout__icon {
@@ -4356,11 +4358,4 @@ details.footies[open] summary::before {
 }
 #dnnStandardMenu .txt {
     text-transform: capitalize !important;
-}
-.material-symbols-light--info-circle {
-  display: inline-block;
-  width: 74px;
-  height: 74px;
-  background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='21' fill='%2300013a'/%3E%3Cpath fill='%23fff' d='M22 22h4v11h-4z'/%3E%3Ccircle cx='24' cy='16.5' r='2.5' fill='%23fff'/%3E%3C/svg%3E");
 }
