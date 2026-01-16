@@ -4291,6 +4291,7 @@ p:has(+ .callout) {
 .callout__icon {
   width: var(--callout-icon-size, 44px);
   height: var(--callout-icon-size, 44px);
+  flex: 0 0 var(--callout-icon-size, 44px);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
