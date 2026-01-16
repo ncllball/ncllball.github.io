@@ -4282,13 +4282,6 @@ details.footies[open] summary::before {
   background-repeat: no-repeat;
 }
 
-.callout__icon svg {
-    width: 1rem;
-    height: 1rem;
-    fill: currentColor;
-}
-
-
 .callout span:not(.callout__icon) {
     font-size: 0.97rem;
     font-weight: 400;
@@ -4296,16 +4289,13 @@ details.footies[open] summary::before {
     display: inline-block;
     vertical-align: top;
 }
-
+.callout--info .callout__icon {
+    color:red;
+}
 .callout--note {
     border-color: #c5c5c5;
     background: #f6f6f6;
 }
-
-.callout--note .callout__icon {
-    color: #00013a;
-}
-
 .callout--info {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='21' fill='%2300013a'/%3E%3Cpath fill='%23fff' d='M22 22h4v11h-4z'/%3E%3Ccircle cx='24' cy='16.5' r='2.5' fill='%23fff'/%3E%3C/svg%3E");
 }
