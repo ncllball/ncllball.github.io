@@ -4280,6 +4280,7 @@ details.footies[open] summary::before {
     border-left: 4px solid #d1d5db;
     border-right: 4px solid #d1d5db;
     background: #f8fafc;
+    --callout-icon-size: 44px;
 }
 
 p:has(+ .callout) {
@@ -4288,9 +4289,11 @@ p:has(+ .callout) {
 }
 
 .callout__icon {
-  width: 74px;
-  height: 74px;
+  width: var(--callout-icon-size, 44px);
+  height: var(--callout-icon-size, 44px);
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .callout span:not(.callout__icon) {
