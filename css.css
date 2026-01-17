@@ -3458,6 +3458,11 @@ details.footies[open] summary::before {
     left: -9999px;
 }
 
+.lightbox-scope input.lightbox-toggle {
+    position: absolute;
+    left: -9999px;
+}
+
 .ncll-micro__table {
     border-collapse: collapse;
     font-size: 0.8rem;
@@ -3766,6 +3771,21 @@ details.footies[open] summary::before {
     filter: none;
 }
 
+.lightbox-scope .lightbox-thumb {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.lightbox-scope .lightbox-thumb img {
+    display: block;
+    transition: filter 220ms ease, transform 200ms ease;
+}
+
+.lightbox-scope .lightbox-thumb:hover img,
+.lightbox-scope .lightbox-thumb:focus img {
+    filter: none;
+}
+
 .ncll-card--toggle .lightbox {
     display: flex;
     align-items: center;
@@ -3788,6 +3808,47 @@ details.footies[open] summary::before {
     transform: scale(0.96);
     transition: transform 260ms ease, opacity 220ms ease;
     opacity: 0.95;
+}
+
+.lightbox-scope .lightbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 220ms ease, visibility 220ms ease;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.lightbox-scope .lightbox img {
+    max-width: 92%;
+    max-height: 92%;
+    border-radius: 6px;
+    transform: scale(0.96);
+    transition: transform 260ms ease, opacity 220ms ease;
+    opacity: 0.95;
+}
+
+.lightbox-scope .lightbox:focus {
+    outline: 2px solid #fff;
+    outline-offset: 8px;
+}
+
+.lightbox-scope .lightbox .close-btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 6px 8px;
+    border-radius: 4px;
 }
 
 .ncll-card--toggle .lightbox:focus {
@@ -3847,6 +3908,11 @@ details.footies[open] summary::before {
     transform: scale(1.02);
 }
 
+.lightbox-scope input.lightbox-toggle:checked~.lightbox-thumb img {
+    filter: none;
+    transform: scale(1.02);
+}
+
 .ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"],
 .ncll-card--toggle input.lightbox-toggle[id$="-2"]:checked~.lightbox[data-id="2"],
 .ncll-card--toggle input.lightbox-toggle[id$="-3"]:checked~.lightbox[data-id="3"],
@@ -3874,6 +3940,12 @@ details.footies[open] summary::before {
     pointer-events: auto;
 }
 
+.lightbox-scope input.lightbox-toggle:checked~.lightbox {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-2"]:checked~.lightbox[data-id="2"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-3"]:checked~.lightbox[data-id="3"] img,
@@ -3895,6 +3967,11 @@ details.footies[open] summary::before {
 .ncll-card--toggle input.lightbox-toggle[id$="-coach-hat-left"]:checked~.lightbox[data-id="coach-hat-left"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-coach-hat-back"]:checked~.lightbox[data-id="coach-hat-back"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-hat"]:checked~.lightbox[data-id="hat"] img {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.lightbox-scope input.lightbox-toggle:checked~.lightbox img {
     transform: scale(1);
     opacity: 1;
 }
