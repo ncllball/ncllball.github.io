@@ -3808,6 +3808,11 @@ details.footies[open] summary::before {
 	text-align: center;
 }
 
+.map-figure.lightbox-scope .lightbox-thumb {
+	display: block;
+	margin: 0 auto;
+}
+
 .lightbox-scope .lightbox-thumb img {
     display: block;
     transition: filter 220ms ease, transform 200ms ease;
