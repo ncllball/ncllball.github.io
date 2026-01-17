@@ -1162,7 +1162,11 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
 }
 
 .no-x-scroll {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+}
+
+body.cms-right.no-x-scroll {
+    overflow-x: hidden !important;
 }
 
 /* Checkmark list styling */
