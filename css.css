@@ -1057,7 +1057,6 @@ sup {
 
 .ncll-italic-accent {
 	font-family: var(--font_tk-cronos-pro);
-	font-family: var(--font_tk-cronos-pro);
 	letter-spacing: .02em;
 	color: var(--color_text);
 	font-weight: 500;
@@ -2347,11 +2346,11 @@ details.footies[open] summary::before {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     width: 100%;
-    cursor: auto;
+    cursor: grab;
 }
 
 .table-scroll.is-grabbed {
-    cursor: auto;
+    cursor: grabbing;
 }
 
 .pd-landing .table-scroll,
