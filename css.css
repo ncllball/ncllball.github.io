@@ -3800,8 +3800,12 @@ details.footies[open] summary::before {
 }
 
 .lightbox-scope .lightbox-thumb {
-    display: inline-block;
-    cursor: pointer;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.map-figure.lightbox-scope {
+	text-align: center;
 }
 
 .lightbox-scope .lightbox-thumb img {
