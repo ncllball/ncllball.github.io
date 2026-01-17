@@ -1161,6 +1161,10 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     text-decoration: underline
 }
 
+.no-x-scroll {
+    overflow-x: hidden;
+}
+
 /* Checkmark list styling */
 .checklist {
     list-style: none;
