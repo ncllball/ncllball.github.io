@@ -3816,8 +3816,9 @@ details.footies[open] summary::before {
 }
 
 .lightbox-scope .lightbox-thumb img {
-    display: block;
-    transition: filter 220ms ease, transform 200ms ease;
+	display: block;
+	transition: filter 220ms ease, transform 200ms ease;
+	border-radius: 8px;
 }
 
 .lightbox-scope .lightbox-thumb:hover img,
