@@ -1058,8 +1058,9 @@ sup {
 .ncll-italic-accent {
 	font-style: italic;
 	font-family: inherit;
-	letter-spacing: normal;
-	color: inherit;
+	letter-spacing: .02em;
+	color:  darkgray;
+    font-weight: 500;
 }
 
 .footies-intro {
@@ -3799,12 +3800,8 @@ details.footies[open] summary::before {
 }
 
 .lightbox-scope .lightbox-thumb {
-	display: inline-block;
-	cursor: pointer;
-}
-
-.lightbox-scope .lightbox-thumb img {
-	margin: 0 auto;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .lightbox-scope .lightbox-thumb img {
