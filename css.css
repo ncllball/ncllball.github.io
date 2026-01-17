@@ -1058,7 +1058,8 @@ sup {
 .ncll-italic-accent {
     font-style: italic;
     letter-spacing: 0.02em;
-    color: inherit;
+    font-size: 0.95em;
+    color: var(--color_text);
 }
 
 /* end global typography */
