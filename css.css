@@ -1056,10 +1056,17 @@ sup {
 }
 
 .ncll-italic-accent {
-    font-family: var(--font_tk-cronos-pro);
-    font-style: normal;
-    letter-spacing: 0.02em;
-    color: var(--color_text);
+	font-style: italic;
+	font-family: inherit;
+	letter-spacing: normal;
+	color: inherit;
+}
+
+.footies-intro {
+	font-family: var(--font_tk-cronos-pro);
+	font-style: normal;
+	letter-spacing: 0.02em;
+	color: var(--color_text);
 }
 
 /* end global typography */
@@ -1149,7 +1156,7 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     text-decoration: underline
 }
 
-.footies_note {
+.footies-note {
     text-decoration: underline
 }
 
@@ -3792,8 +3799,12 @@ details.footies[open] summary::before {
 }
 
 .lightbox-scope .lightbox-thumb {
-    display: inline-block;
-    cursor: pointer;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.lightbox-scope .lightbox-thumb img {
+	margin: 0 auto;
 }
 
 .lightbox-scope .lightbox-thumb img {
