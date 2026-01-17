@@ -4226,7 +4226,15 @@ details.footies[open] summary::before {
 
 .age-matrix--eligibility th:nth-child(4),
 .age-matrix--eligibility td:nth-child(4) {
-	text-align: left !important;
+    text-align: left !important;
+}
+
+#school-enrollment {
+    overflow-x: hidden;
+}
+
+#school-enrollment .table-scroll {
+    max-width: 100%;
 }
 
 .ground-gremlins-link {
