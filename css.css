@@ -1995,7 +1995,26 @@ body:not(.cms-right) .only-on-right {
 .age-matrix tbody td:nth-child(6),
 .age-matrix tbody td:nth-child(7),
 .age-matrix tbody td:nth-child(8) {
-    text-align: center;
+	text-align: center;
+}
+
+.age-matrix--left thead th,
+.age-matrix--left tbody td,
+.age-matrix--left th:first-child,
+.age-matrix--left td:first-child,
+.age-matrix--left thead th:nth-child(3),
+.age-matrix--left thead th:nth-child(4),
+.age-matrix--left thead th:nth-child(5),
+.age-matrix--left thead th:nth-child(6),
+.age-matrix--left thead th:nth-child(7),
+.age-matrix--left thead th:nth-child(8),
+.age-matrix--left tbody td:nth-child(3),
+.age-matrix--left tbody td:nth-child(4),
+.age-matrix--left tbody td:nth-child(5),
+.age-matrix--left tbody td:nth-child(6),
+.age-matrix--left tbody td:nth-child(7),
+.age-matrix--left tbody td:nth-child(8) {
+	text-align: left !important;
 }
 
 .age-matrix tbody tr:first-child td {
