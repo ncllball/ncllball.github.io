@@ -4209,7 +4209,24 @@ details.footies[open] summary::before {
 
 .age-matrix--center-cols th,
 .age-matrix--center-cols td {
-    text-align: center;
+	text-align: center;
+}
+
+.age-matrix--eligibility th:nth-child(2),
+.age-matrix--eligibility td:nth-child(2),
+.age-matrix--eligibility th:nth-child(3),
+.age-matrix--eligibility td:nth-child(3) {
+	text-align: center;
+}
+
+.age-matrix--eligibility th:nth-child(1),
+.age-matrix--eligibility td:nth-child(1) {
+	text-align: right;
+}
+
+.age-matrix--eligibility th:nth-child(4),
+.age-matrix--eligibility td:nth-child(4) {
+	text-align: left;
 }
 
 .ground-gremlins-link {
