@@ -3805,7 +3805,9 @@ details.footies[open] summary::before {
 }
 
 .map-figure.lightbox-scope {
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
 
 .map-figure.lightbox-scope .lightbox-thumb {
