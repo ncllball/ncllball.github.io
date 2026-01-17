@@ -4216,17 +4216,17 @@ details.footies[open] summary::before {
 .age-matrix--eligibility td:nth-child(2),
 .age-matrix--eligibility th:nth-child(3),
 .age-matrix--eligibility td:nth-child(3) {
-	text-align: center;
+	text-align: center !important;
 }
 
 .age-matrix--eligibility th:nth-child(1),
 .age-matrix--eligibility td:nth-child(1) {
-	text-align: right;
+	text-align: right !important;
 }
 
 .age-matrix--eligibility th:nth-child(4),
 .age-matrix--eligibility td:nth-child(4) {
-	text-align: left;
+	text-align: left !important;
 }
 
 .ground-gremlins-link {
