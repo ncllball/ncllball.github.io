@@ -4237,16 +4237,17 @@ details.footies[open] summary::before {
 
 /* Related links (volunteer sidebar) - blue text and markers */
 .volunteer-landing__aside-list.related-links {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	gap: 2px;
 }
 
 .volunteer-landing__aside-list.related-links li {
-    position: relative;
-    padding-left: 14px;
-    margin: 6px 0;
-    list-style: none;
+	position: relative;
+	padding-left: 14px;
+	margin: 2px 0;
+	list-style: none;
 }
 
 .volunteer-landing__aside-list.related-links li::before {
