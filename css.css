@@ -4280,7 +4280,7 @@ details.footies[open] summary::before {
     border-left: 4px solid #d1d5db;
     border-right: 4px solid #d1d5db;
     background: #f8fafc;
-    --callout-icon-size: 16px;
+    --callout-icon-size: 24px;
 }
 
 p:has(+ .callout) {
