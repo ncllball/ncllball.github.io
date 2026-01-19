@@ -4338,6 +4338,32 @@ details.footies[open] summary::before {
 }
 
 /* Global overrides for assessments and callouts */
+.assessments-faq .qa-label {
+    font-weight: 600;
+    text-decoration: underline;
+    background: #f2f2f2;
+    padding: 0 4px;
+    border-radius: 3px;
+    text-transform: lowercase;
+}
+
+.assessments-faq .question {
+    color: #00013a;
+}
+
+.assessments-faq .answer {
+    color: #d6202a;
+}
+
+.assessments-faq .assessments-cta .button,
+.assessments-faq .key-dates-table .button {
+    color: #fff;
+}
+
+.assessments-faq .assessments-cta .button.button--ghost {
+    color: inherit;
+}
+
 .button--red,
 .button--red:focus,
 .button--red:hover {
