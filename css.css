@@ -4327,7 +4327,7 @@ details.footies[open] summary::before {
     content: "•";
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0.15em;
     color: var(--color_blue);
     line-height: 1;
 }
