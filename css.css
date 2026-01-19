@@ -4339,7 +4339,7 @@ details.footies[open] summary::before {
 
 /* Global overrides for assessments and callouts */
 .assessments-faq .qa-label {
-    font-weight: 600;
+    font-weight: 500;
     background: gainsboro;
     padding: 0 4px;
     margin-right: 6px;
