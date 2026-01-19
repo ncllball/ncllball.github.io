@@ -4312,14 +4312,15 @@ details.footies[open] summary::before {
 	list-style: none;
 	padding-left: 0;
 	margin: 0;
-	gap: 2px;
+	gap: 1px;
 }
 
 .volunteer-landing__aside-list.related-links li {
 	position: relative;
-	padding-left: 14px;
-	margin: 2px 0;
+	padding-left: 12px;
+	margin: 1px 0;
 	list-style: none;
+	line-height: 1.2;
 }
 
 .volunteer-landing__aside-list.related-links li::before {
