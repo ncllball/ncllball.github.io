@@ -4416,7 +4416,7 @@ details.footies[open] summary::before {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: rgba(18, 27, 78, 0.6);
-	margin: 0 0 4px;
+	margin: 0 0 0;
 }
 
 .related-links--grouped .related-links__list {
