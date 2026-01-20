@@ -4405,7 +4405,7 @@ details.footies[open] summary::before {
 }
 
 .related-links--grouped .related-links__group {
-	margin-bottom: 10px;
+	margin-bottom: 0;
 }
 
 .related-links--grouped .related-links__group:last-child {
