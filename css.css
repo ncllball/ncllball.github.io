@@ -4399,7 +4399,7 @@ details.footies[open] summary::before {
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	margin: 0 0 1px;
-    color: var(--color_blue) !important;
+    color: var(--color_red) !important;
     text-align: left !important;
     padding-bottom: 0px;
 }
