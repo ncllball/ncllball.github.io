@@ -616,6 +616,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 
 .assessments-2026__related {
     margin-top: -55px;
+    margin-left: 30px;
 }
 
 @media (max-width: 720px) {
