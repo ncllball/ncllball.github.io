@@ -462,6 +462,11 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     margin: 0 0 10px 20px
 }
 
+.draft-float {
+    margin-top: 10px;
+    margin-left: 28px;
+}
+
 .program-photo {
     max-height: 200px;
     max-width: 35%;
