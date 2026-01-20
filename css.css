@@ -4450,7 +4450,7 @@ details.footies[open] summary::before {
 .related-links--grouped .related-links__list a::after {
 	content: "open_in_new";
 	font-family: "Material Symbols Outlined";
-	font-size: 16px;
+	font-size: 10px;
 	line-height: 1;
 	margin-left: 6px;
 	opacity: 0.6;
