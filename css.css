@@ -496,6 +496,11 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 	margin-top: 5px;
 }
 
+.draft-background {
+	margin-top: 0;
+	padding-top: 0;
+}
+
 .lightbox-row .lightbox-center {
 	flex: 1 1 260px;
 	max-width: 360px;
