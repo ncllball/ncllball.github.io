@@ -719,7 +719,7 @@ h2.left::before {
 }
 
 @media (max-width: 720px) {
-    body.assessments-what-to-expect .intro-section h2.left::before {
+.intro-section h2.left::before {
         width: 100%;
     }
 }
