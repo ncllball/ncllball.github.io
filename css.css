@@ -467,6 +467,37 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     margin-left: 28px;
 }
 
+.lightbox-center {
+	margin: 0 auto 14px;
+	text-align: center;
+}
+
+.lightbox-center .lightbox-thumb {
+	display: inline-block;
+	max-width: 420px;
+	margin: 0 auto;
+}
+
+.lightbox-center .lightbox-thumb img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.lightbox-row {
+	display: flex;
+	gap: 16px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 0 16px;
+}
+
+.lightbox-row .lightbox-center {
+	flex: 1 1 260px;
+	max-width: 360px;
+	margin: 0;
+}
+
 .program-photo {
     max-height: 200px;
     max-width: 35%;
