@@ -4355,7 +4355,7 @@ details.footies[open] summary::before {
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	margin: 0 0 10px;
-	color: var(--color_blue);
+	color: var(--color_red);
 }
 
 .related-links--subtext .related-links__list {
@@ -4453,8 +4453,9 @@ details.footies[open] summary::before {
 	font-size: 10px;
 	line-height: 1;
 	margin-left: 6px;
-	opacity: 0.6;
-	vertical-align: text-bottom;
+    color: var(--color_red) !important;
+	opacity: 0.9;
+
 }
 
 
