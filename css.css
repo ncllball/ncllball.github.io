@@ -4433,8 +4433,8 @@ details.footies[open] summary::before {
 }
 
 .related-links--grouped .related-links__list a {
-	color: var(--color_blue);
-	font-weight: 500;
+	color: var(--color_red);
+	font-weight: 600;
 	text-decoration: none;
 }
 
