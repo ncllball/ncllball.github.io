@@ -586,7 +586,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
     padding: 10px 12px;
-    margin: 0 0 12px 14px;
+    margin:  0 12px 14px;
 }
 
 .volunteer-landing__aside-title {
@@ -612,6 +612,10 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 .volunteer-landing__aside-list a:hover,
 .volunteer-landing__aside-list a:focus-visible {
     text-decoration: underline;
+}
+
+body.assessments-2026 .volunteer-landing-intro__aside {
+    margin-top: -55px;
 }
 
 @media (max-width: 720px) {
