@@ -4426,6 +4426,7 @@ details.footies[open] summary::before {
 	margin: 0;
 	display: grid;
 	gap: 4px;
+    padding:0px;
 }
 
 .related-links--grouped .related-links__list li {
