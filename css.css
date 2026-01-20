@@ -4344,8 +4344,46 @@ details.footies[open] summary::before {
 }
 
 .volunteer-landing__aside-list.related-links a {
-    color: var(--color_blue) !important;
-    font-weight: 600;
+      color: var(--color_blue) !important;
+      font-weight: 600;
+  }
+
+.related-links--subtext .related-links__title {
+	font-size: 0.85rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	margin: 0 0 10px;
+	color: var(--color_blue);
+}
+
+.related-links--subtext .related-links__list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.related-links--subtext .related-links__list li {
+	margin: 8px 0;
+	line-height: 1.2;
+	list-style: none;
+}
+
+.related-links--subtext .related-links__list a {
+	color: var(--color_blue);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.related-links--subtext .related-links__list a:hover,
+.related-links--subtext .related-links__list a:focus-visible {
+	text-decoration: underline;
+}
+
+.related-links--subtext .related-links__desc {
+	display: block;
+	font-size: 0.75rem;
+	color: rgba(18, 27, 78, 0.65);
+	margin-top: 2px;
 }
 
 
