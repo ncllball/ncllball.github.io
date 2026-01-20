@@ -4397,8 +4397,9 @@ details.footies[open] summary::before {
 	font-size: 0.75rem;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
-	margin: 0 0 8px;
-	color: var(--color_blue);
+	margin: 0 0 1px;
+    color: var(--color_blue) !important;
+    text-align: left !important;
 }
 
 .related-links--grouped .related-links__group {
@@ -4441,6 +4442,13 @@ details.footies[open] summary::before {
 .related-links--grouped .related-links__list a:hover,
 .related-links--grouped .related-links__list a:focus-visible {
 	text-decoration: underline;
+}
+
+.related-links--grouped .related-links__list a::after {
+	content: "↗";
+	font-size: 0.7em;
+	margin-left: 6px;
+	opacity: 0.6;
 }
 
 
