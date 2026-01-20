@@ -492,21 +492,9 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 	margin: 0 0 16px;
 }
 
-.draft-photo-row {
-	margin-top: 5px;
-}
-
-.draft-background {
+.lightbox-row .images {
 	margin-top: 0;
-	padding-top: 0;
-}
-
-.draft-intro {
-	margin-bottom: 6px;
-}
-
-.draft-intro p {
-	margin-bottom: 6px;
+	margin-bottom: 0;
 }
 
 .lightbox-row .lightbox-center {
