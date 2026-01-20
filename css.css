@@ -4622,7 +4622,7 @@ p:has(+ .callout) {
 }
 
 .callout--info .callout__icon::before {
-  content: "error";
+  content: "Error";
   font-family: "Material Icons Outlined";
   font-size: 24px;
   font-style: normal;
