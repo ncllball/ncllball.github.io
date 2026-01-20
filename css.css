@@ -4400,6 +4400,7 @@ details.footies[open] summary::before {
 	margin: 0 0 1px;
     color: var(--color_blue) !important;
     text-align: left !important;
+    padding-bottom: 0px;
 }
 
 .related-links--grouped .related-links__group {
