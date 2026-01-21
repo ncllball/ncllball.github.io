@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -7,112 +7,323 @@
   <meta name="description" content="Frequently asked questions about AAA/Majors player assessments for the 2026 NCLL season.">
   <link rel="stylesheet" href="https://ncllball.github.io/css.css" type="text/css">
   <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css">
+  <style>
+    .faq-layout {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+    }
+
+    .faq-center {
+      flex: 1 1 auto;
+      min-width: 0;
+      max-width: 760px;
+    }
+
+    .faq-sidebar {
+      flex: 0 0 280px;
+    }
+
+    .faq-group {
+      margin-bottom: 28px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      padding: 14px 0;
+      margin: 0;
+      background: transparent;
+    }
+
+    .faq-item[open] {
+      background: lightgray;
+      padding: 14px 16px;
+      margin: 6px 0;
+      border-radius: 10px;
+    }
+
+    .faq-item summary {
+      cursor: pointer;
+      font-weight: 600;
+      list-style: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      transition: transform 160ms ease;
+      margin-left: auto;
+      margin-right: 20px;
+      margin-top: 2px;
+    }
+
+    .faq-item[open] summary::after {
+      transform: rotate(-135deg);
+      margin-top: 6px;
+    }
+
+    .faq-item summary {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .faq-item summary.left {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .faq-item p {
+      margin: 0;
+    }
+
+    .faq-item[open] summary.left {
+      color: var(--color_red) !important;
+    }
+
+    .faq-item[open] .faq-answer {
+      color: var(--color_blue);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 220ms ease, opacity 180ms ease;
+      margin-top: 0;
+    }
+
+    .faq-item[open] .faq-answer {
+      max-height: 400px;
+      opacity: 1;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .faq-layout {
+        flex-direction: column;
+      }
+
+      .faq-center,
+      .faq-sidebar {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
   <main id="content" role="main" class="content-pad assessments-faq">
     <section class="page-intro clearfix">
       <h1 class="left sr-only">Assessments FAQ</h1>
-      <aside class="volunteer-landing-intro__aside" aria-label="Related links">
-        <ul class="volunteer-landing__aside-list related-links">
-          <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112173" rel="noopener">2026 Assessments</a></li>
-          <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2246759" rel="noopener">2026 Assessments FAQ</a></li>
-          <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2246737" rel="noopener">Assessments: What to Expect</a></li>
-          <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112136" rel="noopener">AAA Draft Overview</a></li>
-          <li><a class="ncll" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414293-2026#/" rel="noopener">2026 BB Assessments (Players)</a></li>
-          <li><a class="ncll" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414227-2026#/" rel="noopener">2026 BB Assessments (Volunteers)</a></li>
-          <li><a class="ncll" href="https://www.signupgenius.com/go/10C0A45ADA62FA3F8C61-61499109-softball#/" rel="noopener">2026 SB Assessments (SignUpGenius)</a></li>
-          <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2111984" rel="noopener">Player Development Dashboard</a></li>
-        </ul>
+      <p>Quick answers about the 2026 AAA/Majors assessments for baseball and softball.</p>
+    </section>
+
+    <div class="faq-layout">
+      <section class="faq-center" aria-label="Assessment FAQs">
+      <div class="faq-group">
+        <h2 class="left">General</h2>
+        <details class="faq-item" open>
+          <summary class="left">Why do we run assessments?</summary>
+          <div class="faq-answer">
+            <p>To build balanced teams and place players where they will develop best. Every player makes a team.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">Who attends?</summary>
+          <div class="faq-answer">
+            <p>All registered AAA/Majors players (baseball and softball). Skilled baseball 9's may attend for AAA
+            consideration; younger divisions do not assess. If you need a refresher on league eligibility rules, see
+            <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2114768" rel="noopener">Eligibility &amp; Boundaries</a>.
+          </p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">I think my 9-year-old is pretty good&mdash;can they try out?</summary>
+          <div class="faq-answer">
+            <p>10's, 11's and 12's fill AAA/Majors first. After 10's, 11's and 12's are placed, skilled 9's can earn spots
+            if roster space remains and their assessment score places them in the draftable pool. If you think your
+            9-year-old is ready, have them attend; the draftable pool size depends on available roster space after 10's
+            and 11's are placed and, ultimately, how many teams we field. Read the
+            <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112136" rel="noopener">AAA Draft Overview</a>
+            to see how teams are formed.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">Is there a make-up date or what if we miss our window?</summary>
+          <div class="faq-answer">
+            <p>No make-up date is planned. Email
+            <a class="ncll" href="mailto:baseball@ncllball.com?subject=Assessments%202026%20Late%20or%20Missed%20Window">baseball@ncllball.com</a>
+            ASAP if you will be late or must miss. Placement may rely on prior-season evaluations and coach input; late
+            or no-show players may have limited division options.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">What if we arrive late but before the last group begins their stations?</summary>
+          <div class="faq-answer">
+            <p>Check in immediately. We will work you into the remaining stations during your sport's window if space
+            allows. The earlier you arrive, the more complete your evaluation.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">What if we arrive late and there are no more groups?</summary>
+          <div class="faq-answer">
+            <p>If the final group of the day has gone, you will not be able to participate. Email
+            <a class="ncll" href="mailto:baseball@ncllball.com?subject=Assessments%202026%20Missed%20Window">baseball@ncllball.com</a>
+            right away. Placement will lean on prior-season evaluations and coach input, which may limit options. We
+            cannot guarantee a live evaluation after the window closes.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-group">
+        <h2 class="left">Logistics</h2>
+        <details class="faq-item">
+          <summary class="left">When and where?</summary>
+          <div class="faq-answer">
+            <p>Baseball: Sat, Jan 24 at Robert Eagle Staff MS. Softball: Sat, Feb 7 at Wallingford Boys &amp; Girls Club.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">How do I sign up?</summary>
+          <div class="faq-answer">
+            <p>Use the player and volunteer SignUpGenius links on the Assessments page. For the full registration
+            walkthrough, see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112172" rel="noopener">Registration Instructions</a>.
+          </p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">What should we bring?</summary>
+          <div class="faq-answer">
+            <p>Glove, water, weather-appropriate clothing. Helmet (loaners likely available), bat optional. Softball is
+            indoors&mdash;wear clean indoor shoes.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">Can parents stay?</summary>
+          <div class="faq-answer">
+            <p>Yes, but give coaches and assessors space to run stations. Please keep siblings clear of drill areas.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">How early should we arrive?</summary>
+          <div class="faq-answer">
+            <p>Arrive 15&ndash;20 minutes before your window for check-in, bibs, and a quick warm-up.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-group">
+        <h2 class="left">During assessments</h2>
+        <details class="faq-item">
+          <summary class="left">What skills are evaluated?</summary>
+          <div class="faq-answer">
+            <p>Throwing/receiving, infield/outfield reads, hitting (tee/front toss), and baserunning. Pitching/catching may
+            be a separate station.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">How long will it take?</summary>
+          <div class="faq-answer">
+            <p>Plan for about 90 minutes in your window. Please arrive early enough for check-in and warm-up.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">How are coaches involved?</summary>
+          <div class="faq-answer">
+            <p>Coaches run stations and assess players. If you are a coach and cannot attend, email
+            <a class="ncll" href="mailto:baseball@ncllball.com?subject=Assessments%202026%20Coach%20Coverage">baseball@ncllball.com</a>
+            so coverage is arranged. New to volunteering? Visit the
+            <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2117276" rel="noopener">Volunteer Hub</a>.
+          </p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">Why do players wear bibs?</summary>
+          <div class="faq-answer">
+            <p>Bib numbers keep evaluations consistent and impartial. Assessors score the number, not the name, and the
+            draft calculations stay number-based to reduce bias.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">How is scoring handled?</summary>
+          <div class="faq-answer">
+            <p>Multiple coaches score each station using the same rubric; scores are combined to form the draft pool and
+            inform placements. See the AAA Draft Overview for how the pool feeds the draft and team assignments.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">What if my player is nervous?</summary>
+          <div class="faq-answer">
+            <p>Remind them it's a practice-style workout. Effort, attitude, and listening to cues matter as much as
+            results.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-group">
+        <h2 class="left">After assessments</h2>
+        <details class="faq-item">
+          <summary class="left">When are teams formed?</summary>
+          <div class="faq-answer">
+            <p>Drafts occur shortly after assessments; families are notified by team staff once rosters are set. See the
+            AAA Draft Overview for how teams are formed and assignments are finalized.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">What if my player is on the bubble?</summary>
+          <div class="faq-answer">
+            <p>Final placement depends on scores, roster sizes, and division needs. Younger players may be placed in the
+            best-fit division for development.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="left">Can we appeal placement?</summary>
+          <div class="faq-answer">
+            <p>Placements are final. If you have a serious concern, email
+            <a class="ncll" href="mailto:baseball@ncllball.com?subject=Assessments%202026%20Placement%20Concern">baseball@ncllball.com</a>.
+          </p>
+          </div>
+        </details>
+      </div>
+      </section>
+
+      <aside class="volunteer-landing-intro__aside related-links related-links--grouped faq-sidebar"
+        aria-label="Related links">
+        <h3 class="related-links__title">Related links</h3>
+        <div class="related-links__group">
+          <span class="related-links__group-title">Pages</span>
+          <ul class="related-links__list">
+            <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112173" rel="noopener">2026 Assessments</a></li>
+            <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2246759" rel="noopener">2026 Assessments FAQ</a></li>
+            <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2246737" rel="noopener">Assessments: What to Expect</a></li>
+            <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112136" rel="noopener">AAA Draft Overview</a></li>
+          </ul>
+        </div>
+        <div class="related-links__group">
+          <span class="related-links__group-title">Sign-ups</span>
+          <ul class="related-links__list">
+            <li><a class="ncll" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414293-2026#/" rel="noopener">2026 BB Assessments (Players)</a></li>
+            <li><a class="ncll" href="https://www.signupgenius.com/go/70A054FAAAF22A3F85-61414227-2026#/" rel="noopener">2026 BB Assessments (Volunteers)</a></li>
+            <li><a class="ncll" href="https://www.signupgenius.com/go/10C0A45ADA62FA3F8C61-61499109-softball#/" rel="noopener">2026 SB Assessments (SignUpGenius)</a></li>
+          </ul>
+        </div>
+        <div class="related-links__group">
+          <span class="related-links__group-title">Tools</span>
+          <ul class="related-links__list">
+            <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2111984" rel="noopener">Player Development Dashboard</a></li>
+          </ul>
+        </div>
       </aside>
-      <p>Quick answers about the 2026 AAA/Majors assessments for baseball and softball-who attends, what to bring, and how to get ready.</p>
-    </section>
-
-    <section class="faq-section">
-            <h2 class="left">General</h2>
-
-      <h4 class="left"><span class="question qa-label">Question</span> Why do we run assessments?</h4>
-      <p><span class="answer qa-label">Answer</span> To build balanced teams and place players where they will develop best. Every player makes a team.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> Who attends?</h4>
-      <p><span class="answer qa-label">Answer</span> All registered AAA/Majors players (baseball and softball). Skilled baseball 9's may attend for AAA consideration; younger divisions do not assess. If you need a refresher on league eligibility rules, see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2114768" rel="noopener">Eligibility &amp; Boundaries</a>.</p>
-      
-      
-      <h4 class="left"><span class="question qa-label">Question</span> I think my 9-year-old is pretty good&mdash;can they try out?</h4>
-      <p><span class="answer qa-label">Answer</span> 10's, 11's and 12's fill AAA/Majors first. After 10's, 11's and 12's are placed, skilled 9's can earn spots if roster space remains and their assessment score places them in the draftable pool. If you think your 9-year-old is ready, have them attend; the draftable pool size depends on available roster space after 10's and 11's are placed and, ultimately, how many teams we field. Read the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112136" rel="noopener">AAA Draft Overview</a> to see how teams are formed.</p>
-      
-      <h4 class="left"><span class="question qa-label">Question</span> Is there a make-up date or what if we miss our window?</h4>
-      <p><span class="answer qa-label">Answer</span> No make-up date is planned. Email <a class="ncll" href="mailto:baseball@ncllball.com?subject=Assessments%202026%20Late%20or%20Missed%20Window">baseball@ncllball.com</a> ASAP if you will be late or must miss. Placement may rely on prior-season evaluations and coach input; late or no-show players may have limited division options.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> What if we arrive late but before the last group begins their stations?</h4>
-      <p><span class="answer qa-label">Answer</span> Check in immediately. We will work you into the remaining stations during your sport's window if space allows. The earlier you arrive, the more complete your evaluation.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> What if we arrive late and there are no more groups?</h4>
-      <p><span class="answer qa-label">Answer</span> If the final group of the day has gone, you will not be able to participate. Email <a class="ncll" href="mailto:baseball@ncllball.com?subject=Assessments%202026%20Missed%20Window">baseball@ncllball.com</a> right away. Placement will lean on prior-season evaluations and coach input, which may limit options. We cannot guarantee a live evaluation after the window closes.</p>
-    </section>
-
-    <section class="faq-section">
-      <h2 class="left">Logistics</h2>
-
-      <h4 class="left"><span class="question qa-label">Question</span> When and where?</h4>
-      <p><span class="answer qa-label">Answer</span> Baseball: Sat, Jan 24 at Robert Eagle Staff MS. Softball: Sat, Feb 7 at Wallingford Boys &amp; Girls Club.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> How do I sign up?</h4>
-      <p><span class="answer qa-label">Answer</span> Use the player and volunteer SignUpGenius links on the Assessments page. For the full registration walkthrough, see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112172" rel="noopener">Registration Instructions</a>.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> What should we bring?</h4>
-      <p><span class="answer qa-label">Answer</span> Glove, water, weather-appropriate clothing. Helmet (loaners likely available), bat optional. Softball is indoors&mdash;wear clean indoor shoes.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> Can parents stay?</h4>
-      <p><span class="answer qa-label">Answer</span> Yes, but give coaches and assessors space to run stations. Please keep siblings clear of drill areas.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> How early should we arrive?</h4>
-      <p><span class="answer qa-label">Answer</span> Arrive 15&ndash;20 minutes before your window for check-in, bibs, and a quick warm-up.</p>
-    </section>
-
-    <section class="faq-section">
-      <h2 class="left">During assessments</h2>
-
-      <h4 class="left"><span class="question qa-label">Question</span> What skills are evaluated?</h4>
-      <p><span class="answer qa-label">Answer</span> Throwing/receiving, infield/outfield reads, hitting (tee/front toss), and baserunning. Pitching/catching may be a separate station.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> How long will it take?</h4>
-      <p><span class="answer qa-label">Answer</span> Plan for about 90 minutes in your window. Please arrive early enough for check-in and warm-up.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> How are coaches involved?</h4>
-      <p><span class="answer qa-label">Answer</span> Coaches run stations and assess players. If you are a coach and cannot attend, email <a class="ncll" href="mailto:baseball@ncllball.com?subject=Assessments%202026%20Coach%20Coverage">baseball@ncllball.com</a> so coverage is arranged. New to volunteering? Visit the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2117276" rel="noopener">Volunteer Hub</a>.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> Why do players wear bibs?</h4>
-      <p><span class="answer qa-label">Answer</span> Bib numbers keep evaluations consistent and impartial. Assessors score the number, not the name, and the draft calculations stay number-based to reduce bias.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> How is scoring handled?</h4>
-      <p><span class="answer qa-label">Answer</span> Multiple coaches score each station using the same rubric; scores are combined to form the draft pool and inform placements. See the AAA Draft Overview for how the pool feeds the draft and team assignments.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> What if my player is nervous?</h4>
-      <p><span class="answer qa-label">Answer</span> Remind them it's a practice-style workout. Effort, attitude, and listening to cues matter as much as results.</p>
-    </section>
-
-    <section class="faq-section">
-      <h2 class="left">After assessments</h2>
-
-      <h4 class="left"><span class="question qa-label">Question</span> When are teams formed?</h4>
-      <p><span class="answer qa-label">Answer</span> Drafts occur shortly after assessments; families are notified by team staff once rosters are set. See the AAA Draft Overview for how teams are formed and assignments are finalized.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> What if my player is on the bubble?</h4>
-      <p><span class="answer qa-label">Answer</span> Final placement depends on scores, roster sizes, and division needs. Younger players may be placed in the best-fit division for development.</p>
-
-      <h4 class="left"><span class="question qa-label">Question</span> Can we appeal placement?</h4>
-      <p><span class="answer qa-label">Answer</span> Placements are final. If you have a serious concern, email <a class="ncll" href="mailto:baseball@ncllball.com?subject=Assessments%202026%20Placement%20Concern">baseball@ncllball.com</a>.</p>
-    </section>
+    </div>
   </main>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
