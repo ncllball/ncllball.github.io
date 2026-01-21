@@ -1,0 +1,109 @@
+# 2025 Baseball Registrations After 1/21/2025
+
+Format: `Order Time Stamp | Division | Player Name | Account Name`
+
+- 01/22/2025 06:19:20 PM | AA - Division BASEBALL (League Age 8-9) | Beckett Zastrow | Erin Zastrow
+- 01/22/2025 06:19:20 PM | Tee-ball Division (League Age 5-6) | Camden Zastrow | Erin Zastrow
+- 01/22/2025 07:21:14 PM | A - Division BASEBALL (League Age 7-8) | Stanley Young | Sarah Massey
+- 01/22/2025 11:55:57 PM | AAA - Division BASEBALL (League Age 10-11) | Potter Harr | Adam Harr
+- 01/23/2025 01:02:19 AM | Seniors - Division BASEBALL (League Age 15-16) | John Lacombe | Kirsten Lacombe
+- 01/23/2025 02:46:39 AM | AA - Division BASEBALL (League Age 8-9) | Henry Westberg | Garrison Westberg
+- 01/24/2025 04:14:42 PM | Juniors - Division BASEBALL (League Age 13-14) | Edward McLellan | Mari McLellan
+- 01/25/2025 03:41:22 PM | Majors - Division BASEBALL (League Age 11-12) | James Cattermole | Lillian Cattermole
+- 01/25/2025 04:41:29 PM | A - Division BASEBALL (League Age 7-8) | Francisco Ervin | Daniel Ervin
+- 01/26/2025 12:29:03 AM | AAA - Division BASEBALL (League Age 10-11) | Emile Kruchoski | Clinton Kruchoski
+- 01/26/2025 01:40:17 AM | Kindergarten Coach Pitch (League Age 6 & 7) | Soren Lilley | Melissa Lilley
+- 01/26/2025 01:27:03 PM | A - Division BASEBALL (League Age 7-8) | James Baber | Lisa Baber
+- 01/26/2025 02:15:50 PM | AAA - Division BASEBALL (League Age 10-11) | Heath Gleason | Maile Sullivan
+- 01/26/2025 04:35:37 PM | A - Division BASEBALL (League Age 7-8) | Aya Mosier | Zoe Mosier
+- 01/26/2025 07:53:29 PM | AA - Division BASEBALL (League Age 8-9) | Hudson Dahl | Jessica Dahl
+- 01/26/2025 11:26:42 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Lucy Saunders | Erin Saunders
+- 01/27/2025 01:42:34 PM | AAA - Division BASEBALL (League Age 10-11) | Jackson Baber | Lisa Baber
+- 01/27/2025 03:08:02 PM | A - Division BASEBALL (League Age 7-8) | Beck Reeder | Alexandra Reeder
+- 01/27/2025 04:31:03 PM | AA - Division BASEBALL (League Age 8-9) | Aidan Syed | Farhan Syed
+- 01/28/2025 01:55:16 PM | A - Division BASEBALL (League Age 7-8) | Ethan Rule | Nicole Rule
+- 01/28/2025 11:26:37 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Quinn Stevenson | Alexander Stevenson
+- 01/29/2025 04:46:49 PM | AA - Division BASEBALL (League Age 8-9) | Harvey Rich | Sarah Rich
+- 01/29/2025 04:57:36 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Clementine Rich | Sarah Rich
+- 01/29/2025 07:31:43 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Neil Hildebrandt | Nick Hildebrandt
+- 01/30/2025 01:31:29 PM | Tee-ball Division (League Age 5-6) | Lincoln Pillai | Amanda Jongeward
+- 01/30/2025 03:20:19 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Charlotte Randall | Jonathon Randall
+- 01/30/2025 06:21:32 PM | AAA - Division BASEBALL (League Age 10-11) | James Himmelman | Luke Himmelman
+- 01/30/2025 08:33:10 PM | AA - Division BASEBALL (League Age 8-9) | Desmond Jonas | Naomi Bogenschutz
+- 01/31/2025 01:37:04 PM | A - Division BASEBALL (League Age 7-8) | Anders Isacke | Eve Lake
+- 01/31/2025 04:21:15 PM | AAA - Division BASEBALL (League Age 10-11) | Rex Reinke | Karl Reinke
+- 01/31/2025 07:36:29 PM | A - Division BASEBALL (League Age 7-8) | Wren Hadden | Eric Hadden
+- 02/01/2025 02:53:49 PM | AA - Division BASEBALL (League Age 8-9) | Jonah Glatstein | Theresa Glatstein
+- 02/02/2025 07:24:56 PM | Juniors - Division BASEBALL (League Age 13-14) | Luka Kumar | Haru Komuro
+- 02/03/2025 01:21:28 AM | AAA - Division BASEBALL (League Age 10-11) | sebastian eliason | michael eliason
+- 02/03/2025 09:39:12 PM | A - Division BASEBALL (League Age 7-8) | Thomas Lovgren | Julia Lovgren
+- 02/04/2025 12:54:15 PM | Tee-ball Division (League Age 5-6) | Weston Barger | Rayna Barger
+- 02/04/2025 02:24:10 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Charlotte Ray | Sarah Ray
+- 02/05/2025 12:12:53 AM | AAA - Division BASEBALL (League Age 10-11) | Mario Butorac | Courtney Butorac
+- 02/05/2025 02:57:19 PM | Juniors - Division BASEBALL (League Age 13-14) | Maximiliano Davis | Brian Davis
+- 02/05/2025 03:59:34 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Alina Valle | Angelina Balderrama
+- 02/05/2025 05:15:42 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Gage Barry | Phillip Barry
+- 02/06/2025 12:58:26 AM | AA - Division BASEBALL (League Age 8-9) | Rumi Zubair | Niha Zubair
+- 02/06/2025 02:44:15 PM | Seniors - Division BASEBALL (League Age 15-16) | Haaland Jhaveri | Varun Jhaveri
+- 02/10/2025 03:09:07 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Rowan Campbell | Amanda Campbell
+- 02/14/2025 01:58:10 PM | A - Division BASEBALL (League Age 7-8) | Wesley Hill | Kate Whettam
+- 02/15/2025 06:15:15 PM | Juniors - Division BASEBALL (League Age 13-14) | Griffin Kelly | Wilbur Kelly
+- 02/15/2025 07:56:57 PM | Tee-ball Division (League Age 5-6) | Beckham Herzog | Matthew Herzog
+- 02/17/2025 11:20:12 AM | Tee-ball Division (League Age 5-6) | Nora Helton | Jeremy Helton
+- 02/18/2025 11:51:04 PM | A - Division BASEBALL (League Age 7-8) | Noah Chang | Elizabeth Montgomery
+- 02/19/2025 11:09:20 PM | Tee-ball Division (League Age 5-6) | Fredrik goehring | matt goehring
+- 02/20/2025 02:28:13 PM | AA - Division BASEBALL (League Age 8-9) | Anderson Cook | Cara Cook
+- 02/21/2025 08:32:04 PM | A - Division BASEBALL (League Age 7-8) | Kainoa Brouns-Prince | Kylene Brouns
+- 02/22/2025 10:18:45 AM | Tee-ball Division (League Age 5-6) | Connor Marley | Sean Marley
+- 02/22/2025 12:43:33 PM | A - Division BASEBALL (League Age 7-8) | Rita Gudino-Frei | Antonio Gudino
+- 02/22/2025 12:43:33 PM | A - Division BASEBALL (League Age 7-8) | Antonio Roque Gudino-Frei | Antonio Gudino
+- 02/24/2025 03:16:14 PM | Juniors - Division BASEBALL (League Age 13-14) | Dylan Polanski | Alison Agness
+- 02/24/2025 04:03:02 PM | A - Division BASEBALL (League Age 7-8) | Nolan Kelch | Catherine Kelch
+- 02/24/2025 04:13:39 PM | AA - Division BASEBALL (League Age 8-9) | Jude Kelch | Catherine Kelch
+- 02/25/2025 03:55:47 PM | A - Division BASEBALL (League Age 7-8) | Fraser Niffin | Katie Niffin
+- 02/25/2025 06:28:50 PM | Tee-ball Division (League Age 5-6) | Leo Swann-Branigan | Nicholas Branigan
+- 02/25/2025 11:50:01 PM | A - Division BASEBALL (League Age 7-8) | Julian Santos | Trisha Wood Santos
+- 02/26/2025 12:32:13 AM | AA - Division BASEBALL (League Age 8-9) | Louie Taverniti | DOMINIQUE TAVERNITI-WALTON
+- 02/26/2025 11:17:00 PM | Tee-ball Division (League Age 5-6) | Theo Cavin | Dana Cavin
+- 02/26/2025 11:34:38 PM | Tee-ball Division (League Age 5-6) | Amelia Neff | Becky Neff
+- 02/27/2025 02:27:56 AM | Tee-ball Division (League Age 5-6) | Lorenzo Radkey | Tyler Radkey
+- 02/27/2025 11:42:54 AM | Tee-ball Division (League Age 5-6) | Eli Silver | Meghan Silver
+- 02/27/2025 03:58:27 PM | Juniors - Division BASEBALL (League Age 13-14) | Abe Garske | Seth Garske
+- 02/27/2025 11:19:55 PM | Tee-ball Division (League Age 5-6) | Arthur Clarendon | James Clarendon
+- 02/27/2025 11:24:10 PM | Tee-ball Division (League Age 5-6) | Silas Fortner | Erin Hochschild
+- 02/28/2025 12:06:48 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Arthur Bell | Laura Smith
+- 02/28/2025 05:25:25 PM | Tee-ball Division (League Age 5-6) | Culver Daly | Tony Daly
+- 02/28/2025 10:06:15 PM | Tee-ball Division (League Age 5-6) | Adrian Zetter | Candace Zetter
+- 03/01/2025 12:00:28 AM | Kindergarten Coach Pitch (League Age 6 & 7) | Emma June Zelko | Kevin Zelko
+- 03/01/2025 12:00:28 AM | Kindergarten Coach Pitch (League Age 6 & 7) | William Zelko | Kevin Zelko
+- 03/02/2025 02:46:58 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Feliks De Lucio | Jade Waples
+- 03/02/2025 08:25:45 PM | AA - Division BASEBALL (League Age 8-9) | Smith Kensok | Abby Kensok
+- 03/03/2025 12:41:58 AM | Tee-ball Division (League Age 5-6) | Kathleen Appleyard | Bill Appleyard
+- 03/03/2025 10:31:00 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Simon Brinkley | Jamie Brinkley
+- 03/05/2025 12:40:11 AM | Tee-ball Division (League Age 5-6) | Fox Davis | Kelly Davis
+- 03/05/2025 12:54:13 AM | AA - Division BASEBALL (League Age 8-9) | Ander Cheatham | Christina Anderson
+- 03/05/2025 08:09:46 AM | Tee-ball Division (League Age 5-6) | Leon Honorato | Valentina Aldunate
+- 03/06/2025 11:50:54 AM | Kindergarten Coach Pitch (League Age 6 & 7) | Van Jensen | Patrick Jensen
+- 03/06/2025 12:30:40 PM | Tee-ball Division (League Age 5-6) | Archie Nicholson | Sienna Thorgerson
+- 03/13/2025 11:53:05 AM | Kindergarten Coach Pitch (League Age 6 & 7) | Owen Evanger | Allison Evanger
+- 03/20/2025 03:00:30 AM | AA - Division BASEBALL (League Age 8-9) | Rafael Spector | Jeffrey Spector
+- 03/20/2025 07:13:12 PM | AA - Division BASEBALL (League Age 8-9) | Espen Ginzburg | Alanna Beebe
+- 03/20/2025 11:55:40 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Henry Wigert | Jared Wigert
+- 03/21/2025 01:37:08 PM | AA - Division BASEBALL (League Age 8-9) | Conor McMullen | Matt McMullen
+- 03/23/2025 03:53:44 PM | A - Division BASEBALL (League Age 7-8) | Samuel Engler | Julia Engler
+- 03/30/2025 05:16:40 PM | AA - Division BASEBALL (League Age 8-9) | Oliver Martynenko | Pierina Otiniano
+- 03/31/2025 12:43:55 AM | Tee-ball Division (League Age 5-6) | Elliott Boze | Jessica Boze
+- 04/04/2025 04:22:56 PM | AA - Division BASEBALL (League Age 8-9) | Lorenzo Crallie | Erin Crallie
+- 04/05/2025 09:17:26 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Avery Azoff | Carolyn Thayer-Azoff
+- 04/05/2025 10:58:10 PM | Tee-ball Division (League Age 5-6) | Leilana Zubair | Jonathan Wingard-Phillips
+- 04/05/2025 10:58:10 PM | Tee-ball Division (League Age 5-6) | Idris Zubair | Jonathan Wingard-Phillips
+- 04/07/2025 02:30:45 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Daniel Moloney | Carrie Traner
+- 04/10/2025 07:02:40 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Vincent Watson | Parris Watson
+- 04/11/2025 02:29:07 PM | Tee-ball Division (League Age 5-6) | Virginia Hardy | Molly Clevenger
+- 04/11/2025 03:53:42 PM | Seniors - Division BASEBALL (League Age 15-16) | August Kotovic | Benjamin Kotovic
+- 04/11/2025 07:38:36 PM | Kindergarten Coach Pitch (League Age 6 & 7) | Aidan Terzo | Anna Rita Wong Terzo
+- 04/18/2025 03:55:49 PM | Tee-ball Division (League Age 5-6) | Victor Watson | Parris Watson
+- 04/21/2025 11:57:59 PM | Seniors - Division BASEBALL (League Age 15-16) | Cameron Cross | Michael Cross
+- 04/26/2025 11:10:38 PM | Seniors - Division BASEBALL (League Age 15-16) | Cameron Esty | David Esty
+- 04/29/2025 09:54:09 PM | Seniors - Division BASEBALL (League Age 15-16) | Caelen Lockery | Katherine Bragdon
+- 06/17/2025 01:19:55 AM | Seniors - Division BASEBALL (League Age 15-16) | Anders Bertelsen | Elizabeth Bertelsen
