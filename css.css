@@ -4670,7 +4670,7 @@ p:has(+ .callout) {
 }
 
 .callout--info .callout__icon::before {
-  content: "Error";
+  content: "info";
   font-family: "Material Icons Outlined";
   font-size: 24px;
   font-style: normal;
@@ -4682,6 +4682,16 @@ p:has(+ .callout) {
   white-space: nowrap;
   direction: ltr;
   -webkit-font-smoothing: antialiased;
+}
+
+.callout__icon.material-icons-outlined::before {
+  content: none;
+}
+
+.callout__icon.material-icons-outlined {
+  font-family: "Material Icons Outlined";
+  font-size: 24px;
+  line-height: 1;
 }
 
 .callout--bulb {
