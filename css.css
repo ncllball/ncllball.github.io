@@ -4671,7 +4671,7 @@ p:has(+ .callout) {
 
 .callout--info .callout__icon::before {
   content: "info";
-  font-family: "Material Icons Outlined";
+  font-family: "Material Icons";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -4684,6 +4684,10 @@ p:has(+ .callout) {
   -webkit-font-smoothing: antialiased;
 }
 
+.callout--info .callout__icon {
+  color: var(--color_blue);
+}
+
 .callout__icon.material-icons-outlined::before {
   content: none;
 }
@@ -4692,6 +4696,17 @@ p:has(+ .callout) {
   font-family: "Material Icons Outlined";
   font-size: 24px;
   line-height: 1;
+}
+
+.callout__icon.material-icons::before {
+  content: none;
+}
+
+.callout__icon.material-icons {
+  font-family: "Material Icons";
+  font-size: 24px;
+  line-height: 1;
+  color: var(--color_blue);
 }
 
 .callout--bulb {
