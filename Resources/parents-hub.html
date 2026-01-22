@@ -100,14 +100,8 @@
 
 
 							<div class="ncll-card__graphics lightbox-scope">
-								<input type="checkbox" id="glovehand-lightbox" class="lightbox-toggle" />
-								<label for="glovehand-lightbox" class="lightbox-thumb" style="display:block;text-align:center;">
+								<label for="glovehand-lightbox" class="lightbox-thumb" style="display:block;text-align:center;cursor:pointer;">
 									<img class="ncll-card__graphic" src="https://ncllball.github.io/images/glovehand.png" alt="Glove hand illustration" />
-								</label>
-								<label for="glovehand-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged glove hand illustration" tabindex="0" style="z-index: 9999;">
-									<span class="sr-only">Close image</span>
-									<span class="close-btn" aria-hidden="true">x</span>
-									<img src="https://ncllball.github.io/images/glovehand.png" alt="Glove hand illustration enlarged" />
 								</label>
 							</div>
 
@@ -410,6 +404,14 @@
 				</article>
 			</div>
 		</section>
+		<div class="lightbox-scope">
+			<input type="checkbox" id="glovehand-lightbox" class="lightbox-toggle" />
+			<label for="glovehand-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged glove hand illustration" tabindex="0">
+				<span class="sr-only">Close image</span>
+				<span class="close-btn" aria-hidden="true">x</span>
+				<img src="https://ncllball.github.io/images/glovehand.png" alt="Glove hand illustration enlarged" />
+			</label>
+		</div>
 	</main>
 </body>
 
