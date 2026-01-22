@@ -12,10 +12,11 @@
       display: flex;
       gap: 32px;
       align-items: flex-start;
+      justify-content: center;
     }
 
     .faq-header {
-      text-align: center;
+      text-align: center !important;
       margin-bottom: 24px;
     }
 
@@ -24,12 +25,25 @@
       font-size: 2rem;
       font-weight: 600;
       letter-spacing: -0.02em;
+      text-align: center !important;
     }
 
     .faq-subtitle {
       margin: 0;
       font-size: 1rem;
       color: var(--color_text);
+    }
+
+    .assessments-faq .faq-header,
+    .assessments-faq .faq-title,
+    .assessments-faq .faq-subtitle {
+      text-align: center !important;
+    }
+
+    .assessments-faq h1.faq-title {
+      display: block;
+      width: 100%;
+      text-align: center !important;
     }
 
     .faq-center {
@@ -40,6 +54,7 @@
 
     .faq-sidebar {
       flex: 0 0 280px;
+      display: none;
     }
 
     .faq-group {
@@ -47,7 +62,7 @@
     }
 
     .faq-item {
-      border: 1px solid rgba(0, 0, 0, 0.12);
+      border: none;
       border-radius: 12px;
       padding: 14px 16px;
       margin: 12px 0;
@@ -131,8 +146,7 @@
     <div class="faq-layout">
       <section class="faq-center" aria-label="Assessment FAQs">
       <div class="faq-group">
-        <h2 class="left">General</h2>
-        <details class="faq-item" open>
+                <details class="faq-item" open>
           <summary class="left">Why do we run assessments?</summary>
           <div class="faq-answer">
             <p>To build balanced teams and place players where they will develop best. Every player makes a team.</p>
@@ -186,8 +200,7 @@
       </div>
 
       <div class="faq-group">
-        <h2 class="left">Logistics</h2>
-        <details class="faq-item">
+                <details class="faq-item">
           <summary class="left">When and where?</summary>
           <div class="faq-answer">
             <p>Baseball: Sat, Jan 24 at Robert Eagle Staff MS. Softball: Sat, Feb 7 at Wallingford Boys &amp; Girls Club.</p>
@@ -223,8 +236,7 @@
       </div>
 
       <div class="faq-group">
-        <h2 class="left">During assessments</h2>
-        <details class="faq-item">
+                <details class="faq-item">
           <summary class="left">What skills are evaluated?</summary>
           <div class="faq-answer">
             <p>Throwing/receiving, infield/outfield reads, hitting (tee/front toss), and baserunning. Pitching/catching may
@@ -271,8 +283,7 @@
       </div>
 
       <div class="faq-group">
-        <h2 class="left">After assessments</h2>
-        <details class="faq-item">
+                <details class="faq-item">
           <summary class="left">When are teams formed?</summary>
           <div class="faq-answer">
             <p>Drafts occur shortly after assessments; families are notified by team staff once rosters are set. See the
