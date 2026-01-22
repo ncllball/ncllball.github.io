@@ -14,10 +14,28 @@
       align-items: flex-start;
     }
 
+    .faq-header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .faq-title {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .faq-subtitle {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--color_text);
+    }
+
     .faq-center {
       flex: 1 1 auto;
       min-width: 0;
-      max-width: 760px;
+      max-width: 720px;
     }
 
     .faq-sidebar {
@@ -29,17 +47,15 @@
     }
 
     .faq-item {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-      padding: 14px 0;
-      margin: 0;
-      background: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 12px 0;
+      background: #fff;
     }
 
     .faq-item[open] {
-      background: lightgray;
-      padding: 14px 16px;
-      margin: 6px 0;
-      border-radius: 10px;
+      background: #f3f4f6;
     }
 
     .faq-item summary {
@@ -61,7 +77,6 @@
       transform: rotate(45deg);
       transition: transform 160ms ease;
       margin-left: auto;
-      margin-right: 20px;
       margin-top: 2px;
     }
 
@@ -86,25 +101,11 @@
       margin: 0;
     }
 
-    .faq-item[open] summary.left {
-      color: var(--color_red) !important;
-    }
-
-    .faq-item[open] .faq-answer {
-      color: var(--color_blue);
-    }
-
     .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition: max-height 220ms ease, opacity 180ms ease;
       margin-top: 0;
     }
 
     .faq-item[open] .faq-answer {
-      max-height: 400px;
-      opacity: 1;
       margin-top: 10px;
     }
 
@@ -122,9 +123,9 @@
 </head>
 <body>
   <main id="content" role="main" class="content-pad assessments-faq">
-    <section class="page-intro clearfix">
-      <h1 class="left sr-only">Assessments FAQ</h1>
-      <p>Quick answers about the 2026 AAA/Majors assessments for baseball and softball.</p>
+    <section class="page-intro faq-header">
+      <h1 class="faq-title">Assessments FAQ</h1>
+      <p class="faq-subtitle">Quick answers about the 2026 AAA/Majors assessments for baseball and softball.</p>
     </section>
 
     <div class="faq-layout">

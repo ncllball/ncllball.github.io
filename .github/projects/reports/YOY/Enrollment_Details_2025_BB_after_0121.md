@@ -1,5 +1,16 @@
 # 2025 Baseball Registrations After 1/21/2025
 
+## Division Breakdown
+
+- Tee-ball Division (League Age 5-6): 25
+- Kindergarten Coach Pitch (League Age 6 & 7): 22
+- A - Division BASEBALL (League Age 7-8): 18
+- AA - Division BASEBALL (League Age 8-9): 18
+- AAA - Division BASEBALL (League Age 10-11): 8
+- Seniors - Division BASEBALL (League Age 15-16): 7
+- Juniors - Division BASEBALL (League Age 13-14): 6
+- Majors - Division BASEBALL (League Age 11-12): 1
+
 Format: `Order Time Stamp | Division | Player Name | Account Name`
 
 - 01/22/2025 06:19:20 PM | AA - Division BASEBALL (League Age 8-9) | Beckett Zastrow | Erin Zastrow
