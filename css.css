@@ -4053,6 +4053,7 @@ details.footies[open] summary::before {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
+    z-index: 10000;
 }
 
 .ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.lightbox[data-id="1"] img,
