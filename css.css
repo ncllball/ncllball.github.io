@@ -3799,6 +3799,10 @@ details.footies[open] summary::before {
     scroll-margin-bottom: calc(var(--ncll-card-actions-height, var(--card-toggle-actions-height)) + 0.5rem);
 }
 
+.parents-hub-landing .ncll-card--toggle .ncll-card__body {
+    padding-bottom: calc(var(--card-toggle-panel-pad-bottom, 1.75rem) + 1.5rem);
+}
+
 .ncll-card--toggle .panel> :first-child {
     margin-top: 0;
 }
