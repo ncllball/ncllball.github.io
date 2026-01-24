@@ -717,7 +717,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     --stripe-gradient: linear-gradient(135deg, #ffffff 5%, var(--color_red) 5% 25%, #ffffff 25% 55%, var(--color_red) 55% 75%, #ffffff 75%);
     --stripe-tight-red-micro-quad: repeating-linear-gradient(135deg, var(--color_red) 0 2px, #ffffff 2px 4px);
     --related-links-rail: 220px;
-    --related-links-buffer: 50px;
+    --related-links-buffer: 0px;
     /* font stacks */
     --font_ui: "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
     --font_sans: "proxima-nova", var(--font_ui);
@@ -3060,6 +3060,10 @@ details.footies[open] summary::before {
     margin: -13px 0 0 0;
 }
 
+.ncll-card__caption {
+    margin-top: 0;
+}
+
 .ncll-card__details {
     margin: 0 0 10px 0;
     color: var(--color_blue);
@@ -3242,6 +3246,16 @@ details.footies[open] summary::before {
 .ncll-card__graphic--mrglove {
     width: 100px;
     height: auto;
+}
+
+.ncll-card__graphic--glovelenght {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .ncll-card__graphics--pair {
