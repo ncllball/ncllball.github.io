@@ -3193,7 +3193,10 @@ details.footies[open] summary::before {
     width: 140px;
     height: auto;
 }
-
+.ncll-card__graphic--glove {
+    width: 240px;
+    height: auto;
+}
 .ncll-card__graphic--larger {
     width: 125px;
     height: auto;
@@ -3320,6 +3323,7 @@ details.footies[open] summary::before {
     border-top: 1px solid var(--color_border_light);
     box-sizing: border-box;
     margin-top: auto;
+    
 }
 
 .ncll-card__sticky-footer .button {
@@ -3799,10 +3803,6 @@ details.footies[open] summary::before {
     scroll-margin-bottom: calc(var(--ncll-card-actions-height, var(--card-toggle-actions-height)) + 0.5rem);
 }
 
-.parents-hub-landing .ncll-card--toggle .ncll-card__body {
-    padding-bottom: calc(var(--card-toggle-panel-pad-bottom, 1.75rem) + 1.5rem);
-}
-
 .ncll-card--toggle .panel> :first-child {
     margin-top: 0;
 }
@@ -3828,6 +3828,69 @@ details.footies[open] summary::before {
     font-weight: 500;
     letter-spacing: 0.01em;
     color: #444;
+}
+
+.parents-hub-landing .ncll-card__heading-title {
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.glove-size-card {
+    border: 1px solid #f28c28;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.glove-size-card__header {
+    background: #f28c28;
+    color: #fff;
+    padding: 12px 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.glove-size-card__header h4 {
+    margin: 0 0 4px 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.glove-size-card__header p {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.glove-size-card__section {
+    padding: 14px 16px 6px;
+}
+
+.glove-size-card__section h5 {
+    margin: 0 0 8px 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #111;
+}
+
+.glove-size-card__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 3px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 0.8rem;
+    color: #222;
+    line-height: 1;
+}
+
+.glove-size-card__row span:last-child {
+    font-weight: 400;
+    white-space: nowrap;
 }
 
 .ncll-card--toggle input[type="radio"][id$="-intro"]:checked~.ncll-card__sticky-footer .actions .btn-next-intro,
