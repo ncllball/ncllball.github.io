@@ -4822,3 +4822,31 @@ p:has(+ .callout) {
 #dnnStandardMenu .txt {
     text-transform: capitalize !important;
 }
+
+.events-landing .ncll-card__graphics--logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.events-landing .ncll-card__graphics--logos img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.events-landing .ncll-card__graphics--logos .events-logos__vs {
+    color: var(--color_text);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.events-landing .events-ticket__blurb {
+    text-align: center;
+}
+
+.events-landing .events-ticket__cta-disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
