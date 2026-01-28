@@ -1,0 +1,49 @@
+{
+   "CaptureBackgroundColor" : "#00000000",
+   "CaptureBackgroundImage" : "{8207C19F-89AE-4BFD-8B39-C43BA6D9A5BB}.png",
+   "CaptureBackgroundLocation" : "0,0",
+   "CaptureCanvasHeight" : 325,
+   "CaptureCanvasWidth" : 505,
+   "CaptureObjects" : [
+      {
+         "Image" : "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABDrAAAQwwENyUbWAAAAB3RJTUUH6gEcAgcmwmyUhwAAARNJREFUWAnt1U0LgjAYB/A9UyEQfAl6oW/RqU/RV+xL5NE6eAu6RGBdpUPSSUjJ6GB7xGBIZYfpOmyn6cae3/MHHSFgnakxnBFpgwGAOit5CAYo2JCHqADyEBxADqIG6B7xBtAt4gOgO8QXQH5/dPB1fAFgCklybRnRAEBEHF9aRPwAQEQUnUqE6D+2Xj8wy3Jimr3yNdXcdX1d/DOXQJreCkKsdOn52DR27FN9MBdflD+xAryK46UEYO8RUMbO5vx28XMG4ItjAaCuFwQbNLAUXK/VFPAWxNj567icg31AQBgeC5bITnznDSdi51gcB4CzbdguflkzxhPCUgDaX1BjNBVfQZ2oElAJqARUAiqBP0ngCcZfRm9PvRDLAAAAAElFTkSuQmCC",
+         "ObjectID" : "81F1F619-8749-48ED-965E-E3B20A7F0816",
+         "PointsArray" : [ "0,2", "32,34" ],
+         "RotationAngle" : 0.0,
+         "ToolMode" : "Image"
+      }
+   ],
+   "CornerRadiusRatio" : 0.0,
+   "CursorPosition" : "0,2",
+   "DPI" : 96,
+   "ExportedFromPlatform" : "win",
+   "ImageExpansionFromObjects" : [ "0,0", "0,0" ],
+   "SimplifySettings" : {
+      "ActiveColorPaletteName" : "ImageColors",
+      "LockAllObjects" : false,
+      "Opacity" : 100,
+      "ShowOriginal" : false,
+      "SuiDetail" : 0
+   },
+   "SmartRedactProperties" : {
+      "RedactionTypesEnabled" : [
+         "PostalAddress",
+         "PhoneNumber",
+         "WebUrl",
+         "IPAddress",
+         "Email",
+         "SocialSecurityNumber",
+         "CreditCardNumber",
+         "Date",
+         "Face",
+         "Other"
+      ],
+      "SmartRedactEnabled" : false
+   },
+   "SoftwareVersion" : "2026.0.0.9483",
+   "StepToolSequenceLowercaseLetter" : 1,
+   "StepToolSequenceNumeric" : 1,
+   "StepToolSequenceUppercaseLetter" : 1,
+   "Version" : "1.0",
+   "ViewBoxExpansionFromObjects" : [ "0,0", "0,0" ]
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Free February Eagle Staff Clinics</title>
+    <title>FREE FEBRUARY Eagle Staff Clinics</title>
     <link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
     <link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
     <style>
@@ -12,23 +12,46 @@
       }
 
       .qr-poster {
-        max-width: 900px;
+        max-width: 100%;
         margin: 0 auto;
-        padding: 32px 24px 40px;
+        padding: 0;
+        min-height: calc(100vh - 0.5in);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         text-align: center;
         color: var(--color_blue);
         font-family: var(--font_sans);
       }
 
       .qr-poster__title {
-        font-size: 2.4rem;
+        font-size: clamp(2rem, 4vw, 3rem);
         margin: 0 0 10px;
+        text-align: center !important;
+        width: 100%;
+        color: var(--color_blue);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        white-space: nowrap;
       }
 
       .qr-poster__subhead {
-        font-size: 1.1rem;
+        font-size: 1.35rem;
         color: var(--color_text);
         margin: 0 0 24px;
+        text-align: center;
+      }
+
+      .qr-poster__details {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 24px 175px;
+        color: var(--color_text);
+        text-align: center;
+      }
+
+      .qr-poster__details li {
+        margin: 6px 0;
       }
 
       .qr-poster__qr {
@@ -37,7 +60,7 @@
         height: auto;
         display: block;
         margin: 0 auto 18px;
-        border: 6px solid var(--color_red);
+        border: 1px solid var(--color_red);
         padding: 10px;
         background: #ffffff;
         box-sizing: border-box;
@@ -48,6 +71,8 @@
         color: var(--color_text);
         margin: 0;
         word-break: break-word;
+                margin: 0 0 24px 150px;
+
       }
 
       .qr-poster__url a {
@@ -60,12 +85,52 @@
       .qr-poster__url a:focus-visible {
         text-decoration: underline;
       }
+
+      @media print {
+        @page {
+          size: letter;
+          margin: 0.25in;
+        }
+
+        * {
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+
+        body {
+          margin: 0;
+        }
+
+        .qr-poster {
+          max-width: none;
+          padding: 0;
+          min-height: calc(11in - 0.5in);
+        }
+
+        .qr-poster__qr {
+          box-shadow: none;
+          width: calc(100% - 0.5in);
+        }
+
+        .qr-poster__title {
+          font-size: clamp(2.2rem, 4vw, 3.2rem);
+        }
+
+        .qr-poster__subhead {
+          font-size: 1.5rem;
+        }
+      }
     </style>
   </head>
   <body>
     <main class="qr-poster" role="main">
-      <h1 class="qr-poster__title">Free February Eagle Staff Clinics</h1>
-      <p class="qr-poster__subhead">Scan the QR code to sign up.</p>
+      <h1 class="qr-poster__title">FREE FEBRUARY Eagle Staff Clinics (AAA/Majors)</h1>
+      <ul class="qr-poster__details">
+        <li><strong>Dates:</strong> Feb 7, 14, and 21, 2026</li>
+        <li><strong>Time:</strong> 6:00–8:00 PM</li>
+        <li><strong>Location:</strong> Robert Eagle Staff Middle School</li>
+        <li>Coaches &amp; volunteers needed—use the same QR code below to sign up.</li>
+      </ul>
       <img class="qr-poster__qr" src="https://ncllball.github.io/images/free-feb-clinics-qr.png" alt="QR code for Free February Eagle Staff Clinics" />
       <p class="qr-poster__url">
         Or visit:
