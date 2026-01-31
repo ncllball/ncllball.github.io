@@ -1518,6 +1518,12 @@ body.cms-right.no-x-scroll {
     display: none
 }
 
+.events-landing .cal-menu {
+    left: 0;
+    right: auto;
+    z-index: 200;
+}
+
 .cal-dropdown:focus-within>.cal-menu {
     display: block
 }
@@ -1531,6 +1537,12 @@ body.cms-right.no-x-scroll {
     color: var(--color_text);
     border-radius: 6px;
     font-size: 0.95em
+}
+
+.cal-menu a.ncll,
+.cal-menu a.ncll:visited {
+    color: var(--color_text);
+    text-decoration: none
 }
 
 .cal-menu a:hover {
@@ -3451,6 +3463,12 @@ details.footies[open] summary::before {
     background: #fff;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.events-landing .ncll-card--overlay,
+.events-landing .ncll-card__body,
+.events-landing .ncll-card__details {
+    overflow: visible;
 }
 
 .ncll-card--overlay .ncll-card__top-layer {
