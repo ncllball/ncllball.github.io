@@ -3579,24 +3579,25 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--overlay .ncll-card__sticky-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: var(--card-toggle-actions-height, 60px);
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    height: auto;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 0 20px;
+    padding: 12px 20px;
     border-top: 1px solid var(--color_border_light);
     z-index: 6;
 }
 
 .ncll-card--toggle .ncll-card__sticky-footer {
+    position: relative;
     height: auto;
-    padding: 20px 8px;
+    padding: 12px 20px;
     border-top: 1px solid var(--color_border_light);
     gap: 12px;
     box-shadow: none;
