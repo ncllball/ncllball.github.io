@@ -415,8 +415,6 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     align-items: start;
     /* keep cards top-aligned */
-    position: relative;
-    z-index: 0;
 }
 
 /* Ensure each article/card composes its internal layout vertically
@@ -430,8 +428,6 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     box-sizing: border-box;
     /* visual breathing room between stacked cards on older browsers */
     margin-bottom: 8px;
-    position: relative;
-    z-index: 0;
 }
 
 
@@ -1526,18 +1522,15 @@ body.cms-right.no-x-scroll {
 .events-landing .cal-dropdown {
     display: inline-flex;
     align-items: center;
-    position: relative;
-    z-index: 100;
 }
 
 .events-landing .cal-menu {
     left: 0;
     right: auto;
-    top: auto;
-    bottom: calc(100% + 6px);
-    z-index: 10000;
-    max-height: 280px;
-    overflow-y: auto;
+    top: calc(100% + 6px);
+    z-index: 999;
+    max-height: none;
+    overflow: visible;
 }
 
 .cal-dropdown:focus-within>.cal-menu {
@@ -3482,18 +3475,11 @@ details.footies[open] summary::before {
 }
 
 .events-landing .ncll-card--overlay {
-    z-index: 1;
-    overflow: visible;
+    z-index: 0;
 }
 
-.events-landing .ncll-card--overlay:hover,
 .events-landing .ncll-card--overlay:focus-within {
-    z-index: 9999;
-}
-
-.events-landing .ncll-card__body {
-    z-index: 10;
-    position: relative;
+    z-index: 5;
 }
 
 .events-landing .ncll-card--overlay,
@@ -3514,7 +3500,7 @@ details.footies[open] summary::before {
     transition: opacity 0.3s ease;
     z-index: 2;
     min-height: var(--ncll-card-height);
-    overflow: visible;
+    overflow: hidden;
 }
 
 /* === Begin: Overlay scrollbar styling ================================= */
@@ -3532,14 +3518,6 @@ details.footies[open] summary::before {
 }
 
 /* Allow calendar menus to overflow the intro panel without being clipped. */
-.events-landing .ncll-card--overlay .ncll-card__body.panel-intro {
-    overflow: visible;
-    z-index: 5;
-}
-
-.events-landing .ncll-card--overlay .ncll-card__body.panel-intro .ncll-card__meta {
-    overflow: visible;
-}
 
 .ncll-card--overlay .ncll-card__body::-webkit-scrollbar {
     width: 10px;
