@@ -1527,9 +1527,7 @@ body.cms-right.no-x-scroll {
     left: 0;
     right: auto;
     top: calc(100% + 6px);
-    z-index: 200;
-    width: 240px;
-    max-width: 80vw;
+    z-index: 999;
 }
 
 .cal-dropdown:focus-within>.cal-menu {
@@ -3471,6 +3469,14 @@ details.footies[open] summary::before {
     background: #fff;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.events-landing .ncll-card--overlay {
+    z-index: 0;
+}
+
+.events-landing .ncll-card--overlay:focus-within {
+    z-index: 5;
 }
 
 .events-landing .ncll-card--overlay,
