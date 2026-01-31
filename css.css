@@ -3579,25 +3579,28 @@ details.footies[open] summary::before {
 }
 
 .ncll-card--overlay .ncll-card__sticky-footer {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--card-toggle-actions-height, 60px);
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 12px 20px;
+    padding: 0 20px;
     border-top: 1px solid #e2e2e2;
     z-index: 6;
 }
 
 .ncll-card--toggle .ncll-card__sticky-footer {
-    position: relative;
-    height: auto;
-    padding: 12px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--card-toggle-actions-height, 60px);
+    padding: 0 20px;
     border-top: 1px solid #e2e2e2;
     gap: 12px;
     box-shadow: none;
@@ -4900,5 +4903,4 @@ p:has(+ .callout) {
     opacity: 0.6;
     pointer-events: none;
 }
-
 
