@@ -3378,7 +3378,7 @@ details.footies[open] summary::before {
     gap: 0.75rem;
     padding: 12px 16px;
     background: #fff;
-    border-top: 1px solid var(--color_border_light);
+    border-top: 1px solid #e2e2e2;
     box-sizing: border-box;
     margin-top: auto;
     
@@ -3590,7 +3590,7 @@ details.footies[open] summary::before {
     justify-content: center;
     gap: 10px;
     padding: 12px 20px;
-    border-top: 1px solid var(--color_border_light);
+    border-top: 1px solid #e2e2e2;
     z-index: 6;
 }
 
@@ -3598,7 +3598,7 @@ details.footies[open] summary::before {
     position: relative;
     height: auto;
     padding: 12px 20px;
-    border-top: 1px solid var(--color_border_light);
+    border-top: 1px solid #e2e2e2;
     gap: 12px;
     box-shadow: none;
     background: #fff;
@@ -4900,7 +4900,5 @@ p:has(+ .callout) {
     opacity: 0.6;
     pointer-events: none;
 }
-
-
 
 
