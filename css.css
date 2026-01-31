@@ -1475,7 +1475,7 @@ body.cms-right.no-x-scroll {
     width: var(--cal-icon-size);
     height: var(--cal-icon-size);
     background: transparent url(images/icons/calendar/event.svg) no-repeat center / 80% 80%;
-    border: none;
+    border: 1px solid transparent;
     padding: 0;
     appearance: none;
     -webkit-appearance: none;
@@ -1483,13 +1483,23 @@ body.cms-right.no-x-scroll {
     text-indent: -9999px;
     overflow: hidden;
     vertical-align: -0.20em;
-    cursor: pointer
+    cursor: pointer;
+    border-radius: 50%
+}
+
+.cal-dropdown>.cal-trigger.icon-only:hover {
+    background-color: #f2f4f8;
+    border-color: var(--color_border_light)
 }
 
 .cal-dropdown>.cal-trigger.icon-only:focus-visible {
     outline: 2px solid var(--color_blue);
     outline-offset: 2px;
     border-radius: 50%
+}
+
+.cal-dropdown:focus-within>.cal-trigger.icon-only {
+    border-color: var(--color_blue)
 }
 
 .cal-menu {
@@ -1500,6 +1510,7 @@ body.cms-right.no-x-scroll {
     border: 1px solid var(--color_border_light);
     border-radius: 8px;
     padding: 4px;
+    box-shadow: 0 10px 24px rgba(17, 24, 39, 0.12);
     z-index: 20;
     min-width: 280px;
     width: max-content;
