@@ -1533,8 +1533,11 @@ body.cms-right.no-x-scroll {
 .events-landing .cal-menu {
     left: 0;
     right: auto;
-    top: calc(100% + 6px);
+    top: auto;
+    bottom: calc(100% + 6px);
     z-index: 10000;
+    max-height: 280px;
+    overflow-y: auto;
 }
 
 .cal-dropdown:focus-within>.cal-menu {
@@ -3480,6 +3483,7 @@ details.footies[open] summary::before {
 
 .events-landing .ncll-card--overlay {
     z-index: 1;
+    overflow: visible;
 }
 
 .events-landing .ncll-card--overlay:hover,
@@ -3510,6 +3514,7 @@ details.footies[open] summary::before {
     transition: opacity 0.3s ease;
     z-index: 2;
     min-height: var(--ncll-card-height);
+    overflow: visible;
 }
 
 /* === Begin: Overlay scrollbar styling ================================= */
@@ -3524,6 +3529,16 @@ details.footies[open] summary::before {
     overflow-y: auto;
     scrollbar-color: #cd163f #f5f5f5;
     scrollbar-width: thin;
+}
+
+/* Allow calendar menus to overflow the intro panel without being clipped. */
+.events-landing .ncll-card--overlay .ncll-card__body.panel-intro {
+    overflow: visible;
+    z-index: 5;
+}
+
+.events-landing .ncll-card--overlay .ncll-card__body.panel-intro .ncll-card__meta {
+    overflow: visible;
 }
 
 .ncll-card--overlay .ncll-card__body::-webkit-scrollbar {
