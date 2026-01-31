@@ -1524,10 +1524,12 @@ body.cms-right.no-x-scroll {
 }
 
 .events-landing .cal-menu {
-    left: auto;
-    right: 0;
+    left: 0;
+    right: auto;
     top: calc(100% + 6px);
     z-index: 200;
+    width: 240px;
+    max-width: 80vw;
 }
 
 .cal-dropdown:focus-within>.cal-menu {
