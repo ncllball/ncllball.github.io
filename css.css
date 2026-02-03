@@ -3421,6 +3421,18 @@ details.footies[open] summary::before {
     border-radius: 6px;
 }
 
+.coach-section .coach-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.coach-section .coach-header .coach-photo {
+    float: none;
+    margin: 0;
+}
+
 .ncll-card__cta .button {
     display: inline-flex;
     align-items: center;
