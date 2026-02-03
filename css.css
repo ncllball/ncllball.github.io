@@ -3412,17 +3412,12 @@ details.footies[open] summary::before {
     margin-top: 18px;
 }
 
-.coach-section {
-    position: relative;
-    padding-right: 200px;
-}
-
 .coach-section .coach-photo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 180px;
+    float: right;
+    width: min(40vw, 180px);
+    max-width: 180px;
     height: auto;
+    margin: 4px 0 12px 16px;
     border-radius: 6px;
 }
 
