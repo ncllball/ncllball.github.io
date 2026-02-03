@@ -3412,6 +3412,20 @@ details.footies[open] summary::before {
     margin-top: 18px;
 }
 
+.coach-section {
+    position: relative;
+    padding-right: 200px;
+}
+
+.coach-section .coach-photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: auto;
+    border-radius: 6px;
+}
+
 .ncll-card__cta .button {
     display: inline-flex;
     align-items: center;
