@@ -3244,6 +3244,20 @@ details.footies[open] summary::before {
     width: 320px;
     height: auto;
 }
+.ncll-card__graphic--cert-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 10px;
+}
+.ncll-card__graphics--logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
 .ncll-card__graphic--larger {
     width: 125px;
     height: auto;
