@@ -3240,6 +3240,10 @@ details.footies[open] summary::before {
     width: 240px;
     height: auto;
 }
+.ncll-card__graphic--bat {
+    width: 320px;
+    height: auto;
+}
 .ncll-card__graphic--larger {
     width: 125px;
     height: auto;
