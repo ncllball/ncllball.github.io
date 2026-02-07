@@ -3801,7 +3801,8 @@ details.footies[open] summary::before {
 .ncll-card--toggle input[type="radio"][id$="-6"]:checked~.panel6,
 .ncll-card--toggle input[type="radio"][id$="-7"]:checked~.panel7,
 .ncll-card--toggle input[type="radio"][id$="-8"]:checked~.panel8,
-.ncll-card--toggle input[type="radio"][id$="-9"]:checked~.panel9 {
+.ncll-card--toggle input[type="radio"][id$="-9"]:checked~.panel9,
+.ncll-card--toggle input[type="radio"][id$="-10"]:checked~.panel10 {
     display: block;
 }
 
@@ -4017,7 +4018,8 @@ details.footies[open] summary::before {
 .ncll-card--toggle input[type="radio"][id$="-6"]:checked~.ncll-card__sticky-footer .actions .btn-next-6,
 .ncll-card--toggle input[type="radio"][id$="-7"]:checked~.ncll-card__sticky-footer .actions .btn-next-7,
 .ncll-card--toggle input[type="radio"][id$="-8"]:checked~.ncll-card__sticky-footer .actions .btn-next-8,
-.ncll-card--toggle input[type="radio"][id$="-9"]:checked~.ncll-card__sticky-footer .actions .btn-next-9 {
+.ncll-card--toggle input[type="radio"][id$="-9"]:checked~.ncll-card__sticky-footer .actions .btn-next-9,
+.ncll-card--toggle input[type="radio"][id$="-10"]:checked~.ncll-card__sticky-footer .actions .btn-next-10 {
     display: inline-flex;
 }
 
