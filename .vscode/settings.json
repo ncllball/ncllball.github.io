@@ -10,5 +10,6 @@
     "html.suggest.html5": false,
     "liveServer.settings.port": 5501,
     "editor.hover.enabled": "off",
-    "chatgpt.openOnStartup": true
+    "chatgpt.openOnStartup": true,
+    "claudeCodeChat.permissions.yoloMode": false
 }
