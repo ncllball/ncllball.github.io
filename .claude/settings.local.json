@@ -9,7 +9,11 @@
       "Bash(powershell -Command:*)",
       "Bash(del:*)",
       "Bash(claude /logout)",
-      "Bash(powershell -ExecutionPolicy Bypass -File:*)"
+      "Bash(powershell -ExecutionPolicy Bypass -File:*)",
+      "WebFetch(domain:www.rawlings.com)",
+      "WebFetch(domain:www.wilson.com)",
+      "WebFetch(domain:mizunousa.com)",
+      "WebFetch(domain:easton.rawlings.com)"
     ]
   }
 }
