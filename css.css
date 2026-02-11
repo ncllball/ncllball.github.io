@@ -3093,10 +3093,6 @@ details.footies[open] summary::before {
     margin: -13px 0 0 0;
 }
 
-.ncll-card__caption {
-    margin-top: -8px;
-}
-
 .ncll-card__details {
     margin: 0 0 10px 0;
     color: var(--color_blue);
