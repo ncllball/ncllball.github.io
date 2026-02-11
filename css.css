@@ -3519,6 +3519,7 @@ ul.flush-bottom {
     z-index: 5;
 }
 
+.events-landing .ncll-card,
 .events-landing .ncll-card--overlay,
 .events-landing .ncll-card__body,
 .events-landing .ncll-card__details {
