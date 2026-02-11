@@ -3806,7 +3806,8 @@ ul.flush-bottom {
 .ncll-card--toggle input[type="radio"][id$="-7"]:checked~.panel7,
 .ncll-card--toggle input[type="radio"][id$="-8"]:checked~.panel8,
 .ncll-card--toggle input[type="radio"][id$="-9"]:checked~.panel9,
-.ncll-card--toggle input[type="radio"][id$="-10"]:checked~.panel10 {
+.ncll-card--toggle input[type="radio"][id$="-10"]:checked~.panel10,
+.ncll-card--toggle input[type="radio"][id$="-11"]:checked~.panel11 {
     display: block;
 }
 
@@ -4041,7 +4042,8 @@ ul.flush-bottom {
 .ncll-card--toggle input[type="radio"][id$="-7"]:checked~.ncll-card__sticky-footer .actions .btn-next-7,
 .ncll-card--toggle input[type="radio"][id$="-8"]:checked~.ncll-card__sticky-footer .actions .btn-next-8,
 .ncll-card--toggle input[type="radio"][id$="-9"]:checked~.ncll-card__sticky-footer .actions .btn-next-9,
-.ncll-card--toggle input[type="radio"][id$="-10"]:checked~.ncll-card__sticky-footer .actions .btn-next-10 {
+.ncll-card--toggle input[type="radio"][id$="-10"]:checked~.ncll-card__sticky-footer .actions .btn-next-10,
+.ncll-card--toggle input[type="radio"][id$="-11"]:checked~.ncll-card__sticky-footer .actions .btn-next-11 {
     display: inline-flex;
 }
 
@@ -4055,7 +4057,8 @@ ul.flush-bottom {
 .ncll-card--toggle input[type="radio"][id$="-7"]:checked~.ncll-card__sticky-footer .actions .btn-prev-7,
 .ncll-card--toggle input[type="radio"][id$="-8"]:checked~.ncll-card__sticky-footer .actions .btn-prev-8,
 .ncll-card--toggle input[type="radio"][id$="-9"]:checked~.ncll-card__sticky-footer .actions .btn-prev-9,
-.ncll-card--toggle input[type="radio"][id$="-10"]:checked~.ncll-card__sticky-footer .actions .btn-prev-10 {
+.ncll-card--toggle input[type="radio"][id$="-10"]:checked~.ncll-card__sticky-footer .actions .btn-prev-10,
+.ncll-card--toggle input[type="radio"][id$="-11"]:checked~.ncll-card__sticky-footer .actions .btn-prev-11 {
     display: inline-flex;
 }
 
