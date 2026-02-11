@@ -3092,6 +3092,9 @@ details.footies[open] summary::before {
     text-align: center;
     margin: -13px 0 0 0;
 }
+.ncll-card__caption--glovelenght {
+    margin-top: 10px;
+}
 
 ul.flush-bottom {
     margin-bottom: 0;
@@ -3136,7 +3139,7 @@ ul.flush-bottom {
 }
 
 .ncll-card__details ul {
-    margin: 10px;
+    margin: 10px 10px 0px 10px;
     text-align: left;
     padding: 0px 10px 0px 5px;
 }
@@ -3241,7 +3244,6 @@ ul.flush-bottom {
 .ncll-card__graphic--glove {
     width: 240px;
     height: auto;
-    margin-bottom: 8px;
 }
 .ncll-card__graphic--bat {
     width: 320px;
@@ -3308,7 +3310,7 @@ ul.flush-bottom {
     display: block;
     margin: 0 auto;
     margin-top: 0;
-    margin-bottom: -4px;
+    margin-bottom: 0;
 }
 
 .ncll-card__graphics--pair {
@@ -3954,11 +3956,11 @@ ul.flush-bottom {
 }
 
 .glove-size-card {
-    border: 1px solid #f28c28;
+    border: none;
     border-radius: 8px;
     overflow: hidden;
     background: #fff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    box-shadow: none;
 }
 
 .glove-size-card__header {
@@ -3999,16 +4001,34 @@ ul.flush-bottom {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding: 3px 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-    font-size: 0.8rem;
+    padding: 4px 10px;
+    font-size: 0.75rem;
     color: #222;
-    line-height: 1;
+    line-height: 1.1;
+    border-radius: 4px;
+}
+
+.glove-size-card__row:nth-child(even) {
+    background: rgba(0, 0, 0, 0.03);
 }
 
 .glove-size-card__row span:last-child {
-    font-weight: 400;
+    font-weight: 600;
     white-space: nowrap;
+    color: var(--color_blue, #1a3a5c);
+    letter-spacing: 0.01em;
+}
+
+.ncll-card__details > h5 + .glove-size-card__row {
+    margin-top: -4px;
+}
+.ncll-card__details > .glove-size-card__row + h5 {
+    margin-top: 8px;
+    margin-bottom: 4px !important;
+}
+.ncll-card__details > h4 + h5 {
+    margin-top: -4px;
+    margin-bottom: 4px !important;
 }
 
 .ncll-card--toggle input[type="radio"][id$="-intro"]:checked~.ncll-card__sticky-footer .actions .btn-next-intro,
