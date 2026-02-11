@@ -1526,12 +1526,14 @@ body.cms-right.no-x-scroll {
 }
 
 .events-landing .cal-menu {
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     right: auto;
     top: calc(100% + 6px);
     z-index: 999;
     max-height: none;
     overflow: visible;
+    min-width: 180px;
 }
 
 .cal-dropdown:focus-within>.cal-menu {
@@ -3526,11 +3528,6 @@ ul.flush-bottom {
     overflow: visible;
 }
 
-.events-landing .ncll-card__body {
-    position: relative;
-    inset: auto;
-}
-
 .ncll-card--overlay .ncll-card__top-layer {
     position: absolute;
     inset: 0;
@@ -3561,6 +3558,11 @@ ul.flush-bottom {
 }
 
 /* Allow calendar menus to overflow the intro panel without being clipped. */
+.events-landing .ncll-card--overlay .ncll-card__body {
+    position: relative;
+    inset: auto;
+    overflow: visible;
+}
 
 .ncll-card--overlay .ncll-card__body::-webkit-scrollbar {
     width: 10px;
@@ -3635,7 +3637,7 @@ ul.flush-bottom {
     padding: 0 20px;
     border-top: 1px solid #e2e2e2;
     border-bottom: 1px solid #e2e2e2;
-    z-index: 6;
+    z-index: 0;
 }
 
 .ncll-card--toggle .ncll-card__sticky-footer {
