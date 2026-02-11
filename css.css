@@ -3525,6 +3525,11 @@ ul.flush-bottom {
     overflow: visible;
 }
 
+.events-landing .ncll-card__body {
+    position: relative;
+    inset: auto;
+}
+
 .ncll-card--overlay .ncll-card__top-layer {
     position: absolute;
     inset: 0;
