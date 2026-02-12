@@ -2068,7 +2068,7 @@ body:not(.cms-right) .only-on-right {
     display: inline-block;
     font-family: 'cronos-pro';
     font-size: 1rem !important;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
     text-decoration: none;
     transition: background .3s, color .3s, transform .2s, box-shadow .2s;
