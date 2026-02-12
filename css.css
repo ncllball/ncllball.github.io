@@ -1151,6 +1151,13 @@ sup {
 	font-weight: 500;
     font-size: 1rem;
 }
+.ncll-italic-accent-larger {
+	font-family: var(--font_tk-cronos-pro);
+	letter-spacing: .02em;
+	color: var(--color_text);
+	font-weight: 500;
+    font-size: 1.25rem;
+}
 
 .footies-intro {
 	font-family: var(--font_tk-cronos-pro);
