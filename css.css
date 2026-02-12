@@ -4480,11 +4480,11 @@ ul.flush-bottom {
     padding-right: 12px;
     white-space: nowrap;
 }
-.registration-listing .remaining-min-height h5.row-title {
+/* .registration-listing .remaining-min-height h5.row-title {
     bottom: -40px;
     position: absolute;
     white-space: nowrap;
-}
+} */
 .age-matrix tbody tr:last-child td {
     padding-bottom: 12px;
 }
