@@ -4504,11 +4504,14 @@ ul.flush-bottom {
     padding-right: 12px;
     white-space: nowrap;
 }
-/* .registration-listing .remaining-min-height h5.row-title {
-    bottom: -40px;
-    position: absolute;
-    white-space: nowrap;
-} */
+.registration-listing .remaining-min-height h5.row-title {
+    bottom: -33px !important;
+}
+
+.registration-listing .policy-min-height h5.row-title {
+    bottom: -37px !important;
+}
+
 .age-matrix tbody tr:last-child td {
     padding-bottom: 12px;
 }
