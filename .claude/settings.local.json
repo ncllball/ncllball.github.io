@@ -13,7 +13,8 @@
       "WebFetch(domain:www.rawlings.com)",
       "WebFetch(domain:www.wilson.com)",
       "WebFetch(domain:mizunousa.com)",
-      "WebFetch(domain:easton.rawlings.com)"
+      "WebFetch(domain:easton.rawlings.com)",
+      "Bash(python:*)"
     ]
   }
 }
