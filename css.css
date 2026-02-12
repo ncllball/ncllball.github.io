@@ -2070,6 +2070,22 @@ body:not(.cms-right) .only-on-right {
     padding: 6px 6px 6px 6px
 }
 
+.aoverb_button:visited {
+    color: var(--color_text)
+}
+
+.aoverb_button:hover {
+    background: var(--color_blue);
+    color: var(--color_white);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .15)
+}
+
+.aoverb_button:active {
+    transform: translateY(0);
+    box-shadow: none
+}
+
 /* Age matrix table */
 .age-matrix {
     border-collapse: collapse;
