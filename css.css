@@ -2078,7 +2078,7 @@ body:not(.cms-right) .only-on-right {
 }
 
 .aoverb_button:visited {
-    color: var(--color_text)
+    color: #333 !important
 }
 
 .aoverb_button:hover {
