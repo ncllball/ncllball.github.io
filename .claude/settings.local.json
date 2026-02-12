@@ -18,7 +18,8 @@
       "WebFetch(domain:www.ncllball.com)",
       "WebFetch(domain:www.northeastll.com)",
       "WebFetch(domain:help.gc.com)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "WebFetch(domain:ncllball.github.io)"
     ]
   }
 }
