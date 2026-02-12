@@ -2083,7 +2083,7 @@ body:not(.cms-right) .only-on-right {
 
 .aoverb_button:hover {
     background: var(--color_blue);
-    color: var(--color_white);
+    color: var(--color_white) !important;
     transform: translateY(-1px);
     box-shadow: 0 2px 6px rgba(0, 0, 0, .15)
 }
