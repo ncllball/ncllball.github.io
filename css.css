@@ -3519,12 +3519,11 @@ ul.flush-bottom {
 
 .events-landing .ncll-card--overlay:focus-within {
     z-index: 5;
+    overflow: visible;
 }
 
-.events-landing .ncll-card,
-.events-landing .ncll-card--overlay,
-.events-landing .ncll-card__body,
-.events-landing .ncll-card__details {
+.events-landing .ncll-card--overlay:focus-within .ncll-card__body,
+.events-landing .ncll-card--overlay:focus-within .ncll-card__details {
     overflow: visible;
 }
 
@@ -3557,15 +3556,7 @@ ul.flush-bottom {
     scrollbar-width: thin;
 }
 
-/* Allow calendar menus to overflow the intro panel without being clipped. */
-.events-landing .ncll-card--overlay .ncll-card__body {
-    overflow: visible;
-}
-
-.events-landing .ncll-card--overlay .ncll-card__sticky-footer {
-    z-index: 3;
-}
-
+/* Calendar dropdown: raise body above footer only when focused. */
 .events-landing .ncll-card__body:focus-within {
     z-index: 4;
 }
@@ -3643,7 +3634,7 @@ ul.flush-bottom {
     padding: 0 20px;
     border-top: 1px solid #e2e2e2;
     border-bottom: 1px solid #e2e2e2;
-    z-index: 0;
+    z-index: 2;
 }
 
 .ncll-card--toggle .ncll-card__sticky-footer {
