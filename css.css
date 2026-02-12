@@ -3559,9 +3559,15 @@ ul.flush-bottom {
 
 /* Allow calendar menus to overflow the intro panel without being clipped. */
 .events-landing .ncll-card--overlay .ncll-card__body {
-    position: relative;
-    inset: auto;
     overflow: visible;
+}
+
+.events-landing .ncll-card--overlay .ncll-card__sticky-footer {
+    z-index: 3;
+}
+
+.events-landing .ncll-card__body:focus-within {
+    z-index: 4;
 }
 
 .ncll-card--overlay .ncll-card__body::-webkit-scrollbar {
@@ -4960,9 +4966,9 @@ p:has(+ .callout) {
 }
 
 .events-landing .ncll-card__graphics--logos .events-logos__vs {
-    color: var(--color_text);
-    font-weight: 700;
-    text-transform: uppercase;
+    width: 20px;
+    height: 20px;
+    align-self: center;
 }
 
 .events-landing .events-ticket__blurb {
