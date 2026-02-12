@@ -429,7 +429,30 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     /* visual breathing room between stacked cards on older browsers */
     margin-bottom: 8px;
 }
+/* Fix for the overlapping registration status and buttons */
+.program-item-row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 0 !important;
+}
 
+/* Ensure the status text (Wait List/Spots Remaining) stays below or beside the button */
+.registration-buttons-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    min-width: 200px !important;
+}
+
+/* Style the specific alert text to prevent it from floating over other elements */
+.alert-text, 
+.wait-list-text {
+    position: static !important;
+    margin-top: 5px !important;
+    font-size: 0.85em !important;
+    white-space: nowrap !important;
+}
 
 /* Tablet fallback: collapse to one column when grid can't honor two cards */
 @media (max-width: 768px) {
