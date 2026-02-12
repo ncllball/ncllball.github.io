@@ -809,6 +809,9 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
     text-transform: capitalize !important;
 }
 
+#dnnStandardMenu .dnnNav {
+    text-align: center !important;
+}
 .skNav #dnnStandardMenu .root .m {
     width: 300px !important;
 }
