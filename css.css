@@ -4797,18 +4797,6 @@ ul.flush-bottom {
     min-width: 120px;
 }
 
-.assessments-cta .button.button--ghost {
-    background-color: #444;
-    color: #d6202a;
-    border: 2px solid #444;
-}
-
-.assessments-cta .button.button--ghost:hover,
-.assessments-cta .button.button--ghost:focus {
-    background-color: #555;
-    border-color: #555;
-    color: #d6202a;
-}
 
 @media (max-width: 640px) {
     .hide-mobile {
