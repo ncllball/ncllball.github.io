@@ -17,7 +17,8 @@
       "Bash(python:*)",
       "WebFetch(domain:www.ncllball.com)",
       "WebFetch(domain:www.northeastll.com)",
-      "WebFetch(domain:help.gc.com)"
+      "WebFetch(domain:help.gc.com)",
+      "Bash(findstr:*)"
     ]
   }
 }
