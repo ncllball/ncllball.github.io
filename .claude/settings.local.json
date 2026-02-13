@@ -19,7 +19,8 @@
       "WebFetch(domain:www.northeastll.com)",
       "WebFetch(domain:help.gc.com)",
       "Bash(findstr:*)",
-      "WebFetch(domain:ncllball.github.io)"
+      "WebFetch(domain:ncllball.github.io)",
+      "Bash(pip install:*)"
     ]
   }
 }
