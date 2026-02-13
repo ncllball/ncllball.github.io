@@ -15,24 +15,24 @@
 | 10        | Reid Nations         | Rocco Soldato      | Gibson Arnette          | Taysen Montgomery | Edison Fishback  | William Duncan             | <---      |
 | 11        | Holden Rohr          | Guy Soldato        | Crosby Aahl             | Holden Zeller     | Jacob Doucette   | Tomoki Yan                 | --->      |
 | 12        | Heyward Payne        | Louis Todd         |                         |                   |                  | Apollo Cross               | <---      |
+| Call Up 1 |                      |                    |                         |                   |                  |                            | --->      |
+| Call Up 2 |                      |                    |                         |                   |                  |                            | <---      |
+| Call Up 3 |                      |                    |                         |                   |                  |                            | --->      |
 
-# AAA Call-Ups
+| Head Coach           | Assistant        | Assistant      |
+| -------------------- | ---------------- | -------------- |
+| Tyler Christofferson | David Donovan    |                |
+| Brian Harvey         | Michael Arnette  | Dave Jorris    |
+| Jonathan Anderson    | Emma York-Jones  |                |
+| Ryan Trager          | Evan Klarich     | Jason Lawrence |
+| Peter Ziemkiewicz    | Michael Fishback | Greg Greenwood |
+| Jay Tufte            | Jason Wickland   | Ben Watson     |
 
-| Call Up   |
-| --------- |
-| Call Up 1 |
-| Call Up 2 |
-| Call Up 3 |
+| Transfers      | From Division |
+| -------------- | ------------- |
+| Gibson Arnette | AAA           |
 
-| Head Coach           | Assistant       | Assistant      |
-| -------------------- | --------------- | -------------- |
-| Tyler Christofferson | David Donovan   |                |
-| Brian Harvey         | Michael Arnette | Dave Jorris    |
-| Jon Anderson         | Emma York-Jones |                |
-| Ryan Trager          | Evan Klarich    | Jason Lawrence |
-| Pete Ziemkiewicz     | Mike Fishback   | Greg Greenwood |
-| Jay Tufte            | Jason Wickland  | Ben Watson     |
-
-| Transfers      |
-| -------------- |
-| Gibson Arnette |
+| Coaches not yet registered | Status                                                                               |
+| -------------------------- | ------------------------------------------------------------------------------------ |
+| Michael Arnette            | will transfer with player (Gibson Arnette) BUT STILL NOT SIGNED UP for coaching role |
+| Ben Watson                 | in process (needs to sign up for coaching role) - will be Assistant for Jay Tufte    |
