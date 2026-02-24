@@ -3314,6 +3314,17 @@ ul.flush-bottom {
     gap: 20px;
     flex-wrap: wrap;
 }
+.ncll-card__graphics--logos .lightbox-thumb {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    margin: 0;
+}
+.ncll-card__graphics--logos .lightbox-thumb .ncll-card__graphic--cert-logo {
+    margin: 0;
+}
 .ncll-card__graphic--larger {
     width: 125px;
     height: auto;
