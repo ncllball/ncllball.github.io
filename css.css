@@ -3523,6 +3523,17 @@ ul.flush-bottom {
     border-color: #1a2b5c;
 }
 
+.ncll-card__cta .button--dicks {
+    background: #006150;
+    border-color: #006150;
+}
+
+.ncll-card__cta .button--dicks:hover,
+.ncll-card__cta .button--dicks:focus-visible {
+    background: #004f40;
+    border-color: #004f40;
+}
+
 .ncll-card__cta .button--ghost {
     background: #fff;
     color: var(--color_blue);

@@ -20,7 +20,9 @@
       "WebFetch(domain:help.gc.com)",
       "Bash(findstr:*)",
       "WebFetch(domain:ncllball.github.io)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(python3 \"c:/Tools/ncllball.github.io/_fix2.py\")",
+      "Bash(python3 \"c:/Tools/ncllball.github.io/_fix3.py\")"
     ]
   }
 }
