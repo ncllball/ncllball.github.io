@@ -20,6 +20,8 @@
 | Call Up 3 | Maddox Baltazar      | Dylan Tassos       | Ryan Riley              | Maxwell Fuste      | Omar Junejo       | Diego DeHerrera            | --->      |
 | Call Up 4 |                      |                    |                         | Emile Kruchoski    |                   |                            | <---      |
 
+- Call ups will be included in GameChanger but not Sports Connect; not possible.
+
 | Head Coach           | Assistant        | Assistant      |
 | -------------------- | ---------------- | -------------- |
 | Tyler Christofferson | David Donovan    |                |
@@ -29,11 +31,35 @@
 | Peter Ziemkiewicz    | Michael Fishback | Greg Greenwood |
 | Jay Tufte            | Jason Wickland   | Ben Watson     |
 
-| Transfers      | From Division |
-| -------------- | ------------- |
-| Gibson Arnette | AAA           |
+| Incoming Transfers | From Division |
+| ------------------ | ------------- |
+| Gibson Arnette     | AAA           |
+
+| Outgoing Transfers | To Division |
+| ------------------ | ----------- |
+| Ahaan Holenarsipur | AAA         |
+| Emmitt Crall       | AAA         |
 
 | Coaches not yet registered | Status                                                                               |
 | -------------------------- | ------------------------------------------------------------------------------------ |
 | Michael Arnette            | will transfer with player (Gibson Arnette) BUT STILL NOT SIGNED UP for coaching role |
-| Ben Watson                 | in process (needs to sign up for coaching role) - will be Assistant for Jay Tufte    |
+
+| Team Names                      |
+| ------------------------------- |
+| Christofferson - NCLL - BB26MAJ |
+| Harvey - NCLL - BB26MAJ         |
+| Anderson - NCLL - BB26MAJ       |
+| Trager - NCLL - BB26MAJ         |
+| Ziemkiewicz - NCLL - BB26MAJ    |
+| Tufte - NCLL - BB26MAJ          |
+
+Sign up:
+
+1. Jason DeMotts sign up for assistant coach
+2. Michael Arnette sign up for assistant coach
+
+Umpires who need to sign up to assistant coach if they plan to do that: (They are currently only signed up as UMPS)
+
+1. Jason Evans is an umpire and assistant coach
+2. Michael Giese is an umpire and assistant coach
+3. Ernesto Morales-Perea is an umpire and assistant coach
