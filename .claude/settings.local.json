@@ -22,7 +22,10 @@
       "WebFetch(domain:ncllball.github.io)",
       "Bash(pip install:*)",
       "Bash(python3 \"c:/Tools/ncllball.github.io/_fix2.py\")",
-      "Bash(python3 \"c:/Tools/ncllball.github.io/_fix3.py\")"
+      "Bash(python3 \"c:/Tools/ncllball.github.io/_fix3.py\")",
+      "Bash(find \"c:\\\\Tools\\\\ncllball.github.io\" -type f -exec grep -l \"hubx\" {} ;)",
+      "Bash(git mv Volunteer/hubx.html Volunteer/volunteer-hub.html)",
+      "Bash(python3 fix_abuse_card.py)"
     ]
   }
 }
