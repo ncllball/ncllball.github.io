@@ -29,7 +29,8 @@
       "Bash(grep -n \"<main\" /c/Tools/ncllball.github.io/Resources/*.html)",
       "Bash(git mv \"Volunteer/helping-hub.html\" \"Resources/helping-hub.html\")",
       "Bash(git mv \"Volunteer/opportunities-hub.html\" \"Resources/opportunities-hub.html\")",
-      "Bash(git mv \"Volunteer/volunteer-hub.html\" \"Resources/volunteer-hub.html\")"
+      "Bash(git mv \"Volunteer/volunteer-hub.html\" \"Resources/volunteer-hub.html\")",
+      "Bash(grep -n \"<main \" c:/Tools/ncllball.github.io/Resources/*hub*.html)"
     ]
   }
 }
