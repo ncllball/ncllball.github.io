@@ -24,5 +24,5 @@
   <li><label><input type="checkbox" /> <a href="Softball\pitching-reference-softball.html">Softball\pitching-reference-softball.html</a></label></li>
   <li><label><input type="checkbox" /> <a href="Softball\pitching-reference-softball.print.html">Softball\pitching-reference-softball.print.html</a></label></li>
   <li><label><input type="checkbox" /> <a href="Volunteer\friendslist.html">Volunteer\friendslist.html</a></label></li>
-  <li><label><input type="checkbox" /> <a href="Volunteer\hubx.html">Volunteer\hubx.html</a></label></li>
+  <li><label><input type="checkbox" /> <a href="Volunteer\volunteer-hub.html">Volunteer\volunteer-hub.html</a></label></li>
 </ul>
