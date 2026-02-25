@@ -25,7 +25,8 @@
       "Bash(python3 \"c:/Tools/ncllball.github.io/_fix3.py\")",
       "Bash(find \"c:\\\\Tools\\\\ncllball.github.io\" -type f -exec grep -l \"hubx\" {} ;)",
       "Bash(git mv Volunteer/hubx.html Volunteer/volunteer-hub.html)",
-      "Bash(python3 fix_abuse_card.py)"
+      "Bash(python3 fix_abuse_card.py)",
+      "Bash(grep -n \"<main\" /c/Tools/ncllball.github.io/Resources/*.html)"
     ]
   }
 }
