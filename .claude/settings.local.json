@@ -26,7 +26,10 @@
       "Bash(find \"c:\\\\Tools\\\\ncllball.github.io\" -type f -exec grep -l \"hubx\" {} ;)",
       "Bash(git mv Volunteer/hubx.html Volunteer/volunteer-hub.html)",
       "Bash(python3 fix_abuse_card.py)",
-      "Bash(grep -n \"<main\" /c/Tools/ncllball.github.io/Resources/*.html)"
+      "Bash(grep -n \"<main\" /c/Tools/ncllball.github.io/Resources/*.html)",
+      "Bash(git mv \"Volunteer/helping-hub.html\" \"Resources/helping-hub.html\")",
+      "Bash(git mv \"Volunteer/opportunities-hub.html\" \"Resources/opportunities-hub.html\")",
+      "Bash(git mv \"Volunteer/volunteer-hub.html\" \"Resources/volunteer-hub.html\")"
     ]
   }
 }
