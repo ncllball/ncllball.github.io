@@ -3216,7 +3216,7 @@ details.footies[open] summary::before {
     font-size: 0.9rem;
     line-height: 1.7;
     list-style: disc !important;
-    margin: 0px 0px 0px 4px;
+    margin: 0px 0px 0px 4px !important;
 }
 
 .ncll-card__blurb {
