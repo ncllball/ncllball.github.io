@@ -30,7 +30,16 @@
       "Bash(git mv \"Volunteer/helping-hub.html\" \"Resources/helping-hub.html\")",
       "Bash(git mv \"Volunteer/opportunities-hub.html\" \"Resources/opportunities-hub.html\")",
       "Bash(git mv \"Volunteer/volunteer-hub.html\" \"Resources/volunteer-hub.html\")",
-      "Bash(grep -n \"<main \" c:/Tools/ncllball.github.io/Resources/*hub*.html)"
+      "Bash(grep -n \"<main \" c:/Tools/ncllball.github.io/Resources/*hub*.html)",
+      "Bash(git mv Programs/baseball.html Programs/baseball-hub.html)",
+      "Bash(git mv Programs/umpires.html Programs/umpires-hub.html)",
+      "Bash(git mv Programs/playerdev.html Programs/playerdev-hub.html)",
+      "Bash(git mv Programs/softball.html Programs/softball-hub.html)",
+      "Bash(awk 'NR>=926 && NR<=932' Resources/volunteer-hub.html)",
+      "Bash(awk 'NR>=1025 && NR<=1035' Resources/volunteer-hub.html)",
+      "Bash(python3 -:*)",
+      "Bash(python3 -c \":*)",
+      "WebFetch(domain:www.littleleague.org)"
     ]
   }
 }
