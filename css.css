@@ -4473,6 +4473,10 @@ ul.flush-bottom {
     text-align: left !important;
 }
 
+.ncll-card__body ul + h4 {
+    margin-top: 1rem;
+}
+
 .ncll-card__resource-list {
     list-style: none;
     margin: 14px 0 0;
