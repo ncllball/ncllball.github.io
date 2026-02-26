@@ -3247,14 +3247,14 @@ ul.flush-bottom {
 
 .ncll-card__details h4 {
     font-size: .9rem;
-    margin: 0 0 10px 0;
+    margin: 1rem 0 10px 0;
     color: var(--color_blue);
     font-weight: 600;
     text-align: left !important;
 }
 
 .ncll-card__details h4:first-child {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .ncll-card__details p {
