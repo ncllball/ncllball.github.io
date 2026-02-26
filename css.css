@@ -3235,7 +3235,8 @@ details.footies[open] summary::before {
     margin-top: 10px;
 }
 
-ul.flush-bottom {
+ul.flush-bottom,
+p.flush-bottom:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
 }
