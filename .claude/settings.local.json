@@ -39,7 +39,10 @@
       "Bash(awk 'NR>=1025 && NR<=1035' Resources/volunteer-hub.html)",
       "Bash(python3 -:*)",
       "Bash(python3 -c \":*)",
-      "WebFetch(domain:www.littleleague.org)"
+      "WebFetch(domain:www.littleleague.org)",
+      "WebFetch(domain:www.snohomishll.com)",
+      "WebFetch(domain:www.irmolittleleague.org)",
+      "WebFetch(domain:www.bmtll.org)"
     ]
   }
 }
