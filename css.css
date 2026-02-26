@@ -3205,6 +3205,19 @@ details.footies[open] summary::before {
     font-weight: 600;
 }
 
+.training-steps li > ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.training-steps li > ul li {
+    color: var(--color_muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    list-style: none;
+}
+
 .ncll-card__blurb {
     font-size: 0.9rem;
     color: var(--color_text);
