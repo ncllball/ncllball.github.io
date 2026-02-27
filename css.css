@@ -3241,6 +3241,19 @@ p.flush-bottom:last-child {
     padding-bottom: 0;
 }
 
+.social-logos {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.social-logo {
+    width: 72px;
+    height: 72px;
+}
+
 .ncll-card__details {
     margin: 0 0 0px 0;
     color: var(--color_blue);
