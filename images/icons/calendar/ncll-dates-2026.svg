@@ -1,22 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 116" role="img" aria-label="2026 calendar icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 222" role="img" aria-label="2026 calendar">
   <!-- card body -->
-  <rect x="8" y="18" width="104" height="90" rx="6" fill="white" stroke="#d1d5db" stroke-width="1.5"/>
+  <rect x="6" y="18" width="198" height="196" rx="8" fill="white" stroke="#d1d5db" stroke-width="1.5"/>
   <!-- red header -->
-  <rect x="8" y="18" width="104" height="34" rx="6" fill="#cd163f"/>
-  <rect x="8" y="40" width="104" height="12" fill="#cd163f"/>
+  <rect x="6" y="18" width="198" height="44" rx="8" fill="#cd163f"/>
+  <rect x="6" y="46" width="198" height="16" fill="#cd163f"/>
   <!-- binding tabs -->
-  <rect x="33" y="8" width="10" height="20" rx="3" fill="#1a1718"/>
-  <rect x="77" y="8" width="10" height="20" rx="3" fill="#1a1718"/>
+  <rect x="56" y="8" width="11" height="24" rx="4" fill="#1a1718"/>
+  <rect x="143" y="8" width="11" height="24" rx="4" fill="#1a1718"/>
   <!-- year -->
-  <text x="60" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="white">2026</text>
-  <!-- horizontal grid lines -->
-  <line x1="16" y1="66" x2="104" y2="66" stroke="#e5e7eb" stroke-width="1"/>
-  <line x1="16" y1="81" x2="104" y2="81" stroke="#e5e7eb" stroke-width="1"/>
-  <line x1="16" y1="96" x2="104" y2="96" stroke="#e5e7eb" stroke-width="1"/>
-  <!-- vertical grid lines -->
-  <line x1="30" y1="54" x2="30" y2="106" stroke="#e5e7eb" stroke-width="1"/>
-  <line x1="46" y1="54" x2="46" y2="106" stroke="#e5e7eb" stroke-width="1"/>
-  <line x1="62" y1="54" x2="62" y2="106" stroke="#e5e7eb" stroke-width="1"/>
-  <line x1="78" y1="54" x2="78" y2="106" stroke="#e5e7eb" stroke-width="1"/>
-  <line x1="94" y1="54" x2="94" y2="106" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="105" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="white">2026</text>
+
+  <!-- Row 1: JAN, FEB, MAR (y=68) -->
+  <rect x="14" y="68" width="58" height="32" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.75"/>
+  <text x="43" y="79" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#9ca3af">JAN</text>
+  <line x1="18" y1="86" x2="68" y2="86" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="18" y1="93" x2="68" y2="93" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <rect x="76" y="68" width="58" height="32" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.75"/>
+  <text x="105" y="79" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#9ca3af">FEB</text>
+  <line x1="80" y1="86" x2="130" y2="86" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="80" y1="93" x2="130" y2="93" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <rect x="138" y="68" width="58" height="32" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.75"/>
+  <text x="167" y="79" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#9ca3af">MAR</text>
+  <line x1="142" y1="86" x2="192" y2="86" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="142" y1="93" x2="192" y2="93" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <!-- Row 2: APR, MAY, JUN (y=104) -->
+  <rect x="14" y="104" width="58" height="32" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.75"/>
+  <text x="43" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#9ca3af">APR</text>
+  <line x1="18" y1="122" x2="68" y2="122" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="18" y1="129" x2="68" y2="129" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <rect x="76" y="104" width="58" height="32" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.75"/>
+  <text x="105" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#9ca3af">MAY</text>
+  <line x1="80" y1="122" x2="130" y2="122" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="80" y1="129" x2="130" y2="129" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <rect x="138" y="104" width="58" height="32" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.75"/>
+  <text x="167" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#9ca3af">JUN</text>
+  <line x1="142" y1="122" x2="192" y2="122" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="142" y1="129" x2="192" y2="129" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <!-- Row 3: JUL, AUG, SEP (y=140) -->
+  <rect x="14" y="140" width="58" height="32" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.75"/>
+  <text x="43" y="151" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#9ca3af">JUL</text>
+  <line x1="18" y1="158" x2="68" y2="158" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="18" y1="165" x2="68" y2="165" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <rect x="76" y="140" width="58" height="32" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.75"/>
+  <text x="105" y="151" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#9ca3af">AUG</text>
+  <line x1="80" y1="158" x2="130" y2="158" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="80" y1="165" x2="130" y2="165" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <rect x="138" y="140" width="58" height="32" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.75"/>
+  <text x="167" y="151" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#9ca3af">SEP</text>
+  <line x1="142" y1="158" x2="192" y2="158" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="142" y1="165" x2="192" y2="165" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <!-- Row 4: OCT, NOV, DEC (y=176) -->
+  <rect x="14" y="176" width="58" height="32" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.75"/>
+  <text x="43" y="187" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#9ca3af">OCT</text>
+  <line x1="18" y1="194" x2="68" y2="194" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="18" y1="201" x2="68" y2="201" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <rect x="76" y="176" width="58" height="32" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.75"/>
+  <text x="105" y="187" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#9ca3af">NOV</text>
+  <line x1="80" y1="194" x2="130" y2="194" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="80" y1="201" x2="130" y2="201" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <rect x="138" y="176" width="58" height="32" rx="3" fill="white" stroke="#e5e7eb" stroke-width="0.75"/>
+  <text x="167" y="187" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="600" fill="#9ca3af">DEC</text>
+  <line x1="142" y1="194" x2="192" y2="194" stroke="#e5e7eb" stroke-width="1.5"/>
+  <line x1="142" y1="201" x2="192" y2="201" stroke="#e5e7eb" stroke-width="1.5"/>
 </svg>
