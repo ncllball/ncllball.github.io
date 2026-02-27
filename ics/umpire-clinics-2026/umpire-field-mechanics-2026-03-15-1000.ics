@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NCLL//ncllball.github.io//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:umpire-field-mechanics-2026-03-15-1000@ncllball.github.io
+DTSTAMP:20260226T120000Z
+DTSTART:20260315T170000Z
+DTEND:20260315T190000Z
+SUMMARY:NCLL Umpire Clinic — Field Mechanics
+DESCRIPTION:NCLL Umpire Clinic: Field Mechanics training session
+LOCATION:Lower Woodland Park Ballfields, Field #3, Seattle, WA
+END:VEVENT
+END:VCALENDAR

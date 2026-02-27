@@ -57,7 +57,8 @@
       "WebFetch(domain:kingcounty.gov)",
       "WebFetch(domain:document.airnow.gov)",
       "WebFetch(domain:www.ysd7.org)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(grep -l \"hub-intro__aside\" /c/Tools/ncllball.github.io/Resources/*.html)"
     ]
   }
 }
