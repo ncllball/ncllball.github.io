@@ -685,6 +685,56 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     margin-left: 30px;
 }
 
+/* Style 4: pill buttons variant */
+.hub-intro__aside--accent {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: none;
+    border-radius: 6px;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+.hub-intro__aside--accent .hub-aside__title {
+    background: var(--color_red);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    padding: 7px 12px;
+}
+.hub-intro__aside--accent .hub-aside__list.related-links {
+    padding: 8px 12px;
+    gap: 6px;
+}
+.hub-intro__aside--accent .hub-aside__list.related-links li {
+    padding-left: 0;
+}
+.hub-intro__aside--accent .hub-aside__list.related-links li::before {
+    content: none;
+}
+.hub-intro__aside--accent .hub-aside__list.related-links a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color_blue) !important;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.hub-intro__aside--accent .hub-aside__list.related-links a::before {
+    content: '→';
+    font-size: 0.75rem;
+    color: var(--color_red);
+    font-weight: 400;
+    flex-shrink: 0;
+}
+.hub-intro__aside--accent .hub-aside__list.related-links a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 720px) {
     .hub-intro__aside {
         float: none;
