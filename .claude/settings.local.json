@@ -56,7 +56,8 @@
       "WebFetch(domain:www.washington.edu)",
       "WebFetch(domain:kingcounty.gov)",
       "WebFetch(domain:document.airnow.gov)",
-      "WebFetch(domain:www.ysd7.org)"
+      "WebFetch(domain:www.ysd7.org)",
+      "Bash(python3:*)"
     ]
   }
 }
