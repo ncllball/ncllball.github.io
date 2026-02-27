@@ -3770,23 +3770,17 @@ p.flush-bottom:last-child {
     z-index: 0;
 }
 
-.events-landing .ncll-card--overlay:focus-within {
+.events-landing .ncll-card--overlay:focus-within,
+.coaches-landing .ncll-card--overlay:focus-within {
     z-index: 5;
     overflow: visible;
 }
 
 .events-landing .ncll-card--overlay:focus-within .ncll-card__body,
-.events-landing .ncll-card--overlay:focus-within .ncll-card__details {
+.events-landing .ncll-card--overlay:focus-within .ncll-card__details,
+.coaches-landing .ncll-card--overlay:focus-within .ncll-card__body,
+.coaches-landing .ncll-card--overlay:focus-within .ncll-card__details {
     overflow: visible;
-}
-
-.ncll-card--toggle:focus-within {
-    overflow: visible;
-}
-
-.ncll-card--toggle .ncll-card__body:focus-within {
-    overflow: visible;
-    z-index: 4;
 }
 
 .ncll-card--overlay .ncll-card__top-layer {
@@ -3819,7 +3813,8 @@ p.flush-bottom:last-child {
 }
 
 /* Calendar dropdown: raise body above footer only when focused. */
-.events-landing .ncll-card__body:focus-within {
+.events-landing .ncll-card__body:focus-within,
+.coaches-landing .ncll-card__body:focus-within {
     z-index: 4;
 }
 
