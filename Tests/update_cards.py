@@ -111,7 +111,7 @@ TARGETS = [
         ],
     },
     {
-        'path':   os.path.join(ROOT, 'Programs', 'umpires-hub.html'),
+        'path':   os.path.join(ROOT, 'Resources', 'umpires-hub.html'),
         'indent': '                ',
         'prefix': 'umpires',
         'cards': [
