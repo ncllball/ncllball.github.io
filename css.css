@@ -702,6 +702,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     font-size: 0.7rem;
     font-weight: 700;
     color: #fff;
+    text-align: left;
     margin: 0;
     padding: 7px 12px;
 }
