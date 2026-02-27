@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NCLL//ncllball.github.io//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:umpire-orientation-2026-03-23-1900@ncllball.github.io
+DTSTAMP:20260226T120000Z
+DTSTART:20260324T030000Z
+DTEND:20260324T050000Z
+SUMMARY:NCLL Umpire Clinic — Orientation & Rules
+DESCRIPTION:NCLL Umpire Clinic: Orientation & Rules training session
+LOCATION:Pacific Medical Centers – Northgate, Seattle, WA
+END:VEVENT
+END:VCALENDAR
