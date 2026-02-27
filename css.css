@@ -3780,6 +3780,10 @@ p.flush-bottom:last-child {
     overflow: visible;
 }
 
+.ncll-card--toggle:focus-within {
+    overflow: visible;
+}
+
 .ncll-card--overlay .ncll-card__top-layer {
     position: absolute;
     inset: 0;
