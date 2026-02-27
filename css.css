@@ -687,7 +687,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 
 /* Style 4: pill buttons variant */
 .hub-intro__aside--accent {
-    background: #fff;
+    background: var(--color_surface_light);
     border: 1px solid #e0e0e0;
     box-shadow: none;
     border-radius: 6px;
