@@ -1,13 +1,15 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//North Central Little League//EN
+PRODID:-//NCLL//Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-DTSTART;TZID=America/Los_Angeles:20260225T183000
-DTEND;TZID=America/Los_Angeles:20260225T200000
+DTSTAMP:20260227T000000Z
+UID:ncll-coaches-safety-meeting-20260226T023000Z@ncllball.com
 SUMMARY:NCLL Coaches Safety Meeting
-LOCATION:St. Benedict Catholic School\, 4811 Wallingford Ave N\, Seattle\, WA 98103
 DESCRIPTION:Required for all baseball and softball coaches — head and assistant\, new and returning\, every division — planning to participate in the 2026 season.
+DTSTART:20260226T023000Z
+DTEND:20260226T040000Z
+LOCATION:St. Benedict Catholic School\, 4811 Wallingford Ave N\, Seattle\, WA 98103
 END:VEVENT
 END:VCALENDAR
