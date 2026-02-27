@@ -1624,12 +1624,14 @@ body.cms-right.no-x-scroll {
     display: none
 }
 
-.events-landing .cal-dropdown {
+.events-landing .cal-dropdown,
+.coaches-landing .cal-dropdown {
     display: inline-flex;
     align-items: center;
 }
 
-.events-landing .cal-menu {
+.events-landing .cal-menu,
+.coaches-landing .cal-menu {
     left: 50%;
     transform: translateX(-50%);
     right: auto;
