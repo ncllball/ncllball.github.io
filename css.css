@@ -3543,6 +3543,11 @@ p.flush-bottom:last-child {
     height: auto;
 }
 
+.ncll-card__graphic--micro {
+    width: 35px;
+    height: auto;
+}
+
 .ncll-card__graphic--google-chat {
     width: 48px;
     height: auto;
