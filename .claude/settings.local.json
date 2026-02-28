@@ -77,7 +77,15 @@
       "Bash(start http://localhost:5500/Resources/volunteer-hub.html)",
       "Bash(start http://localhost:5500/Programs/baseball-hub.html)",
       "Bash(start http://localhost:5500/Programs/softball-hub.html)",
-      "Bash(start http://localhost:5500/Programs/playerdev-hub.html)"
+      "Bash(start http://localhost:5500/Programs/playerdev-hub.html)",
+      "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2244434&ctl=Edit&mid=2338077\")",
+      "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2246341&ctl=Edit&mid=2334652\")",
+      "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2117276&ctl=Edit&mid=2334103\")",
+      "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2245729&ctl=Edit&mid=2332943\")",
+      "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2111982&ctl=Edit&mid=2340162\")",
+      "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2111983&ctl=Edit&mid=2207871\")",
+      "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2111981&ctl=Edit&mid=2330191\")",
+      "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2113971&ctl=Edit&mid=2198690\")"
     ]
   }
 }
