@@ -64,7 +64,8 @@
       "Bash(ls Resources/*.html)",
       "Bash(git -C \"c:/Tools/ncllball.github.io\" restore Resources/coaches-hub.html Resources/helping-hub.html Resources/safety-hub.html Resources/umpires-hub.html Resources/volunteer-hub.html Resources/events-hub.html Resources/parents-hub.html Resources/uniforms-hub.html Resources/opportunities-hub.html)",
       "Bash(git -C \"c:/Tools/ncllball.github.io\" status)",
-      "Bash(magick \"c:\\\\Tools\\\\ncllball.github.io\\\\images\\\\equipment-pickup.webp\" \"c:\\\\Tools\\\\ncllball.github.io\\\\images\\\\equipment-pickup.png\")"
+      "Bash(magick \"c:\\\\Tools\\\\ncllball.github.io\\\\images\\\\equipment-pickup.webp\" \"c:\\\\Tools\\\\ncllball.github.io\\\\images\\\\equipment-pickup.png\")",
+      "Bash(wc -l \"c:/Tools/ncllball.github.io/Resources\"/*-hub.html)"
     ]
   }
 }
