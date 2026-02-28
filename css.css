@@ -5237,6 +5237,14 @@ p:has(+ .callout) {
 }
 
 /* WIP indicators */
+.footies--wip {
+    background: #fff3cd;
+    border-radius: 6px;
+    padding: 0.3em 0.6em;
+    color: #5a4000;
+    border-top: none;
+}
+
 .footies--wip .material-icons-outlined {
     font-size: 1em;
     vertical-align: middle;
