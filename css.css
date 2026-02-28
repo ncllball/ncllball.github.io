@@ -5237,20 +5237,10 @@ p:has(+ .callout) {
 }
 
 /* WIP indicators */
-.hub-wip-notice {
-    margin-top: 1.5em;
-    padding: 0.3em 0.6em;
-    background: #fff3cd;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    gap: 0.35em;
-    color: #5a4000;
-    font-size: 0.65em;
-}
-
-.hub-wip-notice .material-icons-outlined {
+.footies--wip .material-icons-outlined {
     font-size: 1em;
+    vertical-align: middle;
+    margin-right: 0.25em;
 }
 
 .ncll-card__wip-icon {
