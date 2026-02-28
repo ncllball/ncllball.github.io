@@ -61,7 +61,9 @@
       "Bash(grep -l \"hub-intro__aside\" /c/Tools/ncllball.github.io/Resources/*.html)",
       "WebFetch(domain:commons.wikimedia.org)",
       "Bash(ls *.json *.config.* .prettier* .eslint*)",
-      "Bash(ls Resources/*.html)"
+      "Bash(ls Resources/*.html)",
+      "Bash(git -C \"c:/Tools/ncllball.github.io\" restore Resources/coaches-hub.html Resources/helping-hub.html Resources/safety-hub.html Resources/umpires-hub.html Resources/volunteer-hub.html Resources/events-hub.html Resources/parents-hub.html Resources/uniforms-hub.html Resources/opportunities-hub.html)",
+      "Bash(git -C \"c:/Tools/ncllball.github.io\" status)"
     ]
   }
 }
