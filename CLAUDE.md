@@ -40,3 +40,12 @@ Every page uses these two stylesheet links in `<head>`:
 <link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
 <link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
 ```
+
+## HTML Attribute Conventions
+
+`class` should be the first attribute on any element:
+
+```html
+<main class="coaches-landing" id="content" role="main">
+<article class="ncll-card" aria-labelledby="...">
+```
