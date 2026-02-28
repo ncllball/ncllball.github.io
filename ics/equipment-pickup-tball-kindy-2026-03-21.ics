@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NCLL//Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20260227T000000Z
+UID:ncll-equipment-pickup-tball-kindy-20260321T170000Z@ncllball.com
+SUMMARY:NCLL Equipment Pickup — T-Ball & Kindy Coach Pitch
+DESCRIPTION:T-Ball and Kindy Coach Pitch coaches: pick up your team's equipment. Questions? equipment@ncllball.com or (626) 806-3031.
+DTSTART:20260321T170000Z
+DTEND:20260321T180000Z
+LOCATION:2312 N 58th St\, Seattle\, WA 98103
+END:VEVENT
+END:VCALENDAR
