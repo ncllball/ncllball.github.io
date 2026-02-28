@@ -747,6 +747,7 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 .hub-intro__aside ~ h2,
 .hub-intro__aside ~ section,
 .hub-intro__aside ~ .program-grid,
+.hub-intro__aside ~ .sizing-grid,
 .intro-section ~ h2,
 .intro-section ~ .program-grid {
     clear: right;
