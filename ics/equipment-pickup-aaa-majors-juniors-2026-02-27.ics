@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NCLL//Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20260227T000000Z
+UID:ncll-equipment-pickup-aaa-majors-juniors-20260228T010000Z@ncllball.com
+SUMMARY:NCLL Equipment Pickup — AAA, Majors & Juniors
+DESCRIPTION:Baseball & Softball AAA\, Majors\, and Juniors coaches: pick up your team's equipment. Questions? equipment@ncllball.com or (626) 806-3031.
+DTSTART:20260228T010000Z
+DTEND:20260228T030000Z
+LOCATION:2312 N 58th St\, Seattle\, WA 98103
+END:VEVENT
+END:VCALENDAR

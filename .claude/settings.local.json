@@ -58,7 +58,8 @@
       "WebFetch(domain:document.airnow.gov)",
       "WebFetch(domain:www.ysd7.org)",
       "Bash(python3:*)",
-      "Bash(grep -l \"hub-intro__aside\" /c/Tools/ncllball.github.io/Resources/*.html)"
+      "Bash(grep -l \"hub-intro__aside\" /c/Tools/ncllball.github.io/Resources/*.html)",
+      "WebFetch(domain:commons.wikimedia.org)"
     ]
   }
 }
