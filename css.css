@@ -743,6 +743,13 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     }
 }
 
+/* Section headings and content grids after the aside must start below the float */
+.hub-intro__aside ~ h2,
+.hub-intro__aside ~ section,
+.hub-intro__aside ~ .program-grid {
+    clear: right;
+}
+
 /* (0) Design tokens */
 :root {
     --color_red: #cd163f;
