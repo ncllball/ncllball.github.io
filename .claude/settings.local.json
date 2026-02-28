@@ -65,7 +65,19 @@
       "Bash(git -C \"c:/Tools/ncllball.github.io\" restore Resources/coaches-hub.html Resources/helping-hub.html Resources/safety-hub.html Resources/umpires-hub.html Resources/volunteer-hub.html Resources/events-hub.html Resources/parents-hub.html Resources/uniforms-hub.html Resources/opportunities-hub.html)",
       "Bash(git -C \"c:/Tools/ncllball.github.io\" status)",
       "Bash(magick \"c:\\\\Tools\\\\ncllball.github.io\\\\images\\\\equipment-pickup.webp\" \"c:\\\\Tools\\\\ncllball.github.io\\\\images\\\\equipment-pickup.png\")",
-      "Bash(wc -l \"c:/Tools/ncllball.github.io/Resources\"/*-hub.html)"
+      "Bash(wc -l \"c:/Tools/ncllball.github.io/Resources\"/*-hub.html)",
+      "Bash(start http://localhost:5500/Resources/coaches-hub.html)",
+      "Bash(start http://localhost:5500/Resources/events-hub.html)",
+      "Bash(start http://localhost:5500/Resources/helping-hub.html)",
+      "Bash(start http://localhost:5500/Resources/opportunities-hub.html)",
+      "Bash(start http://localhost:5500/Resources/parents-hub.html)",
+      "Bash(start http://localhost:5500/Resources/safety-hub.html)",
+      "Bash(start http://localhost:5500/Resources/umpires-hub.html)",
+      "Bash(start http://localhost:5500/Resources/uniforms-hub.html)",
+      "Bash(start http://localhost:5500/Resources/volunteer-hub.html)",
+      "Bash(start http://localhost:5500/Programs/baseball-hub.html)",
+      "Bash(start http://localhost:5500/Programs/softball-hub.html)",
+      "Bash(start http://localhost:5500/Programs/playerdev-hub.html)"
     ]
   }
 }
