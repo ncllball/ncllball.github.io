@@ -5230,3 +5230,31 @@ p:has(+ .callout) {
     opacity: 0.6;
     pointer-events: none;
 }
+
+/* WIP indicators */
+.hub-wip-notice {
+    margin-top: 1.5em;
+    padding: 0.3em 0.6em;
+    background: #fff3cd;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+    color: #5a4000;
+    font-size: 0.65em;
+}
+
+.hub-wip-notice .material-icons-outlined {
+    font-size: 1em;
+}
+
+.ncll-card__wip-icon {
+    background: white;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 1.2em;
+    line-height: 1;
+    opacity: 0.85;
+    position: relative;
+    left: -10px;
+}
