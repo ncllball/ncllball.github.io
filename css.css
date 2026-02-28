@@ -744,6 +744,26 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     }
 }
 
+/* Letter-style block (used on safety-hub letter from Safety Officer) */
+.ncll-letter {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-top: 3px solid var(--color_red);
+    border-radius: 0 0 4px 4px;
+    padding: 1.75rem 2rem;
+    max-width: 600px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+    margin: 1rem 0 1.5rem;
+    line-height: 1.75;
+}
+.ncll-letter p {
+    margin-bottom: 1em;
+}
+.ncll-letter__sig {
+    margin-top: 2em;
+    line-height: 1.6;
+}
+
 /* Section headings and content grids after the aside must start below the float */
 .hub-intro__aside ~ h2,
 .hub-intro__aside ~ section,
