@@ -746,7 +746,9 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
 /* Section headings and content grids after the aside must start below the float */
 .hub-intro__aside ~ h2,
 .hub-intro__aside ~ section,
-.hub-intro__aside ~ .program-grid {
+.hub-intro__aside ~ .program-grid,
+.intro-section ~ h2,
+.intro-section ~ .program-grid {
     clear: right;
 }
 
@@ -844,16 +846,6 @@ h2.left::before {
     /* Decorative stripe uses --stripe-gradient */
     background-image: var(--stripe-gradient);
     background-size: 3px 3px;
-}
-
-.intro-section h2.left::before {
-    width: calc(100% - var(--related-links-rail) - var(--related-links-buffer));
-}
-
-@media (max-width: 720px) {
-.intro-section h2.left::before {
-        width: 100%;
-    }
 }
 
 :root {
