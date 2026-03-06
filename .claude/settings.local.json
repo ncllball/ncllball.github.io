@@ -85,7 +85,24 @@
       "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2111982&ctl=Edit&mid=2340162\")",
       "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2111983&ctl=Edit&mid=2207871\")",
       "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2111981&ctl=Edit&mid=2330191\")",
-      "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2113971&ctl=Edit&mid=2198690\")"
+      "Bash(start \"https://www.ncllball.com/Default.aspx?tabid=2113971&ctl=Edit&mid=2198690\")",
+      "WebFetch(domain:www.llwadistrict8.org)",
+      "WebFetch(domain:www.ballardll.net)",
+      "WebFetch(domain:www.magnolialittleleague.com)",
+      "WebFetch(domain:www.northbothelllittleleague.org)",
+      "WebFetch(domain:www.nesll.net)",
+      "WebFetch(domain:www.northlakell.org)",
+      "WebFetch(domain:www.northshorell.com)",
+      "WebFetch(domain:nwsll.org)",
+      "WebFetch(domain:qall.org)",
+      "WebFetch(domain:rugll.org)",
+      "WebFetch(domain:www.shorelinelittleleague.com)",
+      "WebFetch(domain:www.woodinvillelittleleague.com)",
+      "WebFetch(domain:www.nwsll.org)",
+      "WebFetch(domain:ballardll.net)",
+      "Bash(tesseract --version)",
+      "Bash(\"/c/Program Files/Tesseract-OCR/tesseract.exe\" --version)",
+      "Bash(find \"G:/Shared drives/NCLL/Safety/2026_waivers/\" -name \"Thumbs.db\" -delete)"
     ]
   }
 }
