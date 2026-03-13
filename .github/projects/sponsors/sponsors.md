@@ -1,0 +1,48 @@
+# Team Sponsors
+
+- BB-Juniors: Bongos
+- BB-Majors: El Camion
+- BB-Majors: CONTINUUM
+- BB-Majors: Lincoln High School Baseball
+- BB-Majors: Kitch Switch
+- BB-Majors: Fuller Living Construction
+- BB-Majors: Javila Creer, Windermere
+- BB-AAA: Bear Mountain Capital
+- BB-AAA: Focus Baseball
+- BB-AAA: 56th Street Market
+- BB-AAA: Merlino Foods
+- BB-AAA: Reuben's
+- BB-AAA: Tutta Bella
+- BB-AAA: Project 9
+- BB-AAA: Phinney Books
+- BB-AA: Seattle Police
+- BB-AA: Focus Baseball
+- BB-AA: Seattle Saver Magazine
+- BB-AA: Green Lake Orthodontics
+- BB-AA: Puffin Pediatrics
+- BB-AA: Greenwood Heating & Air
+- BB-AA: Justcoachnow.com
+- BB-AA: Crystal Panes
+- BB-A: Cutter and Buck
+- BB-A: Greenwood Heating & Air
+- BB-A: Phinney Books
+- BB-A: Lighthouse Roasters
+- BB-A: CubeSmart
+- BB-A: Foushee
+- BB-A: Wessco Blinds
+- BB-A: Murphy's Pub
+- BB-KCP: Dick's Drive-In
+- BB-TB: Childish Things
+- SB-Juniors: Compass Construction
+- SB-Majors: Valley Events
+- SB-Majors: Harjo Construction
+- SB-AAA: Orca Analytics
+- SB-AAA: Bear Mountain Capital
+- SB-AAA: Puffin Pediatrics
+- SB-AA: Lincoln High School
+- SB-AA: Tori Roper Hair Studio
+- SB-AA: Ben's Bread Co
+- SB-A: Cutter and Buck
+- SB-A: Cedarhouse Flowers
+- SB-A: CubeSmart
+- SB-A: Ken's Market
