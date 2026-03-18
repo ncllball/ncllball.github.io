@@ -1,0 +1,13 @@
+SortOrder,RoundNo,HomeTeam,AwayTeam,MatchDate,StartTime,EndTime,Location,Field
+1,1,Red,Blue,11/9/2011,13:00,16:15,McCurry Park,Field 1
+2,1,Green,Gold,11/9/2011,13:00,16:15,McCurry Park,Field 2
+3,1,Black,White,11/9/2011,17:30,19:30,McCurry Park,Field 3
+4,1,Orange,Silver,11/9/2011,17:30,19:30,McCurry Park,Field 2
+5,2,Blue,Black,11/16/2011,13:00,16:15,McCurry Park,Field 1
+6,2,Red,Orange,11/16/2011,13:00,16:15,McCurry Park,Field 2
+7,2,White,Gold,11/16/2011,17:30,19:30,McCurry Park,Field 3
+8,2,Green,Silver,11/16/2011,17:30,19:30,McCurry Park,Field 2
+9,3,Green,Red,11/23/2011,13:00,16:15,McCurry Park,Field 1
+10,3,Gold,Blue,11/23/2011,13:00,16:15,McCurry Park,Field 2
+11,3,White,Orange,11/23/2011,17:30,19:30,McCurry Park,Field 3
+12,3,Silver,Black,11/23/2011,17:30,19:30,McCurry Park,Field 2

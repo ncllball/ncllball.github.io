@@ -105,7 +105,24 @@
       "Bash(find \"G:/Shared drives/NCLL/Safety/2026_waivers/\" -name \"Thumbs.db\" -delete)",
       "WebSearch",
       "WebFetch(domain:www.goorca.ai)",
-      "WebFetch(domain:www.compass-gc.com)"
+      "WebFetch(domain:www.compass-gc.com)",
+      "WebFetch(domain:www.beexploring.com)",
+      "WebFetch(domain:data-seattlecitygis.opendata.arcgis.com)",
+      "WebFetch(domain:anc.apm.activecommunities.com)",
+      "WebFetch(domain:nwstingbaseball.com)",
+      "WebFetch(domain:parkways.seattle.gov)",
+      "WebFetch(domain:www.playnsb.org)",
+      "WebFetch(domain:www.rugll.org)",
+      "WebFetch(domain:www.qall.org)",
+      "WebFetch(domain:patch.com)",
+      "WebFetch(domain:www.seattle.gov)",
+      "WebFetch(domain:www.northcentrallittleleague.org)",
+      "WebFetch(domain:www.thepnw4life.com)",
+      "WebFetch(domain:www.mclittleleague.org)",
+      "WebFetch(domain:www.monarchlittleleague.org)",
+      "WebFetch(domain:www.moorparkll.com)",
+      "WebFetch(domain:www.rclittleleague.org)",
+      "WebFetch(domain:www.rhbaseball.org)"
     ]
   }
 }
