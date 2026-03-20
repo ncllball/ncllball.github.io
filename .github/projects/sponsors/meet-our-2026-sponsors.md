@@ -18,8 +18,6 @@ The heart of NCLL country — and our deepest bench of supporters.
 
 **Ken's Market** has been the Greenwood and Phinney Ridge neighborhood grocery since 1955. Family-owned and community-invested, Ken's at 7231 Greenwood Ave N stocks pasture-raised meats, organic produce, free-range eggs, and all the everyday staples you'd expect — seven days a week, 7 am to 10 pm.
 
-**Tori Roper Hair Studio** is a single-chair studio at 7106 Greenwood Ave N where stylist Tori Roper has been perfecting cuts and color since 2011. The intimate, LGBTQIA+ friendly space offers a personalized experience far from the hustle of a big salon.
-
 **Focus Baseball** is a Seattle-based nonprofit baseball academy operating out of 7806 Aurora Ave N. They run high-quality training programs for all ages and field competitive select teams at the 13U–15U level through the Perfect Game Baseball Association.
 
 **Kitch Switch** is a design-build kitchen remodeling firm led by longtime partners Sheley (an award-winning designer-realtor) and Jon (30 years in construction management). They specialize in stylish, fast kitchen transformations — free consultations available at kitch-switch.com.

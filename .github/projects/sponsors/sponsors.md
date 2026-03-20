@@ -40,9 +40,12 @@
 - SB-AAA: Bear Mountain Capital
 - SB-AAA: Puffin Pediatrics
 - SB-AA: Lincoln High School
-- SB-AA: Tori Roper Hair Studio
 - SB-AA: Ben's Bread Co
 - SB-A: Cutter and Buck
 - SB-A: Cedarhouse Flowers
 - SB-A: CubeSmart
 - SB-A: Ken's Market
+
+## Questions
+
+- Does anyone ever ask for us to use an updated logo?
