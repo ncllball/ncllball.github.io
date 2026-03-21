@@ -123,7 +123,12 @@
       "WebFetch(domain:www.moorparkll.com)",
       "WebFetch(domain:www.rclittleleague.org)",
       "WebFetch(domain:www.rhbaseball.org)",
-      "WebFetch(domain:cmm.dickssportinggoods.com)"
+      "WebFetch(domain:cmm.dickssportinggoods.com)",
+      "Bash(sed -i '/<input id=\"\"sp-.*-intro\"\".*checked \\\\/>/d' Resources/sponsors.html)",
+      "Bash(sed -i 's/class=\"\"ncll-card__body panel panel-intro\"\"/class=\"\"ncll-card__body\"\"/g' Resources/sponsors.html)",
+      "WebFetch(domain:seattlesaver.org)",
+      "WebFetch(domain:www.instagram.com)",
+      "WebFetch(domain:www.yelp.com)"
     ]
   }
 }
