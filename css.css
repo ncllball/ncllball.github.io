@@ -5266,3 +5266,5 @@ p:has(+ .callout) {
     position: relative;
     left: -10px;
 }
+
+.sponsors-landing .ncll-card { min-width: 340px; height: 320px; }
