@@ -104,7 +104,7 @@ The heart of NCLL country — and our deepest bench of supporters.
 
 **JustCoachNow** connects young athletes with elite college-athlete coaches for private training. Their platform is built on the idea that access to high-quality instruction shouldn't be limited to a select few — a mission that aligns perfectly with NCLL's.
 
-**Seattle Saver Magazine** helps Seattle-area families find local deals, discounts, and community resources. We appreciate their support in helping spread the word about North Central Little League.
+**Seattle Saver Magazine** — the Wallingford and Fremont edition — helps local families find deals, discounts, and community resources. We appreciate their support in helping spread the word about North Central Little League.
 
 ---
 
