@@ -1,0 +1,1232 @@
+<!-- CMS Edit: https://www.ncllball.com/Default.aspx?tabid=2113971&ctl=Edit&mid=2198690 -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="NCLL uniform sizing walkthrough — pick shirt, hat, and hoodie sizes to see exactly what to enter during registration."
+		/>
+		<title>NCLL Uniform Selector | North Central Little League</title>
+		<link href="https://www.ncllball.com/Default.aspx?tabid=2113971" rel="canonical" />
+		<meta property="og:title" content="NCLL Uniform Selector | North Central Little League" />
+		<meta
+			property="og:description"
+			content="NCLL uniform sizing walkthrough — pick shirt, hat, and hoodie sizes to see exactly what to enter during registration."
+		/>
+		<meta property="og:url" content="https://www.ncllball.com/Default.aspx?tabid=2113971" />
+		<meta property="og:type" content="article" />
+		<meta property="og:image" content="https://ncllball.github.io/images/social.png" />
+		<link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
+		<link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
+		<style>
+			/* ── Wizard shell ─────────────────────────────────────────────── */
+
+			/* All functional inputs must be direct children of .unif-wizard
+			   so the ~ sibling selector can reach .wiz-body and its descendants. */
+			.unif-wizard > input[type="radio"] {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				opacity: 0;
+				pointer-events: none;
+			}
+
+			.unif-wizard {
+				position: relative;
+				max-width: 640px;
+				margin: 2rem auto;
+				font-family: "proxima-nova", sans-serif;
+			}
+
+			/* ── Panels: hide all, show by active step ────────────────────── */
+
+			.wiz-panel { display: none; }
+
+			#wiz-intro:checked ~ .wiz-body .wiz-panel--intro  { display: block; }
+			#wiz-s0:checked ~ .wiz-body .wiz-panel--sport    { display: block; }
+			#wiz-s1:checked ~ .wiz-body .wiz-panel--division { display: block; }
+			#wiz-s2:checked ~ .wiz-body .wiz-panel--shirt    { display: block; }
+			#wiz-s3:checked ~ .wiz-body .wiz-panel--hat      { display: block; }
+			#wiz-s4:checked ~ .wiz-body .wiz-panel--hoodie   { display: block; }
+			#wiz-s5:checked ~ .wiz-body .wiz-panel--socks    { display: block; }
+			#wiz-s6:checked ~ .wiz-body .wiz-panel--summary  { display: block; }
+
+			/* ── Division sub-grids: show the right one per sport ─────────── */
+
+			/* Both hidden by default; revealed by sport radio via ~ sibling   */
+			.div-options--bb,
+			.div-options--sb { display: none; }
+
+			#sport-bb:checked ~ .wiz-body .div-options--bb { display: grid; }
+			#sport-sb:checked ~ .wiz-body .div-options--sb { display: grid; }
+
+			/* ── Progress bar ─────────────────────────────────────────────── */
+
+			.wiz-progress {
+				display: flex;
+				align-items: center;
+				gap: 0;
+				margin-bottom: 1.75rem;
+			}
+
+			.wiz-progress__step {
+				width: 2rem;
+				height: 2rem;
+				border-radius: 50%;
+				border: 2px solid #c5cdd8;
+				color: #c5cdd8;
+				font-size: 0.8rem;
+				font-weight: 700;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-shrink: 0;
+				background: #fff;
+				position: relative;
+				z-index: 1;
+			}
+
+			.wiz-progress__step + .wiz-progress__step::before {
+				content: "";
+				display: block;
+				height: 2px;
+				width: 2rem;
+				background: #c5cdd8;
+				position: absolute;
+				right: 100%;
+				top: 50%;
+				transform: translateY(-50%);
+				z-index: 0;
+			}
+
+			.wiz-progress__step--done {
+				background: #1a3a6b;
+				border-color: #1a3a6b;
+				color: #fff;
+			}
+
+			.wiz-progress__step--done + .wiz-progress__step::before {
+				background: #1a3a6b;
+			}
+
+			.wiz-progress__step--active {
+				background: #fff;
+				border-color: #1a3a6b;
+				color: #1a3a6b;
+				box-shadow: 0 0 0 3px rgba(26,58,107,0.15);
+			}
+
+			/* ── Panel card ───────────────────────────────────────────────── */
+
+			.wiz-panel {
+				background: #fff;
+				border: 1px solid #dce3ea;
+				border-radius: 8px;
+				padding: 1.75rem 1.5rem 1.5rem;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+			}
+
+			.wiz-title {
+				font-size: 1.35rem;
+				font-weight: 700;
+				color: #1a3a6b;
+				margin: 0 0 0.35rem;
+				text-align: left;
+			}
+
+			.wiz-subtitle {
+				color: #555;
+				font-size: 0.95rem;
+				margin: 0 0 1.25rem;
+			}
+
+			/* ── Option pills (size / division grid) ──────────────────────── */
+
+			.wiz-options {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+				gap: 0.6rem;
+				margin-bottom: 1.75rem;
+			}
+
+			/* Division sub-grids inherit the same grid layout */
+			.div-options--bb,
+			.div-options--sb {
+				grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+				gap: 0.6rem;
+				margin-bottom: 1.75rem;
+			}
+
+			.wiz-opt {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				padding: 0.7rem 0.5rem;
+				border: 2px solid #c5cdd8;
+				border-radius: 6px;
+				font-size: 0.9rem;
+				font-weight: 600;
+				color: #444;
+				cursor: pointer;
+				transition: border-color 0.15s, background 0.15s, color 0.15s;
+				line-height: 1.2;
+				min-height: 3rem;
+				background: #f7f9fb;
+			}
+
+			.wiz-opt:hover {
+				border-color: #1a3a6b;
+				color: #1a3a6b;
+				background: #edf1f8;
+			}
+
+			/* ── Sport image cards ────────────────────────────────────────── */
+
+			.wiz-options--sport {
+				grid-template-columns: 1fr 1fr;
+				gap: 1rem;
+				margin-bottom: 1.75rem;
+			}
+
+			.wiz-opt--sport {
+				flex-direction: column;
+				gap: 0.6rem;
+				padding: 1.5rem 1rem;
+				min-height: 9rem;
+				font-size: 1rem;
+				font-weight: 700;
+				color: #1a3a6b;
+			}
+
+			.wiz-opt--sport img {
+				width: 72px;
+				height: 72px;
+				object-fit: contain;
+				display: block;
+			}
+
+			/* ── Highlight selected option via :has() ─────────────────────── */
+
+			/* Sport image cards: border + tint (keeps image visible) */
+			.unif-wizard:has(#sport-bb:checked) label[for="sport-bb"],
+			.unif-wizard:has(#sport-sb:checked) label[for="sport-sb"] {
+				border-color: #1a3a6b;
+				background: #edf1f8;
+				color: #1a3a6b;
+				box-shadow: inset 0 0 0 2px #1a3a6b;
+			}
+
+			/* Division pills */
+			.unif-wizard:has(#div-tb:checked)      label[for="div-tb"],
+			.unif-wizard:has(#div-kcp:checked)     label[for="div-kcp"],
+			.unif-wizard:has(#div-a:checked)       label[for="div-a"],
+			.unif-wizard:has(#div-aa:checked)      label[for="div-aa"],
+			.unif-wizard:has(#div-aaa:checked)     label[for="div-aaa"],
+			.unif-wizard:has(#div-juniors:checked) label[for="div-juniors"],
+			.unif-wizard:has(#div-seniors:checked) label[for="div-seniors"] {
+				border-color: #1a3a6b;
+				background: #1a3a6b;
+				color: #fff;
+			}
+
+			/* Shirt */
+			.unif-wizard:has(#shirt-ys:checked)  label[for="shirt-ys"],
+			.unif-wizard:has(#shirt-ym:checked)  label[for="shirt-ym"],
+			.unif-wizard:has(#shirt-yl:checked)  label[for="shirt-yl"],
+			.unif-wizard:has(#shirt-as:checked)  label[for="shirt-as"],
+			.unif-wizard:has(#shirt-am:checked)  label[for="shirt-am"],
+			.unif-wizard:has(#shirt-al:checked)  label[for="shirt-al"],
+			.unif-wizard:has(#shirt-axl:checked) label[for="shirt-axl"] {
+				border-color: #1a3a6b;
+				background: #1a3a6b;
+				color: #fff;
+			}
+
+			/* Hat */
+			.unif-wizard:has(#hat-adj:checked) label[for="hat-adj"],
+			.unif-wizard:has(#hat-sm:checked)  label[for="hat-sm"],
+			.unif-wizard:has(#hat-lxl:checked) label[for="hat-lxl"] {
+				border-color: #1a3a6b;
+				background: #1a3a6b;
+				color: #fff;
+			}
+
+			/* Hoodie */
+			.unif-wizard:has(#hoodie-ys:checked)  label[for="hoodie-ys"],
+			.unif-wizard:has(#hoodie-ym:checked)  label[for="hoodie-ym"],
+			.unif-wizard:has(#hoodie-yl:checked)  label[for="hoodie-yl"],
+			.unif-wizard:has(#hoodie-as:checked)  label[for="hoodie-as"],
+			.unif-wizard:has(#hoodie-am:checked)  label[for="hoodie-am"],
+			.unif-wizard:has(#hoodie-al:checked)  label[for="hoodie-al"],
+			.unif-wizard:has(#hoodie-axl:checked) label[for="hoodie-axl"] {
+				border-color: #1a3a6b;
+				background: #1a3a6b;
+				color: #fff;
+			}
+
+			/* ── Nav buttons ──────────────────────────────────────────────── */
+
+			.wiz-nav {
+				display: flex;
+				justify-content: flex-end;
+				gap: 0.75rem;
+				padding-top: 0.25rem;
+			}
+
+			.wiz-btn {
+				display: inline-flex;
+				align-items: center;
+				padding: 0.65rem 1.4rem;
+				border-radius: 5px;
+				font-size: 0.9rem;
+				font-weight: 700;
+				cursor: pointer;
+				text-decoration: none;
+				line-height: 1;
+			}
+
+			.wiz-btn--next {
+				background: #c5cdd8;
+				color: #fff;
+				border: 2px solid #c5cdd8;
+				opacity: 1;
+				pointer-events: none;
+				cursor: default;
+			}
+
+			/* Enable Next only when the current step has a selection */
+			.unif-wizard:has(#sport-bb:checked, #sport-sb:checked)
+				.wiz-panel--sport .wiz-btn--next,
+
+			.unif-wizard:has(#div-tb:checked, #div-kcp:checked, #div-a:checked,
+				#div-aa:checked, #div-aaa:checked, #div-juniors:checked, #div-seniors:checked)
+				.wiz-panel--division .wiz-btn--next,
+
+			.unif-wizard:has(#shirt-ys:checked, #shirt-ym:checked, #shirt-yl:checked,
+				#shirt-as:checked, #shirt-am:checked, #shirt-al:checked, #shirt-axl:checked)
+				.wiz-panel--shirt .wiz-btn--next,
+
+			.unif-wizard:has(#hat-adj:checked, #hat-sm:checked, #hat-lxl:checked)
+				.wiz-panel--hat .wiz-btn--next,
+
+			.unif-wizard:has(#hoodie-ys:checked, #hoodie-ym:checked, #hoodie-yl:checked,
+				#hoodie-as:checked, #hoodie-am:checked, #hoodie-al:checked, #hoodie-axl:checked)
+				.wiz-panel--hoodie .wiz-btn--next {
+				background: #1a3a6b;
+				border-color: #1a3a6b;
+				pointer-events: auto;
+				cursor: pointer;
+			}
+
+			.unif-wizard:has(#sport-bb:checked, #sport-sb:checked)
+				.wiz-panel--sport .wiz-btn--next:hover,
+
+			.unif-wizard:has(#div-tb:checked, #div-kcp:checked, #div-a:checked,
+				#div-aa:checked, #div-aaa:checked, #div-juniors:checked, #div-seniors:checked)
+				.wiz-panel--division .wiz-btn--next:hover,
+
+			.unif-wizard:has(#shirt-ys:checked, #shirt-ym:checked, #shirt-yl:checked,
+				#shirt-as:checked, #shirt-am:checked, #shirt-al:checked, #shirt-axl:checked)
+				.wiz-panel--shirt .wiz-btn--next:hover,
+
+			.unif-wizard:has(#hat-adj:checked, #hat-sm:checked, #hat-lxl:checked)
+				.wiz-panel--hat .wiz-btn--next:hover,
+
+			.unif-wizard:has(#hoodie-ys:checked, #hoodie-ym:checked, #hoodie-yl:checked,
+				#hoodie-as:checked, #hoodie-am:checked, #hoodie-al:checked, #hoodie-axl:checked)
+				.wiz-panel--hoodie .wiz-btn--next:hover {
+				background: #14305a;
+				border-color: #14305a;
+			}
+
+			.wiz-btn--back {
+				background: #fff;
+				color: #1a3a6b;
+				border: 2px solid #1a3a6b;
+			}
+
+			.wiz-btn--back:hover {
+				background: #edf1f8;
+			}
+
+			/* ── Summary panel ────────────────────────────────────────────── */
+
+			.wiz-summary-intro {
+				color: #555;
+				font-size: 0.95rem;
+				margin: 0 0 1.25rem;
+			}
+
+			.wiz-summary {
+				list-style: none;
+				margin: 0 0 1.5rem;
+				padding: 0;
+				border: 1px solid #dce3ea;
+				border-radius: 6px;
+				overflow: hidden;
+			}
+
+			.wiz-summary__row {
+				display: flex;
+				align-items: baseline;
+				gap: 1rem;
+				padding: 0.9rem 1rem;
+				border-bottom: 1px solid #dce3ea;
+			}
+
+			.wiz-summary__row:last-child {
+				border-bottom: none;
+			}
+
+			.wiz-summary__label {
+				font-size: 0.8rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+				color: #1a3a6b;
+				min-width: 4.5rem;
+				flex-shrink: 0;
+			}
+
+			.wiz-summary__value {
+				font-size: 1rem;
+				font-weight: 600;
+				color: #222;
+			}
+
+			/* All summary value spans hidden by default */
+			.sval { display: none; }
+
+			/* "Not selected" shown by default */
+			.sval--none {
+				display: inline;
+				color: #999;
+				font-style: italic;
+				font-weight: 400;
+			}
+
+			/* Sport */
+			#sport-bb:checked ~ .wiz-body .sval--sport-bb   { display: inline; }
+			#sport-bb:checked ~ .wiz-body .sval--sport-none { display: none; }
+			#sport-sb:checked ~ .wiz-body .sval--sport-sb   { display: inline; }
+			#sport-sb:checked ~ .wiz-body .sval--sport-none { display: none; }
+
+			/* Division */
+			#div-tb:checked      ~ .wiz-body .sval--div-tb      { display: inline; }
+			#div-tb:checked      ~ .wiz-body .sval--div-none    { display: none; }
+			#div-kcp:checked     ~ .wiz-body .sval--div-kcp     { display: inline; }
+			#div-kcp:checked     ~ .wiz-body .sval--div-none    { display: none; }
+			#div-a:checked       ~ .wiz-body .sval--div-a       { display: inline; }
+			#div-a:checked       ~ .wiz-body .sval--div-none    { display: none; }
+			#div-aa:checked      ~ .wiz-body .sval--div-aa      { display: inline; }
+			#div-aa:checked      ~ .wiz-body .sval--div-none    { display: none; }
+			#div-aaa:checked     ~ .wiz-body .sval--div-aaa     { display: inline; }
+			#div-aaa:checked     ~ .wiz-body .sval--div-none    { display: none; }
+			#div-juniors:checked ~ .wiz-body .sval--div-juniors { display: inline; }
+			#div-juniors:checked ~ .wiz-body .sval--div-none    { display: none; }
+			#div-seniors:checked ~ .wiz-body .sval--div-seniors { display: inline; }
+			#div-seniors:checked ~ .wiz-body .sval--div-none    { display: none; }
+
+			/* Shirt */
+			#shirt-ys:checked  ~ .wiz-body .sval--shirt-ys   { display: inline; }
+			#shirt-ys:checked  ~ .wiz-body .sval--shirt-none { display: none; }
+			#shirt-ym:checked  ~ .wiz-body .sval--shirt-ym   { display: inline; }
+			#shirt-ym:checked  ~ .wiz-body .sval--shirt-none { display: none; }
+			#shirt-yl:checked  ~ .wiz-body .sval--shirt-yl   { display: inline; }
+			#shirt-yl:checked  ~ .wiz-body .sval--shirt-none { display: none; }
+			#shirt-as:checked  ~ .wiz-body .sval--shirt-as   { display: inline; }
+			#shirt-as:checked  ~ .wiz-body .sval--shirt-none { display: none; }
+			#shirt-am:checked  ~ .wiz-body .sval--shirt-am   { display: inline; }
+			#shirt-am:checked  ~ .wiz-body .sval--shirt-none { display: none; }
+			#shirt-al:checked  ~ .wiz-body .sval--shirt-al   { display: inline; }
+			#shirt-al:checked  ~ .wiz-body .sval--shirt-none { display: none; }
+			#shirt-axl:checked ~ .wiz-body .sval--shirt-axl  { display: inline; }
+			#shirt-axl:checked ~ .wiz-body .sval--shirt-none { display: none; }
+
+			/* Hat */
+			#hat-adj:checked ~ .wiz-body .sval--hat-adj  { display: inline; }
+			#hat-adj:checked ~ .wiz-body .sval--hat-none { display: none; }
+			#hat-sm:checked  ~ .wiz-body .sval--hat-sm   { display: inline; }
+			#hat-sm:checked  ~ .wiz-body .sval--hat-none { display: none; }
+			#hat-lxl:checked ~ .wiz-body .sval--hat-lxl  { display: inline; }
+			#hat-lxl:checked ~ .wiz-body .sval--hat-none { display: none; }
+
+			/* Hoodie */
+			#hoodie-ys:checked  ~ .wiz-body .sval--hoodie-ys   { display: inline; }
+			#hoodie-ys:checked  ~ .wiz-body .sval--hoodie-none { display: none; }
+			#hoodie-ym:checked  ~ .wiz-body .sval--hoodie-ym   { display: inline; }
+			#hoodie-ym:checked  ~ .wiz-body .sval--hoodie-none { display: none; }
+			#hoodie-yl:checked  ~ .wiz-body .sval--hoodie-yl   { display: inline; }
+			#hoodie-yl:checked  ~ .wiz-body .sval--hoodie-none { display: none; }
+			#hoodie-as:checked  ~ .wiz-body .sval--hoodie-as   { display: inline; }
+			#hoodie-as:checked  ~ .wiz-body .sval--hoodie-none { display: none; }
+			#hoodie-am:checked  ~ .wiz-body .sval--hoodie-am   { display: inline; }
+			#hoodie-am:checked  ~ .wiz-body .sval--hoodie-none { display: none; }
+			#hoodie-al:checked  ~ .wiz-body .sval--hoodie-al   { display: inline; }
+			#hoodie-al:checked  ~ .wiz-body .sval--hoodie-none { display: none; }
+			#hoodie-axl:checked ~ .wiz-body .sval--hoodie-axl  { display: inline; }
+			#hoodie-axl:checked ~ .wiz-body .sval--hoodie-none { display: none; }
+
+			/* ── Division product preview (T-Ball & KCP only) ────────────── */
+
+			.div-product-preview {
+				display: flex;
+				gap: 1rem;
+				margin-bottom: 1.5rem;
+				padding: 1rem;
+				background: #f7f9fb;
+				border: 1px solid #dce3ea;
+				border-radius: 6px;
+			}
+
+			.div-product-preview__item {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0.4rem;
+				text-align: center;
+			}
+
+			.div-product-preview__item img {
+				max-width: 100%;
+				max-height: 120px;
+				object-fit: contain;
+			}
+
+			.div-product-preview__item figcaption {
+				font-size: 0.8rem;
+				font-weight: 700;
+				color: #1a3a6b;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+			}
+
+			/* ── Shirt step blurb ────────────────────────────────────────── */
+
+			.wiz-shirt-blurb {
+				margin-bottom: 1.25rem;
+				font-size: 0.9rem;
+				color: #444;
+				line-height: 1.55;
+			}
+
+			.wiz-shirt-blurb p {
+				margin: 0 0 0.6rem;
+			}
+
+			.wiz-shirt-blurb p:last-child {
+				margin-bottom: 0;
+			}
+
+			/* ── Shirt sizing table ──────────────────────────────────────── */
+
+			.wiz-sizing {
+				margin-bottom: 1.5rem;
+			}
+
+			.wiz-sizing__diagram {
+				display: block;
+				max-width: 180px;
+				margin: 0 auto 0.75rem;
+			}
+
+			.wiz-sizing__table {
+				width: 100%;
+				border-collapse: collapse;
+				font-size: 0.85rem;
+				text-align: center;
+			}
+
+			.wiz-sizing__table th,
+			.wiz-sizing__table td {
+				padding: 0.4rem 0.5rem;
+				border: 1px solid #dce3ea;
+			}
+
+			.wiz-sizing__table thead th {
+				background: #1a3a6b;
+				color: #fff;
+				font-weight: 700;
+			}
+
+			.wiz-sizing__table tbody th {
+				background: #f0f4f9;
+				font-weight: 700;
+				color: #1a3a6b;
+				text-align: left;
+			}
+
+			.wiz-sizing__table tbody tr:nth-child(even) td {
+				background: #f7f9fb;
+			}
+
+			/* ── Intro step ──────────────────────────────────────────────── */
+
+			.wiz-panel--intro .wiz-btn--next {
+				background: #1a3a6b;
+				border-color: #1a3a6b;
+				pointer-events: auto;
+				cursor: pointer;
+			}
+			.wiz-panel--intro .wiz-btn--next:hover {
+				background: #14305a;
+				border-color: #14305a;
+			}
+
+			.wiz-intro-img {
+				display: block;
+				width: 100%;
+				max-width: 360px;
+				height: auto;
+				margin: 1rem auto;
+				border-radius: 6px;
+			}
+
+			.wiz-intro-text {
+				font-size: 0.95rem;
+				color: #444;
+				line-height: 1.6;
+				margin: 0 0 0.75rem;
+			}
+
+			/* ── Socks step: Next always enabled (no selection needed) ──────── */
+			.wiz-panel--socks .wiz-btn--next {
+				background: #1a3a6b;
+				border-color: #1a3a6b;
+				pointer-events: auto;
+				cursor: pointer;
+			}
+			.wiz-panel--socks .wiz-btn--next:hover {
+				background: #14305a;
+				border-color: #14305a;
+			}
+
+			/* ── Socks back button: conditional on division ───────────────── */
+			.socks-back--hoodie   { display: inline-flex; }
+			.socks-back--hat      { display: none; }
+			.unif-wizard:has(#div-tb:checked, #div-kcp:checked) .socks-back--hoodie { display: none; }
+			.unif-wizard:has(#div-tb:checked, #div-kcp:checked) .socks-back--hat    { display: inline-flex; }
+
+			/* ── Socks & belts image grid ─────────────────────────────────── */
+			.wiz-socks-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+				gap: 0.75rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.wiz-socks-grid__item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0.35rem;
+				text-align: center;
+			}
+
+			.wiz-socks-grid__item img {
+				width: 100%;
+				max-width: 120px;
+				height: auto;
+				border-radius: 4px;
+				border: 1px solid #dce3ea;
+			}
+
+			.wiz-socks-grid__item figcaption {
+				font-size: 0.75rem;
+				font-weight: 600;
+				color: #555;
+				text-transform: uppercase;
+				letter-spacing: 0.04em;
+			}
+
+			.wiz-socks-grid__group-label {
+				grid-column: 1 / -1;
+				font-size: 0.8rem;
+				font-weight: 700;
+				color: #1a3a6b;
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+				margin-top: 0.5rem;
+				padding-bottom: 0.25rem;
+				border-bottom: 1px solid #dce3ea;
+			}
+
+			/* ── Hat step: skip hoodie for T-Ball & KCP ──────────────────── */
+
+			/* By default show "Next: Hoodie", hide "See My Summary" */
+			.hat-next--skip-hoodie { display: none; }
+			.hat-next--to-hoodie   { display: inline-flex; }
+
+			/* When TB or KCP: flip them */
+			.unif-wizard:has(#div-tb:checked, #div-kcp:checked) .hat-next--skip-hoodie { display: inline-flex; }
+			.unif-wizard:has(#div-tb:checked, #div-kcp:checked) .hat-next--to-hoodie   { display: none; }
+
+			/* Hide hoodie summary row for TB/KCP */
+			.unif-wizard:has(#div-tb:checked, #div-kcp:checked) .wiz-summary__row--hoodie { display: none; }
+
+			/* ── Hat step conditional content ────────────────────────────── */
+
+			.hat-content--tball-kcp { display: none; }
+			.hat-content--other     { display: block; }
+
+			.unif-wizard:has(#div-tb:checked)  .wiz-panel--hat .hat-content--tball-kcp,
+			.unif-wizard:has(#div-kcp:checked) .wiz-panel--hat .hat-content--tball-kcp { display: block; }
+
+			.unif-wizard:has(#div-tb:checked)  .wiz-panel--hat .hat-content--other,
+			.unif-wizard:has(#div-kcp:checked) .wiz-panel--hat .hat-content--other     { display: none; }
+
+			.wiz-hat-note {
+				font-size: 0.85rem;
+				color: #555;
+				margin-bottom: 1rem;
+				line-height: 1.5;
+			}
+
+			.wiz-hat-note strong {
+				color: #1a3a6b;
+			}
+
+			/* ── Registration callout ─────────────────────────────────────── */
+
+			.wiz-reg-callout {
+				background: #f0f5ff;
+				border: 1px solid #b8caea;
+				border-left: 4px solid #1a3a6b;
+				border-radius: 0 6px 6px 0;
+				padding: 1rem 1.1rem;
+				margin-bottom: 1.5rem;
+				font-size: 0.9rem;
+				color: #333;
+			}
+
+			.wiz-reg-callout strong {
+				display: block;
+				color: #1a3a6b;
+				margin-bottom: 0.3rem;
+				font-size: 0.85rem;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+			}
+
+			/* ── Intro heading above wizard ───────────────────────────────── */
+
+			.uniforms-landing .wiz-intro {
+				max-width: 640px;
+				margin: 0 auto 0.5rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<main class="uniforms-landing" id="content" role="main">
+			<h1 class="left sr-only">NCLL Uniform Selector</h1>
+
+			<section id="hub-intro">
+				<div class="hub-banner-wrap">
+					<img
+						class="hub-banner-img team-photo"
+						src="https://ncllball.github.io/images/silos/volunteers/banner.png"
+						alt="NCLL Uniform Sizing"
+					/>
+				</div>
+			</section>
+			<aside class="hub-intro__aside hub-intro__aside--accent" aria-label="Related uniform links">
+				<h4 class="hub-aside__title">Related links</h4>
+				<ul class="hub-aside__list related-links">
+					<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2111981">Parents Hub</a></li>
+					<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2111982">Coaches Hub</a></li>
+				</ul>
+			</aside>
+
+			<p class="wiz-intro">
+				Answer a few quick questions and we'll tell you exactly what to choose in each dropdown when you register.
+			</p>
+
+			<!-- ═══════════════════════════════════════════════════════════════
+			     WIZARD
+			     All functional radio inputs must be direct children of
+			     .unif-wizard so the CSS ~ sibling selector can reach .wiz-body.
+			     ═══════════════════════════════════════════════════════════════ -->
+			<div class="unif-wizard">
+
+				<!-- ── Step navigation radios ───────────────────────────── -->
+				<input type="radio" name="wiz-step" id="wiz-intro" checked />
+				<input type="radio" name="wiz-step" id="wiz-s0" />
+				<input type="radio" name="wiz-step" id="wiz-s1" />
+				<input type="radio" name="wiz-step" id="wiz-s2" />
+				<input type="radio" name="wiz-step" id="wiz-s3" />
+				<input type="radio" name="wiz-step" id="wiz-s4" />
+				<input type="radio" name="wiz-step" id="wiz-s5" />
+				<input type="radio" name="wiz-step" id="wiz-s6" />
+
+				<!-- ── Sport radios ──────────────────────────────────────── -->
+				<input type="radio" name="sport" id="sport-bb" />
+				<input type="radio" name="sport" id="sport-sb" />
+
+				<!-- ── Division radios ───────────────────────────────────── -->
+				<!-- BB only: T-Ball, Kindy/Coach Pitch                       -->
+				<!-- Shared: A, AA, AAA, Juniors, Seniors                     -->
+				<input type="radio" name="division" id="div-tb" />
+				<input type="radio" name="division" id="div-kcp" />
+				<input type="radio" name="division" id="div-a" />
+				<input type="radio" name="division" id="div-aa" />
+				<input type="radio" name="division" id="div-aaa" />
+				<input type="radio" name="division" id="div-juniors" />
+				<input type="radio" name="division" id="div-seniors" />
+
+				<!-- ── Shirt size radios ─────────────────────────────────── -->
+				<input type="radio" name="shirt-sz" id="shirt-ys" />
+				<input type="radio" name="shirt-sz" id="shirt-ym" />
+				<input type="radio" name="shirt-sz" id="shirt-yl" />
+				<input type="radio" name="shirt-sz" id="shirt-as" />
+				<input type="radio" name="shirt-sz" id="shirt-am" />
+				<input type="radio" name="shirt-sz" id="shirt-al" />
+				<input type="radio" name="shirt-sz" id="shirt-axl" />
+
+				<!-- ── Hat size radios ───────────────────────────────────── -->
+				<input type="radio" name="hat-sz" id="hat-adj" />
+				<input type="radio" name="hat-sz" id="hat-sm" />
+				<input type="radio" name="hat-sz" id="hat-lxl" />
+
+				<!-- ── Hoodie size radios ────────────────────────────────── -->
+				<input type="radio" name="hoodie-sz" id="hoodie-ys" />
+				<input type="radio" name="hoodie-sz" id="hoodie-ym" />
+				<input type="radio" name="hoodie-sz" id="hoodie-yl" />
+				<input type="radio" name="hoodie-sz" id="hoodie-as" />
+				<input type="radio" name="hoodie-sz" id="hoodie-am" />
+				<input type="radio" name="hoodie-sz" id="hoodie-al" />
+				<input type="radio" name="hoodie-sz" id="hoodie-axl" />
+
+				<!-- ── Wizard body ───────────────────────────────────────── -->
+				<div class="wiz-body">
+
+					<!-- ─ Intro ─────────────────────────────────────────── -->
+					<section class="wiz-panel wiz-panel--intro" aria-label="Uniform selector intro">
+						<h2 class="wiz-title">NCLL Uniform Selector</h2>
+						<p class="wiz-intro-text">Placeholder text above the image — describe what this tool does and how it helps families choose the right uniform sizes before registering.</p>
+						<img
+							class="wiz-intro-img"
+							src="https://ncllball.github.io/images/uniforms/uniform-intro.png"
+							alt="NCLL uniform"
+						/>
+						<p class="wiz-intro-text">Placeholder text below the image — add any additional context, tips, or instructions here before the user starts the walkthrough.</p>
+						<div class="wiz-nav">
+							<label class="wiz-btn wiz-btn--next" for="wiz-s0">Get Started &rarr;</label>
+						</div>
+					</section>
+
+					<!-- ─ Step 0: Sport ──────────────────────────────────── -->
+					<section class="wiz-panel wiz-panel--sport" aria-label="Step 1: Choose your sport">
+						<div class="wiz-progress" aria-hidden="true">
+							<span class="wiz-progress__step wiz-progress__step--active">1</span>
+							<span class="wiz-progress__step">2</span>
+							<span class="wiz-progress__step">3</span>
+							<span class="wiz-progress__step">4</span>
+							<span class="wiz-progress__step">5</span>
+							<span class="wiz-progress__step">6</span>
+							<span class="wiz-progress__step">&#10003;</span>
+						</div>
+						<h2 class="wiz-title">First &mdash; Choose your sport</h2>
+						<p class="wiz-subtitle">Are you registering for baseball or softball?</p>
+						<div class="wiz-options wiz-options--sport">
+							<label class="wiz-opt wiz-opt--sport" for="sport-bb">
+								<img
+									src="https://ncllball.github.io/images/site_navigation/baseball.png"
+									alt=""
+								/>
+								Baseball
+							</label>
+							<label class="wiz-opt wiz-opt--sport" for="sport-sb">
+								<img
+									src="https://ncllball.github.io/images/site_navigation/softball.png"
+									alt=""
+								/>
+								Softball
+							</label>
+						</div>
+						<div class="wiz-nav">
+							<label class="wiz-btn wiz-btn--next" for="wiz-s1">Next: Division &rarr;</label>
+						</div>
+					</section>
+
+					<!-- ─ Step 1: Division ───────────────────────────────── -->
+					<section class="wiz-panel wiz-panel--division" aria-label="Step 2: Choose your division">
+						<div class="wiz-progress" aria-hidden="true">
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--active">2</span>
+							<span class="wiz-progress__step">3</span>
+							<span class="wiz-progress__step">4</span>
+							<span class="wiz-progress__step">5</span>
+							<span class="wiz-progress__step">6</span>
+							<span class="wiz-progress__step">&#10003;</span>
+						</div>
+						<h2 class="wiz-title">Step 2 &mdash; Division</h2>
+						<p class="wiz-subtitle">Which division is your player in?</p>
+
+						<!-- Baseball divisions (TB + KCP + A through Seniors) -->
+						<div class="div-options--bb">
+							<label class="wiz-opt" for="div-tb">T-Ball</label>
+							<label class="wiz-opt" for="div-kcp">Kindy&nbsp;/ Coach&nbsp;Pitch</label>
+							<label class="wiz-opt" for="div-a">A</label>
+							<label class="wiz-opt" for="div-aa">AA</label>
+							<label class="wiz-opt" for="div-aaa">AAA</label>
+							<label class="wiz-opt" for="div-juniors">Juniors</label>
+							<label class="wiz-opt" for="div-seniors">Seniors</label>
+						</div>
+
+						<!-- Softball divisions (A through Seniors) -->
+						<div class="div-options--sb">
+							<label class="wiz-opt" for="div-a">A</label>
+							<label class="wiz-opt" for="div-aa">AA</label>
+							<label class="wiz-opt" for="div-aaa">AAA</label>
+							<label class="wiz-opt" for="div-juniors">Juniors</label>
+							<label class="wiz-opt" for="div-seniors">Seniors</label>
+						</div>
+
+						<div class="wiz-nav">
+							<label class="wiz-btn wiz-btn--back" for="wiz-s0">&larr; Back</label>
+							<label class="wiz-btn wiz-btn--next" for="wiz-s2">Next: Shirt &rarr;</label>
+						</div>
+					</section>
+
+					<!-- ─ Step 2: Shirt ──────────────────────────────────── -->
+					<section class="wiz-panel wiz-panel--shirt" aria-label="Step 3: Shirt size">
+						<div class="wiz-progress" aria-hidden="true">
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--active">3</span>
+							<span class="wiz-progress__step">4</span>
+							<span class="wiz-progress__step">5</span>
+							<span class="wiz-progress__step">6</span>
+							<span class="wiz-progress__step">&#10003;</span>
+						</div>
+						<h2 class="wiz-title">Step 3 &mdash; Shirt</h2>
+						<p class="wiz-subtitle">Choose a shirt size for your player.</p>
+
+						<!-- YST350 front/back reference: only shown for T-Ball or KCP -->
+						<div class="div-product-preview">
+							<figure class="div-product-preview__item">
+								<img
+									src="https://ncllball.github.io/images/uniforms/hats/YST350_FRONT_FINAL.png"
+									alt="YST350 Youth Performance Tee — front"
+								/>
+								<figcaption>YST350 Youth Tee &mdash; Front</figcaption>
+							</figure>
+							<figure class="div-product-preview__item">
+								<img
+									src="https://ncllball.github.io/images/uniforms/hats/YST350_BACK_FINAL.png"
+									alt="YST350 Youth Performance Tee — back"
+								/>
+								<figcaption>YST350 Youth Tee &mdash; Back</figcaption>
+							</figure>
+						</div>
+
+						<div class="wiz-shirt-blurb">
+							<p>Players head into the season with the Youth performance tee <strong>YST350</strong>, the adjustable cap <strong>4301</strong>, and a league-supplied sock-and-belt kit so their whole look is ready from day one.</p>
+							<p>If you&rsquo;re coaching this season, you&rsquo;ll wear the Adult performance top <strong>ST350</strong> and that same dependable cap <strong>4301</strong>. Browse the panels for pit-to-pit tips and head-circumference checks before you send sizes.</p>
+						</div>
+
+						<div class="wiz-sizing">
+							<img
+								class="wiz-sizing__diagram"
+								src="https://ncllball.github.io/images/uniforms/hats/template.png"
+								alt="Pit-to-pit measurement diagram"
+							/>
+							<table class="wiz-sizing__table" aria-describedby="wiz-yst350-caption">
+								<caption id="wiz-yst350-caption" class="sr-only">
+									YST350 Youth shirt measurements: size, chest pit-to-pit, and body length at back in inches.
+								</caption>
+								<thead>
+									<tr>
+										<th scope="col"></th>
+										<th scope="col">YXS 4</th>
+										<th scope="col">YS 6/8</th>
+										<th scope="col">YM 10/12</th>
+										<th scope="col">YL 14/16</th>
+										<th scope="col">YXL 18/20</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">pit&ndash;pit</th>
+										<td>15.25"</td>
+										<td>16"</td>
+										<td>17"</td>
+										<td>18"</td>
+										<td>19.5"</td>
+									</tr>
+									<tr>
+										<th scope="row">back length</th>
+										<td>20"</td>
+										<td>21.5"</td>
+										<td>23"</td>
+										<td>25"</td>
+										<td>27"</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="wiz-options">
+							<label class="wiz-opt" for="shirt-ys">Youth Small</label>
+							<label class="wiz-opt" for="shirt-ym">Youth Medium</label>
+							<label class="wiz-opt" for="shirt-yl">Youth Large</label>
+							<label class="wiz-opt" for="shirt-as">Adult Small</label>
+							<label class="wiz-opt" for="shirt-am">Adult Medium</label>
+							<label class="wiz-opt" for="shirt-al">Adult Large</label>
+							<label class="wiz-opt" for="shirt-axl">Adult X-Large</label>
+						</div>
+						<div class="wiz-nav">
+							<label class="wiz-btn wiz-btn--back" for="wiz-s1">&larr; Back</label>
+							<label class="wiz-btn wiz-btn--next" for="wiz-s3">Next: Hat &rarr;</label>
+						</div>
+					</section>
+
+					<!-- ─ Step 3: Hat ────────────────────────────────────── -->
+					<section class="wiz-panel wiz-panel--hat" aria-label="Step 4: Hat size">
+						<div class="wiz-progress" aria-hidden="true">
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--active">4</span>
+							<span class="wiz-progress__step">5</span>
+							<span class="wiz-progress__step">6</span>
+							<span class="wiz-progress__step">&#10003;</span>
+						</div>
+						<h2 class="wiz-title">Step 4 &mdash; Hat</h2>
+						<p class="wiz-subtitle">Choose a hat size for your player.</p>
+
+						<!-- T-Ball & KCP: 4301 adjustable, youth only -->
+						<div class="hat-content--tball-kcp">
+							<div class="div-product-preview">
+								<figure class="div-product-preview__item">
+									<img
+										src="https://ncllball.github.io/images/uniforms/hats/4301_SCARLET.png"
+										alt="4301 adjustable cap"
+									/>
+									<figcaption>4301 Adjustable Cap</figcaption>
+								</figure>
+							</div>
+							<p class="wiz-hat-note">
+								Players get the <strong>4301</strong> adjustable cap — one size fits via hook-and-loop strap.
+								Youth fit covers head circumferences <strong>6&frac38;&Prime;&ndash;7&frac14;&Prime;</strong>.
+							</p>
+							<div class="wiz-options">
+								<label class="wiz-opt" for="hat-adj">Youth&nbsp;/ Adjustable</label>
+							</div>
+						</div>
+
+						<!-- All other divisions -->
+						<div class="hat-content--other">
+							<div class="wiz-options">
+								<label class="wiz-opt" for="hat-adj">Youth&nbsp;/ Adjustable</label>
+								<label class="wiz-opt" for="hat-sm">Adult S/M</label>
+								<label class="wiz-opt" for="hat-lxl">Adult L/XL</label>
+							</div>
+						</div>
+						<div class="wiz-nav">
+							<label class="wiz-btn wiz-btn--back" for="wiz-s2">&larr; Back</label>
+							<!-- T-Ball & KCP: skip hoodie, go to socks & belt -->
+							<label class="wiz-btn wiz-btn--next hat-next--skip-hoodie" for="wiz-s5">Next: Socks &amp; Belt &rarr;</label>
+							<!-- All other divisions: proceed to hoodie -->
+							<label class="wiz-btn wiz-btn--next hat-next--to-hoodie" for="wiz-s4">Next: Hoodie &rarr;</label>
+						</div>
+					</section>
+
+					<!-- ─ Step 4: Hoodie ─────────────────────────────────── -->
+					<section class="wiz-panel wiz-panel--hoodie" aria-label="Step 5: Hoodie size">
+						<div class="wiz-progress" aria-hidden="true">
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--active">5</span>
+							<span class="wiz-progress__step">6</span>
+							<span class="wiz-progress__step">&#10003;</span>
+						</div>
+						<h2 class="wiz-title">Step 5 &mdash; Hoodie</h2>
+						<p class="wiz-subtitle">Choose a hoodie size for your player.</p>
+						<div class="wiz-options">
+							<label class="wiz-opt" for="hoodie-ys">Youth Small</label>
+							<label class="wiz-opt" for="hoodie-ym">Youth Medium</label>
+							<label class="wiz-opt" for="hoodie-yl">Youth Large</label>
+							<label class="wiz-opt" for="hoodie-as">Adult Small</label>
+							<label class="wiz-opt" for="hoodie-am">Adult Medium</label>
+							<label class="wiz-opt" for="hoodie-al">Adult Large</label>
+							<label class="wiz-opt" for="hoodie-axl">Adult X-Large</label>
+						</div>
+						<div class="wiz-nav">
+							<label class="wiz-btn wiz-btn--back" for="wiz-s3">&larr; Back</label>
+							<label class="wiz-btn wiz-btn--next" for="wiz-s5">Next: Socks &amp; Belt &rarr;</label>
+						</div>
+					</section>
+
+					<!-- ─ Step 5: Socks & Belt ───────────────────────────── -->
+					<section class="wiz-panel wiz-panel--socks" aria-label="Step 6: Socks and belt">
+						<div class="wiz-progress" aria-hidden="true">
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--active">6</span>
+							<span class="wiz-progress__step">&#10003;</span>
+						</div>
+						<h2 class="wiz-title">Socks &amp; Belt &mdash; Included!</h2>
+						<p class="wiz-subtitle">These items come with your registration — no size selection needed.</p>
+
+						<div class="wiz-socks-grid">
+							<p class="wiz-socks-grid__group-label">Royal</p>
+							<figure class="wiz-socks-grid__item">
+								<img src="https://ncllball.github.io/images/uniforms/socks-belts/sock_royal.png" alt="Sock — Royal" />
+								<figcaption>Sock</figcaption>
+							</figure>
+							<figure class="wiz-socks-grid__item">
+								<img src="https://ncllball.github.io/images/uniforms/socks-belts/belt_royal_front.png" alt="Belt — Royal, front" />
+								<figcaption>Belt — Front</figcaption>
+							</figure>
+							<figure class="wiz-socks-grid__item">
+								<img src="https://ncllball.github.io/images/uniforms/socks-belts/belt_royal_alt.png" alt="Belt — Royal, alt" />
+								<figcaption>Belt — Detail</figcaption>
+							</figure>
+
+							<p class="wiz-socks-grid__group-label">Red</p>
+							<figure class="wiz-socks-grid__item">
+								<img src="https://ncllball.github.io/images/uniforms/socks-belts/sock_red.png" alt="Sock — Red" />
+								<figcaption>Sock</figcaption>
+							</figure>
+							<figure class="wiz-socks-grid__item">
+								<img src="https://ncllball.github.io/images/uniforms/socks-belts/belt_red_front.png" alt="Belt — Red, front" />
+								<figcaption>Belt — Front</figcaption>
+							</figure>
+							<figure class="wiz-socks-grid__item">
+								<img src="https://ncllball.github.io/images/uniforms/socks-belts/belt_red_alt.png" alt="Belt — Red, alt" />
+								<figcaption>Belt — Detail</figcaption>
+							</figure>
+
+							<p class="wiz-socks-grid__group-label">Navy</p>
+							<figure class="wiz-socks-grid__item">
+								<img src="https://ncllball.github.io/images/uniforms/socks-belts/sock_navy.png" alt="Sock — Navy" />
+								<figcaption>Sock</figcaption>
+							</figure>
+							<figure class="wiz-socks-grid__item">
+								<img src="https://ncllball.github.io/images/uniforms/socks-belts/belt_navy_front.png" alt="Belt — Navy, front" />
+								<figcaption>Belt — Front</figcaption>
+							</figure>
+							<figure class="wiz-socks-grid__item">
+								<img src="https://ncllball.github.io/images/uniforms/socks-belts/belt_navy_alt.png" alt="Belt — Navy, alt" />
+								<figcaption>Belt — Detail</figcaption>
+							</figure>
+
+							<p class="wiz-socks-grid__group-label">Purple</p>
+							<figure class="wiz-socks-grid__item">
+								<img src="https://ncllball.github.io/images/uniforms/socks-belts/sock_purple.png" alt="Sock — Purple" />
+								<figcaption>Sock</figcaption>
+							</figure>
+						</div>
+
+						<div class="wiz-nav">
+							<!-- TB/KCP: back to hat -->
+							<label class="wiz-btn wiz-btn--back socks-back--hat" for="wiz-s3">&larr; Back</label>
+							<!-- Other divisions: back to hoodie -->
+							<label class="wiz-btn wiz-btn--back socks-back--hoodie" for="wiz-s4">&larr; Back</label>
+							<label class="wiz-btn wiz-btn--next" for="wiz-s6">See My Summary &rarr;</label>
+						</div>
+					</section>
+
+					<!-- ─ Step 6: Summary ────────────────────────────────── -->
+					<section class="wiz-panel wiz-panel--summary" aria-label="Uniform summary">
+						<div class="wiz-progress" aria-hidden="true">
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--done">&#10003;</span>
+							<span class="wiz-progress__step wiz-progress__step--active">&#10003;</span>
+						</div>
+						<h2 class="wiz-title">Your Uniform Summary</h2>
+						<p class="wiz-summary-intro">
+							Here's what to look for in the registration dropdown for each item:
+						</p>
+
+						<div class="wiz-reg-callout">
+							<strong>How to use this</strong>
+							During registration, find the uniform section and match each item below
+							to the corresponding dropdown. Select the value shown.
+						</div>
+
+						<dl class="wiz-summary">
+							<div class="wiz-summary__row">
+								<dt class="wiz-summary__label">Sport</dt>
+								<dd class="wiz-summary__value">
+									<span class="sval sval--none sval--sport-none">— not selected</span>
+									<span class="sval sval--sport-bb">Baseball</span>
+									<span class="sval sval--sport-sb">Softball</span>
+								</dd>
+							</div>
+							<div class="wiz-summary__row">
+								<dt class="wiz-summary__label">Division</dt>
+								<dd class="wiz-summary__value">
+									<span class="sval sval--none sval--div-none">— not selected</span>
+									<span class="sval sval--div-tb">T-Ball</span>
+									<span class="sval sval--div-kcp">Kindy / Coach Pitch</span>
+									<span class="sval sval--div-a">A</span>
+									<span class="sval sval--div-aa">AA</span>
+									<span class="sval sval--div-aaa">AAA</span>
+									<span class="sval sval--div-juniors">Juniors</span>
+									<span class="sval sval--div-seniors">Seniors</span>
+								</dd>
+							</div>
+							<div class="wiz-summary__row">
+								<dt class="wiz-summary__label">Shirt</dt>
+								<dd class="wiz-summary__value">
+									<span class="sval sval--none sval--shirt-none">— not selected</span>
+									<span class="sval sval--shirt-ys">Youth Small (YS)</span>
+									<span class="sval sval--shirt-ym">Youth Medium (YM)</span>
+									<span class="sval sval--shirt-yl">Youth Large (YL)</span>
+									<span class="sval sval--shirt-as">Adult Small (S)</span>
+									<span class="sval sval--shirt-am">Adult Medium (M)</span>
+									<span class="sval sval--shirt-al">Adult Large (L)</span>
+									<span class="sval sval--shirt-axl">Adult X-Large (XL)</span>
+								</dd>
+							</div>
+							<div class="wiz-summary__row">
+								<dt class="wiz-summary__label">Hat</dt>
+								<dd class="wiz-summary__value">
+									<span class="sval sval--none sval--hat-none">— not selected</span>
+									<span class="sval sval--hat-adj">Youth / Adjustable</span>
+									<span class="sval sval--hat-sm">Adult S/M</span>
+									<span class="sval sval--hat-lxl">Adult L/XL</span>
+								</dd>
+							</div>
+							<div class="wiz-summary__row wiz-summary__row--hoodie">
+								<dt class="wiz-summary__label">Hoodie</dt>
+								<dd class="wiz-summary__value">
+									<span class="sval sval--none sval--hoodie-none">— not selected</span>
+									<span class="sval sval--hoodie-ys">Youth Small (YS)</span>
+									<span class="sval sval--hoodie-ym">Youth Medium (YM)</span>
+									<span class="sval sval--hoodie-yl">Youth Large (YL)</span>
+									<span class="sval sval--hoodie-as">Adult Small (S)</span>
+									<span class="sval sval--hoodie-am">Adult Medium (M)</span>
+									<span class="sval sval--hoodie-al">Adult Large (L)</span>
+									<span class="sval sval--hoodie-axl">Adult X-Large (XL)</span>
+								</dd>
+							</div>
+						</dl>
+
+						<div class="wiz-nav">
+							<label class="wiz-btn wiz-btn--back" for="wiz-s5">&larr; Back</label>
+						</div>
+					</section>
+
+				</div><!-- /.wiz-body -->
+			</div><!-- /.unif-wizard -->
+
+		</main>
+	</body>
+</html>
