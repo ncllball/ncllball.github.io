@@ -4,7 +4,7 @@
 
 Welcome to the Ground Gremlins Space — real-time coordination for anyone keeping Lower Woodland fields 3, 4, 5, and 6 alive through the Seattle spring.
 
-**👉 [Join the NCLL LW Ground Gremlins Platoon to join the team!](https://chat.google.com/room/AAQAHA6KIpE?cls=7)**
+**👉 [Join the NCLL LW Ground Gremlins to join the team!](https://chat.google.com/room/AAQAHA6KIpE?cls=7)**
 
 ## How to Join the Space
 
@@ -18,7 +18,7 @@ Welcome to the Ground Gremlins Space — real-time coordination for anyone keepi
 
 ---
 
-## What Is the Ground Gremlins Platoon?
+## What Is the Ground Gremlins?
 
 | | |
 | --- | --- |
@@ -32,7 +32,6 @@ This Space is where we share Friday field condition reports, coordinate work par
 
 Once you're in, here's everything you need to know about keeping these fields playable.
 
----
 
 ---
 
