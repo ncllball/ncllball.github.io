@@ -16,7 +16,7 @@ Some Juniors families selected **"Adult adjustable strap"** for hat size during 
 
 The image below is exactly what was presented to families during registration — the instructions were clear, and parents checked a box confirming they had read them. Those who selected "Adult adjustable strap" did not follow the instructions they agreed to.
 
-![Registration hat size instructions as shown to parents](uniforms-juniors-hat-size.png)
+![Registration hat size instructions as shown to parents](https://ncllball.github.io/images/uniforms-juniors-hat-size.png)
 
 👉 [NCLL Uniforms Page](https://www.ncllball.com/Default.aspx?tabid=2113971)
 
