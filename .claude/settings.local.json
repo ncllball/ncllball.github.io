@@ -130,7 +130,8 @@
       "WebFetch(domain:www.instagram.com)",
       "WebFetch(domain:www.yelp.com)",
       "Bash(magick --version)",
-      "Bash(convert --version)"
+      "Bash(convert --version)",
+      "Bash(awk 'NR>=2101 && NR<=3012' \"c:/Tools/ncllball.github.io/Resources/uniforms-hub-v2.html\")"
     ]
   }
 }
