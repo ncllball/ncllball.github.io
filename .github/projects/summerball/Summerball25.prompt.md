@@ -5,6 +5,8 @@ mode: ask
 
 I am the registrar of a little league in Seattle named North Central Little League (NCLL). I am tasked with running our summer baseball and softball programs. I am responsible for creating balanced teams from a roster of divisions, players, and their registration data. Your goal is to generate initial team assignments that consider coach request, teammate request, school name, and League Age, to distribute kids as evenly as possible across divisions and teams; and assign coaches and volunteers.
 
+
+first, to get a feel for the program, lets look at the numbers from last year. what do you need from me to do that? 
 ## Divisions
 
 Here are the specific divisions. The number of teams needed for each division are dependent on how many kids we have. We try to keep it to around 13-16 players per team. Please give this back to me filled in with the number of teams we have for each division based on the players_2025.csv file. The divisions are as follows:

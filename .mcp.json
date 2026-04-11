@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "gdrive": {
+      "command": "cmd",
+      "args": ["/c", "C:\\Program Files\\nodejs\\npx.cmd", "-y", "@piotr-agier/google-drive-mcp"],
+      "env": {
+        "PATH": "C:\\Program Files\\nodejs;C:\\Windows\\system32;C:\\Windows",
+        "GOOGLE_DRIVE_OAUTH_CREDENTIALS": "C:\\Users\\regis\\.config\\google-drive-mcp\\gcp-oauth.keys.json"
+      }
+    },
+    "chrome-devtools": {
+      "command": "cmd",
+      "args": ["/c", "C:\\Program Files\\nodejs\\npx.cmd", "-y", "chrome-devtools-mcp@latest"],
+      "env": {
+        "PATH": "C:\\Program Files\\nodejs;C:\\Windows\\system32;C:\\Windows"
+      }
+    }
+  }
+}
