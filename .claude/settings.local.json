@@ -1,5 +1,6 @@
 {
   "permissions": {
+    "defaultMode": "bypassPermissions",
     "allow": [
       "Bash(curl:*)",
       "WebFetch(domain:www.cdbaseball.org)",
@@ -131,7 +132,11 @@
       "WebFetch(domain:www.yelp.com)",
       "Bash(magick --version)",
       "Bash(convert --version)",
-      "Bash(awk 'NR>=2101 && NR<=3012' \"c:/Tools/ncllball.github.io/Resources/uniforms-hub-v2.html\")"
+      "Bash(awk 'NR>=2101 && NR<=3012' \"c:/Tools/ncllball.github.io/Resources/uniforms-hub-v2.html\")",
+      "Bash(cmd /c \"C:\\\\Program Files\\\\nodejs\\\\npx.cmd\" -y chrome-devtools-mcp@latest --help)",
+      "Bash(\"C:\\\\Program Files\\\\nodejs\\\\npx.cmd\" -y chrome-devtools-mcp@latest)",
+      "Bash(kill %1)",
+      "mcp__chrome-devtools__list_pages"
     ]
   }
 }
