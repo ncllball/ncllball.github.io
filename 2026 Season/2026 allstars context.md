@@ -66,7 +66,7 @@ If a team wins the district tournament they qualify for the State Tournament:
 12’s BB - 7/18-7/26 Walla Walla
 12’s SB - 7/5 start Olympia/Centralia area 
 The State Tournament for 8-9-10 and 9-10-11 is the final tournament for All-Stars.
-The Washington State champion of the 12U Little League All Star Tournament qualifies for Regionals in San Bernardino, CA. The Northwest Regional Champion qualifies for the Little League World Series in Williamsport, PA.
+The Washington State champions of the Majors (12's) and Juniors Little League All Star Tournaments qualify for Regionals in San Bernardino, CA. The Northwest Regional Champion qualifies for the Little League World Series in Williamsport, PA.
 Support
 We will need families and players to support the All-Star teams! We will host a fundraiser and expect participation from players and families. Parents can help make the team a fun experience by helping to plan for social activities, car decorating parties, etc. Some of our teams will also help staff All-Star games by running the scoreboard, selling raffle tickets, and providing refreshments for our tireless umpires. Please be ready to help out!
 If you have any questions, please email Cole Parsons (baseball@ncllball.com)
@@ -90,7 +90,7 @@ July 11	District 8 All Star SB Tournament Begins - 10’s
 I wish to be considered as a candidate to participate on a North Central Little League All-Stars Tournament Team.  I understand that I will be considered for a team based on my league age.
 In making this request, I understand that my responsibilities are set forth below and that I have read and agree I will comply with each of the responsibilities.  I also understand that more players apply for All-Stars than there are available spots, so my application is no guarantee I will be selected.
 If I am selected, I promise to support my team by playing to my best ability at all times. I understand that All-Stars is a competitive environment and my role may be different than it was in the regular season. I will support my teammates regardless of whether I am on the field or in the dugout. I will treat my coaches, opponents, and umpires with the utmost respect.
-I have no scheduled vacations, other sports, camps, or any other commitments that will interfere with my attendance at most practices and ALL games.  I am available for most practices and all games for the period of June 1 through July 19 or beyond if my team goes to State tournaments.  Only Majors & Juniors Tournaments will go to Regionals.  All-Stars Tournaments are double elimination.  The commitment ends when the team has lost two games.  The team who wins District 8 goes on to State. In 2026, only Winners of Washington State Majors will go on to play in Regional and World Series tournaments. 
+I have no scheduled vacations, other sports, camps, or any other commitments that will interfere with my attendance at most practices and ALL games.  I am available for most practices and all games for the period of June 1 through July 19 or beyond if my team goes to State tournaments.  Only Majors & Juniors Tournaments will go to Regionals.  All-Stars Tournaments are double elimination.  The commitment ends when the team has lost two games.  The team who wins District 8 goes on to State. In 2026, only Winners of Washington State Majors and Juniors will go on to play in Regional and World Series tournaments. 
 
 
 Player Name: _______________________________  Parent/ Guardian _________________________________
@@ -110,17 +110,17 @@ Player Signature    								Date
 
 FASTPITCH SOFTBALL
 10/11/12 Majors Softball 
-a.k.a. 12S
+a.k.a. 12's
 All Majors players
 
 Juniors Softball
 13 and 14 year-olds. 
 9/10/11 Minor Softball 
-a.k.a. 11S
+a.k.a. 11's
 Team composition will be based 
 on the age of the applicants
 8/9/10 Minor Softball
-a.k.a. 10S
+a.k.a. 10's
 Team composition will be based 
 on the age of the applicants
 
@@ -128,13 +128,13 @@ on the age of the applicants
 
 60’ BASEBALL 
 10/11/12 Majors Baseball
-a.k.a. 12U
+a.k.a. 12's
 11 and 12-year-old Majors division players
 9/10/11 Baseball
-a.k.a. 11U
+a.k.a. 11's
 10 and 11-year-olds playing AAA or Majors
 8/9/10 Baseball
-a.k.a. 10U
+a.k.a. 10's
 10-year-old players and 8 & 9-year-old players
 
 
@@ -191,7 +191,7 @@ Parent/Guardian Signature    						           Date
 
 IMPORTANT INFORMATION FOR PARENTS
 All-Stars teams play in district tournaments against other Little Leagues in the same age division. It is a lot of fun, players get as much, if not more, baseball instruction as they did in the regular season, and there is no additional registration fee required for your child to participate.
-With exceptions for players participating in high school baseball and those with approved Medical Waivers, players must have played at least 60% of the season on a regular North Central Little League team in order to play All-Stars. Players must meet all eligibility criteria established by Little League Baseball.  NCLL is required to confirm eligibility by obtaining residence eligibility and proof of age documentation from each player.  It is absolutely critical that NCLL receives this from each player or the team could be disqualified. 
+With exceptions for players participating in high school baseball and those with approved Medical Waivers, players must have played at least 60% of the season on a regular North Central Little League team in order to play All-Stars. High school softball players have no minimum play requirement for Seniors All-Stars. Players must meet all eligibility criteria established by Little League Baseball.  NCLL is required to confirm eligibility by obtaining residence eligibility and proof of age documentation from each player.  It is absolutely critical that NCLL receives this from each player or the team could be disqualified. 
 
 NCLL is allowed only one All-Stars team in each of the divisions that tournaments are offered.  Our league’s priority is to put a competitive team on the field in each division. Since there are normally more applicants than spots, it may be necessary to cut some players.
 The commitment for All-Stars is more intense than the regular season. Depending on how well each team does, it could go until late July, or early August if they win District and advance to the state tournament and beyond. The players will be required to be at most practices and ALL games. Normally teams practice or scrimmage 4-6 days a week with up to 2 warm-up tournaments before the district tournament starts.

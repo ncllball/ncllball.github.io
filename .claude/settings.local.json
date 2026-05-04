@@ -139,7 +139,10 @@
       "PowerShell(Get-ChildItem -Path \"c:\\\\NCLL\\\\ncllball.github.io\" -Force | Format-Table Name, @{Name=\"Type\";Expression={if\\($_.PSIsContainer\\){\"Dir\"}else{\"File\"}}} -AutoSize)",
       "PowerShell(Get-ChildItem -Path \"c:\\\\NCLL\\\\ncllball.github.io\\\\.github\" -Force -Recurse | Where-Object {$_.Extension -eq '.yml' -or $_.Extension -eq '.yaml' -or $_.PSIsContainer} | Select-Object FullName)",
       "Bash(grep -E '\\\\.\\(json|yml|yaml|md\\)$')",
-      "Bash(git -C \"c:\\\\NCLL\\\\ncllball.github.io\" log --oneline -20)"
+      "Bash(git -C \"c:\\\\NCLL\\\\ncllball.github.io\" log --oneline -20)",
+      "PowerShell(Get-ChildItem \"$env:USERPROFILE\\\\Downloads\\\\\" | Sort-Object LastWriteTime -Descending | Select-Object -First 15 | Select-Object Name, LastWriteTime)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\regis\\\\OneDrive\\\\Downloads\\\\\" | Where-Object { $_.Name -match \"pdf|allstar|application\" } | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime)",
+      "PowerShell(Test-Path \"C:\\\\Users\\\\regis\\\\OneDrive\\\\Downloads\" ; \\(Get-ChildItem \"C:\\\\Users\\\\regis\\\\OneDrive\\\\Downloads\"\\).Count)"
     ],
     "defaultMode": "bypassPermissions"
   }
