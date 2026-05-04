@@ -1,6 +1,5 @@
 {
   "permissions": {
-    "defaultMode": "bypassPermissions",
     "allow": [
       "Bash(curl:*)",
       "WebFetch(domain:www.cdbaseball.org)",
@@ -136,7 +135,12 @@
       "Bash(cmd /c \"C:\\\\Program Files\\\\nodejs\\\\npx.cmd\" -y chrome-devtools-mcp@latest --help)",
       "Bash(\"C:\\\\Program Files\\\\nodejs\\\\npx.cmd\" -y chrome-devtools-mcp@latest)",
       "Bash(kill %1)",
-      "mcp__chrome-devtools__list_pages"
-    ]
+      "mcp__chrome-devtools__list_pages",
+      "PowerShell(Get-ChildItem -Path \"c:\\\\NCLL\\\\ncllball.github.io\" -Force | Format-Table Name, @{Name=\"Type\";Expression={if\\($_.PSIsContainer\\){\"Dir\"}else{\"File\"}}} -AutoSize)",
+      "PowerShell(Get-ChildItem -Path \"c:\\\\NCLL\\\\ncllball.github.io\\\\.github\" -Force -Recurse | Where-Object {$_.Extension -eq '.yml' -or $_.Extension -eq '.yaml' -or $_.PSIsContainer} | Select-Object FullName)",
+      "Bash(grep -E '\\\\.\\(json|yml|yaml|md\\)$')",
+      "Bash(git -C \"c:\\\\NCLL\\\\ncllball.github.io\" log --oneline -20)"
+    ],
+    "defaultMode": "bypassPermissions"
   }
 }
