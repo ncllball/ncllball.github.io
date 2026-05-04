@@ -4774,7 +4774,7 @@ p.flush-bottom:last-child {
 
 .age-matrix--center-cols th,
 .age-matrix--center-cols td {
-	text-align: center;
+	text-align: center !important;
 }
 
 .age-matrix--eligibility th:nth-child(2),
