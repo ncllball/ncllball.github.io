@@ -32,6 +32,7 @@ Player availability for the majority of All-Star practices, scrimmages, and warm
 Baseball dates:
 12’s: July 3-12
 11’s: June 27-July 5 
+Intermediates 50/70: June 23-27 (District), State July 4+ in Pasco [Pending]
 10’s: July 3-12 
 Softball dates:
 12s: June 18-25
