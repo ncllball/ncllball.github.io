@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NCLL Color Palette</title>
+	<link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
+	<style>
+		body { font-family: sans-serif; padding: 2rem; background: #f5f5f5; }
+		h1 { color: var(--color_blue); margin-bottom: 2rem; }
+		.swatches { display: flex; flex-wrap: wrap; gap: 1rem; }
+		.swatch { width: 160px; border-radius: 6px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.15); }
+		.swatch__color { height: 80px; }
+		.swatch__label { background: #fff; padding: 8px 10px; font-size: 0.8rem; }
+		.swatch__name { font-weight: bold; color: #333; }
+		.swatch__hex { color: #666; font-family: monospace; }
+		h2 { color: var(--color_blue); margin: 2rem 0 1rem; font-size: 1rem; text-transform: uppercase; letter-spacing: .05em; }
+	</style>
+</head>
+<body>
+	<h1>NCLL Color Palette</h1>
+
+	<h2>Brand</h2>
+	<div class="swatches">
+		<div class="swatch">
+			<div class="swatch__color" style="background:#cd163f"></div>
+			<div class="swatch__label"><div class="swatch__name">Red</div><div class="swatch__hex">--color_red · #cd163f</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#00013a"></div>
+			<div class="swatch__label"><div class="swatch__name">Blue</div><div class="swatch__hex">--color_blue · #00013a</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#019cde"></div>
+			<div class="swatch__label"><div class="swatch__name">Rich Blue</div><div class="swatch__hex">--color_richblue · #019cde</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#e2ddca"></div>
+			<div class="swatch__label"><div class="swatch__name">Tan</div><div class="swatch__hex">--color_tan · #e2ddca</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#ff6900"></div>
+			<div class="swatch__label"><div class="swatch__name">Orange</div><div class="swatch__hex">--color_orange · #ff6900</div></div>
+		</div>
+	</div>
+
+	<h2>Text &amp; Links</h2>
+	<div class="swatches">
+		<div class="swatch">
+			<div class="swatch__color" style="background:#333333"></div>
+			<div class="swatch__label"><div class="swatch__name">Text</div><div class="swatch__hex">--color_text · #333333</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#555555"></div>
+			<div class="swatch__label"><div class="swatch__name">Muted</div><div class="swatch__hex">--color_muted · #555555</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#888888"></div>
+			<div class="swatch__label"><div class="swatch__name">Subtle</div><div class="swatch__hex">--color_subtle · #888888</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#0066cc"></div>
+			<div class="swatch__label"><div class="swatch__name">Link</div><div class="swatch__hex">--color_link · #0066cc</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#1976d2"></div>
+			<div class="swatch__label"><div class="swatch__name">Info</div><div class="swatch__hex">--color_info · #1976d2</div></div>
+		</div>
+	</div>
+
+	<h2>Surfaces &amp; Borders</h2>
+	<div class="swatches">
+		<div class="swatch">
+			<div class="swatch__color" style="background:#fafafa; border:1px solid #eee"></div>
+			<div class="swatch__label"><div class="swatch__name">Surface Light</div><div class="swatch__hex">--color_surface_light · #fafafa</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#f0f0f0; border:1px solid #eee"></div>
+			<div class="swatch__label"><div class="swatch__name">Button</div><div class="swatch__hex">--color_button · #f0f0f0</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#cccccc"></div>
+			<div class="swatch__label"><div class="swatch__name">Border</div><div class="swatch__hex">--color_border · #cccccc</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#dddddd"></div>
+			<div class="swatch__label"><div class="swatch__name">Border Light</div><div class="swatch__hex">--color_border_light · #dddddd</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:gainsboro"></div>
+			<div class="swatch__label"><div class="swatch__name">Light Gray</div><div class="swatch__hex">--color_lightgray · gainsboro</div></div>
+		</div>
+	</div>
+
+	<h2>Status</h2>
+	<div class="swatches">
+		<div class="swatch">
+			<div class="swatch__color" style="background:#2ecc40"></div>
+			<div class="swatch__label"><div class="swatch__name">Green</div><div class="swatch__hex">--color_green · #2ecc40</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#f2e427"></div>
+			<div class="swatch__label"><div class="swatch__name">Warning</div><div class="swatch__hex">--color_warning · #f2e427</div></div>
+		</div>
+	</div>
+</body>
+</html>
