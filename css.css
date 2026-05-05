@@ -753,6 +753,10 @@ LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{dis
     clear: right;
 }
 
+/* No-intro variant: h2 sits level with aside, stripe flush at top, no overlap */
+.hub-intro__aside--no-intro ~ h2.left { clear: none; display: flow-root; }
+.hub-intro__aside--no-intro ~ h2.left::before { margin-top: 0; }
+
 /* (0) Design tokens */
 :root {
     --color_red: #cd163f;
