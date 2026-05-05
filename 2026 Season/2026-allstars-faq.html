@@ -9,6 +9,11 @@
 	<title>2026 All-Stars FAQ | NCLL</title>
 	<link href="https://www.ncllball.com/Default.aspx?tabid=2249900" rel="canonical" />
 	<meta property="og:url" content="https://www.ncllball.com/Default.aspx?tabid=2249900" />
+	<style>
+		/* Align h2 with aside top: cancel clear, BFC prevents overlap, stripe flush at top */
+		#faq > h2.left { clear: none; display: flow-root; }
+		#faq > h2.left::before { margin-top: 0; }
+	</style>
 </head>
 <body>
 	<main class="content-pad" id="content" role="main">
@@ -25,7 +30,7 @@
 				</ul>
 			</aside>
 
-			<h2 class="left" style="margin-top: 0">Frequently Asked Questions (FAQs)</h2>
+			<h2 class="left">Frequently Asked Questions (FAQs)</h2>
 
 			<h4 class="left">Q: I've seen the Little League World Series on TV &mdash; is that what my child could be playing in?</h4>
 			<p>A: Yes! The tournament you see every August on ESPN is the Little League Baseball World Series in
