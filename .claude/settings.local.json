@@ -143,7 +143,8 @@
       "PowerShell(Get-ChildItem \"$env:USERPROFILE\\\\Downloads\\\\\" | Sort-Object LastWriteTime -Descending | Select-Object -First 15 | Select-Object Name, LastWriteTime)",
       "PowerShell(Get-ChildItem \"C:\\\\Users\\\\regis\\\\OneDrive\\\\Downloads\\\\\" | Where-Object { $_.Name -match \"pdf|allstar|application\" } | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime)",
       "PowerShell(Test-Path \"C:\\\\Users\\\\regis\\\\OneDrive\\\\Downloads\" ; \\(Get-ChildItem \"C:\\\\Users\\\\regis\\\\OneDrive\\\\Downloads\"\\).Count)",
-      "Bash(Copy-Item \"C:\\\\Users\\\\regis\\\\OneDrive\\\\Downloads\\\\2026.all-stars.application.BB.SB.pdf\" \"C:\\\\NCLL\\\\ncllball.github.io\\\\docs\\\\2026.all-stars.application.BB.SB.pdf\" -Force)"
+      "Bash(Copy-Item \"C:\\\\Users\\\\regis\\\\OneDrive\\\\Downloads\\\\2026.all-stars.application.BB.SB.pdf\" \"C:\\\\NCLL\\\\ncllball.github.io\\\\docs\\\\2026.all-stars.application.BB.SB.pdf\" -Force)",
+      "Bash(git push *)"
     ],
     "defaultMode": "bypassPermissions"
   }
