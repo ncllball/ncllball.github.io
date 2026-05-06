@@ -5271,4 +5271,69 @@ p:has(+ .callout) {
     left: -10px;
 }
 
+/* ===== allstars-hub: year accordion ===== */
+details.allstars-year {
+    margin: 20px 0 40px;
+}
+
+details.allstars-year > summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 12px 16px;
+    background: var(--color_blue);
+    color: #fff;
+    border-radius: 6px;
+    border-top: 4px solid var(--color_red);
+    font-family: var(--font_heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: background 200ms ease;
+}
+
+details.allstars-year > summary::-webkit-details-marker {
+    display: none;
+}
+
+details.allstars-year > summary:hover {
+    background: #1a2b5c;
+}
+
+details.allstars-year > summary:focus-visible {
+    outline: 2px solid var(--color_red);
+    outline-offset: 2px;
+}
+
+details.allstars-year > summary::after {
+    content: "▶";
+    font-size: 0.7rem;
+    opacity: 0.8;
+    flex-shrink: 0;
+    transition: transform 220ms ease;
+}
+
+details.allstars-year[open] > summary {
+    border-radius: 6px 6px 0 0;
+}
+
+details.allstars-year[open] > summary::after {
+    transform: rotate(90deg);
+}
+
+.allstars-year__count {
+    font-size: 0.8rem;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-left: auto;
+    margin-right: 0.5rem;
+}
+
+details.allstars-year > .program-grid {
+    margin-top: 20px;
+}
+
 .sponsors-landing .ncll-card { min-width: 340px; height: 320px; }
