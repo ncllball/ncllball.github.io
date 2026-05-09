@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
+	<link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Footnote Patterns — NCLL Demo</title>
+	<style>
+		.demo-section {
+			border: 2px dashed #ccc;
+			border-radius: 6px;
+			padding: 24px 24px 0;
+			margin-bottom: 40px;
+		}
+		.demo-label {
+			display: inline-block;
+			background: #1a2550;
+			color: #fff;
+			font-size: 0.75rem;
+			font-weight: bold;
+			letter-spacing: 0.05em;
+			padding: 3px 10px;
+			border-radius: 3px;
+			margin-bottom: 16px;
+			font-family: sans-serif;
+		}
+		.demo-label span {
+			font-weight: normal;
+			opacity: 0.75;
+			margin-left: 6px;
+		}
+	</style>
+</head>
+
+<body>
+	<main class="content-pad" id="content" role="main">
+
+		<h1 class="left" style="margin-bottom: 4px;">Footnote &amp; Note Patterns</h1>
+		<p style="color: var(--color_muted); margin-bottom: 40px;">Demo page — all 4 patterns using the live site stylesheet. Not a CMS page.</p>
+
+		<!-- ─── Pattern 1 ─────────────────────────────────────────────── -->
+		<div class="demo-section">
+			<p class="demo-label">Pattern 1 <span>section.footies + sup.footie-ref — non-collapsible numbered refs (most common)</span></p>
+
+			<p>Use this pattern when you have 2–4 short notes following a list or table.</p>
+
+			<ul>
+				<li>Players must be league age 10–12 by August 31, 2026.<sup class="footie-ref">1</sup></li>
+				<li>Tryout attendance is required unless a medical waiver is on file.<sup class="footie-ref">2</sup></li>
+				<li>Travel costs are the responsibility of the family.<sup class="footie-ref">3</sup></li>
+			</ul>
+
+			<section class="footies">
+				<p><sup class="footie-ref">1</sup> League age is calculated per Little League's official birth-date chart.</p>
+				<p><sup class="footie-ref">2</sup> Waivers must be submitted to the Player Agent no later than 24 hours before tryouts.</p>
+				<p><sup class="footie-ref">3</sup> Financial Aid is available — see the <a class="ncll" href="#">Financial Aid page</a> for details.</p>
+			</section>
+		</div>
+
+		<!-- ─── Pattern 1 with red border ────────────────────────────── -->
+		<div class="demo-section">
+			<p class="demo-label">Pattern 1 variant <span>section.footies.footies_red — same but red top border</span></p>
+
+			<p>Add <code>.footies_red</code> to the <code>section</code> to use a red top border instead of light gray.</p>
+
+			<ul>
+				<li>All-Star selection follows Little League Rules and NCLL Local Rules.<sup class="footie-ref">1</sup></li>
+			</ul>
+
+			<section class="footies footies_red">
+				<p><sup class="footie-ref">1</sup> Selection is consensus-based and conducted to preserve confidentiality.</p>
+			</section>
+		</div>
+
+		<!-- ─── Pattern 2 ─────────────────────────────────────────────── -->
+		<div class="demo-section">
+			<p class="demo-label">Pattern 2 <span>details.footies — collapsible, good for long explanatory notes</span></p>
+
+			<p>Use when notes would clutter the page — reader can expand only if needed.</p>
+
+			<table class="age-matrix" style="width:100%; margin-bottom: 0;">
+				<thead>
+					<tr>
+						<th>Division</th>
+						<th>League Ages</th>
+						<th>Season</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-label="Division">Majors</td>
+						<td data-label="League Ages">10–12</td>
+						<td data-label="Season">Spring/Summer</td>
+					</tr>
+					<tr>
+						<td data-label="Division">AAA</td>
+						<td data-label="League Ages">9–11<sup class="footie-ref">1</sup></td>
+						<td data-label="Season">Spring only</td>
+					</tr>
+					<tr>
+						<td data-label="Division">Juniors</td>
+						<td data-label="League Ages">13–14</td>
+						<td data-label="Season">Spring/Summer</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<details class="footies footies_red" id="division-notes">
+				<summary>Division Notes</summary>
+				<p><sup class="footie-ref">1</sup><span class="footies-intro">AAA Placement</span> Players league age 9 may play AAA if evaluated ready by the Player Agent and manager. This is an exception, not the default.</p>
+				<p><sup class="footie-ref">2</sup><span class="footies-intro">Juniors Eligibility</span> A player who turns 15 before May 1 is not eligible for the Juniors division and must play Seniors.</p>
+			</details>
+		</div>
+
+		<!-- ─── Pattern 3 ─────────────────────────────────────────────── -->
+		<div class="demo-section">
+			<p class="demo-label">Pattern 3 <span>section.footies + .info-icon — single standalone notice, no numbered ref</span></p>
+
+			<p>Use for one-off notices not tied to a numbered reference in the content above.</p>
+
+			<p>Registration fees are listed below. Uniforms are included.</p>
+
+			<section class="footies">
+				<p>
+					<span class="info-icon" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+							<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+						</svg>
+					</span>
+					Scholarship assistance is available. Apply at the <a class="ncll" href="#">Financial Aid page</a> — no one is turned away for financial reasons.
+				</p>
+			</section>
+		</div>
+
+		<!-- ─── Pattern 4 ─────────────────────────────────────────────── -->
+		<div class="demo-section">
+			<p class="demo-label">Pattern 4 <span>p.note inside .pitching-ref — reference/table context only</span></p>
+
+			<p>Scoped to <code>.pitching-ref .note</code> in CSS. <strong>Do not use outside pitching-reference pages.</strong></p>
+
+			<div class="pitching-ref">
+				<table class="age-matrix" style="width:100%; margin-bottom: 4px;">
+					<thead>
+						<tr>
+							<th>League Age</th>
+							<th>Max Pitches/Day</th>
+							<th>Rest Required</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-label="League Age">7–8</td>
+							<td data-label="Max Pitches/Day">50</td>
+							<td data-label="Rest Required">See note *</td>
+						</tr>
+						<tr>
+							<td data-label="League Age">9–10</td>
+							<td data-label="Max Pitches/Day">75</td>
+							<td data-label="Rest Required">See note *</td>
+						</tr>
+						<tr>
+							<td data-label="League Age">11–12</td>
+							<td data-label="Max Pitches/Day">85</td>
+							<td data-label="Rest Required">See note *</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="note">*Rest requirements are based on pitch count thresholds, not just day count. Consult the current Little League rulebook for the full rest table.</p>
+			</div>
+		</div>
+
+		<!-- ─── .footies-note label variant ──────────────────────────── -->
+		<div class="demo-section">
+			<p class="demo-label">Bonus <span>.footies-note label inside a Pattern 1 block</span></p>
+
+			<p>The <code>.footies-note</code> class renders an underlined "Note:" lead-in. Rarely used but available.</p>
+
+			<section class="footies">
+				<p><span class="footies-note">Note:</span> All dates are subject to change based on district scheduling. Check back closer to the season.</p>
+			</section>
+		</div>
+
+	</main>
+</body>
+
+</html>
