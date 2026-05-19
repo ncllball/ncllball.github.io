@@ -10,3 +10,4 @@ ms-playwright/
 .vscode/
 # Optional: screenshot outputs (uncomment if you want to version screenshots)
 # screenshots/
+_ingest/  

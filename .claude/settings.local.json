@@ -144,8 +144,37 @@
       "PowerShell(Get-ChildItem \"C:\\\\Users\\\\regis\\\\OneDrive\\\\Downloads\\\\\" | Where-Object { $_.Name -match \"pdf|allstar|application\" } | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime)",
       "PowerShell(Test-Path \"C:\\\\Users\\\\regis\\\\OneDrive\\\\Downloads\" ; \\(Get-ChildItem \"C:\\\\Users\\\\regis\\\\OneDrive\\\\Downloads\"\\).Count)",
       "Bash(Copy-Item \"C:\\\\Users\\\\regis\\\\OneDrive\\\\Downloads\\\\2026.all-stars.application.BB.SB.pdf\" \"C:\\\\NCLL\\\\ncllball.github.io\\\\docs\\\\2026.all-stars.application.BB.SB.pdf\" -Force)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(ls -la \"//HOMESERVER/backup/ncll/\" 2>&1 | head -20)",
+      "Read(///HOMESERVER/backup//**)",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/2024 D8 AAA BB Schedule \\(1\\).xlsx' '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/fields_scheduling/')",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/2024 D8 AAA BB Schedule \\(2\\).xlsx' '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/fields_scheduling/')",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/2024 D8 AAA BB Schedule.xlsx' '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/fields_scheduling/')",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/2024-AAA Game Schedule.pdf' '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/fields_scheduling/')",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/2024-AAA Practice Schedule \\(2\\).pdf' '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/fields_scheduling/')",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/Sports Connect Partner Agreement v2.pdf' '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/contracts/')",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/Sports Connect Partner Agreement v2.png' '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/contracts/')",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/Sports Connect Partner Agreement v2 \\(1\\).png' '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/contracts/')",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/1.0. Registration Set Up - Sports Connect.pdf' '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/resources/')",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/website redesign.pdf' '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/website/')",
+      "Bash(BASE=\"//HOMESERVER/backup/ncll/\\(a\\) inbox\" *)",
+      "Bash(chmod 777 //HOMESERVER/backup/ncll/ncll_coaching //HOMESERVER/backup/ncll/ncll_scheduling)",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/coaching/*' //HOMESERVER/backup/ncll/ncll_coaching/)",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/fields_scheduling/*' //HOMESERVER/backup/ncll/ncll_scheduling/)",
+      "Bash(ssh 192.168.50.7 \"chmod 777 /mnt/user/backup/ncll/ncll_coaching /mnt/user/backup/ncll/ncll_scheduling && echo 'perms fixed'\")",
+      "Bash(# Homelab icons → backup/knowledge/design-assets/homelab-icons/ *)",
+      "Read(///HOMESERVER/backup/knowledge/design-assets/**)",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/homelab_icons/*' //HOMESERVER/backup/knowledge/design-assets/homelab-icons/)",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/personal/293374048.pdf' //HOMESERVER/backup/personal/financial/receipts/)",
+      "Bash(mv '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/personal/293374048.pdf' //HOMESERVER/backup/personal/receipts/)",
+      "Bash(rm -f '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/delete/*')",
+      "Bash(rmdir '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/delete')",
+      "Bash(rmdir '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/__TRACKED_VAR__')",
+      "Bash(ssh -o StrictHostKeyChecking=no root@192.168.50.9 \"ls -la /mnt/user/appdata/.claude/ | head -20\")"
     ],
-    "defaultMode": "bypassPermissions"
+    "defaultMode": "bypassPermissions",
+    "additionalDirectories": [
+      "\\\\HOMESERVER\\backup\\ncll\\(a) inbox"
+    ]
   }
 }
