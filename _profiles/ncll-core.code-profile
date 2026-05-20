@@ -1,0 +1,5 @@
+{
+  "name": "NCLL Core",
+  "extensions": "[{\"identifier\":{\"id\":\"anthropic.claude-code\"},\"displayName\":\"Claude Code\"},{\"identifier\":{\"id\":\"ritwickdey.liveserver\"},\"displayName\":\"Live Server\"},{\"identifier\":{\"id\":\"ms-vscode.powershell\"},\"displayName\":\"PowerShell\"},{\"identifier\":{\"id\":\"tomoki1207.pdf\"},\"displayName\":\"vscode-pdf\"},{\"identifier\":{\"id\":\"shaharsha.claude-tower\"},\"displayName\":\"Claude Tower\"},{\"identifier\":{\"id\":\"daniel-manea.claude-vscode-bridge\"},\"displayName\":\"Claude VSCode Bridge\"},{\"identifier\":{\"id\":\"sdras.night-owl\"},\"displayName\":\"Night Owl\"}]",
+  "settings": "{\"workbench.colorTheme\":\"Night Owl\"}"
+}
