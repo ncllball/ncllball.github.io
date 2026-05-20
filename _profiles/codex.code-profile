@@ -1,0 +1,5 @@
+{
+  "name": "Codex",
+  "extensions": "[{\"identifier\":{\"id\":\"openai.chatgpt\"},\"displayName\":\"ChatGPT\"},{\"identifier\":{\"id\":\"techfetch-dev.codex-account-switch-vscode\"},\"displayName\":\"Codex Account Switch\"},{\"identifier\":{\"id\":\"wannanbigpig.codex-accounts-manager\"},\"displayName\":\"Codex Accounts Manager\"},{\"identifier\":{\"id\":\"woozy-masta.codex-switch\"},\"displayName\":\"Codex Switch\"},{\"identifier\":{\"id\":\"mohulscom.msl-codex-switch\"},\"displayName\":\"MSL Codex Switch\"},{\"identifier\":{\"id\":\"eddiegivens.codex-quota-stats\"},\"displayName\":\"Codex Quota Stats\"},{\"identifier\":{\"id\":\"martinortiz.codex-stats\"},\"displayName\":\"Codex Stats\"},{\"identifier\":{\"id\":\"zis3c.codex-notifier\"},\"displayName\":\"Codex Notifier\"},{\"identifier\":{\"id\":\"screph.codex-terminal-recorder\"},\"displayName\":\"Codex Terminal Recorder\"},{\"identifier\":{\"id\":\"sdras.night-owl\"},\"displayName\":\"Night Owl\"}]",
+  "settings": "{\"workbench.colorTheme\":\"Night Owl\"}"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Copilot Pro+",
+  "extensions": "[{\"identifier\":{\"id\":\"github.copilot-chat\"},\"displayName\":\"GitHub Copilot Chat\"},{\"identifier\":{\"id\":\"automatalabs.copilot-mcp\"},\"displayName\":\"Copilot MCP\"},{\"identifier\":{\"id\":\"amitpatole.mcp-marketplace\"},\"displayName\":\"MCP Marketplace\"},{\"identifier\":{\"id\":\"mercurial.google-workspace-mcp\"},\"displayName\":\"Google Workspace MCP\"},{\"identifier\":{\"id\":\"sdras.night-owl\"},\"displayName\":\"Night Owl\"}]",
+  "settings": "{\"workbench.colorTheme\":\"Night Owl\"}"
+}
