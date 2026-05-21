@@ -14,6 +14,10 @@
       "env": {
         "PATH": "C:\\Program Files\\nodejs;C:\\Windows\\system32;C:\\Windows"
       }
+    },
+    "canva": {
+      "type": "http",
+      "url": "https://mcp.canva.com/mcp"
     }
   }
 }
