@@ -56,7 +56,7 @@ Rosters announced May 22, 2026.
 | Donovan | Robert |
 | Duncan | Will |
 | Fishback | Edison |
-| Graber | Charlier |
+| Graber | Charlie |
 | Greenwood | Emmett |
 | Guerrero-Harvey | Joaquin |
 | Jorris | Hendrick |
@@ -65,26 +65,103 @@ Rosters announced May 22, 2026.
 | Trager | Avery |
 | Ziemkiewicz | Toby |
 
-### 10's Baseball
+### 8-9-10's Baseball
+
+**Manager:** Mike Fishback
 
 | Last | First |
 |------|-------|
+| D'Amico | Sam |
+| DeHerrera | Diego |
+| Fishback | Otis |
+| Fox | Julian |
+| Junejo | Omar |
+| Kojima | Rik |
+| Kusunoki | Yuiya |
+| Lee | Avery |
+| Millea | Finn |
+| Parsons | Emmett |
+| Riley | Rookie |
+| Soldato | Guy |
 
 ---
 
 ## Softball
 
-### 12's Softball (Majors)
+### 8-9-10's Softball
+
+**Head Coach:** Elena Busto
 
 | Last | First |
 |------|-------|
+| Daniels | Josie |
+| Eckstein | Nathalie |
+| Elliott | Aria |
+| Garkel | Riya |
+| Gilliam | Roslyn |
+| McFarland | Sloane |
+| Montgomery | Bella |
+| Nelson-Diaz | Eva |
+| Osborne | Ava |
+| Osborne | Rose |
+| Putman | Susie |
+| Shordt | Eleanor |
+| Stewart | Sloane |
 
 ### 11's Softball
 
-| Last | First |
-|------|-------|
-
-### 10's Softball
+**Head Coach:** Chris Cunningham
 
 | Last | First |
 |------|-------|
+| Brumback | Sophia |
+| Buonadonna | Cora |
+| Clinch | Elsa |
+| Cunningham | Jane |
+| Garinger | Dylan |
+| Gilliam | Eliza |
+| Kopicky | Cadence |
+| Quint | Lucy |
+| Richardson | Cami |
+| Smith | Noe |
+| Stevenson | Harper |
+| Straffer | Audrey |
+
+### 12's Softball (Majors)
+
+**Head Coach:** Jonathan Pérez
+
+| Last | First |
+|------|-------|
+| Avratin | Emma |
+| Baker | Avery |
+| Baughn | Evie (NW) |
+| Bloch | Carys (QA) |
+| Bloch | Greer (QA) |
+| Downing | Grayson (QA) |
+| Drayer | Tori |
+| Osborne | Lucy |
+| Pérez | Elisa |
+| Rawson | Kyla (QA) |
+| Shannon | Rylan |
+| Spieth | Piper (NW) |
+| Way | Ruby |
+
+### Juniors Softball
+
+**Head Coach:** Brad Dodgion
+
+| Last | First |
+|------|-------|
+| Adams | Emery (RUG) |
+| Bressler | Charlotte |
+| Chandler | Emmeline (RUG) |
+| Dodgion | Nora |
+| Ellinger | Avery (RUG) |
+| Greenwood | Harper |
+| Grob | Addie |
+| Hiley | Angel (WLL) |
+| Lawrence | Harper |
+| Sowell | Elsa |
+| Weber | Isla |
+| Wylie | Hana |
