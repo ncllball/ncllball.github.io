@@ -18,6 +18,20 @@
     "canva": {
       "type": "http",
       "url": "https://mcp.canva.com/mcp"
+    },
+    "gmail": {
+      "command": "cmd",
+      "args": ["/c", "C:\\Program Files\\nodejs\\npx.cmd", "-y", "@gongrzhe/server-gmail-autoauth-mcp"],
+      "env": {
+        "PATH": "C:\\Program Files\\nodejs;C:\\Windows\\system32;C:\\Windows"
+      }
+    },
+    "google-chat": {
+      "command": "cmd",
+      "args": ["/c", "C:\\Program Files\\nodejs\\npx.cmd", "-y", "google-chat-mcp", "--credentials-path", "C:\\Users\\regis\\.google-chat-mcp\\credentials.json", "--token-path", "C:\\Users\\regis\\.google-chat-mcp\\token.json"],
+      "env": {
+        "PATH": "C:\\Program Files\\nodejs;C:\\Windows\\system32;C:\\Windows"
+      }
     }
   }
 }
