@@ -170,7 +170,12 @@
       "Bash(rm -f '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/delete/*')",
       "Bash(rmdir '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/delete')",
       "Bash(rmdir '//HOMESERVER/backup/ncll/\\(a\\) inbox/temp/__TRACKED_VAR__')",
-      "Bash(ssh -o StrictHostKeyChecking=no root@192.168.50.9 \"ls -la /mnt/user/appdata/.claude/ | head -20\")"
+      "Bash(ssh -o StrictHostKeyChecking=no root@192.168.50.9 \"ls -la /mnt/user/appdata/.claude/ | head -20\")",
+      "mcp__chrome-devtools__wait_for",
+      "mcp__canva__search-designs",
+      "mcp__canva__start-editing-transaction",
+      "mcp__canva__perform-editing-operations",
+      "mcp__canva__commit-editing-transaction"
     ],
     "defaultMode": "bypassPermissions",
     "additionalDirectories": [
