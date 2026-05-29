@@ -2843,12 +2843,19 @@ details.footies[open] summary::before {
     position: absolute;
     top: 32px;
     right: 48px;
-    font-size: 2rem;
-    color: var(--color_white);
-    background: none;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    background: #d32f2f;
     border: none;
+    border-radius: 50%;
     cursor: pointer;
     z-index: 10001;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.45);
+    display: block;
 }
 
 .enlarge-backdrop {
