@@ -11,3 +11,7 @@ ms-playwright/
 # Optional: screenshot outputs (uncomment if you want to version screenshots)
 # screenshots/
 _ingest/  
+_temp/registration_xlsx/
+_temp/registration_combined/
+_temp/NCLL_2026_AllStars_Contacts_By_Team_fixed.xlsx
+_temp/
