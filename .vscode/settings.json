@@ -11,5 +11,10 @@
     "liveServer.settings.port": 5501,
     "editor.hover.enabled": "off",
     "chatgpt.openOnStartup": true,
-    "claudeCodeChat.permissions.yoloMode": false
+    "claudeCodeChat.permissions.yoloMode": false,
+    "pasteImage.path": "${projectRoot}/images",
+    "pasteImage.prefix": "https://ncllball.github.io/images/",
+    "pasteImage.namePrefix": "",
+    "pasteImage.nameSuffix": "",
+    "pasteImage.insertPattern": "![${imageFileName}](${imageFilePath})"
 }
