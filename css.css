@@ -2715,6 +2715,9 @@ details.footies[open] summary::before {
     overflow: hidden;
     border-radius: 12px;
 }
+.carousel-images--tall {
+    padding-top: 85%;
+}
 
 .carousel-image {
     position: absolute;
