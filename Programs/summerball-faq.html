@@ -1,83 +1,75 @@
 <!DOCTYPE html>
 <!--
   FILE:      Programs/summerball-faq.html
-  PURPOSE:   Summerball program — FAQ & Volunteer Info page; canonical year-round template
+  PURPOSE:   Summerball program — FAQ page; canonical year-round template
   CMS:       tabid=2250484  |  mid=2345999  |  paste ENTIRE FILE into module in RadEditor
-  PAIRED:    Programs/summerball-main.html (main program page, tabid=2112176)
+  PAIRED:    Programs/summerball-main.html (tabid=2112176)
 
   WHAT TO UPDATE EACH YEAR:
   - <title> → new year
-  - Logo <img src> filename → new year (e.g., Summerball27.svg)
-  - Registration dates in "What are the dates of the season?"
+  - Registration Window and Program Dates in the dates question
   - Team announcement dates ("approximately June 30–July 4")
   - Division matrix caption year
-  - Volunteer sign-up link when SignUpGenius is ready
-  - Update tabid references in footer revision marker and events page link
-  - NOTE: Volunteer roles, FAQ questions, and division structure are stable year to year
+  - "Spring of '[YY+1]'" reference in play-up question
+  - Footer revision marker year and tabid
+  - NOTE: FAQ questions, volunteer roles, and division structure are stable year to year
 -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2026 Summerball FAQ &amp; Volunteer Info</title>
+    <meta name="description" content="Frequently asked questions about NCLL Summerball — registration, divisions, format, schedules, volunteers, and more." />
     <link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
     <link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
+    <title>2026 Summerball FAQ | NCLL</title>
 </head>
 
 <body>
+<main class="content-pad" id="content" role="main">
 
-    <!-- ===================== Header Image ===================== -->
-    <section>
-        <img src="https://ncllball.github.io/images/logos/Summerball26.svg" alt="Summerball 2026" />
-    </section>
+    <section id="faq">
+        <aside class="hub-intro__aside hub-intro__aside--accent hub-intro__aside--no-intro" aria-label="Related Summerball links">
+            <h4 class="hub-aside__title">Related links</h4>
+            <ul class="hub-aside__list related-links">
+                <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112176">Summerball Program</a></li>
+                <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2117276">Volunteer Opportunities</a></li>
+                <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2244434">Events Calendar</a></li>
+                <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2115055">Field Locations &amp; Maps</a></li>
+                <li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2114737">Financial Aid</a></li>
+            </ul>
+        </aside>
 
-    <!-- ===================== FAQ ===================== -->
-    <section>
-        <h2 class="left">Frequently Asked Questions</h2>
+        <h2 class="left">Frequently Asked Questions (FAQs)</h2>
 
-        <h4 class="highlighted-header"><span>Registration &amp; Eligibility</span></h4>
+        <h4 class="left">Q: Am I registering for the right Little League?</h4>
+        <p>A: For Summerball, anyone is welcome — league boundary rules do not apply. Players from any
+        neighborhood can join NCLL for the summer program. If you played spring ball with another league,
+        you're still eligible to register with NCLL for Summerball.</p>
 
-        <h3>Am I registering for the right Little League?</h3>
-        <p>
-            For Summerball, anyone is welcome — league boundary rules do not apply. Players from any
-            neighborhood can join NCLL for the summer program.
-        </p>
+        <h4 class="left">Q: What are the dates of the season?</h4>
+        <p>A: Registration is open June 5&mdash;June 30. The season runs July 7 through August 13
+        (approximately five weeks, 10&ndash;12 games per team). Team assignments go out approximately
+        June 30&ndash;July 4 via Sports Connect email. See the
+        <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2244434">events page</a>
+        for confirmed dates.</p>
 
-        <h3>What are the dates of the season?</h3>
-        <p>
-            Registration is open June 5&mdash;June 30. The season runs July 7 through August 13 (approximately
-            five weeks, 10&ndash;12 games per team). See the
-            <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2244434">events page</a>
-            for confirmed dates.
-        </p>
+        <h4 class="left">Q: How much does it cost?</h4>
+        <p>A: $75 per player. Show up for the weeks you can and vacation when you can't &mdash; there's no
+        penalty for missing games. Scholarships are available by request <em>prior to registration</em> via the
+        <a class="ncll" href="https://docs.google.com/forms/d/e/1FAIpQLSd5JIcH7zLuLGVLSBSXHIOhbOtgYmP8rkW5w86_wB36zEbuoQ/viewform">financial aid request form</a>.</p>
+        <p><em>Note: Please do <strong>not</strong> purchase the registration insurance. It is a required option
+        in the platform but is rarely useful. If you need to cancel, just contact us.</em></p>
 
-        <h3>How much does it cost?</h3>
-        <p>
-            $75 per player. Show up for the weeks you can and vacation when you can't &mdash; there's no penalty
-            for missing games. Scholarships are available by request
-            <em>prior to registration</em> via the
-            <a class="ncll"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSd5JIcH7zLuLGVLSBSXHIOhbOtgYmP8rkW5w86_wB36zEbuoQ/viewform">
-                financial aid request form</a>.
-        </p>
-        <p>
-            <em>Note: Please do <strong>not</strong> purchase the registration insurance. It is a required option
-            in the platform but is rarely useful. If you need to cancel, just contact us.</em>
-        </p>
+        <h4 class="left">Q: What division should my player register for?</h4>
+        <p>A: For Summerball, older or more advanced players are encouraged to play up one level from the
+        division they just finished. The best question to ask: <span>where will my player be next spring?</span>
+        The table below provides general guidance. Participation in Summerball is independent of Spring '27
+        division placement &mdash; divisions for Spring '27 will be assigned based on league age and skill
+        level assessed at that time. See also:
+        <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a): Detailed Division Information</a>
+        on the main registration page.</p>
 
-        <h4 class="highlighted-header"><span>Divisions &amp; Age Groups</span></h4>
-
-        <h3>What division should my player register for?</h3>
-        <p>
-            For Summerball, older or more advanced players are encouraged to play up one level from the division
-            they just finished. The best question to ask: <span>where will my player be next spring?</span>
-            The table below provides general guidance.
-        </p>
-    </section>
-
-    <!-- ===================== Division Matrix Table ===================== -->
-    <section>
         <div class="table_age" style="overflow-x: auto; -webkit-overflow-scrolling: touch;" role="region" aria-label="Summerball26 division guidance by age" tabindex="0">
             <table class="age-matrix">
                 <caption class="left">Division guidance for Summerball26</caption>
@@ -141,70 +133,51 @@
                 </tbody>
             </table>
         </div>
+
+        <h4 class="left">Q: How often do we play?</h4>
+        <p>A: No scheduled practices. Each team plays approximately two evening games per week &mdash; roughly
+        10&ndash;12 games total over five weeks.</p>
+
+        <h4 class="left">Q: What is &ldquo;sandlot&rdquo; format?</h4>
+        <p>A: Sandlot divisions (Single-A Baseball, Softball) mean kids show up to the field and teams are
+        formed from whoever is present and ready to play. There's no fixed team roster and no commitment to a
+        specific group &mdash; families can come and go as their summer schedules allow.</p>
+
+        <h4 class="left">Q: Where do we play?</h4>
+        <p>A: NCLL's home fields are Lower Woodland Park Ball Fields and Ross Park Fields. When playing
+        interleague games, we travel to fields around the city &mdash; seldom more than a 30-minute drive. See
+        the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2115055">field locations and maps</a>
+        page for a full list.</p>
+
+        <h4 class="left">Q: What equipment and uniforms are provided?</h4>
+        <p>A: A game jersey is included in the registration fee. Wear your spring season cap. Your player will
+        need a baseball glove, a protective cup (recommended for boys), and footwear (cleats are not required
+        &mdash; sneakers are fine). Personal bats and helmets are welcome if they meet Little League standards;
+        shared equipment is available.</p>
+
+        <h4 class="left">Q: When will we know our team and schedule?</h4>
+        <p>A: Team assignments go out approximately June 30&ndash;July 4 via Sports Connect email. The
+        transition from the regular season to Summerball is fast &mdash; often managed by the same volunteers
+        who just finished the regular season and All-Stars. We appreciate your patience!</p>
+
+        <h4 class="left">Q: How do I volunteer?</h4>
+        <p>A: You can indicate your interest when registering and select a role at that time. We're especially
+        looking for Lead Game Volunteers, Game Day Helpers, Team Managers, and Sandlot Team Organizers. Even if
+        you can only help with a few games, every bit counts. See the
+        <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2117276">volunteer opportunities page</a>
+        for details, or check the sidebar on the main Summerball page.</p>
+
+        <h4 class="left">Q: Who do I contact with questions?</h4>
+        <p>A: Contact the Summerball coordinator at
+        <a class="ncll" href="&#109;&#97;&#105;&#108;&#116;&#111;:&#115;&#117;&#109;&#109;&#101;&#114;&#98;&#97;&#108;&#108;&#64;&#110;&#99;&#108;&#108;&#98;&#97;&#108;&#108;&#46;&#99;&#111;&#109;">summerball@ncllball.com</a>
+        or the registrar at
+        <a class="ncll" href="&#109;&#97;&#105;&#108;&#116;&#111;:&#114;&#101;&#103;&#105;&#115;&#116;&#114;&#97;&#114;&#64;&#110;&#99;&#108;&#108;&#98;&#97;&#108;&#108;&#46;&#99;&#111;&#109;">registrar@ncllball.com</a>.</p>
+
     </section>
 
-    <!-- ===================== FAQ continued ===================== -->
-    <section>
-        <p class="footies">
-            Participation in Summerball26 is independent of Spring 2027 division placement &mdash; divisions for
-            Spring 2027 will be assigned based on league age and skill level assessed at that time.
-            See also:
-            <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a): Detailed Division
-            Information</a> on the main registration page.
-        </p>
+    <p style="margin:0;padding:0"><small>[r2 · 2026-06-03 · 2250484]</small></p>
 
-        <h4 class="highlighted-header"><span>What to Expect</span></h4>
-
-        <h3>How often do we play?</h3>
-        <p>
-            No scheduled practices. Each team plays approximately two evening games per week &mdash; roughly
-            10&ndash;12 games total over five weeks.
-        </p>
-
-        <h3>What is &ldquo;sandlot&rdquo; format?</h3>
-        <p>
-            Sandlot divisions (Single-A Baseball, Softball) mean kids show up to the field and teams are formed
-            from whoever is present and ready to play. There's no fixed team roster and no commitment to a
-            specific group &mdash; families can come and go as their summer schedules allow.
-        </p>
-
-        <h3>Where do we play?</h3>
-        <p>
-            NCLL's home fields are Lower Woodland Park Ball Fields and Ross Park Fields. When playing interleague
-            games, we travel to fields around the city &mdash; seldom more than a 30-minute drive. See the
-            <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2115055">field locations and maps</a>
-            page for a full list.
-        </p>
-
-        <h3>What equipment and uniforms are provided?</h3>
-        <p>
-            A game jersey is included in the registration fee. Wear your spring season cap. Your player will need
-            a baseball glove, a protective cup (recommended for boys), and footwear (cleats are not required &mdash;
-            sneakers are fine). Personal bats and helmets are welcome if they meet Little League standards; shared
-            equipment is available.
-        </p>
-
-        <h3>When will we know our team and schedule?</h3>
-        <p>
-            Team assignments go out approximately June 30&ndash;July 4 via Sports Connect email. The transition
-            from the regular season to Summerball is fast &mdash; often managed by the same volunteers who just
-            finished the regular season and All-Stars. We appreciate your patience!
-        </p>
-
-        <h4 class="highlighted-header"><span>More Questions?</span></h4>
-
-        <p>
-            Contact the Summerball coordinator at
-            <a class="ncll"
-                href="&#109;&#97;&#105;&#108;&#116;&#111;:&#115;&#117;&#109;&#109;&#101;&#114;&#98;&#97;&#108;&#108;&#64;&#110;&#99;&#108;&#108;&#98;&#97;&#108;&#108;&#46;&#99;&#111;&#109;">summerball@ncllball.com</a>
-            or the registrar at
-            <a class="ncll"
-                href="&#109;&#97;&#105;&#108;&#116;&#111;:&#114;&#101;&#103;&#105;&#115;&#116;&#114;&#97;&#114;&#64;&#110;&#99;&#108;&#108;&#98;&#97;&#108;&#108;&#46;&#99;&#111;&#109;">registrar@ncllball.com</a>.
-        </p>
-    </section>
-
-    <p style="margin:0;padding:0"><small>[r1 · 2026-06-03 · 2250484]</small></p>
-
+</main>
 </body>
 
 </html>
