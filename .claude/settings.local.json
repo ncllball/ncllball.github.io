@@ -187,7 +187,14 @@
       "Bash(cp \"C:/NCLL/ncllball.github.io/_ingest/hrd_2025/Photos-3-001/\"*.jpg \"C:/NCLL/ncllball.github.io/Season/2025/HRD/\" && echo \"done\")",
       "mcp__gmail__read_email",
       "mcp__gdrive__getGoogleSheetContent",
-      "Bash(python -c \" *)"
+      "Bash(python -c \" *)",
+      "mcp__google-chat__list_messages",
+      "mcp__chrome-devtools__type_text",
+      "mcp__canva__get-design-thumbnail",
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=10 homeserver \"find /mnt/user/appdata -maxdepth 3 -name '*.yml' -path '*authelia*' 2>/dev/null | head -20\")",
+      "mcp__ssh-manager__ssh_execute",
+      "WebFetch(domain:github.com)",
+      "mcp__outline__update_document"
     ],
     "defaultMode": "bypassPermissions",
     "additionalDirectories": [

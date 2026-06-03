@@ -1,5 +1,36 @@
 {
   "mcpServers": {
+    "ssh-manager": {
+      "command": "cmd",
+      "args": ["/c", "C:\\Program Files\\nodejs\\npx.cmd", "-y", "mcp-ssh-manager"],
+      "env": {
+        "PATH": "C:\\Program Files\\nodejs;C:\\Windows\\system32;C:\\Windows",
+        "SSH_SERVER_HOMESERVER_HOST": "192.168.50.7",
+        "SSH_SERVER_HOMESERVER_USER": "root",
+        "SSH_SERVER_HOMESERVER_KEYPATH": "C:\\Users\\regis\\.ssh\\id_ed25519",
+        "SSH_SERVER_HOMESERVER_PORT": "22",
+        "SSH_SERVER_HOMESERVER_PLATFORM": "linux",
+        "SSH_SERVER_HOMESERVER_DESCRIPTION": "Homeserver (.7) — Outline, Authelia, Traefik, all services",
+        "SSH_SERVER_TOWER_HOST": "192.168.50.9",
+        "SSH_SERVER_TOWER_USER": "root",
+        "SSH_SERVER_TOWER_KEYPATH": "C:\\Users\\regis\\.ssh\\id_ed25519",
+        "SSH_SERVER_TOWER_PORT": "22",
+        "SSH_SERVER_TOWER_PLATFORM": "linux",
+        "SSH_SERVER_TOWER_DESCRIPTION": "Tower (.9) — Unraid, Claude Code, appdata",
+        "SSH_SERVER_WORKBENCH_HOST": "192.168.50.2",
+        "SSH_SERVER_WORKBENCH_USER": "johns",
+        "SSH_SERVER_WORKBENCH_KEYPATH": "C:\\Users\\regis\\.ssh\\id_ed25519",
+        "SSH_SERVER_WORKBENCH_PORT": "22",
+        "SSH_SERVER_WORKBENCH_PLATFORM": "windows",
+        "SSH_SERVER_WORKBENCH_DESCRIPTION": "Workbench (.2) — personal Windows workstation",
+        "SSH_SERVER_NCLL_HOST": "192.168.50.253",
+        "SSH_SERVER_NCLL_USER": "regis",
+        "SSH_SERVER_NCLL_KEYPATH": "C:\\Users\\regis\\.ssh\\id_ed25519",
+        "SSH_SERVER_NCLL_PORT": "22",
+        "SSH_SERVER_NCLL_PLATFORM": "windows",
+        "SSH_SERVER_NCLL_DESCRIPTION": "NCLL (.253) — this machine"
+      }
+    },
     "gdrive": {
       "command": "cmd",
       "args": ["/c", "C:\\Program Files\\nodejs\\npx.cmd", "-y", "@piotr-agier/google-drive-mcp"],
@@ -31,6 +62,13 @@
       "args": ["/c", "C:\\Program Files\\nodejs\\npx.cmd", "-y", "google-chat-mcp", "--credentials-path", "C:\\Users\\regis\\.google-chat-mcp\\credentials.json", "--token-path", "C:\\Users\\regis\\.google-chat-mcp\\token.json"],
       "env": {
         "PATH": "C:\\Program Files\\nodejs;C:\\Windows\\system32;C:\\Windows"
+      }
+    },
+    "outline": {
+      "type": "http",
+      "url": "https://outline.shikella.me/mcp",
+      "headers": {
+        "Authorization": "Bearer ol_api_5kXJfSbTSFoayzCLzqFlnFtdz5EDT5XAX0nUwd"
       }
     }
   }
