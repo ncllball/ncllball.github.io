@@ -1100,7 +1100,7 @@ h6 {
     font-style: italic;
     color: #777 !important;
     padding: 0 !important;
-    margin: 0 !important;
+    margin: 0 0 6px 0 !important;
     caption-side: top;
 }
 
