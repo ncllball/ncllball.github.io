@@ -2201,6 +2201,10 @@ body:not(.cms-right) .only-on-right {
     color: var(--color_blue) !important
 }
 
+.age-matrix tbody tr:not(:first-child) .division-title {
+    padding-top: 10px;
+}
+
 .division-bar .actions {
     display: flex;
     align-items: center;
