@@ -1095,9 +1095,10 @@ h6 {
 }
 
 .age-matrix caption {
-    font-size: 0.8em;
-    font-weight: 600;
-    color: #555;
+    font-size: 0.78em;
+    font-weight: 400;
+    font-style: italic;
+    color: #777;
     padding-bottom: 4px;
     caption-side: top;
 }
