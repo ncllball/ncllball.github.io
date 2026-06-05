@@ -4835,6 +4835,10 @@ p.flush-bottom:last-child {
 	text-align: center !important;
 }
 
+.age-matrix td:first-child:not(.division-title) {
+    text-align: right !important;
+}
+
 .age-matrix td details {
     white-space: normal;
     max-width: 18rem;
