@@ -406,7 +406,13 @@ img {
 }
 
 @media screen and (max-width: 800px) {
-    .skWidth, .skcontentbg, .skcontentWp, .skInnerWrapper, .skWrapper, .display-table {
+    .skWidth, .skcontentbg, .skcontentWp, .skInnerWrapper, .skWrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .display-table {
+        display: block !important;
         width: 100% !important;
         max-width: 100% !important;
         box-sizing: border-box !important;
