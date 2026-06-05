@@ -70,6 +70,10 @@
       "headers": {
         "Authorization": "Bearer ol_api_5kXJfSbTSFoayzCLzqFlnFtdz5EDT5XAX0nUwd"
       }
+    },
+    "crawl4ai": {
+      "type": "sse",
+      "url": "http://192.168.50.9:11235/mcp/sse"
     }
   }
 }
