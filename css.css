@@ -4839,7 +4839,8 @@ p.flush-bottom:last-child {
     text-align: right !important;
 }
 
-.board-volunteers .age-matrix td.division-header {
+.board-volunteers .age-matrix td.division-header,
+.board-volunteers .age-matrix td:first-child {
     text-align: center !important;
 }
 
