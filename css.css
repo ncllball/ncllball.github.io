@@ -396,6 +396,10 @@
 /*
 LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{display:inline-block;vertical-align:middle;min-height:0}h4 .clipboard-img{width:40px;height:auto;margin-left:8px;margin-bottom:0;float:none}
 */
+html, body {
+    overflow-x: hidden;
+}
+
 img {
     max-width: 100%;
     height: auto;
