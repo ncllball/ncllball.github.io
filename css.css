@@ -405,6 +405,19 @@ img {
     height: auto;
 }
 
+@media screen and (max-width: 800px) {
+    .skWidth, .skcontentbg, .skcontentWp, .skInnerWrapper, .skWrapper, .display-table {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .skLeftPane, .skRightPane {
+        float: none !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
 /* =====================
    Program grid (cards)
 

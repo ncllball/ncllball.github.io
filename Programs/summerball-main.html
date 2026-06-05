@@ -27,6 +27,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
     <style>
         html, body { overflow-x: hidden; }
+        @media screen and (max-width: 800px) {
+            .skWidth, .skcontentbg, .skcontentWp, .skInnerWrapper, .skWrapper, .display-table { width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; }
+            .skLeftPane, .skRightPane { float: none !important; width: 100% !important; box-sizing: border-box !important; }
+        }
         .age-matrix .division-title { width: auto !important; }
         .age-matrix tbody tr:nth-child(even) { background: var(--color_table_row_alt) !important; }
         img { max-width: 100%; height: auto; }
