@@ -4839,6 +4839,10 @@ p.flush-bottom:last-child {
     text-align: right !important;
 }
 
+.board-volunteers .age-matrix td.division-header {
+    text-align: center !important;
+}
+
 .age-matrix td details {
     white-space: normal;
     max-width: 18rem;
