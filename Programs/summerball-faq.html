@@ -28,10 +28,10 @@
         .age-matrix tbody tr:nth-child(even) { background: var(--color_table_row_alt) !important; }
         .age-matrix--center-cols td:not(:first-child), .age-matrix--center-cols th:not(:first-child) { text-align: center; }
         details.faq-fields { margin: 0.4em 0 1em; }
-        details.faq-fields summary { font-size: 0.875em; cursor: pointer; color: var(--color_link, #c0392b); display: inline; }
-        details.faq-fields summary:hover { text-decoration: underline; }
-        details.faq-fields[open] summary { margin-bottom: 0.5em; }
-        details.faq-fields p { margin: 0.3em 0; font-size: 0.875em; }
+        details.faq-fields > summary { font-size: 0.9em !important; font-weight: normal !important; cursor: pointer; color: var(--color_link, #1a6b8a); display: list-item; line-height: 1.4; }
+        details.faq-fields > summary:hover { text-decoration: underline; }
+        details.faq-fields[open] > summary { margin-bottom: 0.4em; }
+        details.faq-fields p { margin: 0.25em 0; font-size: 0.875em; }
     </style>
 </head>
 
@@ -271,7 +271,7 @@
 
     </section>
 
-    <p style="margin:0;padding:0"><small>[r15 · 2026-06-07 · 2250484]</small></p>
+    <p style="margin:0;padding:0"><small>[r16 · 2026-06-07 · 2250484]</small></p>
 
 </main>
 </body>
