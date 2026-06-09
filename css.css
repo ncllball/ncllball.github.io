@@ -3462,7 +3462,7 @@ p.flush-bottom:last-child {
 .ncll-card__details ul {
     margin: 10px 10px 10px 10px;
     text-align: left;
-    padding: 0px 10px 0px 5px;
+    padding: 0px 10px 6px 5px;
 }
 
 .ncll-card__details ol {
