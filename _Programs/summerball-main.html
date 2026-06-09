@@ -1,5 +1,5 @@
 <!--
-  FILE:      Programs/summerball-main.html
+  FILE:      _Programs/summerball-main.html
   PURPOSE:   Summerball program — main content; tile/card layout using ncll-card pattern
   CMS:       tabid=2112176  |  mid=2271368  |  paste ENTIRE FILE into left-column module in RadEditor
   PAIRED:    Programs/summerball-volunteers.html (right column, mid=2272294)
@@ -21,9 +21,31 @@
 		<link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
 		<link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
 		<style>
-			.ncll-card__details > *:last-child { margin-bottom: 0; padding-bottom: 0; }
-			.ncll-card__details .callout { font-size: 0.8rem; letter-spacing: normal; }
-			.ncll-card__details .callout span:not(.callout__icon) { font-size: 0.8rem; }
+			.ncll-card__details > *:last-child {
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+			.ncll-card__details .callout {
+				font-size: 0.8rem;
+				letter-spacing: normal;
+			}
+			.ncll-card__details .callout span:not(.callout__icon) {
+				font-size: 0.8rem;
+			}
+			.intro-section > img {
+				float: left;
+				margin: 0 1.5rem 1rem 0;
+				max-width: 200px;
+			}
+			[aria-labelledby="sb-vol-title"] .panel-intro .ncll-card__blurb + .ncll-card__blurb {
+				margin: 0;
+			}
+			[aria-labelledby="sb-softball-aaa-title"] .panel-intro .ncll-card__blurb {
+				margin-top: 0;
+			}
+			[aria-labelledby="sb-schedule-title"] h4.left + .ncll-card__blurb {
+				margin-bottom: 0;
+			}
 		</style>
 	</head>
 	<body>
@@ -34,7 +56,6 @@
 				<img
 					src="https://ncllball.github.io/images/logos/Summerball26.svg"
 					alt="Summerball 2026"
-					style="float: left; margin: 0 1.5rem 1rem 0; max-width: 200px;"
 				/>
 				<aside class="hub-intro__aside hub-intro__aside--accent" aria-label="Related Summerball links">
 					<h4 class="hub-aside__title">Related links</h4>
@@ -45,14 +66,22 @@
 						<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2244720">Registration</a></li>
 					</ul>
 				</aside>
-				<p>Summerball26 is NCLL&rsquo;s summer baseball and softball program &mdash; open to any player, no geographic or school boundaries. No practices, no pressure. Just games with friends over six weeks in July and August. Flexible scheduling means no guilt when life gets busy; that goes for coaches too.</p>
-				<p>Registration is open June 6&ndash;30. Teams are sorted by friend requests and announced around July 4. Have questions? The <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2250484">Summerball FAQ</a> has answers on divisions, schedules, fees, and more.</p>
+				<p>
+					Summerball26 is NCLL&rsquo;s summer baseball and softball program &mdash; open to any player, no geographic or
+					school boundaries. No practices, no pressure. Just games with friends over six weeks in July and August. Flexible
+					scheduling means no guilt when life gets busy; that goes for coaches too.
+				</p>
+				<p>
+					Registration is open June 6&ndash;30. Teams are sorted by friend requests and announced around July 4. Have
+					questions? The
+					<a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2250484">Summerball FAQ</a>
+					has answers.
+				</p>
 			</section>
 
 			<h2 class="left">Summerball26 Program</h2>
 
 			<div class="program-grid">
-
 				<!-- ===================== Card 1: Why Summerball + Dates + General Info ===================== -->
 				<article
 					class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle"
@@ -70,7 +99,11 @@
 								alt="Baseball icon"
 							/>
 							<h3 class="ncll-card__title" id="sb-overview-title">
-								<span class="text-background">Why <em>Summerball26</em>?</span>
+								<span class="text-background">
+									Why
+									<em>Summerball26</em>
+									?
+								</span>
 							</h3>
 							<img
 								class="ncll-card__sport-icon"
@@ -100,11 +133,17 @@
 							<ul class="ncll-card__meta">
 								<li>
 									<span class="ncll-italic-accent">Registration Window:</span>
-									June 6<sup>th</sup> &ndash; June 30<sup>th</sup>
+									June 6
+									<sup>th</sup>
+									&ndash; June 30
+									<sup>th</sup>
 								</li>
 								<li>
 									<span class="ncll-italic-accent">Program Dates:</span>
-									July 6<sup>th</sup> &ndash; August 14<sup>th</sup>
+									July 6
+									<sup>th</sup>
+									&ndash; August 14
+									<sup>th</sup>
 								</li>
 								<li>
 									<span class="ncll-italic-accent">Teams Announced:</span>
@@ -112,8 +151,8 @@
 								</li>
 							</ul>
 							<p class="ncll-card__note">
-								The transition to Summerball can be tough &mdash; it&rsquo;s the same volunteers who made the regular season
-								and All-Stars successful &mdash; so we appreciate your patience.
+								The transition to Summerball can be tough &mdash; it&rsquo;s the same volunteers who made the regular season and
+								All-Stars successful &mdash; so we appreciate your patience.
 							</p>
 						</div>
 					</div>
@@ -163,10 +202,7 @@
 				</article>
 
 				<!-- ===================== Card 2: Volunteers ===================== -->
-				<article
-					class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle"
-					aria-labelledby="sb-vol-title"
-				>
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="sb-vol-title">
 					<input type="radio" name="sb-vol" id="sb-vol-intro" checked />
 					<input type="radio" name="sb-vol" id="sb-vol-0" />
 					<input type="radio" name="sb-vol" id="sb-vol-1" />
@@ -174,25 +210,50 @@
 
 					<div class="ncll-card__sticky-heading">
 						<div class="ncll-card__heading-title">
-							<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+							<img
+								class="ncll-card__sport-icon"
+								src="https://ncllball.github.io/images/site_navigation/baseball.png"
+								alt="Baseball icon"
+							/>
 							<h3 class="ncll-card__title" id="sb-vol-title">
-								<span class="text-background"><em>Summerball26</em> VOLUNTEERS</span>
+								<span class="text-background">
+									<em>Summerball26</em>
+									VOLUNTEERS
+								</span>
 							</h3>
-							<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+							<img
+								class="ncll-card__sport-icon"
+								src="https://ncllball.github.io/images/site_navigation/baseball.png"
+								alt="Baseball icon"
+							/>
 						</div>
 					</div>
 
 					<div class="ncll-card__body panel panel-intro">
 						<div class="ncll-card__details">
-							<p class="ncll-card__blurb">Summerball runs on parent volunteers &mdash; we need coaches and team managers for every division. We just need a small cadre to cover for each other &mdash; take your vacations, we all will. It&rsquo;s summer.</p>
-							<p class="ncll-card__blurb" style="margin: 0;"><em>During registration you&rsquo;ll be asked if you&rsquo;d like to volunteer &mdash; tap through for your options:</em></p>
+							<p class="ncll-card__blurb">
+								Summerball runs on parent volunteers &mdash; we need coaches and team managers for every division. We just need
+								a small cadre to cover for each other &mdash; take your vacations, we all will. It&rsquo;s summer.
+							</p>
+							<p class="ncll-card__blurb">
+								<em>
+									During registration you&rsquo;ll be asked if you&rsquo;d like to volunteer &mdash; tap through for your
+									options:
+								</em>
+							</p>
 							<ul class="ncll-card__meta">
 								<li>Lead Game Volunteer</li>
 								<li>Game Day Helper</li>
 								<li>Team Manager</li>
-								<li>Sandlot Team Organizer <em>(A Baseball)</em></li>
+								<li>
+									Sandlot Team Organizer
+									<em>(A Baseball)</em>
+								</li>
 							</ul>
-							<p class="ncll-card__note">Sign up to volunteer during registration at the bottom of this page, then let your coordinator know when you arrive at your first game.</p>
+							<p class="ncll-card__note">
+								Sign up to volunteer during registration at the bottom of this page, then let your coordinator know when you
+								arrive at your first game.
+							</p>
 						</div>
 					</div>
 
@@ -218,7 +279,6 @@
 								<li>Especially needed for AA/AAA Baseball and Softball Sandlot</li>
 								<li>AAA players may coach bases (with supervision)</li>
 							</ul>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
 							<h4 class="left">Team Manager</h4>
 							<ul class="ncll-card__meta">
 								<li>Organize RSVPs, coordinate snacks, communicate with families</li>
@@ -230,16 +290,18 @@
 					<!-- panel2: Sandlot Team Organizer + Sign Up -->
 					<div class="ncll-card__body panel panel2">
 						<div class="ncll-card__details">
-							<h4 class="left">Sandlot Team Organizer <em>(A Baseball)</em></h4>
+							<h4 class="left">
+								Sandlot Team Organizer
+								<em>(A Baseball)</em>
+							</h4>
 							<ul class="ncll-card__meta">
 								<li>Organize players, balance teams, keep it fun, oversee safety</li>
 								<li>Ideal for NCLL&rsquo;s flexible &ldquo;show up and play&rdquo; format</li>
 							</ul>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
 							<h4 class="left">Ready to volunteer?</h4>
-							<p class="ncll-card__blurb">During registration (below), you&rsquo;ll be asked if you&rsquo;d like to volunteer and which role fits best. Select your preferred role when prompted &mdash; your coordinator will follow up before the season starts.</p>
-							<p class="ncll-card__note">
-								<a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2117276">Volunteer Hub</a> &mdash; more details on volunteering with NCLL.
+							<p class="ncll-card__blurb">
+								During registration (below), you&rsquo;ll be asked if you&rsquo;d like to volunteer and which role fits best.
+								Select your preferred role when prompted &mdash; your coordinator will follow up before the season starts.
 							</p>
 						</div>
 					</div>
@@ -288,7 +350,11 @@
 						<div class="ncll-card__details">
 							<p class="ncll-card__blurb">For developing AAA players and AA graduates.</p>
 							<ul class="ncll-card__meta">
-								<li>Games will be <em>sandlot</em> format for maximum flexibility over the summer</li>
+								<li>
+									Games will be
+									<em>sandlot</em>
+									format for maximum flexibility over the summer
+								</li>
 								<li>Potential interleague play opportunities with neighboring leagues</li>
 								<li>Volunteer coaches needed &mdash; all are welcome to help!</li>
 							</ul>
@@ -297,17 +363,35 @@
 
 					<div class="ncll-card__body panel panel0">
 						<div class="ncll-card__details">
-							<h4 class="left">Softball AA/AAA (Sandlot) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> TBD.</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: TBD.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
-							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> TBD</li>
-								<li><span class="ncll-italic-accent">Tue:</span> TBD</li>
-								<li><span class="ncll-italic-accent">Wed:</span> TBD</li>
-								<li><span class="ncll-italic-accent">Thu:</span> TBD</li>
+							<h4 class="left" style="margin-top: 0; margin-bottom: 3px">Softball AA/AAA (Sandlot) &mdash; 2025</h4>
+							<p class="ncll-card__blurb" style="margin-top: 1.5px; margin-bottom: 1.5px">
+								<span class="ncll-italic-accent">Fields:</span>
+								TBD.
+							</p>
+							<p class="ncll-card__blurb" style="margin-top: 0; margin-bottom: 1.5px">Typical game
+								<strong>start</strong>
+								time: TBD.
+							</p>
+							<p class="ncll-card__note" style="margin-top: 1.5px; margin-bottom: 1.5px">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
+							<ul class="ncll-card__meta" style="margin-top: 1.5px; margin-bottom: 1.5px">
+								<li style="margin: 0; padding-top: 0; padding-bottom: 0">
+									<span class="ncll-italic-accent">Mon:</span>
+									TBD
+								</li>
+								<li style="margin: 0; padding-top: 0; padding-bottom: 0">
+									<span class="ncll-italic-accent">Tue:</span>
+									TBD
+								</li>
+								<li style="margin: 0; padding-top: 0; padding-bottom: 0">
+									<span class="ncll-italic-accent">Wed:</span>
+									TBD
+								</li>
+								<li style="margin: 0; padding-top: 0; padding-bottom: 0">
+									<span class="ncll-italic-accent">Thu:</span>
+									TBD
+								</li>
 							</ul>
-							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
+							<p class="ncll-card__note" style="margin-top: 1.5px; margin-bottom: 0">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
 					</div>
 
@@ -351,7 +435,11 @@
 						<div class="ncll-card__details">
 							<p class="ncll-card__blurb">For experienced AAA players and returning Majors players.</p>
 							<ul class="ncll-card__meta">
-								<li>Games will be <em>sandlot</em> format for maximum flexibility over the summer</li>
+								<li>
+									Games will be
+									<em>sandlot</em>
+									format for maximum flexibility over the summer
+								</li>
 								<li>Potential interleague play opportunities with neighboring leagues</li>
 								<li>Volunteer coaches needed &mdash; all are welcome to help!</li>
 							</ul>
@@ -361,14 +449,33 @@
 					<div class="ncll-card__body panel panel0">
 						<div class="ncll-card__details">
 							<h4 class="left">Softball AAA/MAJ (Sandlot) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> TBD.</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: TBD.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								TBD.
+							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: TBD.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> TBD</li>
-								<li><span class="ncll-italic-accent">Tue:</span> TBD</li>
-								<li><span class="ncll-italic-accent">Wed:</span> TBD</li>
-								<li><span class="ncll-italic-accent">Thu:</span> TBD</li>
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									TBD
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									TBD
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									TBD
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									TBD
+								</li>
 							</ul>
 							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
@@ -415,10 +522,14 @@
 							<p class="ncll-card__blurb">We&rsquo;re excited to welcome families to Single-A baseball this summer!</p>
 							<ul class="ncll-card__meta">
 								<li>
-									Games will be <em>sandlot</em> format, giving maximum flexibility to players and coaches over the summer
+									Games will be
+									<em>sandlot</em>
+									format, giving maximum flexibility to players and coaches over the summer
 								</li>
 								<li>
-									For players with experience in Coach Pitch or Single-A <em>only</em> (not directly from T-ball)
+									For players with experience in Coach Pitch or Single-A
+									<em>only</em>
+									(not directly from T-ball)
 								</li>
 								<li>Parent volunteers needed &mdash; all experience levels welcome!</li>
 							</ul>
@@ -428,14 +539,33 @@
 					<div class="ncll-card__body panel panel0">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball A (Sandlot) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> Northacres (7g), Ross Park (2g).</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: 6:00 PM.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								Northacres (7g), Ross (2g).
+							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: 6:00 PM.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> &ndash;</li>
-								<li><span class="ncll-italic-accent">Tue:</span> 3</li>
-								<li><span class="ncll-italic-accent">Wed:</span> 1</li>
-								<li><span class="ncll-italic-accent">Thu:</span> 4</li>
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									0
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									3
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									1
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									4
+								</li>
 							</ul>
 							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
@@ -471,7 +601,7 @@
 								alt="Baseball icon"
 							/>
 							<h3 class="ncll-card__title" id="sb-interleague-title">
-								<span class="text-background">Baseball AA/AAA/MAJ/JUN (Interleague)</span>
+								<span class="text-background">Baseball Interleague</span>
 							</h3>
 							<img
 								class="ncll-card__sport-icon"
@@ -484,12 +614,16 @@
 					<div class="ncll-card__body panel panel-intro">
 						<div class="ncll-card__details">
 							<p class="ncll-card__blurb">
-								Traditional organized baseball with set teams and regular game schedules. Competitive play against
-								neighboring little leagues.
+								AA, AAA, Majors, and Juniors are separate divisions &mdash; teams are not mixed across age groups. Traditional organized baseball with set teams and regular game schedules, playing competitively against the same division at neighboring
+								little leagues.
 							</p>
 							<ul class="ncll-card__meta">
-								<li>Games will be <em>interleague</em> play against neighboring leagues</li>
-								<li>Players are encouraged to play up to the level they&rsquo;ll play next year</li>
+								<li>
+									Games will be
+									<em>interleague</em>
+									play against neighboring leagues
+								</li>
+								<li>Players are encouraged to play up to the level they&rsquo;ll play in the Spring &rsquo;27 season</li>
 								<li>
 									<span>AA Baseball</span>
 									<em>may</em>
@@ -502,12 +636,16 @@
 
 					<div class="ncll-card__body panel panel0">
 						<div class="ncll-card__details">
-							<h4 class="left">Why Play Up in <em>Summerball26</em>?</h4>
+							<h4 class="left">
+								Why Play Up in
+								<em>Summerball26</em>
+								?
+							</h4>
 							<ol class="training-steps">
 								<li>
 									<strong>Better Competition</strong>
-									&mdash; Local leagues (Ballard, Magnolia, Queen Anne, Shoreline, and more) have agreed to align divisions
-									based on where players will be in Spring of &rsquo;27, creating balanced teams
+									&mdash; Local leagues (Ballard, Magnolia, Queen Anne, Shoreline, and more) have agreed to align divisions based
+									on where players will be in Spring of &rsquo;27, creating balanced teams
 								</li>
 								<li>
 									<strong>Low-Stakes, High-Growth</strong>
@@ -516,8 +654,7 @@
 								</li>
 								<li>
 									<strong>Head Start for Spring 2027</strong>
-									&mdash; Getting early reps at the next level helps players settle in and succeed when the regular season
-									begins
+									&mdash; Getting early reps at the next level helps players settle in and succeed when the regular season begins
 								</li>
 							</ol>
 						</div>
@@ -527,15 +664,36 @@
 					<div class="ncll-card__body panel panel1">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball AA (Interleague) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> LW (9g), Northacres (5g), Dahl (3g), Ross Park (2g), Meadowbrook (2g), Maple Leaf (2g), Magnuson (2g), Pinehurst (1g).</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: 4:00&ndash;6:00 PM.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								LW (9g), Northacres (5g), Dahl (3g), Ross (2g), Meadowbrook (2g), Maple Leaf (2g), Magnuson (2g), Pinehurst
+								(1g).
+							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: 4:00&ndash;6:00 PM.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> 9</li>
-								<li><span class="ncll-italic-accent">Tue:</span> 7</li>
-								<li><span class="ncll-italic-accent">Wed:</span> 4</li>
-								<li><span class="ncll-italic-accent">Thu:</span> 6</li>
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									9
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									7
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									4
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									6
+								</li>
 							</ul>
+							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
 					</div>
 
@@ -543,15 +701,36 @@
 					<div class="ncll-card__body panel panel2">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball AAA (Interleague) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> Ross Park (7g), LW (7g), Maple Leaf (5g), West Queen Anne (2g), Dahl (2g), Northacres (1g), Gilman (1g), Interbay (1g), Magnuson (1g), View Ridge (1g).</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: 6:00 PM.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								Ross (7g), LW (7g), Maple Leaf (5g), West Queen Anne (2g), Dahl (2g), Northacres (1g), Gilman (1g),
+								Interbay (1g), Magnuson (1g), View Ridge (1g).
+							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: 6:00 PM.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> 12</li>
-								<li><span class="ncll-italic-accent">Tue:</span> 2</li>
-								<li><span class="ncll-italic-accent">Wed:</span> 9</li>
-								<li><span class="ncll-italic-accent">Thu:</span> 5</li>
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									12
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									2
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									9
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									5
+								</li>
 							</ul>
+							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
 					</div>
 
@@ -559,15 +738,35 @@
 					<div class="ncll-card__body panel panel3">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball Majors (Interleague) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> LW (9g), West Queen Anne (2g), Ross Park (2g), Magnuson (2g), Gilman (1g), Soundview (1g), Loyal Heights (1g).</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: 6:00 PM.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								LW (9g), West Queen Anne (2g), Ross (2g), Magnuson (2g), Gilman (1g), Soundview (1g), Loyal Heights (1g).
+							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: 6:00 PM.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> &ndash;</li>
-								<li><span class="ncll-italic-accent">Tue:</span> 8</li>
-								<li><span class="ncll-italic-accent">Wed:</span> 1</li>
-								<li><span class="ncll-italic-accent">Thu:</span> 9</li>
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									0
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									8
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									1
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									9
+								</li>
 							</ul>
+							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
 					</div>
 
@@ -575,14 +774,34 @@
 					<div class="ncll-card__body panel panel4">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball Juniors (Interleague) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> Whitman/Soundview Playfield (14g), Northshore Athletic Fields (8g), LW (3g), Willis Tucker (2g), Meadowbrook (2g), Magnuson (1g).</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: 5:00&ndash;7:00 PM.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								Whitman/Soundview (14g), Northshore (8g), LW (3g), Willis Tucker (2g), Meadowbrook
+								(2g), Magnuson (1g).
+							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: 5:00&ndash;7:00 PM.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> 12</li>
-								<li><span class="ncll-italic-accent">Tue:</span> 4</li>
-								<li><span class="ncll-italic-accent">Wed:</span> 5</li>
-								<li><span class="ncll-italic-accent">Thu:</span> 9</li>
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									12
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									4
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									5
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									9
+								</li>
 							</ul>
 							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
@@ -623,7 +842,7 @@
 								alt="Baseball icon"
 							/>
 							<h3 class="ncll-card__title" id="sb-divisions-title">
-								<span class="text-background">Division Guidance</span>
+								<span class="text-background">Summerball26 Division Guidance</span>
 							</h3>
 							<img
 								class="ncll-card__sport-icon"
@@ -637,57 +856,28 @@
 						<div class="ncll-card__details">
 							<p class="ncll-card__blurb">
 								We encourage kids to move up a division if they will be moving up NEXT season. The matrix below provides
-								guidance on selecting the appropriate <em>Summerball26</em> division &mdash; but the answer may come more
-								easily by asking yourself:
+								guidance on selecting the appropriate
+								<em>Summerball26</em>
+								division &mdash; but the answer may come more easily by asking yourself:
 							</p>
 							<div class="callout callout--info">
 								<span class="callout__icon material-icons-outlined" aria-hidden="true">info</span>
-								<span>
-									Where will my player play next year? If there is even a chance, then give it a go!
-								</span>
+								<span>Where will my player play next year? If there is even a chance, then give it a go!</span>
 							</div>
-							<p class="ncll-card__blurb">Tap through for softball and baseball division matrices.</p>
+							<p class="ncll-card__blurb">Tap through for softball and baseball division guidance.</p>
 						</div>
 					</div>
 
 					<div class="ncll-card__body panel panel0">
 						<div class="ncll-card__details">
 							<h4 class="left">Softball Division Guidance</h4>
-							<div
-								class="table_age"
-								style="overflow-x: auto; -webkit-overflow-scrolling: touch;"
-								role="region"
-								aria-label="Softball division guidance for Summerball26"
-								tabindex="0"
-							>
-								<table class="age-matrix">
-									<thead>
-										<tr class="fit">
-											<th scope="col">League Age</th>
-											<th scope="col">Division Just Finished</th>
-											<th scope="col">Recommended</th>
-											<th scope="col">Notes</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="fit">
-											<td data-label="League Age">8&ndash;10</td>
-											<td data-label="Division Just Finished">Softball AA/AAA</td>
-											<td data-label="Recommended">Softball AA/AAA (Sandlot)</td>
-											<td data-label="Notes">Contact Andy Clinch</td>
-										</tr>
-										<tr class="fit">
-											<td data-label="League Age">11&ndash;13</td>
-											<td data-label="Division Just Finished">Softball AAA/Majors</td>
-											<td data-label="Recommended">Softball AAA/Majors (Sandlot)</td>
-											<td data-label="Notes">Exp. AAA &amp; returning Majors</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+							<ul class="ncll-card__meta">
+								<li>AA/AAA &rarr; <strong>Softball AA/AAA Sandlot</strong> &mdash; ages 6&ndash;8 at season start; Contact Andy Clinch</li>
+								<li>AAA/Majors &rarr; <strong>Softball AAA/Majors Sandlot</strong> &mdash; ages 8&ndash;11 at season start; Exp. AAA &amp; returning Majors</li>
+							</ul>
 							<p class="ncll-card__note">
-								Participation in Summerball is independent of Spring &rsquo;27 division placement &mdash; divisions will
-								be assigned based on league age and skill assessed at that time.
+								Participation in Summerball is independent of Spring &rsquo;27 division placement &mdash; divisions will be
+								assigned based on league age and skill assessed at that time.
 							</p>
 						</div>
 					</div>
@@ -695,56 +885,13 @@
 					<div class="ncll-card__body panel panel1">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball Division Guidance</h4>
-							<div
-								class="table_age"
-								style="overflow-x: auto; -webkit-overflow-scrolling: touch;"
-								role="region"
-								aria-label="Baseball division guidance for Summerball26"
-								tabindex="0"
-							>
-								<table class="age-matrix">
-									<thead>
-										<tr class="fit">
-											<th scope="col">League Age</th>
-											<th scope="col">Division Just Finished</th>
-											<th scope="col">Recommended</th>
-											<th scope="col">Notes</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="fit">
-											<td data-label="League Age">7&ndash;8</td>
-											<td data-label="Division Just Finished">A / Coach Pitch</td>
-											<td data-label="Recommended">A (Sandlot)</td>
-											<td data-label="Notes">Must have completed CP or Single-A</td>
-										</tr>
-										<tr class="fit">
-											<td data-label="League Age">8&ndash;9</td>
-											<td data-label="Division Just Finished">AA</td>
-											<td data-label="Recommended">AA (Interleague/Sandlot)</td>
-											<td data-label="Notes">Strong 9s may try AAA</td>
-										</tr>
-										<tr class="fit">
-											<td data-label="League Age">9&ndash;11</td>
-											<td data-label="Division Just Finished">AAA</td>
-											<td data-label="Recommended">AAA (Interleague)</td>
-											<td data-label="Notes">Strong 10s may play Majors</td>
-										</tr>
-										<tr class="fit">
-											<td data-label="League Age">11&ndash;12</td>
-											<td data-label="Division Just Finished">Majors</td>
-											<td data-label="Recommended">Majors (Interleague)</td>
-											<td data-label="Notes">11s may stay in AAA</td>
-										</tr>
-										<tr class="fit">
-											<td data-label="League Age">13&ndash;15</td>
-											<td data-label="Division Just Finished">Juniors / Seniors</td>
-											<td data-label="Recommended">Juniors/Seniors (Interleague)</td>
-											<td data-label="Notes">13s may stay in Majors</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+							<ul class="ncll-card__meta">
+								<li>A / Coach Pitch &rarr; <strong>A (Sandlot)</strong> &mdash; League Age 7&ndash;8; must have completed CP or Single-A</li>
+								<li>AA &rarr; <strong>AA (Interleague/Sandlot)</strong> &mdash; League Age 8&ndash;9; strong 9s may try AAA</li>
+								<li>AAA &rarr; <strong>AAA (Interleague)</strong> &mdash; League Age 9&ndash;11; strong 10s may play Majors</li>
+								<li>Majors &rarr; <strong>Majors (Interleague)</strong> &mdash; League Age 11&ndash;12; 11s may stay in AAA</li>
+								<li>Juniors / Seniors &rarr; <strong>Juniors/Seniors (Interleague)</strong> &mdash; League Age 13&ndash;15; 13s may stay in Majors</li>
+							</ul>
 							<p class="ncll-card__note">
 								For additional help, see
 								<a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">
@@ -754,7 +901,6 @@
 							</p>
 						</div>
 					</div>
-
 					<div class="ncll-card__sticky-footer">
 						<div class="actions" role="group" aria-label="Division Guidance card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="sb-divisions-1">Back</label>
@@ -783,22 +929,41 @@
 
 					<div class="ncll-card__sticky-heading">
 						<div class="ncll-card__heading-title">
-							<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+							<img
+								class="ncll-card__sport-icon"
+								src="https://ncllball.github.io/images/site_navigation/baseball.png"
+								alt="Baseball icon"
+							/>
 							<h3 class="ncll-card__title" id="sb-schedule-title">
-								<span class="text-background">Schedule Matrix</span>
+								<span class="text-background">Summerball26 Schedule Matrix</span>
 							</h3>
-							<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+							<img
+								class="ncll-card__sport-icon"
+								src="https://ncllball.github.io/images/site_navigation/baseball.png"
+								alt="Baseball icon"
+							/>
 						</div>
 					</div>
 
 					<div class="ncll-card__body panel panel-intro">
 						<div class="ncll-card__details">
-							<p class="ncll-card__blurb">Day/field estimates for <em>Summerball26</em> by division.</p>
+							<p class="ncll-card__blurb">
+								Day/field estimates for
+								<em>Summerball26</em>
+								by division.
+							</p>
 							<div class="callout callout--info">
-							<span class="callout__icon material-icons-outlined" aria-hidden="true">info</span>
-							<span>Scheduling for <em>Summerball26</em> is controlled by District 8&rsquo;s central scheduler &mdash; we&rsquo;re sharing 2025 district data to help families plan ahead &mdash; <strong>not a guarantee</strong>. Day counts reflect all district games on each night, not just NCLL&rsquo;s.</span>
-						</div>
-						<p class="ncll-card__blurb">Tap through for softball and baseball schedule matrices.</p>
+								<span class="callout__icon material-icons-outlined" aria-hidden="true">info</span>
+								<span>
+									Scheduling for
+									<em>Summerball26</em>
+									is controlled by District 8&rsquo;s central scheduler &mdash; we&rsquo;re sharing 2025 district data to help
+									families plan ahead &mdash;
+									<strong>not a guarantee</strong>
+									. Day counts reflect all district games on each night, not just NCLL&rsquo;s.
+								</span>
+							</div>
+							<p class="ncll-card__blurb">Tap through for softball and baseball schedule matrices.</p>
 						</div>
 					</div>
 
@@ -806,15 +971,35 @@
 					<div class="ncll-card__body panel panel0">
 						<div class="ncll-card__details">
 							<h4 class="left">Softball AA/AAA (Sandlot) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> TBD.</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: TBD.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								TBD.
+							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: TBD.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> TBD</li>
-								<li><span class="ncll-italic-accent">Tue:</span> TBD</li>
-								<li><span class="ncll-italic-accent">Wed:</span> TBD</li>
-								<li><span class="ncll-italic-accent">Thu:</span> TBD</li>
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									TBD
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									TBD
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									TBD
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									TBD
+								</li>
 							</ul>
+							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
 					</div>
 
@@ -822,15 +1007,35 @@
 					<div class="ncll-card__body panel panel1">
 						<div class="ncll-card__details">
 							<h4 class="left">Softball AAA/MAJ (Sandlot) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> TBD.</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: TBD.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								TBD.
+							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: TBD.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> TBD</li>
-								<li><span class="ncll-italic-accent">Tue:</span> TBD</li>
-								<li><span class="ncll-italic-accent">Wed:</span> TBD</li>
-								<li><span class="ncll-italic-accent">Thu:</span> TBD</li>
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									TBD
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									TBD
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									TBD
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									TBD
+								</li>
 							</ul>
+							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
 					</div>
 
@@ -838,15 +1043,35 @@
 					<div class="ncll-card__body panel panel2">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball A (Sandlot) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> Northacres (7g), Ross Park (2g).</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: 6:00 PM.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								Northacres (7g), Ross (2g).
+							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: 6:00 PM.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> &ndash;</li>
-								<li><span class="ncll-italic-accent">Tue:</span> 3</li>
-								<li><span class="ncll-italic-accent">Wed:</span> 1</li>
-								<li><span class="ncll-italic-accent">Thu:</span> 4</li>
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									0
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									3
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									1
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									4
+								</li>
 							</ul>
+							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
 					</div>
 
@@ -854,15 +1079,36 @@
 					<div class="ncll-card__body panel panel3">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball AA (Interleague/Sandlot) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> LW (9g), Northacres (5g), Dahl (3g), Ross Park (2g), Meadowbrook (2g), Maple Leaf (2g), Magnuson (2g), Pinehurst (1g).</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: 4:00&ndash;6:00 PM.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								LW (9g), Northacres (5g), Dahl (3g), Ross (2g), Meadowbrook (2g), Maple Leaf (2g), Magnuson (2g), Pinehurst
+								(1g).
+							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: 4:00&ndash;6:00 PM.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> 9</li>
-								<li><span class="ncll-italic-accent">Tue:</span> 7</li>
-								<li><span class="ncll-italic-accent">Wed:</span> 4</li>
-								<li><span class="ncll-italic-accent">Thu:</span> 6</li>
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									9
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									7
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									4
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									6
+								</li>
 							</ul>
+							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
 					</div>
 
@@ -870,15 +1116,36 @@
 					<div class="ncll-card__body panel panel4">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball AAA (Interleague) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> Ross Park (7g), LW (7g), Maple Leaf (5g), West Queen Anne (2g), Dahl (2g), Northacres (1g), Gilman (1g), Interbay (1g), Magnuson (1g), View Ridge (1g).</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: 6:00 PM.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								Ross (7g), LW (7g), Maple Leaf (5g), West Queen Anne (2g), Dahl (2g), Northacres (1g), Gilman (1g),
+								Interbay (1g), Magnuson (1g), View Ridge (1g).
+							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: 6:00 PM.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> 12</li>
-								<li><span class="ncll-italic-accent">Tue:</span> 2</li>
-								<li><span class="ncll-italic-accent">Wed:</span> 9</li>
-								<li><span class="ncll-italic-accent">Thu:</span> 5</li>
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									12
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									2
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									9
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									5
+								</li>
 							</ul>
+							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
 					</div>
 
@@ -886,15 +1153,35 @@
 					<div class="ncll-card__body panel panel5">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball Majors (Interleague) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> LW (9g), West Queen Anne (2g), Ross Park (2g), Magnuson (2g), Gilman (1g), Soundview (1g), Loyal Heights (1g).</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: 6:00 PM.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								LW (9g), West Queen Anne (2g), Ross (2g), Magnuson (2g), Gilman (1g), Soundview (1g), Loyal Heights (1g).
+							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: 6:00 PM.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> &ndash;</li>
-								<li><span class="ncll-italic-accent">Tue:</span> 8</li>
-								<li><span class="ncll-italic-accent">Wed:</span> 1</li>
-								<li><span class="ncll-italic-accent">Thu:</span> 9</li>
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									0
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									8
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									1
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									9
+								</li>
 							</ul>
+							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
 					</div>
 
@@ -902,19 +1189,36 @@
 					<div class="ncll-card__body panel panel6">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball Juniors (Interleague) &mdash; 2025</h4>
-							<p class="ncll-card__blurb"><span class="ncll-italic-accent">Fields:</span> Whitman/Soundview Playfield (14g), Northshore Athletic Fields (8g), LW (3g), Willis Tucker (2g), Meadowbrook (2g), Magnuson (1g).</p>
-							<p class="ncll-card__blurb">Typical game <strong>start</strong> time: 5:00&ndash;7:00 PM.</p>
-							<hr style="margin: 0.5rem 0; border: 0; border-top: 1px solid rgba(0,0,0,0.15);">
-							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">Mon:</span> 12</li>
-								<li><span class="ncll-italic-accent">Tue:</span> 4</li>
-								<li><span class="ncll-italic-accent">Wed:</span> 5</li>
-								<li><span class="ncll-italic-accent">Thu:</span> 9</li>
-							</ul>
-							<p class="ncll-card__note">
-								Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>.
-								Counts reflect all district games on each night, not just NCLL&rsquo;s.
+							<p class="ncll-card__blurb">
+								<span class="ncll-italic-accent">Fields:</span>
+								Whitman/Soundview (14g), Northshore (8g), LW (3g), Willis Tucker (2g), Meadowbrook
+								(2g), Magnuson (1g).
 							</p>
+							<p class="ncll-card__blurb">
+								Typical game
+								<strong>start</strong>
+								time: 5:00&ndash;7:00 PM.
+							</p>
+							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
+							<ul class="ncll-card__meta">
+								<li>
+									<span class="ncll-italic-accent">Mon:</span>
+									12
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Tue:</span>
+									4
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Wed:</span>
+									5
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Thu:</span>
+									9
+								</li>
+							</ul>
+							<p class="ncll-card__note">Scroll down to register your athlete &mdash; and don&rsquo;t forget to volunteer!</p>
 						</div>
 					</div>
 
@@ -941,27 +1245,52 @@
 				</article>
 
 				<!-- Card: Contacts -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="sb-contacts-title">
+				<article
+					class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle"
+					aria-labelledby="sb-contacts-title"
+				>
 					<input type="radio" name="sb-contacts" id="sb-contacts-intro" checked />
 					<input type="radio" name="sb-contacts" id="sb-contacts-0" />
 					<input type="radio" name="sb-contacts" id="sb-contacts-1" />
 
 					<div class="ncll-card__sticky-heading">
 						<h3 class="ncll-card__title" id="sb-contacts-title">
-							<span class="text-background">CONTACTS</span>
+							<span class="text-background">Summerball26 CONTACTS</span>
 						</h3>
 					</div>
 
 					<!-- Intro: who to message and when -->
 					<div class="ncll-card__body panel panel-intro">
 						<div class="ncll-card__details">
-							<p class="ncll-card__blurb">Need to reach someone on the Summerball26 team? Each role has a specific lane &mdash; here&rsquo;s who handles what.</p>
+							<p class="ncll-card__blurb">
+								Need to reach someone on the Summerball26 team? Each role has a specific lane &mdash; here&rsquo;s who handles
+								what.
+							</p>
 							<ul class="ncll-card__meta">
-								<li><span class="ncll-italic-accent">General <em>Summerball26</em> questions:</span> Paul Fox</li>
-								<li><span class="ncll-italic-accent">Interleague baseball:</span> Chris Gozzano (AA, AAA, Majors, Juniors)</li>
-								<li><span class="ncll-italic-accent">Softball:</span> Gayle Perez or Andy Clinch</li>
-								<li><span class="ncll-italic-accent">Single-A Sandlot:</span> Olin Wick</li>
-								<li><span class="ncll-italic-accent">Registration &amp; fees:</span> John Shikella</li>
+								<li>
+									<span class="ncll-italic-accent">
+										General
+										<em>Summerball26</em>
+										questions:
+									</span>
+									Paul Fox
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Interleague baseball:</span>
+									Chris Gozzano (AA, AAA, Majors, Juniors)
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Softball:</span>
+									Gayle Perez or Andy Clinch
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Single-A Sandlot:</span>
+									Olin Wick
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Registration &amp; fees:</span>
+									John Shikella
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -972,18 +1301,27 @@
 							<h4 class="left">Summerball26 Contacts</h4>
 							<ul class="ncll-card__meta">
 								<li>
-									<span class="ncll-italic-accent">Paul Fox</span> &mdash; Summerball Coordinator<br />
-									General program questions, play-up requests, or anything that doesn&rsquo;t fit elsewhere.<br />
+									<span class="ncll-italic-accent">Paul Fox</span>
+									&mdash; Summerball Coordinator
+									<br />
+									General program questions, play-up requests, or anything that doesn&rsquo;t fit elsewhere.
+									<br />
 									<a class="ncll" href="mailto:summerball@ncllball.com">summerball@ncllball.com</a>
 								</li>
 								<li>
-									<span class="ncll-italic-accent">Chris Gozzano</span> &mdash; Baseball Coordinator<br />
-									Interleague baseball: AA, AAA, Majors, Juniors &amp; Seniors.<br />
+									<span class="ncll-italic-accent">Chris Gozzano</span>
+									&mdash; Baseball Coordinator
+									<br />
+									Interleague baseball: AA, AAA, Majors, Juniors &amp; Seniors.
+									<br />
 									<a class="ncll" href="mailto:chrisgozzano@gmail.com">chrisgozzano@gmail.com</a>
 								</li>
 								<li>
-									<span class="ncll-italic-accent">Gayle Perez</span> &mdash; VP Softball &nbsp;&middot;&nbsp; <span class="ncll-italic-accent">Andy Clinch</span> &mdash; Softball Coordinator<br />
-									Softball divisions (AA/AAA and AAA/Majors sandlot).<br />
+									<span class="ncll-italic-accent">Gayle Perez</span>
+									&mdash; VP Softball
+									<br />
+									Softball divisions (AA/AAA and AAA/Majors sandlot).
+									<br />
 									<a class="ncll" href="mailto:softball@ncllball.com">softball@ncllball.com</a>
 								</li>
 							</ul>
@@ -993,16 +1331,33 @@
 					<!-- panel1: Contacts 2/2 -->
 					<div class="ncll-card__body panel panel1">
 						<div class="ncll-card__details">
-							<h4 class="left">Summerball26 Contacts <em>(cont.)</em></h4>
+							<h4 class="left">
+								Summerball26 Contacts
+								<em>(cont.)</em>
+							</h4>
 							<ul class="ncll-card__meta">
 								<li>
-									<span class="ncll-italic-accent">Olin Wick</span> &mdash; Single-A Coordinator<br />
-									Single-A Baseball Sandlot (show-up-and-play format).<br />
+									<span class="ncll-italic-accent">Andy Clinch</span>
+									&mdash; Softball Coordinator
+									<br />
+									Softball divisions (AA/AAA and AAA/Majors sandlot).
+									<br />
+									<a class="ncll" href="mailto:clincher@comcast.net">clincher@comcast.net</a>
+								</li>
+								<li>
+									<span class="ncll-italic-accent">Olin Wick</span>
+									&mdash; Single-A Coordinator
+									<br />
+									Single-A Baseball Sandlot (show-up-and-play format).
+									<br />
 									<a class="ncll" href="mailto:olinwick@gmail.com">olinwick@gmail.com</a>
 								</li>
 								<li>
-									<span class="ncll-italic-accent">John Shikella</span> &mdash; Registrar<br />
-									Registration questions, fees, refunds, and late adds.<br />
+									<span class="ncll-italic-accent">John Shikella</span>
+									&mdash; Registrar
+									<br />
+									Registration questions, fees, refunds, and late adds.
+									<br />
 									<a class="ncll" href="mailto:registrar@ncllball.com">registrar@ncllball.com</a>
 								</li>
 							</ul>
@@ -1020,12 +1375,19 @@
 						</div>
 					</div>
 				</article>
-
 			</div>
 
 			<section class="footies footies_red">
-				<p><strong>Sandlot format:</strong> Kids show up and teams are picked based on who is present and ready to play — no commitment to a specific team, no scheduled practices. Flexible, drop-in environment for maximum summer flexibility.</p>
-				<p><strong>Interleague play:</strong> Organized games against teams from neighboring little leagues — Ballard, Magnolia, North Central, Northeast, Northwest, Queen Anne, RUG, Shoreline, and North-End (NBLL) — with set team rosters and a regular game schedule.</p>
+				<p>
+					<strong>Sandlot format:</strong>
+					Kids show up and teams are picked based on who is present and ready to play — no commitment to a specific team, no
+					scheduled practices. Flexible, drop-in environment for maximum summer flexibility.
+				</p>
+				<p>
+					<strong>Interleague play:</strong>
+					Organized games against teams from neighboring little leagues — Ballard, Magnolia, North Central, Northeast,
+					Northwest, Queen Anne, RUG, Shoreline, and North-End (NBLL) — with set team rosters and a regular game schedule.
+				</p>
 			</section>
 		</main>
 	</body>
