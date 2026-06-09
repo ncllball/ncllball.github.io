@@ -21,35 +21,39 @@
 		<link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
 		<link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
 		<style>
-			.ncll-card__details > *:last-child {
+			.summerball-main .ncll-card__details > *:last-child {
 				margin-bottom: 0;
 				padding-bottom: 0;
 			}
-			.ncll-card__details .callout {
+			.summerball-main .ncll-card__details .callout {
 				font-size: 0.8rem;
 				letter-spacing: normal;
 			}
-			.ncll-card__details .callout span:not(.callout__icon) {
+			.summerball-main .ncll-card__details .callout span:not(.callout__icon) {
 				font-size: 0.8rem;
 			}
-			.intro-section > img {
+			.summerball-main .intro-section > img {
 				float: left;
 				margin: 0 1.5rem 1rem 0;
 				max-width: 200px;
 			}
-			[aria-labelledby="sb-vol-title"] .panel-intro .ncll-card__blurb + .ncll-card__blurb {
+			.summerball-main .ncll-card__details > *:first-child {
+				margin-top: 0;
+				margin-bottom: 3px;
+			}
+			#card-vol .panel-intro .ncll-card__blurb + .ncll-card__blurb {
 				margin: 0;
 			}
-			[aria-labelledby="sb-softball-aaa-title"] .panel-intro .ncll-card__blurb {
+			#card-softball-aaa .panel-intro .ncll-card__blurb {
 				margin-top: 0;
 			}
-			[aria-labelledby="sb-schedule-title"] h4.left + .ncll-card__blurb {
+			#card-schedule h4.left + .ncll-card__blurb {
 				margin-bottom: 0;
 			}
 		</style>
 	</head>
 	<body>
-		<main class="summerball-landing" id="content" role="main">
+		<main class="summerball-main" id="content" role="main">
 			<h1 class="h1-seo sr-only left">Summerball 2026</h1>
 
 			<section class="intro-section">
@@ -202,7 +206,7 @@
 				</article>
 
 				<!-- ===================== Card 2: Volunteers ===================== -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="sb-vol-title">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="card-vol" aria-labelledby="sb-vol-title">
 					<input type="radio" name="sb-vol" id="sb-vol-intro" checked />
 					<input type="radio" name="sb-vol" id="sb-vol-0" />
 					<input type="radio" name="sb-vol" id="sb-vol-1" />
@@ -323,6 +327,7 @@
 				<!-- ===================== Card 3: Softball AA/AAA (Sandlot) ===================== -->
 				<article
 					class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle"
+					id="card-softball-aaa"
 					aria-labelledby="sb-softball-aaa-title"
 				>
 					<input type="radio" name="sb-softball-aaa" id="sb-softball-aaa-intro" checked />
@@ -367,10 +372,8 @@
 							<p class="ncll-card__blurb" style="margin-top: 1.5px; margin-bottom: 1.5px">
 								<span class="ncll-italic-accent">Fields:</span>
 								TBD.
-							</p>
-							<p class="ncll-card__blurb" style="margin-top: 0; margin-bottom: 1.5px">Typical game
-								<strong>start</strong>
-								time: TBD.
+								<span class="ncll-italic-accent">Typical game start time:</span>
+								TBD.
 							</p>
 							<p class="ncll-card__note" style="margin-top: 1.5px; margin-bottom: 1.5px">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta" style="margin-top: 1.5px; margin-bottom: 1.5px">
@@ -452,11 +455,8 @@
 							<p class="ncll-card__blurb">
 								<span class="ncll-italic-accent">Fields:</span>
 								TBD.
-							</p>
-							<p class="ncll-card__blurb">
-								Typical game
-								<strong>start</strong>
-								time: TBD.
+								<span class="ncll-italic-accent">Typical game start time:</span>
+								TBD.
 							</p>
 							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
@@ -916,6 +916,7 @@
 				<!-- ===================== Card 7: Schedule Matrix ===================== -->
 				<article
 					class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle"
+					id="card-schedule"
 					aria-labelledby="sb-schedule-title"
 				>
 					<input type="radio" name="sb-schedule" id="sb-schedule-intro" checked />
@@ -974,11 +975,8 @@
 							<p class="ncll-card__blurb">
 								<span class="ncll-italic-accent">Fields:</span>
 								TBD.
-							</p>
-							<p class="ncll-card__blurb">
-								Typical game
-								<strong>start</strong>
-								time: TBD.
+								<span class="ncll-italic-accent">Typical game start time:</span>
+								TBD.
 							</p>
 							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
@@ -1010,11 +1008,8 @@
 							<p class="ncll-card__blurb">
 								<span class="ncll-italic-accent">Fields:</span>
 								TBD.
-							</p>
-							<p class="ncll-card__blurb">
-								Typical game
-								<strong>start</strong>
-								time: TBD.
+								<span class="ncll-italic-accent">Typical game start time:</span>
+								TBD.
 							</p>
 							<p class="ncll-card__note">Game day estimates are based on 2025 data &mdash; <em>not guaranteed</em>. Counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 							<ul class="ncll-card__meta">
