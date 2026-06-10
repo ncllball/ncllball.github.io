@@ -4740,7 +4740,6 @@ p.flush-bottom:last-child {
 }
 
 .ncll-card__note {
-    margin-top: 10px;
     font-size: 0.9rem;
     color: var(--color_text_muted, #555);
 }
