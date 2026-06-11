@@ -1270,7 +1270,7 @@ sup {
 	letter-spacing: .02em;
 	color: var(--color_text);
 	font-weight: 500;
-    font-size: 1rem;
+	font-size: inherit;
 }
 .ncll-bold-accent {
 	font-family: var(--font_tk-cronos-pro);
