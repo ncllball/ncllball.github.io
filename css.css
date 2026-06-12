@@ -1363,6 +1363,10 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     line-height: normal
 }
 
+.summerball-main .ncll-card__title {
+    font-size: 1.15rem
+}
+
 .summerball-main .footies {
     margin-top: 0
 }
