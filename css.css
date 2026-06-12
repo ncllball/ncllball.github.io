@@ -5251,6 +5251,7 @@ p:has(+ .callout) {
     line-height: 1.75;
     display: inline-block;
     vertical-align: top;
+    font-family: proxima-nova, "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
 .callout--note {
     border-color: #c5c5c5;
