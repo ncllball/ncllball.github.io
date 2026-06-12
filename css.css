@@ -1427,7 +1427,7 @@ body.cms-right.no-x-scroll {
     height: var(--info-icon-size);
     overflow: hidden;
     display: inline-block;
-    margin-right: 0.25em;
+    margin-right: 0.05em;
     color: var(--color_red);
     vertical-align: top
 }
