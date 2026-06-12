@@ -1367,6 +1367,11 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     border-top: none
 }
 
+.summerball-main .info-icon {
+    width: 9px;
+    height: 9px
+}
+
 .footies p {
     font-family: var(--font_ui);
     color: var(--color_muted);
