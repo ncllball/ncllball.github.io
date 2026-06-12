@@ -74,6 +74,22 @@
     "crawl4ai": {
       "type": "sse",
       "url": "http://192.168.50.9:11235/mcp/sse"
+    },
+    "codex-handoff": {
+      "command": "cmd",
+      "args": ["/c", "C:\\Program Files\\nodejs\\node.exe", "C:\\NCLL\\ncllball.github.io\\.claude\\tools\\codex-handoff-mcp\\index.js"],
+      "env": {
+        "PATH": "C:\\Users\\regis\\AppData\\Roaming\\npm;C:\\Program Files\\nodejs;C:\\Windows\\system32;C:\\Windows",
+        "USERPROFILE": "C:\\Users\\regis",
+        "APPDATA": "C:\\Users\\regis\\AppData\\Roaming",
+        "LOCALAPPDATA": "C:\\Users\\regis\\AppData\\Local",
+        "HOMEDRIVE": "C:",
+        "HOMEPATH": "\\Users\\regis",
+        "TEMP": "C:\\Users\\regis\\AppData\\Local\\Temp",
+        "TMP": "C:\\Users\\regis\\AppData\\Local\\Temp",
+        "CODEX_HANDOFF_DEFAULT_CWD": "C:\\NCLL\\ncllball.github.io",
+        "CODEX_HANDOFF_TIMEOUT_MS": "1200000"
+      }
     }
   }
 }

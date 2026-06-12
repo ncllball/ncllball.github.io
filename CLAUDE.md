@@ -50,6 +50,26 @@ Every page uses these two stylesheet links in `<head>`:
 <article class="ncll-card" aria-labelledby="...">
 ```
 
+## Codex Handoff MCP
+
+This repo has a project-local MCP bridge that lets Claude Code hand work to OpenAI Codex CLI.
+
+- MCP server name: `codex-handoff`
+- Server file: `.claude/tools/codex-handoff-mcp/index.js`
+- Claude tools:
+  - `mcp__codex-handoff__codex_status`
+  - `mcp__codex-handoff__codex_handoff`
+- Default Codex cwd: `C:\NCLL\ncllball.github.io`
+- Default Codex sandbox: `workspace-write`
+
+If Claude shows `codex-handoff` as pending, run `claude` interactively in this repo and approve the project MCP server. Use `codex_status` first to verify the bridge, then use `codex_handoff` to delegate tasks.
+
+Example prompt:
+
+```text
+Use mcp__codex-handoff__codex_status first. Then use mcp__codex-handoff__codex_handoff to ask Codex to review this repo for the requested issue. Use read-only sandbox unless edits are required.
+```
+
 
 ---
 
