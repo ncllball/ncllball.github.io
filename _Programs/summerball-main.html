@@ -16,7 +16,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>2026 Summerball26 | North Central Little League</title>
+		<title>Summerball26 | North Central Little League</title>
 		<link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
 		<link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
 		<style>
@@ -24,11 +24,12 @@
 				margin-bottom: 0;
 				padding-bottom: 0;
 			}
-			.summerball-main .ncll-card__details .callout {
+			.summerball-main .callout {
+				font-family: inherit;
 				font-size: 0.8rem;
 				letter-spacing: normal;
 			}
-			.summerball-main .ncll-card__details .callout span:not(.callout__icon) {
+			.summerball-main .callout span:not(.callout__icon) {
 				font-size: 0.9rem;
 			}
 			.summerball-main .intro-section > img {
@@ -43,6 +44,15 @@
 			/* #card-softball-aaa .panel-intro .ncll-card__blurb { margin-top: 0; } */
 			/* #card-schedule h4.left + .ncll-card__blurb { margin-bottom: 0; } */
 			.summerball-main .training-steps li { margin-bottom: 0.5rem; }
+			.summerball-main .ncll-italic-accent {
+				font-family: inherit;
+				font-style: italic;
+				letter-spacing: normal;
+			}
+			.summerball-main .ncll-bold-accent {
+				font-family: inherit;
+				letter-spacing: normal;
+			}
 		</style>
 	</head>
 	<body>
@@ -71,7 +81,7 @@
 					school boundaries. No practices, just games with friends over six weeks in July and August.
 				</p>
 				<p>
-					Registration is open June 6&ndash;30. Interleague teams are sorted by friend requests and announced around July 4; sandlot divisions are looser, drop-in formats. Have
+					Registration is open June 6&ndash;30. Interleague teams are built with friend requests as a top priority (not guaranteed) and announced around July 4. Sandlot divisions have no fixed rosters &mdash; game-day instructions are sent instead. Have
 					questions? The
 					<a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2250484">Summerball FAQ</a>
 					has answers.
@@ -125,7 +135,7 @@
 							<ul class="ncll-card__meta">
 								<li>Flexible schedule &mdash; <span class="ncll-italic-accent">no guilt</span>, players and coaches alike!</li>
 								<li>No practices, just <em>games!</em></li>
-								<li>Interleague teams are sorted by <em>friends</em> &mdash; list yours at registration! Sandlot stays flexible and drop-in.</li>
+								<li>Interleague teams are built with <em>friend requests as a top priority</em> &mdash; list yours at registration (not guaranteed). Sandlot stays flexible and drop-in.</li>
 								<li>No zip codes, no school zones &mdash; <span class="ncll-bold-accent">anyone can play!</span></li>
 								<li>Low-pressure, <span class="ncll-bold-accent">fun</span> baseball &amp; softball!</li>
 								<li>Just $75 for a full summer of games &mdash; <span class="ncll-bold-accent">great value</span>, great baseball!</li>
@@ -160,9 +170,9 @@
 								<li>Baseball AA</li>
 								<li>Baseball AAA</li>
 								<li>Baseball Majors</li>
-								<li>Baseball Juniors/TEEN</li>
+								<li>Baseball Juniors</li>
 								<li>Softball AA/AAA</li>
-								<li>Softball AAA/MAJ</li>
+								<li>Softball AAA/Majors</li>
 							</ul>
 						</div>
 					</div>
@@ -178,11 +188,11 @@
 								</li>
 								<li>
 									<span class="ncll-italic-accent">Registration Fee:</span>
-									$75 per player (<a class="ncll" href="https://docs.google.com/forms/d/e/1FAIpQLSd5JIcH7zLuLGVLSBSXHIOhbOtgYmP8rkW5w86_wB36zEbuoQ/viewform"><span class="ncll-bold-accent">scholarships available</span></a>)
+									$75 per player (<a class="ncll" href="https://docs.google.com/forms/d/e/1FAIpQLSd5JIcH7zLuLGVLSBSXHIOhbOtgYmP8rkW5w86_wB36zEbuoQ/viewform"><span class="ncll-bold-accent">scholarships available by request before registering</span></a>)
 								</li>
 								<li>
 									<span class="ncll-italic-accent">Uniform:</span>
-									Game shirt <span class="ncll-italic-accent">provided</span>; wear spring season cap or any cap
+									Game jersey <span class="ncll-italic-accent">provided</span>; wear spring season cap or any cap
 								</li>
 								<li>
 									<span class="ncll-italic-accent">Required Equipment:</span>
@@ -212,6 +222,7 @@
 				<!-- COMBINED: merges Baseball Interleague + Baseball A from canonical -->
 				<article
 					class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle"
+					id="card-divisions"
 					aria-labelledby="sb-baseball-title"
 				>
 					<input type="radio" name="sb-baseball" id="sb-baseball-intro" checked />
@@ -243,13 +254,9 @@
 					<div class="ncll-card__body panel panel-intro">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball Division Guide</h4>
-							<p class="ncll-card__blurb">NCLL encourages &mdash; and expects &mdash; kids to register for the division they'll be playing in next spring &mdash; ask yourself this simple question:</p>
-							<div class="callout callout--info">
-								<span class="callout__icon material-icons-outlined" aria-hidden="true">info</span>
-								<span>Where will my player play in Spring &rsquo;27? If there is even a chance, then give it a go!</span>
-							</div>
-							<p class="ncll-card__blurb">Your options this summer: <strong>Single-A (Sandlot)</strong> &mdash; flexible, parent-run format for players out of Coach Pitch or Single-A. <strong>AA through Juniors/TEEN</strong> &mdash; set teams, regular schedules, competitive interleague play.</p>
-							<p class="ncll-card__note">Summerball division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; to better understand where your player lands next spring, see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a): Division Information</a>.</p>
+							<p class="ncll-card__blurb">Register for the division your player expects to play in Spring &rsquo;27 &mdash; ask yourself: <span class="ncll-italic-accent">Where will my player play in Spring &rsquo;27? If there is even a chance, then give it a go!</span> If unsure between two levels, register for the higher one and email <a class="ncll" href="mailto:summerball@ncllball.com">summerball@ncllball.com</a>.</p>
+							<p class="ncll-card__blurb">Your options this summer: <strong>Baseball A (Sandlot)</strong> &mdash; flexible, parent-run format for players out of Kindy Coach Pitch or Single-A. <strong>AA through Juniors</strong> &mdash; set teams, regular schedules, competitive interleague play.</p>
+							<p class="ncll-card__note">* Summerball division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; to better understand where your player lands next spring, see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a): Division Information</a>.</p>
 						</div>
 					</div>
 
@@ -283,9 +290,9 @@
 					<div class="ncll-card__body panel panel1">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball A (Sandlot)</h4>
-							<p class="ncll-card__note">For players who played KCP or Single-A in Spring 2026 and will be in Single-A in Spring 2027 &mdash; not directly from T-ball. Moving up to Double-AA? Register for that Summerball division instead.</p>
+							<p class="ncll-card__note">For players who played Kindy Coach Pitch or Single-A in Spring 2026 and will be in Baseball A in Spring 2027. Summerball doesn&rsquo;t offer a T-ball division &mdash; Baseball A is the youngest available. Moving up to AA? Register for that Summerball division instead.</p>
 							<p class="ncll-card__note">Having many parent volunteers is the <em>only</em> way we can continue to offer Baseball A during Summerball.</p>
-							<p class="ncll-card__note">Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
+							<p class="ncll-card__note">* Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
 						</div>
 					</div>
 
@@ -293,8 +300,8 @@
 					<div class="ncll-card__body panel panel2">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball AA (Interleague)</h4>
-							<p class="ncll-card__note">For players who played Single-A or Double-AA in Spring 2026 and will be in Double-AA in Spring 2027. If you&rsquo;re moving up to Triple-AAA, register for that Summerball division instead.</p>
-							<p class="ncll-card__note">Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
+							<p class="ncll-card__note">For players who played Single-A or AA in Spring 2026 and will be in AA in Spring 2027. If you&rsquo;re moving up to AAA, register for that Summerball division instead.</p>
+							<p class="ncll-card__note">* Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
 						</div>
 					</div>
 
@@ -302,8 +309,8 @@
 					<div class="ncll-card__body panel panel3">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball AAA (Interleague)</h4>
-							<p class="ncll-card__note">For players who played Double-AA or Triple-AAA in Spring 2026 and will be in Triple-AAA in Spring 2027. If you&rsquo;re moving up to Majors, register for that Summerball division instead.</p>
-							<p class="ncll-card__note">Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
+							<p class="ncll-card__note">For players who played AA or AAA in Spring 2026 and will be in AAA in Spring 2027. If you&rsquo;re moving up to Majors, register for that Summerball division instead.</p>
+							<p class="ncll-card__note">* Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
 						</div>
 					</div>
 
@@ -311,17 +318,17 @@
 					<div class="ncll-card__body panel panel4">
 						<div class="ncll-card__details">
 							<h4 class="left">Baseball Majors (Interleague)</h4>
-							<p class="ncll-card__note">For players who played Triple-AAA or Majors in Spring 2026 and will be in Majors in Spring 2027.</p>
-							<p class="ncll-card__note">Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
+							<p class="ncll-card__note">For players who played AAA or Majors in Spring 2026 and will be in Majors in Spring 2027. Moving up to Juniors in Spring 2027? Register for Baseball Juniors instead.</p>
+							<p class="ncll-card__note">* Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
 						</div>
 					</div>
 
-					<!-- panel5: Baseball Juniors/TEEN schedule -->
+					<!-- panel5: Baseball Juniors schedule -->
 					<div class="ncll-card__body panel panel5">
 						<div class="ncll-card__details">
-							<h4 class="left">Baseball Juniors/TEEN (Interleague)</h4>
-							<p class="ncll-card__note">For players returning to Junior or Senior League in Spring 2027.</p>
-							<p class="ncll-card__note">Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
+							<h4 class="left">Baseball Juniors (Interleague)</h4>
+							<p class="ncll-card__note">For players who will be in Junior League in Spring 2027. Summerball26 runs through Junior League age &mdash; if you&rsquo;ll be in Senior League in Spring &rsquo;27, this program isn&rsquo;t the right fit. Email <a class="ncll" href="mailto:summerball@ncllball.com">summerball@ncllball.com</a> for other summer options.</p>
+							<p class="ncll-card__note">* Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
 						</div>
 					</div>
 
@@ -377,13 +384,9 @@
 					<div class="ncll-card__body panel panel-intro">
 						<div class="ncll-card__details">
 							<h4 class="left">Softball Division Guide</h4>
-							<p class="ncll-card__blurb">NCLL encourages &mdash; and expects &mdash; kids to register for the division they'll be playing in next spring &mdash; ask yourself this simple question:</p>
-							<div class="callout callout--info">
-								<span class="callout__icon material-icons-outlined" aria-hidden="true">info</span>
-								<span>Where will my player play in Spring &rsquo;27? If there is even a chance, then give it a go!</span>
-							</div>
+							<p class="ncll-card__blurb">Register for the division your player expects to play in Spring &rsquo;27 &mdash; ask yourself: <span class="ncll-italic-accent">Where will my player play in Spring &rsquo;27? If there is even a chance, then give it a go!</span> If unsure between two levels, register for the higher one and email <a class="ncll" href="mailto:summerball@ncllball.com">summerball@ncllball.com</a>.</p>
 							<p class="ncll-card__blurb">Your options this summer: <strong>AA/AAA (Sandlot)</strong> &mdash; show up and play, no set teams. <strong>AAA/Majors (Sandlot)</strong> &mdash; same format, stepped up for experienced AAA and Majors players.</p>
-							<p class="ncll-card__note">Summerball division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; to better understand where your player lands next spring, see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a): Division Information</a>.</p>
+							<p class="ncll-card__note">* Summerball division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; to better understand where your player lands next spring, see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a): Division Information</a>.</p>
 						</div>
 					</div>
 
@@ -419,16 +422,16 @@
 						<div class="ncll-card__details">
 							<h4 class="left">Softball AA/AAA (Sandlot)</h4>
 							<p class="ncll-card__note">For players who played A, AA, or AAA Softball in Spring 2026 and will be in AA or AAA in Spring 2027. If you&rsquo;re moving up to Majors, register for Softball AAA/Majors instead.</p>
-							<p class="ncll-card__note">Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
+							<p class="ncll-card__note">* Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
 						</div>
 					</div>
 
 					<!-- panel2: Softball AAA/MAJ -->
 					<div class="ncll-card__body panel panel2">
 						<div class="ncll-card__details">
-							<h4 class="left">Softball AAA/MAJ (Sandlot)</h4>
-							<p class="ncll-card__note">For players who played AAA or Majors Softball in Spring 2026 and will return to AAA or Majors in Spring 2027.</p>
-							<p class="ncll-card__note">Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
+							<h4 class="left">Softball AAA/Majors (Sandlot)</h4>
+							<p class="ncll-card__note">For players who played AAA or Majors Softball in Spring 2026 and will be in AAA or Majors in Spring 2027.</p>
+							<p class="ncll-card__note">* Division choice does not commit or entitle you to a Spring &rsquo;27 placement &mdash; see <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=1932698">Step 2(a)</a> for age charts and division details.</p>
 						</div>
 					</div>
 
@@ -489,12 +492,7 @@
 							<div class="callout callout--info">
 								<span class="callout__icon material-icons-outlined" aria-hidden="true">info</span>
 								<span>
-									Scheduling for
-									<em>Summerball26</em>
-									is controlled by District 8&rsquo;s central scheduler &mdash; we&rsquo;re sharing 2025 district data to help
-									families plan ahead &mdash;
-									<strong>not a guarantee</strong>
-									. Day counts reflect all district games on each night, not just NCLL&rsquo;s.
+									Scheduling for <em>Summerball26</em> is controlled by District 8&rsquo;s central scheduler &mdash; we&rsquo;re sharing 2025 district data to help families plan ahead &mdash; <strong>not a guarantee</strong>. Day counts reflect all district games on each night, not just NCLL&rsquo;s.
 								</span>
 							</div>
 							<p class="ncll-card__blurb">Tap through for softball and baseball schedule matrices.</p>
@@ -509,7 +507,7 @@
 								<span class="ncll-italic-accent">Typical start:</span> TBD.<br />
 								<span class="ncll-italic-accent">Fields:</span> TBD.
 							</p>
-							<p class="ncll-card__note">Softball schedule details are TBD.</p>
+							<p class="ncll-card__note">Softball schedule details are TBD. If weeknight availability is a constraint before you register, email <a class="ncll" href="mailto:softball@ncllball.com">softball@ncllball.com</a>.</p>
 							<p class="ncll-card__blurb" style="text-align: center"><span class="ncll-italic-accent">Mon:</span> TBD &ensp;|&ensp; <span class="ncll-italic-accent">Tue:</span> TBD &ensp;|&ensp; <span class="ncll-italic-accent">Wed:</span> TBD &ensp;|&ensp; <span class="ncll-italic-accent">Thu:</span> TBD</p>
 						</div>
 					</div>
@@ -517,12 +515,12 @@
 					<!-- panel1: Softball AAA/MAJ -->
 					<div class="ncll-card__body panel panel1">
 						<div class="ncll-card__details">
-							<h4 class="left">Softball AAA/MAJ (Sandlot)</h4>
+							<h4 class="left">Softball AAA/Majors (Sandlot)</h4>
 							<p class="ncll-card__blurb">
 								<span class="ncll-italic-accent">Typical start:</span> TBD.<br />
 								<span class="ncll-italic-accent">Fields:</span> TBD.
 							</p>
-							<p class="ncll-card__note">Softball schedule details are TBD.</p>
+							<p class="ncll-card__note">Softball schedule details are TBD. If weeknight availability is a constraint before you register, email <a class="ncll" href="mailto:softball@ncllball.com">softball@ncllball.com</a>.</p>
 							<p class="ncll-card__blurb" style="text-align: center"><span class="ncll-italic-accent">Mon:</span> TBD &ensp;|&ensp; <span class="ncll-italic-accent">Tue:</span> TBD &ensp;|&ensp; <span class="ncll-italic-accent">Wed:</span> TBD &ensp;|&ensp; <span class="ncll-italic-accent">Thu:</span> TBD</p>
 						</div>
 					</div>
@@ -548,7 +546,7 @@
 								<span class="ncll-italic-accent">Fields:</span> LW (9g), Northacres (5g), Dahl (3g), Ross (2g), Meadowbrook (2g), Maple Leaf (2g), Magnuson (2g), Pinehurst (1g).
 							</p>
 							<p class="ncll-card__blurb" style="text-align: center"><span class="ncll-italic-accent">Mon:</span> 9 &ensp;|&ensp; <span class="ncll-italic-accent">Tue:</span> 7 &ensp;|&ensp; <span class="ncll-italic-accent">Wed:</span> 4 &ensp;|&ensp; <span class="ncll-italic-accent">Thu:</span> 6</p>
-							<p class="ncll-card__note">District 8 controls scheduling &mdash; this 2025 district data is for planning purposes, not a guarantee. Day counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
+							<p class="ncll-card__note">* District 8 controls scheduling &mdash; this 2025 district data is for planning purposes, not a guarantee. Day counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 						</div>
 					</div>
 
@@ -561,7 +559,7 @@
 								<span class="ncll-italic-accent">Fields:</span> Ross (7g), LW (7g), Maple Leaf (5g), West Queen Anne (2g), Dahl (2g), Northacres (1g), Gilman (1g), Interbay (1g), Magnuson (1g), View Ridge (1g).
 							</p>
 							<p class="ncll-card__blurb" style="text-align: center"><span class="ncll-italic-accent">Mon:</span> 12 &ensp;|&ensp; <span class="ncll-italic-accent">Tue:</span> 2 &ensp;|&ensp; <span class="ncll-italic-accent">Wed:</span> 9 &ensp;|&ensp; <span class="ncll-italic-accent">Thu:</span> 5</p>
-							<p class="ncll-card__note">District 8 controls scheduling &mdash; this 2025 district data is for planning purposes, not a guarantee. Day counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
+							<p class="ncll-card__note">* District 8 controls scheduling &mdash; this 2025 district data is for planning purposes, not a guarantee. Day counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 						</div>
 					</div>
 
@@ -574,19 +572,20 @@
 								<span class="ncll-italic-accent">Fields:</span> LW (9g), West Queen Anne (2g), Ross (2g), Magnuson (2g), Gilman (1g), Soundview (1g), Loyal Heights (1g).
 							</p>
 							<p class="ncll-card__blurb" style="text-align: center"><span class="ncll-italic-accent">Mon:</span> 0 &ensp;|&ensp; <span class="ncll-italic-accent">Tue:</span> 8 &ensp;|&ensp; <span class="ncll-italic-accent">Wed:</span> 1 &ensp;|&ensp; <span class="ncll-italic-accent">Thu:</span> 9</p>
+							<p class="ncll-card__note">* District 8 controls scheduling &mdash; this 2025 district data is for planning purposes, not a guarantee. Day counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 						</div>
 					</div>
 
-					<!-- panel6: Baseball Juniors/TEEN -->
+					<!-- panel6: Baseball Juniors -->
 					<div class="ncll-card__body panel panel6">
 						<div class="ncll-card__details">
-							<h4 class="left">Baseball Juniors/TEEN (Interleague)</h4>
+							<h4 class="left">Baseball Juniors (Interleague)</h4>
 							<p class="ncll-card__blurb">
 								<span class="ncll-italic-accent">Typical start:</span> 5:00&ndash;7:00 PM.<br />
 								<span class="ncll-italic-accent">Fields:</span> Whitman/Soundview (14g), Northshore (8g), LW (3g), Willis Tucker (2g), Meadowbrook (2g), Magnuson (1g).
 							</p>
 							<p class="ncll-card__blurb" style="text-align: center"><span class="ncll-italic-accent">Mon:</span> 12 &ensp;|&ensp; <span class="ncll-italic-accent">Tue:</span> 4 &ensp;|&ensp; <span class="ncll-italic-accent">Wed:</span> 5 &ensp;|&ensp; <span class="ncll-italic-accent">Thu:</span> 9</p>
-							<p class="ncll-card__note"><strong>Baseball JUNIOR/TEEN (Interleague)</strong> &mdash; For players returning to Junior or Senior League in Spring 2027.</p>
+							<p class="ncll-card__note">* District 8 controls scheduling &mdash; this 2025 district data is for planning purposes, not a guarantee. Day counts reflect all district games on each night, not just NCLL&rsquo;s.</p>
 						</div>
 					</div>
 
@@ -646,7 +645,7 @@
 								Summerball runs on parent volunteers &mdash; we need coaches and team managers for baseball divisions. The bigger our crew, the easier it is to cover for each other. It&rsquo;s <span class="ncll-italic-accent">summer</span> &mdash; take your vacation, someone&rsquo;s got it.
 							</p>
 							<p class="ncll-card__blurb">
-								<em>During registration you&rsquo;ll be asked if you&rsquo;d like to volunteer &mdash; tap through for your options:</em>
+								<em>Sign up via the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2117276">Volunteer Hub</a> &mdash; tap through for your options:</em>
 							</p>
 							<ul class="ncll-card__meta">
 								<li>Lead Game Volunteer</li>
@@ -654,7 +653,7 @@
 								<li>Team Manager</li>
 								<li>
 									Sandlot Team Organizer
-									<em>(A Baseball)</em>
+									<em>(Baseball A)</em>
 								</li>
 							</ul>
 						</div>
@@ -671,7 +670,7 @@
 							<h4 class="left">Game Day Helper</h4>
 							<ul class="ncll-card__meta">
 								<li>Dugout manager, lineup help, base coach, umpire, or parent pitcher for AA Baseball</li>
-								<li>AA/AAA Baseball and A Baseball Sandlot are where you&rsquo;ll <span class="ncll-italic-accent">shine</span></li>
+								<li>Baseball A and Baseball AA are where you&rsquo;ll <span class="ncll-italic-accent">shine</span></li>
 								<li>AAA &amp; up players may coach bases (helmet required)</li>
 							</ul>
 						</div>
@@ -687,7 +686,7 @@
 							</ul>
 							<h4 class="left">
 								Sandlot Team Organizer
-								<em>(A Baseball)</em>
+								<em>(Baseball A)</em>
 							</h4>
 							<ul class="ncll-card__meta">
 								<li>Organize players, balance teams, keep it <span class="ncll-bold-accent">fun</span>, oversee safety</li>
@@ -701,7 +700,7 @@
 						<div class="ncll-card__details">
 							<h4 class="left">How to Sign Up</h4>
 							<p class="ncll-card__blurb">
-								Scroll down to the registration form &mdash; you&rsquo;ll be prompted to select your preferred volunteer role, and your coordinator will follow up before the season starts.
+								Sign up at the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2117276">Volunteer Hub</a> &mdash; your coordinator will follow up before the season starts.
 							</p>
 							<h4 class="left">Need Help?</h4>
 							<p class="ncll-card__blurb">
@@ -773,14 +772,14 @@
 								</li>
 								<li>
 									<span class="ncll-italic-accent">Interleague baseball:</span>
-									Chris Gozzano (AA, AAA, Majors, Juniors/TEEN)
+									Chris Gozzano (AA, AAA, Majors, Juniors)
 								</li>
 								<li>
 									<span class="ncll-italic-accent">Softball:</span>
 									Gayle Perez or Andy Clinch
 								</li>
 								<li>
-									<span class="ncll-italic-accent">Single-A Sandlot:</span>
+									<span class="ncll-italic-accent">Baseball A Sandlot:</span>
 									Olin Wick
 								</li>
 								<li>
@@ -808,7 +807,7 @@
 									<span class="ncll-italic-accent">Chris Gozzano</span>
 									&mdash; Baseball Coordinator
 									<br />
-									Interleague baseball: AA, AAA, Majors, Juniors/TEEN.
+									Interleague baseball: AA, AAA, Majors, Juniors.
 									<br />
 									<a class="ncll" href="mailto:chrisgozzano@gmail.com">chrisgozzano@gmail.com</a>
 								</li>
@@ -816,7 +815,7 @@
 									<span class="ncll-italic-accent">Gayle Perez</span>
 									&mdash; VP Softball
 									<br />
-									Softball divisions (AA/AAA and AAA/MAJ sandlot).
+									Softball divisions (AA/AAA and AAA/Majors sandlot).
 									<br />
 									<a class="ncll" href="mailto:softball@ncllball.com">softball@ncllball.com</a>
 								</li>
@@ -836,15 +835,15 @@
 									<span class="ncll-italic-accent">Andy Clinch</span>
 									&mdash; Softball Coordinator
 									<br />
-									Softball divisions (AA/AAA and AAA/MAJ sandlot).
+									Softball divisions (AA/AAA and AAA/Majors sandlot).
 									<br />
 									<a class="ncll" href="mailto:clincher@comcast.net">clincher@comcast.net</a>
 								</li>
 								<li>
 									<span class="ncll-italic-accent">Olin Wick</span>
-									&mdash; Single-A Coordinator
+									&mdash; Baseball A Coordinator
 									<br />
-									Single-A Baseball Sandlot (show-up-and-play format).
+									Baseball A Sandlot (show-up-and-play format).
 									<br />
 									<a class="ncll" href="mailto:olinwick@gmail.com">olinwick@gmail.com</a>
 								</li>
