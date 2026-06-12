@@ -1364,7 +1364,8 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
 }
 
 .summerball-main .ncll-card__title {
-    font-size: 1.15rem
+    font-size: 1.15rem;
+    font-style: italic
 }
 
 .summerball-main .footies {
