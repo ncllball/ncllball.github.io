@@ -1,0 +1,17 @@
+{
+  "name": "codex-handoff-mcp",
+  "version": "1.0.0",
+  "description": "Claude Code MCP bridge for handing tasks to Codex CLI.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  }
+}
