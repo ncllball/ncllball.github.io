@@ -5228,6 +5228,7 @@ p.flush-bottom:last-child {
     border-right: 1px solid #d1d5db;
     background: #f8fafc;
     --callout-icon-size: 24px;
+    font-family: proxima-nova, "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p:has(+ .callout) {
