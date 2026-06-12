@@ -1358,7 +1358,6 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     font-family: var(--font_ui);
     color: var(--color_muted);
     margin-top: 10px;
-    border-top: 1px solid var(--color_border_light);
     padding: 5px 0px 5px 0px;
     line-height: normal
 }
