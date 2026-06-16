@@ -4316,6 +4316,10 @@ p.flush-bottom:last-child {
     margin-top: 0;
 }
 
+.ncll-card--toggle .panel> :last-child {
+    margin-bottom: 0;
+}
+
 .ncll-card--toggle .ncll-card__sticky-heading h3,
 .ncll-card--toggle .ncll-card__sticky-heading h4 {
     margin: 0;
