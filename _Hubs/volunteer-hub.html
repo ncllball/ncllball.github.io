@@ -1,3 +1,4 @@
+<!doctype html>
 <!--
   FILE:      _Hubs/volunteer-hub.html
   PURPOSE:   Volunteer Hub — main landing page; ncll-card pattern
@@ -8,7 +9,6 @@
   - Coordinator names and emails in any Contacts card
   - Placeholder CTAs marked aria-disabled="true"
 -->
-<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -90,7 +90,7 @@
 					<input type="radio" name="vol-sb26" id="vol-sb26-4" />
 					<input type="radio" name="vol-sb26" id="vol-sb26-5" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
@@ -300,7 +300,7 @@
 				</article>
 
 				<!-- Card: How to Volunteer -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="vol-start-title">
 					<input type="radio" name="vol-start" id="vol-start-intro" checked />
 					<input type="radio" name="vol-start" id="vol-start-0" />
 					<input type="radio" name="vol-start" id="vol-start-1" />
@@ -308,14 +308,14 @@
 					<input type="radio" name="vol-start" id="vol-start-3" />
 					<input type="radio" name="vol-start" id="vol-start-4" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">How to Volunteer (process)</span></h3>
+							<h3 class="ncll-card__title" id="vol-start-title"><span class="text-background">How to Volunteer (process)</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -503,7 +503,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="How to Volunteer card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="vol-start-4">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="vol-start-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="vol-start-intro">Back</label>
@@ -531,7 +531,7 @@
 					<input type="radio" name="vol-abuse" id="vol-abuse-2" />
 					<input type="radio" name="vol-abuse" id="vol-abuse-3" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
@@ -745,7 +745,7 @@
 					<input type="radio" name="vol-bg" id="vol-bg-3" />
 					<input type="radio" name="vol-bg" id="vol-bg-4" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
@@ -937,7 +937,7 @@
 				</article>
 
 				<!-- Card: Team Level Volunteers -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle volunteer-card--team">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle volunteer-card--team" aria-labelledby="vol-coach-title">
 					<!-- Radio inputs control tabbed panels -->
 					<input type="radio" name="vol-coach" id="vol-coach-intro" checked />
 					<input type="radio" name="vol-coach" id="vol-coach-0" />
@@ -948,14 +948,14 @@
 					<input type="radio" name="vol-coach" id="vol-coach-5" />
 					<input type="radio" name="vol-coach" id="vol-coach-6" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">Team Level Volunteers</span></h3>
+							<h3 class="ncll-card__title" id="vol-coach-title"><span class="text-background">Team Level Volunteers</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -1104,7 +1104,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="Team Level Volunteers card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="vol-coach-6">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="vol-coach-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="vol-coach-intro">Back</label>
@@ -1126,7 +1126,7 @@
 				</article>
 
 				<!-- Card: League Level Volunteers -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle ground-gremlins-card">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle ground-gremlins-card" aria-labelledby="vol-field-title">
 					<input type="radio" name="vol-field" id="vol-field-intro" checked />
 					<input type="radio" name="vol-field" id="vol-field-0" />
 					<input type="radio" name="vol-field" id="vol-field-1" />
@@ -1135,14 +1135,14 @@
 					<input type="radio" name="vol-field" id="vol-field-4" />
 					<input type="radio" name="vol-field" id="vol-field-5" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">League Level Volunteers</span></h3>
+							<h3 class="ncll-card__title" id="vol-field-title"><span class="text-background">League Level Volunteers</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -1322,7 +1322,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="League Level Volunteers card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="vol-field-5">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="vol-field-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="vol-field-intro">Back</label>
@@ -1342,7 +1342,7 @@
 				</article>
 
 				<!-- Card: Umpiring Volunteers -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="vol-ump-title">
 					<input type="radio" name="vol-ump" id="vol-ump-intro" checked />
 					<input type="radio" name="vol-ump" id="vol-ump-0" />
 					<input type="radio" name="vol-ump" id="vol-ump-1" />
@@ -1353,14 +1353,14 @@
 					<input type="radio" name="vol-ump" id="vol-ump-6" />
 					<input type="radio" name="vol-ump" id="vol-ump-7" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">Umpiring Volunteers</span></h3>
+							<h3 class="ncll-card__title" id="vol-ump-title"><span class="text-background">Umpiring Volunteers</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -1525,7 +1525,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="Umpiring Volunteers card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="vol-ump-7">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="vol-ump-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="vol-ump-intro">Back</label>
@@ -1549,7 +1549,7 @@
 				</article>
 
 				<!-- Card: POP UP Support -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="vol-event-title">
 					<input type="radio" name="vol-event" id="vol-event-intro" checked />
 					<input type="radio" name="vol-event" id="vol-event-0" />
 					<input type="radio" name="vol-event" id="vol-event-1" />
@@ -1557,14 +1557,14 @@
 					<input type="radio" name="vol-event" id="vol-event-3" />
 					<input type="radio" name="vol-event" id="vol-event-4" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">"POP UP" Volunteer Lists</span></h3>
+							<h3 class="ncll-card__title" id="vol-event-title"><span class="text-background">"POP UP" Volunteer Lists</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -1703,7 +1703,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="Pop-Up Volunteer Lists card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="vol-event-4">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="vol-event-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="vol-event-intro">Back</label>
@@ -1731,19 +1731,19 @@
 				</article>
 
 				<!-- Card: Super Volunteers / Employer Matching -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="vol-gear-title">
 					<input type="radio" name="vol-gear" id="vol-gear-intro" checked />
 					<input type="radio" name="vol-gear" id="vol-gear-0" />
 					<input type="radio" name="vol-gear" id="vol-gear-1" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">"Super Volunteers" (Employer Matching)</span></h3>
+							<h3 class="ncll-card__title" id="vol-gear-title"><span class="text-background">"Super Volunteers" (Employer Matching)</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -1843,7 +1843,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="Super Volunteers card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="vol-gear-1">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="vol-gear-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="vol-gear-intro">Back</label>
@@ -1855,20 +1855,20 @@
 				</article>
 
 				<!-- Card: Other Ways to Support NCLL -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="vol-support-title">
 					<input type="radio" name="vol-support" id="vol-support-intro" checked />
 					<input type="radio" name="vol-support" id="vol-support-0" />
 					<input type="radio" name="vol-support" id="vol-support-1" />
 					<input type="radio" name="vol-support" id="vol-support-2" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">Other Ways to Support NCLL</span></h3>
+							<h3 class="ncll-card__title" id="vol-support-title"><span class="text-background">Other Ways to Support NCLL</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -1974,7 +1974,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="Other Ways to Support NCLL card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="vol-support-2">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="vol-support-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="vol-support-intro">Back</label>
@@ -1995,7 +1995,7 @@
 					the organizer
 				</p>
 			</section>
-			<p class="cms-rev"><small>[r2 · 2026-06-16 · 2117276]</small></p>
+			<p class="cms-rev"><small>[r3 · 2026-06-16 · 2117276]</small></p>
 		</main>
 	</body>
 </html>
