@@ -1,5 +1,15 @@
-<!-- CMS Edit: https://www.ncllball.com/Default.aspx?tabid=2246341&ctl=Edit&mid=2334652 -->
 <!doctype html>
+<!--
+  FILE:      _Hubs/helping-hub.html
+  PURPOSE:   Helping Hub — sponsorships, Venmo, alumni, equipment donations, in-kind services, and social media ways to support NCLL
+  CMS:       tabid=2246341  |  mid=2334652  |  paste ENTIRE FILE into module in RadEditor
+  SOURCE:    Migrated from Resources/helping-hub.html — _Hubs/ is now the source of truth
+
+  WHAT TO UPDATE EACH YEAR:
+  - Sponsorship pricing (currently $900/team — confirm for new season)
+  - Contact names and emails (currently Ernesto for equipment)
+  - Registration link if path changes
+-->
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -34,7 +44,7 @@
 						alt="NCLL Helping Hub"
 					/>
 				</div>
-				</section>
+			</section>
 			<aside class="hub-intro__aside hub-intro__aside--accent" aria-label="Related helping links">
 				<h4 class="hub-aside__title">Related links</h4>
 				<ul class="hub-aside__list related-links">
@@ -57,20 +67,20 @@
 
 			<div class="program-grid">
 				<!-- Card: Sponsorships -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
-					<input class="radio" type="radio" name="help-sponsor" id="help-sponsor-intro" checked />
-					<input class="radio" type="radio" name="help-sponsor" id="help-sponsor-0" />
-					<input class="radio" type="radio" name="help-sponsor" id="help-sponsor-1" />
-					<input class="radio" type="radio" name="help-sponsor" id="help-sponsor-2" />
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="help-sponsor-h3">
+					<input type="radio" name="help-sponsor" id="help-sponsor-intro" checked />
+					<input type="radio" name="help-sponsor" id="help-sponsor-0" />
+					<input type="radio" name="help-sponsor" id="help-sponsor-1" />
+					<input type="radio" name="help-sponsor" id="help-sponsor-2" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">Sponsorships</span></h3>
+							<h3 class="ncll-card__title" id="help-sponsor-h3"><span class="text-background">Sponsorships</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -110,11 +120,11 @@
 								<li>Builds community goodwill and connects your business to local families.</li>
 							</ul>
 							<p class="ncll-card__blurb">
-								<strong>2025 season:</strong>
+								<strong>2026 season:</strong>
 								$900 per team (covers uniforms). NCLL is a 501(c)(3).
 							</p>
 							<div class="ncll-card__cta">
-								<a class="button button--primary" href="mailto:ncllsponsorships@gmail.com- subject=NCLL%20Sponsorship">
+								<a class="button button--primary" href="mailto:ncllsponsorships@gmail.com?subject=NCLL%20Sponsorship">
 									Contact Sponsorships
 								</a>
 								<a class="button button--secondary" href="/Sponsorships/leaguesponsorship.html">Full sponsor details</a>
@@ -132,7 +142,7 @@
 								<li>We pair you with a team and share key dates and payment details.</li>
 							</ul>
 							<div class="ncll-card__cta">
-								<a class="button button--primary" href="mailto:ncllsponsorships@gmail.com- subject=Sponsor%20a%20Team">
+								<a class="button button--primary" href="mailto:ncllsponsorships@gmail.com?subject=Sponsor%20a%20Team">
 									Start my sponsorship
 								</a>
 							</div>
@@ -155,7 +165,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="Sponsorships card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="help-sponsor-0">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="help-sponsor-0">Next</label>
 
@@ -172,18 +182,18 @@
 				</article>
 
 				<!-- Card: Registration During Donation -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="help-registration-h3">
 					<input type="radio" name="help-registration" id="help-registration-intro" checked />
 					<input type="radio" name="help-registration" id="help-registration-0" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">Registration Donations</span></h3>
+							<h3 class="ncll-card__title" id="help-registration-h3"><span class="text-background">Registration Donations</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -211,15 +221,15 @@
 							</ul>
 							<div class="ncll-card__cta">
 								<a class="button button--primary" href="/Registration/mainreg.html">Go to registration</a>
-								<a class="button button--secondary" href="mailto:info@ncllball.com- subject=Registration%20Donation%20Question">
-									Questions-
+								<a class="button button--secondary" href="mailto:info@ncllball.com?subject=Registration%20Donation%20Question">
+									Questions?
 								</a>
 							</div>
 						</div>
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="Registration Donations card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="help-registration-0">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="help-registration-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="help-registration-intro">Back</label>
@@ -229,18 +239,18 @@
 				</article>
 
 				<!-- Card: Venmo -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="help-venmo-h3">
 					<input type="radio" name="help-venmo" id="help-venmo-intro" checked />
 					<input type="radio" name="help-venmo" id="help-venmo-0" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">Venmo</span></h3>
+							<h3 class="ncll-card__title" id="help-venmo-h3"><span class="text-background">Venmo</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -282,7 +292,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="Venmo card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="help-venmo-0">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="help-venmo-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="help-venmo-intro">Back</label>
@@ -292,18 +302,18 @@
 				</article>
 
 				<!-- Card: Alumni Lists -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="help-alumni-h3">
 					<input type="radio" name="help-alumni" id="help-alumni-intro" checked />
 					<input type="radio" name="help-alumni" id="help-alumni-0" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">Alumni Lists</span></h3>
+							<h3 class="ncll-card__title" id="help-alumni-h3"><span class="text-background">Alumni Lists</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -323,7 +333,7 @@
 							<h4 class="left">Join the alumni list</h4>
 							<p>Share your contact info, year, and division so we can invite you to alumni days and mentorship events.</p>
 							<div class="ncll-card__cta">
-								<a class="button button--primary" href="mailto:info@ncllball.com- subject=Alumni%20List%20Signup">
+								<a class="button button--primary" href="mailto:info@ncllball.com?subject=Alumni%20List%20Signup">
 									Add Me to Alumni List
 								</a>
 							</div>
@@ -331,7 +341,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="Alumni Lists card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="help-alumni-0">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="help-alumni-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="help-alumni-intro">Back</label>
@@ -341,20 +351,20 @@
 				</article>
 
 				<!-- Card: Equipment Donations -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="help-gear-h3">
 					<input type="radio" name="help-gear" id="help-gear-intro" checked />
 					<input type="radio" name="help-gear" id="help-gear-0" />
 					<input type="radio" name="help-gear" id="help-gear-1" />
 					<input type="radio" name="help-gear" id="help-gear-2" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">Equipment Donations</span></h3>
+							<h3 class="ncll-card__title" id="help-gear-h3"><span class="text-background">Equipment Donations</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -438,7 +448,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="Equipment Donations card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="help-gear-2">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="help-gear-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="help-gear-intro">Back</label>
@@ -452,18 +462,18 @@
 				</article>
 
 				<!-- Card: In-Kind Services -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="help-services-h3">
 					<input type="radio" name="help-services" id="help-services-intro" checked />
 					<input type="radio" name="help-services" id="help-services-0" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">In-Kind Services</span></h3>
+							<h3 class="ncll-card__title" id="help-services-h3"><span class="text-background">In-Kind Services</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -487,13 +497,13 @@
 								<li>Printing: banners, flyers, signage.</li>
 							</ul>
 							<div class="ncll-card__cta">
-								<a class="button button--primary" href="mailto:info@ncllball.com- subject=In-Kind%20Services">Offer Services</a>
+								<a class="button button--primary" href="mailto:info@ncllball.com?subject=In-Kind%20Services">Offer Services</a>
 							</div>
 						</div>
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="In-Kind Services card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="help-services-0">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="help-services-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="help-services-intro">Back</label>
@@ -503,20 +513,20 @@
 				</article>
 
 				<!-- Card: Social Media -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="help-social-h3">
 					<input type="radio" name="help-social" id="help-social-intro" checked />
 					<input type="radio" name="help-social" id="help-social-0" />
 					<input type="radio" name="help-social" id="help-social-1" />
 					<input type="radio" name="help-social" id="help-social-2" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">Social Media</span></h3>
+							<h3 class="ncll-card__title" id="help-social-h3"><span class="text-background">Social Media</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -865,7 +875,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="Social Media card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="help-social-2">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="help-social-0">Next</label>
 							<label class="button button--secondary btn-prev btn-prev-0" for="help-social-intro">Back</label>
@@ -879,20 +889,20 @@
 				</article>
 
 				<!-- Card: Volunteer Lite / Opt-In Lists -->
-				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle">
+				<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="help-lists-h3">
 					<input type="radio" name="help-lists" id="help-lists-intro" checked />
 					<input type="radio" name="help-lists" id="help-lists-0" />
 					<input type="radio" name="help-lists" id="help-lists-1" />
 					<input type="radio" name="help-lists" id="help-lists-2" />
 
-					<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title"><span class="text-background">Volunteer Lite</span></h3>
+							<h3 class="ncll-card__title" id="help-lists-h3"><span class="text-background">Volunteer Lite</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -1011,7 +1021,7 @@
 					</div>
 
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group">
+						<div class="actions" role="group" aria-label="Volunteer Lite card controls">
 							<label class="button button--secondary btn-prev btn-prev-start" for="help-lists-2">Back</label>
 							<label class="button button--primary btn-next btn-next-intro" for="help-lists-0">Next</label>
 
@@ -1027,7 +1037,7 @@
 					</div>
 				</article>
 			</div>
-			<p class="cms-rev"><small>[r1 · 2026-06-16 · 2246341]</small></p>
+			<p class="cms-rev"><small>[r2 · 2026-06-16 · 2246341]</small></p>
 		</main>
 	</body>
 </html>
