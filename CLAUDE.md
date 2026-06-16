@@ -6,14 +6,14 @@ When linking to hub pages, use these canonical live URLs (not the GitHub Pages U
 
 | Local file | Live URL |
 | --- | --- |
-| `Resources/coaches-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111982` |
-| `Resources/events-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2244434` |
-| `Resources/helping-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2246341` |
-| `Resources/parents-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111981` |
-| `Resources/safety-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2245729` |
-| `Resources/umpires-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111983` |
-| `Resources/uniforms-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2113971` |
-| `Resources/volunteer-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2117276` |
+| `_Hubs/coaches-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111982` |
+| `_Hubs/events-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2244434` |
+| `_Hubs/helping-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2246341` |
+| `_Hubs/parents-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111981` |
+| `_Hubs/safety-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2245729` |
+| `_Hubs/umpires-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111983` |
+| `_Hubs/uniforms-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2113971` |
+| `_Hubs/volunteer-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2117276` |
 
 ## Canonical & og:url
 

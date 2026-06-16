@@ -20,6 +20,7 @@ _temp/
 images/2026-01-27_18-07-38_extracted/
 
 # Sensitive data — PII and credentials
+.env
 *.csv
 *.ods
 *.apps.googleusercontent.com.json
