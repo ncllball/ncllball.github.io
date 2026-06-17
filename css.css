@@ -3390,6 +3390,12 @@ details.footies[open] summary::before {
     color: var(--color_text);
     margin-top: 0px;
 }
+.ncll-card__blurb--sm {
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: var(--color_muted);
+    margin-bottom: 0;
+}
 
 .ncll-card__caption {
     font-size: 0.7rem !important;
@@ -5470,6 +5476,9 @@ details.allstars-year[open] > summary::after {
 
 details.allstars-year > .program-grid {
     margin-top: 20px;
+}
+.allstars-landing .program-grid {
+    align-items: stretch;
 }
 
 .sponsors-landing .ncll-card { min-width: 340px; height: 320px; }

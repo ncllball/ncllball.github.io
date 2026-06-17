@@ -15,6 +15,7 @@ _temp/registration_xlsx/
 _temp/registration_combined/
 _temp/NCLL_2026_AllStars_Contacts_By_Team_fixed.xlsx
 _temp/
+.tmp/
 
 # Bulk-extracted / scratch folders
 images/2026-01-27_18-07-38_extracted/
