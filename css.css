@@ -2240,6 +2240,7 @@ body:not(.cms-right) .only-on-right {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
     padding: 4px 0;
     position: relative;
@@ -2264,6 +2265,13 @@ body:not(.cms-right) .only-on-right {
     display: flex;
     align-items: center;
     gap: 0.5rem
+}
+
+.division-bar__note {
+    width: 100%;
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--color_muted)
 }
 
 .aoverb_button {
