@@ -219,8 +219,9 @@
 			.wiz-summary__row--reg,
 			.wiz-summary__row--shirt-style,
 			.wiz-summary__row--hoodie {
-				flex-direction: column;
-				gap: 0.35rem;
+				flex-direction: row;
+				align-items: center;
+				gap: 0.5rem;
 			}
 
 			.wiz-summary__row--reg .wiz-summary__value,
@@ -228,7 +229,8 @@
 			.wiz-summary__row--hoodie .wiz-summary__value {
 				display: block;
 				margin: 0;
-				width: 100%;
+				flex-grow: 1;
+				width: auto;
 				box-sizing: border-box;
 				padding: 0.55rem 2.25rem 0.55rem 0.75rem;
 				border: 2px solid #c5cdd8;
@@ -408,7 +410,6 @@
 				justify-content: flex-end;
 				gap: 0.75rem;
 				padding: 10px 16px;
-				background: var(--stripe-tight-red-micro-quad);
 				background-color: #fff;
 				border-top: 1px solid var(--color_border_light, #e0e0e0);
 				box-sizing: border-box;
@@ -769,7 +770,7 @@
 
 			.wiz-summary {
 				list-style: none;
-				margin: 0 0 1.5rem;
+				margin: 0 0 0.5rem;
 				padding: 0;
 				border: 1px solid #dce3ea;
 				border-radius: 6px;
@@ -780,7 +781,7 @@
 				display: flex;
 				align-items: baseline;
 				gap: 1rem;
-				padding: 0.9rem 1rem;
+				padding: 0.55rem 0.85rem;
 				border-bottom: 1px solid #dce3ea;
 			}
 
@@ -799,7 +800,7 @@
 			}
 
 			.wiz-summary__value {
-				font-size: 1rem;
+				font-size: 0.9rem;
 				font-weight: 600;
 				color: #222;
 			}
@@ -1143,6 +1144,10 @@
 				object-fit: contain;
 			}
 
+			.wiz-panel--socks .div-product-preview__item img {
+				max-height: 80px;
+			}
+
 			.div-product-preview__item figcaption {
 				font-size: 0.8rem;
 				font-weight: 700;
@@ -1224,51 +1229,6 @@
 				background: #f7f9fb;
 			}
 
-			/* ── Socks & belts ────────────────────────────────────────────── */
-
-			.wiz-socks-grid {
-				display: grid;
-				grid-template-columns: 1fr;
-				justify-items: center;
-				gap: 0.75rem;
-				margin-bottom: 1.5rem;
-			}
-
-			.wiz-socks-grid__item {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				gap: 0.35rem;
-				text-align: center;
-			}
-
-			.wiz-socks-grid__item img {
-				width: 100%;
-				max-width: 120px;
-				height: auto;
-				border-radius: 4px;
-				border: 1px solid #dce3ea;
-			}
-
-			.wiz-socks-grid__item figcaption {
-				font-size: 0.75rem;
-				font-weight: 600;
-				color: #555;
-				text-transform: uppercase;
-				letter-spacing: 0.04em;
-			}
-
-			.wiz-socks-grid__group-label {
-				grid-column: 1 / -1;
-				font-size: 0.8rem;
-				font-weight: 700;
-				color: #1a3a6b;
-				text-transform: uppercase;
-				letter-spacing: 0.06em;
-				padding-bottom: 0.25rem;
-				border-bottom: 1px solid #dce3ea;
-			}
-
 			/* ── Registration callout ─────────────────────────────────────── */
 
 			.wiz-reg-callout {
@@ -1276,21 +1236,13 @@
 				border: 1px solid #b8caea;
 				border-left: 4px solid #1a3a6b;
 				border-radius: 0 6px 6px 0;
-				padding: 0.4rem 0.75rem;
-				margin-bottom: 0.75rem;
+				padding: 0.3rem 0.65rem;
+				margin-bottom: 0.5rem;
 				font-size: 0.85rem;
 				line-height: 1.4;
 				color: #333;
 			}
 
-			.wiz-reg-callout strong {
-				display: block;
-				color: #1a3a6b;
-				margin-bottom: 0.1rem;
-				font-size: 0.85rem;
-				text-transform: uppercase;
-				letter-spacing: 0.05em;
-			}
 
 			/* ── Registration dropdown reference ─────────────────────────── */
 
@@ -1361,7 +1313,7 @@
 			.wizards-row {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
-				gap: 2rem;
+				gap: 24px 20px;
 				align-items: start;
 				margin: 20px 0 40px;
 			}
@@ -1424,20 +1376,25 @@
 				align-items: center;
 				justify-content: center;
 				min-height: 2.75rem;
-				background: var(--stripe-tight-red-micro-quad);
+				background: var(--stripe-tight-blue-micro-quad);
 				background-color: #fff;
 				padding: 0.4rem 1rem;
 			}
 
-			.wiz-header h3 {
+			.wiz-header .wiz-header__title {
+				display: block !important;
 				font-size: 1rem;
+				line-height: 1.2 !important;
 				font-weight: 700;
 				font-style: italic;
 				font-family: var(--font_tk-noto-sans-display-semiconden);
 				color: var(--color_blue, #1a3a6b);
-				text-align: center;
-				margin: 0;
+				text-align: center !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				width: 100%;
 			}
+
 
 			@media (max-width: 700px) {
 				.wizards-row { grid-template-columns: 1fr; }
@@ -2181,20 +2138,18 @@
 				<input type="radio" name="c-hoodie-sz" id="c-hoodie-axxxxl" />
 
 				<div class="wiz-header">
-					<h3 class="ncll-card__title"><span class="text-background">NCLL Coach Uniform PICKER</span></h3>
+					<h3 class="wiz-header__title"><span class="text-background">NCLL Coach Uniform PICKER</span></h3>
 				</div>
 				<div class="wiz-body">
 					<!-- ─ Intro ─────────────────────────────────────────── -->
 					<section class="wiz-panel wiz-panel--intro" aria-label="Coach uniform PICKER intro">
 						<div class="wiz-panel-content">
+						<p class="wiz-intro-text">Select your sport, division, and each uniform item. Your summary at the end matches the registration dropdowns exactly &#8212; copy it straight in.</p>
 						<img
 							class="wiz-intro-img"
 							src="https://ncllball.github.io/images/uniforms/uniform-coach.png"
 							alt="NCLL coach uniform"
 						/>
-						<p class="wiz-intro-text">
-							Select your sport, division, and each uniform item. Your summary at the end matches the registration dropdowns exactly — copy it straight in.
-						</p>
 						<p class="wiz-intro-text"><em><strong>Note:</strong> The line numbers in your summary match the registration form line by line.</em></p>
 					</div>
 						<div class="wiz-nav">
@@ -2225,7 +2180,7 @@
 						</div>
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back" for="c-wiz-intro">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back" for="c-wiz-intro">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next" for="c-wiz-s1">Next: Division &rarr;</label>
 						</div>
 					</section>
@@ -2261,7 +2216,7 @@
 						</div>
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back" for="c-wiz-s0">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back" for="c-wiz-s0">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next" for="c-wiz-s2">Next: Shirt &rarr;</label>
 						</div>
 					</section>
@@ -2511,7 +2466,7 @@
 
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back" for="c-wiz-s1">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back" for="c-wiz-s1">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next" for="c-wiz-s3">Next: Hat &rarr;</label>
 						</div>
 					</section>
@@ -2670,7 +2625,7 @@
 
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back" for="c-wiz-s2">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back" for="c-wiz-s2">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next hat-next--skip-hoodie" for="c-wiz-s5">Next: Socks &amp; Belt &rarr;</label>
 							<label class="wiz-btn wiz-btn--next hat-next--to-hoodie" for="c-wiz-s4">Next: Hoodie &rarr;</label>
 						</div>
@@ -2746,7 +2701,7 @@
 
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back" for="c-wiz-s3">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back" for="c-wiz-s3">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next" for="c-wiz-s5">Next: Socks &amp; Belt &rarr;</label>
 						</div>
 					</section>
@@ -2762,15 +2717,15 @@
 						</div>
 						<h4 class="wiz-title left">Socks &amp; Belt &mdash; Included!</h4>
 						<p class="wiz-subtitle">These items come with your registration &mdash; no size selection needed.</p>
-						<div class="wiz-socks-grid">
-							<figure class="wiz-socks-grid__item">
+						<div class="div-product-preview">
+							<figure class="div-product-preview__item">
 								<img src="https://ncllball.github.io/images/uniforms/socks-belts/sock_royal.png" alt="Sock — Royal" />
-								<figcaption>Sock</figcaption>
+								
 							</figure>
 						</div>
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back socks-back--hat" for="c-wiz-s3">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back socks-back--hat" for="c-wiz-s3">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--back socks-back--hoodie" for="c-wiz-s4">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next" for="c-wiz-s6">See My Summary &rarr;</label>
 						</div>
@@ -2786,13 +2741,7 @@
 							<span class="wiz-progress__step wiz-progress__step--final wiz-progress__step--done"></span>
 						</div>
 						<h4 class="wiz-title left">Your Coach Uniform Summary</h4>
-						<p class="wiz-summary-intro">Here&rsquo;s what to look for in the registration dropdown for each item:</p>
-
-						<div class="wiz-reg-callout">
-							<strong>How to use this</strong>
-							During registration, find the uniform section and match each item below to the corresponding dropdown. Select the
-							value shown.
-						</div>
+							<p class="wiz-reg-callout">Match each item to the registration dropdown and select the value shown.</p>
 
 						<dl class="wiz-summary">
 							<div class="wiz-summary__row">
@@ -2875,7 +2824,7 @@
 
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back" for="c-wiz-s5">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back" for="c-wiz-s5">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--restart" for="c-wiz-intro">Start Over</label>
 						</div>
 					</section>
@@ -2955,20 +2904,18 @@
 				<input type="radio" name="hoodie-sz" id="hoodie-axxxxl" />
 
 				<div class="wiz-header">
-					<h3 class="ncll-card__title"><span class="text-background">NCLL Player Uniform PICKER</span></h3>
+					<h3 class="wiz-header__title"><span class="text-background">NCLL Player Uniform PICKER</span></h3>
 				</div>
 				<div class="wiz-body">
 					<!-- ─ Intro ─────────────────────────────────────────── -->
 					<section class="wiz-panel wiz-panel--intro" aria-label="Uniform PICKER intro">
 						<div class="wiz-panel-content">
+						<p class="wiz-intro-text">Step through sport, division, and each uniform item. Your summary matches the registration dropdowns exactly &#8212; copy it straight in.</p>
 						<img
 							class="wiz-intro-img"
 							src="https://ncllball.github.io/images/uniforms/uniform-player.png"
 							alt="NCLL player uniform"
 						/>
-						<p class="wiz-intro-text">
-							Step through sport, division, and each uniform item. Your summary matches the registration dropdowns exactly — copy it straight in.
-						</p>
 						<p class="wiz-intro-text"><em><strong>Note:</strong> The line numbers in your summary match the registration form line by line.</em></p>
 					</div>
 						<div class="wiz-nav">
@@ -3002,7 +2949,7 @@
 						</div>
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back" for="wiz-intro">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back" for="wiz-intro">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next" for="wiz-s1">Next: Division &rarr;</label>
 						</div>
 					</section>
@@ -3041,7 +2988,7 @@
 						</div>
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back" for="wiz-s0">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back" for="wiz-s0">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next" for="wiz-s2">Next: Shirt &rarr;</label>
 						</div>
 					</section>
@@ -3337,7 +3284,7 @@
 
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back" for="wiz-s1">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back" for="wiz-s1">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next" for="wiz-s3">Next: Hat &rarr;</label>
 						</div>
 					</section>
@@ -3525,7 +3472,7 @@
 
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back" for="wiz-s2">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back" for="wiz-s2">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next hat-next--skip-hoodie" for="wiz-s5">Next: Socks &amp; Belt &rarr;</label>
 							<label class="wiz-btn wiz-btn--next hat-next--to-hoodie" for="wiz-s4">Next: Hoodie &rarr;</label>
 						</div>
@@ -3619,7 +3566,7 @@
 
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back" for="wiz-s3">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back" for="wiz-s3">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next" for="wiz-s5">Next: Socks &amp; Belt &rarr;</label>
 						</div>
 					</section>
@@ -3638,15 +3585,15 @@
 						</div>
 						<h4 class="wiz-title left">Socks &amp; Belt &mdash; Included!</h4>
 						<p class="wiz-subtitle">These items come with your registration &mdash; no size selection needed.</p>
-						<div class="wiz-socks-grid">
-							<figure class="wiz-socks-grid__item">
+						<div class="div-product-preview">
+							<figure class="div-product-preview__item">
 								<img src="https://ncllball.github.io/images/uniforms/socks-belts/sock_royal.png" alt="Sock — Royal" />
-								<figcaption>Sock</figcaption>
+								
 							</figure>
 						</div>
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back socks-back--hat" for="wiz-s3">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back socks-back--hat" for="wiz-s3">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--back socks-back--hoodie" for="wiz-s4">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next" for="wiz-s6">See My Summary &rarr;</label>
 						</div>
@@ -3665,13 +3612,7 @@
 							<span class="wiz-progress__step wiz-progress__step--active wiz-progress__step--final"></span>
 						</div>
 						<h4 class="wiz-title left">Your Uniform Summary</h4>
-						<p class="wiz-summary-intro">Here&rsquo;s what to look for in the registration dropdown for each item:</p>
-
-						<div class="wiz-reg-callout">
-							<strong>How to use this</strong>
-							During registration, find the uniform section and match each item below to the corresponding dropdown. Select the
-							value shown.
-						</div>
+							<p class="wiz-reg-callout">Match each item to the registration dropdown and select the value shown.</p>
 
 						<dl class="wiz-summary">
 							<div class="wiz-summary__row">
@@ -3755,7 +3696,7 @@
 
 					</div>
 						<div class="wiz-nav">
-							<label class="wiz-btn wiz-btn--back" for="wiz-s5">&larr; Back</label>
+										<label class="wiz-btn wiz-btn--back" for="wiz-s5">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--restart" for="wiz-intro">Start Over</label>
 						</div>
 					</section>
@@ -3765,7 +3706,7 @@
 			</div>
 			</div>
 			<!-- /.unif-wizard -->
-			<p class="cms-rev"><small>[r42 · 2026-06-16 · 2113971]</small></p>
+			<p class="cms-rev"><small>[r70 · 2026-06-16 · 2113971]</small></p>
 		</main>
 	</body>
 </html>
