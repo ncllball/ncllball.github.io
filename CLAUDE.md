@@ -14,6 +14,8 @@ When linking to hub pages, use these canonical live URLs (not the GitHub Pages U
 | `_Hubs/umpires-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111983` |
 | `_Hubs/uniforms-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2113971` |
 | `_Hubs/volunteer-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2117276` |
+| `_Programs/baseball-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111979` |
+| `_Programs/softball-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111980` |
 
 ## Canonical & og:url
 
