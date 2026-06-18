@@ -2731,8 +2731,8 @@ details.footies[open] summary::before {
     cursor: grabbing;
 }
 
-.pd-landing .table-scroll,
-.pd-landing .table-scroll.is-grabbed {
+.playerdev-landing .table-scroll,
+.playerdev-landing .table-scroll.is-grabbed {
     cursor: default;
 }
 
