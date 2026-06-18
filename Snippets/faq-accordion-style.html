@@ -1,0 +1,129 @@
+<!--
+  Saved from: _Events/assessments-faq.html (pulled 2026-06-17, prior to summerball-faq consistency rewrite)
+  Purpose:    Custom accordion-style FAQ with flex sidebar layout.
+              Replaced by the summerball-faq Q:/A: flat pattern for consistency.
+              Keep here if accordion-style FAQ is ever needed for a future page.
+
+  Structure it was used with:
+    <div class="faq-layout">
+      <section class="faq-center"> ... </section>
+      <aside class="faq-sidebar"> ... </aside>
+    </div>
+  Each Q:
+    <details class="faq-item">
+      <summary class="left">Question text</summary>
+      <div class="faq-answer"><p>Answer text</p></div>
+    </details>
+-->
+<style>
+  .faq-layout {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .faq-center {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 760px;
+  }
+
+  .faq-sidebar {
+    flex: 0 0 280px;
+  }
+
+  .faq-group {
+    margin-bottom: 28px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 14px 0;
+    margin: 0;
+    background: transparent;
+  }
+
+  .faq-item[open] {
+    background: lightgray;
+    padding: 14px 16px;
+    margin: 6px 0;
+    border-radius: 10px;
+  }
+
+  .faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item summary::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform 160ms ease;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 2px;
+  }
+
+  .faq-item[open] summary::after {
+    transform: rotate(-135deg);
+    margin-top: 6px;
+  }
+
+  .faq-item summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .faq-item summary.left {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .faq-item p {
+    margin: 0;
+  }
+
+  .faq-item[open] summary.left {
+    color: var(--color_red) !important;
+  }
+
+  .faq-item[open] .faq-answer {
+    color: var(--color_blue);
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 220ms ease, opacity 180ms ease;
+    margin-top: 0;
+  }
+
+  .faq-item[open] .faq-answer {
+    max-height: 400px;
+    opacity: 1;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 900px) {
+    .faq-layout {
+      flex-direction: column;
+    }
+
+    .faq-center,
+    .faq-sidebar {
+      max-width: 100%;
+    }
+  }
+</style>
