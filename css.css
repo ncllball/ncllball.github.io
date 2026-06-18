@@ -722,7 +722,7 @@ img {
     padding: 0;
     overflow: hidden;
     margin-left: 1rem;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 .hub-intro__aside--accent .hub-aside__title {
     background: var(--color_red);
@@ -736,7 +736,7 @@ img {
     padding: 7px 12px;
 }
 .hub-intro__aside--accent .hub-aside__list.related-links {
-    padding: 8px 12px;
+    padding: 8px 12px 8px 2px;
     gap: 6px;
 }
 .hub-intro__aside--accent .hub-aside__list.related-links li {
