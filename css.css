@@ -5154,7 +5154,7 @@ p.flush-bottom:last-child {
 	font-family: "Material Icons Outlined";
 	font-size: 10px;
 	line-height: 1;
-	margin-left: 6px;
+	margin-left: 1px;
 	color: var(--color_red) !important;
 	opacity: 0.9;
 }
