@@ -60,6 +60,55 @@
 				</div>
 			</section>
 
+			<section style="border-top: 2px dashed #ccc; margin-top: 3rem; padding-top: 1.5rem;">
+				<p><strong>Sidebar pattern test</strong> — compare both variants; remove this section once a winner is picked.</p>
+				<div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: flex-start;">
+
+					<div>
+						<p><em>A: hub-intro__aside (current standard)</em></p>
+						<aside class="hub-intro__aside hub-intro__aside--accent" aria-label="Related All-Stars links (variant A)">
+							<h4 class="hub-aside__title">All-Stars</h4>
+							<ul class="hub-aside__list related-links">
+								<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2114831">2026 All-Stars</a></li>
+								<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2249900">2026 All-Stars FAQ</a></li>
+								<li><a class="ncll" href="https://ncllball.github.io/docs/2026.all-stars.application.BB.SB.pdf">2026 Application</a></li>
+							</ul>
+						</aside>
+					</div>
+
+					<div>
+						<p><em>B: related-links--grouped (assessments-main pattern)</em></p>
+						<aside class="hub-intro__aside hub-intro__aside--accent related-links related-links--grouped" style="padding: 0; border: 1px solid #e0e0e0;" aria-label="Related All-Stars links (variant B)">
+							<h4 class="hub-aside__title">Related links</h4>
+							<div style="padding: 10px 12px;">
+								<div class="related-links__group">
+									<span class="related-links__group-title">Pages</span>
+									<ul class="related-links__list">
+										<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2114831" rel="noopener">2026 All-Stars</a></li>
+										<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2249900" rel="noopener">2026 All-Stars FAQ</a></li>
+										<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2244720" rel="noopener">League Age</a></li>
+										<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2111981" rel="noopener">Parents Hub</a></li>
+									</ul>
+								</div>
+								<div class="related-links__group">
+									<span class="related-links__group-title">Downloads</span>
+									<ul class="related-links__list">
+										<li><a class="ncll" href="https://ncllball.github.io/docs/2026.all-stars.application.BB.SB.pdf" rel="noopener">2026 Application</a></li>
+									</ul>
+								</div>
+								<div class="related-links__group">
+									<span class="related-links__group-title">Sign-ups</span>
+									<ul class="related-links__list">
+										<li><a class="ncll" href="#" rel="noopener">Tryout Sign-up (placeholder)</a></li>
+									</ul>
+								</div>
+							</div>
+						</aside>
+					</div>
+
+				</div>
+			</section>
+
 			<!-- To add a new year: insert a new h2 + program-grid for the current year, then wrap prior years in details.allstars-year blocks below. -->
 
 			<h2 class="left">2026 All-Stars</h2>
