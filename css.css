@@ -5148,15 +5148,15 @@ p.flush-bottom:last-child {
 	text-decoration: underline;
 }
 
-.related-links--grouped .related-links__list a::after {
+.related-links--grouped .related-links__list a::after,
+.hub-intro__aside--accent.related-links--grouped .hub-aside__list.related-links a::after {
 	content: "open_in_new";
 	font-family: "Material Icons Outlined";
 	font-size: 10px;
 	line-height: 1;
 	margin-left: 6px;
-  color: var(--color_red) !important;
+	color: var(--color_red) !important;
 	opacity: 0.9;
-
 }
 
 
