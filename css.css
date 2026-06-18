@@ -722,7 +722,7 @@ img {
     padding: 0;
     overflow: hidden;
     margin-left: 1rem;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
 }
 .hub-intro__aside--accent .hub-aside__title {
     background: var(--color_red);
