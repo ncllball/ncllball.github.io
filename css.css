@@ -739,8 +739,12 @@ img {
     /* padding: 8px 12px 8px 2px; */
     gap: 6px;
 }
+.hub-intro__aside--accent.related-links--grouped .hub-aside__list.related-links {
+    gap: 4px;
+}
 .hub-intro__aside--accent .hub-aside__list.related-links li {
     padding-left: 0;
+    margin: 0;
 }
 .hub-intro__aside--accent .hub-aside__list.related-links li::before {
     content: none;
@@ -5106,7 +5110,7 @@ p.flush-bottom:last-child {
 }
 
 .related-links--grouped .related-links__group {
-	margin-bottom: 5px;
+	margin-bottom: 3px;
 }
 
 .related-links--grouped .related-links__group:last-child {
