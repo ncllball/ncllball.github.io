@@ -780,6 +780,11 @@ img {
     }
 }
 
+/* Contain aside float so it doesn't bleed into subsequent sections */
+.intro-section {
+    display: flow-root;
+}
+
 /* Section headings and content grids after the aside must start below the float */
 .hub-intro__aside ~ h2,
 .hub-intro__aside ~ section,
