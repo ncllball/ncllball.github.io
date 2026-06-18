@@ -122,30 +122,40 @@ async function waitForManualLogin(page, editUrl, waitLoginMs, email, password) {
 
     if (email && password && !passwordSubmitted && /login\.stacksports\.com/i.test(currentUrl)) {
       if (!emailSubmitted) {
-        const emailInput = await page.waitForSelector(
-          'input[name="email"], input[type="email"], input[placeholder*="Email" i]',
-          { timeout: 5000, state: "visible" },
-        ).catch(() => null);
-        if (emailInput) {
-          console.log("Email form detected; entering email.");
-          await emailInput.fill(email);
-          await page.getByRole("button", { name: /continue|next|sign in|log in/i }).first().click();
+        // Account selector: "Welcome Back! Select an account" — shown when --keep-profile reuses a session
+        const accountTile = page.locator(`text="${email}"`).first();
+        const tileVisible = await accountTile.isVisible().catch(() => false);
+        if (tileVisible) {
+          console.log("Account selector detected; clicking saved account.");
+          await accountTile.click();
           emailSubmitted = true;
-          console.log("Email submitted.");
           await page.waitForTimeout(2000);
         } else {
-          // Stack Sports may show "Continue as <email>" when identity is cached in profile cookies.
-          const continueBtn = await page.waitForSelector(
-            'button, [role="button"]',
-            { timeout: 3000, state: "visible" },
+          const emailInput = await page.waitForSelector(
+            'input[name="email"], input[type="email"], input[placeholder*="Email" i]',
+            { timeout: 5000, state: "visible" },
           ).catch(() => null);
-          if (continueBtn) {
-            const btnText = await continueBtn.textContent().catch(() => "");
-            if (/continue|sign in|log in/i.test(btnText)) {
-              console.log(`"${btnText.trim()}" button detected; clicking to proceed with cached identity.`);
-              await continueBtn.click();
-              emailSubmitted = true;
-              await page.waitForTimeout(2000);
+          if (emailInput) {
+            console.log("Email form detected; entering email.");
+            await emailInput.fill(email);
+            await page.getByRole("button", { name: /continue|next|sign in|log in/i }).first().click();
+            emailSubmitted = true;
+            console.log("Email submitted.");
+            await page.waitForTimeout(2000);
+          } else {
+            // Stack Sports may show "Continue as <email>" when identity is cached in profile cookies.
+            const continueBtn = await page.waitForSelector(
+              'button, [role="button"]',
+              { timeout: 3000, state: "visible" },
+            ).catch(() => null);
+            if (continueBtn) {
+              const btnText = await continueBtn.textContent().catch(() => "");
+              if (/continue|sign in|log in/i.test(btnText)) {
+                console.log(`"${btnText.trim()}" button detected; clicking to proceed with cached identity.`);
+                await continueBtn.click();
+                emailSubmitted = true;
+                await page.waitForTimeout(2000);
+              }
             }
           }
         }
