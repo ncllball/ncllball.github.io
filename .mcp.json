@@ -73,7 +73,10 @@
     },
     "crawl4ai": {
       "type": "sse",
-      "url": "http://192.168.50.9:11235/mcp/sse"
+      "url": "http://192.168.50.9:11235/mcp/sse",
+      "headers": {
+        "Authorization": "Bearer e5134dbc4b3fb4151d239ef0706ef99606d3cb80634eb6db93d9d979e12c027b"
+      }
     },
     "codex-handoff": {
       "command": "cmd",
