@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__chrome-devtools__wait_for",
+      "mcp__chrome-devtools__list_pages",
+      "mcp__chrome-devtools__list_network_requests",
+      "mcp__google-chat__list_messages",
+      "mcp__gmail__read_email",
+      "mcp__gdrive__getGoogleSheetContent",
+      "mcp__crawl4ai__ask",
+      "mcp__crawl4ai__html",
+      "mcp__crawl4ai__pdf",
+      "mcp__crawl4ai__screenshot",
+      "mcp__outline__update_document"
+    ]
+  }
+}
