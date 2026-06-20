@@ -5,6 +5,8 @@ const os = require("os");
 const path = require("path");
 const crypto = require("crypto");
 
+const ENDPOINT_FILE = path.join(process.cwd(), "_temp", "dnn-cms.endpoint");
+
 function loadPlaywright() {
   const candidates = [
     "playwright",
@@ -36,6 +38,8 @@ Options:
   --tabid <id>           Override tabid discovered from the file header/canonical URL.
   --mid <id>             Override module ID discovered from the file header.
   --wait-login-ms <ms>   Time to wait for manual login. Default: 180000
+  --bind                 Launch browser, log in, and bind as 'ncll-cms'. Stays alive until Ctrl+C.
+                         Subsequent sync runs attach to this session automatically (no re-login).
   --help                 Show this help.
 
 Login:
@@ -52,6 +56,7 @@ Examples:
 
 function parseArgs(argv) {
   const args = {
+    bind: false,
     save: false,
     headless: false,
     profile: path.join(process.cwd(), "_temp", "dnn-cms-profile"),
@@ -65,6 +70,7 @@ function parseArgs(argv) {
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === "--help" || arg === "-h") usage(0);
+    else if (arg === "--bind") args.bind = true;
     else if (arg === "--save") args.save = true;
     else if (arg === "--headless") args.headless = true;
     else if (arg === "--profile") args.profile = argv[++i];
@@ -76,8 +82,8 @@ function parseArgs(argv) {
     else positionals.push(arg);
   }
 
-  if (positionals.length !== 1) usage(1);
-  args.file = positionals[0];
+  if (!args.bind && positionals.length !== 1) usage(1);
+  if (!args.bind) args.file = positionals[0];
   return args;
 }
 
@@ -207,8 +213,44 @@ async function maybeAutoLogin(page) {
   return true;
 }
 
+async function runBind(args) {
+  const { chromium } = loadPlaywright();
+  fs.mkdirSync(path.dirname(ENDPOINT_FILE), { recursive: true });
+
+  const browser = await chromium.launch({
+    headless: false,
+    args: ["--disable-dev-shm-usage"],
+  });
+  const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
+  const page = await context.newPage();
+
+  // Navigate to any DNN edit page to trigger login
+  const loginUrl = `https://www.ncllball.com/Default.aspx?tabid=2111980&ctl=Edit&mid=2202640`;
+  await page.goto(loginUrl, { waitUntil: "domcontentloaded", timeout: 60000 });
+  await waitForManualLogin(page, loginUrl, args.waitLoginMs, process.env.SC_EMAIL, process.env.SC_PASSWORD);
+
+  const { endpoint } = await browser.bind("ncll-cms", { workspaceDir: process.cwd() });
+  fs.writeFileSync(ENDPOINT_FILE, endpoint, "utf8");
+  console.log(`Session bound as 'ncll-cms'.`);
+  console.log(`Endpoint written to: ${ENDPOINT_FILE}`);
+  console.log(`Sync runs will attach to this session. Press Ctrl+C to stop.`);
+
+  process.on("SIGINT", async () => {
+    console.log("\nShutting down bound session...");
+    await browser.unbind().catch(() => {});
+    fs.rmSync(ENDPOINT_FILE, { force: true });
+    await context.close().catch(() => {});
+    await browser.close().catch(() => {});
+    process.exit(0);
+  });
+
+  await new Promise(() => {}); // stay alive
+}
+
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+  if (args.bind) return runBind(args);
+  const t0 = Date.now();
   const absFile = path.resolve(process.cwd(), args.file);
   const html = fs.readFileSync(absFile, "utf8");
   const discovered = discoverCmsTarget(html);
@@ -225,18 +267,38 @@ async function main() {
   const liveUrl = `https://www.ncllball.com/Default.aspx?tabid=${tabid}`;
   const editorId = `dnn_ctr${mid}_EditHtml_txtContent_RadEditorDNN`;
 
-  if (!args.keepProfile && fs.existsSync(args.profile)) {
-    fs.rmSync(args.profile, { recursive: true, force: true });
-    console.log("Profile cleared (use --keep-profile to reuse).");
-  }
-  fs.mkdirSync(args.profile, { recursive: true });
-
   const { chromium } = loadPlaywright();
-  const context = await chromium.launchPersistentContext(args.profile, {
-    headless: args.headless,
-    viewport: { width: 1440, height: 1000 },
-    args: ["--disable-dev-shm-usage"],
-  });
+  let context;
+  let usingBoundSession = false;
+
+  const savedEndpoint = fs.existsSync(ENDPOINT_FILE)
+    ? fs.readFileSync(ENDPOINT_FILE, "utf8").trim()
+    : null;
+
+  if (savedEndpoint) {
+    try {
+      const browser = await chromium.connect(savedEndpoint);
+      context = browser.contexts()[0] || (await browser.newContext());
+      usingBoundSession = true;
+      console.log("Attached to bound session 'ncll-cms'.");
+    } catch (e) {
+      console.log(`Bound session unavailable (${e.message}); launching fresh browser.`);
+      fs.rmSync(ENDPOINT_FILE, { force: true });
+    }
+  }
+
+  if (!usingBoundSession) {
+    if (!args.keepProfile && fs.existsSync(args.profile)) {
+      fs.rmSync(args.profile, { recursive: true, force: true });
+      console.log("Profile cleared (use --keep-profile to reuse).");
+    }
+    fs.mkdirSync(args.profile, { recursive: true });
+    context = await chromium.launchPersistentContext(args.profile, {
+      headless: args.headless,
+      viewport: { width: 1440, height: 1000 },
+      args: ["--disable-dev-shm-usage"],
+    });
+  }
 
   const page = context.pages()[0] || (await context.newPage());
 
@@ -320,7 +382,7 @@ async function main() {
     if (!injected.hasStylesheet) throw new Error("css.css link not found in source HTML — check the file has the standard stylesheet link in <head>.");
 
     if (!args.save) {
-      console.log("Dry run complete. Re-run with --save to click DNN Save.");
+      console.log(`Dry run complete (${((Date.now() - t0) / 1000).toFixed(1)}s). Re-run with --save to click DNN Save.`);
       return;
     }
 
@@ -343,8 +405,9 @@ async function main() {
     }, marker);
     console.log("Live/admin-session check:");
     console.log(JSON.stringify(liveCheck, null, 2));
+    console.log(`Done in ${((Date.now() - t0) / 1000).toFixed(1)}s.`);
   } finally {
-    await context.close().catch(() => {});
+    if (!usingBoundSession) await context.close().catch(() => {});
   }
 }
 
