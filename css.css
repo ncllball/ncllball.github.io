@@ -3784,6 +3784,45 @@ p.flush-bottom:last-child {
     border: 1px solid #2ecc40;
 }
 
+/* Rule-tier badges (division rules pages) — Little League national rule vs NCLL local rule vs suggestion */
+.status-national {
+    background: rgba(0, 117, 192, 0.15);
+    color: var(--color_blue);
+    border: 1px solid var(--color_blue);
+}
+
+.status-district {
+    background: rgba(111, 66, 193, 0.15);
+    color: #6f42c1;
+    border: 1px solid #6f42c1;
+}
+
+.status-local {
+    background: rgba(204, 0, 0, 0.12);
+    color: var(--color_red);
+    border: 1px solid var(--color_red);
+}
+
+.status-suggestion {
+    background: rgba(246, 195, 68, 0.25);
+    color: #5a4200;
+    border: 1px solid #d9a300;
+}
+
+.rules-legend__list {
+    margin: 0.75rem 0 0;
+    padding-left: 1.2rem;
+}
+
+.rules-legend__list li {
+    margin-bottom: 0.5rem;
+}
+
+h4 .status-badge {
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
 /* Action row ------------------------------------------------------------- */
 .ncll-card__sticky-footer {
     width: 100%;
@@ -4713,6 +4752,33 @@ p.flush-bottom:last-child {
 .lightbox-scope input.lightbox-toggle:checked~.lightbox img {
     transform: scale(1);
     opacity: 1;
+}
+
+/* Rules link (division cards) — small icon linking to that division's Rules of Play page */
+.rules-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: white;
+    border-radius: 50%;
+    color: var(--color_red);
+    font-size: 1rem;
+    line-height: 1;
+    flex: 0 0 auto;
+}
+
+.rules-icon-btn:hover,
+.rules-icon-btn:focus {
+    background: var(--color_red);
+    color: white;
+}
+
+.rules-icon-btn img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
 }
 
 .subtle {
