@@ -25,6 +25,7 @@ images/2026-01-27_18-07-38_extracted/
 *.csv
 *.ods
 *.apps.googleusercontent.com.json
+_drafts/archive-triage/
 
 # Large binaries — not for git
 *.mp4
