@@ -12,6 +12,7 @@
     "editor.hover.enabled": "off",
     "chatgpt.openOnStartup": true,
     "claudeCodeChat.permissions.yoloMode": false,
+    "python.terminal.useEnvFile": true,
     "pasteImage.path": "${projectRoot}/images",
     "pasteImage.prefix": "https://ncllball.github.io/images/",
     "pasteImage.namePrefix": "",
