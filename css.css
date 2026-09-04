@@ -899,6 +899,42 @@ h2.left::before {
     background-size: 3px 3px;
 }
 
+/* Division rules pages (_Rules/*.html) — rule-level h4 headings and per-layer
+   source labels (Little League/District 8/NCLL/Note). Locked in 2026-09-04
+   after prototyping on _Rules/baseball-majors.html. */
+.division-rules h4.left {
+    color: var(--color_red) !important;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--color_border_light);
+}
+.division-rules h2.left + h4.left {
+    margin-top: 14px;
+}
+.division-rules li strong {
+    color: var(--color_blue);
+    font-family: var(--font_tk-cronos-pro);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 0.95em;
+    padding: 2px 4px 2px 0;
+}
+.division-rules ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.division-rules li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.division-rules li:last-child {
+    margin-bottom: 0;
+}
+
 :root {
     --ease-std: cubic-bezier(.2, 0, .2, 1);
     --ease-out: cubic-bezier(0, 0, .2, 1);
