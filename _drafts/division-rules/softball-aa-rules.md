@@ -92,7 +92,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 
 ### B4. Bat standard
 
-- **LL Rulebook:** **CONFIRMED via Tower, 2026-09-03.** LL Rule 1.10 — one softball bat standard at every level; non-wood must carry the current certification mark, ≤34″, 2¼″ barrel.
+- **LL Rulebook:** **CONFIRMED via Tower, 2026-09-03.** LL Rule 1.10 — one softball bat standard at every level; non-wood must carry the current certification mark, ≤34″, 2¼″ barrel. **2026 change, propagated 2026-09-04 (rulebook-verify pass):** pine tar or any other similar adhesive substance is now permitted on the bat handle/grip at all levels (Rule 1.10 Note 2) — reverses the prior prohibition; may not be applied to the barrel/taper or cover the BPF mark, penalty for violation. Thumb protectors are permitted; choke-knobs and choke-up assists are not (Rule 1.10 A.R. 2). Cite: `2026-little-league-softball.md` "2026 Significant Updates" (lines 59–61) and the full Rule 1.10 text (lines 1594–1602).
 - **NCLL:** Typical gloves 10″–12″; discourage oversized trap pockets on pitchers' gloves specifically.
 - **Notes:** Cite: `_temp/.cleanup/programs-review/Softball/aa-division.html` (Equipment).
 
@@ -390,3 +390,4 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 | 2026-09-03 | Claude (NCLL session) | Applied Tower's fill: expanded the shared facts table; resolved D14 (now LL-cited); added D7a look-back row; clarified D11 (a Local League Option D8 would adopt if AA's still-open interleague status resolves to "yes" — see G6); noted 8.01 applies to AA's player-pitcher portion in C1; corrected B6. Flagged (not yet corrected) D7's "on release" claim as a discrepancy. |
 | 2026-09-03 | Tower Claude (via user) | **Clarified D7 is a page error, not a board choice — same logic as AAA's version of this question.** AA is "Minor League" for Rule 7.13 purposes; the "on release" flexibility exists only for the Major Division. D8 AA is actually stricter still (no leaving until the ball crosses the plate, matching A) — a permitted tightening, not the loosening the recovered page wrongly claimed. |
 | 2026-09-03 | Claude (NCLL session) | Corrected D7 outright per Tower's clarification: AA's leadoff timing is "no leaving until the ball crosses the plate," matching A — the recovered page's "on release" claim was simply wrong. Removed the open item; open items down by one. |
+| 2026-09-04 | Claude (NCLL session) | Applied Tower's 2026-09-04 rulebook-verify pass: **B4** propagated the 2026 equipment changes universal to softball — pine tar/adhesive permitted on the handle/grip at all levels (Rule 1.10 Note 2, reverses the prior ban), thumb protectors permitted, choke-knobs/choke-up assists still not (Rule 1.10 A.R. 2). |
