@@ -34,6 +34,40 @@
 		<title>Juniors Division Softball Rules - North Central Little League</title>
 		<link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
+		<style>
+			/* Sticky division-name header — same pattern as _Rules/baseball-majors.html
+			   (see that file's own comment/revision-log for the full rationale, the
+			   scroll-margin-top anchor-jump fix, and the DNN re-check note). Offset is a
+			   CSS variable rather than a hardcoded `top: 0` since this page is expected to
+			   move into a DNN module later; nothing in `.division-rules`/`main` claims its
+			   own scroll container, so it binds to whatever the real page scroller is once
+			   embedded. RE-CHECK ONCE ACTUALLY EMBEDDED IN DNN.
+			   The `body` override below works around a site-wide css.css bug that breaks
+			   position:sticky — tracked separately, not fixed here:
+			   github.com/ncllball/ncllball.github.io/issues/1 */
+			body {
+				overflow-x: visible;
+			}
+			:root {
+				--division-rules-sticky-offset: 0px; /* bump if/when a DNN site header sits above this page */
+				--division-rules-sticky-height: 53px; /* rendered height of the sticky h1 bar below, kept in sync manually */
+			}
+			.division-rules h1.left {
+				position: sticky;
+				top: var(--division-rules-sticky-offset);
+				z-index: 20;
+				width: 100%;
+				background: #fff;
+				padding: 10px 0;
+				margin: 0 0 18px 0;
+				border-bottom: 1px solid var(--color_border_light);
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+			}
+			.division-rules h2[id],
+			.division-rules h4[id] {
+				scroll-margin-top: calc(var(--division-rules-sticky-offset) + var(--division-rules-sticky-height) + 8px);
+			}
+		</style>
 	</head>
 
 	<body>
@@ -54,7 +88,7 @@
 
 			<h4 id="age-eligibility" class="left">A1. Age eligibility</h4>
 			<ul>
-				<li><strong>Little League</strong> A local league establishes the age structure for its divisions (Regulation V).</li>
+				<li><strong>Little League</strong> Any player who turns 12 before January 1 and does not turn 15 before January 1 of that year is eligible for Junior League (Regulation IV(a)).</li>
 				<li><strong>District 8</strong> League ages 12, 13, and 14 are eligible for Juniors Softball (15 with District Administrator approval).</li>
 				<li><strong>NCLL</strong> League ages 12–14 is the registration target band.</li>
 			</ul>
@@ -73,7 +107,7 @@
 
 			<h4 id="pitching-distance" class="left">B2. Pitching distance</h4>
 			<ul>
-				<li><strong>Little League</strong> 43 feet, the Juniors Softball standard — a step up from Majors' 40 feet (Rule 1.07 NOTE 3–4).</li>
+				<li><strong>Little League</strong> 43 feet, the Juniors Softball standard — a step up from Majors' 40 feet (Rule 1.07).</li>
 			</ul>
 
 			<h4 id="ball-standard" class="left">B3. Ball standard</h4>
@@ -83,7 +117,7 @@
 
 			<h4 id="bat-standard" class="left">B4. Bat standard</h4>
 			<ul>
-				<li><strong>Little League</strong> One softball bat standard applies at every level, including Juniors. Non-wood bats must carry the current softball certification mark; maximum 34 in. length and 2¼ in. barrel (Rule 1.10). Pine tar or a similar adhesive is now permitted on the handle or grip at every level (not on the barrel or taper, and not covering the certification mark). Thumb protectors are permitted; choke-knobs and choke-up assists are not.</li>
+				<li><strong>Little League</strong> Juniors gets the 34 in. length — the one genuine exception in an otherwise-33-in. cap that applies at A/AA/AAA and Majors (Junior/Senior League is the only carve-out). Non-wood bats must carry the current softball certification mark and a BPF 1.20 mark; 2¼ in. barrel (Rule 1.10). Pine tar or a similar adhesive is now permitted on the handle or grip at every level (not on the barrel or taper, and not covering the certification mark). Thumb protectors are permitted; choke-knobs and choke-up assists are not.</li>
 			</ul>
 
 			<h4 id="home-run-line" class="left">B5. Home run line</h4>
@@ -101,7 +135,7 @@
 
 			<h4 id="pitching-format" class="left">C1. Pitching format</h4>
 			<ul>
-				<li><strong>Little League</strong> The same underhand-windmill delivery rules apply as at every level (Rule 8.01).</li>
+				<li><strong>Little League</strong> The same underhand-windmill delivery rules apply as at every level: both feet on the ground within or partially within the 24 in. pitcher's plate, pivot foot in contact with its top surface, non-pivot foot on or behind it, no crow-hop, leaping is legal, no more than two arm revolutions, one step forward at release (Rule 8.01). This foot-position rule is separate from the 8-ft look-back circle — don't conflate the two.</li>
 				<li><strong>NCLL</strong> Full kid pitch. The 43-foot distance calls for deeper command and change-up sophistication. Encourage developing a change-up; hold off on rise, drop, and curve pitches until consistency is established.</li>
 			</ul>
 
@@ -163,7 +197,7 @@
 
 			<h4 id="on-deck-and-bat-safety" class="left">D10. On-deck &amp; bat safety</h4>
 			<ul>
-				<li><strong>Little League</strong> Permitted at Juniors — the one softball division where the on-deck circle is allowed at all (Rule 1.08 NOTE 1). A helmet is required for the on-deck batter, same as the batter.</li>
+				<li><strong>Little League</strong> Permitted at Juniors — Junior and Senior League are the two softball divisions where the on-deck circle is allowed, not Juniors alone (Rule 1.08 NOTE 1). A helmet is required for the on-deck batter, same as the batter.</li>
 			</ul>
 
 			<h4 id="courtesy-runner" class="left">D11. Courtesy runner</h4>
@@ -178,7 +212,7 @@
 
 			<h4 id="sliding" class="left">D14. Sliding</h4>
 			<ul>
-				<li><strong>Little League</strong> Headfirst sliding while advancing is permitted at Juniors — the one softball division where this flips on; it's out at every level below (Rule 7.08(a)(4)).</li>
+				<li><strong>Little League</strong> Headfirst sliding while advancing is permitted at Juniors — Senior League shares this exception too, not Juniors alone; it's out at Tee Ball, Minor, and Major Divisions (Rule 7.08(a)(4)).</li>
 				<li><strong>NCLL</strong> A variety of slides — hook, pop-up, backdoor — are taught progressively, now that headfirst sliding is a live, legal technique at this level.</li>
 			</ul>
 
@@ -261,7 +295,7 @@
 
 			<h4 id="all-star-team" class="left">G10. All-Star team</h4>
 			<ul>
-				<li><strong>Little League</strong> The same tournament-player eligibility baseline as baseball, requiring participation in at least 60% of the regular season, plus residency and birth-certificate verification.</li>
+				<li><strong>Little League</strong> The same tournament-player eligibility baseline as baseball: participation in at least 8 regular-season games (Senior League is the division exempted from this minimum, not Juniors), plus residency and birth-certificate verification. A separate, narrower rule adjusts this to 60% of available games specifically for players who miss games due to a school-baseball season — that's not the general Juniors threshold.</li>
 				<li><strong>NCLL</strong> League ages 13–14 feed the Juniors All-Star team, which may combine with another league's roster as a "co-league" team when needed — softball co-leagues are more common at the Juniors and Seniors levels than in baseball. The District 8 Softball Juniors All-Star Tournament begins June 29 (2026).</li>
 			</ul>
 

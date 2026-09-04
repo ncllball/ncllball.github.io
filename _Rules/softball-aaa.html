@@ -32,6 +32,40 @@
 		<title>AAA Division Softball Rules - North Central Little League</title>
 		<link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
+		<style>
+			/* Sticky division-name header — same pattern as _Rules/baseball-majors.html
+			   (see that file's own comment/revision-log for the full rationale, the
+			   scroll-margin-top anchor-jump fix, and the DNN re-check note). Offset is a
+			   CSS variable rather than a hardcoded `top: 0` since this page is expected to
+			   move into a DNN module later; nothing in `.division-rules`/`main` claims its
+			   own scroll container, so it binds to whatever the real page scroller is once
+			   embedded. RE-CHECK ONCE ACTUALLY EMBEDDED IN DNN.
+			   The `body` override below works around a site-wide css.css bug that breaks
+			   position:sticky — tracked separately, not fixed here:
+			   github.com/ncllball/ncllball.github.io/issues/1 */
+			body {
+				overflow-x: visible;
+			}
+			:root {
+				--division-rules-sticky-offset: 0px; /* bump if/when a DNN site header sits above this page */
+				--division-rules-sticky-height: 53px; /* rendered height of the sticky h1 bar below, kept in sync manually */
+			}
+			.division-rules h1.left {
+				position: sticky;
+				top: var(--division-rules-sticky-offset);
+				z-index: 20;
+				width: 100%;
+				background: #fff;
+				padding: 10px 0;
+				margin: 0 0 18px 0;
+				border-bottom: 1px solid var(--color_border_light);
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+			}
+			.division-rules h2[id],
+			.division-rules h4[id] {
+				scroll-margin-top: calc(var(--division-rules-sticky-offset) + var(--division-rules-sticky-height) + 8px);
+			}
+		</style>
 	</head>
 
 	<body>
@@ -53,7 +87,7 @@
 
 			<h4 id="age-eligibility" class="left">A1. Age eligibility</h4>
 			<ul>
-				<li><strong>Little League</strong> A local league establishes the age structure for its divisions (Regulation V).</li>
+				<li><strong>Little League</strong> Any player who turns 7 before January 1 and does not turn 13 before January 1 of that year is eligible for Minor League (Regulation IV(a)) — subject to the local league's own alignment of that division; NCLL's A/AA/AAA split is exactly that alignment.</li>
 				<li><strong>District 8</strong> League ages 8 through 11 are eligible for AAA Softball.</li>
 				<li><strong>NCLL</strong> League ages 9–11 is the registration target band, with 10-year-olds specifically directed to register here. A player with a fall or winter birthday may play down with their grade-level peers.</li>
 			</ul>
@@ -72,7 +106,7 @@
 
 			<h4 id="pitching-distance" class="left">B2. Pitching distance</h4>
 			<ul>
-				<li><strong>Little League</strong> 35 feet, the Minor Softball standard (Rule 1.07 NOTE 3–4).</li>
+				<li><strong>Little League</strong> 35 feet, the Minor Softball standard (Rule 1.07).</li>
 			</ul>
 
 			<h4 id="ball-standard" class="left">B3. Ball standard</h4>
@@ -82,7 +116,7 @@
 
 			<h4 id="bat-standard" class="left">B4. Bat standard</h4>
 			<ul>
-				<li><strong>Little League</strong> One softball bat standard applies at every level. Non-wood bats must carry the current softball certification mark; maximum 34 in. length and 2¼ in. barrel (Rule 1.10). Pine tar or a similar adhesive is now permitted on the handle or grip at every level (not on the barrel or taper, and not covering the certification mark). Thumb protectors are permitted; choke-knobs and choke-up assists are not.</li>
+				<li><strong>Little League</strong> One softball certification standard applies at every level, but length isn't uniform: maximum 33 in. for A/AA/AAA and Majors, 34 in. only for Junior/Senior League. Non-wood bats must carry the current softball certification mark and a BPF 1.20 mark; 2¼ in. barrel (Rule 1.10). Pine tar or a similar adhesive is now permitted on the handle or grip at every level (not on the barrel or taper, and not covering the certification mark). Thumb protectors are permitted; choke-knobs and choke-up assists are not.</li>
 				<li><strong>NCLL</strong> Discourage a bat that's too heavy for the player to swing with good mechanics.</li>
 			</ul>
 
@@ -96,7 +130,7 @@
 
 			<h4 id="pitching-format" class="left">C1. Pitching format</h4>
 			<ul>
-				<li><strong>Little League</strong> The same underhand-windmill delivery rules apply as at every level (Rule 8.01).</li>
+				<li><strong>Little League</strong> The same underhand-windmill delivery rules apply as at every level: both feet on the ground within or partially within the 24 in. pitcher's plate, pivot foot in contact with its top surface, non-pivot foot on or behind it, no crow-hop, leaping is legal, no more than two arm revolutions, one step forward at release (Rule 8.01). This foot-position rule is separate from the 8-ft look-back circle — don't conflate the two.</li>
 				<li><strong>NCLL</strong> Full kid pitch — any rostered player may pitch if she demonstrates safe mechanics in practice. Multiple pitchers are encouraged; development outweighs short-term game outcome at this level. Focus stays on command before movement — riseballs, drops, and curves aren't required yet.</li>
 			</ul>
 
@@ -142,7 +176,7 @@
 
 			<h4 id="dropped-third-strike" class="left">D6. Dropped third strike</h4>
 			<ul>
-				<li><strong>Little League</strong> Off at AAA — the dropped-third-strike mechanic only applies at Majors and Juniors (Rule 6.09(b)); this is the Little League default at Minor Softball, not a local choice.</li>
+				<li><strong>Little League</strong> Off at AAA — the dropped-third-strike mechanic applies at Majors, Juniors, and Senior League (Rule 6.09(b)); this is the Little League default at Minor Softball, not a local choice.</li>
 			</ul>
 
 			<h4 id="stealing-and-leadoffs" class="left">D7. Stealing &amp; leadoffs</h4>

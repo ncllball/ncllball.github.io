@@ -28,7 +28,7 @@ LL source: not present on this machine — Tower has OCR access. Full softball-w
 |---|---|---|
 | Base paths | 60 ft at every level | LL Rule 1.04 |
 | Pitching motion | Underhand / windmill, 8-ft-radius circle, ≤2 arm revolutions | LL Rule 8.01 |
-| Pitching distance | Minor (A/AA/AAA) 35 ft · Majors 40 ft · Juniors 43 ft | LL Rule 1.07 NOTE 3–4 |
+| Pitching distance | Minor (A/AA/AAA) 35 ft · Majors 40 ft · Juniors 43 ft | LL Rule 1.07 |
 | Leadoffs | None at any level; **Minor (A/AA/AAA, AA included): not until the pitch is batted or reaches the batter** — locked in by rule-scoping, not a local choice (the "on release" flexibility exists only for the Major Division). D8 AA/A go stricter still: no leaving until the ball crosses the plate | LL Rule 7.13 NOTE 1–2 |
 | Look-back rule *(no baseball equivalent)* | Runner off base after a pitch/at-bat, pitcher holding the ball in the 8-ft circle and not making a play (fake throw counts as a play) → runner must immediately commit to advancing or returning. **PENALTY:** dead ball, "No Pitch," runner OUT. D8 A/AA's own stricter no-leadoff-until-plate-crossed rule usually supersedes this in practice | LL Rule 7.13 NOTE 1–2 + 7.08(a)(5) |
 | Headfirst slide while advancing | OUT at Tee Ball/Minor/Majors; permitted at Juniors. Sliding back INTO a base headfirst always legal. No "must slide" rule | LL Rule 7.08(a)(4) |
@@ -36,9 +36,9 @@ LL source: not present on this machine — Tower has OCR access. Full softball-w
 | Illegal pitch / delivery *(applies to AA's player-pitcher portion specifically — not the coach-relief portion)* | Underhand, hand below hip; both feet within the 24″ plate at the start; pivot foot on top of the plate; no crow-hop; leaping IS legal (feet may leave the ground within the 24″ width if the pivot foot isn't replanted); ≤2 arm revolutions; one step forward/toward the batter at release; no stop/reversal after hands separate | LL Rule 8.01 → penalty LL Rule 8.05 |
 | Dropped ball / "no pitch" | Ball slips from the pitcher's hand before/during delivery → ball declared, stays live, runners advance at own risk | LL Rule 8.07(a) |
 | Ball | D8 City AA = 11″ | LL Rule 1.09 |
-| Bat | One softball standard, all levels; ≤34″, 2¼″ barrel, current cert mark | LL Rule 1.10 |
+| Bat | One certification standard, all levels, but length isn't uniform: **33″ cap for Minor (A/AA/AAA) and Majors; 34″ only for Junior/Senior League.** 2¼″ barrel, current cert mark + BPF 1.20 | LL Rule 1.10 |
 | Batting helmets | League-provided, NOCSAE-approved; batter + all runners must wear one. Face guards permitted, NOT required by LL | LL Rule 1.16 |
-| Catcher's equipment | Mask w/ throat protector, chest protector, shin guards, cup (male catchers) — required any time catching, incl. warm-ups. **LL has no defensive-mask requirement for any other position** — corrected 2026-09-03, see B6 | LL Rule 1.17 |
+| Catcher's equipment | **CORRECTED 2026-09-04 (per John) — NCLL softball is girls-only; the rule's male-catcher clause is dropped as inapplicable.** Mask w/ throat protector, long- or short-model chest protector (the rule's female-catcher clause), shin guards — required any time catching, incl. warm-ups. **LL has no defensive-mask requirement for any other position** — corrected 2026-09-03, see B6 | LL Rule 1.17 |
 | On-deck batter | Not permitted at Minor (A/AA/AAA) or Majors | LL Rule 1.08 NOTE 1 |
 | Dropped 3rd strike | A/AA/AAA: batter out, caught or not (LL default at Minor Softball) | LL Rule 6.09(b) |
 | Infield fly | OFF at A/AA (D8 modification) | LL Rule 2.00 / 6.05 |
@@ -56,7 +56,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 
 ### A1. Age eligibility (league age)
 
-- **LL Rulebook:** LL Regulation V governs age-eligible player selection.
+- **LL Rulebook:** **CORRECTED 2026-09-04 (Codex audit, Tower-verified) — "Regulation V" was the wrong citation.** Regulation V is "Selection of Players" (draft methods), not age eligibility. Regulation IV(a), Minor League Division: "Any candidate with amateur status who will attain the age of 7 years before January 1 and who will not attain the age of 13 before January 1 of the year in question shall be eligible to compete in the Minor League Softball Division (subject to the local league Board of Directors alignment of this division)." AA sits inside this national Minor League band; NCLL's A/AA/AAA split is the local league's own "alignment" of that division. Cite: Regulation IV(a), `2026-little-league-softball.md` line 1011.
 - **D8 Interleague:** LA 7, 8, 9 (10 with DA approval) — CONFIRMED via Tower.
 - **NCLL:** **7–9 is the registration target band**, with 8's specifically directed to register here. 10's can join but it's not advised. Registration age band: 7–9 (birth dates Jan 1, 2017 – Dec 31, 2019).
 - **Notes:** Cite: _Registration/registration-main.html (footnote 2 — "AA Softball (7–9) is a coach-pitch/player-pitch blend for 7's to 9's. 8's should register here. While 10's can join, it's not advised. Fall and winter birthdays may play down with grade-level peers.").
@@ -81,7 +81,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 
 ### B2. Pitching distance & mound type
 
-- **LL Rulebook:** **35 feet — CONFIRMED**, the standard Little League Minor Softball distance. Cite: LL Rule 1.07 NOTE 3–4 — Tower, 2026-09-03.
+- **LL Rulebook:** **35 feet — CONFIRMED**, the standard Little League Minor Softball distance. **CORRECTED 2026-09-04 (Codex audit)** — the earlier citation to "Rule 1.07 NOTE 3–4" was wrong; there are no such notes. Rule 1.07 itself states all three division distances as inline sub-items: "(1) Minor League: 35 feet; (2) Little League (Majors): 40 feet; and (3) Junior/Senior League: 43 feet." Cite: LL Rule 1.07 — Tower, 2026-09-03.
 - **NCLL:** Per rulebook.
 - **Notes:** Cite: `_temp/.cleanup/programs-review/Softball/aa-division.html` ("Distance," under Pitching).
 
@@ -92,7 +92,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 
 ### B4. Bat standard
 
-- **LL Rulebook:** **CONFIRMED via Tower, 2026-09-03.** LL Rule 1.10 — one softball bat standard at every level; non-wood must carry the current certification mark, ≤34″, 2¼″ barrel. **2026 change, propagated 2026-09-04 (rulebook-verify pass):** pine tar or any other similar adhesive substance is now permitted on the bat handle/grip at all levels (Rule 1.10 Note 2) — reverses the prior prohibition; may not be applied to the barrel/taper or cover the BPF mark, penalty for violation. Thumb protectors are permitted; choke-knobs and choke-up assists are not (Rule 1.10 A.R. 2). Cite: `2026-little-league-softball.md` "2026 Significant Updates" (lines 59–61) and the full Rule 1.10 text (lines 1594–1602).
+- **LL Rulebook:** **CONFIRMED via Tower, 2026-09-03; CORRECTED 2026-09-04 (Codex audit) — the 34″ figure is not universal; Minor Softball (which AA sits within) caps at 33″.** LL Rule 1.10 — one certification standard at every level, but length isn't uniform: "The bat shall be no more than 33 inches (34 inches for Junior/Senior League) in length." Non-wood bats must carry the current certification mark and be printed with a BPF (bat performance factor) of **1.20** — not previously stated in this doc. Barrel diameter ≤2¼″. **2026 change, propagated 2026-09-04 (rulebook-verify pass):** pine tar or any other similar adhesive substance is now permitted on the bat handle/grip at all levels (Rule 1.10 Note 2) — reverses the prior prohibition; may not be applied to the barrel/taper or cover the BPF mark, penalty for violation. Thumb protectors are permitted; choke-knobs and choke-up assists are not (Rule 1.10 A.R. 2). Cite: `2026-little-league-softball.md` "2026 Significant Updates" (lines 59–61) and the full Rule 1.10 text (lines 1594–1602).
 - **NCLL:** Typical gloves 10″–12″; discourage oversized trap pockets on pitchers' gloves specifically.
 - **Notes:** Cite: `_temp/.cleanup/programs-review/Softball/aa-division.html` (Equipment).
 
@@ -163,7 +163,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 
 ### D6. Dropped third strike
 
-- **LL Rulebook:** **OFF — CONFIRMED**, the LL default at Minor Softball (Rule 6.09(b) scoped to Majors & Juniors only). Not a local AA choice, matches the rulebook baseline exactly.
+- **LL Rulebook:** **OFF — CONFIRMED**, the LL default at Minor Softball. **CORRECTED 2026-09-04 (Codex audit)** — Rule 6.09(b) is scoped to Majors, Juniors, **and Senior** League (a 3-way list, not just Majors/Juniors). Not a local AA choice, matches the rulebook baseline exactly.
 - **NCLL:** Per rulebook — not independently restated on the recovered page, but the rulebook default applies regardless.
 
 ### D7. Stealing / leadoffs
@@ -391,3 +391,5 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 | 2026-09-03 | Tower Claude (via user) | **Clarified D7 is a page error, not a board choice — same logic as AAA's version of this question.** AA is "Minor League" for Rule 7.13 purposes; the "on release" flexibility exists only for the Major Division. D8 AA is actually stricter still (no leaving until the ball crosses the plate, matching A) — a permitted tightening, not the loosening the recovered page wrongly claimed. |
 | 2026-09-03 | Claude (NCLL session) | Corrected D7 outright per Tower's clarification: AA's leadoff timing is "no leaving until the ball crosses the plate," matching A — the recovered page's "on release" claim was simply wrong. Removed the open item; open items down by one. |
 | 2026-09-04 | Claude (NCLL session) | Applied Tower's 2026-09-04 rulebook-verify pass: **B4** propagated the 2026 equipment changes universal to softball — pine tar/adhesive permitted on the handle/grip at all levels (Rule 1.10 Note 2, reverses the prior ban), thumb protectors permitted, choke-knobs/choke-up assists still not (Rule 1.10 A.R. 2). |
+| 2026-09-04 | Claude (NCLL session) | Applied the Codex-audit global fix (Tower-verified, after an initial too-loose draft citation was caught and corrected): **A1** replaced the wrong "Regulation V" citation with Regulation IV(a)'s actual Minor League Softball birthdate-cutoff clause (Jan 1 cutoff, not baseball's Sept 1/Aug 31), quoted verbatim with a line-number citation, and propagated to the public page. |
+| 2026-09-04 | Claude (NCLL session) | Applied the per-doc Codex-audit items for softball-aa (source text pre-pulled to `SOFTBALL-BATCH-SOURCE-TEXT.md`): **B2** citation corrected to Rule 1.07 alone (no "Note 3/4"). **B4** — 33″ bat cap for AA (Minor Softball), not the 34″ Junior/Senior figure; added the BPF 1.20 mark requirement. **B6 — per John, NCLL softball is girls-only**, dropped Rule 1.17's male-catcher cup clause, sourced the chest-protector requirement to the rule's female-catcher clause instead. **D6** — dropped third strike is a 3-way Majors/Juniors/Senior list. Quoted verbatim with citations; propagated to `_Rules/softball-aa.html`. |
