@@ -116,11 +116,10 @@ division fielding only one team — the actual target is NCLL's call):
     `a.html`'s actual rules (confirmed current) describe machine pitch as primary with
     coach-pitch only as an equipment-failure backup — the registration page is the outlier
     and needs the fix.
-22. AA's live page still says a pitcher needs "41 or more" pitches to trigger the
-    catcher-restriction rule — the same stale number Majors/AAA already corrected to 21+.
-    Confirmed still live 2026-09-03.
-23. AA's live "No Balks" bullet still literally reads "Balks are not called in **Tee Ball**"
-    — a copy-paste leftover from the Tee Ball page. Confirmed still live 2026-09-03.
+22. **RESOLVED 2026-09-03** — AA's "41 or more" pitcher→catcher pitch count is fixed to 21+
+    in the `_Rules/baseball-aa.html` rebuild, which has replaced the old live page.
+23. **RESOLVED 2026-09-03** — AA's "Balks are not called in Tee Ball" copy-paste error is
+    fixed to say "AA" in the `_Rules/baseball-aa.html` rebuild.
 
 ---
 

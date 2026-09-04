@@ -114,7 +114,8 @@ LL source: not present on this machine — Tower has OCR access. Relevant sectio
 
 ### D1. Innings for a complete game
 
-- **NCLL:** ⚠ Not explicitly stated as an inning count on a.html — governed by the time limit instead (see D2).
+- **LL Rulebook:** A regulation game is six innings (Rule 4.10(a)) — the same national default as every other division; confirmed and split out from NCLL's own time-limit rule on the old Programs/Baseball/a.html page during the 2026-09-03 pre-rebuild badge fix.
+- **NCLL:** Not independently restated on a.html — governed in practice by the time limit instead (see D2).
 
 ### D2. Time limits
 
