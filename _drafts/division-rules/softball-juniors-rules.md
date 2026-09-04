@@ -105,7 +105,7 @@ post-season. Cite: Tower, 2026-09-03.
 
 ### B4. Bat standard
 
-- **LL Rulebook:** **CONFIRMED via Tower, 2026-09-03.** LL Rule 1.10 — one softball bat standard at every level, including Juniors; ≤34″, 2¼″ barrel, current certification mark.
+- **LL Rulebook:** **CONFIRMED via Tower, 2026-09-03.** LL Rule 1.10 — one softball bat standard at every level, including Juniors; ≤34″, 2¼″ barrel, current certification mark. **2026 change, propagated 2026-09-04 (rulebook-verify pass):** pine tar or any other similar adhesive substance is now permitted on the bat handle/grip at all levels (Rule 1.10 Note 2) — reverses the prior prohibition; may not be applied to the barrel/taper or cover the BPF mark, penalty for violation. Thumb protectors are permitted; choke-knobs and choke-up assists are not (Rule 1.10 A.R. 2). Cite: `2026-little-league-softball.md` "2026 Significant Updates" (lines 59–61) and the full Rule 1.10 text (lines 1594–1602).
 - **NCLL:** Per rulebook.
 
 ### B5. Home-run distance / outfield line
@@ -404,3 +404,4 @@ post-season. Cite: Tower, 2026-09-03.
 | 2026-09-03 | Tower Claude (via user) | **RESOLVED** the Seniors softball question (full re-check of the D8 site): n/a at every level, confirmed — Juniors is genuinely LA15's regular-season ceiling, with any Senior team being All-Star-only. Updated this doc's header and top open item accordingly. |
 | 2026-09-03 | Tower Claude (via user) | Major LL-layer fill: look-back rule, headfirst-slide scoping (confirmed it DOES flip at Juniors, correcting this doc's own earlier wrong assumption that it wasn't tier-dependent), explicit no-balk citation, full 8.01 delivery mechanics, dropped-ball/"no pitch," batting-helmet (7, not 6, at Juniors)/catcher's-equipment specifics, courtesy-runner's full citation + 2026 change. Corrected the defensive-mask claim project-wide. |
 | 2026-09-03 | Claude (NCLL session) | Applied Tower's fill: expanded the shared facts table; corrected D14 (headfirst sliding — this doc's own earlier reasoning was wrong, now fixed with the citation); expanded D11 with the full citation + 2026 change; corrected B6/C5. |
+| 2026-09-04 | Claude (NCLL session) | Applied Tower's 2026-09-04 rulebook-verify pass: **B4** propagated the 2026 equipment changes universal to softball — pine tar/adhesive permitted on the handle/grip at all levels (Rule 1.10 Note 2, reverses the prior ban), thumb protectors permitted, choke-knobs/choke-up assists still not (Rule 1.10 A.R. 2). This is the last of the 5 softball equipment-propagation docs (A/AA/AAA/Majors/Juniors) — Seniors already had the fuller D4/A1/D6 pass done separately. |

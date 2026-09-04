@@ -46,9 +46,9 @@ LL source: not present on this machine — Tower has OCR access. Senior League S
 
 ### A1. Age eligibility (league age)
 
-- **LL Rulebook:** **CONFIRMED via Tower, 2026-09-03.** League age 13–16, **or a locally-defined band within 12–16** — LL Regulation V gives Junior/Senior softball a flexible age structure; the local league defines its own Junior-vs-Senior split (unlike baseball, where the Junior/Senior line is fixed nationally). Cite: LL Regulation V / Regulation IV(a).
+- **LL Rulebook:** **CORRECTED 2026-09-04 (rulebook-verify pass) — the Junior/Senior line is fixed nationally, same as baseball, not locally flexible as previously stated here.** Per **Divisions of Play**: "Senior League Baseball and Senior League Softball are for players 13 to 16 years old (the local league may allow 12-year-olds to participate in or dual roster in the Senior League Division. Players must be assessed by the league as capable of participation at that level)." Per **Regulation I(a)** ("The League — Junior/Senior League"): "Junior League is an extension of the local Little League to accommodate participants league ages 12-14; Senior League is an extension of the local Little League to accommodate participants league ages 13-16," with NOTE 3 allowing an assessed 15-year-old to play Juniors for the regular season only (a local board may bar them from pitching) and NOTE 4 allowing an assessed 12-year-old to participate in or dual-roster into Senior League. Cite: 2026 LL Softball Official Rulebook, `2026-little-league-softball.md` lines 329 (Divisions of Play) and 784 (Reg I(a)) — **corrected 2026-09-04**, this was mislabeled Regulation IV(a) on first pass; the quoted text was always accurate, only the regulation number was wrong. This doesn't resolve NCLL's own setup, but it's the authoritative frame the NCLL band (A1 NCLL row below) should reconcile against — NCLL's 14–16/15–16/excluded disagreement is not "each locally valid," it's inconsistent with a fixed 13–16 national band that has narrow, assessed exceptions only.
 - **D8 Interleague:** n/a — confirmed, no D8 Senior softball structure exists to set an interleague age band.
-- **NCLL:** **Genuinely unsettled which band NCLL itself uses.** Three different numbers appear across live NCLL pages: registration-main.html's Seniors Softball row states 14–16 (birth dates Jan 1, 2010 – Dec 31, 2013); allstars-main.html's eligibility table states 15–16 for the All-Star team specifically; softball-hub.html's "ages 6-14" cap implies this age band isn't even offered. Given Reg V explicitly leaves this to the local league (see LL Rulebook row above), none of these are "wrong" the way a citation error would be — NCLL simply hasn't stated one authoritative band across its own pages. This is now the doc's top open item (see below), not a research gap — Reg V's flexibility means there's no external source that could resolve it; only NCLL's own choice can.
+- **NCLL:** **Genuinely unsettled which band NCLL itself uses — and, per the correction above, this is no longer "each locally valid."** Three different numbers appear across live NCLL pages: registration-main.html's Seniors Softball row states 14–16 (birth dates Jan 1, 2010 – Dec 31, 2013); allstars-main.html's eligibility table states 15–16 for the All-Star team specifically; softball-hub.html's "ages 6-14" cap implies this age band isn't even offered. Against the fixed 13–16 national band (LL Rulebook row above), registration-main.html's 14–16 is narrower than the national band (not wrong, just a tighter local choice — permitted), allstars-main.html's 15–16-only for the All-Star team is also narrower and permitted, but softball-hub.html's implied exclusion is a real gap if NCLL is actually running a 13–16 Senior division per the other two pages. This is the doc's top open item (see below) — not because the rulebook is silent, but because NCLL hasn't reconciled its own pages against a band the rulebook does fix.
 - **Notes:** Cite: _Registration/registration-main.html (footnote 4) vs. _Programs/allstars-main.html (eligibility table) vs. _Programs/softball-hub.html (intro paragraph).
 
 ### A2. Purpose / what this division develops
@@ -133,12 +133,13 @@ LL source: not present on this machine — Tower has OCR access. Senior League S
 
 ### D4. Mercy / run-ahead rule
 
-- **LL Rulebook:** **CONFIRMED — mercy at 4 innings (3½ if home ahead)**, per the LL rulebook standard for Senior League softball. Cite: Tower, 2026-09-03. **Note this is NOT the recovered page's own claim** ("10-run rule after 5 innings, 4½ if home ahead," matching Juniors' tier instead) — the recovered page's mercy tier is one inning later than what Tower's LL citation gives. This specific discrepancy is worth a direct check: either the recovered page is simply wrong (consistent with its low-confidence status), or NCLL/tournament play uses a different local standard than the LL rulebook default. ⚠ Flagged, not resolved.
-- **NCLL:** Per the recovered page (uncertain which is authoritative — see above): 10-run rule after 5 innings (4½ if home ahead).
+- **LL Rulebook:** **CORRECTED 2026-09-04 (rulebook-verify pass) — full 3-tier structure, identical to Juniors (see softball-juniors-rules.md D4):** 15 runs after 4 innings (3½ if home ahead) / 10 runs after 5 innings (4½ if home ahead) / 8 runs after 6 innings (5½ if home ahead). NOTE (2): the local league may adopt the option of not using this rule. Cite: Rule 4.10(e), Junior/Senior League column — 2026 LL Softball Official Rulebook, verified directly against `intake/rulebooks/little-league/2026-softball-rulebook-scan/2026-little-league-softball.md`, line 2238. **⚠ RESOLVED** — the prior entry here cited only the 15-run tier's timing and mislabeled it as "the" mercy rule; the recovered page was right all along.
+- **NCLL:** Per the recovered page: 10-run rule after 5 innings (4½ if home ahead) — this is the **middle tier** of the full LL structure above, and was correct.
 
 ### D6. Ties
 
-- **LL Rulebook:** **CONFIRMED — international tie-breaker rule starting the 8th inning** for a tie game — a genuinely Senior-League-specific rule not found at any lower softball division (Juniors and below don't reach a tie-breaker mechanic in this doc set). Cite: Tower, 2026-09-03.
+- **LL Rulebook — regular season:** **REFINED 2026-09-04 (rulebook-verify pass).** A regular-season tie after 7 completed innings does not trigger the international tie-breaker at all — play simply continues under Rule 4.10(b): "If the score is tied after six completed innings (Junior/Senior League: seven innings), play shall continue until (1) the visiting team has scored more total runs than the home team at the end of a complete inning; or (2) the home team scores the winning run in an uncompleted inning." Cite: Rule 4.10(b), `2026-little-league-softball.md` line 2224.
+- **LL Rulebook — tournament:** **The international tie-breaker (runner-on-second) is a Tournament Rule, not Rule 4.10** — Tournament Rules and Guidelines Softball, Rule 14 (TIE GAME): "When the completion of six innings (Junior/Senior League: seven innings), and the score is tied, starting in the top of the seventh inning (Junior/Senior League: eighth inning), and each half inning thereafter, the offensive team shall begin its turn at bat with the player who is scheduled to bat last in that respective half inning being placed on second base... An eligible substitute or special pinch runner may be inserted for the runner." Cite: `2026-little-league-softball.md` line 3918. **This is the rule that actually governs an NCLL Senior Softball team**, since NCLL Senior softball is tournament-only (no regular season exists to apply Rule 4.10(b) to) — the prior entry here correctly identified the mechanic ("starting the 8th inning") but mis-cited it as Rule 4.10 rather than a Tournament Rule, and didn't distinguish that a regular season (if one existed) would use Rule 4.10(b) instead.
 - **NCLL:** n/a — not addressed on the recovered page.
 
 ### D7. Stealing / leadoffs
@@ -202,11 +203,15 @@ any source found:
    year, pending a coach and sufficient player interest")? Registration-main.html's "runs
    only if enough players register" phrasing is consistent with this, but doesn't confirm
    how often it actually clears that bar.
-2. **What league-age band does NCLL itself call "Senior" softball vs. Juniors?** LL
-   Regulation V leaves this genuinely locally flexible (see A1) — this isn't a citation gap,
-   it's a real board-level choice NCLL needs to have made and state once, consistently,
-   across registration-main.html/allstars-main.html/softball-hub.html (which currently
-   disagree: 14–16, 15–16, and "excluded, capped at 14," respectively).
+2. **What league-age band does NCLL itself call "Senior" softball vs. Juniors?** **UPDATED
+   2026-09-04:** the national band is actually fixed at 13–16 (with narrow, assessed
+   exceptions for 12s and 15s — see A1's corrected LL Rulebook row), not locally flexible as
+   this doc previously stated — so this is no longer "pick any band," it's reconciling
+   NCLL's own pages to that fixed frame. registration-main.html's 14–16 and
+   allstars-main.html's 15–16-for-All-Stars are each narrower than 13–16 (permitted, just
+   inconsistent with each other), but softball-hub.html's implied exclusion is the one that
+   actually conflicts if NCLL runs a real 13–16 division. Still a real board-level choice —
+   just a narrower one than previously framed.
 3. **Regular season: do Senior-age players play up in Juniors** (which admits LA15 with DA
    approval — see softball-juniors-rules.md A1) **, or is there a separate co-op/in-house
    arrangement** for the handful of players too old for Juniors but wanting to keep playing
@@ -215,9 +220,10 @@ any source found:
    and does it go straight to State like baseball Seniors' bye,** or is there some other
    qualifying step (a co-league arrangement with neighboring leagues, similar to how baseball
    Senior's RUG+Northwest Seattle partnership works — see baseball-senior-rules.md G10)?
-5. **D4 discrepancy** — Tower's LL citation says mercy at 4 innings (3½ if home ahead); the
-   recovered NCLL page says 10-run after 5 (4½ if home ahead), matching Juniors' tier
-   instead of the LL Senior standard. Worth a direct check on which is actually current.
+5. ~~**D4 discrepancy**~~ — **RESOLVED 2026-09-04.** The recovered NCLL page's "10-run after
+   5 (4½ if home ahead)" was correct all along — it's the middle tier of the full LL 3-tier
+   mercy structure (15@4 / 10@5 / 8@6), not a conflict with a single-tier LL standard. See A1
+   and D4 above.
 6. **Should `_temp/.cleanup/programs-review/Softball/seniors.html` be published, kept as
    draft, or deleted?** Its existence in a "programs-review"/cleanup folder suggests someone
    already flagged it for a decision.
@@ -253,3 +259,5 @@ any source found:
 | 2026-09-03 | Claude (NCLL session) | Applied Tower's resolution throughout: rewrote the header from "existence unconfirmed" to "resolved, All-Star-only division"; filled A1/B1-B4/C3/D1/D4/D6/E1/G10 with the new LL citations; flagged one new discrepancy (D4 — Tower's LL mercy-rule citation doesn't match the recovered page's stated tier, which instead matches Juniors') rather than silently picking one; folded the VP-of-Softball questions into Open board decisions as items 1-4 verbatim from Tower's framing, plus the pre-existing D4 and cleanup-folder-disposition items. |
 | 2026-09-03 | Tower Claude (via user) | Major LL-layer fill applied project-wide: look-back rule, headfirst-slide scoping (permitted at Seniors, matching Juniors — the flip stays on above Juniors, doesn't revert), explicit no-balk citation, full 8.01 delivery mechanics, dropped-ball/"no pitch," batting-helmet/catcher's-equipment specifics, courtesy-runner detail, leadoff timing (released, matching Majors/Juniors). Corrected the defensive-mask claim project-wide: no LL rule requires one at any position but catcher. |
 | 2026-09-03 | Claude (NCLL session) | Applied Tower's fill to this doc's thinner E-H skeleton: added C5 (no-balk), D7 (leadoffs), D14 (headfirst sliding, now confirmed permitted rather than left undocumented), corrected B6. Left the E1 DP/Flex-vs-CBO question and the rest of E-H deliberately thin, per this doc's own stated reasoning — completing them further would create false confidence in an All-Star-only team's undocumented operational structure. |
+| 2026-09-04 | Claude (NCLL session) | Applied Tower's 2026-09-04 rulebook-verify pass, quoting `2026-little-league-softball.md` directly rather than paraphrasing: **D4** corrected to the full 3-tier mercy structure (15@4/10@5/8@6, Rule 4.10(e) Jr/Sr column) — the recovered page's "10-run after 5" was the correct middle tier all along, prior entry's single-tier citation was the error. **A1** corrected — the Junior/Senior age line is fixed nationally (13–16 Senior / 12–14 Junior, Reg I(a) + Divisions of Play), not locally flexible as previously stated; reframed NCLL's three-way page disagreement against that fixed band instead of treating all three as equally valid. **D6** split into the regular-season mechanic (Rule 4.10(b), play continues) vs. the tournament-only international tie-breaker (Tournament Rule 14, runner placed on second) — the prior entry named the right mechanic but the wrong rule number. Updated Open board decisions items 2 and 5 to match. |
+| 2026-09-04 | Tower Claude (via user) | Spot-checked the 2026-09-04 pass against the rulebook file directly: **A1's citation corrected** from Regulation IV(a) to **Regulation I(a)** — the quoted text was accurate, only the regulation number was mislabeled. **Two line-number pointers corrected**: D4's mercy-tier quote is at line 2238 (was cited 2266); D6's Rule 4.10(b) quote is at line 2224 (was cited 2227). D6's Tournament Rule 14 citation (line 3918) was already exactly right. |
