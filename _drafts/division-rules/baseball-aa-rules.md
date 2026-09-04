@@ -75,6 +75,11 @@ LL source: not present on this machine — Tower has OCR access. Same Regulation
 
 - **NCLL:** n/a — not mentioned on aa.html.
 
+### B5a. Gloves *(equipment-check row, no equivalent numbering above — found 2026-09-03 during the public rebuild, not previously captured in this doc)*
+
+- **NCLL:** Gloves should be **9–11 inches**; check that players' names/phone numbers are on them. Specialty gloves (1st base, catcher) are technically usable but discouraged — usually too large for a player at this level.
+- **Notes:** Cite: Programs/Baseball/aa.html ("Gloves," under Equipment Checks — same guidance as baseball-a-rules.md/baseball-tball-rules.md).
+
 ### B6. Helmets / protective equipment
 
 - **LL Rulebook:** Same NOCSAE rules as every other division (rulebook-wide).
@@ -101,15 +106,20 @@ LL source: not present on this machine — Tower has OCR access. Same Regulation
 - **NCLL:** Managers are responsible for recording pitch counts (usually via the scorekeeper) for ALL pitchers on the team throughout the season, and must be prepared to share that data with the Board on request. Refers generally to "the Baseball Pitch Count by League Age guidelines" and "Baseball Rest Day Thresholds" without restating the actual numbers (unlike AAA/Majors, which cite Reg VI directly).
 - **Notes:** Cite: Programs/Baseball/aa.html ("Pitch Counts," listed twice — once under "Pitching Rules Highlights," once under "Pitching Guidelines," with the Guidelines version adding the Board-reporting detail).
 
+### C3a. Catcher gear & safety *(no equivalent numbering above — found 2026-09-03 during the public rebuild, not previously captured in this doc)*
+
+- **NCLL:** A male catcher must wear a hard protective cup. A catcher's helmet must have a dangling throat protector ("dangler"). Catchers must use a specialized catcher's mitt — an infielder's mitt isn't allowed. Anytime a player is in the crouched catching position — including practices, warm-ups, and sidelines — they need at minimum a mask, chest guard, and cup. A catcher may not block access to the plate until the ball is actually in play to them (the plate-access rule is the same underlying safety principle as the malicious-contact rule at higher divisions — see baseball-majors-rules.md D15 — though aa.html frames it as the catcher's own obligation rather than a runner-conduct rule).
+- **Notes:** Cite: Programs/Baseball/aa.html ("Protective Gear for Male Catchers," "Catcher's Helmets," "Catcher's Mitt," "Safety in the Crouch Position," "Plate Access," under Catcher Rules Highlights). A genuinely detailed catcher-safety section this doc's original C-section pass missed entirely — worth checking whether A Division/AAA/Majors have equivalent unstated detail on their own live pages.
+
 ### C4. Catcher → pitcher restriction
 
-- **NCLL:** Same rulebook-wide mechanic as every other division — catches 3+ innings ⇒ can't pitch that game. **Stale-number flag, same pattern found on Majors/AAA's legacy pages:** aa.html's "Catcher Restrictions" bullet states the pitcher→catcher direction as "41 or more" pitches, the same outdated number majors.html/aaa.html had before their D4 corrections to 21+. **Confirmed still live 2026-09-03** via crawl4ai — the live ncllball.com AA page still reads "If a pitcher throws 41 or more pitches, they cannot play catcher," unchanged from the repo copy.
-- **Notes:** Cite: Programs/Baseball/aa.html ("Catcher Restrictions," "Catcher to Pitcher Transition," "Pitching and Catching Limitation"). Fix still needed — not resolved by any site update since the initial draft.
+- **NCLL:** Same rulebook-wide mechanic as every other division — catches 3+ innings ⇒ can't pitch that game. **FIXED 2026-09-03 in the `_Rules/baseball-aa.html` rebuild:** the old page's "Catcher Restrictions" bullet stated the pitcher→catcher direction as "41 or more" pitches — the same stale number Majors/AAA had before their own corrections. The rebuild now reads 21+, matching every other division.
+- **Notes:** Cite: Programs/Baseball/aa.html (superseded — see `_Rules/baseball-aa.html`) ("Catcher Restrictions," "Catcher to Pitcher Transition," "Pitching and Catching Limitation").
 
 ### C5. Walks / HBP / balks
 
-- **NCLL:** Standard balls/strikes rules apply. **Live-page error found:** aa.html's own "No Balks" bullet says "Balks are not called in Tee Ball" — this is a copy-paste leftover from the Tee Ball page, misplaced on the AA page. The substance (no balks at AA) is still correct — balks don't exist below Intermediate at any NCLL division — but the sentence itself needs fixing to say "AA," not "Tee Ball," when the page is rebuilt. **Confirmed still live 2026-09-03** via crawl4ai — the live page still has this exact copy-paste error, unchanged from the repo copy.
-- **Notes:** Cite: Programs/Baseball/aa.html ("No Balks," under Pitching Rules Highlights). Flagging this explicitly since it's a copy error, not just an incomplete citation — the kind of thing worth fixing regardless of the broader rebuild timeline.
+- **NCLL:** Standard balls/strikes rules apply. **FIXED 2026-09-03 in the `_Rules/baseball-aa.html` rebuild:** the old page's "No Balks" bullet read "Balks are not called in Tee Ball" — a copy-paste leftover from the Tee Ball page. The substance (no balks at AA) was already correct; the rebuild now says "AA," not "Tee Ball."
+- **Notes:** Cite: Programs/Baseball/aa.html (superseded — see `_Rules/baseball-aa.html`) ("No Balks," under Pitching Rules Highlights).
 
 ---
 
@@ -324,20 +334,15 @@ LL source: not present on this machine — Tower has OCR access. Same Regulation
 
 *(Also tracked in `open-board-decisions.md` — update both together.)*
 
-1. **C4 — Stale pitcher→catcher pitch count.** aa.html states "41 or more" for the same
-   number Majors/AAA corrected to 21+. Live-page fix needed, not a board decision — same
-   pattern as baseball-majors-rules.md C4/baseball-aaa-rules.md C4.
-2. **C5 — Copy error on "No Balks."** aa.html's bullet literally says "Balks are not called
-   in Tee Ball" — a copy-paste leftover, needs a wording fix (substance is already correct).
-3. **F7/D2 — Pre-game warm-up time possibly stated twice, inconsistently.** D2's "30 minutes
+1. **F7/D2 — Pre-game warm-up time possibly stated twice, inconsistently.** D2's "30 minutes
    shared field time" and F7's detailed 15-min-each/30-total structure may be the same
    allocation described two different ways — worth reconciling into one clear statement.
-4. **C2 — Exact "2 innings" pitcher-rotation requirement.** Referenced once (a player
+2. **C2 — Exact "2 innings" pitcher-rotation requirement.** Referenced once (a player
    pitcher pulled mid-inning may return once they've completed their 2 innings) but not
    fully explained as a standalone rule.
-5. **G1/G2/G4 — Team formation, assessments, roster size target.** Not documented for AA
+3. **G1/G2/G4 — Team formation, assessments, roster size target.** Not documented for AA
    specifically, same open-item pattern as A Division and every division above it.
-6. **D3/D8/D9/D11/D15/F3 — A cluster of rows not explicitly stated for AA** (curfew,
+4. **D3/D8/D9/D11/D15/F3 — A cluster of rows not explicitly stated for AA** (curfew,
    bunting, batter's box, courtesy runner, malicious contact as its own rule, general
    scorekeeping). Most likely follow the same pattern established elsewhere, but not
    confirmed independently for AA.
@@ -345,6 +350,11 @@ LL source: not present on this machine — Tower has OCR access. Same Regulation
 into baseball-a-rules.md — A Division does NOT match AA here. A keeps no score at all (see
 baseball-a-rules.md F6/G8), one step further than AA's "scored, no standings." A genuine
 divergence, not a shared pattern.
+
+**Resolved 2026-09-03 (public rebuild):** C4 (stale "41 or more" pitch count) and C5 (the
+"Tee Ball" copy-paste error) are both fixed in `_Rules/baseball-aa.html` — no longer live-page
+bugs, since that page has replaced Programs/Baseball/aa.html. Also added two rows the C/B
+sections had missed entirely: B5a (Gloves) and C3a (Catcher gear &amp; safety).
 
 ---
 
@@ -369,4 +379,5 @@ divergence, not a shared pattern.
 | 2026-09-03 | Claude (NCLL session) | Initial AA Division draft. D8 layer n/a throughout (no interleague below AAA). LL layer thin by design (Regulation VIII), same basis as baseball-a-rules.md — flagged for Tower to supply exact citation. NCLL layer filled comprehensively from Programs/Baseball/aa.html, the most detailed lower-division source found: documented the coach-pitch-primary format (a real A→AA progression from machine-pitch), the season-split stealing rules (none first half, situational second half, no home steals), the confirmed "no mercy rule, games scored but no standings/playoffs" status, and AA's own umpire crew (Chief + Field, a step up from A's single field umpire). Found and flagged two live-page errors for future fixing: a stale "41 or more" pitch count (same issue Majors/AAA already corrected) and a literal copy-paste leftover ("Balks are not called in Tee Ball" on the AA page). 7 open items, mostly narrow gaps plus one cross-check flag back into baseball-a-rules.md now that AA's mercy/standings status is confirmed. |
 | 2026-09-03 | Tower Claude (via user) | Filled 3 previously-flagged LL Rulebook gaps: B1/B2 confirmed 60-ft base paths / 46-ft mound for the shared AA/A/Tee Ball Minor League diamond (LL Rule 1.04); D10 given its citation (Rule 1.08 NOTE 1 — no on-deck below Majors); A1/C1's Regulation VIII citation matched to the same quote already delivered for baseball-a-rules.md. D8 layer reconfirmed n/a against the live D8 site (interleague starts at AAA, nothing below it in D8 at all). A live-site diff pass against Programs/Baseball/aa.html (to check whether the "41 or more" pitch count and the "Tee Ball" copy-paste error are still live) was attempted this session via crawl4ai and WebFetch — both blocked (crawl4ai tool errored, ncllball.com returned 403 to WebFetch) — still pending, not resolved this pass. |
 | 2026-09-03 | Claude (NCLL session) | crawl4ai fixed and the deferred live-site diff completed. **Both known live-page errors confirmed still present**, unchanged from the repo copy: the "41 or more" pitch-count (C4) and the "Balks are not called in Tee Ball" copy-paste error (C5) both still read exactly as flagged — real, current live-page bugs, not resolved by any site update since the initial draft. Also captured two details present on the live page but missed in the initial draft: Foul Tips (D6, with AA's caught-foul-tip exception, more detailed than A Division's version of the same rule) and a ≥2-at-bats target (E3). |
+| 2026-09-03 | User + Claude | Public rebuild at `_Rules/baseball-aa.html`. Fixed the two known live-page bugs: C4's stale "41 or more" pitcher→catcher pitch count corrected to 21+; C5's "Balks are not called in Tee Ball" copy-paste error corrected to say "AA." Added two rows found on the live page but never captured in this doc: **B5a** (Gloves, 9–11") and **C3a** (Catcher gear & safety — protective cup, dangler, catcher's mitt, crouch-position gear, plate-access rule). Programs/Baseball/aa.html removed from the repo; superseded by the new page. |
 | 2026-09-03 | Tower Claude (via user) | Closed 2 remaining ⚠ LL-citation gaps and corrected 2 substantive errors. **A1** — Reg V + VIII(a)/(d) quoted, matching baseball-a-rules.md A1's treatment. **B4** — LL Rule 1.10's full bat standard, same citation closing a.md/tball.md/kindy.md B4. **D14 corrected** — an earlier draft wrongly said AA had "no equivalent LL rulebook rule" for headfirst sliding; actually Rule 7.08(a)(4) ("Little League (Major) and below only") does reach AA/Minor League, directly backing NCLL's no-headfirst-slide rule — no missing rule, no conflict. **D6 refined** — "dropped third strike OFF" isn't just an NCLL preference, it's the LL default at Minor League: Rule 6.09(b) is scoped to Majors/Intermediate/Junior/Senior only, so AA gets no dropped-third-strike mechanic from the rulebook at all; NCLL's rule matches the default exactly. Also corrected a ladder error: an earlier draft had Kindy positioned before T-ball; fixed to **T-ball → Kindy (KCP) → A → AA**, cross-linked to baseball-kindy-rules.md/baseball-a-rules.md/baseball-tball-rules.md/division-comparison-grid.md/open-board-decisions.md. |

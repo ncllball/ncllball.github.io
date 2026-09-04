@@ -43,8 +43,8 @@ LL source: n/a for Kindy specifically — not a chartered LL division, sitting *
 
 - **LL Rulebook:** n/a — Kindy isn't a chartered LL division, so LL doesn't set an age floor/ceiling for it directly.
 - **D8 Interleague:** n/a.
-- **NCLL:** League age 6 required, per Little League's own age-eligibility rules (Kindy borrows LL's league-age framework even though it isn't itself chartered). Confirmed live: "This division allows league age 6 kids an opportunity to play." Registration page footnote: "League age 6 required per Little League rules." Framed as a step above T-ball, not a replacement for it — "Requires one year of tee ball experience or coach approval" for team selection (see G1).
-- **Notes:** Cite: Programs/Baseball/kindy.html + _Registration/registration-main.html (footnote 2 — "Kindergarten Coach Pitch (KCP, 6-7) moves at a faster pace than T-ball — live coach pitching with the tee available as a fallback. League age 6 required per Little League rules. Played on the T-ball field."). Registration age band shown is 6-7, birth-date range Sept 1, 2019 – Aug 31, 2021.
+- **NCLL:** League age 6 is the standard entry point — Kindy is offered to every league-age-6 player, per Little League's own age-eligibility framework even though Kindy isn't itself chartered. **Confirmed 2026-09-03 via the Outline "Division Placement Decision Framework":** a league-age-7 player defaults to Kindy unless clearly ready for Baseball A; a league-age-5 player's default division is Tee Ball, and Kindy is only reachable via a "2-of-3" readiness check (see G1 for the full mechanic). Framed as a step above T-ball, not a replacement for it.
+- **Notes:** Cite: Programs/Baseball/kindy.html + _Registration/registration-main.html (footnote 2 — "Kindergarten Coach Pitch (KCP, 6-7) moves at a faster pace than T-ball... League age 6 required per Little League rules. Played on the T-ball field.") + Outline "Division Placement Decision Framework" (Programs collection, doc id `61b8007d-f0c8-46f2-bbad-e0ffa4b84af0`) — this last source is the internal registrar/placement-committee tool that actually documents the LA5/LA7 edge cases; the public kindy.html page and registration footnote only ever stated a flat "league age 6" floor. Registration age band shown at registration is 6-7, birth-date range Sept 1, 2019 – Aug 31, 2021.
 
 ### A2. Purpose / what this division develops
 
@@ -146,8 +146,8 @@ LL source: n/a for Kindy specifically — not a chartered LL division, sitting *
 
 ### G1. Team formation
 
-- **NCLL:** Teams are formed by: coach/teammate requests, sibling placement, school affiliation, PLUS a readiness gate — **"requires one year of tee ball experience or coach approval."** This is not a draft or assessment-based process the way AAA/Majors/Junior/Senior are — it's a request-and-approval model, closer to T-ball's informal team formation.
-- **Notes:** Cite: Programs/Baseball/kindy.html ("Team Selection Criteria").
+- **NCLL:** Teams are formed by coach/teammate requests, sibling placement, and school affiliation — not a draft or assessment-based process the way AAA/Majors/Junior/Senior are. **Full placement mechanic confirmed 2026-09-03 via the Outline "Division Placement Decision Framework"** (this is the actual decision tool the registrar/placement committee uses, not previously found on any public page): **LA 6, one year of Tee Ball** → automatic Kindy placement, no further questions. **LA 6, coach vouch** → in. **LA 7** → defaults to Kindy unless clearly ready for Baseball A. **LA 5** → Tee Ball is the default division; the only path into Kindy is a "2-of-3" readiness check across three factors — maturity (can stay focused, handle outs without melting down), love of the game (genuinely wants to be there), and athleticism (coordination, can engage with a pitched ball). A year of Tee Ball or a coach's vouch each independently satisfy the 2-of-3 bar on their own; a parent willing to assist the coach covers the maturity factor; a parent reporting their kid loves the game, combined with a willingness to assist, also clears the bar. (The framework itself notes athleticism is taken on the parent's word at this age rather than independently assessed — an internal instruction to placement staff, not something restated on the public page.)
+- **Notes:** Cite: Programs/Baseball/kindy.html ("Team Selection Criteria") + Outline "Division Placement Decision Framework" (Programs collection, doc id `61b8007d-f0c8-46f2-bbad-e0ffa4b84af0`). This resolves the doc's earlier "not stated on kindy.html itself... not confirmed independently" framing — the process is fully documented, just in an internal registrar/placement tool rather than on the public kindy.html page. How much of this internal detail belongs on the public rules page (vs. staying in the registrar's own tool) is an editorial call, not a sourcing gap — see the paired `_Rules/baseball-kindy.html` rebuild for what was actually published.
 
 ### G2. Assessments / tryouts
 
@@ -155,7 +155,8 @@ LL source: n/a for Kindy specifically — not a chartered LL division, sitting *
 
 ### G3. Playing up / down
 
-- **NCLL:** The "one year of tee ball experience OR coach approval" clause (see G1) functions as Kindy's playing-up gate — a player without prior T-ball experience can still join with a coach's sign-off. No formal appeal process documented.
+- **NCLL:** The "2-of-3" readiness framework (see G1) functions as Kindy's playing-up gate for a league-age-5 player, and its own carve-out sends a "clearly ready for Baseball A" league-age-7 player up to A instead of defaulting them to Kindy. No formal appeal process documented beyond the framework itself.
+- **Notes:** Cite: Outline "Division Placement Decision Framework" (same source as G1).
 
 ### G4. Roster size target
 
@@ -254,9 +255,11 @@ content to find.
   and it self-identifies as incomplete ("a program overview, not full playing rules like
   the other division pages — may need expanding"). _Registration/registration-main.html
   (age-matrix table + footnote 2) supplements the schedule/eligibility rows.
-- Possible additional context (not independently verified this pass): Tower/homelab memory
-  references a `project_kcp_criteria.md` file with Kindy eligibility/selection detail — flag
-  for cross-check if a future session has access to it.
+- Placement mechanic: Outline "Division Placement Decision Framework" (Programs collection,
+  doc id `61b8007d-f0c8-46f2-bbad-e0ffa4b84af0`) — the actual internal registrar/placement-
+  committee tool, found and applied 2026-09-03, closing the A1/G1/G3 gaps this doc previously
+  flagged. (Tower/homelab memory's `project_kcp_criteria.md` covers the same ground; the
+  Outline doc above is the primary, directly-cited source now.)
 - Comparable-league research: `SOURCES.md` (shared with the other division docs) — likely
   the most useful next research step for the D-section gaps, given NCLL's own sources don't
   cover it.
@@ -267,3 +270,4 @@ content to find.
 | 2026-09-03 | Tower Claude (via user) | D8 layer reconfirmed n/a against the live D8 site (interleague starts at AAA, Kindy sits below that entirely). No new LL/NCLL material delivered for Kindy this pass — the D-section in-game-format gap (innings, outs, scoring, baserunning) remains the doc's central open item, unchanged from initial draft. |
 | 2026-09-03 | Claude (NCLL session) | Live-site diff completed (crawl4ai fixed this session). **Confirms, doesn't resolve, the doc's central gap:** the live kindy.html page is word-for-word identical to the repo copy — same 4 sections only (Introduction to Hitting and Fielding, Team Selection Criteria, Practice and Game Schedule, Practice Location), nothing about innings/outs/scoring/baserunning anywhere. This is a genuine gap in NCLL's own public materials, not a stale-repo-copy issue — reinforces the doc's recommendation that this needs a direct conversation with Kindy coaches rather than more document research. |
 | 2026-09-03 | Tower Claude (via user) | **Corrected a structural error carried since the initial draft:** Kindy was framed as a "pre-Tee-Ball offering... below the LL floor" — backwards. kindy.html itself confirms Kindy is a step ABOVE Tee Ball (league age 6, requires a year of tee ball experience or coach approval, real outs vs. T-ball's none). Fixed the header, D8/LL source lines, and I-section to state the correct ladder: **T-ball → Kindy (KCP) → A → AA → AAA → Majors** (+ Intermediate n/a, Junior, Senior — nine playing docs), cross-linked in baseball-tball-rules.md/baseball-a-rules.md/division-comparison-grid.md/open-board-decisions.md. Closed 2 open items: **B4** — LL Rule 1.10's bat standard (USABat mark, no BPF-1.15, ≤33"/≤2⅝" barrel) applies once a real bat is swung, same citation as aa.md/a.md/tball.md. **I-section Reg V question** — resolved: Reg V doesn't reach a non-chartered offering; the only adjacent question is an NCLL ops one (insurance/ASAP coverage), not a rulebook question. The D-section in-game-format gap remains the doc's central, still-open item — unaffected by this correction. |
+| 2026-09-03 | User + Claude | **A1/G1/G3 filled from Outline's "Division Placement Decision Framework"** (Programs collection, doc id `61b8007d-f0c8-46f2-bbad-e0ffa4b84af0`) — the actual internal registrar/placement-committee tool, not previously located. Documents the real LA5/LA6/LA7 placement mechanics: LA 6 is the standard offer (automatic with a year of Tee Ball or a coach's vouch); LA 7 defaults to Kindy unless clearly ready for A; LA 5's only path in is a "2-of-3" readiness check (maturity / love of the game / athleticism) with several ways to satisfy it. Also used to build the paired public rebuild at `_Rules/baseball-kindy.html`, in edited/summarized form — the internal tool's staff-facing instructions (e.g. "take the parent's word on athleticism, don't assess it yourself") were not carried onto the public page. |
