@@ -31,6 +31,40 @@
 		<title>Junior Division Baseball Rules - North Central Little League</title>
 		<link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
+		<style>
+			/* Sticky division-name header — same pattern as _Rules/baseball-majors.html
+			   (see that file's own comment/revision-log for the full rationale, the
+			   scroll-margin-top anchor-jump fix, and the DNN re-check note). Offset is a
+			   CSS variable rather than a hardcoded `top: 0` since this page is expected to
+			   move into a DNN module later; nothing in `.division-rules`/`main` claims its
+			   own scroll container, so it binds to whatever the real page scroller is once
+			   embedded. RE-CHECK ONCE ACTUALLY EMBEDDED IN DNN.
+			   The `body` override below works around a site-wide css.css bug that breaks
+			   position:sticky — tracked separately, not fixed here:
+			   github.com/ncllball/ncllball.github.io/issues/1 */
+			body {
+				overflow-x: visible;
+			}
+			:root {
+				--division-rules-sticky-offset: 0px; /* bump if/when a DNN site header sits above this page */
+				--division-rules-sticky-height: 53px; /* rendered height of the sticky h1 bar below, kept in sync manually */
+			}
+			.division-rules h1.left {
+				position: sticky;
+				top: var(--division-rules-sticky-offset);
+				z-index: 20;
+				width: 100%;
+				background: #fff;
+				padding: 10px 0;
+				margin: 0 0 18px 0;
+				border-bottom: 1px solid var(--color_border_light);
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+			}
+			.division-rules h2[id],
+			.division-rules h4[id] {
+				scroll-margin-top: calc(var(--division-rules-sticky-offset) + var(--division-rules-sticky-height) + 8px);
+			}
+		</style>
 	</head>
 
 	<body>
@@ -56,14 +90,14 @@
 
 			<h4 id="age-eligibility" class="left">A1. Age eligibility</h4>
 			<ul>
-				<li><strong>Little League</strong> A local league establishes the age structure for this division (Regulation V).</li>
+				<li><strong>Little League</strong> Any player who turns 12 before September 1, 2026 and does not turn 15 before August 31, 2026 is eligible for Junior League (Regulation IV(a)). A local league may allow an assessed 15-year-old to play the regular season only, and may bar 15-year-olds from pitching.</li>
 				<li><strong>District 8</strong> League ages 12, 13, and 14 are eligible; league age 15 may participate with District Administrator approval.</li>
 				<li><strong>NCLL</strong> 13s and 14s are the core. 12s can join Juniors, but it's not advised, since they'd forgo a year of Majors eligibility. No NCLL practice is documented for accepting a 15-year-old under the D8/DA-approval option.</li>
 			</ul>
 
 			<h4 id="what-this-division-is" class="left">A2. What this division is</h4>
 			<ul>
-				<li><strong>Little League</strong> Junior League is Little League's full-size-diamond division — 90-foot bases, a 60-foot-6-inch mound, matching the standard baseball field every level above it uses. Balks, full leadoffs, and an on-deck circle are all in effect, same as high school ball.</li>
+				<li><strong>Little League</strong> Junior League is Little League's full-size-diamond division — 90-foot bases, a 60-foot-6-inch mound, matching the standard baseball field every level above it uses. Balks, full leadoffs, and an on-deck circle are all in effect, same as high school ball. Little League also permits a Junior-specific regular-season option of 80-foot base paths and a 54-foot pitching distance; NCLL uses the standard 90-ft/60'6" configuration instead (see Base paths and Pitching distance, below).</li>
 				<li><strong>NCLL</strong> The Junior Division is built for league-age 13-14 players, mirroring prep baseball dimensions and pace — the division where NCLL players transition to true high-school-scale baseball before Seniors, elevating varsity-level mechanics, strategy, and leadership while competing across District 8.</li>
 			</ul>
 
@@ -77,11 +111,12 @@
 
 			<h4 id="base-paths" class="left">B1. Base paths</h4>
 			<ul>
-				<li><strong>Little League</strong> 90 feet — the full-size diamond, matching high school dimensions (Rule 1.04).</li>
+				<li><strong>Little League</strong> 90 feet — the full-size diamond, matching high school dimensions (Rule 1.04). Rule 1.04 also gives Junior League its own option of 80-foot base paths; NCLL uses the standard 90 feet.</li>
 			</ul>
 
 			<h4 id="pitching-distance-and-mound" class="left">B2. Pitching distance &amp; mound</h4>
 			<ul>
+				<li><strong>Little League</strong> Rule 1.07 gives Junior League a regular-season option of a 54-foot pitching distance, alongside the standard 60'6"; NCLL uses the standard distance.</li>
 				<li><strong>District 8</strong> 60 feet 6 inches — the full pitching distance.</li>
 			</ul>
 
@@ -122,7 +157,7 @@
 
 			<h4 id="catcher-pitcher-restriction" class="left">C4. Catcher / pitcher restriction</h4>
 			<ul>
-				<li><strong>Little League / District 8</strong> Same mechanic as every division — see Pitch counts, above.</li>
+				<li><strong>Little League</strong> A catcher who catches 3 innings or fewer, then pitches 21 or more pitches (31 or more for 15- and 16-year-olds), may not return to catcher that same day — unless they reached the 20-pitch limit (30 for 15s/16s) mid-batter, in which case they keep catcher eligibility until that at-bat ends. Catching even one pitch in the 4th inning counts as having caught 4 innings.</li>
 			</ul>
 
 			<h4 id="walks-hbp-and-balks" class="left">C5. Walks, HBP &amp; balks</h4>
@@ -187,7 +222,7 @@
 
 			<h4 id="on-deck-and-bat-safety" class="left">D10. On-deck &amp; bat safety</h4>
 			<ul>
-				<li><strong>Little League</strong> A genuine rules flip from Majors/AAA: an on-deck batter is permitted, wearing a helmet.</li>
+				<li><strong>Little League</strong> A genuine rules flip from Majors/AAA: an on-deck batter is permitted, wearing a helmet — the on-deck helmet requirement comes from Little League's tournament equipment provisions rather than the general regular-season helmet rule, which doesn't separately mention an on-deck batter.</li>
 				<li><strong>District 8</strong> No bats in the dugout; practice swings only in the on-deck circle or batter's box, under a coach's direction. The on-deck batter stands on the same side as the current batter.</li>
 			</ul>
 
@@ -213,7 +248,7 @@
 
 			<h4 id="malicious-contact" class="left">D15. Malicious contact</h4>
 			<ul>
-				<li><strong>Little League</strong> A runner may not deliberately or maliciously crash into a fielder to jar the ball loose or cause injury; the runner must slide or attempt to avoid the fielder. Violation: the runner is called out, with ejection possible for egregious contact.</li>
+				<li><strong>Little League</strong> There's no standalone "malicious contact" rule — a runner is called out for failing to slide or attempt to get around a fielder who's waiting with the ball to make a tag; there's no rule requiring a slide outright. Any ejection for egregious contact is separately discretionary, not automatic.</li>
 			</ul>
 
 			<h2 id="roster-lineup" class="left">E. Roster &amp; lineup</h2>
@@ -301,7 +336,7 @@
 
 			<h4 id="roster-size" class="left">G4. Roster size</h4>
 			<ul>
-				<li><strong>Little League</strong> 10–15 players — the same range as every division — with a Junior-specific exception allowing up to 20 players if NCLL fields only one regular-season Junior team.</li>
+				<li><strong>Little League</strong> 10–15 players, with a Junior-specific exception allowing up to 20 players if NCLL fields only one regular-season Junior team. This range applies to Junior/Senior/Intermediate/Major — Minor League and Tee Ball have no national minimum or maximum at all.</li>
 			</ul>
 
 			<h4 id="practices-and-start-dates" class="left">G5. Practices &amp; start dates</h4>
@@ -342,7 +377,7 @@
 
 			<h4 id="manager-and-coach-conduct" class="left">H1. Manager &amp; coach conduct</h4>
 			<ul>
-				<li><strong>Little League</strong> An umpire may warn, eject, and forfeit for unsportsmanlike conduct. An ejected manager, coach, or player is suspended for the team's next played game, on top of any further penalty the league imposes.</li>
+				<li><strong>Little League</strong> An umpire may warn and eject for unsportsmanlike conduct. An ejected manager, coach, or player is suspended for the team's next played game, on top of any further penalty the league imposes. Forfeiture is separate from ejection and only applies for one of six specific grounds — refusing to start or continue play, failing to resume within a minute of being ordered to, failing to remove a player when ordered, willfully and persistently violating rules after a warning, or delay tactics (Rule 4.15) — not for unsportsmanlike conduct generally.</li>
 				<li><strong>NCLL</strong> NCLL is a Positive Coaching Alliance (PCA) league — all managers attend a PCA seminar and are expected to uphold NCLL's and PCA's rules of conduct. Beyond the automatic next-game suspension, NCLL reserves the right to require Board review of any ejection and to impose an escalating penalty for a manager's or coach's second ejection in a season.</li>
 			</ul>
 
