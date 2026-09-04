@@ -33,6 +33,35 @@
 	                  against the current LL Rulebook / D8 supplement; re-sync from the working
 	                  doc if it changes; check open-board-decisions.md for anything still
 	                  unresolved before treating a rule here as final.
+	                  2026-09-04: PROTOTYPE — sticky division-name h1 added (local <style> block
+	                  in <head>), addressing a reader-orientation problem broader than deep
+	                  anchor links: on a long page like this, a reader who just scrolled down has
+	                  no on-screen indication which division's page they're on either. Reuses the
+	                  existing h1 rather than adding new markup or repeating the division name in
+	                  every heading — lightest fix John and I could land on. Built standalone
+	                  (this page has no CMS wrapper today) but is expected to move into a DNN
+	                  module later, so the sticky offset is a CSS variable
+	                  (--division-rules-sticky-offset), not a hardcoded `top: 0`, and nothing in
+	                  `.division-rules`/`main` sets its own overflow, so it binds to whichever
+	                  ancestor is the real page-level scroller once embedded rather than one this
+	                  page invents itself. RE-CHECK ONCE ACTUALLY EMBEDDED IN DNN — confirm the
+	                  offset clears any DNN site header and that nothing double-sticks with a DNN
+	                  nav; sticky elements are exactly the kind of thing that misbehaves in that
+	                  move. Also added scroll-margin-top on every h2[id]/h4[id] anchor target —
+	                  without it, jumping straight to an anchor (the deep-link case that started
+	                  this whole conversation) lands the target heading completely hidden behind
+	                  the new sticky bar, which would have been a regression on exactly the
+	                  problem this page format was built to solve. Found and worked around an
+	                  unrelated but load-bearing bug along the way: css.css's global
+	                  `html, body { overflow-x: hidden; }` breaks position:sticky site-wide
+	                  (setting overflow-x on `body` forces overflow-y to compute as `auto` too,
+	                  making `body` an ambiguous, non-functional second scroll container that
+	                  sticky descendants bind to instead of the real viewport). Worked around
+	                  locally here (`body { overflow-x: visible; }`); the real fix is a one-line
+	                  change to css.css itself (drop `body` from that rule, keep it on `html`)
+	                  before this pattern ships to any other page — not made yet, flagging rather
+	                  than editing shared CSS from a single-page prototype. Not yet promoted to
+	                  css.css or rolled out to the other 14 division pages — awaiting review.
 -->
 <html lang="en">
 	<head>
@@ -43,6 +72,60 @@
 		<title>Majors Division Baseball Rules - North Central Little League</title>
 		<link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
+		<style>
+			/* PROTOTYPE 2026-09-04 — sticky division-name header, testing before promoting to css.css.
+			   Keeps the division name on screen at every scroll depth so a reader who scrolled
+			   down (not just someone arriving via a deep anchor link) never loses track of which
+			   division's page they're on. Reuses the existing h1 rather than adding new markup.
+
+			   BUILT STANDALONE — this page has no CMS wrapper today, but is expected to move into
+			   a DNN module later. Sticky elements are one of the things most likely to misbehave in
+			   that move (pushed off-screen by DNN's own layout, double-stacked with a DNN sticky
+			   nav, etc.), so: (1) the offset below is a variable, not a hardcoded `top: 0`, so a
+			   future DNN header height can be dropped in without touching the sticky rule itself;
+			   (2) nothing inside `.division-rules`/`main` sets its own `overflow`, so this binds to
+			   whatever the real page-level scroller turns out to be once embedded, rather than a
+			   scroll container this page invents itself. RE-CHECK ONCE ACTUALLY EMBEDDED IN DNN —
+			   confirm the offset still clears DNN's header and that nothing double-sticks.
+
+			   Unrelated but load-bearing for this to work at all: css.css's global
+			   `html, body { overflow-x: hidden; }` rule breaks position:sticky site-wide. Setting
+			   overflow-x on `body` forces overflow-y to compute as `auto` too (CSS spec's
+			   visible-pairing rule), which makes `body` an ambiguous second scroll container it
+			   never actually uses — sticky descendants then stick relative to that non-scrolling
+			   box instead of the real viewport, i.e. don't stick at all. Confirmed removing it from
+			   `body` alone (keeping it on `html`) fixes sticky without reopening the horizontal-
+			   scroll issue that rule exists for. Worked around locally below for this prototype;
+			   the real fix is a one-line change to css.css's shared rule before this ships to any
+			   other page — flagging rather than changing shared CSS from a single-page prototype. */
+			body {
+				overflow-x: visible;
+			}
+			:root {
+				--division-rules-sticky-offset: 0px; /* bump if/when a DNN site header sits above this page */
+				--division-rules-sticky-height: 53px; /* rendered height of the sticky h1 bar below, kept in sync manually */
+			}
+			.division-rules h1.left {
+				position: sticky;
+				top: var(--division-rules-sticky-offset);
+				z-index: 20;
+				width: 100%;
+				background: #fff;
+				padding: 10px 0;
+				margin: 0 0 18px 0;
+				border-bottom: 1px solid var(--color_border_light);
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+			}
+			/* Without this, jumping straight to an anchor (or a JS scrollIntoView) lands the
+			   target heading exactly at the top of the viewport — underneath the sticky bar,
+			   completely hidden. scroll-margin-top reserves that space so anchors land just
+			   below it instead. This is the deep-link case the sticky header itself needs to
+			   keep working, not just the "already scrolled down" case it was built for. */
+			.division-rules h2[id],
+			.division-rules h4[id] {
+				scroll-margin-top: calc(var(--division-rules-sticky-offset) + var(--division-rules-sticky-height) + 8px);
+			}
+		</style>
 	</head>
 
 	<body>
@@ -64,9 +147,9 @@
 
 			<h4 id="age-eligibility" class="left">A1. Age eligibility</h4>
 			<ul>
-				<li><strong>Little League</strong> League ages 9–12 are eligible for Majors (Regulation I). Every league-age-12 player must be drafted to a Major Division team — a local league cannot hold a 12-year-old back.</li>
+				<li><strong>Little League</strong> League ages 9–12 are eligible for Majors (Regulation I). Every league-age-12 player must be drafted to a Major Division team — a local league cannot hold a 12-year-old back except through a specific exception: written District Administrator approval, with local Board and parent sign-off too.</li>
 				<li><strong>District 8</strong> All players league age 9, 10, 11, and 12 are eligible for Majors.</li>
-				<li><strong>NCLL</strong> 10s, 11s, and 12s fill AAA/Majors roster spots first. A skilled 9-year-old may earn a Majors or AAA spot if roster space remains after 10s and 11s are placed, based on their January assessment results.</li>
+				<li><strong>NCLL</strong> League age 12-year-olds must be rostered on a Majors team — this isn't discretionary, it's the Little League requirement above. Ten- and 11-year-olds fill the remaining AAA/Majors roster spots based on their January assessment results. A skilled 9-year-old may earn a Majors or AAA spot only if space remains after all 12s, 10s, and 11s have been placed.</li>
 			</ul>
 
 			<h4 id="what-this-division-is" class="left">A2. What this division is</h4>
@@ -77,8 +160,8 @@
 
 			<h4 id="playing-in-two-divisions" class="left">A3. Playing in two divisions</h4>
 			<ul>
-				<li><strong>Little League</strong> A local league may allow an age-eligible player to play in two divisions in the same season (Regulation I NOTE 2). A player may be on only one tournament team.</li>
-				<li><strong>NCLL</strong> NCLL runs a Majors Call-Up program: a group of AAA players are rostered on both a AAA team and a Majors team, practicing with both and called up to Majors games as needed based on availability (see Player pool &amp; call-ups, below).</li>
+				<li><strong>Little League</strong> A local league may allow an age-eligible player to play in two divisions in the same season (Regulation I NOTE 2). A player may be on only one tournament team at a time — once that team is eliminated, the player can be added to a second team's roster if they're eligible, there's roster space, and they're not replacing another eligible player.</li>
+				<li><strong>NCLL</strong> NCLL runs a Majors Call-Up program: roughly 15 AAA players per season are designated for it at draft time. Their roster stays solely AAA — they are not dual-rostered onto a Majors team. They're called up to individual Majors games as availability and need dictate, then return to AAA (see Player pool &amp; call-ups, below).</li>
 			</ul>
 
 			<h2 id="field-equipment" class="left">B. Field &amp; equipment</h2>
@@ -102,7 +185,7 @@
 
 			<h4 id="bat-standard" class="left">B4. Bat standard</h4>
 			<ul>
-				<li><strong>Little League</strong> Bats must meet the USA Baseball Bat standard (USABat) and carry the USA Baseball stamp, with a maximum barrel diameter of 2⅝ in.; BPF-1.15 bats are prohibited (Rule 1.10). Solid one-piece wood bats are exempt from the stamp requirement. Pine tar and similar adhesives are permitted; any sleeve worn under the jersey by a pitcher must be a single solid color and may not be white or gray; jewelry is permitted.</li>
+				<li><strong>Little League</strong> Bats must meet the USA Baseball Bat standard (USABat) and carry the USA Baseball stamp, with a maximum barrel diameter of 2⅝ in.; BPF-1.15 bats are prohibited (Rule 1.10). Solid one-piece wood bats are exempt from the stamp requirement. Pine tar and similar adhesives are permitted; any sleeve worn under the jersey by a pitcher must be a single solid color and may not be white or gray; jewelry is permitted unless it poses an injury risk, in which case it must be removed (medical-alert jewelry is exempt from removal).</li>
 				<li><strong>Note</strong> Check usabat.com's decertified-bat list before buying a new bat — one older model (the 30" Easton Ghost X (-10)) is currently decertified.</li>
 			</ul>
 
@@ -114,8 +197,8 @@
 
 			<h4 id="helmets" class="left">B6. Helmets</h4>
 			<ul>
-				<li><strong>Little League</strong> Batting helmets must be NOCSAE-certified, non-glare, unaltered by paint, and free of tape (Rule 1.16). Mandatory for the batter, all base runners, and player base coaches. Team decals and stickers are fine as long as they aren't excessive or offensive. A player who loses a helmet during play is warned, not called out.</li>
-				<li><strong>NCLL</strong> Team logo decals, player-name stickers, and achievement stickers are fine within that same limit (Rule 1.16) — no repainting, no tape.</li>
+				<li><strong>Little League</strong> Batting helmets must be NOCSAE-certified, non-glare, unaltered by paint, and free of tape (Rule 1.16). Mandatory for the batter, all base runners, and player base coaches. Rule 1.16 doesn't set a content standard for decals — it warns that altering a helmet at all, decals included, risks voiding the warranty or NOCSAE certification, and Little League recommends no alterations. A player who loses a helmet during play is warned, not called out.</li>
+				<li><strong>NCLL</strong> Team logo decals, player-name stickers, and achievement stickers are fine as long as they aren't excessive or offensive — an NCLL practice, not a Little League rule; no repainting, no tape (that part is the actual rule).</li>
 			</ul>
 
 			<h2 id="pitching" class="left">C. Pitching</h2>
@@ -136,7 +219,7 @@
 
 			<h4 id="catcher-pitcher-restriction" class="left">C4. Catcher / pitcher restriction</h4>
 			<ul>
-				<li><strong>Little League</strong> A player who has caught 4 or more innings in a game may not pitch that day (Regulation VI). A player who caught 3 innings or fewer, then pitches 21 or more pitches, may not return to catcher that same day.</li>
+				<li><strong>Little League</strong> A player who has caught 4 or more innings in a game may not pitch that day (Regulation VI). A player who caught 3 innings or fewer, then pitches 21 or more pitches, may not return to catcher that same day — unless they reached 20 pitches mid-batter, in which case they keep catcher eligibility until that at-bat ends (the batter reaches base, is retired, the inning or game ends, or the pitcher is pulled first).</li>
 				<li><strong>District 8</strong> A player who is the defensive catcher for more than three innings is not eligible to pitch that day.</li>
 				<li><strong>NCLL</strong> Per Regulation VI — a pitcher who throws 21 or more pitches may not catch that day.</li>
 			</ul>
@@ -168,7 +251,7 @@
 
 			<h4 id="mercy-rule" class="left">D4. Mercy rule</h4>
 			<ul>
-				<li><strong>Little League</strong> A game is called if a team leads by 15+ runs after 3 innings (2½ if the home team is ahead), 10+ after 4 (3½ if home ahead), or 8+ after 5 (4½ if home ahead) (Rule 4.10(e)).</li>
+				<li><strong>Little League</strong> A game is called if a team leads by 15+ runs after 3 innings (2½ if the home team is ahead), 10+ after 4 (3½ if home ahead), or 8+ after 5 (4½ if home ahead) (Rule 4.10(e)). A local league may adopt the option of not using this rule at all.</li>
 				<li><strong>District 8</strong> Identical tiers — 15+ after 3 (2½ if home ahead), 10+ after 4 (3½ if home ahead), 8+ after 5 (4½ if home ahead).</li>
 			</ul>
 
@@ -179,7 +262,7 @@
 
 			<h4 id="dropped-third-strike" class="left">D6. Dropped third strike</h4>
 			<ul>
-				<li><strong>Little League</strong> In effect for Majors (Rules 5.09(b)/6.09(b)) — the batter becomes a runner on an uncaught third strike when first base is open, or occupied with two out.</li>
+				<li><strong>Little League</strong> In effect for Majors (Rules 6.05(b)/6.09(b)) — the batter becomes a runner on an uncaught third strike when first base is open, or occupied with two out.</li>
 			</ul>
 
 			<h4 id="stealing-and-leadoffs" class="left">D7. Stealing &amp; leadoffs</h4>
@@ -194,7 +277,7 @@
 
 			<h4 id="batters-box-rule" class="left">D9. Batter's-box rule</h4>
 			<ul>
-				<li><strong>Little League</strong> The batter must keep at least one foot in the box throughout the at-bat, with listed exceptions (a swing, being forced out by a pitch, a drag-bunt attempt, and others) (Rule 6.03). Penalty: a warning, then a called strike.</li>
+				<li><strong>Little League</strong> A local-league option (Rule 6.02(c)) requires the batter to keep at least one foot in the box throughout the at-bat, with listed exceptions (a swing, being forced out by a pitch, a drag-bunt attempt, and others). Penalty: a warning, then a called strike.</li>
 				<li><strong>District 8</strong> Same rule, restated verbatim.</li>
 			</ul>
 
@@ -206,7 +289,7 @@
 
 			<h4 id="courtesy-runner" class="left">D11. Courtesy runner</h4>
 			<ul>
-				<li><strong>Little League</strong> A courtesy runner is permitted for the catcher and/or pitcher of record with two outs (Rule 7.14).</li>
+				<li><strong>Little League</strong> A Local League Option (Rule 7.14): a courtesy runner is permitted for the catcher and/or pitcher of record with two outs.</li>
 				<li><strong>District 8</strong> Under a continuous batting order, the courtesy runner is the player who made the last out. During the regular season, any player wearing a catcher's mask (or a coach) may warm up a pitcher; in tournament play, it must be a mask-wearing player.</li>
 			</ul>
 
@@ -228,8 +311,8 @@
 
 			<h4 id="malicious-contact" class="left">D15. Malicious contact</h4>
 			<ul>
-				<li><strong>Little League</strong> A runner may not deliberately or maliciously crash into a fielder — most commonly the catcher at home plate — to jar the ball loose or cause injury; the runner must slide or attempt to avoid the fielder. Violation: the runner is called out, with ejection possible for egregious contact.</li>
-				<li><strong>NCLL</strong> Matches the rulebook — a runner may not simply run through a catcher standing in the base path.</li>
+				<li><strong>Little League</strong> A runner is called out for failing to either slide or attempt to get around a fielder who has the ball and is waiting to make the tag — most commonly the catcher at home plate. There's no "must slide" rule; going around the fielder without contact satisfies this just as well as sliding does. Separately, an umpire has discretionary authority to eject a player for unsportsmanlike conduct, including egregious or intentional contact — that's not an automatic consequence of this rule.</li>
+				<li><strong>NCLL</strong> A runner may not simply run through a catcher standing in the base path — but per the rulebook, sliding isn't the only compliant option; avoiding the fielder any way that isn't a straight run-through also works.</li>
 			</ul>
 
 			<h2 id="roster-lineup" class="left">E. Roster &amp; lineup</h2>
@@ -249,7 +332,7 @@
 
 			<h4 id="mandatory-play" class="left">E3. Mandatory play</h4>
 			<ul>
-				<li><strong>Little League</strong> Every rostered player present at the start must play at least 6 defensive outs and bat at least once (Regulation IV(i)).</li>
+				<li><strong>Little League</strong> Every rostered player present at the start must play at least 6 defensive outs and bat at least once (Regulation IV(i)). A league using 15–20 player rosters with 15 or more players present at a game may reduce this floor to 3 defensive outs and 1 at-bat.</li>
 				<li><strong>District 8</strong> District 8 raises the mandatory-play floor to 9 defensive outs (not necessarily consecutive), recommended with at least 3 at an infield position.</li>
 				<li><strong>NCLL</strong> 9 defensive outs is the mandatory floor for every player present — in-house and interleague alike. A player who doesn't get their 9 outs starts the next game and completes the unmet requirement; manager penalties follow the same warning / one-game / season-suspension schedule as pitch-count violations (see Pitch counts, above).</li>
 			</ul>
@@ -291,7 +374,7 @@
 
 			<h4 id="game-balls" class="left">F5. Game balls</h4>
 			<ul>
-				<li><strong>Little League</strong> The home team furnishes the game balls to the umpire (Rule 1.09).</li>
+				<li><strong>Little League</strong> The league supplies the umpire with game balls, and must ensure additional balls are available if needed; the umpire keeps at least two alternates on hand throughout the game (Rule 3.01(c)-(e)).</li>
 				<li><strong>District 8</strong> The home team gives the plate umpire at least 2 new game balls before the game.</li>
 			</ul>
 
@@ -309,7 +392,7 @@
 
 			<h4 id="team-formation" class="left">G1. Team formation</h4>
 			<ul>
-				<li><strong>Little League</strong> Regulation V governs the draft. Every league-age-12 candidate must be drafted to a Major Division team.</li>
+				<li><strong>Little League</strong> Regulation V governs the draft. Every league-age-12 candidate must be drafted to a Major Division team, unless the District Administrator, the local Board, and the player's own parent all approve an exception.</li>
 				<li><strong>NCLL</strong> A full redraft happens every year, run by the coaching staff as a group. Draft order is drawn from a hat, in two linked stages — returning Majors players and new 12-year-olds first, then under-12 players new to Majors. A coach's own child (or a confirmed assistant coach's child) is auto-slotted by their assessment rating, skipping the coach's pick that round. A short post-draft trade window is allowed, for roster fit, not talent acquisition.</li>
 			</ul>
 
@@ -341,8 +424,8 @@
 
 			<h4 id="player-pool-and-call-ups" class="left">G7. Player pool &amp; call-ups</h4>
 			<ul>
-				<li><strong>Little League</strong> A called-up pool player must play at least 9 consecutive defensive outs and bat once (Regulation IV).</li>
-				<li><strong>NCLL</strong> NCLL runs a standing Majors Call-Up pool: a group of AAA players are pre-designated and dual-rostered on both a AAA team and a Majors team at draft time. They practice with both; when a Majors team needs a player, the league reviews GameChanger availability and calls players up from that pool. A Majors Call-Up player may not play down for a lower-division team — call-ups only go up from AAA to Majors. A call-up requires sign-off from both the player's AAA coach and the Majors team's coach.</li>
+				<li><strong>Little League</strong> A called-up pool player must play at least 9 consecutive defensive outs and bat once, and may not pitch in the borrowed game (Regulation V(c)).</li>
+				<li><strong>NCLL</strong> NCLL runs a standing Majors Call-Up pool: a group of AAA players are pre-designated at draft time. Their roster stays solely AAA — they are not dual-rostered onto a Majors team. When a Majors team needs a player, the league reviews GameChanger availability and calls players up from that pool, then they return to AAA. A Majors Call-Up player may not play down for a lower-division team — call-ups only go up from AAA to Majors. A call-up requires sign-off from both the player's AAA coach and the Majors team's coach.</li>
 			</ul>
 
 			<h4 id="standings" class="left">G8. Standings</h4>
@@ -357,7 +440,7 @@
 
 			<h4 id="all-star-team" class="left">G10. All-Star team</h4>
 			<ul>
-				<li><strong>Little League</strong> A player must have played in at least 8 regular-season games (as an eligible player under mandatory play) by the start of District tournament play, and must meet Little League's residency and school-attendance requirements, including a verified birth certificate. The tournament team may carry a maximum of 14 players, one manager, and up to two coaches; a minimum of 12 eligible players is required for certification. Team names may not be released before May 15.</li>
+				<li><strong>Little League</strong> A player must have played in at least 8 regular-season games (as an eligible player under mandatory play) by the start of District tournament play, and must meet Little League's residency and school-attendance requirements, including a verified birth certificate. The tournament team may carry a maximum of 14 players, one manager, and up to two coaches; a minimum of 12 eligible players is required for certification, though a District Administrator may certify a team with fewer for a justifiable reason. Team names may not be released before May 15.</li>
 				<li><strong>NCLL</strong> Players submit an official Player Application by the deadline — selection isn't automatic — and must be available for the full District Tournament. A tryout (encouraged, not mandatory) is held May 15 at Lower Woodland, in a format similar to the January assessments. A committee of NCLL coaches collectively selects each team's roster, weighing attitude, coachability, season and tryout performance, regular-season division, skills, positional need, and availability. Rosters are announced May 22. Team managers are recruited separately by the All-Star Coordinator and approved by a board committee.</li>
 			</ul>
 
@@ -365,7 +448,7 @@
 
 			<h4 id="manager-and-coach-conduct" class="left">H1. Manager &amp; coach conduct</h4>
 			<ul>
-				<li><strong>Little League</strong> An umpire may warn, eject, and forfeit for unsportsmanlike conduct (Rules 4.06–4.08, 9.01(d)). An ejected manager, coach, or player is suspended for the team's next played game, on top of any further penalty the league imposes (Rule 4.07).</li>
+				<li><strong>Little League</strong> An umpire may warn and eject for unsportsmanlike conduct (Rules 4.06–4.08, 9.01(d)). An ejected manager, coach, or player is suspended for the team's next played game, on top of any further penalty the league imposes (Rule 4.07). Forfeiture is separate from ejection and only applies for one of six specific grounds — refusing to start or continue play, failing to resume within a minute of being ordered to, failing to remove a player when ordered, willfully and persistently violating rules after a warning, or delay tactics (Rule 4.15) — not for unsportsmanlike conduct generally.</li>
 				<li><strong>NCLL</strong> NCLL is a Positive Coaching Alliance (PCA) league — all managers attend a PCA seminar and are expected to uphold NCLL's and PCA's rules of conduct. Beyond the automatic next-game suspension, NCLL reserves the right to require Board review of any ejection and to impose an escalating penalty for a manager's or coach's second ejection in a season. Complaints about a manager or coach can be investigated by NCLL's Managers Committee and reported to the Board.</li>
 			</ul>
 
