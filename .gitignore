@@ -22,10 +22,23 @@ images/2026-01-27_18-07-38_extracted/
 
 # Sensitive data — PII and credentials
 .env
+.env.*
 *.csv
 *.ods
 *.apps.googleusercontent.com.json
 _drafts/archive-triage/
+
+# MCP / AI tooling configs — carry API tokens, NEVER commit (rotated after a leak 2026-09-03)
+.mcp.json
+.mcp.*.json
+mcp.json
+.claude.json
+.codex/
+*.pem
+*.key
+*.cer
+*.p12
+*.pfx
 
 # Large binaries — not for git
 *.mp4
