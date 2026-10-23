@@ -1,15 +1,41 @@
-# Default automatic text normalization (force LF in working tree)
-* text eol=lf
+# Text files get LF line endings. "text=auto" lets git decide what is text: a rule that forces every
+# file to be text (the old "* text eol=lf") stripped bytes out of PSDs and zips and corrupted them.
+* text=auto eol=lf
 
 # Ensure consistent LF endings for data files
 *.csv text eol=lf
 
-# Treat common binary assets as binary (no line-ending changes)
+# Binary assets: never touch their bytes
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
 *.ico binary
+*.webp binary
+*.avif binary
+*.bmp binary
+*.tif binary
+*.tiff binary
+*.psd binary
+*.psb binary
+*.ai binary
+*.eps binary
 *.pdf binary
+*.snagx binary
+*.zip binary
+*.7z binary
+*.gz binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.doc binary
+*.xls binary
+*.ppt binary
+*.mp3 binary
+*.mp4 binary
+*.mov binary
 *.woff binary
 *.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
