@@ -252,8 +252,18 @@ async function main() {
   if (args.bind) return runBind(args);
   const t0 = Date.now();
   const absFile = path.resolve(process.cwd(), args.file);
-  const html = fs.readFileSync(absFile, "utf8");
-  const discovered = discoverCmsTarget(html);
+  const fileHtml = fs.readFileSync(absFile, "utf8");
+  const discovered = discoverCmsTarget(fileHtml);
+  // HTML comments stay in the repo but aren't sent: visitors never see them, and with the rest of a big page they
+  // push Cloudflare's WAF score over its limit, so the Save POST gets a silent 403 and nothing is stored
+  // (that blocked every hub save from 2026-06-18 to 2026-10-23).
+  // Whitespace is collapsed for the same reason, and <meta charset> is dropped: DNN's page sets the charset, and
+  // that tag plus the Parents hub field cards scored a 403 on its own (2026-10-27).
+  const html = fileHtml
+    .replace(/<!--[\s\S]*?-->/g, "")
+    .replace(/<meta charset="[^"]*"\s*\/?>/i, "")
+    .replace(/[\t\r\n]+/g, " ")
+    .replace(/ {2,}/g, " ");
   const tabid = String(args.tabid || discovered.tabid || "");
   const mid = String(args.mid || discovered.mid || "");
 
@@ -352,21 +362,20 @@ async function main() {
 
         const before = editor.get_html ? editor.get_html(true) : "";
 
-        // Override get_html so DNN's pre-submit hook saves our full HTML document
-        // (including <head>/<link> tags). set_html() alone strips the head — DNN reads
-        // get_html() right before form submit, so this is the correct intercept point.
-        editor.get_html = () => html;
+        // Let the editor convert the HTML (iframes/scripts become [youtubevideo …]-style tokens). Overriding
+        // get_html to post the raw file is what Cloudflare's WAF blocks; the converted form passes.
         editor.set_html(html);
+        const converted = editor.get_html(true);
 
         return {
           ok: true,
           editorId: editor.get_id?.() || editorId,
           beforeLength: before.length,
-          afterLength: html.length,
+          afterLength: converted.length,
           sourceLength: html.length,
-          hasMarker: marker ? html.includes(marker) : null,
-          hasStylesheet: /ncllball\.github\.io\/css\.css/.test(html),
-          hasTypekit: /use\.typekit\.net\/ldx2icb\.css/.test(html),
+          hasMarker: marker ? converted.includes(marker) : null,
+          hasStylesheet: /ncllball\.github\.io\/css\.css/.test(converted),
+          hasTypekit: /use\.typekit\.net\/ldx2icb\.css/.test(converted),
           saveButtonFound: Boolean(document.querySelector('a[id*="cmdSave"]')),
         };
       },
@@ -381,31 +390,61 @@ async function main() {
     if (marker && !injected.hasMarker) throw new Error(`Revision marker not found after injection: ${marker}`);
     if (!injected.hasStylesheet) throw new Error("css.css link not found in source HTML — check the file has the standard stylesheet link in <head>.");
 
+    // Ask the WAF first: post the editor's content to DNN Preview, which stores nothing. 403 here means Save would be blocked.
+    const preview = await page.evaluate(async ({ editorId, mid }) => {
+      const data = new FormData(document.forms[0]);
+      data.set("__EVENTTARGET", `dnn$ctr${mid}$EditHtml$cmdPreview`);
+      data.set(`dnn$ctr${mid}$EditHtml$txtContent$RadEditorDNN`, window.$find(editorId).get_html(true));
+      const res = await fetch(location.href, { method: "POST", body: new URLSearchParams(data), credentials: "include" });
+      return res.status;
+    }, { editorId, mid });
+    console.log(`Preview (WAF) check: HTTP ${preview}`);
+    if (preview !== 200) {
+      throw new Error(`Preview was rejected (HTTP ${preview}${preview === 403 ? ", Cloudflare WAF" : ""}); not saving. Bisect the page with preview POSTs to find the trigger.`);
+    }
+
     if (!args.save) {
       console.log(`Dry run complete (${((Date.now() - t0) / 1000).toFixed(1)}s). Re-run with --save to click DNN Save.`);
       return;
     }
 
+    // watch the Save POST itself: a blocked save looks exactly like a good one on screen
+    let saveStatus = null;
+    const onResponse = (res) => {
+      if (res.request().method() === "POST" && res.url().includes(`mid=${mid}`)) saveStatus = res.status();
+    };
+    page.on("response", onResponse);
     await Promise.all([
       page.waitForNavigation({ waitUntil: "domcontentloaded", timeout: 90000 }).catch(() => null),
       page.click('a[id*="cmdSave"]'),
     ]);
-
     await page.waitForTimeout(3000);
-    console.log(`Saved. Current URL: ${page.url()}`);
+    page.off("response", onResponse);
+    console.log(`Save request status: ${saveStatus ?? "not seen"}. Current URL: ${page.url()}`);
+    if (saveStatus && saveStatus >= 400) {
+      throw new Error(`Save was rejected (HTTP ${saveStatus}${saveStatus === 403 ? ", Cloudflare WAF" : ""}). Nothing was stored.`);
+    }
 
+    // proof it stored: what a logged-out visitor gets (DNN may still serve a cached copy for a while)
     await page.goto(`${liveUrl}&_cmscheck=${Date.now()}`, { waitUntil: "domcontentloaded", timeout: 60000 });
-    const liveCheck = await page.evaluate((marker) => {
+    const liveCheck = await page.evaluate(async ({ marker, liveUrl }) => {
+      const pub = await (await fetch(`${liveUrl}&_x=${Date.now()}`, { credentials: "omit" })).text();
       const text = document.body?.innerText || "";
       return {
         title: document.title,
-        hasMarker: marker ? text.includes(marker) : null,
-        hasSummerballFaq: /Summerball/i.test(text) && /FAQs/i.test(text),
+        adminSeesMarker: marker ? text.includes(marker) : null,
+        publicSeesMarker: marker ? pub.includes(marker) : null,
       };
-    }, marker);
-    console.log("Live/admin-session check:");
+    }, { marker, liveUrl });
+    console.log("Live check:");
     console.log(JSON.stringify(liveCheck, null, 2));
-    console.log(`Done in ${((Date.now() - t0) / 1000).toFixed(1)}s.`);
+    if (marker && !liveCheck.adminSeesMarker) {
+      throw new Error(`The page doesn't show ${marker} after saving: the save did not take.`);
+    }
+    if (marker && !liveCheck.publicSeesMarker) {
+      console.log("Saved, but the public page is still DNN's cached copy: run the dnn-bust skill or wait.");
+    }
+    console.log(`Saved and verified in ${((Date.now() - t0) / 1000).toFixed(1)}s.`);
   } finally {
     if (!usingBoundSession) await context.close().catch(() => {});
   }
