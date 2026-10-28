@@ -71,7 +71,7 @@ post-season. Cite: Tower, 2026-09-03.
 - **LL Rulebook:** **CORRECTED 2026-09-04 (Codex audit, Tower-verified) — "Regulation V" was the wrong citation.** Regulation V is "Selection of Players" (draft methods), not age eligibility. Regulation IV(a), Junior League: "Any candidate with amateur status who will attain the age of 12 years before January 1 and who will not attain the age of 15 years before January 1 of the year in question shall be eligible to compete." Cite: Regulation IV(a), `2026-little-league-softball.md` line 1023.
 - **D8 Interleague:** LA 12, 13, 14 (15 with DA approval) — CONFIRMED via Tower.
 - **NCLL:** **12–14 is the registration target band.** Registration age band: 12–14 (birth dates Jan 1, 2012 – Dec 31, 2014).
-- **Notes:** Cite: _Registration/registration-main.html (softball age-matrix table, Juniors Softball row) + _Programs/softball-hub.html ("Junior Softball readies league-age 13-14 players for high-school pace with a full-size softball diamond, district schedule, and advanced strategy.").
+- **Notes:** Cite: CMS/Registration/registration-main.html (softball age-matrix table, Juniors Softball row) + CMS/Programs/softball-hub.html ("Junior Softball readies league-age 13-14 players for high-school pace with a full-size softball diamond, district schedule, and advanced strategy.").
 
 ### A2. Purpose / what this division develops
 
@@ -314,7 +314,7 @@ post-season. Cite: Tower, 2026-09-03.
 ### G5. Practices / start dates
 
 - **NCLL:** **3–4 events/week, Fr/Su/Mo/Tu** — the only softball division with a 4-day-of-week spread (every division below it uses 2-3 fixed days). Team formation mid-to-late February, practice starts early March, games start late March, season ends mid-June. Fee **$290** (the highest softball fee, matching Seniors' listed fee — see the Seniors conflict note).
-- **Notes:** Cite: _Registration/registration-main.html (softball age-matrix table, Juniors Softball row).
+- **Notes:** Cite: CMS/Registration/registration-main.html (softball age-matrix table, Juniors Softball row).
 
 ### G6. Schedule type
 
@@ -339,7 +339,7 @@ post-season. Cite: Tower, 2026-09-03.
 
 - **LL Rulebook:** **CORRECTED 2026-09-04 (Codex audit) — the "60%" figure isn't the 2026 national threshold for Juniors; that's a different, narrower provision than what this row was describing.** The actual base rule, same structure as baseball: "participation in less than eight (8) [Senior League: No minimum regular season games required] regular season games" may result in forfeiture of tournament eligibility — an 8-game minimum for Juniors specifically (Senior is the one division exempted, not Juniors). Registration/residency/school-attendance requirements still apply on top of the games-played count. The 60% figure this row previously cited belongs to a separate provision (a school-baseball-participation adjustment for players who can't make all regular-season games because of a school team) — a real rule, but not the general Juniors threshold; don't conflate the two. Cite: same structure as baseball's 8-game rule, softball rulebook equivalent.
 - **NCLL:** League age 13–14 Softball Juniors All-Star team. **Marked `[Co-league]`** on allstars-main.html — same dual-league-combination mechanism documented in full in baseball-junior-rules.md G10 (LL allows up to 3 leagues to combine when one league lacks enough players or a qualified coach). Per allstars-faq.html's own cross-sport note: "Softball co-leagues are more common at the Juniors and Seniors levels" than in baseball — a direct, explicit confirmation that softball co-leaguing at Juniors/Seniors is the norm, not the exception, unlike baseball where it's confirmed rare for the regular season and mostly an All-Star tool. District 8 Softball Juniors All-Star Tournament begins **June 29** (2026 timeline) — the same date as baseball's own (Pending) Juniors and Seniors All-Star tournaments.
-- **Notes:** Cite: _Programs/allstars-main.html (eligibility table — "13/14 year-olds (Juniors) [Co-league]"; "Softball Teams to be Formed" list; timeline "June 29: Softball Juniors District 8 All-Star Tournament Begins" — notably NOT tagged `[Pending]` the way baseball's own June 29 entries are, implying softball Juniors All-Stars is a more certain team to field than baseball's equivalent) + _Programs/allstars-faq.html ("Softball co-leagues are more common at the Juniors and Seniors levels").
+- **Notes:** Cite: CMS/Season/2026/allstars-main.html (eligibility table — "13/14 year-olds (Juniors) [Co-league]"; "Softball Teams to be Formed" list; timeline "June 29: Softball Juniors District 8 All-Star Tournament Begins" — notably NOT tagged `[Pending]` the way baseball's own June 29 entries are, implying softball Juniors All-Stars is a more certain team to field than baseball's equivalent) + CMS/Season/2026/allstars-faq.html ("Softball co-leagues are more common at the Juniors and Seniors levels").
 
 ---
 
@@ -392,8 +392,8 @@ post-season. Cite: Tower, 2026-09-03.
 - D8 supplement: `D8-2026-Softball-dw-Juniors` — "dw" = district-wide, the single Juniors
   softball doc (not split City/North-End). Cites the LL 2026 Softball Official Rulebook.
 - NCLL operational sources: `_temp/.cleanup/programs-review/Softball/juniors.html`
-  (**low-confidence, see header flag**), `_Registration/registration-main.html` (softball
-  age-matrix table), `_Programs/softball-hub.html` (Juniors card), `_Programs/
+  (**low-confidence, see header flag**), `CMS/Registration/registration-main.html` (softball
+  age-matrix table), `CMS/Programs/softball-hub.html` (Juniors card), `_Programs/
   allstars-main.html`/`allstars-faq.html` (All-Star eligibility/timeline, co-league framing).
 - Comparable-league research: `SOURCES.md` (shared, not yet softball-specific).
 

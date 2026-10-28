@@ -34,14 +34,14 @@ const TABID = "2185065";
 
 const PHASE_MAP = {
   pre: [
-    { file: "_Events/hrd-pre-event.html", mid: "2345718" },
-    { file: "_Events/hrd-pre-event-right.html", mid: "2270767" },
+    { file: "CMS/Season/2026/hrd-pre-event.html", mid: "2345718" },
+    { file: "CMS/Season/2026/hrd-pre-event-right.html", mid: "2270767" },
   ],
   post: [
-    { file: "_Events/hrd-post-event.html", mid: "2345718" },
-    { file: "_Events/hrd-post-event-right.html", mid: "2270767" },
+    { file: "CMS/Season/2026/hrd-post-event.html", mid: "2345718" },
+    { file: "CMS/Season/2026/hrd-post-event-right.html", mid: "2270767" },
   ],
-  champions: [{ file: "_Events/hrd-past-champions.html", mid: "2345998" }],
+  champions: [{ file: "CMS/Season/2026/hrd-past-champions.html", mid: "2345998" }],
 };
 
 function loadPlaywright() {

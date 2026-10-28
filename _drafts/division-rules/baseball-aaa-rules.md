@@ -26,7 +26,7 @@ LL source: `../../rulebooks/little-league/2025-baseball-rulebook-scan/2025-LL-Ba
 - **LL Rulebook:** **CORRECTED 2026-09-04 (Codex audit, Tower-verified) — "Regulation V" was the wrong citation.** Regulation V is "Selection of Players" (draft methods), not age eligibility. Regulation IV(a), Minor League Division: "Any candidate with amateur status who will attain the age of 7 years before September 1, 2026, and who will not attain the age of 13 before August 31, 2026, shall be eligible to compete in the Minor League Baseball Division (subject to the local league Board of Directors alignment of this division)." AAA sits inside this national Minor League band; NCLL's own AAA/AA/A three-way split is the local league's "alignment" of that division, per this same clause. Cite: Regulation IV(a), `2026-little-league-baseball.md` line 995.
 - **D8 Interleague:** League age 11, 10, 9, 8, 7 — CONFIRMED. Cite: D8 Suppl. AAA Baseball, "Official Rules Specific to AAA" §1, rev. 2024-03-22.
 - **NCLL:** AAA is primarily a 10s-and-11s division. 9s fill AAA roster spots by assessment when Majors doesn't need them first; 8s are rare but not impossible. 10s and 11s who aren't drafted to Majors are AAA's core. (12s aren't eligible for AAA — league-age-12 must be drafted to Majors, see baseball-majors-rules.md A1.)
-- **Notes:** Cite: _Registration/registration-main.html ("Baseball AAA" footnote — "primary division for 10's and 11's," 9's fill roster spots by assessment, 8's rare). This narrows D8's wider 7–11 eligibility band to NCLL's actual practice — worth stating both explicitly so a coach doesn't assume NCLL runs 7-year-olds in AAA just because D8 permits it.
+- **Notes:** Cite: CMS/Registration/registration-main.html ("Baseball AAA" footnote — "primary division for 10's and 11's," 9's fill roster spots by assessment, 8's rare). This narrows D8's wider 7–11 eligibility band to NCLL's actual practice — worth stating both explicitly so a coach doesn't assume NCLL runs 7-year-olds in AAA just because D8 permits it.
 
 ### A2. Purpose / what this division develops
 
@@ -275,12 +275,12 @@ LL source: `../../rulebooks/little-league/2025-baseball-rulebook-scan/2025-LL-Ba
 
 - **LL Rulebook:** Same Regulation V basis as Majors.
 - **NCLL:** Same process as Majors, explicitly adopted in 2024 "adopting many of the same rules from Majors": full redraft each year, draft order from a hat, two linked stages (returning AAA players first, then new-to-AAA players), coach/assistant-coach children auto-slotted by rating (skipping the coach's pick), short post-draft trade window for social fit not talent acquisition, run by the Player Agent / VP of Baseball using 5-Tool Assessment data.
-- **Notes:** Cite: _Registration/registration-draft.html (this page is literally AAA's canonical draft-process source — baseball-majors-rules.md's own G1 Notes flagged this page as "written for AAA... Majors is the template this describes," so for AAA this is the primary source, not a derivative). History: AAA drafted pre-COVID, moved away from a draft, then returned to drafting in 2024 after a board review found NCLL was the only D8-area league not drafting AAA.
+- **Notes:** Cite: CMS/Registration/registration-draft.html (this page is literally AAA's canonical draft-process source — baseball-majors-rules.md's own G1 Notes flagged this page as "written for AAA... Majors is the template this describes," so for AAA this is the primary source, not a derivative). History: AAA drafted pre-COVID, moved away from a draft, then returned to drafting in 2024 after a board review found NCLL was the only D8-area league not drafting AAA.
 
 ### G2. Assessments / tryouts
 
-- **NCLL:** Same event as Majors — AAA and Majors players are assessed together (per _Events/assessments-faq.html and the baseball hub, "Assessments for AAA and Majors divisions typically occur" on the same day/event). Same evaluated skills, same bib-number blind-scoring, same "every player makes a team" framing.
-- **Notes:** Cite: _Events/assessments-faq.html, _Programs/baseball-hub.html.
+- **NCLL:** Same event as Majors — AAA and Majors players are assessed together (per CMS/Season/2026/assessments/assessments-faq.html and the baseball hub, "Assessments for AAA and Majors divisions typically occur" on the same day/event). Same evaluated skills, same bib-number blind-scoring, same "every player makes a team" framing.
+- **Notes:** Cite: CMS/Season/2026/assessments/assessments-faq.html, CMS/Programs/baseball-hub.html.
 
 ### G3. Playing up / down
 
@@ -295,8 +295,8 @@ LL source: `../../rulebooks/little-league/2025-baseball-rulebook-scan/2025-LL-Ba
 
 ### G5. Practices / start dates
 
-- **NCLL:** Same season cadence as Majors (3–4 events/week, Tue/Thu/Sat typical) per _Registration/registration-main.html's age-matrix table, which lists AAA on the same row pattern as Majors.
-- **Notes:** Cite: _Registration/registration-main.html.
+- **NCLL:** Same season cadence as Majors (3–4 events/week, Tue/Thu/Sat typical) per CMS/Registration/registration-main.html's age-matrix table, which lists AAA on the same row pattern as Majors.
+- **Notes:** Cite: CMS/Registration/registration-main.html.
 
 ### G6. Schedule type
 
@@ -321,7 +321,7 @@ LL source: `../../rulebooks/little-league/2025-baseball-rulebook-scan/2025-LL-Ba
 ### G10. All-Star / tournament team
 
 - **NCLL:** Same District 8 All-Star program as Majors — AAA-age players who make an All-Star team feed into the same age-banded tournament structure baseball-majors-rules.md G10 documents (11s team, 9/10s team, etc., not a "Majors" or "AAA" All-Star team per se — All-Star teams are age-banded, not division-banded). No AAA-specific selection process beyond what baseball-majors-rules.md G10 already documents league-wide.
-- **Notes:** Cite: _Programs/allstars-main.html (same source as baseball-majors-rules.md G10).
+- **Notes:** Cite: CMS/Season/2026/allstars-main.html (same source as baseball-majors-rules.md G10).
 
 ---
 
@@ -421,7 +421,7 @@ section (1–8).
   way majors.html's was pre-correction (catcher/pitcher pitch count says "41 or more" not
   21+; mercy rule stated as flat 10-run/4-inning rather than the tiered 15/10/8) — flagged
   above, not yet fixed on the live page.
-- Draft process source: _Registration/registration-draft.html — AAA's own canonical draft
+- Draft process source: CMS/Registration/registration-draft.html — AAA's own canonical draft
   page (baseball-majors-rules.md's draft process is actually the *derivative* description; this page is
   primary for AAA).
 - Call-up program source: Communications/majorcallups.html — the actual family notification
@@ -430,7 +430,7 @@ section (1–8).
 
 | Date | Editor | Change |
 |---|---|---|
-| 2026-09-03 | Claude (NCLL session) | Initial AAA draft: NCLL layer filled from Programs/Baseball/aaa.html, _Registration/registration-draft.html, _Events/assessments-faq.html, Communications/majorcallups.html, and cross-reference to baseball-majors-rules.md. LL Rulebook/D8 rows seeded from `_division-deltas.md` (2024-vintage) and flagged `⚠ TOWER` throughout for citation-backed verification against the current-year rulebook + D8 AAA supplement. 8 open board decisions flagged (gaps, not known disagreements) — see "Open board decisions" above. |
+| 2026-09-03 | Claude (NCLL session) | Initial AAA draft: NCLL layer filled from Programs/Baseball/aaa.html, CMS/Registration/registration-draft.html, CMS/Season/2026/assessments/assessments-faq.html, Communications/majorcallups.html, and cross-reference to baseball-majors-rules.md. LL Rulebook/D8 rows seeded from `_division-deltas.md` (2024-vintage) and flagged `⚠ TOWER` throughout for citation-backed verification against the current-year rulebook + D8 AAA supplement. 8 open board decisions flagged (gaps, not known disagreements) — see "Open board decisions" above. |
 | 2026-09-03 | Tower Claude (via user) | D8 AAA supplement pass: confirmed and cited nearly every `⚠ TOWER` row against `D8-Supplemental-AAA-Baseball-Rules.pdf` (rev. 2024-03-22) — the "2026" folder name is misleading, this is still the current published revision for both the Majors and AAA supplements. Resolved D2 (2:00/2:15 clock confirmed), D5 (full 5-run-cap mechanism + both exceptions), D6 (dropped 3rd strike OFF, exact D8 §7 citation), A1, B3, B4 (no D8 bat-length rule), B5, C3, C5 (balk citation), D3, D10, D11, E3, E4, F1, F2, F3, F4, E1. Surfaced three genuinely AAA-specific rules Majors doesn't have, not previously documented in this doc: D7 delayed-steal restriction, D12's narrower/more-lenient infield fly standard, and D5's exceptions in full. Closed 4 of 8 original open board decisions (D11, E4, F3, and C3's pitch-count *limit* — its reporting mechanism stays open); added B4 (bat-length rule, low-priority) as a new narrow item. Header note and division-of-labor blurb updated to reflect the pass is complete. |
 | 2026-09-03 | User + Claude (NCLL session) | Closed 2 more items directly: **B4** resolved from the LL rulebook itself (Rule 1.10 "Minor/Major Divisions" — ≤33"/≤2⅝", USABat, no BBCOR — identical to Majors, no separate AAA rule; not a board decision, removed from open list). **C3** narrowed — Reg VI(e)–(g) settles that a recorder must exist and report pitch counts on request; only AAA's specific local workflow and violation-penalty schedule remain open. Checked the Outline wiki (Baseball — Admin & Operations doc, a new "District 8 Interleague Rules — Baseball" transcription staged 2026-09-02, and targeted searches) for the 4 remaining open items (C3 mechanism, F6, G4, G6, G8) — confirmed all are genuine gaps with no source anywhere, not oversight; D8's own doc explicitly lists season structure, standings, and roster targets as left to NCLL. These need the board/registrar, not further document research. Note for later: the new Outline D8 doc already has full Intermediate/Junior/Senior division-comparison data (age, field dimensions, mercy tiers, time limits, curfews, mandatory play, pitch caps, on-deck rules, balks, post-season format) pre-transcribed — useful head start whenever those divisions are next. |
 | 2026-09-03 | Tower Claude (via user) | A3 firmed up with LL's own "dual roster" guidance (Reg I/IV, littleleague.org/university) — confirms the Majors Call-Up program is genuine dual-rostering, not a misapplication of Reg V(c) pool play. Surfaced a C3 consequence: Reg VI pitch limits are per player per day across all teams, so a Call-Up player's count must be aggregated across their AAA and Majors games — no mechanism exists anywhere documented. Tower confirmed this finding doesn't touch the four still-open items (C3's local mechanism, F6, G4, G6, G8) — those remain NCLL ops decisions, not resolved by this update. Same finding applied in parallel to baseball-majors-rules.md A3/C3. |

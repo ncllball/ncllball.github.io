@@ -31,7 +31,7 @@ LL source: not present on this machine — Tower has OCR access. Relevant sectio
 - **LL Rulebook:** **CORRECTED 2026-09-04 (Codex audit, Tower-verified) — the prior "Regulation V" citation was wrong twice over: it mislabeled Regulation III(c) text as Regulation V, and Regulation III(c) isn't an eligibility rule at all (it's local roster age-structure policy).** The actual eligibility rule is Regulation IV(a), Tee Ball Division: "Any candidate with amateur status who will attain the age of 4 years before January 1 and who will not attain the age of 8 before January 1 of the year in question shall be eligible to compete in the Tee Ball [Division] (subject to the local league Board of Directors alignment of this division)." (The rulebook's own text literally reads "Tee Ball Softball Division" here — an apparent copy-paste artifact in the official document, not something added by this doc.) Players league age 4 are eligible ONLY for Tee Ball unless the Charter Committee approves otherwise (Regulation III(c) — a real citation for that specific sub-claim, not for eligibility generally). Cite: Regulation IV(a), `2026-little-league-baseball.md` line 991.
 - **D8 Interleague:** n/a.
 - **NCLL:** **NCLL's local minimum is league age 5** — stricter than LL's national floor of 4. This is squarely within Reg V's "local league establishes the age structure" authority — a valid board decision tightening the national floor, already made and cited, not open. 4-year-olds are not eligible to register for NCLL Tee Ball. Registration age band: 5–6 (birth dates Sept 1, 2020 – Aug 31, 2022). "6's with a year of T-ball should consider **KCP (Kindy) or Baseball A**" — i.e., a returning 6-year-old is nudged to move up the ladder (T-ball → Kindy → A) rather than repeat T-ball.
-- **Notes:** Cite: Programs/Baseball/tball.html ("Eligibility" section — already tier-badged on the live page: "Little League Rule: Nationally, Little League allows players as young as league age 4... NCLL Local Rule: The NCLL board has voted to set our local minimum at league age 5.") + _Registration/registration-main.html (age-matrix table, footnote 1).
+- **Notes:** Cite: Programs/Baseball/tball.html ("Eligibility" section — already tier-badged on the live page: "Little League Rule: Nationally, Little League allows players as young as league age 4... NCLL Local Rule: The NCLL board has voted to set our local minimum at league age 5.") + CMS/Registration/registration-main.html (age-matrix table, footnote 1).
 
 ### A2. Purpose / what this division develops
 
@@ -253,7 +253,7 @@ LL source: not present on this machine — Tower has OCR access. Relevant sectio
 ### G5. Practices / start dates
 
 - **NCLL:** 2 events/week, "Any/Sa" scheduling. Team formation mid-March, practice starts late March, games start mid-to-late April, season ends mid-June. Fee $145.
-- **Notes:** Cite: _Registration/registration-main.html (age-matrix table, T-ball row + footnote 1).
+- **Notes:** Cite: CMS/Registration/registration-main.html (age-matrix table, T-ball row + footnote 1).
 
 ### G6. Schedule type
 

@@ -14,7 +14,7 @@
 > currently run an in-house, regular-season Intermediate (50/70) division.** Intermediate
 > exists at NCLL only as an ad hoc **District 8 All-Star tournament team** — fielded "as we
 > did last year, pending a coach and sufficient player interest," per
-> `_Programs/allstars-main.html`, which flags it `[Pending]` in three places (roster intent,
+> `CMS/Season/2026/allstars-main.html`, which flags it `[Pending]` in three places (roster intent,
 > timeline, division list). League-age 13–14 players who don't stay in AAA/Majors go into
 > NCLL's **Juniors** program instead, on a full 90-foot diamond — NCLL's regular-season
 > track skips the 50/70 diamond size entirely. **Correction 2026-09-03:** the earlier
@@ -39,9 +39,9 @@ LL source: not present on this machine — Tower has OCR access.
 ### A1. Age eligibility (league age)
 
 - **LL Rulebook:** **CORRECTED 2026-09-04 — same "Regulation V" mislabel Codex flagged across the other division docs; this doc wasn't in Codex's original flagged list (likely because this page didn't exist yet at audit time) but has the identical error, found on independent check.** Regulation V is "Selection of Players" (draft methods), not age eligibility. Regulation IV(a), Intermediate (50-70) Division: "Any participant with amateur status who will attain the age of 11 years before September 1, 2026, and who will not attain the age of 14 years on or before August 31, 2026, shall be eligible to compete in the Intermediate (50-70) Division." Cite: Regulation IV(a), `2026-little-league-baseball.md` line 1005.
-- **D8 Interleague:** League age 11, 12, 13 — CONFIRMED. Cite: D8 Suppl. Intermediate Baseball, "Official Rules Specific to..." §1, rev. 2025-03-22. Matches `_Programs/allstars-main.html`'s own "11/12/13 year-olds (Intermediates 50/70)" listing exactly.
+- **D8 Interleague:** League age 11, 12, 13 — CONFIRMED. Cite: D8 Suppl. Intermediate Baseball, "Official Rules Specific to..." §1, rev. 2025-03-22. Matches `CMS/Season/2026/allstars-main.html`'s own "11/12/13 year-olds (Intermediates 50/70)" listing exactly.
 - **NCLL:** No in-house eligibility to set — see the header note. 11s and 12s in this age band are covered by AAA/Majors' own age eligibility (see baseball-majors-rules.md A1, baseball-aaa-rules.md A1); 13s who aren't in Majors go to Juniors. The only NCLL-side use of this age band is All-Star tournament-team selection (see G10).
-- **Notes:** Cite: _Programs/allstars-main.html ("11/12/13 year-olds (Intermediates 50/70) [Pending]").
+- **Notes:** Cite: CMS/Season/2026/allstars-main.html ("11/12/13 year-olds (Intermediates 50/70) [Pending]").
 
 ### A2. Purpose / what this division develops
 
@@ -289,7 +289,7 @@ LL source: not present on this machine — Tower has OCR access.
 
 ### G4. Roster size target
 
-- **NCLL:** The All-Star team (not an in-house roster) needs a coach and **12 players minimum** to be fielded at all — this is a gating condition for whether the team exists in a given year, not a target range like Majors/AAA have. Cite: _Programs/allstars-main.html ("[Pending — requires coach and 12 players]").
+- **NCLL:** The All-Star team (not an in-house roster) needs a coach and **12 players minimum** to be fielded at all — this is a gating condition for whether the team exists in a given year, not a target range like Majors/AAA have. Cite: CMS/Season/2026/allstars-main.html ("[Pending — requires coach and 12 players]").
 
 ### G5. Practices / start dates
 
@@ -310,14 +310,14 @@ LL source: not present on this machine — Tower has OCR access.
 ### G9. Post-season — this IS the division's entire reason for existing at NCLL
 
 - **D8 Interleague:** End-of-year **"World Cup"-style** tournament format — teams split into pools, top 2 per pool advance to a single-elimination playoff, seeding set about one month before the tournament. Cite: D8 Suppl. Intermediate Baseball, rev. 2025-03-22.
-- **NCLL:** If NCLL fields the team: District 8 All-Star Tournament begins **June 23** (2026 timeline) at Northshore AF, per `_Programs/allstars-main.html`'s own listed dates — explicitly marked `[Pending]` there too, same gating as G4. A District-winning team advances to the Washington State Tournament (2026: Pasco, starting July 4+).
-- **Notes:** Cite: _Programs/allstars-main.html (roster-intent paragraph, timeline entries, State Tournament footnote).
+- **NCLL:** If NCLL fields the team: District 8 All-Star Tournament begins **June 23** (2026 timeline) at Northshore AF, per `CMS/Season/2026/allstars-main.html`'s own listed dates — explicitly marked `[Pending]` there too, same gating as G4. A District-winning team advances to the Washington State Tournament (2026: Pasco, starting July 4+).
+- **Notes:** Cite: CMS/Season/2026/allstars-main.html (roster-intent paragraph, timeline entries, State Tournament footnote).
 
 ### G10. All-Star / tournament team
 
 - **LL Rulebook:** Same tournament-player eligibility baseline as baseball-majors-rules.md G10 (8 regular-season games by tournament start, residency/birth-certificate verification, roster max 14). **Resolved at the rulebook level:** the participation requirement ("participation in less than eight (8)... regular season games" renders a player ineligible) does not require those 8 games to be in the tournament team's own division — a player's regular-season AAA/Majors games count toward the threshold for an Intermediate tournament team. No division-match requirement exists in the rule. Caveat: the precise Intermediate tournament-team age band and player-pool definition live in the separate LL Tournament Rules & Guidelines (not the rulebook itself) — verify exact wording against the 2026 edition once it's in hand, but the 8-games concern itself is answered.
 - **NCLL:** Same coaches'-committee selection process as baseball-majors-rules.md G10 documents league-wide, applied to this age band specifically. Gating: needs both a coach and at least 12 interested players to be fielded at all in a given year — not guaranteed, unlike Majors/AAA's regular All-Star teams. "As we did last year, pending a coach and sufficient player interest" — so this has been fielded at least once recently, but isn't an annual certainty.
-- **Notes:** Cite: _Programs/allstars-main.html (multiple `[Pending]` flags — roster intent paragraph, age-matrix table, division list, timeline, and the dedicated tournament-details table further down the page).
+- **Notes:** Cite: CMS/Season/2026/allstars-main.html (multiple `[Pending]` flags — roster intent paragraph, age-matrix table, division list, timeline, and the dedicated tournament-details table further down the page).
 
 ---
 
@@ -382,7 +382,7 @@ What's genuinely still open:
   Divisions Interleague Agreement 2025) — governs games crossing District 7/8, differs from
   the D8-only supplement on umpiring, scorekeeping, the 8-player rule, and the game-ending
   clock (see rows above).
-- NCLL operational status: **_Programs/allstars-main.html** — the only NCLL source that
+- NCLL operational status: **CMS/Season/2026/allstars-main.html** — the only NCLL source that
   mentions "Intermediate" at all (confirmed via a repo-wide grep, 2026-09-03); everywhere
   else in the codebase Intermediate is absent. This is the doc's primary evidence that no
   in-house division exists.
@@ -391,7 +391,7 @@ What's genuinely still open:
 | Date | Editor | Change |
 |---|---|---|
 | 2026-09-03 | Tower Claude (via user) | Full LL Rulebook + D8 layer delivered in one pass, citing `D8-Supplemental-Intermediate-Baseball-Rules.pdf` (rev. 2025-03-22) and the D7/D8 Teen Divisions Interleague Agreement 2025. Identified the common-rules block (identical to Majors/AAA) and five genuine tier-flip divergences: leadoffs (full leadoffs allowed), balks (now in effect), on-deck (now permitted), base paths (70 ft), bat standard (BBCOR now permitted, 34" max). Flagged the D7/D8 cross-district agreement's differences from the D8-only supplement on umpiring, scorekeeping, and the 8-player rule. |
-| 2026-09-03 | Claude (NCLL session) | Initial doc built around Tower's material. Repo-wide grep for "Intermediate" found it used ONLY in All-Star context (_Programs/allstars-main.html, allstars-hub.html, allstars-faq.html, allstars-application-print.html) plus one unrelated bat-fitting page — confirmed NCLL runs no in-house, regular-season Intermediate (50/70) division; it exists only as an ad hoc, coach-and-12-players-dependent District 8 All-Star tournament team. Restructured the doc's G-section and most of B/C/D/E/F's NCLL rows to "n/a — no in-house team" accordingly, concentrating real NCLL content in G9/G10 (the All-Star tournament, the division's actual reason for existing at NCLL) and H (conduct/safety, which applies regardless). Flagged 4 open items: two rows Tower's summary didn't explicitly address (D5, F5), one inferred-not-confirmed rule (D14 headfirst-slide ban lifting), one tournament-eligibility mechanics question (G10), and the underlying strategic question of whether NCLL wants a real in-house Intermediate division at all. |
+| 2026-09-03 | Claude (NCLL session) | Initial doc built around Tower's material. Repo-wide grep for "Intermediate" found it used ONLY in All-Star context (CMS/Season/2026/allstars-main.html, allstars-hub.html, allstars-faq.html, allstars-application-print.html) plus one unrelated bat-fitting page — confirmed NCLL runs no in-house, regular-season Intermediate (50/70) division; it exists only as an ad hoc, coach-and-12-players-dependent District 8 All-Star tournament team. Restructured the doc's G-section and most of B/C/D/E/F's NCLL rows to "n/a — no in-house team" accordingly, concentrating real NCLL content in G9/G10 (the All-Star tournament, the division's actual reason for existing at NCLL) and H (conduct/safety, which applies regardless). Flagged 4 open items: two rows Tower's summary didn't explicitly address (D5, F5), one inferred-not-confirmed rule (D14 headfirst-slide ban lifting), one tournament-eligibility mechanics question (G10), and the underlying strategic question of whether NCLL wants a real in-house Intermediate division at all. |
 | 2026-09-03 | Tower Claude (via user) | Full review pass: spot-checked every LL/D8 citation in the doc against the OCR and the 2025-03-22 supplement text — all accurate, nothing to correct; confirmed the header's "no in-house division" framing is well-sourced (not Tower's to confirm, but nothing in the D8/LL material contradicts it). Closed all 4 originally-flagged open items: **D5** — no run cap, confirmed by absence (the D8 supplement's "Local Rules That May Differ" section has 5 provisions, no run-limit section, unlike AAA's explicit §6). **D14** — headfirst-slide ban confirmed to lift at this tier, a direct Rule 7.08(a)(4) scoping reading ("Little League (Major) and below only") rather than an inference. **F5** — D8 genuinely doesn't provision game balls at Intermediate (omits the sentence AAA/Majors supplements have); since this division only ever plays tournament games for NCLL, LL Tournament Rules & Guidelines govern instead — not a board decision. **G10** — the 8-regular-season-games tournament eligibility requirement doesn't require division-matched games; AAA/Majors games count toward it, confirmed at the rulebook level (exact Intermediate tournament-team age band/pool definition still needs the Tournament Rules & Guidelines edition, not the base rulebook). Only the strategic in-house-division question remains open, and it always was going to — no source resolves a board's own appetite. |
 | 2026-09-03 | User + Claude | **Correction:** the header note and A2/Open-decisions rows previously said Juniors "co-leagues with another town" as if that were the regular-season arrangement — wrong framing, fixed to match the resolution in baseball-junior-rules.md G6/G10: co-leaguing is an All-Star-team-only mechanism (Seattle City-group leagues, never suburban), and NCLL's Juniors regular season is its own independent team. Added **C6 (Mound visits)** — new 2026 Rule 8.06(b) Note: a pitcher removed from the mound may still return later in the game regardless of remaining mound-visit count, applying at Intermediate/Junior/Senior. **D8 baseball layer verified current 2026-09-03:** the D8 Intermediate supplement PDF on the live D8 site is byte-identical to the intake copy; no 2026 baseball refresh published — the 2025-03-22 revision cited throughout this doc (already newer than the other four divisions') is confirmed current. |
 | 2026-09-04 | Claude (NCLL session) | Applied Tower's 2026-09-04 rulebook-verify pass: **B4** propagated the 2026 equipment changes universal to baseball — pine tar/adhesive permitted on the handle/grip at all levels (Rule 1.10 NOTE 2, a different NOTE 2 than the BBCOR one this doc already cited; reverses the prior ban), thumb protectors permitted, choke-knobs/choke-up assists still not (Rule 1.10 A.R. 2), and Rule 1.11(a)(3)'s sleeve rule dropping its neoprene-only distinction. No public page exists yet for this division (`_Rules/` has no baseball-intermediate.html) — nothing to propagate there. |

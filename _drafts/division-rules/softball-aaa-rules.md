@@ -65,7 +65,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 - **LL Rulebook:** **CORRECTED 2026-09-04 (Codex audit, Tower-verified) — "Regulation V" was the wrong citation.** Regulation V is "Selection of Players" (draft methods), not age eligibility. Regulation IV(a), Minor League Division: "Any candidate with amateur status who will attain the age of 7 years before January 1 and who will not attain the age of 13 before January 1 of the year in question shall be eligible to compete in the Minor League Softball Division (subject to the local league Board of Directors alignment of this division)." AAA sits inside this national Minor League band; NCLL's A/AA/AAA split is the local league's own "alignment" of that division. Cite: Regulation IV(a), `2026-little-league-softball.md` line 1011.
 - **D8 Interleague:** LA 8, 9, 10, 11 — CONFIRMED via Tower.
 - **NCLL:** **9–11 is the registration target band**, with 10's specifically directed to register here. Registration age band: 9–11 (birth dates Jan 1, 2015 – Dec 31, 2017). Fall/winter birthdays may play down with grade-level peers.
-- **Notes:** Cite: _Registration/registration-main.html (footnote 3 — "AAA Softball (9-11) is for 9's to 11's. 10's should register for AAA. Fall and winter birthdays may play down with grade-level peers.") + _Programs/softball-hub.html ("AAA Softball is for league-age 9–11 athletes ready for full player pitch, quicker reads, and bigger roles each inning... Graduating AA players land here when they are ready for full player-pitch pace.").
+- **Notes:** Cite: CMS/Registration/registration-main.html (footnote 3 — "AAA Softball (9-11) is for 9's to 11's. 10's should register for AAA. Fall and winter birthdays may play down with grade-level peers.") + CMS/Programs/softball-hub.html ("AAA Softball is for league-age 9–11 athletes ready for full player pitch, quicker reads, and bigger roles each inning... Graduating AA players land here when they are ready for full player-pitch pace.").
 
 ### A2. Purpose / what this division develops
 
@@ -308,7 +308,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 ### G2. Assessments / tryouts
 
 - **NCLL:** **Required.** registration-main.html's own assessment note: "All AAA and Majors players must attend assessments in early February; especially important for 9's in AAA and 10's in Majors." softball-hub.html: "Assessments for AAA and Majors are typically in late February, with team formations shortly after." softball-hub.html's AAA card also lists: "Attend the scheduled assessment (or makeup) to remain AAA-eligible."
-- **Notes:** Cite: _Registration/registration-main.html (softball footnotes) + _Programs/softball-hub.html (AAA card).
+- **Notes:** Cite: CMS/Registration/registration-main.html (softball footnotes) + CMS/Programs/softball-hub.html (AAA card).
 
 ### G3. Playing up / down
 
@@ -321,7 +321,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 ### G5. Practices / start dates
 
 - **NCLL:** **3 events/week, Tu/Th/Sa.** Team formation mid-to-late February, practice starts early March, games start late March, season ends mid-June. Fee **$265** (a real step up from A/AA's $195).
-- **Notes:** Cite: _Registration/registration-main.html (softball age-matrix table, AAA Softball row + footnote 3).
+- **Notes:** Cite: CMS/Registration/registration-main.html (softball age-matrix table, AAA Softball row + footnote 3).
 
 ### G6. Schedule type
 
@@ -345,7 +345,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 
 - **LL Rulebook:** Same tournament-player eligibility baseline as baseball's All-Star docs (8 regular-season games / 60% participation threshold, residency/birth-certificate verification).
 - **NCLL:** League age 8/9/10 AAA-eligible players feed the softball "10's" All-Star pool (see allstars-main.html's baseball/softball eligibility table: "8/9/10 year-olds (10's)" listed for both sports). District 8 Softball 10's All-Star Tournament begins **July 11** (2026 timeline). Tryouts for 10's/11's/12's softball All-Stars: **May 17** at Lower Woodland.
-- **Notes:** Cite: _Programs/allstars-main.html (eligibility table, timeline entries "July 11: Softball 10's District 8 All-Star Tournament Begins," "May 17: Softball All-Star Tryouts (10's, 11's, 12's)").
+- **Notes:** Cite: CMS/Season/2026/allstars-main.html (eligibility table, timeline entries "July 11: Softball 10's District 8 All-Star Tournament Begins," "May 17: Softball All-Star Tryouts (10's, 11's, 12's)").
 
 ---
 
@@ -397,8 +397,8 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
   unambiguously load-bearing for the regular season.
 - NCLL operational sources: `_temp/.cleanup/programs-review/Softball/aaa-division.html`
   (**low-confidence, see header flag, though more detailed than A/AA's pages**),
-  `_Registration/registration-main.html` (softball age-matrix table + footnote 3),
-  `_Programs/softball-hub.html` (AAA card), `_Programs/allstars-main.html` (10's All-Star
+  `CMS/Registration/registration-main.html` (softball age-matrix table + footnote 3),
+  `CMS/Programs/softball-hub.html` (AAA card), `CMS/Season/2026/allstars-main.html` (10's All-Star
   pool details).
 - Comparable-league research: `SOURCES.md` (shared, not yet softball-specific).
 

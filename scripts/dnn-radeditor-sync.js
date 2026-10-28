@@ -47,9 +47,9 @@ Login:
   Use --keep-profile to reuse a cached session. Pass SC_EMAIL and SC_PASSWORD for auto-login.
 
 Examples:
-  node scripts/dnn-radeditor-sync.js _Programs/summerball-faq.html
-  node scripts/dnn-radeditor-sync.js _Programs/summerball-faq.html --save
-  node scripts/dnn-radeditor-sync.js _Programs/summerball-main.html --save
+  node scripts/dnn-radeditor-sync.js CMS/Season/2026/summerball-faq.html
+  node scripts/dnn-radeditor-sync.js CMS/Season/2026/summerball-faq.html --save
+  node scripts/dnn-radeditor-sync.js CMS/Season/2026/summerball-main.html --save
 `);
   process.exit(exitCode);
 }

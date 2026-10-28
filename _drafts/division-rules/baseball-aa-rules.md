@@ -33,7 +33,7 @@ LL source: not present on this machine — Tower has OCR access. Same Regulation
 - **LL Rulebook:** **CORRECTED 2026-09-04 (Codex audit, Tower-verified) — the prior "Regulation V" citation was wrong twice over: it mislabeled Regulation III(c) text as Regulation V, and Regulation III(c) isn't an eligibility rule at all (it's local roster age-structure policy).** The actual eligibility rule is Regulation IV(a), Minor League Division: "Any candidate with amateur status who will attain the age of 7 years before September 1, 2026, and who will not attain the age of 13 before August 31, 2026, shall be eligible to compete in the Minor League Baseball Division (subject to the local league Board of Directors alignment of this division)." AA sits inside this national Minor League band; NCLL's A=7-8/AA=8-9 split is the local league's own "alignment" of that division, per this same clause. Cite: Regulation IV(a), `2026-little-league-baseball.md` line 995.
 - **D8 Interleague:** n/a.
 - **NCLL:** **8–9 is the target band**, with skilled 7-year-olds occasionally qualifying. Registration age band: 8–9 (birth dates Sept 1, 2017 – Aug 31, 2019). AA's own live page refers to itself internally as the "8/9ers" division.
-- **Notes:** Cite: _Registration/registration-main.html (age-matrix table, footnote 4 — "Baseball AA (8-9) is mainly for 8's/9's, though skilled 7-year-olds occasionally qualify.") + Programs/Baseball/aa.html ("In the 8/9ers division, we need to teach base running skills beyond the basics...").
+- **Notes:** Cite: CMS/Registration/registration-main.html (age-matrix table, footnote 4 — "Baseball AA (8-9) is mainly for 8's/9's, though skilled 7-year-olds occasionally qualify.") + Programs/Baseball/aa.html ("In the 8/9ers division, we need to teach base running skills beyond the basics...").
 
 ### A2. Purpose / what this division develops
 
@@ -283,7 +283,7 @@ LL source: not present on this machine — Tower has OCR access. Same Regulation
 ### G5. Practices / start dates
 
 - **NCLL:** 3 events/week, specifically **Friday/Saturday** scheduling (the only lower division with a fixed weekday pattern rather than "Any/Sa"). Team formation early March, practice starts mid-March, games start mid-April, season ends mid-June. Fee $195 (same as A Division).
-- **Notes:** Cite: _Registration/registration-main.html (age-matrix table, AA Baseball row + footnote 4).
+- **Notes:** Cite: CMS/Registration/registration-main.html (age-matrix table, AA Baseball row + footnote 4).
 
 ### G6. Schedule type
 
@@ -370,7 +370,7 @@ sections had missed entirely: B5a (Gloves) and C3a (Catcher gear &amp; safety).
   the most complete of any lower-division source found (explicit Rules-vs-Guidelines
   framing, season-split stealing rules, confirmed no-mercy/scored-no-standings status). Its
   own intro text is dated "for the 2024 season" and needs a refresh independent of this
-  doc's status. _Registration/registration-main.html (age-matrix table + footnote 4)
+  doc's status. CMS/Registration/registration-main.html (age-matrix table + footnote 4)
   supplements eligibility/schedule rows.
 - Comparable-league research: `SOURCES.md` (shared with the other division docs).
 

@@ -77,13 +77,13 @@ docs.
 - **LL Rulebook:** **CORRECTED 2026-09-04 (Codex audit, Tower-verified) — "Regulation V" was the wrong citation.** Regulation V is "Selection of Players" (draft methods), not age eligibility. Regulation IV(a), Minor League Division: "Any candidate with amateur status who will attain the age of 7 years before January 1 and who will not attain the age of 13 before January 1 of the year in question shall be eligible to compete in the Minor League Softball Division (subject to the local league Board of Directors alignment of this division)." A sits inside this national Minor League band; NCLL's A/AA/AAA split is the local league's own "alignment" of that division. Cite: Regulation IV(a), `2026-little-league-softball.md` line 1011.
 - **D8 Interleague:** LA 6, 7, 8 — CONFIRMED via Tower (D8 City A softball).
 - **NCLL:** **6–7 is the registration target band.** Registration age band: 6–7 (birth dates Jan 1, 2019 – Dec 31, 2020). Fall/winter birthdays may play down with grade-level peers.
-- **Notes:** Cite: _Registration/registration-main.html (softball age-matrix table, footnote 1 — "A Softball (6–7) is a coach-pitch division for 6's and 7's. Fall and winter birthdays may play down with grade-level peers.") + _Programs/softball-hub.html ("A - Coach Pitch" card: "A Softball welcomes league-age 6-7 players into a joyful, coach-pitch season where every rep builds confidence.").
+- **Notes:** Cite: CMS/Registration/registration-main.html (softball age-matrix table, footnote 1 — "A Softball (6–7) is a coach-pitch division for 6's and 7's. Fall and winter birthdays may play down with grade-level peers.") + CMS/Programs/softball-hub.html ("A - Coach Pitch" card: "A Softball welcomes league-age 6-7 players into a joyful, coach-pitch season where every rep builds confidence.").
 
 ### A2. Purpose / what this division develops
 
 - **LL Rulebook:** Same Reg I "prepare for eventual Major Division selection" framing baseball's lower divisions cite.
 - **NCLL:** Per softball-hub.html: "NCLL offers softball for ages 6-14, from first-time players to teams preparing for high school... Softball is designated for girls. Each division matches developmental stage, skill focus, and game format." A specifically: coach-pitch entry point, confidence and fundamentals first.
-- **Notes:** Cite: _Programs/softball-hub.html (intro + A card).
+- **Notes:** Cite: CMS/Programs/softball-hub.html (intro + A card).
 
 ### A3. Participation in two divisions
 
@@ -304,7 +304,7 @@ docs.
 ### G2. Assessments / tryouts
 
 - **NCLL:** **Not required at A** — registration-main.html's assessment note applies only to "AAA and Majors players," especially 9's entering AAA and 10's entering Majors. A is below that threshold.
-- **Notes:** Cite: _Registration/registration-main.html (softball footnotes, assessment note).
+- **Notes:** Cite: CMS/Registration/registration-main.html (softball footnotes, assessment note).
 
 ### G3. Playing up / down
 
@@ -317,7 +317,7 @@ docs.
 ### G5. Practices / start dates
 
 - **NCLL:** **2 events/week, Tu/Sa.** Team formation early March, practice starts mid-March, games start mid-April, season ends mid-June. Fee **$195**.
-- **Notes:** Cite: _Registration/registration-main.html (softball age-matrix table, A Softball row + footnote 1).
+- **Notes:** Cite: CMS/Registration/registration-main.html (softball age-matrix table, A Softball row + footnote 1).
 
 ### G6. Schedule type
 
@@ -399,8 +399,8 @@ open-board-decisions.md's "Not yet built" section, which currently only covers b
   Rulebook as current. NCLL confirmed a D8 CITY league — the parallel `northend-*` set does
   not apply.
 - NCLL operational sources: `_temp/.cleanup/programs-review/Softball/a-division.html`
-  (**low-confidence, see header flag**), `_Registration/registration-main.html` (softball
-  age-matrix table + footnote 1), `_Programs/softball-hub.html` (A Division card).
+  (**low-confidence, see header flag**), `CMS/Registration/registration-main.html` (softball
+  age-matrix table + footnote 1), `CMS/Programs/softball-hub.html` (A Division card).
 - Comparable-league research: `SOURCES.md` (shared with the baseball docs; not yet
   softball-specific).
 

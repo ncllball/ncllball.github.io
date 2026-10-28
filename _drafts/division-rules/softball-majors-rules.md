@@ -61,12 +61,12 @@ post-season, City/North End seeded separately, championship field/date TBD. Cite
 - **LL Rulebook:** **CORRECTED 2026-09-04 (Codex audit, Tower-verified) — "Regulation V" was the wrong citation.** Regulation V is "Selection of Players" (draft methods), not age eligibility. Regulation IV(a), Little League (Major) Division: "Any candidate with amateur status who will attain the age of 9 years before January 1 and who will not attain the age of 13 before January 1 of the year in question shall be eligible to compete in Little League Softball (subject to the local league Board of Directors alignment of this division)." Cite: Regulation IV(a), `2026-little-league-softball.md` line 1017.
 - **D8 Interleague:** LA 9, 10, 11, 12 — CONFIRMED via Tower.
 - **NCLL:** **10–12 is the registration target band.** Registration age band: 10–12 (birth dates Jan 1, 2014 – Dec 31, 2016).
-- **Notes:** Cite: _Registration/registration-main.html (softball age-matrix table, Majors Softball row) + _Programs/softball-hub.html ("Majors Softball elevates league-age 10-12 athletes into full player-pitch play with faster tempo, district-level competition, and expanded strategy.").
+- **Notes:** Cite: CMS/Registration/registration-main.html (softball age-matrix table, Majors Softball row) + CMS/Programs/softball-hub.html ("Majors Softball elevates league-age 10-12 athletes into full player-pitch play with faster tempo, district-level competition, and expanded strategy.").
 
 ### A2. Purpose / what this division develops
 
 - **NCLL:** "This is the highest standard Little League (league ages 11–12) division before moving to Juniors. We balance competitive play with player development and sustained love for the game." Per softball-hub.html: "faster tempo, district-level competition, and expanded strategy."
-- **Notes:** Cite: `_temp/.cleanup/programs-review/Softball/majors.html` (introduction) + _Programs/softball-hub.html (Majors card).
+- **Notes:** Cite: `_temp/.cleanup/programs-review/Softball/majors.html` (introduction) + CMS/Programs/softball-hub.html (Majors card).
 
 ### A3. Participation in two divisions
 
@@ -294,7 +294,7 @@ post-season, City/North End seeded separately, championship field/date TBD. Cite
 ### G2. Assessments / tryouts
 
 - **NCLL:** **Required.** Same registration-main.html note as AAA: "All AAA and Majors players must attend assessments in early February; especially important for... 10's in Majors." softball-hub.html's Majors card: "Attend the scheduled assessment or makeup to remain Majors-eligible."
-- **Notes:** Cite: _Registration/registration-main.html (softball footnotes) + _Programs/softball-hub.html (Majors card).
+- **Notes:** Cite: CMS/Registration/registration-main.html (softball footnotes) + CMS/Programs/softball-hub.html (Majors card).
 
 ### G3. Playing up / down
 
@@ -307,7 +307,7 @@ post-season, City/North End seeded separately, championship field/date TBD. Cite
 ### G5. Practices / start dates
 
 - **NCLL:** **3–4 events/week, Mo/We/Fr.** Team formation mid-to-late February, practice starts early March, games start late March, season ends mid-June. Fee **$265** (same as AAA).
-- **Notes:** Cite: _Registration/registration-main.html (softball age-matrix table, Majors Softball row).
+- **Notes:** Cite: CMS/Registration/registration-main.html (softball age-matrix table, Majors Softball row).
 
 ### G6. Schedule type
 
@@ -331,7 +331,7 @@ post-season, City/North End seeded separately, championship field/date TBD. Cite
 
 - **LL Rulebook:** Same tournament-player eligibility baseline as baseball's All-Star docs.
 - **NCLL:** League age 10/11/12 Softball Majors/12's All-Star team — **not** tagged `[Co-league]` on allstars-main.html (unlike softball Juniors/Seniors, both tagged `[Co-league]` — see softball-juniors-rules.md G10 and softball-seniors-rules.md). Tryouts **May 17** at Lower Woodland (10's, 11's, 12's softball together). District 8 12's All-Star Tournament begins **June 18** (2026 timeline) — the earliest-starting softball All-Star tournament of any age band. NCLL plans to field **four All-Star softball teams** this season overall (per allstars-main.html's general-info section — though the eligibility table and "Softball Teams to be Formed" list actually enumerate five age bands: 10's, 11's, Majors/12's, Juniors, Seniors — a minor internal inconsistency on that page worth a quick confirm, not resolved here).
-- **Notes:** Cite: _Programs/allstars-main.html ("General All-Stars Information" — "four All-Star softball teams"; eligibility table; "Softball Teams to be Formed" list; timeline "May 17: Softball All-Star Tryouts," "June 18: Softball 12's District 8 All-Star Tournament Begins"; "Softball All-Stars – Specific Information" section, contact: Gayle Perez, Softball VP).
+- **Notes:** Cite: CMS/Season/2026/allstars-main.html ("General All-Stars Information" — "four All-Star softball teams"; eligibility table; "Softball Teams to be Formed" list; timeline "May 17: Softball All-Star Tryouts," "June 18: Softball 12's District 8 All-Star Tournament Begins"; "Softball All-Stars – Specific Information" section, contact: Gayle Perez, Softball VP).
 
 ---
 
@@ -385,8 +385,8 @@ post-season, City/North End seeded separately, championship field/date TBD. Cite
 - D8 supplement: `D8-2026-Softball-city-Majors` — cites the LL 2026 Softball Official
   Rulebook. NCLL confirmed a D8 CITY league.
 - NCLL operational sources: `_temp/.cleanup/programs-review/Softball/majors.html`
-  (**low-confidence, see header flag**), `_Registration/registration-main.html` (softball
-  age-matrix table), `_Programs/softball-hub.html` (Majors card), `_Programs/
+  (**low-confidence, see header flag**), `CMS/Registration/registration-main.html` (softball
+  age-matrix table), `CMS/Programs/softball-hub.html` (Majors card), `_Programs/
   allstars-main.html` (All-Star eligibility/timeline, softball-specific section).
 - Comparable-league research: `SOURCES.md` (shared, not yet softball-specific).
 

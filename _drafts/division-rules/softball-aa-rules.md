@@ -59,7 +59,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 - **LL Rulebook:** **CORRECTED 2026-09-04 (Codex audit, Tower-verified) — "Regulation V" was the wrong citation.** Regulation V is "Selection of Players" (draft methods), not age eligibility. Regulation IV(a), Minor League Division: "Any candidate with amateur status who will attain the age of 7 years before January 1 and who will not attain the age of 13 before January 1 of the year in question shall be eligible to compete in the Minor League Softball Division (subject to the local league Board of Directors alignment of this division)." AA sits inside this national Minor League band; NCLL's A/AA/AAA split is the local league's own "alignment" of that division. Cite: Regulation IV(a), `2026-little-league-softball.md` line 1011.
 - **D8 Interleague:** LA 7, 8, 9 (10 with DA approval) — CONFIRMED via Tower.
 - **NCLL:** **7–9 is the registration target band**, with 8's specifically directed to register here. 10's can join but it's not advised. Registration age band: 7–9 (birth dates Jan 1, 2017 – Dec 31, 2019).
-- **Notes:** Cite: _Registration/registration-main.html (footnote 2 — "AA Softball (7–9) is a coach-pitch/player-pitch blend for 7's to 9's. 8's should register here. While 10's can join, it's not advised. Fall and winter birthdays may play down with grade-level peers.").
+- **Notes:** Cite: CMS/Registration/registration-main.html (footnote 2 — "AA Softball (7–9) is a coach-pitch/player-pitch blend for 7's to 9's. 8's should register here. While 10's can join, it's not advised. Fall and winter birthdays may play down with grade-level peers.").
 
 ### A2. Purpose / what this division develops
 
@@ -293,7 +293,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 ### G2. Assessments / tryouts
 
 - **NCLL:** **Not required at AA** — registration-main.html's assessment note applies only to AAA/Majors players specifically (especially 9's entering AAA and 10's entering Majors). AA sits below that threshold, same as A.
-- **Notes:** Cite: _Registration/registration-main.html (softball footnotes, assessment note).
+- **Notes:** Cite: CMS/Registration/registration-main.html (softball footnotes, assessment note).
 
 ### G3. Playing up / down
 
@@ -306,7 +306,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 ### G5. Practices / start dates
 
 - **NCLL:** **2–3 events/week, We/Sa.** Team formation early March, practice starts mid-March, games start mid-April, season ends mid-June. Fee **$195** (same as A).
-- **Notes:** Cite: _Registration/registration-main.html (softball age-matrix table, AA Softball row + footnote 2).
+- **Notes:** Cite: CMS/Registration/registration-main.html (softball age-matrix table, AA Softball row + footnote 2).
 
 ### G6. Schedule type
 
@@ -378,7 +378,7 @@ post-season, City/North End seeded separately. Cite: Tower, 2026-09-03.
 - D8 supplement: `D8-2026-Softball-city-AA` — cites the LL 2026 Softball Official Rulebook.
   NCLL confirmed a D8 CITY league.
 - NCLL operational sources: `_temp/.cleanup/programs-review/Softball/aa-division.html`
-  (**low-confidence, see header flag**), `_Registration/registration-main.html` (softball
+  (**low-confidence, see header flag**), `CMS/Registration/registration-main.html` (softball
   age-matrix table + footnote 2).
 - Comparable-league research: `SOURCES.md` (shared, not yet softball-specific).
 

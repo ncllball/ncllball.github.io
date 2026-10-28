@@ -1,21 +1,30 @@
 # NCLL Project Instructions
 
+## Repo Layout: CMS/ vs everything else
+
+**Inside `CMS/` = the HTML of a page on ncllball.com; outside it = not.** Set up 2026-10-28.
+
+- `CMS/` mirrors the ncllball.com menu (Website Manager › Pages). A page's file sits in its menu parent's folder; a page with sub-pages gets a subfolder named after it. Top-level menu folders: `Season/2026` (the "2026" menu), `Programs`, `Registration`, `Resources`, `Get-Involved`, `About`. Example: Programs › player development › Winterball26 Softball → `CMS/Programs/player-development/winterball26-softball-training.html`.
+- Every file in `CMS/` carries its `CMS: tabid=… | mid=…` header and a `[rN · date · tabid]` marker. Families never load these files from GitHub; the content is pasted into the CMS module, and the tabid in the file (not the folder) ties it to its page.
+- Outside `CMS/`: `_Rules/` and `QR/` (served from ncllball.github.io — public links and printed QR codes, so don't move them without fixing every link), `_Programs/allstars-application-print.html` (standalone print form), `_drafts/`, `docs/`, `scripts/`, `images/`, `css.css`.
+- When a page moves in the CMS menu, move its file to match. The NCLL Ops Board site map (`ncll-board/sitemap.py`) flags files whose folder doesn't match their menu spot, and tabid'd files outside `CMS/`.
+
 ## Hub Page URL Mapping
 
 When linking to hub pages, use these canonical live URLs (not the GitHub Pages URLs):
 
 | Local file | Live URL |
 | --- | --- |
-| `_Hubs/coaches-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111982` |
-| `_Hubs/events-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2244434` |
-| `_Hubs/helping-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2246341` |
-| `_Hubs/parents-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111981` |
-| `_Hubs/safety-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2245729` |
-| `_Hubs/umpires-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111983` |
-| `_Hubs/uniforms-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2113971` |
-| `_Hubs/volunteer-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2117276` |
-| `_Programs/baseball-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111979` |
-| `_Programs/softball-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111980` |
+| `CMS/Resources/coaches-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111982` |
+| `CMS/Resources/events-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2244434` |
+| `CMS/Get-Involved/helping-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2246341` |
+| `CMS/Resources/parents-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111981` |
+| `CMS/Resources/safety-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2245729` |
+| `CMS/Resources/umpires-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111983` |
+| `CMS/Resources/uniforms-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2113971` |
+| `CMS/Get-Involved/volunteer-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2117276` |
+| `CMS/Programs/baseball-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111979` |
+| `CMS/Programs/softball-hub.html` | `https://www.ncllball.com/Default.aspx?tabid=2111980` |
 
 ## Canonical & og:url
 
