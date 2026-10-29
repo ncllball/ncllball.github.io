@@ -11,6 +11,15 @@
 - The repo is public and GitHub Pages serves every file. Kids' rosters and other working notes don't belong here; the Home Run Derby year-by-year history lives in Outline (Events › Home Run Derby › Home Run Derby — History).
 - When a page moves in the CMS menu, move its file to match. The NCLL Ops Board site map (`ncll-board/sitemap.py`) flags files whose folder doesn't match their menu spot, and tabid'd files outside `CMS/`.
 
+## Google Analytics
+
+ncllball.com reports to GA4 `G-RWR33H14KS` through Sports Connect — never add a GA tag to files in `CMS/`. Standalone pages served from ncllball.github.io (`_Rules/`, `QR/`, `_Programs/`, any new one) carry the tag right after `<meta charset>`:
+
+```html
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RWR33H14KS"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-RWR33H14KS");</script>
+```
+
 ## Hub Page URL Mapping
 
 When linking to hub pages, use these canonical live URLs (not the GitHub Pages URLs):
