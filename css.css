@@ -928,6 +928,7 @@ h2.left::before {
     margin: 0;
 }
 .division-rules li {
+    list-style: none;      /* beats the site-wide `ul li { list-style-type: disc }` */
     text-align: left;
     margin-bottom: 10px;
 }
