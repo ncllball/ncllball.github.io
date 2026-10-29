@@ -4863,25 +4863,31 @@ h4 .status-badge {
     object-fit: contain;
 }
 
-/* Book version (baseball/softball hubs): the division's rules book in a small white circle, like the Coaches Hub corner icons */
-.rules-icon-btn--plain {
-    width: 2.1rem;
+/* Book version (baseball/softball hubs): just the division's rules book, no circle */
+.rules-icon-btn--plain,
+.rules-icon-btn--plain:hover,
+.rules-icon-btn--plain:focus {
+    width: auto;
     height: 2.1rem;
     margin-right: 10px;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0, 1, 58, .3);
+    background: none;
+    border-radius: 0;
+}
+
+.rules-icon-btn--plain {
     transition: transform .15s ease;
 }
 
 .rules-icon-btn--plain:hover,
 .rules-icon-btn--plain:focus {
-    background: white;
     transform: scale(1.12);
 }
 
-.rules-icon-btn--plain img {
+.rules-icon-btn--plain img,
+p.rules-legend img {
     width: auto;
-    height: 72%;
+    height: 100%;
+    filter: drop-shadow(0 2px 2px rgba(0, 1, 58, .35));
 }
 
 /* Legend under the hubs' "Divisions" heading, explaining the book button */
@@ -4894,14 +4900,7 @@ p.rules-legend {
 }
 
 p.rules-legend img {
-    width: 2.1rem;
     height: 2.1rem;
-    padding: .3rem;
-    box-sizing: border-box;
-    object-fit: contain;
-    background: white;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 1, 58, .3);
     flex: 0 0 auto;
 }
 
