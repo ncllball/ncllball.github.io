@@ -922,6 +922,15 @@ h2.left::before {
     font-size: 0.95em;
     padding: 2px 4px 2px 0;
 }
+/* Even 30px gaps: the site-wide `p, ul, li` rule adds 18px of bottom padding that stacked on top of the next
+   heading's margin (48px gaps); the section stripe (h2::before, 15px down) gets 15px more above it. */
+.division-rules p {
+    padding-bottom: 0;
+    margin-bottom: 18px;
+}
+.division-rules h2.left {
+    margin-top: 15px;
+}
 /* dateline under the red title bar: season · when the rules were pulled · when a rule last changed */
 .division-rules p.rules-asof {
     font-size: 0.85rem;
