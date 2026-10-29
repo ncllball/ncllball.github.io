@@ -4867,6 +4867,7 @@ h4 .status-badge {
 .rules-icon-btn--book {
     width: 3.4rem;
     height: 3.4rem;
+    margin-right: 20px;     /* off the card's right edge (margin, not padding: padding would shrink the book inside its fixed size) */
     background: none;
     transition: transform .15s ease;
 }
