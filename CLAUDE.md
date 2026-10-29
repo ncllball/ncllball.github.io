@@ -57,6 +57,10 @@ All images, PDFs, and other static assets are served from:
 
 Example: a file at `images/2026-safety.pdf` → `https://ncllball.github.io/images/2026-safety.pdf`
 
+## Stylesheet: edit assets/css.css, deploy to Cloudflare
+
+The site stylesheet is `assets/css.css`. It's served from Cloudflare Pages (project `ncll-assets` in NCLL's own Cloudflare account) at `https://ncll-assets.pages.dev/css.css`, which deploys in seconds and makes browsers re-check it on every load (`assets/_headers`). After editing, run `pwsh -File scripts\deploy-css.ps1` (live in ~10 s), then commit and push for history. Root `css.css` is only a bridge (`@import` of the Cloudflare copy) so every page's existing link keeps working; never put rules in it. Absolute URLs only inside the stylesheet (it's served from another host). wrangler is logged in as admin@ncllball.com with Pages-only scopes; if it asks to log in again, run `npx wrangler@4 login --scopes account:read user:read pages:write zone:read` and have John approve in Chrome/Edge (the editor's browser can't load Cloudflare's consent page).
+
 ## Standard Stylesheet Links
 
 Every page uses these two stylesheet links in `<head>`:

@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const cssPath = path.join(process.cwd(), 'css.css');
+const cssPath = path.join(process.cwd(), 'assets', 'css.css');
 if (!fs.existsSync(cssPath)) {
   console.error('css.css not found');
   process.exit(1);
