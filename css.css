@@ -4890,6 +4890,18 @@ p.rules-legend img {
     filter: drop-shadow(0 2px 2px rgba(0, 1, 58, .35));
 }
 
+/* Footer placement (test on Baseball AAA): the book sits at the right of the card footer; the arrows stay centred */
+.ncll-card__sticky-footer:has(.rules-icon-btn--foot) {
+    position: relative;
+}
+
+.rules-icon-btn--foot {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin: -1.05rem 0 0;
+}
+
 /* Legend under the hubs' "Divisions" heading, explaining the book button */
 p.rules-legend {
     display: flex;
