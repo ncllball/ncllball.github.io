@@ -20,6 +20,8 @@ ncllball.com reports to GA4 `G-RWR33H14KS` through Sports Connect — never add 
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-RWR33H14KS");</script>
 ```
 
+Links shared outside the site (emails, newsletters, social, QR codes, flyers) get UTM tags per `docs/utm-links.md`; never tag links between site pages.
+
 ## Hub Page URL Mapping
 
 When linking to hub pages, use these canonical live URLs (not the GitHub Pages URLs):
