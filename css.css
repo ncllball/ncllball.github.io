@@ -920,7 +920,7 @@ h2.left::before {
     font-weight: 700;
     font-style: italic;
     font-size: 0.95em;
-    padding: 2px 4px 2px 0;
+    padding: 2px 1px 2px 0;
 }
 /* Even 30px gaps: the site-wide `p, ul, li` rule adds 18px of bottom padding that stacked on top of the next
    heading's margin (48px gaps); the section stripe (h2::before, 15px down) gets 15px more above it. */
