@@ -6,6 +6,7 @@
 	SOURCE:           Outline › Programs › Division Rules › NCLL Baseball — Majors Division Rules — edit there first, then rebuild this page from it
 	HISTORY:          was ncllball.github.io/_Rules/baseball-majors.html (2026-09-03 → 2026-10-28; that URL now forwards here). Earlier
 	                  format/verification notes live in git history of _Rules/baseball-majors.html.
+	STYLES:           sticky division header + layer labels come from css.css (.division-rules); no page-level style block here (it tripped the CMS WAF).
 	WHAT TO UPDATE:   Season-specific numbers each year against the current LL Rulebook / D8 supplement; bump the marker.
 -->
 <html lang="en">
@@ -17,60 +18,6 @@
 		<title>Majors Division Baseball Rules - North Central Little League</title>
 		<link rel="stylesheet" type="text/css" href="https://ncllball.github.io/css.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/ldx2icb.css" />
-		<style>
-			/* PROTOTYPE 2026-09-04 — sticky division-name header, testing before promoting to css.css.
-			   Keeps the division name on screen at every scroll depth so a reader who scrolled
-			   down (not just someone arriving via a deep anchor link) never loses track of which
-			   division's page they're on. Reuses the existing h1 rather than adding new markup.
-
-			   BUILT STANDALONE — this page has no CMS wrapper today, but is expected to move into
-			   a DNN module later. Sticky elements are one of the things most likely to misbehave in
-			   that move (pushed off-screen by DNN's own layout, double-stacked with a DNN sticky
-			   nav, etc.), so: (1) the offset below is a variable, not a hardcoded `top: 0`, so a
-			   future DNN header height can be dropped in without touching the sticky rule itself;
-			   (2) nothing inside `.division-rules`/`main` sets its own `overflow`, so this binds to
-			   whatever the real page-level scroller turns out to be once embedded, rather than a
-			   scroll container this page invents itself. RE-CHECK ONCE ACTUALLY EMBEDDED IN DNN —
-			   confirm the offset still clears DNN's header and that nothing double-sticks.
-
-			   Unrelated but load-bearing for this to work at all: css.css's global
-			   `html, body { overflow-x: hidden; }` rule breaks position:sticky site-wide. Setting
-			   overflow-x on `body` forces overflow-y to compute as `auto` too (CSS spec's
-			   visible-pairing rule), which makes `body` an ambiguous second scroll container it
-			   never actually uses — sticky descendants then stick relative to that non-scrolling
-			   box instead of the real viewport, i.e. don't stick at all. Confirmed removing it from
-			   `body` alone (keeping it on `html`) fixes sticky without reopening the horizontal-
-			   scroll issue that rule exists for. Worked around locally below for this prototype;
-			   the real fix is a one-line change to css.css's shared rule before this ships to any
-			   other page — flagging rather than changing shared CSS from a single-page prototype. */
-			body {
-				overflow-x: visible;
-			}
-			:root {
-				--division-rules-sticky-offset: 0px; /* bump if/when a DNN site header sits above this page */
-				--division-rules-sticky-height: 53px; /* rendered height of the sticky h1 bar below, kept in sync manually */
-			}
-			.division-rules h1.left {
-				position: sticky;
-				top: var(--division-rules-sticky-offset);
-				z-index: 20;
-				width: 100%;
-				background: #fff;
-				padding: 10px 0;
-				margin: 0 0 18px 0;
-				border-bottom: 1px solid var(--color_border_light);
-				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
-			}
-			/* Without this, jumping straight to an anchor (or a JS scrollIntoView) lands the
-			   target heading exactly at the top of the viewport — underneath the sticky bar,
-			   completely hidden. scroll-margin-top reserves that space so anchors land just
-			   below it instead. This is the deep-link case the sticky header itself needs to
-			   keep working, not just the "already scrolled down" case it was built for. */
-			.division-rules h2[id],
-			.division-rules h4[id] {
-				scroll-margin-top: calc(var(--division-rules-sticky-offset) + var(--division-rules-sticky-height) + 8px);
-			}
-		</style>
 	</head>
 
 	<body>
