@@ -959,6 +959,13 @@ body.cms-right.no-x-scroll:has(.division-rules) {
     border-bottom: 1px solid var(--color_border_light);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
+/* Pages that put the division name in the module's red title bar (set in the CMS module settings)
+   instead of an h1: that bar is the sticky header. */
+.DnnModule:has(.division-rules) h2.head {
+    position: sticky;
+    top: var(--division-rules-sticky-offset);
+    z-index: 20;
+}
 .division-rules h2[id],
 .division-rules h4[id] {
     scroll-margin-top: calc(var(--division-rules-sticky-offset) + var(--division-rules-sticky-height) + 8px);
