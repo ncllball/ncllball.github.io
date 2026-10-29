@@ -924,7 +924,7 @@ h2.left::before {
 }
 .division-rules ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;            /* no site-wide bottom padding: the next h4's margin is the gap */
     margin: 0;
 }
 .division-rules li {
