@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 :root {
+    --ncll-css-host: cloudflare;     /* marker: proves a page got this stylesheet through the Cloudflare copy */
     /* TEMP: font-family testing variables */
     --font_tk-proxima-nova-condensed: "proxima-nova-condensed", sans-serif;
     --font_tk-proxima-nova-extra-condensed: "proxima-nova-extra-condensed", sans-serif;
