@@ -4863,32 +4863,7 @@ h4 .status-badge {
     object-fit: contain;
 }
 
-/* Book version (baseball/softball hubs): the picture is the whole button, white circle and navy ring included */
-.rules-icon-btn--book {
-    width: 3.4rem;
-    height: 3.4rem;
-    margin-right: 10px;     /* off the card's right edge (margin, not padding: padding would shrink the book inside its fixed size) */
-    background: none;
-    transition: transform .15s ease;
-}
-
-.rules-icon-btn--book:hover,
-.rules-icon-btn--book:focus {
-    background: none;
-    transform: scale(1.12);
-}
-
-.rules-icon-btn--book img,
-p.rules-legend img {
-    filter: drop-shadow(0 3px 4px rgba(0, 1, 58, .35));
-}
-
-.rules-icon-btn--book img {
-    width: 100%;
-    height: 100%;
-}
-
-/* Plain version (test on Baseball AAA): just the book, in a small white circle like the Coaches Hub corner icons */
+/* Book version (baseball/softball hubs): the division's rules book in a small white circle, like the Coaches Hub corner icons */
 .rules-icon-btn--plain {
     width: 2.1rem;
     height: 2.1rem;
@@ -4919,8 +4894,14 @@ p.rules-legend {
 }
 
 p.rules-legend img {
-    width: 3.4rem;
-    height: 3.4rem;
+    width: 2.1rem;
+    height: 2.1rem;
+    padding: .3rem;
+    box-sizing: border-box;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 1, 58, .3);
     flex: 0 0 auto;
 }
 
