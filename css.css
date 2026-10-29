@@ -4888,6 +4888,27 @@ p.rules-legend img {
     height: 100%;
 }
 
+/* Plain version (test on Baseball AAA): just the book, in a small white circle like the Coaches Hub corner icons */
+.rules-icon-btn--plain {
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-right: 10px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 1, 58, .3);
+    transition: transform .15s ease;
+}
+
+.rules-icon-btn--plain:hover,
+.rules-icon-btn--plain:focus {
+    background: white;
+    transform: scale(1.12);
+}
+
+.rules-icon-btn--plain img {
+    width: auto;
+    height: 72%;
+}
+
 /* Legend under the hubs' "Divisions" heading, explaining the book button */
 p.rules-legend {
     display: flex;
