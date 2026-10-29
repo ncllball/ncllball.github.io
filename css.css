@@ -4863,6 +4863,40 @@ h4 .status-badge {
     object-fit: contain;
 }
 
+/* Book version (baseball/softball hubs): the picture is the whole button, white circle and navy ring included */
+.rules-icon-btn--book {
+    width: 2.6rem;
+    height: 2.6rem;
+    background: none;
+    transition: transform .15s ease;
+}
+
+.rules-icon-btn--book:hover,
+.rules-icon-btn--book:focus {
+    background: none;
+    transform: scale(1.12);
+}
+
+.rules-icon-btn--book img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Legend under the hubs' "Divisions" heading, explaining the book button */
+p.rules-legend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 14px;
+    padding-bottom: 0;
+}
+
+p.rules-legend img {
+    width: 3rem;
+    height: 3rem;
+    flex: 0 0 auto;
+}
+
 .subtle {
     font-style: italic;
 }
