@@ -6,14 +6,14 @@
 
 - `CMS/` mirrors the ncllball.com menu (Website Manager › Pages). A page's file sits in its menu parent's folder; a page with sub-pages gets a subfolder named after it. Top-level menu folders: `Season/2026` (the "2026" menu), `Programs`, `Registration`, `Resources`, `Get-Involved`, `About`. Example: Programs › player development › Winterball26 Softball → `CMS/Programs/player-development/winterball26-softball-training.html`.
 - Every file in `CMS/` carries its `CMS: tabid=… | mid=…` header and a `[rN · date · tabid]` marker. Families never load these files from GitHub; the content is pasted into the CMS module, and the tabid in the file (not the folder) ties it to its page.
-- Outside `CMS/`: `_Rules/` and `QR/` (served from ncllball.github.io — public links and printed QR codes, so don't move them without fixing every link), `_Programs/allstars-application-print.html` (standalone print form), `_drafts/`, `_outline/` (staging for content headed to the Outline wiki; empty it once moved), `docs/`, `scripts/`, `images/` (Home Run Derby photos in `images/hrd/<year>/`), `css.css`.
+- Outside `CMS/`: `_Rules/` and `QR/` (served from ncllball.github.io — public links and printed QR codes, so don't move them without fixing every link), `docs/allstars-application-source.html` (source for the yearly All-Stars application PDF; print it to PDF, upload as a new `docs/YYYY.all-stars.application.BB.SB.pdf`), `_drafts/`, `_outline/` (staging for content headed to the Outline wiki; empty it once moved), `docs/`, `scripts/`, `images/` (Home Run Derby photos in `images/hrd/<year>/`), `css.css`.
 - Past seasons are git tags, not folders: at season rollover tag the repo `season-YYYY` before reworking that year's pages (`season-2025` exists). Browse old pages via the tag on GitHub.
 - The repo is public and GitHub Pages serves every file. Kids' rosters and other working notes don't belong here; the Home Run Derby year-by-year history lives in Outline (Events › Home Run Derby › Home Run Derby — History).
 - When a page moves in the CMS menu, move its file to match. The NCLL Ops Board site map (`ncll-board/sitemap.py`) flags files whose folder doesn't match their menu spot, and tabid'd files outside `CMS/`.
 
 ## Google Analytics
 
-ncllball.com reports to GA4 `G-RWR33H14KS` through Sports Connect — never add a GA tag to files in `CMS/`. Standalone pages served from ncllball.github.io (`_Rules/`, `QR/`, `_Programs/`, any new one) carry the tag right after `<meta charset>`:
+ncllball.com reports to GA4 `G-RWR33H14KS` through Sports Connect — never add a GA tag to files in `CMS/`. Standalone pages served from ncllball.github.io (`_Rules/`, `QR/`, any new page families browse — not print sources) carry the tag right after `<meta charset>`:
 
 ```html
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWR33H14KS"></script>
