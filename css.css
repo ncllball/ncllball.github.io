@@ -4865,8 +4865,8 @@ h4 .status-badge {
 
 /* Book version (baseball/softball hubs): the picture is the whole button, white circle and navy ring included */
 .rules-icon-btn--book {
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 3.4rem;
+    height: 3.4rem;
     background: none;
     transition: transform .15s ease;
 }
@@ -4892,8 +4892,8 @@ p.rules-legend {
 }
 
 p.rules-legend img {
-    width: 3rem;
-    height: 3rem;
+    width: 3.4rem;
+    height: 3.4rem;
     flex: 0 0 auto;
 }
 
