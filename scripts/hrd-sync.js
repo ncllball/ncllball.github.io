@@ -280,7 +280,7 @@ async function syncModule(page, { file, mid }, html, args, isFirst) {
         beforeLength: before.length,
         afterLength: html.length,
         hasMarker: marker ? html.includes(marker) : null,
-        hasStylesheet: /ncllball\.github\.io\/css\.css/.test(html),
+        hasStylesheet: /(ncllball\.github\.io|assets\.ncllball\.com)\/css\.css/.test(html),
         hasTypekit: /use\.typekit\.net\/ldx2icb\.css/.test(html),
         saveButtonFound: Boolean(document.querySelector('a[id*="cmdSave"]')),
       };

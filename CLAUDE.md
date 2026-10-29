@@ -59,14 +59,14 @@ Example: a file at `images/2026-safety.pdf` → `https://ncllball.github.io/imag
 
 ## Stylesheet: edit assets/css.css, deploy to Cloudflare
 
-The site stylesheet is `assets/css.css`. It's served from Cloudflare Pages (project `ncll-assets` in NCLL's own Cloudflare account) at `https://ncll-assets.pages.dev/css.css`, which deploys in seconds and makes browsers re-check it on every load (`assets/_headers`). After editing, run `pwsh -File scripts\deploy-css.ps1` (live in ~10 s), then commit and push for history. Root `css.css` is only a bridge (`@import` of the Cloudflare copy) so every page's existing link keeps working; never put rules in it. Absolute URLs only inside the stylesheet (it's served from another host). wrangler is logged in as admin@ncllball.com with Pages-only scopes; if it asks to log in again, run `npx wrangler@4 login --scopes account:read user:read pages:write zone:read` and have John approve in Chrome/Edge (the editor's browser can't load Cloudflare's consent page).
+The site stylesheet is `assets/css.css`. It's served from Cloudflare Pages (project `ncll-assets` in NCLL's own Cloudflare account) at `https://assets.ncllball.com/css.css` (also `ncll-assets.pages.dev`), which deploys in seconds and makes browsers re-check it on every load (`assets/_headers`). After editing, run `pwsh -File scripts\deploy-css.ps1` (live in ~10 s), then commit and push for history. Root `css.css` is only a bridge (`@import` of the Cloudflare copy) so every page's existing `ncllball.github.io/css.css` link keeps working; never put rules in it. New pages link `https://assets.ncllball.com/css.css` directly; older pages switch over whenever they're next edited. The ncllball.com zone's Browser Cache TTL must stay "Respect Existing Headers" (otherwise Cloudflare forces a 4-hour browser cache on the stylesheet). Absolute URLs only inside the stylesheet (it's served from another host). wrangler is logged in as admin@ncllball.com with Pages-only scopes; if it asks to log in again, run `npx wrangler@4 login --scopes account:read user:read pages:write zone:read` and have John approve in Chrome/Edge (the editor's browser can't load Cloudflare's consent page).
 
 ## Standard Stylesheet Links
 
 Every page uses these two stylesheet links in `<head>`:
 
 ```html
-<link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
+<link href="https://assets.ncllball.com/css.css" rel="stylesheet" type="text/css" />
 <link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
 ```
 

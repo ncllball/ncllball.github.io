@@ -8,8 +8,8 @@ try {
     npx --yes wrangler@4 pages deploy assets --project-name ncll-assets --branch main --commit-dirty=true 2>&1 | Select-Object -Last 2
     $local = [IO.File]::ReadAllText((Join-Path $repo 'assets\css.css'))
     for ($i = 0; $i -lt 10; $i++) {
-        $live = (Invoke-WebRequest "https://ncll-assets.pages.dev/css.css?v=$(Get-Random)" -UseBasicParsing).Content
-        if ($live -eq $local) { "Live: https://ncll-assets.pages.dev/css.css matches assets/css.css"; return }
+        $live = (Invoke-WebRequest "https://assets.ncllball.com/css.css?v=$(Get-Random)" -UseBasicParsing).Content
+        if ($live -eq $local) { "Live: https://assets.ncllball.com/css.css matches assets/css.css"; return }
         Start-Sleep 2
     }
     throw "Deployed, but the live css.css doesn't match assets/css.css yet"

@@ -374,7 +374,7 @@ async function main() {
           afterLength: converted.length,
           sourceLength: html.length,
           hasMarker: marker ? converted.includes(marker) : null,
-          hasStylesheet: /ncllball\.github\.io\/css\.css/.test(converted),
+          hasStylesheet: /(ncllball\.github\.io|assets\.ncllball\.com)\/css\.css/.test(converted),
           hasTypekit: /use\.typekit\.net\/ldx2icb\.css/.test(converted),
           saveButtonFound: Boolean(document.querySelector('a[id*="cmdSave"]')),
         };

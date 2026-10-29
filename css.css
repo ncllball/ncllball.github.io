@@ -1,4 +1,4 @@
 /* Bridge: every page links https://ncllball.github.io/css.css, but the real stylesheet is assets/css.css,
-   served from Cloudflare Pages (deploys in seconds, browsers re-check it on every load).
+   served from Cloudflare Pages at assets.ncllball.com (deploys in seconds, browsers re-check it on every load).
    Edit assets/css.css and run scripts/deploy-css.ps1 — never put rules in this file. */
-@import url("https://ncll-assets.pages.dev/css.css");
+@import url("https://assets.ncllball.com/css.css");
