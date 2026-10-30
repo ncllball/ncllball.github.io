@@ -106,3 +106,8 @@ University Prep,University Prep,C:\Tools\ncllball.github.io\scripts\data\school-
 West Woodland Elementary,West Woodland Elementary,C:\Tools\ncllball.github.io\.github\projects\reports\winteraaaMajors.csv; C:\Tools\ncllball.github.io\master.summerball.csv; C:\Tools\ncllball.github.io\scripts\data\school-addresses.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping; school
 West Woodland Elementary,"West Woodland Elementary, 5601 4th Ave NW, Seattle, WA 98107",C:\Tools\ncllball.github.io\.github\projects\reports\regularseason.csv; C:\Tools\ncllball.github.io\master.summerball.csv; scripts/summer_comparison/school-mappings.js,School; School Name; mapping
 West Woodland Elementary,West Woodland ES,scripts/summer_comparison/school-mappings.js,mapping
+Robert Eagle Staff Middle School,Eagle Staff Middle School,scripts/normalize-schools.js (retired 2026-10-29),mapping
+Robert Eagle Staff Middle School,Robert Eagle Staff Middle,scripts/normalize-schools.js (retired 2026-10-29),mapping
+Hamilton International Middle School,Hamilton International Middle,scripts/normalize-schools.js (retired 2026-10-29),mapping
+Hamilton International Middle School,Hamilton MS,scripts/normalize-schools.js (retired 2026-10-29),mapping
+Lincoln High School,Lincoln HS,scripts/normalize-schools.js (retired 2026-10-29),mapping
