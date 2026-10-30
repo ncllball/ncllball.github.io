@@ -58,3 +58,4 @@ ncll_archive/
 scripts/rotators/out/
 scripts/rotators/**/__pycache__/
 .wrangler/
+tmp/
