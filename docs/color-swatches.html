@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>NCLL Color Palette</title>
-	<link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
+	<link href="https://assets.ncllball.com/css.css" rel="stylesheet" type="text/css" />
 	<style>
 		body { font-family: sans-serif; padding: 2rem; background: #f5f5f5; }
 		h1 { color: var(--color_blue); margin-bottom: 2rem; }
@@ -18,6 +19,7 @@
 </head>
 <body>
 	<h1>NCLL Color Palette</h1>
+	<p>The color tokens in <code>assets/css.css</code> <code>:root</code>. In pages and new CSS, use the token (<code>var(--color_red)</code>), not the hex. Checked against the stylesheet 2026-10-29.</p>
 
 	<h2>Brand</h2>
 	<div class="swatches">
@@ -65,6 +67,18 @@
 			<div class="swatch__color" style="background:#1976d2"></div>
 			<div class="swatch__label"><div class="swatch__name">Info</div><div class="swatch__hex">--color_info · #1976d2</div></div>
 		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:rgb(68,68,68)"></div>
+			<div class="swatch__label"><div class="swatch__name">Dark Gray</div><div class="swatch__hex">--color_darkgray · #444444</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#ffffff; border:1px solid #eee"></div>
+			<div class="swatch__label"><div class="swatch__name">White</div><div class="swatch__hex">--color_white · #ffffff</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#000000"></div>
+			<div class="swatch__label"><div class="swatch__name">Black</div><div class="swatch__hex">--color_black · #000000</div></div>
+		</div>
 	</div>
 
 	<h2>Surfaces &amp; Borders</h2>
@@ -89,6 +103,26 @@
 			<div class="swatch__color" style="background:gainsboro"></div>
 			<div class="swatch__label"><div class="swatch__name">Light Gray</div><div class="swatch__hex">--color_lightgray · gainsboro</div></div>
 		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#fdfdfd; border:1px solid #eee"></div>
+			<div class="swatch__label"><div class="swatch__name">Surface Lighter</div><div class="swatch__hex">--color_surface_lighter · #fdfdfd</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#f9f9f9; border:1px solid #eee"></div>
+			<div class="swatch__label"><div class="swatch__name">Table Row Alt</div><div class="swatch__hex">--color_table_row_alt · #f9f9f9</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#dededf"></div>
+			<div class="swatch__label"><div class="swatch__name">Table Border</div><div class="swatch__hex">--color_border_table · #dededf</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#bbbbbb"></div>
+			<div class="swatch__label"><div class="swatch__name">Control</div><div class="swatch__hex">--color_control · #bbbbbb</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:gainsboro"></div>
+			<div class="swatch__label"><div class="swatch__name">Tag</div><div class="swatch__hex">--color_tag · gainsboro</div></div>
+		</div>
 	</div>
 
 	<h2>Status</h2>
@@ -102,5 +136,23 @@
 			<div class="swatch__label"><div class="swatch__name">Warning</div><div class="swatch__hex">--color_warning · #f2e427</div></div>
 		</div>
 	</div>
+
+	<h2>Timeline</h2>
+	<div class="swatches">
+		<div class="swatch">
+			<div class="swatch__color" style="background:#ccd5db"></div>
+			<div class="swatch__label"><div class="swatch__name">Line</div><div class="swatch__hex">--color_timeline_line · #ccd5db</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#3d4351"></div>
+			<div class="swatch__label"><div class="swatch__name">Heading</div><div class="swatch__hex">--color_timeline_heading · #3d4351</div></div>
+		</div>
+		<div class="swatch">
+			<div class="swatch__color" style="background:#768390"></div>
+			<div class="swatch__label"><div class="swatch__name">Body</div><div class="swatch__hex">--color_timeline_body · #768390</div></div>
+		</div>
+	</div>
+
+	<p style="margin-top:2rem; font-size:.85rem; color:#555;">Defined but not used anywhere in the stylesheet yet: Tan, Orange (and its hover #F57C00), Button, Info, Warning, Border, Green, #aaaaaa. They're available, but check with the palette above before introducing a new color.</p>
 </body>
 </html>
