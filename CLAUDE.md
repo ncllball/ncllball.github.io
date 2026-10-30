@@ -1,5 +1,9 @@
 # NCLL Project Instructions
 
+## What the site is for
+
+North Central Little League (Seattle) is limited by the fields available to it and is close to capacity, so the goal isn't growth: it's keeping the league its current size while improving the experience for players, parents and volunteers. The website is a vehicle for that. Most families read it on phones, so content has to read well on mobile. (Kept from the old `.github/copilot-instructions.md`, retired 2026-10-29.)
+
 ## Repo Layout: CMS/ vs everything else
 
 **Inside `CMS/` = the HTML of a page on ncllball.com; outside it = not.** Set up 2026-10-28.
