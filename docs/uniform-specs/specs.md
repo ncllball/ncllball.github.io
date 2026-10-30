@@ -1,4 +1,8 @@
-# PLAYERS HATS & SHIRTS MODEL CHART
+# NCLL uniform specs: models and sizes
+
+The master reference for NCLL uniforms: which hat, shirt and hoodie model each division gets, the supplier size charts (normalized to pit-to-pit), and the sizes offered to players and coaches. The live uniform pages (`CMS/Resources/uniforms-hub.html`, `CMS/uniform-2027.html`) are built from it, so update this first when a model or size range changes. Supplier sheets are next to it in this folder. Moved here from `Resources/Parents/sizing/` 2026-10-29.
+
+## PLAYERS HATS & SHIRTS MODEL CHART
 
 | Program/Division   | Hat Model # | Shirt Model #            | Hoodie Model # | Socks | Belt |
 |--------------------|-------------|--------------------------|----------------|-------|------|
@@ -46,7 +50,7 @@
 
 Notes:
 
-- Where a table column is labelled "1/2 Chest" or "Chest" in the original supplier sheet, we treat that value as pit-to-pit (PTP) for the normalized table below. If you have supplier sheets where "Chest" is a circumference, tell me and I will convert by dividing the circumference by 2.
+- Where a table column is labelled "1/2 Chest" or "Chest" in the original supplier sheet, we treat that value as pit-to-pit (PTP) for the normalized table below. If a supplier sheet gives "Chest" as a full circumference, divide it by 2 to get PTP.
 - All normalized tables below explicitly show Pit-to-pit (PTP) values so you can use them consistently when ordering.
 
 Size codes (master): YXS = Youth X-Small; YS = Youth Small; YM = Youth Medium; YL = Youth Large; YXL = Youth X-Large; GS = Girl Small; GM = Girl Medium; GL = Girl Large; WS = Women's Small; WM = Women's Medium; WL = Women's Large; WXL = Women's X-Large; WXXL = Women's 2X-Large; AXS = Adult X-Small; AS = Adult Small; AM = Adult Medium; AL = Adult Large; AXL = Adult X-Large; AXXL = Adult 2X-Large; AXXXL = Adult 3X-Large; AXXXXL = Adult 4X-Large
@@ -111,7 +115,7 @@ XL,18/20,19 1/2,16 1/2,27
 
 Size codes: AXS = Adult X-Small, AS = Adult Small, AM = Adult Medium, AL = Adult Large, AXL = Adult X-Large, AXXL = Adult 2X-Large, AXXXL = Adult 3X-Large, AXXXXL = Adult 4X-Large
 
-Size
+Size,Pit-to-pit (in),Body Length at Back (in)
 AXS,18.5,27
 AS,20,28
 AM,21.5,29
@@ -121,7 +125,7 @@ AXXL,26,32
 AXXXL,28,32.5
 AXXXXL,30,33
 
-![ST550](SPEC_SHEET_ST350.jpg)
+ST550 (no separate supplier sheet on file; same measurements as the ST350 sheet above)
 Size,1/2 Chest,Body Length at Back
 AXS,18 1/2,27
 AS,20,28
@@ -173,7 +177,7 @@ WL,22,28.5
 WXL,23.5,29.5
 WXXL,25,30.75
 
-![4003](SPEC_SHEET_4003_baseball.jpg)
+4003 (supplier chest-size chart; no 4003 sheet image on file)
 Size,Youth/Men's Individual Chest Size
 YOUTH SMALL,24"-26"
 YOUTH MEDIUM,26"-28"
@@ -200,7 +204,15 @@ AXL,23-24
 AXXL,25-26
 AXXXL,27-28
 
+### Baseball jersey supplier sheet (model not labeled)
+
+![Baseball jerseys](SPEC_SHEET_BASEBALL_JERSEYS.jpg)
+
+This sheet (YXS–AXXL, 1/2 chest 14–28 1/2 in) doesn't name its model and its numbers don't match the 4003 chest-size chart above. Confirm with the vendor which jersey it belongs to before using it for ordering.
+
 ### Normalized hat charts (head circumference)
+
+Original supplier chart: [HAT_SIZE_CHART.pdf](HAT_SIZE_CHART.pdf).
 
 Note: hat supplier sheets list head circumference ranges. Below are normalized, decimal-inch ranges for each hat model to make comparisons consistent across vendors. The original supplier charts are preserved below for traceability.
 
@@ -485,14 +497,6 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
 - Hoodie: AS–AXXXXL (PC90H)
 - Hoodie Sizes expanded:
   - AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
-
-
-Please choose a shirt:
-Hat size:
-Shirt/Jersey size:
-Hoodie Size:
-
-Must read regarding Uniform Sizing!
 
 
 
