@@ -5,6 +5,13 @@ $ErrorActionPreference = 'Stop'
 $repo = Split-Path $PSScriptRoot -Parent
 Push-Location $repo
 try {
+    # A "*/" inside a comment (e.g. a path like "Programs/*/x") ends it early and the leftover text silently kills
+    # the next rule (it broke every rules page's headings on 2026-10-29). Refuse to deploy if any is left over.
+    $css = [IO.File]::ReadAllText((Join-Path $repo 'assets\css.css'))
+    $stray = [regex]::Matches([regex]::Replace($css, '(?s)/\*.*?\*/', ''), '\*/')
+    if ($stray.Count) { throw "assets/css.css has $($stray.Count) stray '*/' outside a comment (a comment closed early); fix it before deploying" }
+    $braces = [regex]::Replace($css, '(?s)/\*.*?\*/', '')
+    if (([regex]::Matches($braces, '\{')).Count -ne ([regex]::Matches($braces, '\}')).Count) { throw "assets/css.css has unbalanced { } braces; fix it before deploying" }
     npx --yes wrangler@4 pages deploy assets --project-name ncll-assets --branch main --commit-dirty=true 2>&1 | Select-Object -Last 2
     $local = [IO.File]::ReadAllText((Join-Path $repo 'assets\css.css'))
     for ($i = 0; $i -lt 10; $i++) {
