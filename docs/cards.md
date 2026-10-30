@@ -1,114 +1,136 @@
-# NCLL Card Component — docs/cards.md
+# NCLL cards (`ncll-card`)
 
-This document describes the new namespaced card component used for program/feature cards across the site. It explains the CSS API, example markup, migration checklist, and a short QA guide so contributors migrate safely.
+How the cards on ncllball.com are built. Every hub (baseball, softball, coaches, parents, volunteer, helping, events, safety, umpires, registration, player development, All-Stars), the assessments and Summerball pages, and the sponsors page use them. Styles live in `assets/css.css` (search `.ncll-card`); deploy with `scripts/deploy-css.ps1`. Rewritten 2026-10-29 from what the live pages actually use.
 
-## Purpose / contract
+The quickest way to build a new card is to copy a working one from the same page and change it. The newest examples are the Intermediate card in `CMS/Programs/baseball-hub.html` and the Seniors card in `CMS/Programs/softball-hub.html`.
 
-- Inputs: semantic HTML (article) with title, metadata list and optional small action icon (clipboard).
-- Output: visually consistent card with optional variants (volunteer, PD, division) and two clipboard behaviors (float in content, or pinned to corner).
--- Error modes: legacy `.program-card` styling has been extracted to `css.legacy.extracted.css` and archived. The live HTML pages in this repo have been migrated to `ncll-` classes; `css.css` was cleaned of element-level legacy selectors. Keep the extracted file as a rollback/archive while you complete visual QA.
-- Success criteria: migrated pages render identically (or improved) on desktop/tablet/mobile and do not introduce layout regressions on other pages.
+## Two kinds of card
 
-## Key classes
+| Kind | Root classes | Used for |
+| --- | --- | --- |
+| **Plain** | `ncll-card` (+ optional modifier) | One panel of content: sponsors, simple info cards |
+| **Toggle** | `ncll-card ncll-card--overlay ncll-card--toggle` (+ modifier) | Several panels with Back / Next / Start Over buttons: division cards, volunteer roles, player development |
 
-- Component root: `ncll-card` — base card styling
-- Modifiers (examples):
-  - `ncll-card--volunteer` — volunteer-specific tweaks
-  - `ncll-card--pd-landing` — player development tweaks (example)
-  - `ncll-card--compact` — tighter padding/spacing for compact layout
-- Elements:
-  - `ncll-card__title` — heading/title
-  - `ncll-card__meta` — metadata container (usually a `<ul>` of `<li>` items)
-  - `ncll-card__clipboard` — clipboard anchor (action)
-  - `ncll-card__clipboard--float` — float the clipboard inside the content so text wraps
-  - `ncll-card__clipboard--pinned` — pin the clipboard to the top-right corner of the card
-- Utilities:
-  - `u-clearfix` or `.ncll-card__meta::after` (already used) — clear floats
-  - `u-float-right` — utility for simple float behavior
+Modifiers in use: `ncll-card--division` (baseball/softball divisions), `ncll-card--volunteer` (volunteer roles), `ncll-card--pd-landing` (player development).
 
-## CSS location
+Cards sit inside `<div class="program-grid">`, which lays them out in columns.
 
-- PoC styles live in `css.css` (search for `.ncll-card`).
-- Keep design tokens in `:root` (colors, spacing, transitions).
-
-## Example markup (recommended)
-
-Article using float clipboard (text wraps):
+## Plain card
 
 ```html
-<article class="ncll-card ncll-card--volunteer" aria-labelledby="ground-gremlins">
-  <h4 class="ncll-card__title" id="ground-gremlins">Ground Gremlins</h4>
-  <ul class="ncll-card__meta">
-    <li>
-      <a class="ncll-card__clipboard ncll-card__clipboard--float" href="..." rel="noopener noreferrer">
-        <img class="ncll-card__clipboard-img" src="/images/.../clipboard.png" alt="Opt-in" />
-      </a>
-      <strong>Purpose:</strong> Rapid-response field work when weather hits
-    </li>
-    <li>...other items...</li>
-  </ul>
+<article class="ncll-card" aria-labelledby="sp-bongos-title">
+	<div class="ncll-card__body">
+		<div class="ncll-card__details">
+			<img class="ncll-card__graphic" src="https://ncllball.github.io/images/..." alt="..." />
+			<h3 class="ncll-card__title" id="sp-bongos-title">Bongos</h3>
+			<p class="ncll-card__blurb">One or two sentences.</p>
+		</div>
+	</div>
 </article>
 ```
 
-Article using pinned clipboard (corner):
+## Toggle card (division card)
+
+The panels switch with hidden radio buttons. No JavaScript, so it works inside the CMS.
 
 ```html
-<article class="ncll-card ncll-card--volunteer">
-  <h4 class="ncll-card__title">Some title</h4>
-  <a class="ncll-card__clipboard ncll-card__clipboard--pinned" href="...">
-    <img class="ncll-card__clipboard-img" src="/images/.../clipboard.png" alt="Opt-in" />
-  </a>
-  <ul class="ncll-card__meta">
-    <li>...</li>
-  </ul>
+<article id="uniforms-baseball-intermediate-toggle" class="ncll-card ncll-card--division ncll-card--overlay ncll-card--toggle" aria-labelledby="uniforms-baseball-intermediate-h3">
+	<!-- 1. One radio per panel, all the same name. IDs end in -intro, -0, -1, -2 ... -->
+	<input type="radio" name="uniforms-baseball-intermediate" id="uniforms-baseball-intermediate-intro" checked />
+	<input type="radio" name="uniforms-baseball-intermediate" id="uniforms-baseball-intermediate-0" />
+	<input type="radio" name="uniforms-baseball-intermediate" id="uniforms-baseball-intermediate-1" />
+
+	<!-- 2. Sticky heading: sport icon, title, rules book (division cards), sport icon -->
+	<div class="ncll-card__sticky-heading" aria-hidden="true">
+		<div class="ncll-card__heading-title">
+			<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+			<h3 class="ncll-card__title" id="uniforms-baseball-intermediate-h3"><span class="text-background">Intermediate (50/70)</span></h3>
+			<a class="rules-icon-btn rules-icon-btn--plain" href="https://www.ncllball.com/Default.aspx?tabid=..." target="_blank" rel="noopener" aria-label="Intermediate (50/70) rules of play" title="Rules of Play"><img src="https://ncllball.github.io/images/rules/rules-book-plain-baseball-intermediate.png" alt="" /></a>
+			<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+		</div>
+	</div>
+
+	<!-- 3. Intro panel: blurb, picture, key facts -->
+	<div class="ncll-card__body panel panel-intro">
+		<div class="ncll-card__details">
+			<p class="ncll-card__blurb">One sentence about the division.</p>
+			<div class="ncll-card__graphics">
+				<img class="ncll-card__graphic ncll-card__graphic--small" src="https://ncllball.github.io/images/bb_cards/int.png" alt="..." />
+			</div>
+			<ul class="ncll-card__meta">
+				<li><strong>League ages:</strong> 11-13</li>
+				<li><strong>Schedule:</strong> ...</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 4. Numbered panels: panel0, panel1 ... -->
+	<div class="ncll-card__body panel panel0">
+		<div class="ncll-card__details">
+			<h4 class="left">Panel heading</h4>
+			<p>...</p>
+		</div>
+	</div>
+	<div class="ncll-card__body panel panel1">
+		<div class="ncll-card__details">
+			<h4 class="left">Last panel</h4>
+			<p>...</p>
+			<div class="ncll-card__cta">
+				<a class="button button--primary" href="https://www.ncllball.com/Default.aspx?tabid=2112172">Register</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 5. Footer buttons: a Back and a Next label per panel; CSS shows only the pair for the open panel -->
+	<div class="ncll-card__sticky-footer">
+		<div class="actions" role="group" aria-label="Intermediate (50/70) card controls (footer)">
+			<label class="button button--secondary btn-prev btn-prev-start" for="uniforms-baseball-intermediate-1">Back</label>
+			<label class="button button--primary btn-next btn-next-intro" for="uniforms-baseball-intermediate-0">Next</label>
+			<label class="button button--secondary btn-prev btn-prev-0" for="uniforms-baseball-intermediate-intro">Back</label>
+			<label class="button button--primary btn-next btn-next-0" for="uniforms-baseball-intermediate-1">Next</label>
+			<label class="button button--secondary btn-prev btn-prev-1" for="uniforms-baseball-intermediate-0">Back</label>
+			<label class="button button--primary btn-next btn-next-1" for="uniforms-baseball-intermediate-intro">Start Over</label>
+		</div>
+	</div>
 </article>
 ```
 
-Notes:
+### Wiring rules for toggle cards
 
-- When pinning the clipboard use `position: relative` on the `.ncll-card` (CSS already sets this).
-- When floating, ensure the meta container clears floats (either `.ncll-card__meta::after` or `u-clearfix`).
+- **Radio IDs must end in `-intro`, `-0`, `-1` …** The CSS matches on the ending (`[id$="-0"]`), so the prefix can be anything unique on the page.
+- **Panel classes match the radio:** `-intro` → `panel-intro`, `-0` → `panel0`, `-1` → `panel1`.
+- **Up to 14 numbered panels** (`panel0`–`panel13`). Past that, the CSS needs new lines.
+- **Buttons per panel:** `btn-next-N` goes to the next panel; `btn-prev-N` goes back one. On the intro, `btn-prev-start` goes to the **last** panel. On the last panel, `btn-next-N` says "Start Over" and points at `-intro`.
+- **Radios first.** The radios have to come before the panels and the footer inside the `<article>`, because the CSS uses the `~` (later sibling) selector.
+- **Add or remove a panel:** add or remove its radio, its `panelN` div and its two footer labels, then re-point the last panel's "Start Over" and the intro's `btn-prev-start`.
 
-## Migration checklist (safe, incremental)
+## Parts
 
-1. Review `css.legacy.extracted.css` and `tmp-legacy-selector-report.json` to see any remaining legacy selectors that live outside page HTML (reports and archives may still reference them).
-2. Add namespaced classes to any new pages. The repo's existing landing pages were migrated to `ncll-` classes during the last cleanup; you no longer need to keep `.program-card` in migrated files.
-3. Add element classes where relevant (`ncll-card__meta`, `ncll-card__clipboard--float`).
-4. Verify on desktop/tablet/mobile. Adjust `ncll-card__clipboard-img` width (56px default) and `margin-left` if needed.
-5. If the page needs a visual variant, add a modifier (e.g., `ncll-card--compact` or `ncll-card--pd-landing`) and define the tweaks in CSS.
-6. Repeat per page. As pages are migrated and tested, remove legacy selectors from `css.css` in a single cleanup commit (backup before removal). Removed legacy blocks are written to `css.legacy.extracted.css` and the original `css.css` is backed up as `css.css.pre-legacy-removed.bak` for review.
+| Class | What it is |
+| --- | --- |
+| `ncll-card__body` | One panel (plain cards have one; toggle cards add `panel panel-intro` / `panel panelN`) |
+| `ncll-card__details` | Inner wrapper for a panel's content |
+| `ncll-card__sticky-heading` › `ncll-card__heading-title` | Toggle card header that stays put while panels change |
+| `ncll-card__title` | The card's `h3` (wrap text in `span.text-background` on toggle cards) |
+| `ncll-card__sport-icon` | Baseball/softball icon on each side of the title |
+| `rules-icon-btn rules-icon-btn--plain` | Rules book in a division card's header; opens that division's rules page in a new tab |
+| `ncll-card__blurb` (`--sm` smaller) | Short intro paragraph |
+| `ncll-card__meta` | Key-facts list (`<li><strong>Label:</strong> value</li>`); `ncll-card__meta-note` for a small note under it |
+| `ncll-card__graphics` › `ncll-card__graphic` | Picture area. To make images open large, add `lightbox-scope` plus the lightbox markup (copy it from `CMS/Programs/all-stars/allstars-history.html`). `ncll-card__graphics--logos` for a row of logos |
+| `ncll-card__graphic--smallest/small/medium/large` | Image width 50 / 80 / 95 / 110 px (more sizes and one-offs like `--glove`, `--bat` exist; check the CSS) |
+| `ncll-card__caption` | Caption under a picture |
+| `ncll-card__note` | Small print at the bottom of a panel |
+| `ncll-card__cta` | Button row (Register, Sign up) |
+| `ncll-card__sticky-footer` › `.actions` | Toggle card Back / Next buttons |
 
-## QA checklist (per page)
+## Conventions
 
-- [ ] Desktop layout: card spacing, title alignment, clipboard position.
-- [ ] Tablet layout: grid collapse, readable text wrapping.
-- [ ] Mobile layout: single-column stack, icon size reasonable (suggest 40–56px max).
-- [ ] Accessibility: ensure that clipboard link has discernible text or alt attributes, color contrast for card background/border is sufficient.
-- [ ] Keyboard: clipboard link focusable and visible on focus.
+- `class` is the first attribute on every element, and the `<article>` has `aria-labelledby` pointing at the title's `id`.
+- Image URLs are absolute (`https://ncllball.github.io/images/...`).
+- Card text follows the site voice: short sentences, facts in the meta list, one idea per panel.
+- Division cards: the rules book goes between the title and the second sport icon, and every division has its own rules-book image in `images/rules/`.
+- Don't put a `<style>` block in a page to restyle one card. Add a modifier in `assets/css.css` and deploy.
 
-## Common pitfalls & tips
+## Leftovers
 
-- Conflicting selectors: `clipboard-img` exists globally; prefer `.ncll-card__clipboard-img` to override sizing inside migrated cards.
-- Flexbox `justify-content: space-between` will create uneven vertical gaps across cards of different heights — use `flex-start` for top-aligned stacking.
-- If you want non-rectangular text flow around an icon set `shape-outside: circle(50%);` and ensure the image has transparent space to allow hugging text.
-
-## Rollback plan
-
--- Rollback: changes were applied conservatively and a `css.legacy.extracted.css` archive and `css.css.pre-legacy-removed.bak` backup were created. If you need to revert any migration, restore the original files from the backups or via git.
-
-- Keep `css.backup.css` around until the migration is fully validated.
-
-## Next steps
-
-- Confirm visual QA for migrated pages (screenshots saved to `screenshots/`).
-- Review `css.legacy.extracted.css` and compare with the backup `css.css.pre-legacy-removed.bak` before consolidating or deleting legacy rules.
-- When ready, remove legacy selector blocks from the extracted file (or keep it as an archive) and ensure `node scripts/check-legacy.js` reports only archived files as the remaining occurrences before final deletion.
-
-Completed notes (migration status):
-
-- Pages migrated in this batch: `Programs/baseball.html`, `Programs/softball.html`, `Programs/playerdev.html`.
-- Legacy CSS extracted to `css.legacy.extracted.css`; original `css.css` backed up to `css.css.pre-legacy-removed.bak`.
-
-After completing visual QA and any JS updates, perform the final cleanup commit to remove legacy selectors from the repo.
-
----
+`ncll-card__clipboard` (`--float`, `--pinned`, `-img`) was the original opt-in clipboard icon from the 2025 rollout. Only `CMS/Get-Involved/join-our-friends-lists.html` still uses it; don't use it on new cards.
