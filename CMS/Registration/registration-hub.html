@@ -1,7 +1,10 @@
 <!doctype html>
 <!--
   FILE:      CMS/Registration/registration-hub.html
-  PURPOSE:   Registration fees, financial aid, eligibility, key dates, fee distribution — card layout
+  PURPOSE:   Registration Hub — fees, eligibility, team formation, key dates, where fees go, financial aid, policies — card layout
+  MENU:      Registration › Registration Hub (renamed from "fees and financial aid" 2026-10-30). The menu is
+             the 2027 Registration guide (tabid 2244720) plus this hub. Team Formation (2112136) and league
+             boundaries (2114768) are hidden from the menu but stay up for old links; cards link to them.
   CMS:       tabid=2114737  |  mid=2197710  |  paste ENTIRE FILE into RadEditor
   REPLACES:  registration-coverage.html (mid=2197710) + registration-fees-right.html (mid=2199356)
              + registration-finaid-right.html (mid=2199357)
@@ -16,24 +19,24 @@
   - All estimated dates in the four key dates tables (card 3, panels 0–3)
   - Pie chart percentages, amounts, and aria-label → new budget summary (card 4, panel 0)
   - Cost legend dollar amounts → new budget summary (card 4, panel 0)
-  - "Based on NCLL YYYY budget summary" footnote (card 4, panel 0)
+  - "Based on NCLL's YYYY spending" footnote (card 4, panel 0)
   - Venmo QR image if updated (card 6)
 -->
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="North Central Little League 2027 registration fees for baseball and softball, including financial aid, key season dates, and how fees are distributed." />
-	<title>2027 Registration Fees | NCLL</title>
+	<meta name="description"content="North Central Little League Registration Hub: 2027 fees, eligibility and boundaries, how teams are formed, key dates, where fees go, financial aid and policies." />
+<title>Registration Hub | North Central Little League</title>
 	<link href="https://assets.ncllball.com/css.css" rel="stylesheet" type="text/css" />
 	<link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
 	<link href="https://www.ncllball.com/Default.aspx?tabid=2114737" rel="canonical" />
 	<meta property="og:url" content="https://www.ncllball.com/Default.aspx?tabid=2114737" />
 </head>
 <body>
-	<main class="registration-fees" id="content" role="main">
+	<main class="registration-hub" id="content" role="main">
 
-		<h1 class="h1-seo sr-only left">Registration Fees</h1>
+		<h1 class="h1-seo sr-only left">Registration Hub</h1>
 		<section class="intro-section">
 			<aside
 				class="hub-intro__aside hub-intro__aside--accent related-links related-links--grouped"
@@ -45,14 +48,15 @@
 					<div class="related-links__group">
 						<span class="related-links__group-title">Pages</span>
 						<ul class="hub-aside__list related-links">
-							<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2244720" rel="noopener">Registration</a></li>
-							<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2114768" rel="noopener">Eligibility</a></li>
-							<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2112136" rel="noopener">Team Formation</a></li>
+							<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2244720" rel="noopener">2027 Registration Guide</a></li>
+							<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2111979" rel="noopener">Baseball Hub</a></li>
+							<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2111980" rel="noopener">Softball Hub</a></li>
+							<li><a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2113971" rel="noopener">Uniforms Hub</a></li>
 						</ul>
 					</div>
 				</div>
 			</aside>
-			<p>Registration fees, financial aid, key season dates, and how your fees are used &mdash; all in one place.</p>
+			<p>Everything behind registration in one place: fees, who can play, how teams are formed, key dates, where your fees go, financial aid and our policies. Ready to sign up? Start with the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2244720">2027 Registration Guide</a>.</p>
 		</section>
 
 		<h2 class="left">Registration Information</h2>
@@ -60,7 +64,7 @@
 		<div class="program-grid">
 
 			<!-- Card 1: 2027 Registration Fees -->
-			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="reg-fees-title">
+			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="fees" aria-labelledby="reg-fees-title">
 				<input type="radio" name="reg-fees" id="reg-fees-intro" checked />
 				<input type="radio" name="reg-fees" id="reg-fees-0" />
 				<input type="radio" name="reg-fees" id="reg-fees-1" />
@@ -146,7 +150,7 @@
 					</div>
 				</div>
 				<div class="ncll-card__sticky-footer">
-					<div class="actions" role="group" aria-label="2026 Registration Fees card controls">
+					<div class="actions" role="group" aria-label="2027 Registration Fees card controls">
 						<label class="button button--secondary btn-prev btn-prev-start" for="reg-fees-2">Back</label>
 						<label class="button button--primary btn-next btn-next-intro" for="reg-fees-0">Next</label>
 						<label class="button button--secondary btn-prev btn-prev-0" for="reg-fees-intro">Back</label>
@@ -160,7 +164,7 @@
 			</article>
 
 			<!-- Card 2: Eligibility / League Boundaries -->
-			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="reg-elig-title">
+			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="eligibility" aria-labelledby="reg-elig-title">
 				<input type="radio" name="reg-elig" id="reg-elig-intro" checked />
 				<input type="radio" name="reg-elig" id="reg-elig-0" />
 				<input type="radio" name="reg-elig" id="reg-elig-1" />
@@ -168,7 +172,7 @@
 				<div class="ncll-card__sticky-heading">
 					<div class="ncll-card__heading-title">
 						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
-						<h3 class="ncll-card__title" id="reg-elig-title"><span class="text-background">Eligibility / League Boundaries</span></h3>
+						<h3 class="ncll-card__title" id="reg-elig-title"><span class="text-background">Eligibility &amp; Boundaries</span></h3>
 						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
 					</div>
 				</div>
@@ -231,7 +235,8 @@
 					<div class="ncll-card__details">
 						<h4 class="left">Questions?</h4>
 						<p class="ncll-card__blurb">Not sure which league covers your address? Use the <a class="ncll" href="https://www.littleleague.org/play-little-league/league-finder/" target="_blank" rel="noopener">Little League League Finder</a>.</p>
-						<p class="ncll-card__blurb">Your school missing from the list? Choose &ldquo;Other&rdquo; during registration and type the school name.</p>
+							<p class="ncll-card__blurb">Your school missing from the list? Choose &ldquo;Other&rdquo; during registration and type the school name.</p>
+							<p class="ncll-card__blurb">Registration asks for proof of eligibility, but NCLL doesn&rsquo;t require it; we only ask for paperwork if your player makes All-Stars. School addresses and the full map are on the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2114768">League Boundaries</a> page.</p>
 						<div class="ncll-card__cta">
 							<a class="button button--secondary" href="mailto:registrar@ncllball.com">Email the Registrar</a>
 						</div>
@@ -251,8 +256,93 @@
 				</div>
 			</article>
 
+			<!-- Card: Team Formation (absorbs the Team Formation page, 2026-10-30) -->
+			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="team-formation" aria-labelledby="reg-teams-title">
+				<input type="radio" name="reg-teams" id="reg-teams-intro" checked />
+				<input type="radio" name="reg-teams" id="reg-teams-0" />
+				<input type="radio" name="reg-teams" id="reg-teams-1" />
+				<input type="radio" name="reg-teams" id="reg-teams-2" />
+				<input type="radio" name="reg-teams" id="reg-teams-3" />
+				<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__heading-title">
+						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+						<h3 class="ncll-card__title" id="reg-teams-title"><span class="text-background">Team Formation</span></h3>
+						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel-intro">
+					<div class="ncll-card__details">
+						<p class="ncll-card__blurb">AAA and Majors teams are formed by a draft, using scores from February assessments, so every team in a division is evenly matched.</p>
+						<ul class="ncll-card__meta">
+							<li><strong>Assessments:</strong> AAA, Majors and Juniors (baseball and softball)</li>
+							<li><strong>Draft:</strong> AAA and Majors</li>
+							<li><strong>Teams set:</strong> by late February</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel0">
+					<div class="ncll-card__details">
+						<h4 class="left">Assessments</h4>
+						<ul class="ncll-card__meta">
+							<li>Required for every AAA, Majors and Juniors player, in baseball and softball, whatever division they played last year.</li>
+							<li>Not tryouts: every player is placed on a team. Scores are for skill evaluation and competitive balance.</li>
+							<li>The Player Agent runs them; families get dates, times and places by email.</li>
+						</ul>
+						<div class="ncll-card__cta">
+							<a class="button button--secondary" href="https://www.ncllball.com/Default.aspx?tabid=2112173">About Assessments</a>
+						</div>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel1">
+					<div class="ncll-card__details">
+						<h4 class="left">Why we draft</h4>
+						<p class="ncll-card__blurb">Majors has always drafted. In 2024 the Board moved AAA to a draft too, as it was before COVID and as every nearby league does.</p>
+						<ul class="ncll-card__meta">
+							<li><strong>Competitive balance:</strong> talent is spread evenly, so games are closer.</li>
+							<li><strong>Different experiences:</strong> players learn from different coaching styles.</li>
+							<li><strong>Community:</strong> kids meet families beyond their school and neighborhood.</li>
+							<li><strong>Transparency:</strong> coaches and parents can see a fair process.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel2">
+					<div class="ncll-card__details">
+						<h4 class="left">Draft day</h4>
+						<ul class="ncll-card__meta">
+							<li>Coaches get each player&rsquo;s assessment scores and a 1&ndash;5 rating.</li>
+							<li>A coach&rsquo;s own child is placed in the round that matches their rating.</li>
+							<li>A short trade window afterwards is for roster fit (schoolmates, carpools), within the same rating band; not for talent.</li>
+							<li><strong>Playing up:</strong> requests to play in a higher division are reviewed for safety, coach feedback and division balance.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel3">
+					<div class="ncll-card__details">
+						<h4 class="left">After the draft</h4>
+						<p class="ncll-card__blurb">Teams are finalized by late February, then matchups and schedules are built. Everyone hears the results at the same time, so please keep draft details to yourselves until then.</p>
+						<div class="ncll-card__cta">
+							<a class="button button--secondary" href="https://www.ncllball.com/Default.aspx?tabid=2112136">The full draft story</a>
+						</div>
+					</div>
+				</div>
+				<div class="ncll-card__sticky-footer">
+					<div class="actions" role="group" aria-label="Team Formation card controls">
+						<label class="button button--secondary btn-prev btn-prev-start" for="reg-teams-3">Back</label>
+						<label class="button button--primary btn-next btn-next-intro" for="reg-teams-0">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-0" for="reg-teams-intro">Back</label>
+						<label class="button button--primary btn-next btn-next-0" for="reg-teams-1">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-1" for="reg-teams-0">Back</label>
+						<label class="button button--primary btn-next btn-next-1" for="reg-teams-2">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-2" for="reg-teams-1">Back</label>
+						<label class="button button--primary btn-next btn-next-2" for="reg-teams-3">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-3" for="reg-teams-2">Back</label>
+						<label class="button button--primary btn-next btn-next-3" for="reg-teams-intro">Start Over</label>
+					</div>
+				</div>
+			</article>
+
 			<!-- Card 3: Key Dates for Team Formation -->
-			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="reg-dates-title">
+			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="key-dates" aria-labelledby="reg-dates-title">
 				<input type="radio" name="reg-dates" id="reg-dates-intro" checked />
 				<input type="radio" name="reg-dates" id="reg-dates-0" />
 				<input type="radio" name="reg-dates" id="reg-dates-1" />
@@ -261,7 +351,7 @@
 				<div class="ncll-card__sticky-heading">
 					<div class="ncll-card__heading-title">
 						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
-						<h3 class="ncll-card__title" id="reg-dates-title"><span class="text-background">Key Dates for Team Formation</span></h3>
+						<h3 class="ncll-card__title" id="reg-dates-title"><span class="text-background">Key Dates</span></h3>
 						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
 					</div>
 				</div>
@@ -366,7 +456,7 @@
 			</article>
 
 			<!-- Card 4: Where Fees Go -->
-			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="reg-where-title">
+			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="where-fees-go" aria-labelledby="reg-where-title">
 				<input type="radio" name="reg-where" id="reg-where-intro" checked />
 				<input type="radio" name="reg-where" id="reg-where-0" />
 				<input type="radio" name="reg-where" id="reg-where-1" />
@@ -392,23 +482,22 @@
 						<div class="cost-chart-wrapper">
 							<div class="cost-chart" style="--pie-size: 180px; --chart-rotate: 0deg;">
 								<div class="cost-pie" role="img"
-									aria-label="Fields 24.92%; Unis 28.59%; Equipment 8.98%; Umpire 2.62%; Fall and Winter Development 2.33%; Coach and Player Development 4.28%; All&#8209;Stars Uniforms 11.62%; Summerball 1.83%; Overhead 14.84%"
-									style="background: conic-gradient(from var(--chart-rotate), #1d3d7a 0% 24.92%, #cc0000 24.92% 53.51%, #777777 53.51% 62.49%, #e23d3d 62.49% 65.11%, #0e7c86 65.11% 67.44%, #990000 67.44% 71.72%, #f4a261 71.72% 83.34%, #444444 83.34% 85.17%, gainsboro 85.17% 100%);">
+									aria-label="Fields 32.63%; Uniforms 25.40%; Overhead 12.19%; All&#8209;Stars 12.12%; Coach and Player Development 8.29%; Equipment 6.00%; Umpires 1.87%; Summerball 1.50%"
+									style="background: conic-gradient(from var(--chart-rotate), #1d3d7a 0% 32.63%, #cc0000 32.63% 58.03%, gainsboro 58.03% 70.22%, #f4a261 70.22% 82.34%, #990000 82.34% 90.63%, #777777 90.63% 96.63%, #e23d3d 96.63% 98.5%, #444444 98.5% 100%);">
 								</div>
 							</div>
 							<ul class="cost-legend" aria-label="Fee distribution legend">
-								<li><span class="swatch" style="background:#1d3d7a"></span>Fields &mdash; $46,884 (24.92%)</li>
-								<li><span class="swatch" style="background:#cc0000"></span>Unis &mdash; $53,818 (28.59%)</li>
-								<li><span class="swatch" style="background:#777777"></span>Equipment &mdash; $16,907 (8.98%)</li>
-								<li><span class="swatch" style="background:#e23d3d"></span>Umpire &mdash; $4,939 (2.62%)</li>
-								<li><span class="swatch" style="background:#0e7c86"></span>Fall/Winter Dev &mdash; $4,384 (2.33%)</li>
-								<li><span class="swatch" style="background:#990000"></span>Coach/Player Dev &mdash; $8,055 (4.28%)</li>
-								<li><span class="swatch" style="background:#f4a261"></span>All&#8209;Stars Unis &mdash; $21,866 (11.62%)</li>
-								<li><span class="swatch" style="background:#444444"></span>Summerball &mdash; $3,449 (1.83%)</li>
-								<li><span class="swatch" style="background:gainsboro"></span>Overhead &mdash; $27,925 (14.84%)</li>
+								<li><span class="swatch" style="background:#1d3d7a"></span>Fields &mdash; $85,519 (32.63%)</li>
+								<li><span class="swatch" style="background:#cc0000"></span>Uniforms &mdash; $66,563 (25.40%)</li>
+								<li><span class="swatch" style="background:gainsboro"></span>Overhead &mdash; $31,937 (12.19%)</li>
+								<li><span class="swatch" style="background:#f4a261"></span>All&#8209;Stars &mdash; $31,768 (12.12%)</li>
+								<li><span class="swatch" style="background:#990000"></span>Coach/Player Dev &mdash; $21,727 (8.29%)</li>
+								<li><span class="swatch" style="background:#777777"></span>Equipment &mdash; $15,727 (6.00%)</li>
+								<li><span class="swatch" style="background:#e23d3d"></span>Umpires &mdash; $4,901 (1.87%)</li>
+								<li><span class="swatch" style="background:#444444"></span>Summerball &mdash; $3,944 (1.50%)</li>
 							</ul>
 						</div>
-						<p class="ncll-card__note">Based on NCLL 2025 budget summary.</p>
+						<p class="ncll-card__note">Based on NCLL&rsquo;s 2026 spending ($262,086), from the Treasurer.</p>
 					</div>
 				</div>
 				<div class="ncll-card__body panel panel1">
@@ -419,10 +508,9 @@
 							<li><strong>Uniforms:</strong> jerseys, hats/caps, socks (AAA+ also receive hoodies).</li>
 							<li><strong>Equipment:</strong> shared gear &mdash; catcher&rsquo;s equipment, helmets, bats, tees, practice balls, first&#8209;aid kits.</li>
 							<li><strong>Umpires:</strong> training and per&#8209;game fees where applicable.</li>
-							<li><strong>Fall/Winter development:</strong> off-season clinics and skills sessions.</li>
 							<li><strong>Coach/Player development:</strong> clinics, assessments, scheduling tools, and in-season development.</li>
-							<li><strong>All&#8209;Stars uniforms:</strong> tournament uniform costs.</li>
-							<li><strong>Summerball:</strong> support for off&#8209;season programming.</li>
+							<li><strong>All&#8209;Stars:</strong> tournament uniforms, coach and player development, and tournament fees.</li>
+							<li><strong>Summerball:</strong> uniforms for summer programming.</li>
 							<li><strong>Operations &amp; overhead:</strong> registration systems, communications, and administration.</li>
 						</ul>
 					</div>
@@ -440,7 +528,7 @@
 			</article>
 
 			<!-- Card 5: Financial Aid -->
-			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="reg-finaid-title">
+			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="financial-aid" aria-labelledby="reg-finaid-title">
 				<input type="radio" name="reg-finaid" id="reg-finaid-intro" checked />
 				<input type="radio" name="reg-finaid" id="reg-finaid-0" />
 				<input type="radio" name="reg-finaid" id="reg-finaid-1" />
@@ -496,8 +584,61 @@
 				</div>
 			</article>
 
+			<!-- Card: Policies (summary of the hidden Registration Policies page, tabid 2114735) -->
+			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="policies" aria-labelledby="reg-policy-title">
+				<input type="radio" name="reg-policy" id="reg-policy-intro" checked />
+				<input type="radio" name="reg-policy" id="reg-policy-0" />
+				<input type="radio" name="reg-policy" id="reg-policy-1" />
+				<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__heading-title">
+						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+						<h3 class="ncll-card__title" id="reg-policy-title"><span class="text-background">Policies</span></h3>
+						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel-intro">
+					<div class="ncll-card__details">
+						<p class="ncll-card__blurb">Our refund and privacy policies in short. The full text is on the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2114735">Registration Policies</a> page.</p>
+						<ul class="ncll-card__meta">
+							<li>Refunds</li>
+							<li>Privacy</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel0">
+					<div class="ncll-card__details">
+						<h4 class="left">Refunds</h4>
+						<ul class="ncll-card__meta">
+							<li>No refunds once a player has taken part in a sanctioned game or practice.</li>
+							<li>Before that, the fee is refunded less an administrative fee (equal to the late fee).</li>
+							<li>Families found to live outside the boundary are refunded less $10, unless their own league has no program for them.</li>
+							<li>If Intermediate (50/70) doesn&rsquo;t come together, players can move to Juniors or get a refund.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel1">
+					<div class="ncll-card__details">
+						<h4 class="left">Privacy</h4>
+						<p class="ncll-card__blurb">We only use your information to run registration and the season. It is never sold or shared outside NCLL, and card numbers are never stored on our systems.</p>
+						<div class="ncll-card__cta">
+							<a class="button button--secondary" href="mailto:registrar@ncllball.com?subject=Registration%20Policy%20Question">Ask the Registrar</a>
+						</div>
+					</div>
+				</div>
+				<div class="ncll-card__sticky-footer">
+					<div class="actions" role="group" aria-label="Policies card controls">
+						<label class="button button--secondary btn-prev btn-prev-start" for="reg-policy-1">Back</label>
+						<label class="button button--primary btn-next btn-next-intro" for="reg-policy-0">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-0" for="reg-policy-intro">Back</label>
+						<label class="button button--primary btn-next btn-next-0" for="reg-policy-1">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-1" for="reg-policy-0">Back</label>
+						<label class="button button--primary btn-next btn-next-1" for="reg-policy-intro">Start Over</label>
+					</div>
+				</div>
+			</article>
+
 			<!-- Card 6: Support NCLL! (Venmo) -->
-			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" aria-labelledby="reg-venmo-title">
+			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="support" aria-labelledby="reg-venmo-title">
 				<input type="radio" name="reg-venmo" id="reg-venmo-intro" checked />
 				<input type="radio" name="reg-venmo" id="reg-venmo-0" />
 				<div class="ncll-card__sticky-heading" aria-hidden="true">
@@ -540,7 +681,7 @@
 
 		</div>
 
-		<p class="cms-rev"><small>[r6 · 2026-10-30 · 2114737]</small></p>
+		<p class="cms-rev"><small>[r8 · 2026-10-30 · 2114737]</small></p>
 	</main>
 </body>
 </html>
