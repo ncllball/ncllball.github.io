@@ -12,15 +12,15 @@
   NOTE:      Old modules mid=2199356 and mid=2199357 deleted from DNN admin 2026-06-18
 
   WHAT TO UPDATE EACH YEAR:
-  - Fee amounts in both tables (card 1, panels 0–1)
-  - Footnote "Updated for YYYY" line (card 1, panel 2)
-  - Financial Aid form link if URL changes (card 5)
-  - Scholarship inquiry email subject year (card 5)
-  - All estimated dates in the four key dates tables (card 3, panels 0–3)
-  - Pie chart percentages, amounts, and aria-label → new budget summary (card 4, panel 0)
-  - Cost legend dollar amounts → new budget summary (card 4, panel 0)
-  - "Based on NCLL's YYYY spending" footnote (card 4, panel 0)
-  - Venmo QR image if updated (card 6)
+  - Fee amounts in both tables (Fees card, panels 0–1)
+  - Footnote "Updated for YYYY" line (Fees card, panel 2)
+  - Financial Aid form link if URL changes (Financial Aid card)
+  - Scholarship inquiry email subject year (Financial Aid card)
+  - All estimated dates in the four key dates tables (Key Dates card, panels 0–3)
+  - Pie chart percentages, amounts, and aria-label → new budget summary (Where Fees Go card, panel 0)
+  - Cost legend dollar amounts → new budget summary (Where Fees Go card, panel 0)
+  - "Based on NCLL's YYYY spending" footnote (Where Fees Go card, panel 0)
+  - Venmo QR image if updated (Support card)
 -->
 <html lang="en">
 <head>
@@ -63,7 +63,100 @@
 
 		<div class="program-grid">
 
-			<!-- Card 1: 2027 Registration Fees -->
+			<!-- Card: Eligibility / League Boundaries -->
+			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="eligibility" aria-labelledby="reg-elig-title">
+				<input type="radio" name="reg-elig" id="reg-elig-intro" checked />
+				<input type="radio" name="reg-elig" id="reg-elig-0" />
+				<input type="radio" name="reg-elig" id="reg-elig-1" />
+				<input type="radio" name="reg-elig" id="reg-elig-2" />
+				<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__heading-title">
+						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+						<h3 class="ncll-card__title" id="reg-elig-title"><span class="text-background">Eligibility &amp; Boundaries</span></h3>
+						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel-intro">
+					<div class="ncll-card__details">
+						<p class="ncll-card__blurb">Players qualify for NCLL through one of two paths &mdash; only one is required.</p>
+						<ul class="ncll-card__meta">
+							<li><strong>Residency</strong> &mdash; live inside the NCLL boundary</li>
+							<li><strong>School enrollment</strong> &mdash; attend a school inside the boundary</li>
+						</ul>
+						<p class="ncll-card__blurb">NCLL serves Wallingford, Green Lake, Fremont, Phinney Ridge, Greenwood, and Ballard.</p>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel0">
+					<div class="ncll-card__details">
+						<h4 class="left">Residency</h4>
+						<p class="ncll-card__blurb">Players who live inside the official NCLL boundary are eligible. Use the Little League International <a class="ncll" href="https://www.littleleague.org/play-little-league/league-finder/" target="_blank" rel="noopener">League Finder Tool</a> to confirm your home league.</p>
+						<figure class="map-figure lightbox-scope">
+							<input class="lightbox-toggle" type="checkbox" id="lightbox-elig-map-card" />
+							<label class="lightbox-thumb" for="lightbox-elig-map-card">
+								<img src="https://ncllball.github.io/images/site_content/elig_map.png" alt="North Central Little League boundary map" loading="lazy" width="260" height="220" />
+							</label>
+							<label class="lightbox" for="lightbox-elig-map-card" role="dialog" aria-modal="true" aria-label="Enlarged boundary map" tabindex="0">
+								<span class="sr-only">Close image</span>
+								<span class="close-btn" aria-hidden="true">x</span>
+								<img src="https://ncllball.github.io/images/site_content/elig_map.png" alt="North Central Little League boundary map full" />
+							</label>
+						</figure>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel1">
+					<div class="ncll-card__details">
+						<h4 class="left">School Enrollment</h4>
+						<p class="ncll-card__blurb">Players enrolled at schools inside the NCLL boundary qualify even if they live outside it. Preschools do not affect eligibility.</p>
+						<div class="table-scroll" role="region" aria-label="Eligible schools">
+							<table class="age-matrix age-matrix--reg age-matrix--eligibility">
+								<thead>
+									<tr><th>School</th><th>Grades</th></tr>
+								</thead>
+								<tbody>
+									<tr><td><a class="ncll" href="https://bfdayes.seattleschools.org/" target="_blank" rel="noopener">BF Day Elementary</a></td><td>K&ndash;5</td></tr>
+									<tr><td><a class="ncll" href="https://www.bishopblanchet.org/" target="_blank" rel="noopener">Bishop Blanchet High School</a></td><td>9&ndash;12</td></tr>
+									<tr><td><a class="ncll" href="https://bagleyes.seattleschools.org/" target="_blank" rel="noopener">Daniel Bagley Elementary</a></td><td>K&ndash;5</td></tr>
+									<tr><td><a class="ncll" href="https://greenwoodes.seattleschools.org/" target="_blank" rel="noopener">Greenwood Elementary</a></td><td>K&ndash;5</td></tr>
+									<tr><td><a class="ncll" href="https://hamiltonms.seattleschools.org/" target="_blank" rel="noopener">Hamilton International Middle</a></td><td>6&ndash;8</td></tr>
+									<tr><td><a class="ncll" href="https://jsiselementary.seattleschools.org/" target="_blank" rel="noopener">John Stanford International</a></td><td>K&ndash;5</td></tr>
+									<tr><td><a class="ncll" href="https://lincolnhs.seattleschools.org/" target="_blank" rel="noopener">Lincoln High School</a></td><td>9&ndash;12</td></tr>
+									<tr><td><a class="ncll" href="https://mcdonaldinternationales.seattleschools.org/" target="_blank" rel="noopener">McDonald International Elementary</a></td><td>K&ndash;5</td></tr>
+									<tr><td><a class="ncll" href="https://www.meridianschool.edu/" target="_blank" rel="noopener">The Meridian School</a></td><td>K&ndash;5</td></tr>
+									<tr><td><a class="ncll" href="https://www.pacificcrest.org/" target="_blank" rel="noopener">Pacific Crest School</a></td><td>K&ndash;8</td></tr>
+									<tr><td><a class="ncll" href="https://www.stbens.net/" target="_blank" rel="noopener">St. Benedict School</a></td><td>K&ndash;8</td></tr>
+									<tr><td><a class="ncll" href="https://st-johnschool.org/" target="_blank" rel="noopener">St. John School</a></td><td>PreK&ndash;8</td></tr>
+									<tr><td><a class="ncll" href="https://westwoodlandes.seattleschools.org/" target="_blank" rel="noopener">West Woodland Elementary</a></td><td>K&ndash;5</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel2">
+					<div class="ncll-card__details">
+						<h4 class="left">Questions?</h4>
+						<p class="ncll-card__blurb">Not sure which league covers your address? Use the <a class="ncll" href="https://www.littleleague.org/play-little-league/league-finder/" target="_blank" rel="noopener">Little League League Finder</a>.</p>
+							<p class="ncll-card__blurb">Your school missing from the list? Choose &ldquo;Other&rdquo; during registration and type the school name.</p>
+							<p class="ncll-card__blurb">Registration asks for proof of eligibility, but NCLL doesn&rsquo;t require it; we only ask for paperwork if your player makes All-Stars. School addresses and the full map are on the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2114768">League Boundaries</a> page.</p>
+						<div class="ncll-card__cta">
+							<a class="button button--secondary" href="mailto:registrar@ncllball.com">Email the Registrar</a>
+						</div>
+					</div>
+				</div>
+				<div class="ncll-card__sticky-footer">
+					<div class="actions" role="group" aria-label="Eligibility / League Boundaries card controls">
+						<label class="button button--secondary btn-prev btn-prev-start" for="reg-elig-2">Back</label>
+						<label class="button button--primary btn-next btn-next-intro" for="reg-elig-0">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-0" for="reg-elig-intro">Back</label>
+						<label class="button button--primary btn-next btn-next-0" for="reg-elig-1">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-1" for="reg-elig-0">Back</label>
+						<label class="button button--primary btn-next btn-next-1" for="reg-elig-2">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-2" for="reg-elig-1">Back</label>
+						<label class="button button--primary btn-next btn-next-2" for="reg-elig-intro">Start Over</label>
+					</div>
+				</div>
+			</article>
+
+			<!-- Card: 2027 Registration Fees -->
 			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="fees" aria-labelledby="reg-fees-title">
 				<input type="radio" name="reg-fees" id="reg-fees-intro" checked />
 				<input type="radio" name="reg-fees" id="reg-fees-0" />
@@ -163,185 +256,64 @@
 				</div>
 			</article>
 
-			<!-- Card 2: Eligibility / League Boundaries -->
-			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="eligibility" aria-labelledby="reg-elig-title">
-				<input type="radio" name="reg-elig" id="reg-elig-intro" checked />
-				<input type="radio" name="reg-elig" id="reg-elig-0" />
-				<input type="radio" name="reg-elig" id="reg-elig-1" />
-				<input type="radio" name="reg-elig" id="reg-elig-2" />
+			<!-- Card: Financial Aid -->
+			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="financial-aid" aria-labelledby="reg-finaid-title">
+				<input type="radio" name="reg-finaid" id="reg-finaid-intro" checked />
+				<input type="radio" name="reg-finaid" id="reg-finaid-0" />
+				<input type="radio" name="reg-finaid" id="reg-finaid-1" />
 				<div class="ncll-card__sticky-heading">
 					<div class="ncll-card__heading-title">
 						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
-						<h3 class="ncll-card__title" id="reg-elig-title"><span class="text-background">Eligibility &amp; Boundaries</span></h3>
+						<h3 class="ncll-card__title" id="reg-finaid-title"><span class="text-background">Financial Aid</span></h3>
 						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
 					</div>
 				</div>
 				<div class="ncll-card__body panel panel-intro">
 					<div class="ncll-card__details">
-						<p class="ncll-card__blurb">Players qualify for NCLL through one of two paths &mdash; only one is required.</p>
-						<ul class="ncll-card__meta">
-							<li><strong>Residency</strong> &mdash; live inside the NCLL boundary</li>
-							<li><strong>School enrollment</strong> &mdash; attend a school inside the boundary</li>
-						</ul>
-						<p class="ncll-card__blurb">NCLL serves Wallingford, Green Lake, Fremont, Phinney Ridge, Greenwood, and Ballard.</p>
+						<p class="ncll-card__blurb">NCLL ensures every child can play baseball or softball regardless of financial situation. No player is turned away for inability to pay.</p>
+						<p class="ncll-card__blurb">We offer full and partial scholarships through our confidential need-based assistance program.</p>
+						<div class="ncll-card__cta">
+							<a class="button button--primary" href="https://docs.google.com/forms/d/e/1FAIpQLSd5JIcH7zLuLGVLSBSXHIOhbOtgYmP8rkW5w86_wB36zEbuoQ/viewform" target="_blank" rel="noopener">Apply for Financial Aid</a>
+						</div>
 					</div>
 				</div>
 				<div class="ncll-card__body panel panel0">
 					<div class="ncll-card__details">
-						<h4 class="left">Residency</h4>
-						<p class="ncll-card__blurb">Players who live inside the official NCLL boundary are eligible. Use the Little League International <a class="ncll" href="https://www.littleleague.org/play-little-league/league-finder/" target="_blank" rel="noopener">League Finder Tool</a> to confirm your home league.</p>
-						<figure class="map-figure lightbox-scope">
-							<input class="lightbox-toggle" type="checkbox" id="lightbox-elig-map-card" />
-							<label class="lightbox-thumb" for="lightbox-elig-map-card">
-								<img src="https://ncllball.github.io/images/site_content/elig_map.png" alt="North Central Little League boundary map" loading="lazy" width="260" height="220" />
-							</label>
-							<label class="lightbox" for="lightbox-elig-map-card" role="dialog" aria-modal="true" aria-label="Enlarged boundary map" tabindex="0">
-								<span class="sr-only">Close image</span>
-								<span class="close-btn" aria-hidden="true">x</span>
-								<img src="https://ncllball.github.io/images/site_content/elig_map.png" alt="North Central Little League boundary map full" />
-							</label>
-						</figure>
+						<h4 class="left">How to Apply</h4>
+						<ul class="ncll-card__meta">
+							<li>Complete the <a class="ncll" href="https://docs.google.com/forms/d/e/1FAIpQLSd5JIcH7zLuLGVLSBSXHIOhbOtgYmP8rkW5w86_wB36zEbuoQ/viewform" target="_blank" rel="noopener">Financial Aid form</a> before registering.</li>
+							<li>Apply early to ensure processing before deadlines.</li>
+							<li>Approved families receive a promotional code for registration to enter in their cart &mdash; sent via email from our Registrar.</li>
+						</ul>
 					</div>
 				</div>
 				<div class="ncll-card__body panel panel1">
 					<div class="ncll-card__details">
-						<h4 class="left">School Enrollment</h4>
-						<p class="ncll-card__blurb">Players enrolled at schools inside the NCLL boundary qualify even if they live outside it. Preschools do not affect eligibility.</p>
-						<div class="table-scroll" role="region" aria-label="Eligible schools">
-							<table class="age-matrix age-matrix--reg age-matrix--eligibility">
-								<thead>
-									<tr><th>School</th><th>Grades</th></tr>
-								</thead>
-								<tbody>
-									<tr><td><a class="ncll" href="https://bfdayes.seattleschools.org/" target="_blank" rel="noopener">BF Day Elementary</a></td><td>K&ndash;5</td></tr>
-									<tr><td><a class="ncll" href="https://www.bishopblanchet.org/" target="_blank" rel="noopener">Bishop Blanchet High School</a></td><td>9&ndash;12</td></tr>
-									<tr><td><a class="ncll" href="https://bagleyes.seattleschools.org/" target="_blank" rel="noopener">Daniel Bagley Elementary</a></td><td>K&ndash;5</td></tr>
-									<tr><td><a class="ncll" href="https://greenwoodes.seattleschools.org/" target="_blank" rel="noopener">Greenwood Elementary</a></td><td>K&ndash;5</td></tr>
-									<tr><td><a class="ncll" href="https://hamiltonms.seattleschools.org/" target="_blank" rel="noopener">Hamilton International Middle</a></td><td>6&ndash;8</td></tr>
-									<tr><td><a class="ncll" href="https://jsiselementary.seattleschools.org/" target="_blank" rel="noopener">John Stanford International</a></td><td>K&ndash;5</td></tr>
-									<tr><td><a class="ncll" href="https://lincolnhs.seattleschools.org/" target="_blank" rel="noopener">Lincoln High School</a></td><td>9&ndash;12</td></tr>
-									<tr><td><a class="ncll" href="https://mcdonaldinternationales.seattleschools.org/" target="_blank" rel="noopener">McDonald International Elementary</a></td><td>K&ndash;5</td></tr>
-									<tr><td><a class="ncll" href="https://www.meridianschool.edu/" target="_blank" rel="noopener">The Meridian School</a></td><td>K&ndash;5</td></tr>
-									<tr><td><a class="ncll" href="https://www.pacificcrest.org/" target="_blank" rel="noopener">Pacific Crest School</a></td><td>K&ndash;8</td></tr>
-									<tr><td><a class="ncll" href="https://www.stbens.net/" target="_blank" rel="noopener">St. Benedict School</a></td><td>K&ndash;8</td></tr>
-									<tr><td><a class="ncll" href="https://st-johnschool.org/" target="_blank" rel="noopener">St. John School</a></td><td>PreK&ndash;8</td></tr>
-									<tr><td><a class="ncll" href="https://westwoodlandes.seattleschools.org/" target="_blank" rel="noopener">West Woodland Elementary</a></td><td>K&ndash;5</td></tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel2">
-					<div class="ncll-card__details">
-						<h4 class="left">Questions?</h4>
-						<p class="ncll-card__blurb">Not sure which league covers your address? Use the <a class="ncll" href="https://www.littleleague.org/play-little-league/league-finder/" target="_blank" rel="noopener">Little League League Finder</a>.</p>
-							<p class="ncll-card__blurb">Your school missing from the list? Choose &ldquo;Other&rdquo; during registration and type the school name.</p>
-							<p class="ncll-card__blurb">Registration asks for proof of eligibility, but NCLL doesn&rsquo;t require it; we only ask for paperwork if your player makes All-Stars. School addresses and the full map are on the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2114768">League Boundaries</a> page.</p>
+						<h4 class="left">What Assistance Covers</h4>
+						<ul class="ncll-card__meta">
+							<li>Registration fees</li>
+							<li>Equipment (when available)</li>
+							<li>Special programs</li>
+						</ul>
+						<p class="ncll-card__blurb">Questions? Contact our Registrar:</p>
 						<div class="ncll-card__cta">
-							<a class="button button--secondary" href="mailto:registrar@ncllball.com">Email the Registrar</a>
+							<a class="button button--secondary" href="mailto:registrar&#64;ncllball&#46;com?subject=NCLL%202027%20Scholarship%20Inquiry">registrar&#64;ncllball&#46;com</a>
 						</div>
 					</div>
 				</div>
 				<div class="ncll-card__sticky-footer">
-					<div class="actions" role="group" aria-label="Eligibility / League Boundaries card controls">
-						<label class="button button--secondary btn-prev btn-prev-start" for="reg-elig-2">Back</label>
-						<label class="button button--primary btn-next btn-next-intro" for="reg-elig-0">Next</label>
-						<label class="button button--secondary btn-prev btn-prev-0" for="reg-elig-intro">Back</label>
-						<label class="button button--primary btn-next btn-next-0" for="reg-elig-1">Next</label>
-						<label class="button button--secondary btn-prev btn-prev-1" for="reg-elig-0">Back</label>
-						<label class="button button--primary btn-next btn-next-1" for="reg-elig-2">Next</label>
-						<label class="button button--secondary btn-prev btn-prev-2" for="reg-elig-1">Back</label>
-						<label class="button button--primary btn-next btn-next-2" for="reg-elig-intro">Start Over</label>
+					<div class="actions" role="group" aria-label="Financial Aid card controls">
+						<label class="button button--secondary btn-prev btn-prev-start" for="reg-finaid-1">Back</label>
+						<label class="button button--primary btn-next btn-next-intro" for="reg-finaid-0">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-0" for="reg-finaid-intro">Back</label>
+						<label class="button button--primary btn-next btn-next-0" for="reg-finaid-1">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-1" for="reg-finaid-0">Back</label>
+						<label class="button button--primary btn-next btn-next-1" for="reg-finaid-intro">Start Over</label>
 					</div>
 				</div>
 			</article>
 
-			<!-- Card: Team Formation (absorbs the Team Formation page, 2026-10-30) -->
-			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="team-formation" aria-labelledby="reg-teams-title">
-				<input type="radio" name="reg-teams" id="reg-teams-intro" checked />
-				<input type="radio" name="reg-teams" id="reg-teams-0" />
-				<input type="radio" name="reg-teams" id="reg-teams-1" />
-				<input type="radio" name="reg-teams" id="reg-teams-2" />
-				<input type="radio" name="reg-teams" id="reg-teams-3" />
-				<div class="ncll-card__sticky-heading">
-					<div class="ncll-card__heading-title">
-						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
-						<h3 class="ncll-card__title" id="reg-teams-title"><span class="text-background">Team Formation</span></h3>
-						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel-intro">
-					<div class="ncll-card__details">
-						<p class="ncll-card__blurb">AAA and Majors teams are formed by a draft, using scores from February assessments, so every team in a division is evenly matched.</p>
-						<ul class="ncll-card__meta">
-							<li><strong>Assessments:</strong> AAA, Majors and Juniors (baseball and softball)</li>
-							<li><strong>Draft:</strong> AAA and Majors</li>
-							<li><strong>Teams set:</strong> by late February</li>
-						</ul>
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel0">
-					<div class="ncll-card__details">
-						<h4 class="left">Assessments</h4>
-						<ul class="ncll-card__meta">
-							<li>Required for every AAA, Majors and Juniors player, in baseball and softball, whatever division they played last year.</li>
-							<li>Not tryouts: every player is placed on a team. Scores are for skill evaluation and competitive balance.</li>
-							<li>The Player Agent runs them; families get dates, times and places by email.</li>
-						</ul>
-						<div class="ncll-card__cta">
-							<a class="button button--secondary" href="https://www.ncllball.com/Default.aspx?tabid=2112173">About Assessments</a>
-						</div>
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel1">
-					<div class="ncll-card__details">
-						<h4 class="left">Why we draft</h4>
-						<p class="ncll-card__blurb">Majors has always drafted. In 2024 the Board moved AAA to a draft too, as it was before COVID and as every nearby league does.</p>
-						<ul class="ncll-card__meta">
-							<li><strong>Competitive balance:</strong> talent is spread evenly, so games are closer.</li>
-							<li><strong>Different experiences:</strong> players learn from different coaching styles.</li>
-							<li><strong>Community:</strong> kids meet families beyond their school and neighborhood.</li>
-							<li><strong>Transparency:</strong> coaches and parents can see a fair process.</li>
-						</ul>
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel2">
-					<div class="ncll-card__details">
-						<h4 class="left">Draft day</h4>
-						<ul class="ncll-card__meta">
-							<li>Coaches get each player&rsquo;s assessment scores and a 1&ndash;5 rating.</li>
-							<li>A coach&rsquo;s own child is placed in the round that matches their rating.</li>
-							<li>A short trade window afterwards is for roster fit (schoolmates, carpools), within the same rating band; not for talent.</li>
-							<li><strong>Playing up:</strong> requests to play in a higher division are reviewed for safety, coach feedback and division balance.</li>
-						</ul>
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel3">
-					<div class="ncll-card__details">
-						<h4 class="left">After the draft</h4>
-						<p class="ncll-card__blurb">Teams are finalized by late February, then matchups and schedules are built. Everyone hears the results at the same time, so please keep draft details to yourselves until then.</p>
-						<div class="ncll-card__cta">
-							<a class="button button--secondary" href="https://www.ncllball.com/Default.aspx?tabid=2112136">The full draft story</a>
-						</div>
-					</div>
-				</div>
-				<div class="ncll-card__sticky-footer">
-					<div class="actions" role="group" aria-label="Team Formation card controls">
-						<label class="button button--secondary btn-prev btn-prev-start" for="reg-teams-3">Back</label>
-						<label class="button button--primary btn-next btn-next-intro" for="reg-teams-0">Next</label>
-						<label class="button button--secondary btn-prev btn-prev-0" for="reg-teams-intro">Back</label>
-						<label class="button button--primary btn-next btn-next-0" for="reg-teams-1">Next</label>
-						<label class="button button--secondary btn-prev btn-prev-1" for="reg-teams-0">Back</label>
-						<label class="button button--primary btn-next btn-next-1" for="reg-teams-2">Next</label>
-						<label class="button button--secondary btn-prev btn-prev-2" for="reg-teams-1">Back</label>
-						<label class="button button--primary btn-next btn-next-2" for="reg-teams-3">Next</label>
-						<label class="button button--secondary btn-prev btn-prev-3" for="reg-teams-2">Back</label>
-						<label class="button button--primary btn-next btn-next-3" for="reg-teams-intro">Start Over</label>
-					</div>
-				</div>
-			</article>
-
-			<!-- Card 3: Key Dates for Team Formation -->
+			<!-- Card: Key Dates for Team Formation -->
 			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="key-dates" aria-labelledby="reg-dates-title">
 				<input type="radio" name="reg-dates" id="reg-dates-intro" checked />
 				<input type="radio" name="reg-dates" id="reg-dates-0" />
@@ -455,7 +427,145 @@
 				</div>
 			</article>
 
-			<!-- Card 4: Where Fees Go -->
+			<!-- Card: Team Formation (absorbs the Team Formation page, 2026-10-30) -->
+			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="team-formation" aria-labelledby="reg-teams-title">
+				<input type="radio" name="reg-teams" id="reg-teams-intro" checked />
+				<input type="radio" name="reg-teams" id="reg-teams-0" />
+				<input type="radio" name="reg-teams" id="reg-teams-1" />
+				<input type="radio" name="reg-teams" id="reg-teams-2" />
+				<input type="radio" name="reg-teams" id="reg-teams-3" />
+				<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__heading-title">
+						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+						<h3 class="ncll-card__title" id="reg-teams-title"><span class="text-background">Team Formation</span></h3>
+						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel-intro">
+					<div class="ncll-card__details">
+						<p class="ncll-card__blurb">AAA and Majors teams are formed by a draft, using scores from February assessments, so every team in a division is evenly matched.</p>
+						<ul class="ncll-card__meta">
+							<li><strong>Assessments:</strong> AAA, Majors and Juniors (baseball and softball)</li>
+							<li><strong>Draft:</strong> AAA and Majors</li>
+							<li><strong>Teams set:</strong> by late February</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel0">
+					<div class="ncll-card__details">
+						<h4 class="left">Assessments</h4>
+						<ul class="ncll-card__meta">
+							<li>Required for every AAA, Majors and Juniors player, in baseball and softball, whatever division they played last year.</li>
+							<li>Not tryouts: every player is placed on a team. Scores are for skill evaluation and competitive balance.</li>
+							<li>The Player Agent runs them; families get dates, times and places by email.</li>
+						</ul>
+						<div class="ncll-card__cta">
+							<a class="button button--secondary" href="https://www.ncllball.com/Default.aspx?tabid=2112173">About Assessments</a>
+						</div>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel1">
+					<div class="ncll-card__details">
+						<h4 class="left">Why we draft</h4>
+						<p class="ncll-card__blurb">Majors has always drafted. In 2024 the Board moved AAA to a draft too, as it was before COVID and as every nearby league does.</p>
+						<ul class="ncll-card__meta">
+							<li><strong>Competitive balance:</strong> talent is spread evenly, so games are closer.</li>
+							<li><strong>Different experiences:</strong> players learn from different coaching styles.</li>
+							<li><strong>Community:</strong> kids meet families beyond their school and neighborhood.</li>
+							<li><strong>Transparency:</strong> coaches and parents can see a fair process.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel2">
+					<div class="ncll-card__details">
+						<h4 class="left">Draft day</h4>
+						<ul class="ncll-card__meta">
+							<li>Coaches get each player&rsquo;s assessment scores and a 1&ndash;5 rating.</li>
+							<li>A coach&rsquo;s own child is placed in the round that matches their rating.</li>
+							<li>A short trade window afterwards is for roster fit (schoolmates, carpools), within the same rating band; not for talent.</li>
+							<li><strong>Playing up:</strong> requests to play in a higher division are reviewed for safety, coach feedback and division balance.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel3">
+					<div class="ncll-card__details">
+						<h4 class="left">After the draft</h4>
+						<p class="ncll-card__blurb">Teams are finalized by late February, then matchups and schedules are built. Everyone hears the results at the same time, so please keep draft details to yourselves until then.</p>
+						<div class="ncll-card__cta">
+							<a class="button button--secondary" href="https://www.ncllball.com/Default.aspx?tabid=2112136">The full draft story</a>
+						</div>
+					</div>
+				</div>
+				<div class="ncll-card__sticky-footer">
+					<div class="actions" role="group" aria-label="Team Formation card controls">
+						<label class="button button--secondary btn-prev btn-prev-start" for="reg-teams-3">Back</label>
+						<label class="button button--primary btn-next btn-next-intro" for="reg-teams-0">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-0" for="reg-teams-intro">Back</label>
+						<label class="button button--primary btn-next btn-next-0" for="reg-teams-1">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-1" for="reg-teams-0">Back</label>
+						<label class="button button--primary btn-next btn-next-1" for="reg-teams-2">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-2" for="reg-teams-1">Back</label>
+						<label class="button button--primary btn-next btn-next-2" for="reg-teams-3">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-3" for="reg-teams-2">Back</label>
+						<label class="button button--primary btn-next btn-next-3" for="reg-teams-intro">Start Over</label>
+					</div>
+				</div>
+			</article>
+
+			<!-- Card: Policies (summary of the hidden Registration Policies page, tabid 2114735) -->
+			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="policies" aria-labelledby="reg-policy-title">
+				<input type="radio" name="reg-policy" id="reg-policy-intro" checked />
+				<input type="radio" name="reg-policy" id="reg-policy-0" />
+				<input type="radio" name="reg-policy" id="reg-policy-1" />
+				<div class="ncll-card__sticky-heading">
+					<div class="ncll-card__heading-title">
+						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+						<h3 class="ncll-card__title" id="reg-policy-title"><span class="text-background">Policies</span></h3>
+						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel-intro">
+					<div class="ncll-card__details">
+						<p class="ncll-card__blurb">Our refund and privacy policies in short. The full text is on the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2114735">Registration Policies</a> page.</p>
+						<ul class="ncll-card__meta">
+							<li>Refunds</li>
+							<li>Privacy</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel0">
+					<div class="ncll-card__details">
+						<h4 class="left">Refunds</h4>
+						<ul class="ncll-card__meta">
+							<li>No refunds once a player has taken part in a sanctioned game or practice.</li>
+							<li>Before that, the fee is refunded less an administrative fee (equal to the late fee).</li>
+							<li>Families found to live outside the boundary are refunded less $10, unless their own league has no program for them.</li>
+							<li>If Intermediate (50/70) doesn&rsquo;t come together, players can move to Juniors or get a refund.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel1">
+					<div class="ncll-card__details">
+						<h4 class="left">Privacy</h4>
+						<p class="ncll-card__blurb">We only use your information to run registration and the season. It is never sold or shared outside NCLL, and card numbers are never stored on our systems.</p>
+						<div class="ncll-card__cta">
+							<a class="button button--secondary" href="mailto:registrar@ncllball.com?subject=Registration%20Policy%20Question">Ask the Registrar</a>
+						</div>
+					</div>
+				</div>
+				<div class="ncll-card__sticky-footer">
+					<div class="actions" role="group" aria-label="Policies card controls">
+						<label class="button button--secondary btn-prev btn-prev-start" for="reg-policy-1">Back</label>
+						<label class="button button--primary btn-next btn-next-intro" for="reg-policy-0">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-0" for="reg-policy-intro">Back</label>
+						<label class="button button--primary btn-next btn-next-0" for="reg-policy-1">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-1" for="reg-policy-0">Back</label>
+						<label class="button button--primary btn-next btn-next-1" for="reg-policy-intro">Start Over</label>
+					</div>
+				</div>
+			</article>
+
+			<!-- Card: Where Fees Go -->
 			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="where-fees-go" aria-labelledby="reg-where-title">
 				<input type="radio" name="reg-where" id="reg-where-intro" checked />
 				<input type="radio" name="reg-where" id="reg-where-0" />
@@ -527,117 +637,7 @@
 				</div>
 			</article>
 
-			<!-- Card 5: Financial Aid -->
-			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="financial-aid" aria-labelledby="reg-finaid-title">
-				<input type="radio" name="reg-finaid" id="reg-finaid-intro" checked />
-				<input type="radio" name="reg-finaid" id="reg-finaid-0" />
-				<input type="radio" name="reg-finaid" id="reg-finaid-1" />
-				<div class="ncll-card__sticky-heading">
-					<div class="ncll-card__heading-title">
-						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
-						<h3 class="ncll-card__title" id="reg-finaid-title"><span class="text-background">Financial Aid</span></h3>
-						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel-intro">
-					<div class="ncll-card__details">
-						<p class="ncll-card__blurb">NCLL ensures every child can play baseball or softball regardless of financial situation. No player is turned away for inability to pay.</p>
-						<p class="ncll-card__blurb">We offer full and partial scholarships through our confidential need-based assistance program.</p>
-						<div class="ncll-card__cta">
-							<a class="button button--primary" href="https://docs.google.com/forms/d/e/1FAIpQLSd5JIcH7zLuLGVLSBSXHIOhbOtgYmP8rkW5w86_wB36zEbuoQ/viewform" target="_blank" rel="noopener">Apply for Financial Aid</a>
-						</div>
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel0">
-					<div class="ncll-card__details">
-						<h4 class="left">How to Apply</h4>
-						<ul class="ncll-card__meta">
-							<li>Complete the <a class="ncll" href="https://docs.google.com/forms/d/e/1FAIpQLSd5JIcH7zLuLGVLSBSXHIOhbOtgYmP8rkW5w86_wB36zEbuoQ/viewform" target="_blank" rel="noopener">Financial Aid form</a> before registering.</li>
-							<li>Apply early to ensure processing before deadlines.</li>
-							<li>Approved families receive a promotional code for registration to enter in their cart &mdash; sent via email from our Registrar.</li>
-						</ul>
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel1">
-					<div class="ncll-card__details">
-						<h4 class="left">What Assistance Covers</h4>
-						<ul class="ncll-card__meta">
-							<li>Registration fees</li>
-							<li>Equipment (when available)</li>
-							<li>Special programs</li>
-						</ul>
-						<p class="ncll-card__blurb">Questions? Contact our Registrar:</p>
-						<div class="ncll-card__cta">
-							<a class="button button--secondary" href="mailto:registrar&#64;ncllball&#46;com?subject=NCLL%202027%20Scholarship%20Inquiry">registrar&#64;ncllball&#46;com</a>
-						</div>
-					</div>
-				</div>
-				<div class="ncll-card__sticky-footer">
-					<div class="actions" role="group" aria-label="Financial Aid card controls">
-						<label class="button button--secondary btn-prev btn-prev-start" for="reg-finaid-1">Back</label>
-						<label class="button button--primary btn-next btn-next-intro" for="reg-finaid-0">Next</label>
-						<label class="button button--secondary btn-prev btn-prev-0" for="reg-finaid-intro">Back</label>
-						<label class="button button--primary btn-next btn-next-0" for="reg-finaid-1">Next</label>
-						<label class="button button--secondary btn-prev btn-prev-1" for="reg-finaid-0">Back</label>
-						<label class="button button--primary btn-next btn-next-1" for="reg-finaid-intro">Start Over</label>
-					</div>
-				</div>
-			</article>
-
-			<!-- Card: Policies (summary of the hidden Registration Policies page, tabid 2114735) -->
-			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="policies" aria-labelledby="reg-policy-title">
-				<input type="radio" name="reg-policy" id="reg-policy-intro" checked />
-				<input type="radio" name="reg-policy" id="reg-policy-0" />
-				<input type="radio" name="reg-policy" id="reg-policy-1" />
-				<div class="ncll-card__sticky-heading">
-					<div class="ncll-card__heading-title">
-						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
-						<h3 class="ncll-card__title" id="reg-policy-title"><span class="text-background">Policies</span></h3>
-						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel-intro">
-					<div class="ncll-card__details">
-						<p class="ncll-card__blurb">Our refund and privacy policies in short. The full text is on the <a class="ncll" href="https://www.ncllball.com/Default.aspx?tabid=2114735">Registration Policies</a> page.</p>
-						<ul class="ncll-card__meta">
-							<li>Refunds</li>
-							<li>Privacy</li>
-						</ul>
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel0">
-					<div class="ncll-card__details">
-						<h4 class="left">Refunds</h4>
-						<ul class="ncll-card__meta">
-							<li>No refunds once a player has taken part in a sanctioned game or practice.</li>
-							<li>Before that, the fee is refunded less an administrative fee (equal to the late fee).</li>
-							<li>Families found to live outside the boundary are refunded less $10, unless their own league has no program for them.</li>
-							<li>If Intermediate (50/70) doesn&rsquo;t come together, players can move to Juniors or get a refund.</li>
-						</ul>
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel1">
-					<div class="ncll-card__details">
-						<h4 class="left">Privacy</h4>
-						<p class="ncll-card__blurb">We only use your information to run registration and the season. It is never sold or shared outside NCLL, and card numbers are never stored on our systems.</p>
-						<div class="ncll-card__cta">
-							<a class="button button--secondary" href="mailto:registrar@ncllball.com?subject=Registration%20Policy%20Question">Ask the Registrar</a>
-						</div>
-					</div>
-				</div>
-				<div class="ncll-card__sticky-footer">
-					<div class="actions" role="group" aria-label="Policies card controls">
-						<label class="button button--secondary btn-prev btn-prev-start" for="reg-policy-1">Back</label>
-						<label class="button button--primary btn-next btn-next-intro" for="reg-policy-0">Next</label>
-						<label class="button button--secondary btn-prev btn-prev-0" for="reg-policy-intro">Back</label>
-						<label class="button button--primary btn-next btn-next-0" for="reg-policy-1">Next</label>
-						<label class="button button--secondary btn-prev btn-prev-1" for="reg-policy-0">Back</label>
-						<label class="button button--primary btn-next btn-next-1" for="reg-policy-intro">Start Over</label>
-					</div>
-				</div>
-			</article>
-
-			<!-- Card 6: Support NCLL! (Venmo) -->
+			<!-- Card: Support NCLL! (Venmo) -->
 			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="support" aria-labelledby="reg-venmo-title">
 				<input type="radio" name="reg-venmo" id="reg-venmo-intro" checked />
 				<input type="radio" name="reg-venmo" id="reg-venmo-0" />
@@ -681,7 +681,7 @@
 
 		</div>
 
-		<p class="cms-rev"><small>[r8 · 2026-10-30 · 2114737]</small></p>
+		<p class="cms-rev"><small>[r9 · 2026-10-30 · 2114737]</small></p>
 	</main>
 </body>
 </html>
