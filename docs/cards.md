@@ -4,6 +4,8 @@ How the cards on ncllball.com are built. Every hub (baseball, softball, coaches,
 
 The quickest way to build a new card is to copy a working one from the same page and change it. The newest examples are the Intermediate card in `CMS/Programs/baseball-hub.html` and the Seniors card in `CMS/Programs/softball-hub.html`.
 
+![Toggle card layout: sticky heading, panels, sticky footer](card-layout-reference.png)
+
 ## Two kinds of card
 
 | Kind | Root classes | Used for |
