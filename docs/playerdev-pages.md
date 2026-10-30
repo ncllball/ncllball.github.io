@@ -1,10 +1,6 @@
-# Player Development Date Formatting Standard (Tag Strip)
+# Player Development pages: writing standard
 
-(Relocated from `Player Development/pd-date-format.md` on 2025-09-23.)
-
-Canonical rules for the `Dates:` line in Player Development (PD) tag strips. This ensures consistency, readability, and future automation.
-
-<!-- Content mirrored verbatim from original file -->
+How to write the info list (the "tag strip": Dates, Location, Time, Cost, Age Group, Division(s), Led by) at the top of each Player Development program page in `CMS/Programs/player-development/`, plus the PD hub's "At a Glance" table, which is kept by hand (one row per program: status badge, program link, division, dates, focus). Written 2025-09; moved here from `scripts/pd/docs/` on 2026-10-29 when the old PD scripts were retired.
 
 ## Objectives
 
@@ -79,11 +75,6 @@ Canonical rules for the `Dates:` line in Player Development (PD) tag strips. Thi
 - Preserve any trailing parentheticals (e.g., `(scholarships available)`)
 - Do not apply this rule to FREE items (use the FREE standard above)
 
-Automation helpers:
-
-- Free cost normalizer: `node scripts/costs/normalize-free-cost.js [--write] [--path="Player Development"]`
-- General cost spacing normalizer: `node scripts/costs/normalize-cost-format.js [--write] [--path="Player Development"]`
-
 ## Examples in Production (2025)
 
 - `Nov 9 - Feb 22, 2025` (Teen Training span)
@@ -101,6 +92,7 @@ Add machine-readable attributes if needed later:
 ## Change Log
 
 - 2025-09-11: Initial standard authored.
+- 2026-10-29: Moved to docs/; the PD automation scripts were retired (the At a Glance table is edited by hand).
 
 ---
 
@@ -138,7 +130,7 @@ Capitalization Rules:
 
 ## Tag Strip Linter Checklist
 
-Run this manually (or future script) whenever adding a new PD page:
+Check these whenever adding a new PD page:
 
 1. Tag Order (exact): Dates → Location → Time → Cost → Age Group → Division(s) → Led by.
 2. Labels (exact spelling/punctuation): `Dates:`, `Location:`, `Time:`, `Cost:`, `Age Group:`, `Division(s):`, `Led by:`.
