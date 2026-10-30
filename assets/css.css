@@ -899,9 +899,9 @@ h2.left::before {
     background-size: 3px 3px;
 }
 
-/* Division rules pages (_Rules/*.html) — rule-level h4 headings and per-layer
-   source labels (Little League/District 8/NCLL/Note). Locked in 2026-09-04
-   after prototyping on _Rules/baseball-majors.html. */
+/* Division rules pages (CMS/Programs/*/*-rules.html) — rule-level h4 headings
+   and per-layer source labels (Little League/District 8/NCLL/Note). Locked in
+   2026-09-04 after prototyping on the Majors baseball rules. */
 .division-rules h4.left {
     color: var(--color_red) !important;
     font-size: 1rem;
