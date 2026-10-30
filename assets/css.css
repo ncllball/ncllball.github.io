@@ -396,7 +396,7 @@
 /*
 LEGACY: h4-specific clipboard inline behavior (commented) h4 .clipboard-link{display:inline-block;vertical-align:middle;min-height:0}h4 .clipboard-img{width:40px;height:auto;margin-left:8px;margin-bottom:0;float:none}
 */
-html, body {
+html {
     overflow-x: hidden;
 }
 
@@ -959,12 +959,17 @@ h2.left::before {
 
 /* Sticky division-name header for the rules pages (moved here 2026-10-28 from each page's own
    <style> block, which tripped ncllball.com's Cloudflare WAF once the pages became CMS modules).
-   `html, body { overflow-x: hidden }` above breaks position:sticky (it turns body into a
-   non-scrolling scroll container), so body gets overflow-x back only on pages that contain
-   .division-rules. --division-rules-sticky-offset clears any fixed site header. */
+   body gets overflow-x back on pages that contain .division-rules, because a body with overflow-x
+   hidden (from the .no-x-scroll CMS classes) breaks position:sticky. --division-rules-sticky-offset
+   clears any fixed site header. */
 body:has(.division-rules),
 body.cms-right.no-x-scroll:has(.division-rules) {
     overflow-x: visible !important;
+}
+/* The DNN skin wraps content in .skArea with overflow hidden, which is also a non-scrolling scroll container
+   for sticky (measured 2026-10-30: the header stuck at top 0 once .skArea was visible). */
+.skArea:has(.division-rules) {
+    overflow: visible !important;
 }
 :root {
     --division-rules-sticky-offset: 0px;
