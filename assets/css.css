@@ -2669,6 +2669,25 @@ details.footies[open] summary::before {
     }
 }
 
+/* Legend used as a list with descriptions (Registration Hub, Where Fees Go): one column at every width,
+   body-size text, the swatch lined up with the first line */
+.cost-legend.cost-legend--detail {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    font-size: 0.95rem;
+    line-height: 1.45
+}
+
+.cost-legend.cost-legend--detail li {
+    align-items: flex-start;
+    font-size: 0.95rem
+}
+
+.cost-legend.cost-legend--detail .swatch {
+    flex: 0 0 12px;
+    margin-top: 0.4em
+}
+
 .cost-cat {
     font-weight: 600;
     color: var(--color_blue)
