@@ -18,6 +18,6 @@ Reference lists for cleaning the "school" answers in registration exports (publi
 
 - `school-names.all.csv`: the 34 canonical school names.
 - `school-names.variants.csv`: 112 spellings families have used, each mapped to its canonical name.
-- `school-addresses.csv`: street addresses for 31 of them.
+- `school-addresses.csv`: street addresses for 31 of them. `ncll_boundary_school` = yes marks the 13 schools that qualify a player for NCLL by enrollment; it must match the Eligibility card on the Registration Hub (`CMS/Registration/registration-hub.html`), so change both together.
 
 Registration exports themselves never go in this repo; work on them in a local folder outside it.
