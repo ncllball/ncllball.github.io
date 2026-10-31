@@ -4629,6 +4629,12 @@ h4 .status-badge {
 	cursor: pointer;
 }
 
+/* Toggle-card panels are z-index:1 layers, so an open lightbox's z-index only counts inside its panel and
+   later cards paint over it. Lift the panel while its lightbox is open. */
+.ncll-card--toggle .panel:has(.lightbox-toggle:checked) {
+	z-index: 10000;
+}
+
 .map-figure.lightbox-scope {
 	display: flex;
 	justify-content: center;
