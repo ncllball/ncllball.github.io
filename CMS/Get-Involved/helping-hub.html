@@ -28,7 +28,7 @@
 		<meta property="og:url" content="https://www.ncllball.com/Default.aspx?tabid=2246341" />
 		<meta property="og:type" content="article" />
 		<meta property="og:image" content="https://ncllball.github.io/images/social.png" />
-		<link href="https://ncllball.github.io/css.css" rel="stylesheet" type="text/css" />
+		<link href="https://assets.ncllball.com/css.css" rel="stylesheet" type="text/css" />
 		<link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
 	</head>
 
@@ -282,21 +282,19 @@
 
 					<div class="ncll-card__body panel panel-intro">
 						<div class="ncll-card__details">
-							<p class="ncll-card__blurb">Send a fast gift to help cover fields, scholarships, and clinics.</p>
+							<p class="ncll-card__blurb">Send a fast gift to help cover fields, scholarships, and clinics. Scan the code, or on a phone tap <strong>Donate with Venmo</strong> on the next panel.</p>
 							<aside class="venmo-wrap">
-								<a
-									class="venmo-qr-link"
-									href="https://ncllball.github.io/images/site_content/venmo_qr.png"
-									target="_blank"
-									rel="noopener noreferrer"
-									title="Open QR in a new tab"
-								>
-									<img
-										class="venmo-qr venmo-qr--small"
-										src="https://ncllball.github.io/images/site_content/venmo_qr.png"
-										alt="Venmo QR code for North Central Little League donations"
-									/>
-								</a>
+								<figure class="lightbox-scope" style="margin: 0;">
+									<input class="lightbox-toggle" type="checkbox" id="lightbox-venmo-qr" />
+									<label class="lightbox-thumb" for="lightbox-venmo-qr">
+										<img class="venmo-qr venmo-qr--small" src="https://ncllball.github.io/images/site_content/venmo_qr_bw.png" alt="Venmo QR code for North Central Little League donations" />
+									</label>
+									<label class="lightbox" for="lightbox-venmo-qr" role="dialog" aria-modal="true" aria-label="Enlarged Venmo QR code" tabindex="0">
+										<span class="sr-only">Close image</span>
+										<span class="close-btn" aria-hidden="true">x</span>
+										<img src="https://ncllball.github.io/images/site_content/venmo_qr_bw.png" alt="Venmo QR code for North Central Little League donations, enlarged" />
+									</label>
+								</figure>
 							</aside>
 						</div>
 					</div>
@@ -309,6 +307,9 @@
 								<li>Field prep (chalk, clay, tarps).</li>
 								<li>Coach/umpire clinics.</li>
 							</ul>
+							<div class="ncll-card__cta">
+								<a class="button button--primary" href="https://venmo.com/u/northcentrallittleleague" target="_blank" rel="noopener">Donate with Venmo</a>
+							</div>
 						</div>
 					</div>
 
@@ -1070,7 +1071,7 @@
 					</div>
 				</article>
 			</div>
-			<p class="cms-rev"><small>[r7 · 2026-10-28 · 2246341]</small></p>
+			<p class="cms-rev"><small>[r8 · 2026-10-30 · 2246341]</small></p>
 		</main>
 	</body>
 </html>
