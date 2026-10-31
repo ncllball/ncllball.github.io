@@ -17,9 +17,9 @@
   - Financial Aid form link if URL changes (Financial Aid card)
   - Scholarship inquiry email subject year (Financial Aid card)
   - All estimated dates in the four key dates tables (Key Dates card, all four panels; match the 2027 Registration guide)
-  - Pie chart percentages, amounts, and aria-label → new budget summary (Where Fees Go card, panel 0)
-  - Cost legend dollar amounts → new budget summary (Where Fees Go card, panel 0)
-  - "Based on NCLL's YYYY spending" footnote (Where Fees Go card, panel 0)
+  - Pie chart percentages, amounts, and aria-label → new budget summary (Where Fees Go card, intro panel)
+  - Cost legend dollar amounts → new budget summary (Where Fees Go card, intro panel)
+  - "Based on NCLL's YYYY spending" footnote (Where Fees Go card, intro panel)
   - Venmo QR image if updated (Support card)
 -->
 <html lang="en">
@@ -541,7 +541,7 @@
 				</div>
 			</article>
 
-			<!-- Card: Where Fees Go -->
+			<!-- Card: Where Fees Go (chart and legend on the intro; legend shows rounded shares, aria-label keeps exact ones) -->
 			<article class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle" id="where-fees-go" aria-labelledby="reg-where-title">
 				<input type="radio" name="reg-where" id="reg-where-intro" checked />
 				<input type="radio" name="reg-where" id="reg-where-0" />
@@ -555,50 +555,50 @@
 				</div>
 				<div class="ncll-card__body panel panel-intro">
 					<div class="ncll-card__details">
-						<p class="ncll-card__blurb">Your registration fee covers fields, uniforms, equipment, umpires, player development, All-Stars, summerball, and league operations.</p>
-						<ul class="ncll-card__meta">
-							<li>Fee distribution chart</li>
-							<li>Core operating cost breakdown</li>
-						</ul>
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel0">
-					<div class="ncll-card__details">
-						<h4 class="left">Fee Distribution</h4>
-						<div class="cost-chart-wrapper">
-							<div class="cost-chart" style="--pie-size: 180px; --chart-rotate: 0deg;">
+						<div class="cost-chart-wrapper" style="margin: 8px 0; gap: 12px;">
+							<div class="cost-chart" style="--pie-size: 140px; --chart-rotate: 0deg;">
 								<div class="cost-pie" role="img"
 									aria-label="Fields 32.63%; Uniforms 25.40%; Overhead 12.19%; All&#8209;Stars 12.12%; Coach and Player Development 8.29%; Equipment 6.00%; Umpires 1.87%; Summerball 1.50%"
 									style="background: conic-gradient(from var(--chart-rotate), #1d3d7a 0% 32.63%, #cc0000 32.63% 58.03%, gainsboro 58.03% 70.22%, #f4a261 70.22% 82.34%, #990000 82.34% 90.63%, #777777 90.63% 96.63%, #e23d3d 96.63% 98.5%, #444444 98.5% 100%);">
 								</div>
 							</div>
-							<ul class="cost-legend" aria-label="Fee distribution legend">
-								<li><span class="swatch" style="background:#1d3d7a"></span>Fields &mdash; $85,519 (32.63%)</li>
-								<li><span class="swatch" style="background:#cc0000"></span>Uniforms &mdash; $66,563 (25.40%)</li>
-								<li><span class="swatch" style="background:gainsboro"></span>Overhead &mdash; $31,937 (12.19%)</li>
-								<li><span class="swatch" style="background:#f4a261"></span>All&#8209;Stars &mdash; $31,768 (12.12%)</li>
-								<li><span class="swatch" style="background:#990000"></span>Coach/Player Dev &mdash; $21,727 (8.29%)</li>
-								<li><span class="swatch" style="background:#777777"></span>Equipment &mdash; $15,727 (6.00%)</li>
-								<li><span class="swatch" style="background:#e23d3d"></span>Umpires &mdash; $4,901 (1.87%)</li>
-								<li><span class="swatch" style="background:#444444"></span>Summerball &mdash; $3,944 (1.50%)</li>
+							<ul class="cost-legend" aria-label="Fee distribution legend" style="margin: 0;">
+								<li><span class="swatch" style="background:#1d3d7a"></span>Fields 33%</li>
+								<li><span class="swatch" style="background:#cc0000"></span>Uniforms 25%</li>
+								<li><span class="swatch" style="background:gainsboro"></span>Overhead 12%</li>
+								<li><span class="swatch" style="background:#f4a261"></span>All&#8209;Stars 12%</li>
+								<li><span class="swatch" style="background:#990000"></span>Coach/Player Dev 8%</li>
+								<li><span class="swatch" style="background:#777777"></span>Equipment 6%</li>
+								<li><span class="swatch" style="background:#e23d3d"></span>Umpires 2%</li>
+								<li><span class="swatch" style="background:#444444"></span>Summerball 1.5%</li>
 							</ul>
 						</div>
-						<p class="ncll-card__note">Based on NCLL&rsquo;s 2026 spending ($262,086), from the Treasurer.</p>
+						<p class="ncll-card__note">2026 spending ($262,086), from the Treasurer.</p>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel0">
+					<div class="ncll-card__details">
+						<h4 class="left">What it covers</h4>
+						<ul class="ncll-card__meta">
+							<li><span class="swatch" style="background:#1d3d7a"></span><strong>Fields:</strong> permits, rentals and field upkeep (chalk, bases, mound clay).</li>
+							<li><span class="swatch" style="background:#cc0000"></span><strong>Uniforms:</strong> jerseys, hats and socks; AAA and up also get hoodies.</li>
+							<li><span class="swatch" style="background:gainsboro"></span><strong>Overhead:</strong> registration systems, communications and administration.</li>
+							<li><span class="swatch" style="background:#f4a261"></span><strong>All&#8209;Stars:</strong> tournament uniforms, fees, and coach and player development.</li>
+						</ul>
 					</div>
 				</div>
 				<div class="ncll-card__body panel panel1">
 					<div class="ncll-card__details">
-						<h4 class="left">Core Operating Costs</h4>
+						<h4 class="left">What it covers (cont.)</h4>
 						<ul class="ncll-card__meta">
-							<li><strong>Fields:</strong> permits, rentals, and on&#8209;field materials/maintenance (chalk, bases, mound clay).</li>
-							<li><strong>Uniforms:</strong> jerseys, hats/caps, socks (AAA+ also receive hoodies).</li>
-							<li><strong>Equipment:</strong> shared gear &mdash; catcher&rsquo;s equipment, helmets, bats, tees, practice balls, first&#8209;aid kits.</li>
-							<li><strong>Umpires:</strong> training and per&#8209;game fees where applicable.</li>
-							<li><strong>Coach/Player development:</strong> clinics, assessments, scheduling tools, and in-season development.</li>
-							<li><strong>All&#8209;Stars:</strong> tournament uniforms, coach and player development, and tournament fees.</li>
-							<li><strong>Summerball:</strong> uniforms for summer programming.</li>
-							<li><strong>Operations &amp; overhead:</strong> registration systems, communications, and administration.</li>
+							<li><span class="swatch" style="background:#990000"></span><strong>Coach/Player Dev:</strong> clinics, assessments, scheduling tools and in-season development.</li>
+							<li><span class="swatch" style="background:#777777"></span><strong>Equipment:</strong> shared gear: catcher&rsquo;s equipment, helmets, bats, tees, practice balls, first-aid kits.</li>
+							<li><span class="swatch" style="background:#e23d3d"></span><strong>Umpires:</strong> training and per-game fees.</li>
+							<li><span class="swatch" style="background:#444444"></span><strong>Summerball:</strong> uniforms for summer programs.</li>
 						</ul>
+						<div class="ncll-card__cta">
+							<a class="button button--primary" href="https://www.ncllball.com/Default.aspx?tabid=2114737#support">Support NCLL</a>
+						</div>
 					</div>
 				</div>
 				<div class="ncll-card__sticky-footer">
@@ -657,7 +657,7 @@
 
 		</div>
 
-		<p class="cms-rev"><small>[r46 · 2026-10-30 · 2114737]</small></p>
+		<p class="cms-rev"><small>[r47 · 2026-10-30 · 2114737]</small></p>
 	</main>
 </body>
 </html>
