@@ -1,5 +1,6 @@
 {
   "template": "retro-tv",
+  "frame": "wood",
   "output": "2027-spring-retro-tv-rotator",
   "score_left_red": "1UP",
   "score_left": "000000",

@@ -9,6 +9,7 @@ Writes three files to scripts/rotators/out/ (git-ignored):
 Copy the transparent one to images/rotators/ when it's final, then upload it in the CMS (see README.md).
 """
 import json
+import os
 import subprocess
 import sys
 import time
@@ -45,6 +46,7 @@ def main(cfg_path):
     cfg = json.loads(Path(cfg_path).read_text(encoding="utf-8"))
     if cfg.get("template") != "retro-tv":
         sys.exit(f"unknown template {cfg.get('template')!r} (only 'retro-tv' so far)")
+    os.environ["TV_FRAME"] = cfg.get("frame", "chrome")
     sys.path.insert(0, str(HERE / "retro-tv"))
     import make_tv_center as C
 

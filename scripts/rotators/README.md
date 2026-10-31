@@ -29,13 +29,14 @@ Lower sort order shows first. The CMS keeps it at 1110 x 520 and keeps the trans
 
 | Template | Look | Files |
 |---|---|---|
-| `retro-tv` | Chrome TV filling the frame; 8-bit night game (dusk sky, chain-link fence, NCLL-red players, on-deck circles with the NC logo) dimmed behind a big centred headline, a line, the date on a red bar, an action line, and a copyright line. NC badge on the top dial. | `retro-tv/`, `assets/chrome-tv.png` |
+| `retro-tv` | TV filling the frame (`"frame": "wood"` for the wood cabinet, the default is chrome); 8-bit night game (dusk sky, chain-link fence, NCLL-red players, on-deck circles with the NC logo) dimmed behind a big centred headline, a line, the date on a red bar, an action line, and a copyright line. NC badge on the top dial. | `retro-tv/`, `assets/chrome-tv.png`, `assets/wood-tv.png` |
 | chalkboard (not wired into build.py yet) | Chalkboard with chalk lettering, checklist, diamond and ice-cream doodles, NCLL badge | `chalkboard/make_chalk.py` |
 
 ### Slide settings (`retro-tv`)
 
 | Key | Where it shows | Example |
 |---|---|---|
+| `frame` | TV cabinet: `wood` or `chrome` | `wood` |
 | `score_left_red` / `score_left` / `score_right` | arcade line at the top | `1UP` / `000000` / `HI-SCORE 002027` |
 | `headline` | big centre text | `GAME ON!` |
 | `line` | line under it | `SPRING 2027 REGISTRATION OPENS` |

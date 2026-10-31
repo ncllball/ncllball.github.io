@@ -1,6 +1,7 @@
 """Chrome TV frame: John's chrome TV photo (assets/chrome-tv.png), widened to the slide's exact proportions by repeating
 the plain middle of the set (dials, knob and corners untouched) with the stand and feet removed. The 8-bit game shows
 through the screen hole; the NC badge sits on the top dial. make_tv_center.py builds the slide on top of this."""
+import os
 import re
 from pathlib import Path
 
@@ -15,11 +16,17 @@ TV_X, TV_Y = 0, 0
 HOLE = (287 * K, 262 * K, (2279 + (SRC_W - 3146) - 287) * K, (1892 - 262) * K)
 DIAL = (4638 * K, 402 * K)           # centre dot of the top dial (measured on the source)
 TV_IMG = "../assets/chrome-tv.png"   # paths are relative to the html this writes (this folder)
-LOGO = "../../../images/logos/ncll_logo_1.png"
+LOGO = "../../../images/logos/3.black.on.white.and.red.cloverleaf.png"
+FRAME = os.environ.get("TV_FRAME", "chrome")   # set by build.py from the slide's "frame"
+if FRAME == "wood":                  # assets/wood-tv.png: wood cabinet with the NC badge already on it; opening measured on the image
+    HOLE = (29, 28, 886, 455)
+    TV_IMG = "../assets/wood-tv.png"
 
 _SW, _SH = HOLE[2] + 8, HOLE[3] + 8
 M.LIGHT_IN = 34                      # light towers pulled in toward the middle
 M.W, M.OX, M.OY = 287, 63, 2          # scene sits 10 game-pixels lower: room above for 1UP, less grass below home
+if FRAME == "wood":                  # taller screen: move the field down so home plate sits near the bottom line
+    M.OY = 24
 M.H = round(M.W * _SH / _SW)          # extra rows are more grass at the bottom
 SCALE = 3
 
@@ -70,7 +77,7 @@ body{{position:relative;font-family:'Press Start 2P',monospace;background:radial
   <div class="msg"><span class="y">SPRING 2027</span><br>REGISTRATION OPENS<br><span class="y">MON NOV 2</span><br><span class="cur"></span>CLICK TO START</div></div>
  <div class="scan"></div><div class="glow"></div></div>
 <img class="tv" src="{TV_IMG}" alt="">
-<div class="disc"><img src="{LOGO}" alt=""></div>
+{'' if FRAME == "wood" else f'<div class="disc"><img src="{LOGO}" alt=""></div>'}
 </body></html>"""
 
 
