@@ -12,8 +12,8 @@
   NOTE:      Old modules mid=2199356 and mid=2199357 deleted from DNN admin 2026-06-18
 
   WHAT TO UPDATE EACH YEAR:
-  - Fee amounts in both tables (Fees card, panels 0–1)
-  - Footnote "Updated for YYYY" line (Fees card, panel 2)
+  - Fee amounts in both tables (Fees card, intro and panel 0)
+  - Footnote "Updated for YYYY" line (Fees card, panel 1)
   - Financial Aid form link if URL changes (Financial Aid card)
   - Scholarship inquiry email subject year (Financial Aid card)
   - All estimated dates in the four key dates tables (Key Dates card, panels 0–3)
@@ -142,7 +142,6 @@
 				<input type="radio" name="reg-fees" id="reg-fees-intro" checked />
 				<input type="radio" name="reg-fees" id="reg-fees-0" />
 				<input type="radio" name="reg-fees" id="reg-fees-1" />
-				<input type="radio" name="reg-fees" id="reg-fees-2" />
 				<div class="ncll-card__sticky-heading">
 					<div class="ncll-card__heading-title">
 						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
@@ -151,19 +150,6 @@
 					</div>
 				</div>
 				<div class="ncll-card__body panel panel-intro">
-					<div class="ncll-card__details">
-						<p class="ncll-card__blurb">2027 fee tables for baseball and softball, plus discount and scholarship notes.</p>
-						<div class="ncll-card__graphics">
-							<img class="ncll-card__graphic ncll-card__graphic--large" src="https://ncllball.github.io/images/icons/calendar/calendar-clock.svg" alt="" aria-hidden="true" />
-						</div>
-						<ul class="ncll-card__meta">
-							<li>Baseball (Boys &amp; Girls) fees</li>
-							<li>Softball (Girls) fees</li>
-							<li>Sibling discount &amp; notes</li>
-						</ul>
-					</div>
-				</div>
-				<div class="ncll-card__body panel panel0">
 					<div class="ncll-card__details">
 						<h4 class="left">Baseball (Boys &amp; Girls)</h4>
 						<div class="table_age" role="region" aria-label="Baseball division fees" tabindex="0">
@@ -189,7 +175,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="ncll-card__body panel panel1">
+				<div class="ncll-card__body panel panel0">
 					<div class="ncll-card__details">
 						<h4 class="left">Softball (Girls)</h4>
 						<div class="table_age" role="region" aria-label="Softball division fees" tabindex="0">
@@ -212,7 +198,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="ncll-card__body panel panel2">
+				<div class="ncll-card__body panel panel1">
 					<div class="ncll-card__details">
 						<h4 class="left">Discounts &amp; Notes</h4>
 						<ul class="ncll-card__meta">
@@ -225,14 +211,12 @@
 				</div>
 				<div class="ncll-card__sticky-footer">
 					<div class="actions" role="group" aria-label="2027 Registration Fees card controls">
-						<label class="button button--secondary btn-prev btn-prev-start" for="reg-fees-2">Back</label>
+						<label class="button button--secondary btn-prev btn-prev-start" for="reg-fees-1">Back</label>
 						<label class="button button--primary btn-next btn-next-intro" for="reg-fees-0">Next</label>
 						<label class="button button--secondary btn-prev btn-prev-0" for="reg-fees-intro">Back</label>
 						<label class="button button--primary btn-next btn-next-0" for="reg-fees-1">Next</label>
 						<label class="button button--secondary btn-prev btn-prev-1" for="reg-fees-0">Back</label>
-						<label class="button button--primary btn-next btn-next-1" for="reg-fees-2">Next</label>
-						<label class="button button--secondary btn-prev btn-prev-2" for="reg-fees-1">Back</label>
-						<label class="button button--primary btn-next btn-next-2" for="reg-fees-intro">Start Over</label>
+						<label class="button button--primary btn-next btn-next-1" for="reg-fees-intro">Start Over</label>
 					</div>
 				</div>
 			</article>
@@ -662,7 +646,7 @@
 
 		</div>
 
-		<p class="cms-rev"><small>[r16 · 2026-10-30 · 2114737]</small></p>
+		<p class="cms-rev"><small>[r17 · 2026-10-30 · 2114737]</small></p>
 	</main>
 </body>
 </html>
