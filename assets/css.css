@@ -4753,6 +4753,39 @@ h4 .status-badge {
     border-radius: 4px;
 }
 
+/* Pin the close X to the enlarged image's top-right corner, not the screen's: the image and the X share one
+   grid cell sized to the image. Captions go in a row below. */
+.lightbox-scope .lightbox,
+.ncll-card--toggle .lightbox {
+    display: grid;
+    place-content: center;
+}
+
+.lightbox-scope .lightbox > img,
+.ncll-card--toggle .lightbox > img {
+    grid-area: 1 / 1;
+    max-width: 92vw;
+    max-height: 88vh;
+}
+
+.lightbox-scope .lightbox .close-btn,
+.ncll-card--toggle .lightbox .close-btn {
+    grid-area: 1 / 1;
+    position: relative;
+    top: auto;
+    right: auto;
+    align-self: start;
+    justify-self: end;
+    margin: 8px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.ncll-card--toggle .lightbox .lightbox-caption {
+    grid-row: 2;
+    justify-self: center;
+}
+
 .ncll-card--toggle input.lightbox-toggle[id$="-1"]:checked~.ncll-card__body label[for$="-1"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-2"]:checked~.ncll-card__body label[for$="-2"] img,
 .ncll-card--toggle input.lightbox-toggle[id$="-3"]:checked~.ncll-card__body label[for$="-3"] img,
