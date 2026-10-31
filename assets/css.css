@@ -5155,6 +5155,17 @@ p.rules-legend img {
     text-align: right !important;
 }
 
+/* Two-column fee lists (Registration Hub Fees card): division left, price right so the dollars line up */
+.age-matrix.age-matrix--fees th:first-child,
+.age-matrix.age-matrix--fees td:first-child {
+    text-align: left !important;
+}
+
+.age-matrix.age-matrix--fees th:last-child,
+.age-matrix.age-matrix--fees td:last-child {
+    text-align: right !important;
+}
+
 .board-volunteers .age-matrix td.division-header,
 .board-volunteers .age-matrix td:first-child {
     text-align: center !important;
