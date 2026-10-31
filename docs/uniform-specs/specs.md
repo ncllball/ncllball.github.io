@@ -2,6 +2,8 @@
 
 The master reference for NCLL uniforms: which hat, shirt and hoodie model each division gets, the supplier size charts (normalized to pit-to-pit), and the sizes offered to players and coaches. The live uniform pages (`CMS/Resources/uniforms-hub.html`, `CMS/uniform-2027.html`) are built from it, so update this first when a model or size range changes. Supplier sheets are next to it in this folder. Moved here from `Resources/Parents/sizing/` 2026-10-29.
 
+> **Intermediate (50/70, new for 2027):** assumed to wear the same as Juniors (PTS30 hat, 4003 shirt, PC90H hoodie; coaches likewise). John approved the assumption 2026-10-30; confirm with the uniform order before it goes out.
+
 ## PLAYERS HATS & SHIRTS MODEL CHART
 
 | Program/Division   | Hat Model # | Shirt Model #            | Hoodie Model # | Socks | Belt |
@@ -12,6 +14,7 @@ The master reference for NCLL uniforms: which hat, shirt and hoodie model each d
 | Baseball - AA      | 4301        | 4003                     | none           | OSFA  | OSFA |
 | Baseball - AAA     | PTS30       | 4003                     | PC90HY/PC90H   | OSFA  | OSFA |
 | Baseball - Majors  | PTS30       | 4003                     | PC90HY/PC90H   | OSFA  | OSFA |
+| Baseball - Intermediate | PTS30       | 4003                     | PC90H          | OSFA  | OSFA |
 | Baseball - Juniors | PTS30       | 4003                     | PC90H          | OSFA  | OSFA |
 | Baseball - Seniors | PTS30       | 4003                     | PC90H          | OSFA  | OSFA |
 | Softball - A       | 4302        | 4408 GIRLS / 4408 WOMENS | none           | OSFA  | OSFA |
@@ -31,6 +34,7 @@ The master reference for NCLL uniforms: which hat, shirt and hoodie model each d
 | Baseball - AA Coaches      | 4301             | ST350         | none           | none  | none |
 | Baseball - AAA Coaches     | PTS30            | ST350/ST550   | PC90H          | none  | none |
 | Baseball - Majors Coaches  | PTS30            | ST350/ST550   | PC90H          | none  | none |
+| Baseball - Intermediate Coaches | PTS30            | ST350/ST550   | PC90H          | none  | none |
 | Baseball - Juniors Coaches | PTS30            | ST350/ST550   | PC90H          | none  | none |
 | Baseball - Seniors Coaches | PTS30            | ST350/ST550   | PC90H          | none  | none |
 | Softball - A Coaches       | Champro HC10     | 4408 WOMENS   | none           | none  | none |
@@ -256,6 +260,7 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
 | Baseball - AA      | Youth adjustable strap (4301); Adult adjustable strap (4301)             | YS, YM, YL, YXL, AS, AM, AL (4003)                           | none                                                                        |
 | Baseball - AAA     | Youth, XS-SM, SM-MD, LG-XL (PTS30)                                       | YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003)         | YXS, YS, YM, YL, YXL (PC90HY); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Baseball - Majors  | Youth, XS-SM, SM-MD, LG-XL (PTS30)                                       | YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003)         | YXS, YS, YM, YL, YXL (PC90HY); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Baseball - Intermediate | XS-SM, SM-MD, LG-XL (PTS30)                                              | AS, AM, AL, AXL, AXXL, AXXXL (4003)                          | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)                                |
 | Baseball - Juniors | XS-SM, SM-MD, LG-XL (PTS30)                                              | AS, AM, AL, AXL, AXXL, AXXXL (4003)                          | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)                                |
 | Baseball - Seniors | XS-SM, SM-MD, LG-XL (PTS30)                                              | AS, AM, AL, AXL, AXXL, AXXXL (4003)                          | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)                                |
 | Softball - A       | Youth adjustable strap (4302 visor)                                      | GS, GM, GL (4408 GIRLS); WS, WM, WL, WXL, WXXL (4408 WOMENS) | none                                                                        |
@@ -275,6 +280,7 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
 | Baseball - AA Coaches      | Youth adjustable strap (4301); Adult adjustable strap (4301) | AXS, AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (ST350) | none                                         |
 | Baseball - AAA Coaches     | Youth, XS-SM, SM-MD, LG-XL (PTS30)                           | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Baseball - Majors Coaches  | Youth, XS-SM, SM-MD, LG-XL (PTS30)                           | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
+| Baseball - Intermediate Coaches | XS-SM, SM-MD, LG-XL (PTS30)                                  | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Baseball - Juniors Coaches | XS-SM, SM-MD, LG-XL (PTS30)                                  | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Baseball - Seniors Coaches | XS-SM, SM-MD, LG-XL (PTS30)                                  | AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)        | AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H) |
 | Softball - A Coaches       | Small, M-XL (HC10)                                           | AS, AM, AL, AXL, AXXL, AXXXL (4408 WOMENS)        | none                                         |
@@ -312,6 +318,10 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
   - Hat: Youth, XS-SM, SM-MD, LG-XL (PTS30)
   - Shirt/Jersey: YS, YM, YL, YXL, AS, AM, AL, AXL, AXXL, AXXXL (4003)
   - Hoodie: YXS, YS, YM, YL, YXL (PC90HY); AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
+- Baseball - Intermediate
+  - Hat: XS-SM, SM-MD, LG-XL (PTS30)
+  - Shirt/Jersey: AS, AM, AL, AXL, AXXL, AXXXL (4003)
+  - Hoodie: AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
 - Baseball - Juniors
   - Hat: XS-SM, SM-MD, LG-XL (PTS30)
   - Shirt/Jersey: AS, AM, AL, AXL, AXXL, AXXXL (4003)
@@ -371,6 +381,10 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
   - Hat: Youth, XS-SM, SM-MD, LG-XL (PTS30)
   - Shirt/Jersey: AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)
   - Hoodie: AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
+- Baseball - Intermediate Coaches
+  - Hat: XS-SM, SM-MD, LG-XL (PTS30)
+  - Shirt/Jersey: AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)
+  - Hoodie: AS, AM, AL, AXL, AXXL, AXXXL, AXXXXL (PC90H)
 - Baseball - Juniors Coaches
   - Hat: XS-SM, SM-MD, LG-XL (PTS30)
   - Shirt/Jersey: AS, AM, AL, AXL, AXXL, AXXXL (ST350/ST550)
@@ -414,7 +428,7 @@ HAT SIZE CHART HC10 — Normalized (Head circumference, in)
 | A & AA — Softball         | Youth adjustable strap (4302 visor)                                      | GS–GL (4408 GIRLS); WS–WXXL (4408 WOMENS) | Not issued                          |
 | AAA & Upper — Softball²   | Youth adjustable strap (4302 visor); Adult adjustable strap (4302 visor) | GS–GL (4408 GIRLS); WS–WXXL (4408 WOMENS) | YXS–YXL (PC90HY); AS–AXXXXL (PC90H) |
 
-¹ Includes Baseball AAA, Majors, Juniors, and Seniors.  
+¹ Includes Baseball AAA, Majors, Intermediate, Juniors, and Seniors.  
 ² Includes Softball AAA, Majors, Juniors, and Seniors.
 
 ### Coach Size Drilldown (Quick Reference)
