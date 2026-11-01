@@ -5766,3 +5766,61 @@ details.allstars-year > .program-grid {
 
 .cms-rev { font-size: 0.72rem; color: #bbb; list-style: none; margin-top: 0.5em; }
 
+/* Homepage rotator arrows: round buttons with a double chevron drawn like baseball seams (options in docs/demos/rotator-arrows-demo.html).
+   The .skSlider prefix outranks the theme's color-red.css; top: 50% replaces the theme's fixed offsets per screen size. */
+.skSlider #slider1110520 .skPrevBtn,
+.skSlider #slider1110520 .skNextBtn {
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .4);
+}
+.skSlider #slider1110520 .skPrevBtn {
+    left: 14px;
+    right: auto;
+    --ncll-stitch: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 18'%3E%3Cpath fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' d='M25 2l-7 7 7 7M15 2l-7 7 7 7'/%3E%3C/svg%3E");
+}
+.skSlider #slider1110520 .skNextBtn {
+    right: 14px;
+    left: auto;
+    --ncll-stitch: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 18'%3E%3Cpath fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' d='M5 2l7 7-7 7M15 2l7 7-7 7'/%3E%3C/svg%3E");
+}
+.skSlider #slider1110520 .skPrevBtn::before,
+.skSlider #slider1110520 .skNextBtn::before {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    width: 30px;
+    height: 18px;
+    margin: -9px 0 0 -15px;
+    border: 0;
+    background-color: #CD163F;
+    -webkit-mask: var(--ncll-stitch) center/contain no-repeat;
+    mask: var(--ncll-stitch) center/contain no-repeat;
+    transition: background-color .2s;
+}
+.skSlider #slider1110520 .skPrevBtn:hover::before,
+.skSlider #slider1110520 .skNextBtn:hover::before {
+    background-color: #181B1F;
+}
+@media screen and (max-width: 768px) {
+    .skSlider #slider1110520 .skPrevBtn,
+    .skSlider #slider1110520 .skNextBtn {
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+    }
+    .skSlider #slider1110520 .skPrevBtn { left: 6px; }
+    .skSlider #slider1110520 .skNextBtn { right: 6px; }
+    .skSlider #slider1110520 .skPrevBtn::before,
+    .skSlider #slider1110520 .skNextBtn::before {
+        width: 24px;
+        height: 14px;
+        margin: -7px 0 0 -12px;
+    }
+}
+

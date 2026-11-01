@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NCLL Rotator Arrows</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap">
+<style>
+/* Layout: one row per option, the slide at desktop and phone width side by side, on the site's own white and red. */
+:root{
+  --bg:#f3f1f1; --panel:#fff; --fg:#181B1F; --muted:#5d5f64; --line:#dcd8d8; --red:#CD163F; --on-red:#fff;
+  --display:'Poppins',system-ui,sans-serif; --body:'Poppins',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171a;--panel:#1f2226;--fg:#eeeeee;--muted:#a8abb0;--line:#383b40;--red:#ef4a6e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15171a;--panel:#1f2226;--fg:#eeeeee;--muted:#a8abb0;--line:#383b40;--red:#ef4a6e;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:400 15px/1.5 var(--body)}
+.wrap{max-width:1040px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:20px}
+h1{font:700 26px/1.2 var(--display);margin:0;text-wrap:balance}
+.lead{margin:6px 0 0;color:var(--muted);max-width:65ch}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;color:var(--muted)}
+.bar button{font:500 13px var(--body);padding:7px 12px;background:var(--panel);color:var(--fg);border:1px solid var(--line);cursor:pointer}
+.bar button[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:var(--on-red)}
+button:focus-visible,.a:focus-visible{outline:3px solid #2b7fff;outline-offset:2px}
+.opt{background:var(--panel);border:1px solid var(--line);padding:16px;display:grid;gap:12px}
+.opt h2{font:700 17px/1.3 var(--display);margin:0}
+.opt h2 span{color:var(--red);margin-right:6px}
+.opt p{margin:0;color:var(--muted);font-size:14px;max-width:70ch}
+.shots{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:14px;align-items:start}
+@media (max-width:860px){.shots{grid-template-columns:minmax(0,1fr)}.shots figure.ph{max-width:360px}}
+figure{margin:0;min-width:0}
+figcaption{font-size:12px;color:var(--muted);margin-top:5px}
+.tap{font-weight:500;color:var(--fg)}
+
+/* Mock rotator. --a = arrow unit: scales with the slide on desktop, real pixels on the phone mock. */
+.rot{position:relative;aspect-ratio:1110/510;max-width:100%;background-size:cover;background-position:center;container-type:inline-size;overflow:hidden}
+.d .rot{--u:calc(100cqw/860)}
+.a{position:absolute;top:50%;display:block;cursor:pointer;color:#CD163F;transition:background-color .15s,color .15s,transform .15s}
+.a.p{left:0}.a.n{right:0}
+.a::before{content:'';position:absolute;left:50%;top:50%;transition:inherit}
+.chev::before{width:calc(var(--c)*1px);height:calc(var(--c)*1px);border-top:calc(var(--t)*1px) solid currentColor;border-right:calc(var(--t)*1px) solid currentColor}
+.p.chev::before{transform:translate(-30%,-50%) rotate(-135deg)}
+.n.chev::before{transform:translate(-70%,-50%) rotate(45deg)}
+
+/* A: today's arrows */
+.oA .a{background:#fff;width:33px;height:58px;margin-top:-29px}
+.oA .a::before{border-top:15px solid transparent;border-bottom:15px solid transparent;transform:translate(-50%,-50%)}
+.oA .p::before{border-right:15px solid #CD163F}
+.oA .n::before{border-left:15px solid #CD163F}
+.oA .a:hover::before{border-left-color:#181B1F;border-right-color:#181B1F}
+.oA .a.p:hover::before{border-left-color:transparent}.oA .a.n:hover::before{border-right-color:transparent}
+.ph .oA .a{width:24px;height:35px;margin-top:-18px}
+.ph .oA .a::before{border-top-width:9px;border-bottom-width:9px}
+.ph .oA .p::before{border-right-width:9px}.ph .oA .n::before{border-left-width:9px}
+
+/* B: round white buttons */
+.oB .a{--c:13;--t:3.5;width:46px;height:46px;margin-top:-23px;background:#fff;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.oB .p{left:14px}.oB .n{right:14px}
+.oB .a:hover{background:#CD163F;color:#fff}
+.ph .oB .a{--c:10;--t:3;width:40px;height:40px;margin-top:-20px}
+.ph .oB .p{left:6px}.ph .oB .n{right:6px}
+
+/* C: red edge tabs */
+.oC .a{--c:15;--t:4;width:40px;height:72px;margin-top:-36px;background:#CD163F;color:#fff}
+.oC .a:hover{background:#181B1F}
+.ph .oC .a{--c:10;--t:3;width:30px;height:48px;margin-top:-24px}
+
+/* D: dark glass circles */
+.oD .a{--c:14;--t:3;width:48px;height:48px;margin-top:-24px;background:rgba(24,27,31,.55);color:#fff;border-radius:50%;border:1.5px solid rgba(255,255,255,.75)}
+.oD .p{left:14px}.oD .n{right:14px}
+.oD .a:hover{background:#CD163F;border-color:#CD163F}
+.ph .oD .a{--c:10;--t:2.5;width:40px;height:40px;margin-top:-20px}
+.ph .oD .p{left:6px}.ph .oD .n{right:6px}
+
+/* E: full-height side bands */
+.oE .a{--c:22;--t:4;top:0;bottom:0;width:11%;color:#fff;filter:drop-shadow(0 1px 3px rgba(0,0,0,.7))}
+.oE .p{background:linear-gradient(90deg,rgba(0,0,0,.42),transparent)}
+.oE .n{background:linear-gradient(270deg,rgba(0,0,0,.42),transparent)}
+.oE .a:hover{color:#CD163F}
+.ph .oE .a{--c:13;--t:3;width:16%}
+
+/* F: baseball stitches, a double chevron like the seam on a ball */
+.oF .a{width:50px;height:50px;margin-top:-25px;background:#fff;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.oF .p{left:14px}.oF .n{right:14px}
+.oF .a::before{width:30px;height:18px;margin:-9px 0 0 -15px;background-repeat:no-repeat;background-position:center;background-size:contain;background-color:#CD163F;-webkit-mask:var(--st) center/contain no-repeat;mask:var(--st) center/contain no-repeat}
+.oF .a:hover::before{background-color:#181B1F}
+.oF .n{--st:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 18'%3E%3Cpath fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' d='M5 2l7 7-7 7M15 2l7 7-7 7'/%3E%3C/svg%3E")}
+.oF .p{--st:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 18'%3E%3Cpath fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' d='M25 2l-7 7 7 7M15 2l-7 7 7 7'/%3E%3C/svg%3E")}
+.ph .oF .a{width:40px;height:40px;margin-top:-20px}
+.ph .oF .p{left:6px}.ph .oF .n{right:6px}
+.ph .oF .a::before{width:24px;height:14px;margin:-7px 0 0 -12px}
+
+/* Desktop mock is shrunk, so shrink its arrows to the same proportion */
+.d .rot .a{zoom:var(--z,.72)}
+.oE .a{zoom:1!important}
+@media (prefers-reduced-motion:reduce){.a,.a::before{transition:none}}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+  <header>
+    <h1>New arrows for the homepage rotator</h1>
+    <p class="lead">Five options against today's arrows, on real slides. Hover to see the hover color. The smaller slide in each row is 360 px wide with its arrows at actual size, as on a phone.</p>
+  </header>
+  <div class="bar" role="group" aria-label="Slide shown behind the arrows">
+    <span>Slide:</span>
+    <button id="s1" type="button" aria-pressed="true" data-s="spring">2027 Spring</button>
+    <button id="s2" type="button" aria-pressed="false" data-s="sponsors">Thank You Sponsors</button>
+  </div>
+  <div id="list" style="display:grid;gap:20px"></div>
+</div>
+
+<script>
+const IMG={spring:"../../images/rotators/2027-spring-retro-tv-rotator.png",sponsors:"../../images/rotators/2026-sponsors_thanks-rotator.png"};
+const OPTS=[
+ ['A','Today','The theme\'s white tab and solid triangle, for comparison.','24 × 35 px',''],
+ ['B','Round white','Clean and familiar. Stays readable on any slide. Turns red on hover.','40 × 40 px','chev'],
+ ['C','Red edge tabs','Closest to today, in league red with a white chevron. Matches the Home and Register buttons.','30 × 48 px','chev'],
+ ['D','Dark glass','Lets more of the slide show through. The quietest of the buttons.','40 × 40 px','chev'],
+ ['E','Full-height bands','No button. The whole side of the slide is the target, the easiest to hit with a thumb. It darkens the slide edges, so it covers some artwork.','16% of the width × full height','chev'],
+ ['F','Stitches','A round button with a double chevron drawn like the seams on a baseball. The one that belongs to this site.','40 × 40 px',''],
+];
+function rot(id,kind){return `<div class="rot o${id}" data-rot><span class="a p ${kind}" tabindex="0" role="button" aria-label="Previous slide, option ${id}"></span><span class="a n ${kind}" tabindex="0" role="button" aria-label="Next slide, option ${id}"></span></div>`}
+document.getElementById('list').innerHTML=OPTS.map(([id,name,txt,tap,kind])=>`<section class="opt"><h2><span>${id}</span>${name}</h2><p>${txt} Phone tap target: <span class="tap">${tap}</span>.</p><div class="shots"><figure class="d">${rot(id,kind)}<figcaption>Desktop</figcaption></figure><figure class="ph">${rot(id,kind)}<figcaption>Phone</figcaption></figure></div></section>`).join('');
+function show(k){document.querySelectorAll('[data-rot]').forEach(r=>r.style.backgroundImage=`url(${IMG[k]})`);document.querySelectorAll('[data-s]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.s===k))}
+document.querySelectorAll('[data-s]').forEach(b=>b.onclick=()=>show(b.dataset.s));
+show('spring');
+</script>
+</body>
+
+</html>
