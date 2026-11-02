@@ -1,0 +1,364 @@
+/* 2026 Season Timeline page styles, archived 2026-11-02 when the page was removed from ncllball.com
+   (tabid 2244689). Moved out of assets/css.css unchanged. timeline.html links this file and the site
+   stylesheet, so it still renders on its own. */
+:root {
+    --color_timeline_line: #ccd5db;
+    --color_timeline_primary: #cd163f;
+    --color_timeline_primary_hover: #019cde;
+    --color_timeline_heading: #3d4351;
+    --color_timeline_body: #768390;
+}
+
+/* ====== BEGIN Timeline Page Styles (Timeline/timeline.html only) ====== */
+/*  .timeline-page .container-fluid     - Centers and constrains the main content container for the timeline page. .timeline-page .row     - Sets up a flexbox row for layout, with negative margins for grid alignment. .timeline-page .row>[class*="col-"]     - Ensures columns inside the row have correct box sizing and padding. .timeline-page .example-title     - Styles the main example title section (centered, with spacing and border). .timeline-page .example-title p     - Styles the paragraph inside the example title for max width and font size. @media (max-width: 767.98px)     - Adjusts row margins and column paddings for mobile screens. .timeline     - Base timeline container: removes list styles, sets width and line height. .timeline h1, ... h6     - Ensures timeline headings inherit line height. .timeline-item     - Each timeline event: indents and positions relative for marker. .timeline-item:last-child     - Removes bottom padding from last event. .timeline-info     - Styles the info/date section for each event (small, right-aligned). .timeline-marker     - Vertical line and dot marker for each event. .timeline-marker::before     - The colored dot at each event (with gradient and animation). .timeline-marker::after     - The vertical line connecting events. .timeline-item:last-child .timeline-marker::after     - Hides the line after the last event. .timeline-item:not(.period):hover .timeline-marker::before     - On hover, outlines the marker dot. .timeline-content p:last-child     - Removes bottom margin from last paragraph in event. .timeline-title     - Styles the event title (color, weight, spacing). .timeline-content p     - Styles event body text. .timeline-item.period     - Special styling for "period" (section break) events. .timeline-item.period .timeline-info     - Hides info for period events. .timeline-item.period .timeline-marker::before     - Custom marker for period events (no dot). .timeline-item.period .timeline-marker::after     - Shorter line for period events. .timeline-item.period .timeline-content     - Centered, padded content for period events. .timeline-item.period .timeline-title     - Special background and style for period event titles. @media (min-width: 768px)     - "Split" timeline: table layout for larger screens. @media (min-width: 992px)     - "Centered" timeline: alternate left/right layout for extra-large screens. .marker-outline .timeline-marker::before     - Variant: marker dot is outlined, not filled. .marker-outline .timeline-item:hover .timeline-marker::before     - On hover, fills the outlined marker. */
+/* ======= Timeline Page Minimal CSS ======= */
+.timeline-page .container-fluid {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    max-width: 1100px
+}
+
+.timeline-page .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding: 0 0 4em 0
+}
+
+.timeline-page .row>[class*="col-"] {
+    box-sizing: border-box;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 100%
+}
+
+.timeline-page .example-title {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 3em 0;
+    border-bottom: 1px solid #e4eaec
+}
+
+.timeline-page .example-title p {
+    margin: 0 auto;
+    font-size: 16px;
+    max-width: 400px
+}
+
+/* Responsive grid for timeline page */
+@media(max-width:767.98px) {
+    .timeline-page .row {
+        margin-left: -1rem;
+        margin-right: -1rem
+    }
+
+    .timeline-page .row>[class*="col-"] {
+        padding-left: 1rem;
+        padding-right: 1rem
+    }
+}
+
+/* ======= Timeline Component ======= */
+.timeline {
+    line-height: 1.4em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
+    line-height: inherit
+}
+
+.timeline-item {
+    padding-left: 40px;
+    position: relative
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0
+}
+
+.timeline-info {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0 0.5em 0;
+    white-space: nowrap;
+    color: var(--color_timeline_heading);
+    text-align: right;
+    display: flex
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px
+}
+
+.timeline-marker::before {
+    background: var(--color_timeline_primary);
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 15px;
+    transition: background 0.3s, border 0.3s;
+    background-image: var(--stripe-gradient);
+    background-size: 3px 3px
+}
+
+.timeline-marker::after {
+    content: "";
+    width: 1px;
+    background: var(--color_timeline_line);
+    display: block;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 11px
+}
+
+.timeline-item:last-child .timeline-marker::after {
+    content: none
+}
+
+.timeline-item:not(.period):hover .timeline-marker::before {
+    background: transparent;
+    border: 3px solid var(--color_timeline_primary)
+}
+
+.timeline-content p:last-child {
+    margin-bottom: 0
+}
+
+.timeline-title {
+    color: var(--color_timeline_heading);
+    font-weight: 600;
+    margin-top: 0;
+    text-align: left !important;
+    padding: 0
+}
+
+.timeline-content p {
+    color: var(--color_timeline_body);
+    font-size: 14px;
+    line-height: 23px
+}
+
+.timeline-item.period {
+    padding: 0
+}
+
+.timeline-item.period .timeline-info {
+    display: none
+}
+
+.timeline-item.period .timeline-marker::before {
+    background: transparent;
+    content: "";
+    width: 15px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    top: 0;
+    bottom: 30px;
+    position: absolute
+}
+
+.timeline-item.period .timeline-marker::after {
+    content: "";
+    height: 25px;
+    top: auto
+}
+
+.timeline-item.period .timeline-content {
+    padding: 20px 0 40px;
+    text-align: center
+}
+
+.timeline-item.period .timeline-title {
+    margin: 0;
+    padding: 0.65rem 1.9rem 0.75rem;
+    background: var(--color_timeline_heading);
+    color: #fff;
+    border-radius: 0;
+    font-size: 1.05rem;
+    box-shadow: 0 16px 32px rgba(61, 67, 81, 0.18)
+}
+
+/* Split timeline for larger screens */
+@media(min-width:768px) {
+    .timeline-split {
+        display: table;
+        width: 100%
+    }
+
+    .timeline-split .timeline-item {
+        display: table-row;
+        padding: 0
+    }
+
+    .timeline-split .timeline-info, .timeline-split .timeline-marker, .timeline-split .timeline-content, .timeline-split .timeline-item.period .timeline-info {
+        display: table-cell;
+        vertical-align: top
+    }
+
+    .timeline-split .timeline-marker {
+        position: relative
+    }
+
+    .timeline-split .timeline-content {
+        padding-left: 30px
+    }
+
+    .timeline-split .timeline-info {
+        padding-right: 30px
+    }
+
+    .timeline-split .timeline-item.period .timeline-title {
+        left: 0;
+        transform: none
+    }
+}
+
+/* Centered timeline for extra-large screens */
+@media(min-width:992px) {
+    .timeline-centered, .timeline-centered .timeline-item, .timeline-centered .timeline-info, .timeline-centered .timeline-marker, .timeline-centered .timeline-content {
+        display: block;
+        margin: 0;
+        padding: 0
+    }
+
+    .timeline-centered .timeline-item {
+        padding-bottom: 40px;
+        overflow: hidden
+    }
+
+    .timeline-centered .timeline-marker {
+        position: absolute;
+        left: 50%;
+        margin-left: -7.5px
+    }
+
+    .timeline-centered .timeline-info, .timeline-centered .timeline-content {
+        width: 50%
+    }
+
+    .timeline-centered>.timeline-item:nth-child(odd) .timeline-info {
+        float: left;
+        text-align: right;
+        padding-right: 30px
+    }
+
+    .timeline-centered>.timeline-item:nth-child(odd) .timeline-content {
+        float: right;
+        text-align: left;
+        padding-left: 30px
+    }
+
+    .timeline-centered>.timeline-item:nth-child(even) .timeline-info {
+        float: right;
+        text-align: left;
+        padding-left: 30px
+    }
+
+    .timeline-centered>.timeline-item:nth-child(even) .timeline-content {
+        float: left;
+        text-align: right;
+        padding-right: 30px
+    }
+
+    .timeline-centered>.timeline-item.period .timeline-content {
+        float: none;
+        padding: 0;
+        width: 100%;
+        text-align: center
+    }
+
+    .timeline-centered .timeline-item.period {
+        padding: 50px 0 90px
+    }
+
+    .timeline-centered .timeline-item.period .timeline-marker::after {
+        height: 30px;
+        bottom: 0;
+        top: auto
+    }
+
+    .timeline-centered .timeline-item.period .timeline-title {
+        left: auto
+    }
+}
+
+/* Marker outline variant */
+.marker-outline .timeline-marker::before {
+    background: transparent;
+    border-color: var(--color_timeline_primary)
+}
+
+.marker-outline .timeline-item:hover .timeline-marker::before {
+    background: var(--color_timeline_primary)
+}
+
+.timeline-month-nav {
+    margin: 0 0 1.5rem;
+    padding: 1rem 1.25rem;
+    background: #f5f7fb;
+    border: 1px solid #dde3ed;
+    border-radius: 6px;
+    display: block;
+}
+
+.timeline-month-nav h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.15rem;
+    color: var(--color_blue);
+}
+
+.timeline-month-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+}
+
+.timeline-month-nav a {
+    color: var(--color_blue);
+    text-decoration: none;
+}
+
+.timeline-month-nav a:hover,
+.timeline-month-nav a:focus {
+    text-decoration: underline;
+}
+
+/* Keep the timeline columns aligned across month sections */
+@media (min-width: 768px) {
+    .timeline-month .timeline.timeline-split {
+        table-layout: fixed;
+    }
+
+    .timeline-month .timeline-split .timeline-info {
+        width: 28%;
+    }
+
+    .timeline-month .timeline-split .timeline-marker {
+        width: 40px;
+    }
+
+    .timeline-month .timeline-split .timeline-content {
+        width: 72%;
+    }
+}
+
+/* ====== END Timeline Page Styles (Timeline/timeline.html only) */
