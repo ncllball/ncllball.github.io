@@ -46,7 +46,7 @@ One label per destination:
 | Destination | Label |
 |---|---|
 | 2027 Registration guide (tabid 2244720) | 2027 Registration (a section link such as `#league-age` may use the section name) |
-| Registration Hub (2114737) | Registration Hub; section links use the section name: Key Dates, Fees, Financial Aid, Eligibility & Boundaries, Team Formation |
+| Registration Hub (2114737) | Registration Hub; section links use the section name: 2027 Key Dates, Fees, Financial Aid, Eligibility & Boundaries, Team Formation |
 | Assessments (2112173) | 2027 Assessments |
 | Assessments FAQ (2246759) | Assessments FAQ |
 | Assessments: What to Expect (2246737) | What to Expect |
@@ -55,4 +55,4 @@ One label per destination:
 | All-Stars History (2118070) | All-Stars History |
 | Hubs | Coaches Hub, Volunteer Hub, Parents Hub, Safety Hub, Umpires Hub, Helping Hub, Events Hub, Uniforms Hub, Baseball Hub, Softball Hub, Player Development Hub |
 
-Update the year in labels at season rollover (2027 Registration, 2027 Assessments).
+Update the year in labels at season rollover (2027 Registration, 2027 Assessments, 2027 Key Dates).

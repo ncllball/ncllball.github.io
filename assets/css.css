@@ -498,6 +498,11 @@ img {
 }
 
 /* small utility helpers */
+/* Start below a right-floated box (e.g. the related-links aside) instead of being squeezed beside its bottom edge */
+.clear-right {
+    clear: right
+}
+
 .u-clearfix::after {
     content: "";
     display: table;
