@@ -3598,6 +3598,11 @@ p.flush-bottom:last-child {
     background: rgba(205, 22, 63, 0.25);
 }
 
+.status-hold {
+    background: rgba(0, 0, 0, 0.08);
+    color: #555;
+}
+
 .status-email {
     background: rgba(246, 195, 68, 0.25);
     /*color: #5a4200;*/
@@ -4228,6 +4233,11 @@ h4 .status-badge {
     padding-bottom: var(--card-toggle-panel-pad-bottom, 1.75rem);
     scroll-margin-top: calc(var(--ncll-card-sticky-offset, var(--card-toggle-sticky-height)) + 0.5rem);
     scroll-margin-bottom: calc(var(--ncll-card-actions-height, var(--card-toggle-actions-height)) + 0.5rem);
+}
+
+/* Intro-only toggle card (one -intro radio, no Back/Next footer, e.g. the PD hub): no room held for the footer */
+.ncll-card--toggle:not(:has(.ncll-card__sticky-footer)) .ncll-card__body {
+    padding-bottom: 20px;
 }
 
 .ncll-card--toggle .panel> :first-child {
