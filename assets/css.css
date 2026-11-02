@@ -1574,7 +1574,7 @@ body.cms-right.no-x-scroll {
     height: var(--info-icon-size);
     overflow: hidden;
     display: inline-block;
-    margin-right: 5px; /* same gap as the info callout icon */
+    margin-right: 1px; /* 1px gap before the footnote text (John, 2026-11-02) */
     color: var(--color_red);
     vertical-align: top
 }
@@ -5294,7 +5294,7 @@ p:has(+ .callout) {
 
 .callout__icon {
   float: left;
-  margin: 4px 5px 0 0; /* same gap as the footnote asterisk (.info-icon) */
+  margin: 4px 2px 0 0; /* 2px gap before the text (John, 2026-11-02) */
   width: var(--callout-icon-size, 44px);
   height: var(--callout-icon-size, 44px);
   flex: 0 0 var(--callout-icon-size, 44px);
