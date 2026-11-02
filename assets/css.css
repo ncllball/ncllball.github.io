@@ -2077,15 +2077,35 @@ body:not(.cms-right) .only-on-right {
 .age-matrix.age-matrix--compact td {
     padding-right: 24px;
 }
-/* On phones, let cells wrap so a three-column compact table fits without sideways scrolling. */
+/* On phones, let cells wrap so compact and --wrap tables fit without sideways scrolling. */
 @media (max-width: 640px) {
-    .age-matrix.age-matrix--compact td {
+    .age-matrix.age-matrix--compact td,
+    .age-matrix.age-matrix--wrap td {
         white-space: normal;
     }
     .age-matrix.age-matrix--compact th,
-    .age-matrix.age-matrix--compact td {
+    .age-matrix.age-matrix--compact td,
+    .age-matrix.age-matrix--wrap th,
+    .age-matrix.age-matrix--wrap td {
         padding-right: 10px;
     }
+}
+/* A button inside a table cell: same look as the card CTA buttons, smaller. */
+.age-matrix td .button {
+    display: inline-block;
+    white-space: normal;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.3;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+.age-matrix td .button--primary {
+    background: var(--color_blue);
+    color: #fff !important;
+    border-color: var(--color_blue);
 }
 
 .age-matrix thead th {
@@ -5367,6 +5387,15 @@ p:has(+ .callout) {
 .events-landing .events-ticket__cta-disabled {
     opacity: 0.6;
     pointer-events: none;
+}
+
+/* Placeholder button for something not open yet (e.g. sign-ups). Use a <span>, not a link:
+   <span class="button button--primary button--soon" aria-disabled="true">…</span>
+   Swap it for a real <a> when the link exists. */
+.button.button--soon {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
 }
 
 /* WIP indicators */
