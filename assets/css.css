@@ -1486,10 +1486,14 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     line-height: normal
 }
 
-/* A note right under a table gets the table's red rule instead of grey
-   (also when the table ends its own section, e.g. the PD hub's At a Glance) */
-.table_age + .footies,
+/* A note after a section that ends in a table (the PD hub's At a Glance) gets the red rule,
+   but keeps the normal gap so it doesn't run into the table's scrollbar */
 .table_section:has(> .table_age:last-child) + .footies {
+    border-top: 1pt solid var(--color_red);
+}
+
+/* A note right under a table gets the table's red rule instead of grey */
+.table_age + .footies {
     border-top: 1pt solid var(--color_red);
     margin-top: 0; /* the red rule sits right under the last row, matching the header rule above the first */
     padding-top: 2px; /* footnote text close under the rule (was 5px) */
