@@ -4010,6 +4010,26 @@ h4 .status-badge {
     border-color: #1a2b5c;
 }
 
+/* Division cards: Register and Volunteer side by side, so the second button adds no height to the panel */
+.ncll-card--division .ncll-card__cta {
+    flex-direction: row;
+}
+
+.ncll-card--division .ncll-card__cta .button {
+    flex: 1;
+}
+
+.ncll-card--division .ncll-card__cta .button--secondary {
+    background: #fff;
+    color: var(--color_blue) !important;
+    border: 1px solid var(--color_blue);
+}
+
+.ncll-card--division .ncll-card__cta .button--secondary:hover {
+    background: var(--color_blue);
+    color: #fff !important;
+}
+
 .ncll-card__cta .button--dicks {
     background: #006150;
     border-color: #006150;
