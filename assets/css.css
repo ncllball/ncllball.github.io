@@ -4911,6 +4911,13 @@ p.rules-legend img {
     padding-bottom: 2px;
 }
 
+/* Tables with buttons in their cells: every row gets the same top and bottom padding, so each button
+   sits the same distance from its row's borders (the first/last-row 12px above doesn't apply). */
+.age-matrix:has(td .button) tbody tr td {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
 .age-matrix--center-cols th,
 .age-matrix--center-cols td {
 	text-align: center !important;
