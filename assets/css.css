@@ -2068,6 +2068,16 @@ body:not(.cms-right) .only-on-right {
     line-height: 1.4
 }
 
+/* Short tables (two columns, a few rows) size to their content instead of spanning the page. */
+.age-matrix.age-matrix--compact {
+    width: auto;
+    max-width: 100%;
+}
+.age-matrix.age-matrix--compact th,
+.age-matrix.age-matrix--compact td {
+    padding-right: 24px;
+}
+
 .age-matrix thead th {
     border-bottom: 1pt solid var(--color_red);
     border-top: 1pt solid var(--color_red);
