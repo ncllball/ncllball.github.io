@@ -1016,6 +1016,14 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
     display: none !important;
 }
 
+/* Homepage Events tab (fed by the "NCLL Key Dates" Google Calendar, 2026-11-02): show the date badge
+   and the title only. The long "December 01, 2026 - 12:00AM" line is hidden, because all-day events
+   showed a 12:00AM time. */
+.skCalendar .skTimeTitle > .skDate,
+.skCalendar .skTimeTitle > .skTime {
+    display: none !important;
+}
+
 .skTabsWrapper {
     display: table-cell;
     width: calc(100% - 32px);
