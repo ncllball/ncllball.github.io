@@ -91,6 +91,17 @@ figcaption{font-size:12px;color:var(--muted);margin-top:5px}
 .ph .oF .p{left:6px}.ph .oF .n{right:6px}
 .ph .oF .a::before{width:24px;height:14px;margin:-7px 0 0 -12px}
 
+/* G: F inverted, white stitches on a red button */
+.oG .a{width:50px;height:50px;margin-top:-25px;background:#CD163F;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.oG .p{left:14px}.oG .n{right:14px}
+.oG .a::before{width:30px;height:18px;margin:-9px 0 0 -15px;background-color:#fff;-webkit-mask:var(--st) center/contain no-repeat;mask:var(--st) center/contain no-repeat}
+.oG .a:hover{background:#181B1F}
+.oG .n{--st:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 18'%3E%3Cpath fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' d='M5 2l7 7-7 7M15 2l7 7-7 7'/%3E%3C/svg%3E")}
+.oG .p{--st:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 18'%3E%3Cpath fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' d='M25 2l-7 7 7 7M15 2l-7 7 7 7'/%3E%3C/svg%3E")}
+.ph .oG .a{width:40px;height:40px;margin-top:-20px}
+.ph .oG .p{left:6px}.ph .oG .n{right:6px}
+.ph .oG .a::before{width:24px;height:14px;margin:-7px 0 0 -12px}
+
 /* Desktop mock is shrunk, so shrink its arrows to the same proportion */
 .d .rot .a{zoom:var(--z,.72)}
 .oE .a{zoom:1!important}
@@ -102,7 +113,7 @@ figcaption{font-size:12px;color:var(--muted);margin-top:5px}
 <div class="wrap">
   <header>
     <h1>New arrows for the homepage rotator</h1>
-    <p class="lead">Five options against today's arrows, on real slides. Hover to see the hover color. The smaller slide in each row is 360 px wide with its arrows at actual size, as on a phone.</p>
+    <p class="lead">Six options against today's arrows, on real slides. Hover to see the hover color. The smaller slide in each row is 360 px wide with its arrows at actual size, as on a phone.</p>
   </header>
   <div class="bar" role="group" aria-label="Slide shown behind the arrows">
     <span>Slide:</span>
@@ -121,6 +132,7 @@ const OPTS=[
  ['D','Dark glass','Lets more of the slide show through. The quietest of the buttons.','40 × 40 px','chev'],
  ['E','Full-height bands','No button. The whole side of the slide is the target, the easiest to hit with a thumb. It darkens the slide edges, so it covers some artwork.','16% of the width × full height','chev'],
  ['F','Stitches','A round button with a double chevron drawn like the seams on a baseball. The one that belongs to this site.','40 × 40 px',''],
+ ['G','Stitches inverted','F flipped: white stitches on a league-red button. Turns dark on hover.','40 × 40 px',''],
 ];
 function rot(id,kind){return `<div class="rot o${id}" data-rot><span class="a p ${kind}" tabindex="0" role="button" aria-label="Previous slide, option ${id}"></span><span class="a n ${kind}" tabindex="0" role="button" aria-label="Next slide, option ${id}"></span></div>`}
 document.getElementById('list').innerHTML=OPTS.map(([id,name,txt,tap,kind])=>`<section class="opt"><h2><span>${id}</span>${name}</h2><p>${txt} Phone tap target: <span class="tap">${tap}</span>.</p><div class="shots"><figure class="d">${rot(id,kind)}<figcaption>Desktop</figcaption></figure><figure class="ph">${rot(id,kind)}<figcaption>Phone</figcaption></figure></div></section>`).join('');
