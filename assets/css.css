@@ -2077,6 +2077,16 @@ body:not(.cms-right) .only-on-right {
 .age-matrix.age-matrix--compact td {
     padding-right: 24px;
 }
+/* On phones, let cells wrap so a three-column compact table fits without sideways scrolling. */
+@media (max-width: 640px) {
+    .age-matrix.age-matrix--compact td {
+        white-space: normal;
+    }
+    .age-matrix.age-matrix--compact th,
+    .age-matrix.age-matrix--compact td {
+        padding-right: 10px;
+    }
+}
 
 .age-matrix thead th {
     border-bottom: 1pt solid var(--color_red);
