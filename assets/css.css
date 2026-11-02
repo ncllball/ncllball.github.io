@@ -1001,12 +1001,18 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
     transition: var(--transition-base)
 }
 
-/* =========================    BEGIN CMS OVERRIDES (SportsConnect embeds)    These rules hide or adjust elements injected by the SportsConnect CMS    to ensure visual consistency with the NCLL site.     Only applies to embedded registration and CMS content.    ========================= */
+/* =========================    BEGIN CMS OVERRIDES (SportsConnect embeds)    These rules hide or adjust elements of the Sports Connect skin.    They apply to EVERY page on ncllball.com (css.css is loaded site-wide).    ========================= */
+/* Hidden Sports Connect pieces (checked one by one 2026-11-02):
+   .skAddBanner     empty ad slot, a gray bar across the top of every page
+   .skAlert*        the homepage "Announcement" banner; empty, so it showed as a blank strip.
+                    Remove these three if the Announcement setting is ever used.
+   .skCaption       rotator caption text laid over the slides (our slide images carry their own text)
+   .skPager         rotator slide dots (the arrows do the job)
+   .skTabHeading    "Local News" heading above the homepage tabs
+   .skRightTabs     the Little League International Facebook column on the homepage
+   Never hide #onetrust-consent-sdk: it is the cookie consent tool, and hiding it also broke the
+   footer's "Manage Privacy Preferences" link (unhidden 2026-11-02). */
 .skAddBanner, .skRightTabs, .skTabHeading, .skCaption, .skAlert, .skAlertText, .skAlertHeading, .skPager {
-    display: none !important;
-}
-
-#onetrust-consent-sdk {
     display: none !important;
 }
 
