@@ -1489,6 +1489,7 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
 /* A note right under a table gets the table's red rule instead of grey */
 .table_age + .footies {
     border-top: 1pt solid var(--color_red);
+    margin-top: 0; /* the red rule sits right under the last row, matching the header rule above the first */
 }
 
 .summerball-main .ncll-card__title {
