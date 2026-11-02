@@ -498,6 +498,16 @@ img {
 }
 
 /* small utility helpers */
+/* Phone-width overflow fixes found by the 2026-11-02 sweep of every page:
+   Sports Connect's field list is 100% wide plus padding; long links (full URLs) can't break. */
+.fs-an-list {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+a.ncll {
+    overflow-wrap: anywhere;
+}
+
 /* Start below a right-floated box (e.g. the related-links aside) instead of being squeezed beside its bottom edge */
 .clear-right {
     clear: right
@@ -2213,8 +2223,11 @@ body:not(.cms-right) .only-on-right {
 
 
 /* Responsive table scroll */
-/* Tables that don't fit scroll sideways inside their .table_age wrapper (every page, per John 2026-11-02) */
+/* Tables that don't fit scroll sideways inside their wrapper (every page, per John 2026-11-02).
+   .table_component/.table-component are older wrapper names still used on a few pages. */
 .table_age,
+.table_component,
+.table-component,
 .table_section .table_age {
     overflow-x: auto;
     overflow-y: hidden;
