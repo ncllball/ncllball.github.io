@@ -1490,6 +1490,7 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
 .table_age + .footies {
     border-top: 1pt solid var(--color_red);
     margin-top: 0; /* the red rule sits right under the last row, matching the header rule above the first */
+    padding-top: 2px; /* footnote text close under the rule (was 5px) */
 }
 
 .summerball-main .ncll-card__title {
