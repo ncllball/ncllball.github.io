@@ -5096,8 +5096,9 @@ p.rules-legend img {
 	text-decoration: underline;
 }
 
-.related-links--grouped .related-links__list a::after,
-.hub-intro__aside--accent.related-links--grouped .hub-aside__list.related-links a::after {
+/* "Open in new" icon only on links that really open a new tab (2026-11-02; it was on every related link). */
+.related-links--grouped .related-links__list a[target="_blank"]::after,
+.hub-intro__aside--accent.related-links--grouped .hub-aside__list.related-links a[target="_blank"]::after {
 	content: "open_in_new";
 	font-family: "Material Icons Outlined";
 	font-size: 10px;
