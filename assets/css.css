@@ -2103,7 +2103,7 @@ body:not(.cms-right) .only-on-right {
 /* A button inside a table cell: same look as the card CTA buttons, smaller. */
 .age-matrix td .button {
     display: inline-block;
-    white-space: normal;
+    white-space: nowrap;
     font-size: 0.8rem;
     font-weight: 600;
     line-height: 1.3;
