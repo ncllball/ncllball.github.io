@@ -680,6 +680,7 @@ img {
     float: right;
     max-width: var(--related-links-rail);
     width: 100%;
+    box-sizing: border-box; /* border inside the width, so on phones the box isn't 2px wider than the page */
     background: #fff;
     border: 1px solid var(--color_border_light);
     border-left: 4px solid var(--color_red);
@@ -5262,9 +5263,7 @@ p.rules-legend img {
 
 /* Callout system */
 .callout {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    display: flow-root; /* was flex; the icon now floats so wrapped lines run back under it to the left edge (2026-11-02) */
     padding: 12px 14px;
     margin: 14px 0;
     border-radius: 6px;
@@ -5281,6 +5280,8 @@ p:has(+ .callout) {
 }
 
 .callout__icon {
+  float: left;
+  margin: 2px 10px 0 0;
   width: var(--callout-icon-size, 44px);
   height: var(--callout-icon-size, 44px);
   flex: 0 0 var(--callout-icon-size, 44px);
@@ -5293,8 +5294,7 @@ p:has(+ .callout) {
     font-size: 0.97rem;
     font-weight: 400;
     line-height: 1.75;
-    display: inline-block;
-    vertical-align: top;
+    display: inline;
     font-family: proxima-nova, "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
 .callout--note {
