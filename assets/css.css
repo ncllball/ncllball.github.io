@@ -1475,6 +1475,11 @@ a.ncll:focus-visible, .button:focus-visible, .gainsboro-button:focus-visible {
     line-height: normal
 }
 
+/* A note right under a table gets the table's red rule instead of grey */
+.table_age + .footies {
+    border-top: 1pt solid var(--color_red);
+}
+
 .summerball-main .ncll-card__title {
     font-size: 1.15rem;
     font-style: italic
@@ -2207,6 +2212,8 @@ body:not(.cms-right) .only-on-right {
 
 
 /* Responsive table scroll */
+/* Tables that don't fit scroll sideways inside their .table_age wrapper (every page, per John 2026-11-02) */
+.table_age,
 .table_section .table_age {
     overflow-x: auto;
     overflow-y: hidden;
