@@ -242,6 +242,8 @@ A3XL,54"-56"
 
 Protime invoice 388982 lists "LST350.WOMENS, Sport-Tek Competitor T. Short Sleeve, Womens" (Sport-Tek's LST350 is the Ladies PosiCharge Competitor Tee). Protime's website calls its 4007 long-sleeve Competitor tee (YS–YXL, AXS–A3XL) "also known as our LST350". **Settled 2026-11-03 (John): NCLL means the women's short-sleeve tee**; it has never ordered long sleeves.
 
+**Coach shirt XS (Uniforms, 2026-11-03):** offer XS for every coach, baseball and softball, Mens (ST350) and Womens (LST350). To keep the existing numbers, the XS options were added at the end of the registration question: baseball 15: Womens XS (Mens XS was already 1); softball 14: Mens XS and 15: Womens XS. The PICKER uses the same numbers.
+
 Sport-Tek LST350 Women's PosiCharge Competitor Tee ([SanMar](https://www.sanmar.com/p/4296_TrueRoyal), spec sheet checked 2026-11-03). Women's sizes XS-4XL. Photo: `images/uniforms/hats/LST350_ROYAL.jpg`.
 
 Size,Body bust (size chart),Bust flat (garment),Body length at back
