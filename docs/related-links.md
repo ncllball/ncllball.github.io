@@ -4,16 +4,15 @@ Every page that has a "Related links" box uses the same markup, the same group n
 
 ## Markup
 
-Copy this exactly. The inline styles are deliberate: they are on all 23 boxes, and a `<style>` block would trip the CMS WAF.
+Copy this exactly. The box's look comes from `assets/css.css` (`.hub-intro__aside--accent.related-links--grouped` and its `> div`), so there are no inline styles. They were removed from all 24 boxes on 2026-11-03; don't add them back, and don't use a `<style>` block (it trips the CMS WAF).
 
 ```html
 <aside
 	class="hub-intro__aside hub-intro__aside--accent related-links related-links--grouped"
-	style="padding: 0; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; box-shadow: none"
 	aria-label="Related links"
 >
 	<h4 class="hub-aside__title">Related links</h4>
-	<div style="padding: 4px 10px 14px">
+	<div>
 		<div class="related-links__group">
 			<span class="related-links__group-title">Pages</span>
 			<ul class="hub-aside__list related-links">

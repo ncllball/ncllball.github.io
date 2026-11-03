@@ -5191,6 +5191,20 @@ p.rules-legend img {
 	box-shadow: none;
 }
 
+/* The accent Related links box (red title bar) on hub and info pages. These used to be inline styles copied
+   onto every page, because .related-links--grouped above overrode .hub-intro__aside--accent. */
+.hub-intro__aside--accent.related-links--grouped {
+	padding: 0;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	overflow: hidden;
+	box-shadow: none;
+}
+
+.hub-intro__aside--accent.related-links--grouped > div {
+	padding: 4px 10px 14px;
+}
+
 .related-links--grouped .related-links__title {
 	font-size: 0.75rem;
 	letter-spacing: 0.08em;
