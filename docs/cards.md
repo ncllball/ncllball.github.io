@@ -78,7 +78,7 @@ The panels switch with hidden radio buttons. No JavaScript, so it works inside t
 			<h4 class="left">Last panel</h4>
 			<p>...</p>
 			<div class="ncll-card__cta">
-				<a class="button button--primary" href="https://www.ncllball.com/Default.aspx?tabid=2112172">Register</a>
+				<a class="button button--primary" href="https://www.ncllball.com/Default.aspx?tabid=2244720">Register</a>
 			</div>
 		</div>
 	</div>

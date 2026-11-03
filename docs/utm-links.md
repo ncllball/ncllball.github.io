@@ -18,18 +18,18 @@ All lowercase, words joined with hyphens.
 
 Format: `<page URL>&utm_source=…&utm_medium=…&utm_campaign=…` (ncllball.com URLs already have `?tabid=`, so the tags start with `&`).
 
-## Ready to use: 2027 registration (opens Mon Nov 2, 2026)
+## Ready to use: 2027 registration
 
-Registration page: `https://www.ncllball.com/Default.aspx?tabid=2112172`
+Registration page: `https://www.ncllball.com/Default.aspx?tabid=2244720`
 
 | Where | Link |
 |---|---|
-| Registration email (Gmail) | `https://www.ncllball.com/Default.aspx?tabid=2112172&utm_source=email&utm_medium=email&utm_campaign=2027-registration` |
-| Sports Connect newsletter | `https://www.ncllball.com/Default.aspx?tabid=2112172&utm_source=newsletter&utm_medium=email&utm_campaign=2027-registration` |
-| Instagram (bio link / story) | `https://www.ncllball.com/Default.aspx?tabid=2112172&utm_source=instagram&utm_medium=social&utm_campaign=2027-registration` |
-| Facebook post | `https://www.ncllball.com/Default.aspx?tabid=2112172&utm_source=facebook&utm_medium=social&utm_campaign=2027-registration` |
-| QR code on flyers/posters | `https://www.ncllball.com/Default.aspx?tabid=2112172&utm_source=qr&utm_medium=print&utm_campaign=2027-registration` |
-| GameChanger message | `https://www.ncllball.com/Default.aspx?tabid=2112172&utm_source=gamechanger&utm_medium=chat&utm_campaign=2027-registration` |
+| Registration email (Gmail) | `https://www.ncllball.com/Default.aspx?tabid=2244720&utm_source=email&utm_medium=email&utm_campaign=2027-registration` |
+| Sports Connect newsletter | `https://www.ncllball.com/Default.aspx?tabid=2244720&utm_source=newsletter&utm_medium=email&utm_campaign=2027-registration` |
+| Instagram (bio link / story) | `https://www.ncllball.com/Default.aspx?tabid=2244720&utm_source=instagram&utm_medium=social&utm_campaign=2027-registration` |
+| Facebook post | `https://www.ncllball.com/Default.aspx?tabid=2244720&utm_source=facebook&utm_medium=social&utm_campaign=2027-registration` |
+| QR code on flyers/posters | `https://www.ncllball.com/Default.aspx?tabid=2244720&utm_source=qr&utm_medium=print&utm_campaign=2027-registration` |
+| GameChanger message | `https://www.ncllball.com/Default.aspx?tabid=2244720&utm_source=gamechanger&utm_medium=chat&utm_campaign=2027-registration` |
 
 Already-printed QR codes can't change; tag the next print run.
 
