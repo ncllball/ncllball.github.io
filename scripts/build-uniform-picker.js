@@ -169,6 +169,7 @@ const PLAYER = {
 				},
 				{
 					q: "shirt-bb", sport: "bb", divs: ["majors", "int", "juniors", "seniors"],
+					images: [[`${IMG}/hats/4011_ROYAL.jpg`, "4011 baseball jersey"]],
 					note: "Majors, Intermediate, Juniors and Seniors players get the <strong>4011</strong> baseball jersey. Measure around the fullest part of the chest.",
 					sets: [{ item: "4011 jersey", sizes: sized(["yxs", "ys", "ym", "yl", "yxl", "as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_4001_4011, chest) }],
 				},
@@ -183,6 +184,7 @@ const PLAYER = {
 				},
 				{
 					q: "shirt-sb", sport: "sb", divs: ["majors"],
+					images: [[`${IMG}/hats/4404_ROYAL.jpg`, "4404 Dawson softball jersey"]],
 					note: "Softball Majors players get the <strong>4404</strong> jersey. Measure around the fullest part of the chest.",
 					sets: [{ item: "4404 jersey", sizes: sized(["ys", "ym", "yl", "as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_4001_4011, chest) }],
 				},
@@ -320,6 +322,7 @@ const COACH = {
 			blocks: [
 				{
 					q: "hoodie", sport: "any", divs: SETS.upper,
+					images: [[`${IMG}/hats/8203_ROYAL.jpg`, "8203 hoodie"]],
 					note: "AAA and up coaches get the <strong>8203</strong> hoodie. Measure around the fullest part of the chest.",
 					sets: [{ item: "8203 hoodie", sizes: sized(["as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) }],
 				},

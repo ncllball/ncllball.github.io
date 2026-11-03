@@ -226,6 +226,22 @@ AXL,46"-48"
 A2XL,50"-52"
 A3XL,54"-56"
 
+### 4011 (Protime full-button stadium jersey): baseball Majors, Intermediate, Juniors, Seniors from 2027
+
+[Product page](https://www.protimesports.com/products/full-button-stadium-performance-baseball-jersey-adult), checked 2026-11-03. Sizes sold: YXS, YS, YM, YL, YXL, AS, AM, AL, AXL, A2XL, A3XL. Chest chart identical to the 4001 above (YXL not on it). Photo: `images/uniforms/hats/4011_ROYAL.jpg`.
+
+### 4404 (Protime Dawson women's softball jersey): softball Majors
+
+[Product page](https://www.protimesports.com/products/dawson-softball-jersey-womens), checked 2026-11-03. Sizes sold: **GS, GM, GL, WS, WM, WL, WXL, W2XL** (girls and women's, like the 4408). Its Size Guide shows Protime's generic youth/adult chest chart, which doesn't apply to these sizes, so there is no real 4404 chart on file. NCLL's 2026 order (Inv 420227) was GL, WS, WM, WL. Photo: `images/uniforms/hats/4404_ROYAL.jpg`.
+
+### 8203 (Port & Company PC850H ring-spun hoodie): hoodies, AAA and up
+
+[Product page](https://www.protimesports.com/products/ring-spun-hooded-sweatshirt-adult), checked 2026-11-03. Protime invoices call it "PC850H Port Ring Spun Hooded Sweatshirt". Sizes sold: **YXS, YS, YM, YL, AS, AM, AL, AXL, A2XL, A3XL** (no YXL, no A4XL). Its Size Guide is a generic OGIO chart (AXS 32-34" … A4XL 54-57", labeled "waist"), not the 8203's. Photo: `images/uniforms/hats/8203_ROYAL.jpg`.
+
+### LST350: two meanings
+
+Protime invoice 388982 lists "LST350.WOMENS, Sport-Tek Competitor T. Short Sleeve, Womens" (Sport-Tek's LST350 is the Ladies PosiCharge Competitor Tee). Protime's website calls its 4007 long-sleeve Competitor tee (YS–YXL, AXS–A3XL) "also known as our LST350". Confirm with Chris which one NCLL means before ordering.
+
 ### Baseball jersey supplier sheet (model not labeled)
 
 ![Baseball jerseys](SPEC_SHEET_BASEBALL_JERSEYS.jpg)
