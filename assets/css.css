@@ -3270,12 +3270,14 @@ p.flush-bottom:last-child {
 }
 
 .social-logo {
-    width: 72px;
-    height: 72px;
+    width: 60px;
+    height: 60px;
 }
 
+/* Helping Hub social panels: keep embeds inside the 500px card panel (324px of content room) */
 .social-embed {
     width: 100%;
+    max-height: 324px;
     overflow: hidden;
 }
 
