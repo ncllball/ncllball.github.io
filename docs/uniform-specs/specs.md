@@ -208,6 +208,24 @@ AXL,23-24
 AXXL,25-26
 AXXXL,27-28
 
+### 4001 (Protime two-button performance jersey): baseball A, AA, AAA from 2027
+
+From the [Protime product page](https://www.protimesports.com/products/two-button-performance-baseball-jersey-adult), checked 2026-11-03. Sizes sold: YXS, YS, YM, YL, YXL, AS, AM, AL, AXL, A2XL, A3XL. Photo: `images/uniforms/hats/4001_ROYAL.jpg`.
+
+Size,Individual chest size (body)
+Y2XS,20"-22" (on the chart, not sold)
+YXS,22"-24"
+YS,24"-26"
+YM,26"-28"
+YL,30"-32"
+YXL,not on Protime's chart (the picker shows 32"-34", inferred)
+AS,34"-36"
+AM,38"-40"
+AL,42"-44"
+AXL,46"-48"
+A2XL,50"-52"
+A3XL,54"-56"
+
 ### Baseball jersey supplier sheet (model not labeled)
 
 ![Baseball jerseys](SPEC_SHEET_BASEBALL_JERSEYS.jpg)

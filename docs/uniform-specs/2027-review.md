@@ -55,14 +55,14 @@ Reviewers: Chris Cunningham (Uniforms), Lauren Garkel (Uniforms, checking Protim
 | # | Question | Who | Notes |
 |---|---|---|---|
 | 1 | **Protime pricing:** are the 2027 jerseys the same as last year? | Lauren | Requested from Protime Oct 28. Second pass on the sheet comes after. |
-| 2 | **Youth XL in the ST350 tee (T-Ball/Kindy) and 4001 (A/AA):** Protime's picker and size guide have no YXL | Lauren (tagged by Chris) | The YXL cells (K4, K5) are orange. The sheet gives YXL 32"–34", the same as Adult XS. specs.md's YST350 chart *does* list XL (19½" half chest), so check the youth tee chart with Protime. |
+| 2 | **Youth XL in the ST350 tee (T-Ball/Kindy) and 4001 (A/AA):** Protime's picker and size guide have no YXL | Lauren (tagged by Chris) | The YXL cells (K4, K5) are orange. The sheet gives YXL 32"–34", the same as Adult XS. specs.md's YST350 chart *does* list XL (19½" half chest), so check the youth tee chart with Protime. **2026-11-03:** Protime sells the 4001 in YXL (product page size list), but its chest chart skips YXL, so the 32"–34" is still an inference. ST350 youth tee still to check. |
 | 3 | **One measurement convention.** Player shirts show full chest ranges (e.g. 38"–40") and coach shirts show half chest / pit-to-pit (e.g. 18.5") | John | Chris: "Shouldn't these mirror the chest size above?" (on the coach 18.5" cell). specs.md normalizes to pit-to-pit, so pick one and use it in both the picker and the sheet. |
 | 4 | **Coach shirt range for baseball AAA–Seniors:** no XS or 4XL. Intended? | Chris | Sheet note on row 13. The T-Ball–AA coach row offers XS–4XL. |
 | 5 | **Softball A/AA player hat:** the sheet now lists a 4301 cap (no size). specs.md says 4302 visor | Chris / Lauren | Confirm cap or visor for softball A/AA players. |
 | 6 | **Softball A/AA coach hat:** the sheet lists 4301 Adult. specs.md says HC10 | Chris / Lauren | Same check as #5. |
 | 7 | **4302 visor sizes for softball AAA and up:** the sheet still offers Youth and Adult. Lauren said players won't pick "youth unisex hats and visors" | Lauren | Is there a visor size question for AAA and up, or not? |
 | 8 | **Intermediate (50/70, new):** assumed to match Juniors | Chris | John approved the assumption 2026-10-30. With 4003 dropped, Juniors becomes **4011**, so Intermediate would be 4011 too. Confirm before the order goes out. |
-| 9 | **New supplier size charts** for 4001, 4011, 4404, LST350, 8203 | Lauren / Protime | None are on file in this folder. The picker measurements need them. |
+| 9 | **New supplier size charts** for 4011, 4404, LST350, 8203 | Lauren / Protime | **4001 done 2026-11-03** (Protime product page chart in specs.md, photo in the picker). The rest aren't on file yet. |
 | 10 | Typo on sheet row 18: coach 8203 3XL reads "50"-43"" | John | Probably 50"–53". |
 
 ## Picker rebuilt (2026-11-02, Uniforms Hub r77, not yet published)
@@ -79,7 +79,7 @@ Choices made where the sheet was unclear (Chris's QA round should confirm):
 - Socks and belt shown for A and up only (sheet row 13). T-Ball/Kindy show none.
 - Softball A/AA player hat is described only as "youth adjustable cap" (open #5). Softball AAA+ still pick a Youth/Adult visor (open #7).
 - Youth XL stays where the sheet lists it (open #2). Coach shirts offer XS–4XL in every division (the sheet rows do; open #4).
-- There are no product photos for 4001, 4011, 4404, LST350 or 8203, so those steps are text-only.
+- Product photos: 4001 added 2026-11-03 (Protime). Still none for 4011, 4404, LST350 or 8203, so those steps are text-only.
 - The registration question numbers (Q13 etc.) aren't shown yet. Add them to the question text in the script once registration is built.
 
 ### Registration questions the picker expects (build Sports Connect to match)
