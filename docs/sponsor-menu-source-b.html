@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
   FILE:     docs/sponsor-menu-source-b.html
-  PURPOSE:  Design B of the yearly NCLL sponsorship menu PDF (one letter page): navy band, 2x2 package tiles.
+  PURPOSE:  Design B of the yearly NCLL sponsorship menu PDF (one letter page): dark gray band, 2x2 package tiles.
             Same content and prices as docs/sponsor-menu-source.html (design A); keep the two in step.
   PRINT:    chrome --headless --print-to-pdf=docs/YYYY-sponsor-menu-B.pdf --no-pdf-header-footer docs/sponsor-menu-source-b.html
   PRICES:   NCLL_2027_Financial_Planning_Model.xlsm, Financial Summary B15:B17. Remove the draft banner once confirmed.
@@ -20,9 +20,9 @@
 			}
 			:root {
 				--red: #cd163f;
-				--navy: #00013a;
+				--dark: #333333;
 				--ink: #1a1a1a;
-				--muted: #5a5a66;
+				--muted: #555555;
 			}
 			body {
 				margin: 0;
@@ -53,7 +53,7 @@
 				letter-spacing: 0.04em;
 			}
 			.hero {
-				background: var(--navy);
+				background: var(--dark);
 				color: #fff;
 				padding: 0.5in 0.6in 0.3in;
 				display: flex;
@@ -112,7 +112,7 @@
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 				gap: 6px 14px;
-				border-left: 1px solid #d9d9e3;
+				border-left: 1px solid #dddddd;
 				padding-left: 0.2in;
 			}
 			.nums b {
@@ -133,7 +133,7 @@
 				gap: 0.16in;
 			}
 			.tile {
-				border: 0.75px solid #dcdce6;
+				border: 0.75px solid #dddddd;
 				border-radius: 8px;
 				overflow: hidden;
 				display: flex;
@@ -141,8 +141,8 @@
 			}
 			.tile .top {
 				padding: 0.12in 0.16in 0.1in;
-				border-bottom: 0.75px solid #dcdce6;
-				background: #f7f7fb;
+				border-bottom: 0.75px solid #dddddd;
+				background: #f5f5f5;
 			}
 			.tile.star .top {
 				background: var(--red);
@@ -171,7 +171,7 @@
 			.tile h2 {
 				margin: 6px 0 0;
 				font-size: 12.5pt;
-				color: var(--navy);
+				color: var(--dark);
 			}
 			.tile.star h2 {
 				color: #fff;
@@ -205,7 +205,7 @@
 			}
 			.extras b {
 				display: block;
-				color: var(--navy);
+				color: var(--dark);
 				font-size: 9.5pt;
 				margin-bottom: 2px;
 			}
