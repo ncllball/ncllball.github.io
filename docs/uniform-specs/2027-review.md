@@ -106,7 +106,7 @@ Removed: the player hoodie question (both programs) and the ST350/ST550 question
 - **Players vs coaches (checked in Sports Connect 2026-11-02):** coach questions are already separate. Head Coach, Assistant Coach and Team Manager each have their own Hat / Shirt / Hoodie / ST350-vs-ST550 questions on their Team Staff position, in both 2027 programs (copied from 2026). Update those three positions' copies to the coach lists above and delete the ST350/ST550 question. Player questions are the program's "Uniform Selection" questions.
 - **"AAA and up" questions:** Sports Connect has no per-division setting on questions or divisions (the only audience choice is "Only Admins" / "All Registering Users"). Either make them optional with "AAA and up only" in the question, or add a "0: Not needed (T-Ball–AA)" option. Decide when building registration. Numbers inside a sport can still skip for a division (AAA baseball skipped Youth XS and XL until 2026-11-03, when Lauren's sheet edit put them back), because each division shares its program's list.
 
-The **Uniform 2027 page** (`CMS/uniform-2027.html`, tabid 2249029) is an older copy of the picker with the 2026 models. Retire it or point it at the hub.
+The **Uniform 2027 page** (tabid 2249029), an older copy of the picker with the 2026 models, was **deleted 2026-11-03**; the Uniform PICKER on the Uniforms Hub replaced it. Its last version is in git history (`CMS/uniform-2027.html`).
 
 ## 3. What changes once this lands
 
