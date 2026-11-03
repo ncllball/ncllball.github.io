@@ -78,7 +78,7 @@ const flat = (r) => `Shirt ${r}&Prime; across`;
 // 4404: no measurements on file yet (ask Protime for the Dawson spec sheet).
 const none = () => "";
 // Sport-Tek LST350 size chart (body bust), from SanMar's spec sheet, 2026-11-03.
-const BUST_LST350 = { lws: "35&ndash;36", lwm: "37&ndash;38", lwl: "39&ndash;41", lwxl: "42&ndash;44", lw2xl: "45&ndash;47", lw3xl: "48&ndash;51" };
+const BUST_LST350 = { lwxs: "32&ndash;34", lws: "35&ndash;36", lwm: "37&ndash;38", lwl: "39&ndash;41", lwxl: "42&ndash;44", lw2xl: "45&ndash;47", lw3xl: "48&ndash;51" };
 
 const sized = (codes, table, fmt) => codes.map((c) => [c, fmt(table[c])]);
 
@@ -231,20 +231,20 @@ const COACH = {
 	divisionQ: "Which division are you coaching?",
 	sportQ: "Are you coaching baseball or softball?",
 	questions: {
-		// Coach lists keep 2026's ranges so no existing Sports Connect option changes meaning:
-		// baseball coach shirts start at XS, softball coach shirts at S.
+		// Coach lists keep 2026's order so no existing Sports Connect option changes meaning;
+		// the XS sizes added for 2027 are appended (baseball 15, softball 14-15).
 		"shirt-bb": {
 			sport: "bb",
 			q: "What coach shirt size do you want to order?",
 			options: [
 				["axs", "Mens XS"], ...MENS_S_UP,
-				...WOMENS,
+				...WOMENS, ["lwxs", "Womens XS"],
 			],
 		},
 		"shirt-sb": {
 			sport: "sb",
 			q: "What coach shirt size do you want to order?",
-			options: [...MENS_S_UP, ...WOMENS],
+			options: [...MENS_S_UP, ...WOMENS, ["axs", "Mens XS"], ["lwxs", "Womens XS"]],
 		},
 		"hat-bb": {
 			sport: "bb",
@@ -277,7 +277,7 @@ const COACH = {
 					note: "Coaches get the <strong>ST350</strong> performance tee in a mens cut or the <strong>LST350</strong> in a womens cut. Pick one size from either list.",
 					sets: [
 						{ title: "Mens &mdash; ST350", item: "ST350 mens tee", sizes: sized(["axs", "as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
-						{ title: "Womens &mdash; LST350", item: "LST350 womens tee", sizes: sized(["lws", "lwm", "lwl", "lwxl", "lw2xl", "lw3xl"], BUST_LST350, bust) },
+						{ title: "Womens &mdash; LST350", item: "LST350 womens tee", sizes: sized(["lwxs", "lws", "lwm", "lwl", "lwxl", "lw2xl", "lw3xl"], BUST_LST350, bust) },
 					],
 				},
 				{
@@ -285,8 +285,8 @@ const COACH = {
 					images: [[`${IMG}/hats/ST350_FRONT_FINAL.png`, "ST350 mens tee"], [`${IMG}/hats/LST350_ROYAL.jpg`, "LST350 womens tee"]],
 					note: "Coaches get the <strong>ST350</strong> performance tee in a mens cut or the <strong>LST350</strong> in a womens cut. Pick one size from either list.",
 					sets: [
-						{ title: "Mens &mdash; ST350", item: "ST350 mens tee", sizes: sized(["as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
-						{ title: "Womens &mdash; LST350", item: "LST350 womens tee", sizes: sized(["lws", "lwm", "lwl", "lwxl", "lw2xl", "lw3xl"], BUST_LST350, bust) },
+						{ title: "Mens &mdash; ST350", item: "ST350 mens tee", sizes: sized(["axs", "as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
+						{ title: "Womens &mdash; LST350", item: "LST350 womens tee", sizes: sized(["lwxs", "lws", "lwm", "lwl", "lwxl", "lw2xl", "lw3xl"], BUST_LST350, bust) },
 					],
 				},
 			],
