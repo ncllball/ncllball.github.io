@@ -236,7 +236,7 @@ A3XL,54"-56"
 
 ### 8203 (Port & Company PC850H ring-spun hoodie): hoodies, AAA and up
 
-[Product page](https://www.protimesports.com/products/ring-spun-hooded-sweatshirt-adult), checked 2026-11-03. Protime invoices call it "PC850H Port Ring Spun Hooded Sweatshirt". Sizes sold: **YXS, YS, YM, YL, AS, AM, AL, AXL, A2XL, A3XL** (no YXL, no A4XL). Its Size Guide is a generic OGIO chart (AXS 32-34" … A4XL 54-57", labeled "waist"), not the 8203's. Photo: `images/uniforms/hats/8203_ROYAL.jpg`.
+[Product page](https://www.protimesports.com/products/ring-spun-hooded-sweatshirt-adult), checked 2026-11-03. Protime invoices call it "PC850H Port Ring Spun Hooded Sweatshirt". Sizes sold: **YXS, YS, YM, YL, YXL, AS, AM, AL, AXL, A2XL, A3XL** (no A4XL). Protime's page doesn't list YXL, but Uniforms (Chris and Lauren) confirmed 2026-11-03 that the hoodie comes in Youth XL, so a Youth L jersey's one-size-up hoodie is a Youth XL, not an Adult S. Its Size Guide is a generic OGIO chart (AXS 32-34" … A4XL 54-57", labeled "waist"), not the 8203's. Photo: `images/uniforms/hats/8203_ROYAL.jpg`.
 
 ### LST350: two meanings
 
