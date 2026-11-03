@@ -365,6 +365,7 @@ function build(w) {
 		rule(`${setSel(name)} .wiz-progress__step.when-${name}`, ["display: flex"]);
 		rule(`${setSel(name)} .wiz-summary__row.when-${name}`, ["display: flex"]);
 		rule(`${setSel(name)} li.when-${name}`, ["display: list-item"]);
+		rule(`${setSel(name)} p.when-${name}`, ["display: block"]);
 	}
 
 	// Selected pills.
@@ -602,7 +603,10 @@ function build(w) {
 		line(8, `</div>`);
 	}
 	line(7, `</dl>`);
-	line(7, `<p class="wiz-block-title">Provided &mdash; not in registration</p>`);
+	// Heading carries the same when- classes as its items, so it hides when none apply
+	// (e.g. AAA-and-up coaches, who pick every item).
+	const providedWhen = [...new Set(w.provided.map(([when]) => `when-${when}`))].join(" ");
+	line(7, `<p class="wiz-block-title ${providedWhen}">Provided &mdash; not in registration</p>`);
 	providedList(7);
 	line(7, `<details class="wiz-options-ref">`);
 	line(8, `<summary>Every option in each registration question</summary>`);

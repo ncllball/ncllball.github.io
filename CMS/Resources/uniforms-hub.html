@@ -633,6 +633,10 @@
 				display: list-item;
 			}
 
+			.unif-wizard:has(#c-div-aaa:checked, #c-div-majors:checked, #c-div-int:checked, #c-div-juniors:checked, #c-div-seniors:checked) p.when-upper {
+				display: block;
+			}
+
 			.unif-wizard:has(#c-div-tb:checked, #c-div-kcp:checked, #c-div-a:checked, #c-div-aa:checked) .wiz-btn.when-lower {
 				display: inline-flex;
 			}
@@ -649,6 +653,10 @@
 				display: list-item;
 			}
 
+			.unif-wizard:has(#c-div-tb:checked, #c-div-kcp:checked, #c-div-a:checked, #c-div-aa:checked) p.when-lower {
+				display: block;
+			}
+
 			.unif-wizard:has(#c-div-a:checked, #c-div-aa:checked, #c-div-aaa:checked, #c-div-majors:checked, #c-div-int:checked, #c-div-juniors:checked, #c-div-seniors:checked) .wiz-btn.when-socks {
 				display: inline-flex;
 			}
@@ -663,6 +671,10 @@
 
 			.unif-wizard:has(#c-div-a:checked, #c-div-aa:checked, #c-div-aaa:checked, #c-div-majors:checked, #c-div-int:checked, #c-div-juniors:checked, #c-div-seniors:checked) li.when-socks {
 				display: list-item;
+			}
+
+			.unif-wizard:has(#c-div-a:checked, #c-div-aa:checked, #c-div-aaa:checked, #c-div-majors:checked, #c-div-int:checked, #c-div-juniors:checked, #c-div-seniors:checked) p.when-socks {
+				display: block;
 			}
 
 			.unif-wizard:has(#c-sport-bb:checked) label[for="c-sport-bb"],
@@ -1225,6 +1237,10 @@
 				display: list-item;
 			}
 
+			.unif-wizard:has(#div-aaa:checked, #div-majors:checked, #div-int:checked, #div-juniors:checked, #div-seniors:checked) p.when-upper {
+				display: block;
+			}
+
 			.unif-wizard:has(#div-tb:checked, #div-kcp:checked, #div-a:checked, #div-aa:checked) .wiz-btn.when-lower {
 				display: inline-flex;
 			}
@@ -1241,6 +1257,10 @@
 				display: list-item;
 			}
 
+			.unif-wizard:has(#div-tb:checked, #div-kcp:checked, #div-a:checked, #div-aa:checked) p.when-lower {
+				display: block;
+			}
+
 			.unif-wizard:has(#div-a:checked, #div-aa:checked, #div-aaa:checked, #div-majors:checked, #div-int:checked, #div-juniors:checked, #div-seniors:checked) .wiz-btn.when-socks {
 				display: inline-flex;
 			}
@@ -1255,6 +1275,10 @@
 
 			.unif-wizard:has(#div-a:checked, #div-aa:checked, #div-aaa:checked, #div-majors:checked, #div-int:checked, #div-juniors:checked, #div-seniors:checked) li.when-socks {
 				display: list-item;
+			}
+
+			.unif-wizard:has(#div-a:checked, #div-aa:checked, #div-aaa:checked, #div-majors:checked, #div-int:checked, #div-juniors:checked, #div-seniors:checked) p.when-socks {
+				display: block;
 			}
 
 			.unif-wizard:has(#sport-bb:checked) label[for="sport-bb"],
@@ -2158,7 +2182,7 @@
 									<dd class="smodel smodel--hoodie-0-0">Orders the 8203 hoodie</dd>
 								</div>
 							</dl>
-							<p class="wiz-block-title">Provided &mdash; not in registration</p>
+							<p class="wiz-block-title when-lower">Provided &mdash; not in registration</p>
 							<ul class="wiz-provided">
 								<li class="when-lower"><strong>Hat:</strong> adult adjustable cap &mdash; one size fits all, nothing to pick.</li>
 							</ul>
@@ -2702,7 +2726,7 @@
 									<dd class="smodel smodel--hat-1-0">Orders the 4302 visor</dd>
 								</div>
 							</dl>
-							<p class="wiz-block-title">Provided &mdash; not in registration</p>
+							<p class="wiz-block-title when-lower when-upper when-socks">Provided &mdash; not in registration</p>
 							<ul class="wiz-provided">
 								<li class="when-lower"><strong>Hat:</strong> youth adjustable cap &mdash; one size fits all, nothing to pick.</li>
 								<li class="when-upper"><strong>Hoodie:</strong> we order one size larger than the jersey you picked.</li>
@@ -2770,7 +2794,7 @@
 			</div>
 			</div>
 			<!-- picker:end -->
-			<p class="cms-rev"><small>[r87 · 2026-11-03 · 2113971]</small></p>
+			<p class="cms-rev"><small>[r88 · 2026-11-03 · 2113971]</small></p>
 		</main>
 	</body>
 </html>
