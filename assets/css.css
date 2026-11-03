@@ -6286,3 +6286,82 @@ a.wiz-btn--go:hover {
         min-width: 0;
     }
 }
+
+/* Home page store sticker (CMS/home-store-sticker.html, its own HTML module placed AFTER the
+   Sports Connect home module). CSS anchor positioning pins it to the rotator's top-right corner;
+   its module wrapper is made static so the sticker positions against the page, not the module.
+   Browsers without anchor positioning just don't show it. */
+.skSlider {
+    anchor-name: --ncll-rotator;
+}
+.DnnModule:has(.ncll-store-sticker),
+.DnnModule:has(.ncll-store-sticker) *:has(.ncll-store-sticker) {
+    position: static !important;
+}
+.ncll-store-sticker {
+    display: none;
+}
+/* The module holds only the sticker: hide its revision marker and any spacing */
+.DnnModule:has(.ncll-store-sticker) .cms-rev {
+    display: none;
+}
+@supports (anchor-name: --a) {
+    .ncll-store-sticker {
+        position: absolute;
+        position-anchor: --ncll-rotator;
+        top: calc(anchor(top) + 10px);
+        right: calc(anchor(right) + 12px);
+        z-index: 50;
+        width: 120px;
+        height: 120px;
+        background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20100%20100'%3E%3Cpath%20d%3D'M50.00%206.00%20A8.25%208.25%200%200%201%2065.05%208.65%20A8.25%208.25%200%200%201%2078.28%2016.29%20A8.25%208.25%200%200%201%2088.11%2028.00%20A8.25%208.25%200%200%201%2093.33%2042.36%20A8.25%208.25%200%200%201%2093.33%2057.64%20A8.25%208.25%200%200%201%2088.11%2072.00%20A8.25%208.25%200%200%201%2078.28%2083.71%20A8.25%208.25%200%200%201%2065.05%2091.35%20A8.25%208.25%200%200%201%2050.00%2094.00%20A8.25%208.25%200%200%201%2034.95%2091.35%20A8.25%208.25%200%200%201%2021.72%2083.71%20A8.25%208.25%200%200%201%2011.89%2072.00%20A8.25%208.25%200%200%201%206.67%2057.64%20A8.25%208.25%200%200%201%206.67%2042.36%20A8.25%208.25%200%200%201%2011.89%2028.00%20A8.25%208.25%200%200%201%2021.72%2016.29%20A8.25%208.25%200%200%201%2034.95%208.65%20A8.25%208.25%200%200%201%2050.00%206.00Z'%20fill%3D'%23c8102e'%20fill-opacity%3D'0.82'%2F%3E%3C%2Fsvg%3E") center / contain no-repeat;
+        filter: drop-shadow(0 6px 10px rgba(0, 0, 0, .55)) drop-shadow(0 2px 3px rgba(0, 0, 0, .35));
+        color: #fff !important;
+        text-decoration: none !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'refrigerator-deluxe', 'bebas-neue-pro', sans-serif;
+        line-height: 1;
+        transform: rotate(12deg);
+        transition: transform .2s ease, filter .2s ease;
+    }
+    .ncll-store-sticker:hover,
+    .ncll-store-sticker:focus-visible {
+        transform: rotate(6deg) scale(1.06);
+        filter: drop-shadow(0 9px 14px rgba(0, 0, 0, .6)) drop-shadow(0 3px 4px rgba(0, 0, 0, .4));
+    }
+}
+.ncll-store-sticker__top,
+.ncll-store-sticker__sub {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.ncll-store-sticker__main {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: .03em;
+    line-height: .95;
+    text-transform: uppercase;
+}
+@media (max-width: 768px) {
+    @supports (anchor-name: --a) {
+        .ncll-store-sticker {
+            width: 62px;
+            height: 62px;
+            top: calc(anchor(top) + 5px);
+            right: calc(anchor(right) + 5px);
+        }
+    }
+    .ncll-store-sticker__top,
+    .ncll-store-sticker__sub {
+        font-size: 10px;
+    }
+    .ncll-store-sticker__main {
+        font-size: 18px;
+    }
+}
