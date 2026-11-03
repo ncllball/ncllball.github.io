@@ -62,7 +62,7 @@ Reviewers: Chris Cunningham (Uniforms), Lauren Garkel (Uniforms, checking Protim
 | 6 | **Softball A/AA coach hat:** the sheet lists 4301 Adult. specs.md says HC10 | Chris / Lauren | Same check as #5. |
 | 7 | **4302 visor sizes for softball AAA and up:** the sheet still offers Youth and Adult. Lauren said players won't pick "youth unisex hats and visors" | Lauren | Is there a visor size question for AAA and up, or not? |
 | 8 | **Intermediate (50/70, new):** assumed to match Juniors | Chris | John approved the assumption 2026-10-30. With 4003 dropped, Juniors becomes **4011**, so Intermediate would be 4011 too. Confirm before the order goes out. |
-| 9 | **New supplier size charts** for 4011, 4404, LST350, 8203 | Lauren / Protime | **4001 done 2026-11-03** (Protime product page chart in specs.md, photo in the picker). The rest aren't on file yet. |
+| 9 | **New supplier size charts** | Lauren / Protime | **2026-11-03:** 4001 and 4011 charts (Protime) in specs.md. 4404 and 8203 product pages only show generic charts. LST350 still none. Photos for 4001, 4011, 4404, 8203 now in the picker. |
 | 10 | Typo on sheet row 18: coach 8203 3XL reads "50"-43"" | John | Probably 50"–53". |
 
 ## Picker rebuilt (2026-11-02, Uniforms Hub r77, not yet published)
@@ -79,7 +79,8 @@ Choices made where the sheet was unclear (Chris's QA round should confirm):
 - Socks and belt shown for A and up only (sheet row 13). T-Ball/Kindy show none.
 - Softball A/AA player hat is described only as "youth adjustable cap" (open #5). Softball AAA+ still pick a Youth/Adult visor (open #7).
 - Youth XL stays where the sheet lists it (open #2). Coach shirts offer XS–4XL in every division (the sheet rows do; open #4).
-- Product photos: 4001 added 2026-11-03 (Protime). Still none for 4011, 4404, LST350 or 8203, so those steps are text-only.
+- Product photos: 4001, 4011, 4404 and 8203 added 2026-11-03 (Protime). Only the LST350 is still without one.
+- **2026-11-03 corrections (Protime product pages + invoices):** the 4404 is Girls/Womens only, so the softball shirt question is now 1-8 Girls/Womens (options 9-17 deleted); the 8203 has no 4XL, so the coach hoodie is 1-6 Adult S-3XL (option 7 deleted on all six coach positions). LST350 = the women's short-sleeve tee (John: never long sleeves). Picker r79 published, 22/22 match, 30/30 live paths.
 - The registration question numbers (Q13 etc.) aren't shown yet. Add them to the question text in the script once registration is built.
 
 ### Registration questions the picker expects (build Sports Connect to match)
