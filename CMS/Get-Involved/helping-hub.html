@@ -69,7 +69,7 @@
 				</p>
 				<p>
 					<strong>Pick what fits you best:</strong>
-					sponsorships, a donation at registration, Venmo, equipment, in-kind services, social media, and the Pop Up volunteer lists.
+					sponsorships, donations (Venmo or at registration), equipment, in-kind services, social media, and the Pop Up volunteer lists.
 				</p>
 			</section>
 
@@ -188,13 +188,14 @@
 					</div>
 				</article>
 
-				<!-- Card: Registration During Donation -->
+				<!-- Card: Donate (Venmo + registration donation) -->
 				<article
 					class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle"
-					aria-labelledby="help-registration-h3"
+					aria-labelledby="help-donate-h3"
 				>
-					<input type="radio" name="help-registration" id="help-registration-intro" checked />
-					<input type="radio" name="help-registration" id="help-registration-0" />
+					<input type="radio" name="help-donate" id="help-donate-intro" checked />
+					<input type="radio" name="help-donate" id="help-donate-0" />
+					<input type="radio" name="help-donate" id="help-donate-1" />
 
 					<div class="ncll-card__sticky-heading" aria-hidden="true">
 						<div class="ncll-card__heading-title">
@@ -203,9 +204,7 @@
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
 								alt="Baseball icon"
 							/>
-							<h3 class="ncll-card__title" id="help-registration-h3">
-								<span class="text-background">Registration Donations</span>
-							</h3>
+							<h3 class="ncll-card__title" id="help-donate-h3"><span class="text-background">Donate</span></h3>
 							<img
 								class="ncll-card__sport-icon"
 								src="https://ncllball.github.io/images/site_navigation/baseball.png"
@@ -216,66 +215,7 @@
 
 					<div class="ncll-card__body panel panel-intro">
 						<div class="ncll-card__details">
-							<p class="ncll-card__blurb">
-								Add a donation when you register your player. It funds scholarships, so no kid sits out because of cost.
-							</p>
-						</div>
-					</div>
-
-					<div class="ncll-card__body panel panel0">
-						<div class="ncll-card__details">
-							<h4 class="left">Giving Levels</h4>
-							<ul class="ncll-card__meta">
-								<li><strong>Single:</strong> $10</li>
-								<li><strong>Double:</strong> $25</li>
-								<li><strong>Triple:</strong> $50</li>
-								<li><strong>Home Run:</strong> $100</li>
-								<li><strong>Grand Slam:</strong> any amount</li>
-							</ul>
-							<p>Pick one at checkout. It&rsquo;s optional and added to your registration total.</p>
-							<div class="ncll-card__cta">
-								<a class="button button--primary" href="https://www.ncllball.com/Default.aspx?tabid=2244720">Go to Registration</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group" aria-label="Registration Donations card controls">
-							<label class="button button--secondary btn-prev btn-prev-start" for="help-registration-0">Back</label>
-							<label class="button button--primary btn-next btn-next-intro" for="help-registration-0">Next</label>
-							<label class="button button--secondary btn-prev btn-prev-0" for="help-registration-intro">Back</label>
-							<label class="button button--primary btn-next btn-next-0" for="help-registration-intro">Start Over</label>
-						</div>
-					</div>
-				</article>
-
-				<!-- Card: Venmo -->
-				<article
-					class="ncll-card ncll-card--overlay ncll-card--volunteer ncll-card--toggle"
-					aria-labelledby="help-venmo-h3"
-				>
-					<input type="radio" name="help-venmo" id="help-venmo-intro" checked />
-					<input type="radio" name="help-venmo" id="help-venmo-0" />
-
-					<div class="ncll-card__sticky-heading" aria-hidden="true">
-						<div class="ncll-card__heading-title">
-							<img
-								class="ncll-card__sport-icon"
-								src="https://ncllball.github.io/images/site_navigation/baseball.png"
-								alt="Baseball icon"
-							/>
-							<h3 class="ncll-card__title" id="help-venmo-h3"><span class="text-background">Venmo</span></h3>
-							<img
-								class="ncll-card__sport-icon"
-								src="https://ncllball.github.io/images/site_navigation/baseball.png"
-								alt="Baseball icon"
-							/>
-						</div>
-					</div>
-
-					<div class="ncll-card__body panel panel-intro">
-						<div class="ncll-card__details">
-							<p class="ncll-card__blurb">Send a fast gift to help cover fields, scholarships, and clinics. Scan the code, or on a phone tap <strong>Donate with Venmo</strong> on the next panel.</p>
+							<p class="ncll-card__blurb">Every dollar helps cover fields, gear and scholarships, so no kid sits out because of cost. Give any time with Venmo, or add a donation when you register.</p>
 							<aside class="venmo-wrap">
 								<figure class="lightbox-scope" style="margin: 0;">
 									<input class="lightbox-toggle" type="checkbox" id="lightbox-venmo-qr" />
@@ -294,11 +234,12 @@
 
 					<div class="ncll-card__body panel panel0">
 						<div class="ncll-card__details">
-							<h4 class="left">Ways Your Venmo Helps</h4>
+							<h4 class="left">Venmo</h4>
+							<p>Scan the code on the first panel, or on a phone tap the button.</p>
 							<ul class="ncll-card__meta">
 								<li>Scholarships for players.</li>
 								<li>Field prep (chalk, clay, tarps).</li>
-								<li>Coach/umpire clinics.</li>
+								<li>Coach and umpire clinics.</li>
 							</ul>
 							<div class="ncll-card__cta">
 								<a class="button button--primary" href="https://venmo.com/u/northcentrallittleleague" target="_blank" rel="noopener">Donate with Venmo</a>
@@ -306,12 +247,31 @@
 						</div>
 					</div>
 
+					<div class="ncll-card__body panel panel1">
+						<div class="ncll-card__details">
+							<h4 class="left">At Registration</h4>
+							<p>Pick a level at checkout; it&rsquo;s added to your total and funds scholarships. Optional.</p>
+							<ul class="ncll-card__meta">
+								<li><strong>Single:</strong> $10</li>
+								<li><strong>Double:</strong> $25</li>
+								<li><strong>Triple:</strong> $50</li>
+								<li><strong>Home Run:</strong> $100</li>
+								<li><strong>Grand Slam:</strong> any amount</li>
+							</ul>
+							<div class="ncll-card__cta">
+								<a class="button button--primary" href="https://www.ncllball.com/Default.aspx?tabid=2244720">Go to Registration</a>
+							</div>
+						</div>
+					</div>
+
 					<div class="ncll-card__sticky-footer">
-						<div class="actions" role="group" aria-label="Venmo card controls">
-							<label class="button button--secondary btn-prev btn-prev-start" for="help-venmo-0">Back</label>
-							<label class="button button--primary btn-next btn-next-intro" for="help-venmo-0">Next</label>
-							<label class="button button--secondary btn-prev btn-prev-0" for="help-venmo-intro">Back</label>
-							<label class="button button--primary btn-next btn-next-0" for="help-venmo-intro">Start Over</label>
+						<div class="actions" role="group" aria-label="Donate card controls">
+							<label class="button button--secondary btn-prev btn-prev-start" for="help-donate-1">Back</label>
+							<label class="button button--primary btn-next btn-next-intro" for="help-donate-0">Next</label>
+							<label class="button button--secondary btn-prev btn-prev-0" for="help-donate-intro">Back</label>
+							<label class="button button--primary btn-next btn-next-0" for="help-donate-1">Next</label>
+							<label class="button button--secondary btn-prev btn-prev-1" for="help-donate-0">Back</label>
+							<label class="button button--primary btn-next btn-next-1" for="help-donate-intro">Start Over</label>
 						</div>
 					</div>
 				</article>
@@ -1012,7 +972,7 @@
 					</div>
 				</article>
 			</div>
-			<p class="cms-rev"><small>[r14 · 2026-11-02 · 2246341]</small></p>
+			<p class="cms-rev"><small>[r15 · 2026-11-03 · 2246341]</small></p>
 		</main>
 	</body>
 </html>
