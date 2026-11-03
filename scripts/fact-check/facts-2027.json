@@ -1,6 +1,6 @@
 {
  "_about": "Source of truth for the 2027 fact check (scripts/fact-check). Division data pulled read-only from Sports Connect (programs 80158833 baseball, 80158834 softball) on 2026-11-03; fees are the 2027 fees awaiting Jason's sign-off (SC still holds the $5,000 test price). Refresh with scripts/fact-check/README.md before each check.",
- "pulled": "2026-11-03",
+ "pulled": "2026-11-03 (re-checked against Sports Connect 2026-11-03 afternoon: no division changes)",
  "programs": {
   "baseball": {
    "scProgramId": 80158833,
@@ -22,7 +22,8 @@
      },
      "cap": 90,
      "scClose": "2027-05-01",
-     "scDivisionId": 81348475
+     "scDivisionId": 81348475,
+     "teamAssignment": "mid-March"
     },
     {
      "key": "kindy",
@@ -42,7 +43,8 @@
      },
      "cap": 90,
      "scClose": "2027-05-19",
-     "scDivisionId": 81348476
+     "scDivisionId": 81348476,
+     "teamAssignment": "mid-March"
     },
     {
      "key": "a",
@@ -59,7 +61,8 @@
      },
      "cap": 104,
      "scClose": "2027-05-01",
-     "scDivisionId": 81348477
+     "scDivisionId": 81348477,
+     "teamAssignment": "early March"
     },
     {
      "key": "aa",
@@ -76,7 +79,8 @@
      },
      "cap": 104,
      "scClose": "2027-05-01",
-     "scDivisionId": 81348483
+     "scDivisionId": 81348483,
+     "teamAssignment": "early March"
     },
     {
      "key": "aaa",
@@ -93,7 +97,8 @@
      },
      "cap": 96,
      "scClose": "2027-05-01",
-     "scDivisionId": 81348482
+     "scDivisionId": 81348482,
+     "teamAssignment": "Feb 13-20"
     },
     {
      "key": "majors",
@@ -110,7 +115,8 @@
      },
      "cap": 72,
      "scClose": "2027-05-01",
-     "scDivisionId": 81348478
+     "scDivisionId": 81348478,
+     "teamAssignment": "Feb 13-20"
     },
     {
      "key": "intermediate",
@@ -128,7 +134,8 @@
      },
      "cap": 18,
      "scClose": "2027-05-01",
-     "scDivisionId": 81348479
+     "scDivisionId": 81348479,
+     "teamAssignment": "early March"
     },
     {
      "key": "juniors",
@@ -145,7 +152,8 @@
      },
      "cap": 20,
      "scClose": "2027-05-01",
-     "scDivisionId": 81348480
+     "scDivisionId": 81348480,
+     "teamAssignment": "mid-February"
     },
     {
      "key": "seniors",
@@ -162,7 +170,8 @@
      },
      "cap": 20,
      "scClose": "2027-06-25",
-     "scDivisionId": 81348481
+     "scDivisionId": 81348481,
+     "teamAssignment": "late April"
     }
    ]
   },
@@ -184,7 +193,8 @@
      },
      "cap": 44,
      "scClose": "2027-03-01",
-     "scDivisionId": 81348485
+     "scDivisionId": 81348485,
+     "teamAssignment": "early March"
     },
     {
      "key": "aa",
@@ -201,7 +211,8 @@
      },
      "cap": 60,
      "scClose": "2027-03-01",
-     "scDivisionId": 81348486
+     "scDivisionId": 81348486,
+     "teamAssignment": "early March"
     },
     {
      "key": "aaa",
@@ -218,7 +229,8 @@
      },
      "cap": 36,
      "scClose": "2027-03-01",
-     "scDivisionId": 81348496
+     "scDivisionId": 81348496,
+     "teamAssignment": "Feb 13-20"
     },
     {
      "key": "majors",
@@ -235,7 +247,8 @@
      },
      "cap": 26,
      "scClose": "2027-03-01",
-     "scDivisionId": 81348487
+     "scDivisionId": 81348487,
+     "teamAssignment": "Feb 13-20"
     },
     {
      "key": "juniors",
@@ -252,7 +265,8 @@
      },
      "cap": 15,
      "scClose": "2027-03-01",
-     "scDivisionId": 81348488
+     "scDivisionId": 81348488,
+     "teamAssignment": "Feb 13-20"
     },
     {
      "key": "seniors",
@@ -269,7 +283,8 @@
      },
      "cap": 0,
      "scClose": "2027-06-01",
-     "scDivisionId": 81348489
+     "scDivisionId": 81348489,
+     "teamAssignment": "waitlist / partner league (June start)"
     }
    ]
   }
@@ -282,8 +297,8 @@
   "registerBy": "Sunday, January 31, 2027 (requested, not the SC close date)",
   "registerByBaseballAAAMajors": "Sunday, January 17, 2027",
   "assessmentsBaseball": "around Sat, Jan 23, 2027 (AAA, Majors)",
-  "assessmentsSoftball": "around Sat, Feb 6, 2027 (AAA, Majors; Juniors has no assessments)",
-  "teamAssignments": "late February or early March"
+  "assessmentsSoftball": "around Sat, Feb 6, 2027 (AAA, Majors; Juniors has NO assessments)",
+  "teamAssignments": "per division: see each division's teamAssignment (from the 2027 Registration page's Team Assignments column / Key Dates, 2026-11-03). Upper divisions (AAA, Majors, Juniors) are set Feb 13-20 or mid-February; Tee Ball through AA and Intermediate in early to mid-March; baseball Seniors late April."
  },
  "sponsorship": {
   "teamABtoSeniors": 1350,
