@@ -989,16 +989,21 @@ const BASE_CSS = `
 	box-sizing: border-box;
 }
 
-.wiz-btn {
+/* One text style for every button (labels and the registration link): the page font,
+   not the skin's Barlow on labels or its 20px on links. */
+.wiz-btn,
+a.wiz-btn {
 	display: inline-flex;
 	align-items: center;
 	padding: 0.65rem 1.2rem;
 	border-radius: 5px;
-	font-size: 0.9rem;
-	font-weight: 700;
+	font-family: proxima-nova, "Segoe UI", Helvetica, Arial, sans-serif !important;
+	font-size: 0.9rem !important;
+	font-weight: 600 !important;
+	letter-spacing: normal;
 	cursor: pointer;
 	text-decoration: none;
-	line-height: 1;
+	line-height: 1 !important;
 }
 
 .wiz-btn--next {
