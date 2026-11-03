@@ -5025,27 +5025,35 @@ p.rules-legend img {
 .button--social-gradient {
     background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
     border-color: #dd2a7b;
-    color: #fff;
+    color: #fff !important;
 }
 
 .button--social-gradient:hover,
 .button--social-gradient:focus-visible {
     background: linear-gradient(135deg, #f8994a, #e24193, #8a45b8);
     border-color: #e24193;
-    color: #fff;
+    color: #fff !important;
+}
+
+.button--social-gradient:visited {
+    color: #fff !important;
 }
 
 .ad-hoc-heroes-link {
     background: var(--color_red);
     border-color: var(--color_red);
-    color: #fff;
+    color: #fff !important;
 }
 
 .ad-hoc-heroes-link:hover,
 .ad-hoc-heroes-link:focus-visible {
     background: #b81236;
     border-color: #b81236;
-    color: #fff;
+    color: #fff !important;
+}
+
+.ad-hoc-heroes-link:visited {
+    color: #fff !important;
 }
 
 /* Related links sizing */
