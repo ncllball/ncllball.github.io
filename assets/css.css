@@ -2269,12 +2269,12 @@ details.footies summary::before {
     flex: none;
     width: 1rem;
     height: 1rem;
-    background: linear-gradient(#fff, #fff) center / 8px 2px no-repeat, linear-gradient(#fff, #fff) center / 2px 8px no-repeat, var(--color_red);
+    background: linear-gradient(#fff, #fff) center / 8px 1.5px no-repeat, linear-gradient(#fff, #fff) center / 1.5px 8px no-repeat, var(--color_red);
     border-radius: 2px
 }
 
 details.footies[open] summary::before {
-    background: linear-gradient(#fff, #fff) center / 8px 2px no-repeat, var(--color_red)
+    background: linear-gradient(#fff, #fff) center / 8px 1.5px no-repeat, var(--color_red)
 }
 
 .footies_red {
