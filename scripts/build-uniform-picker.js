@@ -56,7 +56,7 @@ const SETS = {
 // ── Measurement helpers ────────────────────────────────────────────────────
 
 const chest = (r) => `Fits chest ${r}&Prime;`;
-const ptp = (r) => `${r}&Prime; pit-to-pit`;
+const bust = (r) => `Fits bust ${r}&Prime;`;
 const head = (r) => `Head ${r}&Prime;`;
 
 // Chest ranges from the 2027 review sheet (body measurements).
@@ -72,7 +72,8 @@ const CHEST_4408 = {
 	gs: "22&ndash;24", gm: "26&ndash;28", gl: "30&ndash;32",
 	ws: "33&ndash;35", wm: "36&ndash;38", wl: "39&ndash;41", wxl: "42&ndash;44", w2xl: "45&ndash;47",
 };
-const PTP_LST350 = { lws: "19", lwm: "20", lwl: "21.5", lwxl: "23", lw2xl: "24.5", lw3xl: "26.5" };
+// Sport-Tek LST350 size chart (body bust), from SanMar's spec sheet, 2026-11-03.
+const BUST_LST350 = { lws: "35&ndash;36", lwm: "37&ndash;38", lwl: "39&ndash;41", lwxl: "42&ndash;44", lw2xl: "45&ndash;47", lw3xl: "48&ndash;51" };
 
 const sized = (codes, table, fmt) => codes.map((c) => [c, fmt(table[c])]);
 
@@ -273,20 +274,20 @@ const COACH = {
 			blocks: [
 				{
 					q: "shirt-bb", sport: "bb",
-					images: [[`${IMG}/hats/ST350_FRONT_FINAL.png`, "ST350 tee &mdash; front"], [`${IMG}/hats/ST350_BACK_FINAL.png`, "ST350 tee &mdash; back"]],
+					images: [[`${IMG}/hats/ST350_FRONT_FINAL.png`, "ST350 mens tee"], [`${IMG}/hats/LST350_ROYAL.jpg`, "LST350 womens tee"]],
 					note: "Coaches get the <strong>ST350</strong> performance tee in a mens cut or the <strong>LST350</strong> in a womens cut. Pick one size from either list.",
 					sets: [
 						{ title: "Mens &mdash; ST350", item: "ST350 mens tee", sizes: sized(["axs", "as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
-						{ title: "Womens &mdash; LST350", item: "LST350 womens tee", sizes: sized(["lws", "lwm", "lwl", "lwxl", "lw2xl", "lw3xl"], PTP_LST350, ptp) },
+						{ title: "Womens &mdash; LST350", item: "LST350 womens tee", sizes: sized(["lws", "lwm", "lwl", "lwxl", "lw2xl", "lw3xl"], BUST_LST350, bust) },
 					],
 				},
 				{
 					q: "shirt-sb", sport: "sb",
-					images: [[`${IMG}/hats/ST350_FRONT_FINAL.png`, "ST350 tee &mdash; front"], [`${IMG}/hats/ST350_BACK_FINAL.png`, "ST350 tee &mdash; back"]],
+					images: [[`${IMG}/hats/ST350_FRONT_FINAL.png`, "ST350 mens tee"], [`${IMG}/hats/LST350_ROYAL.jpg`, "LST350 womens tee"]],
 					note: "Coaches get the <strong>ST350</strong> performance tee in a mens cut or the <strong>LST350</strong> in a womens cut. Pick one size from either list.",
 					sets: [
 						{ title: "Mens &mdash; ST350", item: "ST350 mens tee", sizes: sized(["as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
-						{ title: "Womens &mdash; LST350", item: "LST350 womens tee", sizes: sized(["lws", "lwm", "lwl", "lwxl", "lw2xl", "lw3xl"], PTP_LST350, ptp) },
+						{ title: "Womens &mdash; LST350", item: "LST350 womens tee", sizes: sized(["lws", "lwm", "lwl", "lwxl", "lw2xl", "lw3xl"], BUST_LST350, bust) },
 					],
 				},
 			],

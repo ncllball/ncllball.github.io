@@ -240,7 +240,21 @@ A3XL,54"-56"
 
 ### LST350: two meanings
 
-Protime invoice 388982 lists "LST350.WOMENS, Sport-Tek Competitor T. Short Sleeve, Womens" (Sport-Tek's LST350 is the Ladies PosiCharge Competitor Tee). Protime's website calls its 4007 long-sleeve Competitor tee (YS–YXL, AXS–A3XL) "also known as our LST350". Confirm with Chris which one NCLL means before ordering.
+Protime invoice 388982 lists "LST350.WOMENS, Sport-Tek Competitor T. Short Sleeve, Womens" (Sport-Tek's LST350 is the Ladies PosiCharge Competitor Tee). Protime's website calls its 4007 long-sleeve Competitor tee (YS–YXL, AXS–A3XL) "also known as our LST350". **Settled 2026-11-03 (John): NCLL means the women's short-sleeve tee**; it has never ordered long sleeves.
+
+Sport-Tek LST350 Women's PosiCharge Competitor Tee ([SanMar](https://www.sanmar.com/p/4296_TrueRoyal), spec sheet checked 2026-11-03). Women's sizes XS-4XL. Photo: `images/uniforms/hats/LST350_ROYAL.jpg`.
+
+Size,Body bust (size chart),Bust flat (garment),Body length at back
+XS,32-34,18,25
+S,35-36,19,25.5
+M,37-38,20,26
+L,39-41,21.5,27
+XL,42-44,23,28
+2XL,45-47,24.5,29
+3XL,48-51,26.5,29.5
+4XL,52-55,28.5,30
+
+Registration offers Womens S-3XL (2026's range); XS and 4XL exist but aren't offered.
 
 ### Baseball jersey supplier sheet (model not labeled)
 
