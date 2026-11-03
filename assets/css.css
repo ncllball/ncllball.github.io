@@ -4925,6 +4925,12 @@ p.rules-legend img {
     bottom: -37px !important;
 }
 
+/* Sports Connect sets letter-spacing: 0.5px on listing text */
+.registration-listing .row-text,
+.registration-listing .row-text * {
+    letter-spacing: normal !important;
+}
+
 .age-matrix tbody tr:last-child td {
     padding-bottom: 12px;
 }
