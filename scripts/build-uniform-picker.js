@@ -68,10 +68,15 @@ const CHEST_ST350 = {
 	yxs: "22&ndash;24", ys: "25&ndash;27", ym: "28&ndash;30", yl: "30&ndash;32", yxl: "32&ndash;34",
 	axs: "32&ndash;34", as: "35&ndash;37", am: "38&ndash;40", al: "41&ndash;43", axl: "44&ndash;46", a2xl: "47&ndash;49", a3xl: "50&ndash;53", a4xl: "54&ndash;57",
 };
-const CHEST_4408 = {
-	gs: "22&ndash;24", gm: "26&ndash;28", gl: "30&ndash;32",
-	ws: "33&ndash;35", wm: "36&ndash;38", wl: "39&ndash;41", wxl: "42&ndash;44", w2xl: "45&ndash;47",
+// 4408 supplier sheet (docs/uniform-specs/SPEC_SHEET_4408_softball.jpg): the shirt laid flat,
+// 1" below the armholes. Protime has no body-chest chart for girls/womens sizes.
+const FLAT_4408 = {
+	gs: "13½", gm: "15½", gl: "17½",
+	ws: "19", wm: "20½", wl: "22", wxl: "23½", w2xl: "25",
 };
+const flat = (r) => `Shirt ${r}&Prime; across`;
+// 4404: no measurements on file yet (ask Protime for the Dawson spec sheet).
+const none = () => "";
 // Sport-Tek LST350 size chart (body bust), from SanMar's spec sheet, 2026-11-03.
 const BUST_LST350 = { lws: "35&ndash;36", lwm: "37&ndash;38", lwl: "39&ndash;41", lwxl: "42&ndash;44", lw2xl: "45&ndash;47", lw3xl: "48&ndash;51" };
 
@@ -175,19 +180,19 @@ const PLAYER = {
 				{
 					q: "shirt-sb", sport: "sb", divs: ["a", "aa", "aaa", "juniors", "seniors"],
 					images: [[`${IMG}/hats/4408_RIPTIDE_FINAL.png`, "4408 softball jersey"]],
-					note: "Players get the <strong>4408</strong> softball jersey, in girls or womens sizes. Measure around the fullest part of the chest.",
+					note: "Players get the <strong>4408</strong> softball jersey, in girls or womens sizes. Lay a shirt that fits now flat and measure straight across, one inch below the armpits; pick the size closest to that.",
 					sets: [
-						{ title: "Girls sizes", item: "4408 Girls jersey", sizes: sized(["gs", "gm", "gl"], CHEST_4408, chest) },
-						{ title: "Womens sizes", item: "4408 Womens jersey", sizes: sized(["ws", "wm", "wl", "wxl", "w2xl"], CHEST_4408, chest) },
+						{ title: "Girls sizes", item: "4408 Girls jersey", sizes: sized(["gs", "gm", "gl"], FLAT_4408, flat) },
+						{ title: "Womens sizes", item: "4408 Womens jersey", sizes: sized(["ws", "wm", "wl", "wxl", "w2xl"], FLAT_4408, flat) },
 					],
 				},
 				{
 					q: "shirt-sb", sport: "sb", divs: ["majors"],
 					images: [[`${IMG}/hats/4404_ROYAL.jpg`, "4404 Dawson softball jersey"]],
-					note: "Softball Majors players get the <strong>4404</strong> Dawson jersey, in girls or womens sizes (same sizes as the 4408). Measure around the fullest part of the chest.",
+					note: "Softball Majors players get the <strong>4404</strong> Dawson jersey, in the same girls and womens sizes as the 4408 that A–AAA wear. Measurements for this jersey are coming; if your player wore a 4408 before, start with that size.",
 					sets: [
-						{ title: "Girls sizes", item: "4404 Girls jersey", sizes: sized(["gs", "gm", "gl"], CHEST_4408, chest) },
-						{ title: "Womens sizes", item: "4404 Womens jersey", sizes: sized(["ws", "wm", "wl", "wxl", "w2xl"], CHEST_4408, chest) },
+						{ title: "Girls sizes", item: "4404 Girls jersey", sizes: sized(["gs", "gm", "gl"], {}, none) },
+						{ title: "Womens sizes", item: "4404 Womens jersey", sizes: sized(["ws", "wm", "wl", "wxl", "w2xl"], {}, none) },
 					],
 				},
 			],
@@ -531,7 +536,7 @@ function build(w) {
 					// Same "N: label" text as the registration dropdown line.
 					const options = w.questions[b.q].options;
 					const n = options.findIndex((o) => o[0] === c);
-					line(9, `<label class="wiz-opt" for="${p}${b.q}-${c}">${n + 1}: ${options[n][1]}<span class="wiz-opt__note">${m}</span></label>`);
+					line(9, `<label class="wiz-opt" for="${p}${b.q}-${c}">${n + 1}: ${options[n][1]}${m ? `<span class="wiz-opt__note">${m}</span>` : ""}</label>`);
 				}
 				line(8, `</div>`);
 			}

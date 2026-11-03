@@ -115,3 +115,5 @@ The **Uniform 2027 page** (`CMS/uniform-2027.html`, tabid 2249029) is an older c
 3. **Uniforms Hub (`CMS/Resources/uniforms-hub.html`):** the same model/size changes wherever it lists them (it also mentions PC90 in 15 places).
 4. **Registration (Sports Connect):** numbered uniform questions and options that match the picker.
 5. **Chris QA round 2**, then John sends the order.
+
+- **2026-11-03 softball measurements (safe fix, John):** the check sheet's 4408 "fits chest" ranges had no traceable source (the Girls rows equal Protime's generic youth chart). The picker now shows the 4408 supplier sheet's real laid-flat measurements (GS 13½″ … W2XL 25″). The 4404 shows sizes only until Protime sends the Dawson spec sheet (ask via Lauren/Chris).
