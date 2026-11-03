@@ -30,6 +30,11 @@ Registration page: `https://www.ncllball.com/Default.aspx?tabid=2244720`
 | Facebook post | `https://www.ncllball.com/Default.aspx?tabid=2244720&utm_source=facebook&utm_medium=social&utm_campaign=2027-registration` |
 | QR code on flyers/posters | `https://www.ncllball.com/Default.aspx?tabid=2244720&utm_source=qr&utm_medium=print&utm_campaign=2027-registration` |
 | GameChanger message | `https://www.ncllball.com/Default.aspx?tabid=2244720&utm_source=gamechanger&utm_medium=chat&utm_campaign=2027-registration` |
+| Text message (SMS) | `https://www.ncllball.com/Default.aspx?tabid=2244720&utm_source=sms&utm_medium=text&utm_campaign=2027-registration` |
+
+Reminder emails later: same as the email link plus `&utm_content=reminder-1`, `reminder-2`, … so each send shows separately in GA. The campaign stays `2027-registration` everywhere (Tower's T-16 links used `registration-2027`; GA would count that as a different campaign, so don't use it).
+
+GA only sees visitors who click "Accept All Cookies" on the OneTrust banner, so it undercounts. "Register" leaves for login.stacksports.com, which GA doesn't cover: count actual registrations in Sports Connect reports.
 
 Already-printed QR codes can't change; tag the next print run.
 
