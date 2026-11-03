@@ -4931,6 +4931,15 @@ p.rules-legend img {
     letter-spacing: normal !important;
 }
 
+/* 2027 Registration page (tabid 2244720): the red module title is the only header,
+   so hide the program name and the description's tagline (still shown in Sports Connect) */
+.DnnModule-2331666 .grid-header .grid-title,
+.DnnModule-2331762 .grid-header .grid-title,
+.DnnModule-2331666 .grid-header .row-text > div > p:first-child,
+.DnnModule-2331762 .grid-header .row-text > div > p:first-child {
+    display: none !important;
+}
+
 .age-matrix tbody tr:last-child td {
     padding-bottom: 12px;
 }
