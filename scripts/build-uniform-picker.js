@@ -160,16 +160,10 @@ const PLAYER = {
 					],
 				},
 				{
-					q: "shirt-bb", sport: "bb", divs: ["a", "aa"],
+					q: "shirt-bb", sport: "bb", divs: ["a", "aa", "aaa"],
 					images: [[`${IMG}/hats/4001_ROYAL.jpg`, "4001 baseball jersey"]],
-					note: "A and AA players get the <strong>4001</strong> baseball jersey. Measure around the fullest part of the chest.",
+					note: "A, AA and AAA players get the <strong>4001</strong> baseball jersey. Measure around the fullest part of the chest.",
 					sets: [{ item: "4001 jersey", sizes: sized(["yxs", "ys", "ym", "yl", "yxl", "as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_4001_4011, chest) }],
-				},
-				{
-					q: "shirt-bb", sport: "bb", divs: ["aaa"],
-					images: [[`${IMG}/hats/4001_ROYAL.jpg`, "4001 baseball jersey"]],
-					note: "AAA players get the <strong>4001</strong> baseball jersey. Measure around the fullest part of the chest.",
-					sets: [{ item: "4001 jersey", sizes: sized(["ys", "ym", "yl", "as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_4001_4011, chest) }],
 				},
 				{
 					q: "shirt-bb", sport: "bb", divs: ["majors", "int", "juniors", "seniors"],
