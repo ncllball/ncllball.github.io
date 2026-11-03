@@ -6302,8 +6302,14 @@ a.wiz-btn--go:hover {
     display: none;
 }
 /* The module holds only the sticker: hide its revision marker and any spacing */
-.DnnModule:has(.ncll-store-sticker) .cms-rev {
-    display: none;
+.DnnModule:has(.ncll-store-sticker) .cms-rev,
+.DnnModule:has(.ncll-store-sticker) .dnnDragHint {
+    display: none !important;
+}
+.DnnModule:has(.ncll-store-sticker) {
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
 }
 @supports (anchor-name: --a) {
     .ncll-store-sticker {
