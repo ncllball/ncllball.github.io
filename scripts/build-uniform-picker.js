@@ -569,7 +569,9 @@ function build(w) {
 	panelOpen("summary", "Your registration answers");
 	progress(7, "summary");
 	line(7, `<h4 class="wiz-title left">Your registration answers</h4>`);
-	line(7, `<p class="wiz-reg-callout">Take a screenshot of this screen. In registration, find each question below and pick the numbered option shown.</p>`);
+	// Where the questions sit in Sports Connect (checked in both 2027 programs, 2026-11-03).
+	const where = w.kind === "coach" ? "in your coach position&rsquo;s questions" : "near the end of the player questions";
+	line(7, `<p class="wiz-reg-callout">Take a screenshot of this screen. In registration, the uniform questions come right after &ldquo;Must read regarding Uniform Sizing!&rdquo; (${where}). For each one, pick the numbered option shown below.</p>`);
 	line(7, `<dl class="wiz-summary">`);
 	const plainRow = (label, key, values) => {
 		line(8, `<div class="wiz-summary__row">`);
