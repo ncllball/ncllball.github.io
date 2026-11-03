@@ -8,6 +8,7 @@ The tools still in use for ncllball.com. Run from the repo root. Cleaned up 2026
 | `dnn-radeditor-pull.js`, `dnn-radeditor-pull-batch.js` | Pull a page's (or many pages') current HTML down from the CMS. |
 | `ncll-news-admin.js` | Adds a "Comings and Goings" news item (the `/news-add` command). |
 | `hrd-sync.js` | Home Run Derby page sync. |
+| `build-uniform-picker.js` | Generates the Uniform PICKER (coach + player wizards, pure HTML/CSS) on the Uniforms Hub from the models, sizes and registration numbering at the top of the script. Edit the data there, run it, then publish the hub. |
 | `deploy-css.ps1` | Deploys `assets/css.css` to Cloudflare Pages (`assets.ncllball.com`) and waits until it's live. |
 | `format-css.js` | Formats `assets/css.css`. |
 | `rotators/` | Builds homepage rotator slides (see `rotators/README.md`). |

@@ -1,0 +1,1196 @@
+// Builds the Uniform PICKER (coach + player wizards) on the Uniforms Hub
+// (CMS/Resources/uniforms-hub.html) from the data below.
+//
+//   node scripts/build-uniform-picker.js
+//
+// The picker is pure HTML/CSS (radio buttons + :has()), so every model, size and
+// skip rule turns into a pile of selectors. Edit the data here, never the
+// generated block in the hub. The script rewrites the hub's <style> block and
+// everything between <!-- picker:start --> and <!-- picker:end -->; the intro,
+// related links and rev marker stay hand-edited.
+//
+// Source of truth for models and sizes: docs/uniform-specs/specs.md, plus the
+// 2027 review (docs/uniform-specs/2027-review.md). Registration answers are
+// numbered; the picker summary shows the same "N: label" text the Sports Connect
+// dropdown will show, so keep each question's option list in the registration
+// order.
+
+const fs = require("fs");
+const path = require("path");
+
+const HUB = path.join(__dirname, "..", "CMS", "Resources", "uniforms-hub.html");
+const IMG = "https://ncllball.github.io/images/uniforms";
+const REGISTER_URL = "https://www.ncllball.com/Default.aspx?tabid=2244720";
+
+// ── Divisions ──────────────────────────────────────────────────────────────
+
+const DIVISIONS = {
+	bb: [
+		["tb", "T-Ball"],
+		["kcp", "Kindy&nbsp;/ Coach&nbsp;Pitch"],
+		["a", "A"],
+		["aa", "AA"],
+		["aaa", "AAA"],
+		["majors", "Majors"],
+		["int", "Intermediate"],
+		["juniors", "Juniors"],
+		["seniors", "Seniors"],
+	],
+	sb: [
+		["a", "A"],
+		["aa", "AA"],
+		["aaa", "AAA"],
+		["majors", "Majors"],
+		["juniors", "Juniors"],
+		["seniors", "Seniors"],
+	],
+};
+
+// Division sets used for skip rules and "provided" items (both sports).
+const SETS = {
+	upper: ["aaa", "majors", "int", "juniors", "seniors"], // hat + hoodie divisions
+	lower: ["tb", "kcp", "a", "aa"], // no hat size, no hoodie
+	socks: ["a", "aa", "aaa", "majors", "int", "juniors", "seniors"], // socks & belt (sheet: "A and up")
+};
+
+// ── Measurement helpers ────────────────────────────────────────────────────
+
+const chest = (r) => `Fits chest ${r}&Prime;`;
+const ptp = (r) => `${r}&Prime; pit-to-pit`;
+const head = (r) => `Head ${r}&Prime;`;
+
+// Chest ranges from the 2027 review sheet (body measurements).
+const CHEST_4001_4011 = {
+	yxs: "22&ndash;24", ys: "24&ndash;26", ym: "26&ndash;28", yl: "30&ndash;32", yxl: "32&ndash;34",
+	as: "34&ndash;36", am: "38&ndash;40", al: "42&ndash;44", axl: "46&ndash;48", a2xl: "50&ndash;52", a3xl: "54&ndash;56",
+};
+const CHEST_ST350 = {
+	yxs: "22&ndash;24", ys: "25&ndash;27", ym: "28&ndash;30", yl: "30&ndash;32", yxl: "32&ndash;34",
+	axs: "32&ndash;34", as: "35&ndash;37", am: "38&ndash;40", al: "41&ndash;43", axl: "44&ndash;46", a2xl: "47&ndash;49", a3xl: "50&ndash;53", a4xl: "54&ndash;57",
+};
+const CHEST_4408 = {
+	gs: "22&ndash;24", gm: "26&ndash;28", gl: "30&ndash;32",
+	ws: "33&ndash;35", wm: "36&ndash;38", wl: "39&ndash;41", wxl: "42&ndash;44", w2xl: "45&ndash;47",
+};
+const PTP_LST350 = { lws: "19", lwm: "20", lwl: "21.5", lwxl: "23", lw2xl: "24.5", lw3xl: "26.5" };
+
+const sized = (codes, table, fmt) => codes.map((c) => [c, fmt(table[c])]);
+
+// ── Wizards ────────────────────────────────────────────────────────────────
+//
+// Each question = one registration dropdown. options: [code, "label"] in
+// registration order (the number shown is the 1-based position). Each step
+// has blocks; a block shows for its sport + divisions and offers size sets
+// (each set names the item/SKU those sizes order).
+
+// Questions are per program (baseball and softball are separate Sports Connect
+// programs), so each sport gets its own numbered list. Coach questions are
+// separate from player questions (asked of team staff only).
+
+const PTS30 = [["xssm", head("6⅝&ndash;7")], ["smmd", head("7&ndash;7¼")], ["lgxl", head("7⅜&ndash;7⅝")]];
+const ADULT_TOPS = [
+	["axs", "Adult XS"], ["as", "Adult S"], ["am", "Adult M"], ["al", "Adult L"],
+	["axl", "Adult XL"], ["a2xl", "Adult 2XL"], ["a3xl", "Adult 3XL"], ["a4xl", "Adult 4XL"],
+];
+
+const MENS_S_UP = [
+	["as", "Mens S"], ["am", "Mens M"], ["al", "Mens L"],
+	["axl", "Mens XL"], ["a2xl", "Mens 2XL"], ["a3xl", "Mens 3XL"], ["a4xl", "Mens 4XL"],
+];
+const WOMENS = [["lws", "Womens S"], ["lwm", "Womens M"], ["lwl", "Womens L"], ["lwxl", "Womens XL"], ["lw2xl", "Womens 2XL"], ["lw3xl", "Womens 3XL"]];
+
+const PLAYER = {
+	prefix: "",
+	kind: "player",
+	title: "NCLL Player Uniform PICKER",
+	introImg: [`${IMG}/uniform-player.png`, "NCLL player uniform"],
+	divisionQ: "Which division is your player in?",
+	sportQ: "Are you registering for baseball or softball?",
+	questions: {
+		"shirt-bb": {
+			sport: "bb",
+			q: "What shirt size do you want to order?",
+			options: [
+				["yxs", "Youth XS"], ["ys", "Youth S"], ["ym", "Youth M"], ["yl", "Youth L"], ["yxl", "Youth XL"],
+				...ADULT_TOPS,
+			],
+		},
+		"shirt-sb": {
+			sport: "sb",
+			q: "What shirt size do you want to order?",
+			options: [
+				["gs", "Girls S"], ["gm", "Girls M"], ["gl", "Girls L"],
+				["ws", "Womens S"], ["wm", "Womens M"], ["wl", "Womens L"], ["wxl", "Womens XL"], ["w2xl", "Womens 2XL"],
+				["as", "Adult S"], ["am", "Adult M"], ["al", "Adult L"], ["axl", "Adult XL"], ["a2xl", "Adult 2XL"], ["a3xl", "Adult 3XL"],
+				// Youth sizes were added in 2027 (4404 Majors jersey), so they come last in Sports Connect.
+				["ys", "Youth S"], ["ym", "Youth M"], ["yl", "Youth L"],
+			],
+		},
+		"hat-bb": {
+			sport: "bb",
+			when: "upper",
+			q: "What hat size do you want to order? (AAA and up only)",
+			options: [["xssm", "Cap XS-SM"], ["smmd", "Cap SM-MD"], ["lgxl", "Cap LG-XL"]],
+		},
+		"hat-sb": {
+			sport: "sb",
+			when: "upper",
+			q: "What visor size do you want to order? (AAA and up only)",
+			options: [["visor-y", "Visor Youth"], ["visor-a", "Visor Adult"]],
+		},
+	},
+	steps: [
+		{
+			key: "shirt",
+			title: "Shirt",
+			subtitle: "Choose a shirt size for your player.",
+			next: [["hat", "upper", "Next: Hat"], ["included", "lower", "Next: Included items"]],
+			blocks: [
+				{
+					q: "shirt-bb", sport: "bb", divs: ["tb", "kcp"],
+					images: [[`${IMG}/hats/YST350_FRONT_FINAL.png`, "ST350 tee &mdash; front"], [`${IMG}/hats/YST350_BACK_FINAL.png`, "ST350 tee &mdash; back"]],
+					note: "T-Ball and Kindy players get the <strong>ST350</strong> performance tee. Measure around the fullest part of the chest.",
+					sets: [
+						{ title: "Youth", item: "ST350 tee (youth)", sizes: sized(["yxs", "ys", "ym", "yl", "yxl"], CHEST_ST350, chest) },
+						{ title: "Adult", item: "ST350 tee", sizes: sized(["axs", "as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
+					],
+				},
+				{
+					q: "shirt-bb", sport: "bb", divs: ["a", "aa"],
+					note: "A and AA players get the <strong>4001</strong> baseball jersey. Measure around the fullest part of the chest.",
+					sets: [{ item: "4001 jersey", sizes: sized(["yxs", "ys", "ym", "yl", "yxl", "as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_4001_4011, chest) }],
+				},
+				{
+					q: "shirt-bb", sport: "bb", divs: ["aaa"],
+					note: "AAA players get the <strong>4001</strong> baseball jersey. Measure around the fullest part of the chest.",
+					sets: [{ item: "4001 jersey", sizes: sized(["ys", "ym", "yl", "as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_4001_4011, chest) }],
+				},
+				{
+					q: "shirt-bb", sport: "bb", divs: ["majors", "int", "juniors", "seniors"],
+					note: "Majors, Intermediate, Juniors and Seniors players get the <strong>4011</strong> baseball jersey. Measure around the fullest part of the chest.",
+					sets: [{ item: "4011 jersey", sizes: sized(["yxs", "ys", "ym", "yl", "yxl", "as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_4001_4011, chest) }],
+				},
+				{
+					q: "shirt-sb", sport: "sb", divs: ["a", "aa", "aaa", "juniors", "seniors"],
+					images: [[`${IMG}/hats/4408_RIPTIDE_FINAL.png`, "4408 softball jersey"]],
+					note: "Players get the <strong>4408</strong> softball jersey, in girls or womens sizes. Measure around the fullest part of the chest.",
+					sets: [
+						{ title: "Girls sizes", item: "4408 Girls jersey", sizes: sized(["gs", "gm", "gl"], CHEST_4408, chest) },
+						{ title: "Womens sizes", item: "4408 Womens jersey", sizes: sized(["ws", "wm", "wl", "wxl", "w2xl"], CHEST_4408, chest) },
+					],
+				},
+				{
+					q: "shirt-sb", sport: "sb", divs: ["majors"],
+					note: "Softball Majors players get the <strong>4404</strong> jersey. Measure around the fullest part of the chest.",
+					sets: [{ item: "4404 jersey", sizes: sized(["ys", "ym", "yl", "as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_4001_4011, chest) }],
+				},
+			],
+		},
+		{
+			key: "hat",
+			when: "upper",
+			title: "Hat",
+			subtitle: "Choose a hat size for your player.",
+			back: [["shirt"]],
+			next: [["included", null, "Next: Included items"]],
+			blocks: [
+				{
+					q: "hat-bb", sport: "bb", divs: SETS.upper,
+					images: [[`${IMG}/hats/PTS30_BLACK-MAROON_FINAL.jpg.png`, "PTS30 fitted cap"]],
+					note: "Players get the <strong>PTS30</strong> fitted cap. Measure around the head, just above the ears.",
+					sets: [{ item: "PTS30 fitted cap", sizes: PTS30 }],
+				},
+				{
+					q: "hat-sb", sport: "sb", divs: ["aaa", "majors", "juniors", "seniors"],
+					images: [[`${IMG}/hats/4302_BLACK.png`, "4302 softball visor"]],
+					note: "Players get the <strong>4302</strong> adjustable softball visor.",
+					sets: [{ item: "4302 visor", sizes: [["visor-y", head("6⅜&ndash;7¼")], ["visor-a", head("7&ndash;7¾")]] }],
+				},
+			],
+		},
+	],
+	// Items with no size question: shown on the Included step and in the summary.
+	provided: [
+		["lower", "<strong>Hat:</strong> youth adjustable cap &mdash; one size fits all, nothing to pick."],
+		["upper", "<strong>Hoodie:</strong> we order one size larger than the jersey you picked."],
+		["socks", "<strong>Socks and belt:</strong> one size fits all."],
+	],
+	includedStep: true,
+};
+
+const COACH = {
+	prefix: "c-",
+	kind: "coach",
+	title: "NCLL Coach Uniform PICKER",
+	introImg: [`${IMG}/uniform-coach.png`, "NCLL coach uniform"],
+	divisionQ: "Which division are you coaching?",
+	sportQ: "Are you coaching baseball or softball?",
+	questions: {
+		// Coach lists keep 2026's ranges so no existing Sports Connect option changes meaning:
+		// baseball coach shirts start at XS, softball coach shirts at S.
+		"shirt-bb": {
+			sport: "bb",
+			q: "What coach shirt size do you want to order?",
+			options: [
+				["axs", "Mens XS"], ...MENS_S_UP,
+				...WOMENS,
+			],
+		},
+		"shirt-sb": {
+			sport: "sb",
+			q: "What coach shirt size do you want to order?",
+			options: [...MENS_S_UP, ...WOMENS],
+		},
+		"hat-bb": {
+			sport: "bb",
+			when: "upper",
+			q: "What coach hat size do you want to order? (AAA and up only)",
+			options: [["xssm", "Cap XS-SM"], ["smmd", "Cap SM-MD"], ["lgxl", "Cap LG-XL"]],
+		},
+		"hat-sb": {
+			sport: "sb",
+			when: "upper",
+			q: "What coach hat size do you want to order? (AAA and up only)",
+			options: [["hc10-sm", "Cap Small"], ["hc10-mxl", "Cap M-XL"]],
+		},
+		hoodie: {
+			when: "upper",
+			q: "What coach hoodie size do you want to order? (AAA and up only)",
+			options: ADULT_TOPS.slice(1), // S-4XL, as in 2026
+		},
+	},
+	steps: [
+		{
+			key: "shirt",
+			title: "Shirt",
+			subtitle: "Choose a shirt for yourself.",
+			next: [["hat", "upper", "Next: Hat"], ["summary", "lower", "See my answers"]],
+			blocks: [
+				{
+					q: "shirt-bb", sport: "bb",
+					images: [[`${IMG}/hats/ST350_FRONT_FINAL.png`, "ST350 tee &mdash; front"], [`${IMG}/hats/ST350_BACK_FINAL.png`, "ST350 tee &mdash; back"]],
+					note: "Coaches get the <strong>ST350</strong> performance tee in a mens cut or the <strong>LST350</strong> in a womens cut. Pick one size from either list.",
+					sets: [
+						{ title: "Mens &mdash; ST350", item: "ST350 mens tee", sizes: sized(["axs", "as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
+						{ title: "Womens &mdash; LST350", item: "LST350 womens tee", sizes: sized(["lws", "lwm", "lwl", "lwxl", "lw2xl", "lw3xl"], PTP_LST350, ptp) },
+					],
+				},
+				{
+					q: "shirt-sb", sport: "sb",
+					images: [[`${IMG}/hats/ST350_FRONT_FINAL.png`, "ST350 tee &mdash; front"], [`${IMG}/hats/ST350_BACK_FINAL.png`, "ST350 tee &mdash; back"]],
+					note: "Coaches get the <strong>ST350</strong> performance tee in a mens cut or the <strong>LST350</strong> in a womens cut. Pick one size from either list.",
+					sets: [
+						{ title: "Mens &mdash; ST350", item: "ST350 mens tee", sizes: sized(["as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
+						{ title: "Womens &mdash; LST350", item: "LST350 womens tee", sizes: sized(["lws", "lwm", "lwl", "lwxl", "lw2xl", "lw3xl"], PTP_LST350, ptp) },
+					],
+				},
+			],
+		},
+		{
+			key: "hat",
+			when: "upper",
+			title: "Hat",
+			subtitle: "Choose a hat size for yourself.",
+			back: [["shirt"]],
+			next: [["hoodie", null, "Next: Hoodie"]],
+			blocks: [
+				{
+					q: "hat-bb", sport: "bb", divs: SETS.upper,
+					images: [[`${IMG}/hats/PTS30_BLACK-MAROON_FINAL.jpg.png`, "PTS30 &mdash; front"], [`${IMG}/hats/PTS30_BLACK-MAROON_BACK.png`, "PTS30 &mdash; back"]],
+					note: "Coaches get the <strong>PTS30</strong> fitted cap. Measure around the head, just above the ears.",
+					sets: [{ item: "PTS30 fitted cap", sizes: PTS30 }],
+				},
+				{
+					q: "hat-sb", sport: "sb", divs: ["aaa", "majors", "juniors", "seniors"],
+					images: [[`${IMG}/hats/HC10_2.png`, "HC10 &mdash; front"], [`${IMG}/hats/HC10_3.png`, "HC10 &mdash; back"]],
+					note: "Softball coaches get the <strong>HC10</strong> (Champro) cap. Measure around the head, just above the ears.",
+					sets: [{ item: "HC10 cap", sizes: [["hc10-sm", head("6¼&ndash;7")], ["hc10-mxl", head("7&ndash;7⅝")]] }],
+				},
+			],
+		},
+		{
+			key: "hoodie",
+			when: "upper",
+			title: "Hoodie",
+			subtitle: "Choose a hoodie size for yourself.",
+			back: [["hat"]],
+			next: [["summary", null, "See my answers"]],
+			blocks: [
+				{
+					q: "hoodie", sport: "any", divs: SETS.upper,
+					note: "AAA and up coaches get the <strong>8203</strong> hoodie. Measure around the fullest part of the chest.",
+					sets: [{ item: "8203 hoodie", sizes: sized(["as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) }],
+				},
+			],
+		},
+	],
+	provided: [["lower", "<strong>Hat:</strong> adult adjustable cap &mdash; one size fits all, nothing to pick."]],
+	includedStep: false,
+};
+
+// ── Builders ───────────────────────────────────────────────────────────────
+
+const css = [];
+const rule = (selectors, body) => css.push(`${[].concat(selectors).join(",\n")} {\n\t${body.join(";\n\t")};\n}`);
+const ids = (p, list) => list.map((x) => `#${p}${x}:checked`).join(", ");
+
+function build(w) {
+	const p = w.prefix;
+	const steps = ["intro", "sport", "division", ...w.steps.map((s) => s.key), ...(w.includedStep ? ["included"] : []), "summary"];
+	const stepId = (key) => (key === "intro" ? `${p}wiz-intro` : `${p}wiz-s${steps.indexOf(key) - 1}`);
+	const W = ".unif-wizard";
+	const divsOf = (sport) => DIVISIONS[sport].map((d) => d[0]);
+	const allDivs = [...new Set([...divsOf("bb"), ...divsOf("sb")])];
+	const setSel = (name) => `${W}:has(${ids(p + "div-", SETS[name])})`;
+	const blockSel = (b) => {
+		const sport = b.sport === "any" ? `${W}:has(${ids(p + "sport-", ["bb", "sb"])})` : `${W}:has(#${p}sport-${b.sport}:checked)`;
+		return b.divs ? `${sport}:has(${ids(p + "div-", b.divs)})` : sport;
+	};
+	const radio = (name, id, checked) => `<input type="radio" name="${p}${name}" id="${p}${id}"${checked ? " checked" : ""} />`;
+
+	// Panels show by step.
+	steps.forEach((key) => rule(`#${stepId(key)}:checked ~ .wiz-body .wiz-panel--${key}`, ["display: flex"]));
+	rule(`#${p}sport-bb:checked ~ .wiz-body .div-options--bb`, ["display: grid"]);
+	rule(`#${p}sport-sb:checked ~ .wiz-body .div-options--sb`, ["display: grid"]);
+
+	// Conditional pieces (buttons, progress dots, summary rows, provided items).
+	for (const name of Object.keys(SETS)) {
+		rule(`${setSel(name)} .wiz-btn.when-${name}`, ["display: inline-flex"]);
+		rule(`${setSel(name)} .wiz-progress__step.when-${name}`, ["display: flex"]);
+		rule(`${setSel(name)} .wiz-summary__row.when-${name}`, ["display: flex"]);
+		rule(`${setSel(name)} li.when-${name}`, ["display: list-item"]);
+	}
+
+	// Selected pills.
+	rule(["bb", "sb"].map((s) => `${W}:has(#${p}sport-${s}:checked) label[for="${p}sport-${s}"]`), [
+		"border-color: #1a3a6b", "background: #edf1f8", "color: #1a3a6b", "box-shadow: inset 0 0 0 2px #1a3a6b",
+	]);
+	const pillIds = [...allDivs.map((d) => `div-${d}`)];
+	for (const [qk, q] of Object.entries(w.questions)) q.options.forEach(([c]) => pillIds.push(`${qk}-${c}`));
+	rule(pillIds.map((id) => `${W}:has(#${p}${id}:checked) label[for="${p}${id}"]`), ["border-color: #1a3a6b", "background: #1a3a6b", "color: #fff"]);
+
+	// Next buttons: enabled once the step has a valid answer.
+	const enable = [`${W}:has(${ids(p + "sport-", ["bb", "sb"])}) .wiz-panel--sport .wiz-btn--next`];
+	for (const s of ["bb", "sb"]) enable.push(`${W}:has(#${p}sport-${s}:checked):has(${ids(p + "div-", divsOf(s))}) .wiz-panel--division .wiz-btn--next`);
+	for (const step of w.steps) {
+		for (const b of step.blocks) {
+			const codes = b.sets.flatMap((set) => set.sizes.map((s) => `${b.q}-${s[0]}`));
+			enable.push(`${blockSel(b)}:has(${ids(p, codes)}) .wiz-panel--${step.key} .wiz-btn--next`);
+		}
+	}
+	rule(enable, ["background: #1a3a6b", "border-color: #1a3a6b", "pointer-events: auto", "cursor: pointer"]);
+	rule(enable.map((s) => `${s}:hover`), ["background: #14305a", "border-color: #14305a"]);
+
+	// Blocks, summary values and item notes.
+	for (const step of w.steps) {
+		step.blocks.forEach((b, i) => {
+			rule(`${blockSel(b)} .wiz-panel--${step.key} .blk--${step.key}-${i}`, ["display: block"]);
+			b.sets.forEach((set, j) => {
+				const codes = set.sizes.map((s) => `${b.q}-${s[0]}`);
+				rule(`${blockSel(b)}:has(${ids(p, codes)}) .smodel--${step.key}-${i}-${j}`, ["display: block"]);
+			});
+		});
+	}
+	for (const [qk, q] of Object.entries(w.questions)) {
+		q.options.forEach(([c]) => {
+			rule(`#${p}${qk}-${c}:checked ~ .wiz-body .sval--${qk}-${c}`, ["display: inline"]);
+			rule(`#${p}${qk}-${c}:checked ~ .wiz-body .sval--${qk}-none`, ["display: none"]);
+		});
+	}
+	rule(["bb", "sb"].map((s) => `#${p}sport-${s}:checked ~ .wiz-body .sval--sport-${s}`), ["display: inline"]);
+	rule(["bb", "sb"].map((s) => `#${p}sport-${s}:checked ~ .wiz-body .sval--sport-none`), ["display: none"]);
+	rule(allDivs.map((d) => `#${p}div-${d}:checked ~ .wiz-body .sval--div-${d}`), ["display: inline"]);
+	rule(allDivs.map((d) => `#${p}div-${d}:checked ~ .wiz-body .sval--div-none`), ["display: none"]);
+
+	// ── HTML ──
+	const t = (n) => "\t".repeat(n);
+	const out = [];
+	const line = (n, s) => out.push(t(n) + s);
+	const total = steps.length - 2; // dots: sport … last step before summary, plus the final check
+	const dotWhen = (key) => {
+		const st = w.steps.find((s) => s.key === key);
+		return st && st.when ? ` when-${st.when}` : "";
+	};
+	const progress = (n, current) => {
+		line(n, `<div class="wiz-progress" aria-hidden="true">`);
+		steps.slice(1, -1).forEach((key, i) => {
+			const idx = steps.indexOf(current);
+			const state = steps.indexOf(key) < idx ? " wiz-progress__step--done" : key === current ? " wiz-progress__step--active" : "";
+			line(n + 1, `<span class="wiz-progress__step${state}${dotWhen(key)}"></span>`);
+		});
+		const final = current === "summary" ? " wiz-progress__step--active" : "";
+		line(n + 1, `<span class="wiz-progress__step wiz-progress__step--final${final}"></span>`);
+		line(n, `</div>`);
+	};
+	const btn = (n, cls, target, text, when) =>
+		line(n, `<label class="wiz-btn wiz-btn--${cls}${when ? ` when-${when}` : ""}" for="${stepId(target)}">${text}</label>`);
+	const preview = (n, images) => {
+		if (!images) return;
+		line(n, `<div class="div-product-preview">`);
+		for (const [src, alt] of images) {
+			line(n + 1, `<figure class="div-product-preview__item">`);
+			line(n + 2, `<img src="${src}" alt="${alt.replace(/&mdash;/g, "—")}" />`);
+			line(n + 2, `<figcaption>${alt}</figcaption>`);
+			line(n + 1, `</figure>`);
+		}
+		line(n, `</div>`);
+	};
+	const panelOpen = (key, label) => {
+		line(5, `<!-- ─ ${label} ─ -->`);
+		line(5, `<section class="wiz-panel wiz-panel--${key}" aria-label="${label}">`);
+		line(6, `<div class="wiz-panel-content">`);
+	};
+	const panelNav = () => {
+		line(6, `</div>`);
+		line(6, `<div class="wiz-nav">`);
+	};
+	const panelClose = () => {
+		line(6, `</div>`);
+		line(5, `</section>`);
+		out.push("");
+	};
+
+	line(3, `<div class="wizard-section wizard-section--${w.kind}">`);
+	line(3, `<div class="unif-wizard">`);
+	steps.forEach((key, i) => line(4, radio("wiz-step", stepId(key).slice(p.length), i === 0)));
+	out.push("");
+	["bb", "sb"].forEach((s) => line(4, radio("sport", `sport-${s}`)));
+	allDivs.forEach((d) => line(4, radio("division", `div-${d}`)));
+	for (const [qk, q] of Object.entries(w.questions)) {
+		out.push("");
+		q.options.forEach(([c]) => line(4, radio(`${qk}-sz`, `${qk}-${c}`)));
+	}
+	out.push("");
+	line(4, `<div class="wiz-header">`);
+	line(5, `<h3 class="wiz-header__title"><span class="text-background">${w.title}</span></h3>`);
+	line(4, `</div>`);
+	line(4, `<div class="wiz-body">`);
+
+	// Intro
+	panelOpen("intro", `${w.kind === "coach" ? "Coach" : "Player"} uniform PICKER intro`);
+	line(7, `<p class="wiz-intro-text">Pick the sport, the division and a size for each item. At the end you get the exact numbered answer to choose for each uniform question in registration.</p>`);
+	line(7, `<img class="wiz-intro-img" src="${w.introImg[0]}" alt="${w.introImg[1]}" />`);
+	panelNav();
+	btn(7, "next", "sport", "Get Started &rarr;");
+	panelClose();
+
+	// Sport
+	panelOpen("sport", "Choose your sport");
+	progress(7, "sport");
+	line(7, `<h4 class="wiz-title left">Sport</h4>`);
+	line(7, `<p class="wiz-subtitle">${w.sportQ}</p>`);
+	line(7, `<div class="wiz-options wiz-options--sport">`);
+	for (const [s, name] of [["bb", "Baseball"], ["sb", "Softball"]]) {
+		line(8, `<label class="wiz-opt wiz-opt--sport" for="${p}sport-${s}">`);
+		line(9, `<img src="https://ncllball.github.io/images/site_navigation/${name.toLowerCase()}.png" alt="" />`);
+		line(9, name);
+		line(8, `</label>`);
+	}
+	line(7, `</div>`);
+	panelNav();
+	btn(7, "back", "intro", "&larr; Back");
+	btn(7, "next", "division", "Next: Division &rarr;");
+	panelClose();
+
+	// Division
+	panelOpen("division", "Choose your division");
+	progress(7, "division");
+	line(7, `<h4 class="wiz-title left">Division</h4>`);
+	line(7, `<p class="wiz-subtitle">${w.divisionQ}</p>`);
+	for (const s of ["bb", "sb"]) {
+		line(7, `<div class="div-options--${s}">`);
+		DIVISIONS[s].forEach(([d, name]) => line(8, `<label class="wiz-opt" for="${p}div-${d}">${name}</label>`));
+		line(7, `</div>`);
+	}
+	panelNav();
+	btn(7, "back", "sport", "&larr; Back");
+	btn(7, "next", w.steps[0].key, `Next: ${w.steps[0].title} &rarr;`);
+	panelClose();
+
+	// Item steps
+	for (const step of w.steps) {
+		panelOpen(step.key, step.title);
+		progress(7, step.key);
+		line(7, `<h4 class="wiz-title left">${step.title}</h4>`);
+		line(7, `<p class="wiz-subtitle">${step.subtitle}</p>`);
+		step.blocks.forEach((b, i) => {
+			line(7, `<div class="blk blk--${step.key}-${i}">`);
+			preview(8, b.images);
+			line(8, `<p class="wiz-shirt-note">${b.note}</p>`);
+			for (const set of b.sets) {
+				if (set.title) line(8, `<p class="wiz-block-title">${set.title}</p>`);
+				line(8, `<div class="wiz-options">`);
+				for (const [c, m] of set.sizes) {
+					// Same "N: label" text as the registration dropdown line.
+					const options = w.questions[b.q].options;
+					const n = options.findIndex((o) => o[0] === c);
+					line(9, `<label class="wiz-opt" for="${p}${b.q}-${c}">${n + 1}: ${options[n][1]}<span class="wiz-opt__note">${m}</span></label>`);
+				}
+				line(8, `</div>`);
+			}
+			line(7, `</div>`);
+		});
+		panelNav();
+		const back = step.back || [["division"]];
+		back.forEach(([target, when]) => btn(7, "back", target, "&larr; Back", when));
+		step.next.forEach(([target, when, text]) => btn(7, "next", target, `${text} &rarr;`, when));
+		panelClose();
+	}
+
+	const providedList = (n) => {
+		line(n, `<ul class="wiz-provided">`);
+		w.provided.forEach(([when, text]) => line(n + 1, `<li class="when-${when}">${text}</li>`));
+		line(n, `</ul>`);
+	};
+
+	// Included (player)
+	if (w.includedStep) {
+		panelOpen("included", "Included items");
+		progress(7, "included");
+		line(7, `<h4 class="wiz-title left">Included &mdash; nothing to pick</h4>`);
+		line(7, `<p class="wiz-subtitle">These come with your registration. There's no size question for them.</p>`);
+		providedList(7);
+		preview(7, [[`${IMG}/socks-belts/sock_royal.png`, "Sock"], [`${IMG}/socks-belts/belt_royal_front.png`, "Belt"]]);
+		panelNav();
+		btn(7, "back", "hat", "&larr; Back", "upper");
+		btn(7, "back", "shirt", "&larr; Back", "lower");
+		btn(7, "next", "summary", "See my answers &rarr;");
+		panelClose();
+	}
+
+	// Summary
+	panelOpen("summary", "Your registration answers");
+	progress(7, "summary");
+	line(7, `<h4 class="wiz-title left">Your registration answers</h4>`);
+	line(7, `<p class="wiz-reg-callout">Take a screenshot of this screen. In registration, find each question below and pick the numbered option shown.</p>`);
+	line(7, `<dl class="wiz-summary">`);
+	const plainRow = (label, key, values) => {
+		line(8, `<div class="wiz-summary__row">`);
+		line(9, `<dt class="wiz-summary__label">${label}</dt>`);
+		line(9, `<dd class="wiz-summary__value">`);
+		line(10, `<span class="sval sval--none sval--${key}-none">&mdash; not selected</span>`);
+		values.forEach(([v, text]) => line(10, `<span class="sval sval--${key}-${v}">${text.replace(/&nbsp;/g, " ")}</span>`));
+		line(9, `</dd>`);
+		line(8, `</div>`);
+	};
+	plainRow("Sport", "sport", [["bb", "Baseball"], ["sb", "Softball"]]);
+	plainRow("Division", "div", [...new Map([...DIVISIONS.bb, ...DIVISIONS.sb]).entries()]);
+	const sportHas = (q) => (q.sport ? `:has(#${p}sport-${q.sport}:checked)` : "");
+	for (const [qk, q] of Object.entries(w.questions)) {
+		// A question shows once its sport (program) and, if limited, its divisions are picked.
+		const cond = q.sport || q.when;
+		if (cond) rule(`${W}${sportHas(q)}${q.when ? `:has(${ids(p + "div-", SETS[q.when])})` : ""} .q-row--${qk}`, ["display: flex"]);
+		line(8, `<div class="wiz-summary__row wiz-summary__row--reg q-row--${qk}${cond ? " q-cond" : ""}">`);
+		line(9, `<dt class="wiz-summary__q">${q.q}</dt>`);
+		line(9, `<dd class="wiz-summary__answer">`);
+		line(10, `<span class="sval sval--none sval--${qk}-none">&mdash; not selected</span>`);
+		q.options.forEach(([c, label], i) => line(10, `<span class="sval sval--${qk}-${c}">${i + 1}: ${label}</span>`));
+		line(9, `</dd>`);
+		for (const step of w.steps)
+			step.blocks.forEach((b, i) => {
+				if (b.q === qk) b.sets.forEach((set, j) => line(9, `<dd class="smodel smodel--${step.key}-${i}-${j}">Orders the ${set.item}</dd>`));
+			});
+		line(8, `</div>`);
+	}
+	line(7, `</dl>`);
+	line(7, `<p class="wiz-block-title">Provided &mdash; not in registration</p>`);
+	providedList(7);
+	line(7, `<details class="wiz-options-ref">`);
+	line(8, `<summary>Every option in each registration question</summary>`);
+	for (const [qk, q] of Object.entries(w.questions)) {
+		if (q.sport) rule(`${W}${sportHas(q)} .q-ref--${qk}`, ["display: block"]);
+		line(8, `<div class="q-ref q-ref--${qk}${q.sport ? " q-sport" : ""}">`);
+		line(9, `<p class="wiz-options-ref__q">${q.q}</p>`);
+		line(9, `<ol class="wiz-options-ref__list">`);
+		q.options.forEach(([, label]) => line(10, `<li>${label}</li>`));
+		line(9, `</ol>`);
+		line(8, `</div>`);
+	}
+	line(7, `</details>`);
+	line(6, `</div>`);
+	line(6, `<div class="wiz-nav wiz-nav--finish">`);
+	const lastBefore = steps[steps.length - 2];
+	if (w.includedStep) btn(7, "back", lastBefore, "&larr; Back");
+	else {
+		btn(7, "back", lastBefore, "&larr; Back", "upper");
+		btn(7, "back", w.steps[0].key, "&larr; Back", "lower");
+	}
+	btn(7, "restart", "intro", "Start over");
+	line(7, `<a class="wiz-btn wiz-btn--go" href="${REGISTER_URL}" rel="noopener">Go to registration &rarr;</a>`);
+	line(6, `</div>`);
+	line(5, `</section>`);
+	line(4, `</div>`);
+	line(4, `<!-- /.wiz-body -->`);
+	line(3, `</div>`);
+	line(3, `</div>`);
+	return out.join("\n");
+}
+
+// ── Static styling (layout and look; no wiring) ────────────────────────────
+
+const BASE_CSS = `
+/* ── Generated by scripts/build-uniform-picker.js: edit the data there ── */
+
+/* ── Wizard shell ─────────────────────────────────────────────── */
+
+.unif-wizard > input[type="radio"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.unif-wizard {
+	position: relative;
+	max-width: 640px;
+	font-family: "proxima-nova", sans-serif;
+}
+
+.wiz-panel,
+.div-options--bb,
+.div-options--sb,
+.blk,
+.smodel,
+.sval,
+.when-upper,
+.when-lower,
+.when-socks {
+	display: none;
+}
+
+.wiz-panel {
+	flex-direction: column;
+}
+
+/* ── Layout: two wizards side by side, fixed-height cards ───── */
+
+.wizards-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px 20px;
+	align-items: start;
+	margin: 20px 0 40px;
+}
+
+.hub-intro__aside ~ .wizards-row,
+.hub-intro__aside ~ h2 + .wizards-row {
+	clear: right;
+}
+
+@media (max-width: 700px) {
+	.wizards-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+.wizard-section .unif-wizard {
+	height: 480px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #dce3ea;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.wizard-section .wiz-body {
+	flex: 1;
+	overflow: hidden;
+}
+
+.wizard-section .wiz-panel {
+	height: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+	background: #fff;
+}
+
+.wiz-panel-content {
+	flex: 1;
+	overflow-y: auto;
+	padding: 0.85rem 1.25rem;
+	box-sizing: border-box;
+	background: var(--color_surface_light, #fafafa);
+}
+
+.wiz-panel-content > :last-child {
+	margin-bottom: 0;
+}
+
+.wiz-header {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 2.75rem;
+	background: var(--stripe-tight-blue-micro-quad);
+	background-color: #fff;
+	padding: 0.4rem 1rem;
+}
+
+.wiz-header .wiz-header__title {
+	display: block !important;
+	font-size: 1rem;
+	line-height: 1.2 !important;
+	font-weight: 700;
+	font-style: italic;
+	font-family: var(--font_tk-noto-sans-display-semiconden);
+	color: var(--color_blue, #1a3a6b);
+	text-align: center !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100%;
+}
+
+/* ── Progress dots ────────────────────────────────────────────── */
+
+.wiz-progress {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-bottom: 0.75rem;
+}
+
+.wiz-progress__step {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	border: 2px solid #c5cdd8;
+	color: #c5cdd8;
+	font-size: 0.8rem;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+.wiz-progress__step.when-upper,
+.wiz-progress__step.when-lower {
+	display: none;
+}
+
+/* Numbers come from a counter so skipped (hidden) steps don't leave gaps. */
+.wiz-progress {
+	counter-reset: dot;
+}
+
+.wiz-progress__step:not(.wiz-progress__step--final) {
+	counter-increment: dot;
+}
+
+.wiz-progress__step:not(.wiz-progress__step--final):not(.wiz-progress__step--done)::before {
+	content: counter(dot);
+}
+
+.wiz-progress__step--done {
+	background: #1a3a6b;
+	border-color: #1a3a6b;
+}
+
+.wiz-progress__step--done::after,
+.wiz-progress__step--final::after {
+	content: "✓";
+	font-size: 0.85rem;
+	line-height: 1;
+	color: #fff;
+}
+
+.wiz-progress__step--final::after {
+	color: #c5cdd8;
+}
+
+.wiz-progress__step--active {
+	border-color: #1a3a6b;
+	color: #1a3a6b;
+	box-shadow: 0 0 0 3px rgba(26, 58, 107, 0.15);
+}
+
+.wiz-progress__step--final.wiz-progress__step--active::after {
+	color: #1a3a6b;
+}
+
+/* ── Text ─────────────────────────────────────────────────────── */
+
+.wiz-title {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #1a3a6b;
+	margin: 0;
+}
+
+.wiz-subtitle {
+	color: #777;
+	font-size: 0.85rem;
+	margin: 0 0 0.6rem;
+}
+
+.wiz-intro-text {
+	font-size: 0.95rem;
+	color: #444;
+	line-height: 1.6;
+	margin: 0 0 0.75rem;
+}
+
+.wiz-intro-img {
+	display: block;
+	width: auto;
+	max-height: 150px;
+	margin: 0.35rem auto;
+}
+
+.wiz-shirt-note {
+	font-size: 0.85rem;
+	color: #555;
+	margin: 0 0 0.75rem;
+	line-height: 1.5;
+}
+
+.wiz-shirt-note strong {
+	color: #1a3a6b;
+}
+
+.wiz-block-title {
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+	color: #1a3a6b;
+	margin: 0.75rem 0 0.5rem;
+	padding-bottom: 0.3rem;
+	border-bottom: 2px solid #dce3ea;
+}
+
+/* ── Option pills ─────────────────────────────────────────────── */
+
+.wiz-options,
+.div-options--bb,
+.div-options--sb {
+	grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+	gap: 0.6rem;
+	margin-bottom: 1rem;
+}
+
+.wiz-options {
+	display: grid;
+}
+
+.wiz-opt {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0.6rem 0.5rem;
+	border: 2px solid #c5cdd8;
+	border-radius: 6px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: #444;
+	cursor: pointer;
+	transition: border-color 0.15s, background 0.15s, color 0.15s;
+	line-height: 1.2;
+	min-height: 3rem;
+	background: #f7f9fb;
+}
+
+.wiz-opt:hover {
+	border-color: #1a3a6b;
+	color: #1a3a6b;
+	background: #edf1f8;
+}
+
+.wiz-opt__note {
+	font-size: 0.8em;
+	display: block;
+	font-weight: 400;
+	margin-top: 0.25em;
+}
+
+.wiz-options--sport {
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.wiz-opt--sport {
+	gap: 0.6rem;
+	padding: 1.25rem 1rem;
+	min-height: 8rem;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #1a3a6b;
+}
+
+.wiz-opt--sport img {
+	width: 64px;
+	height: 64px;
+	object-fit: contain;
+}
+
+/* ── Product photos ───────────────────────────────────────────── */
+
+.div-product-preview {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 0.75rem;
+	padding: 0.75rem;
+	background: #f7f9fb;
+	border: 1px solid #dce3ea;
+	border-radius: 6px;
+}
+
+.div-product-preview__item {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.4rem;
+	margin: 0;
+	text-align: center;
+}
+
+.div-product-preview__item img {
+	max-width: 100%;
+	max-height: 100px;
+	object-fit: contain;
+}
+
+.div-product-preview__item figcaption {
+	font-size: 0.75rem;
+	font-weight: 700;
+	color: #1a3a6b;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+/* ── Nav buttons ──────────────────────────────────────────────── */
+
+.wiz-nav {
+	display: flex;
+	flex-shrink: 0;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+	padding: 10px 16px;
+	background-color: #fff;
+	border-top: 1px solid var(--color_border_light, #e0e0e0);
+	box-sizing: border-box;
+}
+
+.wiz-btn {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.65rem 1.2rem;
+	border-radius: 5px;
+	font-size: 0.9rem;
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+	line-height: 1;
+}
+
+.wiz-btn--next {
+	background: #c5cdd8;
+	color: #fff;
+	border: 2px solid #c5cdd8;
+	pointer-events: none;
+	cursor: default;
+}
+
+.wiz-panel--intro .wiz-btn--next,
+.wiz-panel--included .wiz-btn--next {
+	background: #1a3a6b;
+	border-color: #1a3a6b;
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+.wiz-btn--back,
+.wiz-btn--restart {
+	background: #fff;
+	color: #1a3a6b;
+	border: 2px solid #1a3a6b;
+}
+
+.wiz-btn--back:hover,
+.wiz-btn--restart:hover {
+	background: #edf1f8;
+}
+
+a.wiz-btn--go,
+a.wiz-btn--go:visited {
+	background: #c8102e;
+	border: 2px solid #c8102e;
+	color: #fff !important;
+	margin-left: auto;
+}
+
+a.wiz-btn--go:hover {
+	background: #a50d26;
+	border-color: #a50d26;
+	text-decoration: none;
+}
+
+.wiz-btn.when-upper,
+.wiz-btn.when-lower {
+	display: none;
+}
+
+/* ── Summary ──────────────────────────────────────────────────── */
+
+.wiz-reg-callout {
+	background: #f0f5ff;
+	border: 1px solid #b8caea;
+	border-left: 4px solid #1a3a6b;
+	border-radius: 0 6px 6px 0;
+	padding: 0.4rem 0.65rem;
+	margin: 0 0 0.6rem;
+	font-size: 0.85rem;
+	line-height: 1.4;
+	color: #333;
+}
+
+.wiz-summary {
+	margin: 0 0 0.5rem;
+	padding: 0;
+	border: 1px solid #dce3ea;
+	border-radius: 6px;
+	background: #fff;
+}
+
+.wiz-summary__row {
+	display: flex;
+	align-items: baseline;
+	gap: 1rem;
+	padding: 0.5rem 0.85rem;
+	border-bottom: 1px solid #dce3ea;
+}
+
+.wiz-summary__row:last-child {
+	border-bottom: none;
+}
+
+.wiz-summary__row.q-cond,
+.q-ref.q-sport {
+	display: none;
+}
+
+.wiz-summary__row--reg {
+	flex-direction: column;
+	align-items: stretch;
+	gap: 0.3rem;
+}
+
+.wiz-summary__label {
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: #1a3a6b;
+	min-width: 4.5rem;
+}
+
+.wiz-summary__value,
+.wiz-summary__answer,
+.smodel {
+	margin: 0;
+}
+
+.wiz-summary__value {
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: #222;
+}
+
+.wiz-summary__q {
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: #1a3a6b;
+}
+
+.wiz-summary__answer {
+	padding: 0.5rem 0.75rem;
+	border: 2px solid #1a3a6b;
+	border-radius: 5px;
+	background: #fff;
+	font-size: 0.95rem;
+	font-weight: 700;
+	color: #222;
+}
+
+.smodel {
+	font-size: 0.78rem;
+	color: #777;
+}
+
+.sval--none {
+	display: inline;
+	color: #999;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.wiz-provided {
+	margin: 0 0 0.75rem;
+	padding-left: 1.1rem;
+	font-size: 0.88rem;
+	line-height: 1.5;
+	color: #333;
+}
+
+.wiz-provided li.when-upper,
+.wiz-provided li.when-lower,
+.wiz-provided li.when-socks {
+	display: none;
+}
+
+.wiz-options-ref {
+	margin-top: 0.75rem;
+	font-size: 0.85rem;
+	color: #444;
+}
+
+.wiz-options-ref summary {
+	cursor: pointer;
+	font-weight: 700;
+	color: #1a3a6b;
+}
+
+.wiz-options-ref__q {
+	margin: 0.6rem 0 0.2rem;
+	font-weight: 600;
+}
+
+.wiz-options-ref__list {
+	margin: 0;
+	padding-left: 1.6rem;
+	columns: 2;
+}
+
+/* ── Wiring (generated) ───────────────────────────────────────── */
+`;
+
+// ── Write ──────────────────────────────────────────────────────────────────
+
+const html = [build(COACH), "", build(PLAYER)].join("\n");
+const style = (BASE_CSS + "\n" + css.join("\n\n"))
+	.split("\n")
+	.map((l) => (l ? "\t\t\t" + l : l))
+	.join("\n");
+
+let hub = fs.readFileSync(HUB, "utf8");
+// Match the real tag (own line), not mentions of it in the header comment.
+hub = hub.replace(/^\t*<style>[\s\S]*?<\/style>/m, `\t\t<style>${style}\n\t\t</style>`);
+const block = `<!-- picker:start (generated by scripts/build-uniform-picker.js; edit the data there) -->\n\t\t\t<div class="wizards-row">\n${html}\n\t\t\t</div>\n\t\t\t<!-- picker:end -->\n\t\t\t`;
+if (hub.includes("<!-- picker:start")) {
+	hub = hub.replace(/<!-- picker:start[\s\S]*?<!-- picker:end -->\n\t*/, block);
+} else {
+	// First run: replace the hand-built wizards up to the rev marker.
+	hub = hub.replace(/<div class="wizards-row">[\s\S]*?(?=<p class="cms-rev">)/, block);
+}
+fs.writeFileSync(HUB, hub);
+console.log(`Wrote ${path.relative(process.cwd(), HUB)} (${css.length} generated rules)`);
