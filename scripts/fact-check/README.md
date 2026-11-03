@@ -10,7 +10,7 @@ Checks that the website pages in `CMS/` say the same thing as Sports Connect and
 
 ## Refreshing the facts from Sports Connect
 
-Division data comes from Sports Connect, read-only. Codex can't log in there, so refresh it from Claude Code (or by hand) before a check:
+Division data comes from Sports Connect, read-only. Codex can read it itself through the read-only `ncll-browser` tools (see `AGENTS.md`); to refresh the facts file from Claude Code or by hand:
 
 1. In the integrated browser, open any `registration-setup.bluesombrero.com/registration-admin/83437/...` page while logged in.
 2. Run this in the page (it only reads):
@@ -34,7 +34,7 @@ Decisions that live outside Sports Connect (register-by dates, sponsor prices, b
 
 ## Uniform picker vs registration (run whenever sizes change)
 
-Codex can't see Sports Connect, so this one runs from Claude Code in the logged-in browser. It compares every uniform question in both programs (player questions, and Head Coach / Assistant Coach / Team Manager custom questions) with the option lists the Uniforms Hub picker shows ("Every option in each registration question"):
+Codex can run this through its read-only `ncll-browser` tools, or Claude Code from the logged-in browser. It compares every uniform question in both programs (player questions, and Head Coach / Assistant Coach / Team Manager custom questions) with the option lists the Uniforms Hub picker shows ("Every option in each registration question"):
 
 1. Pull the picker's lists from `CMS/Resources/uniforms-hub.html` (each `div.q-ref` holds the question text and its `<li>` options, in order).
 2. In a `registration-setup.bluesombrero.com` tab, GET `programQuestions/<programId>` and `programs/<programId>/volunteers/<volunteerTypeId>/customQuestions` (volunteer types: Head Coach 80038935, Assistant 80038936, Team Manager 80038937), keep the questions whose name contains "size do you want to order", and sort each one's `answerOptions` by `sortOrder`.

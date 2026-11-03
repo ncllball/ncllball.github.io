@@ -5,11 +5,12 @@ You are checking that ncllball.com's page sources (the `CMS/` folder of this rep
 ## Rules
 
 - **Do not edit any file in `CMS/`, `assets/`, `QR/` or `docs/`, and do not commit or push.** The only file you write is the report (below).
-- Do not log in anywhere, post anything, or call any Sports Connect or ncllball.com endpoint that changes data. Reading public pages on www.ncllball.com is fine.
+- Do not log in anywhere, post anything, or call any Sports Connect or ncllball.com endpoint that changes data. Use only the read-only `ncll-browser` tools for Sports Connect and the CMS, following `AGENTS.md`. Reading public pages on www.ncllball.com is fine.
 - Families read this site on phones; a wrong fee, age or date costs real money or a missed deadline. Report anything you aren't sure about rather than guessing.
 
 ## Steps
 
+0. Read `AGENTS.md` (read-only rules for the `ncll-browser` tools). Then refresh the source of truth from Sports Connect yourself: in your own tab, read `programs/80158833/divisions` and `programs/80158834/divisions` (see AGENTS.md for the address) and compare each division's price, `maxAge`/`minAge` (birth dates), `maxPlayers` (cap) and `closeRegistration` with `facts-2027.json`. List every difference under **Questions** (don't edit the facts file). Do the uniform check from the README the same way: `programQuestions/<id>` and the three coach positions' `customQuestions` against the picker lists in `CMS/Resources/uniforms-hub.html`.
 1. Read `scripts/fact-check/facts-2027.json` (the source of truth) and `scripts/fact-check/README.md`.
 2. Run `node scripts/fact-check/check-facts.js --md _drafts/fact-check-script.md`. Keep its output.
 3. Judgment review. For each page below, read the page source and compare every fee, league age, birth-date range, date, deadline, cap, price and division name against the facts. Also check the prose (cards, footnotes, FAQs), not only tables:
