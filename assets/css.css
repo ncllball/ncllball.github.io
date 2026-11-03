@@ -4940,6 +4940,15 @@ p.rules-legend img {
     display: none !important;
 }
 
+/* Admin-only Manage Content button: with the program name hidden it overlapped the intro */
+.DnnModule-2331666 .custom-title.registration-listing,
+.DnnModule-2331762 .custom-title.registration-listing {
+    float: none !important;
+    top: 0 !important;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
 .age-matrix tbody tr:last-child td {
     padding-bottom: 12px;
 }
