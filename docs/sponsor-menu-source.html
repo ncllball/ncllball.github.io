@@ -61,9 +61,9 @@
 				display: flex;
 				align-items: center;
 				gap: 0.25in;
-				border-bottom: 4px solid var(--red);
+				border-bottom: 1px solid var(--red);
 				padding-bottom: 0.14in;
-				margin-top: 0.08in;
+				margin-top: 0.22in;
 			}
 			header img {
 				width: 0.95in;
@@ -99,8 +99,10 @@
 			}
 			.stat {
 				flex: 1;
-				background: var(--navy);
-				color: #fff;
+				background: #fff;
+				color: var(--navy);
+				border: 0.75px solid var(--navy);
+				border-top: 2px solid var(--red);
 				border-radius: 6px;
 				padding: 7px 8px;
 				text-align: center;
@@ -110,15 +112,21 @@
 				font-size: 17pt;
 				line-height: 1.1;
 			}
+			.stat b { color: var(--red); }
 			.stat span {
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				font-size: 7pt !important;
 				font-size: 8pt;
 				letter-spacing: 0.03em;
 			}
 			.pkg {
 				display: grid;
 				grid-template-columns: 1fr 1.35in;
-				border: 1px solid var(--line);
-				border-left: 6px solid var(--red);
+				border: 0.75px solid #e6e6ea;
+				border-left: 2px solid var(--red);
+				background: rgba(255,255,255,0.92);
+				position: relative;
 				border-radius: 6px;
 				padding: 0.12in 0.16in;
 				margin-bottom: 0.12in;
@@ -127,6 +135,7 @@
 				background: var(--tint);
 				border-color: #f0c9d2;
 				border-left-color: var(--navy);
+				background: linear-gradient(90deg, #fbf1f3, #fff 70%);
 			}
 			.pkg h2 {
 				margin: 0 0 3px;
@@ -149,12 +158,21 @@
 				align-self: center;
 			}
 			.price b {
-				display: block;
+				display: inline-block;
+				background: var(--tint);
+				border: 0.75px solid #f0c9d2;
+				border-radius: 999px;
+				padding: 4px 14px;
+				margin-bottom: 3px;
 				color: var(--red);
 				font-size: 24pt;
 				line-height: 1;
 			}
 			.price span {
+				display: block;
+				letter-spacing: 0.06em;
+				text-transform: uppercase;
+				font-size: 7pt;
 				font-size: 8.5pt;
 				color: var(--muted);
 			}
@@ -167,7 +185,7 @@
 			}
 			.more div {
 				flex: 1;
-				border-top: 2px solid var(--line);
+				border-top: 0.75px solid #d9d9df;
 				padding-top: 6px;
 			}
 			.more b {
@@ -181,7 +199,7 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: flex-end;
-				border-top: 4px solid var(--navy);
+				border-top: 1px solid var(--navy);
 				padding-top: 0.1in;
 			}
 			footer .cta {
@@ -199,6 +217,26 @@
 				text-align: right;
 				line-height: 1.4;
 			}
+			.stripes {
+				position: absolute;
+				left: 0;
+				right: 0;
+				height: 0.16in;
+				background: repeating-linear-gradient(-45deg, var(--red) 0 2px, #fff 2px 7px);
+				opacity: 0.85;
+			}
+			.stripes.top { top: 22px; }
+			.stripes.bottom { bottom: 0; }
+			.watermark {
+				position: absolute;
+				right: -0.9in;
+				top: 3.4in;
+				width: 5.2in;
+				opacity: 0.05;
+				pointer-events: none;
+			}
+			.pkg h2 { letter-spacing: -0.005em; }
+			.pkg .who { text-transform: uppercase; letter-spacing: 0.06em; font-size: 7.5pt; }
 			@media print {
 				body {
 					background: #fff;
@@ -208,6 +246,9 @@
 	</head>
 	<body>
 		<div class="page">
+			<div class="stripes top"></div>
+			<div class="stripes bottom"></div>
+			<img class="watermark" src="https://ncllball.github.io/images/logos/ncll_badge_1.png" alt="" />
 			<div class="draft">DRAFT FOR BOARD REVIEW &middot; prices from the 2027 planning model, not yet confirmed</div>
 
 			<header>
