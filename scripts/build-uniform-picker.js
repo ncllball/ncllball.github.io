@@ -731,8 +731,9 @@ const BASE_CSS = `
 	align-items: center;
 	justify-content: center;
 	min-height: 2.75rem;
-	background: var(--stripe-tight-blue-micro-quad);
+	background: var(--stripe-tight-red-micro-quad); /* same header as the site's toggle cards */
 	background-color: #fff;
+	border-bottom: 1px solid var(--color_border_light);
 	padding: 0.4rem 1rem;
 }
 
