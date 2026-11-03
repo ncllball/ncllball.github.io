@@ -3501,6 +3501,14 @@ p.flush-bottom:last-child {
     height: auto;
 }
 
+/* Division hubs: one height for every intro silhouette (they range 76-100px tall at 80px wide), so the intro panel fits on phones */
+.baseball-landing .panel-intro .ncll-card__graphic--small,
+.softball-landing .panel-intro .ncll-card__graphic--small {
+    width: auto;
+    height: 72px;
+    margin: 6px auto 12px auto;
+}
+
 .ncll-card__graphic--smaller {
     width: 65px;
     height: auto;
