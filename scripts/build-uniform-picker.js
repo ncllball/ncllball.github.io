@@ -121,9 +121,7 @@ const PLAYER = {
 			options: [
 				["gs", "Girls S"], ["gm", "Girls M"], ["gl", "Girls L"],
 				["ws", "Womens S"], ["wm", "Womens M"], ["wl", "Womens L"], ["wxl", "Womens XL"], ["w2xl", "Womens 2XL"],
-				["as", "Adult S"], ["am", "Adult M"], ["al", "Adult L"], ["axl", "Adult XL"], ["a2xl", "Adult 2XL"], ["a3xl", "Adult 3XL"],
-				// Youth sizes were added in 2027 (4404 Majors jersey), so they come last in Sports Connect.
-				["ys", "Youth S"], ["ym", "Youth M"], ["yl", "Youth L"],
+				// Every softball jersey (4408 and the Majors 4404) comes in Girls/Womens sizes only (Protime, 2026-11-03).
 			],
 		},
 		"hat-bb": {
@@ -185,8 +183,11 @@ const PLAYER = {
 				{
 					q: "shirt-sb", sport: "sb", divs: ["majors"],
 					images: [[`${IMG}/hats/4404_ROYAL.jpg`, "4404 Dawson softball jersey"]],
-					note: "Softball Majors players get the <strong>4404</strong> jersey. Measure around the fullest part of the chest.",
-					sets: [{ item: "4404 jersey", sizes: sized(["ys", "ym", "yl", "as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_4001_4011, chest) }],
+					note: "Softball Majors players get the <strong>4404</strong> Dawson jersey, in girls or womens sizes (same sizes as the 4408). Measure around the fullest part of the chest.",
+					sets: [
+						{ title: "Girls sizes", item: "4404 Girls jersey", sizes: sized(["gs", "gm", "gl"], CHEST_4408, chest) },
+						{ title: "Womens sizes", item: "4404 Womens jersey", sizes: sized(["ws", "wm", "wl", "wxl", "w2xl"], CHEST_4408, chest) },
+					],
 				},
 			],
 		},
@@ -260,7 +261,7 @@ const COACH = {
 		hoodie: {
 			when: "upper",
 			q: "What coach hoodie size do you want to order? (AAA and up only)",
-			options: ADULT_TOPS.slice(1), // S-4XL, as in 2026
+			options: ADULT_TOPS.slice(1, 7), // S-3XL: the 8203 has no 4XL (Protime, 2026-11-03)
 		},
 	},
 	steps: [
@@ -324,7 +325,7 @@ const COACH = {
 					q: "hoodie", sport: "any", divs: SETS.upper,
 					images: [[`${IMG}/hats/8203_ROYAL.jpg`, "8203 hoodie"]],
 					note: "AAA and up coaches get the <strong>8203</strong> hoodie. Measure around the fullest part of the chest.",
-					sets: [{ item: "8203 hoodie", sizes: sized(["as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) }],
+					sets: [{ item: "8203 hoodie", sizes: sized(["as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_ST350, chest) }],
 				},
 			],
 		},
