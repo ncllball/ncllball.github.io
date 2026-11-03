@@ -53,6 +53,8 @@ One label per destination:
 | Draft page (2112136) | How the draft works |
 | All-Stars hub (2252519) | All-Stars |
 | All-Stars History (2118070) | All-Stars History |
+| Rainouts, Reschedules & Fields (2119252) | Rainouts, Reschedules & Fields |
+| Field Locations (2115055) | Field Locations |
 | Hubs | Coaches Hub, Volunteer Hub, Parents Hub, Safety Hub, Umpires Hub, Helping Hub, Events Hub, Uniforms Hub, Baseball Hub, Softball Hub, Player Development Hub |
 
 Update the year in labels at season rollover (2027 Registration, 2027 Assessments, 2027 Key Dates).
