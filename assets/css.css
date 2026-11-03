@@ -2409,6 +2409,29 @@ details.footies[open] summary::before {
     margin-top: 0.4em
 }
 
+/* Compact legend beside the pie (Registration Hub, Where Fees Go intro): one tight column, small text */
+.cost-legend.cost-legend--compact,
+.cost-legend.cost-legend--compact li {
+    font-size: 0.75rem;
+    line-height: 1.25
+}
+
+.cost-legend.cost-legend--compact {
+    grid-template-columns: 1fr;
+    gap: 3px
+}
+
+.cost-legend.cost-legend--compact li {
+    gap: 6px;
+    white-space: nowrap
+}
+
+.cost-legend.cost-legend--compact .swatch {
+    width: 9px;
+    height: 9px;
+    flex: 0 0 9px
+}
+
 .cost-cat {
     font-weight: 600;
     color: var(--color_blue)
