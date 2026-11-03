@@ -6226,3 +6226,63 @@ a.wiz-btn--go:hover {
 	columns: 2;
 }
 /* ====== END Uniform PICKER ====== */
+
+/* Home page interest-list bar ("Get NCLL news by email."): Sports Connect's default is a tall
+   block (25-30px padding, stacked on phones). Slim it to one compact row. */
+#dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .skVisitor {
+    padding: 8px 0 !important;
+}
+#dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .skVisitorRow {
+    align-items: center !important;
+    gap: 12px !important;
+}
+#dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .VisitorText {
+    font-size: 15px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap;
+}
+#dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .VisitorWrapper {
+    gap: 8px !important;
+}
+#dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .InputWrapper {
+    width: 180px !important;
+}
+#dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .skVisitorRow input {
+    width: 100% !important;
+    box-sizing: border-box;
+    font-size: 14px !important;
+    padding: 4px 8px !important;
+}
+#dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .InputWrapper {
+    position: relative;
+}
+/* The (usually empty) error line under each box: float it below so it doesn't push the boxes up */
+#dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .InputWrapper .Error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 2px !important;
+}
+#dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .skVisitorRow input[type="submit"] {
+    width: auto !important;
+    padding: 5px 14px !important;
+}
+@media screen and (max-width: 768px) {
+    #dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .skVisitor {
+        padding: 8px 0 !important;
+    }
+    #dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .skVisitorRow {
+        margin: 0 16px !important;
+        gap: 6px !important;
+    }
+    #dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .VisitorWrapper {
+        flex-wrap: nowrap !important;
+        flex: 1 1 0;
+        min-width: 0;
+    }
+    #dnn_ctlDisplaySiteVisitorAnnouncement_siteVisitorAnnouncementDiv .InputWrapper {
+        width: auto !important;
+        flex: 1 1 0;
+        min-width: 0;
+    }
+}
