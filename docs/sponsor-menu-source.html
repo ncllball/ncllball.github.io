@@ -1,0 +1,303 @@
+<!doctype html>
+<!--
+  FILE:     docs/sponsor-menu-source.html
+  PURPOSE:  Source for the yearly NCLL sponsorship menu PDF (one letter page).
+  PRINT:    Chrome/Edge > Print > Save as PDF, Letter, margins None, background graphics on;
+            or headless: chrome --headless --print-to-pdf=docs/YYYY-sponsor-menu.pdf --no-pdf-header-footer docs/sponsor-menu-source.html
+  PRICES:   NCLL_2027_Financial_Planning_Model.xlsm (Drive > Meeting Agendas & Minutes > 2026 Season > Year in review files),
+            Financial Summary B15:B17 and Checks & Sources rows 19-20. Remove the draft banner once the board confirms.
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>2027 NCLL Sponsorship Menu</title>
+		<style>
+			@page {
+				size: Letter;
+				margin: 0;
+			}
+			* {
+				box-sizing: border-box;
+			}
+			:root {
+				--red: #cd163f;
+				--navy: #00013a;
+				--ink: #1a1a1a;
+				--muted: #555;
+				--line: #e3e3e3;
+				--tint: #fbf1f3;
+			}
+			body {
+				margin: 0;
+				font-family: Arial, Helvetica, sans-serif;
+				color: var(--ink);
+				background: #e0e0e0;
+				-webkit-print-color-adjust: exact;
+				print-color-adjust: exact;
+			}
+			.page {
+				width: 8.5in;
+				height: 11in;
+				margin: 0 auto;
+				background: #fff;
+				padding: 0.55in 0.6in 0.5in;
+				position: relative;
+				overflow: hidden;
+			}
+			.draft {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				background: #fff4cc;
+				color: #6b5300;
+				font-size: 8.5pt;
+				font-weight: bold;
+				text-align: center;
+				padding: 5px 0;
+				letter-spacing: 0.04em;
+			}
+			header {
+				display: flex;
+				align-items: center;
+				gap: 0.25in;
+				border-bottom: 4px solid var(--red);
+				padding-bottom: 0.14in;
+				margin-top: 0.08in;
+			}
+			header img {
+				width: 0.95in;
+				height: auto;
+			}
+			header .kicker {
+				color: var(--red);
+				font-size: 10pt;
+				font-weight: bold;
+				letter-spacing: 0.14em;
+				text-transform: uppercase;
+			}
+			header h1 {
+				margin: 2px 0 2px;
+				color: var(--navy);
+				font-size: 30pt;
+				line-height: 1;
+				letter-spacing: -0.01em;
+			}
+			header .sub {
+				color: var(--muted);
+				font-size: 9.5pt;
+			}
+			.intro {
+				font-size: 10.5pt;
+				line-height: 1.45;
+				margin: 0.16in 0 0.12in;
+			}
+			.stats {
+				display: flex;
+				gap: 0.12in;
+				margin-bottom: 0.18in;
+			}
+			.stat {
+				flex: 1;
+				background: var(--navy);
+				color: #fff;
+				border-radius: 6px;
+				padding: 7px 8px;
+				text-align: center;
+			}
+			.stat b {
+				display: block;
+				font-size: 17pt;
+				line-height: 1.1;
+			}
+			.stat span {
+				font-size: 8pt;
+				letter-spacing: 0.03em;
+			}
+			.pkg {
+				display: grid;
+				grid-template-columns: 1fr 1.35in;
+				border: 1px solid var(--line);
+				border-left: 6px solid var(--red);
+				border-radius: 6px;
+				padding: 0.12in 0.16in;
+				margin-bottom: 0.12in;
+			}
+			.pkg.featured {
+				background: var(--tint);
+				border-color: #f0c9d2;
+				border-left-color: var(--navy);
+			}
+			.pkg h2 {
+				margin: 0 0 3px;
+				color: var(--navy);
+				font-size: 13.5pt;
+			}
+			.pkg .who {
+				color: var(--muted);
+				font-size: 9pt;
+				margin-bottom: 4px;
+			}
+			.pkg ul {
+				margin: 0;
+				padding-left: 16px;
+				font-size: 9.5pt;
+				line-height: 1.4;
+			}
+			.price {
+				text-align: right;
+				align-self: center;
+			}
+			.price b {
+				display: block;
+				color: var(--red);
+				font-size: 24pt;
+				line-height: 1;
+			}
+			.price span {
+				font-size: 8.5pt;
+				color: var(--muted);
+			}
+			.more {
+				display: flex;
+				gap: 0.15in;
+				font-size: 9pt;
+				line-height: 1.4;
+				margin: 0.06in 0 0.14in;
+			}
+			.more div {
+				flex: 1;
+				border-top: 2px solid var(--line);
+				padding-top: 6px;
+			}
+			.more b {
+				color: var(--navy);
+			}
+			footer {
+				position: absolute;
+				left: 0.6in;
+				right: 0.6in;
+				bottom: 0.45in;
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+				border-top: 4px solid var(--navy);
+				padding-top: 0.1in;
+			}
+			footer .cta {
+				font-size: 12pt;
+				font-weight: bold;
+				color: var(--navy);
+			}
+			footer .cta a {
+				color: var(--red);
+				text-decoration: none;
+			}
+			footer .small {
+				font-size: 8pt;
+				color: var(--muted);
+				text-align: right;
+				line-height: 1.4;
+			}
+			@media print {
+				body {
+					background: #fff;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+			<div class="draft">DRAFT FOR BOARD REVIEW &middot; prices from the 2027 planning model, not yet confirmed</div>
+
+			<header>
+				<img src="https://ncllball.github.io/images/logos/ncll_badge_1.png" alt="North Central Little League" />
+				<div>
+					<div class="kicker">North Central Little League &middot; Seattle</div>
+					<h1>2027 Sponsorship Menu</h1>
+					<div class="sub">Baseball and softball for ages 5 to 16 &middot; 100% volunteer run &middot; 501(c)(3) nonprofit</div>
+				</div>
+			</header>
+
+			<p class="intro">
+				Your sponsorship puts a team on the field. It pays for uniforms, helps keep registration fees down, and supports the
+				financial aid that means no child is turned away for cost. In return, the families of North Central Seattle see your
+				business standing behind their kids all season.
+			</p>
+
+			<div class="stats">
+				<div class="stat"><b>735</b><span>players in 2026</span></div>
+				<div class="stat"><b>59</b><span>teams</span></div>
+				<div class="stat"><b>~594</b><span>families</span></div>
+				<div class="stat"><b>268</b><span>volunteers</span></div>
+			</div>
+
+			<div class="pkg featured">
+				<div>
+					<h2>All-Stars Presenting Sponsor</h2>
+					<div class="who">One available &middot; NCLL&rsquo;s summer tournament teams (8 teams, 91 players in 2026)</div>
+					<ul>
+						<li>Named presenting sponsor of NCLL All-Stars, baseball and softball</li>
+						<li>Your logo featured on the All-Stars pages of ncllball.com and in All-Stars family emails</li>
+						<li>Social media recognition through the tournament season</li>
+					</ul>
+				</div>
+				<div class="price"><b>$5,000</b><span>per season</span></div>
+			</div>
+
+			<div class="pkg">
+				<div>
+					<h2>Team Sponsor: A through Seniors</h2>
+					<div class="who">Up to 45 teams &middot; baseball and softball, ages 7 to 16</div>
+					<ul>
+						<li>Your business sponsors one team for the spring season and funds its uniforms</li>
+						<li>Sponsor plaque with the team photo</li>
+						<li>Your logo on the ncllball.com sponsors page and a thank-you on social media</li>
+					</ul>
+				</div>
+				<div class="price"><b>$1,350</b><span>per team</span></div>
+			</div>
+
+			<div class="pkg">
+				<div>
+					<h2>Team Sponsor: Tee Ball and Kindy</h2>
+					<div class="who">Up to 14 teams &middot; our youngest players, ages 5 to 7</div>
+					<ul>
+						<li>Your business sponsors one team for the spring season and funds its uniforms</li>
+						<li>Sponsor plaque with the team photo</li>
+						<li>Your logo on the ncllball.com sponsors page and a thank-you on social media</li>
+					</ul>
+				</div>
+				<div class="price"><b>$800</b><span>per team</span></div>
+			</div>
+
+			<div class="pkg">
+				<div>
+					<h2>All-Stars Team Supporter</h2>
+					<div class="who">Back one All-Stars tournament team</div>
+					<ul>
+						<li>Helps cover that team&rsquo;s tournament uniforms and costs</li>
+						<li>Recognition on the ncllball.com All-Stars page and on social media</li>
+					</ul>
+				</div>
+				<div class="price"><b>$750</b><span>per team</span></div>
+			</div>
+
+			<div class="more">
+				<div><b>Any amount helps.</b> Donations of any size are welcome and go straight to the league. Venmo @northcentrallittleleague.</div>
+				<div><b>Employer matching.</b> Many companies match donations or volunteer hours. Ask your HR team; we&rsquo;ll send what they need.</div>
+				<div><b>Tax deductible.</b> NCLL is a 501(c)(3) nonprofit. Check with your tax advisor on how much of your sponsorship is deductible.</div>
+			</div>
+
+			<footer>
+				<div class="cta">
+					Ready to sponsor? <a href="mailto:sponsorships@ncllball.com">sponsorships@ncllball.com</a>
+				</div>
+				<div class="small">
+					North Central Little League &middot; ncllball.com<br />
+					Thank you for supporting youth baseball and softball in our community.
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
