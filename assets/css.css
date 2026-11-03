@@ -4945,6 +4945,7 @@ p.rules-legend img {
 .DnnModule-2331762 .custom-title.registration-listing {
     float: none !important;
     top: 0 !important;
+    margin-top: 0 !important;
     overflow: hidden;
     margin-bottom: 8px;
 }
