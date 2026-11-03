@@ -1,0 +1,337 @@
+{
+ "_about": "Source of truth for the 2027 fact check (scripts/fact-check). Division data pulled read-only from Sports Connect (programs 80158833 baseball, 80158834 softball) on 2026-11-03; fees are the 2027 fees awaiting Jason's sign-off (SC still holds the $5,000 test price). Refresh with scripts/fact-check/README.md before each check.",
+ "pulled": "2026-11-03",
+ "programs": {
+  "baseball": {
+   "scProgramId": 80158833,
+   "divisions": [
+    {
+     "key": "tee-ball",
+     "label": "Tee Ball",
+     "aliases": [
+      "Tee Ball",
+      "Tee-Ball",
+      "T-Ball",
+      "Tee-ball"
+     ],
+     "fee": 165,
+     "leagueAge": "5-6",
+     "born": {
+      "from": "2020-09-01",
+      "to": "2022-08-31"
+     },
+     "cap": 90,
+     "scClose": "2027-05-01",
+     "scDivisionId": 81348475
+    },
+    {
+     "key": "kindy",
+     "label": "Kindy",
+     "aliases": [
+      "Kindy",
+      "KCP",
+      "Kindergarten Coach Pitch",
+      "Kindy / Coach Pitch",
+      "Kindy Coach Pitch"
+     ],
+     "fee": 185,
+     "leagueAge": "6-7",
+     "born": {
+      "from": "2019-09-01",
+      "to": "2021-08-31"
+     },
+     "cap": 90,
+     "scClose": "2027-05-19",
+     "scDivisionId": 81348476
+    },
+    {
+     "key": "a",
+     "label": "A",
+     "aliases": [
+      "A",
+      "A Baseball"
+     ],
+     "fee": 215,
+     "leagueAge": "7-8",
+     "born": {
+      "from": "2018-09-01",
+      "to": "2020-08-31"
+     },
+     "cap": 104,
+     "scClose": "2027-05-01",
+     "scDivisionId": 81348477
+    },
+    {
+     "key": "aa",
+     "label": "AA",
+     "aliases": [
+      "AA",
+      "AA Baseball"
+     ],
+     "fee": 225,
+     "leagueAge": "8-9",
+     "born": {
+      "from": "2017-09-01",
+      "to": "2019-08-31"
+     },
+     "cap": 104,
+     "scClose": "2027-05-01",
+     "scDivisionId": 81348483
+    },
+    {
+     "key": "aaa",
+     "label": "AAA",
+     "aliases": [
+      "AAA",
+      "AAA Baseball"
+     ],
+     "fee": 275,
+     "leagueAge": "9-11",
+     "born": {
+      "from": "2015-09-01",
+      "to": "2018-08-31"
+     },
+     "cap": 96,
+     "scClose": "2027-05-01",
+     "scDivisionId": 81348482
+    },
+    {
+     "key": "majors",
+     "label": "Majors",
+     "aliases": [
+      "Majors",
+      "Majors Baseball"
+     ],
+     "fee": 285,
+     "leagueAge": "10-12",
+     "born": {
+      "from": "2014-09-01",
+      "to": "2017-08-31"
+     },
+     "cap": 72,
+     "scClose": "2027-05-01",
+     "scDivisionId": 81348478
+    },
+    {
+     "key": "intermediate",
+     "label": "Intermediate",
+     "aliases": [
+      "Intermediate",
+      "Intermediate Baseball",
+      "Intermediate 50/70"
+     ],
+     "fee": 295,
+     "leagueAge": "13",
+     "born": {
+      "from": "2013-09-01",
+      "to": "2014-08-31"
+     },
+     "cap": 18,
+     "scClose": "2027-05-01",
+     "scDivisionId": 81348479
+    },
+    {
+     "key": "juniors",
+     "label": "Juniors",
+     "aliases": [
+      "Juniors",
+      "Juniors Baseball"
+     ],
+     "fee": 305,
+     "leagueAge": "13-14",
+     "born": {
+      "from": "2012-09-01",
+      "to": "2014-08-31"
+     },
+     "cap": 20,
+     "scClose": "2027-05-01",
+     "scDivisionId": 81348480
+    },
+    {
+     "key": "seniors",
+     "label": "Seniors",
+     "aliases": [
+      "Seniors",
+      "Seniors Baseball"
+     ],
+     "fee": 305,
+     "leagueAge": "15-16",
+     "born": {
+      "from": "2010-09-01",
+      "to": "2012-08-31"
+     },
+     "cap": 20,
+     "scClose": "2027-06-25",
+     "scDivisionId": 81348481
+    }
+   ]
+  },
+  "softball": {
+   "scProgramId": 80158834,
+   "divisions": [
+    {
+     "key": "a",
+     "label": "A",
+     "aliases": [
+      "A",
+      "A Softball"
+     ],
+     "fee": 215,
+     "leagueAge": "6-8",
+     "born": {
+      "from": "2018-01-01",
+      "to": "2020-12-31"
+     },
+     "cap": 44,
+     "scClose": "2027-03-01",
+     "scDivisionId": 81348485
+    },
+    {
+     "key": "aa",
+     "label": "AA",
+     "aliases": [
+      "AA",
+      "AA Softball"
+     ],
+     "fee": 225,
+     "leagueAge": "7-9",
+     "born": {
+      "from": "2017-01-01",
+      "to": "2019-12-31"
+     },
+     "cap": 60,
+     "scClose": "2027-03-01",
+     "scDivisionId": 81348486
+    },
+    {
+     "key": "aaa",
+     "label": "AAA",
+     "aliases": [
+      "AAA",
+      "AAA Softball"
+     ],
+     "fee": 275,
+     "leagueAge": "9-11",
+     "born": {
+      "from": "2015-01-01",
+      "to": "2017-12-31"
+     },
+     "cap": 36,
+     "scClose": "2027-03-01",
+     "scDivisionId": 81348496
+    },
+    {
+     "key": "majors",
+     "label": "Majors",
+     "aliases": [
+      "Majors",
+      "Majors Softball"
+     ],
+     "fee": 285,
+     "leagueAge": "10-12",
+     "born": {
+      "from": "2014-01-01",
+      "to": "2016-12-31"
+     },
+     "cap": 26,
+     "scClose": "2027-03-01",
+     "scDivisionId": 81348487
+    },
+    {
+     "key": "juniors",
+     "label": "Juniors",
+     "aliases": [
+      "Juniors",
+      "Juniors Softball"
+     ],
+     "fee": 305,
+     "leagueAge": "12-14",
+     "born": {
+      "from": "2012-01-01",
+      "to": "2014-12-31"
+     },
+     "cap": 15,
+     "scClose": "2027-03-01",
+     "scDivisionId": 81348488
+    },
+    {
+     "key": "seniors",
+     "label": "Seniors",
+     "aliases": [
+      "Seniors",
+      "Seniors Softball"
+     ],
+     "fee": 0,
+     "leagueAge": "13-16",
+     "born": {
+      "from": "2010-01-01",
+      "to": "2013-12-31"
+     },
+     "cap": 0,
+     "scClose": "2027-06-01",
+     "scDivisionId": 81348489
+    }
+   ]
+  }
+ },
+ "notes": {
+  "softballSeniorsFee": "$0 in registration; fee set with the partner league (est. $250-$300)",
+  "scPricesArePlaceholder": "Every SC division price is $5,000 (test) until launch; the site shows the fees above."
+ },
+ "dates": {
+  "registerBy": "Sunday, January 31, 2027 (requested, not the SC close date)",
+  "registerByBaseballAAAMajors": "Sunday, January 17, 2027",
+  "assessmentsBaseball": "around Sat, Jan 23, 2027 (AAA, Majors)",
+  "assessmentsSoftball": "around Sat, Feb 6, 2027 (AAA, Majors; Juniors has no assessments)",
+  "teamAssignments": "late February or early March"
+ },
+ "sponsorship": {
+  "teamABtoSeniors": 1350,
+  "teamTeeKindy": 800,
+  "allStarsPresenting": 5000,
+  "allStarsTeamSupporter": 750
+ },
+ "links": {
+  "registrationPage": [
+   2244720,
+   2112172
+  ],
+  "registrationHub": 2114737,
+  "uniformsHub": 2113971,
+  "assessments": 2112173,
+  "medicalReleaseForm": "https://docs.google.com/forms/d/1hoxbApTmmTyu4FuzPY56DWQf-njEoB8-EWDkJY_8W6s/viewform",
+  "ga4": "G-RWR33H14KS",
+  "utmCampaign": "2027-registration"
+ },
+ "staleOrBanned": [
+  {
+   "text": "unisex",
+   "why": "coach shirts are Mens (ST350) / Womens (LST350); John 2026-11-03"
+  },
+  {
+   "text": "$5,000",
+   "why": "SC test price; fine only as the All-Stars Presenting Sponsor price",
+   "unlessNear": "sponsor|presenting|all-stars"
+  },
+  {
+   "text": "Medical Waiver Upload",
+   "why": "replaced by the online medical release (Google Form)"
+  },
+  {
+   "text": "info@ncllball.com",
+   "why": "never created; general questions go to president@"
+  },
+  {
+   "text": "ST550",
+   "why": "collared coach shirt dropped for 2027"
+  },
+  {
+   "text": "registration-2027",
+   "why": "wrong UTM campaign spelling; use 2027-registration"
+  }
+ ],
+ "skipDivisionTablesIn": {
+  "pattern": "allstars|all-stars|summerball|winterball|sandlot",
+  "why": "other programs (All-Stars tournament ages, Summerball, Winterball) have their own divisions"
+ }
+}
