@@ -32,6 +32,16 @@ Division data comes from Sports Connect, read-only. Codex can't log in there, so
 
 Decisions that live outside Sports Connect (register-by dates, sponsor prices, banned wording) are edited by hand in `facts-2027.json`.
 
+## Uniform picker vs registration (run whenever sizes change)
+
+Codex can't see Sports Connect, so this one runs from Claude Code in the logged-in browser. It compares every uniform question in both programs (player questions, and Head Coach / Assistant Coach / Team Manager custom questions) with the option lists the Uniforms Hub picker shows ("Every option in each registration question"):
+
+1. Pull the picker's lists from `CMS/Resources/uniforms-hub.html` (each `div.q-ref` holds the question text and its `<li>` options, in order).
+2. In a `registration-setup.bluesombrero.com` tab, GET `programQuestions/<programId>` and `programs/<programId>/volunteers/<volunteerTypeId>/customQuestions` (volunteer types: Head Coach 80038935, Assistant 80038936, Team Manager 80038937), keep the questions whose name contains "size do you want to order", and sort each one's `answerOptions` by `sortOrder`.
+3. Every SC option must read `N: <label>` with N = its position and `<label>` = the picker's option at that position, and the counts must match.
+
+Last run 2026-11-03 (after the coach-shirt XS sizes were added): 22 of 22 questions match.
+
 ## Scope
 
 - Division tables are checked on every page except other programs' pages (`skipDivisionTablesIn`: All-Stars, Summerball, Winterball, Sandlot), which have their own divisions.
