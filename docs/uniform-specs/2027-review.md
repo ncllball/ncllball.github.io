@@ -79,7 +79,7 @@ Choices made where the sheet was unclear (Chris's QA round should confirm):
 - Socks and belt shown for A and up only (sheet row 13). T-Ball/Kindy show none.
 - Softball A/AA player hat is described only as "youth adjustable cap" (open #5). Softball AAA+ still pick a Youth/Adult visor (open #7).
 - Youth XL stays where the sheet lists it (open #2). Coach shirts offer XS–4XL in every division (the sheet rows do; open #4).
-- Product photos: 4001, 4011, 4404 and 8203 added 2026-11-03 (Protime). Only the LST350 is still without one.
+- Product photos: 4001, 4011, 4404 and 8203 added 2026-11-03 (Protime), LST350 the same day (SanMar). Every picker item has a photo. The LST350's Sport-Tek bust chart is in specs.md and the picker (r80).
 - **2026-11-03 corrections (Protime product pages + invoices):** the 4404 is Girls/Womens only, so the softball shirt question is now 1-8 Girls/Womens (options 9-17 deleted); the 8203 has no 4XL, so the coach hoodie is 1-6 Adult S-3XL (option 7 deleted on all six coach positions). LST350 = the women's short-sleeve tee (John: never long sleeves). Picker r79 published, 22/22 match, 30/30 live paths.
 - The registration question numbers (Q13 etc.) aren't shown yet. Add them to the question text in the script once registration is built.
 
