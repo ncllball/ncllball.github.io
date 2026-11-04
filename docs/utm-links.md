@@ -40,6 +40,8 @@ Already-printed QR codes can't change; tag the next print run.
 
 ## Reading the results
 
-GA4 › Reports › Acquisition › Traffic acquisition, set the dimension to **Session campaign** (or Session source / medium). The `registration_start` key event (a view of the Register page, tabid 1932702) shows how many of those visitors went on to start registering.
+GA4 › Reports › Acquisition › Traffic acquisition, set the dimension to **Session campaign** (or Session source / medium). The **`registration_started`** key event shows how many of those visitors went on to start registering: it's a page view in the registration app (URL contains `/83437/available-programs`), where "Register Now" takes logged-in families. The registration app reports to the same GA4 property, but checkout and the confirmation page aren't tracked, so count completed registrations in Sports Connect.
+
+The older `registration_start` key event (a view of the Register page, tabid 1932702) probably never fires: logged-in families skip that page. Use `registration_started` instead.
 
 Keep in mind ncllball.com only counts visitors who accept the cookie banner, so treat the numbers as a comparison between channels, not a head count.
