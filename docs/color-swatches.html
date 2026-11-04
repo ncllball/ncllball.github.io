@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>NCLL Colors &amp; Logos</title>
-	<link href="https://assets.ncllball.com/css.css" rel="stylesheet" type="text/css" />
+	<link href="https://assets.ncllball.com/css.css" rel="stylesheet" type="text/css">
 	<style>
 		body { font-family: sans-serif; padding: 2rem; background: #f5f5f5; }
 		h1 { color: var(--color_blue); margin-bottom: 2rem; }
@@ -14,6 +14,7 @@
 		.swatch__label { background: #fff; padding: 8px 10px; font-size: 0.8rem; }
 		.swatch__name { font-weight: bold; color: #333; }
 		.swatch__hex { color: #666; font-family: monospace; }
+		.swatch__where { color: #888; font-size: .7rem; margin-top: 2px; word-break: break-word; }
 		h2 { color: var(--color_blue); margin: 2rem 0 1rem; font-size: 1rem; text-transform: uppercase; letter-spacing: .05em; }
 		h3 { color: var(--color_blue); margin: 1.25rem 0 .25rem; font-size: .9rem; }
 		.logo-note { font-size: .8rem; color: #555; margin: 0 0 .6rem; }
@@ -26,7 +27,12 @@
 		.logo__label .swatch__name, .logo__label .swatch__hex { display: block; }
 		.logo__label .swatch__hex { font-size: .7rem; word-break: break-all; }
 	</style>
-</head>
+<style>
+  .imageye-selected {
+    outline: 2px solid black !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+  }
+</style></head>
 <body>
 	<h1>NCLL Colors &amp; Logos</h1>
 	<p>The color tokens in <code>assets/css.css</code> <code>:root</code>. In pages and new CSS, use the token (<code>var(--color_red)</code>), not the hex. Checked against the stylesheet 2026-10-29.</p>
@@ -38,18 +44,70 @@
 			<div class="swatch__label"><div class="swatch__name">Red</div><div class="swatch__hex">--color_red · #cd163f</div></div>
 		</div>
 		<div class="swatch">
-			<div class="swatch__color" style="background:#00013a"></div>
-			<div class="swatch__label"><div class="swatch__name">Blue</div><div class="swatch__hex">--color_blue · #00013a</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#019cde"></div>
-			<div class="swatch__label"><div class="swatch__name">Rich Blue</div><div class="swatch__hex">--color_richblue · #019cde</div></div>
-		</div>
-		<div class="swatch">
 			<div class="swatch__color" style="background:#e2ddca"></div>
 			<div class="swatch__label"><div class="swatch__name">Tan</div><div class="swatch__hex">--color_tan · #e2ddca</div></div>
 		</div>
-	</div>
+	<div class="swatch">
+			<div class="swatch__color" style="background:#00013a"></div>
+			<div class="swatch__label"><div class="swatch__name">Blue</div><div class="swatch__hex">--color_blue · #00013a</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#3d4351"></div>
+			<div class="swatch__label"><div class="swatch__name">Heading</div><div class="swatch__hex">--color_timeline_heading · #3d4351</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#768390"></div>
+			<div class="swatch__label"><div class="swatch__name">Body</div><div class="swatch__hex">--color_timeline_body · #768390</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#555555"></div>
+			<div class="swatch__label"><div class="swatch__name">Muted</div><div class="swatch__hex">--color_muted · #555555</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#ccd5db"></div>
+			<div class="swatch__label"><div class="swatch__name">Line</div><div class="swatch__hex">--color_timeline_line · #ccd5db</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#888888"></div>
+			<div class="swatch__label"><div class="swatch__name">Subtle</div><div class="swatch__hex">--color_subtle · #888888</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:rgb(68,68,68)"></div>
+			<div class="swatch__label"><div class="swatch__name">Dark Gray</div><div class="swatch__hex">--color_darkgray · #444444</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#ffffff; border:1px solid #eee"></div>
+			<div class="swatch__label"><div class="swatch__name">White</div><div class="swatch__hex">--color_white · #ffffff</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#000000"></div>
+			<div class="swatch__label"><div class="swatch__name">Black</div><div class="swatch__hex">--color_black · #000000</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#333333"></div>
+			<div class="swatch__label"><div class="swatch__name">Text</div><div class="swatch__hex">--color_text · #333333</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#fafafa; border:1px solid #eee"></div>
+			<div class="swatch__label"><div class="swatch__name">Surface Light</div><div class="swatch__hex">--color_surface_light · #fafafa</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#cccccc"></div>
+			<div class="swatch__label"><div class="swatch__name">Border</div><div class="swatch__hex">--color_border · #cccccc</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:gainsboro"></div>
+			<div class="swatch__label"><div class="swatch__name">Tag</div><div class="swatch__hex">--color_tag · gainsboro</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#bbbbbb"></div>
+			<div class="swatch__label"><div class="swatch__name">Control</div><div class="swatch__hex">--color_control · #bbbbbb</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#dededf"></div>
+			<div class="swatch__label"><div class="swatch__name">Table Border</div><div class="swatch__hex">--color_border_table · #dededf</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#f0f0f0; border:1px solid #eee"></div>
+			<div class="swatch__label"><div class="swatch__name">Button</div><div class="swatch__hex">--color_button · #f0f0f0</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#fdfdfd; border:1px solid #eee"></div>
+			<div class="swatch__label"><div class="swatch__name">Surface Lighter</div><div class="swatch__hex">--color_surface_lighter · #fdfdfd</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:gainsboro"></div>
+			<div class="swatch__label"><div class="swatch__name">Light Gray</div><div class="swatch__hex">--color_lightgray · gainsboro</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#dddddd"></div>
+			<div class="swatch__label"><div class="swatch__name">Border Light</div><div class="swatch__hex">--color_border_light · #dddddd</div></div>
+		</div><div class="swatch">
+			<div class="swatch__color" style="background:#f9f9f9; border:1px solid #eee"></div>
+			<div class="swatch__label"><div class="swatch__name">Table Row Alt</div><div class="swatch__hex">--color_table_row_alt · #f9f9f9</div></div>
+		</div><div class="swatch"><div class="swatch__color" style="background:#040707"></div><div class="swatch__label"><div class="swatch__name">Logo Black (PNG)</div><div class="swatch__hex">#040707</div><div class="swatch__where">arched + flat wordmark PNGs</div></div></div><div class="swatch"><div class="swatch__color" style="background:#ed1c24"></div><div class="swatch__label"><div class="swatch__name">Logo Red</div><div class="swatch__hex">#ed1c24</div><div class="swatch__where">every red logo, PNG and SVG</div></div></div><div class="swatch"><div class="swatch__color" style="background:#010101"></div><div class="swatch__label"><div class="swatch__name">Logo Black</div><div class="swatch__hex">#010101</div><div class="swatch__where">SVG logos (near-black)</div></div></div><div class="swatch"><div class="swatch__color" style="background:#102542"></div><div class="swatch__label"><div class="swatch__name">Navy Night</div><div class="swatch__hex">#102542</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.ground-gremlins-link, .ground-gremlins-link:focus-visible</div></div></div><div class="swatch"><div class="swatch__color" style="background:#1a3a6b"></div><div class="swatch__label"><div class="swatch__name">Hub Navy</div><div class="swatch__hex">#1a3a6b</div><div class="swatch__where">stylesheet ×22, pages ×14</div><div class="swatch__where">.wiz-header .wiz-header__title, .wiz-progress__step--done; uniforms-hub</div></div></div><div class="swatch"><div class="swatch__color" style="background:#133c76"></div><div class="swatch__label"><div class="swatch__name">Navy Mid</div><div class="swatch__hex">#133c76</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.division-toggle__input:checked+.division-toggle</div></div></div><div class="swatch"><div class="swatch__color" style="background:#1d3d7a"></div><div class="swatch__label"><div class="swatch__name">Navy Bright</div><div class="swatch__hex">#1d3d7a</div><div class="swatch__where">pages ×3</div><div class="swatch__where">registration-hub</div></div></div><div class="swatch"><div class="swatch__color" style="background:#14305a"></div><div class="swatch__label"><div class="swatch__name">Navy (pages)</div><div class="swatch__hex">#14305a</div><div class="swatch__where">pages ×4</div><div class="swatch__where">uniforms-hub</div></div></div><div class="swatch"><div class="swatch__color" style="background:#1a2b5c"></div><div class="swatch__label"><div class="swatch__name">Navy Deep</div><div class="swatch__hex">#1a2b5c</div><div class="swatch__where">stylesheet ×6</div><div class="swatch__where">.sticky-register, .ncll-card__sticky-footer .button--primary:hover</div></div></div><div class="swatch"><div class="swatch__color" style="background:#e71d1d"></div><div class="swatch__label"><div class="swatch__name">Red Vivid</div><div class="swatch__hex">#e71d1d</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.swag-sticky-ribbon, .swag-sticky-ribbon:focus-visible</div></div></div><div class="swatch"><div class="swatch__color" style="background:#e23d3d"></div><div class="swatch__label"><div class="swatch__name">Red Light (pages)</div><div class="swatch__hex">#e23d3d</div><div class="swatch__where">pages ×3</div><div class="swatch__where">registration-hub</div></div></div><div class="swatch"><div class="swatch__color" style="background:#e00000"></div><div class="swatch__label"><div class="swatch__name">Red Bright</div><div class="swatch__hex">#e00000</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.print-btn-float:hover, .print-btn-float:focus-v, .sticky-register-cta:hover, .sticky-register-cta</div></div></div><div class="swatch"><div class="swatch__color" style="background:#09103e"></div><div class="swatch__label"><div class="swatch__name">All-Stars Navy</div><div class="swatch__hex">#09103e</div><div class="swatch__where">allstars-logo.png</div></div></div><div class="swatch"><div class="swatch__color" style="background:#d0b94f"></div><div class="swatch__label"><div class="swatch__name">Summerball25 Gold</div><div class="swatch__hex">#d0b94f</div><div class="swatch__where">Summerball25.svg</div></div></div><div class="swatch"><div class="swatch__color" style="background:#c8a84b"></div><div class="swatch__label"><div class="swatch__name">Event Gold</div><div class="swatch__hex">#c8a84b</div><div class="swatch__where">event look: headings, button, border</div></div></div><div class="swatch"><div class="swatch__color" style="background:#00013a"></div><div class="swatch__label"><div class="swatch__name">Announcement Navy (= --color_blue)</div><div class="swatch__hex">#00013a</div><div class="swatch__where">stylesheet ×3</div><div class="swatch__where">card look: title, links, button</div></div></div><div class="swatch"><div class="swatch__color" style="background:#f0f4fb; border-bottom:1px solid #eee"></div><div class="swatch__label"><div class="swatch__name">Callout Blue</div><div class="swatch__hex">#f0f4fb</div><div class="swatch__where">card look: callout box</div></div></div><div class="swatch"><div class="swatch__color" style="background:#0a0a0a"></div><div class="swatch__label"><div class="swatch__name">Event Black</div><div class="swatch__hex">#0a0a0a</div><div class="swatch__where">event look: card</div></div></div><div class="swatch"><div class="swatch__color" style="background:#1a1a1a"></div><div class="swatch__label"><div class="swatch__name">Event Page</div><div class="swatch__hex">#1a1a1a</div><div class="swatch__where">event look: page</div></div></div><div class="swatch"><div class="swatch__color" style="background:#f8f9fa; border-bottom:1px solid #eee"></div><div class="swatch__label"><div class="swatch__name">Email Page</div><div class="swatch__hex">#f8f9fa</div><div class="swatch__where">card look: page behind the card</div></div></div><div class="swatch"><div class="swatch__color" style="background:#fc0c4e"></div><div class="swatch__label"><div class="swatch__name">Summerball26 Pink-Red</div><div class="swatch__hex">#fc0c4e</div><div class="swatch__where">Summerball26.svg</div></div></div><div class="swatch"><div class="swatch__color" style="background:#fff7ed; border-bottom:1px solid #eee"></div><div class="swatch__label"><div class="swatch__name">Notice Background</div><div class="swatch__hex">#fff7ed</div><div class="swatch__where">stylesheet ×1</div><div class="swatch__where">.callout--bulb</div></div></div><div class="swatch"><div class="swatch__color" style="background:#dc2626"></div><div class="swatch__label"><div class="swatch__name">Alert Red</div><div class="swatch__hex">#dc2626</div><div class="swatch__where">stylesheet ×1</div><div class="swatch__where">.callout--danger</div></div></div><div class="swatch"><div class="swatch__color" style="background:#fff3cd; border-bottom:1px solid #eee"></div><div class="swatch__label"><div class="swatch__name">Warning Background</div><div class="swatch__hex">#fff3cd</div><div class="swatch__where">stylesheet ×1</div><div class="swatch__where">.footies--wip</div></div></div><div class="swatch"><div class="swatch__color" style="background:#5a4200"></div><div class="swatch__label"><div class="swatch__name">Warning Text</div><div class="swatch__hex">#5a4200</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.status-email, .status-suggestion</div></div></div><div class="swatch"><div class="swatch__color" style="background:#b91c1c"></div><div class="swatch__label"><div class="swatch__name">Alert Red Dark</div><div class="swatch__hex">#b91c1c</div><div class="swatch__where">stylesheet ×1</div><div class="swatch__where">.callout--danger .callout__icon</div></div></div><div class="swatch"><div class="swatch__color" style="background:#f5f5f5; border-bottom:1px solid #eee"></div><div class="swatch__label"><div class="swatch__name">White Smoke</div><div class="swatch__hex">#f5f5f5</div><div class="swatch__where">stylesheet ×4</div><div class="swatch__where">.ncll-card--overlay .ncll-card__body, .ncll-card--overlay .ncll-card__body::-webkit-sc</div></div></div><div class="swatch"><div class="swatch__color" style="background:#e6e6e6"></div><div class="swatch__label"><div class="swatch__name">Gray E6</div><div class="swatch__hex">#e6e6e6</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.sizing-card, .sizing-table th, .sizing-table td</div></div></div><div class="swatch"><div class="swatch__color" style="background:#e2e2e2"></div><div class="swatch__label"><div class="swatch__name">Gray E2</div><div class="swatch__hex">#e2e2e2</div><div class="swatch__where">stylesheet ×6</div><div class="swatch__where">.ncll-card__sticky-footer, .ncll-card--overlay .ncll-card__sticky-footer</div></div></div><div class="swatch"><div class="swatch__color" style="background:#e0e0e0"></div><div class="swatch__label"><div class="swatch__name">Gray E0</div><div class="swatch__hex">#e0e0e0</div><div class="swatch__where">stylesheet ×3</div><div class="swatch__where">.hub-intro__aside--accent, .hub-intro__aside--accent.related-links--grouped</div></div></div><div class="swatch"><div class="swatch__color" style="background:#c5c5c5"></div><div class="swatch__label"><div class="swatch__name">Gray C5</div><div class="swatch__hex">#c5c5c5</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.ground-gremlins-link:focus-visible, .callout--note</div></div></div><div class="swatch"><div class="swatch__color" style="background:#777777"></div><div class="swatch__label"><div class="swatch__name">Gray 77</div><div class="swatch__hex">#777777</div><div class="swatch__where">stylesheet ×3, pages ×3</div><div class="swatch__where">registration-hub</div></div></div><div class="swatch"><div class="swatch__color" style="background:#222222"></div><div class="swatch__label"><div class="swatch__name">Ink</div><div class="swatch__hex">#222222</div><div class="swatch__where">stylesheet ×4</div></div></div><div class="swatch"><div class="swatch__color" style="background:#111111"></div><div class="swatch__label"><div class="swatch__name">Near Black</div><div class="swatch__hex">#111111</div><div class="swatch__where">stylesheet ×2</div></div></div><div class="swatch"><div class="swatch__color" style="background:#f7f9fb; border-bottom:1px solid #eee"></div><div class="swatch__label"><div class="swatch__name">Blue Mist</div><div class="swatch__hex">#f7f9fb</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.wiz-opt, .div-product-preview</div></div></div><div class="swatch"><div class="swatch__color" style="background:#f3f6fa; border-bottom:1px solid #eee"></div><div class="swatch__label"><div class="swatch__name">Blue Wash</div><div class="swatch__hex">#f3f6fa</div><div class="swatch__where">stylesheet ×3</div><div class="swatch__where">.pitching-ref table.fit tbody tr:nth-child(even), .horizontal thead th</div></div></div><div class="swatch"><div class="swatch__color" style="background:#edf1f8; border-bottom:1px solid #eee"></div><div class="swatch__label"><div class="swatch__name">Blue Tint</div><div class="swatch__hex">#edf1f8</div><div class="swatch__where">stylesheet ×2, pages ×2</div><div class="swatch__where">.wiz-opt:hover, .wiz-btn--restart:hover; uniforms-hub</div></div></div><div class="swatch"><div class="swatch__color" style="background:#e6e9f2"></div><div class="swatch__label"><div class="swatch__name">Blue-Gray Tint</div><div class="swatch__hex">#e6e9f2</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.pitching-ref table.fit thead th, .sizing-table thead th</div></div></div><div class="swatch"><div class="swatch__color" style="background:#c1c8d6"></div><div class="swatch__label"><div class="swatch__name">Blue-Gray Edge</div><div class="swatch__hex">#c1c8d6</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.ncll-card--toggle .btn-next:focus, .ncll-card--toggle .btn-prev:focus</div></div></div><div class="swatch"><div class="swatch__color" style="background:#dce3ea"></div><div class="swatch__label"><div class="swatch__name">Blue-Gray Line</div><div class="swatch__hex">#dce3ea</div><div class="swatch__where">stylesheet ×5</div><div class="swatch__where">.wizard-section .unif-wizard, .wiz-block-title</div></div></div><div class="swatch"><div class="swatch__color" style="background:#c5cdd8"></div><div class="swatch__label"><div class="swatch__name">Blue-Gray Border</div><div class="swatch__hex">#c5cdd8</div><div class="swatch__where">stylesheet ×6</div><div class="swatch__where">.wiz-progress__step, .wiz-progress__step--final::after</div></div></div><div class="swatch"><div class="swatch__color" style="background:#cc0000"></div><div class="swatch__label"><div class="swatch__name">Red (pages)</div><div class="swatch__hex">#cc0000</div><div class="swatch__where">pages ×3</div><div class="swatch__where">registration-hub</div></div></div><div class="swatch"><div class="swatch__color" style="background:#c8102e"></div><div class="swatch__label"><div class="swatch__name">Red Alt</div><div class="swatch__hex">#c8102e</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">a.wiz-btn--go:visited</div></div></div></div>
 
 	<h2>Logos</h2>
 	<p style="font-size:.85rem; color:#555; margin:-.5rem 0 1rem;">From Drive › rebuild › NCLL Logos › NCLL vector files (the .ai/.eps masters are there too), copied to <code>images/logos/vector/</code>. Transparent ones are shown on white or black so you can see them. Click one for the full-size PNG. How each is used, for families: <a href="https://www.ncllball.com/Default.aspx?tabid=2161269">NCLL Logos &amp; Brand Guide</a>.</p>
@@ -88,7 +146,6 @@
 		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/white_mono_logo_on_transparent.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/white_mono_logo_on_transparent.png" alt="NC Clover, White (one color)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">White (one color)</span><span class="swatch__hex">white_mono_logo_on_transparent.png</span></span></a>
 		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/white_mono_logo_on_black.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/white_mono_logo_on_black.png" alt="NC Clover, White (one color) on black" loading="lazy"></span><span class="logo__label"><span class="swatch__name">White (one color) on black</span><span class="swatch__hex">white_mono_logo_on_black.png</span></span></a>
 	</div>
-
 	<h3>Vector files (SVG)</h3>
 	<p class="logo-note">Scalable versions for printing, signs and design work, from the SVG folder in NCLL vector files. Click one to open the .svg (right-click to save it). The .ai and .eps masters stay in Drive.</p>
 	<div class="logos">
@@ -111,18 +168,9 @@
 
 	<h2>Text &amp; Links</h2>
 	<div class="swatches">
-		<div class="swatch">
-			<div class="swatch__color" style="background:#333333"></div>
-			<div class="swatch__label"><div class="swatch__name">Text</div><div class="swatch__hex">--color_text · #333333</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#555555"></div>
-			<div class="swatch__label"><div class="swatch__name">Muted</div><div class="swatch__hex">--color_muted · #555555</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#888888"></div>
-			<div class="swatch__label"><div class="swatch__name">Subtle</div><div class="swatch__hex">--color_subtle · #888888</div></div>
-		</div>
+		
+		
+		
 		<div class="swatch">
 			<div class="swatch__color" style="background:#0066cc"></div>
 			<div class="swatch__label"><div class="swatch__name">Link</div><div class="swatch__hex">--color_link · #0066cc</div></div>
@@ -131,66 +179,32 @@
 			<div class="swatch__color" style="background:#1976d2"></div>
 			<div class="swatch__label"><div class="swatch__name">Info</div><div class="swatch__hex">--color_info · #1976d2</div></div>
 		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:rgb(68,68,68)"></div>
-			<div class="swatch__label"><div class="swatch__name">Dark Gray</div><div class="swatch__hex">--color_darkgray · #444444</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#ffffff; border:1px solid #eee"></div>
-			<div class="swatch__label"><div class="swatch__name">White</div><div class="swatch__hex">--color_white · #ffffff</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#000000"></div>
-			<div class="swatch__label"><div class="swatch__name">Black</div><div class="swatch__hex">--color_black · #000000</div></div>
-		</div>
+		
+		
+		
 	</div>
 
 	<h2>Surfaces &amp; Borders</h2>
 	<div class="swatches">
-		<div class="swatch">
-			<div class="swatch__color" style="background:#fafafa; border:1px solid #eee"></div>
-			<div class="swatch__label"><div class="swatch__name">Surface Light</div><div class="swatch__hex">--color_surface_light · #fafafa</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#f0f0f0; border:1px solid #eee"></div>
-			<div class="swatch__label"><div class="swatch__name">Button</div><div class="swatch__hex">--color_button · #f0f0f0</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#cccccc"></div>
-			<div class="swatch__label"><div class="swatch__name">Border</div><div class="swatch__hex">--color_border · #cccccc</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#dddddd"></div>
-			<div class="swatch__label"><div class="swatch__name">Border Light</div><div class="swatch__hex">--color_border_light · #dddddd</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:gainsboro"></div>
-			<div class="swatch__label"><div class="swatch__name">Light Gray</div><div class="swatch__hex">--color_lightgray · gainsboro</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#fdfdfd; border:1px solid #eee"></div>
-			<div class="swatch__label"><div class="swatch__name">Surface Lighter</div><div class="swatch__hex">--color_surface_lighter · #fdfdfd</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#f9f9f9; border:1px solid #eee"></div>
-			<div class="swatch__label"><div class="swatch__name">Table Row Alt</div><div class="swatch__hex">--color_table_row_alt · #f9f9f9</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#dededf"></div>
-			<div class="swatch__label"><div class="swatch__name">Table Border</div><div class="swatch__hex">--color_border_table · #dededf</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#bbbbbb"></div>
-			<div class="swatch__label"><div class="swatch__name">Control</div><div class="swatch__hex">--color_control · #bbbbbb</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:gainsboro"></div>
-			<div class="swatch__label"><div class="swatch__name">Tag</div><div class="swatch__hex">--color_tag · gainsboro</div></div>
-		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	</div>
 
 	<h2>Status</h2>
 	<div class="swatches">
+		
+		<div class="swatch">
+			<div class="swatch__color" style="background:#019cde"></div>
+			<div class="swatch__label"><div class="swatch__name">Rich Blue</div><div class="swatch__hex">--color_richblue · #019cde</div></div>
+		</div>
 		<div class="swatch">
 			<div class="swatch__color" style="background:#2ecc40"></div>
 			<div class="swatch__label"><div class="swatch__name">Green</div><div class="swatch__hex">--color_green · #2ecc40</div></div>
@@ -203,18 +217,110 @@
 
 	<h2>Timeline</h2>
 	<div class="swatches">
-		<div class="swatch">
-			<div class="swatch__color" style="background:#ccd5db"></div>
-			<div class="swatch__label"><div class="swatch__name">Line</div><div class="swatch__hex">--color_timeline_line · #ccd5db</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#3d4351"></div>
-			<div class="swatch__label"><div class="swatch__name">Heading</div><div class="swatch__hex">--color_timeline_heading · #3d4351</div></div>
-		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#768390"></div>
-			<div class="swatch__label"><div class="swatch__name">Body</div><div class="swatch__hex">--color_timeline_body · #768390</div></div>
-		</div>
+		
+		
+		
+	</div>
+
+	<h2>Found in our logos, site and emails</h2>
+	<p style="font-size:.85rem; color:#555; margin:-.5rem 0 1rem;">Colors that show up in the logo files, the stylesheet, the CMS pages and our email looks but aren't tokens above. Pulled 2026-11-04. Counts are how many times each appears. Before using one in something new, check whether a token already does the job; the ones that keep coming back (Hub Navy, Red Dark) are candidates for new tokens.</p>
+	<h3>From our logos</h3>
+	<p class="logo-note">The colors inside the logo files. The logo red is brighter than the site's --color_red (#cd163f); use the logo files as they are, and --color_red for web pages.</p>
+	<div class="swatches">
+		
+		
+		
+	</div>
+	<h3>Navy family (site)</h3>
+	<p class="logo-note">A second, softer navy runs through the hubs and cards. Worth making a token if it stays.</p>
+	<div class="swatches">
+		
+		
+		
+		
+		
+		
+	</div>
+	<h3>Red family (site)</h3>
+	<p class="logo-note">Darker and brighter reds used for hovers and alerts.</p>
+	<div class="swatches">
+		<div class="swatch"><div class="swatch__color" style="background:#b81236"></div><div class="swatch__label"><div class="swatch__name">Red Dark (hover)</div><div class="swatch__hex">#b81236</div><div class="swatch__where">stylesheet ×4</div><div class="swatch__where">.button--red:focus-visible, .ad-hoc-heroes-link:focus-visible</div></div></div>
+		<div class="swatch"><div class="swatch__color" style="background:#a50d26"></div><div class="swatch__label"><div class="swatch__name">Red Deeper</div><div class="swatch__hex">#a50d26</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">a.wiz-btn--go:hover</div></div></div>
+		
+		
+		
+		
+		
+		<div class="swatch"><div class="swatch__color" style="background:#990000"></div><div class="swatch__label"><div class="swatch__name">Maroon (pages)</div><div class="swatch__hex">#990000</div><div class="swatch__where">pages ×3</div><div class="swatch__where">registration-hub</div></div></div>
+	</div>
+	<h3>Light blue-grays (site)</h3>
+	<p class="logo-note">Panel and card backgrounds and borders.</p>
+	<div class="swatches">
+		
+		
+		
+		
+		
+		
+		
+	</div>
+	<h3>Extra neutrals (site)</h3>
+	<p class="logo-note">Grays used directly instead of a token.</p>
+	<div class="swatches">
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+	<h3>Status boxes (site)</h3>
+	<p class="logo-note">Warning, success and alert callouts.</p>
+	<div class="swatches">
+		
+		
+		<div class="swatch"><div class="swatch__color" style="background:#006150"></div><div class="swatch__label"><div class="swatch__name">Success Green</div><div class="swatch__hex">#006150</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.ncll-card__cta .button--dicks</div></div></div>
+		<div class="swatch"><div class="swatch__color" style="background:#004f40"></div><div class="swatch__label"><div class="swatch__name">Success Green Dark</div><div class="swatch__hex">#004f40</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.ncll-card__cta .button--dicks:focus-visible</div></div></div>
+		<div class="swatch"><div class="swatch__color" style="background:#fef2f2; border-bottom:1px solid #eee"></div><div class="swatch__label"><div class="swatch__name">Alert Background</div><div class="swatch__hex">#fef2f2</div><div class="swatch__where">stylesheet ×1</div><div class="swatch__where">.callout--danger</div></div></div>
+		
+		
+		
+		<div class="swatch"><div class="swatch__color" style="background:#ea580c"></div><div class="swatch__label"><div class="swatch__name">Notice Orange</div><div class="swatch__hex">#ea580c</div><div class="swatch__where">stylesheet ×1</div><div class="swatch__where">.callout--caution .callout__icon</div></div></div>
+		<div class="swatch"><div class="swatch__color" style="background:#6f42c1"></div><div class="swatch__label"><div class="swatch__name">Purple</div><div class="swatch__hex">#6f42c1</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.status-district</div></div></div>
+	</div>
+	<h3>Email looks (Ops Board Email Formatter)</h3>
+	<p class="logo-note">The two looks taken from our best past Sports Connect emails.</p>
+	<div class="swatches">
+		
+		
+		
+		
+		
+		
+	</div>
+	<h3>Program logos</h3>
+	<p class="logo-note">Each program's own logo colors. Fine inside that program's materials; not league colors.</p>
+	<div class="swatches">
+		
+		<div class="swatch"><div class="swatch__color" style="background:#ea72d1"></div><div class="swatch__label"><div class="swatch__name">Summerball26 Pink</div><div class="swatch__hex">#ea72d1</div><div class="swatch__where">Summerball26.svg</div></div></div>
+		<div class="swatch"><div class="swatch__color" style="background:#3dcae0"></div><div class="swatch__label"><div class="swatch__name">Summerball26 Aqua</div><div class="swatch__hex">#3dcae0</div><div class="swatch__where">Summerball26.svg</div></div></div>
+		<div class="swatch"><div class="swatch__color" style="background:#148d15"></div><div class="swatch__label"><div class="swatch__name">Summerball26 Green</div><div class="swatch__hex">#148d15</div><div class="swatch__where">Summerball26.svg</div></div></div>
+		<div class="swatch"><div class="swatch__color" style="background:#125c4b"></div><div class="swatch__label"><div class="swatch__name">Summerball25 Green</div><div class="swatch__hex">#125c4b</div><div class="swatch__where">Summerball25.svg</div></div></div>
+		
+		<div class="swatch"><div class="swatch__color" style="background:#ea2386"></div><div class="swatch__label"><div class="swatch__name">Summerball25 Pink</div><div class="swatch__hex">#ea2386</div><div class="swatch__where">Summerball25.svg</div></div></div>
+		<div class="swatch"><div class="swatch__color" style="background:#004aad"></div><div class="swatch__label"><div class="swatch__name">Summerball Blue</div><div class="swatch__hex">#004aad</div><div class="swatch__where">Summerball25 + 26 logos</div></div></div>
+		<div class="swatch"><div class="swatch__color" style="background:#3aa1ca"></div><div class="swatch__label"><div class="swatch__name">All-Stars Sky Blue</div><div class="swatch__hex">#3aa1ca</div><div class="swatch__where">allstars-logo.png</div></div></div>
+		
+	</div>
+	<h3>Not ours</h3>
+	<p class="logo-note">Other companies' brand colors, on social buttons. Don't use them for NCLL.</p>
+	<div class="swatches">
+		<div class="swatch"><div class="swatch__color" style="background:#1877f2"></div><div class="swatch__label"><div class="swatch__name">Facebook Blue</div><div class="swatch__hex">#1877f2</div><div class="swatch__where">pages ×2</div><div class="swatch__where">helping-hub</div></div></div>
+		<div class="swatch"><div class="swatch__color" style="background:#dd2a7b"></div><div class="swatch__label"><div class="swatch__name">Instagram Pink</div><div class="swatch__hex">#dd2a7b</div><div class="swatch__where">stylesheet ×2</div><div class="swatch__where">.button--social-gradient</div></div></div>
+		<div class="swatch"><div class="swatch__color" style="background:#8134af"></div><div class="swatch__label"><div class="swatch__name">Instagram Purple</div><div class="swatch__hex">#8134af</div><div class="swatch__where">stylesheet ×1</div><div class="swatch__where">.button--social-gradient</div></div></div>
+		<div class="swatch"><div class="swatch__color" style="background:#f58529"></div><div class="swatch__label"><div class="swatch__name">Instagram Orange</div><div class="swatch__hex">#f58529</div><div class="swatch__where">stylesheet ×1</div><div class="swatch__where">.button--social-gradient</div></div></div>
 	</div>
 
 	<h2>Kept, not for use</h2>
@@ -225,7 +331,6 @@
 			<div class="swatch__label"><div class="swatch__name">Orange</div><div class="swatch__hex">--color_orange · #ff6900<br>hover #F57C00</div></div>
 		</div>
 	</div>
-
 	<p style="margin-top:2rem; font-size:.85rem; color:#555;">Defined but not used anywhere in the stylesheet yet: Tan, Button, Info, Warning, Border, Green, #aaaaaa. They're available, but check with the palette above before introducing a new color.</p>
 </body>
 </html>
