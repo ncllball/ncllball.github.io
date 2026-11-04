@@ -1,5 +1,5 @@
 {
- "_about": "Source of truth for the 2027 fact check (scripts/fact-check). Division data pulled read-only from Sports Connect (programs 80158833 baseball, 80158834 softball) on 2026-11-03; fees are the 2027 fees awaiting Jason's sign-off (SC still holds the $5,000 test price). Refresh with scripts/fact-check/README.md before each check.",
+ "_about": "Source of truth for the 2027 fact check (scripts/fact-check). Division data pulled read-only from Sports Connect (programs 80158833 baseball, 80158834 softball) on 2026-11-03; fees are the final 2027 fees (Jason, 2026-11-03: AAA and Majors $290 in both sports). Refresh with scripts/fact-check/README.md before each check.",
  "pulled": "2026-11-03 (re-checked against Sports Connect 2026-11-03 afternoon: no division changes)",
  "programs": {
   "baseball": {
@@ -89,7 +89,7 @@
       "AAA",
       "AAA Baseball"
      ],
-     "fee": 275,
+     "fee": 290,
      "leagueAge": "9-11",
      "born": {
       "from": "2015-09-01",
@@ -107,7 +107,7 @@
       "Majors",
       "Majors Baseball"
      ],
-     "fee": 285,
+     "fee": 290,
      "leagueAge": "10-12",
      "born": {
       "from": "2014-09-01",
@@ -221,7 +221,7 @@
       "AAA",
       "AAA Softball"
      ],
-     "fee": 275,
+     "fee": 290,
      "leagueAge": "9-11",
      "born": {
       "from": "2015-01-01",
@@ -239,7 +239,7 @@
       "Majors",
       "Majors Softball"
      ],
-     "fee": 285,
+     "fee": 290,
      "leagueAge": "10-12",
      "born": {
       "from": "2014-01-01",

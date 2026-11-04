@@ -7,7 +7,7 @@ You are checking that ncllball.com's page sources (the `CMS/` folder of this rep
 - **Do not edit any file in `CMS/`, `assets/`, `QR/` or `docs/`, and do not commit or push.** The only file you write is the report (below).
 - Do not log in anywhere, post anything, or call any Sports Connect or ncllball.com endpoint that changes data. Use only the read-only `ncll-browser` tools for Sports Connect and the CMS, following `AGENTS.md`. Reading public pages on www.ncllball.com is fine.
 - Families read this site on phones; a wrong fee, age or date costs real money or a missed deadline. Report anything you aren't sure about rather than guessing.
-- Pending board sign-off (as of 2026-11-03): the fees, the fee article and the sponsor prices. Baseball AAA and Majors may both move to $290. Still check fees against `facts-2027.json` as written. Registration's testing note and its hidden Price column are deliberate until launch; don't report them.
+- The 2027 fees are final (Jason, 2026-11-03; AAA and Majors $290 in both sports). Sponsor prices are on hold for the new sponsorship lead and are off the site; don't report their absence.
 
 ## Steps
 
