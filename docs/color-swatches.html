@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>NCLL Color Palette</title>
+	<title>NCLL Colors &amp; Logos</title>
 	<link href="https://assets.ncllball.com/css.css" rel="stylesheet" type="text/css" />
 	<style>
 		body { font-family: sans-serif; padding: 2rem; background: #f5f5f5; }
@@ -15,10 +15,20 @@
 		.swatch__name { font-weight: bold; color: #333; }
 		.swatch__hex { color: #666; font-family: monospace; }
 		h2 { color: var(--color_blue); margin: 2rem 0 1rem; font-size: 1rem; text-transform: uppercase; letter-spacing: .05em; }
+		h3 { color: var(--color_blue); margin: 1.25rem 0 .25rem; font-size: .9rem; }
+		.logo-note { font-size: .8rem; color: #555; margin: 0 0 .6rem; }
+		.logos { display: flex; flex-wrap: wrap; gap: 1rem; }
+		.logo { width: 200px; border-radius: 6px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.15); text-decoration: none; display: block; }
+		.logo__img { display: flex; align-items: center; justify-content: center; height: 120px; padding: 10px; background: #fff; box-sizing: border-box; }
+		.logo--dark .logo__img { background: #000; }
+		.logo__img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+		.logo__label { display: block; background: #fff; padding: 8px 10px; font-size: .8rem; }
+		.logo__label .swatch__name, .logo__label .swatch__hex { display: block; }
+		.logo__label .swatch__hex { font-size: .7rem; word-break: break-all; }
 	</style>
 </head>
 <body>
-	<h1>NCLL Color Palette</h1>
+	<h1>NCLL Colors &amp; Logos</h1>
 	<p>The color tokens in <code>assets/css.css</code> <code>:root</code>. In pages and new CSS, use the token (<code>var(--color_red)</code>), not the hex. Checked against the stylesheet 2026-10-29.</p>
 
 	<h2>Brand</h2>
@@ -39,10 +49,64 @@
 			<div class="swatch__color" style="background:#e2ddca"></div>
 			<div class="swatch__label"><div class="swatch__name">Tan</div><div class="swatch__hex">--color_tan · #e2ddca</div></div>
 		</div>
-		<div class="swatch">
-			<div class="swatch__color" style="background:#ff6900"></div>
-			<div class="swatch__label"><div class="swatch__name">Orange</div><div class="swatch__hex">--color_orange · #ff6900</div></div>
-		</div>
+	</div>
+
+	<h2>Logos</h2>
+	<p style="font-size:.85rem; color:#555; margin:-.5rem 0 1rem;">From Drive › rebuild › NCLL Logos › NCLL vector files (the .ai/.eps masters are there too), copied to <code>images/logos/vector/</code>. Transparent ones are shown on white or black so you can see them. Click one for the full-size PNG. How each is used, for families: <a href="https://www.ncllball.com/Default.aspx?tabid=2161269">NCLL Logos &amp; Brand Guide</a>.</p>
+	<h3>Badge</h3>
+	<p class="logo-note">Lead with this when introducing something new.</p>
+	<div class="logos">
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/badge.black.and.red.on.white.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/badge.black.and.red.on.white.png" alt="Badge, Black and red on white" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Black and red on white</span><span class="swatch__hex">badge.black.and.red.on.white.png</span></span></a>
+	</div>
+	<h3>Arched Wordmark</h3>
+	<p class="logo-note">"North Central" arched over "Little League". Uniforms, banners, shirts.</p>
+	<div class="logos">
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/NCLL_arched_font.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/NCLL_arched_font.png" alt="Arched Wordmark, Black, red outline" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Black, red outline</span><span class="swatch__hex">NCLL_arched_font.png</span></span></a>
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/arch_red_black_on_transparent.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/arch_red_black_on_transparent.png" alt="Arched Wordmark, Red, black outline" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Red, black outline</span><span class="swatch__hex">arch_red_black_on_transparent.png</span></span></a>
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/arch_black_on_transparent.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/arch_black_on_transparent.png" alt="Arched Wordmark, Black" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Black</span><span class="swatch__hex">arch_black_on_transparent.png</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/white_red_on_black.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/white_red_on_black.png" alt="Arched Wordmark, White, red outline, on black" loading="lazy"></span><span class="logo__label"><span class="swatch__name">White, red outline, on black</span><span class="swatch__hex">white_red_on_black.png</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/arch_red_white_on_transparent.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/arch_red_white_on_transparent.png" alt="Arched Wordmark, Red, white outline" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Red, white outline</span><span class="swatch__hex">arch_red_white_on_transparent.png</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/arch_white_on_transparent.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/arch_white_on_transparent.png" alt="Arched Wordmark, White" loading="lazy"></span><span class="logo__label"><span class="swatch__name">White</span><span class="swatch__hex">arch_white_on_transparent.png</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/arch_white_on_black.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/arch_white_on_black.png" alt="Arched Wordmark, White on black" loading="lazy"></span><span class="logo__label"><span class="swatch__name">White on black</span><span class="swatch__hex">arch_white_on_black.png</span></span></a>
+	</div>
+	<h3>Flat Wordmark</h3>
+	<p class="logo-note">Simplified, for embroidery, patches and low-cost gear.</p>
+	<div class="logos">
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/flat_black_red_on_transparent.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/flat_black_red_on_transparent.png" alt="Flat Wordmark, Black and red" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Black and red</span><span class="swatch__hex">flat_black_red_on_transparent.png</span></span></a>
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/flat_black_on_white.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/flat_black_on_white.png" alt="Flat Wordmark, Black on white" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Black on white</span><span class="swatch__hex">flat_black_on_white.png</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/flat_black_red_on_black.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/flat_black_red_on_black.png" alt="Flat Wordmark, Black and red on black" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Black and red on black</span><span class="swatch__hex">flat_black_red_on_black.png</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/flat_white_red_on_transparent.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/flat_white_red_on_transparent.png" alt="Flat Wordmark, White and red" loading="lazy"></span><span class="logo__label"><span class="swatch__name">White and red</span><span class="swatch__hex">flat_white_red_on_transparent.png</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/flat_white_on_transparent.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/flat_white_on_transparent.png" alt="Flat Wordmark, White" loading="lazy"></span><span class="logo__label"><span class="swatch__name">White</span><span class="swatch__hex">flat_white_on_transparent.png</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/flat_white_on_black.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/flat_white_on_black.png" alt="Flat Wordmark, White on black" loading="lazy"></span><span class="logo__label"><span class="swatch__name">White on black</span><span class="swatch__hex">flat_white_on_black.png</span></span></a>
+	</div>
+	<h3>NC Clover</h3>
+	<p class="logo-note">The everyday mark. Give it room; don't stretch or redraw it.</p>
+	<div class="logos">
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/white_logo_on_black.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/white_logo_on_black.png" alt="NC Clover, White and red, on black" loading="lazy"></span><span class="logo__label"><span class="swatch__name">White and red, on black</span><span class="swatch__hex">white_logo_on_black.png</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/white_logo_on_transparent.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/white_logo_on_transparent.png" alt="NC Clover, White and red" loading="lazy"></span><span class="logo__label"><span class="swatch__name">White and red</span><span class="swatch__hex">white_logo_on_transparent.png</span></span></a>
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/black_mono_logo_on_transparent.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/black_mono_logo_on_transparent.png" alt="NC Clover, Black (one color)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Black (one color)</span><span class="swatch__hex">black_mono_logo_on_transparent.png</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/white_mono_logo_on_transparent.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/white_mono_logo_on_transparent.png" alt="NC Clover, White (one color)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">White (one color)</span><span class="swatch__hex">white_mono_logo_on_transparent.png</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/white_mono_logo_on_black.png" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/white_mono_logo_on_black.png" alt="NC Clover, White (one color) on black" loading="lazy"></span><span class="logo__label"><span class="swatch__name">White (one color) on black</span><span class="swatch__hex">white_mono_logo_on_black.png</span></span></a>
+	</div>
+
+	<h3>Vector files (SVG)</h3>
+	<p class="logo-note">Scalable versions for printing, signs and design work, from the SVG folder in NCLL vector files. Click one to open the .svg (right-click to save it). The .ai and .eps masters stay in Drive.</p>
+	<div class="logos">
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/svg/1.black.and.red.on.white.main.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/1.black.and.red.on.white.main.svg" alt="Badge (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Badge</span><span class="swatch__hex">1.black.and.red.on.white.main.svg</span></span></a>
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/svg/badge.artboard1.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/badge.artboard1.svg" alt="Badge (second export) (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Badge (second export)</span><span class="swatch__hex">badge.artboard1.svg</span></span></a>
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/svg/2.black.and.red.on.white.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/2.black.and.red.on.white.svg" alt="Arched wordmark, black/red on white (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Arched wordmark, black/red on white</span><span class="swatch__hex">2.black.and.red.on.white.svg</span></span></a>
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/svg/2.black.on.white.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/2.black.on.white.svg" alt="Arched wordmark, black on white (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Arched wordmark, black on white</span><span class="swatch__hex">2.black.on.white.svg</span></span></a>
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/svg/2.red.and.black.on.white.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/2.red.and.black.on.white.svg" alt="Arched wordmark, red &amp; black on white (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Arched wordmark, red &amp; black on white</span><span class="swatch__hex">2.red.and.black.on.white.svg</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/svg/2.white.and.red.on.black.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/2.white.and.red.on.black.svg" alt="Arched wordmark, white &amp; red on black (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Arched wordmark, white &amp; red on black</span><span class="swatch__hex">2.white.and.red.on.black.svg</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/svg/2.white.on.black.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/2.white.on.black.svg" alt="Arched wordmark, white on black (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Arched wordmark, white on black</span><span class="swatch__hex">2.white.on.black.svg</span></span></a>
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/svg/3.black.on.white.and.red.cloverleaf.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/3.black.on.white.and.red.cloverleaf.svg" alt="NC clover, black + red (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">NC clover, black + red</span><span class="swatch__hex">3.black.on.white.and.red.cloverleaf.svg</span></span></a>
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/svg/3.black.on.white.and.white.cloverleaf.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/3.black.on.white.and.white.cloverleaf.svg" alt="NC clover, black (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">NC clover, black</span><span class="swatch__hex">3.black.on.white.and.white.cloverleaf.svg</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/svg/3.white.on.black.and.red.cloverleaf.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/3.white.on.black.and.red.cloverleaf.svg" alt="NC clover, white + red (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">NC clover, white + red</span><span class="swatch__hex">3.white.on.black.and.red.cloverleaf.svg</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/svg/3.white.on.black.and.white.cloverleaf.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/3.white.on.black.and.white.cloverleaf.svg" alt="NC clover, white (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">NC clover, white</span><span class="swatch__hex">3.white.on.black.and.white.cloverleaf.svg</span></span></a>
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/svg/4.black.and.red.on.white.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/4.black.and.red.on.white.svg" alt="Flat wordmark, black/red on white (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Flat wordmark, black/red on white</span><span class="swatch__hex">4.black.and.red.on.white.svg</span></span></a>
+		<a class="logo" href="https://ncllball.github.io/images/logos/vector/svg/4.black.on.white.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/4.black.on.white.svg" alt="Flat wordmark, black on white (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Flat wordmark, black on white</span><span class="swatch__hex">4.black.on.white.svg</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/svg/4.white.and.red.on.black.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/4.white.and.red.on.black.svg" alt="Flat wordmark, white/red on black (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Flat wordmark, white/red on black</span><span class="swatch__hex">4.white.and.red.on.black.svg</span></span></a>
+		<a class="logo logo--dark" href="https://ncllball.github.io/images/logos/vector/svg/4.white.one.color.artboard56.svg" target="_blank" rel="noopener"><span class="logo__img"><img src="https://ncllball.github.io/images/logos/vector/svg/4.white.one.color.artboard56.svg" alt="Flat wordmark, white (one color) (SVG)" loading="lazy"></span><span class="logo__label"><span class="swatch__name">Flat wordmark, white (one color)</span><span class="swatch__hex">4.white.one.color.artboard56.svg</span></span></a>
 	</div>
 
 	<h2>Text &amp; Links</h2>
@@ -153,6 +217,15 @@
 		</div>
 	</div>
 
-	<p style="margin-top:2rem; font-size:.85rem; color:#555;">Defined but not used anywhere in the stylesheet yet: Tan, Orange (and its hover #F57C00), Button, Info, Warning, Border, Green, #aaaaaa. They're available, but check with the palette above before introducing a new color.</p>
+	<h2>Kept, not for use</h2>
+	<p style="font-size:.85rem; color:#555; margin:-.5rem 0 1rem;">Still defined in the stylesheet so nothing breaks, but don't use these in new pages or CSS.</p>
+	<div class="swatches">
+		<div class="swatch">
+			<div class="swatch__color" style="background:#ff6900"></div>
+			<div class="swatch__label"><div class="swatch__name">Orange</div><div class="swatch__hex">--color_orange · #ff6900<br>hover #F57C00</div></div>
+		</div>
+	</div>
+
+	<p style="margin-top:2rem; font-size:.85rem; color:#555;">Defined but not used anywhere in the stylesheet yet: Tan, Button, Info, Warning, Border, Green, #aaaaaa. They're available, but check with the palette above before introducing a new color.</p>
 </body>
 </html>
