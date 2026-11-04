@@ -1069,6 +1069,24 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
     text-align: center !important
 }
 
+/* Phone menu (#mobNav): an expanded item's sub-pages sit in a gray band with a red stripe and
+   smaller title-case type, so they don't read as more top-level items (2026-11-03). */
+#mobNav .navChild {
+    background: var(--color_button) !important;
+    border-left: 4px solid var(--color_red);
+    margin: 2px 0 8px 15px;
+}
+#mobNav .navChild > li > .navWrapper {
+    padding-left: 16px !important;
+}
+#mobNav .navChild > li > .navWrapper > .navLink {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    letter-spacing: 0 !important;
+    color: var(--color_text) !important;
+}
+
 /* =========================    END CMS OVERRIDES (SportsConnect embeds)    ========================= */
 /* this is the header bar above the tabs (h1 to some of us)*/
 .dfContainer h2.head, .dfContainer h2.head .title {
