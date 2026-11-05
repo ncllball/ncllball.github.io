@@ -250,6 +250,12 @@
       "note": "6 teams in 2026, 5 in 2025; cap 72 = 6 teams of 12",
       "source": "2026 Majors coaches chat ('All six Majors teams'); 2025 scheduling chat (BB Majors - 5)",
       "checked": "2026-11-05"
+     },
+     "seasonShape": {
+      "value": "Practice-heavy in March, then mostly games. Rainouts in March and April are made up on the off nights that were used for practice, so by late April and May most weeks are all games.",
+      "detail": "2026 Lower Woodland Majors games per week: about 6 in March, 7-9 from late April to mid-May, with labeled practices down to 0-1 a week. 2025: late-April weeks had 7-8 games and no practices on the schedule; makeup options ran to May 30. Tyler (late April 2026): 'we won't have fields for a scrimmage. It's practice or rescheduled games.'",
+      "source": "2026 60 ft schedule + 2025 master schedule (weekly counts); 2025 and 2026 Majors coaches chats",
+      "checked": "2026-11-05"
      }
     },
     {
