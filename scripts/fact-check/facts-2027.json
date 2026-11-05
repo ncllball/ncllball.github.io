@@ -274,6 +274,29 @@
       "note": "Double elimination, seeding by random draw (Majors manager guidance). Runs between the regular season and All-Star tryouts (May 15 in 2026).",
       "source": "coaches' email (John's inbox), 2026-05-28; Majors coaches chat (playoff bracket, Soundview fields); Outline: NCLL Majors rules and manager guidance",
       "checked": "2026-11-05"
+     },
+     "allStars": {
+      "value": "12-year-old All-Stars come from Majors (Little League rule), and Majors 11's and 10's are the usual pool for the 11's and 10's teams. Tryouts are mid-May at Lower Woodland (May 15 in 2026).",
+      "note": "Matters to families choosing between Majors and AAA for an 11 or 12.",
+      "source": "VP of Baseball post in the 2026 Majors coaches chat (All-Star dates and teams); Outline: Majors Division Rules (All-Star eligibility rows)",
+      "checked": "2026-11-05"
+     },
+     "opponents": {
+      "value": "NCLL is a District 8 city league. Majors plays its own teams and interleague games against other city leagues (e.g. Ballard, Magnolia, Queen Anne, RUG, Northwest Seattle, Northeast Seattle); that's where the away games are.",
+      "note": "Interleague games use District 8's rules; the two managers agree on any differences.",
+      "source": "Outline: Majors Division Rules (D8 city-league row, confirmed 2026-09-03); 2025-2026 Majors coaches chats",
+      "checked": "2026-11-05"
+     },
+     "familyHelp": {
+      "value": "Families help run the season: the home team keeps the official book and pitch counts (scored in GameChanger), and coaches and parents prep wet fields before games.",
+      "source": "Outline: NCLL Majors rules and manager guidance (scorekeeping); Fields Manager 'Protecting our Fields' email, 2026-03-16; 2026 Majors coaches chat",
+      "checked": "2026-11-05"
+     },
+     "umpires": {
+      "value": "The league provides a plate umpire for regular-season games and adds a field umpire in the playoffs. Getting each game onto the umpire schedule is up to the teams.",
+      "note": "Teams request umpires through the umpire scheduling site (Stack Officials) and the umpires-managers group; if no umpire shows, the home team provides one.",
+      "source": "Outline: NCLL Majors rules and manager guidance (umpires); John (registrar) 2026-11-05: teams must get their games on the umpire schedule; 2026 Majors coaches chat (stackofficials link); umpire requests in John's email",
+      "checked": "2026-11-05"
      }
     },
     {
