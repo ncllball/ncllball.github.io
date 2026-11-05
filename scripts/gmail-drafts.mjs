@@ -12,6 +12,7 @@
 //
 // draft.json: { "to": [..], "cc": [..], "bcc": [..], "subject": "..", "text": "..", "html": "..",
 //               "threadId": "..", "inReplyTo": "<Message-ID>" }
+// create also takes "replyTo": "<Gmail message id>" to reply in that thread (fills to/subject/threadId/headers).
 // On update, fields left out keep the draft's current values (to/cc/bcc/subject/thread);
 // the body is replaced only if "text" or "html" is given.
 
@@ -147,6 +148,16 @@ async function main() {
     }
     case 'create': {
       const j = JSON.parse(fs.readFileSync(a.json, 'utf8'));
+      if (j.replyTo) {
+        // Reply to an existing message: same thread, Re: subject, In-Reply-To/References, sender as To.
+        const o = await api('GET', `/messages/${j.replyTo}?format=metadata&metadataHeaders=From&metadataHeaders=Reply-To&metadataHeaders=Subject&metadataHeaders=Message-ID&metadataHeaders=References`);
+        const subj = hdr(o, 'Subject');
+        j.threadId ??= o.threadId;
+        j.subject ??= /^re:/i.test(subj) ? subj : `Re: ${subj}`;
+        j.to ??= [hdr(o, 'Reply-To') || hdr(o, 'From')];
+        j.inReplyTo ??= hdr(o, 'Message-ID');
+        j.references ??= [hdr(o, 'References'), hdr(o, 'Message-ID')].filter(Boolean).join(' ');
+      }
       const r = await api('POST', '/drafts', { message: { raw: buildMime(j), ...(j.threadId ? { threadId: j.threadId } : {}) } });
       if (a.star) await setStar(r.message.id, true);
       console.log(JSON.stringify(summarize(await getDraft(r.id, 'metadata')), null, 2));
