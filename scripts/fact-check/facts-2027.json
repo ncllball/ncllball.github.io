@@ -226,8 +226,8 @@
      "conflicts": [],
      "preseason": {
       "value": "Practice only from about Mar 2 until the first games around Mar 20 (2026: Mar 2 to Mar 21; 2025: Mar 1 to Mar 22).",
-      "detail": "Lower Woodland 3-6 weeknights 5:45-9pm and Saturdays, shared with AAA and softball; the Majors coordinator splits the slots in the coaches' chat. Free February ramp-up clinics for AAA/Majors players (10-12) come before team practices.",
-      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 and 2026 Majors coaches chats; 2025 Proposed Dates sheet; Outline: Free February announcement",
+      "detail": "Lower Woodland 3-6 weeknights 5:45-9pm and Saturdays, shared with AAA and softball; the Majors coordinator splits the slots in the coaches' chat. Free February ramp-up clinics for AAA/Majors players (10-12) come before team practices. First team practices are weeknights around 5pm (2025: Tue Mar 4, 5pm; a Thu practice around 5:30).",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 and 2026 Majors coaches chats; 2025 Proposed Dates sheet; Outline: Free February announcement; coaches' email (John's inbox), 2025-03",
       "checked": "2026-11-05"
      },
      "practices": {
@@ -253,8 +253,20 @@
      },
      "seasonShape": {
       "value": "Practice-heavy in March, then mostly games. Rainouts in March and April are made up on the off nights that were used for practice, so by late April and May most weeks are all games.",
-      "detail": "2026 Lower Woodland Majors games per week: about 6 in March, 7-9 from late April to mid-May, with labeled practices down to 0-1 a week. 2025: late-April weeks had 7-8 games and no practices on the schedule; makeup options ran to May 30. Tyler (late April 2026): 'we won't have fields for a scrimmage. It's practice or rescheduled games.'",
-      "source": "2026 60 ft schedule + 2025 master schedule (weekly counts); 2025 and 2026 Majors coaches chats",
+      "detail": "2026 Lower Woodland Majors games per week: about 6 in March, 7-9 from late April to mid-May, with labeled practices down to 0-1 a week. 2025: late-April weeks had 7-8 games and no practices on the schedule; makeup options ran to May 30. Tyler (late April 2026): 'we won't have fields for a scrimmage. It's practice or rescheduled games.' Example: a rained-out Saturday interleague game (Apr 5, 2025) was made up on a weeknight at 6pm.",
+      "source": "2026 60 ft schedule + 2025 master schedule (weekly counts); 2025 and 2026 Majors coaches chats; coaches' email (John's inbox), 2025-04",
+      "checked": "2026-11-05"
+     },
+     "callUps": {
+      "value": "After the draft, each Majors team names 3-4 AAA call-ups, who can be invited to that team's practices and called up when the team is short.",
+      "note": "Call-ups aren't drafted; it's a discussion between coaches. In use since at least 2025.",
+      "source": "coaches' email (John's inbox), 2026-02-01 and 2025-02-28; Baseball Hub card (AAA top 15-20 form the call-up pool)",
+      "checked": "2026-11-05"
+     },
+     "playoffs": {
+      "value": "End-of-season Majors tournament in late May, some games at Soundview (2026: a playoff game Thu May 28 at Soundview).",
+      "note": "Double elimination, seeding by random draw (Majors manager guidance). Runs between the regular season and All-Star tryouts (May 15 in 2026).",
+      "source": "coaches' email (John's inbox), 2026-05-28; Majors coaches chat (playoff bracket, Soundview fields); Outline: NCLL Majors rules and manager guidance",
       "checked": "2026-11-05"
      }
     },
