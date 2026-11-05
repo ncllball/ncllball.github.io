@@ -98,7 +98,13 @@
      "cap": 96,
      "scClose": "2027-05-01",
      "scDivisionId": 81348482,
-     "teamAssignment": "Feb 13-20"
+     "teamAssignment": "Feb 13-20",
+     "siblings": {
+      "value": "Siblings stay together: a team that drafts one sibling gets the other with its next pick.",
+      "note": "Applies when both siblings are in AAA (same rule as Majors).",
+      "source": "John (registrar), 2026-11-05: AAA works the same way as the Majors draft rule",
+      "checked": "2026-11-05"
+     }
     },
     {
      "key": "majors",
