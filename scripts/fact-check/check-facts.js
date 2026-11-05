@@ -18,6 +18,12 @@ const ROOT = path.join(__dirname, "..", "..");
 const CMS = path.join(ROOT, "CMS");
 const factsArg = process.argv.indexOf("--facts"); // --facts <file>: check against another facts file (self-test)
 const facts = JSON.parse(fs.readFileSync(factsArg > 0 ? process.argv[factsArg + 1] : path.join(__dirname, "facts-2027.json"), "utf8"));
+// A division field is either a plain value or { value, source, checked, ... }. The checks below use plain values,
+// so unwrap the { value } form here (the source notes are for people and Ask NCLL, not for this script).
+for (const prog of Object.values(facts.programs || {}))
+	for (const d of prog.divisions || [])
+		for (const [k, v] of Object.entries(d))
+			if (v && typeof v === "object" && !Array.isArray(v) && "value" in v) d[k] = v.value;
 
 const MONTHS = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, sept: 9, oct: 10, nov: 11, dec: 12 };
 
