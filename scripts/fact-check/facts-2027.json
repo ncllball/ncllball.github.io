@@ -183,8 +183,8 @@
      },
      "eventsPerWeek": {
       "value": "3-4",
-      "practicesVsGames": null,
-      "source": "Registration Guide Step 2(a)",
+      "detail": "In season, usually 2 games (Tue/Thu nights, Sat) plus 1 practice on an off night, most often Thursday.",
+      "source": "Registration Guide Step 2(a); 2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 and 2026 Majors coaches chats",
       "checked": "2026-11-05"
      },
      "fields": {
@@ -201,10 +201,14 @@
        "playoffs": [
         "Soundview"
        ],
-       "practice": null
+       "practice": [
+        "Lower Woodland 3-6 (shared)",
+        "LW1 when free",
+        "Focus indoor cages (rain)"
+       ]
       },
       "note": "home/away/playoff list is from the 2026 season ('Last season'); card summary says 'Mostly The Cloverleaf'",
-      "source": "Baseball Hub card (Season Rhythm)",
+      "source": "Baseball Hub card (Season Rhythm); 2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 and 2026 Majors coaches chats",
       "checked": "2026-11-05"
      },
      "format": {
@@ -219,7 +223,34 @@
       "source": "2026-27 Season Proposed Dates sheet (SPS break Apr 12-16, 2027: 'reduce game and practice schedules and permits'); 2026 practice: no games Apr 13-16 in the 2026 60 ft schedule, Apr 11 dropped and made up Apr 18 (Majors coaches chat); 2025 games stayed on and were moved one by one. John OK'd the wording 2026-11-05.",
       "checked": "2026-11-05"
      },
-     "conflicts": []
+     "conflicts": [],
+     "preseason": {
+      "value": "Practice only from about Mar 2 until the first games around Mar 20 (2026: Mar 2 to Mar 21; 2025: Mar 1 to Mar 22).",
+      "detail": "Lower Woodland 3-6 weeknights 5:45-9pm and Saturdays, shared with AAA and softball; the Majors coordinator splits the slots in the coaches' chat. Free February ramp-up clinics for AAA/Majors players (10-12) come before team practices.",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 and 2026 Majors coaches chats; 2025 Proposed Dates sheet; Outline: Free February announcement",
+      "checked": "2026-11-05"
+     },
+     "practices": {
+      "value": "About 1 a week in season, on a night without a game (usually Thursday), 60-90 minutes at Lower Woodland.",
+      "detail": "Teams share Lower Woodland 3-6 (Field 5 most often). Saturday team practices when a team has no game. Rain backups: LW1 (90-ft turf) when Juniors and the high school aren't using it, and the Focus indoor cages (league credits). The coordinator posts the practice schedule in the coaches' chat and Sports Connect.",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 and 2026 Majors coaches chats (2026: 14 labeled Majors practices, 8 Thu / 5 Tue; 2025: 17, mostly Thu, 1.5 hrs, LW5)",
+      "checked": "2026-11-05"
+     },
+     "gameTimes": {
+      "value": {
+       "weeknight": "5:45 or 6:00pm (Tue/Thu)",
+       "saturday": "late morning or afternoon (2026: mostly 11:00am; 2025: 10am-4pm)"
+      },
+      "note": "Slots are 2.5 hours; NCLL game time limit is 2 hours or 6 innings. Saturday Majors games go later in the day so wet fields have time to dry.",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 and 2026 Majors coaches chats; 2025 scheduling chat (Tyler: Majors BB 11am and later)",
+      "checked": "2026-11-05"
+     },
+     "teams": {
+      "value": 6,
+      "note": "6 teams in 2026, 5 in 2025; cap 72 = 6 teams of 12",
+      "source": "2026 Majors coaches chat ('All six Majors teams'); 2025 scheduling chat (BB Majors - 5)",
+      "checked": "2026-11-05"
+     }
     },
     {
      "key": "intermediate",
