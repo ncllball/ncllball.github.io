@@ -146,8 +146,8 @@
      },
      "placement": {
       "value": "assessment + draft",
-      "detail": "Assessments required, around Sat 2027-01-23, no make-up date. Every 12 plays Majors. Coaches draft from the scores; order drawn from a hat; coaches' kids placed by score. Undrafted 11's and 10's play AAA, whose top 15-20 form the Majors call-up pool.",
-      "source": "Baseball Hub card (Assessments & Draft); Registration Guide footnote 6",
+      "detail": "Assessments required, around Sat 2027-01-23, no make-up date. Every 12 plays Majors. Coaches draft from the scores; order drawn from a hat; coaches' kids placed by score. Siblings: a team that drafts one sibling gets the other with its next pick. Undrafted 11's and 10's play AAA, whose top 15-20 form the Majors call-up pool.",
+      "source": "Baseball Hub card (Assessments & Draft); Registration Guide footnote 6; coaches' email (John's inbox), 2026-02-01 (siblings rule; John OK'd it for the public file 2026-11-05)",
       "checked": "2026-11-05"
      },
      "teamAssignment": {
