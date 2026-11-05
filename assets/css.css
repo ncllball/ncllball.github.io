@@ -5428,6 +5428,13 @@ p:has(+ .callout) {
     border-color: #c5c5c5;
     background: #f6f6f6;
 }
+/* Expand/collapse arrows inside callouts in NCLL red (Registration page "New for 2027" box, John 2026-11-05) */
+.callout details > summary::marker {
+    color: var(--color_red);
+}
+.callout details > summary::-webkit-details-marker {
+    color: var(--color_red);
+}
 .callout--info {
   background-image: none;
 }
