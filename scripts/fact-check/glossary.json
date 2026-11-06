@@ -1,0 +1,42 @@
+{
+  "_about": "NCLL's own vocabulary, written down once. Two uses: (1) Ask NCLL's search treats each 'sameAs' group as one word, so a family's words find the page's words; (2) the bot reads 'terms' with every question so it understands league words the way we mean them. Rules: only what words MEAN, never decisions (fees, dates, ages and coaches live in facts-2027.json with a source); every term cites where it's already said; if a family would need a term to understand a page, the page should say it too. Started 2026-11-06; John approved the first draft.",
+  "sameAs": [
+    { "words": ["baseball", "BB"], "note": "PD Hub card titles and At a Glance use BB" },
+    { "words": ["softball", "SB", "fastpitch"], "note": "SB in PD Hub titles; fastpitch in older clinic names" },
+    { "words": ["winter", "Winterball", "Winterball27"], "note": "NCLL's winter programs; one word to the search, so 'winter' never matched (T-70)" },
+    { "words": ["summer", "Summerball", "Summerball27"], "note": "NCLL's summer program" },
+    { "words": ["training", "clinic", "camp", "lessons", "fundamentals", "sessions"], "note": "families say training; cards say clinic or fundamentals (T-70)" },
+    { "words": ["assessments", "tryouts", "evaluations"], "note": "families say tryouts; NCLL says assessments (and they are not tryouts: see terms)" },
+    { "words": ["registration", "register", "sign up", "signup"] },
+    { "words": ["scholarship", "financial aid"], "note": "the site uses both" },
+    { "words": ["Tee Ball", "T-ball", "tball", "tee-ball"], "note": "also in facts-2027 aliases" },
+    { "words": ["Kindy", "KCP", "Kindergarten Coach Pitch"], "note": "also in facts-2027 aliases" },
+    { "words": ["Intermediate", "50/70"] },
+    { "words": ["Wallingford Boys & Girls Club", "WBGC", "Wallingford Boys and Girls Club"] },
+    { "words": ["Robert Eagle Staff", "Eagle Staff"] },
+    { "words": ["The Hive", "Sting"], "note": "The Hive is Sting Baseball Training's building" },
+    { "words": ["Focus", "Focus Baseball"] },
+    { "words": ["District 8", "D8"] },
+    { "words": ["Little League International", "LLI", "Little League"] }
+  ],
+  "terms": [
+    { "term": "league age", "means": "The age that decides a player's division for the season: the player's age on August 31 of the season year (baseball) or December 31 of the year before the season (softball). It is often different from the player's age today.", "source": "Registration page (registration-main.html, League Age; wording fixed r54, 2026-11-06); Softball Hub" },
+    { "term": "rising (e.g. rising AAA)", "means": "Going into that division this coming spring. In the winter, players are between divisions, so 'rising AAA' means a player who will play AAA in spring 2027.", "source": "Winterball27 planning docs; PD Hub cards" },
+    { "term": "division", "means": "The level a player plays at, set by league age: baseball Tee Ball, Kindy, A, AA, AAA, Majors, Intermediate, Juniors, Seniors; softball A, AA, AAA, Majors, Juniors, Seniors. Ages per division are in the facts file.", "source": "facts-2027.json" },
+    { "term": "Winterball / Summerball", "means": "NCLL's off-season programs, named for the season they lead into: Winterball27 runs in the winter of 2026-27, before the 2027 spring season.", "source": "PD Hub (playerdev-hub.html)" },
+    { "term": "player development (PD)", "means": "NCLL's off-season training programs and clinics, listed as cards on the Player Development hub.", "source": "PD Hub" },
+    { "term": "assessments", "means": "Not tryouts: every player makes a team. Assessments help place players and build even teams for the draft (AAA and Majors).", "source": "PD Hub assessments card; 2027 Assessments page" },
+    { "term": "the draft", "means": "How AAA and Majors teams are built, for competitive balance. Players aren't picked by parents' requests.", "source": "Registration policies (refund section); John, 2026-11-06" },
+    { "term": "Majors", "means": "A Little League division (baseball league age 10-12, softball 10-12), not professional baseball.", "source": "facts-2027.json" },
+    { "term": "50/70", "means": "The Intermediate field size: 50-foot pitching distance, 70-foot bases.", "source": "Intermediate rules page; facts-2027.json" },
+    { "term": "Kindy", "means": "NCLL's kindergarten coach-pitch baseball division, between Tee Ball and A.", "source": "Baseball Hub; Kindy rules page" },
+    { "term": "District 8 (D8)", "means": "The group of Seattle-area Little Leagues NCLL belongs to; it runs interleague and tournament play and its own rule supplements.", "source": "rules pages (District 8 citations)" },
+    { "term": "Little League International (LLI)", "means": "The national organization whose rulebook all divisions play under; NCLL's local rules and District 8 supplements add to it.", "source": "rules pages" },
+    { "term": "Sports Connect", "means": "The system behind ncllball.com: registration, payments, rosters and league emails.", "source": "Registration Hub" },
+    { "term": "GameChanger", "means": "The app teams use for schedules, scores and team messages.", "source": "Technology menu (Game Changer Hub)" },
+    { "term": "The Hive", "means": "Sting Baseball Training's indoor facility, 921 Elliott Ave W, Seattle.", "source": "Winterball27 coaches email (Nov 4); PD Hub card" },
+    { "term": "Focus", "means": "Focus Baseball's indoor facility, 7806 Aurora Ave N, Seattle.", "source": "Winterball27 coaches email (Nov 4); PD Hub card" },
+    { "term": "Wallingford Boys & Girls Club (WBGC)", "means": "Indoor gym at 1310 N 45th St, Seattle, used for A/AA baseball and softball winter sessions.", "source": "PD Hub cards" },
+    { "term": "Robert Eagle Staff", "means": "Robert Eagle Staff Middle School, 1330 N 90th St, Seattle: turf fields used for Free February.", "source": "PD Hub Free February card" }
+  ]
+}
