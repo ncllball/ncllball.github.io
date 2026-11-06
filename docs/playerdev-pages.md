@@ -1,5 +1,7 @@
 # Player Development pages: writing standard
 
+> **2026-11-06:** the separate program pages are gone; each program is a card on the PD hub (`CMS/Programs/playerdev-hub.html`, see `docs/cards.md`). The date, cost and wording rules below now apply to the card's key facts and the At a Glance table.
+
 How to write the info list (the "tag strip": Dates, Location, Time, Cost, Age Group, Division(s), Led by) at the top of each Player Development program page in `CMS/Programs/player-development/`, plus the PD hub's "At a Glance" table, which is kept by hand (one row per program: status badge, program link, division, dates, focus). Written 2025-09; moved here from `scripts/pd/docs/` on 2026-10-29 when the old PD scripts were retired.
 
 ## Objectives

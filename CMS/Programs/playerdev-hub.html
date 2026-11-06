@@ -6,10 +6,11 @@
 	SOURCE:           https://www.ncllball.com/Default.aspx?tabid=2111984
 	WHAT TO UPDATE:   Each card's status, dates and button as programs move Planning → Open → Closed;
 	                  the At a Glance row for the same program; "Last updated" in the notes.
-	CARDS:            Intro-only toggle cards (one -intro radio, no footer) (blurb, key facts, one button).
-	                  Details live on the program page,
-	                  never on the card. Until a program page is ready the button is
-	                  "Details coming soon" (button--soon); then it links to the page.
+	CARDS:            The card IS the program page (no separate program pages since 2026-11-06). Two panels:
+	                  intro (blurb, key facts with last year next to each TBA, status) and Details (how it
+	                  works, who leads, what to bring, refunds, questions). Only true, settled lines; the
+	                  program leader template (Winterball27 planning docs) asks for exactly these. When
+	                  registration opens, add a Register button to the intro panel.
 	STATUSES:         Planning (status-soon) · On hold (status-hold) · Open (status-open) · Closed (status-closed)
 	ARCHIVE:          The 2026 flip-through cards are in docs/archive/playerdev-2026-cards/.
 -->
@@ -58,7 +59,7 @@
 				</div>
 			</div>
 		</aside>
-			<p>Families join NCLL for many reasons: friends, love of the game, or bigger goals. Whatever your why, improvement takes time and reps, not just the season. We offer off-season development at every level. The table shows where each program stands, and each card links to its program page once the details are set.</p>
+			<p>Families join NCLL for many reasons: friends, love of the game, or bigger goals. Whatever your why, improvement takes time and reps, not just the season. We offer off-season development at every level. The table shows where each program stands, and each card has the details: tap <strong>Details</strong>.</p>
 		</section>
 
 		<!-- At-a-glance table section -->
@@ -127,7 +128,7 @@
 		<section class="footies" aria-labelledby="foot-status-note">
 			<p><span aria-hidden="true" class="info-icon"></span><strong>Planning:</strong> dates and details are still being set. <strong>On hold:</strong> not scheduled yet. <strong>Open:</strong> sign-ups are open. <strong>Closed:</strong> sign-ups have closed or the program has run.</p>
 			<p><span aria-hidden="true" class="info-icon"></span>To list a camp, please reach out to our <a class="ncll" href="mailto:registrar@ncllball.com">registrar</a>.</p>
-			<p><span aria-hidden="true" class="info-icon"></span>Last updated: Nov 2, 2026</p>
+			<p><span aria-hidden="true" class="info-icon"></span>Last updated: Nov 6, 2026</p>
 		</section>
 
 		<h2 class="left">Player Development Programs 2027</h2>
@@ -160,6 +161,7 @@
 			<!-- Winterball27 BB AAA/Majors Training -->
 			<article class="ncll-card ncll-card--overlay ncll-card--pd-landing ncll-card--toggle" aria-labelledby="pd-bb-aaa-maj-h3" id="pd-bb-aaa-maj">
 				<input checked="" id="pd-bb-aaa-maj-intro" name="pd-bb-aaa-maj" type="radio" />
+				<input id="pd-bb-aaa-maj-0" name="pd-bb-aaa-maj" type="radio" />
 				<div aria-hidden="true" class="ncll-card__sticky-heading">
 					<div class="ncll-card__heading-title">
 						<img alt="Baseball icon" class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" />
@@ -169,17 +171,34 @@
 				</div>
 				<div class="ncll-card__body panel panel-intro">
 					<div class="ncll-card__details">
-						<p class="ncll-card__blurb">Small-group indoor sessions that keep rising AAA and Majors players sharp over the winter: movement prep, hitting and athletic conditioning before assessments and the spring.</p>
+						<p class="ncll-card__blurb">Small-group indoor sessions to keep rising AAA and Majors players sharp over the winter: movement prep, hitting and conditioning.</p>
 						<ul class="ncll-card__meta">
-							<li><strong>Where:</strong> Focus (planned)</li>
-							<li><strong>When:</strong> Mon &amp; Thu evenings (planned); dates TBA (last year: Nov 3 &ndash; Jan 26)</li>
+							<li><strong>Where:</strong> Focus or The Hive (planned)</li>
+							<li><strong>When:</strong> Mon &amp; Thu evenings, more days possible; dates TBA (last year: Nov 3 &ndash; Jan 26)</li>
 							<li><strong>Division:</strong> Baseball (rising AAA &amp; Majors)</li>
 							<li><strong>Cost:</strong> TBA (last year: $260 / player)</li>
 							<li><strong>Status:</strong> <span class="status-badge status-soon">Planning</span></li>
 						</ul>
-						<div class="ncll-card__cta">
-							<span class="button button--primary button--soon" aria-disabled="true">Details coming soon</span>
-						</div>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel0">
+					<div class="ncll-card__details">
+						<ul class="ncll-card__meta">
+								<li><strong>How it works:</strong> weekly small groups (9&ndash;12 players). Pick your day when you register.</li>
+								<li><strong>Led by:</strong> NCLL volunteer coaches, with parent helpers.</li>
+								<li><strong>Breaks:</strong> none Thanksgiving week or Winter Break.</li>
+								<li><strong>Bring:</strong> glove, bat, helmet and water.</li>
+								<li><strong>Refunds:</strong> up to two weeks before the start.</li>
+								<li><strong>Questions:</strong> <a class="ncll" href="mailto:jaytufte@gmail.com">Jay Tufte</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__sticky-footer">
+					<div aria-label="Winterball27 BB AAA/Majors Training card controls (footer)" class="actions" role="group">
+						<label class="button button--secondary btn-prev btn-prev-start" for="pd-bb-aaa-maj-0">Back</label>
+						<label class="button button--primary btn-next btn-next-intro" for="pd-bb-aaa-maj-0">Details</label>
+						<label class="button button--secondary btn-prev btn-prev-0" for="pd-bb-aaa-maj-intro">Back</label>
+						<label class="button button--primary btn-next btn-next-0" for="pd-bb-aaa-maj-intro">Start Over</label>
 					</div>
 				</div>
 			</article>
@@ -187,6 +206,7 @@
 			<!-- Winterball27 BB A & AA Fundamentals -->
 			<article class="ncll-card ncll-card--overlay ncll-card--pd-landing ncll-card--toggle" aria-labelledby="pd-bb-a-aa-h3" id="pd-bb-a-aa">
 				<input checked="" id="pd-bb-a-aa-intro" name="pd-bb-a-aa" type="radio" />
+				<input id="pd-bb-a-aa-0" name="pd-bb-a-aa" type="radio" />
 				<div aria-hidden="true" class="ncll-card__sticky-heading">
 					<div class="ncll-card__heading-title">
 						<img alt="Baseball icon" class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" />
@@ -204,9 +224,25 @@
 							<li><strong>Cost:</strong> TBA (last year: $20 / session)</li>
 							<li><strong>Status:</strong> <span class="status-badge status-soon">Planning</span></li>
 						</ul>
-						<div class="ncll-card__cta">
-							<span class="button button--primary button--soon" aria-disabled="true">Details coming soon</span>
-						</div>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel0">
+					<div class="ncll-card__details">
+						<ul class="ncll-card__meta">
+								<li><strong>How it works:</strong> one-hour blocks, A then AA. Each session is its own sign-up (up to 15 players, then a waitlist).</li>
+								<li><strong>Led by:</strong> Mark Linden (Baseball Positive), a former NCAA D-I head coach.</li>
+								<li><strong>Parents:</strong> stay and join the drills; everyone gets an instruction guide.</li>
+								<li><strong>Bring:</strong> glove, indoor shoes (no cleats) and water.</li>
+								<li><strong>Questions:</strong> <a class="ncll" href="mailto:olinwick@gmail.com">Olin Wick</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__sticky-footer">
+					<div aria-label="Winterball27 BB A &amp; AA Fundamentals card controls (footer)" class="actions" role="group">
+						<label class="button button--secondary btn-prev btn-prev-start" for="pd-bb-a-aa-0">Back</label>
+						<label class="button button--primary btn-next btn-next-intro" for="pd-bb-a-aa-0">Details</label>
+						<label class="button button--secondary btn-prev btn-prev-0" for="pd-bb-a-aa-intro">Back</label>
+						<label class="button button--primary btn-next btn-next-0" for="pd-bb-a-aa-intro">Start Over</label>
 					</div>
 				</div>
 			</article>
@@ -214,6 +250,7 @@
 			<!-- Winterball27 BB Free February (Outdoor) -->
 			<article class="ncll-card ncll-card--overlay ncll-card--pd-landing ncll-card--toggle" aria-labelledby="pd-bb-free-feb-h3" id="pd-bb-free-feb">
 				<input checked="" id="pd-bb-free-feb-intro" name="pd-bb-free-feb" type="radio" />
+				<input id="pd-bb-free-feb-0" name="pd-bb-free-feb" type="radio" />
 				<div aria-hidden="true" class="ncll-card__sticky-heading">
 					<div class="ncll-card__heading-title">
 						<img alt="Baseball icon" class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" />
@@ -223,7 +260,7 @@
 				</div>
 				<div class="ncll-card__body panel panel-intro">
 					<div class="ncll-card__details">
-						<p class="ncll-card__blurb">Free Saturday turf sessions for AAA and Majors players: station-based reps to sharpen fundamentals, build arm strength and knock off rust before teams form.</p>
+						<p class="ncll-card__blurb">Free Saturday turf sessions for AAA and Majors players: station-based reps to build arms and knock off rust before teams form.</p>
 						<ul class="ncll-card__meta">
 							<li><strong>Where:</strong> Robert Eagle Staff MS turf</li>
 							<li><strong>When:</strong> February Saturdays, TBA (last year: Feb 7, 14 &amp; 21, 6&ndash;8 PM)</li>
@@ -231,9 +268,24 @@
 							<li><strong>Cost:</strong> Free</li>
 							<li><strong>Status:</strong> <span class="status-badge status-soon">Planning</span></li>
 						</ul>
-						<div class="ncll-card__cta">
-							<span class="button button--primary button--soon" aria-disabled="true">Details coming soon</span>
-						</div>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel0">
+					<div class="ncll-card__details">
+						<ul class="ncll-card__meta">
+								<li><strong>How it works:</strong> station-based reps run by NCLL volunteer coaches (coaches sign up too). Sign up for each Saturday; only claim a spot you'll use.</li>
+								<li><strong>Weather:</strong> rain or shine unless unsafe; dress in layers.</li>
+								<li><strong>Bring:</strong> glove, water, cleats or athletic shoes (no metal spikes) and a batting helmet (a few loaners).</li>
+								<li><strong>Questions:</strong> <a class="ncll" href="mailto:baseball@ncllball.com">VP of Baseball</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__sticky-footer">
+					<div aria-label="Winterball27 BB Free February (Outdoor) card controls (footer)" class="actions" role="group">
+						<label class="button button--secondary btn-prev btn-prev-start" for="pd-bb-free-feb-0">Back</label>
+						<label class="button button--primary btn-next btn-next-intro" for="pd-bb-free-feb-0">Details</label>
+						<label class="button button--secondary btn-prev btn-prev-0" for="pd-bb-free-feb-intro">Back</label>
+						<label class="button button--primary btn-next btn-next-0" for="pd-bb-free-feb-intro">Start Over</label>
 					</div>
 				</div>
 			</article>
@@ -241,6 +293,7 @@
 			<!-- Winterball27 Softball (split into one card per program once the softball planning doc is filled in) -->
 			<article class="ncll-card ncll-card--overlay ncll-card--pd-landing ncll-card--toggle" aria-labelledby="pd-sb-winter-h3" id="pd-sb-winter">
 				<input checked="" id="pd-sb-winter-intro" name="pd-sb-winter" type="radio" />
+				<input id="pd-sb-winter-0" name="pd-sb-winter" type="radio" />
 				<div aria-hidden="true" class="ncll-card__sticky-heading">
 					<div class="ncll-card__heading-title">
 						<img alt="Softball icon" class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/softball.png" />
@@ -257,9 +310,24 @@
 							<li><strong>Cost:</strong> TBA (last year: free)</li>
 							<li><strong>Status:</strong> <span class="status-badge status-soon">Planning</span></li>
 						</ul>
-						<div class="ncll-card__cta">
-							<span class="button button--primary button--soon" aria-disabled="true">Details coming soon</span>
-						</div>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel0">
+					<div class="ncll-card__details">
+						<ul class="ncll-card__meta">
+								<li><strong>How it works:</strong> Saturday blocks with a cap on each one so every player gets plenty of reps. Come to as many as you can.</li>
+								<li><strong>Parents and coaches:</strong> welcome to help; you can sign up to volunteer when you register.</li>
+								<li><strong>Bring:</strong> glove, pitching gear if you pitch, indoor shoes (no cleats) and water.</li>
+								<li><strong>Questions:</strong> <a class="ncll" href="mailto:softball@ncllball.com">softball@ncllball.com</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__sticky-footer">
+					<div aria-label="Winterball27 Softball card controls (footer)" class="actions" role="group">
+						<label class="button button--secondary btn-prev btn-prev-start" for="pd-sb-winter-0">Back</label>
+						<label class="button button--primary btn-next btn-next-intro" for="pd-sb-winter-0">Details</label>
+						<label class="button button--secondary btn-prev btn-prev-0" for="pd-sb-winter-intro">Back</label>
+						<label class="button button--primary btn-next btn-next-0" for="pd-sb-winter-intro">Start Over</label>
 					</div>
 				</div>
 			</article>
@@ -267,6 +335,7 @@
 			<!-- Winterball27 BB Teen Batting -->
 			<article class="ncll-card ncll-card--overlay ncll-card--pd-landing ncll-card--toggle" aria-labelledby="pd-bb-teen-h3" id="pd-bb-teen">
 				<input checked="" id="pd-bb-teen-intro" name="pd-bb-teen" type="radio" />
+				<input id="pd-bb-teen-0" name="pd-bb-teen" type="radio" />
 				<div aria-hidden="true" class="ncll-card__sticky-heading">
 					<div class="ncll-card__heading-title">
 						<img alt="Baseball icon" class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" />
@@ -283,9 +352,23 @@
 							<li><strong>Cost:</strong> TBA (last year: $250 / player)</li>
 							<li><strong>Status:</strong> <span class="status-badge status-hold">On hold</span></li>
 						</ul>
-						<div class="ncll-card__cta">
-							<span class="button button--primary button--soon" aria-disabled="true">Details coming soon</span>
-						</div>
+					</div>
+				</div>
+				<div class="ncll-card__body panel panel0">
+					<div class="ncll-card__details">
+						<ul class="ncll-card__meta">
+								<li><strong>How it works:</strong> one small group (up to 12 players) meeting weekly in the batting cages at Focus.</li>
+								<li><strong>Bring:</strong> bat, glove, turf or indoor shoes and water.</li>
+								<li><strong>Interested?</strong> Email the <a class="ncll" href="mailto:registrar@ncllball.com">registrar</a> to get on the list.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ncll-card__sticky-footer">
+					<div aria-label="Winterball27 BB Teen Batting card controls (footer)" class="actions" role="group">
+						<label class="button button--secondary btn-prev btn-prev-start" for="pd-bb-teen-0">Back</label>
+						<label class="button button--primary btn-next btn-next-intro" for="pd-bb-teen-0">Details</label>
+						<label class="button button--secondary btn-prev btn-prev-0" for="pd-bb-teen-intro">Back</label>
+						<label class="button button--primary btn-next btn-next-0" for="pd-bb-teen-intro">Start Over</label>
 					</div>
 				</div>
 			</article>
@@ -296,7 +379,7 @@
 			<!-- Scholarship footnote: canonical snippet -->
 			<p><span aria-hidden="true" class="info-icon"></span>NCLL believes that no one should be denied the ability to play ball due to economic circumstances. Each year, we grant scholarships to families who may need assistance. If you are interested, please fill out the <a class="ncll" href="mailto:registrar@ncllball.com?subject=Scholarship%20Request">Scholarship Request</a> form or contact our <a class="ncll" href="mailto:registrar@ncllball.com">registrar</a></p>
 		</section>
-	<p class="cms-rev"><small>[r19 · 2026-11-03 · 2111984]</small></p>
+	<p class="cms-rev"><small>[r20 · 2026-11-06 · 2111984]</small></p>
 	</main>
 </body>
 

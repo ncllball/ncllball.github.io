@@ -105,7 +105,8 @@ The panels switch with hidden radio buttons. No JavaScript, so it works inside t
 - **Buttons per panel:** `btn-next-N` goes to the next panel; `btn-prev-N` goes back one. On the intro, `btn-prev-start` goes to the **last** panel. On the last panel, `btn-next-N` says "Start Over" and points at `-intro`.
 - **Radios first.** The radios have to come before the panels and the footer inside the `<article>`, because the CSS uses the `~` (later sibling) selector.
 - **Add or remove a panel:** add or remove its radio, its `panelN` div and its two footer labels, then re-point the last panel's "Start Over" and the intro's `btn-prev-start`.
-- **Intro-only card** (the Player Development hub, since 2026-11-02): one checked `-intro` radio, the sticky heading, one `panel panel-intro` with the blurb, the key facts and a single button to the program page, and **no** sticky footer. The CSS drops the footer padding when there's no footer. Details belong on the program page, not on the card. Until that page is ready, the button is `<span class="button button--primary button--soon" aria-disabled="true">Details coming soon</span>`.
+- **Intro-only card**: one checked `-intro` radio, the sticky heading, one `panel panel-intro`, and **no** sticky footer. The CSS drops the footer padding when there's no footer.
+- **Player Development cards** (since 2026-11-06, the card is the whole program; there are no separate program pages): two panels. The intro has the blurb, the key facts (with last year's dates and price next to each TBA, so families can estimate) and the status; when registration opens it gets a Register button. **Details** (`panel0`, footer label "Details") has only true, settled practical lines: how it works, who leads, what to bring, refunds, questions. No sales copy. The Winterball program leader template asks for exactly these lines.
 
 ## Parts
 
