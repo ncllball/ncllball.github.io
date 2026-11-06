@@ -14,16 +14,152 @@
       "T-Ball",
       "Tee-ball"
      ],
-     "fee": 165,
-     "leagueAge": "5-6",
-     "born": {
-      "from": "2020-09-01",
-      "to": "2022-08-31"
-     },
-     "cap": 90,
-     "scClose": "2027-05-01",
+     "status": "current",
      "scDivisionId": 81348475,
-     "teamAssignment": "mid-March"
+     "fee": {
+      "value": 165,
+      "source": "board decision: Jason, 2026-11-03 (email); Sports Connect price matches",
+      "checked": "2026-11-05"
+     },
+     "leagueAge": {
+      "value": "5-6",
+      "note": "5's and 6's, typically in Kindergarten or their last year of pre-school; 6's with a year of Tee Ball should consider Kindy or A",
+      "source": "Registration Guide Step 2(a) + footnote 1; Baseball Hub Tee Ball card",
+      "checked": "2026-11-05"
+     },
+     "born": {
+      "value": {
+       "from": "2020-09-01",
+       "to": "2022-08-31"
+      },
+      "source": "Sports Connect division (maxAge/minAge)",
+      "checked": "2026-11-05"
+     },
+     "cap": {
+      "value": 90,
+      "source": "Sports Connect maxPlayers; Cole's cap answer 2026-11-03 (Tee Ball 90, for now)",
+      "checked": "2026-11-05"
+     },
+     "scClose": {
+      "value": "2027-05-01",
+      "source": "Sports Connect closeRegistration",
+      "checked": "2026-11-05"
+     },
+     "registerBy": {
+      "value": "2027-01-31",
+      "source": "Registration Guide (please register by Sunday, January 31)",
+      "checked": "2026-11-05"
+     },
+     "teams": {
+      "value": 7,
+      "note": "7 teams in 2026 (Sports Connect team labels); the 2025 Sports Connect schedule shows only 4 teams' games, likely incomplete",
+      "source": "Sports Connect schedules (2026 BB26TBALL-KCP; 2025 Tee Ball and Kindy Games/Practices, archived), Tee Ball program rows only",
+      "checked": "2026-11-05"
+     },
+     "placement": {
+      "value": "placed, no assessment or draft",
+      "detail": "Coach and teammate requests are optional and not guaranteed, but placement uses them first, then siblings, then school. Teams are kept even.",
+      "source": "Registration Guide Step 2(a) + footnote 1; Baseball Hub Tee Ball card",
+      "checked": "2026-11-05"
+     },
+     "teamAssignment": {
+      "value": "mid-March",
+      "source": "Registration Guide Step 2(a) + footnote 1; Baseball Hub Tee Ball card",
+      "checked": "2026-11-05"
+     },
+     "practiceStarts": {
+      "value": "around Mar 29",
+      "status": "proposed",
+      "note": "Mon Mar 29, 2027 is inside the Catholic schools' break; the sheet marks it 'Needs confirmation' (it was set a week early so teams practice before the Apr 3 games).",
+      "source": "2026-27 Season Proposed Dates sheet (Practices start - Tee Ball: Mon 3/29/27, Needs confirmation); Registration Guide Step 2(a) + footnote 1; Baseball Hub Tee Ball card",
+      "checked": "2026-11-05"
+     },
+     "gamesStart": {
+      "value": "around Apr 3",
+      "status": "proposed",
+      "note": "Sat Apr 3, 2027 is inside the Catholic schools' break window; 'Needs confirmation'. 2026: first games Sat Apr 4; 2025: Sat Apr 5.",
+      "source": "2026-27 Season Proposed Dates sheet (Games start - Tee Ball: Sat 4/3/27, Needs confirmation); Registration Guide Step 2(a) + footnote 1; Baseball Hub Tee Ball card; Sports Connect schedules (2026 BB26TBALL-KCP; 2025 Tee Ball and Kindy Games/Practices, archived), Tee Ball program rows only",
+      "checked": "2026-11-05"
+     },
+     "seasonEnds": {
+      "value": "mid-June",
+      "note": "2026 last games Sat Jun 20; 2025 Sat Jun 14",
+      "source": "Registration Guide Step 2(a) + footnote 1; Baseball Hub Tee Ball card; Sports Connect schedules (2026 BB26TBALL-KCP; 2025 Tee Ball and Kindy Games/Practices, archived), Tee Ball program rows only",
+      "checked": "2026-11-05"
+     },
+     "days": {
+      "value": [
+       "Sat (games)",
+       "one weeknight (practice)"
+      ],
+      "source": "Baseball Hub Tee Ball card ('One weeknight practice; Saturday game'); Sports Connect schedules (2026 BB26TBALL-KCP; 2025 Tee Ball and Kindy Games/Practices, archived), Tee Ball program rows only",
+      "checked": "2026-11-05"
+     },
+     "eventsPerWeek": {
+      "value": "2",
+      "source": "Registration Guide Step 2(a)",
+      "checked": "2026-11-05"
+     },
+     "gameTimes": {
+      "value": {
+       "saturday": "slots every 75 minutes from 9:00am (9:00, 10:15, 11:30, 12:45, 2:00, 3:15), shared with Kindy at Upper Ross"
+      },
+      "note": "Games run 60 minutes or 3 innings.",
+      "source": "Sports Connect schedules (2026 BB26TBALL-KCP; 2025 Tee Ball and Kindy Games/Practices, archived), Tee Ball program rows only (2026: 33 games, all Saturdays at Upper Ross); Baseball Hub Tee Ball card",
+      "checked": "2026-11-05"
+     },
+     "practices": {
+      "value": "One weeknight practice, picked by each coach from a sign-up sheet of Upper Woodland and Upper Ross weekday slots (5 or 6pm).",
+      "detail": "2025 Sports Connect: 44 Tee Ball practices on Mon, Tue and Thu at 5 or 6pm, 33 at Upper Woodland (labeled 'West Woodland' on the sheets) and 11 at Upper Ross.",
+      "source": "Sports Connect schedules (2026 BB26TBALL-KCP; 2025 Tee Ball and Kindy Games/Practices, archived), Tee Ball program rows only; Ops Board data/schedules/tb-kindy-practice-slots.json",
+      "checked": "2026-11-05"
+     },
+     "springBreak": {
+      "value": "Tee Ball has kept playing through Seattle Public Schools spring break: Saturday games on both weekends around the break in 2025 and 2026.",
+      "status": "history; same pattern as A and Kindy (teams play when they have the players)",
+      "source": "Sports Connect schedules (2026 BB26TBALL-KCP; 2025 Tee Ball and Kindy Games/Practices, archived), Tee Ball program rows only (2026: 6 games Apr 11-18; 2025: 4 games and 4 practices in the break window)",
+      "checked": "2026-11-05"
+     },
+     "playoffs": {
+      "value": "None: no score is kept.",
+      "source": "Baseball Hub Tee Ball card ('No score is kept')",
+      "checked": "2026-11-05"
+     },
+     "fields": {
+      "value": {
+       "games": [
+        "Upper Ross"
+       ],
+       "practice": [
+        "Upper Woodland",
+        "Upper Ross"
+       ],
+       "away": "none"
+      },
+      "source": "Registration Guide Step 2(a) + footnote 1; Baseball Hub Tee Ball card; Sports Connect schedules (2026 BB26TBALL-KCP; 2025 Tee Ball and Kindy Games/Practices, archived), Tee Ball program rows only",
+      "checked": "2026-11-05"
+     },
+     "format": {
+      "value": "tee only, with a safety ball; no pitching, walks or strikeouts (players swing until the ball is in play); no outs; six players bat each half-inning; games run 60 minutes or 3 innings; no score kept",
+      "source": "Baseball Hub Tee Ball card (Game Format)",
+      "checked": "2026-11-05"
+     },
+     "umpires": {
+      "value": "None: Tee Ball has no umpires.",
+      "source": "Baseball Hub Tee Ball card ('No outs and no umpires')",
+      "checked": "2026-11-05"
+     },
+     "rulesPage": "baseball-tball-rules (Programs > baseball)",
+     "familyHelp": {
+      "value": "Tee Ball runs on parents who coach and help out at practices.",
+      "source": "Baseball Hub Tee Ball card (Volunteer)",
+      "checked": "2026-11-05"
+     },
+     "openQuestions": [
+      "Spring break 2027: keep playing through it like 2025-2026?",
+      "Start dates: practices Mon Mar 29 and games Sat Apr 3 are both 'Needs confirmation' on the dates sheet (Catholic schools' break)"
+     ],
+     "conflicts": []
     },
     {
      "key": "kindy",
