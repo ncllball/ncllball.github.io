@@ -312,25 +312,9 @@
       "checked": "2026-11-05"
      },
      "openQuestions": [
-      "Score: John said 11/01 that Kindy keeps score, but the 2026 coaches' meeting rules say no score is kept (see conflicts)",
       "Start dates: practices Sat Mar 27 (Easter weekend) and games Sat Apr 3 (Catholic break) are 'Needs confirmation' on the dates sheet"
      ],
-     "conflicts": [
-      {
-       "field": "score",
-       "sources": [
-        {
-         "says": "score is kept",
-         "source": "John 2026-11-01 (Baseball Hub Kindy card and Kindy rules page G8 say 'Score is kept')"
-        },
-        {
-         "says": "no score is kept ('All players on base for the last at bat of the inning will score (no score is kept)')",
-         "source": "Kindy Coach Pitch Division Meeting Spring 2026 (coaches' meeting doc, Drive Coaches/Tee Ball-Kindy Coaches Meeting)"
-        }
-       ],
-       "note": "Needs John's call: was 11/01 a change for 2027, or should the card say no score?"
-      }
-     ],
+     "conflicts": [],
      "umpires": {
       "value": "None: coaches run the field (on offense a coach pitches and another stands behind the batter; on defense coaches are in the field).",
       "source": "Kindy Coach Pitch Division Meeting Spring 2026 (coaches' meeting doc, Drive Coaches/Tee Ball-Kindy Coaches Meeting) (Coaches)",
@@ -339,6 +323,12 @@
      "gameLength": {
       "value": "No new inning after 45 minutes (games sit in 75-minute Saturday slots).",
       "source": "Kindy Coach Pitch Division Meeting Spring 2026 (coaches' meeting doc, Drive Coaches/Tee Ball-Kindy Coaches Meeting); Sports Connect 2025-2026 slot times",
+      "checked": "2026-11-05"
+     },
+     "score": {
+      "value": "No score is kept",
+      "detail": "All players on base for the last at-bat of the inning score; outs aren't counted and everyone bats each half-inning.",
+      "source": "Kindy Coach Pitch Division Meeting Spring 2026 (coaches' meeting doc, Drive Coaches/Tee Ball-Kindy Coaches Meeting); John 2026-11-05 (the 11/01 'Kindy keeps score' was a guess; the meeting doc governs and feeds the website's coach templates)",
       "checked": "2026-11-05"
      }
     },
