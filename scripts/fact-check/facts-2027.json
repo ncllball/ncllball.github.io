@@ -1215,10 +1215,15 @@
       "50/70 permits: are Eagle Staff, Loyal Heights, Lower Woodland #1 or Dahl actually permitted for 2027?",
       "Interleague partners: which D8 leagues field Intermediate in 2027 (same open question as Juniors/Seniors)",
       "Umpires: who umpires Intermediate games (league-provided like Majors, or the teams)?",
-      "End of season: is there a regular-season playoff? The Hub card says 'a District 8 tournament ends the season', but the D8 tournament is the All-Star tournament",
-      "Dates sheet: add Intermediate practice and game start rows"
+      "Dates sheet: add Intermediate practice and game start rows",
+      "Hub card says 'a District 8 tournament ends the season': D8 does run Intermediate playoffs after Memorial Day, so the line is right, but say 'District 8 playoffs' to avoid confusion with All-Stars"
      ],
-     "conflicts": []
+     "conflicts": [],
+     "scheduling": {
+      "value": "District 8 builds the Intermediate schedule with Juniors (2026: a D8 Intermediates schedule existed for the other leagues' teams); D8 Intermediate and Juniors playoffs start the week after Memorial Day.",
+      "source": "D8 Teen Baseball administrator's 'D8 Teenage Baseball Schedules' email to league presidents and schedulers, 2026-03-11 to 03-14 (John's personal Gmail); D8 sheets '2026 Juniors Baseball Schedules' (1LoA_MYMU_iIuaQNj7qs_TZKhSVZcQxf_DK6X2NiCBw4) and '2026 Intermediates Baseball Schedules' (1mxU16T_AjyOhtG34v6Wv_vaq_vEz614jccMQhfRuUuk)",
+      "checked": "2026-11-05"
+     }
     },
     {
      "key": "juniors",
@@ -1296,9 +1301,9 @@
       "checked": "2026-11-05"
      },
      "seasonEnds": {
-      "value": null,
-      "note": "2026 regular season ended May 21; then the District 8 wood-bat tournament. See conflicts.",
-      "source": "Sports Connect schedule BB26JUNIOR Games (22 games, 2026-03-21 to 05-21); Baseball Hub Juniors card; Registration Guide (division row + footnotes 8 and 10)",
+      "value": "late May (regular season), then D8 playoffs into early-to-mid June",
+      "note": "2026 last regular-season game May 21.",
+      "source": "D8 Teen Baseball administrator's 'D8 Teenage Baseball Schedules' email to league presidents and schedulers, 2026-03-11 to 03-14 (John's personal Gmail); D8 sheets '2026 Juniors Baseball Schedules' (1LoA_MYMU_iIuaQNj7qs_TZKhSVZcQxf_DK6X2NiCBw4) and '2026 Intermediates Baseball Schedules' (1mxU16T_AjyOhtG34v6Wv_vaq_vEz614jccMQhfRuUuk); Sports Connect schedule BB26JUNIOR Games; Registration Guide (mid-June)",
       "checked": "2026-11-05"
      },
      "eventsPerWeek": {
@@ -1341,8 +1346,9 @@
       "checked": "2026-11-05"
      },
      "postseason": {
-      "value": "A District 8 wood-bat tournament follows the regular season (wood bats provided for the team).",
-      "source": "Baseball Hub Juniors card; Juniors recruiting email from the former president (Jan 2025)",
+      "value": "District 8 Juniors playoffs start the week after Memorial Day and run about two weeks on 90-ft fields; the structure is set in mid-May from the standings.",
+      "note": "The Hub card's 'District 8 wood-bat tournament follows the season' and the 2025 recruiting email's 'special wooden bat tournament' may be the same event; confirm.",
+      "source": "D8 Teen Baseball administrator's 'D8 Teenage Baseball Schedules' email to league presidents and schedulers, 2026-03-11 to 03-14 (John's personal Gmail); D8 sheets '2026 Juniors Baseball Schedules' (1LoA_MYMU_iIuaQNj7qs_TZKhSVZcQxf_DK6X2NiCBw4) and '2026 Intermediates Baseball Schedules' (1mxU16T_AjyOhtG34v6Wv_vaq_vEz614jccMQhfRuUuk); Baseball Hub Juniors card; Juniors recruiting email (Jan 2025)",
       "checked": "2026-11-05"
      },
      "allStars": {
@@ -1361,29 +1367,19 @@
       "source": "Baseball Hub Juniors card (Volunteer)",
       "checked": "2026-11-05"
      },
-     "conflicts": [
-      {
-       "field": "seasonEnds",
-       "sources": [
-        {
-         "says": "games run to late May",
-         "source": "Baseball Hub Juniors card (Season Rhythm); 2026 last regular-season game May 21 (Sports Connect schedule BB26JUNIOR Games (22 games, 2026-03-21 to 05-21))"
-        },
-        {
-         "says": "games end mid-June",
-         "source": "Registration Guide (division row + footnotes 8 and 10) (Games End column); 2027 Age Matrix: Baseball (final 2026-10-30)"
-        }
-       ],
-       "note": "Probably both right: the regular season ends late May and the wood-bat tournament runs after. Pick one wording for families."
-      }
-     ],
+     "conflicts": [],
      "openQuestions": [
       "District 8 interleague partners for 2027 (open since the age matrix)",
       "Co-league with RUG in 2024: the Hub card and rules page say NCLL partnered with RUG in 2024, but the former president's Jan 2025 email says an NCLL coach coached Juniors in 2024. Confirm.",
       "Rules page opponents list leaves out WLL (on the 2026 schedule)",
       "Umpires: who umpires Juniors games?",
-      "Wood-bat tournament: dates and where (2026)"
-     ]
+      "Wood-bat tournament vs D8 playoffs: same thing or separate? Pick one wording for the Hub card (regular season to late May, playoffs into June)"
+     ],
+     "scheduling": {
+      "value": "District 8's teen baseball administrator builds the Juniors and Intermediate schedules for all D8 leagues from each league's 90-ft field allocation (2026 schedules went out March 11).",
+      "source": "D8 Teen Baseball administrator's 'D8 Teenage Baseball Schedules' email to league presidents and schedulers, 2026-03-11 to 03-14 (John's personal Gmail); D8 sheets '2026 Juniors Baseball Schedules' (1LoA_MYMU_iIuaQNj7qs_TZKhSVZcQxf_DK6X2NiCBw4) and '2026 Intermediates Baseball Schedules' (1mxU16T_AjyOhtG34v6Wv_vaq_vEz614jccMQhfRuUuk)",
+      "checked": "2026-11-05"
+     }
     },
     {
      "key": "seniors",
@@ -1405,6 +1401,11 @@
      "history": {
       "value": "No NCLL Seniors coach in 2025 or 2026; the 2026 board review lists Seniors as 'likely co-league'. In 2025 the RUG/NCLL Seniors All-Star co-league team reached the State championship game.",
       "source": "Coaches -- Official Board Review sheets (2025, 2026); board group thread 2025-07-08",
+      "checked": "2026-11-05"
+     },
+     "gamesStart": {
+      "value": "second week of May (usually)",
+      "source": "D8 Teen Baseball administrator's 'D8 Teenage Baseball Schedules' email to league presidents and schedulers, 2026-03-11 to 03-14 (John's personal Gmail); D8 sheets '2026 Juniors Baseball Schedules' (1LoA_MYMU_iIuaQNj7qs_TZKhSVZcQxf_DK6X2NiCBw4) and '2026 Intermediates Baseball Schedules' (1mxU16T_AjyOhtG34v6Wv_vaq_vEz614jccMQhfRuUuk) ('Seniors Scheduling is next... games for this division usually start the Second week of May')",
       "checked": "2026-11-05"
      }
     }
