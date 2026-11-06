@@ -416,8 +416,8 @@
       "checked": "2026-11-05"
      },
      "format": {
-      "value": "full kid pitch; 46-ft mound, 60-ft bases; no new inning after 2 hrs; five-run limit per half-inning (some late-game exceptions); mercy 15 after 3 / 10 after 4 / 8 after 5; steals once the ball reaches the batter, no leadoffs, no delayed steals; everyone plays 9+ defensive outs; score kept, playoffs",
-      "source": "Baseball Hub AAA card (Game Format); Outline: AAA Division Rules (D2, D4, D7)",
+      "value": "full kid pitch; 46-ft mound, 60-ft bases; no new inning after 2 hrs, no new batter after 2 hrs 15 min; an inning ends at 5 runs or once through the batting order (6th inning: once through the order, no run cap); mercy 15 after 3 / 10 after 4 / 8 after 5; infield fly rule in effect, no dropped (uncaught) third strike; steals once the ball reaches the batter, no leadoffs, no delayed steals; pitchers limited to 50 pitches a game before May 1 (District 8); everyone plays 9+ defensive outs; score kept, playoffs",
+      "source": "Baseball Hub AAA card (Game Format); Outline: AAA Division Rules (D2, D4, D7); 2024 Division Rules Cheat Sheet (umpires' sheet, Drive rebuild/Umpires) (AAA block matches)",
       "checked": "2026-11-05"
      },
      "rulesPage": "https://www.ncllball.com/Default.aspx?tabid=2252525",
@@ -551,8 +551,8 @@
       "checked": "2026-11-05"
      },
      "format": {
-      "value": "full kid pitch; 46-ft mound, 60-ft bases; no new inning after 2 hrs 15 min; no run limit; mercy 15 after 3 / 10 after 4 / 8 after 5; steals once the ball reaches the batter, no leadoffs; everyone plays 9+ defensive outs; score kept, playoffs",
-      "source": "Baseball Hub card (Game Format)",
+      "value": "full kid pitch; 46-ft mound, 60-ft bases; no new inning after 2 hrs 15 min, no new batter after 2 hrs 30 min; no run limit per inning; mercy 15 after 3 / 10 after 4 / 8 after 5; dropped (uncaught) third strike and infield fly rule in effect; steals once the ball reaches the batter, no leadoffs; pitchers limited to 50 pitches a game before May 1 (District 8); everyone plays 9+ defensive outs; score kept, playoffs",
+      "source": "Baseball Hub card (Game Format); 2024 Division Rules Cheat Sheet (umpires' sheet, Drive rebuild/Umpires) (Majors block matches)",
       "checked": "2026-11-05"
      },
      "rulesPage": "https://www.ncllball.com/Default.aspx?tabid=2252520",
