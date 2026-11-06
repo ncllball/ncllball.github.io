@@ -134,8 +134,8 @@
      },
      "placement": {
       "value": "assessment + draft",
-      "detail": "Assessments required, around Sat 2027-01-23, no make-up date. Registering doesn't guarantee a spot: 9's fill remaining roster spots by assessment score, with eligibility finalized in late January; 9's not drafted to AAA play AA. Coaches draft from the scores; order drawn from a hat; coaches' kids placed by score. Siblings: a team that drafts one sibling gets the other with its next pick. Highly skilled 8's are placed here only rarely, if roster needs dictate.",
-      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; John 2026-11-05 (siblings rule same as Majors)",
+      "detail": "Assessments required, around Sat 2027-01-23, no make-up date. Registering doesn't guarantee a spot: 9's fill remaining roster spots by assessment score, with eligibility finalized in late January; 9's not drafted to AAA play AA. Coaches draft from the scores; order drawn from a hat; coaches' kids placed by score. Siblings: a team that drafts one sibling gets the other with its next pick. Highly skilled 8's are placed here only rarely, if roster needs dictate (kept by Cole in the final 2027 Age Matrix, Oct 30).",
+      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; John 2026-11-05 (siblings rule same as Majors); Cole's 2027 Age Matrix: Baseball (final Oct 30), footnote 5",
       "checked": "2026-11-05"
      },
      "siblings": {
@@ -157,18 +157,20 @@
      },
      "practiceStarts": {
       "value": "around Mar 1",
-      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; 2026-27 Season Proposed Dates (Mon Mar 1, 2027)",
-      "checked": "2026-11-05"
+      "source": "2026-27 Season Proposed Dates sheet (Practices start - BB AAA: Mon 3/1/27, status Proposed = 2026 date + 52 weeks); Registration Guide; Baseball Hub card",
+      "checked": "2026-11-05",
+      "status": "proposed"
      },
      "gamesStart": {
       "value": "around Mar 20",
-      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; 2026-27 Season Proposed Dates (Sat Mar 20, 2027)",
-      "checked": "2026-11-05"
+      "source": "2026-27 Season Proposed Dates sheet (Games start - BB AAA: Sat 3/20/27, status Proposed = 2026 date + 52 weeks); Registration Guide; Baseball Hub card",
+      "checked": "2026-11-05",
+      "status": "proposed"
      },
      "seasonEnds": {
       "value": "early June",
       "note": "regular season to about May 20, then playoffs into early June",
-      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; 2026 60 ft schedule + 2025 master schedule (Maxwell)",
+      "source": "2026 60 ft schedule (regular season to May 20, playoffs May 26-Jun 3); Registration Guide; Baseball Hub card",
       "checked": "2026-11-05"
      },
      "days": {
@@ -256,7 +258,8 @@
       "source": "2025 and 2026 AAA coaches chats (Stack Officials invites, 2025); John 2026-11-05",
       "checked": "2026-11-05"
      },
-     "conflicts": []
+     "conflicts": [],
+     "datesNote": "Cole's 2027 Age Matrix shows AAA practice early March / games late March / end mid-June, but those schedule columns were the 2026 website text left unchanged, not a 2027 decision (matrix status note, Oct 30). No email or chat sets AAA's 2027 dates; the proposed-dates sheet is the newest source (checked 2026-11-05)."
     },
     {
      "key": "majors",
