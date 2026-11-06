@@ -111,8 +111,8 @@
      },
      "teams": {
       "value": 8,
-      "note": "8 teams in 2026 (team names on the schedule); cap 104 = 8 teams of 13",
-      "source": "2026 60 ft schedule (Game start column) + 2025 master schedule (Maxwell)",
+      "note": "8 teams in 2026, capped at 8 by field space, 14 players max per team (cap 104)",
+      "source": "2026 60 ft schedule (Game start column) + 2025 master schedule (Maxwell); Outline: NCLL Baseball - AA Division Rules (G7)",
       "checked": "2026-11-05"
      },
      "placement": {
@@ -122,8 +122,9 @@
       "checked": "2026-11-05"
      },
      "callUps": {
-      "value": "The top AA players form a AAA call-up pool.",
-      "source": "Registration Guide Step 2(a) + footnote 4; Baseball Hub AA card; Cole's 2027 Age Matrix footnote 5",
+      "value": "AA coaches name AAA call-ups after AA rosters form; call-ups fill in when a AAA team is short and may be invited to AAA practices as space allows.",
+      "note": "AA-to-AAA call-up pool started in 2026 (the AAA-to-Majors version has run for years). The player's parents and both coaches must agree, and a call-up pitches only if agreed in advance (pitch-count rules apply). 9's not drafted to AAA play AA.",
+      "source": "VP of Baseball email 2026-02-21 (via Outline: NCLL Baseball - AA Division Rules G7); VP of Baseball summary in the 2025 AAA coaches chat; Baseball Hub AA card",
       "checked": "2026-11-05"
      },
      "teamAssignment": {
@@ -143,7 +144,8 @@
       "status": "proposed",
       "note": "Mar 27, 2027 is Easter weekend and inside the Catholic schools' spring break window (Mar 27-Apr 4); the sheet marks it 'Needs confirmation'. With Friday games, the first game would be Fri Mar 26.",
       "source": "2026-27 Season Proposed Dates sheet (Games start - BB AA: Sat 3/27/27, Needs confirmation); Registration Guide; Baseball Hub card; Nov 4 coaches email Key dates (Mar 27, A & AA)",
-      "checked": "2026-11-05"
+      "checked": "2026-11-05",
+      "open": "Whether to start on Easter weekend (Fri Mar 26, 2027) is undecided (John 2026-11-05: no idea); ask the VP of Baseball / scheduler."
      },
      "seasonEnds": {
       "value": "mid-June",
@@ -162,9 +164,9 @@
       "checked": "2026-11-05"
      },
      "eventsPerWeek": {
-      "value": "3",
-      "detail": "In practice 2 a week in season: a Friday-night game and a Saturday-morning practice. The age chart says 3.",
-      "source": "Registration Guide Step 2(a) + footnote 4; Baseball Hub AA card; 2026 60 ft schedule (Game start column) + 2025 master schedule (Maxwell)",
+      "value": "2",
+      "detail": "A Friday-night game and a Saturday-morning practice.",
+      "source": "John 2026-11-05 (age chart changed from 3 to 2); 2025-2026 schedules (Maxwell + Sports Connect)",
       "checked": "2026-11-05"
      },
      "gameTimes": {
@@ -217,22 +219,34 @@
         "Ross",
         "Bitter Lake"
        ],
-       "away": "a few interleague games at other leagues' fields (2026: Dahl, Meadowbrook, Northacres, View Ridge)"
+       "away": "none: AA has no interleague play; some NCLL-vs-NCLL games are played at other parks (2026 May 15: Dahl, View Ridge, Northacres, Meadowbrook)"
       },
-      "source": "Registration Guide Step 2(a) + footnote 4; Baseball Hub AA card; 2026 60 ft schedule (Game start column) + 2025 master schedule (Maxwell)",
+      "source": "Registration Guide Step 2(a) + footnote 4; Baseball Hub AA card; 2026 60 ft schedule (Game start column) + 2025 master schedule (Maxwell); Outline: NCLL Baseball - AA Division Rules (G6: entirely in-house); Sports Connect 2026 (May 15 games NCLL vs NCLL)",
       "checked": "2026-11-05"
      },
      "format": {
-      "value": "kid pitch, and at ball four a coach pitches to that batter (no walks); no stealing until midseason, then only on passed balls and wild pitches; five-run limit per inning; 90-minute games; score kept, playoffs end the season",
-      "source": "Baseball Hub AA card (Game Format)",
+      "value": "kid pitch, and at ball four a coach pitches to that batter (4 coach pitches; no walks); official hardball; no stealing in the first half of the season, then only on passed balls, wild pitches or a dropped return throw, never home; five-run limit per inning; no mercy rule; 90 minutes or 6 innings; score kept, playoffs end the season",
+      "source": "Baseball Hub AA card (Game Format); Outline: NCLL Baseball - AA Division Rules (B3, C1, D2, D4, D5, D7)",
       "checked": "2026-11-05"
      },
      "familyHelp": {
-      "value": "AA runs on parents who coach, umpire, keep score and help out.",
+      "value": "AA runs on parents who coach, umpire (each team supplies one umpire per game), keep score and help out.",
       "source": "Baseball Hub AA card (Volunteer)",
       "checked": "2026-11-05"
      },
-     "conflicts": []
+     "conflicts": [],
+     "umpires": {
+      "value": "AA provides its own umpires from the teams: the home team supplies the plate (chief) umpire and the visiting team the field umpire. If none is available, the home team provides one, who calls from behind the pitcher if without gear.",
+      "source": "Outline: NCLL Baseball - AA Division Rules (F2, from the AA rules page); Baseball Hub AA card ('parents who coach, umpire, keep score')",
+      "checked": "2026-11-05"
+     },
+     "canadianGame": {
+      "value": "The AA Canadian game: a late-summer, one-day event for strong league-age 9's from AA and AAA (not All-Stars).",
+      "detail": "Started a few years before 2024. In 2024 the coordinators polled AAA coaches with 9's, then AA coaches for recommended 9's. 2026 description: a group assembled in late summer to play a 4-team, one-day jamboree at NAF toward the end of August.",
+      "note": "Kept separate from All-Stars (John 2026-11-05).",
+      "source": "registrar email thread '9s tournament' 2024-06-12/13 ('the canadian tournament we started a few years ago'); VP of Baseball All-Stars post in the 2026 Majors coaches chat (9's jamboree at NAF); John 2026-11-05",
+      "checked": "2026-11-05"
+     }
     },
     {
      "key": "aaa",
