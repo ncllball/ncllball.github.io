@@ -225,8 +225,8 @@
       "checked": "2026-11-05"
      },
      "format": {
-      "value": "kid pitch, and at ball four a coach pitches to that batter (4 coach pitches; no walks); official hardball; no stealing in the first half of the season, then only on passed balls, wild pitches or a dropped return throw, never home; five-run limit per inning; no mercy rule; 90 minutes or 6 innings; score kept, playoffs end the season",
-      "source": "Baseball Hub AA card (Game Format); Outline: NCLL Baseball - AA Division Rules (B3, C1, D2, D4, D5, D7)",
+      "value": "kid pitch, and at ball four a coach pitches to that batter (4 coach pitches; no walks); official hardball; an inning ends at 3 outs, 5 runs, or once through the batting order; one base on an error; no infield fly and no dropped-third-strike; no stealing in the first half of the season, then only on passed balls, wild pitches or a dropped return throw, never home; no mercy rule (play to the time limit); 90 minutes or 6 innings; score kept, playoffs end the season",
+      "source": "Baseball Hub AA card (Game Format); AA rules page (D4: 'There is no mercy rule in AA'); 2024 Division Rules Cheat Sheet, AA Baseball block (umpires' sheet, Drive rebuild/Umpires; no mercy listed, while every division above AA lists one); Outline: NCLL Baseball - AA Division Rules (B3, C1, D2, D4, D5, D7)",
       "checked": "2026-11-05"
      },
      "familyHelp": {
@@ -241,8 +241,8 @@
       "checked": "2026-11-05"
      },
      "canadianGame": {
-      "value": "The AA Canadian game: a late-summer, one-day event for strong league-age 9's from AA and AAA (not All-Stars).",
-      "detail": "Started a few years before 2024. In 2024 the coordinators polled AAA coaches with 9's, then AA coaches for recommended 9's. 2026 description: a group assembled in late summer to play a 4-team, one-day jamboree at NAF toward the end of August.",
+      "value": "The AA Canadian game: the late-summer 9's game, a one-day event for strong league-age 9's from AA and AAA (not All-Stars).",
+      "detail": "Also called the 9's game or 9's tournament/jamboree. Started a few years before 2024. In 2024 the coordinators polled AAA coaches with 9's, then AA coaches for recommended 9's. 2026 description: a group assembled in late summer to play a 4-team, one-day jamboree at NAF toward the end of August.",
       "note": "Kept separate from All-Stars (John 2026-11-05).",
       "source": "registrar email thread '9s tournament' 2024-06-12/13 ('the canadian tournament we started a few years ago'); VP of Baseball All-Stars post in the 2026 Majors coaches chat (9's jamboree at NAF); John 2026-11-05",
       "checked": "2026-11-05"
@@ -432,7 +432,12 @@
       "checked": "2026-11-05"
      },
      "conflicts": [],
-     "datesNote": "Cole's 2027 Age Matrix shows AAA practice early March / games late March / end mid-June, but those schedule columns were the 2026 website text left unchanged, not a 2027 decision (matrix status note, Oct 30). No email or chat sets AAA's 2027 dates; the proposed-dates sheet is the newest source (checked 2026-11-05)."
+     "datesNote": "Cole's 2027 Age Matrix shows AAA practice early March / games late March / end mid-June, but those schedule columns were the 2026 website text left unchanged, not a 2027 decision (matrix status note, Oct 30). No email or chat sets AAA's 2027 dates; the proposed-dates sheet is the newest source (checked 2026-11-05).",
+     "canadianGame": {
+      "value": "League-age 9's in AAA can be picked for the AA Canadian game, the late-summer 9's game (not All-Stars); see the AA entry.",
+      "source": "registrar email thread '9s tournament' 2024-06; VP of Baseball post in the 2026 Majors coaches chat; John 2026-11-05",
+      "checked": "2026-11-05"
+     }
     },
     {
      "key": "majors",
