@@ -141,9 +141,9 @@
      },
      "format": {
       "value": "tee only, with a safety ball; no pitching, walks or strikeouts (players swing until the ball is in play); no outs; six players bat each half-inning; games run 60 minutes or 3 innings; no score kept",
-      "source": "Baseball Hub Tee Ball card (Game Format); Tee Ball Division Meeting Spring 2024 (coaches' meeting doc, Drive rebuild/Coach Orientation) (Tee Ball Rules)",
+      "source": "Baseball Hub Tee Ball card (Game Format); Tee Ball Division Meeting Spring 2024 (coaches' meeting doc, Drive rebuild/Coach Orientation) (Tee Ball Rules); NCLL Tee Ball Playing Rules (2015 working docs, Drive Policies/Local Rules/2015 Working Docs)",
       "checked": "2026-11-05",
-      "history": "2024 coaches' meeting rules: games 1 hour (about 4 innings), no new inning after 45 minutes, each inning starts with the bases loaded, every hit is a single, outs don't count, the full lineup bats each inning and the last batter is a 'home run hitter' who clears the bases. The current Hub card says six batters each half-inning and 60 minutes or 3 innings."
+      "history": "The Hub card's wording (six batters each half-inning, the sixth clears the bases; 60 minutes or 3 innings; no outs, walks, strikeouts or umpires) comes from the 2015 NCLL Tee Ball Playing Rules, which also had a defensive catcher in full gear, singles only in the first half of the season, no stealing or leading off, 6-7 infielders plus any number of outfielders, and the league's safety ball. The 2024 coaches' meeting rules changed the game: 1 hour (about 4 innings), no new inning after 45 minutes, each inning starts with the bases loaded, every hit is a single, the full lineup bats each inning and the last batter clears the bases. Which version 2026 used isn't written down; the Hub card still follows 2015."
      },
      "umpires": {
       "value": "None: Tee Ball has no umpires.",
@@ -157,7 +157,8 @@
       "checked": "2026-11-05"
      },
      "openQuestions": [
-      "Start dates: practices Mon Mar 29 and games Sat Apr 3 are 'Needs confirmation' on the dates sheet (Catholic schools' break)"
+      "Start dates: practices Mon Mar 29 and games Sat Apr 3 are 'Needs confirmation' on the dates sheet (Catholic schools' break)",
+      "Game format: the Hub card follows the 2015 rules (six batters, 60 min or 3 innings); the 2024 meeting doc has the full lineup batting with bases loaded. Which did 2026 use?"
      ],
      "conflicts": []
     },
