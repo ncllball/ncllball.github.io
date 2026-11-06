@@ -35,16 +35,154 @@
       "Kindy / Coach Pitch",
       "Kindy Coach Pitch"
      ],
-     "fee": 185,
-     "leagueAge": "6-7",
-     "born": {
-      "from": "2019-09-01",
-      "to": "2021-08-31"
-     },
-     "cap": 90,
-     "scClose": "2027-05-19",
+     "status": "current",
      "scDivisionId": 81348476,
-     "teamAssignment": "mid-March"
+     "fee": {
+      "value": 185,
+      "source": "board decision: Jason, 2026-11-03 (email); Sports Connect price matches",
+      "checked": "2026-11-05"
+     },
+     "leagueAge": {
+      "value": "6-7",
+      "note": "For players with a year of Tee Ball, or who are already 6. League age 6 is the minimum; a child still 5 who hasn't played starts in Tee Ball. Signing up for Kindy doesn't place a player there.",
+      "source": "Registration Guide Step 2(a) + footnote 2; Baseball Hub Kindy card; Outline: NCLL Baseball - Kindy (Kindergarten Coach Pitch) Division Rules (A1)",
+      "checked": "2026-11-05"
+     },
+     "born": {
+      "value": {
+       "from": "2019-09-01",
+       "to": "2021-08-31"
+      },
+      "source": "Sports Connect division (maxAge/minAge)",
+      "checked": "2026-11-05"
+     },
+     "cap": {
+      "value": 90,
+      "source": "Sports Connect maxPlayers; Cole's cap answer 2026-11-03 (Kindy 90, for now)",
+      "checked": "2026-11-05"
+     },
+     "scClose": {
+      "value": "2027-05-19",
+      "source": "Sports Connect closeRegistration",
+      "checked": "2026-11-05"
+     },
+     "registerBy": {
+      "value": "2027-01-31",
+      "source": "Registration Guide (please register by Sunday, January 31)",
+      "checked": "2026-11-05"
+     },
+     "teams": {
+      "value": 7,
+      "note": "7 teams in 2026, 8 in 2025",
+      "source": "Sports Connect schedules (2026 BB26TBALL-KCP + BB26KCP-4:30 Practice Slot; 2025 Tee Ball and Kindy Games/Practices, archived), Kindy program rows only (team labels); 2026 Kindy coaches chat (7 teams listed by the coordinator)",
+      "checked": "2026-11-05"
+     },
+     "placement": {
+      "value": "placed, no assessment or draft",
+      "detail": "Coach and teammate requests are optional and not guaranteed, but placement uses them first, then siblings, then school. Teams are kept even. Readiness for Kindy is a registrar call using an internal framework (not published).",
+      "source": "Registration Guide Step 2(a) + footnote 2; Baseball Hub Kindy card; Outline: NCLL Baseball - Kindy (Kindergarten Coach Pitch) Division Rules (G1); 2026 Kindy coaches chat",
+      "checked": "2026-11-05"
+     },
+     "teamAssignment": {
+      "value": "mid-March",
+      "note": "2026: rosters posted mid-March; coaches' meeting the week of Mar 23",
+      "source": "Registration Guide Step 2(a) + footnote 2; Baseball Hub Kindy card; 2026 Kindy coaches chat",
+      "checked": "2026-11-05"
+     },
+     "practiceStarts": {
+      "value": "around Mar 27",
+      "status": "proposed",
+      "note": "Sat Mar 27, 2027 is Easter weekend and inside the Catholic schools' break; the sheet marks it 'Needs confirmation'. Saturdays are practices until games start.",
+      "source": "2026-27 Season Proposed Dates sheet (Practices start - Kindy: Sat 3/27/27, Needs confirmation); Registration Guide Step 2(a) + footnote 2; Baseball Hub Kindy card",
+      "checked": "2026-11-05"
+     },
+     "gamesStart": {
+      "value": "around Apr 3",
+      "status": "proposed",
+      "note": "Sat Apr 3, 2027 is inside the Catholic schools' break window; the sheet marks it 'Needs confirmation'. 2026: first games Sat Apr 4; 2025: Sat Apr 5.",
+      "source": "2026-27 Season Proposed Dates sheet (Games start - Kindy: Sat 4/3/27, Needs confirmation); Registration Guide Step 2(a) + footnote 2; Baseball Hub Kindy card; Sports Connect schedules (2026 BB26TBALL-KCP + BB26KCP-4:30 Practice Slot; 2025 Tee Ball and Kindy Games/Practices, archived), Kindy program rows only",
+      "checked": "2026-11-05"
+     },
+     "seasonEnds": {
+      "value": "mid-June",
+      "note": "2026 last games Sat Jun 20; 2025 Sat Jun 14",
+      "source": "Registration Guide Step 2(a) + footnote 2; Baseball Hub Kindy card; Sports Connect schedules (2026 BB26TBALL-KCP + BB26KCP-4:30 Practice Slot; 2025 Tee Ball and Kindy Games/Practices, archived), Kindy program rows only",
+      "checked": "2026-11-05"
+     },
+     "days": {
+      "value": [
+       "Sat (games)",
+       "one weeknight (practice)"
+      ],
+      "detail": "One weeknight practice and a Saturday game each week once games start; two practices a week before that.",
+      "source": "Baseball Hub Kindy card ('One weeknight practice; Saturday game'); Outline: NCLL Baseball - Kindy (Kindergarten Coach Pitch) Division Rules (G5)",
+      "checked": "2026-11-05"
+     },
+     "eventsPerWeek": {
+      "value": "2",
+      "source": "Registration Guide Step 2(a); Outline: NCLL Baseball - Kindy (Kindergarten Coach Pitch) Division Rules (G5)",
+      "checked": "2026-11-05"
+     },
+     "gameTimes": {
+      "value": {
+       "saturday": "slots every 75 minutes from 9:00am: 9:00, 10:15, 11:30, 12:45, 2:00, 3:15"
+      },
+      "note": "All Kindy games at Upper Ross. 2026 also had a Saturday 4:30pm practice slot at Upper Ross after the games.",
+      "source": "Sports Connect schedules (2026 BB26TBALL-KCP + BB26KCP-4:30 Practice Slot; 2025 Tee Ball and Kindy Games/Practices, archived), Kindy program rows only (2026: 33 games, all Saturdays at Upper Ross; 2025: 39)",
+      "checked": "2026-11-05"
+     },
+     "practices": {
+      "value": "One weeknight practice, picked by each coach from a sign-up sheet of Upper Ross and Upper Woodland weekday slots (5 or 6pm).",
+      "detail": "2025 Sports Connect: 88 Kindy practices Mon-Fri, 5 or 6pm, 77 at Upper Ross, 11 at Upper Woodland. The sign-up sheets label Upper Woodland (Phinney Ave N & N 59th St) 'West Woodland', which is the school, not the field.",
+      "source": "Sports Connect schedules (2026 BB26TBALL-KCP + BB26KCP-4:30 Practice Slot; 2025 Tee Ball and Kindy Games/Practices, archived), Kindy program rows only; Ops Board data/schedules/tb-kindy-practice-slots.json; Outline: NCLL Baseball - Kindy (Kindergarten Coach Pitch) Division Rules (G5a)",
+      "checked": "2026-11-05"
+     },
+     "springBreak": {
+      "value": "Kindy has kept playing through Seattle Public Schools spring break: Saturday games on both weekends around the break in 2025 and 2026.",
+      "status": "history; same pattern as A (teams play when they have the players)",
+      "source": "Sports Connect schedules (2026 BB26TBALL-KCP + BB26KCP-4:30 Practice Slot; 2025 Tee Ball and Kindy Games/Practices, archived), Kindy program rows only (2026: 6 Kindy games Apr 11-18; 2025: 7 games and 8 practices in the break window)",
+      "checked": "2026-11-05"
+     },
+     "playoffs": {
+      "value": null,
+      "note": "Not documented; no Kindy playoff games in the 2025 or 2026 schedules.",
+      "source": "Sports Connect schedules (2026 BB26TBALL-KCP + BB26KCP-4:30 Practice Slot; 2025 Tee Ball and Kindy Games/Practices, archived), Kindy program rows only; Outline: NCLL Baseball - Kindy (Kindergarten Coach Pitch) Division Rules (G9)",
+      "checked": "2026-11-05"
+     },
+     "fields": {
+      "value": {
+       "games": [
+        "Upper Ross (the Tee Ball field)"
+       ],
+       "practice": [
+        "Upper Ross",
+        "Upper Woodland"
+       ],
+       "away": "none: no interleague at Kindy"
+      },
+      "source": "Registration Guide Step 2(a) + footnote 2; Baseball Hub Kindy card; Sports Connect schedules (2026 BB26TBALL-KCP + BB26KCP-4:30 Practice Slot; 2025 Tee Ball and Kindy Games/Practices, archived), Kindy program rows only; Outline: NCLL Baseball - Kindy (Kindergarten Coach Pitch) Division Rules (G5a, G6)",
+      "checked": "2026-11-05"
+     },
+     "format": {
+      "value": "coaches pitch with a safety ball, with a tee as a fallback; real outs; rules adapt through the season; score is kept",
+      "note": "Innings or time limit, how many pitches before the tee, and umpiring aren't written down anywhere (rules doc open items).",
+      "source": "Baseball Hub Kindy card; Outline: NCLL Baseball - Kindy (Kindergarten Coach Pitch) Division Rules (B3, C1; 'Kindy keeps score', John 2026-11-01)",
+      "checked": "2026-11-05"
+     },
+     "rulesPage": "baseball-kindy-rules (Programs > baseball)",
+     "familyHelp": {
+      "value": "Kindy runs on parents who coach and help out at practices.",
+      "source": "Baseball Hub Kindy card (Volunteer)",
+      "checked": "2026-11-05"
+     },
+     "openQuestions": [
+      "Game format: innings or a time limit (games sit in 75-minute slots), how outs work, max pitches before the tee",
+      "Umpires: does anyone umpire Kindy games (a coach, a parent, nobody)?",
+      "Playoffs or an end-of-season event: none in the schedules; confirm there isn't one",
+      "Spring break 2027: keep playing through it like 2025-2026?",
+      "Start dates: practices Sat Mar 27 (Easter weekend) and games Sat Apr 3 (Catholic break) are both 'Needs confirmation' on the dates sheet"
+     ],
+     "conflicts": []
     },
     {
      "key": "a",
