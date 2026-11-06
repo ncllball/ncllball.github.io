@@ -1892,12 +1892,15 @@
      "postseason": {
       "value": "District 8 Tournament of Champions: a post-season among existing regular-season teams that crowns a District champion (not All-Stars). Runs most years right after the regular season.",
       "detail": "NCLL softball AAA played it in 2022, 2024 (semifinal June 10), 2025 (May 27-31) and 2026 (May 26, Jun 2, Jun 4 at Lower Woodland).",
-      "source": "umpire coordinator's 'Tournament of Champions Umps' email to the umpires-and-managers group, 2022-06-01 (John's personal Gmail); 'TOC Matchup Monday' umpires-and-managers email 2024-06-07; Sports Connect 'SB AAA Tournament of Champions' (2025); Maxwell's 2026 60 ft Schedule sheet (1iTJpXQNtJsUT_M8Go5dnjVvrs18HhVLmSO94VizkODE) (TOC rows)",
-      "checked": "2026-11-05"
+      "source": "umpire coordinator's 'Tournament of Champions Umps' email to the umpires-and-managers group, 2022-06-01 (John's personal Gmail); 'TOC Matchup Monday' umpires-and-managers email 2024-06-07; Sports Connect 'SB AAA Tournament of Champions' (2025); Maxwell's 2026 60 ft Schedule sheet (1iTJpXQNtJsUT_M8Go5dnjVvrs18HhVLmSO94VizkODE) (TOC rows); Softball VP answer in 2027 Registration: Questions for the Board (2026-11-03)",
+      "checked": "2026-11-05",
+      "status": "history; 2027 undecided",
+      "note": "Softball VP, 2026-11-03: remove D8 tournament references from the AAA/Majors cards; it may not happen in 2027 and is on the agenda for the D8 softball meeting. Do not add it to the Hub cards."
      },
      "rulesPage": "softball-aaa-rules (Programs > softball)",
      "openQuestions": [
-      "Website: Softball Hub AAA card and AAA rules page list Northacres as an away game field; it was only a practice field in 2026. Add the Tournament of Champions to the card?"
+      "Website: Softball Hub AAA card and AAA rules page list Northacres as an away game field; it was only a practice field in 2026.",
+      "Tournament of Champions 2027: decided at the D8 softball meeting (ask the Softball VP after)"
      ],
      "conflicts": []
     },
@@ -2024,13 +2027,17 @@
       "checked": "2026-11-05"
      },
      "rulesPage": "softball-majors-rules (Programs > softball)",
-     "openQuestions": [],
+     "openQuestions": [
+      "Tournament of Champions 2027: decided at the D8 softball meeting (ask the Softball VP after)"
+     ],
      "conflicts": [],
      "postseason": {
       "value": "District 8 Tournament of Champions: a post-season among existing regular-season teams that crowns a District champion (not All-Stars). Runs most years right after the regular season.",
       "detail": "2026: Majors TOC games May 20 (vs NWSLL) and May 29 (vs QA) at Lower Woodland.",
-      "source": "umpire coordinator's 'Tournament of Champions Umps' email to the umpires-and-managers group, 2022-06-01 (John's personal Gmail); Maxwell's 2026 60 ft Schedule sheet (1iTJpXQNtJsUT_M8Go5dnjVvrs18HhVLmSO94VizkODE) (TOC rows)",
-      "checked": "2026-11-05"
+      "source": "umpire coordinator's 'Tournament of Champions Umps' email to the umpires-and-managers group, 2022-06-01 (John's personal Gmail); Maxwell's 2026 60 ft Schedule sheet (1iTJpXQNtJsUT_M8Go5dnjVvrs18HhVLmSO94VizkODE) (TOC rows); Softball VP answer in 2027 Registration: Questions for the Board (2026-11-03)",
+      "checked": "2026-11-05",
+      "status": "history; 2027 undecided",
+      "note": "Softball VP, 2026-11-03: remove D8 tournament references from the AAA/Majors cards; it may not happen in 2027 and is on the agenda for the D8 softball meeting. Do not add it to the Hub cards."
      }
     },
     {
@@ -2154,13 +2161,17 @@
       "checked": "2026-11-05"
      },
      "rulesPage": "softball-juniors-rules (Programs > softball)",
-     "openQuestions": [],
+     "openQuestions": [
+      "Tournament of Champions 2027: decided at the D8 softball meeting (ask the Softball VP after)"
+     ],
      "conflicts": [],
      "postseason": {
       "value": "District 8 Tournament of Champions: a post-season among existing regular-season teams that crowns a District champion (not All-Stars). Runs most years right after the regular season.",
       "detail": "2026: Juniors TOC May 26 to Jun 3 (Lower Woodland and Thornton Creek).",
-      "source": "umpire coordinator's 'Tournament of Champions Umps' email to the umpires-and-managers group, 2022-06-01 (John's personal Gmail); Maxwell's 2026 60 ft Schedule sheet (1iTJpXQNtJsUT_M8Go5dnjVvrs18HhVLmSO94VizkODE) (TOC rows)",
-      "checked": "2026-11-05"
+      "source": "umpire coordinator's 'Tournament of Champions Umps' email to the umpires-and-managers group, 2022-06-01 (John's personal Gmail); Maxwell's 2026 60 ft Schedule sheet (1iTJpXQNtJsUT_M8Go5dnjVvrs18HhVLmSO94VizkODE) (TOC rows); Softball VP answer in 2027 Registration: Questions for the Board (2026-11-03)",
+      "checked": "2026-11-05",
+      "status": "history; 2027 undecided",
+      "note": "Softball VP, 2026-11-03: remove D8 tournament references from the AAA/Majors cards; it may not happen in 2027 and is on the agenda for the D8 softball meeting. Do not add it to the Hub cards."
      }
     },
     {
