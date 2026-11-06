@@ -141,7 +141,7 @@
      "gamesStart": {
       "value": "around Mar 27",
       "status": "proposed",
-      "note": "Mar 27, 2027 is Easter weekend and inside the Catholic schools' spring break window (Mar 27-Apr 4); the sheet marks it 'Needs confirmation'. If AA plays Fridays again, the first game would be Fri Mar 26.",
+      "note": "Mar 27, 2027 is Easter weekend and inside the Catholic schools' spring break window (Mar 27-Apr 4); the sheet marks it 'Needs confirmation'. With Friday games, the first game would be Fri Mar 26.",
       "source": "2026-27 Season Proposed Dates sheet (Games start - BB AA: Sat 3/27/27, Needs confirmation); Registration Guide; Baseball Hub card; Nov 4 coaches email Key dates (Mar 27, A & AA)",
       "checked": "2026-11-05"
      },
@@ -156,29 +156,30 @@
        "Fri",
        "Sat"
       ],
-      "note": "One game and one practice a week. The game day flips by year: 2025 games were mostly Saturday mornings (8:30-9am) with Friday practices; 2026 games were Friday nights with Saturday practices. Set with the schedule after teams form.",
-      "source": "Registration Guide Step 2(a) + footnote 4; Baseball Hub AA card; 2026 60 ft schedule (Game start column) + 2025 master schedule (Maxwell); Sports Connect schedules (data/schedules/sports-connect-2026.json + sports-connect-archived.json, pulled 2026-11-05) (2026: 42 of 48 games on Fridays, mostly 6:00pm; 2025: 29 of 44 on Saturdays, mostly 8:30am)",
+      "detail": "Games Friday nights, practices Saturday mornings (decided for 2027: same as 2026).",
+      "history": "2024: games mixed Fri 23 / Sat 16. 2025: games mostly Saturday mornings 8:30-9am, practices Fridays. 2026: games Friday nights (first pitch mostly 6:00, a second slot at 7:30), practices Saturday 8am at Lower Woodland.",
+      "source": "John (registrar) 2026-11-05: AA continues the 2026 pattern in 2027; 2024 game export, 2025 master schedule, 2026 60 ft schedule, Sports Connect schedules 2025-2026",
       "checked": "2026-11-05"
      },
      "eventsPerWeek": {
       "value": "3",
-      "detail": "In practice about 2 a week in season: 1 game + 1 practice (Hub card: 'one game, one practice'); the age chart says 3.",
+      "detail": "In practice 2 a week in season: a Friday-night game and a Saturday-morning practice. The age chart says 3.",
       "source": "Registration Guide Step 2(a) + footnote 4; Baseball Hub AA card; 2026 60 ft schedule (Game start column) + 2025 master schedule (Maxwell)",
       "checked": "2026-11-05"
      },
      "gameTimes": {
       "value": {
-       "2026 (Friday games)": "first pitch mostly 6:00pm, a second slot at 7:30pm",
-       "2025 (Saturday games)": "mostly 8:30-9:00am"
+       "friday": "first pitch mostly 6:00pm, a second slot at 7:30pm"
       },
-      "note": "90-minute games.",
-      "source": "2026 60 ft schedule (Game start column) + 2025 master schedule (Maxwell); Baseball Hub AA card",
+      "note": "90-minute games. Based on 2026, the pattern AA keeps in 2027.",
+      "history": "2025 (Saturday games): mostly 8:30-9:00am.",
+      "source": "2026 60 ft schedule (Game start column); Sports Connect BB26AA Games (Fri 6:00 x26, 7:30 x6); John 2026-11-05",
       "checked": "2026-11-05"
      },
      "practices": {
-      "value": "About 1 a week on the non-game day (Saturday in 2026, Friday in 2025), at Lower Woodland 3-6; some at B F Day, Ross and Bitter Lake.",
-      "detail": "2026: 41 labeled AA practices, 38 on Saturdays, almost all at Lower Woodland. 2025: 26, mostly Fridays, 1-1.5 hours, spread over LW, B F Day, Ross and Bitter Lake.",
-      "source": "2026 60 ft schedule (Game start column) + 2025 master schedule (Maxwell)",
+      "value": "One practice a week, Saturday mornings from 8:00 at Lower Woodland 3-6 (2026).",
+      "detail": "2026: 41 labeled AA practices, 38 on Saturdays, all four Lower Woodland fields at 8am. 2025 (when games were Saturdays): practices were Friday evenings, 1-1.5 hours, at LW, B F Day, Ross and Bitter Lake.",
+      "source": "2026 60 ft schedule; 2025 master schedule; John 2026-11-05 (2026 pattern continues)",
       "checked": "2026-11-05"
      },
      "preseason": {
@@ -193,7 +194,7 @@
       "checked": "2026-11-05"
      },
      "springBreak": {
-      "value": "No regular games during Seattle Public Schools spring break week (April 12-16, 2027). AA plays Fri/Sat, so the Friday that ends the break is the question: 2026's Friday Apr 17 games were thinned out (the coordinator gave fields back; Maxwell's sheet shows 2 games, though Sports Connect still lists all 4), and in 2025 AA games stayed on through the break.",
+      "value": "No regular games during Seattle Public Schools spring break week (April 12-16, 2027). With Friday games, the question is Fri Apr 16, the last day of the break: in 2026 that Friday's games were thinned out (the coordinator gave fields back; Maxwell's sheet shows 2 games, though Sports Connect still lists all 4).",
       "status": "planned, not yet on the website",
       "source": "2026-27 Season Proposed Dates sheet (SPS break Apr 12-16, 2027: reduce games and practices); 2026 schedule (Fri 4/17: 2 AA games); Division Heads chat (AA coordinator gave back Friday 4/17 fields); Sports Connect schedules (data/schedules/sports-connect-2026.json + sports-connect-archived.json, pulled 2026-11-05) (2026 Fri Apr 17: 4 games listed; 2025: 4 games in break week and 5 the Saturday before)",
       "checked": "2026-11-05"
