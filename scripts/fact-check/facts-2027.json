@@ -1808,10 +1808,9 @@
      },
      "status": "current",
      "fee": {
-      "value": 275,
-      "status": "MISMATCH in Sports Connect",
-      "note": "Board approved $275; Sports Connect and the registration page charge $290 (6 softball AAA registrations at $290 as of the 2026-11-05 export).",
-      "source": "board decision: Jason, 2026-11-03 (email '2027 Registration'); Sports Connect division export 2026-11-05 14:55 (sc-all) ($290); Registration Guide (softball table + notes) ($290)",
+      "value": 290,
+      "history": "The 2026-11-03 approval email listed $275; overridden at the last minute to $290, matching baseball AAA and Majors (John, 2026-11-05).",
+      "source": "John 2026-11-05; Sports Connect division export 2026-11-05 ($290); Registration Guide ($290)",
       "checked": "2026-11-05"
      },
      "leagueAge": {
@@ -1906,25 +1905,10 @@
      },
      "rulesPage": "softball-aaa-rules (Programs > softball)",
      "openQuestions": [
-      "Fee: fix Sports Connect and the registration page to $275 (board-approved) and decide on refunds for families charged $290",
       "Post-season: is the Tournament of Champions annual? Add to the Hub card?",
       "Hub card away fields: drop Northacres and Ballard Community Center (not on the 2026 schedule)?"
      ],
-     "conflicts": [
-      {
-       "field": "fee",
-       "sources": [
-        {
-         "says": "$275",
-         "source": "board decision: Jason, 2026-11-03 (email '2027 Registration')"
-        },
-        {
-         "says": "$290",
-         "source": "Sports Connect division export 2026-11-05 14:55 (sc-all); Registration Guide (softball table + notes)"
-        }
-       ]
-      }
-     ]
+     "conflicts": []
     },
     {
      "key": "majors",
@@ -1959,10 +1943,9 @@
      },
      "status": "current",
      "fee": {
-      "value": 285,
-      "status": "MISMATCH in Sports Connect",
-      "note": "Board approved $285; Sports Connect and the registration page charge $290 (no softball Majors registrations yet as of the 2026-11-05 export).",
-      "source": "board decision: Jason, 2026-11-03 (email '2027 Registration'); Sports Connect division export 2026-11-05 14:55 (sc-all) ($290); Registration Guide (softball table + notes) ($290)",
+      "value": 290,
+      "history": "The 2026-11-03 approval email listed $285; overridden at the last minute to $290, matching baseball AAA and Majors (John, 2026-11-05).",
+      "source": "John 2026-11-05; Sports Connect division export 2026-11-05 ($290); Registration Guide ($290)",
       "checked": "2026-11-05"
      },
      "leagueAge": {
@@ -2050,24 +2033,8 @@
       "checked": "2026-11-05"
      },
      "rulesPage": "softball-majors-rules (Programs > softball)",
-     "openQuestions": [
-      "Fee: fix Sports Connect and the registration page to $285 (board-approved) before anyone registers at $290"
-     ],
-     "conflicts": [
-      {
-       "field": "fee",
-       "sources": [
-        {
-         "says": "$285",
-         "source": "board decision: Jason, 2026-11-03 (email '2027 Registration')"
-        },
-        {
-         "says": "$290",
-         "source": "Sports Connect division export 2026-11-05 14:55 (sc-all); Registration Guide (softball table + notes)"
-        }
-       ]
-      }
-     ]
+     "openQuestions": [],
+     "conflicts": []
     },
     {
      "key": "juniors",
