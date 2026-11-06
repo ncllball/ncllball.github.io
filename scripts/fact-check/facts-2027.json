@@ -115,14 +115,14 @@
       "checked": "2026-11-05"
      },
      "springBreak": {
-      "value": "Tee Ball has kept playing through Seattle Public Schools spring break: Saturday games on both weekends around the break in 2025 and 2026.",
-      "status": "history; same pattern as A and Kindy (teams play when they have the players)",
-      "source": "Sports Connect schedules (2026 BB26TBALL-KCP; 2025 Tee Ball and Kindy Games/Practices, archived), Tee Ball program rows only (2026: 6 games Apr 11-18; 2025: 4 games and 4 practices in the break window)",
+      "value": "Tee Ball plays through spring breaks: games stay scheduled and happen when teams have enough players, and teams can practice through the break if they're around.",
+      "status": "practice since 2025",
+      "source": "Kindergarten Coach Pitch Notes (coordinator's notes, Drive rebuild/Coaches/Tee Ball-Kindy Coaches Meeting) (covers Tee Ball and Kindy scheduling); Tee Ball Division Meeting Spring 2024 (coaches' meeting doc, Drive rebuild/Coach Orientation) ('You can practice through Spring Break if your team is around'); Sports Connect 2025-2026 (games on the break weekends)",
       "checked": "2026-11-05"
      },
      "playoffs": {
-      "value": "None: no score is kept.",
-      "source": "Baseball Hub Tee Ball card ('No score is kept')",
+      "value": "None: no score is kept; the season ends with team parties organized by each team's volunteers.",
+      "source": "Baseball Hub Tee Ball card; Tee Ball Division Meeting Spring 2024 (coaches' meeting doc, Drive rebuild/Coach Orientation) (volunteer jobs include the team party)",
       "checked": "2026-11-05"
      },
      "fields": {
@@ -141,8 +141,9 @@
      },
      "format": {
       "value": "tee only, with a safety ball; no pitching, walks or strikeouts (players swing until the ball is in play); no outs; six players bat each half-inning; games run 60 minutes or 3 innings; no score kept",
-      "source": "Baseball Hub Tee Ball card (Game Format)",
-      "checked": "2026-11-05"
+      "source": "Baseball Hub Tee Ball card (Game Format); Tee Ball Division Meeting Spring 2024 (coaches' meeting doc, Drive rebuild/Coach Orientation) (Tee Ball Rules)",
+      "checked": "2026-11-05",
+      "history": "2024 coaches' meeting rules: games 1 hour (about 4 innings), no new inning after 45 minutes, each inning starts with the bases loaded, every hit is a single, outs don't count, the full lineup bats each inning and the last batter is a 'home run hitter' who clears the bases. The current Hub card says six batters each half-inning and 60 minutes or 3 innings."
      },
      "umpires": {
       "value": "None: Tee Ball has no umpires.",
@@ -156,8 +157,7 @@
       "checked": "2026-11-05"
      },
      "openQuestions": [
-      "Spring break 2027: keep playing through it like 2025-2026?",
-      "Start dates: practices Mon Mar 29 and games Sat Apr 3 are both 'Needs confirmation' on the dates sheet (Catholic schools' break)"
+      "Start dates: practices Mon Mar 29 and games Sat Apr 3 are 'Needs confirmation' on the dates sheet (Catholic schools' break)"
      ],
      "conflicts": []
     },
@@ -274,15 +274,14 @@
       "checked": "2026-11-05"
      },
      "springBreak": {
-      "value": "Kindy has kept playing through Seattle Public Schools spring break: Saturday games on both weekends around the break in 2025 and 2026.",
-      "status": "history; same pattern as A (teams play when they have the players)",
-      "source": "Sports Connect schedules (2026 BB26TBALL-KCP + BB26KCP-4:30 Practice Slot; 2025 Tee Ball and Kindy Games/Practices, archived), Kindy program rows only (2026: 6 Kindy games Apr 11-18; 2025: 7 games and 8 practices in the break window)",
+      "value": "Kindy plays through spring breaks: games stay scheduled over the SPS and private-school breaks and are canceled only if a team can't field enough (5-6 players is enough), and teams can practice through the break if they're around.",
+      "status": "practice since 2025, recommended by the coordinator",
+      "source": "Kindergarten Coach Pitch Notes (coordinator's notes, Drive rebuild/Coaches/Tee Ball-Kindy Coaches Meeting) ('Recommend scheduling the games over the Spring Breaks… Most games actually happened'); Kindy Coach Pitch Division Meeting Spring 2026 (coaches' meeting doc, Drive Coaches/Tee Ball-Kindy Coaches Meeting) ('You can practice through Spring Break if your team is around'); Sports Connect 2025-2026 (games on the break weekends)",
       "checked": "2026-11-05"
      },
      "playoffs": {
-      "value": null,
-      "note": "Not documented; no Kindy playoff games in the 2025 or 2026 schedules.",
-      "source": "Sports Connect schedules (2026 BB26TBALL-KCP + BB26KCP-4:30 Practice Slot; 2025 Tee Ball and Kindy Games/Practices, archived), Kindy program rows only; Outline: NCLL Baseball - Kindy (Kindergarten Coach Pitch) Division Rules (G9)",
+      "value": "None: no playoff games in the 2025 or 2026 schedules; the season ends with team parties organized by each team's volunteers.",
+      "source": "Sports Connect 2025-2026; Kindy Coach Pitch Division Meeting Spring 2026 (coaches' meeting doc, Drive Coaches/Tee Ball-Kindy Coaches Meeting) (volunteer jobs include the team party)",
       "checked": "2026-11-05"
      },
      "fields": {
@@ -297,12 +296,13 @@
        "away": "none: no interleague at Kindy"
       },
       "source": "Registration Guide Step 2(a) + footnote 2; Baseball Hub Kindy card; Sports Connect schedules (2026 BB26TBALL-KCP + BB26KCP-4:30 Practice Slot; 2025 Tee Ball and Kindy Games/Practices, archived), Kindy program rows only; Outline: NCLL Baseball - Kindy (Kindergarten Coach Pitch) Division Rules (G5a, G6)",
-      "checked": "2026-11-05"
+      "checked": "2026-11-05",
+      "note": "Kindy uses a 45-ft base layout and 35-ft pitching distance on the Tee Ball field."
      },
      "format": {
-      "value": "coaches pitch with a safety ball, with a tee as a fallback; real outs; rules adapt through the season; score is kept",
-      "note": "Innings or time limit, how many pitches before the tee, and umpiring aren't written down anywhere (rules doc open items).",
-      "source": "Baseball Hub Kindy card; Outline: NCLL Baseball - Kindy (Kindergarten Coach Pitch) Division Rules (B3, C1; 'Kindy keeps score', John 2026-11-01)",
+      "value": "coaches pitch to their own team from one knee, up to about 6 pitches (kid dependent), then the ball goes on the tee; everyone bats each half-inning; no walks, no strikeouts, no bunts or half-swings; a ball must go 10 feet and stay fair for runners to advance; runners can be called out but outs aren't counted; no stealing, leading off or sliding; up to 11 fielders (max 5 outfielders), no catcher (the pitcher covers home), positions rotate; soft tee-ball safety balls; 45-ft bases, 35-ft pitching distance; no new inning after 45 minutes",
+      "note": "Rules are a hybrid of tee ball and coach pitch and the coaches adapt them through the season.",
+      "source": "Kindy Coach Pitch Division Meeting Spring 2026 (coaches' meeting doc, Drive Coaches/Tee Ball-Kindy Coaches Meeting) (Kindergarten Coach Pitch Rules); Baseball Hub Kindy card",
       "checked": "2026-11-05"
      },
      "rulesPage": "baseball-kindy-rules (Programs > baseball)",
@@ -312,13 +312,35 @@
       "checked": "2026-11-05"
      },
      "openQuestions": [
-      "Game format: innings or a time limit (games sit in 75-minute slots), how outs work, max pitches before the tee",
-      "Umpires: does anyone umpire Kindy games (a coach, a parent, nobody)?",
-      "Playoffs or an end-of-season event: none in the schedules; confirm there isn't one",
-      "Spring break 2027: keep playing through it like 2025-2026?",
-      "Start dates: practices Sat Mar 27 (Easter weekend) and games Sat Apr 3 (Catholic break) are both 'Needs confirmation' on the dates sheet"
+      "Score: John said 11/01 that Kindy keeps score, but the 2026 coaches' meeting rules say no score is kept (see conflicts)",
+      "Start dates: practices Sat Mar 27 (Easter weekend) and games Sat Apr 3 (Catholic break) are 'Needs confirmation' on the dates sheet"
      ],
-     "conflicts": []
+     "conflicts": [
+      {
+       "field": "score",
+       "sources": [
+        {
+         "says": "score is kept",
+         "source": "John 2026-11-01 (Baseball Hub Kindy card and Kindy rules page G8 say 'Score is kept')"
+        },
+        {
+         "says": "no score is kept ('All players on base for the last at bat of the inning will score (no score is kept)')",
+         "source": "Kindy Coach Pitch Division Meeting Spring 2026 (coaches' meeting doc, Drive Coaches/Tee Ball-Kindy Coaches Meeting)"
+        }
+       ],
+       "note": "Needs John's call: was 11/01 a change for 2027, or should the card say no score?"
+      }
+     ],
+     "umpires": {
+      "value": "None: coaches run the field (on offense a coach pitches and another stands behind the batter; on defense coaches are in the field).",
+      "source": "Kindy Coach Pitch Division Meeting Spring 2026 (coaches' meeting doc, Drive Coaches/Tee Ball-Kindy Coaches Meeting) (Coaches)",
+      "checked": "2026-11-05"
+     },
+     "gameLength": {
+      "value": "No new inning after 45 minutes (games sit in 75-minute Saturday slots).",
+      "source": "Kindy Coach Pitch Division Meeting Spring 2026 (coaches' meeting doc, Drive Coaches/Tee Ball-Kindy Coaches Meeting); Sports Connect 2025-2026 slot times",
+      "checked": "2026-11-05"
+     }
     },
     {
      "key": "a",
