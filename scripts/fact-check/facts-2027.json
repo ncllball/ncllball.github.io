@@ -197,17 +197,17 @@
      },
      "practices": {
       "value": "About 1 a week in season, usually Monday, 1.5-2 hours, at Bitter Lake or Lower Woodland (some at Green Lake).",
-      "detail": "Once games start, Wednesday practices mostly disappear (games take those nights) and Monday practices stay. Weeknight practice slots start around 5:45 or 7:15. Saturday practices when a team has no game.",
-      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell) (2026: 25 labeled AAA practices, 14 Mon / 7 Wed, Bitter Lake most; 2025: 26, 24 Mon, mostly 1.5 hrs); 2025 AAA coordinator's in-season practice plan (chat)",
+      "detail": "Once games start, Wednesday practices mostly disappear (games take those nights) and Monday practices stay. From late April, makeup games get the Lower Woodland time first and practices move to Bitter Lake, about 1-2 per team (2026). A AAA practice coordinator collects requests on a sheet and splits open slots fairly (names drawn from a hat when needed). Saturday practices when a team has no game.",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell) (2026: 25 labeled AAA practices, 14 Mon / 7 Wed, Bitter Lake most; 2025: 26, 24 Mon, mostly 1.5 hrs); 2025 AAA coordinator's in-season practice plan (chat); 2026 AAA coaches chat (practice coordinator: 'only practice slots at Bitterlake from here on out', late April)",
       "checked": "2026-11-05"
      },
      "gameTimes": {
       "value": {
-       "weeknight": "5:45pm (Mon/Wed)",
-       "saturday": "2026: almost all at 2:00pm; 2025: spread from 9am to about 5pm"
+       "weeknight": "first pitch about 6:00-6:30pm (Mon/Wed), warm-ups 45 min before",
+       "saturday": "2026: almost all 2:30pm; 2025: spread from 9am to about 5pm"
       },
-      "note": "No new inning after 2 hours, no new batter after 2:15; weekday curfew no new inning after 8:30pm.",
-      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); Outline: AAA Division Rules (D2, D3)",
+      "note": "2026 first pitches: Mon 6:30 for 13 of 16 games; Wed 5:45-6:30 (mostly 6:00-6:30); Sat 2:30 for 24 of 27. No new inning after 2 hours, no new batter after 2:15; weekday curfew no new inning after 8:30pm. Corrected 2026-11-05: earlier values were the schedule's Warmup column (45 min before first pitch), not Game start.",
+      "source": "2026 60 ft schedule, Game start column; 2026 AAA coaches chat ('3 AAA BB games at 630 at LW tonight', VP of Baseball); 2025 master schedule; Outline: AAA Division Rules (D2, D3)",
       "checked": "2026-11-05"
      },
      "seasonShape": {
@@ -217,15 +217,15 @@
       "checked": "2026-11-05"
      },
      "springBreak": {
-      "value": "No regular games during Seattle Public Schools spring break week (April 12-16, 2027); fields stay open for practice.",
+      "value": "No regular games during Seattle Public Schools spring break week (April 12-16, 2027); fields stay open for optional practices and sandlot-style play.",
       "status": "planned, not yet on the website",
-      "source": "2026-27 Season Proposed Dates sheet (SPS break Apr 12-16, 2027); 2026 schedule: no AAA games Apr 12-18, 11 practices; 2025: 1 game that week and the coordinator flagged the SPS spring break practice night",
+      "source": "2026-27 Season Proposed Dates sheet (SPS break Apr 12-16, 2027); 2026 schedule: no AAA games Apr 12-18, 11 practices; 2025: 1 game that week and the coordinator flagged the SPS spring break practice night; 2026 AAA coaches chat (practice coordinator: field time for sandlot-style baseball over SPS spring break; Saturday 4/18 LW time blocked)",
       "checked": "2026-11-05"
      },
      "playoffs": {
       "value": "End-of-season AAA playoff bracket at Lower Woodland, starting about 10 days after the regular season (2026: May 26 to Jun 3), with a consolation side and a 3rd-place game, so every team plays at least twice.",
-      "detail": "2026: Tue 5/26 (2 games), Wed 5/27 (2), Fri 5/29 (1), Sat 5/30 (3), Mon 6/1 (2 consolation), Wed 6/3 championship at 6pm plus the 3rd-place game. Matchups were set as results came in; four first-round games suggest all 8 teams play. Seeding method not found.",
-      "source": "2026 60 ft schedule (13 AAA playoff rows); AAA playoff organizer's emails to the umpires-and-managers group, 2026-05-24 to 06-01 (John's personal inbox, via Tower T-56)",
+      "detail": "2026: Tue 5/26 (2 games), Wed 5/27 (2), Fri 5/29 (1), Sat 5/30 (3), Mon 6/1 (2 consolation), Wed 6/3 championship at 6pm plus the 3rd-place game. Matchups were set as results came in; four first-round games suggest all 8 teams play. Seeding method not found. Seeding is by win percentage in league games, as recorded in GameChanger (2026 AAA coordinator). In playoffs every player plays at least 3 innings in the field, including 1 in the infield (6-inning game).",
+      "source": "2026 60 ft schedule (13 AAA playoff rows); AAA playoff organizer's emails to the umpires-and-managers group, 2026-05-24 to 06-01 (John's personal inbox, via Tower T-56); 2026 AAA coaches chat (coordinator's bracket and seeding posts)",
       "checked": "2026-11-05"
      },
      "fields": {
@@ -388,7 +388,7 @@
      "conflicts": [],
      "preseason": {
       "value": "Practice only from about Mar 2 until the first games around Mar 20 (2026: Mar 2 to Mar 21; 2025: Mar 1 to Mar 22).",
-      "detail": "Lower Woodland 3-6 weeknights 5:45-9pm and Saturdays, shared with AAA and softball; the Majors coordinator splits the slots in the coaches' chat. Free February ramp-up clinics for AAA/Majors players (10-12) come before team practices. First team practices are weeknights around 5pm (2025: Tue Mar 4, 5pm; a Thu practice around 5:30).",
+      "detail": "Lower Woodland 3-6 weeknights (permits 5:45-9pm) and Saturdays, shared with AAA and softball; the Majors coordinator splits the slots in the coaches' chat. Free February ramp-up clinics for AAA/Majors players (10-12) come before team practices. First team practices are weeknights around 5pm (2025: Tue Mar 4, 5pm; a Thu practice around 5:30).",
       "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 and 2026 Majors coaches chats; 2025 Proposed Dates sheet; Outline: Free February announcement; coaches' email (John's inbox), 2025-03",
       "checked": "2026-11-05"
      },
@@ -400,11 +400,11 @@
      },
      "gameTimes": {
       "value": {
-       "weeknight": "5:45 or 6:00pm (Tue/Thu)",
-       "saturday": "late morning or afternoon (2026: mostly 11:00am; 2025: 10am-4pm)"
+       "weeknight": "first pitch about 6:30pm (Tue/Thu), warm-ups 45 min before",
+       "saturday": "2026: mostly 11:30am, some 12:30"
       },
-      "note": "Slots are 2.5 hours; NCLL game time limit is 2 hours or 6 innings. Saturday Majors games go later in the day so wet fields have time to dry.",
-      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 and 2026 Majors coaches chats; 2025 scheduling chat (Tyler: Majors BB 11am and later)",
+      "note": "2026 first pitches: Tue 6:30 for 20 of 22 games; Thu 5:45-6:30 (mostly 6:30); Sat 11:30 for 17 of 27. Slots are 2.5 hours. Saturday Majors games go later in the day so wet fields have time to dry. Corrected 2026-11-05: earlier values were the schedule's Warmup column (45 min before first pitch), not Game start.",
+      "source": "2026 60 ft schedule, Game start column (Maxwell); 2025 scheduling chat (Tyler: Majors BB 11am and later)",
       "checked": "2026-11-05"
      },
      "teams": {
