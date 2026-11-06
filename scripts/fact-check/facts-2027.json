@@ -51,18 +51,167 @@
      "label": "A",
      "aliases": [
       "A",
-      "A Baseball"
+      "A Baseball",
+      "Baseball A",
+      "A - Coach Pitch"
      ],
-     "fee": 215,
-     "leagueAge": "7-8",
-     "born": {
-      "from": "2018-09-01",
-      "to": "2020-08-31"
-     },
-     "cap": 104,
-     "scClose": "2027-05-01",
+     "status": "current",
      "scDivisionId": 81348477,
-     "teamAssignment": "early March"
+     "fee": {
+      "value": 215,
+      "source": "board decision: Jason, 2026-11-03 (email); Sports Connect price matches",
+      "checked": "2026-11-05"
+     },
+     "leagueAge": {
+      "value": "7-8",
+      "note": "7's and 8's; 6's with a year of Tee Ball are welcome",
+      "source": "Registration Guide Step 2(a) + footnote 3; Baseball Hub A card",
+      "checked": "2026-11-05"
+     },
+     "born": {
+      "value": {
+       "from": "2018-09-01",
+       "to": "2020-08-31"
+      },
+      "source": "Sports Connect division (maxAge/minAge)",
+      "checked": "2026-11-05"
+     },
+     "cap": {
+      "value": 104,
+      "source": "Sports Connect maxPlayers; Cole's cap answer 2026-11-03 (A 104)",
+      "checked": "2026-11-05"
+     },
+     "scClose": {
+      "value": "2027-05-01",
+      "source": "Sports Connect closeRegistration",
+      "checked": "2026-11-05"
+     },
+     "registerBy": {
+      "value": "2027-01-31",
+      "source": "Registration Guide (please register by Sunday, January 31)",
+      "checked": "2026-11-05"
+     },
+     "teams": {
+      "value": 8,
+      "note": "8 teams in 2026",
+      "source": "Sports Connect BB26A Games (8 team labels)",
+      "checked": "2026-11-05"
+     },
+     "placement": {
+      "value": "placed, no assessment or draft",
+      "detail": "No assessments or draft. Coach and teammate requests are optional and not guaranteed, but placement uses them first, then siblings, then school. Teams are kept even so games stay fun.",
+      "source": "Registration Guide Step 2(a) + footnote 3; Baseball Hub A card",
+      "checked": "2026-11-05"
+     },
+     "teamAssignment": {
+      "value": "early March",
+      "note": "2026: A rosters went out the night of Mar 2",
+      "source": "Registration Guide Step 2(a) + footnote 3; Baseball Hub A card; Outline: NCLL Baseball - A Division Rules (G5)",
+      "checked": "2026-11-05"
+     },
+     "practiceStarts": {
+      "value": "around Mar 13",
+      "status": "proposed",
+      "note": "2026: first practices Sat Mar 14",
+      "source": "2026-27 Season Proposed Dates sheet (Practices start - BB A: Sat 3/13/27, Proposed); Registration Guide Step 2(a) + footnote 3; Baseball Hub A card; 2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games",
+      "checked": "2026-11-05"
+     },
+     "gamesStart": {
+      "value": "around Mar 27",
+      "status": "proposed",
+      "note": "Sat Mar 27, 2027 is Easter weekend and inside the Catholic schools' spring break window; the sheet marks it 'Needs confirmation'. 2026: first games Sat Mar 28.",
+      "source": "2026-27 Season Proposed Dates sheet (Games start - BB A: Sat 3/27/27, Needs confirmation); Registration Guide Step 2(a) + footnote 3; Baseball Hub A card; Nov 4 coaches email Key dates (Mar 27, A & AA)",
+      "checked": "2026-11-05"
+     },
+     "seasonEnds": {
+      "value": "mid-June",
+      "note": "2026 last games Sat Jun 6; 2025 Sat Jun 14",
+      "source": "Registration Guide Step 2(a) + footnote 3; Baseball Hub A card; 2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games",
+      "checked": "2026-11-05"
+     },
+     "days": {
+      "value": [
+       "Sat (games)",
+       "one weeknight (practice)"
+      ],
+      "detail": "Saturday games plus one weeknight practice per team, 5-7pm (2026: Mon, Thu or Fri; 2025: mostly Mon or Thu).",
+      "source": "Baseball Hub A card ('One weeknight practice; Saturday game'); 2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games",
+      "checked": "2026-11-05"
+     },
+     "eventsPerWeek": {
+      "value": "2-3",
+      "detail": "In practice 2 a week: a Saturday game and one weeknight practice. The age chart says 2-3 and 'Any/Sa'.",
+      "source": "Registration Guide Step 2(a) + footnote 3; Baseball Hub A card; 2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games",
+      "checked": "2026-11-05"
+     },
+     "gameTimes": {
+      "value": {
+       "saturday": "slots at 9am, 11am, 1pm and 3pm (2026 and 2025)"
+      },
+      "note": "75-minute games inside 2-hour slots (each team gets 10 minutes to warm up).",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games; Outline: NCLL Baseball - A Division Rules (D2, F7)",
+      "checked": "2026-11-05"
+     },
+     "practices": {
+      "value": "One weeknight practice a week, 5-7pm, at B F Day or Lower Ross.",
+      "detail": "2026: 63 labeled A practices (Thu 23, Mon 20, Fri 19), almost all 5-7pm. 2025: Mon 32, Thu 46.",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games",
+      "checked": "2026-11-05"
+     },
+     "preseason": {
+      "value": "About two weeks of practice before games (2026: practices from Mar 14, first games Mar 28).",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games",
+      "checked": "2026-11-05"
+     },
+     "seasonShape": {
+      "value": "Same rhythm all season: one weeknight practice and a Saturday game from late March to early or mid-June.",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games",
+      "checked": "2026-11-05"
+     },
+     "springBreak": {
+      "value": "A has kept its schedule through Seattle Public Schools spring break: in 2026 there were Saturday games on Apr 11 and Apr 18 and weekday practices during the break week; 2025 had 16 A games and practices that week.",
+      "status": "history; the 2027 dates sheet says to reduce games and practices that week (Apr 12-16), not yet decided for A",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games (Sports Connect: 3 games each on Sat Apr 11 and Apr 18, 2026); 2026-27 Season Proposed Dates sheet",
+      "checked": "2026-11-05"
+     },
+     "playoffs": {
+      "value": "None: no score is kept and there are no standings or playoffs.",
+      "source": "Outline: NCLL Baseball - A Division Rules (F6, G8, G9); Baseball Hub A card ('No score is kept')",
+      "checked": "2026-11-05"
+     },
+     "fields": {
+      "value": {
+       "games": [
+        "B F Day",
+        "Lower Ross"
+       ],
+       "practice": [
+        "B F Day",
+        "Lower Ross"
+       ],
+       "away": "none: no interleague at A"
+      },
+      "note": "2025 also had a few at Lower Woodland and View Ridge.",
+      "source": "Registration Guide Step 2(a) + footnote 3; Baseball Hub A card; 2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games; Outline: NCLL Baseball - A Division Rules (G6)",
+      "checked": "2026-11-05"
+     },
+     "format": {
+      "value": "a blend of machine pitch and coach pitch (can vary game to game and batter to batter); RIF5 safety hardball; three swinging strikes is an out, no walks, foul tips don't count as strike three; an inning ends at 3 outs or 5 runs; 75-minute games; real base running (doubles and triples count; take one base on an error as a courtesy); everyone plays infield and outfield; up to 10 fielders (4 outfielders); no score kept",
+      "source": "Baseball Hub A card (Game Format); Outline: NCLL Baseball - A Division Rules (B3, C1 resolved 2026-11-01, D2, D5, D6a, D16, E3, E4, F6)",
+      "checked": "2026-11-05"
+     },
+     "rulesPage": "baseball-a-rules (Programs > baseball)",
+     "umpires": {
+      "value": "No plate umpire: the fielding team provides one field umpire (a coach or approved parent) near second base, and the pitching coach tracks strikes.",
+      "source": "Outline: NCLL Baseball - A Division Rules (F2)",
+      "checked": "2026-11-05"
+     },
+     "familyHelp": {
+      "value": "A runs on parents who coach, umpire (one field umpire from the fielding team each half-inning) and help out.",
+      "source": "Baseball Hub A card (Volunteer); Outline: NCLL Baseball - A Division Rules (F2)",
+      "checked": "2026-11-05"
+     },
+     "conflicts": []
     },
     {
      "key": "aa",
