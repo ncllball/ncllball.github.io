@@ -87,24 +87,176 @@
      "label": "AAA",
      "aliases": [
       "AAA",
-      "AAA Baseball"
+      "AAA Baseball",
+      "Baseball AAA"
      ],
-     "fee": 290,
-     "leagueAge": "9-11",
-     "born": {
-      "from": "2015-09-01",
-      "to": "2018-08-31"
-     },
-     "cap": 96,
-     "scClose": "2027-05-01",
+     "status": "current",
      "scDivisionId": 81348482,
-     "teamAssignment": "Feb 13-20",
+     "fee": {
+      "value": 290,
+      "source": "board decision: Jason, 2026-11-03 (email); Sports Connect price matches",
+      "checked": "2026-11-05"
+     },
+     "leagueAge": {
+      "value": "9-11",
+      "note": "10's and 11's, plus 9's who assess in; skilled 11's (and a few returning All-Star 10's) may be drafted to Majors",
+      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card",
+      "checked": "2026-11-05"
+     },
+     "born": {
+      "value": {
+       "from": "2015-09-01",
+       "to": "2018-08-31"
+      },
+      "source": "Sports Connect division (maxAge/minAge)",
+      "checked": "2026-11-05"
+     },
+     "cap": {
+      "value": 96,
+      "source": "Sports Connect maxPlayers",
+      "checked": "2026-11-05"
+     },
+     "scClose": {
+      "value": "2027-05-01",
+      "source": "Sports Connect closeRegistration",
+      "checked": "2026-11-05"
+     },
+     "registerBy": {
+      "value": "2027-01-17",
+      "source": "Registration Guide (AAA/Majors register-by)",
+      "checked": "2026-11-05"
+     },
+     "teams": {
+      "value": 8,
+      "note": "8 teams in 2026 (AAA 1-8 on the schedule), 7 in 2025; cap 96 = 8 teams of 12",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 scheduling chat (BB AAA - 7)",
+      "checked": "2026-11-05"
+     },
+     "placement": {
+      "value": "assessment + draft",
+      "detail": "Assessments required, around Sat 2027-01-23, no make-up date. Registering doesn't guarantee a spot: 9's fill remaining roster spots by assessment score, with eligibility finalized in late January; 9's not drafted to AAA play AA. Coaches draft from the scores; order drawn from a hat; coaches' kids placed by score. Siblings: a team that drafts one sibling gets the other with its next pick. Highly skilled 8's are placed here only rarely, if roster needs dictate.",
+      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; John 2026-11-05 (siblings rule same as Majors)",
+      "checked": "2026-11-05"
+     },
      "siblings": {
       "value": "Siblings stay together: a team that drafts one sibling gets the other with its next pick.",
       "note": "Applies when both siblings are in AAA (same rule as Majors).",
       "source": "John (registrar), 2026-11-05: AAA works the same way as the Majors draft rule",
       "checked": "2026-11-05"
-     }
+     },
+     "callUps": {
+      "value": "The top 15-20 AAA players form the Majors call-up pool. AAA teams can call up AA players when short.",
+      "note": "NCLL vs NCLL games use call-ups from the division below only; interleague games can also borrow pool players from other AAA teams. The player's parents and both coaches must agree, and a call-up pitches only if agreed in advance (pitch-count rules apply).",
+      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; VP of Baseball summary in the 2025 AAA coaches chat; Outline: AAA Division Rules (A3)",
+      "checked": "2026-11-05"
+     },
+     "teamAssignment": {
+      "value": "Feb 13-20",
+      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card",
+      "checked": "2026-11-05"
+     },
+     "practiceStarts": {
+      "value": "around Mar 1",
+      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; 2026-27 Season Proposed Dates (Mon Mar 1, 2027)",
+      "checked": "2026-11-05"
+     },
+     "gamesStart": {
+      "value": "around Mar 20",
+      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; 2026-27 Season Proposed Dates (Sat Mar 20, 2027)",
+      "checked": "2026-11-05"
+     },
+     "seasonEnds": {
+      "value": "early June",
+      "note": "regular season to about May 20, then playoffs into early June",
+      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; 2026 60 ft schedule + 2025 master schedule (Maxwell)",
+      "checked": "2026-11-05"
+     },
+     "days": {
+      "value": [
+       "Mon",
+       "Wed",
+       "Sat"
+      ],
+      "note": "planning guidance, set with District 8; final schedule after teams form",
+      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card",
+      "checked": "2026-11-05"
+     },
+     "eventsPerWeek": {
+      "value": "3-4",
+      "detail": "In season, usually 1-2 games (Mon/Wed nights, Sat) plus 1 weeknight practice, most often Monday.",
+      "source": "Registration Guide Step 2(a); 2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 and 2026 AAA coaches chats",
+      "checked": "2026-11-05"
+     },
+     "preseason": {
+      "value": "Practice only from about Mar 1 until the first games around Mar 20 (2026: Mar 21; 2025: Mar 22).",
+      "detail": "Weeknight slots at Lower Woodland (shared with Majors and softball, 10+ teams a night in March) plus Saturday morning slots; the AAA coordinator posts a practice-schedule sheet. 2026 ended preseason with a jamboree night of short games between AAA teams. Free February ramp-up clinics for AAA/Majors players come before team practices.",
+      "source": "2025 and 2026 AAA coaches chats; Outline: Free February announcement",
+      "checked": "2026-11-05"
+     },
+     "practices": {
+      "value": "About 1 a week in season, usually Monday, 1.5-2 hours, at Bitter Lake or Lower Woodland (some at Green Lake).",
+      "detail": "Once games start, Wednesday practices mostly disappear (games take those nights) and Monday practices stay. Weeknight practice slots start around 5:45 or 7:15. Saturday practices when a team has no game.",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell) (2026: 25 labeled AAA practices, 14 Mon / 7 Wed, Bitter Lake most; 2025: 26, 24 Mon, mostly 1.5 hrs); 2025 AAA coordinator's in-season practice plan (chat)",
+      "checked": "2026-11-05"
+     },
+     "gameTimes": {
+      "value": {
+       "weeknight": "5:45pm (Mon/Wed)",
+       "saturday": "2026: almost all at 2:00pm; 2025: spread from 9am to about 5pm"
+      },
+      "note": "No new inning after 2 hours, no new batter after 2:15; weekday curfew no new inning after 8:30pm.",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); Outline: AAA Division Rules (D2, D3)",
+      "checked": "2026-11-05"
+     },
+     "seasonShape": {
+      "value": "Games every week from late March to about May 20, with a weeknight practice most weeks all season; rainouts are made up on open Mon, Wed or Sat dates.",
+      "detail": "2026 Lower Woodland AAA games per week: 8-11 most weeks, none during SPS spring break. 2025 coordinator's makeup steps: compare both teams' open dates (Mon, Wed, Sat), agree with the other coach, check the permit list for an open field.",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 and 2026 AAA coaches chats",
+      "checked": "2026-11-05"
+     },
+     "springBreak": {
+      "value": "No regular games during Seattle Public Schools spring break week (April 12-16, 2027); fields stay open for practice.",
+      "status": "planned, not yet on the website",
+      "source": "2026-27 Season Proposed Dates sheet (SPS break Apr 12-16, 2027); 2026 schedule: no AAA games Apr 12-18, 11 practices; 2025: 1 game that week and the coordinator flagged the SPS spring break practice night",
+      "checked": "2026-11-05"
+     },
+     "playoffs": {
+      "value": "End-of-season AAA playoffs from late May into early June at Lower Woodland (2026: May 26 to Jun 3).",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell) (13 AAA playoff rows, 2026)",
+      "checked": "2026-11-05"
+     },
+     "fields": {
+      "value": {
+       "games": [
+        "The Cloverleaf (Lower Woodland 3-6)"
+       ],
+       "practice": [
+        "Bitter Lake",
+        "Lower Woodland 3-6",
+        "Green Lake"
+       ],
+       "away": "a few interleague games each season"
+      },
+      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; 2026 60 ft schedule + 2025 master schedule (Maxwell)",
+      "checked": "2026-11-05"
+     },
+     "format": {
+      "value": "full kid pitch; 46-ft mound, 60-ft bases; no new inning after 2 hrs; five-run limit per half-inning (some late-game exceptions); mercy 15 after 3 / 10 after 4 / 8 after 5; steals once the ball reaches the batter, no leadoffs, no delayed steals; everyone plays 9+ defensive outs; score kept, playoffs",
+      "source": "Baseball Hub AAA card (Game Format); Outline: AAA Division Rules (D2, D4, D7)",
+      "checked": "2026-11-05"
+     },
+     "rulesPage": "https://www.ncllball.com/Default.aspx?tabid=2252525",
+     "familyHelp": {
+      "value": "Families help run the season: the home team keeps score and stats for both teams in GameChanger (the away team brings a backup scorekeeper, required for interleague away games), a parent often handles getting the team's games on the umpire schedule, and coaches and parents prep wet fields.",
+      "source": "2025 and 2026 AAA coaches chats; John 2026-11-05 (umpire scheduling is often a parent volunteer's job)",
+      "checked": "2026-11-05"
+     },
+     "umpires": {
+      "value": "The league provides umpires for scheduled games; getting each game onto the umpire schedule (Stack Officials) is up to the team, often a parent volunteer.",
+      "source": "2025 and 2026 AAA coaches chats (Stack Officials invites, 2025); John 2026-11-05",
+      "checked": "2026-11-05"
+     },
+     "conflicts": []
     },
     {
      "key": "majors",
