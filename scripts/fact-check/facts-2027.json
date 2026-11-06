@@ -1388,26 +1388,135 @@
       "Seniors",
       "Seniors Baseball"
      ],
-     "fee": 305,
-     "leagueAge": "15-16",
-     "born": {
-      "from": "2010-09-01",
-      "to": "2012-08-31"
-     },
-     "cap": 20,
-     "scClose": "2027-06-25",
+     "status": "current (co-league)",
      "scDivisionId": 81348481,
-     "teamAssignment": "late April",
-     "history": {
-      "value": "No NCLL Seniors coach in 2025 or 2026; the 2026 board review lists Seniors as 'likely co-league'. In 2025 the RUG/NCLL Seniors All-Star co-league team reached the State championship game.",
-      "source": "Coaches -- Official Board Review sheets (2025, 2026); board group thread 2025-07-08",
+     "fee": {
+      "value": 305,
+      "source": "2027 Age Matrix: Baseball (final 2026-10-30) ($305 approved); Sports Connect price matches",
+      "checked": "2026-11-05"
+     },
+     "leagueAge": {
+      "value": "15-16",
+      "note": "Seniors-only ages for 2027 (Cole). Younger players play Intermediate or Juniors.",
+      "source": "Registration Guide (division row + Seniors footnote); 2027 Age Matrix: Baseball (final 2026-10-30); Senior rules page (D8 Senior supplement; NCLL rows) (A1)",
+      "checked": "2026-11-05"
+     },
+     "born": {
+      "value": {
+       "from": "2010-09-01",
+       "to": "2012-08-31"
+      },
+      "source": "Sports Connect division (maxAge/minAge); Registration Guide (division row + Seniors footnote)",
+      "checked": "2026-11-05"
+     },
+     "cap": {
+      "value": 20,
+      "source": "Sports Connect maxPlayers",
+      "checked": "2026-11-05"
+     },
+     "scClose": {
+      "value": "2027-06-25",
+      "note": "Registration stays open to June 25 for high school timing.",
+      "source": "Sports Connect closeRegistration; Baseball Hub Seniors card",
+      "checked": "2026-11-05"
+     },
+     "registration": {
+      "value": "A waitlist that stays open for high school timing; players are admitted in waitlist order. Sign up by the end of April, when teams form.",
+      "detail": "2026: the waitlist was converted to real registration in late April (registration email to families Apr 23 asked for sign-ups that week).",
+      "source": "Baseball Hub Seniors card; Registration Guide (division row + Seniors footnote); registrar mail 'Seniors baseball?' (President and former president, 2026-04-19 to 04-21); 'Seniors Baseball and Softball Registration Open!' family email 2026-04-23",
+      "checked": "2026-11-05"
+     },
+     "placement": {
+      "value": "co-league with nearby D8 leagues; no assessment or draft",
+      "detail": "NCLL usually doesn't have enough players for its own team. 2026: 9 NCLL players by Apr 21 (about half a team); partners worked out in late April through the D8 teen coordinator's tracking sheet. NCLL had no Seniors head coach of its own in 2025 or 2026.",
+      "source": "Baseball Hub Seniors card; Senior rules page (D8 Senior supplement; NCLL rows) (G1); registrar mail 'Seniors baseball?' (President and former president, 2026-04-19 to 04-21); Coaches -- Official Board Review sheets (2025, 2026)",
+      "checked": "2026-11-05"
+     },
+     "teamAssignment": {
+      "value": "late April",
+      "source": "Baseball Hub Seniors card; Senior rules page (D8 Senior supplement; NCLL rows); registrar mail 'Seniors baseball?' (President and former president, 2026-04-19 to 04-21)",
       "checked": "2026-11-05"
      },
      "gamesStart": {
       "value": "second week of May (usually)",
-      "source": "D8 Teen Baseball administrator's 'D8 Teenage Baseball Schedules' email to league presidents and schedulers, 2026-03-11 to 03-14 (John's personal Gmail); D8 sheets '2026 Juniors Baseball Schedules' (1LoA_MYMU_iIuaQNj7qs_TZKhSVZcQxf_DK6X2NiCBw4) and '2026 Intermediates Baseball Schedules' (1mxU16T_AjyOhtG34v6Wv_vaq_vEz614jccMQhfRuUuk) ('Seniors Scheduling is next... games for this division usually start the Second week of May')",
+      "source": "D8 Teen Baseball administrator's 'D8 Teenage Baseball Schedules' email, 2026-03-11 (John's personal Gmail) ('Seniors... usually start the Second week of May')",
       "checked": "2026-11-05"
-     }
+     },
+     "seasonEnds": {
+      "value": "late June",
+      "note": "Then the District tournament (Districts 7, 8 and 9 combined; began June 24 in 2026).",
+      "source": "Baseball Hub Seniors card; Senior rules page (D8 Senior supplement; NCLL rows)",
+      "checked": "2026-11-05"
+     },
+     "eventsPerWeek": {
+      "value": "2-3",
+      "source": "Registration Guide (division row + Seniors footnote); 2027 Age Matrix: Baseball (final 2026-10-30)",
+      "checked": "2026-11-05"
+     },
+     "days": {
+      "value": null,
+      "note": "Set with the partner league; 90-ft field access is limited.",
+      "source": "Senior rules page (D8 Senior supplement; NCLL rows); Registration Guide (division row + Seniors footnote)",
+      "checked": "2026-11-05"
+     },
+     "fields": {
+      "value": {
+       "practice2026": [
+        "Bitter Lake"
+       ],
+       "games": "set by the partner league"
+      },
+      "source": "Baseball Hub Seniors card; Senior rules page (D8 Senior supplement; NCLL rows)",
+      "checked": "2026-11-05"
+     },
+     "format": {
+      "value": "full kid pitch on a 90-ft field; 7-inning games, no new inning after 2 h 15 min; mercy 15 after 4, 10 after 5, 8 after 6; every player gets at least 9 defensive outs and an at-bat",
+      "source": "Baseball Hub Seniors card; Senior rules page (D8 Senior supplement; NCLL rows)",
+      "checked": "2026-11-05"
+     },
+     "postseason": {
+      "value": "District tournament (Districts 7, 8 and 9 combined) in late June; began June 24 in 2026.",
+      "source": "Baseball Hub Seniors card; Senior rules page (D8 Senior supplement; NCLL rows)",
+      "checked": "2026-11-05"
+     },
+     "allStars": {
+      "value": "Co-league Seniors All-Star team. 2025: the RUG-NCLL Seniors won the Washington State tournament (Asotin) and went to the West Region tournament in Oakland. 2026: the Seniors All-Stars were a co-league with Northwest Seattle (and RUG), organized by the D8 teen coordinator.",
+      "source": "family email 'NCLL Seniors Headed to Regionals in CA!' 2025-07-14; board group thread 2025-07-08; registrar mail 'Fwd: All Stars - Seniors' 2026-06-23; Senior rules page (D8 Senior supplement; NCLL rows)",
+      "checked": "2026-11-05"
+     },
+     "history": {
+      "value": "No NCLL Seniors head coach in 2025 or 2026 (the 2026 board review says 'likely co-league'). 2025 regular season and All-Stars: co-league with RUG. NCLL has a long history in Juniors and Seniors (a 2019 co-league Seniors team with Northwest also reached Regionals).",
+      "source": "Coaches -- Official Board Review sheets (2025, 2026); board group thread 2025-07-08; family email 2025-07-14",
+      "checked": "2026-11-05"
+     },
+     "rulesPage": "baseball-senior-rules (Programs > baseball)",
+     "familyHelp": {
+      "value": "Seniors runs on families who coach, keep score and help with the fields.",
+      "source": "Baseball Hub Seniors card (Volunteer)",
+      "checked": "2026-11-05"
+     },
+     "conflicts": [
+      {
+       "field": "battingOrder",
+       "sources": [
+        {
+         "says": "teams may bat nine, with a designated hitter",
+         "source": "Baseball Hub Seniors card (Game Format)"
+        },
+        {
+         "says": "not documented: continuous batting order vs bat nine with a DH is an open board decision",
+         "source": "Senior rules page (D8 Senior supplement; NCLL rows) (E1)"
+        }
+       ],
+       "note": "The Hub card states it as a rule; the rules page says it's undecided. In a co-league year the partner league's practice may decide it."
+      }
+     ],
+     "openQuestions": [
+      "2026 regular-season partner league(s): Ballard, Queen Anne or Northwest? (RUG may have had its own team)",
+      "2027 partner leagues (open since the age matrix)",
+      "Batting order: bat nine with a DH, or continuous? (see conflicts)",
+      "Umpires: provided by the partner league?"
+     ]
     }
    ]
   },
