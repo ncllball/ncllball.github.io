@@ -152,7 +152,7 @@
      },
      "teamAssignment": {
       "value": "Feb 13-20",
-      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card",
+      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; 2026-11-04 coaches email Key dates (Teams set, AAA/Majors/Juniors: Feb 13-20)",
       "checked": "2026-11-05"
      },
      "practiceStarts": {
@@ -163,7 +163,7 @@
      },
      "gamesStart": {
       "value": "around Mar 20",
-      "source": "2026-27 Season Proposed Dates sheet (Games start - BB AAA: Sat 3/20/27, status Proposed = 2026 date + 52 weeks); Registration Guide; Baseball Hub card",
+      "source": "2026-27 Season Proposed Dates sheet (Games start - BB AAA: Sat 3/20/27, status Proposed = 2026 date + 52 weeks); Registration Guide; Baseball Hub card; announced to baseball coaches as 'Games start: Mar 20 (AAA and up)' under Key dates (estimated) in the 2026-11-04 Sports Connect email '2027 Baseball: Register, Board Roles, Key Dates' (written from the same proposed-dates sheet)",
       "checked": "2026-11-05",
       "status": "proposed"
      },
@@ -223,8 +223,9 @@
       "checked": "2026-11-05"
      },
      "playoffs": {
-      "value": "End-of-season AAA playoffs from late May into early June at Lower Woodland (2026: May 26 to Jun 3).",
-      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell) (13 AAA playoff rows, 2026)",
+      "value": "End-of-season AAA playoff bracket at Lower Woodland, starting about 10 days after the regular season (2026: May 26 to Jun 3), with a consolation side and a 3rd-place game, so every team plays at least twice.",
+      "detail": "2026: Tue 5/26 (2 games), Wed 5/27 (2), Fri 5/29 (1), Sat 5/30 (3), Mon 6/1 (2 consolation), Wed 6/3 championship at 6pm plus the 3rd-place game. Matchups were set as results came in; four first-round games suggest all 8 teams play. Seeding method not found.",
+      "source": "2026 60 ft schedule (13 AAA playoff rows); AAA playoff organizer's emails to the umpires-and-managers group, 2026-05-24 to 06-01 (John's personal inbox, via Tower T-56)",
       "checked": "2026-11-05"
      },
      "fields": {
