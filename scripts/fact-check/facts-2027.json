@@ -139,9 +139,9 @@
       "checked": "2026-11-05"
      },
      "eventsPerWeek": {
-      "value": "2-3",
-      "detail": "In practice 2 a week: a Saturday game and one weeknight practice. The age chart says 2-3 and 'Any/Sa'.",
-      "source": "Registration Guide Step 2(a) + footnote 3; Baseball Hub A card; 2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games",
+      "value": "2",
+      "detail": "A Saturday game and one weeknight practice.",
+      "source": "John 2026-11-05 (age chart changed from 2-3 to 2); 2025-2026 schedules",
       "checked": "2026-11-05"
      },
      "gameTimes": {
@@ -169,9 +169,9 @@
       "checked": "2026-11-05"
      },
      "springBreak": {
-      "value": "A has kept its schedule through Seattle Public Schools spring break: in 2026 there were Saturday games on Apr 11 and Apr 18 and weekday practices during the break week; 2025 had 16 A games and practices that week.",
-      "status": "history; the 2027 dates sheet says to reduce games and practices that week (Apr 12-16), not yet decided for A",
-      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games (Sports Connect: 3 games each on Sat Apr 11 and Apr 18, 2026); 2026-27 Season Proposed Dates sheet",
+      "value": "A plays through Seattle Public Schools spring break when teams have enough players: in 2026 there were Saturday games on Apr 11 and Apr 18 and weekday practices during the break week; 2025 had 16 A games and practices that week.",
+      "status": "John 2026-11-05: they had the players, so they played",
+      "source": "2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect BB26A Games (Sports Connect: 3 games each on Sat Apr 11 and Apr 18, 2026); 2026-27 Season Proposed Dates sheet; John 2026-11-05",
       "checked": "2026-11-05"
      },
      "playoffs": {
