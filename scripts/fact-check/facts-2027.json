@@ -1083,16 +1083,142 @@
       "Intermediate Baseball",
       "Intermediate 50/70"
      ],
-     "fee": 295,
-     "leagueAge": "13",
-     "born": {
-      "from": "2013-09-01",
-      "to": "2014-08-31"
-     },
-     "cap": 18,
-     "scClose": "2027-05-01",
+     "status": "new for 2027, not guaranteed",
      "scDivisionId": 81348479,
-     "teamAssignment": "early March"
+     "fee": {
+      "value": 295,
+      "source": "2027 Age Matrix: Baseball (Cole's comments 2026-10-28, resolved 10-30; Cole email 2026-10-29) ($295 approved); Sports Connect price matches",
+      "checked": "2026-11-05"
+     },
+     "leagueAge": {
+      "value": "13",
+      "note": "13's only for 2027. Little League and District 8 allow 11-13, but Cole expects nearly every 11 and 12 to pick Majors.",
+      "source": "2027 Age Matrix: Baseball (Cole's comments 2026-10-28, resolved 10-30; Cole email 2026-10-29); Registration Guide (division row + footnote 7); Intermediate rules page (D8 Intermediate Baseball Supplement rev. 2025-03-22) (A1)",
+      "checked": "2026-11-05"
+     },
+     "born": {
+      "value": {
+       "from": "2013-09-01",
+       "to": "2014-08-31"
+      },
+      "source": "Sports Connect division (maxAge/minAge); Registration Guide (division row + footnote 7)",
+      "checked": "2026-11-05"
+     },
+     "cap": {
+      "value": 18,
+      "note": "18, then a waitlist",
+      "source": "Cole email 2026-10-29 ('We can set Intermediates at 18 and then go to Waitlist'); Sports Connect maxPlayers",
+      "checked": "2026-11-05"
+     },
+     "scClose": {
+      "value": "2027-05-01",
+      "source": "Sports Connect closeRegistration",
+      "checked": "2026-11-05"
+     },
+     "registerBy": {
+      "value": "2027-01-31",
+      "source": "Registration Guide (please register by Sunday, January 31)",
+      "checked": "2026-11-05"
+     },
+     "guarantee": {
+      "value": "Not guaranteed: it needs a coach, a 50/70 field and enough players, and NCLL will also look at co-leaguing. If it doesn't come together, the player moves to Juniors or gets a refund (family's choice).",
+      "source": "Registration Guide (division row + footnote 7); Baseball Hub Intermediate card; 2027 Age Matrix: Baseball (Cole's comments 2026-10-28, resolved 10-30; Cole email 2026-10-29)",
+      "checked": "2026-11-05"
+     },
+     "placement": {
+      "value": "sign-up order, no assessment or draft",
+      "detail": "Spots go in sign-up order up to 18, then a waitlist.",
+      "source": "Baseball Hub Intermediate card; Intermediate rules page (D8 Intermediate Baseball Supplement rev. 2025-03-22) (G1)",
+      "checked": "2026-11-05"
+     },
+     "teamAssignment": {
+      "value": "early March",
+      "source": "Registration Guide (division row + footnote 7); 2027 Age Matrix: Baseball (Cole's comments 2026-10-28, resolved 10-30; Cole email 2026-10-29)",
+      "checked": "2026-11-05"
+     },
+     "practiceStarts": {
+      "value": "mid-March",
+      "status": "planning guidance",
+      "note": "No Intermediate rows on the 2026-27 dates sheet yet.",
+      "source": "Registration Guide (division row + footnote 7); 2027 Age Matrix: Baseball (Cole's comments 2026-10-28, resolved 10-30; Cole email 2026-10-29)",
+      "checked": "2026-11-05"
+     },
+     "gamesStart": {
+      "value": "late March",
+      "status": "planning guidance",
+      "source": "Registration Guide (division row + footnote 7); 2027 Age Matrix: Baseball (Cole's comments 2026-10-28, resolved 10-30; Cole email 2026-10-29)",
+      "checked": "2026-11-05"
+     },
+     "seasonEnds": {
+      "value": "mid-June",
+      "status": "planning guidance",
+      "source": "Registration Guide (division row + footnote 7); 2027 Age Matrix: Baseball (Cole's comments 2026-10-28, resolved 10-30; Cole email 2026-10-29)",
+      "checked": "2026-11-05"
+     },
+     "eventsPerWeek": {
+      "value": "2-3",
+      "source": "Registration Guide (division row + footnote 7); 2027 Age Matrix: Baseball (Cole's comments 2026-10-28, resolved 10-30; Cole email 2026-10-29)",
+      "checked": "2026-11-05"
+     },
+     "days": {
+      "value": null,
+      "note": "TBD: depends on 50/70 permits and the District 8 interleague schedule.",
+      "source": "Registration Guide (division row + footnote 7) ('TBD'); 2027 Age Matrix: Baseball (Cole's comments 2026-10-28, resolved 10-30; Cole email 2026-10-29)",
+      "checked": "2026-11-05"
+     },
+     "fields": {
+      "value": {
+       "practice": [
+        "Lower Woodland"
+       ],
+       "games": [
+        "Robert Eagle Staff",
+        "Loyal Heights",
+        "Lower Woodland #1",
+        "Dahl"
+       ],
+       "note": "based on available 50/70 permits"
+      },
+      "source": "Registration Guide (division row + footnote 7) (footnote 7); Baseball Hub Intermediate card; 2027 Age Matrix: Baseball (Cole's comments 2026-10-28, resolved 10-30; Cole email 2026-10-29)",
+      "checked": "2026-11-05"
+     },
+     "format": {
+      "value": "full kid pitch on a 50/70 field (70-ft bases, 50-ft mound); leadoffs, balks and an on-deck batter; BBCOR or USABat bats up to 34 in.; Senior Division baseballs; 7-inning games, no new inning after 2 h 15 min (9:15 pm on school nights); mercy 15 after 4, 10 after 5, 8 after 6; no runs-per-inning cap; 9 defensive outs for everyone; 70 pitches max before May 1; score kept",
+      "source": "Intermediate rules page (D8 Intermediate Baseball Supplement rev. 2025-03-22); Baseball Hub Intermediate card",
+      "checked": "2026-11-05"
+     },
+     "opponents": {
+      "value": "District 8 interleague (Intermediate teams from other D8 leagues)",
+      "note": "Which leagues field Intermediate in 2027 isn't known yet. In 2026 RUG ran two Intermediate teams, and NESLL planned one.",
+      "source": "Intermediate rules page (D8 Intermediate Baseball Supplement rev. 2025-03-22); registrar mail 'Teen Ball Registration Numbers / Co-League Needs' (Jan-Feb 2026)",
+      "checked": "2026-11-05"
+     },
+     "history": {
+      "value": "2026 and earlier: NCLL had no in-house Intermediate. In 2026 NCLL sent 4-5 of its 13's to RUG's two Intermediate teams (co-league; District 8 allowed a four-league combination for the regular season) and fielded a Juniors team. Several NCLL 13's chose Juniors instead. Before that, NCLL fielded Intermediate only as a District 8 All-Star team.",
+      "source": "registrar mail 'Teen Ball Registration Numbers / Co-League Needs' (Baseball VP and RUG scheduler, 2026-01-31 to 02-04); 2027 Age Matrix background; Intermediate rules page (D8 Intermediate Baseball Supplement rev. 2025-03-22) (A2)",
+      "checked": "2026-11-05"
+     },
+     "allStars": {
+      "value": "District 8 Intermediate All-Star team if there's a coach and at least 12 interested players; D8 Tournament late June (2026: from June 23), then the state tournament for a district winner.",
+      "source": "Intermediate rules page (D8 Intermediate Baseball Supplement rev. 2025-03-22) (G9-G10); 2027 Age Matrix background",
+      "checked": "2026-11-05"
+     },
+     "rulesPage": "baseball-intermediate-rules (Programs > baseball)",
+     "familyHelp": {
+      "value": "Intermediate runs on families who coach, keep score and help with the fields.",
+      "source": "Baseball Hub Intermediate card (Volunteer)",
+      "checked": "2026-11-05"
+     },
+     "openQuestions": [
+      "Coach: who coaches the 2027 team (the division depends on it)?",
+      "Days and times: TBD until 50/70 permits and the D8 schedule are set",
+      "50/70 permits: are Eagle Staff, Loyal Heights, Lower Woodland #1 or Dahl actually permitted for 2027?",
+      "Interleague partners: which D8 leagues field Intermediate in 2027 (same open question as Juniors/Seniors)",
+      "Umpires: who umpires Intermediate games (league-provided like Majors, or the teams)?",
+      "End of season: is there a regular-season playoff? The Hub card says 'a District 8 tournament ends the season', but the D8 tournament is the All-Star tournament",
+      "Dates sheet: add Intermediate practice and game start rows"
+     ],
+     "conflicts": []
     },
     {
      "key": "juniors",
