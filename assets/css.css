@@ -1614,7 +1614,7 @@ body.cms-right.no-x-scroll {
 
 .info-icon::before {
     content: '';
-    display: inline-block;
+    display: block; /* was inline-block: it sat on the text baseline inside the 10px box and overflow:hidden cut off its bottom half (2026-11-06) */
     width: 100%;
     height: 100%;
     background-color: currentColor;
