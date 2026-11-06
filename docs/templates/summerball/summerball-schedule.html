@@ -1,0 +1,53 @@
+<!doctype html>
+<!--
+  FILE:      docs/templates/summerball/summerball-schedule.html  (template, not a live page)
+  PURPOSE:   Summerball team-by-team game schedule, a separate hidden page each summer so the Summerball
+             page stays short. When District 8's schedule is out: copy to CMS/Season/<year>/summerball-schedule.html,
+             fill one table per division (copy the section), create the hidden page with Sports Connect's New Page
+             button (never ctl=Tab&action=add), put its tabid/mid in the CMS line below, and link it from the
+             Summerball page's Related links and Schedule Matrix card.
+  CMS:       tabid=TBD  |  mid=TBD  |  paste ENTIRE FILE into RadEditor
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>SummerballYY Game Schedule | NCLL</title>
+	<link href="https://assets.ncllball.com/css.css" rel="stylesheet" type="text/css" />
+	<link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
+</head>
+<body>
+	<main class="summerball-schedule" id="content" role="main">
+		<p>Game schedules by division. Fields and times can change; your team manager has the latest.</p>
+
+		<!-- One section per division: copy this block -->
+		<section aria-labelledby="sched-DIVISION">
+			<h2 class="left" id="sched-DIVISION">Baseball AA (Interleague)</h2>
+			<div class="table_age table-scroll">
+				<table class="age-matrix age-matrix--reg">
+					<thead>
+						<tr>
+							<th scope="col">Date</th>
+							<th scope="col">Time</th>
+							<th scope="col">Home</th>
+							<th scope="col">Away</th>
+							<th scope="col">Field</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Mon, Jul 6</td>
+							<td>6:00 PM</td>
+							<td>Team</td>
+							<td>Team</td>
+							<td>Field</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<p class="cms-rev"><small>[r1 · YYYY-MM-DD · TABID]</small></p>
+	</main>
+</body>
+</html>
