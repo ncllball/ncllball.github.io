@@ -664,7 +664,7 @@
       "value": "kid pitch, and at ball four a coach pitches to that batter (4 coach pitches; no walks); official hardball; an inning ends at 3 outs, 5 runs, or once through the batting order; one base on an error; no infield fly and no dropped-third-strike; no stealing in the first half of the season, then only on passed balls, wild pitches or a dropped return throw, never home; no mercy rule (play to the time limit); 90 minutes or 6 innings; score kept, playoffs end the season",
       "source": "Baseball Hub AA card (Game Format); AA rules page (D4: 'There is no mercy rule in AA'); 2024 Division Rules Cheat Sheet, AA Baseball block (umpires' sheet, Drive rebuild/Umpires; no mercy listed, while every division above AA lists one); Outline: NCLL Baseball - AA Division Rules (B3, C1, D2, D4, D5, D7)",
       "checked": "2026-11-05",
-      "history": "2023 (AA rules thread in the umpires-and-managers group, confirmed by the AA coordinator): the same core rules (coach pitches after ball four, 5 runs or the lineup ends a half-inning, 1 base on an error, no mercy rule, no infield fly, 90 minutes), but no stealing at all, and a hit batter could take first or keep batting."
+      "history": "2023 (AA rules thread in the umpires-and-managers group, confirmed by the AA coordinator): the same core rules (coach pitches after ball four, 5 runs or the lineup ends a half-inning, 1 base on an error, no mercy rule, no infield fly, 90 minutes), but no stealing at all, and a hit batter could take first or keep batting. The official 2024 version (General Rules for NCLL AA Baseball - 2024, linked by the 2024 umpire coordinators) has the same rules: no stealing unless the coaches agree to allow it in the second half, never steal home, a hit batter may take first or keep batting, and a catcher with 3 innings + 1 pitch can't pitch."
      },
      "familyHelp": {
       "value": "AA runs on parents who coach, umpire (each team supplies one umpire per game), keep score and help out.",
@@ -873,6 +873,11 @@
      "canadianGame": {
       "value": "League-age 9's in AAA can be picked for the AA Canadian game, the late-summer 9's game (not All-Stars); see the AA entry.",
       "source": "registrar email thread '9s tournament' 2024-06; VP of Baseball post in the 2026 Majors coaches chat; John 2026-11-05",
+      "checked": "2026-11-05"
+     },
+     "infieldFly": {
+      "value": "In effect, but before May 1 both managers can agree at the plate meeting not to use it; enforced in every AAA game from May 1.",
+      "source": "NCLL UIC ruling, umpires-and-managers group, 2025-03-28",
       "checked": "2026-11-05"
      }
     },
