@@ -147,7 +147,7 @@
      },
      "seasonEnds": {
       "value": "mid-June",
-      "note": "2026 last games Jun 12; 2025 Jun 7",
+      "note": "2026: regular season to Fri Jun 5, playoffs Jun 8-12; 2025: playoffs May 31-Jun 7",
       "source": "Registration Guide Step 2(a) + footnote 4; Baseball Hub AA card; 2026 60 ft schedule (Game start column) + 2025 master schedule (Maxwell)",
       "checked": "2026-11-05"
      },
@@ -199,9 +199,9 @@
       "checked": "2026-11-05"
      },
      "playoffs": {
-      "value": "Score is kept and playoffs end the season.",
-      "note": "No AA playoff rows are labeled in the 2025 or 2026 schedules; format not found.",
-      "source": "Baseball Hub AA card",
+      "value": "End-of-season tournament for all 8 teams, right after the regular season, at Lower Woodland and Lower Ross. Score is kept. The format changes year to year.",
+      "history": "2021: double elimination, 7 teams, June 18-19 (coordinator's plan by email). 2025: double elimination, 12 playoff games plus the championship on Sat May 31, Wed Jun 4 and Sat Jun 7 (championship 4:30pm, LW5). 2026: single elimination plus a 3rd-place game: Round 1 Mon Jun 8 (4 games), Round 2 Tue Jun 9 (2), championship and 3rd/4th place Fri Jun 12.",
+      "source": "2026 60 ft schedule (rows 'AA Baseball Playoff Round 1/2/Championship/3rd-4th'); 2025 master schedule (rows 'BB AA PLAYOFF 1-11', 'BB AA CHAMPIONSHIP'); Sports Connect schedules ('2025 AA BB Playoff Game Schedule' archived, 'BB26AA Games' active); 2021 'AA baseball playoffs' email thread (registrar@)",
       "checked": "2026-11-05"
      },
      "fields": {
@@ -585,8 +585,9 @@
      "playoffs": {
       "value": "End-of-season Majors tournament in late May, some games at Soundview (2026: a playoff game Thu May 28 at Soundview).",
       "note": "Double elimination, seeding by random draw (Majors manager guidance). Runs between the regular season and All-Star tryouts (May 15 in 2026).",
-      "source": "coaches' email (John's inbox), 2026-05-28; Majors coaches chat (playoff bracket, Soundview fields); Outline: NCLL Majors rules and manager guidance",
-      "checked": "2026-11-05"
+      "source": "coaches' email (John's inbox), 2026-05-28; Majors coaches chat (playoff bracket, Soundview fields); Outline: NCLL Majors rules and manager guidance; Division Heads chat 2026-05; Sports Connect schedules list",
+      "checked": "2026-11-05",
+      "detail": "2026: four first-round games Sat May 30 at 12:30 at Lower Woodland, then Tue Jun 2, with Thu Jun 4 held as an if-needed game (VP of Baseball and Majors coordinator, Division Heads chat). Some games at Soundview (a playoff game Thu May 28). Sports Connect has the schedules: 'BB26MAJ Playoff Games' (active) and '2025 Majors BB Playoff Game Schedule' (archived)."
      },
      "allStars": {
       "value": "12-year-old All-Stars come from Majors (Little League rule), and Majors 11's and 10's are the usual pool for the 11's and 10's teams. Tryouts are mid-May at Lower Woodland (May 15 in 2026).",
