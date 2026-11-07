@@ -1409,10 +1409,9 @@
       "checked": "2026-11-05"
      },
      "rosterSize": {
-      "value": "one team (19 players in 2025, 24 in 2026)",
-      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
-      "checked": "2026-11-06",
-      "note": "2026 shows 24, above Little League's 20 for a single team: maybe mid-season drops or a co-league count. Asked John 2026-11-06."
+      "value": "one team, about 19 (cap 20)",
+      "source": "Baseball Hub Juniors card (one team of 19 in 2026); LLI end-of-season upload 2025 (19); Sports Connect cap 20; Little League allows up to 20 when a league fields one Juniors team",
+      "checked": "2026-11-06"
      }
     },
     {
