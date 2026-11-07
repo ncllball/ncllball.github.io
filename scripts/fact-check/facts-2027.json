@@ -2391,5 +2391,87 @@
    "CMS/Registration/registration-hub.html (Team Formation card, r68)",
    "CMS/Registration/registration-main.html (Step 2, r55)"
   ]
+ },
+ "pitching": {
+  "value": "Pitch counts follow each pitcher's league age, not division (baseball); softball counts innings.",
+  "page": "CMS/Resources/coaches-hub/baseball-pitching.html (r4, rebuilt 2026-11-06 from these values)",
+  "checked": "2026-11-06",
+  "baseball": {
+   "dailyMax": {
+    "value": {
+     "8 and under": 50,
+     "9-10": 75,
+     "11-12": 85,
+     "13-16": 95
+    },
+    "source": "Little League Regulation VI (littleleague.org pitch-count page, checked 2026-11-06); baseball rules pages C3/C4"
+   },
+   "finishBatter": {
+    "value": "At the limit mid-batter, the pitcher may finish that batter (reaches base, put out, or third out).",
+    "source": "Little League Regulation VI (littleleague.org pitch-count page, checked 2026-11-06); baseball rules pages C3/C4"
+   },
+   "consecutiveDays": {
+    "value": "No one pitches three days in a row.",
+    "source": "Little League Regulation VI (littleleague.org pitch-count page, checked 2026-11-06); baseball rules pages C3/C4"
+   },
+   "rest14AndUnder": {
+    "value": {
+     "1-20": 0,
+     "21-35": 1,
+     "36-50": 2,
+     "51-65": 3,
+     "66+": 4
+    },
+    "source": "Little League Regulation VI (littleleague.org pitch-count page, checked 2026-11-06); baseball rules pages C3/C4"
+   },
+   "rest15to16": {
+    "value": {
+     "1-30": 0,
+     "31-45": 1,
+     "46-60": 2,
+     "61-75": 3,
+     "76+": 4
+    },
+    "source": "Little League Regulation VI (littleleague.org pitch-count page, checked 2026-11-06); baseball rules pages C3/C4"
+   },
+   "catcherPitcher": {
+    "value": "Caught 4+ innings: can't pitch that day (a pitch in the 4th counts). Caught 3 or fewer, then pitched 21+ (31+ at 15-16): can't return to catcher that day. Pitched 41+: can't catch the rest of the day unless the 40th came mid-batter.",
+    "source": "Little League Regulation VI (littleleague.org pitch-count page, checked 2026-11-06); baseball rules pages C3/C4"
+   },
+   "d8BeforeMay1": {
+    "value": {
+     "AAA": 50,
+     "Majors": 50,
+     "Intermediate": 70,
+     "Juniors": 70,
+     "Seniors": 70
+    },
+    "note": "most pitches in a game before May 1; the daily chart applies from May 1",
+    "source": "District 8 supplements §7 (AAA, Majors, Intermediate, Juniors, Seniors), as cited on the rules pages"
+   },
+   "ncllAA": {
+    "value": "AA: caught 3+ innings can't pitch that day; pitched 21+ can't catch that game.",
+    "source": "NCLL local rule, AA rules page C4"
+   },
+   "recording": {
+    "value": "Managers record pitch counts (usually via the scorekeeper) for every pitcher all season and share them with the Board on request.",
+    "source": "NCLL, AA rules page C3"
+   }
+  },
+  "softball": {
+   "minorsMajors": {
+    "value": "AA, AAA and Majors: at most 12 innings a day; 7+ innings in a day needs 1 rest day; one pitch counts as a full inning.",
+    "source": "Little League Regulation VI(b); softball AAA and Majors rules pages"
+   },
+   "d8ThroughApril30": {
+    "value": "AAA and Majors: at most 3 innings a game through April 30.",
+    "source": "D8 City AAA and Majors Interleague Rules, as cited on the rules pages"
+   },
+   "juniors": {
+    "value": "League age 12 follows the Minors/Majors limit; 13-14 no limit; league age 15 may not pitch at Juniors.",
+    "source": "District 8, softball Juniors rules page"
+   }
+  },
+  "replaced": "The old page (r3) had an 'Early Season Ramp' week-by-week table that matched no cited rule; John: the ramp is District 8's, so the page now shows District 8's per-game caps before May 1."
  }
 }
