@@ -1253,6 +1253,11 @@
       "value": "District 8 builds the Intermediate schedule with Juniors (2026: a D8 Intermediates schedule existed for the other leagues' teams); D8 Intermediate and Juniors playoffs start the week after Memorial Day.",
       "source": "D8 Teen Baseball administrator's 'D8 Teenage Baseball Schedules' email to league presidents and schedulers, 2026-03-11 to 03-14 (John's personal Gmail); D8 sheets '2026 Juniors Baseball Schedules' (1LoA_MYMU_iIuaQNj7qs_TZKhSVZcQxf_DK6X2NiCBw4) and '2026 Intermediates Baseball Schedules' (1mxU16T_AjyOhtG34v6Wv_vaq_vEz614jccMQhfRuUuk)",
       "checked": "2026-11-05"
+     },
+     "history2026": {
+      "value": "No NCLL Intermediate team in 2026: 4 NCLL league-age-13 players co-leagued onto RUG's two Intermediate teams (registered in RUG's system at no cost). NCLL added an Intermediates team to its charter in Little League Data Center to file the co-league form.",
+      "source": "Registrar mail thread \"Teen Ball Registration Numbers / Co-League Needs\" (Jan-Feb 2026: NCLL baseball VP, president, registrar, RUG scheduler)",
+      "checked": "2026-11-06"
      }
     },
     {
@@ -1410,8 +1415,9 @@
      },
      "rosterSize": {
       "value": "one team, about 19 (cap 20)",
-      "source": "Baseball Hub Juniors card (one team of 19 in 2026); LLI end-of-season upload 2025 (19); Sports Connect cap 20; Little League allows up to 20 when a league fields one Juniors team",
-      "checked": "2026-11-06"
+      "source": "NCLL baseball VP to RUG, 2026-02-04 (\"leaves us with 19 NCLL Juniors\"), plus one late add in March; Baseball Hub Juniors card; Sports Connect cap 20; Little League allows up to 20 when a league fields one Juniors team",
+      "checked": "2026-11-06",
+      "note": "Little League's end-of-season upload counts more under Juniors than the team had, because it also includes the NCLL 13s who played Intermediates with RUG in 2026."
      }
     },
     {
