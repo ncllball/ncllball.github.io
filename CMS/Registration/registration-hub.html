@@ -417,6 +417,7 @@
 				<input type="radio" name="reg-teams" id="reg-teams-2" />
 				<input type="radio" name="reg-teams" id="reg-teams-3" />
 				<input type="radio" name="reg-teams" id="reg-teams-4" />
+				<input type="radio" name="reg-teams" id="reg-teams-5" />
 				<div class="ncll-card__sticky-heading">
 					<div class="ncll-card__heading-title">
 						<img class="ncll-card__sport-icon" src="https://ncllball.github.io/images/site_navigation/baseball.png" alt="Baseball icon" />
@@ -426,13 +427,12 @@
 				</div>
 				<div class="ncll-card__body panel panel-intro">
 					<div class="ncll-card__details">
-						<p class="ncll-card__blurb">Tee Ball through AA players are placed on teams. AAA and Majors teams are formed by a draft, using scores from assessments, so every team in a division is evenly matched.</p>
+						<p class="ncll-card__blurb">Tee Ball through AA players are placed on teams. AAA and Majors teams are drafted from assessment scores, so teams are evenly matched.</p>
 						<ul class="ncll-card__meta">
 							<li><strong>Placement:</strong> Tee Ball, Kindy, A and AA</li>
 							<li><strong>Assessments:</strong> AAA and Majors (baseball and softball)</li>
 							<li><strong>Draft:</strong> AAA and Majors</li>
-							<li><strong>Teams set:</strong> mid-February for AAA and Majors; early to mid-March for Tee Ball through AA</li>
-						</ul>
+							<li><strong>Teams set:</strong> mid-Feb for AAA and Majors; early&ndash;mid March for Tee Ball through AA</li>						</ul>
 					</div>
 				</div>
 				<div class="ncll-card__body panel panel0">
@@ -441,8 +441,7 @@
 						<p class="ncll-card__blurb">Baseball Tee Ball, Kindy Coach Pitch, A and AA, and softball A and AA.</p>
 						<ul class="ncll-card__meta">
 							<li>No assessments or draft.</li>
-							<li>Siblings, schoolmates and friends are grouped together when possible.</li>
-							<li>Registration asks for a <strong>coach request</strong> and a <strong>buddy or friend request</strong>.</li>
+							<li>Friends come first, then siblings and schoolmates. Registration asks for a friend request and a coach request.</li>
 							<li>Teams are placed by the Player Agent, the division coordinators and the VP of Baseball or Softball.</li>
 						</ul>
 					</div>
@@ -460,11 +459,11 @@
 				<div class="ncll-card__body panel panel2">
 					<div class="ncll-card__details">
 						<h4 class="left">Why we draft</h4>
-						<p class="ncll-card__blurb">Majors has always drafted. In 2024 AAA went back to a draft, as it was before COVID. The area leagues we checked with all draft AAA; we were the only one that didn&rsquo;t.</p>
+						<p class="ncll-card__blurb">Majors has always drafted; AAA returned to a draft in 2024, like every area league we checked.</p>
 						<ul class="ncll-card__meta">
-							<li><strong>Balance:</strong> talent spread evenly, closer games.</li>
+							<li><strong>Balance:</strong> even talent, closer games.</li>
 							<li><strong>Coaching:</strong> players learn from different coaches.</li>
-							<li><strong>Community:</strong> kids meet families beyond their school.</li>
+							<li><strong>Community:</strong> new friends beyond school.</li>
 							<li><strong>Fairness:</strong> a process everyone can see.</li>
 						</ul>
 					</div>
@@ -474,8 +473,7 @@
 						<h4 class="left">Draft day</h4>
 						<ul class="ncll-card__meta">
 							<li>Coaches get each player&rsquo;s assessment scores and a 1&ndash;5 rating.</li>
-							<li>A coach&rsquo;s own child is placed in the round that matches their rating.</li>
-							<li>A short trade window afterwards is for roster fit (schoolmates, carpools), within the same rating band; not for talent.</li>
+							<li>A coach&rsquo;s child goes to the parent&rsquo;s team in the round their rating earns; the coach gives up that pick.</li>
 							<li><strong>Playing up:</strong> requests to play in a higher division are reviewed for safety, coach feedback and division balance.</li>
 						</ul>
 					</div>
@@ -489,9 +487,20 @@
 						</div>
 					</div>
 				</div>
+				<div class="ncll-card__body panel panel5">
+					<div class="ncll-card__details">
+						<h4 class="left">Friends, siblings &amp; team size</h4>
+						<ul class="ncll-card__meta">
+							<li><strong>Friends come first.</strong> One or two close friends we can usually honor; a whole class won&rsquo;t fit on one team.</li>
+							<li><strong>AAA &amp; Majors:</strong> a player with no friends or schoolmates can be swapped for a same-level player on draft day.</li>
+							<li><strong>Siblings</strong> play together unless the family asks otherwise.</li>
+							<li><strong>Team size:</strong> usually 11&ndash;14; Juniors is one larger team.</li>
+						</ul>
+					</div>
+				</div>
 				<div class="ncll-card__sticky-footer">
 					<div class="actions" role="group" aria-label="Team Formation card controls">
-						<label class="button button--secondary btn-prev btn-prev-start" for="reg-teams-4">Back</label>
+						<label class="button button--secondary btn-prev btn-prev-start" for="reg-teams-5">Back</label>
 						<label class="button button--primary btn-next btn-next-intro" for="reg-teams-0">Next</label>
 						<label class="button button--secondary btn-prev btn-prev-0" for="reg-teams-intro">Back</label>
 						<label class="button button--primary btn-next btn-next-0" for="reg-teams-1">Next</label>
@@ -502,7 +511,9 @@
 						<label class="button button--secondary btn-prev btn-prev-3" for="reg-teams-2">Back</label>
 						<label class="button button--primary btn-next btn-next-3" for="reg-teams-4">Next</label>
 						<label class="button button--secondary btn-prev btn-prev-4" for="reg-teams-3">Back</label>
-						<label class="button button--primary btn-next btn-next-4" for="reg-teams-intro">Start Over</label>
+						<label class="button button--primary btn-next btn-next-4" for="reg-teams-5">Next</label>
+						<label class="button button--secondary btn-prev btn-prev-5" for="reg-teams-4">Back</label>
+						<label class="button button--primary btn-next btn-next-5" for="reg-teams-intro">Start Over</label>
 					</div>
 				</div>
 			</article>
@@ -690,7 +701,7 @@
 
 		</div>
 
-		<p class="cms-rev"><small>[r67 · 2026-11-03 · 2114737]</small></p>
+		<p class="cms-rev"><small>[r68 · 2026-11-06 · 2114737]</small></p>
 	</main>
 </body>
 </html>

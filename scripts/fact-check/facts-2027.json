@@ -159,7 +159,12 @@
      "openQuestions": [
       "Start dates: practices Mon Mar 29 and games Sat Apr 3 are 'Needs confirmation' on the dates sheet (Catholic schools' break)"
      ],
-     "conflicts": []
+     "conflicts": [],
+     "rosterSize": {
+      "value": "about 13 (14 per team in 2025, 11.6 in 2026)",
+      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
+      "checked": "2026-11-06"
+     }
     },
     {
      "key": "kindy",
@@ -331,6 +336,11 @@
       "detail": "All players on base for the last at-bat of the inning score; outs aren't counted and everyone bats each half-inning.",
       "source": "Kindy Coach Pitch Division Meeting Spring 2026 (coaches' meeting doc, Drive Coaches/Tee Ball-Kindy Coaches Meeting); John 2026-11-05 (the 11/01 'Kindy keeps score' was a guess; the meeting doc governs and feeds the website's coach templates)",
       "checked": "2026-11-05"
+     },
+     "rosterSize": {
+      "value": "about 12 (11.9 per team in 2025, 11.9 in 2026)",
+      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
+      "checked": "2026-11-06"
      }
     },
     {
@@ -498,7 +508,12 @@
       "source": "Baseball Hub A card (Volunteer); Outline: NCLL Baseball - A Division Rules (F2)",
       "checked": "2026-11-05"
      },
-     "conflicts": []
+     "conflicts": [],
+     "rosterSize": {
+      "value": "about 12 (12 per team in 2025, 12.9 in 2026)",
+      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
+      "checked": "2026-11-06"
+     }
     },
     {
      "key": "aa",
@@ -683,6 +698,11 @@
       "note": "Kept separate from All-Stars (John 2026-11-05).",
       "source": "registrar email thread '9s tournament' 2024-06-12/13 ('the canadian tournament we started a few years ago'); VP of Baseball All-Stars post in the 2026 Majors coaches chat (9's jamboree at NAF); John 2026-11-05",
       "checked": "2026-11-05"
+     },
+     "rosterSize": {
+      "value": "about 13 (12.4 per team in 2025, 13.4 in 2026)",
+      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
+      "checked": "2026-11-06"
      }
     },
     {
@@ -879,6 +899,11 @@
       "value": "In effect, but before May 1 both managers can agree at the plate meeting not to use it; enforced in every AAA game from May 1.",
       "source": "NCLL UIC ruling, umpires-and-managers group, 2025-03-28",
       "checked": "2026-11-05"
+     },
+     "rosterSize": {
+      "value": "about 13 (12.9 per team in 2025, 12.1 in 2026)",
+      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
+      "checked": "2026-11-06"
      }
     },
     {
@@ -1073,6 +1098,11 @@
       "note": "Teams request umpires through the umpire scheduling site (Stack Officials) and the umpires-managers group; if no umpire shows, the home team provides one.",
       "source": "Outline: NCLL Majors rules and manager guidance (umpires); John (registrar) 2026-11-05: teams must get their games on the umpire schedule; 2026 Majors coaches chat (stackofficials link); umpire requests in John's email; John 2026-11-05: some teams delegate umpire scheduling as a parent's sole volunteer task",
       "checked": "2026-11-05"
+     },
+     "rosterSize": {
+      "value": "about 12 (12 per team in 2025, 11.7 in 2026)",
+      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
+      "checked": "2026-11-06"
      }
     },
     {
@@ -1377,6 +1407,12 @@
       "value": "District 8's teen baseball administrator builds the Juniors and Intermediate schedules for all D8 leagues from each league's 90-ft field allocation (2026 schedules went out March 11).",
       "source": "D8 Teen Baseball administrator's 'D8 Teenage Baseball Schedules' email to league presidents and schedulers, 2026-03-11 to 03-14 (John's personal Gmail); D8 sheets '2026 Juniors Baseball Schedules' (1LoA_MYMU_iIuaQNj7qs_TZKhSVZcQxf_DK6X2NiCBw4) and '2026 Intermediates Baseball Schedules' (1mxU16T_AjyOhtG34v6Wv_vaq_vEz614jccMQhfRuUuk)",
       "checked": "2026-11-05"
+     },
+     "rosterSize": {
+      "value": "one team (19 players in 2025, 24 in 2026)",
+      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
+      "checked": "2026-11-06",
+      "note": "2026 shows 24, above Little League's 20 for a single team: maybe mid-season drops or a co-league count. Asked John 2026-11-06."
      }
     },
     {
@@ -1635,7 +1671,12 @@
      },
      "rulesPage": "softball-a-rules (Programs > softball)",
      "openQuestions": [],
-     "conflicts": []
+     "conflicts": [],
+     "rosterSize": {
+      "value": "about 12 (12.5 per team in 2025, 11.5 in 2026)",
+      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
+      "checked": "2026-11-06"
+     }
     },
     {
      "key": "aa",
@@ -1760,7 +1801,12 @@
      },
      "rulesPage": "softball-aa-rules (Programs > softball)",
      "openQuestions": [],
-     "conflicts": []
+     "conflicts": [],
+     "rosterSize": {
+      "value": "about 13 (12.2 per team in 2025, 13.7 in 2026)",
+      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
+      "checked": "2026-11-06"
+     }
     },
     {
      "key": "aaa",
@@ -1901,7 +1947,12 @@
      "openQuestions": [
       "Tournament of Champions 2027: decided at the D8 softball meeting (ask the Softball VP after)"
      ],
-     "conflicts": []
+     "conflicts": [],
+     "rosterSize": {
+      "value": "about 13 (12 per team in 2025, 13 in 2026)",
+      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
+      "checked": "2026-11-06"
+     }
     },
     {
      "key": "majors",
@@ -2037,6 +2088,11 @@
       "checked": "2026-11-05",
       "status": "history; 2027 undecided",
       "note": "Softball VP, 2026-11-03: remove D8 tournament references from the AAA/Majors cards; it may not happen in 2027 and is on the agenda for the D8 softball meeting. Do not add it to the Hub cards."
+     },
+     "rosterSize": {
+      "value": "about 14 (13.5 per team in 2025, 14.5 in 2026)",
+      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
+      "checked": "2026-11-06"
      }
     },
     {
@@ -2171,6 +2227,11 @@
       "checked": "2026-11-05",
       "status": "history; 2027 undecided",
       "note": "Softball VP, 2026-11-03: remove D8 tournament references from the AAA/Majors cards; it may not happen in 2027 and is on the agenda for the D8 softball meeting. Do not add it to the Hub cards."
+     },
+     "rosterSize": {
+      "value": "one team (19 players in 2025, 17 in 2026)",
+      "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
+      "checked": "2026-11-06"
      }
     },
     {
@@ -2310,5 +2371,20 @@
  "skipDivisionTablesIn": {
   "pattern": "allstars|all-stars|summerball|winterball|sandlot",
   "why": "other programs (All-Stars tournament ages, Summerball, Winterball) have their own divisions"
+ },
+ "teamFormation": {
+  "value": "Friends are the starting point for team formation, with a disclaimer: one or two close friends can usually be honored, not a whole class or birthday-party list.",
+  "source": "John (Registrar), 2026-11-06",
+  "checked": "2026-11-06",
+  "placed": "Tee Ball through AA (and softball A, AA): teams are mostly friend groups and often move up together; siblings same team; schoolmates next.",
+  "draft": "AAA and Majors: drafted for balance. If a player lands on a team with no friends or schoolmates, a swap with a same-level player puts them with buddies; done on draft day; rosters are set before coaches leave the draft (a move afterward counts as a draft-day failure). The league also values kids making new friends.",
+  "siblings": "Same team unless the family asks otherwise (some have asked for different teams).",
+  "coachChildren": "Treated like a sibling: placed on the parent's team in the round their assessment score/rating earns; the coach forgoes that round's pick.",
+  "girlsInBaseball": "Baseball is open to girls at every level; families choose. State it neutrally: NCLL does not recruit girls to baseball (softball's domain).",
+  "teamSize": "Usually 11-14 players per team, Tee Ball through Majors, both sports; Juniors is one larger team.",
+  "pages": [
+   "CMS/Registration/registration-hub.html (Team Formation card, r68)",
+   "CMS/Registration/registration-main.html (Step 2, r55)"
+  ]
  }
 }
