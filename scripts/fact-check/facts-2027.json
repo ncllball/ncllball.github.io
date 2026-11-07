@@ -1016,7 +1016,7 @@
         "Focus indoor cages (rain)"
        ]
       },
-      "note": "Away games are at the other District 8 leagues' home fields. Robert Eagle Staff and Soundview are used when a permit or slot is available (neither home nor away). No playoff sites here (John).",
+      "note": "Away games are at the other District 8 leagues' home fields. Robert Eagle Staff and Soundview are used when a permit or slot is available (neither home nor away).",
       "source": "Sports Connect 2026 regular-season schedule BB26MAJ Games (78 games: 52 home at Lower Woodland; away Hamlin 12, Bayview 5, Maple Leaf 3, West Queen Anne 2, Magnolia 1, Shorewood HS 1; Eagle Staff 1, Soundview 1), checked by Tower T-81/T-82; John 2026-11-06 (T-80 to T-83)",
       "checked": "2026-11-06"
      },
@@ -1360,7 +1360,7 @@
        "home": [
         "Lower Woodland #1"
        ],
-       "away2026": [
+       "away": [
         "Shorewood HS",
         "Northshore Athletic Fields",
         "Whitman (Soundview)",
@@ -1369,8 +1369,8 @@
        ]
       },
       "note": "2026: 13 of 22 games at Lower Woodland #1.",
-      "source": "Sports Connect schedule BB26JUNIOR Games (22 games, 2026-03-21 to 05-21); Baseball Hub Juniors card",
-      "checked": "2026-11-05"
+      "source": "Sports Connect schedule BB26JUNIOR Games (22 games, 2026-03-21 to 05-21); Baseball Hub Juniors card; away list from the 2026 regular-season schedule, stated as the division's away fields (John, 2026-11-06)",
+      "checked": "2026-11-06"
      },
      "opponents": {
       "value": "District 8 interleague",
@@ -1657,15 +1657,15 @@
         "BF Day",
         "Lower Woodland"
        ],
-       "away2026": [
+       "away": [
         "Green Lake",
         "Maple Leaf",
         "James Baldwin",
         "Pinehurst"
        ]
       },
-      "source": "Softball Hub card; Sports Connect schedule SB26A Games/Practices (2026)",
-      "checked": "2026-11-05"
+      "source": "Softball Hub card; Sports Connect schedule SB26A Games/Practices (2026); away list from the 2026 regular-season schedule, stated as the division's away fields (John, 2026-11-06)",
+      "checked": "2026-11-06"
      },
      "opponents": {
       "value": "RUG (5 teams in 2026); RUG and Queen Anne in 2025",
@@ -1785,7 +1785,7 @@
         "BF Day",
         "Lower Ross"
        ],
-       "away2026": [
+       "away": [
         "Green Lake",
         "Ravenna",
         "Maple Leaf",
@@ -1794,8 +1794,8 @@
         "Gilman"
        ]
       },
-      "source": "Softball Hub card; Sports Connect schedule SB26AA Games (2026)",
-      "checked": "2026-11-05"
+      "source": "Softball Hub card; Sports Connect schedule SB26AA Games (2026); away list from the 2026 regular-season schedule, stated as the division's away fields (John, 2026-11-06)",
+      "checked": "2026-11-06"
      },
      "opponents": {
       "value": "RUG, Queen Anne, Northwest Seattle and other D8 city teams (2026)",
@@ -1915,7 +1915,7 @@
        "home": [
         "Lower Woodland"
        ],
-       "away2026": [
+       "away": [
         "Soundview",
         "Maple Leaf",
         "Ravenna",
@@ -1930,8 +1930,8 @@
        ]
       },
       "note": "2026: 21 of 36 games at Lower Woodland. Northacres was a 2026 practice field, not an away game field. 'Ballard Community Center' on the Hub card is Ballard Playground (on the 2026 schedule).",
-      "source": "Sports Connect schedule SB26 AAA Games (2026); Softball Hub card; Maxwell's 2026 60 ft Schedule sheet (1iTJpXQNtJsUT_M8Go5dnjVvrs18HhVLmSO94VizkODE)",
-      "checked": "2026-11-05"
+      "source": "Sports Connect schedule SB26 AAA Games (2026); Softball Hub card; Maxwell's 2026 60 ft Schedule sheet (1iTJpXQNtJsUT_M8Go5dnjVvrs18HhVLmSO94VizkODE); away list from the 2026 regular-season schedule, stated as the division's away fields (John, 2026-11-06)",
+      "checked": "2026-11-06"
      },
      "opponents": {
       "value": "D8 city interleague: RUG, Northwest Seattle, Northeast, Queen Anne and others (2026); Magnolia, Queen Anne, Ballard (2025)",
@@ -2060,7 +2060,7 @@
        "home": [
         "Lower Woodland"
        ],
-       "away2026": [
+       "away": [
         "Magnolia",
         "Hamlin Park",
         "Shorewood",
@@ -2071,8 +2071,8 @@
         "View Ridge"
        ]
       },
-      "source": "Sports Connect schedule SB26 MAJ Games (2026); Softball Hub card",
-      "checked": "2026-11-05"
+      "source": "Sports Connect schedule SB26 MAJ Games (2026); Softball Hub card; away list from the 2026 regular-season schedule, stated as the division's away fields (John, 2026-11-06)",
+      "checked": "2026-11-06"
      },
      "opponents": {
       "value": "D8 interleague across the city and north end (Northeast, Magnolia, RUG, Ballard, Shoreline, Queen Anne, Northwest)",
@@ -2199,7 +2199,7 @@
        "home": [
         "Lower Woodland"
        ],
-       "away2026": [
+       "away": [
         "Woodinville HS",
         "Shorewood HS",
         "Maple Leaf",
@@ -2210,8 +2210,8 @@
         "Magnolia"
        ]
       },
-      "source": "Sports Connect schedule SB26JR Games (2026); Softball Hub card",
-      "checked": "2026-11-05"
+      "source": "Sports Connect schedule SB26JR Games (2026); Softball Hub card; away list from the 2026 regular-season schedule, stated as the division's away fields (John, 2026-11-06)",
+      "checked": "2026-11-06"
      },
      "opponents": {
       "value": "D8 and neighboring co-op teams (2026: Woodinville/North Bothell/North Lake, Northwest/Queen Anne/Ballard, RUG, Magnolia, plus Seattle Central, Renton, West Seattle)",
