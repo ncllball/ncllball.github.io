@@ -670,10 +670,10 @@
         "Ross",
         "Bitter Lake"
        ],
-       "away": "none: AA has no interleague play; some NCLL-vs-NCLL games are played at other parks (2026 May 15: Dahl, View Ridge, Northacres, Meadowbrook)"
+       "away": "none: AA has no interleague play; some NCLL-vs-NCLL games are played at other parks (Dahl, View Ridge, Northacres, Meadowbrook, Bitter Lake)"
       },
-      "source": "Registration Guide Step 2(a) + footnote 4; Baseball Hub AA card; 2026 60 ft schedule (Game start column) + 2025 master schedule (Maxwell); Outline: NCLL Baseball - AA Division Rules (G6: entirely in-house); Sports Connect 2026 (May 15 games NCLL vs NCLL)",
-      "checked": "2026-11-05"
+      "source": "Registration Guide Step 2(a) + footnote 4; Baseball Hub AA card; 2026 60 ft schedule (Game start column) + 2025 master schedule (Maxwell); Outline: NCLL Baseball - AA Division Rules (G6: entirely in-house); Sports Connect 2026 (May 15 games NCLL vs NCLL); Sports Connect 2026 schedule (one game at Bitter Lake; Tower T-82)",
+      "checked": "2026-11-06"
      },
      "format": {
       "value": "kid pitch, and at ball four a coach pitches to that batter (4 coach pitches; no walks); official hardball; an inning ends at 3 outs, 5 runs, or once through the batting order; one base on an error; no infield fly and no dropped-third-strike; no stealing in the first half of the season, then only on passed balls, wild pitches or a dropped return throw, never home; no mercy rule (play to the time limit); 90 minutes or 6 innings; score kept, playoffs end the season",
@@ -867,10 +867,10 @@
         "Lower Woodland 3-6",
         "Green Lake"
        ],
-       "away": "a few interleague games each season"
+       "away": "a few games each season at other District 8 leagues' fields: Interbay, Magnolia, Green Lake, West Queen Anne"
       },
-      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; 2026 60 ft schedule + 2025 master schedule (Maxwell)",
-      "checked": "2026-11-05"
+      "source": "Registration Guide Step 2(a) + footnote 5; Baseball Hub AAA card; 2026 60 ft schedule + 2025 master schedule (Maxwell); Sports Connect 2026 schedule (78 games: 70 home at Lower Woodland, 8 away: Interbay 4, Magnolia 2, Green Lake 1, West Queen Anne 1; Tower T-82)",
+      "checked": "2026-11-06"
      },
      "format": {
       "value": "full kid pitch; 46-ft mound, 60-ft bases; no new inning after 2 hrs, no new batter after 2 hrs 15 min; an inning ends at 5 runs or once through the batting order (6th inning: once through the order, no run cap); mercy 15 after 3 / 10 after 4 / 8 after 5; infield fly rule in effect, no dropped (uncaught) third strike; steals once the ball reaches the batter, no leadoffs, no delayed steals; pitchers limited to 50 pitches a game before May 1 (District 8); everyone plays 9+ defensive outs; score kept, playoffs",
@@ -1002,9 +1002,12 @@
         "Hamlin Park",
         "Bayview",
         "Maple Leaf",
-        "West Queen Anne"
+        "West Queen Anne",
+        "Magnolia",
+        "Shorewood HS"
        ],
-       "playoffs": [
+       "alsoUsedWhenAvailable": [
+        "Robert Eagle Staff",
         "Soundview"
        ],
        "practice": [
@@ -1013,9 +1016,9 @@
         "Focus indoor cages (rain)"
        ]
       },
-      "note": "home/away/playoff list is from the 2026 season ('Last season'); card summary says 'Mostly The Cloverleaf'",
-      "source": "Baseball Hub card (Season Rhythm); 2026 60 ft schedule + 2025 master schedule (Maxwell); 2025 and 2026 Majors coaches chats; Sports Connect schedules (data/schedules/sports-connect-2026.json + sports-connect-archived.json, pulled 2026-11-05) (away games at Hamlin Park, West Queen Anne, Bayview confirmed)",
-      "checked": "2026-11-05"
+      "note": "Away games are at the other District 8 leagues' home fields. Robert Eagle Staff and Soundview are used when a permit or slot is available (neither home nor away). No playoff sites here (John).",
+      "source": "Sports Connect 2026 regular-season schedule BB26MAJ Games (78 games: 52 home at Lower Woodland; away Hamlin 12, Bayview 5, Maple Leaf 3, West Queen Anne 2, Magnolia 1, Shorewood HS 1; Eagle Staff 1, Soundview 1), checked by Tower T-81/T-82; John 2026-11-06 (T-80 to T-83)",
+      "checked": "2026-11-06"
      },
      "format": {
       "value": "full kid pitch; 46-ft mound, 60-ft bases; no new inning after 2 hrs 15 min, no new batter after 2 hrs 30 min; no run limit per inning; mercy 15 after 3 / 10 after 4 / 8 after 5; dropped (uncaught) third strike and infield fly rule in effect; steals once the ball reaches the batter, no leadoffs; pitchers limited to 50 pitches a game before May 1 (District 8); everyone plays 9+ defensive outs; score kept, playoffs",
