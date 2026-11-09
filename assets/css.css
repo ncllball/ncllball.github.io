@@ -4472,7 +4472,7 @@ h4 .status-badge {
 
 /* Sub-headings inside a card panel (h5: "Retailers", "Guides", "Video", "Baseball Glove Sizes"...):
    a small gray uppercase label like the Related Links group titles, not a centered heading. (John, 2026-11-09) */
-.ncll-card__details > h5,
+.ncll-card__details > h5:not(.hub-heading),
 .ncll-card__details .glove-size-card__section > h5 {
     text-align: left !important;
     font-size: 0.7rem !important;
