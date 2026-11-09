@@ -8,8 +8,8 @@ The master reference for NCLL uniforms: which hat, shirt and hoodie model each d
 
 | Program/Division   | Hat Model # | Shirt Model #            | Hoodie Model # | Socks | Belt |
 |--------------------|-------------|--------------------------|----------------|-------|------|
-| Baseball - T-Ball  | 4301        | ST350                    | none           | OSFA  | OSFA |
-| Baseball - Kindy   | 4301        | ST350                    | none           | OSFA  | OSFA |
+| Baseball - T-Ball  | 4301        | ST350                    | none           | none  | none |
+| Baseball - Kindy   | 4301        | ST350                    | none           | none  | none |
 | Baseball - A       | 4301        | 4003                     | none           | OSFA  | OSFA |
 | Baseball - AA      | 4301        | 4003                     | none           | OSFA  | OSFA |
 | Baseball - AAA     | PTS30       | 4003                     | PC90HY/PC90H   | OSFA  | OSFA |
