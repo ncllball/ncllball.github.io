@@ -64,3 +64,6 @@ scripts/rotators/out/
 scripts/rotators/**/__pycache__/
 .wrangler/
 tmp/
+
+# Design Library working inbox (board): uncleaned downloads, never publish
+images/_Inbox/
