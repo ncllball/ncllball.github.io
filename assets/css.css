@@ -3497,6 +3497,7 @@ p.flush-bottom:last-child {
     height: 80px;
     object-fit: contain;
     margin: 10px;
+    cursor: default; /* logos aren't zoomable (Equipment Hub, 2026-11-09) */
 }
 .ncll-card__graphics--logos {
     display: flex;
