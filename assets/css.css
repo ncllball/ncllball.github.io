@@ -3585,6 +3585,33 @@ p.flush-bottom:last-child {
 .ncll-card__compare + p {
     margin-top: 16px;
 }
+
+/* Two side-by-side lists in a card panel (Equipment Hub: Rules by Division, Baseball | Softball).
+   Markup: div.ncll-card__cols > div (h5 + ul) x2 */
+.ncll-card__cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 4px 0 0 0;
+}
+.ncll-card__cols h5 {
+    text-align: left !important;
+    font-size: 0.7rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color_muted) !important;
+    margin: 0 0 4px 0 !important;
+    padding: 0 !important;
+}
+.ncll-card__cols ul {
+    margin: 0 !important;
+    padding-left: 18px;
+}
+.ncll-card__cols li {
+    margin: 0 !important;
+    line-height: 1.45 !important;
+}
 .ncll-card__compare figcaption {
     font-size: 0.8rem;
     font-weight: 600;
