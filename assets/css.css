@@ -3582,6 +3582,9 @@ p.flush-bottom:last-child {
 .ncll-card__compare--small img {
     max-height: 64px;
 }
+.ncll-card__compare + p {
+    margin-top: 16px;
+}
 .ncll-card__compare figcaption {
     font-size: 0.8rem;
     font-weight: 600;
