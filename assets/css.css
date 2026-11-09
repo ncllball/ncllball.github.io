@@ -3559,42 +3559,28 @@ p.flush-bottom:last-child {
     height: auto;
 }
 
-/* "A + B = C" pictures in a card panel (Equipment Hub: helmet + face shield = helmet with face shield).
-   Markup: div.ncll-card__equation > div.ncll-card__equation-row (img, span.ncll-card__op "+", img),
-   span.ncll-card__op "=", img. Size each picture with a width so parts stay in proportion:
-   --part (a piece that attaches), --main (the item), --result (the finished item). */
-.ncll-card__equation {
+/* Side-by-side "Without / With" pictures in a card panel (Equipment Hub: helmet without and with a face shield).
+   Markup: div.ncll-card__compare > figure (img + figcaption) x2 */
+.ncll-card__compare {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-    margin: 4px 0 0 0;
-}
-.ncll-card__equation-row {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
+    align-items: flex-end;
+    gap: 16px;
+    margin: 6px 0 0 0;
 }
-.ncll-card__equation img {
+.ncll-card__compare figure {
+    margin: 0;
+    text-align: center;
+}
+.ncll-card__compare img {
+    width: 106px;
     height: auto;
-    max-width: 100%;
 }
-.ncll-card__equation-img--part {
-    width: 78px;
-}
-.ncll-card__equation-img--main {
-    width: 130px;
-}
-.ncll-card__equation-img--result {
-    width: 160px;
-}
-.ncll-card__op {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1;
-    color: var(--color_red);
+.ncll-card__compare figcaption {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color_blue);
+    margin-top: 2px;
 }
 
 .ncll-card__graphic--micro {
