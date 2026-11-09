@@ -3575,6 +3575,8 @@ p.flush-bottom:last-child {
 .ncll-card__compare img {
     width: 106px;
     height: auto;
+    max-height: 96px;
+    object-fit: contain;
 }
 .ncll-card__compare figcaption {
     font-size: 0.8rem;
