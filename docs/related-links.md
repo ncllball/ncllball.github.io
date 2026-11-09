@@ -54,6 +54,6 @@ One label per destination:
 | All-Stars History (2118070) | All-Stars History |
 | Rainouts, Reschedules & Fields (2119252) | Rainouts, Reschedules & Fields |
 | Field Locations (2115055) | Field Locations |
-| Hubs | Coaches Hub, Volunteer Hub, Parents Hub, Safety Hub, Umpires Hub, Helping Hub, Events Hub, Uniforms Hub, Baseball Hub, Softball Hub, Player Development Hub |
+| Hubs | Coaches Hub, Volunteer Hub, Parents Hub, Equipment Hub (2252643), Safety Hub, Umpires Hub, Helping Hub, Events Hub, Uniforms Hub, Baseball Hub, Softball Hub, Player Development Hub |
 
 Update the year in labels at season rollover (2027 Registration, 2027 Assessments, 2027 Key Dates).
