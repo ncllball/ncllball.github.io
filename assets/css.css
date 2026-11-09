@@ -4196,7 +4196,9 @@ h4 .status-badge {
 .ncll-card--toggle input[type="radio"][id$="-10"]:checked~.panel10,
 .ncll-card--toggle input[type="radio"][id$="-11"]:checked~.panel11,
 .ncll-card--toggle input[type="radio"][id$="-12"]:checked~.panel12,
-.ncll-card--toggle input[type="radio"][id$="-13"]:checked~.panel13 {
+.ncll-card--toggle input[type="radio"][id$="-13"]:checked~.panel13,
+.ncll-card--toggle input[type="radio"][id$="-14"]:checked~.panel14,
+.ncll-card--toggle input[type="radio"][id$="-15"]:checked~.panel15 {
     display: block;
 }
 
@@ -4443,7 +4445,9 @@ h4 .status-badge {
 .ncll-card--toggle input[type="radio"][id$="-10"]:checked~.ncll-card__sticky-footer .actions .btn-next-10,
 .ncll-card--toggle input[type="radio"][id$="-11"]:checked~.ncll-card__sticky-footer .actions .btn-next-11,
 .ncll-card--toggle input[type="radio"][id$="-12"]:checked~.ncll-card__sticky-footer .actions .btn-next-12,
-.ncll-card--toggle input[type="radio"][id$="-13"]:checked~.ncll-card__sticky-footer .actions .btn-next-13 {
+.ncll-card--toggle input[type="radio"][id$="-13"]:checked~.ncll-card__sticky-footer .actions .btn-next-13,
+.ncll-card--toggle input[type="radio"][id$="-14"]:checked~.ncll-card__sticky-footer .actions .btn-next-14,
+.ncll-card--toggle input[type="radio"][id$="-15"]:checked~.ncll-card__sticky-footer .actions .btn-next-15 {
     display: inline-flex;
 }
 
@@ -4460,7 +4464,9 @@ h4 .status-badge {
 .ncll-card--toggle input[type="radio"][id$="-10"]:checked~.ncll-card__sticky-footer .actions .btn-prev-10,
 .ncll-card--toggle input[type="radio"][id$="-11"]:checked~.ncll-card__sticky-footer .actions .btn-prev-11,
 .ncll-card--toggle input[type="radio"][id$="-12"]:checked~.ncll-card__sticky-footer .actions .btn-prev-12,
-.ncll-card--toggle input[type="radio"][id$="-13"]:checked~.ncll-card__sticky-footer .actions .btn-prev-13 {
+.ncll-card--toggle input[type="radio"][id$="-13"]:checked~.ncll-card__sticky-footer .actions .btn-prev-13,
+.ncll-card--toggle input[type="radio"][id$="-14"]:checked~.ncll-card__sticky-footer .actions .btn-prev-14,
+.ncll-card--toggle input[type="radio"][id$="-15"]:checked~.ncll-card__sticky-footer .actions .btn-prev-15 {
     display: inline-flex;
 }
 
