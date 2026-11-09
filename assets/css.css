@@ -3559,8 +3559,10 @@ p.flush-bottom:last-child {
     height: auto;
 }
 
-/* "A + B = C" picture stack in a card panel (Equipment Hub: helmet + face shield = helmet with face shield).
-   Markup: div.ncll-card__equation > img, span.ncll-card__op (+ or =), img, span.ncll-card__op, img */
+/* "A + B = C" pictures in a card panel (Equipment Hub: helmet + face shield = helmet with face shield).
+   Markup: div.ncll-card__equation > div.ncll-card__equation-row (img, span.ncll-card__op "+", img),
+   span.ncll-card__op "=", img. Size each picture with a width so parts stay in proportion:
+   --part (a piece that attaches), --main (the item), --result (the finished item). */
 .ncll-card__equation {
     display: flex;
     flex-direction: column;
@@ -3568,14 +3570,24 @@ p.flush-bottom:last-child {
     gap: 2px;
     margin: 4px 0 0 0;
 }
-.ncll-card__equation img {
-    width: auto;
-    max-width: 75%;
-    height: 68px;
-    object-fit: contain;
+.ncll-card__equation-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
-.ncll-card__equation img:last-child {
-    height: 88px;
+.ncll-card__equation img {
+    height: auto;
+    max-width: 100%;
+}
+.ncll-card__equation-img--part {
+    width: 78px;
+}
+.ncll-card__equation-img--main {
+    width: 130px;
+}
+.ncll-card__equation-img--result {
+    width: 160px;
 }
 .ncll-card__op {
     font-family: Arial, Helvetica, sans-serif;
