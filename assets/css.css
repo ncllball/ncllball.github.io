@@ -3571,11 +3571,11 @@ p.flush-bottom:last-child {
 .ncll-card__equation img {
     width: auto;
     max-width: 75%;
-    height: 72px;
+    height: 68px;
     object-fit: contain;
 }
 .ncll-card__equation img:last-child {
-    height: 96px;
+    height: 88px;
 }
 .ncll-card__op {
     font-family: Arial, Helvetica, sans-serif;
