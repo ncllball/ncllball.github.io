@@ -3559,6 +3559,32 @@ p.flush-bottom:last-child {
     height: auto;
 }
 
+/* "A + B = C" picture stack in a card panel (Equipment Hub: helmet + face shield = helmet with face shield).
+   Markup: div.ncll-card__equation > img, span.ncll-card__op (+ or =), img, span.ncll-card__op, img */
+.ncll-card__equation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin: 4px 0 0 0;
+}
+.ncll-card__equation img {
+    width: auto;
+    max-width: 75%;
+    height: 72px;
+    object-fit: contain;
+}
+.ncll-card__equation img:last-child {
+    height: 96px;
+}
+.ncll-card__op {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color_red);
+}
+
 .ncll-card__graphic--micro {
     width: 35px;
     height: auto;
