@@ -101,7 +101,7 @@ The panels switch with hidden radio buttons. No JavaScript, so it works inside t
 
 - **Radio IDs must end in `-intro`, `-0`, `-1` …** The CSS matches on the ending (`[id$="-0"]`), so the prefix can be anything unique on the page.
 - **Panel classes match the radio:** `-intro` → `panel-intro`, `-0` → `panel0`, `-1` → `panel1`.
-- **Up to 16 numbered panels** (`panel0`–`panel15`; 14 and 15 added 2026-11-09 for the Equipment Hub's Gloves card). Past that, the CSS needs new lines.
+- **Up to 24 numbered panels** (`panel0`–`panel23`; 14-23 added 2026-11-09 for the Equipment Hub's Gloves and Bats cards). Past that, the CSS needs new lines.
 - **Buttons per panel:** `btn-next-N` goes to the next panel; `btn-prev-N` goes back one. On the intro, `btn-prev-start` goes to the **last** panel. On the last panel, `btn-next-N` says "Start Over" and points at `-intro`.
 - **Radios first.** The radios have to come before the panels and the footer inside the `<article>`, because the CSS uses the `~` (later sibling) selector.
 - **Add or remove a panel:** add or remove its radio, its `panelN` div and its two footer labels, then re-point the last panel's "Start Over" and the intro's `btn-prev-start`.

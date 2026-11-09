@@ -4198,7 +4198,15 @@ h4 .status-badge {
 .ncll-card--toggle input[type="radio"][id$="-12"]:checked~.panel12,
 .ncll-card--toggle input[type="radio"][id$="-13"]:checked~.panel13,
 .ncll-card--toggle input[type="radio"][id$="-14"]:checked~.panel14,
-.ncll-card--toggle input[type="radio"][id$="-15"]:checked~.panel15 {
+.ncll-card--toggle input[type="radio"][id$="-15"]:checked~.panel15,
+.ncll-card--toggle input[type="radio"][id$="-16"]:checked~.panel16,
+.ncll-card--toggle input[type="radio"][id$="-17"]:checked~.panel17,
+.ncll-card--toggle input[type="radio"][id$="-18"]:checked~.panel18,
+.ncll-card--toggle input[type="radio"][id$="-19"]:checked~.panel19,
+.ncll-card--toggle input[type="radio"][id$="-20"]:checked~.panel20,
+.ncll-card--toggle input[type="radio"][id$="-21"]:checked~.panel21,
+.ncll-card--toggle input[type="radio"][id$="-22"]:checked~.panel22,
+.ncll-card--toggle input[type="radio"][id$="-23"]:checked~.panel23 {
     display: block;
 }
 
@@ -4468,7 +4476,15 @@ h4 .status-badge {
 .ncll-card--toggle input[type="radio"][id$="-12"]:checked~.ncll-card__sticky-footer .actions .btn-next-12,
 .ncll-card--toggle input[type="radio"][id$="-13"]:checked~.ncll-card__sticky-footer .actions .btn-next-13,
 .ncll-card--toggle input[type="radio"][id$="-14"]:checked~.ncll-card__sticky-footer .actions .btn-next-14,
-.ncll-card--toggle input[type="radio"][id$="-15"]:checked~.ncll-card__sticky-footer .actions .btn-next-15 {
+.ncll-card--toggle input[type="radio"][id$="-15"]:checked~.ncll-card__sticky-footer .actions .btn-next-15,
+.ncll-card--toggle input[type="radio"][id$="-16"]:checked~.ncll-card__sticky-footer .actions .btn-next-16,
+.ncll-card--toggle input[type="radio"][id$="-17"]:checked~.ncll-card__sticky-footer .actions .btn-next-17,
+.ncll-card--toggle input[type="radio"][id$="-18"]:checked~.ncll-card__sticky-footer .actions .btn-next-18,
+.ncll-card--toggle input[type="radio"][id$="-19"]:checked~.ncll-card__sticky-footer .actions .btn-next-19,
+.ncll-card--toggle input[type="radio"][id$="-20"]:checked~.ncll-card__sticky-footer .actions .btn-next-20,
+.ncll-card--toggle input[type="radio"][id$="-21"]:checked~.ncll-card__sticky-footer .actions .btn-next-21,
+.ncll-card--toggle input[type="radio"][id$="-22"]:checked~.ncll-card__sticky-footer .actions .btn-next-22,
+.ncll-card--toggle input[type="radio"][id$="-23"]:checked~.ncll-card__sticky-footer .actions .btn-next-23 {
     display: inline-flex;
 }
 
@@ -4487,7 +4503,15 @@ h4 .status-badge {
 .ncll-card--toggle input[type="radio"][id$="-12"]:checked~.ncll-card__sticky-footer .actions .btn-prev-12,
 .ncll-card--toggle input[type="radio"][id$="-13"]:checked~.ncll-card__sticky-footer .actions .btn-prev-13,
 .ncll-card--toggle input[type="radio"][id$="-14"]:checked~.ncll-card__sticky-footer .actions .btn-prev-14,
-.ncll-card--toggle input[type="radio"][id$="-15"]:checked~.ncll-card__sticky-footer .actions .btn-prev-15 {
+.ncll-card--toggle input[type="radio"][id$="-15"]:checked~.ncll-card__sticky-footer .actions .btn-prev-15,
+.ncll-card--toggle input[type="radio"][id$="-16"]:checked~.ncll-card__sticky-footer .actions .btn-prev-16,
+.ncll-card--toggle input[type="radio"][id$="-17"]:checked~.ncll-card__sticky-footer .actions .btn-prev-17,
+.ncll-card--toggle input[type="radio"][id$="-18"]:checked~.ncll-card__sticky-footer .actions .btn-prev-18,
+.ncll-card--toggle input[type="radio"][id$="-19"]:checked~.ncll-card__sticky-footer .actions .btn-prev-19,
+.ncll-card--toggle input[type="radio"][id$="-20"]:checked~.ncll-card__sticky-footer .actions .btn-prev-20,
+.ncll-card--toggle input[type="radio"][id$="-21"]:checked~.ncll-card__sticky-footer .actions .btn-prev-21,
+.ncll-card--toggle input[type="radio"][id$="-22"]:checked~.ncll-card__sticky-footer .actions .btn-prev-22,
+.ncll-card--toggle input[type="radio"][id$="-23"]:checked~.ncll-card__sticky-footer .actions .btn-prev-23 {
     display: inline-flex;
 }
 
