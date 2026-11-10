@@ -68,12 +68,13 @@ The site stylesheet is `assets/css.css`. It's served from Cloudflare Pages (proj
 
 ## Standard Stylesheet Links
 
-Every page uses these two stylesheet links in `<head>` (CloudFront, see above; the Typekit link is currently blocked on ncllball.com, so text falls back to the next font in the stack):
+Every page uses one stylesheet link in `<head>` (CloudFront, see above):
 
 ```html
 <link href="https://d1nzp0zz3zqzdw.cloudfront.net/css.css" rel="stylesheet" type="text/css" />
-<link href="https://use.typekit.net/ldx2icb.css" rel="stylesheet" />
 ```
+
+Fonts come from Google Fonts inside the stylesheet (since 2026-11-10): the `@font-face` block at the top of `assets/css.css` defines `noto-sans-display`, `noto-sans-display-semiconden`, `-condensed` and `-extraconde` (Noto Sans Display at 100/87.5/75/62.5% width) and `cronos-pro` (mapped to Source Sans 3). Don't add the Typekit link (`use.typekit.net/ldx2icb.css`) to new pages: ncllball.com's security policy blocks it. Older pages still carry it harmlessly; drop it when a page is next edited. YouTube embeds must use `https://www.youtube.com/embed/...` (the policy blocks youtube-nocookie.com).
 
 ## HTML Attribute Conventions
 
