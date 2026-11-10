@@ -6671,3 +6671,25 @@ a.wiz-btn--go:hover {
 .navRoot .navWrapper { overflow: hidden; }
 .navRoot .navWrapper > a.navLink:not([href^="javascript"])::after { content: ""; position: absolute; inset: 0; }
 .navRoot .navWrapper > a.navExpand.navArrow::after { content: ""; position: absolute; top: -30px; bottom: -30px; right: -40px; left: -2000px; }
+
+/* Card motto: a picture beside one big line, e.g. the Safety Hub Concussion card's
+   "When in doubt, sit them out." with the CDC HEADS UP badge (2026-11-10). */
+.ncll-card__motto {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 0 12px;
+}
+.ncll-card__motto img {
+    flex: none;
+    width: 110px;
+    height: auto;
+}
+.ncll-card__motto p {
+    margin: 0;
+    font-family: var(--font_tk-noto-sans-display-semiconden);
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.05;
+    color: var(--color_red);
+}
