@@ -1472,6 +1472,7 @@ sup {
 
 .footies-intro {
 	font-family: var(--font_tk-cronos-pro);
+	font-weight: 600; /* Cronos Pro (Typekit) stopped loading 2026-11-10; semi-bold keeps the division/age lead-ins standing out */
 	font-style: normal;
 	letter-spacing: 0.02em;
 	color: var(--color_text);
