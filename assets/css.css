@@ -4095,8 +4095,11 @@ h4 .status-badge {
     left: -9999px;
 }
 
+/* Fixed, not absolute: the lightbox checkboxes sit at the end of the page, and focusing an
+   absolute one (tapping a thumbnail or closing the lightbox) scrolled the page down to it. */
 .lightbox-scope input.lightbox-toggle {
-    position: absolute;
+    position: fixed;
+    top: 0;
     left: -9999px;
 }
 
