@@ -3857,6 +3857,13 @@ h4 .status-badge {
     display: flow-root;
 }
 
+/* Text after a card button gets breathing room (2026-11-10, John: "better spacing"). Only when something follows the
+   button, so cards that end on a button don't grow. */
+.ncll-card__cta + p,
+.ncll-card__cta + ul {
+    margin-top: 16px;
+}
+
 .ncll-card__cta .button {
     display: inline-flex;
     align-items: center;
