@@ -6690,8 +6690,9 @@ a.wiz-btn--go:hover {
 .ncll-card__motto p {
     margin: 0;
     font-family: var(--font_tk-noto-sans-display-semiconden);
-    font-size: 1.75rem;
+    font-size: clamp(1.2rem, 6.4vw, 1.75rem);
     font-weight: 800;
     line-height: 1.1;
+    white-space: nowrap;
     color: var(--color_red);
 }
