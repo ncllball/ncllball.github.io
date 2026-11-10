@@ -6581,3 +6581,22 @@ a.wiz-btn--go:hover {
         padding-bottom: 10px !important;
     }
 }
+
+/* A card panel that shows the store sticker on its own (Parents Hub Swag card) */
+.ncll-sticker-stage {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0 18px;
+}
+.ncll-sticker-stage .ncll-sticker {
+    position: static;
+    width: 150px;
+    height: 150px;
+}
+.ncll-sticker-stage .ncll-store-sticker__top,
+.ncll-sticker-stage .ncll-store-sticker__sub {
+    font-size: 20px;
+}
+.ncll-sticker-stage .ncll-store-sticker__main {
+    font-size: 42px;
+}
