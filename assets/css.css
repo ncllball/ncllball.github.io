@@ -34,6 +34,10 @@
 @font-face { font-family: "ncll-ui-sans"; font-style: normal; font-weight: 100 900; font-stretch: 93.75%; font-display: swap; src: url(https://fonts.gstatic.com/s/notosans/v42/o-0IIpQlx3QUlC5A4PNr6zRAW_0.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin-ext */
 @font-face { font-family: "ncll-ui-sans"; font-style: normal; font-weight: 100 900; font-stretch: 93.75%; font-display: swap; src: url(https://fonts.gstatic.com/s/notosans/v42/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* latin */
 
+/* Sticker font (2026-11-10): refrigerator-deluxe / bebas-neue-pro are Typekit (blocked); Google's Bebas Neue is the free match. */
+@font-face { font-family: "Bebas Neue"; font-style: normal; font-weight: 400; font-display: swap; src: url(https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wdhyzbi.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin-ext */
+@font-face { font-family: "Bebas Neue"; font-style: normal; font-weight: 400; font-display: swap; src: url(https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* latin */
+
 :root {
     --ncll-css-host: cloudflare;     /* marker: proves a page got this stylesheet through the Cloudflare copy */
     /* TEMP: font-family testing variables */
@@ -774,6 +778,7 @@ a.ncll {
     margin-bottom: 16px;
 }
 .hub-intro__aside--accent .hub-aside__title {
+    font-family: var(--font_heading); /* was the skin's Arial; matches card titles (2026-11-10) */
     background: var(--color_red);
     text-transform: uppercase;
     letter-spacing: 0.07em;
@@ -1127,8 +1132,10 @@ a.ncll, .button, .gainsboro-button, .tags_button, .aoverb_button, .sticky-regist
     font-size: 1.5rem;
     padding: 10px 7px;
     color: #ffffff;
-    font-family: "config-variable", sans-serif;
-    font-variation-settings: "slnt"0, "wdth"50, "wght"600;
+    /* was Adobe's config-variable (Typekit, blocked on ncllball.com since 2026-11-10); the card titles' Noto Sans Display
+       semi-condensed (Google) matches it closest */
+    font-family: "noto-sans-display-semiconden", "Segoe UI", sans-serif;
+    font-weight: 600;
     text-transform: none
 }
 
@@ -5563,7 +5570,7 @@ p.rules-legend img {
     border-right: 1px solid #d1d5db;
     background: #f8fafc;
     --callout-icon-size: 18px; /* fits inside the first line so the second line runs under the icon */
-    font-family: proxima-nova, "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    font-family: proxima-nova, "ncll-ui-sans", "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p:has(+ .callout) {
@@ -5587,7 +5594,7 @@ p:has(+ .callout) {
     font-weight: 400;
     line-height: 1.75;
     display: inline;
-    font-family: proxima-nova, "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+    font-family: proxima-nova, "ncll-ui-sans", "Segoe UI", Helvetica, Tahoma, Geneva, Verdana, sans-serif;
 }
 .callout--note {
     border-color: #c5c5c5;
@@ -6229,7 +6236,7 @@ a.wiz-btn {
 	align-items: center;
 	padding: 0.65rem 1.2rem;
 	border-radius: 5px;
-	font-family: proxima-nova, "Segoe UI", Helvetica, Arial, sans-serif !important;
+	font-family: proxima-nova, "ncll-ui-sans", "Segoe UI", Helvetica, Arial, sans-serif !important;
 	font-size: 0.9rem !important;
 	font-weight: 600 !important;
 	letter-spacing: normal;
@@ -6515,7 +6522,7 @@ a.wiz-btn--go:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: 'refrigerator-deluxe', 'bebas-neue-pro', sans-serif;
+    font-family: 'refrigerator-deluxe', 'bebas-neue-pro', 'Bebas Neue', sans-serif;
     line-height: 1;
     transform: rotate(12deg);
     transition: transform .2s ease, filter .2s ease;
