@@ -6614,3 +6614,10 @@ a.wiz-btn--go:hover {
 .ncll-sticker-stage .ncll-store-sticker__main {
     font-size: 42px;
 }
+
+/* Mobile menu: the whole row is tappable, not just the words (John 2026-11-09, Tower T-104).
+   .navWrapper is already position: relative. A link's ::after covers its row; the dropdown arrow's ::after
+   stretches left across the whole row (clipped by overflow: hidden). Desktop #dnnStandardMenu is untouched. */
+.navRoot .navWrapper { overflow: hidden; }
+.navRoot .navWrapper > a.navLink:not([href^="javascript"])::after { content: ""; position: absolute; inset: 0; }
+.navRoot .navWrapper > a.navExpand.navArrow::after { content: ""; position: absolute; top: -30px; bottom: -30px; right: -40px; left: -2000px; }
