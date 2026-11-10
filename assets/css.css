@@ -6537,3 +6537,47 @@ a.wiz-btn--go:hover {
         font-size: 19px;
     }
 }
+
+/* Site header (Sports Connect littleleague2020 skin): trim the empty space around the logo and
+   title. Desktop: Logout / My Account (or Login) move from their own 137px row into the header's
+   bottom-right corner, and the logo shrinks from 140px to 110px. Phone: smaller logo, tighter gap. */
+@media (min-width: 768px) {
+    .skHeader .skHeaderInner {
+        position: relative;
+    }
+    .skHeader .skAction {
+        position: absolute;
+        right: 0;
+        bottom: 12px;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .skHeader .skLogo {
+        padding: 12px 0 !important;
+    }
+    .skHeader .skLogo img {
+        width: 110px !important;
+        height: auto !important;
+    }
+    .skHeader .skBanner {
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+        padding-right: 300px !important;
+    }
+}
+@media (max-width: 767px) {
+    .skHeader .skLogo {
+        padding: 10px 0 0 !important;
+        height: auto !important;
+        min-height: 0 !important;
+        line-height: 0 !important;
+    }
+    .skHeader .skLogo img {
+        width: 96px !important;
+        height: auto !important;
+    }
+    .skHeader .skBanner {
+        padding-top: 6px !important;
+        padding-bottom: 10px !important;
+    }
+}
