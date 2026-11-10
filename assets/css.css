@@ -4095,6 +4095,17 @@ h4 .status-badge {
     left: -9999px;
 }
 
+/* Tapping Back/Next focuses the card's hidden radio, and the browser scrolls a focused element
+   into view. A radio stuck at the card's top got centered, pushing the footer buttons off-screen.
+   Stretched to the card's full height, the browser brings the whole card into frame instead. */
+.ncll-card--toggle > input[type="radio"] {
+    top: 0;
+    height: 100%;
+    width: 1px;
+    margin: 0;
+    scroll-margin: 12px 0;
+}
+
 /* Fixed, not absolute: the lightbox checkboxes sit at the end of the page, and focusing an
    absolute one (tapping a thumbnail or closing the lightbox) scrolled the page down to it. */
 .lightbox-scope input.lightbox-toggle {
