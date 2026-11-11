@@ -10,19 +10,19 @@ The master reference for NCLL uniforms: which hat, shirt and hoodie model each d
 |--------------------|-------------|--------------------------|----------------|-------|------|
 | Baseball - T-Ball  | 4301        | ST350                    | none           | none  | none |
 | Baseball - Kindy   | 4301        | ST350                    | none           | none  | none |
-| Baseball - A       | 4301        | 4003                     | none           | OSFA  | OSFA |
-| Baseball - AA      | 4301        | 4003                     | none           | OSFA  | OSFA |
-| Baseball - AAA     | PTS30       | 4003                     | PC90HY/PC90H   | OSFA  | OSFA |
-| Baseball - Majors  | PTS30       | 4003                     | PC90HY/PC90H   | OSFA  | OSFA |
-| Baseball - Intermediate | PTS30       | 4003                     | PC90H          | OSFA  | OSFA |
-| Baseball - Juniors | PTS30       | 4003                     | PC90H          | OSFA  | OSFA |
-| Baseball - Seniors | PTS30       | 4003                     | PC90H          | OSFA  | OSFA |
-| Softball - A       | 4302        | 4408 GIRLS / 4408 WOMENS | none           | OSFA  | OSFA |
-| Softball - AA      | 4302        | 4408 GIRLS / 4408 WOMENS | none           | OSFA  | OSFA |
-| Softball - AAA     | 4302        | 4408 GIRLS / 4408 WOMENS | PC90HY/PC90H   | OSFA  | OSFA |
-| Softball - Majors  | 4302        | 4408 GIRLS / 4408 WOMENS | PC90HY/PC90H   | OSFA  | OSFA |
-| Softball - Juniors | 4302        | 4408 WOMENS              | PC90H          | OSFA  | OSFA |
-| Softball - Seniors | 4302        | 4408 WOMENS              | PC90H          | OSFA  | OSFA |
+| Baseball - A       | 4301        | 4003                     | none           | 7101 S | 4350 Youth |
+| Baseball - AA      | 4301        | 4003                     | none           | 7101 S | 4350 Youth |
+| Baseball - AAA     | PTS30       | 4003                     | PC90HY/PC90H   | 7101 M | 4350 Youth |
+| Baseball - Majors  | PTS30       | 4003                     | PC90HY/PC90H   | 7101 M | 4350 Youth |
+| Baseball - Intermediate | PTS30       | 4003                     | PC90H          | 7101 M | 4350 Adult |
+| Baseball - Juniors | PTS30       | 4003                     | PC90H          | 7101 M | 4350 Adult |
+| Baseball - Seniors | PTS30       | 4003                     | PC90H          | 7101 M | 4350 Adult |
+| Softball - A       | 4302        | 4408 GIRLS / 4408 WOMENS | none           | 7101 S | 4350 Youth |
+| Softball - AA      | 4302        | 4408 GIRLS / 4408 WOMENS | none           | 7101 S | 4350 Youth |
+| Softball - AAA     | 4302        | 4408 GIRLS / 4408 WOMENS | PC90HY/PC90H   | 7101 M | 4350 Youth |
+| Softball - Majors  | 4302        | 4408 GIRLS / 4408 WOMENS | PC90HY/PC90H   | 7101 M | 4350 Youth |
+| Softball - Juniors | 4302        | 4408 WOMENS              | PC90H          | 7101 M | 4350 Adult |
+| Softball - Seniors | 4302        | 4408 WOMENS              | PC90H          | 7101 M | 4350 Adult |
 
 ## COACHES HATS & SHIRTS MODEL CHART
 
@@ -43,6 +43,22 @@ The master reference for NCLL uniforms: which hat, shirt and hoodie model each d
 | Softball - Majors Coaches  | Champro HC10     | ST350/ST550   | PC90H          | none  | none |
 | Softball - Juniors Coaches | Champro HC10     | ST350/ST550   | PC90H          | none  | none |
 | Softball - Seniors Coaches | Champro HC10     | ST350/ST550   | PC90H          | none  | none |
+
+### Socks and belts (no size question; one size per division)
+
+Decided 2026-11-11 from the 2025 and 2026 Protime invoices (no size question for families; Uniforms orders one size per division). The model chart above uses these.
+
+- **Socks: Protime 7101 All Sport Sock**, sized by shoe size: S = men's/boys 12-4, women's up to 6; M = men's/boys 4 1/2-8 1/2, women's 6 1/2-10 1/2; L = men's/boys 9-12, women's 11-14.
+- **Belts: Protime 4350 Baseball Belt**, Youth or Adult.
+- A and AA (both sports): socks **S**, belts **Youth**. Both years' A/AA invoices were all Small / all Youth.
+- AAA and Majors (both sports): socks **M**, belts **Youth**. Most of the main spring order was Medium socks and Youth belts.
+- Intermediate, Juniors and Seniors: socks **M**, belts **Adult**. The 2026 Juniors order was Medium socks (plus 6 Large) and mostly Adult belts.
+- 2025 and 2026 also bought some **7102 Pro Sock** (Medium) in the main order; 2027 standardizes on the 7101.
+- Team colors vary; the picker shows one color as an example.
+
+### Hoodie: 8203
+
+Decided 2026-11-11: the hoodie is the **8203** (Port & Co PC850H), as in the 2027 sheet. The 2025 main order was 8203 (181); 2026's was the PC90H (Protime 8202, 311), treated as a one-year exception. The PC90H/PC90HY in the charts above are left over from 2026.
 
 ## SIZE & LENGTH CARDS
 
