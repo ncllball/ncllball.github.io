@@ -6703,3 +6703,39 @@ a.wiz-btn--go:hover {
     justify-content: center;
     gap: 18px;
 }
+
+/* Lightbox with a caption under the big image (Helping Hub Sponsor a Team photo, 2026-11-10) */
+.lightbox-scope .lightbox.lightbox--captioned {
+    flex-direction: column;
+    gap: 12px;
+}
+.lightbox-scope .lightbox.lightbox--captioned img {
+    max-height: 78%;
+}
+.lightbox-scope .lightbox .lightbox-note {
+    max-width: 30rem;
+    margin: 0 16px;
+    color: #fff;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: center;
+}
+.lightbox-scope .lightbox-thumb .lightbox-hint {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.8rem;
+    color: var(--color_muted);
+    text-align: center;
+}
+.lightbox-scope .lightbox .lightbox-note a {
+    color: #fff;
+    text-decoration: underline;
+}
+.ncll-card--toggle .lightbox.lightbox--captioned {
+    justify-items: center;
+    align-content: center;
+}
+.ncll-card--toggle .lightbox.lightbox--captioned img {
+    max-width: 92vw;
+    max-height: 72vh;
+}
