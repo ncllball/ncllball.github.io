@@ -5983,10 +5983,11 @@ details.allstars-year > .program-grid {
 	display: block !important;
 	font-size: 1rem;
 	line-height: 1.2 !important;
-	font-weight: 700;
-	font-style: italic;
+	/* Same as the other card titles (.ncll-card__title): 600, upright, navy (was 700 italic, 2026-11-11) */
+	font-weight: 600;
+	font-style: normal;
 	font-family: var(--font_tk-noto-sans-display-semiconden);
-	color: var(--color_blue, #1a3a6b);
+	color: var(--color_blue, #1a3a6b) !important; /* the site skin's h3 color otherwise wins (it rendered black) */
 	text-align: center !important;
 	margin: 0 !important;
 	padding: 0 !important;
