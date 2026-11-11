@@ -2463,7 +2463,7 @@
   "softballSeniorsFee": "$0 in registration; fee set with the partner league (est. $250-$300)",
   "feesInSportsConnect": "Since registration opened 2026-11-03, every Sports Connect division price equals the fee here (checked 2026-11-05).",
   "valueForm": "A division field is either a plain value or { value, source, checked, note }. Divisions are being converted one at a time (Majors baseball first, 2026-11-05).",
-  "teeBallCutoff": "Open: the Tee Ball rules page and the Outline doc quote Regulation IV(a) as 'before January 1', but that quoted text is labeled 'Tee Ball Softball Division', so it looks like the softball clause or a rulebook error. Baseball league age is set by age on August 31 for every division, and NCLL registration uses those Sept 1 / Aug 31 bounds for Tee Ball. Verify against the 2026 baseball rulebook before changing the page (fact-check open question 2, 2026-11-11)."
+  "teeBallCutoff": "Resolved 2026-11-11: Tee Ball is part of the baseball program, so baseball's Regulation IV league age governs ('League Age is that age attained before September 1… regardless of age'). The baseball rulebook's Tee Ball line reprints the softball wording (January 1, 'Tee Ball Softball Division'), which applies to Tee Ball Softball programs only. NCLL's local minimum is league age 5. Tee Ball rules page r9 corrected."
  },
  "dates": {
   "registerBy": "Sunday, January 31, 2027 (requested, not the SC close date)",
