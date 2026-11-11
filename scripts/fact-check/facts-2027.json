@@ -2628,10 +2628,10 @@
    ]
   },
   "scServiceFee": {
-   "value": "$3 per registration, kept by Sports Connect on refunds",
-   "source": "Registration Hub Policies card / Registration Policies page (tabid 2114735), Board refund rules 2026-10-30",
+   "value": "$3 per checkout (per transaction): one fee covers every child registered in the same checkout",
+   "source": "Sports Connect Pricing FAQ, https://sportsconnect.com/pricing-faq/ ('The $3 service fee per transaction... parents who are signing up multiple children will only need to pay the service fee once upon checkout'); NCLL Registration Policies page and Registration Hub refund line",
    "checked": "2026-11-11",
-   "note": "Sports Connect's own fee; not shown in the program settings, so not verified there."
+   "note": "The FAQ doesn't say whether the $3 is returned on a refund; our pages say Sports Connect keeps it. Card processing (percentage) is paid by the league, not families."
   },
   "outsideBoundaryRefundDeduction": {
    "value": "retired",
