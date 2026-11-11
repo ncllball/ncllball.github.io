@@ -6687,14 +6687,16 @@ a.wiz-btn--go:hover {
     width: 84px;
     height: auto;
 }
+/* Motto line: sits where other cards' opening blurb sits, so it uses the blurb's
+   size and color, set apart only by italics (toned down from big red, 2026-11-11) */
 .ncll-card__motto p {
+    align-self: stretch;
     margin: 0;
-    font-family: var(--font_tk-noto-sans-display-semiconden);
-    font-size: clamp(1.2rem, 6.4vw, 1.75rem);
-    font-weight: 800;
-    line-height: 1.1;
-    white-space: nowrap;
-    color: var(--color_red);
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 600;
+    text-align: left;
+    color: var(--color_text);
 }
 
 /* Two badges side by side in a card motto (Safety Hub Weather & Heat: lightning + heat, 2026-11-10) */
