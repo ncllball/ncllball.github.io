@@ -152,8 +152,8 @@ const PLAYER = {
 			blocks: [
 				{
 					q: "shirt-bb", sport: "bb", divs: ["tb", "kcp"],
-					images: [[`${IMG}/hats/YST350_FRONT_FINAL.png`, "ST350 tee &mdash; front"], [`${IMG}/hats/YST350_BACK_FINAL.png`, "ST350 tee &mdash; back"]],
-					note: "T-Ball and Kindy players get the <strong>ST350</strong> performance tee. Measure around the fullest part of the chest.",
+					images: [[`${IMG}/shirts/YST350_TRUE-ROYAL_FRONT.png`, "YST350 youth tee &mdash; front"], [`${IMG}/shirts/YST350_TRUE-ROYAL_BACK.png`, "YST350 youth tee &mdash; back"]],
+					note: "T-Ball and Kindy players get the <strong>ST350</strong> performance tee (<strong>YST350</strong> in youth sizes). Measure around the fullest part of the chest.",
 					sets: [
 						{ title: "Youth", item: "ST350 tee (youth)", sizes: sized(["yxs", "ys", "ym", "yl", "yxl"], CHEST_ST350, chest) },
 						{ title: "Adult", item: "ST350 tee", sizes: sized(["axs", "as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
@@ -161,19 +161,19 @@ const PLAYER = {
 				},
 				{
 					q: "shirt-bb", sport: "bb", divs: ["a", "aa", "aaa"],
-					images: [[`${IMG}/hats/4001_ROYAL.jpg`, "4001 baseball jersey"]],
+					images: [[`${IMG}/shirts/4001_MAROON_FRONT.png`, "4001 baseball jersey"]],
 					note: "A, AA and AAA players get the <strong>4001</strong> baseball jersey. Measure around the fullest part of the chest.",
 					sets: [{ item: "4001 jersey", sizes: sized(["yxs", "ys", "ym", "yl", "yxl", "as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_4001_4011, chest) }],
 				},
 				{
 					q: "shirt-bb", sport: "bb", divs: ["majors", "int", "juniors", "seniors"],
-					images: [[`${IMG}/hats/4011_ROYAL.jpg`, "4011 baseball jersey"]],
+					images: [[`${IMG}/shirts/4011_GREEN_FRONT.png`, "4011 baseball jersey"]],
 					note: "Majors, Intermediate, Juniors and Seniors players get the <strong>4011</strong> baseball jersey. Measure around the fullest part of the chest.",
 					sets: [{ item: "4011 jersey", sizes: sized(["yxs", "ys", "ym", "yl", "yxl", "as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_4001_4011, chest) }],
 				},
 				{
 					q: "shirt-sb", sport: "sb", divs: ["a", "aa", "aaa", "juniors", "seniors"],
-					images: [[`${IMG}/hats/4408_RIPTIDE_FINAL.png`, "4408 softball jersey"]],
+					images: [[`${IMG}/shirts/4408_LIGHT-BLUE_FRONT.png`, "4408 softball jersey"]],
 					note: "Players get the <strong>4408</strong> softball jersey, in girls or womens sizes. Lay a shirt that fits now flat and measure straight across, one inch below the armpits; pick the size closest to that.",
 					sets: [
 						{ title: "Girls sizes", item: "4408 Girls jersey", sizes: sized(["gs", "gm", "gl"], FLAT_4408, flat) },
@@ -182,7 +182,7 @@ const PLAYER = {
 				},
 				{
 					q: "shirt-sb", sport: "sb", divs: ["majors"],
-					images: [[`${IMG}/hats/4404_ROYAL.jpg`, "4404 Dawson softball jersey"]],
+					images: [[`${IMG}/shirts/4404_RED_FRONT.png`, "4404 Dawson softball jersey"]],
 					note: "Softball Majors players get the <strong>4404</strong> Dawson jersey, in the same girls and womens sizes as the 4408 that A–AAA wear. Measurements for this jersey are coming; if your player wore a 4408 before, start with that size.",
 					sets: [
 						{ title: "Girls sizes", item: "4404 Girls jersey", sizes: sized(["gs", "gm", "gl"], {}, none) },
@@ -207,7 +207,7 @@ const PLAYER = {
 				},
 				{
 					q: "hat-sb", sport: "sb", divs: ["aaa", "majors", "juniors", "seniors"],
-					images: [[`${IMG}/hats/4302_BLACK.png`, "4302 softball visor"]],
+					images: [[`${IMG}/hats/4302_SCARLET_SIDE.png`, "4302 softball visor"]],
 					note: "Players get the <strong>4302</strong> adjustable softball visor.",
 					sets: [{ item: "4302 visor", sizes: [["visor-y", head("6⅜&ndash;7¼")], ["visor-a", head("7&ndash;7¾")]] }],
 				},
@@ -218,7 +218,7 @@ const PLAYER = {
 	provided: [
 		["lower", "<strong>Hat:</strong> youth adjustable cap &mdash; one size fits all, nothing to pick."],
 		["upper", "<strong>Hoodie:</strong> we order one size larger than the jersey you picked."],
-		["socks", "<strong>Socks and belt:</strong> one size fits all."],
+		["socks", "<strong>Socks and belt:</strong> sized for your division."],
 	],
 	includedStep: true,
 };
@@ -273,7 +273,7 @@ const COACH = {
 			blocks: [
 				{
 					q: "shirt-bb", sport: "bb",
-					images: [[`${IMG}/hats/ST350_FRONT_FINAL.png`, "ST350 mens tee"], [`${IMG}/hats/LST350_ROYAL.jpg`, "LST350 womens tee"]],
+					images: [[`${IMG}/shirts/ST350_TRUE-RED_FRONT.png`, "ST350 mens &mdash; front"], [`${IMG}/shirts/ST350_TRUE-RED_BACK.png`, "ST350 mens &mdash; back"], [`${IMG}/shirts/LST350_TRUE-ROYAL_FRONT.png`, "LST350 womens &mdash; front"], [`${IMG}/shirts/LST350_TRUE-ROYAL_BACK.png`, "LST350 womens &mdash; back"]],
 					note: "Coaches get the <strong>ST350</strong> performance tee in a mens cut or the <strong>LST350</strong> in a womens cut. Pick one size from either list.",
 					sets: [
 						{ title: "Mens &mdash; ST350", item: "ST350 mens tee", sizes: sized(["axs", "as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
@@ -282,7 +282,7 @@ const COACH = {
 				},
 				{
 					q: "shirt-sb", sport: "sb",
-					images: [[`${IMG}/hats/ST350_FRONT_FINAL.png`, "ST350 mens tee"], [`${IMG}/hats/LST350_ROYAL.jpg`, "LST350 womens tee"]],
+					images: [[`${IMG}/shirts/ST350_TRUE-RED_FRONT.png`, "ST350 mens &mdash; front"], [`${IMG}/shirts/ST350_TRUE-RED_BACK.png`, "ST350 mens &mdash; back"], [`${IMG}/shirts/LST350_TRUE-ROYAL_FRONT.png`, "LST350 womens &mdash; front"], [`${IMG}/shirts/LST350_TRUE-ROYAL_BACK.png`, "LST350 womens &mdash; back"]],
 					note: "Coaches get the <strong>ST350</strong> performance tee in a mens cut or the <strong>LST350</strong> in a womens cut. Pick one size from either list.",
 					sets: [
 						{ title: "Mens &mdash; ST350", item: "ST350 mens tee", sizes: sized(["axs", "as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
@@ -323,7 +323,7 @@ const COACH = {
 			blocks: [
 				{
 					q: "hoodie", sport: "any", divs: SETS.upper,
-					images: [[`${IMG}/hats/8203_ROYAL.jpg`, "8203 hoodie"]],
+					images: [[`${IMG}/outerwear/8203_ROYAL_FRONT.png`, "8203 hoodie"]],
 					note: "AAA and up coaches get the <strong>8203</strong> hoodie. Measure around the fullest part of the chest.",
 					sets: [{ item: "8203 hoodie", sizes: sized(["as", "am", "al", "axl", "a2xl", "a3xl"], CHEST_ST350, chest) }],
 				},
@@ -366,6 +366,7 @@ function build(w) {
 		rule(`${setSel(name)} .wiz-summary__row.when-${name}`, ["display: flex"]);
 		rule(`${setSel(name)} li.when-${name}`, ["display: list-item"]);
 		rule(`${setSel(name)} p.when-${name}`, ["display: block"]);
+		rule(`${setSel(name)} figure.when-${name}`, ["display: flex"]);
 	}
 
 	// Selected pills.
@@ -434,8 +435,8 @@ function build(w) {
 	const preview = (n, images) => {
 		if (!images) return;
 		line(n, `<div class="div-product-preview">`);
-		for (const [src, alt] of images) {
-			line(n + 1, `<figure class="div-product-preview__item">`);
+		for (const [src, alt, when] of images) {
+			line(n + 1, `<figure class="div-product-preview__item${when ? ` when-${when}` : ""}">`);
 			line(n + 2, `<img src="${src}" alt="${alt.replace(/&mdash;/g, "—")}" />`);
 			line(n + 2, `<figcaption>${alt}</figcaption>`);
 			line(n + 1, `</figure>`);
@@ -477,6 +478,7 @@ function build(w) {
 	panelOpen("intro", `${w.kind === "coach" ? "Coach" : "Player"} uniform PICKER intro`);
 	line(7, `<p class="wiz-intro-text"><strong>Why this exists:</strong> most uniform re-orders come from guessing sizes during registration. This takes the guessing out.</p>`);
 	line(7, `<img class="wiz-intro-img" src="${w.introImg[0]}" alt="${w.introImg[1]}" />`);
+	line(7, `<p class="wiz-intro-text wiz-intro-text--sample">Photos show the style only. Yours come in your team&rsquo;s color with NCLL lettering and logos.</p>`);
 	line(7, `<p class="wiz-intro-text">Pick the sport, the division and a size for each item. At the end you get the exact numbered answer to choose for each uniform question in registration.</p>`);
 	panelNav();
 	btn(7, "next", "sport", "Get Started &rarr;");
@@ -558,7 +560,7 @@ function build(w) {
 		line(7, `<h4 class="wiz-title left">Included &mdash; nothing to pick</h4>`);
 		line(7, `<p class="wiz-subtitle">These come with your registration. There's no size question for them.</p>`);
 		providedList(7);
-		preview(7, [[`${IMG}/socks-belts/sock_royal.png`, "Sock"], [`${IMG}/socks-belts/belt_royal_front.png`, "Belt"]]);
+		preview(7, [[`${IMG}/hats/4301_ROYAL_FRONT.png`, "4301 adjustable cap", "lower"], [`${IMG}/socks-belts/7101_SCARLET_SIDE.png`, "Sock", "socks"], [`${IMG}/socks-belts/4350_SCARLET_FRONT.png`, "Belt", "socks"]]);
 		panelNav();
 		btn(7, "back", "hat", "&larr; Back", "upper");
 		btn(7, "back", "shirt", "&larr; Back", "lower");

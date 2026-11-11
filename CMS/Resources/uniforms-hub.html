@@ -89,6 +89,10 @@
 				display: block;
 			}
 
+			.unif-wizard:has(#c-div-aaa:checked, #c-div-majors:checked, #c-div-int:checked, #c-div-juniors:checked, #c-div-seniors:checked) figure.when-upper {
+				display: flex;
+			}
+
 			.unif-wizard:has(#c-div-tb:checked, #c-div-kcp:checked, #c-div-a:checked, #c-div-aa:checked) .wiz-btn.when-lower {
 				display: inline-flex;
 			}
@@ -109,6 +113,10 @@
 				display: block;
 			}
 
+			.unif-wizard:has(#c-div-tb:checked, #c-div-kcp:checked, #c-div-a:checked, #c-div-aa:checked) figure.when-lower {
+				display: flex;
+			}
+
 			.unif-wizard:has(#c-div-a:checked, #c-div-aa:checked, #c-div-aaa:checked, #c-div-majors:checked, #c-div-int:checked, #c-div-juniors:checked, #c-div-seniors:checked) .wiz-btn.when-socks {
 				display: inline-flex;
 			}
@@ -127,6 +135,10 @@
 
 			.unif-wizard:has(#c-div-a:checked, #c-div-aa:checked, #c-div-aaa:checked, #c-div-majors:checked, #c-div-int:checked, #c-div-juniors:checked, #c-div-seniors:checked) p.when-socks {
 				display: block;
+			}
+
+			.unif-wizard:has(#c-div-a:checked, #c-div-aa:checked, #c-div-aaa:checked, #c-div-majors:checked, #c-div-int:checked, #c-div-juniors:checked, #c-div-seniors:checked) figure.when-socks {
+				display: flex;
 			}
 
 			.unif-wizard:has(#c-sport-bb:checked) label[for="c-sport-bb"],
@@ -720,6 +732,10 @@
 				display: block;
 			}
 
+			.unif-wizard:has(#div-aaa:checked, #div-majors:checked, #div-int:checked, #div-juniors:checked, #div-seniors:checked) figure.when-upper {
+				display: flex;
+			}
+
 			.unif-wizard:has(#div-tb:checked, #div-kcp:checked, #div-a:checked, #div-aa:checked) .wiz-btn.when-lower {
 				display: inline-flex;
 			}
@@ -740,6 +756,10 @@
 				display: block;
 			}
 
+			.unif-wizard:has(#div-tb:checked, #div-kcp:checked, #div-a:checked, #div-aa:checked) figure.when-lower {
+				display: flex;
+			}
+
 			.unif-wizard:has(#div-a:checked, #div-aa:checked, #div-aaa:checked, #div-majors:checked, #div-int:checked, #div-juniors:checked, #div-seniors:checked) .wiz-btn.when-socks {
 				display: inline-flex;
 			}
@@ -758,6 +778,10 @@
 
 			.unif-wizard:has(#div-a:checked, #div-aa:checked, #div-aaa:checked, #div-majors:checked, #div-int:checked, #div-juniors:checked, #div-seniors:checked) p.when-socks {
 				display: block;
+			}
+
+			.unif-wizard:has(#div-a:checked, #div-aa:checked, #div-aaa:checked, #div-majors:checked, #div-int:checked, #div-juniors:checked, #div-seniors:checked) figure.when-socks {
+				display: flex;
 			}
 
 			.unif-wizard:has(#sport-bb:checked) label[for="sport-bb"],
@@ -1296,6 +1320,7 @@
 						<div class="wiz-panel-content">
 							<p class="wiz-intro-text"><strong>Why this exists:</strong> most uniform re-orders come from guessing sizes during registration. This takes the guessing out.</p>
 							<img class="wiz-intro-img" src="https://ncllball.github.io/images/uniforms/uniform-coach.png" alt="NCLL coach uniform" />
+							<p class="wiz-intro-text wiz-intro-text--sample">Photos show the style only. Yours come in your team&rsquo;s color with NCLL lettering and logos.</p>
 							<p class="wiz-intro-text">Pick the sport, the division and a size for each item. At the end you get the exact numbered answer to choose for each uniform question in registration.</p>
 						</div>
 						<div class="wiz-nav">
@@ -1388,12 +1413,20 @@
 							<div class="blk blk--shirt-0">
 								<div class="div-product-preview">
 									<figure class="div-product-preview__item">
-										<img src="https://ncllball.github.io/images/uniforms/hats/ST350_FRONT_FINAL.png" alt="ST350 mens tee" />
-										<figcaption>ST350 mens tee</figcaption>
+										<img src="https://ncllball.github.io/images/uniforms/shirts/ST350_TRUE-RED_FRONT.png" alt="ST350 mens — front" />
+										<figcaption>ST350 mens &mdash; front</figcaption>
 									</figure>
 									<figure class="div-product-preview__item">
-										<img src="https://ncllball.github.io/images/uniforms/hats/LST350_ROYAL.jpg" alt="LST350 womens tee" />
-										<figcaption>LST350 womens tee</figcaption>
+										<img src="https://ncllball.github.io/images/uniforms/shirts/ST350_TRUE-RED_BACK.png" alt="ST350 mens — back" />
+										<figcaption>ST350 mens &mdash; back</figcaption>
+									</figure>
+									<figure class="div-product-preview__item">
+										<img src="https://ncllball.github.io/images/uniforms/shirts/LST350_TRUE-ROYAL_FRONT.png" alt="LST350 womens — front" />
+										<figcaption>LST350 womens &mdash; front</figcaption>
+									</figure>
+									<figure class="div-product-preview__item">
+										<img src="https://ncllball.github.io/images/uniforms/shirts/LST350_TRUE-ROYAL_BACK.png" alt="LST350 womens — back" />
+										<figcaption>LST350 womens &mdash; back</figcaption>
 									</figure>
 								</div>
 								<p class="wiz-shirt-note">Coaches get the <strong>ST350</strong> performance tee in a mens cut or the <strong>LST350</strong> in a womens cut. Pick one size from either list.</p>
@@ -1422,12 +1455,20 @@
 							<div class="blk blk--shirt-1">
 								<div class="div-product-preview">
 									<figure class="div-product-preview__item">
-										<img src="https://ncllball.github.io/images/uniforms/hats/ST350_FRONT_FINAL.png" alt="ST350 mens tee" />
-										<figcaption>ST350 mens tee</figcaption>
+										<img src="https://ncllball.github.io/images/uniforms/shirts/ST350_TRUE-RED_FRONT.png" alt="ST350 mens — front" />
+										<figcaption>ST350 mens &mdash; front</figcaption>
 									</figure>
 									<figure class="div-product-preview__item">
-										<img src="https://ncllball.github.io/images/uniforms/hats/LST350_ROYAL.jpg" alt="LST350 womens tee" />
-										<figcaption>LST350 womens tee</figcaption>
+										<img src="https://ncllball.github.io/images/uniforms/shirts/ST350_TRUE-RED_BACK.png" alt="ST350 mens — back" />
+										<figcaption>ST350 mens &mdash; back</figcaption>
+									</figure>
+									<figure class="div-product-preview__item">
+										<img src="https://ncllball.github.io/images/uniforms/shirts/LST350_TRUE-ROYAL_FRONT.png" alt="LST350 womens — front" />
+										<figcaption>LST350 womens &mdash; front</figcaption>
+									</figure>
+									<figure class="div-product-preview__item">
+										<img src="https://ncllball.github.io/images/uniforms/shirts/LST350_TRUE-ROYAL_BACK.png" alt="LST350 womens — back" />
+										<figcaption>LST350 womens &mdash; back</figcaption>
 									</figure>
 								</div>
 								<p class="wiz-shirt-note">Coaches get the <strong>ST350</strong> performance tee in a mens cut or the <strong>LST350</strong> in a womens cut. Pick one size from either list.</p>
@@ -1532,7 +1573,7 @@
 							<div class="blk blk--hoodie-0">
 								<div class="div-product-preview">
 									<figure class="div-product-preview__item">
-										<img src="https://ncllball.github.io/images/uniforms/hats/8203_ROYAL.jpg" alt="8203 hoodie" />
+										<img src="https://ncllball.github.io/images/uniforms/outerwear/8203_ROYAL_FRONT.png" alt="8203 hoodie" />
 										<figcaption>8203 hoodie</figcaption>
 									</figure>
 								</div>
@@ -1816,6 +1857,7 @@
 						<div class="wiz-panel-content">
 							<p class="wiz-intro-text"><strong>Why this exists:</strong> most uniform re-orders come from guessing sizes during registration. This takes the guessing out.</p>
 							<img class="wiz-intro-img" src="https://ncllball.github.io/images/uniforms/uniform-player.png" alt="NCLL player uniform" />
+							<p class="wiz-intro-text wiz-intro-text--sample">Photos show the style only. Yours come in your team&rsquo;s color with NCLL lettering and logos.</p>
 							<p class="wiz-intro-text">Pick the sport, the division and a size for each item. At the end you get the exact numbered answer to choose for each uniform question in registration.</p>
 						</div>
 						<div class="wiz-nav">
@@ -1908,15 +1950,15 @@
 							<div class="blk blk--shirt-0">
 								<div class="div-product-preview">
 									<figure class="div-product-preview__item">
-										<img src="https://ncllball.github.io/images/uniforms/hats/YST350_FRONT_FINAL.png" alt="ST350 tee — front" />
-										<figcaption>ST350 tee &mdash; front</figcaption>
+										<img src="https://ncllball.github.io/images/uniforms/shirts/YST350_TRUE-ROYAL_FRONT.png" alt="YST350 youth tee — front" />
+										<figcaption>YST350 youth tee &mdash; front</figcaption>
 									</figure>
 									<figure class="div-product-preview__item">
-										<img src="https://ncllball.github.io/images/uniforms/hats/YST350_BACK_FINAL.png" alt="ST350 tee — back" />
-										<figcaption>ST350 tee &mdash; back</figcaption>
+										<img src="https://ncllball.github.io/images/uniforms/shirts/YST350_TRUE-ROYAL_BACK.png" alt="YST350 youth tee — back" />
+										<figcaption>YST350 youth tee &mdash; back</figcaption>
 									</figure>
 								</div>
-								<p class="wiz-shirt-note">T-Ball and Kindy players get the <strong>ST350</strong> performance tee. Measure around the fullest part of the chest.</p>
+								<p class="wiz-shirt-note">T-Ball and Kindy players get the <strong>ST350</strong> performance tee (<strong>YST350</strong> in youth sizes). Measure around the fullest part of the chest.</p>
 								<p class="wiz-block-title">Youth</p>
 								<div class="wiz-options">
 									<label class="wiz-opt" for="shirt-bb-yxs">1: Youth XS<span class="wiz-opt__note">Fits chest 22&ndash;24&Prime;</span></label>
@@ -1940,7 +1982,7 @@
 							<div class="blk blk--shirt-1">
 								<div class="div-product-preview">
 									<figure class="div-product-preview__item">
-										<img src="https://ncllball.github.io/images/uniforms/hats/4001_ROYAL.jpg" alt="4001 baseball jersey" />
+										<img src="https://ncllball.github.io/images/uniforms/shirts/4001_MAROON_FRONT.png" alt="4001 baseball jersey" />
 										<figcaption>4001 baseball jersey</figcaption>
 									</figure>
 								</div>
@@ -1962,7 +2004,7 @@
 							<div class="blk blk--shirt-2">
 								<div class="div-product-preview">
 									<figure class="div-product-preview__item">
-										<img src="https://ncllball.github.io/images/uniforms/hats/4011_ROYAL.jpg" alt="4011 baseball jersey" />
+										<img src="https://ncllball.github.io/images/uniforms/shirts/4011_GREEN_FRONT.png" alt="4011 baseball jersey" />
 										<figcaption>4011 baseball jersey</figcaption>
 									</figure>
 								</div>
@@ -1984,7 +2026,7 @@
 							<div class="blk blk--shirt-3">
 								<div class="div-product-preview">
 									<figure class="div-product-preview__item">
-										<img src="https://ncllball.github.io/images/uniforms/hats/4408_RIPTIDE_FINAL.png" alt="4408 softball jersey" />
+										<img src="https://ncllball.github.io/images/uniforms/shirts/4408_LIGHT-BLUE_FRONT.png" alt="4408 softball jersey" />
 										<figcaption>4408 softball jersey</figcaption>
 									</figure>
 								</div>
@@ -2007,7 +2049,7 @@
 							<div class="blk blk--shirt-4">
 								<div class="div-product-preview">
 									<figure class="div-product-preview__item">
-										<img src="https://ncllball.github.io/images/uniforms/hats/4404_ROYAL.jpg" alt="4404 Dawson softball jersey" />
+										<img src="https://ncllball.github.io/images/uniforms/shirts/4404_RED_FRONT.png" alt="4404 Dawson softball jersey" />
 										<figcaption>4404 Dawson softball jersey</figcaption>
 									</figure>
 								</div>
@@ -2065,7 +2107,7 @@
 							<div class="blk blk--hat-1">
 								<div class="div-product-preview">
 									<figure class="div-product-preview__item">
-										<img src="https://ncllball.github.io/images/uniforms/hats/4302_BLACK.png" alt="4302 softball visor" />
+										<img src="https://ncllball.github.io/images/uniforms/hats/4302_SCARLET_SIDE.png" alt="4302 softball visor" />
 										<figcaption>4302 softball visor</figcaption>
 									</figure>
 								</div>
@@ -2098,15 +2140,19 @@
 							<ul class="wiz-provided">
 								<li class="when-lower"><strong>Hat:</strong> youth adjustable cap &mdash; one size fits all, nothing to pick.</li>
 								<li class="when-upper"><strong>Hoodie:</strong> we order one size larger than the jersey you picked.</li>
-								<li class="when-socks"><strong>Socks and belt:</strong> one size fits all.</li>
+								<li class="when-socks"><strong>Socks and belt:</strong> sized for your division.</li>
 							</ul>
 							<div class="div-product-preview">
-								<figure class="div-product-preview__item">
-									<img src="https://ncllball.github.io/images/uniforms/socks-belts/sock_royal.png" alt="Sock" />
+								<figure class="div-product-preview__item when-lower">
+									<img src="https://ncllball.github.io/images/uniforms/hats/4301_ROYAL_FRONT.png" alt="4301 adjustable cap" />
+									<figcaption>4301 adjustable cap</figcaption>
+								</figure>
+								<figure class="div-product-preview__item when-socks">
+									<img src="https://ncllball.github.io/images/uniforms/socks-belts/7101_SCARLET_SIDE.png" alt="Sock" />
 									<figcaption>Sock</figcaption>
 								</figure>
-								<figure class="div-product-preview__item">
-									<img src="https://ncllball.github.io/images/uniforms/socks-belts/belt_royal_front.png" alt="Belt" />
+								<figure class="div-product-preview__item when-socks">
+									<img src="https://ncllball.github.io/images/uniforms/socks-belts/4350_SCARLET_FRONT.png" alt="Belt" />
 									<figcaption>Belt</figcaption>
 								</figure>
 							</div>
@@ -2220,7 +2266,7 @@
 							<ul class="wiz-provided">
 								<li class="when-lower"><strong>Hat:</strong> youth adjustable cap &mdash; one size fits all, nothing to pick.</li>
 								<li class="when-upper"><strong>Hoodie:</strong> we order one size larger than the jersey you picked.</li>
-								<li class="when-socks"><strong>Socks and belt:</strong> one size fits all.</li>
+								<li class="when-socks"><strong>Socks and belt:</strong> sized for your division.</li>
 							</ul>
 							<details class="wiz-options-ref">
 								<summary>Every option in each registration question</summary>
@@ -2284,7 +2330,7 @@
 			</div>
 			</div>
 			<!-- picker:end -->
-			<p class="cms-rev"><small>[r92 · 2026-11-03 · 2113971]</small></p>
+			<p class="cms-rev"><small>[r93 · 2026-11-11 · 2113971]</small></p>
 		</main>
 	</body>
 </html>
