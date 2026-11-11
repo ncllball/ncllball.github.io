@@ -561,7 +561,7 @@ function build(w) {
 		line(7, `<h4 class="wiz-title left">Included &mdash; nothing to pick</h4>`);
 		line(7, `<p class="wiz-subtitle">These come with your registration. There's no size question for them.</p>`);
 		providedList(7);
-		preview(7, [[`${IMG}/hats/4301_ROYAL_FRONT.png`, "4301 adjustable cap", "lower"], [`${IMG}/outerwear/8203_ROYAL_FRONT.png`, "8203 hoodie", "upper"], [`${IMG}/socks-belts/7101_SCARLET_SIDE.png`, "Sock", "socks"], [`${IMG}/socks-belts/4350_SCARLET_FRONT.png`, "Belt", "socks"]]);
+		preview(7, [[`${IMG}/hats/4301_ROYAL_FRONT.png`, "4301 adjustable cap", "lower"], [`${IMG}/outerwear/8203_ROYAL_FRONT.png`, "8203 hoodie", "upper"], [`${IMG}/socks-belts/7101_SCARLET_PAIR.png`, "Socks", "socks"], [`${IMG}/socks-belts/4350_SCARLET_FRONT.png`, "Belt", "socks"]]);
 		panelNav();
 		btn(7, "back", "hat", "&larr; Back", "upper");
 		btn(7, "back", "shirt", "&larr; Back", "lower");
