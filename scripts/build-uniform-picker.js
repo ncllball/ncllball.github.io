@@ -221,6 +221,9 @@ const PLAYER = {
 		["socks", "<strong>Socks and belt:</strong> sized for your division."],
 	],
 	includedStep: true,
+	includedWhen: null, // every player division has something included
+	includedBack: [["hat", "upper"], ["shirt", "lower"]],
+	includedImages: [[`${IMG}/hats/4301_ROYAL_FRONT.png`, "4301 adjustable cap", "lower"], [`${IMG}/outerwear/8203_ROYAL_FRONT.png`, "8203 hoodie", "upper"], [`${IMG}/socks-belts/7101_SCARLET_PAIR.png`, "Socks", "socks"], [`${IMG}/socks-belts/4350_SCARLET_FRONT.png`, "Belt", "socks"]],
 };
 
 const COACH = {
@@ -269,7 +272,7 @@ const COACH = {
 			key: "shirt",
 			title: "Shirt",
 			subtitle: "Choose a shirt for yourself.",
-			next: [["hat", "upper", "Next: Hat"], ["summary", "lower", "See my answers"]],
+			next: [["hat", "upper", "Next: Hat"], ["included", "lower", "Next: Included items"]],
 			blocks: [
 				{
 					q: "shirt-bb", sport: "bb",
@@ -331,7 +334,10 @@ const COACH = {
 		},
 	],
 	provided: [["lower", "<strong>Hat:</strong> adult adjustable cap &mdash; one size fits all, nothing to pick."]],
-	includedStep: false,
+	includedStep: true,
+	includedWhen: "lower", // only T-Ball to AA coaches get something included (the cap); AAA and up pick everything
+	includedBack: [["shirt"]],
+	includedImages: [[`${IMG}/hats/4301_ROYAL_FRONT.png`, "4301 adjustable cap"]],
 };
 
 // ── Builders ───────────────────────────────────────────────────────────────
@@ -418,6 +424,7 @@ function build(w) {
 	const line = (n, s) => out.push(t(n) + s);
 	const total = steps.length - 2; // dots: sport … last step before summary, plus the final check
 	const dotWhen = (key) => {
+		if (key === "included" && w.includedWhen) return ` when-${w.includedWhen}`;
 		const st = w.steps.find((s) => s.key === key);
 		return st && st.when ? ` when-${st.when}` : "";
 	};
@@ -561,10 +568,9 @@ function build(w) {
 		line(7, `<h4 class="wiz-title left">Included &mdash; nothing to pick</h4>`);
 		line(7, `<p class="wiz-subtitle">These come with your registration. There's no size question for them.</p>`);
 		providedList(7);
-		preview(7, [[`${IMG}/hats/4301_ROYAL_FRONT.png`, "4301 adjustable cap", "lower"], [`${IMG}/outerwear/8203_ROYAL_FRONT.png`, "8203 hoodie", "upper"], [`${IMG}/socks-belts/7101_SCARLET_PAIR.png`, "Socks", "socks"], [`${IMG}/socks-belts/4350_SCARLET_FRONT.png`, "Belt", "socks"]]);
+		preview(7, w.includedImages);
 		panelNav();
-		btn(7, "back", "hat", "&larr; Back", "upper");
-		btn(7, "back", "shirt", "&larr; Back", "lower");
+		w.includedBack.forEach(([target, when]) => btn(7, "back", target, "&larr; Back", when));
 		btn(7, "next", "summary", "See my answers &rarr;");
 		panelClose();
 	}
@@ -606,11 +612,7 @@ function build(w) {
 		line(8, `</div>`);
 	}
 	line(7, `</dl>`);
-	// Heading carries the same when- classes as its items, so it hides when none apply
-	// (e.g. AAA-and-up coaches, who pick every item).
-	const providedWhen = [...new Set(w.provided.map(([when]) => `when-${when}`))].join(" ");
-	line(7, `<p class="wiz-block-title ${providedWhen}">Included &mdash; nothing to pick</p>`);
-	providedList(7);
+	// Included items have their own step; the answers page lists registration answers only.
 	line(7, `<details class="wiz-options-ref">`);
 	line(8, `<summary>Every option in each registration question</summary>`);
 	for (const [qk, q] of Object.entries(w.questions)) {
@@ -626,8 +628,12 @@ function build(w) {
 	line(6, `</div>`);
 	line(6, `<div class="wiz-nav wiz-nav--finish">`);
 	const lastBefore = steps[steps.length - 2];
-	if (w.includedStep) btn(7, "back", lastBefore, "&larr; Back");
-	else {
+	if (w.includedStep && !w.includedWhen) btn(7, "back", lastBefore, "&larr; Back");
+	else if (w.includedStep) {
+		// Included only shows for some divisions: Back goes there for them, else to the last item step.
+		btn(7, "back", "included", "&larr; Back", w.includedWhen);
+		btn(7, "back", w.steps[w.steps.length - 1].key, "&larr; Back", w.includedWhen === "lower" ? "upper" : "lower");
+	} else {
 		btn(7, "back", lastBefore, "&larr; Back", "upper");
 		btn(7, "back", w.steps[0].key, "&larr; Back", "lower");
 	}

@@ -57,7 +57,11 @@
 				display: flex;
 			}
 
-			#c-wiz-s5:checked ~ .wiz-body .wiz-panel--summary {
+			#c-wiz-s5:checked ~ .wiz-body .wiz-panel--included {
+				display: flex;
+			}
+
+			#c-wiz-s6:checked ~ .wiz-body .wiz-panel--summary {
 				display: flex;
 			}
 
@@ -1276,6 +1280,7 @@
 				<input type="radio" name="c-wiz-step" id="c-wiz-s3" />
 				<input type="radio" name="c-wiz-step" id="c-wiz-s4" />
 				<input type="radio" name="c-wiz-step" id="c-wiz-s5" />
+				<input type="radio" name="c-wiz-step" id="c-wiz-s6" />
 
 				<input type="radio" name="c-sport" id="c-sport-bb" />
 				<input type="radio" name="c-sport" id="c-sport-sb" />
@@ -1360,6 +1365,7 @@
 								<span class="wiz-progress__step"></span>
 								<span class="wiz-progress__step when-upper"></span>
 								<span class="wiz-progress__step when-upper"></span>
+								<span class="wiz-progress__step when-lower"></span>
 								<span class="wiz-progress__step wiz-progress__step--final"></span>
 							</div>
 							<h4 class="wiz-title left">Sport</h4>
@@ -1390,6 +1396,7 @@
 								<span class="wiz-progress__step"></span>
 								<span class="wiz-progress__step when-upper"></span>
 								<span class="wiz-progress__step when-upper"></span>
+								<span class="wiz-progress__step when-lower"></span>
 								<span class="wiz-progress__step wiz-progress__step--final"></span>
 							</div>
 							<h4 class="wiz-title left">Division</h4>
@@ -1429,6 +1436,7 @@
 								<span class="wiz-progress__step wiz-progress__step--active"></span>
 								<span class="wiz-progress__step when-upper"></span>
 								<span class="wiz-progress__step when-upper"></span>
+								<span class="wiz-progress__step when-lower"></span>
 								<span class="wiz-progress__step wiz-progress__step--final"></span>
 							</div>
 							<h4 class="wiz-title left">Shirt</h4>
@@ -1505,7 +1513,7 @@
 						<div class="wiz-nav">
 							<label class="wiz-btn wiz-btn--back" for="c-wiz-s1">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--next when-upper" for="c-wiz-s3">Next: Hat &rarr;</label>
-							<label class="wiz-btn wiz-btn--next when-lower" for="c-wiz-s5">See my answers &rarr;</label>
+							<label class="wiz-btn wiz-btn--next when-lower" for="c-wiz-s5">Next: Included items &rarr;</label>
 						</div>
 					</section>
 
@@ -1518,6 +1526,7 @@
 								<span class="wiz-progress__step wiz-progress__step--done"></span>
 								<span class="wiz-progress__step wiz-progress__step--active when-upper"></span>
 								<span class="wiz-progress__step when-upper"></span>
+								<span class="wiz-progress__step when-lower"></span>
 								<span class="wiz-progress__step wiz-progress__step--final"></span>
 							</div>
 							<h4 class="wiz-title left">Hat</h4>
@@ -1565,6 +1574,7 @@
 								<span class="wiz-progress__step wiz-progress__step--done"></span>
 								<span class="wiz-progress__step wiz-progress__step--done when-upper"></span>
 								<span class="wiz-progress__step wiz-progress__step--active when-upper"></span>
+								<span class="wiz-progress__step when-lower"></span>
 								<span class="wiz-progress__step wiz-progress__step--final"></span>
 							</div>
 							<h4 class="wiz-title left">Hoodie</h4>
@@ -1589,7 +1599,37 @@
 						</div>
 						<div class="wiz-nav">
 							<label class="wiz-btn wiz-btn--back" for="c-wiz-s3">&larr; Back</label>
-							<label class="wiz-btn wiz-btn--next" for="c-wiz-s5">See my answers &rarr;</label>
+							<label class="wiz-btn wiz-btn--next" for="c-wiz-s6">See my answers &rarr;</label>
+						</div>
+					</section>
+
+					<!-- ─ Included items ─ -->
+					<section class="wiz-panel wiz-panel--included" aria-label="Included items">
+						<div class="wiz-panel-content">
+							<div class="wiz-progress" aria-hidden="true">
+								<span class="wiz-progress__step wiz-progress__step--done"></span>
+								<span class="wiz-progress__step wiz-progress__step--done"></span>
+								<span class="wiz-progress__step wiz-progress__step--done"></span>
+								<span class="wiz-progress__step wiz-progress__step--done when-upper"></span>
+								<span class="wiz-progress__step wiz-progress__step--done when-upper"></span>
+								<span class="wiz-progress__step wiz-progress__step--active when-lower"></span>
+								<span class="wiz-progress__step wiz-progress__step--final"></span>
+							</div>
+							<h4 class="wiz-title left">Included &mdash; nothing to pick</h4>
+							<p class="wiz-subtitle">These come with your registration. There's no size question for them.</p>
+							<ul class="wiz-provided">
+								<li class="when-lower"><strong>Hat:</strong> adult adjustable cap &mdash; one size fits all, nothing to pick.</li>
+							</ul>
+							<div class="div-product-preview">
+								<figure class="div-product-preview__item">
+									<img src="https://ncllball.github.io/images/uniforms/hats/4301_ROYAL_FRONT.png" alt="4301 adjustable cap" />
+									<figcaption>4301 adjustable cap</figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="wiz-nav">
+							<label class="wiz-btn wiz-btn--back" for="c-wiz-s2">&larr; Back</label>
+							<label class="wiz-btn wiz-btn--next" for="c-wiz-s6">See my answers &rarr;</label>
 						</div>
 					</section>
 
@@ -1602,6 +1642,7 @@
 								<span class="wiz-progress__step wiz-progress__step--done"></span>
 								<span class="wiz-progress__step wiz-progress__step--done when-upper"></span>
 								<span class="wiz-progress__step wiz-progress__step--done when-upper"></span>
+								<span class="wiz-progress__step wiz-progress__step--done when-lower"></span>
 								<span class="wiz-progress__step wiz-progress__step--final wiz-progress__step--active"></span>
 							</div>
 							<h4 class="wiz-title left">Your registration answers</h4>
@@ -1709,10 +1750,6 @@
 									<dd class="smodel smodel--hoodie-0-0">Orders the 8203 hoodie</dd>
 								</div>
 							</dl>
-							<p class="wiz-block-title when-lower">Included &mdash; nothing to pick</p>
-							<ul class="wiz-provided">
-								<li class="when-lower"><strong>Hat:</strong> adult adjustable cap &mdash; one size fits all, nothing to pick.</li>
-							</ul>
 							<details class="wiz-options-ref">
 								<summary>Every option in each registration question</summary>
 								<div class="q-ref q-ref--shirt-bb q-sport">
@@ -1784,8 +1821,8 @@
 							</details>
 						</div>
 						<div class="wiz-nav wiz-nav--finish">
+							<label class="wiz-btn wiz-btn--back when-lower" for="c-wiz-s5">&larr; Back</label>
 							<label class="wiz-btn wiz-btn--back when-upper" for="c-wiz-s4">&larr; Back</label>
-							<label class="wiz-btn wiz-btn--back when-lower" for="c-wiz-s2">&larr; Back</label>
 							<button class="wiz-btn wiz-btn--restart" type="reset">Start over</button>
 							<a class="wiz-btn wiz-btn--go" href="https://www.ncllball.com/Default.aspx?tabid=2244720" rel="noopener">Go to registration &rarr;</a>
 						</div>
@@ -2260,12 +2297,6 @@
 									<dd class="smodel smodel--hat-1-0">Orders the 4302 visor</dd>
 								</div>
 							</dl>
-							<p class="wiz-block-title when-lower when-upper when-socks">Included &mdash; nothing to pick</p>
-							<ul class="wiz-provided">
-								<li class="when-lower"><strong>Hat:</strong> youth adjustable cap &mdash; one size fits all, nothing to pick.</li>
-								<li class="when-upper"><strong>Hoodie:</strong> we order one size larger than the jersey you picked.</li>
-								<li class="when-socks"><strong>Socks and belt:</strong> sized for your division.</li>
-							</ul>
 							<details class="wiz-options-ref">
 								<summary>Every option in each registration question</summary>
 								<div class="q-ref q-ref--shirt-bb q-sport">
@@ -2328,7 +2359,7 @@
 			</div>
 			</div>
 			<!-- picker:end -->
-			<p class="cms-rev"><small>[r98 · 2026-11-11 · 2113971]</small></p>
+			<p class="cms-rev"><small>[r99 · 2026-11-11 · 2113971]</small></p>
 		</main>
 	</body>
 </html>
