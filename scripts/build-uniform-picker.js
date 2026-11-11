@@ -366,6 +366,8 @@ function build(w) {
 		rule(`${setSel(name)} .wiz-summary__row.when-${name}`, ["display: flex"]);
 		rule(`${setSel(name)} li.when-${name}`, ["display: list-item"]);
 		rule(`${setSel(name)} p.when-${name}`, ["display: block"]);
+		// Pictures default to hidden here: css.css .div-product-preview__item (display: flex) beats the plain .when-* hide.
+		rule(`${W} figure.when-${name}`, ["display: none"]);
 		rule(`${setSel(name)} figure.when-${name}`, ["display: flex"]);
 	}
 

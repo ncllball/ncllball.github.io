@@ -226,7 +226,7 @@ AXXXL,27-28
 
 ### 4001 (Protime two-button performance jersey): baseball A, AA, AAA from 2027
 
-From the [Protime product page](https://www.protimesports.com/products/two-button-performance-baseball-jersey-adult), checked 2026-11-03. Sizes sold: YXS, YS, YM, YL, YXL, AS, AM, AL, AXL, A2XL, A3XL. Photo: `images/uniforms/hats/4001_ROYAL.jpg`.
+From the [Protime product page](https://www.protimesports.com/products/two-button-performance-baseball-jersey-adult), checked 2026-11-03. Sizes sold: YXS, YS, YM, YL, YXL, AS, AM, AL, AXL, A2XL, A3XL. Photo: `images/uniforms/shirts/4001_MAROON_FRONT.png`.
 
 Size,Individual chest size (body)
 Y2XS,20"-22" (on the chart, not sold)
@@ -244,15 +244,15 @@ A3XL,54"-56"
 
 ### 4011 (Protime full-button stadium jersey): baseball Majors, Intermediate, Juniors, Seniors from 2027
 
-[Product page](https://www.protimesports.com/products/full-button-stadium-performance-baseball-jersey-adult), checked 2026-11-03. Sizes sold: YXS, YS, YM, YL, YXL, AS, AM, AL, AXL, A2XL, A3XL. Chest chart identical to the 4001 above (YXL not on it). Photo: `images/uniforms/hats/4011_ROYAL.jpg`.
+[Product page](https://www.protimesports.com/products/full-button-stadium-performance-baseball-jersey-adult), checked 2026-11-03. Sizes sold: YXS, YS, YM, YL, YXL, AS, AM, AL, AXL, A2XL, A3XL. Chest chart identical to the 4001 above (YXL not on it). Photo: `images/uniforms/shirts/4011_GREEN_FRONT.png`.
 
 ### 4404 (Protime Dawson women's softball jersey): softball Majors
 
-[Product page](https://www.protimesports.com/products/dawson-softball-jersey-womens), checked 2026-11-03. Sizes sold: **GS, GM, GL, WS, WM, WL, WXL, W2XL** (girls and women's, like the 4408). Its Size Guide shows Protime's generic youth/adult chest chart, which doesn't apply to these sizes, so there is no real 4404 chart on file. NCLL's 2026 order (Inv 420227) was GL, WS, WM, WL. Photo: `images/uniforms/hats/4404_ROYAL.jpg`.
+[Product page](https://www.protimesports.com/products/dawson-softball-jersey-womens), checked 2026-11-03. Sizes sold: **GS, GM, GL, WS, WM, WL, WXL, W2XL** (girls and women's, like the 4408). Its Size Guide shows Protime's generic youth/adult chest chart, which doesn't apply to these sizes, so there is no real 4404 chart on file. NCLL's 2026 order (Inv 420227) was GL, WS, WM, WL. Photo: `images/uniforms/shirts/4404_RED_FRONT.png`.
 
 ### 8203 (Port & Company PC850H ring-spun hoodie): hoodies, AAA and up
 
-[Product page](https://www.protimesports.com/products/ring-spun-hooded-sweatshirt-adult), checked 2026-11-03. Protime invoices call it "PC850H Port Ring Spun Hooded Sweatshirt". Sizes sold: **YXS, YS, YM, YL, YXL, AS, AM, AL, AXL, A2XL, A3XL** (no A4XL). Protime's page doesn't list YXL, but Uniforms (Chris and Lauren) confirmed 2026-11-03 that the hoodie comes in Youth XL, so a Youth L jersey's one-size-up hoodie is a Youth XL, not an Adult S. Its Size Guide is a generic OGIO chart (AXS 32-34" … A4XL 54-57", labeled "waist"), not the 8203's. Photo: `images/uniforms/hats/8203_ROYAL.jpg`.
+[Product page](https://www.protimesports.com/products/ring-spun-hooded-sweatshirt-adult), checked 2026-11-03. Protime invoices call it "PC850H Port Ring Spun Hooded Sweatshirt". Sizes sold: **YXS, YS, YM, YL, YXL, AS, AM, AL, AXL, A2XL, A3XL** (no A4XL). Protime's page doesn't list YXL, but Uniforms (Chris and Lauren) confirmed 2026-11-03 that the hoodie comes in Youth XL, so a Youth L jersey's one-size-up hoodie is a Youth XL, not an Adult S. Its Size Guide is a generic OGIO chart (AXS 32-34" … A4XL 54-57", labeled "waist"), not the 8203's. Photo: `images/uniforms/outerwear/8203_ROYAL_FRONT.png`.
 
 ### LST350: two meanings
 
@@ -260,7 +260,7 @@ Protime invoice 388982 lists "LST350.WOMENS, Sport-Tek Competitor T. Short Sleev
 
 **Coach shirt XS (Uniforms, 2026-11-03):** offer XS for every coach, baseball and softball, Mens (ST350) and Womens (LST350). To keep the existing numbers, the XS options were added at the end of the registration question: baseball 15: Womens XS (Mens XS was already 1); softball 14: Mens XS and 15: Womens XS. The PICKER uses the same numbers.
 
-Sport-Tek LST350 Women's PosiCharge Competitor Tee ([SanMar](https://www.sanmar.com/p/4296_TrueRoyal), spec sheet checked 2026-11-03). Women's sizes XS-4XL. Photo: `images/uniforms/hats/LST350_ROYAL.jpg`.
+Sport-Tek LST350 Women's PosiCharge Competitor Tee ([SanMar](https://www.sanmar.com/p/4296_TrueRoyal), spec sheet checked 2026-11-03). Women's sizes XS-4XL. Photo: `images/uniforms/shirts/LST350_TRUE-ROYAL_FRONT.png` (and `_BACK`).
 
 Size,Body bust (size chart),Bust flat (garment),Body length at back
 XS,32-34,18,25
