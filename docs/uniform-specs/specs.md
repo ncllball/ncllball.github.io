@@ -260,7 +260,7 @@ Protime invoice 388982 lists "LST350.WOMENS, Sport-Tek Competitor T. Short Sleev
 
 **Coach shirt XS (Uniforms, 2026-11-03):** offer XS for every coach, baseball and softball, Mens (ST350) and Womens (LST350). To keep the existing numbers, the XS options were added at the end of the registration question: baseball 15: Womens XS (Mens XS was already 1); softball 14: Mens XS and 15: Womens XS. The PICKER uses the same numbers.
 
-Sport-Tek LST350 Women's PosiCharge Competitor Tee ([SanMar](https://www.sanmar.com/p/4296_TrueRoyal), spec sheet checked 2026-11-03). Women's sizes XS-4XL. Photo: `images/uniforms/shirts/LST350_TRUE-ROYAL_FRONT.png` (and `_BACK`).
+Sport-Tek LST350 Women's PosiCharge Competitor Tee ([SanMar](https://www.sanmar.com/p/4296_TrueRoyal), spec sheet checked 2026-11-03). Women's sizes XS-4XL. Photo: `images/uniforms/shirts/LST350_TRUE-ROYAL_FRONT.png`.
 
 Size,Body bust (size chart),Bust flat (garment),Body length at back
 XS,32-34,18,25
