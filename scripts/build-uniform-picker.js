@@ -155,8 +155,9 @@ const PLAYER = {
 					images: [[`${IMG}/shirts/YST350_TRUE-ROYAL_FRONT.png`, "YST350 youth tee"]],
 					note: "T-Ball and Kindy players get the <strong>ST350</strong> performance tee (<strong>YST350</strong> in youth sizes). Measure around the fullest part of the chest.",
 					sets: [
+						// Youth sizes only (2027 review). The registration question is shared with A and up, so its adult
+						// options stay there; the picker just doesn't offer them to T-Ball and Kindy.
 						{ title: "Youth", item: "ST350 tee (youth)", sizes: sized(["yxs", "ys", "ym", "yl", "yxl"], CHEST_ST350, chest) },
-						{ title: "Adult", item: "ST350 tee", sizes: sized(["axs", "as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
 					],
 				},
 				{
