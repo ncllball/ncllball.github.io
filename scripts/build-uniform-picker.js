@@ -480,8 +480,7 @@ function build(w) {
 	panelOpen("intro", `${w.kind === "coach" ? "Coach" : "Player"} uniform PICKER intro`);
 	line(7, `<p class="wiz-intro-text"><strong>Why this exists:</strong> most uniform re-orders come from guessing sizes during registration. This takes the guessing out.</p>`);
 	line(7, `<img class="wiz-intro-img" src="${w.introImg[0]}" alt="${w.introImg[1]}" />`);
-	line(7, `<p class="wiz-intro-text wiz-intro-text--sample">Photos show the style only. Yours come in your team&rsquo;s color with NCLL lettering and logos.</p>`);
-	line(7, `<p class="wiz-intro-text">Pick the sport, the division and a size for each item. At the end you get the exact numbered answer to choose for each uniform question in registration.</p>`);
+	line(7, `<p class="wiz-intro-text">Pick the sport, the division and a size for each item. Photos show the style; yours come in your team&rsquo;s color. At the end you get the exact numbered answer to choose for each uniform question in registration.</p>`);
 	panelNav();
 	btn(7, "next", "sport", "Get Started &rarr;");
 	panelClose();
