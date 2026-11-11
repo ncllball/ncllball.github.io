@@ -1,3 +1,9 @@
 /css.css
   Cache-Control: public, max-age=0, must-revalidate
   Access-Control-Allow-Origin: *
+
+# Short-term handoff folder: lets ncllball.com pages fetch a file through CloudFront
+# (the CMS security policy blocks raw.githubusercontent.com). assets/tmp/ is git-ignored;
+# empty it and redeploy as soon as the file has been used (2026-11-10).
+/tmp/*
+  Access-Control-Allow-Origin: *
