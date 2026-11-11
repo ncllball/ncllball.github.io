@@ -579,6 +579,7 @@
 						<input type="radio" name="safety-air" id="safety-air-intro" checked />
 						<input type="radio" name="safety-air" id="safety-air-0" />
 						<input type="radio" name="safety-air" id="safety-air-1" />
+						<input type="radio" name="safety-air" id="safety-air-2" />
 						<div class="ncll-card__sticky-heading" aria-hidden="true">
 							<div class="ncll-card__heading-title">
 								<h3 class="ncll-card__title" id="air-card"><span class="text-background">Air Quality</span></h3>
@@ -611,88 +612,52 @@
 						</div>
 						<div class="ncll-card__body panel panel0">
 							<div class="ncll-card__details">
-								<h4 class="left">AQI Thresholds — WA DOH Guidance</h4>
+								<h4 class="left">AQI Levels (WA DOH)</h4>
 								<ul class="ncll-card__meta">
-									<li>
-										<strong>Good (0–50):</strong>
-										Proceed as planned
-									</li>
-									<li>
-										<strong>Moderate (51–100):</strong>
-										Proceed; accommodate players' health conditions
-									</li>
-									<li>
-										<strong>Unhealthy for Sensitive Groups (101–150):</strong>
-										Consider canceling activities 1+ hour; under 1 hour may continue
-									</li>
-									<li>
-										<strong>Unhealthy (151–200):</strong>
-										Cancel all outdoor activities or move indoors with filtered air
-									</li>
-									<li>
-										<strong>Very Unhealthy / Hazardous (201+):</strong>
-										Cancel all outdoor activities
-									</li>
+									<li><strong>Good (0–50):</strong> play as planned</li>
+									<li><strong>Moderate (51–100):</strong> play; watch kids with asthma or other conditions</li>
+									<li><strong>Sensitive groups (101–150):</strong> consider canceling anything over 1 hour</li>
+									<li><strong>Unhealthy (151–200):</strong> cancel, or move indoors with filtered air</li>
+									<li><strong>201+:</strong> cancel all outdoor activities</li>
 								</ul>
-								<div class="ncll-card__cta">
-									<a
-										class="button button--primary"
-										href="https://www.airnow.gov/"
-										target="_blank"
-										rel="noopener"
-										aria-label="Check AQI on AirNow.gov"
-									>
-										Check AQI — AirNow.gov
-									</a>
-								</div>
 							</div>
 						</div>
 						<div class="ncll-card__body panel panel1">
 							<div class="ncll-card__details">
 								<h4 class="left">Modification Options</h4>
 								<ul class="ncll-card__meta">
-									<li>
-										<strong>Reduce intensity</strong>
-										— switch to lower-exertion drills
-									</li>
-									<li>
-										<strong>Reduce duration</strong>
-										— shorten total outdoor time
-									</li>
-									<li>
-										<strong>Relocate</strong>
-										— move indoors or to a location with better air quality
-									</li>
+									<li><strong>Lower intensity:</strong> switch to easier drills</li>
+									<li><strong>Shorter:</strong> cut total time outside</li>
+									<li><strong>Relocate:</strong> move indoors or somewhere with cleaner air</li>
 								</ul>
+							</div>
+						</div>
+						<div class="ncll-card__body panel panel2">
+							<div class="ncll-card__details">
 								<h4 class="left">Symptoms to Watch For</h4>
 								<ul class="ncll-card__meta">
 									<li>Burning eyes</li>
-									<li>Coughing or throat / nose irritation</li>
+									<li>Coughing or throat or nose irritation</li>
 									<li>Wheezing or shortness of breath</li>
 									<li>Headache or fatigue</li>
 								</ul>
-								<p>If any player shows symptoms, move them indoors immediately and notify a parent or guardian.</p>
+								<p>If a player has symptoms, move them indoors right away and tell a parent or guardian.</p>
 								<div class="ncll-card__cta">
-									<a
-										class="button button--primary"
-										href="https://doh.wa.gov/sites/default/files/legacy/Documents/Pubs//334-332.pdf"
-										target="_blank"
-										rel="noopener"
-										aria-label="WA DOH Children and Youth Activities Guide for Air Quality (PDF)"
-									>
-										WA DOH Air Quality Guide (PDF)
-									</a>
+									<a class="button button--primary" href="https://www.airnow.gov/" target="_blank" rel="noopener">Check AQI on AirNow</a>
+									<a class="button button--secondary" href="https://doh.wa.gov/sites/default/files/legacy/Documents/Pubs//334-332.pdf" target="_blank" rel="noopener">WA DOH Air Quality Guide (PDF)</a>
 								</div>
 							</div>
 						</div>
 						<div class="ncll-card__sticky-footer">
 							<div class="actions" role="group" aria-label="Air quality card controls (footer)">
-								<label class="button button--secondary btn-prev btn-prev-start" for="safety-air-1">Back</label>
+								<label class="button button--secondary btn-prev btn-prev-start" for="safety-air-2">Back</label>
 								<label class="button button--primary btn-next btn-next-intro" for="safety-air-0">Next</label>
 								<label class="button button--secondary btn-prev btn-prev-0" for="safety-air-intro">Back</label>
 								<label class="button button--primary btn-next btn-next-0" for="safety-air-1">Next</label>
 								<label class="button button--secondary btn-prev btn-prev-1" for="safety-air-0">Back</label>
-								<label class="button button--primary btn-next btn-next-1" for="safety-air-intro">Start Over</label>
+								<label class="button button--primary btn-next btn-next-1" for="safety-air-2">Next</label>
+								<label class="button button--secondary btn-prev btn-prev-2" for="safety-air-1">Back</label>
+								<label class="button button--primary btn-next btn-next-2" for="safety-air-intro">Start Over</label>
 							</div>
 						</div>
 					</article>
@@ -726,7 +691,7 @@
 					</article>
 				</div>
 			</section>
-			<p class="cms-rev"><small>[r26 · 2026-11-10 · 2245729]</small></p>
+			<p class="cms-rev"><small>[r27 · 2026-11-10 · 2245729]</small></p>
 		</main>
 	</body>
 </html>
