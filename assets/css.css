@@ -6330,8 +6330,7 @@ a.wiz-btn--go:hover {
 	border-bottom: none;
 }
 
-.wiz-summary__row.q-cond,
-.q-ref.q-sport {
+.wiz-summary__row.q-cond {
 	display: none;
 }
 
@@ -6404,28 +6403,6 @@ a.wiz-btn--go:hover {
 	display: none;
 }
 
-.wiz-options-ref {
-	margin-top: 0.75rem;
-	font-size: 0.85rem;
-	color: #444;
-}
-
-.wiz-options-ref summary {
-	cursor: pointer;
-	font-weight: 700;
-	color: #1a3a6b;
-}
-
-.wiz-options-ref__q {
-	margin: 0.6rem 0 0.2rem;
-	font-weight: 600;
-}
-
-.wiz-options-ref__list {
-	margin: 0;
-	padding-left: 1.6rem;
-	columns: 2;
-}
 /* ====== END Uniform PICKER ====== */
 
 /* Home page interest-list bar ("Get NCLL news by email."): Sports Connect's default is a tall

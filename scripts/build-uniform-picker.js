@@ -614,18 +614,8 @@ function build(w) {
 	}
 	line(7, `</dl>`);
 	// Included items have their own step; the answers page lists registration answers only.
-	line(7, `<details class="wiz-options-ref">`);
-	line(8, `<summary>Every option in each registration question</summary>`);
-	for (const [qk, q] of Object.entries(w.questions)) {
-		if (q.sport) rule(`${W}${sportHas(q)} .q-ref--${qk}`, ["display: block"]);
-		line(8, `<div class="q-ref q-ref--${qk}${q.sport ? " q-sport" : ""}">`);
-		line(9, `<p class="wiz-options-ref__q">${q.q}</p>`);
-		line(9, `<ol class="wiz-options-ref__list">`);
-		q.options.forEach(([, label]) => line(10, `<li>${label}</li>`));
-		line(9, `</ol>`);
-		line(8, `</div>`);
-	}
-	line(7, `</details>`);
+	// The "Every option in each registration question" list was removed 2026-11-11 (John): the numbered
+	// answers above are what families need, and registration's own dropdown shows every option.
 	line(6, `</div>`);
 	line(6, `<div class="wiz-nav wiz-nav--finish">`);
 	const lastBefore = steps[steps.length - 2];
