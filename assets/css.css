@@ -6696,3 +6696,10 @@ a.wiz-btn--go:hover {
     white-space: nowrap;
     color: var(--color_red);
 }
+
+/* Two badges side by side in a card motto (Safety Hub Weather & Heat: lightning + heat, 2026-11-10) */
+.ncll-card__motto--pair {
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+}
