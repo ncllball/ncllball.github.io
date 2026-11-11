@@ -152,7 +152,7 @@ const PLAYER = {
 			blocks: [
 				{
 					q: "shirt-bb", sport: "bb", divs: ["tb", "kcp"],
-					images: [[`${IMG}/shirts/YST350_TRUE-ROYAL_FRONT.png`, "YST350 youth tee &mdash; front"], [`${IMG}/shirts/YST350_TRUE-ROYAL_BACK.png`, "YST350 youth tee &mdash; back"]],
+					images: [[`${IMG}/shirts/YST350_TRUE-ROYAL_FRONT.png`, "YST350 youth tee"]],
 					note: "T-Ball and Kindy players get the <strong>ST350</strong> performance tee (<strong>YST350</strong> in youth sizes). Measure around the fullest part of the chest.",
 					sets: [
 						{ title: "Youth", item: "ST350 tee (youth)", sizes: sized(["yxs", "ys", "ym", "yl", "yxl"], CHEST_ST350, chest) },
@@ -273,7 +273,7 @@ const COACH = {
 			blocks: [
 				{
 					q: "shirt-bb", sport: "bb",
-					images: [[`${IMG}/shirts/ST350_TRUE-RED_FRONT.png`, "ST350 mens &mdash; front"], [`${IMG}/shirts/ST350_TRUE-RED_BACK.png`, "ST350 mens &mdash; back"], [`${IMG}/shirts/LST350_TRUE-ROYAL_FRONT.png`, "LST350 womens &mdash; front"], [`${IMG}/shirts/LST350_TRUE-ROYAL_BACK.png`, "LST350 womens &mdash; back"]],
+					images: [[`${IMG}/shirts/ST350_TRUE-RED_FRONT.png`, "ST350 mens tee"], [`${IMG}/shirts/LST350_TRUE-ROYAL_FRONT.png`, "LST350 womens tee"]],
 					note: "Coaches get the <strong>ST350</strong> performance tee in a mens cut or the <strong>LST350</strong> in a womens cut. Pick one size from either list.",
 					sets: [
 						{ title: "Mens &mdash; ST350", item: "ST350 mens tee", sizes: sized(["axs", "as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
@@ -282,7 +282,7 @@ const COACH = {
 				},
 				{
 					q: "shirt-sb", sport: "sb",
-					images: [[`${IMG}/shirts/ST350_TRUE-RED_FRONT.png`, "ST350 mens &mdash; front"], [`${IMG}/shirts/ST350_TRUE-RED_BACK.png`, "ST350 mens &mdash; back"], [`${IMG}/shirts/LST350_TRUE-ROYAL_FRONT.png`, "LST350 womens &mdash; front"], [`${IMG}/shirts/LST350_TRUE-ROYAL_BACK.png`, "LST350 womens &mdash; back"]],
+					images: [[`${IMG}/shirts/ST350_TRUE-RED_FRONT.png`, "ST350 mens tee"], [`${IMG}/shirts/LST350_TRUE-ROYAL_FRONT.png`, "LST350 womens tee"]],
 					note: "Coaches get the <strong>ST350</strong> performance tee in a mens cut or the <strong>LST350</strong> in a womens cut. Pick one size from either list.",
 					sets: [
 						{ title: "Mens &mdash; ST350", item: "ST350 mens tee", sizes: sized(["axs", "as", "am", "al", "axl", "a2xl", "a3xl", "a4xl"], CHEST_ST350, chest) },
@@ -301,13 +301,13 @@ const COACH = {
 			blocks: [
 				{
 					q: "hat-bb", sport: "bb", divs: SETS.upper,
-					images: [[`${IMG}/hats/PTS30_BLACK-MAROON_FINAL.jpg.png`, "PTS30 &mdash; front"], [`${IMG}/hats/PTS30_BLACK-MAROON_BACK.png`, "PTS30 &mdash; back"]],
+					images: [[`${IMG}/hats/PTS30_BLACK-MAROON_FINAL.jpg.png`, "PTS30 fitted cap"]],
 					note: "Coaches get the <strong>PTS30</strong> fitted cap. Measure around the head, just above the ears.",
 					sets: [{ item: "PTS30 fitted cap", sizes: PTS30 }],
 				},
 				{
 					q: "hat-sb", sport: "sb", divs: ["aaa", "majors", "juniors", "seniors"],
-					images: [[`${IMG}/hats/HC10_2.png`, "HC10 &mdash; front"], [`${IMG}/hats/HC10_3.png`, "HC10 &mdash; back"]],
+					images: [[`${IMG}/hats/HC10_2.png`, "HC10 cap"]],
 					note: "Softball coaches get the <strong>HC10</strong> (Champro) cap. Measure around the head, just above the ears.",
 					sets: [{ item: "HC10 cap", sizes: [["hc10-sm", head("6¼&ndash;7")], ["hc10-mxl", head("7&ndash;7⅝")]] }],
 				},
@@ -561,7 +561,7 @@ function build(w) {
 		line(7, `<h4 class="wiz-title left">Included &mdash; nothing to pick</h4>`);
 		line(7, `<p class="wiz-subtitle">These come with your registration. There's no size question for them.</p>`);
 		providedList(7);
-		preview(7, [[`${IMG}/hats/4301_ROYAL_FRONT.png`, "4301 adjustable cap", "lower"], [`${IMG}/socks-belts/7101_SCARLET_SIDE.png`, "Sock", "socks"], [`${IMG}/socks-belts/4350_SCARLET_FRONT.png`, "Belt", "socks"]]);
+		preview(7, [[`${IMG}/hats/4301_ROYAL_FRONT.png`, "4301 adjustable cap", "lower"], [`${IMG}/outerwear/8203_ROYAL_FRONT.png`, "8203 hoodie", "upper"], [`${IMG}/socks-belts/7101_SCARLET_SIDE.png`, "Sock", "socks"], [`${IMG}/socks-belts/4350_SCARLET_FRONT.png`, "Belt", "socks"]]);
 		panelNav();
 		btn(7, "back", "hat", "&larr; Back", "upper");
 		btn(7, "back", "shirt", "&larr; Back", "lower");
@@ -631,7 +631,9 @@ function build(w) {
 		btn(7, "back", lastBefore, "&larr; Back", "upper");
 		btn(7, "back", w.steps[0].key, "&larr; Back", "lower");
 	}
-	btn(7, "restart", "intro", "Start over");
+	// A form reset clears every radio back to its default (the intro step, nothing picked). The CMS allows no
+	// JavaScript and the page sits inside DNN's one <form>, so this resets both pickers on the page.
+	line(7, `<button class="wiz-btn wiz-btn--restart" type="reset">Start over</button>`);
 	line(7, `<a class="wiz-btn wiz-btn--go" href="${REGISTER_URL}" rel="noopener">Go to registration &rarr;</a>`);
 	line(6, `</div>`);
 	line(5, `</section>`);
