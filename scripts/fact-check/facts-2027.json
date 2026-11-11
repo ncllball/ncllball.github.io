@@ -2101,6 +2101,16 @@
       "value": "about 14 (13.5 per team in 2025, 14.5 in 2026)",
       "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
       "checked": "2026-11-06"
+     },
+     "age12": {
+      "value": "League-age 12's register for Majors. A 12 plays Juniors only with an explicit recommendation from their previous coach, the player agent, or the softball VP.",
+      "pages": [
+       "Softball Hub (Majors and Juniors cards: 'only with a coach's explicit recommendation')",
+       "softball Majors and Juniors rules pages (A1)",
+       "Registration Guide footnote 5"
+      ],
+      "source": "Gayle Perez (VP Softball), Google Chat 2026-11-11; wording settled with John (Registrar) the same day; Outline Division Rules A1 (Majors, Juniors)",
+      "checked": "2026-11-11"
      }
     },
     {
@@ -2240,6 +2250,16 @@
       "value": "one team (19 players in 2025, 17 in 2026)",
       "source": "players at season end (LLI end-of-season upload, Ops Board data/exports/lli-history.json) / teams (Coaches Official Board Review sheets 2025 and 2026)",
       "checked": "2026-11-06"
+     },
+     "age12": {
+      "value": "League-age 12's register for Majors. A 12 plays Juniors only with an explicit recommendation from their previous coach, the player agent, or the softball VP.",
+      "pages": [
+       "Softball Hub (Majors and Juniors cards: 'only with a coach's explicit recommendation')",
+       "softball Majors and Juniors rules pages (A1)",
+       "Registration Guide footnote 5"
+      ],
+      "source": "Gayle Perez (VP Softball), Google Chat 2026-11-11; wording settled with John (Registrar) the same day; Outline Division Rules A1 (Majors, Juniors)",
+      "checked": "2026-11-11"
      }
     },
     {
