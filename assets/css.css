@@ -5896,7 +5896,6 @@ details.allstars-year > .program-grid {
 	font-family: "proxima-nova", sans-serif;
 }
 
-.wiz-panel,
 .div-options--bb,
 .div-options--sb,
 .blk,
@@ -5908,8 +5907,24 @@ details.allstars-year > .program-grid {
 	display: none;
 }
 
+/* Hidden steps stay laid out but invisible, at their natural height, instead of display:none.
+   A display:none box keeps its scroll position and gets it back when shown; an unclipped box has
+   nothing to scroll, so its position resets. Result: every step opens at the top, including after
+   Start over (the CMS allows no JS). The shown step is set per step in the page's generated rules
+   (position: relative; height: 100%; visible). 2026-11-11 */
 .wiz-panel {
+	display: flex;
 	flex-direction: column;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.wiz-panel .wiz-panel-content {
+	flex: none;
 }
 
 /* ── Layout: two wizards side by side, fixed-height cards ───── */
@@ -5945,11 +5960,12 @@ details.allstars-year > .program-grid {
 
 .wizard-section .wiz-body {
 	flex: 1;
+	position: relative;
 	overflow: hidden;
 }
 
 .wizard-section .wiz-panel {
-	height: 100%;
+	height: auto;
 	box-sizing: border-box;
 	overflow: hidden;
 	background: #fff;

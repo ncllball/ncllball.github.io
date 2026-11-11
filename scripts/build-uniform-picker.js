@@ -362,7 +362,12 @@ function build(w) {
 	const radio = (name, id, checked) => `<input type="radio" name="${p}${name}" id="${p}${id}"${checked ? " checked" : ""} />`;
 
 	// Panels show by step.
-	steps.forEach((key) => rule(`#${stepId(key)}:checked ~ .wiz-body .wiz-panel--${key}`, ["display: flex"]));
+	// The shown step. Hidden steps stay laid out but invisible at their natural height (css.css), so their
+	// scroll box has nothing to scroll and forgets its position: every step opens at the top (no JS allowed).
+	steps.forEach((key) => {
+		rule(`#${stepId(key)}:checked ~ .wiz-body .wiz-panel--${key}`, ["display: flex", "position: relative", "height: 100%", "visibility: visible", "pointer-events: auto"]);
+		rule(`#${stepId(key)}:checked ~ .wiz-body .wiz-panel--${key} .wiz-panel-content`, ["flex: 1"]);
+	});
 	rule(`#${p}sport-bb:checked ~ .wiz-body .div-options--bb`, ["display: grid"]);
 	rule(`#${p}sport-sb:checked ~ .wiz-body .div-options--sb`, ["display: grid"]);
 
