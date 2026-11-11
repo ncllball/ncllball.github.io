@@ -2663,9 +2663,9 @@
     "Umpires": 1.87,
     "Summerball": 1.5
    },
-   "source": "Registration Hub, Where Fees Go card",
+   "source": "Treasurer's 'NCLL 2026 Expenses.xlsx', attached to his email 'Re: NCLL Field fee increase: how we tell families (feedback by Oct 28)', 2026-10-23 (registrar mailbox); added to the site in commit 056dc7c (2026-10-30)",
    "checked": "2026-11-11",
-   "note": "Page values recorded so the check catches drift; the underlying 2026 budget document wasn't located."
+   "note": "Matches the page after rounding. The page's All-Stars 12.12% combines three sheet rows (All-Stars Unis $25,150, All-Stars Coach/Player Dev $4,145, All-Stars Fees $2,473 = $31,768), as the Treasurer suggested. Coach and Player Development is the regular-season row only ($21,727); Summerball is Summerball uniforms ($3,944)."
   }
  }
 }
