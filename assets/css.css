@@ -1212,6 +1212,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font_heading);
 }
 
+/* Inline call-out for a schedule change or exception inside body text (e.g. a card's "Off:" line) */
+.text-alert {
+    color: var(--color_red);
+    font-weight: 600;
+}
+
 h1 {
     font-size: 1.625rem;
     text-align: left;
