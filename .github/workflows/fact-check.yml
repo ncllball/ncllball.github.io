@@ -1,0 +1,21 @@
+# Runs the 2027 fact check (scripts/fact-check/check-facts.js) whenever a page, the facts
+# file or the checker changes. A red X on the commit means a page contradicts facts-2027.json.
+name: Fact check
+on:
+  push:
+    paths:
+      - "CMS/**"
+      - "scripts/fact-check/**"
+      - ".github/workflows/fact-check.yml"
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check pages against facts-2027.json
+        run: node scripts/fact-check/check-facts.js | tee -a "$GITHUB_STEP_SUMMARY"
+        shell: bash
