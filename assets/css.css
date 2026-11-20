@@ -638,6 +638,15 @@ a.ncll {
     font-weight: 600;
 }
 
+/* League Leadership: "(seeking a successor)" after a holder's name (r6, 2026-11-19) */
+.board-volunteers .seeking {
+    color: var(--color_red);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 0.92em;
+    white-space: nowrap;
+}
+
 .board-volunteers tr.open-position:hover td,
 .board-volunteers tr.open-position:focus-within td {
     transform: scale(1.01);
