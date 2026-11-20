@@ -638,8 +638,9 @@ a.ncll {
     font-weight: 600;
 }
 
-/* League Leadership: "(seeking a successor)" after a holder's name (r6, 2026-11-19) */
-.board-volunteers .seeking {
+/* League Leadership: "(seeking a successor)" after a holder's name, and "Open" on open seats (r7, 2026-11-19) */
+.board-volunteers .seeking,
+.board-volunteers .open-label {
     color: var(--color_red);
     font-style: italic;
     font-weight: 600;
