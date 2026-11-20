@@ -12,7 +12,7 @@ All lowercase, words joined with hyphens.
 | Tag | What it says | Use one of |
 |---|---|---|
 | `utm_source` | where the link lives | `email`, `newsletter` (Sports Connect blast), `instagram`, `facebook`, `qr`, `flyer`, `gamechanger`, `google-chat`, or the partner's name (e.g. `bf-day`) |
-| `utm_medium` | what kind of channel | `email`, `social`, `print`, `chat`, `referral` |
+| `utm_medium` | what kind of channel | `email`, `social`, `paid-social` (boosted posts and ads), `print`, `chat`, `referral` |
 | `utm_campaign` | the push it belongs to | `<year>-<topic>`: `2027-registration`, `2026-holiday-store`, `2027-allstars`, `2027-hrd` |
 | `utm_content` (optional) | which link, if one message has several | `button`, `header-link`, `poster-a`, `poster-b` |
 
