@@ -1,5 +1,5 @@
 {
- "_about": "Source of truth for the 2027 fact check (scripts/fact-check). Division data pulled read-only from Sports Connect (programs 80158833 baseball, 80158834 softball) on 2026-11-03; fees are the final 2027 fees (Jason, 2026-11-03: AAA and Majors $290 in both sports). Refresh with scripts/fact-check/README.md before each check.",
+ "_about": "Master for NCLL's 2027 decisions (scripts/fact-check). Flow: Little League -> this file -> Sports Connect, the website, Ask NCLL. Never copy Sports Connect into this file; check it against this file and list differences (README). Dates copy the wiki page 2027 Season Dates. Division data first taken from Sports Connect (programs 80158833 baseball, 80158834 softball) on 2026-11-03; fees are the final 2027 fees (Jason, 2026-11-03: AAA and Majors $290 in both sports).",
  "pulled": "2026-11-03 (re-checked against Sports Connect 2026-11-03 afternoon: no division changes)",
  "programs": {
   "baseball": {

@@ -1,16 +1,30 @@
 # Fact check
 
-Checks that the website pages in `CMS/` say the same thing as Sports Connect and the decisions we've made.
+Checks that the website pages in `CMS/` and Sports Connect say the same thing as the decisions we've made.
+
+## Which way the facts flow
+
+`facts-2027.json` is the master for NCLL's decisions. Everything else copies it:
+
+**Little League → `facts-2027.json` → Sports Connect, the website, Ask NCLL**
+
+- **Above the file:** league ages and birth-date ranges come from Little League International's age chart; division rules come from the rulebook and District 8. The file follows those. Don't "correct" them to match Sports Connect.
+- **The file:** the board's decisions (fees, caps, which divisions exist, registration close dates, sponsor prices, key links, banned wording). A change starts here, after the board decides it.
+- **Below the file:** Sports Connect's registration setup, the website pages and Ask NCLL. When one of them differs from the file, fix it to match. Never copy Sports Connect into the file.
+- **Dates** follow the wiki page *2027 Season Dates* (the one source of truth for dates). The dates in this file are copies of it; when the wiki page changes, update them here.
+- **Board and volunteers** (who holds each role) follow the wiki page *Current Board of Directors & Key Volunteers*, not this file.
+
+Sports Connect is what families pay through, so check it often: a difference there is urgent whichever side is wrong. The fix is either "change Sports Connect" or "the board changed its mind: update the file first, then Sports Connect". It's never an automatic copy in either direction.
 
 | File | What it is |
 |---|---|
-| `facts-2027.json` | The source of truth: every 2027 division (fee, league age, birth dates, cap, SC close date), key dates, sponsor prices, key links, and banned or stale wording |
+| `facts-2027.json` | The master: every 2027 division (fee, league age, birth dates, cap, SC close date), key dates (copied from the wiki's 2027 Season Dates), sponsor prices, key links, and banned or stale wording |
 | `check-facts.js` | Compares the pages against the facts. `node scripts/fact-check/check-facts.js [--md report.md] [--facts other.json]`. Exit 1 if there are errors |
 | `CODEX-BRIEF.md` | The brief for Codex's review (the script plus the judgment checks a script can't do) |
 
-## Refreshing the facts from Sports Connect
+## Checking Sports Connect against the facts
 
-Division data comes from Sports Connect, read-only. Codex can read it itself through the read-only `ncll-browser` tools (see `AGENTS.md`); to refresh the facts file from Claude Code or by hand:
+Read Sports Connect (read-only) and compare it with the file. List the differences for John; don't edit the file to match. Codex can read it itself through the read-only `ncll-browser` tools (see `AGENTS.md`); from Claude Code or by hand:
 
 1. In the integrated browser, open any `registration-setup.bluesombrero.com/registration-admin/83437/...` page while logged in.
 2. Run this in the page (it only reads):
@@ -28,9 +42,9 @@ Division data comes from Sports Connect, read-only. Codex can read it itself thr
 })()
 ```
 
-3. Update the matching fields in `facts-2027.json` (`born.from` = SC `maxAge`, `born.to` = SC `minAge`, `cap` = `maxPlayers`, `scClose` = `closeRegistration`) and the `pulled` date. SC prices stay at the $5,000 test price until launch, so `fee` holds the real 2027 fee, not the SC price.
+3. Compare the matching fields with `facts-2027.json` (`born.from` ↔ SC `maxAge`, `born.to` ↔ SC `minAge`, `cap` ↔ `maxPlayers`, `scClose` ↔ `closeRegistration`, `fee` ↔ `price`) and list every difference, with which side looks wrong. Record the check date in `pulled`. Change Sports Connect (or the file, after a board decision) only once John says which.
 
-Decisions that live outside Sports Connect (register-by dates, sponsor prices, banned wording) are edited by hand in `facts-2027.json`.
+Every field in `facts-2027.json` is edited by hand, and only for a decision: a board decision, a Little League/District 8 rule, or a date already on the wiki's 2027 Season Dates.
 
 ## Uniform picker vs registration (run whenever sizes change)
 
